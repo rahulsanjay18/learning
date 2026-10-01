@@ -2,3 +2,4 @@
 *.epub
 *.mobi
 *.azw3
+book-server/data/

@@ -17,7 +17,7 @@ only see what's committed, so anything not pushed is lost.
   Use small commits with messages like `teach(<slug>): lesson 0003 <name>`.
 - Don't ask me to merge anything; a GitHub Action merges your branch into main automatically.
 
-PAGES_URL=
+PAGES_URL=https://rahulsanjay18.github.io/learning
 
 ## My library (check before searching the web)
 - Read `library/README.md` before using anything in `library/`, and follow it exactly. It says
@@ -25,3 +25,6 @@ PAGES_URL=
 - When creating or updating RESOURCES.md, search `library/MANIFEST.csv`, `library/LIBRARY.md`
   and `library/ACCESS.md` first. Mark entries "(in collection)", "(via <source>)", or "(check: <link>)", following library/ACCESS.md.
 - If nothing in my collection or sources fits, say so in RESOURCES.md's Gaps section, then search the web.
+
+
+BOOKS_URL=https://<machine>.<tailnet>.ts.net:8443
