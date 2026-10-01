@@ -6,7 +6,7 @@ can never silently become something I learn.
 ## Files
 - `MANIFEST.csv` — every converted book: id, grade, flags, category, title, source format, quality stats.
 - `toc/<id>.md` — headings only. Safe to use for every non-F book.
-- `text/<id>.md` — full text, only for books copied in (grades A/B).
+- Full text is NOT in this repo. It's served by my book server (see "Book server" below), A/B grades only.
 - `LIBRARY.md` — books in my collection with no usable text (unconverted, physical, etc.).
 - `ACCESS.md` — the SOURCES I can get books from, and how to check each one.
 - `RECONVERT.csv` — books whose conversion failed, with the fix to try.
@@ -27,3 +27,26 @@ can never silently become something I learn.
 4. Every equation that appears in a lesson must come from an A-grade source, a cited high-trust web source,
    or be derived in the lesson. When possible, sanity-check it with code (e.g. sympy) before showing it.
 5. Prefer books from my collection or sources as the "primary source" of a lesson, but always cite the original book, never the conversion.
+
+## Book server (full text, on demand)
+Base URL: the `BOOKS_URL` line in /CLAUDE.md. Authentication is attached automatically by the
+environment; never ask for or print a token.
+
+    curl -s "$BOOKS_URL/books?q=sutton+barto"                 # is a specific book on the server?
+    curl -s "$BOOKS_URL/search?q=policy+gradient&limit=10"   # passages: id, title, grade, start_line, snippet
+    curl -s "$BOOKS_URL/toc/<id>"                             # headings with line numbers
+    curl -s "$BOOKS_URL/read/<id>?start=120&n=80"             # max 200 lines per call
+
+- Web research stays the primary way to find resources (as the /teach skill says). Books are an EXTRA resource. Search when a lesson topic might be covered; if nothing relevant comes back, move on.
+- Every response carries the book's grade. Grade B responses include a warning: obey it.
+- Read the smallest slice that answers the question. Don't page through whole books.
+- If the server is unreachable, carry on without it and say so once.
+
+## Asking for a book
+When research turns up a book that would clearly help and `/books?q=` doesn't find it on the server
+(or it's there but graded C/F), don't stop. Append one line to `library/WANTED.md`:
+
+    - _Title_ — Author — for: <topic/lesson> — why: <one line> — status: missing | needs reconversion (<id>)
+
+Commit it with the lesson, and mention it to me once at the end of the session. Never try to obtain the book yourself.
+Keep teaching from other sources in the meantime.

@@ -1,5 +1,8 @@
 # Book access I have (by SOURCE, not by title)
 
+> This file is guidance, not a restriction. What Claude can technically reach is set by the
+> cloud environment's network access level. General web research is unaffected by this file.
+
 My catalog of accessible books is too large to list. So this file lists the *places* I can get books
 and how to check each one. Claude never needs a title list.
 
