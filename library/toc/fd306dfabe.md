@@ -1,0 +1,65 @@
+# TOC: Diplomacy_-_OxfordUP.VSI_-_Siracusa,_Joseph_M_Jan.2010
+grade: A
+
+- **DIPLOMACY**
+  - **Contents**
+  - **Preface**
+  - **List of illustrations**
+  - **Chapter 1
+    - **The evolution of diplomacy**
+    - **Public diplomacy**
+    - **Diplomats and treaties**
+    - **The Vienna Convention on the Law of Treaties**
+  - **Chapter 2
+    - **The quest for foreign aid**
+    - **The French alliance**
+    - **Spain and the Revolution**
+    - **A pawn in the European chess game**
+    - **Great Britain in difficulty**
+    - **The stakes of diplomacy**
+    - **The peace negotiations**
+    - **The treaty**
+    - **Problems of independence**
+  - **Chapter 3
+    - **Diplomatic origins of World War I**
+    - **The unique role of the German officer corps**
+    - **The fateful permanence of Franco-German enmity**
+    - **The Reinsurance Treaty**
+    - **The militarization of German diplomacy**
+    - **The irrational continuation of the war of annihilation**
+    - **Wartime diplomacy**
+    - **Ludendorff’s last gamble**
+    - **A world safe for democracy**
+    - **Fourteen Points**
+    - **French revenge**
+    - **War guilt**
+    - **A mistake**
+  - **Chapter 4
+    - **Churchill’s ‘need of another personal meeting with Stalin’**
+    - **Secret revealed**
+    - **FDR’s disapproval**
+    - **Stalin ‘ready to discuss anything’**
+    - **What was accomplished?**
+    - **Kennan’s realism**
+    - **Conclusion**
+  - **Chapter 5
+    - **A war of convenience**
+    - **The Pacific Basin**
+    - **The search for collective security**
+    - **The Korean War**
+    - **Conclusion**
+  - **Chapter 6
+    - **Complex crises**
+    - **Approaching human security**
+    - **The security spectrum**
+    - **System-level governance**
+    - **The emergence of civil society organizations**
+  - **References and further reading**
+    - **Preface**
+    - **Chapter 1**
+    - **Chapter 2**
+    - **Chapter 3**
+    - **Chapter 4**
+    - **Chapter 5**
+    - **Chapter 6**
+  - **Index**

@@ -1,0 +1,96 @@
+# TOC: Number_Theory_-_OxfordUP.VSI_-_Wilson,_Robin.May.2020
+grade: B
+
+- Number Theory: A Very Short Introduction
+- Number Theory
+- A Very Short Introduction
+- Contents
+- [ List of illustrations  ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-miscMatter-6)
+- [Chapter 1](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-1)
+- [ What is number theory? ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-1)
+- Integers
+- Squares and cubes
+- Perfect numbers
+- Prime numbers
+- [Chapter 2](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-2)
+- [ Multiplying and dividing ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-2)
+- Multiples and divisors
+- Least common multiple and greatest common divisor
+  - The least common multiple
+  - The greatest common divisor
+- Euclid’s algorithm
+- Squares
+- Divisor tests
+  - Casting out nines
+- [Chapter 3](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-3)
+- [ Prime-time mathematics ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-3)
+- The sieve of Eratosthenes
+- Primes go on for ever
+- Factorizing into primes
+- Searching for primes
+  - Euler’s primes
+  - Mersenne primes
+  - Perfect numbers
+  - Fermat primes
+  - A geometrical digression
+  - Two weird results
+- [Chapter 4](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-4)
+- [ Congruences, clocks, and calendars ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-4)
+- Clock arithmetic
+  - Testing for Mersenne primes
+- Congruences and the calendar
+- Solving linear congruences
+  - Simultaneous linear congruences
+  - Squares and non-squares
+- [Chapter 5](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-5)
+- [ More triangles and squares ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-5)
+- Linear Diophantine equations
+- Right-angled triangles
+- Sums of squares
+  - Sums of more squares
+- Higher powers
+  - Waring’s problem
+  - Fermat’s last theorem
+- [Chapter 6](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-6)
+- [ From cards to cryptography ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-6)
+- Fermat’s little theorem
+  - Counting necklaces
+  - Shuffling cards
+- Generalizing Fermat’s little theorem
+  - Euler’s _φ_ -function
+  - Euler’s theorem
+- Factorizing large numbers
+  - RSA public key cryptography
+- [Chapter 7](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-7)
+- [ Conjectures and theorems ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-7)
+- Two famous conjectures
+  - Goldbach’s conjecture
+  - The twin prime conjecture
+- The distribution of primes
+  - The prime number theorem
+- Primes in arithmetic progressions
+- Unique factorization
+- [Chapter 8](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-8)
+- [ How to win a million dollars ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-8)
+- Infinite series
+- The zeta function
+  - The zeta function and prime numbers
+  - Complex numbers
+- The Riemann hypothesis
+- Consequences
+- [Chapter 9](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-9)
+- [ Aftermath ](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-chapter-9)
+- The first ten questions
+- Integers
+- Squares and cubes
+- Perfect numbers
+- Prime numbers
+- [ Further reading](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-bibliographyGroup-1)
+- [Index](../Text/006_FM_contents.xhtml#r_actrade-9780198798095-indexGroup-1)
+- Economics
+- Information
+- Innovation
+- Nothing
+- Table of Contents
+  - Landmarks
+  - Pages

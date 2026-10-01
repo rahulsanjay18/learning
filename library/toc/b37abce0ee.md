@@ -1,0 +1,71 @@
+# TOC: Hegel_-_OxfordUP.VSI_-_Singer,_Peter.Dec.2001
+grade: A
+
+- **HEGEL**
+  - **Contents**
+  - **Preface**
+  - **List of illustrations**
+  - **Chapter 1
+    - Hegel’s times
+    - Hegel’s life
+  - **Chapter 2
+    - What is philosophy of history?
+    - The Greek world
+    - The Roman world
+    - The Germanic world
+  - **Chapter 3
+    - A puzzle
+    - Abstract freedom
+    - Freedom and duty
+    - The organic community
+    - Liberal? Conservative? Totalitarian?
+  - **Chapter 4
+    - Mind or spirit?
+    - The task of the _Phenomenology_
+    - Knowledge without concepts?
+    - The emergence of self-consciousness
+    - The desiring mind
+    - Master and slave
+    - Philosophy and religion
+    - Mind’s goal
+    - Absolute knowledge
+    - Two questions
+  - **Chapter 5
+    - Hegel’s conception of logic
+    - The dialectical method
+    - The absolute idea
+  - **Chapter 6
+  - **Notes on sources**
+    - **Chapter 1: Hegel’s times and life**
+    - **Chapter 2: History with a purpose**
+    - **Chapter 3: Freedom and community**
+    - **Chapter 4: The odyssey of mind**
+    - **Chapter 5: Logic and dialectics**
+  - **Further reading**
+    - **Hegel’s works**
+    - **Books about Hegel**
+  - **INDEX**
+    - **A**
+    - **B**
+    - **C**
+    - **D**
+    - **E**
+    - **F**
+    - **G**
+    - **H**
+    - **I**
+    - **J**
+    - **K**
+    - **L**
+    - **M**
+    - **N**
+    - **O**
+    - **P**
+    - **R**
+    - **S**
+    - **T**
+    - **U**
+    - **W**
+    - **Y**
+  - **Expand your collection of
+  - **Visit the

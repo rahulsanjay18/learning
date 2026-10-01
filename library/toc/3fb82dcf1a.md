@@ -1,0 +1,120 @@
+# TOC: 13. CODE RED by Wynton Hall
+grade: A
+
+- Contents
+- Guide
+- [Copyright](9780063436879_Contents.xhtml#rcopy)
+- [Note to Readers](9780063436879_Contents.xhtml#rntr)
+- [Dedication](9780063436879_Contents.xhtml#rded)
+- [Epigraph](9780063436879_Contents.xhtml#repi)
+- Contents
+- [Introduction](9780063436879_Contents.xhtml#rintro)
+- [1](9780063436879_Contents.xhtml#rch1)
+- [Wired for Woke: AI’s Hidden Persuasion](9780063436879_Contents.xhtml#rch1)[1](9780063436879_Notes.xhtml#ch1en1)
+  - “Silicon Valley Is a One-Party State”: Big Tech’s Political Bias
+  - AI Consistently Exhibits Left-Leaning Political Bias
+  - Impartial AI Answers? Or Thinly Veiled Leftist Talking Points?
+  - Why Is AI So Woke?
+  - Are There Solutions? Or Is AI Irrevocably Biased?
+    - 1\. Set the Tone from the Top
+    - 2\. Push for Training Data Transparency and Nonwoke AI
+    - 3\. Conduct Third-Party Audits
+    - 4\. End Public-Sector Federal Procurement for Biased Tech Vendors
+- [2](9780063436879_Contents.xhtml#rch2)
+- [The AI Arms Race: Beating China Without Becoming China](9780063436879_Contents.xhtml#rch2)
+  - A Wake-up Call: America’s AI “Sputnik Moment”
+  - Lessons Learned: The CCP’s TikTok Model of Surveillance Success
+  - The Making of DeepSeek’s AI Trojan Horse
+  - CCP Entities, Data Vacuuming, and Propaganda
+  - True Innovation or Mimicry?
+  - A Rare Moment of Consensus and Policy-Making Opportunity
+    - 1\. Ban CCP Trojan Horses
+    - 2\. Institute Choke Points and Export Controls
+    - 3\. Ensure America’s Energy Dominance; Reduce Regulations
+- [3](9780063436879_Contents.xhtml#rch3)
+- [The Silicon Road to Serfdom?](9780063436879_Contents.xhtml#rch3)
+  - The Protestant Work Ethic, UBI, and the AI Fight to Come
+  - AI’s “Jobquake”: Reality or Hype?
+  - “The Pitchforks Are Coming”: Not Your Grandfather’s Industrial Revolution
+  - GPTs AND THE THREAT TO WHITE-COLLAR “KNOWLEDGE WORK”
+  - Agentic AI: The Autonomous Architect of Tomorrow’s Business Landscape
+  - Now What?
+    - 1\. Early AI Adopters Will Enjoy Employment-Buffering Effects
+    - 2\. Blue-Collar Trades Will Be Safer (for Now) Thanks to Moravec’s Paradox
+    - 3\. State and Federal AI Job Policy Pivots Will Demand Accelerated Data Reporting
+    - 4\. Americans Must Anticipate a Major Economic Power Grab by the Left
+- [4](9780063436879_Contents.xhtml#rch4)
+- [Algorithmic Academia: Your Child’s AI Education](9780063436879_Contents.xhtml#rch4)
+  - The Promise of a Personalized AI Tutor for Every Student
+  - _Cheat_ GPT: Easy Answers, Plagiarism, and Razing the Written Essay
+  - Outsourcing Critical Thinking and Cognitive Off-loading
+  - Cementing Bias and Indoctrination
+  - “Humanity’s Last Exam”: Why Study or Work Hard When AI Dominates?
+  - Educational Solutions for Parents, Teachers, and Students
+    - 1\. Develop the Three C’s: Character, Critical Thinking, and Creativity
+    - 2\. Sharpen Critical Reasoning and Foster Creativity
+    - 3\. Know Your Child’s AI Tutor as Well as You Know Their Teacher
+    - 4\. Monitor the Role of AI Tutors in Parenting, College Admissions, and Hiring
+- [5](9780063436879_Contents.xhtml#rch5)
+- [AI Girlfriends, Loneliness, and the Dark Side of Digital Sexualization](9780063436879_Contents.xhtml#rch5)
+  - The Rise of AI Companions
+  - This Is for All the Lonely People
+  - The Human Effects of Simulated Companionship
+  - The Dark Side of Sexualized AI
+  - Protecting Children
+  - Zero AI Character/Companion Access for Children
+    - 1\. Remove CSAMs from LLM Training Models and Strengthen Reporting
+    - 2\. Strengthen Victim Remedies for the Publication of Nonconsensual Deepfakes
+- [6](9780063436879_Contents.xhtml#rch6)
+- [Threat Vectors: Autonomous AI Warfare, Terrorism, and Containment](9780063436879_Contents.xhtml#rch6)
+  - The New AI Battlefield: Context and Stakes
+  - Challenge 1 The Autonomous Weapons Race
+  - Challenge 2 The Rise of AI-Powered Terrorism
+  - Challenge 3 The Dangerous Gap Between Silicon Valley Innovation and Our National Security Needs
+  - Challenge 4 The AI Alignment Problem and Containment Risk
+  - The Path Forward
+    - 1\. Efforts to Ban Autonomous AI Weapons Must Be Opposed
+    - 2\. The Generative AI Terrorism Risk Assessment Act Must Be Passed
+    - 3\. The Gap Between Silicon Valley Elites and Service Members Must Be Bridged
+    - 4\. AI Safety Must Be Maintained Without Crushing Vital Innovation
+- [7](9780063436879_Contents.xhtml#rch7)
+- [An AI-Powered Approach to Smaller Government](9780063436879_Contents.xhtml#rch7)
+  - Could AI Streamline and Reduce the Cost and Size of Government?
+  - DOGE to the Rescue
+  - Transparency and the Wall of Receipts (and Waste)
+  - Bureaucrats and Establishment Elites Are Triggered
+  - An AI Vision of Limited Government
+    - 1\. Put Conservative Favorites Under the DOGE Microscope
+    - 2\. Expand an AI-First Approach to the State Level
+    - 3\. Make Elites Defend the Indefensible
+- [8](9780063436879_Contents.xhtml#rch8)
+- [AI, God, and the Coming Crisis of Meaning](9780063436879_Contents.xhtml#rch8)
+  - Digitizing Deity, Blaspheming by Bytes
+  - Secular Humanism’s Fatal Conceit
+  - Transhumanism’s Godlike Quest
+  - The Singularity
+  - The Coming “Crisis of Meaning”
+  - Unexpected Uplift
+- [Afterword:](9780063436879_Contents.xhtml#raft)
+- [Fractal Truths for Our AI Future](9780063436879_Contents.xhtml#raft)
+  - If AI Is like Fire, Torchbearers Matter
+    - In the AI era, the future of work will be about creating jobs, not merely finding them.
+  - The Age of Free Intelligence Unlocks Tectonic Opportunities
+  - The Most Dangerous AI Is Often Invisible
+  - AI’s Speed Will Force Us to Sync in Microloops or Sink
+- [Acknowledgments](9780063436879_Contents.xhtml#rack)
+- [Notes](9780063436879_Contents.xhtml#rnotes)
+  - Epigraph
+  - Introduction
+  - **1** | Wired for Woke: AI’s Hidden Persuasion
+  - **2** | The AI Arms Race: Beating China Without Becoming China
+  - **3** | The Silicon Road to Serfdom?
+  - **4** | Algorithmic Academia: Your Child’s AI Education
+  - **5** | AI Girlfriends, Loneliness, and the Dark Side of Digital Sexualization
+  - **6** | Threat Vectors: Autonomous AI Warfare, Terrorism, and Containment
+  - **7** | An AI-Powered Approach to Smaller Government
+  - **8** | AI, God, and the Coming Crisis of Meaning
+  - **AFTERWORD** | Fractal Truths for Our AI Future
+- [Index](9780063436879_Contents.xhtml#rindex)
+- [About the Author](9780063436879_Contents.xhtml#rata)
+- [About the Publisher](9780063436879_Contents.xhtml#ratp)

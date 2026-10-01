@@ -1,0 +1,49 @@
+# TOC: Jewish_Literature_-_OxfordUP.VSI_-_Stavans,_Ilan.Jun.2021
+grade: A
+
+- Jewish Literature:  A Very Short Introduction
+- Jewish Literature
+- A Very Short Introduction
+- Contents
+- [ List of illustrations ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-miscMatter-7)
+- [ Acknowledgments ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-miscMatter-8)
+- [ Introduction People of the Book ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-1)
+- [Chapter 1](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-2)
+- [ After the expulsion ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-2)
+- [Chapter 2](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-3)
+- [ The Yiddish self ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-3)
+- [Chapter 3](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-4)
+- [ The age of anxiety ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-4)
+- [Chapter 4](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-5)
+- [ Shoah and memory ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-5)
+- [ Chapter 5](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-6)
+- [ Into the mainstream ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-6)
+- [Chapter 5 ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-7)
+- [ Chapter 6 The Promised Land ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-7)
+- [Chapter 7](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-8)
+- [ The ingathering ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-8)
+- [Chapter 8](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-9)
+- [ The critic’s “I” ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-9)
+- [Chapter 9](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-10)
+- [ Translation matters ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-10)
+- [Chapter 10](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-11)
+- [ The letterless canon ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-chapter-11)
+- Epilogue: On to the future
+- [ References ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-bibliography-1)
+- Introduction
+- Chapter 1
+- Chapter 3
+- Chapter 4
+- Chapter 5
+- Chapter 6
+- Chapter 7
+- Chapter 8
+- Chapter 9
+- Epilogue
+- [ Further reading ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-bibliography-2)
+- Primary Sources
+- Secondary Sources
+- [ Index ](../Text/007_FM_contents.xhtml#r_actrade-9780190076979-indexGroup-1)
+- Table of Contents
+  - Landmarks
+  - Pages

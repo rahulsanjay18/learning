@@ -1,0 +1,58 @@
+# TOC: Bible,_The_-_OxfordUP.VSI_-_Riches,_John.Jan.2000
+grade: A
+
+- **THE BIBLE**
+  - **The Bible: A Very Short Introduction**
+  - **Contents**
+  - **List of Illustrations**
+  - Chapter 1 **The Bible in the Modern World: Classic or Sacred Text?**
+  - Chapter 2 **How the Bible was Written**
+    - Orality and literacy
+    - The Bible’s literary world
+    - Literary allusions within the Bible
+    - A living oral and literary tradition
+  - Chapter 3 **The Making of the Bible**
+    - The many names of the Bible
+    - The making of the Jewish canon: the Hebrew Bible and its Greek version
+    - The Christian Old Testament
+    - The Christian New Testament
+    - What’s the use of a canon?
+  - Chapter 4 **The Bible in the World of the Believers**
+    - The Akedah
+    - The rich afterlife of the biblical texts
+  - Chapter 5 **The Bible and its Critics**
+    - The church under attack: challenges from within
+    - The church under attack: challenges from without
+    - The Enlightenment and the rise of historical criticism
+    - Criticism and creative readings
+  - Chapter 6 **The Bible in the Post-Colonial World**
+    - The Bible in Latin America
+    - The Bible in Africa
+    - Post-independence African readings
+    - Use and abuse
+  - Chapter 7 **The Bible in High and Popular Culture**
+    - Biblical retellings: the Bible in music
+    - Biblical images in art
+    - Biblical symbolism: the Bible in metaphor and concept
+    - The root of culture
+  - Chapter 8 **The Bible in Politics**
+    - The Bible and political authority
+    - Allegiance to the state: oaths and arms-bearing
+    - Gender politics
+    - The Bible as political authority
+  - Chapter 9 **Conclusion**
+  - **References and Further Reading**
+    - **Chapter 1**
+    - **Chapter 2**
+    - **Chapter 3**
+    - **Chapter 4**
+    - **Chapter 5**
+    - **Chapter 6**
+    - **Chapter 7**
+    - **Chapter 8**
+    - **Chapter 9**
+  - **Index of Biblical References**
+    - **Old Testament**
+    - **New Testament**
+    - **Apocrypha and Pseudepigrapha**
+  - **General Index**

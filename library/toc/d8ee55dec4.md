@@ -1,0 +1,41 @@
+# TOC: The ultimate guitar chord and scale bible _ over 5,000 -- Alfred A_ Knopf Publishing Company; Buck Brown; Mark Dziuba -- US, 2009 -- Alfred Publishing -- 9780739092699 -- 7c0b9b90bafd7d048fc72a59fc9d0dfd -- Anna’s Archive
+grade: C
+
+- Aeolian 11
+- & 43 ..
+- & 43 ..
+- & 86 ..
+- & 43 ..
+- E+7b9
+- E7# 9
+- C Aug.Dom.#9
+- œœœœ
+- C AugMin/Maj7
+- 1     2     3     4     5     6     7     8      9    10   11   12   13   14   15   16    17   18   19   20   21
+- ---
+- & 44 ..
+- 1    2    3    4    5    6    7    8    9   10   11  12  13  14  15
+- œœœ
+- E7 b13
+  - ....
+  - œœœœ
+- ...
+- œœœœ
+- œœœœ
+- #2
+  - œœœ ‰
+    - E13 #11
+    - œœœœ
+  - ....
+- ##
+- œœœœ
+- & 44 ..
+- C min/Maj #11 Pent.
+  - ....
+- & 44 ..
+- E9 b13
+- ˙˙˙˙
+- 5#
+- œ# œ
+- œ#
+- œ#

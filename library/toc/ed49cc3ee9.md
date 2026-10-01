@@ -1,0 +1,88 @@
+# TOC: Jessamyn Conrad - What You Should Know About Politics...But Don’t_ A Nonpartisan Guide to the Issues-Arcade Publishing (2011)
+grade: B
+
+- _For my parents_
+- Contents
+- Preface
+- An Introduction to Political Affiliations
+- **1**
+- Elections
+  - **_Background to Current Debates_**
+  - **_Mechanics of Voting_**
+  - **_Presidential Elections_**
+- **2**
+- The Economy
+  - **_Background to Current Debates_**
+  - **_Current Debates: The Subprime Mortgage Crisis and the 2001 Tax Cuts_**
+- **3**
+- Foreign Policy
+  - **_Background to Current Debates_**
+  - **_The Ideological Groups_**
+  - **_Background to the Iraq War_**
+  - **_The Case for War_**
+  - _Planning_ **_the_** _Invasion of Iraq_
+  - **_What’s Ahead: Beyond Iraq_**
+- **4**
+- The Military
+  - **_Background to Current Debates_**
+  - **_Current Debates_**
+- **5**
+- Health Care
+  - _Background to Current Debates_
+  - **_Current Debates_**
+- **6**
+- Energy
+  - _Background to Current Debates_
+  - **_Current Debates_**
+- **7**
+- The Environment
+  - **_Background to Current Debates_**
+  - **_Current Debates_**
+- **8**
+- Civil Liberties
+  - **_Background to Current Debates_**
+  - **_The Second Amendment: Gun Control versus Gun Rights_**
+  - **_The Fourth Amendment: Warrantless Wiretapping_** **—** **_Executive Power versus Citizens’ Privacy_**
+  - **_The Fifth Amendment: Eminent Domain versus Private Property Rights_**
+  - **_The Sixth Amendment: Rendition and Rights of Detainees_**
+  - **_The Eighth Amendment: Torture and Capital Punishment_**
+- **9**
+- Culture Wars
+  - _Background to Current Debates_
+  - **_Current Debates_**
+- **10**
+- Socioeconomic Policy
+  - **_Background to Current Debates_**
+  - _Immigration_
+  - **_Labor and Social Security_**
+  - _Agriculture Subsidies_
+  - **_Food Aid and_** _Welfare_
+- **11**
+- Homeland Security
+  - **_Background to Current Debates_**
+  - **_Current Debates_**
+- **12**
+- Education
+  - **_Background to Current Debates_**
+  - **_Current Debates_**
+- **13**
+- Trade
+  - **_Introduction_**
+  - **_Basic Terms_**
+  - **_Background to Current Debates_**
+  - **_Current Debates_**
+- Acknowledgments
+- Notes
+  - **1** : **Elections**
+  - **2: The Economy**
+  - **3: Foreign Policy**
+  - **4: The Military**
+  - **5: Health Care**
+  - **6: Energy**
+  - **7: The Environment**
+  - **8: Civil Liberties**
+  - **9: Culture Wars**
+  - **10: Socioeconomic Policy**
+  - **11** : **Homeland Security**
+  - **12: Education**
+  - **13: Trade**

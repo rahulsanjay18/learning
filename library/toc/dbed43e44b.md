@@ -1,0 +1,98 @@
+# TOC: Materials_-_OxfordUP.VSI_-_Hall,_Christopher.Sep.2014
+grade: A
+
+- Materials: A Very Short Introduction
+- Christopher Hall
+- Materials
+- A Very Short Introduction
+- Contents
+- [ Preface ](006_FM_contents.xhtml#r_actrade-9780199672677-miscMatter-6)
+- [ List of illustrations ](006_FM_contents.xhtml#r_actrade-9780199672677-miscMatter-7)
+- [ Chapter 1 ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-1)
+- [ Gold, sand, and string ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-1)
+- Old money
+- Bronze bells
+- Big steel
+- Quartz, calcite, and clay
+- String molecules
+- Macrostructure
+- Metals, ceramics, and polymers?
+- [ Chapter 2 ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-2)
+- [ Close inspection ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-2)
+- Down the microscope
+- Crystals, crystals everywhere
+- Down still further
+- Lattice work
+- Banding together
+- Imperfection
+- How to make a crystal
+- Photograph
+- Low-dimensional crystals
+- Non-crystals
+- [ Chapter 3 ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-3)
+- [ Tough but slippery ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-3)
+- Light and heavy
+- Hot and cold
+- Stiff and strong
+- Hard and slippery
+- Soft
+- Liquid and gas
+- Burn and bang
+- [ Chapter 4 ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-4)
+- [ Electric blue ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-4)
+- Good conductor, bad conductor
+- Superconductor
+- Magnet
+- Transparent, opaque, or shiny
+- … And red
+- Virtual material
+- [ Chapter 5 ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-5)
+- [ Making stuff and making things ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-5)
+- Glass
+- Silicon
+- Superalloy
+- String and textile
+- Plastic
+- Fired-clay ceramic
+- Material-as-device
+- Device-as-material
+- From ingredients
+- Material-as-object
+- The use scientific
+- Putting it all together
+- Pure imagination
+- [ Chapter 6 ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-6)
+- [ Such quantities of sand ](006_FM_contents.xhtml#r_actrade-9780199672677-chapter-6)
+- Running short
+- Global flow
+- Cutting costs
+- Fit for purpose
+- Round and round
+- Dust to dust
+- Collateral damage
+- No conclusion
+- [ Appendix 1](006_FM_contents.xhtml#r_actrade-9780199672677-appendixGroup-1)
+- [ A very short guide to quantities and units](006_FM_contents.xhtml#r_actrade-9780199672677-appendixGroup-1)
+- Multiples
+- Length
+- Temperature
+- Force, pressure, and stress
+- Energy and power
+- [ Appendix 2](006_FM_contents.xhtml#r_actrade-9780199672677-appendixGroup-2)
+- [ Abbreviations for some common polymers](006_FM_contents.xhtml#r_actrade-9780199672677-appendixGroup-2)
+- [ Appendix 3](006_FM_contents.xhtml#r_actrade-9780199672677-appendixGroup-3)
+- [ Nobel Prizes for materials](006_FM_contents.xhtml#r_actrade-9780199672677-appendixGroup-3)
+- [References](006_FM_contents.xhtml#r_actrade-9780199672677-bibliography-1)
+- [Further Reading](006_FM_contents.xhtml#r_actrade-9780199672677-bibliography-2)
+- Chapter 1: Gold, sand, and string
+- Chapter 2: Close inspection
+- Chapter 3: Tough but slippery
+- Chapter 4: Electric blue
+- Chapter 5: Making stuff and making things
+- Chapter 6: Such quantities of sand
+- [ Index](006_FM_contents.xhtml#r_actrade-9780199672677-indexGroup-1)
+- Expand Your Collection of
+- VERY SHORT INTRODUCTIONS
+- Table of Contents
+  - Landmarks
+  - Pages

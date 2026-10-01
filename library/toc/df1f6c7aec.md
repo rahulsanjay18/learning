@@ -1,0 +1,64 @@
+# TOC: Jean Froissart - Chronicles (Penguin Classics) [Retail]
+grade: A
+
+- Chronicles
+  - _Contents_
+  - _Introduction_
+    - THE CHRONICLES AND THEIR HISTORICITY
+    - THE VALUE OF THE CHRONICLES
+    - FROISSART AS A WRITER
+    - THE TEXT OF FROISSART
+    - THIS TRANSLATION
+  - _Acknowledgements_
+  - _The Chronological Background_
+    - THE CHRONICLES BEGIN
+    - THE CHRONICLES END
+  - BOOK ONE
+    - _Prologue_
+    - _The Beginning of a Reign_
+    - _The Scots Invade England_ (_1327_)
+    - _Edward III Does Homage to Philip VI_ (_1329_)
+    - _Preliminaries of the Hundred Years War_
+    - _Battle of Sluys_ (_1340_)
+    - _The Order of the Garter_ (_1344_)
+    - _The Campaign of Crécy_ (_1346_)
+    - _The Siege of Calais_ (_1346–7_)
+    - _Black Death, Flagellants and Jews[1](page111fn1.html#page111fn1) (1349)_
+    - _Sea Battle off Winchelsea (1350)_
+    - _The Siege of Breteuil and the Poitiers
+    - _Consequences of Poitiers_
+    - _King John’s Return to England and his Death_ (_1363–4_)
+    - _The Battle of Montiel and Death of Peter the Cruel_ (_1369_)
+    - _The Sack of Limoges_ (_1370_)
+    - _The Turn of the Tide_
+    - _The End of a Reign_ (_1376–7_)
+  - BOOK TWO
+    - _Papal Affairs and the Great Schism (1376–9)_
+    - THE GREAT SCHISM
+    - _The Peasants’ Revolt in England_ (_1381_)
+    - _Affairs of Flanders_ (_1381–2_)
+    - _Battle of Roosebeke_ (_1382_)
+    - _Charles VI Marries Isabella of Bavaria_ (_1385_)
+  - BOOK THREE (_1386–8_)
+    - _At the Court of the Count of Foix_ (_1388_)
+    - _The Haunting of Sir Peter_
+    - _Reminiscences of the Bascot de Mauléon, Freebooter_
+    - _The Tale of the Familiar_
+    - _Preparations for a French Invasion of England_ (_1386_)
+    - _Trial by Combat_ (_1386–7_)
+    - _Richard II’s First Struggle with his Uncles_ (_1387–8_)
+    - _John of Gaunt’s Expedition to Spain_ (_1386–7_)
+    - _The Battle of Otterburn_ (_Chevy Chase_) (_1388_)
+  - BOOK FOUR
+    - _Queen Isabella’s Entry into Paris_ (_1389_)
+    - _A Royal Visitation_ (_1389_)
+    - _Tournament at Saint-Inglevert_ (_1390_)
+    - _The Duke of Touraine in Trouble_ (_1391_)
+    - _The Death of the Count of Foix_ (_1391_)
+    - _Charles VI Goes Mad_ (_1392_)
+    - _Froissart Revisits England_ (_1395_)
+    - _The English in Ireland_ (_1394–5_)
+    - _Two Marriages_ (_1395–6_)
+    - _The Downfall of Richard II_ (_1397–1400_)
+  - _Notes in Form of Glossary_
+  - _Index of Persons_

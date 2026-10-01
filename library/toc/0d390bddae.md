@@ -1,0 +1,79 @@
+# TOC: Fire_-_OxfordUP.VSI_-_Scott,_Andrew_C_May.2020
+grade: A
+
+- Fire:  A Very Short Introduction
+- Fire
+- A Very Short Introduction
+- Contents
+- [ Preface and acknowledgements ](007_FM_contents.xhtml#r_actrade-9780198830030-miscMatter-7)
+- [ List of illustrations ](007_FM_contents.xhtml#r_actrade-9780198830030-miscMatter-8)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-1)
+- [ The elements of fire ](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-1)
+- What is fire?
+- Types of fire
+- Fires that changed the world
+- Consequences of fire suppression
+- Fire at the wildland–urban interface
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-2)
+- [ The deep history of fire ](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-2)
+- Identifying past fire events
+- Box 1. The formation of charcoal
+- Fire and the evolution of vegetation
+- Fire and the atmosphere
+- Fire and climate
+- Low and high fire worlds
+- Evolution of fire traits
+- Fire and animals
+- Pyrogeography and pyrodiversity
+- Box 2. Savanna grasslands and wildfire
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-3)
+- [ Fire and humankind ](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-3)
+- The discovery of fire
+- The utilization of fire in the landscape
+- Capturing and controlling fire
+- Fire use in agriculture
+- Industrial use of fire
+- Fire as a weapon
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-4)
+- [ Containing and suppressing fire ](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-4)
+- Landscape fires
+- Fire, weather, and climate
+- Fuels
+- Box 3. Why do species matter?
+- Topography
+- Monitoring the fire environment
+- Wildfire behaviour
+- Preventing and extinguishing wildfires
+- Wildfires and urban populations
+- Box 4. How to survive a fire
+- Building and urban fires
+- Box 5. Room fire
+- Fire, smoke, and human health
+- Box 6. Smoke and atmospheric pollution
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-5)
+- [ New technologies and changing fire policies ](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-5)
+- Observing fire
+- After the fire
+- Post-fire erosion and flooding
+- Fire and legislators
+- Fire safety and suppression in the urban setting
+- Box 7. Wildfire preparedness checklist
+- Unusual fire
+- [Chapter 6](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-6)
+- [ Fire and climate change ](007_FM_contents.xhtml#r_actrade-9780198830030-chapter-6)
+- Box 8. Fire and climate forcing
+- Plant invasives
+- Box 9. Fires in Portugal
+- Megafires
+- The future of fire in a warming world
+- Future expectations
+- [ References and guides ](007_FM_contents.xhtml#r_actrade-9780198830030-bibliography-1)
+- [ Further reading ](007_FM_contents.xhtml#r_actrade-9780198830030-bibliography-2)
+- [ Publisher’s acknowledgements ](007_FM_contents.xhtml#r_actrade-9780198830030-miscMatter-9)
+- [ Index ](007_FM_contents.xhtml#r_actrade-9780198830030-indexGroup-1)
+- Epidemiology
+- Geopolitics
+- Modern China
+- Table of Contents
+  - Landmarks
+  - Pages

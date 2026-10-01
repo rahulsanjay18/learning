@@ -1,0 +1,110 @@
+# TOC: HIV_&_AIDS_-_OxfordUP.VSI_-_Whiteside,_Alan.Sep.2016
+grade: A
+
+- HIV and AIDS: A Very Short Introduction
+- HIV and AIDS
+- A Very Short Introduction
+- Contents
+- [Preface](006_FM_contents.xhtml#r_actrade-9780198727491-miscMatter-6)
+- [List of illustrations](006_FM_contents.xhtml#r_actrade-9780198727491-miscMatter-7)
+- [List of tables](006_FM_contents.xhtml#r_actrade-9780198727491-miscMatter-8)
+- [List of abbreviations](006_FM_contents.xhtml#r_actrade-9780198727491-miscMatter-9)
+- [Chapter 1](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-1)
+- [ The emergence and state of the HIV and AIDS epidemic](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-1)
+- The identification of HIV and AIDS
+- The long-wave epidemic
+- The global and regional epidemics
+- Box 1 Key features of the epidemic
+- Prevalence and incidence
+- Where information comes from
+- [Chapter 2](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-2)
+- [ How HIV and AIDS work and scientific responses](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-2)
+- How the virus works
+- Box 2 Testing
+- Stages of infection
+- Transmission
+- Treatment
+- TB and HIV
+- Biomedical interventions
+- The role of ART treatment in prevention
+- [Chapter 3](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-3)
+- [ What shapes epidemics?](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-3)
+- Biomedical drivers
+- Behaviour
+- Box 3 Data on sex and sexuality
+- Social, economic, political, and other determinants
+- The big picture
+- [Chapter 4](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-4)
+- [ Illness, death, and the demographic impact](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-4)
+- Demography and the epidemic
+- Increased mortality in adults
+- Infant and child mortality
+- Falling life expectancy
+- Changing population composition
+- Orphaning
+- Beyond demographics to social and economic impact
+- [Chapter 5](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-5)
+- [ Production and people](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-5)
+- The conundrum of macro-economic effects
+- AIDS and the private sector
+- Subsistence agriculture and the ‘new variant famine’ hypothesis
+- Families and households
+- The myth of coping
+- [Chapter 6](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-6)
+- [ Development, numbers, and politics](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-6)
+- Development and targets
+- Box 4 The HDI and MDGs
+- Box 5 The health SDG
+- The golden age of specific AIDS goals
+- Politics
+- AIDS, conflict, and security
+- The numbers game
+- The political impact
+- Natural and human disasters
+- [Chapter 7](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-7)
+- [ Treatment and prevention dilemmas](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-7)
+- The public health context
+- HIV prevention
+- AIDS treatment development
+- The state of ART
+- Ways ahead
+- [Chapter 8](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-8)
+- [ Funding the epidemic](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-8)
+- The history of funding
+- Mobilizing international money
+- Taking stock
+- Looking forward
+- Domestic and innovative funding
+- Security is crucial
+- [Chapter 9](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-9)
+- [ Big issues and major challenges](006_FM_contents.xhtml#r_actrade-9780198727491-chapter-9)
+- Location and population
+- Technology
+- Reaching adolescent girls and young women
+- Finance
+- Tipping points
+- [References and further reading](006_FM_contents.xhtml#r_actrade-9780198727491-bibliographyGroup-1)
+- General literature and data
+- Chapter 1: The emergence and state of the HIV and AIDS epidemic
+- Chapter 2: How HIV and AIDS work and scientific responses
+- Chapter 3: What shapes epidemics?
+- Chapter 4: Illness, death, and the demographic impact
+- Chapter 5: Production and people
+- Chapter 6: Development, numbers, and politics
+- Chapter 7: Treatment and prevention dilemmas
+- Chapter 8: Funding the epidemic
+- Chapter 9: Big issues and major challenges
+- [Index](006_FM_contents.xhtml#r_actrade-9780198727491-indexGroup-1)
+- The History of Medicine
+- A Very Short Introduction
+- Sexuality
+- A Very Short Introduction
+- Infectious Diseases
+- A Very Short Introduction
+- Social media
+- Very Short Introduction
+- Epidemiology
+- A Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

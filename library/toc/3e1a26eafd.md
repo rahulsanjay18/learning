@@ -1,0 +1,54 @@
+# TOC: Herodotus - The Histories (Penguin Classics) [Retail]
+grade: A
+
+- The Histories
+  - Contents
+  - Preface
+    - PREFACE TO 1996 REVISED EDITION
+  - Introduction
+    - 1\. HERODOTUS’ LIFE AND WORK
+    - 2\. THE SUBJECT-MATTER OF THE _HISTORIES_
+    - 3\. HERODOTUS’ SOURCES AND METHOD
+    - 4\. STRUCTURE AND THEMES IN THE _HISTORIES_
+    - 5\. HERODOTUS’ LATER REPUTATION
+    - NOTES
+  - Further Reading
+    - 1\. BIBLIOGRAPHIC SURVEYS OF WORK ON HERODOTUS
+    - 2\. TEXTS AND COMMENTARIES
+    - 3\. GENERAL TREATMENTS
+    - 4\. WORKS FREQUENTLY CITED IN THE INTRODUCTION AND NOTES
+  - A Note on the Text
+  - Maps
+    - _The Histories_
+  - BOOK TWO
+  - BOOK THREE
+  - BOOK FOUR
+  - BOOK FIVE
+  - BOOK SIX
+  - BOOK SEVEN
+  - BOOK EIGHT
+  - BOOK NINE
+  - Glossary
+    - UNITS OF MONEY AND DISTANCE
+  - Structural Outline[*](bm02page607.html#bm02fn01)
+  - Chronology
+    - 1\. LYDIAN KINGS
+    - 2\. MEDIAN KINGS
+    - 3\. PERSIAN KINGS
+    - 4\. EGYPTIAN PHARAOHS[1](bm03pg617.html#bm03pg617fn01)
+    - 5\. SPARTAN KINGS
+    - 6\. SELECTED EVENTS, 650–479 BCE
+  - Abbreviations
+    - **1\. ANCIENT AUTHORS AND TEXTS**
+    - **2\. MODERN WORKS**
+  - Notes
+    - BOOK ONE
+    - BOOK TWO
+    - BOOK THREE
+    - BOOK FOUR
+    - BOOK FIVE
+    - BOOK SIX
+    - BOOK SEVEN
+    - BOOK EIGHT
+    - BOOK NINE
+  - Index

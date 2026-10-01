@@ -1,0 +1,158 @@
+# TOC: Branding_-_OxfordUP.VSI_-_Jones,_Robert.Apr.2017
+grade: A
+
+- Branding: A Very Short Introduction
+- Branding
+- A Very Short Introduction
+- Contents
+- [Thank you](008_FM_contents.xhtml#r_actrade-9780198749912-miscMatter-8)
+- [List of illustrations](008_FM_contents.xhtml#r_actrade-9780198749912-miscMatter-9)
+- [Introduction](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-1)
+- [Chapter 1](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-2)
+- [ The triumph of branding](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-2)
+- A larger idea
+- The greatest commercial invention?
+- The most potent cultural form?
+- The last thirty years
+- Identity and belonging
+- Both commerce and culture
+- Box 1 Android: no-one’s and everyone’s
+- [Chapter 2](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-3)
+- [ What is ‘branding’?](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-3)
+- Bigger than a product
+- Standing for something
+- Defining ‘brand’
+- Not just ideas
+- Brand and branding
+- Same and different
+- Making meaning, making value
+- Box 2 Etsy: a platform for makers
+- [Chapter 3](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-4)
+- [ The history of branding](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-4)
+- Marking ownership
+- Guaranteeing quality
+- Box 3 John Lewis: happy employees
+- Promising pleasure
+- Masters of branding
+- Inviting belonging
+- Company v. company
+- Enabling action
+- Where we are now
+- Degrees of control
+- B2B
+- The paradoxes of luxury
+- Wherever there’s a market
+- A constantly morphing force
+- [Chapter 4](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-5)
+- [ How branding works](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-5)
+- Branding changes how we think and feel
+- Thinking fast
+- Inside the brain
+- Branding changes how we act
+- Loyalty is for dogs
+- The pay-off of branding
+- Branding on the inside
+- A corporate asset
+- Secrets of success
+- Box 4 Huawei: hitting with a pillow
+- Branding by numbers
+- The many dimensions of brand impact
+- [Chapter 5](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-6)
+- [ The branding business](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-6)
+- Not always what it seems
+- Managing or leading
+- Brand-led or not?
+- Philosopher and coach
+- Scientist and creative director
+- Bringing in experts
+- Buying creativity
+- The big four
+- Life in an agency
+- Beyond marketing
+- New expectations
+- Marketing and more
+- Box 5 Muji: no brand
+- [Chapter 6](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-7)
+- [ Branding projects](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-7)
+- Just getting on with it
+- Always getting better
+- On purpose
+- What to stand for
+- One or many
+- Getting the product right
+- In your experience
+- The death of advertising?
+- The culture is the brand
+- The magic of design
+- Honestly useful
+- Box 6 Superdry: English Japanese
+- [Chapter 7](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-8)
+- [ The ethics of branding](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-8)
+- Stories or lies?
+- The gaiety of nations
+- Held to account
+- Endless dissatisfaction
+- Commercializing everything
+- Branding for social change
+- Box 7 Wikipedia: a labour of love
+- Good business
+- [Chapter 8](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-9)
+- [ A future for branding?](008_FM_contents.xhtml#r_actrade-9780198749912-chapter-9)
+- What gets branded?
+- Citadel or constellation
+- Brand as affiliation
+- Who’s branding for?
+- The _consommacteur_
+- Brand as platform
+- How should branding feel?
+- Against the formula
+- Brand as pattern
+- Death and life
+- [References](008_FM_contents.xhtml#r_actrade-9780198749912-bibliography-1)
+- Chapter 1: The triumph of branding
+- Coca-Cola in Africa
+- 80% of marketing directors believe their products are differentiated
+- People wouldn’t care if 74% of brands disappeared
+- Brand accounts for more than 30% of the stockmarket value
+- Chapter 2: What is ‘branding’?
+- Definitions of ‘brand’
+- Chapter 3: The history of branding
+- The Cadbury story
+- A 1955 article
+- The producer-consumer
+- No visible logo
+- Chapter 4: How branding works
+- System 1 thinking
+- A brand is an upstream reservoir
+- Loving the brand
+- A study by management consultants
+- Loyal switchers
+- Brand equity
+- BrandZ’s valuation of the Google brand
+- Chapter 5: The branding business
+- Deep inside Procter & Gamble
+- Strategic brand leadership
+- A 2015 survey
+- Chapter 6: Branding projects
+- The Ryanair story
+- Jeff Bezos on 70% shouting
+- Tony Hseih on ‘your culture is your brand’
+- Chapter 7: The ethics of branding
+- Three critics
+- Chapter 8: A future for branding?
+- Active consumers
+- Your brand is what they say it is
+- The mainstream of organizational thinking
+- [Further reading](008_FM_contents.xhtml#r_actrade-9780198749912-bibliography-2)
+- [Index](008_FM_contents.xhtml#r_actrade-9780198749912-indexGroup-1)
+- Social Media
+- A Very Short Introduction
+- Online Catalogue
+- A Very Short Introduction
+- Advertising
+- A Very Short Introduction
+- Globalization
+- A Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

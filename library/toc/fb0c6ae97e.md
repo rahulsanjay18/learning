@@ -1,0 +1,77 @@
+# TOC: Biogeography_-_OxfordUP.VSI_-_Lomolino,_Mark_V_Jul.2020
+grade: A
+
+- Biogeography:  A Very Short Introduction
+- Biogeography
+- A Very Short Introduction
+- Contents
+- [ List of illustrations ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-miscMatter-6)
+- [ Chapter 1](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-1)
+- [ Biological diversity and the geography of nature ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-1)
+- Globalization of the natural sciences
+- _Naturgemälde_ —von Humboldt’s holistic portrait of nature
+- Epiphanies of geography and evolution
+- Fundamental patterns, processes, and unifying principles
+- Natural experiments and the comparative approach
+- Great lessons of Earth and the road ahead
+- [ Chapter 2](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-2)
+- [ Dynamic maps of a dynamic planet ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-2)
+- Life’s geographic template
+- Geography of ecological communities
+- Geographic template of the marine realm
+- A kaleidoscopic planet in eternal flux
+- Geological foundations of adaptive radiations
+- The geological drivers of climate
+- Climatic upheavals of the Pleistocene Epoch
+- Impacts of climate change on the Pleistocene Biota
+- [ Chapter 3](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-3)
+- [ The geography of diversification ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-3)
+- Adaptive radiations, the comparative approach, and natural experiments
+- Galápagos finches and Hawaiian honeycreepers
+- Hawaiian lobeliads and honeycreepers
+- Madagascar’s diverse and endemic lineages
+- The cichlids of Africa’s Rift Valley Lakes
+- Frontiers in research on adaptive radiations
+- [ Chapter 4](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-4)
+- [ Retracing evolution across space and time ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-4)
+- The history of historical biogeography
+- Contemporary historical biogeography
+- Modern visualizations of Buffon’s Law
+- [ Chapter 5](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-5)
+- [ The geography of biological diversity ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-5)
+- Biophilia, biodiversity, and the biogeographer’s macroscope
+- The meaning and measures of biological diversity
+- Geographic gradients across land and sea
+- Species richness among islands
+- Hotspots of diversity and endemicity
+- [ Chapter 6](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-6)
+- [ Macroecology and the geography of micro-evolution ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-6)
+- Macroecology—emergent patterns in the geography of life
+- Ecogeography across land and sea
+- The ecological and evolutionary assembly of insular biotas
+- [ Chapter 7](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-7)
+- [ The geographic and ecological advance of humanity ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-chapter-7)
+- Global colonization of humanity
+- Natural selection and ecogeography of indigenous humans
+- An epilogue of extinction and homogenization
+- The promise of a synergy: conservation biogeography
+- [References and further reading](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-bibliographyGroup-1)
+- Chapter 1: Biological diversity and the geography of nature
+- Chapter 2: Dynamic maps of a dynamic planet
+- Chapter 3: The geography of diversification
+- Sources for Table 1
+- Chapter 4: Retracing evolution across space and time
+- Chapter 5: The geography of biological diversity
+- Chapter 6: Macroecology and the geography of micro-evolution
+- Chapter 7: The geographic and ecological advance of humanity
+- [ Index  ](../Text/006_FM_contents.xhtml#r_actrade-9780198850069-indexGroup-1)
+- Cancer
+- The History of Medicine
+- Superconductivity
+- The History of Life
+- Sleep
+- Sexuality
+- Memory
+- Table of Contents
+  - Landmarks
+  - Pages

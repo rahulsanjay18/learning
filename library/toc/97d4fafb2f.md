@@ -1,0 +1,79 @@
+# TOC: Miracles__-_OxfordUP.VSI_-_Nagasawa,_Yujin.Nov.2017
+grade: A
+
+- Miracles: A Very Short Introduction
+- Miracles
+- A Very Short Introduction
+- Contents
+- [Preface](part0004.html#r_actrade-9780198747215-miscMatter-6)
+- [Acknowledgements](part0004.html#r_actrade-9780198747215-miscMatter-7)
+- [List of illustrations](part0004.html#r_actrade-9780198747215-miscMatter-8)
+- [Chapter 1](part0004.html#r_actrade-9780198747215-chapter-1)
+- [ What are miracles?](part0004.html#r_actrade-9780198747215-chapter-1)
+- ‘Miracles’ in sports
+- ‘Miracles’ in technology
+- ‘Miracles’ in nature
+- Coincidences as miracles
+- Religious signs as miracles
+- Miracles and impossibility
+- Common features of a miracle
+- [Chapter 2](part0004.html#r_actrade-9780198747215-chapter-2)
+- [ What miracles are reported in religious texts?](part0004.html#r_actrade-9780198747215-chapter-2)
+- Production of substances
+- Transformation of substances
+- Multiplication of substances
+- Controlling weather
+- Controlling the sun and the moon
+- Controlling geographical features
+- Walking on water, teleportation, bilocation, and levitation
+- Transfiguration
+- Signs and stigmata
+- Controlling animals and plants
+- Extraordinary childbirth
+- Healing
+- Raising the dead and eternal youth
+- Clairvoyance
+- Retrocognition and precognition
+- Mind reading
+- Exorcism
+- Apparitions
+- Spiritual communication
+- Miracle reports as social, anthropological, or cultural products
+- Why do miracle workers perform miracles?
+- Warnings against dependence on miracles
+- [Chapter 3](part0004.html#r_actrade-9780198747215-chapter-3)
+- [Why do so many people believe in miracles?](part0004.html#r_actrade-9780198747215-chapter-3)
+- The miracle bias hypothesis
+- Infants and violations of the laws of nature
+- Minimal counterintuitiveness
+- Detecting agents’ faces and voices
+- Detecting the intentions of agents
+- Detecting supernatural beings
+- [Chapter 4](part0004.html#r_actrade-9780198747215-chapter-4)
+- [ Is it rational to believe in miracles?](part0004.html#r_actrade-9780198747215-chapter-4)
+- The most crucial question concerning miracles
+- Hume and miracles
+- There has never been enough evidence for miracles: Hume’s first four arguments
+- It is always unreasonable to believe in miracles: Hume’s main argument
+- Implications of Hume’s argument
+- [Chapter 5](part0004.html#r_actrade-9780198747215-chapter-5)
+- [ Can there be miracles without the supernatural?](part0004.html#r_actrade-9780198747215-chapter-5)
+- Altruistic acts of Kolbe and Williams
+- Is altruism a product of evolution?
+- Is altruism an incoherent concept?
+- Miracles, altruism, and the golden rule in the world’s great religions
+- [References and further reading](part0004.html#r_actrade-9780198747215-bibliographyGroup-1)
+- Preface
+- Chapter 1: What are miracles?
+- Chapter 2: What miracles are reported in religious texts?
+- Chapter 3: Why do so many people believe in miracles?
+- Chapter 4: Is it rational to believe in miracles?
+- Chapter 5: Can there be miracles without the supernatural?
+- [Index](part0004.html#r_actrade-9780198747215-indexGroup-1)
+- Agnosticism
+- Catholicism
+- Christian Ethics
+- Druids
+- Classical
+- Fundamentalism
+- Kabbalah

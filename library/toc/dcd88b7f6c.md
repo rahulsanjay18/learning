@@ -1,0 +1,59 @@
+# TOC: British_Empire,_The_-_OxfordUP.VSI_-_Jackson,_Ashley.Jan.2009
+grade: A
+
+- **THE BRITISH EMPIRE
+  - **Acknowledgements**
+  - **Contents**
+  - [**Preface**](ch00_fm08_toc.html#ch00_fm09_prefa)
+  - [**List of illustrations**](ch00_fm08_toc.html#ch00_fm10_illusa)
+  - [**Introduction**](ch00_fm08_toc.html#ch00_fm11_introa)
+  - [**Chapter 1
+    - **Why Britain?**
+    - **An empire of many peoples**
+    - **The Empire’s constituent parts**
+    - **The ‘white’ dominions**
+    - **India and the colonial empire**
+    - **Mandates and condominiums**
+    - **Treaty relationships and informal empire**
+  - [**Chapter 2
+    - **An economic bloc and field of opportunity**
+    - **A cultural universe**
+    - **Empire and British culture**
+    - **A system of knowledge**
+    - **A racial construction**
+    - **A strategic and military system**
+    - **A transformer of the natural world and the built environment**
+    - **A constantly contested realm**
+  - [**Chapter 3
+    - **Relative power vis-à-vis indigenous societies and great power rivals**
+    - **The law of unintended consequences**
+    - **The actions of individuals, organizations, and governments**
+    - **Maritime requirement, war, and strategy**
+    - **Trade and commerce**
+    - **Religion**
+    - **Settlement and migration**
+  - [**Chapter 4
+    - **Origins of empire to the seventeenth century**
+    - **The eighteenth century**
+    - **The nineteenth century**
+    - **The twentieth century**
+  - [**Chapter 5
+  - [**Chapter 6
+    - **International legacies**
+    - **Legacies in Britain and the colonies**
+    - **Psychological legacies**
+    - **Auditing the British Empire**
+  - [Conclusion](ch00_fm08_toc.html#ch07_cona)
+  - [References and further reading](ch00_fm08_toc.html#ch08_refa)
+    - General further reading
+    - Preface
+    - Introduction
+    - Chapter 1: The red on the map
+    - Chapter 2: Defining empire: key characteristics
+    - Chapter 3: Engines of expansion
+    - Chapter 4: Rise and fall
+    - Chapter 5: Writing the Empire story
+    - Chapter 6: Legacies
+  - [Index](ch00_fm08_toc.html#ch09_indexa)
+  - JOIN OUR COMMUNITY
+    - [www.oup.com/vsi](http://www.oup.com/vsi)

@@ -1,0 +1,39 @@
+# TOC: Midnight's Children _ a Novel -- Rushdie, Salman -- Booker Prize Winner, 2010 -- Vintage Canada -- 9780307367754 -- 38f988bba53391c70e3964cda75f7dca -- Anna’s Archive
+grade: A
+
+- Introduction to the 25th Anniversary Edition
+- CONTENTS
+- BOOK ONE
+- The Perforated Sheet
+- Mercurochrome
+- Hit-the-Spittoon
+- Under the Carpet
+- A Public Announcement
+- Many-headed Monsters
+- Methwold
+- Tick, Tock
+- BOOK TWO
+- The Fisherman’s Pointing Finger
+- Snakes and Ladders
+- Accident in a Washing-chest
+- All-India Radio
+- Love in Bombay
+- My Tenth Birthday
+- At the Pioneer Café
+- Alpha and Omega
+- The Kolynos Kid
+- Commander Sabarmati’s Baton
+- Revelations
+- Movements Performed by Pepperpots
+- Drainage and the Desert
+- Jamila Singer
+- How Saleem Achieved Purity
+- BOOK THREE
+- The Buddha
+- In the Sundarbans
+- Sam and the Tiger
+- The Shadow of the Mosque
+- A Wedding
+- Midnight
+- Abracadabra
+- About the Author

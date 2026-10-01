@@ -1,0 +1,89 @@
+# TOC: (Legend of the Galactic Heroes 2) Tanaka, Yoshiki_ Huddleston, Daniel - Ambition
+grade: A
+
+  - Galactic Empire
+    - Siegfried Kircheis Reinhard’s trusted advisor. Senior admiral. Vice commander in chief of the Imperial Space Armada.
+    - Annerose von Grünewald Reinhard’s elder sister. Countess von Grünewald.
+    - Paul von Oberstein Chief of staff of the Imperial Space Armada. Vice admiral.
+    - Wolfgang Mittermeier Fleet commander. Admiral. Known as the “Gale Wolf.”
+    - Oskar von Reuentahl Fleet commander. Admiral. Has heterochromatic eyes.
+    - Karl Gustav Kempf Fleet commander. Vice admiral.
+    - Fritz Josef Wittenfeld Commander of the Schwarz Lanzenreiter fleet. Vice admiral.
+    - Hildegard von Mariendorf Daughter of Count Franz von Mariendorf.
+    - Klaus Lichtenlade Prime minister. Duke.
+    - Gerlach Vice prime minister. Viscount.
+    - Otto von Braunschweig Leader of the confederated aristocratic forces. Duke.
+    - Ansbach Von Braunschweig’s loyal subject.
+    - Wilhelm von Littenheim Marquis.
+    - Bernhard von Schneider Merkatz’s aide.
+    - Staden Admiral in the confederated aristocratic forces.
+    - Adalbert Fahrenheit Admiral in the confederated aristocratic forces.
+    - Ofresser Commissioner of the Armored Grenadier Corps. Senior admiral.
+    - Erwin Josef II 37th emperor of the Galactic Empire.
+    - Rudolf von Goldenbaum Founder of the Galactic Empire’s Goldenbaum Dynasty.
+  - Free Planets Alliance
+    - Yang Wen-li Commander of Iserlohn Fortress. Commander of Iserlohn Patrol Fleet. Admiral. Undefeated genius commander.
+    - Julian Mintz Yang’s ward. Civilian employed by the military; treated equivalent to a lance corporal.
+    - Frederica Greenhill Yang’s aide. Lieutenant.
+    - Alex Caselnes Administrative director of Iserlohn Fortress. Rear admiral.
+    - Walter von Schönkopf Commander of fortress defenses at Iserlohn Fortress. Commodore.
+    - Edwin Fischer Vice commander of the Iserlohn Patrol Fleet. Master of fleet operations. Rear admiral.
+    - Murai Chief of staff. Rear admiral.
+    - Fyodor Patrichev Deputy chief of staff. Commodore.
+    - Dusty Attenborough Commander of one division in the Yang Fleet. Yang’s underclassman. Rear admiral.
+    - Olivier Poplin Captain of the First Fortress Spaceborne Divison at Iserlohn Fortress. Lieutenant commander.
+    - Cubresly Director of Joint Operational Headquarters. Admiral.
+    - Alexandor Bucock Commander in chief of the Alliance Armed Forces Space Armada. Admiral.
+    - Sidney Sitolet Former director of Joint Operational Headquarters. Marshal.
+    - Dwight Greenhill Director of field investigations on
+    - Jessica Edwards Representative in the National Assembly. Spearheads the antiwar movement. Old friend of Yang’s.
+    - Job Trünicht Head of State. Chairman of the High Council.
+    - Arthur Lynch Deserter who abandoned the civilians of Planet El Facil.
+    - Andrew Fork Former chief intelligence staff officer for the expeditionary force to imperial territory.
+    - Bagdash Military Intelligence Bureau operative. Commander.
+  - Phezzan Dominion
+    - Adrian Rubinsky The fifth landesherr. Known as the “Black Fox of Phezzan.”
+    - Nicolas Boltec Rubinsky’s aide.
+    - Boris Konev Independent merchant. Captain of the trading ship Beryozka.
+    - Marinesk Administrative officer on board Beryozka.
+    - Grand Bishop Ruler in Rubinsky’s shadow.
+    - II
+    - III
+    - IV
+    - VI
+    - II
+    - III
+    - IV
+    - VI
+    - VII
+    - II
+    - III
+    - IV
+    - II
+    - III
+    - IV
+    - VI
+    - II
+    - III
+    - IV
+    - II
+    - III
+    - IV
+    - VI
+    - VII
+    - II
+    - III
+    - IV
+    - II
+    - III
+    - IV
+    - II
+    - III
+    - IV
+    - VI
+    - VII
+- about the author
+- HAIKASORU
+  - THE FUTURE IS JAPANESE
+    - Travel Space and Time With Haikasoru!
+  - [WWW.HAIKASORU.COM](http://www.haikasoru.com)

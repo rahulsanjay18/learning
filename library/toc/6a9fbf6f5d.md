@@ -1,0 +1,403 @@
+# TOC: RHCSA_RHCSE Book
+grade: A
+
+- ---
+- virt-install -n outsider1.example.org -r 1024 --disk
+- virt-install -n outsider1.example.org -r 1024 --disk \
+- rpm --query --all
+- rpm --query -all
+- uname -p
+- sha256sum rhel-server-7.0-x86_64-dvd.iso
+- dd if=name-of-image.iso of=/dev/sdc bs=512k
+- ssh michael@192.168.122.50
+- sysctl -p
+- mount /dev/cdrom /media
+- mount -o loop rhel-server-7.0-x86_64-dvd.iso /media
+- cp -a /media/. /path/to/dir
+- yum -y install httpd
+- systemctl start httpd
+- systemctl enable httpd
+- mount /dev/cdrom /media
+- mount -o loop rhel-server-7.0-x86_64-dvd.iso /media
+- mkdir /var/www/html/inst
+- cp -a /media/. /var/www/html/inst/
+- chcon -R --reference=/var/www/html /var/www/html/inst
+- firewall-cmd --permanent --add-service=http
+- firewall-cmd --reload
+- systemctl restart httpd
+- systemctl enable httpd
+- yum install vsftpd
+- systemctl start vsftpd
+- firewall-cmd --permanent --add-service=ftp
+- firewall-cmd --reload
+- systemctl enable vsftpd
+- mkdir /var/ftp/pub/inst
+- firewall-cmd --permanent --add-service=ftp
+- firewall-cmd --reload
+- chcon -R -t public_content_t /var/ftp/
+- systemctl restart vsftpd
+- systemctl enable vsftpd
+- yum group install "Virtualization Host" "Virtualization Client"
+- lsmod | grep kvm
+- modprobe kvm_intel
+- semanage fcontext -a -t virt_image_t '/home/michael/KVM(/.*)?'
+- restorecon /home/michael/KVM
+- rmdir /var/lib/libvirt/images
+- ln -s /home/michael/KVM /var/lib/libvirt/images
+- virsh destroy tester1.example.com
+- virsh undefine tester1.example.com --remove-all-storage
+- virt-install -n outsider1.example.org -r 1024 --disk \
+- virsh start server1.example.com
+- virsh shutdown server1.example.com
+- virsh destroy server1.example.com
+- virsh autostart tester1.example.com
+- virsh autostart --disable tester1.example.com
+- ls -Zd /var/ftp/pub
+- ls -Z /var/ftp/pub
+- ignoredisk --only-use=vda
+- ksvalidator ks.cfg
+- chmod +r /var/ftp/pub/ks.cfg
+- restorecon /var/ftp/pub/ks.cfg
+- firewall-cmd --permanent --add-service=ftp
+- firewall-cmd --reload
+- yum install system-config-kickstart
+- system-config-kickstart /root/anaconda-ks.cfg
+- scp F02-20.tif michael@server1:/home/michael/RHbook/Chapter2/
+- mutt -f pop://username@host
+- ftp ftp.redhat.com
+- mount
+- df -m
+- yum update
+- Besides ownership and permissions, other differences between regular and administrative
+- cat filename
+- database < datafile
+- dmesg | less
+- ls > filelist
+- program 2> err-list
+- program 2> /dev/null
+- program &> output-and-error
+- echo $PATH
+- ls -l /etc/passwd
+- touch /etc/passwd
+- ls -l /etc/passwd
+- cp -a /home/michael/. /mnt/backup/
+- ln /etc/samba/smb.conf smb.conf
+- ln -s /etc/samba/smb.conf smb.conf
+- rm -rf /root/rpmbuild/BUILD/kernel-3.10.0-123.el7
+- rm -rf / root/rpmbuild/BUILD/kernel-3.10.0-123.el7
+- mkdir test
+- mkdir /test
+- mkdir -p test1/test2/test3
+- mkdir test1
+- mkdir test1/test2
+- mkdir test1/test2/test3
+- rmdir -p test1/test2/test3
+- find / -name named.conf
+- find /usr -name named.conf
+- /etc/cron.daily/mlocate
+- less /var/log/messages
+- man cat
+- less /usr/share/man/man1/cat.1.gz
+- tail -f /var/log/secure
+- grep -v -e '^$' -e '^#' /etc/nsswitch.conf
+- diff /root/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+- sed 's/Windows/Linux/' opsys > newopsys
+- sed 's/Windows/Linux/g' opsys > newopsys
+- sed 's/writable = yes/writable = no/g' /etc/samba/smb.conf > ~/smb.conf
+- awk -F : '/mike/ {print $4}' /etc/passwd
+- export EDITOR=/bin/nano
+- echo 'export EDITOR=/bin/nano' >> /etc/environment
+- whatis nfs
+- apropos nfs
+- /etc/cron.daily/man-db.cron
+- ping 127.0.0.1
+- ping 192.168.122.50
+- traceroute -n 192.168.20.5
+- ip addr show eth0
+- ip addr add 192.168.122.150/24 dev eth0
+- ip link set dev eth0 down
+- ip link set dev eth0 up
+- ip neigh show
+- dhclient eth0
+- ss -tuna4
+- systemctl status network
+- systemctl restart network
+- nmcli con reload
+- nmcli con down eth0
+- nmcli con up eth0
+- nmcli con show
+- nmcli con add con-name "eth0-work" type ethernet ifname eth0
+- nmcli con mod "eth0-work" ipv4.addresses 
+- nmcli con mod "eth0-work" +ipv4.dns 192.168.20.1
+- nmcli con up "eth0-work"
+- nmcli con mod "eth0-work" connection.autoconnect no
+- dig @192.168.122.1 mheducation.com
+- host mheducation.com 192.168.122.1
+- chattr -i /root/backup/*
+- yum install firewall-config
+- chmod u+x Ch3Lab1
+- chmod go-w special
+- chmod g=rw special
+- chmod +x Ch3Lab2
+- chmod 4764 testfile
+- chmod g+s testscript
+- chmod o+t /test
+- chown elizabeth F04-01.tif
+- chown donna.supervisors F04-01.tif
+- chgrp project F04-01.tif
+- chattr +i /etc/fstab
+- rm /etc/fstab
+- lsattr /etc/fstab
+- chattr -i /etc/fstab
+- file: anaconda-ks.cfg
+- owner: root
+- group: root
+- mount -o remount -o acl /home
+- mount -o remount /home
+- file home/examprep/TheAnswers
+- owner: examprep
+- group: proctors
+- setfacl -m u:michael:rwx /home/examprep/TheAnswers
+- setfacl -x u:michael /home/examprep/TheAnswers
+- setfacl -m g:teachers:r /home/examprep/TheAnswers
+- setfacl -m u:michael:- /home/examprep
+- setfacl -b /home/examprep/TheAnswers
+- setfacl -m o:rwx /home/examprep/TheAnswers
+- setfacl -m o:- /home/examprep/TheAnswers
+- chmod 701 /home/examprep
+- setfacl -m u:michael:x /home/examprep
+- setfacl -R -m u:michael:rx /home/examprep
+- setfacl -R -x u:michael /home/examprep
+- setfacl -R -b /home/examprep
+- setfacl -d -m u:michael:rx /home/examprep
+- getfacl /home/examprep
+- file: home/examprep
+- owner: examprep
+- group: examprep
+- setfacl -m mask:r-- /home/examprep/TheAnswers
+- iptables -L
+- systemctl status firewalld
+- systemctl stop iptables
+- systemctl disable iptables
+- systemctl start firewalld
+- systemctl enable firewalld
+- systemctl stop firewalld
+- systemctl disable firewalld
+- systemctl start iptables
+- systemctl enable iptables
+- firewall-cmd --get-default-zone
+- firewall-cmd --set-default-zone=internal
+- firewall-cmd --get-default-zone
+- The option --list-all is particularly useful. It lists all the configured interfaces and
+- firewall-cmd --list-all
+- As with many of the firewall-cmd command
+- firewall-cmd --zone=dmz --add-service=http
+- By default, all configuration changes made by firewall-cmd do not survive a server
+- yum install telnet-server
+- systemctl start telnet.socket
+- firewall-cmd --list-all
+- firewall-cmd --permanent --add-service=telnet
+- firewall-cmd --reload
+- setenforce enforcing
+- setenforce permissive
+- semanage login -a -s user_u michael
+- semanage login -m -S targeted -s "user_u" -r s0 __default__
+- semanage login -m -S targeted -s "unconfined_u" \
+- setsebool user_exec_content off
+- ls -Z /var/ftp/
+- chcon -R -u system_u -t public_content_t /ftp
+- chcon -R -u system_u -t public_content_rw_t /ftp
+- chcon -R --reference /var/ftp /ftp
+- restorecon -F /ftp
+- ls -Zd /ftp
+- semanage fcontext -a -t public_content_t '/ftp(/.*)?'
+- restorecon -RF /ftp
+- ls -Zd /ftp
+- ausearch -m avc -c sudo
+- chmod 600 question1
+- chown professor.assistants question2
+- chattr +a question3
+- getfacl question4
+- setfacl -m g:managers:r /home/project/project5
+- setfacl -m g:temps:- /home/project/secret6
+- firewall-cmd --permanent --add-service=http
+- setenforce enforcing
+- semanage login -l
+- semanage boolean -l
+- setfacl -b u:michael /root
+- semanage login -d michael
+- systemctl get-default
+- pwmake 128 | passwd --stdin root
+- mount -o remount,rw /sysroot
+- chroot /sysroot
+- passwd
+- touch /.autorelabel
+- grub2-mkconfig -o /boot/grub2/grub.cfg
+- grub2-set-default 1
+- rpm -qc grub2-tools
+- rm -f /etc/default/grub
+- rm -f /etc/grub.d/*
+- yum reinstall grub2-tools
+- grub2-mkconfig -o /boot/grub2/grub.cfg
+- systemctl list-units --type=service --all
+- systemctl list-units --type=target --all
+- ls -l /usr/lib/systemd/system/runlevel?.target
+- systemctl list-dependencies graphical.target
+- systemctl get-default
+- systemctl set-default multi-user.target
+- systemctl get-default
+- systemctl isolate multi-user.target
+- systemctl isolate poweroff.target
+- systemctl poweroff
+- systemctl reboot
+- shutdown
+- reboot
+- systemd-analyze time
+- mkdir /var/log/journal
+- chgrp systemd-journal /var/log/journal
+- chmod 2775 /var/log/journal
+- systemctl restart systemd-journald.service
+- systemctl list-dependencies rsyslog.service
+- systemctl list-units
+- systemctl list-unit-files
+- systemctl get-default
+- ls /etc/systemd/system/graphical.target.wants
+- systemctl status rsyslog.service
+- systemctl status rsyslog
+- systemctl stop rsyslog.service
+- systemctl reload sshd.service
+- systemctl list-unit-files --type=service
+- systemctl list-unit-files | grep postfix.service
+- systemctl is-enabled postfix.service
+- systemctl disable postfix.service
+- systemctl enable postfix.service
+- systemctl mask postfix.service
+- timedatectl list-timezones
+- timedatectl set-timezone America/Los_Angeles
+- systemctl restart chrnoyd
+- systemctl stop chronyd.service
+- systemctl disable chronyd.service
+- yum install ntp
+- systemctl start ntpd.service
+- systemctl enable ntpd.service
+- systemctl set-default multi-user.target
+- rm -f /etc/systemd/system/default.target
+- ln -s /usr/lib/systemd/system/multi-user.target 
+- grub2-mkconfig -o /boot/grub2/grub.cfg
+- chroot /mnt/sysimage
+- cp /root/backup/grub.cfg /boot/grub2/
+- fdisk /dev/vda
+- A wide variety of commands are associated with fdisk—and more if you run the x
+- fdisk /dev/vdb
+- fdisk /dev/vdb
+- mkswap /dev/vdb2
+- swapon /dev/vdb2
+- mkfs.xfs /dev/vdb1
+- parted /dev/vdb
+- parted /dev/vdb print
+- fdisk -l /dev/sdb
+- mkfs -t xfs /dev/sdb5
+- mkfs.xfs /dev/sdb5
+- umount /var
+- fsck -t xfs /dev/sda7
+- mount /dev/sda7 /var
+- pvcreate /dev/sda1
+- pvcreate /dev/sda1 /dev/sda2 /dev/sdb1 /dev/sdb2
+- vgcreate volumegroup /dev/sda1 /dev/sda2
+- vgextend volumegroup /dev/sdb1 /dev/sdb2
+- lvcreate -l number_of_PEs volumegroup -n logvol
+- lvcreate -L 200M volumegroup -n flex
+- umount /dev/vg_01/lv_01
+- lvremove /dev/vg_01/lv_01
+- vgextend vg_00 /dev/sdd1
+- vgdisplay vg_00
+- lvextend -L 2000M /dev/vg_00/lv_00
+- lvextend -L 2G /dev/vg_00/lv_00
+- lvextend -L +1G /dev/vg_00/lv_00
+- xfs_growfs /dev/vg_00/lv_00
+- mkfs.xfs -f /dev/vg_00/lv_00
+- df -h
+- blkid /dev/rhel_server1/root
+- xfs_admin -u /dev/rhel_server1/root
+- xfs_admin -u /dev/vda1
+- dumpe2fs /dev/mapper/rhel_server1-test | grep UUID
+- mount -a
+- mount -o remount,ro /boot
+- mount -o remount,acl /dev/vda5 /home
+- mount -o loop rhel-server-7.0-x86_64-dvd.iso /mnt
+- mount -t iso9660 /dev/sr0 /mnt
+- mount -t nfs server1.example.com:/pub /share
+- /home /etc/auto.home
+- /etc/auto.net 192.168.122.1 -fstype=nfs,hard,intr,nodev,nosuid \
+- ls /net/192.168.122.1/srv/ftp
+- systemctl restart autofs
+- /etc/auto.smb server1.example.com
+- systemctl stop autofs
+- systemctl start autofs
+- systemctl restart autofs
+- systemctl reload autofs
+- ls /misc/cd
+- systemctl start autofs
+- systemctl reload autofs
+- ls /misc/cd
+- blkid <device_path>
+- /etc/auto.net 192.168.122.50
+- ls /net/192.168.122.50/tmp
+- rpm -i policycoreutils-gui-2.2.5-11.el7.x86_64.rpm
+- rpm -i packagename
+- rpm -U packagename
+- rpm -F packagename
+- rpm -ivh packagename-version.arch.rpm
+- rpm -U penguin-3.26.x86_64.rpm
+- rpm -ivh ftp://ftp.rpmdownloads.com/pub/foo.rpm
+- rpm -ivh ftp://192.168.122.1/pub/inst/policycoreutils-gui 
+- rpm -ivh ftp://mjang:Ila451MS@192.168.122.1/pub/inst/policycoreutils-gui 
+- rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+- rpm -ivh newkernel
+- yum install kernel
+- rpm -q systemd
+- rpm -qlp epel-release-7-5.noarch.rpm
+- rpm --checksig pkg-1.2.3-4.noarch.rpm
+- rpm --verify –a
+- rpm --verify -p vsftpd-3.0.2-9.el7.x86_64.rpm
+- rpm --verify --file /bin/ls
+- rpm --verify --file /bin/vi
+- rpm --verify -p sssd-client-1.11.2-65.el7.x86_64.rpm
+- mount /dev/cdrom /media
+- rpm -ivh gcc-
+- yum install gcc xmlto hmaccalc elfutils-devel binutils-devel \
+- yum-config-manager
+- PUT YOUR REPOS HERE OR IN separate files named file.repo
+- in /etc/yum.repos.d
+- PUT YOUR REPOS HERE OR IN separate files named file.repo
+- in /etc/yum.repos.d
+- yum clean all
+- yum makecache
+- yum install system-config-date
+- cp  -a /etc/yum.repos.d /root/
+- rm –f /etc/yum.repos.d/*.repo
+- mount /dev/cdrom /mnt
+- mount -o loop rhel-server-7.0-x86_64-dvd.iso /mnt
+- mkdir -p /opt/repos/rhel7
+- cp -a /mnt/. /opt/repos/rhel7
+- rpm -ivh https://dl.fedoraproject.org/pub/epel/7/x86_64/e/ 
+- yum
+- yum info samba
+- yum install samba
+- yum update samba
+- yum remove samba
+- yum update
+- yum whatprovides "*.repo"
+- yum install samba
+- yum group list
+- yum group info "Basic Web Server"
+- yum group list hidden
+- yum group info "Remote Desktop Clients"
+- yum group install "Remote Desktop Clients"
+- yum install tigervnc
+- yum group info "Print Server"
+- yum group install "Print Server"
+- yum group install "Print Server" -x paps -x gutenprint-cups
+- yum group info "Print Server"
+- yum group remove "Print Server"
+- yum-config-manager --add-repo="http://192.168.122.1/inst"

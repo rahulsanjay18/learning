@@ -1,0 +1,52 @@
+# TOC: Jewish_History_-_OxfordUP.VSI_-_Myers,_David_N_Feb.2017
+grade: A
+
+- Jewish History: A Very Short Introduction
+- Jewish History
+- A Very Short Introduction
+- Contents
+- [List of illustrations](007_FM_contents.xhtml#r_actrade-9780199730988-miscMatter-7)
+- [Acknowledgments](007_FM_contents.xhtml#r_actrade-9780199730988-miscMatter-8)
+- [Introduction](007_FM_contents.xhtml#r_actrade-9780199730988-miscMatter-9)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-1)
+- [ Names](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-1)
+- Tribe
+- People of the Book
+- Diaspora people
+- Nation
+- Race
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-2)
+- [ Numbers](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-2)
+- How many Israelites were there?
+- Jews and cities
+- Jews under Islam and Christianity in the Middle Ages
+- The Spanish Expulsion and its ripples
+- The modern age: growth and loss
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-3)
+- [ Cultures](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-3)
+- The monotheistic revolution and ancient Jewish culture
+- The universalizing revolution and medieval Jewish cultures
+- The secular revolution and modern Jewish cultures
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-4)
+- [ Politics](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-4)
+- Jews and the community
+- Jews and the state
+- Jews and the self
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-5)
+- [ Perceptions](007_FM_contents.xhtml#r_actrade-9780199730988-chapter-5)
+- “A novel form of worship opposed to all that is practised by other men”
+- “Money is the jealous God of Israel”
+- “The world’s foremost problem”
+- The burdens and benefits of exceptionalism
+- [References](007_FM_contents.xhtml#r_actrade-9780199730988-bibliography-1)
+- Introduction
+- Chapter 1: Names
+- Chapter 2: Numbers
+- Chapter 3: Cultures
+- Chapter 4: Politics
+- Chapter 5: Perceptions
+- [Further reading](007_FM_contents.xhtml#r_actrade-9780199730988-bibliography-2)
+- [Index](007_FM_contents.xhtml#r_actrade-9780199730988-indexGroup-1)
+- Table of Contents
+  - Landmarks
+  - Pages

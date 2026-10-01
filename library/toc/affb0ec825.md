@@ -1,0 +1,93 @@
+# TOC: Gothic,_The_-_OxfordUP.VSI_-_Groom,_Nick.Dec.2012
+grade: A
+
+- **THE GOTHIC**
+  - **Contents**
+  - [**Preface: a history of the Gothic in thirteen chapters**](contents.html#preface)
+    - **Times past**
+  - [**Acknowledgements**](contents.html#ack)
+  - [**List of illustrations**](contents.html#illustrations)
+  - [Chapter 1
+    - **First blood**
+    - **Visigoths**
+    - **Ostrogoths**
+    - **Gothica**
+  - [Chapter 2
+    - **Norman**
+    - **First pointed or early English**
+    - **Decorated**
+    - **Perpendicular**
+    - **The grinning skull**
+  - [Chapter 3
+    - **Reformation**
+    - **Dissolution**
+    - **Counter-Reformation**
+  - [Chapter 4
+    - **Ballads**
+    - **Revenge Tragedy**
+    - **Ghosts, devils, witches**
+  - [Chapter 5
+    - **Return of the Goths**
+    - **Politics of ruin**
+    - **‘Of poetry’**
+  - [Chapter 6
+    - **Unionist Goths**
+    - **The Goth in the garden**
+    - **Gothic letters**
+  - [Chapter 7
+    - **Warton and Hurd**
+    - **Walpole and Leland**
+    - **Percy and Johnson**
+    - **Chatterton and Rowley**
+  - [Chapter 8
+    - **Mediaevalism**
+    - **Revolution**
+    - **The terror and the horror**
+  - [Chapter 9
+    - **Romanticism**
+    - **Science**
+    - **Vampires**
+  - [Chapter 10
+    - **Monasteries or castles?**
+    - **Churches**
+    - **The State**
+  - [Chapter 11
+    - **New World, new terror**
+    - **White Gothic**
+    - **Black Gothic**
+  - [Chapter 12
+    - **Weimar**
+    - **Hollywood**
+    - **Hammer**
+  - [Chapter 13
+    - **Goth-on-Goth film**
+    - **Cinema horribilis**
+    - **The final chapter**
+  - [**References**](contents.html#references)
+    - **Preface**
+    - **[Chapter 1](ch01.html#ch01): Origins of the Goths**
+    - **[Chapter 2](ch02.html#ch02): The ascent to heaven**
+    - **[Chapter 3](ch03.html#ch03): The iconoclasts**
+    - **[Chapter 4](ch04.html#ch04): The revenge of the dead**
+    - **[Chapter 7](ch07.html#ch07): The sixties**
+    - **[Chapter 11](ch11.html#ch11): New England Goths**
+    - **[Chapter 12](ch12.html#ch12): Goths at the movies**
+    - **[Chapter 13](ch13.html#ch13): First and last and always**
+  - [**Further reading**](contents.html#furtherreading)
+    - **Introductions**
+    - **The Goths in late antiquity**
+    - **Mediaeval Gothic**
+    - **Early modern religion and politics**
+    - **Early modern culture**
+    - **Later literature**
+    - **Later architecture**
+    - **Visual image**
+    - **Goth culture**
+    - **Recommended music**
+  - [**Index**](contents.html#index)
+  - **E NGLISH LITERATURE**
+    - **A Very Short Introduction**
+  - **R OMANTICISM**
+    - **A Very Short Introduction**
+  - **W ITCHCRAFT**
+    - **A Very Short Introduction**

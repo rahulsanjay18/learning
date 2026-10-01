@@ -1,0 +1,106 @@
+# TOC: Poststructuralism_-_OxfordUP.VSI_-_Belsey,_Catherine.Dec.2002
+grade: A
+
+- **POSTSTRUCTURALISM**
+  - **Contents**
+  - **List of illustrations**
+  - **Chapter 1
+    - **A question of meaning**
+    - **Language and knowledge**
+    - **Language and cultural change**
+    - **Poststructuralism and language**
+    - **The importance of language**
+    - **Meaning**
+    - **Difference, not reference**
+    - **Saussure and the sign**
+    - **The primacy of the signifier**
+    - **‘The Death of the Author’**
+    - **Citationality**
+    - **The reader**
+    - **Popular usage**
+  - **Chapter 2
+    - **A world of myths**
+    - **The everyday**
+    - **Your turn**
+    - **Nature or history?**
+    - **‘Eternal Man’**
+    - **Marxism and ideology**
+    - **‘Ideological State Apparatuses’**
+    - **The subject**
+    - **Ideology or myth?**
+    - **Structuralism or poststructuralism?**
+    - **Is _Mythologies_ poststructuralist?**
+    - **And Althusser?**
+  - **Chapter 3
+    - **Death in Paris**
+    - **Brought into line**
+    - **Free subjects?**
+    - **Foucault**
+    - **Resistance**
+    - **Sexual ‘norms’**
+    - **Psychoanalysis**
+    - **The subject of desire**
+    - **Prohibitions**
+    - **Venus**
+    - **Strangers to ourselves?**
+    - **Scandal**
+    - **Mind and body**
+    - **It’s a hard life**
+    - **Oppositions**
+  - **Chapter 4
+    - **Objective knowledge?**
+    - **The subject to the rescue?**
+    - **The poststructuralist alternative**
+    - **Deconstruction**
+    - **Binary oppositions**
+    - **Deconstructing Lévi-Strauss**
+    - **Deconstructing Saussure**
+    - **Deconstruction, not critique**
+    - **Sonnet 18**
+    - **Differance**
+    - **The strange case of Richard Mutt**
+    - **The implications of undecidability**
+  - **Chapter 5
+    - **Programmed?**
+    - **Responsibility**
+    - **Heroism**
+    - **Sublimation**
+    - **Antagonism**
+    - **Dissension**
+    - **Language games**
+    - **Nodal points**
+    - **The avant-garde**
+    - **Terror**
+    - **‘A Postmodern Fable’**
+    - **Poststructuralism and reflection**
+  - **References**
+    - **Chapter 1**
+    - **Chapter 2**
+    - **Chapter 3**
+    - **Chapter 4**
+    - **Chapter 5**
+  - **Further reading**
+  - **Glossary**
+  - **Index**
+    - **A**
+    - **B**
+    - **C**
+    - **D**
+    - **E**
+    - **F**
+    - **G**
+    - **H**
+    - **I**
+    - **J**
+    - **K**
+    - **L**
+    - **M**
+    - **P**
+    - **R**
+    - **S**
+    - **T**
+    - **U**
+    - **W**
+    - **Z**
+  - **Expand your collection of
+  - **Visit the

@@ -1,0 +1,105 @@
+# TOC: American_Naval_History_-_OxfordUP.VSI_-_Symonds,_Craig_L_Feb.2018
+grade: A
+
+- American Naval History: A Very Short Introduction
+- American Naval History
+- A Very Short Introduction
+- Contents
+- [List of illustrations](007_FM_contents.xhtml#r_actrade-9780199394760-miscMatter-7)
+- [Preface](007_FM_contents.xhtml#r_actrade-9780199394760-miscMatter-8)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-1)
+- [An ad hoc navy:  the Revolutionary War (1775–1783)](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-1)
+- British Naval Dominance
+- Lake Champlain
+- The Continental Navy
+- John Paul Jones
+- Privateers
+- The French navy
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-2)
+- [Establishing an American navy: the Age of Sail (1783–1809)](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-2)
+- The Barbary threat
+- The Quasi War
+- The First Barbary War
+- Jefferson and the embargo
+- The gunboat navy
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-3)
+- [An American navy confirmed: the War of 1812](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-3)
+- The road to war
+- Early campaigns
+- The frigate duels
+- Other naval operations
+- Peace
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-4)
+- Pirates
+- The slave trade
+- Exploring new worlds
+- Evolving navy culture
+- Manifest destiny and war with Mexico
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-5)
+- [Steam and iron: the Civil War navy (1850–1865)](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-5)
+- A technological transformation
+- The Anaconda Plan and the naval blockade
+- The clash of ironclads
+- Confederate commerce raiding
+- The river war
+- The battle against the shore
+- [Chapter 6](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-6)
+- [The doldrums and the new navy (1865–1900)](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-6)
+- Retrenchment
+- Straws in the Wind
+- The new navy
+- A splendid little war
+- [Chapter 7](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-7)
+- The Great White Fleet
+- The Panama Canal
+- The U.S. Navy and World War I
+- The treaty navy
+- The interwar navy
+- [Chapter 8](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-8)
+- [The two-ocean navy: the U.S. Navy in World War II (1939–1945)](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-8)
+- The undeclared naval war
+- The Pacific, 1941–1943
+- The Mediterranean, 1943–1944
+- The Central Pacific drive, 1943–1944
+- D-Day
+- Iwo Jima, Okinawa, and the end of the war
+- [Chapter 9](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-9)
+- [Confronting the Soviets: the Cold War navy (1945–1975)](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-9)
+- Defense unification and deterrence
+- The Korean War
+- The Middle East
+- The Cuban Missile Crisis, 1962
+- The Vietnam War, 1965–1974
+- U.S. Navy culture
+- [Chapter 10](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-10)
+- [The U.S. Navy in the twenty-first century](007_FM_contents.xhtml#r_actrade-9780199394760-chapter-10)
+- The end of the Cold War
+- The wars in iraq and Afghanistan
+- Pirates and Smugglers
+- Navy culture
+- The U.S. Navy today
+- [References](007_FM_contents.xhtml#r_actrade-9780199394760-bibliography-1)
+- Chapter 2: Establishing an American Navy
+- Chapter 3: An American Navy Confirmed
+- Chapter 4: A Constabulary Navy
+- Chapter 5: Steam and Iron
+- Chapter 6: The Doldrums and the New Navy
+- Chapter 8: The Two-Ocean Navy
+- Chapter 9: Confronting the Soviets
+- Chapter 10: The U.S. Navy in the Twenty-First Century
+- [Further reading](007_FM_contents.xhtml#r_actrade-9780199394760-bibliography-2)
+- General
+- Chapter 1: An Ad Hoc Navy
+- Chapter 2: Establishing an American Navy
+- Chapter 3: An American Navy Confirmed
+- Chapter 4: A Constabulary Navy
+- Chapter 5: Steam and Iron
+- Chapter 6: The Doldrums and The New Navy
+- Chapter 7: A Navy Second to None
+- Chapter 8: The Two-Ocean Navy
+- Chapter 9: Confronting the Soviets
+- Chapter 10: The U.S. Navy in the Twenty-First Century
+- [Index](007_FM_contents.xhtml#r_actrade-9780199394760-indexGroup-1)
+- Table of Contents
+  - Landmarks
+  - Pages

@@ -1,0 +1,38 @@
+# TOC: 1000 Checkmate Combinations by Victor Henkin (z-lib.org)
+grade: B
+
+- **Contents**
+- **Don’t reinvent the bicycle**
+- **Before you open the book …**
+- **_1_. The Rook**
+- **Exercises**
+- **_2_. The Bishop**
+- **_3_. The Queen**
+- **_4_. The Knight**
+- **_5_. The Pawn**
+- **_The Pawn_**
+- **_6_. Two Rooks**
+- **_Two Rooks_**
+- **_7_. Rook and Bishop**
+- **_8_. Rook and Knight**
+- **_9_. Two Bishops**
+- **_10_. Two Knights**
+- **_11_. Bishop and Knight**
+- **_12_. Queen and bishop**
+- **_13_. Queen and Knight**
+- **_14_. Three Pieces**
+- **_15_. Solutions**
+  - **_1_. Rook**
+  - **_2_. Bishop**
+  - **_3_. Queen**
+  - **_4_. Knight**
+  - **_5_. Pawn**
+  - **_6_. Two Rooks**
+  - **7\. Rook and bishop**
+  - **_8_. Rook and knight**
+  - **_9_. Two Bishops**
+  - **_10_. Two Knights**
+  - **_11_. Bishop and Knight**
+  - **_12_. Queen and bishop**
+  - **_13_. Queen and knight**
+  - **_14_. Three pieces**

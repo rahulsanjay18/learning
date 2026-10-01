@@ -1,0 +1,60 @@
+# TOC: Probability and Stochastic Processes - A Friendly Introduction for Electrical and Computer Engineers - Yates _ Goodman
+grade: B
+
+- = 0.25
+- −µ2
+- = P
+- = P [U ≤F(x)] = F(x).
+- = E
+- −µ2
+- −(E [X|L])2 = 7
+- = FY
+- −(µW|B)2.
+- = E
+- rX1,X2
+- rX2,X3
+- = A−1E
+- · · · E
+- = φX1(s)φX2(s) · · · φXn(s).
+- PN (n) =
+- PN (n) .
+- = E
+- = FZn
+- = 0.
+- ≤Var[ ˆRn]
+- ≤lim
+- = 0.
+- ≥1 −P [A](1 −P [A])
+- ≥1 −
+- ≤P [A] (1 −P [A])
+- ≤(1 −P [A])
+- ≥1 −α.
+- ≥0.95.
+- + 0.5P
+- = E [XY] −E [Y E [X]] −Cov [X, Y]
+- = −2E
+- −E
+- the mean square error of this estimate?
+- = E
+- = 0.1.
+- = E
+- = 0.1.
+- = PN1 (0) =
+- = αt,
+- (10.89)
+- (10.92)
+- = RW(0) = ∞.
+- = E
+- (11.46)
+- + 2(0.8)E
+- (11.48)
+- = E
+- + 2(0.8)(0.5) + 0.82E
+- = RX(0) = Ae−b|0| =
+- ≈2BSX( f0).
+- = RY (0) = ba −a2
+- = η0
+- + λn
+- (12.12)
+- + λn
+- = 1.

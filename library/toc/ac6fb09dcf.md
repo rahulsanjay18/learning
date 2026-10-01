@@ -1,0 +1,47 @@
+# TOC: Revolutions_-_OxfordUP.VSI_-_Goldstone,_Jack_A_Jan.2014
+grade: A
+
+  - Contents
+  - [Chapter 1](contents.html#ch01-a)
+    - Defining “revolution”
+    - What revolutions are not
+  - [Chapter 2](contents.html#ch02-a)
+    - Revolutions as complex emergent processes
+    - Unstable equilibrium and the paradox of revolution
+    - Structural and transient causes of revolutions
+  - [Chapter 3](contents.html#ch03-a)
+    - The process of revolution
+    - Revolutionary leadership: visionary and organizational
+    - Revolutionary outcomes
+  - [Chapter 4](contents.html#ch04-a)
+    - Revolutions from the pharaohs to Greece and Rome
+    - Revolutions in abeyance under emperors and kings, 1 CE–1200 CE
+  - [Chapter 5](contents.html#ch05-a)
+    - Revolutions in Renaissance Italy
+    - Revolutions in the Reformation
+  - [Chapter 6](contents.html#ch06-a)
+    - The American Revolution
+    - The French Revolution
+    - The European revolutions of 1830 and 1848
+    - Meiji Japan
+  - [Chapter 7](contents.html#ch07-a)
+    - The Russian Revolution
+    - China’s Communist Revolution
+    - The Cuban Revolution
+  - [Chapter 8](contents.html#ch08-a)
+    - The Mexican Revolution
+    - The Nicaraguan Revolution
+    - The Iranian Islamic Revolution
+  - [Chapter 9](contents.html#ch09-a)
+    - The Philippines’ “People Power” Revolution
+    - Anticommunist revolutions in Eastern Europe and the Soviet Union
+    - The Orange Revolution in Ukraine
+  - [Chapter 10](contents.html#ch10-a)
+    - Tunisia: from immolation to revolution
+    - Egypt: the pharaoh falls
+    - Libya: the death of a tyrant
+    - Syria: descent into civil war
+    - The absence of revolutions in the Arab monarchies
+  - [Chapter 11](contents.html#ch11-a)
+  - [References](contents.html#ref-a)
+  - [Further reading](contents.html#app01-a)

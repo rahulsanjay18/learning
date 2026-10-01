@@ -1,0 +1,40 @@
+# TOC: Organizations_-_OxfordUP.VSI_-_Hatch,_Mary_Jo.Jan.2011
+grade: A
+
+- **ORGANIZATIONS**
+  - **Contents**
+  - **Preface**
+  - **Acknowledgements**
+  - **List of illustrations**
+  - **Chapter 1
+    - **A little history**
+    - **The three Os: organization, organizations, organizing**
+    - **Metaphors for organization**
+  - **Chapter 2
+    - **Organizational social structure and design**
+    - **The physical structure of organizations**
+    - **The influence of technology and the environment**
+  - **Chapter 3
+    - **Social construction and sensemaking**
+    - **Institutions, institutionalization, and the institutional environment**
+    - **Organizational culture and symbolism**
+  - **Chapter 4
+    - **Power, politics, and dependence**
+    - **The politics of identity and diversity**
+    - **Critical postmodern voices**
+  - **Chapter 5
+    - **Organizational development and change**
+    - **The dynamics of organizational culture and identity**
+    - **Complexity, emergence, and networking**
+  - **Chapter 6
+    - **NGOs, social movements, and organizing as perpetual change**
+    - **Culture, spirit, and the new physics of hyperspace**
+    - **The art and craft of organizing: design aesthetics and jazz**
+  - **Appendix
+    - **Objectivism versus interpretivism**
+    - **The postmodern (linguistic) turn**
+    - **Thinking in process**
+  - **References**
+  - **Further reading**
+  - **Index**
+  - **Expand your collection of

@@ -1,0 +1,69 @@
+# TOC: Entrepreneurship_-_OxfordUP.VSI_-_Westhead,_Paul_&_Wright,_Mike.Jan.2013
+grade: A
+
+- ENTREPRENEURSHIP
+  - Contents
+  - [Acknowledgements](contents.html#iack)
+  - [List of illustrations](contents.html#ilist)
+  - [List of tables](contents.html#ilisttable)
+  - [Chapter 1 The importance of entrepreneurship](contents.html#ich01)
+    - Entrepreneurship
+    - Entrepreneurs’ roles
+    - Approaches to describe the entrepreneur
+    - The entrepreneurial process
+    - Organizing framework
+    - Benefits of entrepreneurial firms
+    - Barriers
+    - Policy initiatives
+  - [Chapter 2 Discovering and creating opportunities](contents.html#ich02)
+    - Functions of entrepreneurs
+    - Opportunity discovery or opportunity creation?
+    - Causation
+    - Effectuation
+    - Bricolage
+  - [Chapter 3 Exploiting opportunities](contents.html#ich03)
+    - Resources and capabilities
+    - Resource assembly
+    - Strategic entrepreneurship
+    - Resource orchestration
+    - Strategies
+    - Benefits
+    - Business plan and business model
+  - [Chapter 4 Entrepreneurs’ context](contents.html#ich04)
+    - Social process
+    - Human capital
+    - Types of entrepreneur
+    - Female entrepreneurs
+    - Customize support to each type of entrepreneur
+    - Policy implications
+  - [Chapter 5 Entrepreneurial thinking and learning](contents.html#ich05)
+    - Personality approaches
+    - Psychodynamic approaches
+    - Cognitive approaches
+    - Prior business ownership experience (PBOE)
+    - Motivation and self-efficacy
+    - Assets and liabilities of experience
+    - Failure experience
+  - [Chapter 6 Forms of entrepreneurial venture](contents.html#ich06)
+    - Family firms
+    - Corporate entrepreneurship
+    - Management buyouts
+    - Academic spin-offs
+    - Social enterprises
+  - [Chapter 7 The future](contents.html#ich07)
+    - Firm growth
+    - Contexts
+    - Spread and transformation
+    - Address extreme poverty
+    - New forms of finance
+    - Dark side of entrepreneurship
+    - Where do we go from here?
+  - [Further reading](contents.html#ifurther)
+    - Chapter 1: The importance of entrepreneurship
+    - Chapter 2: Discovering and creating opportunities
+    - Chapter 3: Exploiting opportunities
+    - Chapter 4: Entrepreneurs’ context
+    - Chapter 5: Entrepreneurial thinking and learning
+    - Chapter 6: Forms of entrepreneurial venture
+    - Chapter 7: The future
+  - [Index](contents.html#iindex)

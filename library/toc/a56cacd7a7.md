@@ -1,0 +1,293 @@
+# TOC: Introduction_to_Python_Programming_-_WEB
+grade: B
+
+- Display the menu options
+- Get the user's preferences
+- b.
+- Get the user input
+- Get the user input
+- Append adj1 and noun1
+- Print out a bunch of stuff
+- Show the resulting phrase
+- Vacations Madlib.
+- # This program asks the user for two adjectives
+- and two nouns, which are then used to print
+- a funny story about a vacation.
+- (Comment)
+- Print floats with 30 decimal places
+- 36
+- Integer object somewhere in memory.
+- String object somewhere else in memory.
+- Setup a list of numbers
+- Print the length of the list
+- Print the 4th element in the list
+- The number 3 is used to refer to the 4th element
+- The desired value of the 4th element is actually 7
+- Update the value of the 4th element to 7
+- The list of the first 5 prime numbers
+- Statements before
+- Body
+- Body
+- Statements after
+- Do something
+- Do something else
+- Process refund
+- Apply student/senior discount
+- Test passed
+- Test failed
+- x in correct range
+- Wrong:
+- Statements before
+- Body
+- Body
+- Statements after
+- Body 1
+- Body 2
+- Body 1
+- Body 2
+- Body 1
+- Body 2
+- Body 1
+- Body 2
+- Body 1
+- Body 2
+- Body
+- Body
+- Body
+- Test game IDs 3-end
+- Body 1
+- Body 2
+- Body 3
+- Body 4
+- Body 5
+- Body 1
+- Body 2
+- Body 3
+- Body 4
+- Body 5
+- Statements before
+- Body
+- Statements after
+- Statements before
+- Body
+- Body
+- Statements after
+- Statements before
+- Body
+- Body
+- Body
+- Statements after
+- Statements before
+- Body
+- Body
+- Body
+- Body
+- Statements after
+- Initializing the first two Fibonacci numbers
+- Running the loop while the last Fibonacci number is less than 20
+- Calculating the next Fibonacci number and updating the last two sequence
+- Initialization
+- While loop condition
+- Counting up and increasing counter's value by 1 in each iteration
+- Modified line
+- New line
+- For loop condition using
+- range() function to print
+- all multiples of 5 less than 50
+- While loop implementation of printing
+- multiples of 5 less than 50
+- Initialization
+- Limiting the range to be less than 50
+- initialization
+- loop body
+- statements after the loop
+- initialization
+- loop body
+- statements after the loop
+- outer loop body (1)
+- inner loop body
+- outer loop body (2)
+- statements after the loop
+- initialization
+- loop body
+- remaining body of loop
+- statements after the loop
+- initialization
+- loop body
+- remaining body of loop
+- statements after the loop
+- initialization
+- loop body
+- remaining body of loop
+- loop else statement
+- statements after the loop
+- Use float() to convert input for area calculation
+- Direct to extra parking lot
+- Function definition
+- Weekend temperatures in Fahrenheit.
+- Convert from Fahrenheit to Celsius.
+- Function body
+- Function body
+- Function body
+- Function body
+- Function body
+- Function body
+- Function body
+- 2D shapes
+- 3D shapes
+- Name collision (replaces the imported function)
+- Primary colors
+- Secondary colors
+- Neutral colors
+- The lower() method converts a string to all lowercase characters
+- The upper() method converts a string to all uppercase characters
+- loop body
+- Create a list of students working on a project
+- Another student joins the project. The student must be added
+- "Jamie" withdraws from the project. Jamie must be removed
+- Suppose "Ming" had to be removed from the list.
+- A pop() operation can be used since Ming is last in the
+- Setup a list of numbers
+- Sort the list
+- Setup a list of words
+- Reverse the list
+- Sort the list
+- Set up a list of number
+- Set up a list of words
+- Usage of the max() funtion
+- max() function works for strings as well
+- Usage of the min() funtion which also works for strings
+- sum() only works for a list of numbers
+- Create a list of numbers
+- Iterating the list-of-lists
+- Create an empty List.
+- Add items to a list, as squares of numbers starting at 0 and ending at 9.
+- Create a list of words
+- Use a list comprehension to create a new list called
+- Inserting the word "fish" attached to each word in words_list
+- (key, value) in dictionary.items()
+- dictionary[key] operand test_value
+- key in dictionary.keys()
+- value in dictionary.values()
+- Statements to execute in the loop
+- Statements to execute after the loop
+- Using a list
+- Using keyword arguments
+- From another dictionary
+- Accessing item using square bracket
+- Accessing item through get() method
+- Updating an item using square bracket
+- Adding a new key-value pair using square
+- Updating an item using update() method
+- Adding a new key-value pair using
+- Using del keyword
+- Using pop() method
+- Statements to execute in the loop
+- Define __sub__()
+- Initialize attributes
+- Access/change attributes
+- Access/change attributes
+- Other methods
+- Base case
+- Recursive case
+- Error case
+- Test code
+- Test code
+- Check base case
+- If element is present at the middle itself (base case)
+- Recursive case: check which subarray must be checked
+- Right subarray
+- Left subarray
+- Key not found (other base case)
+- Test list
+- Call binary search function
+- Base case: simply move the single(bottom) ring from source to destination
+- Recursive case
+- Call the smaller version of the problem:
+- to move the N-1 stack to the middle tower
+- Move the N ring to the destination tower
+- Call the smaller version of the problem:
+- to now move the N-1 stack from the middle tower
+- to the destination
+- Test code
+- SuperClass attributes and methods
+- SubClass attributes and methods
+- To replace with calculation
+- To replace with calculation
+- Replace 1000 with any value
+- Initialize subclass instance attributes
+- Using read()
+- Open the file and associate with a file object
+- Read the contents of the file into a string
+- Print str1
+- Always close the file once done using the file
+- Using read()
+- Open the file and associate with a file object
+- Read the contents of the file into a string list
+- Printing the third item in the string list.
+- Always close the file once done using the file
+- Create a new file
+- Writing to the file
+- To add another line the newline character must be used
+- Ensure changes are saved by closing the file
+- Read and display the contents of the file
+- Reopen the file in append mode to add to the file
+- Note the use of newline characters
+- Ensure changes are saved by closing the file
+- Read and display the contents of the modified file
+- Open the CSV file for reading
+- Rows are separated by newline \n characters, so readlines() can be used to
+- Remove \n characters from each row and split by comma and save into a 2D
+- Remove \n character
+- Split using commas
+- Print result
+- Statements
+- Statements
+- Statements
+- Statements
+- Statements
+- Statements
+- Create a dictionary of
+- Create a DataFrame from
+- Display the DataFrame
+- Create a list of rows
+- Define column labels
+- Create a DataFrame from
+- Display the DataFrame
+- Create a NumPy array
+- Define column labels
+- Create a DataFrame from
+- Display the DataFrame
+- Read the CSV file into a
+- Display the DataFrame
+- Read the Excel file into
+- Display the DataFrame
+- Create a sample DataFrame
+- Column
+- Create sample data
+- Create sample data
+- Create sample data
+- Applied after the
+- of the previous row
+- Data
+- Create the bar chart
+- Customize the chart
+- Display the chart
+- Data
+- Create the line chart
+- Customize the chart
+- Display the chart
+- Data
+- Create the scatter plot
+- Customize the chart
+- Display the chart
+- Data: random 1000
+- Create the histogram
+- Customize the chart
+- Display the chart
+- Data: random 100
+- Create the box
+- Customize the
+- Display the chart
+- Data
+- Data

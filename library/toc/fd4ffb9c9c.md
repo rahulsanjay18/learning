@@ -1,0 +1,44 @@
+# TOC: Linguistics_-_OxfordUP.VSI_-_Matthews,_P._H_Jan.2003
+grade: B
+
+- LINGUISTICS
+  - Contents
+  - Acknowledgements
+  - List of illustrations
+  - List of maps
+  - Chapter 1
+    - A warning about meanings
+    - Words
+    - Linguistics as a ‘science’
+  - Chapter 2
+    - The structure of speech
+    - Redundancy
+    - How might ‘ _Homo loquens_ ’ have evolved?
+  - Chapter 3
+    - Variation in detail
+    - Why does language change?
+  - Chapter 4
+    - What is our evidence?
+    - Reconstruction
+    - How far can we go?
+  - Chapter 5
+    - What do languages distinguish?
+    - Speaking and thinking
+  - Chapter 6
+    - Language and dialect
+    - Languages as systems
+    - So what status have they?
+  - Chapter 7
+    - Rules as constraints
+    - Are rules absolute?
+    - Where do such illustrations leave us?
+  - Chapter 8
+    - How sounds are made
+    - Stops
+    - Beyond vowels and consonants
+  - Chapter 9
+    - Why linguistics generally may not help
+    - Are there ‘speech centres’?
+    - What of the future?
+  - Further reading
+  - Index

@@ -1,0 +1,103 @@
+# TOC: Isotopes_-_OxfordUP.VSI_-_Ellam,_Rob.Apr.2016
+grade: B
+
+- Isotopes: A Very Short Introduction
+- Isotopes
+- A Very Short Introduction
+- Contents
+- [Preface: at homewith the Beilbys](006_FM_contents.xhtml#r_actrade-9780198723622-miscMatter-6)
+- [Acknowledgements](006_FM_contents.xhtml#r_actrade-9780198723622-miscMatter-7)
+- [List of illustrations](006_FM_contents.xhtml#r_actrade-9780198723622-miscMatter-8)
+- [ Chapter 1 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-1)
+- [ Identical outsides … different insides](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-1)
+- Hydrogen and carbon isotopes
+- Radioactivity and radioactive decay
+- α-decay
+- β-decay
+- γ-decay
+- Spontaneous fission
+- [ Chapter 2 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-2)
+- [ Isotopic clocks: the persistence of carbon](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-2)
+- Radiocarbon
+- De Vries effect
+- Suess effect
+- Bomb carbon
+- [ Chapter 3 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-3)
+- [ You are what you eat … plus a few per mil](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-3)
+- Delta notation
+- Organic isotopic fractionation
+- King Richard III
+- Geography and isotopic composition
+- Strontium isotopes
+- Ötzi the Iceman
+- [ Chapter 4 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-4)
+- [ Measuring isotopes: counting the atoms](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-4)
+- Accuracy and precision
+- Geiger counter
+- Gas proportional counter
+- Scintillation counters
+- Solid state detectors
+- Sample preparation
+- [ Chapter 5 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-5)
+- [ Physics heal thyself: isotopes in medicine](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-5)
+- Isotope enrichment
+- Doubly labelled water
+- 13C-labelled urea
+- Radiotherapy
+- Brachytherapy
+- Targeted radionuclide therapy
+- Imaging
+- Radiotherapy in the future
+- [ Chapter 6](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-6)
+- [ Measuring isotopes: mass spectrometers](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-6)
+- Isobars
+- Mass spectrometer—one name, many variants
+- Gas source isotope ratio mass spectrometers
+- Thermal ionization mass spectrometers
+- Inductively coupled plasma mass spectrometers
+- Secondary ion mass spectrometers—ion microprobes
+- Ion optics
+- Detectors
+- Abundance sensitivity
+- Accelerator mass spectrometers
+- [ Chapter 7 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-7)
+- [ Reconstructing the past and weathering the future](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-7)
+- Climate records
+- Gain and phase models
+- Milankovitch orbital cycles
+- CO2 and temperature from ice
+- Clumped isotopes
+- [ Chapter 8 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-8)
+- [ Scratching the surface with cosmogenic isotopes](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-8)
+- Cosmogenic ray interactions
+- Cosmogenic isotope production
+- Exposure dating—age vs. erosion
+- Burial dating
+- [ Chapter 9 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-9)
+- [ Uranium, thorium, and their daughters](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-9)
+- Natural decay series
+- The age of the Earth
+- U-Pb geochronology
+- U-series dating methods
+- Nuclear fission
+- A natural fission reactor
+- [ Chapter 10 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-10)
+- [ Probing the Earth with isotopes](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-10)
+- Earth’s internal structure
+- Meteorite models
+- Continental crust and depleted mantle
+- Ocean Island Basalts
+- Continental basalts
+- [ Chapter 11 ](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-11)
+- [ Cosmic stopped clocks](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-11)
+- Pb ore deposits
+- Solar System rubidium-strontium
+- Extinct isotopes
+- [Epilogue](006_FM_contents.xhtml#r_actrade-9780198723622-chapter-12)
+- [ Further reading](006_FM_contents.xhtml#r_actrade-9780198723622-bibliographyGroup-1)
+- [Index](006_FM_contents.xhtml#r_actrade-9780198723622-indexGroup-1)
+- Social media
+- Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

@@ -1,0 +1,76 @@
+# TOC: Work_-_OxfordUP.VSI_-_Fineman,_Stephen.Dec.2012
+grade: A
+
+- WORK A Very Short Introduction
+  - **Acknowledgements**
+  - Contents
+  - Preface
+  - List of illustrations
+  - **Chapter 1
+    - **Living time**
+    - The impulse to work—or not
+    - Work ethics
+    - The generation link
+    - Motivation matters
+    - Many theories
+    - Reorientations
+  - Chapter 2
+    - Jobs in the formal economy
+    - Status and worth
+    - Power plays
+  - Chapter 3
+    - The demise of the linear career
+    - New careers, new constraints
+    - The flexible organization
+  - Chapter 4
+    - Segregation today
+    - On the home front
+    - Crossing over
+    - Glass ceilings, walls, and escalators
+    - Dismantling gender barriers
+  - Chapter 5
+    - McJobs
+    - Inventing meaning
+    - Extreme workers and presenteeism
+    - Downshifting
+  - **Chapter 6
+    - The springs of emotion
+    - Decisions, decisions
+    - Emotional labour
+    - Can emotions be intelligent?
+    - Bullying and harassment
+  - Chapter 7
+    - Telework
+    - Virtual teams
+    - Cyber incivility, cyber bullying
+    - Tweeting while you work
+  - Chapter 8
+    - Without work
+    - NEETs
+    - From _hikikomori_ to freeter
+    - Underemployment
+    - Internship
+    - … and retirement
+  - Chapter 9
+  - References
+    - Chapter 1: Why work?
+    - Chapter 2: A spectrum of jobs
+    - Chapter 3: Working a career
+    - Chapter 4: Men’s work, women’s work
+    - Chapter 5: Struggling, surviving, thriving
+    - Chapter 6: Emotion at work
+    - Chapter 7: Virtual work
+    - Chapter 8: Changes and transitions
+  - Further reading
+    - Chapter 1: Why work?
+    - Chapter 2: A spectrum of jobs
+    - Chapter 3: Working a career
+    - Chapter 4: Men’s work, women’s work
+    - Chapter 5: Struggling, surviving, thriving
+    - Chapter 6: Emotion at work
+    - Chapter 7: Virtual work
+    - Chapter 8: Changes and transitions
+  - Index
+  - Expand your collection of
+  - ORGANIZATIONS
+  - LEADERSHIP

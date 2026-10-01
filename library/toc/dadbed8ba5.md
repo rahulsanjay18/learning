@@ -1,0 +1,75 @@
+# TOC: Theatre_-_OxfordUP.VSI_-_Carlson,_Marvin.Aug.2014
+grade: A
+
+- Theatre: A Very Short Introduction
+- Marvin Carlson
+- THEATRE
+- A Very Short Introduction
+- Contents
+- [ List of illustrations ](006_FM_contents.xhtml#r_actrade-9780199669820-miscMatter-6)
+- [Chapter 1](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-1)
+- [What is theatre?](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-1)
+- Imitation
+- The boundaries of theatre
+- Classical Greece and Rome
+- Classical India
+- Classical China
+- Medieval Japan
+- Medieval Europe
+- Renaissance theatre in Italy
+- 16th century Europe
+- 17th century Japan and Europe
+- 18th century Europe
+- 19th century Europe and Asia
+- The 20th century
+- Theatre and life
+- [Chapter 2](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-2)
+- [Religion and theatre](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-2)
+- Early Christianity and the theatre
+- Early Jewish and Islamic theatre
+- Early Hindu and Buddhist theatre
+- Buddhist theatre in China and Japan
+- The tradition of religious theatre in Spain and Portugal
+- Religious theatre and colonialism
+- Baroque religious theatre in Europe
+- Religious theatre in the 18th century
+- Religious theatre and post-colonialism
+- Religious theatre in the 20th century
+- [Chapter 3](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-3)
+- [Theatre and drama](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-3)
+- Improvisation
+- Commedia dell’arte
+- Oral traditions
+- Early non-European dramatic texts
+- Early Western dramatic texts
+- The regulation of texts
+- Textual dominance
+- Challenges to the text
+- Drama and theatre in the university
+- Postdramatic theatre
+- [Chapter 4](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-4)
+- [Theatre and performance](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-4)
+- Performance and the art world
+- The term ‘performance’ in the English theatre tradition
+- The ‘performative turn’ in the social sciences
+- Speech–act theory
+- Richard Schechner and _TDR_
+- The spread of performance studies
+- Theatre and performance studies
+- International performance
+- [Chapter 5](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-5)
+- [The makers of theatre](006_FM_contents.xhtml#r_actrade-9780199669820-chapter-5)
+- The actor
+- The puppet
+- The designer
+- The director
+- The audience
+- [ Further reading ](006_FM_contents.xhtml#r_actrade-9780199669820-bibliographyGroup-1)
+- [ Index ](006_FM_contents.xhtml#r_actrade-9780199669820-indexList-1)
+- Expand your collection of
+- VERY SHORT INTRODUCTIONS
+- SOCIAL MEDIA
+- ONLINE
+- Table of Contents
+  - Landmarks
+  - Pages

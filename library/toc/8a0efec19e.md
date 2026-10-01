@@ -1,0 +1,94 @@
+# TOC: Typography_-_OxfordUP.VSI_-_Luna,_Paul.Nov.2018
+grade: A
+
+- Typography: A Very Short Introduction
+- Paul Luna
+- Typography
+- A Very Short Introduction
+- Contents
+- [Preface](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-miscMatter-6)
+- [Acknowledgements](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-miscMatter-7)
+- [List of illustrations](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-miscMatter-8)
+- [Chapter 1](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-1)
+- [ Perfect letters](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-1)
+- What the Romans did for letters
+- Revival of the antique
+- The invention of printing
+- Divine proportions
+- Letters without serifs
+- More recent ideas about letter construction
+- [Chapter 2](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-2)
+- [ Practical letters](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-2)
+- Typographic terminology
+- The development of typefaces
+- Points to pixels
+- Complex text typography
+- The mechanization of type
+- Types for text, types for showing off
+- Drawing digital letters
+- Lines of letters
+- [Chapter 3](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-3)
+- [ Presenting language](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-3)
+- Configurations of graphic language
+- Directed and open reading
+- Hierarchy
+- Describing text and documents systematically
+  - THE SICK ROSE
+- Text and pages
+- Prescription and house style
+- [Chapter 4](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-4)
+- [ Genre and layout](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-4)
+- Typographic genres
+- Analysing layout
+- The functionality of e-books
+- [Chapter 5](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-5)
+- [ Picture language](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-5)
+- How we recognize symbols
+- Symbols in use: symbol sets
+- Symbols in use: presenting data
+- Data and visual responsibility
+- [Chapter 6](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-6)
+- [ Emotion or information?](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-6)
+- Design as an ideal and as a compromise
+- Reading for pleasure
+- The most urgent form
+- Calls to action
+- Because we can
+- Typography and wider culture
+- Learning from the everyday
+- The look of the thing
+- [Chapter 7](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-7)
+- [ Making typography legible](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-7)
+- Guidelines for legibility
+- How do we read letters and words?
+- Experimental methods
+- Optimizing type design
+- Collaboration and iteration in type design
+- Identifying user needs
+- Accessibility and user interaction with design
+- [Chapter 8](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-8)
+- [ Positive typography](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-chapter-8)
+- The designer listens to, and acts for, the reader
+- Research is the basis for practice (history helps)
+- Can we revive the past?
+- Good typography = global typography
+- Typography today
+- [Appendix 1](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-appendix-1)
+- [ Dogma for typographers](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-appendix-1)
+- [Appendix 2](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-appendix-2)
+- [ Good practice in typesetting](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-appendix-2)
+- [Further reading](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-bibliographyGroup-1)
+- Preface
+- Chapter 1: Perfect letters
+- Chapter 2: Practical letters
+- Chapter 3: Presenting language
+- Chapter 4: Genre and layout
+- Chapter 5: Picture language
+- Chapter 6: Emotion or information?
+- Chapter 7: Making typography legible
+- Chapter 8: Positive typography
+- Some online resources
+- [Index](../Text/006_FM_contents.xhtml#r_actrade-9780199211296-indexGroup-1)
+- Table of Contents
+  - Landmarks
+  - Pages

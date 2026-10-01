@@ -1,0 +1,65 @@
+# TOC: Autobiography_-_OxfordUP.VSI_-_Marcus,_Laura.May.2018
+grade: A
+
+- Autobiography: A Very Short Introduction
+- Autobiography
+- A Very Short Introduction
+- Contents
+- [Acknowledgements](007_FM_contents.xhtml#r_actrade-9780199669240-miscMatter-7)
+- [List of illustrations](007_FM_contents.xhtml#r_actrade-9780199669240-miscMatter-8)
+- [Introduction](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-1)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-2)
+- [ Confession, conversion, testimony](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-2)
+- Confessions
+- Spiritual autobiography and conversion narratives
+- Romantic confessions
+- Confession and testimony in the modern age
+- Testimony and trauma
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-3)
+- [ The journeying self](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-3)
+- Romantic autobiography
+- The transcendental self
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-4)
+- [ Autobiographical consciousness](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-4)
+- Narrative identity
+- Existentialist autobiography
+- Autobiography and identity
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-5)
+- [ Autobiography and psychoanalysis](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-5)
+- Freud or Jung?
+- Psychoanalysis in autobiography
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-6)
+- [ Family histories and the autobiography of childhood](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-6)
+- Family relations
+- [Chapter 6](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-7)
+- [ Public selves](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-7)
+- Political and public lives
+- Ghost-writing and celebrity autobiography
+- [Chapter 7](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-8)
+- [ Self-portraiture, photography, and performance](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-8)
+- The lives of artists
+- Photography, identity, and memory
+- The photograph in autobiography
+- Autobiography as performance
+- [Chapter 8](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-9)
+- [ Autobiographies, autobiographical novels, and autofictions](007_FM_contents.xhtml#r_actrade-9780199669240-chapter-9)
+- Autofiction
+- [References](007_FM_contents.xhtml#r_actrade-9780199669240-bibliography-1)
+- Introduction
+- Chapter 1: Confession, conversion, testimony
+- Chapter 2: The journeying self
+- Chapter 3: Autobiographical consciousness
+- Chapter 4: Autobiography and psychoanalysis
+- Chapter 5: Family histories and the autobiography of childhood
+- Chapter 6: Public selves
+- Chapter 7: Self-portraiture, photography, and performance
+- Chapter 8: Autobiographies, autobiographical novels, and autofictions
+- [Further reading](007_FM_contents.xhtml#r_actrade-9780199669240-bibliography-2)
+- [Publisher’s acknowledgements](007_FM_contents.xhtml#r_actrade-9780199669240-miscMatter-9)
+- [Index](007_FM_contents.xhtml#r_actrade-9780199669240-indexGroup-1)
+- Biography
+- English Literature
+- Social media
+- Table of Contents
+  - Landmarks
+  - Pages

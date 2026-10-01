@@ -1,0 +1,65 @@
+# TOC: Mathematics_-_OxfordUP.VSI_-_Gowers,_Timothy.Jan.2002
+grade: B
+
+- MATHEMATICS
+  - **Contents**
+  - [**Preface**](ch00_fm05.html#ach00_fm06)
+  - [**List of diagrams**](ch00_fm05.html#ach00_fm07)
+  - [**Chapter 1
+    - **How to throw a stone**
+    - What is a mathematical model?
+    - **Rolling a pair of dice**
+    - **Predicting population growth**
+    - **The behaviour of gases**
+    - **Modelling brains and computers**
+    - **Colouring maps and drawing up timetables**
+    - **Various meanings of the word ‘abstract’**
+  - [**Chapter 2
+    - **The abstract method**
+    - **Chess without the pieces**
+    - The natural numbers
+    - **Zero**
+    - **Negative numbers and fractions**
+    - **Real and complex numbers**
+    - **A first look at infinity**
+    - **Raising numbers to negative and fractional powers**
+  - [**Chapter 3
+    - The irrationality of the square root of two
+    - The irrationality of the golden ratio
+    - Regions of a circle
+    - Pythagoras’ theorem
+    - Tiling a square grid with the corners removed
+    - Three obvious-seeming statements that need proofs
+  - [**Chapter 4
+    - **1\. The square root of 2 is about 1.41421356**
+    - **2\. We reached a speed of 40 m.p.h. just as we passed that lamp-post**
+    - **3\. The area of a circle of radius _r_ is _πr_ 2**
+  - [**Chapter 5
+    - **How to define high-dimensional space**
+    - **Can four-dimensional space be visualized?**
+    - **What is the point of higher-dimensional geometry?**
+    - **Fractional dimension**
+  - [**Chapter 6
+    - **Euclidean geometry**
+    - **The parallel postulate**
+    - **Spherical geometry**
+    - **Hyperbolic geometry**
+    - **How can space be curved?**
+    - **Manifolds**
+  - [**Chapter 7
+    - **A simple sequence not given by a simple formula**
+    - **Ways of approximating**
+    - **All you need to know about logarithms, square roots etc.**
+    - **The prime number theorem**
+    - **Sorting algorithms**
+  - [**Chapter 8
+    - **1\. Is it true that mathematicians are past it by the time they are 30?**
+    - **2\. Why are there so few women mathematicians?**
+    - **3\. Do mathematics and music go together?**
+    - **4\. Why do so many people positively dislike mathematics?**
+    - **5\. Do mathematicians use computers in their work?**
+    - **6\. How is research in mathematics possible?**
+    - **7\. Are famous mathematical problems ever solved by amateurs?**
+    - **8\. Why do mathematicians refer to some theorems and proofs as beautiful?**
+  - [**Further reading**](ch00_fm05.html#ach09)
+  - [**Index**](ch00_fm05.html#ach10)

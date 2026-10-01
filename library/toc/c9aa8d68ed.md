@@ -1,0 +1,79 @@
+# TOC: Freemasonry_-_OxfordUP.VSI_-_Onnerfors,_Andreas.Aug.2017
+grade: A
+
+- Freemasonry: A Very Short Introduction
+- Freemasonry
+- A Very Short Introduction
+- Contents
+- [Acknowledgements](006_FM_contents.xhtml#r_actrade-9780198796275-miscMatter-6)
+- [List of illustrations](006_FM_contents.xhtml#r_actrade-9780198796275-miscMatter-7)
+- [List of abbreviations](006_FM_contents.xhtml#r_actrade-9780198796275-miscMatter-8)
+- [Chapter 1](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-1)
+- [ Two approaches to freemasonry](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-1)
+- Idealization
+- Distrust
+- Striking a balance
+- Freemasonry—a short overview
+- Terminology
+- [Chapter 2](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-2)
+- [ Three centuries of freemasonry](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-2)
+- The 18th century
+- The 19th century
+- The 20th century
+- The 21st century
+- [Chapter 3](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-3)
+- [ Historical legacies](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-3)
+- Guild traditions
+- Knighthood imagined
+- Hieroglyphs, emblems, and vision: the Renaissance heritage
+- [Chapter 4](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-4)
+- [ Enlightenment foundations](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-4)
+- The ideas of modern freemasonry: the 1723 Constitutions
+- Secrecy and society
+- Philanthropy, charity, and cosmopolitanism
+- [Chapter 5](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-5)
+- [ From darkness to light](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-5)
+- Box 1 Structure of masonic rituals of initiation
+- The craft degrees of freemasonry
+- Development and motives of higher degrees
+- Masonic rites between inclusion, delimitation, and authority
+- Purpose of rituals
+- [Chapter 6](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-6)
+- [ Organizational culture](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-6)
+- Regularity and recognition
+- Box 2 Basic principles for grand lodge recognition
+- A culture of self-governance
+- Lodge organization, numbers, and names
+- [Chapter 7](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-7)
+- [ Brotherhood challenged](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-7)
+- Organization and development of female freemasonry
+- The female adoption ritual
+- [Chapter 8](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-8)
+- [ Perceptions, prejudices, and persecutions](006_FM_contents.xhtml#r_actrade-9780198796275-chapter-8)
+- Freemasonry and the press—topics and trends
+- Regulation and suppression
+- The modern conspiracy myth
+- Freemasonry and anti-Semitism
+- References to the masonic conspiracy myth in pop culture
+- The attractiveness of the myth
+- [Timeline](006_FM_contents.xhtml#r_actrade-9780198796275-miscMatter-9)
+- [Further reading](006_FM_contents.xhtml#r_actrade-9780198796275-bibliographyGroup-1)
+- General reading
+- Films
+- Museums, archives, and libraries
+- Chapter 1: Two approaches to freemasonry
+- Chapter 2: Three centuries of freemasonry
+- Chapter 3: Historical legacies
+- Chapter 4: Enlightenment foundations
+- Chapter 5: From darkness to light
+- Chapter 6: Organizational culture
+- Chapter 7: Brotherhood challenged
+- Chapter 8: Perceptions, prejudices, and persecutions
+- [Index](006_FM_contents.xhtml#r_actrade-9780198796275-indexGroup-1)
+- Social Media
+- Very Short Introduction
+- Online Catalogue
+- Globalization
+- Table of Contents
+  - Landmarks
+  - Pages

@@ -1,0 +1,87 @@
+# TOC: Arctic,_The__-_OxfordUP.VSI_-_Dodds,_Klaus_&_Woodward,_Jamie.Sep.2021
+grade: A
+
+- The Arctic: A Very Short Introduction
+- The Arctic
+- A Very Short Introduction
+- Acknowledgements
+- Contents
+- [List of illustrations ](007_FM_contents.xhtml#r_actrade-9780198819288-miscMatter-7)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-1)
+- [The Arctic world ](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-1)
+- Defining the Arctic
+- Arctic states
+- People and the Arctic
+- Understanding the Arctic
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-2)
+- [The physical environment ](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-2)
+- Geological and tectonic setting
+- When did the Arctic get cold?
+- Arctic climate
+- The ocean at the top of the world
+- Arctic sea ice
+- Permafrost
+- High Arctic glaciers and the Greenland ice sheet
+- A global Arctic
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-3)
+- [Arctic ecosystems ](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-3)
+- The Arctic biome
+- Arctic animals
+- Connectivity and gene flows
+- Boom and bust: lemmings and snowy owls
+- The Arctic melting pot: narwhals and belugas
+- Arctic greening and browning
+- Pleistocene Park
+- Range shifts and invasive species
+- Arctic food webs
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-4)
+- [Peoples of the Arctic ](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-4)
+- Arctic migrations
+- Indigenous Arctic peoples
+- Future of Arctic peoples
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-5)
+- [Exploration and exploitation ](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-5)
+- After the Vikings
+- Exploiting Arctic lands
+- Mining in the Arctic
+- The Arctic paradox
+- Legacies of resource development
+- Indigenous peoples and resources
+- Resource futures
+- [Chapter 6](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-6)
+- [Arctic governance ](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-6)
+- What do we mean by ‘Arctic governance’?
+- The Arctic Council and circumpolar cooperation
+- Future governance of the Arctic
+- [Chapter 7](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-7)
+- [The Arctic carbon vault ](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-7)
+- The permafrost carbon feedback
+- Exploding ground
+- Thermokarst lakes
+- Carbon in Arctic rivers
+- Methane beneath the sea
+- Mammoths in the mud
+- [Chapter 8](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-8)
+- [Arctic futures ](007_FM_contents.xhtml#r_actrade-9780198819288-chapter-8)
+- [References ](007_FM_contents.xhtml#r_actrade-9780198819288-bibliography-1)
+- Chapter 1: The Arctic world
+- Chapter 2: The physical environment
+- Chapter 3: Arctic ecosystems
+- Chapter 4: Peoples of the Arctic
+- Chapter 5: Exploration and exploitation
+- Chapter 6: Arctic governance
+- Chapter 7: The Arctic carbon vault
+- Chapter 8: Arctic futures
+- The Arctic on the world wide web
+- The Arctic environment
+- Indigenous peoples
+- Politics, resources, and governance
+- [Further reading ](007_FM_contents.xhtml#r_actrade-9780198819288-bibliography-2)
+- [Index ](007_FM_contents.xhtml#r_actrade-9780198819288-indexGroup-1)
+- Landscapes and Geomorphology
+- Globalization
+- Geopolitics
+- Geography
+- Table of Contents
+  - Landmarks
+  - Pages

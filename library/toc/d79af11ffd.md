@@ -1,0 +1,78 @@
+# TOC: Forensic_Science_[2nd_Edition]_-_OxfordUP.VSI_-_Fraser,_Jim.Feb.2010
+grade: A
+
+- Forensic Science: A Very Short Introduction
+- Forensic Science
+- A Very Short Introduction
+- Second Edition
+- Contents
+- [ Preface and acknowledgements to second edition ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-miscMatter-7)
+- [ Preface and acknowledgements to first edition ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-miscMatter-8)
+- [ List of illustrations ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-miscMatter-9)
+- [Chapter 1](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-1)
+- [ What is forensic science? ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-1)
+- [Chapter 2](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-2)
+- [ Investigating crime ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-2)
+- [Chapter 3](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-3)
+- [ Crime scene management and forensic investigation ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-3)
+- Forensic strategies
+- [Chapter 4](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-4)
+- [ Laboratory examination: search, recovery, analysis ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-4)
+- Recovery of evidence
+- Examination of items
+- Blood and body fluids
+- Physical fits
+- [Chapter 5](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-5)
+- [ DNA profiling and databases ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-5)
+- DNA and the human genome
+- Analysis of DNA
+- Analysis and interpretation of DNA profiles
+- Evaluating evidence
+- DNA databases
+- Other methods of DNA analysis
+- [Chapter 6](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-6)
+- Fingerprints
+- History
+- Features of fingerprints
+- Recovery of marks
+- Fingerprint comparison
+- Identification standards
+- Shoe marks
+- [Chapter 7](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-7)
+- [ Trace evidence ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-7)
+- Fibres
+- Paint
+- [Chapter 8](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-8)
+- [ Drugs and toxicology ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-8)
+- Controlled drugs
+- Cannabis
+- Heroin
+- Toxicology
+- Drug facilitated sexual assault
+- Analysis of drugs and interpretation of findings
+- [Chapter 9](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-9)
+- [ Science and justice—a case study ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-chapter-9)
+- Concluding remarks
+- [ References ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-bibliography-1)
+- Chapter 1: What is forensic science?
+- Chapter 5: DNA profiling and databases
+- Chapter 6: Prints and marks: more ways to identify people and things
+- Chapter 8: Drugs and toxicology
+- Chapter 9: Science and justice—a case study
+- [Further reading](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-bibliography-2)
+- The forensic ecosystem
+- Crime investigation
+- Crime scene investigation
+- Work in the laboratory
+- DNA profiling and databases
+- [ Index ](../Text/007_FM_contents.xhtml#r_actrade-9780198834410-indexGroup-1)
+- Racism
+- Forensic Psychology
+- HIV/AIDS
+- Nuclear Power
+- PLANETS
+- Scientific Revolution
+- Geopolitics
+- Table of Contents
+  - Landmarks
+  - Pages

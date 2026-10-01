@@ -1,0 +1,91 @@
+# TOC: Banking_-_OxfordUP.VSI_-_Goddard,_John_&_Wilson,_John_O._S_Oct.2016
+grade: A
+
+- Banking: A Very Short Introduction
+- Banking
+- A Very Short Introduction
+- Contents
+- [Acknowledgements](007_FM_contents.xhtml#r_actrade-9780199688920-miscMatter-7)
+- [List of illustrations](007_FM_contents.xhtml#r_actrade-9780199688920-miscMatter-8)
+- [List of tables](007_FM_contents.xhtml#r_actrade-9780199688920-miscMatter-9)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-1)
+- [ Origins and function of banking](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-1)
+- A short history of banking
+- Structure of a bank’s balance sheet and income statement
+- Banking services
+- Types of bank
+- The shadow banking system
+- The payments system
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-2)
+- [ Financial intermediation](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-2)
+- Maturity transformation, size transformation, and diversification
+- Adverse selection, moral hazard, and financial transactions
+- Leverage, and the magnification of return and risk
+- Credit risk and liquidity risk
+- Other sources of risk in financial intermediation
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-3)
+- [ Securitized banking](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-3)
+- The repo market, and other sources of short-term funding
+- Derivatives
+- Securitization
+- The shadow banking system and securitized banking
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-4)
+- [ The central bank and the conduct of monetary policy](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-4)
+- The role of the central bank
+- Central banks in the UK, EU, and US
+- The central bank’s balance sheet
+- The International Monetary Fund
+- The conduct of monetary policy
+- The deposit expansion multiplier
+- Interest rate targeting
+- Quantitative easing and forward guidance
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-5)
+- [ Regulation and supervision of the banking industry](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-5)
+- Causes of bank runs
+- Regulatory authorities
+- Banking licenses
+- The government safety net
+- Capital adequacy regulation
+- Other forms of regulation
+- [Chapter 6](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-6)
+- [ Origins of the global financial crisis](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-6)
+- The Swedish banking crisis
+- The US Savings and Loan crisis
+- The Japanese banking crisis
+- The Asian financial crisis
+- Causes of the 2007–9 global financial crisis
+- [Chapter 7](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-7)
+- The United States
+- The United Kingdom and the Eurozone
+- [Chapter 8](007_FM_contents.xhtml#r_actrade-9780199688920-chapter-8)
+- Evolution of monetary policy
+- Recent developments in bank regulation
+- [Glossary](007_FM_contents.xhtml#r_actrade-9780199688920-miscMatter-10)
+- [ Further reading](007_FM_contents.xhtml#r_actrade-9780199688920-bibliographyGroup-1)
+- General
+- Chapter 1: Origins and function of banking
+- Chapter 2: Financial intermediation
+- Chapter 3: Securitized banking
+- Chapter 4: The central bank and the conduct of monetary policy
+- Chapter 5: Regulation and supervision of the banking industry
+- Chapter 6: Origins of the global financial crisis
+- Chapter 7: The global financial crisis and the Eurozone sovereign debt crisis
+- Chapter 8: Policy and regulatory responses to the global financial crisis
+- [Index](007_FM_contents.xhtml#r_actrade-9780199688920-indexGroup-1)
+- Advertising
+- A Very Short Introduction
+- Globalization
+- A Very Short Introduction
+- International Relations
+- A Very Short Introduction
+- Citizenship
+- A Very Short Introduction
+- Economics
+- A Very Short Introduction
+- Privacy
+- A Very Short Introduction
+- Social media
+- Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

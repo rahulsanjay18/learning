@@ -1,0 +1,61 @@
+# TOC: Martyrdom_-_OxfordUP.VSI_-_Mitchell,_Jolyon.Jan.2012
+grade: A
+
+- **MARTYRDOM**
+  - **Contents**
+  - **Acknowledgements**
+  - **List of illustrations**
+  - **Chapter 1
+  - **Chapter 2
+    - **The noble death**
+    - **Using noble deaths**
+    - **Voluntary violent deaths**
+    - **Using past martyrdoms**
+  - **Chapter 3
+    - **The origins of martyrdom in early Christianity**
+    - **Martyrdom and state persecution**
+    - **Embracing martyrdom**
+    - **Martyrdom as ‘media asset’**
+    - **Martyrdom and spectacle**
+    - **Perpetua’s _Passion_**
+    - **The motives of martyrdom**
+    - **Martyrdom’s spectators**
+    - **Communal martyrdoms**
+  - **Chapter 4
+    - **Commemorating martyrdom**
+    - **Protesting martyrdom**
+    - **Founding martyrdoms**
+    - **Performing martyrdom**
+    - **Preaching martyrdom**
+    - **Depicting martyrdom**
+    - **Interpreting martyrdom**
+    - **Debating martyrdom**
+  - **Chapter 5
+    - **Popularizing martyrdom**
+    - **Illustrating martyrdom**
+    - **Narrating martyrdom**
+    - **Challenging martyrdoms**
+    - **Evolving martyrdoms**
+  - **Chapter 6
+    - **Preserving martyrdoms**
+    - **Depicting Russian martyrdoms**
+    - **Royal martyrdoms**
+    - **Protesting martyrdoms**
+    - **Founding martyrdoms**
+  - **Chapter 7
+    - **Touching and preserving martyrdom**
+    - **Disseminating and spreading martyrdom**
+    - **Deconstructing and categorizing martyrdom**
+    - **Adapting and translating martyrdom**
+    - **Spiritualizing and militarizing martyrdom**
+    - **Suffering and healing martyrdoms**
+  - **Further reading**
+    - **Chapter 1: Debating martyrdom and Chapter 2: Portraying martyrdom**
+    - **Chapter 3: Remembering martyrdom**
+    - **Chapter 4: Contesting martyrdom**
+    - **Chapter 5: Reforming martyrdom**
+    - **Chapter 6: Politicizing martyrdom**
+    - **Chapter 7: Questioning martyrdom**
+    - **Some films relating to martyrdom**
+  - **Index**
+  - **Expand your collection of

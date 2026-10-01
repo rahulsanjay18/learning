@@ -1,0 +1,78 @@
+# TOC: Horace, Persius - The Satires of Horace and Persius (Penguin Classics) [Retail]
+grade: A
+
+  - HORACE PERSIUS
+- HORACE
+- PERSIUS
+    - Contents
+    - Foreword to the Second Edition
+  - Foreword to the 1997 Edition
+  - Foreword to the 2005 Edition
+  - Introduction
+  - SATURA BEFORE HORACE
+  - HORACE
+  - PERSIUS
+  - A NOTE ON SOME TRANSLATIONS OF HORACE AND PERSIUS
+  - NOTES
+  - HORACE
+  - BOOK I
+    - SATIRE 1
+    - SATIRE 2
+    - SATIRE 3
+    - SATIRE 4
+    - SATIRE 5
+    - SATIRE 6
+    - SATIRE 7
+    - SATIRE 8
+    - SATIRE 9
+    - SATIRE 10
+  - BOOK II
+    - SATIRE 1
+    - SATIRE 2
+    - SATIRE 3
+    - SATIRE 4
+    - SATIRE 5
+    - SATIRE 6
+    - SATIRE 7
+    - SATIRE 8
+  - HORACE
+  - BOOK I
+    - EPISTLE 1
+    - EPISTLE 2
+    - EPISTLE 3
+    - EPISTLE 4
+    - EPISTLE 5
+    - EPISTLE 6
+    - EPISTLE 7
+    - EPISTLE 8
+    - EPISTLE 9
+    - EPISTLE 10
+    - EPISTLE 11
+    - EPISTLE 12
+    - EPISTLE 13
+    - EPISTLE 14
+    - EPISTLE 15
+    - EPISTLE 16
+    - EPISTLE 17
+    - EPISTLE 18
+    - EPISTLE 19
+    - EPISTLE 20
+  - BOOK II
+    - EPISTLE 1
+    - EPISTLE 2
+    - THE ARS POETICA
+  - PERSIUS
+    - PROLOGUE
+    - SATIRE 1
+    - SATIRE 2
+    - SATIRE 3
+    - SATIRE 4
+    - SATIRE 5
+    - SATIRE 6
+  - Notes
+  - Select Bibliography
+    - GENERAL
+    - LUCILIUS
+    - HORACE
+    - PERSIUS
+  - Index of the More Important Names and Topics

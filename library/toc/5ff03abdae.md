@@ -1,0 +1,71 @@
+# TOC: Indian_Philosophy_-_OxfordUP.VSI_-_Hamilton,_Sue.Dec.2001
+grade: A
+
+- **INDIAN PHILOSOPHY**
+  - **Contents**
+  - **List of illustrations**
+  - **List of maps**
+  - **Preface**
+  - **A Note on Languages and Pronunciation**
+  - **Chapter 1
+    - **Thinking and Believing**
+    - **Insight of the Truth**
+    - **Karma and Rebirth**
+    - **Complexity and Variety: Choosing the Content**
+  - **Chapter 2
+    - **Sacrifice**
+    - **Cosmic Speculation**
+    - **Oneness**
+  - **Chapter 3
+    - **Renouncer v. Householder**
+    - **The Nature of Self**
+    - **Gotama – the Buddha**
+    - **The Four Noble Truths**
+    - **Dependent Origination**
+    - **From the Nature of Being to the Nature of Experience**
+  - **Chapter 4
+    - **The Threat to the Brahmins**
+    - **The Lines of Defence**
+    - **Language and Reality**
+    - **Jaimini’s Defence of the Veda**
+    - **The Primacy of the Upani ṣads**
+    - **Text and Testimony**
+  - **Chapter 5
+    - **Vai śeṣika Thought: the Categories of the Cosmos**
+    - **Substance and Quality**
+    - **The Contribution of Ny āya**
+    - **How to Proceed**
+    - **The Method Itself**
+    - **Proof of the Self**
+  - **Chapter 6
+    - **Varieties of Buddhist Thought**
+    - **Abhidharma**
+    - **Emptiness and the Perfection of Wisdom**
+    - **N ārgārjuna’s Middle Way**
+    - **Two Truths and the Logic of Emptiness**
+    - **Mind-Only**
+  - **Chapter 7**
+    - **Yoga: Harmony and Control**
+    - **The Purpose of Classical Yoga**
+    - **S āṃkhya: Reasoning for Dualism**
+    - **Qualities, Categories, and Discernment**
+    - **A Postscript on Prak ṛti**
+  - **Chapter 8
+    - **Bhart ṛhari – Grammar Again**
+    - **M īmāṃsā: the Philosophy of the Ritual**
+    - **Plurality and Realism: Another Take on Categories**
+    - **The Veda is True**
+    - **Ś aṅkara’s Non-dualism**
+    - **R āmānuja: Theist and Philosopher**
+    - **The Logic of the Exegetes**
+  - **Postscript
+  - **Recommended further reading**
+    - **Chapter 1**
+    - **Chapter 2**
+    - **Chapter 3**
+    - **Chapter 4**
+    - **Chapter 5**
+    - **Chapter 6**
+    - **Chapter 7**
+    - **Chapter 8**
+  - **Index**

@@ -1,0 +1,158 @@
+# TOC: Corporate_Social_Responsibility_-_OxfordUP.VSI_-_Moon,_Jeremy.Sep.2014
+grade: A
+
+- Corporate Social Responsibility: A Very Short Introduction
+- Jeremy Moon
+- CORPORATE SOCIAL RESPONSIBILITY
+- A Very Short Introduction
+- Contents
+- [ Acknowledgements ](007_FM_contents.xhtml#r_actrade-9780199671816-miscMatter-7)
+- [ List of abbreviations ](007_FM_contents.xhtml#r_actrade-9780199671816-miscMatter-8)
+- [ List of boxes ](007_FM_contents.xhtml#r_actrade-9780199671816-miscMatter-9)
+- [ Introduction ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-1)
+- [ Chapter 1 ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-2)
+- [ An idea whose time has come ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-2)
+- But what is CSR?
+- Box 1 Definitions of CSR
+- Who is involved in CSR?
+- Box 2 Organizations adopting or engaging with CSR
+- Unpacking CSR
+- The antecedents of CSR
+- Recent developments
+  - From the margins to the mainstream
+- Box 3 CSR media
+  - Leadership perspectives
+  - Societal perspectives
+  - From corporate-centred to corporate-oriented
+- [ Chapter 2 ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-3)
+- [ The company level ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-3)
+- Frameworks for managing CSR
+  - Carroll’s CSR pyramid
+  - The stakeholder approach
+  - The triple bottom line
+  - Shared value
+- Doing CSR
+  - Responsibility in the community
+- Box 4 Anglo-American’s responsibilities in the community
+  - Responsibility in the workplace
+- Box 5 Ford Motor Company’s responsibilities in the workplace
+  - Responsibility in the marketplace
+- Box 6 H&M’s supply chain policies
+- Box 7 Hewlett Packard’s responsibilities downstream
+  - Responsibility in the environment
+- Box 8 Waitrose’s responsibility for sustainable food
+- Company organization of CSR
+- Company integration of CSR
+- CSR performance and impact
+- [ Chapter 3 ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-4)
+- [ National and international developments ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-4)
+- CSR’s American origins
+  - Cultural factors
+  - Economic growth and the new corporations
+  - The politicization of CSR
+- European CSR
+  - Implicit European CSR
+  - Explicit European CSR
+  - European and US CSR compared
+- Box 9 USA and European CSR compared
+- European national CSR systems
+  - The UK as a CSR Pioneer
+  - Scandinavian social democratic CSR
+  - Northern European CSR
+  - The Mediterranean agora model of CSR
+  - Post-communist CSR
+- From transatlantic to global CSR?
+- Box 10 Membership of the UNGC by continent
+- Box 11 Internationalization of CSR
+- CSR in Asia
+  - CSR and Asian cultural values
+  - Government and CSR in Asia
+  - Western influences on CSR in Asia
+  - Asian CSR initiatives
+- CSR in Africa
+- Internationalization of CSR
+- [ Chapter 4 ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-5)
+- [ The socialization of markets ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-5)
+- Box 12 CSR and the socialization of markets
+- Market factors
+  - Consumer pressure for responsible business
+  - Socially responsible investment
+  - Employee values
+  - Companies and the socialization of markets
+- Social factors
+  - Civil society
+  - The media
+- Governmental factors
+  - Endorsing CSR
+  - Facilitating CSR
+  - Partnerships for CSR
+  - Mandating CSR
+- Virtue in markets?
+- [ Chapter 5 ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-6)
+- [ CSR and new governance ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-6)
+- Box 13 CSR and new governance
+- Business associations
+- Box 14 National and regional CSR associations
+- Box 15 Business in the Community services to members
+- Multi-actor organizations
+  - The United Nations CSR initiatives
+- Box 16 Ten principles of the UNGC
+  - International CSR Standards
+  - The Extractive Industries Transparency Initiative
+  - The Ethical Trading Initiative
+  - Stewardship Councils
+- The institutionalization of CSR: a summary
+- [ Chapter 6 ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-7)
+- [ Critical perspectives ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-7)
+- The business of business is business
+- Friedman on CSR assessed
+  - The social responsibility and business dichotomy
+  - A corporate governance hijack?
+  - The public affairs and business dichotomy
+  - Then and now
+  - Friedman’s standard bearers
+- The business of business is anti-social
+  - Corporations and managers are self-interested and unsociable
+  - CSR is a fig leaf for unsociability
+  - CSR side-steps the key business impacts on society
+  - CSR and the ‘corporate takeover’
+  - CSR undermines democratic accountability
+- Anti-capitalist CSR critiques in perspective
+  - Markets, self-interest, and unsociability
+  - CSR and corporate power
+  - CSR as marketing in disguise
+- A more regulated alternative?
+- CSR as essentially contested
+- [ Chapter 7 ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-8)
+- [ Prospects and reflections ](007_FM_contents.xhtml#r_actrade-9780199671816-chapter-8)
+- Economic futures
+- Business futures
+- Environmental and social futures
+- CSR agendas
+- CSR limitations
+- The social gaze
+- An elephant in the CSR room
+- Prospects for corporate citizenship
+- [ References ](007_FM_contents.xhtml#r_actrade-9780199671816-bibliography-1)
+- Chapter 1: An idea whose time has come
+- Chapter 2: The company level
+- Chapter 3: National and international developments
+- Chapter 6: Critical perspectives
+- Chapter 7: Prospects and reflections
+- [ Further reading ](007_FM_contents.xhtml#r_actrade-9780199671816-bibliography-2)
+- General
+- Chapter 1: An idea whose time has come
+- Chapter 2: The company level
+- Chapter 3: National and international developments
+- Chapter 4: The socialization of markets
+- Chapter 5: CSR and new governance
+- Chapter 6: Critical perspectives
+- Chapter 7: Prospects and reflections
+- [ Index](007_FM_contents.xhtml#r_actrade-9780199671816-indexList-1)
+- SOCIAL MEDIA
+- ONLINE
+- CATALOGUE
+- A Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

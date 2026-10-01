@@ -1,0 +1,69 @@
+# TOC: Seneca - Phaedra and Other Plays (Penguin Classics) [Retail]
+grade: C
+
+  - SENECA
+    - Phaedra and Other Plays
+  - Contents
+  - Acknowledgements
+  - Introduction
+    - I Seneca’s Life
+    - II The Plays: the Basics
+    - III The Plays: the Dramatic Context in Greece and Rome
+    - IV The Nature of Seneca’s Plays
+    - V Seneca and Early Modern Tragedy
+    - NOTES
+  - Selected Further Reading
+  - A Note on the Translation
+  - HERCULES INSANE
+    - Preface to _Hercules Insane_
+  - Characters
+    - ACT I
+    - ACT II
+    - ACT III
+    - ACT IV
+    - ACT V
+  - TROJAN WOMEN
+    - Preface to _Trojan Women_
+  - Characters
+    - ACT I
+    - ACT II
+    - ACT III
+    - ACT IV
+    - ACT V
+  - PHAEDRA
+    - Preface to _Phaedra_
+  - Characters
+    - ACT I
+    - ACT II
+    - ACT III
+    - ACT IV
+    - ACT V
+  - OEDIPUS
+    - Preface to _Oedipus_
+  - Characters
+    - ACT I
+    - ACT II
+    - ACT III
+    - ACT IV
+    - ACT V
+  - THYESTES
+    - Preface to _Thyestes_
+  - Characters
+    - ACT I
+    - ACT II
+    - ACT III
+    - ACT IV
+    - ACT V
+  - OCTAVIA
+    - Preface to _Octavia_
+  - Characters
+    - ACT I
+    - ACT II
+    - ACT III
+    - ACT IV
+    - ACT V
+    - ACT VI
+    - ACT VII
+    - ACT VIII
+  - Notes
+  - Glossary of Names, Places and Terms

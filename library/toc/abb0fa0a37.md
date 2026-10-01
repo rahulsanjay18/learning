@@ -1,0 +1,70 @@
+# TOC: Ageing_-_OxfordUP.VSI_-_Pachana,_Nancy_A_Sep.2016
+grade: A
+
+- Ageing: A Very Short Introduction
+- Ageing
+- A Very Short Introduction
+- Contents
+- [Acknowledgements](007_FM_contents.xhtml#r_actrade-9780198725329-miscMatter-7)
+- [List of illustrations](007_FM_contents.xhtml#r_actrade-9780198725329-miscMatter-8)
+- [List of tables](007_FM_contents.xhtml#r_actrade-9780198725329-miscMatter-9)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-1)
+- [ Ageing, a brief history](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-1)
+- Historical reflections on ageing
+- Historical trends in longevity and lifespan
+- Factors influencing life expectancy and ageing
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-2)
+- [ Physical and biological aspects of ageing](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-2)
+- Primary and secondary ageing, and heterogeneity in later life
+- Examples of primary and secondary ageing effects on biological ageing
+- Biological theories of ageing
+- The ageing brain
+- Dementia
+- The ageing body
+- Disease trajectories later in life
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-3)
+- [ The psychology of ageing](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-3)
+- Ways of studying changes in functioning over time
+- Psychological theories of ageing
+- Normal ageing: changes to aspects of cognitive functioning
+- Primary and secondary ageing: effects on cognitive and psychological functioning
+- Primary and secondary ageing: effects on emotional experiences and personality functioning
+- Treatment of mental disorders in later life
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-4)
+- [ Social and interpersonal aspects of ageing](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-4)
+- Ageing and the family
+- Women and ageing
+- Ageing in communities and societies
+- UN Development Programme report, 2014
+- Culture and ageing
+- Wealth and retirement in later life
+- Care of older persons: historical and cultural perspectives
+- The importance of social interaction in later life
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-5)
+- [ Positive and successful ageing](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-5)
+- Key determinants to successful ageing
+- Successful and positive ageing
+- Psychological development in the second half of life
+- Resilience and wisdom
+- [Chapter 6](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-6)
+- [ Reflections on ageing and future directions](007_FM_contents.xhtml#r_actrade-9780198725329-chapter-6)
+- Healthcare frontiers
+- Technological frontiers
+- Cognitive training to enhance brain power
+- Supercentenarian studies
+- Death and dying
+- Final thoughts
+- [References](007_FM_contents.xhtml#r_actrade-9780198725329-bibliography-1)
+- Chapter 1: Ageing, a brief history
+- Chapter 2: Physical and biological aspects of ageing
+- Chapter 3: The psychology of ageing
+- Chapter 4: Social and interpersonal aspects of ageing
+- Chapter 5: Positive and successful ageing
+- Chapter 6: Reflections on ageing and future directions
+- [Further reading](007_FM_contents.xhtml#r_actrade-9780198725329-bibliography-2)
+- Brief compendium of ageing organizations of note
+- [Publisher’s acknowledgements](007_FM_contents.xhtml#r_actrade-9780198725329-miscMatter-10)
+- [Index](007_FM_contents.xhtml#r_actrade-9780198725329-indexGroup-1)
+- Table of Contents
+  - Landmarks
+  - Pages

@@ -1,0 +1,39 @@
+# TOC: Steinbeck, John - The Grapes of Wrath (1939, Penguin Group USA) - libgen.li
+grade: A
+
+  - _Chapter 1_
+  - _The Grapes of Wrath_
+  - _Chapter 2_
+  - _Chapter 3_
+  - _Chapter 4_
+  - _Chapter 5_
+  - _Chapter 6_
+  - _Chapter 7_
+  - _Chapter 8_
+  - _Chapter 9_
+  - _Chapter 10_
+  - _Chapter 11_
+  - _Chapter 12_
+  - _Chapter 13_
+  - _Chapter 14_
+  - _Chapter 15_
+  - _Chapter 16_
+  - _Chapter 17_
+  - _Chapter 18_
+  - _Chapter 19_
+  - _Chapter 20_
+  - _Chapter 21_
+  - _Chapter 22_
+  - _Chapter 23_
+  - _Chapter 24_
+  - _Chapter 25_
+  - _Chapter 26_
+  - _Chapter 27_
+  - _Chapter 28_
+  - _Chapter 29_
+  - _Chapter 30_
+- _The Grapes of Wrath_
+  - _Contents_
+  - _Introduction_
+  - _Suggestions for Further Reading_
+  - _A Note on the Text_

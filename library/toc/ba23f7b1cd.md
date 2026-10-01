@@ -1,0 +1,53 @@
+# TOC: Mistry, Rohinton - A Fine Balance - libgen.li
+grade: A
+
+- INTERNATIONAL ACCLAIM FOR
+- BOOKS BY ROHINTON MISTRY
+- _Contents_
+- _Prologue: 1975_
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _City by the Sea_
+- II
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- For Dreams to Grow
+- III
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _In a Village by a River_
+- IV
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Small_ _Obstacles_
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Mountains_
+- VI
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Day at the Circus, Night in the Slum_
+- VII
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _On the Move_
+- VIII
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Beautification_
+- IX
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _What Law There Is_
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Sailing Under One Flag_
+- XI
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _The Bright Future Clouded_
+- XII
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Trace of Destiny_
+- XIII
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Wedding, Worms, and Sanyas_
+- XIV
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Return of Solitude_
+- XV
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _Family Planning_
+- XVI
+- ![](images/Mist_9781551991382_epub_L03_r1.jpg)
+- _The Circle Is Completed_
+- _Epilogue: 1984_

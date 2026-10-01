@@ -1,0 +1,160 @@
+# TOC: Game_Theory_-_OxfordUP.VSI_-_Binmore,_Ken.Oct.2007
+grade: A
+
+- GAME THEORY
+- Ken Binmore
+- Game Theory
+  - To Peter and Nina
+- Contents
+- List of illustrations
+- Chapter 1 **The name of the game**
+- What is game theory about?
+- Does game theory work?
+  - Toy games
+  - Von Neumann
+- Revealed preference
+    - Taking risks
+  - Life isn't a zero-sum game
+- Nash equilibrium
+    - John Nash
+  - Rational interpretation
+  - Evolutionary interpretation
+- Prisoner's Dilemma
+    - Paradox of rationality?
+    - Objections?
+- Chapter 2 **Chance**
+- Does randomizing make sense?
+- Mixed Nash equilibria
+  - Making the other guy indifferent
+- Getting to equilibrium
+- Minimax theorem
+- Why maximin?
+- Finding maximin strategies
+  - Rock-Scissors-Paper
+    - O'Neill's Card Game
+- Chapter 3 **Time**
+- Games with perfect information
+- Backward induction
+  - Chess
+    - Hex
+- Deleting dominated strategies
+  - Guessing games
+- Subgame perfection
+  - Kidnap
+    - Counterfactuals
+- Ultimatum Game
+  - The Ultimatum Minigame
+- Refinements
+  - Chain Store paradox
+    - Typos
+- Chapter 4 **Conventions**
+- Focal points
+  - Tom Schelling
+- How much is conventional?
+- Bad conventions
+- Social dilemmas
+- Stag Hunt Game
+    - Trust?
+- Chapter 5 **Reciprocity**
+- Repeated games
+- Repetition with a fixed horizon
+- Folk theorem
+    - The Trust Minigame
+  - What can go wrong?
+- Tit-for-tat
+- Emergent phenomena
+    - Authority
+    - Duty
+- Role of the emotions
+  - Revenge
+- Chapter 6 **Information**
+- Poker
+    - Bluffing
+    - An even simpler model
+- Types
+    - John Harsanyi
+- Incomplete information
+  - One-sided ignorance in Chicken
+    - Two-sided ignorance in Chicken
+  - Ignorance is bliss?
+- Signalling your type
+- Displays
+- Chapter 7 **Auctions**
+- Mechanism design
+- Judgement of Solomon
+- Economic applications
+  - Willlam Vickrey
+- Kinds of auction
+- Dutch auctions
+    - Vickrey auctions
+- Optimal auctions
+  - Reserve prices
+- Revenue equivalence
+    - Shading your bid
+- All-pay auctions
+- Bespoke auctions
+- Winner's curse
+- Chapter 8 **Evolutionary biology**
+- Evolutionary game theory
+  - Replicators
+- Evolutionary stability
+  - Evolutionarily stable strategies
+- Hawk-Dove Game
+  - Playing the field
+- Kin selection
+  - Hamilton's rule
+  - Social insects
+- Evolution of cooperation
+- Social or cultural evolution
+- **Bargaining and coalitions**
+- Nash program
+- Nash bargaining solution
+  - Nash's argument
+- Rubinstein's bargaining model
+    - What matters in bargaining?
+  - Risk
+  - Time
+- Playing fair?
+- Forming coalitions
+  - Outside options
+- Stable sets
+- Shapley value
+- Chapter 10 **Puzzles and paradoxes**
+- Fallacies of the Prisoner's Dilemma
+- Categorical imperative
+  - Fallacy of the twins
+    - Myth of the wasted vote
+  - Transparent disposition fallacy
+- Newcomb's paradox
+- Surprise test paradox
+- Common knowledge
+  - A coordination paradox
+- Monty Hall problem
+- References and further reading
+    - Chapter 10
+- **Index**
+- **A**
+- **B**
+- **C**
+- **D**
+- **E**
+- **F**
+- **G**
+- **H**
+- **I**
+- **K**
+- **L**
+- **M**
+- **N**
+- **O**
+- **P**
+- **R**
+- **S**
+- **T**
+- **V**
+- **W**
+- **Z**
+- LOGIC
+- A Very Short Introduction
+- DARWIN
+- A Very Short Introduction

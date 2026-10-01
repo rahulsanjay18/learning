@@ -1,0 +1,125 @@
+# TOC: Molecular_Biology_-_OxfordUP.VSI_-_Divan,_Aysha_&_Royds,_Janice.Jun.2016
+grade: A
+
+- Molecular Biology: A Very Short Introduction
+- Molecular Biology
+- A Very Short Introduction
+- Contents
+- [Preface](006_FM_contents.xhtml#r_actrade-9780198723882-miscMatter-6)
+- [List of illustrations](006_FM_contents.xhtml#r_actrade-9780198723882-miscMatter-7)
+- [Common abbreviations](006_FM_contents.xhtml#r_actrade-9780198723882-miscMatter-8)
+- [ Chapter 1](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-1)
+- [ The early milestones](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-1)
+- The discovery of DNA
+- From DNA to the Central Dogma
+- [ Chapter 2](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-2)
+- [ DNA](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-2)
+- Components of the human genome
+- Organization of the human genome
+- DNA replication
+- Mutations and correction mechanisms
+- Polymorphisms
+- How do we study DNA?
+  - Gene cloning
+  - Electrophoresis
+  - The polymerase chain reaction
+  - DNA sequencing
+- Bioinformatics
+- [ Chapter 3](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-3)
+- [ RNA](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-3)
+- RNAs in protein synthesis
+  - Transcription
+  - Translation
+- Regulatory RNAs
+- miRNAs
+- RNAi in research and in therapy
+- Long non-coding RNAs
+- Catalytic RNAs
+- How do we study RNA?
+  - Microarrays
+  - RNA sequencing
+- [ Chapter 4](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-4)
+- [ Proteins](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-4)
+- Composition of proteins
+- How do we study proteins?
+  - Isoelectric focusing, 1D and 2D electrophoresis
+  - Mass spectrometry—weighing molecules
+  - Studying the proteome
+  - Studying protein structure
+- Protein identification by immunological means
+  - Western blot
+- Immunohistochemistry (IHC)
+- Gene duplication and protein paralogues
+- Proteins with multiple functions—‘moonlighting’
+- Protein isoforms produced from a single gene
+- Post-translational modifications
+- Prions
+- [ Chapter 5](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-5)
+- [ Molecular interactions](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-5)
+- Regulation at the chromatin level
+- Regulation at transcriptional level
+- Regulation by enhancer sequences
+- Regulation by epigenetics
+- Maintenance of epigenetic marks during cell division
+  - Heritability of epigenetic marks
+- Gene–environment interactions
+- Epigenetics and X-inactivation
+- Gene expression and beyond
+- Molecular interactions that maintain cell number
+- Cell division
+- Apoptosis and cell death
+- [ Chapter 6](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-6)
+- [ Genetic engineering](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-6)
+- Recombinant pharmaceuticals
+- Monoclonal antibodies
+- Recombinant protein vaccines
+- Models of human disease
+- Gene therapy
+- Genetically modified foods
+- Herbicide-tolerant and insect-resistant crops
+- Crops with improved nutritional value
+- Addressing GM food concerns
+- [ Chapter 7](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-7)
+- [ Molecular biology in the clinic](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-7)
+- The molecular biology of ageing
+- Dementias
+- Diseases of premature ageing
+- Pathways leading to old age
+- Telomeres and diseases of ageing
+- Cancer
+- Cancer is a genetic disease
+- _TP53—_ Guardian of the Genome
+- Telomeres and cancer cells
+- Non-coding RNAs and cancer
+- Cancer stem cells
+- New-targeted drugs
+- [ Chapter 8](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-8)
+- [ Molecular forensics](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-8)
+- DNA profiling—using the unique sequence in our genomes
+- From minisatellites to microsatellite databases
+- Ancient DNA and mitochondrial analysis
+- Next-generation sequencing: when a DNA match is not enough
+- Ancient DNA and the Neanderthals
+- The DNA of Richard III identifies his remains
+- Tackling pandemics and epidemics
+- A barcode for a species
+- Biosecurity—using mitochondrial DNA
+- How can we identify food counterfeits?
+- [ Chapter 9](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-9)
+- [ Future challenges](006_FM_contents.xhtml#r_actrade-9780198723882-chapter-9)
+- Biomarkers for therapeutic prediction in cancer
+- Mitochondrial DNA and heritable diseases
+- Synthetic biology
+- Genome editing
+- [References](006_FM_contents.xhtml#r_actrade-9780198723882-bibliography-1)
+- Chapter 4: Proteins
+- Chapter 5: Molecular interactions
+- [Further reading](006_FM_contents.xhtml#r_actrade-9780198723882-bibliography-2)
+- Textbooks
+- Reading books
+- Academic articles
+- Web resources
+- [Index](006_FM_contents.xhtml#r_actrade-9780198723882-indexGroup-1)
+- Table of Contents
+  - Landmarks
+  - Pages

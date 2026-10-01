@@ -1,0 +1,94 @@
+# TOC: William D. Callister, David G. Rethwisch - Materials science and engineering_ an introduction, 8th Edition  -John Wiley (2009)
+grade: B
+
+- Unit Abbreviations
+- Qv
+- 92 • Chapter 4
+- Summary • 117
+- xj  c 14Dd td2ln a
+- ---
+- s.
+- ---
+- Reciprocal temperature (1000/K)
+- tcrss  t0  A2rD
+- 232 • Chapter 7
+- K2
+-  K3n*vd  K1K2K3 c exp a  ¢G*
+- vd  K2 exp a 
+- unit cells/particle  critical nucleus volume
+-  C exp a 
+- Rate
+- Rate
+- h 
+- CO2
+- CO2  [1.8  107 1cm3 STP2/1cm2 # s2] 1500 cm22  9.0  105 1cm3 STP2/s
+- CO2   JA
+- CO2
+- 16.7 (a) For a fiber-reinforced composite, the ef-
+- CPR  KW
+- [Mn
+- b  0.12
+- DESIGN PROBLEMS
+- r  RA
+- me
+- ---
+- Impurity resistivity
+- Photograph of two copper wire–aluminum wire
+- Electrical
+- donor state
+-  1120 1#m2 1
+- ---
+- # m
+- 
+- For ionic materials,
+- 756 • Chapter 18
+- Polarization of a
+- 766 • Chapter 18
+- Summary • 769
+- ---
+- Questions and Problems • 775
+- Electrical resistivity (10–8 .m)
+- ln ni r 
+- ---
+- s  CT 3
+- ---
+- Semiconductor Devices
+- 780 • Chapter 18
+- C 
+- #W
+- 19.3
+- ##
+- q  k dT
+- Figure 19.5
+- Cy
+- 12p4R/5u3
+- 1 This m is taken to be the volume susceptibility in SI units, which, when multiplied by H,
+- Magnetic
+- hard magnetic
+- ---
+- hc
+- ---
+- Table A.1
+- Refractory Metals
+- Epoxy
+- Refractory Metals
+- Polyester (thermoset)
+- Cast Irons
+- Zinc (commercially pure)
+- case hardening. Hardening of the
+- grain size. The average grain diam-
+- solute atoms occupy interstitial po-
+- Xm
+- Poisson’s ratio (). For elastic de-
+- sintering. Particle coalescence of a
+- ---
+- will be amplified and from which
+- Glossary • G15
+- 3.53 (b) LD111(W)  3.65  109 m1
+- PT  0.237
+- a dF
+- s*
+- ---
+- Pr
+- Chapter 20
+- ---

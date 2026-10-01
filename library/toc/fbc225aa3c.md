@@ -1,0 +1,67 @@
+# TOC: Hellenistic_Age,_The_-_OxfordUP.VSI_-_Thonemann,_Peter.Oct.2017
+grade: A
+
+- The Hellenistic Age: A Very Short Introduction
+- The Hellenistic Age
+- A Very Short Introduction
+- Contents
+- [Preface](006_FM_contents.xhtml#r_actrade-9780198746041-miscMatter-6)
+- [List of illustrations](006_FM_contents.xhtml#r_actrade-9780198746041-miscMatter-7)
+- [Maps](006_FM_contents.xhtml#r_actrade-9780198746041-miscMatter-8)
+- [Chapter 1](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-1)
+- [ The idea of the Hellenistic](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-1)
+- The man from Soli
+- A ‘Hellenistic’ Age?
+- Writing Hellenistic history
+- [Chapter 2](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-2)
+- [ From Alexander to Augustus](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-2)
+- Alexander the great, 336–323 bc
+- The age of the successors, 323–281 bc
+- The Hellenistic kingdoms, 281–220 bc
+- _Symplokē_ , 220–188 bc
+- The ‘short’ 2nd century, 188–133 bc
+- The end of the Hellenistic world, 133–30 bc
+- [Chapter 3](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-3)
+- [ Demetrius the Besieger and Hellenistic kingship](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-3)
+- Warlords and kings
+- The king at war
+- Demetrius the god
+- Kings and cities
+- The royal ‘club’
+- [Chapter 4](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-4)
+- [ Eratosthenes and the system of the world](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-4)
+- The chicken-coop of the Muses
+- Space and time: Eratosthenes of Cyrene
+- Pure and applied: Archimedes of Syracuse
+- Poetry and literary scholarship
+- Beyond Alexandria
+- [Chapter 5](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-5)
+- [ Encounters](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-5)
+- Ashoka looks west
+- East: Aristotle in the Hindu Kush
+- South: argonauts of the monsoon
+- North: Protogenes and Saitaphernes
+- West: the Villa of the Papyri
+- [Chapter 6](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-6)
+- [ Priene](006_FM_contents.xhtml#r_actrade-9780198746041-chapter-6)
+- Planning the city
+- Priene and the kings
+- Life in the city
+- From Apellis to Moschion
+- [Timeline](006_FM_contents.xhtml#r_actrade-9780198746041-miscMatter-10)
+- Further reading
+- Chapter 1: The idea of the Hellenistic
+- Chapter 2: From Alexander to Augustus
+- Chapter 3: Demetrius the Besieger and Hellenistic kingship
+- Chapter 4: Eratosthenes and the system of the world
+- Chapter 5: Encounters
+- Chapter 6: Priene
+- [Publisher’s acknowledgements](006_FM_contents.xhtml#r_actrade-9780198746041-miscMatter-11)
+- [Index](006_FM_contents.xhtml#r_actrade-9780198746041-indexGroup-1)
+- Social Media
+- Online Catalogue
+- Late Antiquity
+- Herodotus
+- Table of Contents
+  - Landmarks
+  - Pages

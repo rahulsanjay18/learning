@@ -1,0 +1,53 @@
+# TOC: Time_-_OxfordUP.VSI_-_Ismael,_Jenann.Aug.2021
+grade: A
+
+- Time: A Very Short Introduction
+- Time
+- A Very Short Introduction
+- Preface
+- Contents
+- [List of illustrations](007_FM_contents.xhtml#r_actrade-9780198832669-miscMatter-7)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-1)
+- [ Time until Newton ](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-1)
+- The invention of time
+- Physics
+- Philosophical dispute
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-2)
+- [From space and time to spacetime: the era of Einstein ](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-2)
+- How all of this changes our philosophical understanding of time
+- Reconstruction
+- General relativity
+- Scientific cosmology
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-3)
+- [Philosophical implications of relativity ](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-3)
+- A bridge too far?
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-4)
+- [The arrow of time ](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-4)
+- The emergence of complexity and life
+- Agency
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-5)
+- [The time of human experience ](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-5)
+- [Chapter 6](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-6)
+- [The big picture and new horizons ](007_FM_contents.xhtml#r_actrade-9780198832669-chapter-6)
+- The warp and weave of the world
+- New horizons: beyond space and time
+- [References ](007_FM_contents.xhtml#r_actrade-9780198832669-bibliography-1)
+- Chapter 1: Time until Newton
+- Chapter 2: From space and time to spacetime: the era of Einstein
+- Chapter 3: Philosophical implications of relativity
+- Chapter 5: The time of human experience
+- [Further reading ](007_FM_contents.xhtml#r_actrade-9780198832669-bibliography-2)
+- Chapter 1: Time until Newton
+- Chapter 2: From space and time to spacetime: the era of Einstein
+- Chapter 3: Philosophical implications of relativity
+- Chapter 4: The arrow of time
+- Chapter 5: The time of human experience
+- Chapter 6: The big picture and new horizons
+- General
+- [Index ](007_FM_contents.xhtml#r_actrade-9780198832669-indexGroup-1)
+- The History of Life
+- Relativity
+- Nothing
+- Table of Contents
+  - Landmarks
+  - Pages

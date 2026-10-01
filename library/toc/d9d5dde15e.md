@@ -1,0 +1,77 @@
+# TOC: Biochemistry_-_OxfordUP.VSI_-_Lorch,_Mark.May.2021
+grade: B
+
+- Biochemistry: A Very Short Introduction
+- Biochemistry
+- A Very Short Introduction
+- Contents
+- [ Preface ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-miscMatter-6)
+- [ List of illustrations ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-miscMatter-7)
+- [Chapter 1](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-1)
+- [ The roots of biochemistry ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-1)
+- Fermentation and enzymes
+- Proteins
+- High resolution structures
+- DNA
+- [Chapter 2](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-2)
+- [ Water, lipids, and carbohydrates ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-2)
+- Water
+- Lipids
+- Carbohydrates
+- Energy currency and electron shuttles
+- [Chapter 3](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-3)
+- [ Proteins nature’s nano-machines ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-3)
+- Structural motifs
+- Cofactors and post-translational modifications
+- Protein function
+- Enzyme kinetics
+- The protein folding problem
+- Chaperone proteins
+- Intrinsically disordered proteins
+- [Chapter 4](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-4)
+- [ Nucleic acids life’s blueprints ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-4)
+- The central dogma of molecular biology
+- Nucleotides, strands, and base pairs
+- Nucleic acid secondary structures
+- RNA world
+- Transcription and gene structures
+- Translation
+- [Chapter 5](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-5)
+- [ Powering a cell bioenergetics ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-5)
+- The light reactions
+- The dark reactions
+- Glycolysis
+- [Chapter 6](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-6)
+- [ Manufacturing and maintaining DNA ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-6)
+- DNA replication
+- High fidelity
+- DNA sequencing and amplification
+- [Chapter 7](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-7)
+- [ Following biochemistry within the cell ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-7)
+- Patch clamping
+- Green fluorescent protein
+- Nanoscopes
+- Super high resolution insights into cell division
+- Cytoskeletons and motor proteins
+- Optical traps and tweezers
+- [Chapter 8](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-8)
+- [ Biotechnology and synthetic biology ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-chapter-8)
+- Synthetic organisms and genomes
+- Gene editing
+- CRISPR
+- Designer babies
+- Designer bugs
+- [ References ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-bibliography-1)
+- Preface
+- Chapter 1: The roots of biochemistry
+- Chapter 3: Proteins: nature’s nano-machines
+- Chapter 4: Nucleic acids: life’s blueprints
+- Chapter 5: Powering a cell: bioenergetics
+- Chapter 6: Manufacturing and maintaining DNA
+- Chapter 7: Following biochemistry within the cell
+- Chapter 8: Biotechnology and synthetic biology
+- [ Further reading ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-bibliography-2)
+- [ Index ](../Text/006_FM_contents.xhtml#r_actrade-9780198833871-indexGroup-1)
+- Table of Contents
+  - Landmarks
+  - Pages

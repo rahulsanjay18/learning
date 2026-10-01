@@ -1,0 +1,82 @@
+# TOC: Body,_The_-_OxfordUP.VSI_-_Shilling,_Chris.Nov.2015
+grade: A
+
+- The Body: A Very Short Introduction
+- The Body
+- A Very Short Introduction
+- Contents
+- [Preface](006_FM_contents.xhtml#r_actrade-9780198739036-miscMatter-6)
+- [Acknowledgements](006_FM_contents.xhtml#r_actrade-9780198739036-miscMatter-7)
+- [List of illustrations](006_FM_contents.xhtml#r_actrade-9780198739036-miscMatter-8)
+- [Introduction](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-1)
+- [ Chapter 1 ](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-2)
+- [ Natural bodies or social bodies?](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-2)
+- Why the body? Social factors
+- Why the body? Academic factors
+- Convergences
+- The elusiveness of bodies
+- [ Chapter 2 ](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-3)
+- [ Sexed bodies](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-3)
+- Male and female bodies in history
+- From sexed bodies to gendered bodies
+- Socially gendered bodies
+- Back to the future?
+- Beyond sexed and gendered bodies?
+- Gendered bodies and value
+- [ Chapter 3 ](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-4)
+- [ Educating bodies](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-4)
+- Techniques of the body
+- The occupational training of sight
+- An apprenticeship in boxing
+- Becoming religious
+- The ‘known’ and the ‘unknown’
+- [ Chapter 4 ](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-5)
+- [ Governing bodies](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-5)
+- The rise of biopower
+- The medieval focus on death
+- The modern focus on life
+- Contemporary governance
+- Security and biopolitics
+- Governing life’s processes
+- The state, life, and security
+- [ Chapter 5 ](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-6)
+- [ Bodies as commodities](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-6)
+- Marketing appearance
+- Medicalizing bodies for profit
+- Trafficking body parts
+- Enslaving bodies
+- Resisting commodification
+- [ Chapter 6 ](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-7)
+- [ Bodies matter: dilemmas and controversies](006_FM_contents.xhtml#r_actrade-9780198739036-chapter-7)
+- Are mediated bodies immoral?
+- How do people manage bodily change?
+- Have our bodies become sacred?
+- Expansive bodies
+- [References](006_FM_contents.xhtml#r_actrade-9780198739036-bibliography-1)
+- Introduction
+- Chapter 1: Natural bodies or social bodies?
+- Chapter 2: Sexed bodies
+- Chapter 3: Educating bodies
+- Chapter 4: Governing bodies
+- Chapter 5: Bodies as commodities
+- Chapter 6: Bodies matter: dilemmas and controversies
+- [Further reading](006_FM_contents.xhtml#r_actrade-9780198739036-bibliography-2)
+- Introduction
+- Chapter 1: Natural bodies or social bodies?
+- Chapter 2: Sexed bodies
+- Chapter 3: Educating bodies
+- Chapter 4: Governing bodies
+- Chapter 5: Bodies as commodities
+- Chapter 6: Bodies matter: dilemmas and controversies
+- [Index](006_FM_contents.xhtml#r_actrade-9780198739036-indexGroup-1)
+- Feminism
+- A Very Short Introduction
+- Social and Cultural Anthropology
+- A Very Short Introduction
+- Sociology
+- A Very Short Introduction
+- Social Media
+- Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

@@ -1,0 +1,34 @@
+# TOC: First_World_War,_The_-_OxfordUP.VSI_-_Howard,_Michael.Jan.2007
+grade: A
+
+  - THE FIRST WORLD WAR
+  - THE FIRST WORLD WAR
+  - <span id="page-7-0"></span>Contents
+  - <span id="page-9-0"></span>[List of illustrations](#page-7-0)
+  - <span id="page-11-0"></span>[Maps](#page-7-0)
+  - <span id="page-23-0"></span>Chapter 1
+  - **[Europe in 1914](#page-7-0)**
+  - <span id="page-37-0"></span>Chapter 2
+  - **[The Coming of War](#page-7-0)**
+  - <span id="page-49-0"></span>Chapter 3
+  - **[1914: The Opening](#page-7-0) Campaigns**
+  - <span id="page-59-0"></span>Chapter 4
+  - **[1915: The War Continues](#page-7-0)**
+  - <span id="page-78-0"></span>Chapter 5
+  - **[1916: The War of Attrition](#page-7-0)**
+  - <span id="page-90-0"></span>Chapter 6
+  - **[The United States Enters](#page-7-0) the War**
+  - <span id="page-103-0"></span>Chapter 7
+  - **[1917: The Year of Crisis](#page-7-0)**
+  - <span id="page-117-0"></span>Chapter 8
+  - **[1918: The Year of Decision](#page-7-0)**
+  - <span id="page-135-0"></span>Chapter 9
+  - **[The Settlement](#page-7-0)**
+  - <span id="page-142-1"></span><span id="page-142-0"></span>Appendix I
+  - **[President Wilson's](#page-7-0) Fourteen Points**
+  - <span id="page-144-0"></span>Appendix II
+  - **[Total War Casualties](#page-7-0)**
+  - <span id="page-145-0"></span>[Further Reading](#page-7-0)
+- Visit the VERY SHORT INTRODUCTIONS
+  - www.oup.co.uk/vsi
+- TWENTIETH-CENTURY BRITAIN

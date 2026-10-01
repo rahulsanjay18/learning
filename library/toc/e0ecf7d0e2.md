@@ -1,0 +1,34 @@
+# TOC: Film_-_OxfordUP.VSI_-_Wood,_Michael.Jan.2012
+grade: A
+
+- **FILM**
+  - **Contents**
+  - **List of illustrations**
+  - **Publisher’s acknowledgements**
+  - **Before the titles**
+  - **Chapter 1
+    - **Still waters**
+    - **Film and photography**
+    - **Who you gonna believe?**
+    - **Fast history**
+    - **Real magicalism**
+  - **Chapter 2
+    - **Lucky stars**
+    - **It’s all true**
+    - **Nations and moments**
+    - **Art and experiment**
+    - **Director’s cut**
+    - **Drawn to life**
+  - **Chapter 3
+    - **Art and industry**
+    - **Moviegoers**
+    - **The rise and fall of the picture palace**
+    - **One more time**
+    - **Deaths of the cinema**
+  - **References**
+    - **Chapter 1**
+    - **Chapter 2**
+    - **Chapter 3**
+  - **Further reading**
+  - **Around the world in 80 films**
+  - **Index**

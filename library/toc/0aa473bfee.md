@@ -1,0 +1,72 @@
+# TOC: Globalization_-_OxfordUP.VSI_-_Steger,_Manfred_B_Mar.2003
+grade: A
+
+- Manfred B. Steger GLOBALIZATION A Very Short Introduction
+- GLOBALIZATION
+    - **Contents**
+    - **Preface**
+    - **Abbreviations**
+    - **List of illustrations**
+    - List of maps
+    - **Chapter 1**
+- **Globalization: a contested concept**
+    - **Deconstructing Osama bin Laden**
+    - **Toward a definition of globalization**
+    - More areas of contestation
+    - Chapter 2
+- **Is globalization a new phenomenon?**
+    - The prehistoric period (10,000 BCE-3,500 BCE)
+    - The premodern period (3,500 BCE-1,500 CE)
+    - **The early modern period (1500-1750)**
+    - **The modern period (1750-1970)**
+    - **The contemporary period (from 1970)**
+    - ChapterB
+- **The economic dimension of globalization**
+    - The emergence of the global economic order
+    - **Neoliberalism**
+    - **Concrete neoliberal measures include:**
+    - **The internationalization of trade and finance**
+    - The Southeast Asia Crisis
+    - **The power of transnational corporations**
+    - **Nokia's role in the Finnish economy**
+    - **The enhanced role of international economic institutions**
+    - Neoliberal economics and Argentina
+    - Chapter 4
+- **The political dimension of globalization**
+    - **The modern nation-state system**
+    - **The demise of the nation-state?**
+    - **Political globalization and global governance**
+    - Chapters
+- **The cultural dimension of globalization**
+    - **Global culture: sameness or difference?**
+    - **The role of the media**
+    - The 'Big Ten' media conglomerates in 2001
+    - **The globalization of languages**
+    - **Cultural values and environmental degradation**
+    - ChapterG
+- **The ideological dimension of globalization**
+    - **Selling globalization**
+    - **Claim 1: Globalization is about the liberalization and global integration of markets**
+    - **Claim 5: Globalization furthers the spread of democracy in the world**
+    - **Conclusion**
+    - Chapter 7
+    - **Challenges to globalism**
+    - Two antiglobalist camps
+    - **Particularist protectionism**
+    - **Universalist protectionism**
+    - **Particularist protectionists**
+    - **Universalist protectionists**
+    - **From the anti-WTO protests in Seattle to the terrorist attacks on the World Trade Center and the Pentagon**
+    - Washington, DC, April 2000
+    - Prague, September 2000
+    - Davos, January 2001
+    - Quebec City, April 2001
+    - **London, May 2001**
+    - **Gothenburg, June 2001**
+    - **Genoa, July 2001**
+    - Chapters 8
+- **Assessing the future of globalization**
+    - **References**
+    - **Index**
+    - Expand your collection of
+    - VERY SHORT INTRODUCTIONS

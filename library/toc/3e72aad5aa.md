@@ -1,0 +1,78 @@
+# TOC: World_War_II_-_OxfordUP.VSI_-_Weinberg,_Gerhard_L_Sep.2014
+grade: A
+
+- World War II: A Very Short Introduction
+- Gerhard L. Weinberg
+- WORLD WAR II
+- A Very Short Introduction
+- Contents
+- [ List of maps ](005_FM_contents.xhtml#r_actrade-9780199688777-miscMatter-5)
+- [ Introduction ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-1)
+- [ Chapter 1 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-2)
+- [ The inter-war years ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-2)
+- The 1919 peace conference
+- Germany after World War I and the rise of Hitler
+- The world reacts to Hitler
+- The crisis over Czechoslovakia
+- Germany starts World War II
+- [ Chapter 2 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-3)
+- [ World War II begins ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-3)
+- The invasions of Poland
+- War at sea
+- The German invasion of Denmark and Norway
+- [ Chapter 3 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-4)
+- [ War in the West: 1940 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-4)
+- War plans
+- The German victory in the West
+- The reaction of the USA
+- The German decision to invade the Soviet Union
+- The war in Africa and the Middle East
+- [ Chapter 4 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-5)
+- [ Barbarossa: the German invasion of the Soviet Union ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-5)
+- Planning for the invasion of the Soviet Union and the Holocaust
+- Germany invades the Soviet Union
+- The Eastern front in the winter of 1941–42
+- The unoccupied and the occupied Soviet Union
+- [ Chapter 5 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-6)
+- [ Japan expands its war with China ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-6)
+- Japan decides to expand its war
+- The Japanese advance
+- Japan’s offensives halted
+- A wider war
+- [ Chapter 6 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-7)
+- [ The turning tide: autumn 1942–spring 1944 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-7)
+- Germany’s 1942 offensive and disaster in the East
+- The initiative in the East and shifts in the Mediterranean in 1943
+- The war at sea and in the air
+- Campaigns in Sicily and Italy
+- The war in the Pacific 1942–43
+- Resistance in occupied areas and the policies of neutrals as the tide turns
+- [ Chapter 7 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-8)
+- Germany
+- Poland
+- Denmark and Norway
+- Holland, Belgium, Luxembourg, and France
+- Great Britain and its Commonwealth and Empire
+- Italy
+- The Soviet Union
+- Japan
+- China
+- The United States
+- Central and South America, neutrals, and technical developments
+- [ Chapter 8 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-9)
+- [ Allied victory, 1944–5 ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-9)
+- The Axis
+- The Allies
+- Winter 1944–45 in Europe
+- Allied offensives in east Asia and the Pacific
+- The final defeat of Japan
+- [ Conclusion ](005_FM_contents.xhtml#r_actrade-9780199688777-chapter-10)
+- [ Further reading](005_FM_contents.xhtml#r_actrade-9780199688777-bibliographyGroup-1)
+- [ Index](005_FM_contents.xhtml#r_actrade-9780199688777-indexGroup-1)
+- SOCIAL MEDIA
+- ONLINE
+- CATALOGUE
+- A Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

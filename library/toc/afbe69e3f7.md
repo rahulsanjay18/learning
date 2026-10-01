@@ -1,0 +1,178 @@
+# TOC: [Joel_Grus]_Data_Science_from_Scratch_First_Princ
+grade: A
+
+- create a list (user_id, number_of_friends)
+- each pair is (user_id, num_friends)
+- [(1, 3), (2, 3), (3, 3), (5, 3), (8, 3),
+- (0, 2), (4, 2), (6, 2), (7, 2), (9, 1)]
+- keys are interests, values are lists of user_ids with that interest
+- keys are user_ids, values are lists of interests for that user_id
+- keys are years, values are lists of the salaries for each tenure
+- keys are years, each value is average salary for that tenure
+- keys are tenure buckets, values are lists of salaries for that bucket
+- keys are tenure buckets, values are average salary for that bucket
+- print the 10 most common words and their counts
+- sort the list by absolute value from largest to smallest
+- sort the words and counts from highest count to lowest
+- [0.8444218515250481,      # random.random() produces numbers
+- 0.7579544029403025,      # uniformly between 0 and 1
+- 0.420571580830845,       # it's the random function we'll use
+- 0.25891675029296335]     # most often
+- [2, 5, 1, 9, 7, 3, 8, 6, 4, 0]   (your results will probably be different)
+- [9, 4, 4, 2]
+- by convention, we give classes PascalCase names
+- not Pythonic
+- also not Pythonic
+- prints
+- unnamed args: (1, 2)
+- keyword args: {'key2': 'word2', 'key': 'word'}
+- create a line chart, years on x-axis, gdp on y-axis
+- add a title
+- add a label to the y-axis
+- bars are by default width 0.8, so we'll add 0.1 to the left coordinates
+- so that each bar is centered
+- plot bars with left x-coordinates [xs], heights [num_oscars]
+- label x-axis with movie names at bar centers
+- if you don't do this, matplotlib will label the x-axis 0, 1
+- and then add a +2.013e3 off in the corner (bad matplotlib!)
+- misleading y-axis only shows the part above 500
+- we can make multiple calls to plt.plot
+- to show multiple series on the same chart
+- because we've assigned labels to each series
+- we can get a legend for free
+- loc=9 means "top center"
+- label each point
+- [[1, 0, 0, 0, 0],
+- [0, 1, 0, 0, 0],
+- [0, 0, 1, 0, 0],
+- [0, 0, 0, 1, 0],
+- [0, 0, 0, 0, 1]]
+- this isn't right if you don't from __future__ import division
+- "range" already means something in Python, so we'll use a different name
+- of members avg. # of friends
+- of members avg. # of friends
+- use a line chart to show the normal approximation
+- the normal cdf _is_ the probability the variable is below a threshold
+- it's above the threshold if it's not below the threshold
+- it's between if it's less than hi, but not less than lo
+- it's outside if it's not between
+- lower bound should have tail_probability below it
+- 95% bounds based on assumption p is 0.5
+- actual mu and sigma based on p = 0.55
+- a type 2 error means we fail to reject the null hypothesis
+- which will happen when X is still in our original interval
+- is 526 (< 531, since we need more probability in the upper tail)
+- plot to show they're basically the same
+- pick a random starting point
+- egrep.py
+- sys.argv is the list of command-line arguments
+- sys.argv[0] is the name of the program itself
+- sys.argv[1] will be the regex specified at the command line
+- for every line passed into the script
+- line_count.py
+- print goes to sys.stdout
+- most_common_words.py
+- pass in number of words as first argument
+- 'r' means read-only
+- 'w' is write—will destroy the file if it already exists!
+- 'a' is append—for adding to the end of the file
+- don't forget to close your files when you're done
+- at this point f has already been closed, so don't try to use it
+- don't do this!
+- warning, will return the same span multiple times
+- if it sits inside multiple divs
+- be more clever if that's the case
+- you don't have to split the url like this unless it needs to fit in a book
+- 30
+- 21 for me, might be different for you
+- re.match captures the part of the regex in parentheses
+- 2014 is the last complete year of data (when I ran this)
+- parse the JSON to create a Python dict
+- search for tweets containing the phrase "data science"
+- appending data to a global variable is pretty poor form
+- but it makes the example much simpler
+- starts consuming public statuses that contain the keyword 'data'
+- if instead we wanted to start consuming a sample of *all* public statuses
+- stream.statuses.sample()
+- uniform between -100 and 100
+- normal distribution with mean 0, standard deviation 57
+- fix the bottom right and top left axis labels, which are wrong because
+- their charts only have text in them
+- group rows by symbol
+- use a dict comprehension to find the max for each symbol
+- key is symbol, value is list of "change" dicts
+- collect all "change" dicts into one big list
+- {'change': 0.3283582089552237,
+- 'date': datetime.datetime(1997, 8, 6, 0, 0),
+- 'symbol': 'AAPL'}
+- see, e.g. http://news.cnet.com/2100-1001-202143.html
+- {'change': -0.5193370165745856,
+- 'date': datetime.datetime(2000, 9, 29, 0, 0),
+- 'symbol': 'AAPL'}
+- see, e.g. http://money.cnn.com/2000/09/29/markets/techwrap/
+- to combine percent changes, we add 1 to each, multiply them, and subtract 1
+- for instance, if we combine +10% and -20%, the overall change is
+- (1 + 10%) * (1 - 20%) - 1 = 1.1 * .8 - 1 = -12%
+- here there is no "y", so we just pass in a vector of Nones
+- and functions that ignore that input
+- each entry is ([longitude, latitude], favorite_language)
+- key is language, value is pair (longitudes, latitudes)
+- we want each language to have a different marker and color
+- create a scatter series for each language
+- try several different values for k
+- modify the path with wherever you've put the files
+- glob.glob returns every filename that matches the wildcarded path
+- triplets (subject, actual is_spam, predicted spam probability)
+- assume that spam_probability > 0.5 corresponds to spam prediction
+- and count the combinations of (actual is_spam, predicted is_spam)
+- sort by spam_probability from smallest to largest
+- the highest predicted spam probabilities among the non-spams
+- the lowest predicted spam probabilities among the actual spams
+- choose random value to start
+- 101 points all very close to 100
+- 101 points, 50 of them near 0, 50 of them near 200
+- [1.174,    # constant term, actual error = 1.19
+- 0.079,    # num_friends,   actual error = 0.080
+- 0.131,    # unemployed,    actual error = 0.127
+- 0.990]    # phd,           actual error = 0.998
+- alpha is a *hyperparameter* controlling how harsh the penalty is
+- sometimes it's called "lambda" but that already means something in Python
+- [30.6, 0.97, -1.87, 0.91]
+- [30.6, 0.97, -1.86, 0.89]
+- [30.8, 0.95, -1.84, 0.54]
+- [30.7, 0.90, -1.69, 0.085]
+- [28.3, 0.72, -0.91, -0.017]
+- want to maximize log likelihood on the training data
+- pick a random starting point
+- and maximize using gradient descent
+- level 0.693536138896
+- lang 0.860131712855
+- tweets 0.788450457308
+- phd 0.892158928262
+- lang 0.4
+- tweets 0.0
+- phd 0.950977500433
+- if this is our first pass,
+- 0 0 [9.38314668300676e-14]
+- 0 1 [0.9999999999999059]
+- 1 0 [0.9999999999999059]
+- 1 1 [9.383146683006828e-14]
+- each hidden neuron has one weight per input, plus a bias weight
+- each output neuron has one weight per hidden neuron, plus a bias weight
+- the network starts out with random weights
+- 10,000 iterations seems enough to converge
+- [0.026, 0.0, 0.0, 0.018, 0.001, 0.0, 0.0, 0.967, 0.0, 0.0]
+- [0.0, 0.0, 0.0, 0.92, 0.0, 0.0, 0.0, 0.01, 0.0, 0.12]
+- [0.0, 0.0, 0.0, 0.0, 0.0, 0.55, 0.0, 0.0, 0.93, 1.0]
+- cross-hatch the negative weights
+- now plot from 1 up to len(inputs) clusters
+- a list of Counters, one for each document
+- a list of Counters, one for each topic
+- a list of numbers, one for each topic
+- a list of numbers, one for each document
+- [('Python', 4), ('R', 4), ('Java', 3), ('regression', 3), ('statistics', 3)]
+- SELECT * FROM users;
+- SELECT * FROM users LIMIT 2;
+- SELECT user_id FROM users;
+- SELECT user_id FROM users WHERE name = 'Dunn';
+- SELECT LENGTH(name) AS name_length FROM users;

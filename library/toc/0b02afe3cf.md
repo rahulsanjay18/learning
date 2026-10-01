@@ -1,0 +1,334 @@
+# TOC: Low-tech Magazine - Volume I -- Kris De Decker -- 2024 -- Low-tech Magazine -- isbn13 9781794711525 -- 6c81e677156d4ef873ef89f66673b2c0 -- Anna’s Archive
+grade: B
+
+- Low←tech Magazine
+  - Contents
+  - Introduction
+    - Solar Powered Website
+    - About this Book
+    - More Books
+    - Thanks
+  - How to Downsize a Transport Network: The Chinese Wheelbarrow
+    - Transport Options over Land
+    - East and West: a Very Different Story
+    - Handbarrow
+    - Superior Chinese Design
+    - Western Praise
+    - Wheelbarrow Trains
+    - Mobile Forts
+    - Animal Traction
+    - Wind Powered Wheelbarrows
+    - Wheelbarrows on Rails
+    - The Decay of the Chinese Road Infrastructure
+    - Pathways Designed for Wheelbarrows
+    - The Decay of the Western Road Infrastructure
+    - Ox Drawn Carts
+    - Lessons for the Future
+  - Medieval Smokestacks: Fossil Fuels in Pre-industrial Times
+    - Thermal Energy
+    - Urban Revival
+    - Not a Paradise
+    - What is Peat?
+    - How to Dig Peat
+    - The Low Countries
+    - The Evolution of Peat Mining
+    - Environmental Costs: Land Turned into Water
+    - Peat Production Moves to the North: Canal Digging
+    - Peat Production and Agriculture
+    - Energy Consumption per Capita
+    - Urbanization and Industrialisation in Seventeenth Century Holland
+    - Why was Peat Only Used in the Low Countries?
+    - Coal and the End of the Dutch Golden Age
+    - Exhaustion of the Peat Reserves
+    - Can we Power a Prosperous Society on Renewable Energy?
+  - The Bright Future of Solar Thermal Powered Factories
+    - Thermal Energy
+    - Low Temperature Solar Heat
+    - Solar Heat in Industry: Existing Applications
+    - High Temperature Solar Heat
+    - Improved Product Quality
+    - Energy Autonomy
+    - Simplifying Technology
+    - Heat Storage
+    - Solar Powered Enhanced Oil Recovery
+  - The Short History of Early Pedal Powered Machines
+    - Hand Cranks, Capstans & Treadwheels
+    - A Boom of Pedal Powered Machines
+    - Ending Human Drudgery
+    - Industrial Revolution
+  - Pedal Powered Farms and Factories: The Forgotten Future of the Stationary Bicycle
+    - The possibilities of pedal power largely exceed the use of the bicycle.
+    - Direct Mechanical Power Transmission
+    - Multi-Purpose Pedal Powered Machines
+    - The Dynapod
+    - The Energy Cycle
+    - Pedal Powered Winch: Substituting a Farm Horse or Tractor
+    - Human Powered Flywheel Motor
+    - Combining Stationary and Mobile Pedal Power
+    - Treadles
+    - Overheating
+  - Bike Powered Electricity Generators are Not Sustainable
+    - The present approach to pedal power results in highly inefficient machines.
+    - Energy Conversions
+    - Not Made to Generate Power
+    - Flywheel
+    - The Battery
+    - Resilient
+    - Solutions
+  - Insulation: First the Body, Then the Home
+    - Space Heating
+    - Room Temperature
+    - The Body as a Heating System
+    - Thermal Properties of Clothing: the clo
+    - Maintaining Thermal Comfort
+    - Clothing Insulation and Room Temperature
+    - Thermal Underwear
+    - Synthetic or Natural materials?
+    - Thermal Comfort
+    - Human Activity Indoors
+    - Hands and Feet
+    - Life without Heating?
+  - Aerial Ropeways: Automatic Cargo Transport for a Bargain
+    - Monocable and Bicable Systems
+    - Ropeways in Ancient Times
+    - Ropeways in the Middle Ages
+    - Ropeways From the 1850s Onwards
+    - Net Producer of Energy
+    - Applications of Cargo Ropeways
+    - Warfare
+    - Mining, Agriculture, Construction
+    - Factories
+    - Harbours
+    - Length, Speed and Capacity of the Lines
+    - Transport Infrastructure
+    - Installing a Ropeway
+    - The Many Advantages of Ropeways
+    - Cargo Tramways Today: Renewed Interest
+    - Innovation: RopeCon System
+    - The Future of Ropeways
+  - Hand Powered Drilling Tools and Machines
+    - During the last quarter of the 19th century, a radically improved generation of tools appeared.
+    - Drilling Holes
+    - Strap Drills, Bow Drills and Pump Drills
+    - Bow and Thong Drills Operated by Several People
+    - Augers, Gimlets and Reamers
+    - Pipe and Pump Augers
+    - Continuous Versus Reciprocating Drills
+    - Medieval Breakthrough: the Hand Brace
+    - Modern Hand Powered Drilling Tools
+    - Hand and Breast Drills
+    - More than 200 Different Models
+    - Continued Availability
+    - Pinnacle of Drilling Machinery
+    - Silent, Safe, Flexible, Forgiving
+    - Low-tech or High-tech?
+  - Boat Mills: Water Powered, Floating Factories
+    - Boat mills, bridge mills and hanging mills were almost as widespread as windmills.
+    - Curious Things
+    - Advantages of Ship Mills
+    - Two Types of Boat Mills
+    - Huge Wheels
+    - Origins
+    - Distribution of Ship Mills in Europe
+    - Distribution of Ship Mills Outside Europe
+    - Bridge Mills
+    - Hydropower Dams
+    - Hanging Mills
+    - Accidents
+    - The Demise of the Ship Mill
+    - Boat Mills in the 20th Century
+  - Recycling Animal and Human Dung is the Key to Sustainable Farming
+    - Broken Cycle
+    - A Sign of Civilization
+    - Chinese Agriculture
+    - Dung Traders
+    - Night Soil Collection in Europe
+    - The Vacuum Sewers of Charles Liernur
+    - The Arrival of the Water Closet
+    - Only Three Future Possibilities
+    - Composting
+    - Can We Feed the World Using Humanure?
+    - The Labours of Hercules
+    - Food Scraps & Management Techniques
+    - Nutrient Balance
+    - Logistic Challenge
+  - The Status Quo of Electric Cars: Better Batteries, Same Range
+    - We don’t need better batteries, we need better cars.
+    - The Forgotten History of the Electric Vehicle
+    - Then and Now: 100 Miles
+    - 100 Miles = Upper Limit
+    - Better Batteries
+    - Motor Output, Speed & Acceleration
+    - Oversized Cars & Motors
+    - Computers on Wheels
+    - Tesla Roadster
+    - Embodied Energy of EV Batteries
+    - Miracle Battery
+    - Realistic Electric Vehicles, Scenario 1
+    - Realistic Electric Vehicles, Scenario 2
+    - We Cannot Have It All
+  - The Sky is the Limit: Human-Powered Cranes and Lifting Devices
+    - The only advantage that fossil-fuelled powered cranes have brought us, is a higher lifting speed.
+    - 5,000 Years of Construction
+    - Human Lifting Power
+    - Mechanical Advantage
+    - Birth of the Crane: the Pulley
+    - Winches and Capstans
+    - Treadwheels
+    - Lifting Towers
+    - The Reinvention of Cranes in the Middle Ages
+    - Gothic Churches and Cathedrals
+    - Harbour Cranes
+    - More Flexible Cranes
+    - Iron Cranes
+    - Most Powerful Hand Crane Ever
+  - Wood Gas Vehicles: Firewood in the Fuel Tank
+    - During the Second World War, almost every motorised vehicle in continental Europe was converted to use firewood.
+    - Wood Gasification
+    - Research Programme in Sweden
+    - Firewood
+    - Range
+    - Freedom
+    - Does the Woodmobile Have a Future?
+    - The Drawbacks of Wood Gas Cars
+    - Ease of Use
+    - Deforestation
+  - Gas Bag Vehicles
+    - Practical Range
+    - Easy Repair
+    - Compressed Gas
+    - No Smoking
+  - Trolley Canal Boats
+    - Only four years after the first experimental trolleybus, an ordinary steam canal boat was adapted to a trolleyboat.
+    - From Trolleybus to Trolleyboat
+    - The Towpath
+    - Overview of Electrical Methods
+    - 1\. Trolley Propeller Systems
+    - 2\. Trolley Submerged Cable or Chain Towing
+    - 3\. Cable Towing (Funiculars)
+    - 4\. Motor Locomotive Haulage (Electric Mules)
+    - 5\. Unmanned Electric Mules
+  - How (not) to Resolve the Energy Crisis
+    - Share of Renewables
+    - Total Electricity Production
+    - Avoided Emissions
+    - Embodied Energy
+    - We Do Too Much
+    - Piling Up Energy Sources
+    - Relative Versus Absolute Figures
+    - United States
+    - Worldwide
+    - How to Solve the Energy Crisis
+    - Not China’s Fault
+  - Rings of Fire: Hoffmann Kilns
+    - The Hoffmann kiln was a nineteenth century brick and tile production technique that is surprisingly energy efficient.
+    - Continuous Production
+    - How it Works
+    - Endless Tunnel
+    - Hoffmann Kilns With Multiple Fires
+    - Hoffmann Kilns in Use Today
+  - Wind Powered Factories: History (and Future) of Industrial Windmills
+    - How Many Windmills?
+    - Wind Powered Factories
+    - Post Mills and Tower Mills
+    - Adjusting the Sails: a Daunting Task
+    - Automatic Control: Spring and Patent Sails
+    - Iron Gears
+    - Innovations Came Too Late
+    - Innovation in the 1920s and 1930s
+    - Back to Traditional Windmills?
+  - Water Powered Cable Trains
+    - Cable trains (or funiculars) are one of the most energy-efficient modes of transport out there.
+    - Water Powered Cable Trains
+    - Perpetuum Mobile
+    - Gravity
+  - Get Wired (Again): ­Trolleybuses and ­Trolleytrucks
+    - Trolleybuses and trolleytrucks have all the advantages of electric cars – and none of their drawbacks.
+    - Cheap, Fast, Durable
+    - History and Evolution
+    - Hybrid Trolleybuses
+    - New Trolleybus Lines
+    - El Trole
+    - Trolleytrucks
+  - Electric Road Trains
+    - 1\. Hafenschleppbahn in Altona (1912-1950)
+    - 2\. Bielatal Bahn (1901-1904) & Industriebahn Wurzen (1905-1928)
+    - 3\. Kalkbahn Grevenbrücker (1903-1907)
+    - 4\. Other Schiemann Trolley Lines
+  - The Monster Footprint of Digital Technology
+    - More Gadgets
+    - Embodied Energy
+    - Embodied Energy of a Computer
+    - Embodied Energy of a Microchip
+    - How Many Microchips in a Computer?
+    - Manufacturing Process
+    - Recycling is No Solution
+    - The Benefits of Digital Technology
+    - Digital Technology is a Product of Cheap Energy
+    - Technological Obsolescence
+  - Cargo Ships, Then and Now
+    - Time for a new age of sail.
+  - Moonlight Towers: Light Pollution in the 1800s
+    - Candles, Oil and Gas Lamps
+    - Lamps, But No Electricity
+    - Twenty Times More Energy Efficient
+    - Moonlight Towers
+    - Detroit as a Shining Example
+    - Guidelines
+    - Dark Corners
+    - Disadvantages of the Tower System
+    - The Decline of Moonlight Towers
+    - Life Expectancy
+    - Incandescents & LEDs
+    - Film Projectors and Search Lights
+    - Compact Fluorescents
+  - Tiles as a Substitute for Steel: The Art of the Timbrel Vault
+    - The craftsmanship associated with timbrel vaulting has long vanished, but the achievements are still with us today.
+    - A Roof of Tiles
+    - Timbrel Vaults in the US
+    - Economical and Fast
+    - Convincing the Public
+    - Relevance Today
+  - A Steam Powered Submarine: The Ictíneo
+    - Fish
+    - Lit by a candle
+    - Propulsion
+    - Snorkel
+    - Coral Divers
+  - The Citroën 2CV: Cleantech from the 1940s
+    - 500 Kilograms
+    - Safety Belts
+  - Life Without Airplanes: from London to New York in 3 Days and 12 Hours
+    - Ocean Liners
+    - The Death of Distance
+    - 500,000 Passengers
+    - Staten Island Ferry
+    - A Realistic Option: 30,000 Passengers
+    - Sustainable Travel
+  - Bring Back the Horses
+    - Replacing tractors with real horse power could be the revolution that agriculture needs.
+    - Animal Power
+    - Dung in the City
+    - Horses in Agriculture
+    - Fodder or Diesel
+    - Tractor Versus Horse
+    - High-tech Horses
+    - Man Power
+    - Lightweight Machinery
+  - Satellite Navigation in the Eighteenth Century
+    - GPS
+    - Craftsmanship
+    - Polynesians
+    - Shooting Stars
+    - Where Are We?
+    - Chip Log
+    - Lighthouses, Buoys, Lightships & Foghorns
+    - Robust System
+  - Email in the Eighteenth Century: The Optical Telegraph
+    - Postal Services
+    - A Chain of Towers
+    - From Amsterdam to Venice
+    - Electrical Telegraph
+    - Keyboard
+- Contents
+  - Landmarks

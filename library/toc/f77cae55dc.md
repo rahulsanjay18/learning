@@ -1,0 +1,116 @@
+# TOC: Kostka, Stefan - Payne, Dorothy - Almen, Byron - Tonal Harmony With an Introduction to Twentieth-Century Music-McGraw-Hill Humanities_Social Sciences_Languages (2012)
+grade: C
+
+- œ#
+- www
+- YY 34
+- c R
+- WW
+- WW C
+- C.
+- WW C.
+- WW
+- WW C
+- WW CCC
+- C C C C C C C C C C C C C C C C
+- C' C' C' C'
+- C CX
+- W 68 T T C.C C.C
+- W C
+- W c Cf
+- YY
+- YYY
+- WWW
+- YY c
+- YY c
+- YY
+- YY C
+- YY C
+- W 34
+- W 34
+- CX
+- CC CC CC
+- C C
+- OC
+- C C C C C C C C
+- C C C C C C C C
+- CCCW
+- CCY
+- C CX
+- C C C C C C C C C CX C C C C C C
+- C C C C C C C C
+- C C C C C C
+- CC CC CC
+- C. C. C. C. B
+- C C C C C C C C
+- Cf
+- CCCW
+- W 24
+- W :
+- W C C C S
+- W C C C C C C
+- C C C C C C C C
+- CCC
+- W C C C C C C C C
+- W C C C
+- W C
+- W C
+- W C
+- W C C C C
+    - 3.
+    - A¨
+- bbbb
+  - f :
+- G :
+- œJ
+- WWWW
+- WWW
+- WWW
+- WWW
+- WWW
+- A:
+- #n
+- cresc.
+- ™œ
+  - œœ
+- ˙˙˙
+- ˙˙˙˙b
+- ˙˙˙
+  - ˙˙˙bb
+- ##
+- œœœ
+- ˙˙˙n
+- œ œ
+- œ œ œ œ œ
+- œ œ œ n
+- œn j
+- œ œ
+- ˙˙˙#
+- &##
+- ‰ œœnn
+- j‰ Œ
+- j‰ œœ ‰ œœœ##
+- j‰ Œ
+- j‰ œœœ
+- œœœ
+- œj
+- œ œ ˙
+- 14
+- 14
+- 416
+- 416
+- 24
+- 14
+- Exercise 26-3 See Workbook.
+- BY B
+- BB
+    - œœœ##
+    - œœœbbb
+- W 34
+- 6-5 n
+- W 34
+- bb
+    - 6.
+  - 7.
+  - b: i
+- c:

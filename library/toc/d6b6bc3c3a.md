@@ -1,0 +1,108 @@
+# TOC: The Dhammapada (2010) (Penguin Classics) [Retail]
+grade: A
+
+- The Dhammapada
+- Contents
+- Acknowledgements
+- Pronunciation Guide
+- VOWELS
+- CONSONANTS
+- STRESS ON WORDS
+- A NOTE ON GĀNDHĀRĪ
+- Abbreviations
+- Introduction
+- THE LIFE OF THE BUDDHA
+- DATES
+- THE LANGUAGE OF THE DHAMMAPADA
+- THE PALI CANON
+- EARLY BUDDHIST SCHOOLS
+- DHAMMAPADAS, DHARMAPADAS AND UDĀNAS
+  - A. Middle Indian Versions: Dhammapadas and Dharmapadas
+    - (i) The Pali Dhammapada
+    - (ii) The Gāndhārī Dharmapada
+    - _(iii) The Patna Dharmapada_[ 42](introduction.html#the0000305en)
+  - B. Sanskrit Versions: Udānavargas
+    - (i) Buddhist Hybrid Sanskrit Udānavarga
+    - (ii) Sanskrit Udānavarga
+    - (iii) Dharmapada Extracts
+  - C. Dharmapadas and Udānavargas in Chinese
+    - (i) The Fajü jing
+    - (ii) The Faju piyu jing
+    - (iii) The Chuyao jing
+    - (iv) The Faju yaosong jing
+  - D. Udānavarga in Tibetan
+  - What is a Dharmapada?
+- COMMENTARIES
+- THE DHAMMAPADA AS LITERATURE
+- TRANSLATING THE DHAMMAPADA
+- NOTES
+- Bibliography
+- DHAMMAPADA CHANTING
+- Note on the Text
+- CHAPTER 1
+- TWINS
+- CHAPTER 2
+- AWARENESS
+- CHAPTER 3
+- THE MIND
+- CHAPTER 4
+- FLOWERS
+- CHAPTER 5
+- FOOLS
+- CHAPTER 6
+- THE WISE MAN
+- CHAPTER 7
+- THE ARAHAT
+- CHAPTER 8
+- THOUSANDS
+- CHAPTER 9
+- EVIL
+- CHAPTER 10
+- THE ROD
+- CHAPTER 11
+- OLD AGE
+- CHAPTER 12
+- SELF
+- CHAPTER 13
+- THE WORLD
+- CHAPTER 14
+- THE BUDDHA
+- CHAPTER 15
+- HAPPINESS
+- CHAPTER 16
+- THE DEAR
+- CHAPTER 17
+- ANGER
+- CHAPTER 18
+- RUST
+- CHAPTER 19
+- THE JUST
+- CHAPTER 20
+- THE PATH
+- CHAPTER 21
+- MISCELLANEOUS
+- CHAPTER 22
+- HELLS
+- CHAPTER 23
+- THE ELEPHANT
+- CHAPTER 24
+- CRAVING
+- CHAPTER 25
+- THE MONK
+- CHAPTER 26
+- THE BRAHMIN
+- SUMMARY VERSES
+- Appendix I
+  - From Chapter 1: The [Brahmin](glossary.html#the0005586)
+- NOTES
+- Appendix II
+  - Chapter 22: The Snake
+- NOTES
+- Appendix III Extract from the Mahāvastu
+- NOTES
+  - In the Introduction
+  - Concluding passage
+- Glossary
+- Notes
+- Index of Names in Stories
+- General Index

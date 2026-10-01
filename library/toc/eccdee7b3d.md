@@ -1,0 +1,84 @@
+# TOC: Translation_-_OxfordUP.VSI_-_Reynolds,_Matthew.Aug.2016
+grade: A
+
+- Translation: A Very Short Introduction
+- Translation
+- A Very Short Introduction
+- Contents
+- [Acknowledgements](006_FM_contents.xhtml#r_actrade-9780198712114-miscMatter-6)
+- [List of illustrations](006_FM_contents.xhtml#r_actrade-9780198712114-miscMatter-7)
+- [Chapter 1](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-1)
+- [ Crossing languages](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-1)
+- What is translation?
+- The no man’s land between languages
+- Diplomatic translation
+- Crowd translation
+- Let me count the ways
+- [Chapter 2](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-2)
+- [ Definitions](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-2)
+- Translating ‘translation’
+- Other words
+- Translation creates languages
+- Is all communication translation?
+- [Chapter 3](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-3)
+- [ Words, contexts, and purposes](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-3)
+- Does translation translate the meanings of words?
+- Words in contexts
+- Purpose
+- Purpose in subtitling, theatre, and advertising
+- [Chapter 4](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-4)
+- [ Forms, identities, and interpretations](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-4)
+- Icons
+- Comics and verse form
+- Identity
+- An interpretation
+- [Chapter 5](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-5)
+- [ Power, religion, and choice](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-5)
+- Empires of interpretation
+- Delayed action
+- Words of God
+- Holy books
+- Suffering censorship
+- The burden of translation
+- Powerful choices
+- [Chapter 6](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-6)
+- [ Words in the world](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-6)
+- The book trade
+- Official channels
+- Box 1 A United Nations resolution
+- The highways of global news
+- Machines, rules, and statistics
+- Memories, localization, and cyborgs
+- Crowds, bootleg trails, and glocal languages
+- [Chapter 7](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-7)
+- [ Translational literature](006_FM_contents.xhtml#r_actrade-9780198712114-chapter-7)
+- National literatures
+- Multilingual writing
+- Translaterature
+- The theatre of translation
+- Two futures
+- [References](006_FM_contents.xhtml#r_actrade-9780198712114-bibliography-1)
+- Chapter 1: Crossing languages
+- Chapter 2: Definitions
+- Chapter 3: Words, contexts, and purposes
+- Chapter 4: Forms, identities, and interpretations
+- Chapter 5: Power, religion, and choice
+- Chapter 6: Words in the world
+- Chapter 7: Translational literature
+- [Further reading](006_FM_contents.xhtml#r_actrade-9780198712114-bibliography-2)
+- Chapter 1: Crossing languages
+- Chapter 2: Definitions
+- Chapter 3: Words, contexts, and purposes
+- Chapter 4: Forms, identities, and interpretations
+- Chapter 5: Power, religion, and choice
+- Chapter 6: Words in the world
+- Chapter 7: Translational literature
+- [Publisher’s acknowledgements](006_FM_contents.xhtml#r_actrade-9780198712114-miscMatter-8)
+- [Index](006_FM_contents.xhtml#r_actrade-9780198712114-indexGroup-1)
+- Social Media
+- Very Short Introduction
+- Online Catalogue
+- A Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

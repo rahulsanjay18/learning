@@ -1,0 +1,58 @@
+# TOC: Plutarch - The Rise of Rome (Penguin Classics)
+grade: A
+
+  - Twelve Lives by Plutarch
+    - THE RISE OF ROME
+  - Contents
+  - Penguin Plutarch
+  - Preface to the New Edition
+  - Abbreviations
+  - General Introduction
+  - List of Surviving Lives by Plutarch
+  - Maps
+  - ROMULUS
+  - Introduction to Romulus
+  - Life of Romulus
+  - Comparison of Theseus and Romulus
+  - NUMA
+  - Introduction to Numa
+  - Life of Numa
+  - Comparison of Lycurgus and Numa
+  - PUBLICOLA
+  - Introduction to Publicola
+  - Life of Publicola
+  - Comparison of Solon and Publicola
+  - CORIOLANUS
+  - Introduction to Coriolanus
+  - Life of Coriolanus
+  - CAMILLUS
+  - Introduction to Camillus
+  - Life of Camillus
+  - FABIUS MAXIMUS
+  - Introduction to Fabius Maximus
+  - Life of Fabius Maximus
+  - Comparison of Pericles and Fabius Maximus
+  - MARCELLUS
+  - Introduction to Marcellus
+  - Life of Marcellus
+  - Comparison of Pelopidas and Marcellus
+  - ARATUS
+  - Introduction to Aratus
+  - Life of Aratus
+  - PHILOPOEMEN
+  - Introduction to Philopoemen
+  - Life of Philopoemen
+  - TITUS FLAMININUS
+  - Introduction to Titus Flamininus
+  - Life of Titus Flamininus
+  - Comparison of Philopoemen and Titus Flamininus
+  - ELDER CATO
+  - Introduction to Elder Cato
+  - Life of Elder Cato
+  - Comparison of Aristeides and Elder Cato
+  - AEMILIUS PAULLUS
+  - Introduction to Aemilius Paullus
+  - Life of Aemilius Paullus[1](part0083.html#ch31-end1)
+  - Notes
+  - Further Reading
+  - THE BEGINNING

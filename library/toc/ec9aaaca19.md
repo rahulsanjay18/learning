@@ -1,0 +1,84 @@
+# TOC: Roman_Republic,_The_-_OxfordUP.VSI_-_Gwynn,_David_M_Jan.2012
+grade: A
+
+- **The Roman Republic: A Very Short Introduction**
+- **THE ROMAN REPUBLIC**
+  - Contents
+  - [List of illustrations](contents.html#list)
+  - [List of maps](contents.html#map)
+  - [**Introduction**](contents.html#intro)
+  - [Chapter 1
+    - **From myth to history**
+  - [Chapter 2
+    - **The conquest of Italy**
+    - **_Senatus populusque Romanus_**
+  - [Chapter 3
+    - **_Dignitas_ and _gloria_**
+    - **Farmers, traders, and slaves**
+    - **Parents and children, husbands and wives**
+    - **The _pax deorum_**
+  - [Chapter 4
+    - **The First Punic War**
+    - **Hannibal and Scipio**
+    - **_Carthago delenda est_**
+  - [Chapter 5
+    - **Rome enters the Hellenistic world**
+    - **_Graecia capta_**
+  - [Chapter 6
+    - **The seeds of crisis**
+    - **The Gracchi**
+    - **The rise of the warlords**
+  - [Chapter 7
+    - **The first flowering of Latin literature**
+    - **Catullus and Cicero**
+    - **Brick and marble**
+    - **Painting and sculpture**
+  - [Chapter 8
+    - **The setting and the rising sun**
+    - **Caesar and Pompeius**
+    - **The Ides of March**
+  - [Chapter 9
+    - **From Republic to Empire**
+    - **The City of God**
+    - **Machiavelli and Shakespeare**
+    - **Republic and revolution**
+  - [Chronology](contents.html#chro)
+  - [Further reading](contents.html#read)
+    - **Primary sources**
+    - **General works**
+    - ****[Chapter 1](ch01.html#ch01): The mists of the past****
+    - ****[Chapter 2](ch02.html#ch02): The Republic takes shape****
+    - ****[Chapter 3](ch03.html#ch03): Men, women, and the gods****
+    - ****[Chapter 4](ch04.html#ch04): Carthage must be destroyed****
+    - ****[Chapter 5](ch05.html#ch05): Mistress of the Mediterranean****
+    - ****[Chapter 6](ch06.html#ch06): The cost of empire****
+    - ****[Chapter 7](ch07.html#ch07): Word and image****
+    - ****[Chapter 8](ch08.html#ch08): The last years****
+    - ****[Chapter 9](ch09.html#ch09): The afterlife of the Republic****
+  - [Index](contents.html#index)
+    - **A**
+    - **B**
+    - **C**
+    - **D**
+    - **E**
+    - **F**
+    - **G**
+    - **H**
+    - **I**
+    - **J**
+    - **K**
+    - **L**
+    - **M**
+    - **N**
+    - **O**
+    - **P**
+    - **Q**
+    - **R**
+    - **S**
+    - **T**
+    - **U**
+    - **V**
+    - **W**
+  - Expand your collection of
+  - HISTORY
+  - ROMAN BRITAIN

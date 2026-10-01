@@ -1,0 +1,43 @@
+# TOC: Dandin - Tales of the Ten Princes (Penguin Classics) [Retail]
+grade: A
+
+- Contents
+  - Contents
+  - Daṇḍin
+    - TALES OF THE TEN PRINCES
+  - Key to the Pronunciation of Sanskrit Words
+  - A Note on the New Edition
+  - Introduction
+  - PŪRVA-PĪTHIKĀ
+  - {1}
+  - The Birth of the Princes
+  - {2}
+  - The Brahmin’s Tale
+  - {3}
+  - The Tale of Soma Datta
+  - {4}
+  - The Tale of Pushpodbhava
+  - {5}
+  - The Wedding of Avanti Sundarī
+  - DAŚA KUMĀRA CHARITAM
+  - {6}
+  - The Tale of Rajavahana
+  - {7}
+  - The Tale of Apahāra Varmā
+  - {8}
+  - The Tale of Upahāra Varmā
+  - {9}
+  - The Tale of Artha Pāla
+  - {10}
+  - The Tale of Pramati
+  - {11}
+  - The Tale of Mitra Gupta
+  - {12}
+  - The Tale of Mantra Gupta
+  - {13}
+  - The Tale of Viśruta
+  - UTTARA-PĪTHIKĀ
+  - {14}
+  - The Later Part
+  - Notes
+  - THE BEGINNING

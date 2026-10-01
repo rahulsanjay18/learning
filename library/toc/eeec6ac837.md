@@ -1,0 +1,68 @@
+# TOC: Philosophy_-_OxfordUP.VSI_-_Craig,_Edward.Aug.2020
+grade: A
+
+- Philosophy: A Very Short Introduction
+- Philosophy
+- A Very Short Introduction
+- Second Edition
+- Contents
+- [ List of illustrations ](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-miscMatter-6)
+- [Chapter 1](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-1)
+- [ Philosophy: a very short introduction](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-1)
+- [Chapter 2](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-2)
+- [ What should I do? Plato’s _Crito_](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-2)
+- [Chapter 3](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-3)
+- [ How do we know? Hume’s _Of Miracles_](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-3)
+- [Chapter 4](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-4)
+- [Chapter 5](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-5)
+- [ Some themes](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-5)
+- Ethical consequentialism
+- Integrity
+- Political authority—the contract theory
+- Evidence and rationality
+- The self
+- Philosophy and historical context
+- [Chapter 6](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-6)
+- [ Of ‘isms’](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-6)
+- [Chapter 7](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-7)
+- [ Some more high spots: a personal selection](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-7)
+- Descartes: _Discourse on the Method_
+- Hegel: _Introduction to the Philosophy of History_
+- Charles Darwin: _The Origin of Species_
+- Nietzsche: _The Genealogy of Morals_
+- [Chapter 8](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-8)
+- [ Freedom of the will ](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-8)
+- Descartes
+- Hegel
+- Determinism
+- Compatibilism
+- [Chapter 9](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-9)
+- [ What’s in it for whom?](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-chapter-9)
+- The individual
+- The State
+- The priesthood
+- The working classes
+- Women
+- Animals
+- Professional philosophers
+- [ References  ](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-bibliography-1)
+- Chapter 2: What should I do? Plato’s _Crito_
+- Chapter 3: How do we know? Hume’s _Of Miracles_
+- Chapter 4: What am I? An unknown Buddhist on the self: King Milinda’s chariot
+- Chapter 5: Some themes
+- Chapter 6: Of ‘isms’
+- Chapter 7: Some more high spots: a personal selection
+- Chapter 8: Freedom of the will
+- Chapter 9: What’s in it for whom?
+- [Further reading](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-bibliography-2)
+- Introductions
+- Histories of philosophy
+- Reference works
+- [ Index  ](../Text/006_FM_contents.xhtml#r_actrade-9780198861775-indexGroup-1)
+- Existentialism
+- German Philosophy
+- Thomas Aquinas
+- Keynes
+- Table of Contents
+  - Landmarks
+  - Pages

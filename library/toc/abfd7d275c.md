@@ -1,0 +1,32 @@
+# TOC: Reformation,_The_-_OxfordUP.VSI_-_Marshall,_Peter.Oct.2009
+grade: A
+
+- THE REFORMATION
+    - Peter Marshall
+- The Reformation
+- Contents
+- List of illustrations
+- Introduction
+- Chapter 1
+- Reformations
+- Chapter 2
+- Salvation
+- Chapter 3
+- Politics
+    - Wars of religion
+- Chapter 4 Society
+    - Structures of community
+    - Sexuality, women, and family
+    - Culture wars?
+- Chapter 5 Culture
+- Chapter 6
+- Others
+    - Heretics
+    - Muslims and Jews
+    - Pagans
+- Chapter 7
+- Legacy
+- Chronology
+- Further reading
+- Index
+- Expand your collection of Very Short Introductions

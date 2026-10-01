@@ -1,0 +1,77 @@
+# TOC: Thinking_and_Reasoning__-_OxfordUP.VSI_-_Evans,_Jonathan.Dec.2017
+grade: A
+
+- Thinking and Reasoning: A Very Short Introduction
+- Thinking and Reasoning
+- A Very Short Introduction
+- Contents
+- [Acknowledgements](006_FM_contents.xhtml#r_actrade-9780198787259-miscMatter-5)
+- [List of illustrations ](006_FM_contents.xhtml#r_actrade-9780198787259-miscMatter-6)
+- [Chapter 1](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-1)
+- [ Introduction and history](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-1)
+- Different kinds of reasoning
+- Early studies by the introspection method
+- The influence of Freudian theory
+- Behaviourism
+- Cognitive psychology
+- [Chapter 2](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-2)
+- [ Problem solving](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-2)
+- Gestalt psychology and the phenomenon of insight
+- Well-defined problems and the computational approach
+- Insight and expertise in problem solving
+- [Chapter 3](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-3)
+- [ Thinking hypothetically](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-3)
+- Hypothesis testing and scientific reasoning
+- The Wason selection task
+- Assessing the probability of hypotheses
+- Causal and counterfactual thinking
+- [Chapter 4](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-4)
+- [ Decision making](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-4)
+- Cognitive biases in decision making
+- Probability judgement: heuristics and biases
+- Conclusions
+- [Chapter 5](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-5)
+- [ Reasoning](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-5)
+- Deductive reasoning
+- Syllogistic reasoning and belief bias
+- Mental model theory
+- Reasoning with probabilities
+- Bayesianism and the new paradigm psychology of reasoning
+- [Chapter 6](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-6)
+- [ Are we rational?](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-6)
+- The great rationality debate
+- Rational analysis
+- Evolutionary approach
+- Fast and frugal heuristics
+- Individual differences and intelligence
+- So are we rational?
+- [Chapter 7](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-7)
+- [ From dual processes to two minds](006_FM_contents.xhtml#r_actrade-9780198787259-chapter-7)
+- Type 1 processing and the power of intuition
+- Type 2 thinking, intelligence, and working memory
+- How can dual-process theories explain cognitive biases?
+- Is there one general theory of dual processing?
+- Two minds theory
+- Final thoughts
+- [Appendix](006_FM_contents.xhtml#r_actrade-9780198787259-appendixGroup-1)
+- Bayes’ theorem
+- [References](006_FM_contents.xhtml#r_actrade-9780198787259-bibliography-1)
+- Chapter 1: Introduction and history
+- Chapter 2: Problem solving
+- Chapter 3: Thinking hypothetically
+- Chapter 4: Decision making
+- Chapter 5: Reasoning
+- Chapter 6: Are we rational?
+- Chapter 7: From dual processes to two minds
+- [Further reading](006_FM_contents.xhtml#r_actrade-9780198787259-bibliography-2)
+- Chapter 1: Introduction and history
+- Chapter 2: Problem solving
+- Chapter 3: Thinking hypothetically
+- Chapter 4: Decision making
+- Chapter 5: Reasoning
+- Chapter 6: Are we rational?
+- Chapter 7: From dual processes to two minds
+- [Index](006_FM_contents.xhtml#r_actrade-9780198787259-indexGroup-1)
+- Table of Contents
+  - Landmarks
+  - Pages

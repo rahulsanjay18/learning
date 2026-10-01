@@ -1,0 +1,38 @@
+# TOC: Rastafari_-_OxfordUP.VSI_-_Edmonds,_Ennis_B_Dec.2012
+grade: A
+
+- **Rastafari**
+  - **Contents**
+  - [**List of illustrations**](contents.html#iillustration)
+  - [**Introduction: comprehending Rastafari**](contents.html#iintro)
+  - [**Chapter 1
+    - Founding fathers
+    - Radical youths
+    - Repatriation fever
+    - Tentative rapprochement
+    - Sympathetic embrace
+    - Ebbing militancy
+  - [**Chapter 2
+    - Selassie I and InI
+    - From Babylon to Zion
+    - Dreadlocks and dreadtalk
+    - Livity: natural living
+  - [**Chapter 3
+    - The heterogeneity of Rastafari social formation
+    - Grounding as an expression of collectivity
+    - Houses and mansions
+  - [**Chapter 4
+    - Migration
+    - Media
+    - Missions
+    - Attraction and adaptation
+  - [**Chapter 5
+    - Gender ideology and ethos
+    - Countervailing forces
+  - [**Chapter 6
+    - Nyabinghi drumming, Rastafarian consciousness, and reggae music
+    - Rastafarian iconography and visual culture
+  - [**Further reading**](contents.html#ireading)
+    - Websites
+  - [**Index**](contents.html#iindex)
+  - **Expand your collection of Very Short Introductions**

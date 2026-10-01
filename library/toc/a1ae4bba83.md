@@ -1,0 +1,61 @@
+# TOC: Muhammad_-_OxfordUP.VSI_-_Brown,_Jonathan_A_C.Feb.2011
+grade: A
+
+- MUHAMMAD
+- Muhammad
+  - <span id="page-12-1"></span><span id="page-12-0"></span>Contents
+  - <span id="page-14-0"></span>[Preface](#page-12-0)
+- <span id="page-16-0"></span>[Acknowledgements](#page-12-0)
+- <span id="page-18-0"></span>[Note on transliteration](#page-12-0) and names
+  - <span id="page-19-0"></span>[List of illustrations](#page-12-1)
+- <span id="page-20-1"></span><span id="page-20-0"></span>Chapter 1
+- [The life of the Messenger](#page-12-0) of God
+    - Caveat: legend and fact
+    - Life on the edge of the desert and the verge of prophecy
+    - Portents and the birth of a prophet
+    - The beginning of revelation
+    - The camps form: conversion and opponents
+    - The Year of Sadness and the night journey to Jerusalem
+    - Emigration and founding a new community
+    - War with Mecca and a miraculous victory
+    - <span id="page-53-0"></span>Near defeat and pensiveness
+    - Muhammad: the Beloved of God and goodly example
+    - A siege and an execution
+    - The miracles of the Prophet
+    - Treaties and strategy
+    - The Jews of the Hejaz and more campaigns
+    - Marriages, alliances, and the home front
+    - The crumbling of Quraysh and the conquest of Mecca
+    - Healing old wounds and expansion
+    - The Master of Arabia
+    - The last days of the Messenger of God
+- <span id="page-83-1"></span><span id="page-83-0"></span>Chapter 2
+- [Shaping Muhammad in](#page-12-1) history
+    - The pre-Islamic Near Eastern and Arabian context
+    - Muhammad's marriages in context
+    - Historical reliability and the formation of the Sira
+    - The Sira and the historical Muhammad
+    - Modern studies on Muhammad
+    - Did Muhammad really exist?: revisionist history
+    - The Satanic Verses
+    - The Sira versus modern biography
+  - <span id="page-120-1"></span><span id="page-120-0"></span>Chapter 3
+- [Muhammad in Islamic](#page-12-0) civilization
+    - Muhammad in Islamic law and theology
+    - Muhammad as the centre of Islamic ritual
+    - Muhammad as the paragon of virtue and embodiment of communal identity
+    - Insulting Muhammad
+    - Portraying the Prophet: images of Muhammad
+    - Muhammad and the mystical quest
+    - <span id="page-135-0"></span>Encountering Muhammad in dreams
+    - Muhammad in popular Islamic religion
+    - The Mawlid: celebrating Muhammad's birthday
+    - Remembering the Prophet in song: South Asian Qawwali
+    - Muhammad in the modern world
+- <span id="page-147-0"></span>[References](#page-12-1)
+    - Chapter 3
+  - <span id="page-150-0"></span>[Further reading](#page-12-0)
+  - <span id="page-154-0"></span>[Index](#page-12-0)
+- **ISLAM**
+    - **A Very Short Introduction**
+- Reading guides

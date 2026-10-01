@@ -1,0 +1,92 @@
+# TOC: Bradley W. Carroll, Dale A. Ostlie-An Introduction to Modern Astrophysics-Pearson (2014)
+grade: B
+
+- NCP
+- i=1
+- i=1
+- i=1
+- i=1
+- i=1
+- i=1
+- i=1
+- nλ
+- Electron
+- = −13.6 eV
+- ℏ=
+- d% = π SR THE TOTAL
+- πr
+- πr
+- 2kT
+- 3kT
+- 2kT
+- dλ
+- γ kT
+- γ Pg
+- Pm
+- Pc
+- Rc
+- ξ1
+- ξ1
+- Mic
+- Mic
+- Mic
+- Mic
+- Mic
+- Mic
+- Pic,env
+- Mic
+- 
+- N
+- GMNS/RNS = . ×  M S− = .c.
+-  −v/c −
+- The Degenerate Remnants of Stars
+- = −G
+- = −1.431.
+- ~ (2–6) ¥ 107 yr
+- ~ 103 yr
+- < 4 ¥ 107 yr
+- ~ 105 yr
+- ~ 105 yr to 2 ¥ 108 yr
+- ~ 102 sec
+- = −1.431.
+- + log10
+- (horizontal axis). Use the
+- run from 25 to 29.
+- cos φ
+- 1 + 2R
+- cos φ
+- 1 + 2R
+- R⊙
+- ρ = 0.
+- R5
+- R3
+- (km s–1)
+- (km s–1)
+- 40
+- (km s–1)
+- (km s–1)
+- 40
+- 40
+- 40
+- dNM(M, S, ", m)
+- d.
+- d.
+- d.
+- d.
+- tmaxCGM
+- WHEN VIEWED EDGE ON
+- = 1.05
+- = 7.26◦.
+- 2 +
+- 2 +
+- ( + z)
+- RADIATION ERA	,
+- REC
+- = ρ
+- AND SIMILARLY
+- = ρ
+- SO TO lRST ORDER IN x
+- km s−1$
+- z′
+- z′
+- µmH

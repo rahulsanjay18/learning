@@ -1,0 +1,281 @@
+# TOC: Peter Adamson - A History of Philosophy Without Any Gaps, Volume 2_ Philosophy in the Hellenistic and Roman Worlds (2015, Oxford University Press) - libgen.li
+grade: A
+
+- Philosophy in the Hellenistic and Roman Worlds
+- Philosophy in the Hellenistic and Roman Worlds
+- A History of Philosophy without any gaps, Volume 2
+- Contents
+- [ Preface ](006_FM_contents.xhtml#r_actrade-9780198728023-miscMatter-6)
+- [Acknowledgements](006_FM_contents.xhtml#r_actrade-9780198728023-miscMatter-7)
+- [ A Note on References ](006_FM_contents.xhtml#r_actrade-9780198728023-miscMatter-8)
+- [ Dates ](006_FM_contents.xhtml#r_actrade-9780198728023-miscMatter-9)
+- [ Part I ](006_FM_contents.xhtml#r_actrade-9780198728023-part-1)
+- [ Hellenistic Philosophy ](006_FM_contents.xhtml#r_actrade-9780198728023-part-1)
+- [ 1 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-1)
+- [ Fighting over Socrates ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-1)
+- [ The Hellenistic Schools ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-1)
+- [ 2 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-2)
+- [ Beware of the Philosopher ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-2)
+- [ The Cynics ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-2)
+- [ 3 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-3)
+- [ Instant Gratification ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-3)
+- [ The Cyrenaics ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-3)
+- [ 4 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-4)
+- [ The Constant Gardener ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-4)
+- [ The Principles of Epicurus ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-4)
+- [ 5 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-5)
+- [ Am I Bothered? ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-5)
+- [ Epicurean Ethics ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-5)
+- [ 6 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-6)
+- [ Nothing to Fear ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-6)
+- [ Epicureans on Death and the Gods ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-6)
+- [ 7 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-7)
+- [ Reaping the Harvest ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-7)
+- [ Lucretius ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-7)
+- [ 8 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-8)
+- [ Walking on Eggshells ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-8)
+- [ Stoic Logic ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-8)
+- [ 9 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-9)
+- [ Nobody’s Perfect ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-9)
+- [ The Stoics on Knowledge ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-9)
+- [ 10 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-10)
+- [ We Didn’t Start the Fire ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-10)
+- [ The Stoics on Nature ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-10)
+- [ 11 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-11)
+- [ Like a Rolling Stone ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-11)
+- [ Stoic Ethics ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-11)
+- [ 12 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-12)
+- [Anger Management ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-12)
+- [ Seneca ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-12)
+- [ 13 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-13)
+- [ You Can Chain My Leg ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-13)
+- [ Epictetus ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-13)
+- [ 14 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-14)
+- [ The Philosopher King ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-14)
+- [ Marcus Aurelius ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-14)
+- [ 15 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-15)
+- [ Beyond Belief ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-15)
+- [ Pyrrho and Skepticism ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-15)
+- [ 16 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-16)
+- [ The Know-Nothing Party ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-16)
+- [ The Skeptical Academy ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-16)
+- [ 17 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-17)
+- [ Rhetorical Questions ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-17)
+- [ Cicero ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-17)
+- [ 18 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-18)
+- [ Healthy Skepticism ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-18)
+- [ Sextus Empiricus ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-18)
+- [ 19 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-19)
+- [ The Joy of Sects ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-19)
+- [ Ancient Medicine and Philosophy ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-19)
+- [ 20 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-20)
+- [ The Best Doctor is a Philosopher ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-20)
+- [ Galen ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-20)
+- [Part II](006_FM_contents.xhtml#r_actrade-9780198728023-part-2)
+- [ Pagan Philosophy in the Roman Empire](006_FM_contents.xhtml#r_actrade-9780198728023-part-2)
+- [ 21 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-21)
+- [ Caesarian Section ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-21)
+- [ Philosophy in the Roman Empire ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-21)
+- [ 22 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-22)
+- [ Middle Men ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-22)
+- [ The Platonic Revival ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-22)
+- [ 23 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-23)
+- [ To the Lighthouse ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-23)
+- [ Philo of Alexandria ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-23)
+- [ 24 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-24)
+- [ Delphic Utterances ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-24)
+- [ Plutarch ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-24)
+- [ 25 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-25)
+- [ Lost and Found ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-25)
+- [ Aristotelianism after Aristotle ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-25)
+- [ 26 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-26)
+- [ Not Written in Stone ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-26)
+- [ Alexander of Aphrodisias ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-26)
+- [ 27 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-27)
+- [ Silver Tongues in Golden Mouths ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-27)
+- [ Rhetoric and Ancient Philosophy ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-27)
+- [ 28 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-28)
+- [ Sky Writing ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-28)
+- [ Astronomy, Astrology, and Philosophy ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-28)
+- [ 29 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-29)
+- [ A God is My Co-Pilot ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-29)
+- [ The Life and Works of Plotinus ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-29)
+- [ 30 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-30)
+- [ Simplicity Itself ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-30)
+- [ Plotinus on the One and Intellect ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-30)
+- [ 31 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-31)
+- [ On the Horizon ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-31)
+- [ Plotinus on the Soul ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-31)
+- [ 32 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-32)
+- [ A Decorated Corpse ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-32)
+- [ Plotinus on Matter and Evil ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-32)
+- [ 33 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-33)
+- [ King of Animals ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-33)
+- [ Porphyry ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-33)
+- [ 34 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-34)
+- [ Pythagorean Theorems ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-34)
+- [ Iamblichus ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-34)
+- [ 35 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-35)
+- [ Domestic Goddesses and Philosopher Queens ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-35)
+- [ The Household and the State ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-35)
+- [ 36 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-36)
+- [ The Platonic Successor ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-36)
+- [ Proclus ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-36)
+- [ 37 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-37)
+- [ A Tale of Two Cities ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-37)
+- [ The Last Pagan Philosophers ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-37)
+- [ 38 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-38)
+- [ For a Limited Time Only ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-38)
+- [ John Philoponus ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-38)
+- [Part III](006_FM_contents.xhtml#r_actrade-9780198728023-part-3)
+- [ Christian Philosophy in the Roman Empire](006_FM_contents.xhtml#r_actrade-9780198728023-part-3)
+- [ 39 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-39)
+- [ Father Figures ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-39)
+- [ Ancient Christian Philosophy ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-39)
+- [ 40 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-40)
+- [ Please Accept Our Apologies ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-40)
+- [ The Greek Church Fathers ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-40)
+- [ 41 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-41)
+- [ Fall and Rise ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-41)
+- [ Origen ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-41)
+- [ 42 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-42)
+- [ Three for the Price of One ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-42)
+- [ The Cappadocians ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-42)
+- [ 43 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-43)
+- [ Naming the Nameless ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-43)
+- [ The Pseudo-Dionysius ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-43)
+- [ 44 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-44)
+- [ Double or Nothing ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-44)
+- [ Maximus the Confessor ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-44)
+- [ 45 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-45)
+- [ Practice Makes Perfect ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-45)
+- [ Christian Asceticism ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-45)
+- [ 46 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-46)
+- [ Spreading the Word ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-46)
+- [ The Latin Church Fathers ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-46)
+- [ 47 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-47)
+- [ Life and Time ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-47)
+- [ Augustine’s Confessions ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-47)
+- [ 48 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-48)
+- [ Papa Don’t Teach ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-48)
+- [ Augustine on Language ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-48)
+- [ 49 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-49)
+- [ Help Wanted ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-49)
+- [ Augustine on Freedom ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-49)
+- [ 50 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-50)
+- [ Heaven and Earth ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-50)
+- [ Augustine’s _City of God_ ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-50)
+- [ 51 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-51)
+- [ Me, Myself, and I ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-51)
+- [ Augustine on Mind and Memory ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-51)
+- [ 52 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-52)
+- [ Born Again ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-52)
+- [ Latin Platonism ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-52)
+- [ 53 ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-53)
+- [ Fate, Hope, and Clarity ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-53)
+- [ Boethius ](006_FM_contents.xhtml#r_actrade-9780198728023-chapter-53)
+- [ Notes](006_FM_contents.xhtml#r_actrade-9780198728023-miscMatter-11)
+- Preface
+- Chapter 1
+- Chapter 2
+- Chapter 3
+- Chapter 4
+- Chapter 5
+- Chapter 6
+- Chapter 7
+- Chapter 8
+- Chapter 9
+- Chapter 10
+- Chapter 11
+- Chapter 12
+- Chapter 13
+- Chapter 14
+- Chapter 15
+- Chapter 16
+- Chapter 17
+- Chapter 18
+- Chapter 19
+- Chapter 20
+- Chapter 21
+- Chapter 22
+- Chapter 23
+- Chapter 24
+- Chapter 25
+- Chapter 26
+- Chapter 27
+- Chapter 28
+- Chapter 29
+- Chapter 30
+- Chapter 31
+- Chapter 32
+- Chapter 33
+- Chapter 34
+- Chapter 35
+- Chapter 36
+- Chapter 37
+- Chapter 38
+- Chapter 39
+- Chapter 40
+- Chapter 41
+- Chapter 42
+- Chapter 43
+- Chapter 44
+- Chapter 45
+- Chapter 46
+- Chapter 47
+- Chapter 48
+- Chapter 49
+- Chapter 50
+- Chapter 51
+- Chapter 52
+- Chapter 53
+- [ Further Reading ](006_FM_contents.xhtml#r_actrade-9780198728023-bibliography-1)
+- Hellenistic Philosophy
+- The Socratic Legacy
+- Cynics
+- Cyrenaics
+- Epicurus
+- Lucretius
+- Stoicism
+- Seneca
+- Epictetus
+- Marcus Aurelius
+- Skepticism
+- New (Skeptical) Academy
+- Pyrrho
+- Cicero
+- Sextus Empiricus and Pyrrhonism
+- Galen and the Ancient Medical Schools
+- Late Ancient Philosophy
+- Middle Platonism
+- Philo of Alexandria
+- Plutarch
+- The Rise of Aristotelianism
+- Alexander of Aphrodisias
+- Rhetoric and Ancient Philosophy
+- Astronomy and Astrology
+- Plotinus
+- Plotinus on One and Intellect
+- Plotinus on Soul
+- Plotinus on Matter and Evil
+- Porphyry
+- Iamblichus
+- Proclus
+- Later Neoplatonism
+- Philoponus
+- Household and State
+- Philosophy in Christian Antiquity
+- Greek Church Fathers
+- Origen
+- The Cappadocians
+- The Pseudo-Dionysius
+- Maximus the Confessor and the Christological Debate
+- Ancient Christian Asceticism
+- Latin Church Fathers
+- Augustine
+- Latin Platonism
+- Boethius
+- [ Index ](006_FM_contents.xhtml#r_actrade-9780198728023-indexList-1)
+- Table of Contents
+  - Landmarks
+  - Pages

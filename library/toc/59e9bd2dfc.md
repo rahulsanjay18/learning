@@ -1,0 +1,96 @@
+# TOC: Computer_Science_-_OxfordUP.VSI_-_Dasgupta,_Subrata.Jan.2016
+grade: A
+
+- Computer Science: A Very Short Introduction
+- computer science
+- A Very Short Introduction
+- Contents
+- [Preface](007_FM_contents.xhtml#r_actrade-9780198733461-miscMatter-7)
+- [Acknowledgements](007_FM_contents.xhtml#r_actrade-9780198733461-miscMatter-8)
+- [List of illustrations](007_FM_contents.xhtml#r_actrade-9780198733461-miscMatter-9)
+- [Chapter 1](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-1)
+- [The ‘stuff’ of computing](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-1)
+- An automaton called ‘computer’
+- Computing as information processing
+- ‘Meaningless’ information
+- ‘Meaningful’ (or semantic) information
+- Is information _knowledge?_
+- Is information _data_?
+- The programmer’s point of view
+- Symbol structures as the common denominator
+- [Chapter 2](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-2)
+- [Computational artefacts](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-2)
+- Compositional hierarchy
+- Abstraction/refinement
+- Hierarchy by construction
+- Three classes of computational artefacts
+- The ‘great unifier’
+- Interactive computing
+- Computer science as a science of the artificial
+- [Chapter 3](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-3)
+- [Algorithmic thinking](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-3)
+- The litmus test
+- When is a procedure an algorithm?
+- ‘Go forth and multiply’
+- The determinacy of algorithms
+- Algorithms are abstract artefacts
+- Algorithms are _procedural knowledge_
+- Designing algorithms
+- The problem of translating arithmetic expressions
+- The ‘goodness’ of algorithms as utilitarian artefacts
+- The aesthetics of algorithms
+- Intractable (‘really difficult’) problems
+- [Chapter 4](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-4)
+- [The art, science, and engineering of programming](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-4)
+- Programs are liminal artefacts
+- Language, thought, reality, and programming
+- Programming languages as abstract artefacts
+- Language = notation + concepts & categories
+- Concepts and categories in programming languages
+- Programming as art
+- Programming as a mathematical science
+- Programming as (software) engineering
+- [Chapter 5](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-5)
+- [The discipline of computer architecture](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-5)
+- Solipsistic and sociable computers
+- Outer and inner architectures
+- The outer architecture
+- The inner architecture
+- ‘The computer-within-the computer’
+- Microprogramming
+- Parallel computing
+- The science in computer architecture
+- [Chapter 6](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-6)
+- [Heuristic computing](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-6)
+- Search and ye _may_ find
+- A meta-heuristic called ‘satisficing’
+- A heuristic algorithm
+- Heuristics and artificial intelligence
+- Weak methods and strong methods
+- Interpreting heuristic rules
+- [Chapter 7](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-7)
+- [Computational thinking](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-7)
+- A certain mentality
+- Computational thinking as mental skills
+- Thinking computationally about the mind
+- The computational brain
+- The emergence of cognitive science
+- Understanding human creativity
+- Understanding molecular information processing
+- [Epilogue: is computer science a universal science?](007_FM_contents.xhtml#r_actrade-9780198733461-chapter-8)
+- [Further reading](007_FM_contents.xhtml#r_actrade-9780198733461-bibliographyGroup-1)
+- Preface
+- Chapter 1: The ‘stuff’ of computing
+- Chapter 2: Computational artefacts
+- Chapter 3: Algorithmic thinking
+- Chapter 4: The art, science, and engineering of programming
+- Chapter 5: The discipline of computer architecture
+- Chapter 6: Heuristic computing
+- Chapter 7: Computational thinking
+- Epilogue: is computer science a universal science?
+- [Index](007_FM_contents.xhtml#r_actrade-9780198733461-indexGroup-1)
+- Social Media
+- A Very Short Introduction
+- Table of Contents
+  - Landmarks
+  - Pages

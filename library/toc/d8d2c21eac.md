@@ -1,0 +1,403 @@
+# TOC: [10] Bibek Debroy - The Mahabharata (Set of 10 Volumes) (2015, Penguin) - libgen.li
+grade: A
+
+  - The Mahabharata
+  - Contents
+  - About the Translator
+  - Family Tree
+  - Map of Bharatavarsha
+  - Introduction
+  - Section One
+  - Anukramanika Parva
+  - Section Two
+  - Parvasamgraha Parva
+  - Section Three
+  - Poushya Parva
+  - Section Four
+  - Pouloma Parva
+  - Section Five
+  - Astika Parva
+  - Section Six
+  - Adi-vamshavatarana Parva
+  - Section Seven
+  - Sambhava Parva
+  - Section Eight
+  - Jatugriha-daha Parva
+  - Section Nine
+  - Hidimba-vadha Parva
+  - Section Ten
+  - Baka-vadha Parva
+  - Section Eleven
+  - Chaitraratha Parva
+  - Section Twelve
+  - Droupadi-svayamvara Parva
+  - Section Thirteen
+  - Vaivahika Parva
+  - Section Fourteen
+  - Viduragamana Parva
+  - Section Fifteen
+  - Rajya-labha Parva
+  - Acknowledgements
+  - The Mahabharata
+  - Contents
+  - About the Translator
+  - Family Tree
+  - Map of Bharatavarsha
+  - Introduction
+  - Section Sixteen
+  - Arjuna-vanavasa Parva
+  - Section Seventeen
+  - Subhadra-harana Parva
+  - Section Eighteen
+  - Harana Harika Parva
+  - Section Nineteen
+  - Khandava-daha Parva
+  - Sabha Parva
+  - Section Twenty
+  - Sabha Parva
+  - Section Twenty-One
+  - Mantra Parva
+  - Section Twenty-Two
+  - Jarasandha-vadha Parva
+  - Section Twenty-Three
+  - Digvijaya Parva
+  - Section Twenty-Four
+  - Rajasuya Parva
+  - Section Twenty-Five
+  - Arghabhiharana Parva
+  - Section Twenty-Six
+  - Shishupala-vadha Parva
+  - Section Twenty-Seven
+  - Dyuta Parva
+  - Section Twenty-Eight
+  - Anudyuta Parva
+  - Aranyaka Parva
+  - Section Twenty-Nine
+  - Aranyaka Parva
+  - Section Thirty
+  - Kirmira-vadha Parva
+  - Section Thirty-One
+  - Kairata Parva
+  - Section Thirty-Two
+  - Indralokabhigamana Parva
+  - Acknowledgements
+  - The Mahabharata
+  - Contents
+  - About the Translator
+  - Praise for Volumes 1 and 2
+  - Family Tree
+  - Map of Bharatavarsha
+  - Introduction
+  - Section Thirty-Three
+  - Tirtha-yatra Parva
+  - Section Thirty-Four
+  - Jatasura-vadha Parva
+  - Section Thirty-Five
+  - Yaksha-yuddha Parva
+  - Section Thirty-Six
+  - Ajagara Parva
+  - Section Thirty-Seven
+  - Markandeya Samasya Parva
+  - Section Thirty-Eight
+  - Droupadi–Satyabhama-sambada Parva
+  - Section Thirty-Nine
+  - Ghosha Yatra Parva
+  - Section Forty
+  - Mriga-Svapna-Bhaya Parva
+  - Section Forty-One
+  - Vrihi-Drounika Parva
+  - Section Forty-Two
+  - Droupadi Harana Parva
+  - Section Forty-Three
+  - Kundala-aharana Parva
+  - Section Forty-Four
+  - Araneya Parva
+  - Acknowledgements
+  - The Mahabharata
+  - Contents
+  - About the Translator
+  - Family Tree
+  - Map of Bharatavarsha
+  - Introduction
+  - Virata Parva
+  - Section Forty-Five
+  - Vairata Parva
+  - Section Forty-Six
+  - Kichaka-Vadha Parva
+  - Section Forty-Seven
+  - Go-Grahana Parva
+  - Section Forty-Eight
+  - Vaivahika Parva
+  - Udyoga Parva
+  - Section Forty-Nine
+  - Udyoga Parva
+  - Section Fifty
+  - Sanjaya-Yana Parva
+  - Section Fifty-One
+  - Prajagara Parva
+  - Section Fifty-Two
+  - Sanatsujata Parva
+  - Section Fifty-Three
+  - Yana-Sandhi Parva
+  - Section Fifty-Four
+  - Bhagavat-Yana Parva
+  - Section Fifty-Five
+  - Karna-Upanivada Parva
+  - Section Fifty-Six
+  - Abhiniryana Parva
+  - Section Fifty-Seven
+  - Bhishma-Abhishechana Parva
+  - Section Fifty-Eight
+  - Uluka-Yana Parva
+  - Section Fifty-Nine
+  - Ratha-Atiratha-Samkhya Parva
+  - Acknowledgements
+  - The Mahabharata
+  - Contents
+  - About the Translator
+  - Family Tree
+  - Map of Bharatavarsha
+  - Introduction
+  - Section Sixty
+  - Amba-Upakhyana Parva
+  - Bhishma Parva
+  - Section Sixty-One
+  - Jambukhanda-Vinirmana Parva
+  - Section Sixty-Two
+  - Bhumi Parva
+  - Section Sixty-Three
+  - Bhagavad Gita Parva
+  - Section Sixty-Four
+  - Bhishma Vadha Parva
+  - Drona Parva
+  - Section Sixty-Five
+  - Dronabhisheka Parva
+  - Section Sixty-Six
+  - Samshaptaka Vadha Parva
+  - Acknowledgements
+  - The Mahabharata
+  - Contents
+  - About the Translator
+  - Family Tree
+  - Map of Bharatavarsha
+  - Introduction
+  - Drona Parva continued
+  - Section Sixty-Seven
+  - Abhimanyu-Vadha Parva
+  - Section Sixty-Eight
+  - Pratijna Parva
+  - Section Sixty-Nine
+  - Jayadratha-Vadha Parva
+  - Section Seventy
+  - Ghatotkacha-Vadha Parva
+  - Section Seventy-One
+  - Drona-Vadha Parva
+  - Section Seventy-Two
+  - Narayana Astra Moksha Parva
+  - Acknowledgements
+  - TRANSLATED BY BIBEK DEBROY
+    - THE MAHABHARATA
+  - Contents
+  - About the Translator
+  - FAMILY TREE
+  - Introduction
+  - Karna Parva
+  - SECTION SEVENTY-THREE
+    - Karna-Vadha Parva
+  - Chapter 1151(1)
+  - Chapter 1152(2)
+  - Chapter 1153(3)
+  - Chapter 1154(4)
+  - Chapter 1155(5)
+  - Chapter 1156(6)
+  - Chapter 1157(7)
+  - Chapter 1158(8)
+  - Chapter 1159(9)
+  - Chapter 1160(10)
+  - Chapter 1161(11)
+  - Chapter 1162(12)
+  - Chapter 1163(13)
+  - Chapter 1164(14)
+  - Chapter 1165(15)
+  - Chapter 1166(16)
+  - Chapter 1167(17)
+  - Chapter 1168(18)
+  - Chapter 1169(19)
+  - Chapter 1170(20)
+  - Chapter 1171(21)
+  - Chapter 1172(22)
+  - Chapter 1173(23)
+  - Chapter 1174(24)
+  - Chapter 1175(25)
+  - Chapter 1176(26)
+  - Chapter 1177(27)
+  - Chapter 1178(28)
+  - Chapter 1179(29)
+  - Chapter 1180(30)
+  - Chapter 1181(31)
+  - Chapter 1182(32)
+  - Chapter 1183(33)
+  - Chapter 1184(34)
+  - Chapter 1185(35)
+  - Chapter 1186(36)
+  - Chapter 1187(37)
+  - Chapter 1188(38)
+  - Chapter 1189(39)
+  - Chapter 1190(40)
+  - Chapter 1191(41)
+  - Chapter 1192(42)
+  - Chapter 1193(43)
+  - Chapter 1194(44)
+  - Chapter 1195(45)
+  - Chapter 1196(46)
+  - Chapter 1197(47)
+  - Chapter 1198(48)
+  - Chapter 1199(49)
+  - Chapter 1200(50)
+  - Chapter 1201(51)
+  - Chapter 1202(52)
+  - Chapter 1203(53)
+  - Chapter 1204(54)
+  - Chapter 1205(55)
+  - Chapter 1206(56)
+  - Chapter 1207(57)
+  - Chapter 1208(58)
+  - Chapter 1209(59)
+  - Chapter 1210(60)
+  - Chapter 1211(61)
+  - Chapter 1212(62)
+  - Chapter 1213(63)
+  - Chapter 1214(64)
+  - Chapter 1215(65)
+  - Chapter 1216(66)
+  - Chapter 1217(67)
+  - Chapter 1218(68)
+  - Chapter 1219(69)
+  - Shalya Parva
+  - SECTION SEVENTY-FOUR
+    - Shalya-Vadha Parva
+  - Chapter 1220(1)
+  - Chapter 1221(2)
+  - Chapter 1222(3)
+  - Chapter 1223(4)
+  - Chapter 1224(5)
+  - Chapter 1225(6)
+  - Chapter 1226(7)
+  - Chapter 1227(8)
+  - Chapter 1228(9)
+  - Chapter 1229(10)
+  - Chapter 1230(11)
+  - Chapter 1231(12)
+  - Chapter 1232(13)
+  - Chapter 1233(14)
+  - Chapter 1234(15)
+  - Chapter 1235(16)
+  - SECTION SEVENTY-FIVE
+    - HRADA-PRAVESHA PARVA
+  - Chapter 1236(17)
+  - Chapter 1237(18)
+  - Chapter 1238(19)
+  - Chapter 1239(20)
+  - Chapter 1240(21)
+  - Chapter 1241(22)
+  - Chapter 1242(23)
+  - Chapter 1243(24)
+  - Chapter 1244(25)
+  - Chapter 1245(26)
+  - Chapter 1246(27)
+  - Chapter 1247(28)
+  - SECTION SEVENTY-SIX
+    - Tirtha Yatra Parva
+  - Chapter 1248(29)
+  - Chapter 1249(30)
+  - Chapter 1250(31)
+  - Chapter 1251(32)
+  - Chapter 1252(33)
+  - Chapter 1253(34)
+  - Chapter 1254(35)
+  - Chapter 1255(36)
+  - Chapter 1256(37)
+  - Chapter 1257(38)
+  - Chapter 1258(39)
+  - Chapter 1259(40)
+  - Chapter 1260(41)
+  - Chapter 1261(42)
+  - Chapter 1262(43)
+  - Chapter 1263(44)
+  - Chapter 1264(45)
+  - Chapter 1265(46)
+  - Chapter 1266(47)
+  - Chapter 1267(48)
+  - Chapter 1268(49)
+  - Chapter 1269(50)
+  - Chapter 1270(51)
+  - Chapter 1271(52)
+  - Chapter 1272(53)
+  - SECTION SEVENTY-SEVEN
+    - Gada Yuddha Parva
+  - Chapter 1273(54)
+  - Chapter 1274(55)
+  - Chapter 1275(56)
+  - Chapter 1276(57)
+  - Chapter 1277(58)
+  - Chapter 1278(59)
+  - Chapter 1279(60)
+  - Chapter 1280(61)
+  - Chapter 1281(62)
+  - Chapter 1282(63)
+  - Chapter 1283(64)
+  - Introduction
+  - SECTION SEVENTY-FIVE
+  - Chapter 1151(1)
+  - Chapter 1152(2)
+  - Chapter 1153(3)
+  - Chapter 1154(4)
+  - Chapter 1155(5)
+  - Chapter 1156(6)
+  - Chapter 1157(7)
+  - Chapter 1158(8)
+  - Chapter 1159(9)
+  - Chapter 1160(10)
+  - Chapter 1161(11)
+  - Chapter 1162(12)
+  - Chapter 1163(13)
+  - Chapter 1164(14)
+  - Chapter 1165(15)
+  - Chapter 1166(16)
+  - Chapter 1167(17)
+  - Chapter 1168(18)
+  - Chapter 1169(19)
+  - Chapter 1170(20)
+  - Chapter 1171(21)
+  - Chapter 1172(22)
+  - Chapter 1173(23)
+  - Chapter 1174(24)
+  - Chapter 1175(25)
+  - Chapter 1176(26)
+  - Chapter 1177(27)
+  - Chapter 1178(28)
+  - Chapter 1179(29)
+  - Chapter 1180(30)
+  - Chapter 1181(31)
+  - Chapter 1182(32)
+  - Chapter 1183(33)
+  - Chapter 1184(34)
+  - Chapter 1185(35)
+  - Chapter 1186(36)
+  - Chapter 1187(37)
+  - Chapter 1188(38)
+  - Chapter 1189(39)
+  - Chapter 1190(40)
+  - Chapter 1191(41)
+  - Chapter 1192(42)
+  - Chapter 1193(43)
+  - Chapter 1194(44)
+  - Chapter 1195(45)
+  - Chapter 1196(46)
+  - Chapter 1197(47)
+  - Chapter 1198(48)
+  - Chapter 1199(49)
+  - Chapter 1200(50)
+  - Chapter 1201(51)
+  - Chapter 1202(52)
+  - Chapter 1203(53)

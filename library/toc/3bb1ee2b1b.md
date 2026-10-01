@@ -1,0 +1,64 @@
+# TOC: Dynasty_-_OxfordUP.VSI_-_Duindam,_Jeroen.Sep.2019
+grade: A
+
+- Dynasty: A Very Short Introduction
+- Dynasty
+- A Very Short Introduction
+- Contents
+- [Acknowledgements](006_FM_contents.xhtml#r_actrade-9780198809081-miscMatter-6)
+- [List of illustrations](006_FM_contents.xhtml#r_actrade-9780198809081-miscMatter-7)
+- [Dynasties past and present](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-8)
+- [Chapter 1](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-1)
+- [Shaping the family](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-1)
+- Male and female lines: concentration versus diffusion?
+- Polygyny and monogamy
+- Pruning the tree
+- [Chapter 2](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-2)
+- [Paterfamilias: It’s hard to be the boss](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-2)
+- Omnipotence and frailty
+- Sages and warriors
+- A lifetime on the throne
+- Tricks of the trade
+- [Chapter 3](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-3)
+- [Women and dynastic power](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-3)
+- Queens regnant
+- Queen-mothers and reign mates
+- Spouses, concubines, and mistresses
+- Systems, lifecycles, roles
+- [Chapter 4](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-4)
+- [Embedding the family](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-4)
+- Establishing genealogies
+- Setting up house
+- Performing kingship
+- [Chapter 5](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-5)
+- [Persistence and change](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-5)
+- The dynastic cycle
+- Dynastic change and variety
+- European hegemony and modernity
+- [Chapter 6](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-6)
+- [The dynastic impulse in the modern world](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-6)
+- Ruling houses: inflation and adaptation
+- Autocrats: royal style, nepotism, and succession
+- Political families: power begets power
+- Dynastic enterprise
+- [Epilogue](006_FM_contents.xhtml#r_actrade-9780198809081-chapter-7)
+- [References](006_FM_contents.xhtml#r_actrade-9780198809081-bibliography-1)
+- Dynasties past and present
+- Chapter 1: Shaping the family
+- Chapter 2: Paterfamilias: it’s hard to be the boss
+- Chapter 3: Women and dynastic power
+- Chapter 4: Embedding the family
+- Chapter 5: Persistence and change
+- Chapter 6: The dynastic impulse in the modern world
+- Epilogue
+- [Further reading](006_FM_contents.xhtml#r_actrade-9780198809081-bibliography-2)
+- Succession, kinship, royal clans ([Chapter 1](010_chapter.xhtml))
+- More recent discussions of kingship and monarchy
+- Women and power; queenship ([Chapter 3](012_chapter.xhtml))
+- Royal courts and representations of dynastic power ([Chapter 4](013_chapter.xhtml))
+- Modern monarchies, political families, and business dynasties ([Chapter 6](015_chapter.xhtml))
+- [Index](006_FM_contents.xhtml#r_actrade-9780198809081-indexGroup-1)
+- African History
+- Table of Contents
+  - Landmarks
+  - Pages

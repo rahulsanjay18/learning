@@ -1,0 +1,34 @@
+# TOC: Kafka_-_OxfordUP.VSI_-_Robertson,_Ritchie.Oct.2004
+grade: A
+
+  - <span id="page-7-1"></span><span id="page-7-0"></span>Contents
+- <span id="page-8-0"></span>[Acknowledgements](#page-7-0)
+- <span id="page-9-0"></span>[List of illustrations](#page-7-0)
+- <span id="page-11-0"></span>Chapter 1
+  - **[Life and myth](#page-7-1)**
+  - The 'Letter to his Father'
+  - Getting married
+  - 'I consist of literature'
+- <span id="page-36-0"></span>Chapter 2
+  - **[Reading Kafka](#page-7-1)**
+  - Kafka's verbal art
+- <span id="page-56-0"></span>[Chapter 3](#page-7-1)
+  - **Bodies**
+  - The modern body
+  - **Of the despisers of the body**
+  - The gendered body
+- <span id="page-77-0"></span>Chapter 4
+  - **[Institutions](#page-7-1)**
+  - Trials
+  - **Weber's professional man**
+  - <span id="page-114-0"></span>Chapter 5
+  - **[The last things](#page-7-1)**
+  - 'Where is God gone?'
+  - **Schopenhauer on death**
+- <span id="page-136-0"></span>[References](#page-7-1)
+- <span id="page-137-0"></span>[Further reading](#page-7-1)
+- <span id="page-142-0"></span>[Index](#page-7-1)
+  - Expand your collection of
+  - VERY SHORT INTRODUCTIONS
+- Visit the VERY SHORT INTRODUCTIONS
+- www.oup.co.uk/vsi

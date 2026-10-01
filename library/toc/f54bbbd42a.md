@@ -1,0 +1,93 @@
+# TOC: Journalism_-_OxfordUP.VSI_-_Hargreaves,_Ian.Aug.2014
+grade: A
+
+- Journalism: A Very Short Introduction
+- Ian Hargreaves
+- Journalism
+- A Very Short Introduction
+- SECOND EDITION
+- Contents
+- [ Acknowledgements ](007_FM_contents.xhtml#r_actrade-9780199686872-miscMatter-7)
+- [ List of illustrations ](007_FM_contents.xhtml#r_actrade-9780199686872-miscMatter-8)
+- [ Introduction: waiting for the endgame ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-1)
+- [ Chapter 1 ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-2)
+- [ Born free: a brief history of news media ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-2)
+- From Gutenberg to Zuckerberg
+- On liberty
+- Government by journalism
+- Media monopoly, communism, and fascism
+- [ Chapter 2 ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-3)
+- [ Big Brother: journalism and the altered state ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-3)
+- After the Cold War
+- Putin’s guard dogs
+- China—the adaptive state
+- From Velvet Revolution to the Arab Spring
+- American angst
+- Convergent media, convergent regulators
+- [ Chapter 3 ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-4)
+- [ The first casualty: journalists at war ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-4)
+- From Vietnam to the Balkan wars
+- The ‘war’ on terror
+- Al Jazeera and the Arab Street
+- [ Chapter 4 ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-5)
+- [ Star-struck: journalism as entertainment ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-5)
+- The tabloid instinct
+- The Murdoch factor
+- The tabloid Pope
+- Celebrities squared
+- Journalists as celebs
+- The tabloid decade
+- Tabloids online
+- [ Chapter 5 ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-6)
+- [ Up to a point, Lord Copper’s: who owns journalists? ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-6)
+- Corporate man cometh
+- When press barons ruled the earth
+- Profits of doom
+- Murdoch, last of the big beasts
+- ‘These people are not journalists’
+- Regulation
+- Do journalists care who they work for?
+- [ Chapter 6 ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-7)
+- [ Hacks vs flaks: journalism and public relations ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-7)
+- Mau-mau the flak-catchers
+- Journalism and ‘churnalism’
+- How journalists created the PR industry
+- Engineering consent
+- Spin doctors in the thick of it
+- Money makes the spin go round
+- Trust bust
+- [ Chapter 7 ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-8)
+- [ Murder is my meat: the ethics of journalism ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-8)
+- Journalism kills
+- Piety at the Post
+- The public interest exception
+- The American way
+- Truth, loyalty, and verification
+- New news isn’t so sure
+- A philosopher calls
+- Who are these journalists anyway?
+- The global journalist
+- Lord Footnote?
+- [ Chapter 8 ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-9)
+- [ Digital: after the deluge ](007_FM_contents.xhtml#r_actrade-9780199686872-chapter-9)
+- Dot-com bust
+- New beasts on the block
+- The decade of doom
+- The fifth estate
+- Drudge reports
+- All the news that’s fit to click
+- Digital natives versus digital adaptors
+- Local and hyperlocal
+- Willing to pay
+- WikiLeaks
+- ‘The networked public sphere’
+- A new politics of the machine
+- Gutenberg galaxy to internet galaxy
+- The age of the virus
+- [ Further reading ](007_FM_contents.xhtml#r_actrade-9780199686872-bibliographyGroup-1)
+- [ Index ](007_FM_contents.xhtml#r_actrade-9780199686872-indexList-1)
+- Expand your collection of
+- VERY SHORT INTRODUCTIONS
+- Table of Contents
+  - Landmarks
+  - Pages

@@ -1,0 +1,108 @@
+# TOC: Physics_-_OxfordUP.VSI_-_Perkowitz,_Sidney.Jul.2019
+grade: A
+
+- Physics: A Very Short Introduction
+- Sidney Perkowitz
+- Physics
+- A Very Short Introduction
+- Contents
+- [ Preface ](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-miscMatter-7)
+- [ Acknowledgements ](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-miscMatter-8)
+- [ List of illustrations ](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-miscMatter-9)
+- [ List of abbreviations ](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-miscMatter-10)
+- [ Chapter 1](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-1)
+- [ It all began with the Greeks](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-1)
+- Curiosity and understanding
+- Physics and nature
+- Moving objects
+- The Renaissance and the planets
+- Gravitation, light, and Newton
+- Electric and magnetic fluids
+- The age of correlation
+- 20th-century surprises
+- The physicist’s war
+- The next correlation
+- [Chapter 2](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-2)
+- [ What physics covers and what it doesn’t](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-2)
+- Matter and energy
+- About matter
+- About energy
+- Size matters
+- Physics subdivided
+- Theory, experiment, and more
+- Pure vs applied
+- Physics is what physicists do
+- Physics and life
+- [ Chapter 3](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-3)
+- [ How physics works](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-3)
+- A work in progress
+- Basic beliefs
+- Motivation
+- Experiment becomes important
+- Measuring the Earth with a shadow and a stick
+- Data, modelling and gravitational theory 1.0
+- A _Gedankenexperiment_ and gravitational theory 2.0
+- Small scale serendipity
+- Large scale serendipity and cosmic origins
+- A radical quantum theory
+- Strings and the multiverse
+- The human factor
+- Changing how physics works?
+- [ Chapter 4](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-4)
+- [ Physics applied and extended](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-4)
+- Instruments and theories
+- To the stars
+- Around and inside the Earth
+- Inside the body
+- Exploring biomolecules and living cells
+- Clean energy
+- Kitchen physics
+- Applied modern physics
+- Quantum strangeness
+- National security and more
+- [ Chapter 5](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-5)
+- [ A force in society](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-5)
+- Beyond the lab
+- Origins and our place in creation
+- The technological physicist
+- At war
+- The nuclear era
+- The culture of physics
+- Physics icons
+- Tools for art
+- Physics matters
+- [ Chapter 6](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-6)
+- [ Future physics: unanswered questions](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-chapter-6)
+- Physics in the 21st century
+- The dark universe
+- Deeper into the small, mid-size, and large
+- What is the quantum and does that matter?
+- Towards quantum gravity
+- Energy challenges
+- Material culture
+- Swallowing the physician
+- Answering ancient questions
+- An international enterprise
+- The quest
+- [ References ](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-bibliography-1)
+- Chapter 1: It all began with the Greeks
+- Chapter 2: What physics covers and what it doesn’t
+- Chapter 3: How physics works
+- Chapter 4: Physics applied and extended
+- Chapter 5: A force in society
+- Chapter 6: Future physics: unanswered questions
+- [ Further reading and viewing ](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-bibliography-2)
+- Chapter 1: It all began with the Greeks
+- Chapter 2: What physics covers and what it doesn’t
+- Chapter 3: How physics works
+- Chapter 4: Physics applied and extended
+- Chapter 5: A force in society
+- Chapter 6: Future physics: unanswered questions
+- [ Index ](../Text/007_FM_contents.xhtml#r_actrade-9780198813941-indexGroup-1)
+- social media
+- cancer
+- galaxies
+- numbers
+- Table of Contents
+  - Landmarks
+  - Pages

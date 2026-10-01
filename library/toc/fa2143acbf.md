@@ -1,0 +1,65 @@
+# TOC: Physical_Chemistry_-_OxfordUP.VSI_-_Atkins,_Peter.Dec.2014
+grade: A
+
+- Physical Chemistry
+  - Contents
+  - [List of illustrations](contents.xhtml#illustrationa)
+  - Preface
+  - [Chapter 1
+    - Atoms
+    - The electronic structure of atoms
+    - The properties of atoms
+    - The ionic bond
+    - The covalent bond
+    - The quantum mechanics of bonds
+    - The current challenge
+  - [Chapter 2
+    - The First Law
+    - The Second Law
+    - Free energy
+    - The Third Law
+    - Relations between properties
+    - The current challenge
+  - [Chapter 3
+    - The Boltzmann distribution
+    - Molecular thermodynamics
+    - Molecular reactions
+    - A statistical perspective
+    - The current challenge
+  - [Chapter 4
+    - Gas
+    - Liquid
+    - Solid
+    - Intermediate states of matter
+    - The current challenge
+  - [Chapter 5
+    - Boiling and freezing
+    - The phase rule
+    - Dissolving and mixing
+    - Transitions of solutions
+    - Other transitions
+    - The current challenge
+  - [Chapter 6
+    - Spontaneous reaction
+    - Reaction rate
+    - Reaction rate and temperature
+    - Catalysis
+    - Photochemistry
+    - Electrochemistry
+    - Chemical dynamics
+    - The current challenge
+  - [Chapter 7
+    - Spectroscopy
+    - Magnetic resonance
+    - Mass spectrometries
+    - Surface studies
+    - Lasers
+    - Computers
+    - The current challenge
+  - [Appendix: the Periodic Table](contents.xhtml#appendixa)
+  - [Further reading](contents.xhtml#furthera)
+  - [Index](contents.xhtml#indexa)
+  - Expand your collection of
+- Contents
+- Guide
+- Page List

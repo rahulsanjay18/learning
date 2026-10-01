@@ -1,0 +1,36 @@
+# TOC: Modern_Art_-_OxfordUP.VSI_-_Cottington,_David.Jan.2005
+grade: A
+
+- MODERN ART
+  - Contents
+  - List of illustrations
+    - Chapter openings
+  - Introduction: modern art – monument or mockery?
+  - Chapter 1
+    - Origins and attitudes
+    - Selling modern art
+    - The avant-garde today: dead or alive?
+  - Chapter 2
+    - Painting and decorating: pleasures and principles
+    - Mixing media: from collage to installation
+    - Artworks and other objects
+  - Chapter 3
+    - Somebody had to be Picasso
+    - Women artists: making a difference
+    - Pop idols
+  - Chapter 4
+    - From dross to gold
+    - The society of the spectacle
+    - Crisis of modernism
+  - Chapter 5
+    - New ways of seeing
+    - A world of difference
+    - The price of creativity
+  - Further reading
+    - **Introduction: modern art – monument or mockery?**
+    - **Chapter 1: Tracking the avant-garde**
+    - **Chapter 2: Modern media, modern messages**
+    - **Chapter 3: From Picasso to pop idols: the eminence of the artist**
+    - **Chapter 4: Alchemical practices: modern art and consumerism**
+    - **Chapter 5: Past the post: whatever next?**
+  - Index
