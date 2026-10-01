@@ -1,0 +1,13 @@
+# Add under `services:` in your existing docker-compose.yml
+  book-server:
+    build: ./book-server            # this server/ folder
+    restart: unless-stopped
+    environment:
+      BOOKS_TOKEN: ${BOOKS_TOKEN}   # put a long random value in your .env (openssl rand -hex 32)
+      BOOKS_DB: /data/books.db
+      BOOKS_MD_ROOT: /books_md
+    volumes:
+      - /path/to/BooksMD:/books_md:ro   # read-only
+      - ./book-server/data:/data:ro     # books.db lives here
+    ports:
+      - "8088:8088"                     # LAN / Tailscale; public access goes through your reverse proxy
