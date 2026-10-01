@@ -1,0 +1,33 @@
+# Merges every branch a Claude Code cloud session pushes (claude/*) into main,
+# so the next session (from any device) starts with all your learning state.
+name: auto-merge-claude-branches
+
+on:
+  push:
+    branches: ['claude/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-merge-main
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Merge session branch into main
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$BRANCH"
+          git merge --no-edit "origin/$BRANCH"
+          git push origin main
+          git push origin --delete "$BRANCH"
