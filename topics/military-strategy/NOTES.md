@@ -1,0 +1,21 @@
+# Notes (teacher's scratchpad)
+
+## Learner preferences
+- Background: BS Math + BS CompE (Penn State), MS CS (Georgia Tech), 5 yrs in AI. Game-theory, search and RL analogies welcome
+  (label them as analogies when they're mine, not the source's).
+- Inattentive ADHD. For this topic they asked for *longer, reading-heavy* sessions (vs. chess's 20–30 min quiz-heavy ones):
+  structure = guided reading (questions to hold) -> idea in brief -> a few classification/judgment items -> free recall -> take-it-outside task.
+- Wants citations in text and at the end of every explanation, and a saved copy.
+- Scope: theory first; tactics AND weapons are IN scope (they first ticked "skip", then corrected it at once); include nuclear/modern.
+
+## Working notes
+- Backbone text: Echevarria, *Military Strategy: A VSI* (grade A, id 940de01b70). Its chapter order makes a natural syllabus:
+  Ch1 definition and types -> Ch2 annihilation/dislocation -> Ch3 attrition/exhaustion -> Ch4 deterrence/coercion -> Ch5 terror ->
+  Ch6 decapitation -> Ch7 cyber -> Ch8 success and failure.
+- Lesson 1 = capacity vs. will 2x2 (done). Candidate next lessons, choose using the learner's take-it-outside analysis:
+  - Clausewitz: war as continuation of policy, and the trinity (On War Bk1 Ch1, id 8cb37bf97d, plus Howard VSI c589beef4b).
+  - Lanchester's laws: attrition as ODEs (Echevarria Ch3 mentions them; derive in-lesson and check with sympy, don't take equations from text).
+  - Boyd/OODA and dislocation (Discourse is free from Air University Press).
+  - Tactics and weapons as constraints on strategy (Manila Bay tech gap, blitzkrieg combined arms) since they're in scope.
+- Spacing: open lesson 2 with 2–3 new cases to classify on the 2x2 (not the ones from lesson 1).
+- No GLOSSARY.md yet. Candidates once the learner uses them correctly: annihilation, dislocation, attrition, exhaustion, ends/ways/means.
