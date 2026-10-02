@@ -5,6 +5,7 @@
 // Recall (number):  <div class="quiz" data-type="number" data-answer="5"><p class="prompt">...</p>
 //                     <div class="explain" hidden>...</div></div>
 // A first answer counts toward the score; the learner may keep trying after that.
+// Optional data-hint="..." replaces the retry message shown after a wrong answer.
 (function () {
   var total = 0, firstTryRight = 0, answered = 0, bar;
 
@@ -22,7 +23,7 @@
     v.textContent = ok ? "Right. " : "Not quite. ";
     fb.appendChild(v);
     if (ok && explain) { fb.appendChild(explain); explain.hidden = false; }
-    if (!ok) fb.appendChild(document.createTextNode("Recount the square and try again."));
+    if (!ok) fb.appendChild(document.createTextNode(q.dataset.hint || "Look again and try once more."));
   }
 
   function record(q, ok) {

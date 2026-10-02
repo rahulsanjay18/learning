@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checks First · Chess lesson 2</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../../../index.html">Learning</a> · Chess · Lesson 2 · <a href="0001-is-it-safe.html">← Lesson 1</a> · <a href="../reference/safety-check.html">Reference: safety check</a></nav>
+
+<h1>Checks first</h1>
+<p class="subtitle">Before you move, list every check your opponent would have. About 25 minutes.</p>
+
+<h2>1 · Warm-up: count the square</h2>
+<p class="muted small">Two new positions from <a href="0001-is-it-safe.html">lesson 1</a>. Recall the tally from memory: cheapest piece recaptures first, and either side may stop.</p>
+
+<div class="quiz" data-type="choice" data-answer="Black gains" data-options="White gains|Black gains|Nobody wins" data-hint="Run the tally again: what does each side give up at each step?">
+  <div class="board-wrap" data-fen="3q2k1/5ppp/5n2/3p4/8/2N5/5PPP/3Q2K1 w - - 0 1" data-hl="d5" data-arrows="c3-d5" data-caption="White plays Nxd5"></div>
+  <p class="prompt">Two attackers (knight, queen) against two defenders (knight, queen). Who comes out ahead?</p>
+  <div class="explain" hidden>Nxd5 Nxd5: +1, −2. Continuing with Qxd5 Qxd5 only makes it worse for White (+1, then −8), so White stops at <strong>−2</strong>.
+  This is the same shape as lesson 1's worked example: a defended pawn, captured by a piece worth more.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="White gains" data-options="White gains|Black gains|Nobody wins" data-hint="Run the tally again: what does each side give up at each step?">
+  <div class="board-wrap" data-fen="6k1/5ppp/4p3/3n4/8/5B2/5PPP/3R2K1 w - - 0 1" data-hl="d5" data-arrows="f3-d5" data-caption="White plays Bxd5"></div>
+  <p class="prompt">Bishop takes knight, and the knight is defended by a pawn. Who comes out ahead?</p>
+  <div class="explain" hidden>Bxd5 exd5 Rxd5: +3, 0, +1. The first trade is even (bishop for knight). Then the recapturing pawn is left undefended, and the rook takes it: <strong>+1</strong>.</div>
+</div>
+
+<h2>2 · The move that lost your game</h2>
+<div class="board-wrap" data-fen="4q2k/1Q3R2/1p1r1p2/p4bpp/8/5p2/PP4PP/2R3K1 w - - 0 31" data-hl="f3" data-arrows="g2-f3"
+     data-caption="Your game, move 31. White to move. Stockfish: White +2.5"></div>
+<p>You were winning. Black had just played …exf3, and you recaptured with <strong>31. gxf3</strong>. The material count says that's fine:
+it's just a pawn trade. Now imagine the move made and ask one question first: <em>what checks would Black have?</em></p>
+<table class="tally">
+  <tr><th>Black's check after 31. gxf3</th><th>Can White meet it?</th></tr>
+  <tr><td>…Qe3+</td><td>Only by moving the king. Then the queen keeps checking (…Qd2+), and Black mates in 5 whatever you do</td></tr>
+  <tr><td>…Qe1+</td><td>Rxe1, fine</td></tr>
+  <tr><td>…Rd1+</td><td>Rxd1, fine</td></tr>
+</table>
+<p>Three checks, and one of them is a forced mate in 5. Before gxf3, your g-pawn sat next to your king. The capture pulled it away, and your king had nowhere
+safe to hide from the queen's checks along the e3–g1 diagonal and the second rank.</p>
+<p>Compare <strong>31. Re7!</strong>, the engine's move: it attacks the queen, and Black's only checks are …Rd1+ (Rxd1) and …f2+ (Kxf2).
+Both are easy to meet, and White stays winning.<cite class="ref"><a href="#s3">3</a></cite></p>
+
+<div class="callout">
+<p><strong>The routine</strong> (Heisman: checks, captures, threats<cite class="ref"><a href="#s1">1</a></cite>). After choosing a move, before playing it:</p>
+<ol style="margin:.3rem 0 0">
+  <li><strong>Picture the move made.</strong></li>
+  <li><strong>List every check</strong> your opponent would have. For each one, do you have a good answer?</li>
+  <li>Then every <strong>capture</strong>: run the <a href="0001-is-it-safe.html">lesson 1 tally</a>.</li>
+  <li>Then every <strong>threat</strong>.</li>
+</ol>
+<p class="small" style="margin-top:.5rem">Why checks first? A check must be answered at once, so it takes away your choices. If you skip this step and just hope
+there's an answer, that's what Heisman calls <em>Hope Chess</em>.<cite class="ref"><a href="#s1">1</a></cite></p>
+</div>
+<p class="small muted">Today we drill step 2 only. One step at a time is how a routine becomes automatic.</p>
+
+<h2>3 · Practice A: count the checks</h2>
+<p class="muted small">White plays the arrowed move. <strong>How many different checks would Black then have?</strong> Count every checking move,
+including captures that give check. Picture the move made; the board shows the position <em>before</em> it.</p>
+
+<div class="quiz" data-type="number" data-answer="2" data-hint="Look at every Black piece, then at every line to White's king: files, ranks, diagonals.">
+  <div class="board-wrap" data-fen="1q2r1k1/5ppp/8/8/8/8/3Q1PPP/3R2K1 w - - 0 1" data-arrows="d2-d7" data-caption="A1 · White plays Qd7"></div>
+  <p class="prompt">After Qd7, how many checks does Black have?</p>
+  <div class="explain" hidden><strong>2:</strong> …Re1+ (down the open e-file) and …Qxh2+ (the queen's long diagonal from b8 to h2).
+  Both can be met (Rxe1, Kxh2), so Qd7 is safe. Counting them is still the habit.</div>
+</div>
+
+<div class="quiz" data-type="number" data-answer="2" data-hint="Don't forget pawns: a pawn can give check too.">
+  <div class="board-wrap" data-fen="4q2k/1Q3R2/1p1r1p2/p4bpp/8/5p2/PP4PP/2R3K1 w - - 0 31" data-arrows="f7-e7" data-caption="A2 · Your game: White plays Re7"></div>
+  <p class="prompt">After Re7, how many checks does Black have?</p>
+  <div class="explain" hidden><strong>2:</strong> …Rd1+ and the pawn check …f2+. Rxd1 and Kxf2 answer them. This is the safe alternative to gxf3.</div>
+</div>
+
+<div class="quiz" data-type="number" data-answer="1" data-hint="Which white piece guarded your back rank before this move?">
+  <div class="board-wrap" data-fen="4r1k1/1p3ppp/8/8/8/8/1q1Q1PPP/4R1K1 w - - 0 1" data-arrows="d2-b2" data-caption="A3 · White plays Qxb2"></div>
+  <p class="prompt">Black's queen is hanging, and White takes it. After Qxb2, how many checks does Black have?</p>
+  <div class="explain" hidden><strong>1:</strong> …Rxe1, and it's <strong>checkmate</strong>. The queen on d2 was the only defender of e1, and capturing on b2 pulled it away.
+  The lesson 1 tally says “+9”, but the check says “game over”. That's why checks come before captures.
+  (Checks first applies to <em>your</em> moves too: White had Rxe8, mate, all along.)</div>
+</div>
+
+<div class="quiz" data-type="number" data-answer="6" data-hint="Count queen moves, the rook, the bishop, and the pawn capture.">
+  <div class="board-wrap" data-fen="4q2k/1Q3R2/1p1r1p2/p4bpp/8/5p2/PP4PP/2R3K1 w - - 0 31" data-arrows="g1-f1" data-caption="A4 · Your game: White plays Kf1"></div>
+  <p class="prompt">A king walk instead. After Kf1, how many checks does Black have?</p>
+  <div class="explain" hidden><strong>6:</strong> …Qb5+, …Qe2+, …Qe1+, …Rd1+, …Bd3+ and …fxg2+. After …Qe2+ Kg1 Qxg2# it's mate in 2.
+  A king standing next to open lines invites checks. The more checks your opponent has, the more likely one of them is deadly.</div>
+</div>
+
+<h2>4 · Practice B: safe or lost?</h2>
+<p class="muted small">List Black's checks after White's move, then decide. <strong>Safe</strong> = White doesn't lose material or get mated. <strong>Lost</strong> = it does.
+Every verdict was checked with Stockfish 16<cite class="ref"><a href="#s4">4</a></cite>.</p>
+
+<div class="quiz" data-type="choice" data-answer="Safe" data-options="Safe|Lost" data-hint="List the checks again. For each one: does White have a good answer?">
+  <div class="board-wrap" data-fen="6k1/p4ppp/4q3/8/3Q4/8/5PPP/1R4K1 w - - 0 1" data-arrows="d4-a7" data-caption="B1 · White plays Qxa7"></div>
+  <p class="prompt">White grabs a pawn on the far side of the board. Safe or lost?</p>
+  <div class="explain" hidden><strong>Safe.</strong> Black's only check is …Qe1+, and Rxe1 wins the queen. Having a check isn't the same as having a good check;
+  what matters is whether you can meet it. (White's best was Rb8+, mating in 2: look at your own checks first, too.)</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Lost" data-options="Safe|Lost" data-hint="List the checks again. For each one: does White have a good answer?">
+  <div class="board-wrap" data-fen="r5k1/5ppp/8/2b5/8/1Q6/5PPP/2R3K1 w - - 0 1" data-hl="c5" data-arrows="c1-c5" data-caption="B2 · White plays Rxc5"></div>
+  <p class="prompt">The bishop on c5 is undefended. White's rook takes it. Safe or lost?</p>
+  <div class="explain" hidden><strong>Lost.</strong> …Ra1+ Rc1 Rxc1+ Qd1 Rxd1#, mate in 3. The rook on c1 was guarding your back rank; it left, so Black's rook gets in.
+  The tally says “+3”, and the check says it's mate.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Safe" data-options="Safe|Lost" data-hint="List the checks again. For each one: does White have a good answer?">
+  <div class="board-wrap" data-fen="r5k1/5ppp/8/2b5/8/1Q6/5PPP/2R3K1 w - - 0 1" data-arrows="b3-b7" data-caption="B3 · Same position: White plays Qb7"></div>
+  <p class="prompt">Same position, a different move. Safe or lost?</p>
+  <div class="explain" hidden><strong>Safe.</strong> Black's only check is …Bxf2+, and Kxf2 just wins the bishop. The rook stays home, so the back rank stays guarded.
+  Rxc5 can wait a move.</div>
+</div>
+
+<h2>5 · Take it to a real game</h2>
+<div class="callout">
+<p>Play one more untimed bot game (Sven again is fine, with hints and takebacks off). One new rule:</p>
+<p style="margin:.4rem 0"><strong>Before every capture, and before every move of a pawn in front of your king: picture the move made, and name every check your opponent would have.</strong></p>
+<p>Keep using lesson 1's question too. Then paste the PGN. I'll look for any move where an opponent's check came as a surprise.</p>
+</div>
+
+<h2>Read next</h2>
+<p><strong>Primary source:</strong> Dan Heisman, <a href="https://www.chess.com/article/view/passive-vs-basic-hope-chess">“Passive vs. Basic Hope Chess”</a> (Chess.com, 2018).
+If you read it after lesson 1, read it again now: the “passive” kind it describes, using only your tactical vision to spot danger, is the habit this lesson replaces.<cite class="ref"><a href="#s1">1</a></cite></p>
+<p class="small">Going further: Seirawan & Silman, <em>Winning Chess Tactics</em>, Ch. 5 “King Tactics and Combinations” (in your collection).<cite class="ref"><a href="#s2">2</a></cite></p>
+
+<div class="callout no-print">
+<p><strong>Questions?</strong> Ask your teacher (Claude). For example: “why doesn't …Qe1+ work after gxf3?”, “how do I list checks fast in a real game?”, or
+“give me five more count-the-checks positions.”</p>
+</div>
+
+<hr>
+<ol class="sources">
+  <li id="s1">Dan Heisman, <a href="https://www.chess.com/article/view/passive-vs-basic-hope-chess">“Passive vs. Basic Hope Chess”</a>, Chess.com, 19 Feb 2018 (Hope Chess; checks, captures and threats).</li>
+  <li id="s2">Yasser Seirawan & Jeremy Silman, <em>Winning Chess Tactics</em>, Ch. 5 “King Tactics and Combinations”, p. 51. In your collection.</li>
+  <li id="s3">Your game vs. Sven-BOT, 2 Oct 2026: <a href="../games/2026-10-02-vs-sven-review.md">review</a>.</li>
+  <li id="s4">Checks listed and verdicts checked with <a href="https://python-chess.readthedocs.io/">python-chess</a> and Stockfish 16, by
+    <code>topics/chess/scripts/verify_checks.py</code> and <code>verify_positions.py</code>.</li>
+</ol>
+</main>
+<script src="../assets/board.js"></script>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
