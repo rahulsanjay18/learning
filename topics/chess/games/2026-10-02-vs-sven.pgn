@@ -1,0 +1,21 @@
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.02"]
+[Round "?"]
+[White "rahulsanjay1814"]
+[Black "Sven-BOT"]
+[Result "0-1"]
+[TimeControl "?"]
+[WhiteElo "428"]
+[BlackElo "1100"]
+[Termination "Sven won by checkmate"]
+[ECO "A48"]
+[EndDate "2026.10.02"]
+[Link "https://www.chess.com/game/computer/2246311688?move=0"]
+
+1. d4 Nf6 2. Bf4 g6 3. Nf3 Bg7 4. e3 O-O 5. Nc3 c6 6. Bc4 h5 7. O-O d6 8. Ng5 d5
+9. Bb3 Bg4 10. Qd3 Bf5 11. Qd2 b6 12. Rae1 a5 13. e4 Nxe4 14. Ncxe4 dxe4 15.
+Bxf7+ Rxf7 16. Nxf7 Kxf7 17. Bg5 Bxd4 18. c3 Nd7 19. cxd4 Qf8 20. d5 cxd5 21.
+Qxd5+ Kg7 22. Rc1 Kh7 23. Rc6 Nf6 24. Bxf6 exf6 25. Rc7+ Kh8 26. Rfc1 Rd8 27.
+Qc6 Rd6 28. Qb7 g5 29. Rf7 Qe8 30. f3 exf3 31. gxf3 Qe3+ 32. Kg2 Qd2+ 33. Kg3
+h4# 0-1
