@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is It Safe? · Chess lesson 1</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../../../index.html">Learning</a> · Chess · Lesson 1 · <a href="../reference/safety-check.html">Reference: safety check</a></nav>
+
+<h1>Is it safe?</h1>
+<p class="subtitle">Counting one square to know whether a capture wins or loses material. About 25 minutes.</p>
+
+<h2>Why this comes first</h2>
+<p>You want to <em>understand</em> chess, not just win. But below about 1200, most games are decided by material
+given away for nothing, and no plan survives a lost piece. Seirawan puts it this way: tactics are
+“the guard dogs of strategy”<cite class="ref"><a href="#s1">1</a></cite>. Dan Heisman calls the habit of moving
+without checking the opponent's forcing replies (checks, captures, threats) <em>Hope Chess</em><cite class="ref"><a href="#s2">2</a></cite>.
+The opposite habit, checking that each move is safe before you play it, starts with one skill: <strong>counting a single square</strong>.</p>
+<p>Today's win: given a capture, you can say who comes out ahead in material, and why.</p>
+
+<h2>1 · Warm-up: recall the point count</h2>
+<p class="muted small">From memory, no peeking. Getting it wrong here is useful too: struggling to recall is what makes it stick.</p>
+
+<div class="quiz" data-type="number" data-answer="3">
+  <p class="prompt">A knight is worth how many pawns?</p>
+  <div class="explain" hidden>Knight = 3, the same as a bishop.<cite class="ref"><a href="#s1">1</a></cite></div>
+</div>
+<div class="quiz" data-type="number" data-answer="5">
+  <p class="prompt">A rook is worth how many pawns?</p>
+  <div class="explain" hidden>Rook = 5. Trading a minor piece (3) for a rook is called “winning the Exchange”, a 2-point gain.<cite class="ref"><a href="#s1">1</a></cite></div>
+</div>
+<div class="quiz" data-type="number" data-answer="9">
+  <p class="prompt">A queen is worth how many pawns?</p>
+  <div class="explain" hidden>Queen = 9. The king is “priceless”: it is never traded.<cite class="ref"><a href="#s1">1</a></cite></div>
+</div>
+
+<table class="values">
+  <tr><th>Piece</th><th>Points</th></tr>
+  <tr><td>Pawn</td><td class="num">1</td></tr>
+  <tr><td>Knight · Bishop</td><td class="num">3</td></tr>
+  <tr><td>Rook</td><td class="num">5</td></tr>
+  <tr><td>Queen</td><td class="num">9</td></tr>
+</table>
+<p class="small muted">Values from Seirawan & Silman's glossary entry for point count<cite class="ref"><a href="#s1">1</a></cite>. These are rules of thumb: a piece's
+real worth depends on the position, a theme for later lessons (Silman<cite class="ref"><a href="#s4">4</a></cite>).</p>
+
+<h2>2 · The idea: keep a running tally</h2>
+<p>A capture starts an <em>exchange</em> on one square. Two facts drive it:</p>
+<ol>
+  <li><strong>Cheapest first.</strong> Each side recaptures with its least valuable piece that can reach the square, so it risks as little as possible.</li>
+  <li><strong>Anyone can stop.</strong> Nobody has to recapture. Each side keeps going only while that helps it.</li>
+</ol>
+<p>So you don't just count heads. You write down the score after each capture and ask, at each step, “would the side to move rather stop here?”</p>
+
+<h3>Worked example</h3>
+<div class="board-wrap" data-fen="6k1/4qppp/2n5/4p3/8/2B2N2/5PPP/6K1 w - - 0 1" data-hl="e5" data-arrows="f3-e5"
+     data-caption="White to move. Is Nxe5 good?"></div>
+<p>The pawn on e5 has <strong>two attackers</strong> (knight f3, bishop c3) and <strong>two defenders</strong> (knight c6, queen e7). The heads are equal, so it looks even. Now run the tally from White's side:</p>
+<table class="tally">
+  <tr><th>Move</th><th>What changed hands</th><th>White's running score</th></tr>
+  <tr><td>1. Nxe5</td><td>White takes a pawn</td><td class="num">+1</td></tr>
+  <tr><td>1… Nxe5</td><td>Black takes a knight</td><td class="num">−2</td></tr>
+  <tr><td>2. Bxe5</td><td>White takes a knight</td><td class="num">+1</td></tr>
+  <tr><td>2… Qxe5</td><td>Black takes a bishop</td><td class="num">−2</td></tr>
+</table>
+<p>White ends at −2 whether it stops after move 1 or plays it all out. The problem is the very first trade: a 3-point
+knight for a 1-point pawn that is defended. <strong>Equal numbers are not enough; the values decide.</strong></p>
+
+<div class="callout">
+<p><strong>The two-question shortcut.</strong> A piece is safe where it stands if:</p>
+<ol style="margin:.3rem 0 0">
+  <li>no enemy piece <em>worth less</em> attacks it, <strong>and</strong></li>
+  <li>it has <em>at least as many</em> defenders as attackers.</li>
+</ol>
+<p class="small" style="margin-top:.5rem">If either answer is “no”, run the tally. The tally is the real answer; the shortcut only saves time.
+Heisman teaches the same count of attackers vs. defenders, and the cases where it doesn't apply<cite class="ref"><a href="#s3">3</a></cite>.</p>
+</div>
+
+<h2>3 · Practice</h2>
+<p class="muted small">Each position: White plays the arrowed capture. After the best play by both sides <em>on that square</em> (either side may stop), who ends up ahead?
+Every answer was checked by a script that plays out the exchange<cite class="ref"><a href="#s6">6</a></cite>.</p>
+
+<div class="quiz" data-type="choice" data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
+  <div class="board-wrap" data-fen="6k1/5ppp/3p4/4n3/3P4/8/5PPP/6K1 w - - 0 1" data-arrows="d4-e5" data-caption="A · White plays dxe5"></div>
+  <p class="prompt">The knight on e5 is defended by a pawn. Who comes out ahead?</p>
+  <div class="explain" hidden>dxe5 dxe5: White gives a pawn (1) for a knight (3), so <strong>+2</strong>. The knight was attacked by something cheaper,
+  so its defender doesn't matter. That's question 1 of the shortcut.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Nobody wins" data-options="White gains|Black gains|Nobody wins">
+  <div class="board-wrap" data-fen="3r1rk1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1" data-arrows="d1-d8" data-caption="B · White plays Rxd8"></div>
+  <p class="prompt">Rook takes rook. Who comes out ahead?</p>
+  <div class="explain" hidden>Rxd8 Rxd8: a rook for a rook, <strong>0</strong>. Equal value, one attacker and one defender: an even trade.
+  Whether you <em>want</em> to trade is a strategy question for later.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Black gains" data-options="White gains|Black gains|Nobody wins">
+  <div class="board-wrap" data-fen="6k1/5ppp/4pn2/3p4/8/2N3P1/5PBP/3Q2K1 w - - 0 1" data-hl="d5" data-arrows="c3-d5" data-caption="C · White plays Nxd5"></div>
+  <p class="prompt">Three attackers on d5 (knight, bishop, queen) against two defenders (pawn, knight). Who comes out ahead?</p>
+  <div class="explain" hidden>Nxd5 exd5 Bxd5: +1, −2, −1. Black can stop there, or play Nxd5 Qxd5 (still −1). White got two pawns for a knight: <strong>−1</strong>.
+  More attackers didn't help, because Black's <em>first</em> defender was a cheap pawn.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
+  <div class="board-wrap" data-fen="6k1/5ppp/2n5/4p3/8/2B2N2/5PPP/6K1 w - - 0 1" data-hl="e5" data-arrows="f3-e5" data-caption="D · White plays Nxe5"></div>
+  <p class="prompt">Compare this with the worked example: one Black piece is missing. Who comes out ahead?</p>
+  <div class="explain" hidden>Two attackers, one defender. Nxe5 wins a pawn, <strong>+1</strong>. If Black recaptures with Nxe5, then Bxe5 and White is still +1.
+  Recapturing just trades knights, so Black might as well not bother. Without the queen on e7, the pawn hangs.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Black gains" data-options="White gains|Black gains|Nobody wins">
+  <div class="board-wrap" data-fen="6k1/5ppp/3p4/4p3/8/5N2/5PPP/6K1 w - - 0 1" data-hl="e5" data-arrows="f3-e5" data-caption="E · White plays Nxe5"></div>
+  <p class="prompt">One attacker, one defender. Who comes out ahead?</p>
+  <div class="explain" hidden>Nxe5 dxe5: a knight (3) for a pawn (1), <strong>−2</strong>. Equal counts, but the defender is cheaper than the attacker.
+  This is the classic way to hang a knight below 1200.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
+  <div class="board-wrap" data-fen="3q2k1/5ppp/2n5/8/3n4/5N2/1B3PPP/3R2K1 w - - 0 1" data-hl="d4" data-arrows="f3-d4" data-caption="F · White plays Nxd4"></div>
+  <p class="prompt">Black's knight on d4 is defended by the other knight and the queen. White attacks it three times. Who comes out ahead?</p>
+  <div class="explain" hidden>Nxd4 +3. If Nxd4 Bxd4, White is still +3, and now Black's last defender is the <em>queen</em>: Qxd4? Rxd4 loses 9 points for 3.
+  So Black stops, and White wins a knight: <strong>+3</strong>. A defender that is too valuable to recapture doesn't really count.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Nobody wins" data-options="White gains|Black gains|Nobody wins">
+  <div class="board-wrap" data-fen="6k1/5ppp/2n5/4n3/8/5N2/5PPP/6K1 w - - 0 1" data-hl="e5" data-arrows="f3-e5" data-caption="G · White plays Nxe5"></div>
+  <p class="prompt">Knight takes knight. Who comes out ahead?</p>
+  <div class="explain" hidden>Nxe5 Nxe5: a knight for a knight, <strong>0</strong>.</div>
+</div>
+
+<h2>4 · Where counting stops working</h2>
+<p>The tally assumes nothing else on the board matters. Seirawan shows a position where Black is a queen up on points
+but loses it at once to a discovered check, and says: “instead of counting points, look carefully at the position.”<cite class="ref"><a href="#s1">1</a></cite>
+Checks, pins and double attacks break the count. They are the next layer, and they are why Heisman's routine
+starts with <em>checks</em>, then captures, then threats<cite class="ref"><a href="#s2">2</a></cite>.</p>
+
+<h2>5 · Take it to a real game</h2>
+<div class="callout">
+<p>Play one untimed game against a chess.com bot around 1000–1200, with hints and takebacks off. Before <em>every</em> move, ask one question:</p>
+<p style="margin:.4rem 0"><strong>“After this move, can my opponent capture anything of mine and come out ahead?”</strong> Use the two-question shortcut on whatever your move leaves behind.</p>
+<p>Then paste the PGN to your teacher (Share → PGN). Mark any move where you <em>forgot</em> to ask. That gap is the habit we're building.</p>
+</div>
+
+<h2>Read next</h2>
+<p><strong>Primary source:</strong> Dan Heisman, <a href="https://www.chess.com/article/view/passive-vs-basic-hope-chess">“Passive vs. Basic Hope Chess”</a> (Chess.com, 2018).
+A 5-minute read from the best-known teacher of improving adults, on exactly the habit this lesson starts.<cite class="ref"><a href="#s2">2</a></cite></p>
+<p class="small">Going further: Seirawan & Silman, <em>Winning Chess Tactics</em>, Ch. 1 “Definitions” and Ch. 2 “The Double Attack” (in your collection).
+Heisman, <em>Is Your Move Safe?</em> (Mongoose Press, 2016) is the full-length treatment of this lesson.</p>
+
+<div class="callout no-print">
+<p><strong>Stuck or curious?</strong> Ask your teacher (Claude) follow-up questions. For example: “why does the cheapest piece recapture first?”, “what if a defender is pinned?”, or
+“show me one more like position C.” That is what the teacher is for.</p>
+</div>
+
+<hr>
+<ol class="sources">
+  <li id="s1">Yasser Seirawan & Jeremy Silman, <em>Winning Chess Tactics</em> (Microsoft Press / Everyman). Ch. 1 p. 4 (“guard dogs of strategy”); Ch. 2 p. 12 (counting vs. looking); Glossary, “Point count”. In your collection.</li>
+  <li id="s2">Dan Heisman, <a href="https://www.chess.com/article/view/passive-vs-basic-hope-chess">“Passive vs. Basic Hope Chess”</a>, Chess.com, 19 Feb 2018.</li>
+  <li id="s3">Dan Heisman, <a href="https://mongoosepress.com/?p=236"><em>Is Your Move Safe?</em></a>, Mongoose Press, 2016: counting attackers and defenders, and when it doesn't apply.</li>
+  <li id="s4">Jeremy Silman, <em>How to Reassess Your Chess</em>, 4th ed., chapters on minor pieces (a piece's value depends on the position). In your collection.</li>
+  <li id="s5">IM Alex Astaneh, <a href="https://lichess.org/mg/video/foX9cljqIv8">“Counting Material”</a> (Lichess video library): optional video on the same skill.</li>
+  <li id="s6">Positions checked with <a href="https://python-chess.readthedocs.io/">python-chess</a> by <code>topics/chess/scripts/verify_positions.py</code> (legality and exchange outcome).</li>
+</ol>
+</main>
+<script src="../assets/board.js"></script>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Shared stylesheet for every chess lesson and reference sheet. Tufte-leaning: one column, serif text, quiet chrome. */
+:root {
+  --bg: #fffff8;
+  --fg: #1d1d1b;
+  --muted: #6b6b66;
+  --rule: #d9d6c8;
+  --accent: #8a3b12;
+  --ok: #2f6b3a;
+  --bad: #9b2c2c;
+  --panel: #f4f1e4;
+  --sq-light: #ecdcb8;
+  --sq-dark: #b58863;
+  --hl: rgba(255, 214, 0, 0.55);
+  --arrow: rgba(21, 101, 192, 0.8);
+  --piece-white: #ffffff;
+  --piece-black: #1a1a1a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161614;
+    --fg: #e8e6dc;
+    --muted: #a19f95;
+    --rule: #3a3933;
+    --accent: #e0915c;
+    --ok: #7cc48a;
+    --bad: #f08a8a;
+    --panel: #22211d;
+    --sq-light: #c9b892;
+    --sq-dark: #8b6a4c;
+  }
+}
+
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.55;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+h1 { font-weight: 400; font-size: 2rem; line-height: 1.2; margin: 0 0 .3rem; }
+h2 { font-weight: 400; font-style: italic; font-size: 1.35rem; margin: 2.6rem 0 .6rem; }
+h3 { font-weight: 600; font-size: 1rem; margin: 1.6rem 0 .4rem; }
+.subtitle { color: var(--muted); font-style: italic; margin: 0 0 2rem; }
+a { color: var(--accent); }
+p, li { hyphens: auto; }
+code, .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .85em; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+nav.crumbs { font-size: .85rem; color: var(--muted); margin-bottom: 1.5rem; }
+nav.crumbs a { color: var(--muted); }
+
+.callout { background: var(--panel); border-left: 3px solid var(--accent); padding: .8rem 1rem; margin: 1.2rem 0; }
+.callout p:first-child { margin-top: 0; }
+.callout p:last-child { margin-bottom: 0; }
+.muted { color: var(--muted); }
+.small { font-size: .85rem; }
+cite.ref { font-style: normal; font-size: .8em; vertical-align: super; }
+cite.ref a { text-decoration: none; }
+ol.sources { font-size: .85rem; color: var(--muted); }
+
+table.values { border-collapse: collapse; margin: 1rem 0; }
+table.values th, table.values td { padding: .25rem .9rem; border-bottom: 1px solid var(--rule); text-align: left; }
+table.values td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Board */
+.board-wrap { margin: 1.2rem auto; width: min(100%, 22rem); }
+.board { position: relative; aspect-ratio: 1; display: grid; grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+  border: 1px solid var(--rule); user-select: none; }
+.board .sq { position: relative; display: flex; align-items: center; justify-content: center; }
+.board .sq.l { background: var(--sq-light); }
+.board .sq.d { background: var(--sq-dark); }
+.board .sq.hl::after { content: ""; position: absolute; inset: 0; background: var(--hl); }
+.board .pc { position: relative; z-index: 1; font-size: min(2.2rem, 8.5vw); line-height: 1;
+  font-family: "Segoe UI Symbol", "DejaVu Sans", "Noto Sans Symbols 2", "Arial Unicode MS", sans-serif; }
+.board .pc.w { color: var(--piece-white); text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 2px #000; }
+.board .pc.b { color: var(--piece-black); text-shadow: 0 0 1px #fff4; }
+.board .coord { position: absolute; font: 600 .55rem/1 system-ui, sans-serif; opacity: .7; color: #3b2a1a; }
+.board .coord.file { right: 2px; bottom: 1px; }
+.board .coord.rank { left: 2px; top: 1px; }
+.board svg.arrows { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+.board-caption { text-align: center; font-size: .85rem; color: var(--muted); margin-top: .35rem; }
+
+/* Quiz */
+.quiz { border-top: 1px solid var(--rule); padding: 1.2rem 0 .4rem; }
+.quiz .prompt { margin: 0 0 .7rem; }
+.quiz .choices { display: flex; flex-wrap: wrap; gap: .5rem; }
+.quiz button, .quiz input { font: inherit; font-size: .95rem; }
+.quiz button { padding: .4rem 1rem; border: 1px solid var(--rule); background: var(--panel); color: var(--fg);
+  border-radius: 3px; cursor: pointer; min-width: 8.5rem; }
+.quiz button:hover:not(:disabled) { border-color: var(--accent); }
+.quiz button:disabled { cursor: default; opacity: .75; }
+.quiz button.right { border-color: var(--ok); color: var(--ok); opacity: 1; }
+.quiz button.wrong { border-color: var(--bad); color: var(--bad); opacity: 1; }
+.quiz input { width: 4.5rem; padding: .3rem .5rem; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+.quiz .feedback { margin-top: .7rem; font-size: .95rem; }
+.quiz .feedback .verdict { font-weight: 600; }
+.quiz .feedback .verdict.ok { color: var(--ok); }
+.quiz .feedback .verdict.no { color: var(--bad); }
+.scorebar { position: sticky; bottom: 0; background: var(--bg); border-top: 1px solid var(--rule);
+  padding: .4rem 0; font-size: .85rem; color: var(--muted); text-align: right; }
+
+/* Running-tally table for exchanges */
+table.tally { border-collapse: collapse; font-size: .9rem; margin: .8rem 0; width: 100%; }
+table.tally th, table.tally td { padding: .25rem .5rem; border-bottom: 1px solid var(--rule); text-align: left; }
+table.tally td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Reference sheets */
+.card { border: 1px solid var(--rule); padding: 1rem 1.2rem; margin: 1rem 0; break-inside: avoid; }
+.card h3 { margin-top: 0; }
+
+@media print {
+  :root { --bg: #fff; --fg: #000; --panel: #f3f3f3; }
+  .scorebar, .no-print { display: none; }
+  main { padding-top: 0; }
+  a { color: inherit; }
+}

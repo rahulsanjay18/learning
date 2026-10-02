@@ -1,2 +1,33 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Learning</title></head>
-<body style="font-family:system-ui;max-width:42rem;margin:2rem auto;padding:0 1rem"><h1>Learning</h1><p>No topics yet. Start a cloud session and run <code>/teach</code>.</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learning</title>
+<style>
+  :root { --bg: #fffff8; --fg: #1d1d1b; --muted: #6b6b66; --accent: #8a3b12; --rule: #d9d6c8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161614; --fg: #e8e6dc; --muted: #a19f95; --accent: #e0915c; --rule: #3a3933; } }
+  body { background: var(--bg); color: var(--fg); font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    max-width: 40rem; margin: 2.5rem auto; padding: 0 1rem; line-height: 1.55; }
+  h1 { font-weight: 400; }
+  h2 { font-weight: 400; font-style: italic; border-top: 1px solid var(--rule); padding-top: 1rem; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Learning</h1>
+<p class="muted">Topics taught with <code>/teach</code>. Each topic has lessons (do once) and reference sheets (come back to).</p>
+
+<h2>Chess</h2>
+<p class="muted">Mission: understand the game deeply, then win more online. <a href="topics/chess/MISSION.md">Mission</a> · <a href="topics/chess/RESOURCES.md">Resources</a></p>
+<h3>Lessons</h3>
+<ol>
+  <li><a href="topics/chess/lessons/0001-is-it-safe.html">Is it safe? Counting one square</a></li>
+</ol>
+<h3>Reference</h3>
+<ul>
+  <li><a href="topics/chess/reference/safety-check.html">Safety check (point count, two-question shortcut, tally)</a></li>
+</ul>
+</body>
+</html>
