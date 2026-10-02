@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The OPT Ladder · NASM-CPT lesson 1</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../../../index.html">Learning</a> · NASM-CPT · Lesson 1 ·
+  <a href="../reference/exam-blueprint.html">Reference: exam blueprint</a> ·
+  <a href="../reference/opt-model.html">Reference: OPT model</a></nav>
+
+<h1>The OPT ladder</h1>
+<p class="subtitle">NASM's 5-phase model, which the whole exam hangs on. About 15 minutes.</p>
+
+<h2>Why this comes first</h2>
+<p>The exam has six domains. The two biggest are <strong>Exercise Technique (24%)</strong> and <strong>Program Design (20%)</strong><cite class="ref"><a href="#s1">1</a></cite>,
+and both are organized around NASM's <em>Optimum Performance Training</em> model, or <strong>OPT</strong>. The blueprint
+asks you directly about its “levels (such as stabilization, strength, power)” and “phases (such as stabilization endurance,
+strength endurance, hypertrophy, maximal strength, power)”<cite class="ref"><a href="#s1">1</a></cite>.
+Learn it once and later topics (assessments, core, balance, plyometrics) each slot into a phase.</p>
+<p>Today's win: given a client's goal or a workout description, you can name the OPT phase.</p>
+
+<h2>1 · The shape: 3 levels, 5 phases</h2>
+<p>Think of it as a curriculum with a prerequisite graph: <strong>1 → 3 → 1</strong>.</p>
+<table class="ladder">
+  <tr><th>Level</th><th>Phase</th><th>What it builds</th></tr>
+  <tr><td class="level">Stabilization</td><td>1 · Stabilization Endurance</td><td>Movement quality, joint and core stability, postural control. Where most clients start.</td></tr>
+  <tr><td class="level" rowspan="3">Strength</td><td>2 · Strength Endurance</td><td>The “gateway”: getting used to heavier loads while keeping stability.</td></tr>
+  <tr><td>3 · Muscular Development / Hypertrophy</td><td>Muscle growth.</td></tr>
+  <tr><td>4 · Maximal Strength</td><td>Producing maximal force.</td></tr>
+  <tr><td class="level">Power</td><td>5 · Power</td><td>Force produced fast: high force <em>and</em> high velocity.</td></tr>
+</table>
+<p class="small muted">Levels and phases from NASM's OPT guide<cite class="ref"><a href="#s2">2</a></cite>; descriptions condensed from NASM's OPT model page<cite class="ref"><a href="#s3">3</a></cite>.</p>
+
+<div class="callout">
+<p><strong>Edition note.</strong> Your library copy (4th ed., 2012) and the blueprint call Phase 3 “Hypertrophy”. NASM's
+current page calls it “Muscular Development/Hypertrophy”<cite class="ref"><a href="#s3">3</a></cite>. Same phase; know both names.</p>
+</div>
+
+<h2>2 · The fingerprints</h2>
+<p>Exam questions describe a workout and ask which phase it is. Each phase has one feature that gives it away:</p>
+<ul>
+  <li><strong>Phase 1:</strong> high reps (12–20), slow movement, lighter load, and <em>controlled instability</em> (e.g. a single-leg or ball version)<cite class="ref"><a href="#s3">3</a></cite>.</li>
+  <li><strong>Phase 2:</strong> a <em>superset</em>: a traditional strength exercise (bench press) followed by a similar movement that needs more stabilization; 8–12 reps each, 2–4 sets<cite class="ref"><a href="#s3">3</a></cite>.</li>
+  <li><strong>Phase 3:</strong> 3–6 sets of 6–12 reps at 75–85% of 1RM<cite class="ref"><a href="#s3">3</a></cite>.</li>
+  <li><strong>Phase 4:</strong> 1–5 reps at 85–100% of 1RM, 4–6 sets<cite class="ref"><a href="#s3">3</a></cite>.</li>
+  <li><strong>Phase 5:</strong> a <em>superset</em>: a heavy exercise for 1–5 reps, then a light one moved as explosively as possible for 8–10 reps<cite class="ref"><a href="#s3">3</a></cite>.</li>
+</ul>
+<p>Notice the two supersets. Both pair a strength exercise with something else, and the partner tells you the phase:
+a <em>stability</em> partner means Phase 2, an <em>explosive</em> partner means Phase 5.</p>
+
+<h2>3 · Moving along the ladder</h2>
+<p>Clients don't climb all five rungs by default. They go as far as their goal needs, then cycle. A Mometrix
+example: a fat-loss client works in Phases 1 and 2, roughly four weeks each, then alternates between them; a client
+after muscle size progresses 1 → 2 → 3 and may cycle through 2, 3 and 4<cite class="ref"><a href="#s4">4</a></cite>.
+Power is only for clients who need explosiveness<cite class="ref"><a href="#s4">4</a></cite>.</p>
+<p class="small muted">Treat the Mometrix flashcards as a source of exam-style scenarios, not an authority: one of its cards
+puts the wrong phase in the stabilization level.</p>
+
+<h2>4 · Practice: name the phase</h2>
+<p class="muted small">Answer from memory. Scroll up only after a wrong answer. Effortful recall is what makes it stick.</p>
+
+<div class="quiz" data-type="choice" data-answer="Phase 2" data-options="Phase 1|Phase 2|Phase 3|Phase 4|Phase 5">
+  <p class="prompt">Bench press for 10 reps, then straight into a stability-ball push-up for 10 reps.</p>
+  <div class="explain" hidden>A strength exercise followed by a similar, less stable one: the Phase 2 Strength Endurance superset.<cite class="ref"><a href="#s3">3</a></cite></div>
+</div>
+<div class="quiz" data-type="choice" data-answer="Phase 4" data-options="Phase 1|Phase 2|Phase 3|Phase 4|Phase 5">
+  <p class="prompt">5 sets of 3 squats at 90% of 1RM.</p>
+  <div class="explain" hidden>1–5 reps at 85–100% 1RM is Maximal Strength.<cite class="ref"><a href="#s3">3</a></cite></div>
+</div>
+<div class="quiz" data-type="choice" data-answer="Phase 1" data-options="Phase 1|Phase 2|Phase 3|Phase 4|Phase 5">
+  <p class="prompt">A new client who has never trained does slow single-leg squats to a bench, 15 reps.</p>
+  <div class="explain" hidden>High reps, slow, controlled instability, and a new client: Stabilization Endurance, where most clients start.<cite class="ref"><a href="#s2">2</a></cite></div>
+</div>
+<div class="quiz" data-type="choice" data-answer="Phase 5" data-options="Phase 1|Phase 2|Phase 3|Phase 4|Phase 5">
+  <p class="prompt">Heavy bench press for 4 reps, then medicine-ball chest passes thrown as fast as possible for 10 reps.</p>
+  <div class="explain" hidden>Heavy partner + explosive partner = the Power superset.<cite class="ref"><a href="#s3">3</a></cite></div>
+</div>
+<div class="quiz" data-type="choice" data-answer="Phase 3" data-options="Phase 1|Phase 2|Phase 3|Phase 4|Phase 5">
+  <p class="prompt">4 sets of 10 dumbbell rows at about 80% of 1RM.</p>
+  <div class="explain" hidden>3–6 sets of 6–12 at 75–85% 1RM is Muscular Development / Hypertrophy.<cite class="ref"><a href="#s3">3</a></cite></div>
+</div>
+<div class="quiz" data-type="choice" data-answer="Strength" data-options="Stabilization|Strength|Power">
+  <p class="prompt">Which <em>level</em> holds three phases?</p>
+  <div class="explain" hidden>Strength holds Phases 2, 3 and 4. Stabilization and Power hold one each.<cite class="ref"><a href="#s2">2</a></cite></div>
+</div>
+<div class="quiz" data-type="choice" data-answer="Phase 1" data-options="Phase 1|Phase 2|Phase 3|Phase 4|Phase 5">
+  <p class="prompt">A client wants to lose fat and has no interest in max strength. Where do they start?</p>
+  <div class="explain" hidden>Phase 1, then cycle between Phases 1 and 2.<cite class="ref"><a href="#s4">4</a></cite> Almost every new client starts in Phase 1.<cite class="ref"><a href="#s2">2</a></cite></div>
+</div>
+
+<h2>5 · Off the page (5 minutes)</h2>
+<p>Write down your own last week of lifting. Which phase does each session look like? If it doesn't fit any phase
+cleanly, which acute variable (reps, sets, load, superset partner) is off? Bring the answer next session: it's our warm-up.</p>
+
+<hr>
+<h2>Read or listen next</h2>
+<p><strong>Primary source:</strong> NASM's own <a href="https://www.nasm.org/certified-personal-trainer/the-opt-model">OPT Model page</a><cite class="ref"><a href="#s3">3</a></cite>
+(5 minutes). For depth, your 4th-edition textbook, Chapter 14, “Integrated Program Design and the OPT Model”<cite class="ref"><a href="#s5">5</a></cite>.
+Read it for the reasoning, and trust the NASM page where they disagree.</p>
+<p>Keep the <a href="../reference/opt-model.html">OPT reference sheet</a> and the
+<a href="../reference/exam-blueprint.html">exam blueprint sheet</a> for review.</p>
+
+<div class="callout">
+<p><strong>Ask me anything.</strong> If something is unclear, ask in the session: “why does Phase 2 use supersets?”, or
+“how does this compare to how RP programs hypertrophy?”. I'm your teacher for this; questions are part of the lesson.</p>
+</div>
+
+<h3>Sources</h3>
+<ol class="sources">
+  <li id="s1">NASM, <a href="https://www.nasm.org/content/dam/nasm/docs/nasmlibraries/pdf/cpt7-nasm-exam-blueprint.pdf">Updated NASM CPT Exam Blueprint</a> (2019 job analysis, updated 2.10.2021). Domain weights; K45 periodization.</li>
+  <li id="s2">NASM, <a href="https://www.nasm.org/resource-center/blog/training/nasm-optimum-performance-training">The NASM OPT Model: A Trainer's Guide to Programming Clients</a>.</li>
+  <li id="s3">NASM, <a href="https://www.nasm.org/certified-personal-trainer/the-opt-model">NASM OPT Model</a>. Phase descriptions and acute variables.</li>
+  <li id="s4">Mometrix, <em>Flashcard Study System for the NASM Personal Trainer Exam</em> (2020), “Program Design and Implementation” cards. In your library.</li>
+  <li id="s5">Clark, Lucett & Sutton, <em>NASM Essentials of Personal Fitness Training</em>, 4th ed. (LWW, 2012), Ch. 14. In your library.</li>
+</ol>
+</main>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
