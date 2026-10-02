@@ -1,0 +1,128 @@
+/* Shared stylesheet for every pixel-art lesson and reference sheet. Tufte-leaning: one column, serif text, quiet chrome. */
+:root {
+  --bg: #fffff8;
+  --fg: #1d1d1b;
+  --muted: #6b6b66;
+  --rule: #d9d6c8;
+  --accent: #8a3b12;
+  --ok: #2f6b3a;
+  --bad: #9b2c2c;
+  --panel: #f4f1e4;
+  --px-ink: #24223a;
+  --px-bg: #fbfaf2;
+  --px-grid: rgba(0,0,0,.09);
+  --px-end: #c4622d;
+  --px-bad: #d43c3c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161614;
+    --fg: #e8e6dc;
+    --muted: #a19f95;
+    --rule: #3a3933;
+    --accent: #e0915c;
+    --ok: #7cc48a;
+    --bad: #f08a8a;
+    --panel: #22211d;
+    --px-ink: #ecebe0;
+    --px-bg: #1f1e1b;
+    --px-grid: rgba(255,255,255,.09);
+    --px-end: #e0915c;
+    --px-bad: #ff6b6b;
+      }
+}
+
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.55;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+h1 { font-weight: 400; font-size: 2rem; line-height: 1.2; margin: 0 0 .3rem; }
+h2 { font-weight: 400; font-style: italic; font-size: 1.35rem; margin: 2.6rem 0 .6rem; }
+h3 { font-weight: 600; font-size: 1rem; margin: 1.6rem 0 .4rem; }
+.subtitle { color: var(--muted); font-style: italic; margin: 0 0 2rem; }
+a { color: var(--accent); }
+p, li { hyphens: auto; }
+code, .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .85em; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+nav.crumbs { font-size: .85rem; color: var(--muted); margin-bottom: 1.5rem; }
+nav.crumbs a { color: var(--muted); }
+
+.callout { background: var(--panel); border-left: 3px solid var(--accent); padding: .8rem 1rem; margin: 1.2rem 0; }
+.callout p:first-child { margin-top: 0; }
+.callout p:last-child { margin-bottom: 0; }
+.muted { color: var(--muted); }
+.small { font-size: .85rem; }
+cite.ref { font-style: normal; font-size: .8em; vertical-align: super; }
+cite.ref a { text-decoration: none; }
+cite.ref + cite.ref::before { content: ","; }
+ol.sources { font-size: .85rem; color: var(--muted); }
+
+table.values { border-collapse: collapse; margin: 1rem 0; }
+table.values th, table.values td { padding: .25rem .9rem; border-bottom: 1px solid var(--rule); text-align: left; }
+table.values td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Quiz */
+.quiz { border-top: 1px solid var(--rule); padding: 1.2rem 0 .4rem; }
+.quiz .prompt { margin: 0 0 .7rem; }
+.quiz .choices { display: flex; flex-wrap: wrap; gap: .5rem; }
+.quiz button, .quiz input { font: inherit; font-size: .95rem; }
+.quiz button { padding: .4rem 1rem; border: 1px solid var(--rule); background: var(--panel); color: var(--fg);
+  border-radius: 3px; cursor: pointer; min-width: 8.5rem; }
+.quiz button:hover:not(:disabled) { border-color: var(--accent); }
+.quiz button:disabled { cursor: default; opacity: .75; }
+.quiz button.right { border-color: var(--ok); color: var(--ok); opacity: 1; }
+.quiz button.wrong { border-color: var(--bad); color: var(--bad); opacity: 1; }
+.quiz input { width: 4.5rem; padding: .3rem .5rem; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+.quiz .feedback { margin-top: .7rem; font-size: .95rem; }
+.quiz .feedback .verdict { font-weight: 600; }
+.quiz .feedback .verdict.ok { color: var(--ok); }
+.quiz .feedback .verdict.no { color: var(--bad); }
+.scorebar { position: sticky; bottom: 0; background: var(--bg); border-top: 1px solid var(--rule);
+  padding: .4rem 0; font-size: .85rem; color: var(--muted); text-align: right; }
+
+/* Pixel pictures and drawing drills (assets/pixels.js) */
+.px, .px-draw { margin: 1.2rem 0; text-align: center; }
+.px-svg { max-width: 100%; height: auto; border: 1px solid var(--rule); touch-action: none; image-rendering: pixelated; }
+.px-draw .px-svg { cursor: crosshair; }
+.px-bg { fill: var(--px-bg); }
+.px-gridlines line { stroke: var(--px-grid); stroke-width: .04; }
+.px-ink { fill: var(--px-ink); }
+.px-end { fill: var(--px-end); }
+.px-bad { fill: var(--px-bad); }
+.px-mark { fill: none; stroke: var(--px-bad); stroke-width: .16; }
+.px-label { font: 700 .55px system-ui, sans-serif; fill: var(--px-bg); pointer-events: none; }
+.px-caption { text-align: center; font-size: .85rem; color: var(--muted); margin-top: .35rem; }
+.px-draw-row { display: flex; gap: 1rem; justify-content: center; align-items: flex-end; flex-wrap: wrap; }
+.px-preview { image-rendering: pixelated; border: 1px solid var(--rule); background: var(--px-bg); }
+.px-buttons { display: flex; gap: .5rem; justify-content: center; margin-top: .6rem; flex-wrap: wrap; }
+.px-buttons button { font: inherit; font-size: .9rem; padding: .35rem .9rem; border: 1px solid var(--rule); background: var(--panel);
+  color: var(--fg); border-radius: 3px; cursor: pointer; }
+.px-buttons button:hover { border-color: var(--accent); }
+.px-feedback { min-height: 1.5rem; margin-top: .6rem; font-size: .95rem; text-align: left; }
+.px-feedback.ok { color: var(--ok); }
+.px-feedback.no { color: var(--bad); }
+.px-row { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; align-items: flex-end; }
+.px-row .px { margin: .4rem 0; }
+
+/* Step-by-step real-world tasks */
+ol.steps > li { margin: .45rem 0; }
+kbd { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .8em; border: 1px solid var(--rule); border-bottom-width: 2px;
+  border-radius: 3px; padding: 0 .3em; background: var(--panel); }
+pre { background: var(--panel); padding: .6rem .8rem; overflow-x: auto; font-size: .85rem; }
+
+/* Reference sheets */
+.card { border: 1px solid var(--rule); padding: 1rem 1.2rem; margin: 1rem 0; break-inside: avoid; }
+.card h3 { margin-top: 0; }
+
+@media print {
+  :root { --bg: #fff; --fg: #000; --panel: #f3f3f3; }
+  .scorebar, .no-print { display: none; }
+  main { padding-top: 0; }
+  a { color: inherit; }
+}

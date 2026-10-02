@@ -1,0 +1,10 @@
+[
+ {"id":"worked","fen":"4q2k/1Q3R2/1p1r1p2/p4bpp/8/5p2/PP4PP/2R3K1 w - - 0 31","move":"gxf3","checks":["Qe3+","Qe1+","Rd1+"],"answer":"Lost"},
+ {"id":"a1","fen":"1q2r1k1/5ppp/8/8/8/8/3Q1PPP/3R2K1 w - - 0 1","move":"Qd7","checks":["Re1+","Qxh2+"]},
+ {"id":"a2","fen":"4q2k/1Q3R2/1p1r1p2/p4bpp/8/5p2/PP4PP/2R3K1 w - - 0 31","move":"Re7","checks":["Rd1+","f2+"],"answer":"Safe"},
+ {"id":"a3","fen":"4r1k1/1p3ppp/8/8/8/8/1q1Q1PPP/4R1K1 w - - 0 1","move":"Qxb2","checks":["Rxe1#"],"answer":"Lost"},
+ {"id":"a4","fen":"4q2k/1Q3R2/1p1r1p2/p4bpp/8/5p2/PP4PP/2R3K1 w - - 0 31","move":"Kf1","checks":["Qb5+","Qe2+","Qe1+","Rd1+","Bd3+","fxg2+"],"answer":"Lost"},
+ {"id":"b1","fen":"6k1/p4ppp/4q3/8/3Q4/8/5PPP/1R4K1 w - - 0 1","move":"Qxa7","checks":["Qe1+"],"answer":"Safe"},
+ {"id":"b2","fen":"r5k1/5ppp/8/2b5/8/1Q6/5PPP/2R3K1 w - - 0 1","move":"Rxc5","checks":["Ra1+"],"answer":"Lost"},
+ {"id":"b3","fen":"r5k1/5ppp/8/2b5/8/1Q6/5PPP/2R3K1 w - - 0 1","move":"Qb7","checks":["Bxf2+"],"answer":"Safe"}
+]

@@ -1,0 +1,4 @@
+[
+ {"id":"r1","fen":"3q2k1/5ppp/5n2/3p4/8/2N5/5PPP/3Q2K1 w - - 0 1","move":"Nxd5","answer":"Black gains"},
+ {"id":"r2","fen":"6k1/5ppp/4p3/3n4/8/5B2/5PPP/3R2K1 w - - 0 1","move":"Bxd5","answer":"White gains"}
+]

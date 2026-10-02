@@ -8,7 +8,7 @@
 </head>
 <body>
 <main>
-<nav class="crumbs"><a href="../../../index.html">Learning</a> · Chess · Lesson 1 · <a href="../reference/safety-check.html">Reference: safety check</a></nav>
+<nav class="crumbs"><a href="../../../index.html">Learning</a> · Chess · Lesson 1 · <a href="../reference/safety-check.html">Reference: safety check</a> · <a href="0002-checks-first.html">Lesson 2 →</a></nav>
 
 <h1>Is it safe?</h1>
 <p class="subtitle">Counting one square to know whether a capture wins or loses material. About 25 minutes.</p>
@@ -83,49 +83,49 @@ Heisman teaches the same count of attackers vs. defenders, and the cases where i
 <p class="muted small">Each position: White plays the arrowed capture. After the best play by both sides <em>on that square</em> (either side may stop), who ends up ahead?
 Every answer was checked by a script that plays out the exchange<cite class="ref"><a href="#s6">6</a></cite>.</p>
 
-<div class="quiz" data-type="choice" data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
+<div class="quiz" data-type="choice" data-hint="Recount the square and try again." data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
   <div class="board-wrap" data-fen="6k1/5ppp/3p4/4n3/3P4/8/5PPP/6K1 w - - 0 1" data-arrows="d4-e5" data-caption="A · White plays dxe5"></div>
   <p class="prompt">The knight on e5 is defended by a pawn. Who comes out ahead?</p>
   <div class="explain" hidden>dxe5 dxe5: White gives a pawn (1) for a knight (3), so <strong>+2</strong>. The knight was attacked by something cheaper,
   so its defender doesn't matter. That's question 1 of the shortcut.</div>
 </div>
 
-<div class="quiz" data-type="choice" data-answer="Nobody wins" data-options="White gains|Black gains|Nobody wins">
+<div class="quiz" data-type="choice" data-hint="Recount the square and try again." data-answer="Nobody wins" data-options="White gains|Black gains|Nobody wins">
   <div class="board-wrap" data-fen="3r1rk1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1" data-arrows="d1-d8" data-caption="B · White plays Rxd8"></div>
   <p class="prompt">Rook takes rook. Who comes out ahead?</p>
   <div class="explain" hidden>Rxd8 Rxd8: a rook for a rook, <strong>0</strong>. Equal value, one attacker and one defender: an even trade.
   Whether you <em>want</em> to trade is a strategy question for later.</div>
 </div>
 
-<div class="quiz" data-type="choice" data-answer="Black gains" data-options="White gains|Black gains|Nobody wins">
+<div class="quiz" data-type="choice" data-hint="Recount the square and try again." data-answer="Black gains" data-options="White gains|Black gains|Nobody wins">
   <div class="board-wrap" data-fen="6k1/5ppp/4pn2/3p4/8/2N3P1/5PBP/3Q2K1 w - - 0 1" data-hl="d5" data-arrows="c3-d5" data-caption="C · White plays Nxd5"></div>
   <p class="prompt">Three attackers on d5 (knight, bishop, queen) against two defenders (pawn, knight). Who comes out ahead?</p>
   <div class="explain" hidden>Nxd5 exd5 Bxd5: +1, −2, −1. Black can stop there, or play Nxd5 Qxd5 (still −1). White got two pawns for a knight: <strong>−1</strong>.
   More attackers didn't help, because Black's <em>first</em> defender was a cheap pawn.</div>
 </div>
 
-<div class="quiz" data-type="choice" data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
+<div class="quiz" data-type="choice" data-hint="Recount the square and try again." data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
   <div class="board-wrap" data-fen="6k1/5ppp/2n5/4p3/8/2B2N2/5PPP/6K1 w - - 0 1" data-hl="e5" data-arrows="f3-e5" data-caption="D · White plays Nxe5"></div>
   <p class="prompt">Compare this with the worked example: one Black piece is missing. Who comes out ahead?</p>
   <div class="explain" hidden>Two attackers, one defender. Nxe5 wins a pawn, <strong>+1</strong>. If Black recaptures with Nxe5, then Bxe5 and White is still +1.
   Recapturing just trades knights, so Black might as well not bother. Without the queen on e7, the pawn hangs.</div>
 </div>
 
-<div class="quiz" data-type="choice" data-answer="Black gains" data-options="White gains|Black gains|Nobody wins">
+<div class="quiz" data-type="choice" data-hint="Recount the square and try again." data-answer="Black gains" data-options="White gains|Black gains|Nobody wins">
   <div class="board-wrap" data-fen="6k1/5ppp/3p4/4p3/8/5N2/5PPP/6K1 w - - 0 1" data-hl="e5" data-arrows="f3-e5" data-caption="E · White plays Nxe5"></div>
   <p class="prompt">One attacker, one defender. Who comes out ahead?</p>
   <div class="explain" hidden>Nxe5 dxe5: a knight (3) for a pawn (1), <strong>−2</strong>. Equal counts, but the defender is cheaper than the attacker.
   This is the classic way to hang a knight below 1200.</div>
 </div>
 
-<div class="quiz" data-type="choice" data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
+<div class="quiz" data-type="choice" data-hint="Recount the square and try again." data-answer="White gains" data-options="White gains|Black gains|Nobody wins">
   <div class="board-wrap" data-fen="3q2k1/5ppp/2n5/8/3n4/5N2/1B3PPP/3R2K1 w - - 0 1" data-hl="d4" data-arrows="f3-d4" data-caption="F · White plays Nxd4"></div>
   <p class="prompt">Black's knight on d4 is defended by the other knight and the queen. White attacks it three times. Who comes out ahead?</p>
   <div class="explain" hidden>Nxd4 +3. If Nxd4 Bxd4, White is still +3, and now Black's last defender is the <em>queen</em>: Qxd4? Rxd4 loses 9 points for 3.
   So Black stops, and White wins a knight: <strong>+3</strong>. A defender that is too valuable to recapture doesn't really count.</div>
 </div>
 
-<div class="quiz" data-type="choice" data-answer="Nobody wins" data-options="White gains|Black gains|Nobody wins">
+<div class="quiz" data-type="choice" data-hint="Recount the square and try again." data-answer="Nobody wins" data-options="White gains|Black gains|Nobody wins">
   <div class="board-wrap" data-fen="6k1/5ppp/2n5/4n3/8/5N2/5PPP/6K1 w - - 0 1" data-hl="e5" data-arrows="f3-e5" data-caption="G · White plays Nxe5"></div>
   <p class="prompt">Knight takes knight. Who comes out ahead?</p>
   <div class="explain" hidden>Nxe5 Nxe5: a knight for a knight, <strong>0</strong>.</div>

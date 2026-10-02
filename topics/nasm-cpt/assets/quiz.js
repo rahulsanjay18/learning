@@ -1,11 +1,10 @@
 // Quiz widgets with immediate feedback and a running score. No dependencies.
-// Multiple choice:  <div class="quiz" data-type="choice" data-answer="Black gains"
-//                        data-options="White gains|Black gains|Nobody wins">
+// Multiple choice:  <div class="quiz" data-type="choice" data-answer="Phase 2"
+//                        data-options="Phase 1|Phase 2|Phase 3">
 //                     <p class="prompt">...</p><div class="explain" hidden>...</div></div>
 // Recall (number):  <div class="quiz" data-type="number" data-answer="5"><p class="prompt">...</p>
 //                     <div class="explain" hidden>...</div></div>
 // A first answer counts toward the score; the learner may keep trying after that.
-// Optional data-hint="..." replaces the retry message shown after a wrong answer.
 (function () {
   var total = 0, firstTryRight = 0, answered = 0, bar;
 
@@ -23,7 +22,7 @@
     v.textContent = ok ? "Right. " : "Not quite. ";
     fb.appendChild(v);
     if (ok && explain) { fb.appendChild(explain); explain.hidden = false; }
-    if (!ok) fb.appendChild(document.createTextNode(q.dataset.hint || "Look again and try once more."));
+    if (!ok) fb.appendChild(document.createTextNode("Think it through and try again."));
   }
 
   function record(q, ok) {

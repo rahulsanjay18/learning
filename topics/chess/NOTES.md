@@ -15,7 +15,9 @@
   and use the unpacked source tarball via PYTHONPATH. Verify every lesson position with `scripts/verify_positions.py`.
 - Stockfish: `apt-get install -y stockfish` works in the container (Stockfish 16 at /usr/games/stockfish).
   `scripts/analyze_game.py <pgn>` gives a move-by-move review. Store games in `games/` with a `-review.md` next to each.
-- No GLOSSARY.md yet: add terms only after the learner shows they can use them (exchange, hanging, point count are candidates).
+- GLOSSARY.md started after lesson 1 (9/10): point count, exchange, tally, hanging. Candidates next: Hope Chess, back rank.
 - Lesson 1 = counting one square (static exchange). Diagnostic game (LR 0002) => lesson 2 = "checks first".
   After that: what a move stops defending, then double attack (fork), then pin. Converting a winning position is a later theme.
-- Spacing: open lesson 2 with 2–3 retrieval questions on lesson 1 counting (new positions).
+- Spacing: each lesson opens with 2 retrieval questions on the previous lesson(s). Lesson 3 should review checks-counting + one tally.
+- Lesson 2 positions: verify with `scripts/verify_checks.py` (python-chess + Stockfish).
+- Open question for the learner: is 428 (PGN WhiteElo) their real chess.com rating?

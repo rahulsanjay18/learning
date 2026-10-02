@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lines Reference · Pixel art</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../../../index.html">Learning</a> · Pixel art · Reference · <a href="../lessons/0001-clean-lines.html">Lesson 1: clean lines</a></nav>
+<h1>Lines</h1>
+<p class="subtitle">The rules for one-pixel lines, plus LibreSprite basics. Print it, or keep it beside the canvas.</p>
+
+<div class="card">
+<h3>Terms</h3>
+<p><strong>Segment</strong>: one straight run of pixels in a line (flat, upright, or a single pixel). Neighbouring segments meet at a corner, diagonally.<br>
+<strong>Double</strong>: an unneeded pixel that makes a right-angle (L-shaped) corner in a 1px line.<cite class="ref"><a href="#s1">1</a></cite><br>
+<strong>Jaggy</strong>: a bump caused by uneven segment lengths, in a line that should look straight or smoothly curved.<cite class="ref"><a href="#s4">4</a></cite><br>
+<strong>Perfect line</strong>: a straight line with slope 1:0, 2:1, 1:1, 1:2 or 0:1.<cite class="ref"><a href="#s2">2</a></cite> In this course <em>a:b</em> means a across per b down.</p>
+</div>
+
+<div class="card">
+<h3>The three rules</h3>
+<ol>
+  <li><strong>Diagonal joins only.</strong> No L corners. Break this on purpose only to make a sharp corner.<cite class="ref"><a href="#s1">1</a></cite></li>
+  <li><strong>Straight = equal segments.</strong> Prefer perfect lines.<cite class="ref"><a href="#s1">1</a></cite><cite class="ref"><a href="#s2">2</a></cite></li>
+  <li><strong>Curve = segments change progressively.</strong> Longest where the curve is flat or upright, shortest at the diagonal.<cite class="ref"><a href="#s1">1</a></cite><cite class="ref"><a href="#s2">2</a></cite></li>
+</ol>
+<p class="small muted">Test: write each segment's slope (flat run of n = n, upright run of n = 1/n, single = 1). Straight: constant sequence. Curve: monotonic sequence.</p>
+<div class="px-row">
+  <div class="px" data-art="................|.##.............|...##...........|.....##.........|.......##.......|.........##.....|...........##...|.............##.|................" data-cell="10" data-caption="2:1 straight"></div>
+  <div class="px" data-art=".........|.#.......|..#......|...#.....|....#....|.....#...|......#..|.......#.|........." data-cell="10" data-caption="1:1 straight"></div>
+  <div class="px" data-art="...........|.###.......|....##.....|......#....|.......#...|........#..|........#..|.........#.|.........#.|.........#.|..........." data-cell="10" data-caption="curve 3,2,1,1,2,3"></div>
+</div>
+<div class="px-row">
+  <div class="px" data-art="................|.##.............|...##!..........|.....!#.........|.......##.......|.........##.....|...........##...|.............##.|................" data-cell="10" data-caption="double"></div>
+  <div class="px" data-art="................|.###............|....!...........|.....!!.........|.......###......|..........!.....|...........!!...|.............!!.|................" data-cell="10" data-caption="jaggy line"></div>
+  <div class="px" data-art="............|.###........|....!.......|.....!!!....|........#...|.........#..|.........#..|..........#.|..........#.|..........#.|............" data-cell="10" data-caption="jaggy curve"></div>
+</div>
+</div>
+
+<div class="card">
+<h3>LibreSprite essentials<cite class="ref"><a href="#s3">3</a></cite></h3>
+<table class="values">
+  <tr><th>Action</th><th>Key / place</th></tr>
+  <tr><td>New sprite</td><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td></tr>
+  <tr><td>Pencil · Eraser · Line</td><td><kbd>B</kbd> · <kbd>E</kbd> · <kbd>L</kbd></td></tr>
+  <tr><td>Fill · Eyedropper · Zoom</td><td><kbd>G</kbd> · <kbd>I</kbd> · <kbd>Z</kbd></td></tr>
+  <tr><td>Select · Move</td><td><kbd>M</kbd> · <kbd>V</kbd></td></tr>
+  <tr><td>Pixel Perfect</td><td>checkbox in the brush options bar</td></tr>
+  <tr><td>Save (editable .ase)</td><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td></tr>
+  <tr><td>Export scaled PNG</td><td>File → Save Copy As → resize</td></tr>
+  <tr><td>All shortcuts</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td></tr>
+</table>
+<p class="small">Scale only by whole numbers (200%, 400%, 800%), with no smoothing, so the pixels stay square and sharp.<cite class="ref"><a href="#s5">5</a></cite></p>
+</div>
+
+<hr>
+<ol class="sources">
+  <li id="s1">Skeddles, <a href="https://lospec.com/articles/pixel-art-outlines/">“Pixel Art Outlines”</a>, Lospec, 2016.</li>
+  <li id="s2">Fil Razorback (Les Forges), <a href="https://opengameart.org/content/chapter-2-lines-and-curves">“Chapter 2: Lines and Curves”</a>, OpenGameArt.</li>
+  <li id="s3">LibreSprite wiki, <a href="https://github.com/LibreSprite/libresprite.github.io/wiki/Know-your-workspace">“Know your workspace”</a>.</li>
+  <li id="s4">FrostDrive, <a href="https://tips.clip-studio.com/en-us/articles/5360">“Pixel Art Practices Explained Simply”</a>, Clip Studio Tips.</li>
+  <li id="s5">Raymond Schlitter, <a href="https://www.slynyrd.com/blog/2018/5/16/pixelblog-5-back-to-basics">“Pixelblog 5: Back to the Basics”</a>, 2018.</li>
+</ol>
+</main>
+<script src="../assets/pixels.js"></script>
+</body>
+</html>

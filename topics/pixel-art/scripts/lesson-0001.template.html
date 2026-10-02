@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Lines · Pixel art lesson 1</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../../../index.html">Learning</a> · Pixel art · Lesson 1 · <a href="../reference/lines.html">Reference: lines</a></nav>
+
+<h1>Clean lines</h1>
+<p class="subtitle">Draw one-pixel lines with no doubles and no jaggies, then make your first ones in LibreSprite. About 15 minutes.</p>
+
+<p>Every sprite and illustration you want to make starts as lines: an outline is what makes a character readable at 32×32.
+At that size each pixel carries a lot of weight, so the course you'll read next says line accuracy is <em>critical</em>.<cite class="ref"><a href="#s2">2</a></cite>
+You don't need to be able to draw for this. Clean lines follow three mechanical rules.</p>
+
+<h2>1 · Three rules</h2>
+
+<h3>Rule 1: connect diagonally, never in an L</h3>
+<p>A one-pixel line should touch each next pixel <strong>only at a corner</strong>. Two pixels that form a right-angle corner add an extra pixel
+the line doesn't need, called a <strong>double</strong>. Doubles make lines look thick and messy.<cite class="ref"><a href="#s1">1</a></cite><cite class="ref"><a href="#s7">7</a></cite></p>
+<div class="px-row">
+  <div class="px" data-art="{{lineClean.art}}" data-cell="14" data-caption="clean"></div>
+  <div class="px" data-art="{{lineDouble.marked}}" data-cell="14" data-caption="double (red L corner)"></div>
+</div>
+
+<h3>Rule 2: in a straight line, every segment is the same length</h3>
+<p>A diagonal pixel line is a staircase. Each flat or upright run of pixels is a <strong>segment</strong>. If every segment is the same length,
+the eye reads a straight line. If the lengths jump around (3, 1, 2, 3…), you get <strong>jaggies</strong>: bumps that break the line.<cite class="ref"><a href="#s1">1</a></cite><cite class="ref"><a href="#s7">7</a></cite></p>
+<p>The cleanest slopes use segments of 1 or 2. Les Forges calls these the <strong>perfect lines</strong>: 1:0 (flat), 2:1, 1:1, 1:2 and 0:1 (upright).<cite class="ref"><a href="#s2">2</a></cite></p>
+<div class="px-row">
+  <div class="px" data-art="{{lineClean.art}}" data-cell="14" data-caption="2:1, segments 2,2,2,2,2,2,2"></div>
+  <div class="px" data-art="{{lineJaggy.marked}}" data-cell="14" data-caption="jaggy, segments 3,1,2,3,1,2,2"></div>
+</div>
+<p class="small muted">Notation: in this course, <em>2:1</em> means 2 across per 1 down (flat segments of length 2). Some tutorials write the ratio the other way round.
+The set of perfect lines is the same either way.</p>
+
+<h3>Rule 3: in a curve, segments change gradually</h3>
+<p>A curve is a line whose slope changes, so its segments must change length too, but <em>progressively</em>:<cite class="ref"><a href="#s2">2</a></cite>
+longest where the curve is flattest (or most upright), shortest at the diagonal.<cite class="ref"><a href="#s1">1</a></cite></p>
+<div class="px-row">
+  <div class="px" data-art="{{arcClean.art}}" data-cell="14" data-caption="clean: 3, 2, 1, 1, 2, 3"></div>
+  <div class="px" data-art="{{arcJaggy.marked}}" data-cell="14" data-caption="jaggy: 3, 1, 3, 1, 2, 3"></div>
+</div>
+
+<div class="callout">
+<p><strong>The math version.</strong> Write each segment's slope as pixels across per pixel down (a flat run of 3 is 3, an upright run of 3 is ⅓, a single pixel is 1).
+Then a straight line is a <em>constant</em> sequence, and a clean convex curve is a <em>monotonic</em> one, like 3, 2, 1, 1, ½, ⅓.
+A jaggy is any place the sequence breaks that pattern. The checker in section 3 tests exactly this.</p>
+</div>
+
+<h2>2 · Spot it</h2>
+<p class="muted small">Name the problem. Answer from the rules, not the pictures above.</p>
+
+<div class="quiz" data-type="choice" data-answer="Jaggy" data-options="Clean|Double|Jaggy" data-hint="Count each segment's length, then check the corners.">
+  <div class="px" data-art="{{lineJaggy.art}}" data-cell="14"></div>
+  <p class="prompt">1. A straight line?</p>
+  <div class="explain" hidden><strong>Jaggy.</strong> Segments go 3, 1, 2, 3, 1, 2, 2. A straight line needs one repeated length.
+  <div class="px" data-art="{{lineJaggy.marked}}" data-cell="12" data-caption="segments that differ from the first, in red"></div></div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Clean" data-options="Clean|Double|Jaggy" data-hint="Count each segment's length, then check the corners.">
+  <div class="px" data-art="{{arcClean.art}}" data-cell="14"></div>
+  <p class="prompt">2. A quarter of a circle?</p>
+  <div class="explain" hidden><strong>Clean.</strong> 3, 2, 1, 1, then upright 2, 3: the slope falls steadily from flat to upright, and every join is diagonal.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Double" data-options="Clean|Double|Jaggy" data-hint="Count each segment's length, then check the corners.">
+  <div class="px" data-art="{{lineDouble.art}}" data-cell="14"></div>
+  <p class="prompt">3. A straight line?</p>
+  <div class="explain" hidden><strong>Double.</strong> Near the top, three pixels form an L. Delete the rightmost pixel of the run of three and you're back to a clean 2:1 line.
+  <div class="px" data-art="{{lineDouble.marked}}" data-cell="12" data-caption="the L corner, in red"></div></div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Jaggy" data-options="Clean|Double|Jaggy" data-hint="Count each segment's length, then check the corners.">
+  <div class="px" data-art="{{arcJaggy.art}}" data-cell="14"></div>
+  <p class="prompt">4. A quarter of a circle?</p>
+  <div class="explain" hidden><strong>Jaggy.</strong> 3, 1, 3: the curve gets steep, then flat again, then steep. That reads as a bump, not a curve.
+  <div class="px" data-art="{{arcJaggy.marked}}" data-cell="12" data-caption="where the pattern breaks, in red"></div></div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Clean" data-options="Clean|Double|Jaggy" data-hint="Count each segment's length, then check the corners.">
+  <div class="px" data-art="{{line11.art}}" data-cell="14"></div>
+  <p class="prompt">5. A straight line?</p>
+  <div class="explain" hidden><strong>Clean.</strong> Every segment is one pixel: a perfect 1:1 line.</div>
+</div>
+
+<div class="quiz" data-type="choice" data-answer="Double" data-options="Clean|Double|Jaggy" data-hint="Count each segment's length, then check the corners.">
+  <div class="px" data-art="{{arcDouble.art}}" data-cell="14"></div>
+  <p class="prompt">6. A quarter of a circle?</p>
+  <div class="explain" hidden><strong>Double.</strong> The segment lengths are fine, but one extra pixel makes an L where the 3-segment meets the 2-segment.
+  <div class="px" data-art="{{arcDouble.marked}}" data-cell="12" data-caption="the extra pixel, in red"></div></div>
+</div>
+
+<h2>3 · Draw it here</h2>
+<p class="muted small">Click or drag to paint, click a painted pixel to erase. <strong>Check</strong> gives instant feedback, with problems marked in red.
+Try without the example first.</p>
+
+<h3>Drill A: a perfect 2:1 line from A to B</h3>
+<div class="px-draw" data-w="16" data-h="9" data-a="1,1" data-b="14,7" data-check="line" data-slope="2"
+     data-example="{{lineClean.art}}"></div>
+
+<h3>Drill B: a quarter circle from A to B</h3>
+<p class="small">Leave A heading right, arrive at B heading down. Plan your segment lengths first (for example 4, 3, 2, 1, …), then mirror them.</p>
+<div class="px-draw" data-w="17" data-h="17" data-a="1,1" data-b="15,15" data-check="curve"
+     data-example="{{drillArc.art}}"></div>
+
+<h2>4 · Do it in LibreSprite</h2>
+<p>LibreSprite is a free, GPL-2.0 sprite editor. It was forked from Aseprite in 2016, at the last commit Aseprite released under the GPL,
+so most Aseprite tutorials carry over.<cite class="ref"><a href="#s5">5</a></cite></p>
+<h3>Install (pick one)</h3>
+<ul>
+  <li><strong>Linux:</strong> <code>flatpak install flathub com.github.libresprite.LibreSprite</code><cite class="ref"><a href="#s6">6</a></cite></li>
+  <li><strong>Windows:</strong> download the latest build from the <a href="https://github.com/LibreSprite/LibreSprite/releases">GitHub releases page</a>.<cite class="ref"><a href="#s5">5</a></cite></li>
+  <li><strong>Nothing to install:</strong> the <a href="https://libresprite.github.io/online/">browser version</a> on the official site works for today.</li>
+</ul>
+<h3>Ten minutes of lines</h3>
+<ol class="steps">
+  <li><kbd>Ctrl</kbd>+<kbd>N</kbd> → new sprite, <strong>32 × 32</strong>, RGB, transparent background.<cite class="ref"><a href="#s3">3</a></cite>
+    Start small. Expand the canvas later if you need to.<cite class="ref"><a href="#s4">4</a></cite></li>
+  <li>Zoom in (<kbd>Z</kbd> is the zoom tool, or use the scroll wheel). Pick the pencil (<kbd>B</kbd>) at size 1.<cite class="ref"><a href="#s3">3</a></cite></li>
+  <li>Draw a 2:1, a 1:1 and a 1:2 line, counting pixels as you go.</li>
+  <li><strong>Experiment.</strong> The brush options bar has a <em>Pixel Perfect</em> checkbox.<cite class="ref"><a href="#s3">3</a></cite> Draw one quick freehand curve with it off,
+    and one with it on. Which rule does it enforce for you, and which one is still your job?</li>
+  <li>Draw the quarter circle from Drill B by hand. Then mirror it to make a full circle. Fix doubles with the eraser (<kbd>E</kbd>).</li>
+  <li><kbd>Ctrl</kbd>+<kbd>S</kbd> saves a <code>.ase</code> file you can keep editing. For sharing, use <em>File → Save Copy As</em> with its resize option
+    at <strong>800%</strong> to get a PNG.<cite class="ref"><a href="#s3">3</a></cite> Only scale by whole numbers (200%, 300%, 800%…): that keeps every pixel square and sharp.<cite class="ref"><a href="#s4">4</a></cite></li>
+</ol>
+<div class="callout">
+<p><strong>Send it to me.</strong> Paste the 800% PNG (or a screenshot) into our chat, along with what you found in step 4. I'll mark any doubles and jaggies,
+and we'll pick lesson 2 from what I see.</p>
+</div>
+
+<h2>Read next</h2>
+<p><strong>Primary source:</strong> Skeddles, <a href="https://lospec.com/articles/pixel-art-outlines/">“Pixel Art Outlines”</a> (Lospec). It's short and
+covers today's three rules, plus when to <em>break</em> rule 1 on purpose to make a sharp corner.<cite class="ref"><a href="#s1">1</a></cite></p>
+<p class="small">Going further: Les Forges, <a href="https://opengameart.org/content/chapter-2-lines-and-curves">“Chapter 2: Lines and Curves”</a>, from a free
+8-chapter course we'll keep using.<cite class="ref"><a href="#s2">2</a></cite></p>
+
+<div class="callout no-print">
+<p><strong>Questions?</strong> Ask your teacher (Claude). For example: “why do 2:1 lines matter for isometric games?”, “how do I draw a clean circle at 16×16?”,
+or “give me five more spot-it pictures.”</p>
+</div>
+
+<hr>
+<ol class="sources">
+  <li id="s1">Skeddles, <a href="https://lospec.com/articles/pixel-art-outlines/">“Pixel Art Outlines”</a>, Lospec (originally samkeddy.com, 3 Apr 2016). Diagonal-only connections, equal segments, graduated curve segments, corners.</li>
+  <li id="s2">Fil Razorback (Les Forges), <a href="https://opengameart.org/content/chapter-2-lines-and-curves">“Chapter 2: Lines and Curves”</a>, <a href="https://opengameart.org/content/les-forges-pixel-art-course">Les Forges Pixel Art Course</a>, OpenGameArt (English translation). Perfect lines; “the length of the segments will vary in a progressive manner, and you should avoid right angles.”</li>
+  <li id="s3">LibreSprite wiki, <a href="https://github.com/LibreSprite/libresprite.github.io/wiki/Know-your-workspace">“Know your workspace”</a>. New file, tool shortcuts, Pixel Perfect checkbox, Save Copy As with resize.</li>
+  <li id="s4">Raymond Schlitter (Slynyrd), <a href="https://www.slynyrd.com/blog/2018/5/16/pixelblog-5-back-to-basics">“Pixelblog 5: Back to the Basics”</a>, 2018. Start small; scale only by whole-number multiples, with no anti-aliasing.</li>
+  <li id="s5"><a href="https://github.com/LibreSprite/LibreSprite">LibreSprite on GitHub</a>. GPL-2.0, forked from the last GPL-2.0 commit of Aseprite after its 26 Aug 2016 license change; Linux, macOS, Windows and Android.</li>
+  <li id="s6"><a href="https://flathub.org/apps/com.github.libresprite.LibreSprite">LibreSprite on Flathub</a> (app id <code>com.github.libresprite.LibreSprite</code>, GPL-2.0).</li>
+  <li id="s7">FrostDrive, <a href="https://tips.clip-studio.com/en-us/articles/5360">“Pixel Art Practices Explained Simply”</a>, Clip Studio Tips. Definitions of doubles and jaggies.</li>
+  <li id="s8">Every picture on this page, and the drill checker, are verified by <code>topics/pixel-art/scripts/verify_art.js</code> with the same code the page runs (<code>assets/pixels.js</code>).</li>
+</ol>
+</main>
+<script src="../assets/pixels.js"></script>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
