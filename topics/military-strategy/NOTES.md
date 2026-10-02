@@ -19,3 +19,7 @@
   - Tactics and weapons as constraints on strategy (Manila Bay tech gap, blitzkrieg combined arms) since they're in scope.
 - Spacing: open lesson 2 with 2–3 new cases to classify on the 2x2 (not the ones from lesson 1).
 - No GLOSSARY.md yet. Candidates once the learner uses them correctly: annihilation, dislocation, attrition, exhaustion, ends/ways/means.
+- Network (checked 2 Oct 2026): US military sites block this container. apps.dtic.mil, airuniversity.af.edu and media.defense.gov
+  return 403 from their own firewall (Akamai, "The request is blocked"); our proxy lets the connection through. warroom.armywarcollege.edu
+  fails at our proxy gateway (502 on CONNECT), so it may need adding to the environment's allowed domains. Workaround: the learner downloads
+  the PDF in a browser and commits it to the repo, or use clausewitzstudies.org / gutenberg.org, which work.
