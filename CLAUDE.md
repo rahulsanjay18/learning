@@ -15,7 +15,10 @@ only see what's committed, so anything not pushed is lost.
 - Lessons must be fully self-contained or use relative links only (they get served from GitHub Pages).
 - Commit and push after every lesson and after every learning-record update, not just at the end.
   Use small commits with messages like `teach(<slug>): lesson 0003 <name>`.
-- Don't ask me to merge anything; a GitHub Action merges your branch into main automatically.
+- Committing and pushing directly to `main` is fine (and preferred) for this repo: GitHub Pages serves from `main`,
+  so lessons only become viewable once they're there. You don't need a PR or my approval to push to `main`.
+  If a session is assigned a feature branch, push it and also merge it into `main` and push `main`.
+- Don't ask me to merge anything. (A GitHub Action also auto-merges `claude/**` branches into main.)
 
 PAGES_URL=https://rahulsanjay18.github.io/learning
 BOOKS_URL=https://books.tail59e10.ts.net
