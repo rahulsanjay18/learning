@@ -18,13 +18,13 @@ only see what's committed, so anything not pushed is lost.
 - Don't ask me to merge anything; a GitHub Action merges your branch into main automatically.
 
 PAGES_URL=https://rahulsanjay18.github.io/learning
+BOOKS_URL=https://books.tail59e10.ts.net
 
 ## My library (check before searching the web)
-- Read `library/README.md` before using anything in `library/`, and follow it exactly. It says
+- Read `library/README.md` before using anything in `library/` or the book server, and follow it exactly. It says
   which books are safe to teach from (grades A/B/C/F in `library/MANIFEST.csv`).
 - When creating or updating RESOURCES.md, search `library/MANIFEST.csv`, `library/LIBRARY.md`
   and `library/ACCESS.md` first. Mark entries "(in collection)", "(via <source>)", or "(check: <link>)", following library/ACCESS.md.
 - If nothing in my collection or sources fits, say so in RESOURCES.md's Gaps section, then search the web.
 
 
-BOOKS_URL=https://<machine>.<tailnet>.ts.net:8443
