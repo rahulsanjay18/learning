@@ -9,3 +9,4 @@ I'll get these myself, add them to the server, then regrade + reindex.
 - _The Art of Wargaming_ — Peter Perla — for: military-strategy / wargaming — why: standard text on professional and hobby wargaming — status: missing
 - _NASM Essentials of Personal Fitness Training, 7th ed._ — NASM (Jones & Bartlett) — for: nasm-cpt / all lessons — why: the textbook the current exam is written from; collection only has the 4th ed. (2012) — status: missing
 - _Pixel Logic: A Guide to Pixel Art_ — Michael Azzi — for: pixel-art / all early lessons — why: the most-recommended visual beginner guide (lines, clusters, palettes, shading) — status: missing
+- _The First Punic War: A Military History_ — J. F. Lazenby — for: military-strategy / First Punic War analysis — why: standard modern military history of the war; checks Polybius — status: missing

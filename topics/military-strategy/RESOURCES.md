@@ -29,6 +29,16 @@ Grades refer to `library/MANIFEST.csv` (A = teach and quote; B = prose only, no 
   The main ancient source for the First Punic War (Book I) and the Hannibalic war (Book III); Book VI compares the Roman and Carthaginian militaries.
   Use for: Punic Wars case studies, primary-source practice.
 
+### Case study: the Punic Wars (free online)
+- [Polybius, _Histories_ Book 1, trans. W. R. Paton (Loeb, 1922), on LacusCurtius](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/1*.html)
+  The primary source, free, with section numbers that match the Penguin edition's book.chapter citations. Use for: checking any claim about the war.
+- [Wikipedia, "First Punic War"](https://en.wikipedia.org/wiki/First_Punic_War): a **Featured Article**, part of a featured topic on the Punic Wars
+  ([topic page](https://en.wikipedia.org/wiki/Wikipedia:Featured_topics/Punic_Wars)). Fine for orientation; follow its footnotes to Lazenby and Goldsworthy.
+- [Livius.org, "First Punic War"](https://livius.org/articles/concept/first-punic-war/): a short overview from a site run by a classical historian. Use for: quick refreshers.
+- _The First Punic War: A Military History_, J. F. Lazenby (1996). (check: Open Library / library app) Standard modern military history of the war.
+  [BMCR review](https://bmcr.brynmawr.edu/1996/1996.09.11/). Not in collection; added to WANTED.md.
+- _A Companion to the Punic Wars_, ed. Dexter Hoyos (Wiley-Blackwell 2011). (check: university library) Scholarly essays; [BMCR review](https://bmcr.brynmawr.edu/?p=37658).
+
 ### Supporting (in collection)
 - _Ancient Warfare_, _The Napoleonic Wars_, _The First World War_ (Howard), _World War II_ (Weinberg), _The Cold War_, _Nuclear Weapons_,
   _Aerial Warfare_, _War and Technology_: Oxford VSIs. (in collection, grade A) Use for: compact history background before analyzing a campaign.
