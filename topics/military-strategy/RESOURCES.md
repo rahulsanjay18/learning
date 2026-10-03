@@ -25,6 +25,10 @@ Grades refer to `library/MANIFEST.csv` (A = teach and quote; B = prose only, no 
 - _The Peloponnesian War_, Thucydides, trans. Hammond (Oxford World's Classics). (in collection, grade A, id 6ff2f46904)
   Use for: the oldest full case study; sea power vs. land power, alliance politics, Athenian strategy.
 
+- _The Rise of the Roman Empire_, Polybius, trans. Ian Scott-Kilvert (Penguin Classics). (in collection, grade A, id a1de43a246)
+  The main ancient source for the First Punic War (Book I) and the Hannibalic war (Book III); Book VI compares the Roman and Carthaginian militaries.
+  Use for: Punic Wars case studies, primary-source practice.
+
 ### Supporting (in collection)
 - _Ancient Warfare_, _The Napoleonic Wars_, _The First World War_ (Howard), _World War II_ (Weinberg), _The Cold War_, _Nuclear Weapons_,
   _Aerial Warfare_, _War and Technology_: Oxford VSIs. (in collection, grade A) Use for: compact history background before analyzing a campaign.
