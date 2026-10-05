@@ -41,3 +41,23 @@ Basis: definition of the p-value as P(result at least this extreme | H0) (Casell
 - Good wording that uses 96%: **"Our gap is bigger than 96% of the gaps a do-nothing page would produce."** It's the percentile of our
   result in the null distribution: true, and exactly as strong as the p-value, no stronger.
 - Small precision: p is P(data *at least this extreme* | H0), not P(this exact data | H0); a single exact outcome has probability ≈ 0.
+
+## 2026-10-05 · "Is there an equivalent P(data | H1), the probability of the data if the site did make a difference?"
+**Yes, but H1 must name an effect size δ**: "some difference" is many hypotheses, each predicting different data.
+
+For the lesson-2 A/B test (12,000 per arm, 5.0% → 5.6%, z ≈ 2.08):
+
+| True lift δ | Likelihood ratio P(data | δ) / P(data | H0) | Power P(significant | δ) |
+|---|---|---|
+| 0.3 pts | 5.0 | 0.18 |
+| 0.5 pts | 8.1 | 0.41 |
+| 0.6 pts (observed) | 8.6 (maximum, = e^{z²/2}) | 0.55 |
+| 0.8 pts | 6.8 | 0.79 |
+
+- The **likelihood ratio** is the evidence: how many times better δ explains the data than "no effect".
+- Bayes: posterior odds = prior odds × likelihood ratio. Using the most favourable ratio (8.6):
+  P(page works | data) ≤ 0.49 if 10% of such ideas work; ≤ 0.90 if 50% do. So p = 0.038 ≠ "96% sure".
+- Power is the same idea used before the test: P(reject | δ). Here the test only had ~55% power for a 0.6-point lift.
+
+Method: normal approximation, z-statistic ~ N(δ/SE, 1) under δ; ratio of normal densities at the observed z; computed in Python.
+Read: Casella & Berger §8.2.1 "Likelihood Ratio Tests" and §8.5.2 "Likelihood Ratio As Evidence".
