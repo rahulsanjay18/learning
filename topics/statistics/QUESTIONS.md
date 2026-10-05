@@ -70,3 +70,10 @@ Read: Casella & Berger §8.2.1 "Likelihood Ratio Tests" and §8.5.2 "Likelihood 
 - So report the effect size (better: a confidence interval) with every p-value. ASA principle 5: a p-value "does not measure the size of an effect or the importance of a result".
 
 Numbers: pooled two-proportion z-test, two-sided, computed in Python. Source for principle 5: Bruce, Bruce & Gedeck p. 108 (ASA statement).
+
+## 2026-10-05 · "I don't know if you explained 'with huge samples, tiny effects get tiny p-values'" (intuition, no formula)
+A coin that lands heads 50.5% of the time (tiny bias).
+- 100 flips: noise ≈ ±5 heads (SD = 0.5√n); bias adds 0.5 heads → z ≈ 0.1, p ≈ 0.9. Indistinguishable from fair.
+- 1,000,000 flips: noise ≈ ±500 heads; bias adds 5,000 heads → z ≈ 10, p astronomically small.
+- The bias grows in proportion to n; the noise only grows with √n. Enough data makes *any* nonzero effect "significant".
+- "Statistically significant" = detectably not zero, **not** big or important.

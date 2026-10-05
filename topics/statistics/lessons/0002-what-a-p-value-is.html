@@ -84,6 +84,7 @@
   <tr><td>B</td><td>0.15 points (small)</td><td class="num">300,000</td><td class="num">0.008</td></tr>
   <tr><td>C</td><td>0.05 points (tiny)</td><td class="num">5,000,000</td><td class="num">0.0003</td></tr>
 </table>
+<p><strong>Intuition:</strong> a coin that lands heads 50.5% of the time. In 100 flips its bias adds half a head against about ±5 heads of noise: invisible (\(p \approx 0.9\)). In a million flips it adds 5,000 heads against about ±500 of noise: unmistakable (\(z \approx 10\)). The bias grows like \(n\), the noise only like \(\sqrt n\), so with enough data <em>any</em> nonzero effect becomes "significant". Significant means <em>detectably not zero</em>, not big.</p>
 <p>Study C is "highly significant" for a lift nobody should care about. Study A may have found something big but doesn't have enough data to be sure. So always report the <strong>effect size</strong> next to \(p\). Confidence intervals (lesson 3) show both at once.</p>
 
 <h2>Practice</h2>
