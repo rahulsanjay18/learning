@@ -124,6 +124,12 @@ table.matrix td span { font-size: .85rem; color: var(--muted); }
 /* "I don't know" (pretests) */
 .quiz .skiprow { margin-top: .5rem; }
 .quiz button.skip { min-width: 0; padding: .2rem .7rem; font-size: .8rem; color: var(--muted); background: transparent; }
+.quiz .confrow { margin-top: .5rem; font-size: .85rem; color: var(--muted); }
+.quiz button.conf { min-width: 0; padding: .2rem .7rem; margin-right: .4rem; font-size: .8rem; background: transparent; }
+.quiz .card-back { border-top: 1px solid var(--rule); padding-top: .5rem; margin-top: .5rem; }
+.lp-deck { margin: 1.4rem 0; }
+.lp-deck .deck-count, .lp-deck .deck-end { font-size: .9rem; color: var(--muted); }
+.lp-deck button.deck-next { font: inherit; font-size: .95rem; padding: .4rem 1rem; border: 1px solid var(--rule); background: var(--panel); color: var(--fg); border-radius: 3px; cursor: pointer; }
 .quiz.skipped .prompt { color: var(--muted); }
 
 /* checklist */

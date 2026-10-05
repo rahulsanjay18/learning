@@ -7,7 +7,7 @@
   var SELF = document.currentScript ? document.currentScript.src : location.href;
   var regs = [], started = false;
   var total = 0, answered = 0, firstTryRight = 0, bar = null;
-  var missed = [], skipped = [], freeAnswers = [];
+  var missed = [], skipped = [], guessed = [], freeAnswers = [];
 
   // ---------- page identity + item IDs ----------
   var m = location.pathname.match(/\/topics\/([^\/]+)\/(lessons|reference)\/([^\/]+?)(\.html)?$/);
@@ -45,6 +45,12 @@
   // up to date on every answer, so it survives the log being emptied by sync. Read by assets/review.html.
   var INTERVALS = [1, 3, 7, 16, 35, 80, 180];
   function schedApply(sched, ev) {
+    if (ev.type === "confidence" && ev.value === "guessed" && ev.item && sched[ev.item]) {   // right by luck = not known yet
+      var g = sched[ev.item];
+      g.box = 0; g.lapses = (g.lapses || 0) + 1; g.last = ev.ts;
+      g.due = new Date(new Date(ev.ts).getTime() + INTERVALS[0] * 864e5).toISOString();
+      return;
+    }
     if (ev.type !== "attempt" || !ev.item || ev.correct == null || ev.kind === "deferred") return;
     var r = sched[ev.item] || { box: -1, reps: 0, lapses: 0 };
     if (ev.correct) r.box = Math.min(r.box + 1, INTERVALS.length - 1);
@@ -107,6 +113,7 @@
         if (kind === "deferred") freeAnswers.push({ id: id, answer: answer });
         updateBar();
         LP.emit({ type: "attempt", item: id, widget: reg.type, kind: kind || "auto", correct: ok, answer: answer == null ? null : String(answer).slice(0, 4000) });
+        if (ok === true && (kind || "auto") === "auto" && confidenceOn(el)) setTimeout(function () { addConfidence(el, id); }, 0);
       },
       feedback: function (ok, explainOrMsg) { feedback(el, ok, explainOrMsg); }
     };
@@ -124,6 +131,31 @@
     var explain = q.querySelector(":scope > .explain");
     if (ok && explain) { fb.appendChild(explain); explain.hidden = false; }
     if (!ok) fb.appendChild(document.createTextNode(typeof extra === "string" ? extra : q.dataset.hint || "Look again and try once more."));
+  }
+
+  // "How sure were you?" after a first-try right answer. On for pretests (<main data-skip="true">) and wherever
+  // data-confidence="true" is set (on <main> or one quiz); data-confidence="false" turns it off. "I guessed" counts the
+  // item as not known: it leaves "right first try", is listed as guessed, and comes back in review tomorrow.
+  function confidenceOn(q) {
+    var host = q.closest("[data-confidence]");
+    if (host) return host.dataset.confidence === "true";
+    return !!q.closest('[data-skip="true"]');
+  }
+  function addConfidence(q, id) {
+    if (q.querySelector(":scope > .confrow")) return;
+    var row = el("div", "confrow"), knew = el("button", "conf", "I knew it"), guess = el("button", "conf", "I guessed");
+    row.appendChild(el("span", "conflabel", "How sure were you? "));
+    [knew, guess].forEach(function (b) {
+      b.addEventListener("click", function () {
+        var g = b === guess;
+        LP.emit({ type: "confidence", item: id, value: g ? "guessed" : "knew" });
+        if (g) { firstTryRight--; guessed.push(id.replace(/^.*#/, "")); updateBar(); }
+        row.textContent = g ? "Noted: a lucky guess counts as not known yet, so it comes back in tomorrow's review." : "";
+        if (!g) row.remove();
+      });
+      row.appendChild(b);
+    });
+    q.appendChild(row);
   }
 
   // ---------- registry ----------
@@ -156,7 +188,7 @@
   // "I don't know" button, for pretests: <main data-skip="true"> (or on one .quiz). Counts as not known, reveals the answer.
   function addSkip(q, ctx) {
     var host = q.closest("[data-skip]");
-    if (!host || host.dataset.skip === "false" || q.dataset.type === "checklist") return;
+    if (!host || host.dataset.skip === "false" || q.dataset.type === "checklist" || q.dataset.type === "card") return;
     var row = el("div", "skiprow"), b = el("button", "skip", "I don't know"), triedWrong = false;
     b.addEventListener("click", function () {
       // Before any attempt this is a skip (scored as not known). After a wrong try the miss is already
@@ -279,6 +311,50 @@
       });
     });
     beforeExplain(q, ta); beforeExplain(q, reveal);
+  } });
+
+  // Flashcard: front = .prompt, back = .explain. Show answer, then mark yourself. Self-marked, so no confidence step.
+  LP.register({ type: "card", init: function (q, ctx) {
+    var explain = q.querySelector(":scope > .explain");
+    var row = el("div", "choices reveal"), show = el("button", null, "Show answer");
+    row.appendChild(show);
+    show.addEventListener("click", function () {
+      if (explain) { explain.hidden = false; explain.classList.add("card-back"); }
+      show.remove();
+      var got = el("button", null, "I knew it"), miss = el("button", null, "I didn't");
+      [got, miss].forEach(function (b) {
+        b.addEventListener("click", function () {
+          ctx.result(b === got, null, "self");
+          b.classList.add(b === got ? "right" : "wrong");
+          got.disabled = miss.disabled = true;
+        });
+        row.appendChild(b);
+      });
+    });
+    q.appendChild(row);
+  } });
+
+  // Deck: <div class="lp-deck"> holding card quizzes. Shows one card at a time with a counter; a summary at the end.
+  LP.register({ type: "deck", selector: ".lp-deck", scored: false, init: function (deck) {
+    var cards = Array.prototype.slice.call(deck.querySelectorAll(':scope > .quiz[data-type="card"]'));
+    if (!cards.length) return;
+    var i = 0, known = 0, counter = el("p", "deck-count"), next = el("button", "deck-next", "Next card"), end = el("p", "deck-end");
+    next.hidden = true; end.hidden = true;
+    deck.insertBefore(counter, deck.firstChild); deck.appendChild(next); deck.appendChild(end);
+    function show() {
+      cards.forEach(function (c, k) { c.hidden = k !== i; });
+      counter.textContent = "Card " + (i + 1) + " of " + cards.length;
+      next.hidden = true;
+    }
+    document.addEventListener("lp:event", function (e) {
+      var d = e.detail, c = cards[i];
+      if (!c || d.type !== "attempt" || !d.item || d.item.replace(/^.*#/, "") !== c.dataset.id) return;
+      if (d.correct) known++;
+      if (i < cards.length - 1) next.hidden = false;
+      else { end.hidden = false; end.textContent = "Deck done: " + known + " of " + cards.length + " known. Cards you didn't know come back in the daily review."; }
+    });
+    next.addEventListener("click", function () { i++; show(); });
+    show();
   } });
 
   // Fill in the blanks: write [[answer|alternative]] inside .prompt (or .text). One Check button for all blanks.
@@ -461,6 +537,7 @@
     if (answered < total) parts.push((total - answered) + " unanswered");
     if (missed.length) parts.push("missed: " + missed.join(","));
     if (skipped.length) parts.push("skipped: " + skipped.join(","));
+    if (guessed.length) parts.push("guessed: " + guessed.join(","));
     if (LP.rating) parts.push("rating: " + LP.rating);
     if (LP.note) parts.push("note: " + LP.note.replace(/\s+/g, " "));
     var s = parts.join(" | ");

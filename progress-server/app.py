@@ -138,6 +138,8 @@ def post_events(payload: dict = Body(...), who: str = Depends(caller)):
             stored += 1
             if e.get("type") == "attempt" and e.get("item") and correct is not None:
                 schedule(c, e["item"], e.get("page"), bool(correct), t)
+            elif e.get("type") == "confidence" and e.get("value") == "guessed" and e.get("item"):
+                schedule(c, e["item"], e.get("page"), False, t)     # right by luck = not known yet
     return {"stored": stored, "duplicates": dup}
 
 
@@ -254,8 +256,10 @@ def summary(topic: str = Query(min_length=1), _=Depends(teacher)):
             # SQLite takes bare columns from the MIN(ts) row
             firsts = c.execute("SELECT item, correct, MIN(ts) FROM events WHERE page=? AND type='attempt' AND kind!='deferred'"
                                " GROUP BY item", (p,)).fetchall()
-            right = sum(1 for f in firsts if f["correct"])
+            lucky = {x[0] for x in c.execute("SELECT item FROM events WHERE page=? AND type='confidence' AND value='guessed'", (p,))}
+            right = sum(1 for f in firsts if f["correct"] and f["item"] not in lucky)
             missed = [f["item"].split("#")[-1] for f in firsts if f["correct"] == 0]
+            guessed = [i.split("#")[-1] for i in sorted(lucky)]
             rating = c.execute("SELECT value FROM events WHERE page=? AND type='rating' ORDER BY ts DESC LIMIT 1", (p,)).fetchone()
             notes = c.execute("SELECT text FROM events WHERE page=? AND type='note' ORDER BY ts", (p,)).fetchall()
             grades = c.execute("SELECT e.item, g.score FROM events e JOIN grades g ON g.eid=e.eid WHERE e.page=?", (p,)).fetchall()
@@ -263,6 +267,7 @@ def summary(topic: str = Query(min_length=1), _=Depends(teacher)):
                                  " WHERE e.page=? AND e.kind='deferred' AND g.eid IS NULL", (p,)).fetchone()[0]
             line = f"{p}: {right}/{len(firsts)} right first try"
             if missed: line += " | missed: " + ",".join(missed)
+            if guessed: line += " | guessed: " + ",".join(guessed)
             if rating: line += f" | rating: {rating['value']}"
             if grades: line += " | graded: " + ",".join(f"{g['item'].split('#')[-1]}={g['score']:.1f}" for g in grades)
             if ungraded: line += f" | {ungraded} ungraded"

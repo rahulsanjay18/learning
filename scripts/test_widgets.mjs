@@ -232,6 +232,19 @@ await page.waitForFunction(() => document.querySelectorAll("#gm-play-ttt .gm-cel
 if (await page.locator("#gm-play-hex .gm-hexcell.black").count() !== 1) fail("gallery: hex solver did not open as Black");
 else console.log("ok   gallery: tiny games (ttt, nim, hex quizzes + solver play)");
 
+// flashcards: deck shows one card at a time; self-marking advances; summary at the end
+if (await page.locator(`${q("fc-2")}`).isVisible()) fail("gallery: deck showed card 2 before card 1");
+await page.click(`${q("fc-1")} button:text-is("Show answer")`); await page.click(`${q("fc-1")} button:text-is("I knew it")`);
+await page.click(".lp-deck button.deck-next");
+await page.click(`${q("fc-2")} button:text-is("Show answer")`); await page.click(`${q("fc-2")} button:text-is("I didn't")`);
+if (!/1 of 2 known/.test(await page.locator(".lp-deck .deck-end").textContent())) fail("gallery: deck summary wrong");
+// confidence: a right answer asks "How sure were you?"; "I guessed" takes it out of right-first-try and lists it as guessed
+await page.click(`${q("conf-demo")} button:text-is("Three")`);
+await page.click(`${q("conf-demo")} button:text-is("I guessed")`);
+const confSched = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.review"))["gallery/widgets#conf-demo"]);
+if (!confSched || confSched.box !== 0 || confSched.lapses !== 1) fail("gallery: guessed answer not reset in the review schedule " + JSON.stringify(confSched));
+else console.log("ok   gallery: flashcard deck + confidence step");
+
 // map: basemap drawn from the vendored data; locate quiz: click on Delhi (miss, distance + direction), then pick "Patna" (right)
 await page.waitForSelector("#map-south-asia .map-land", { timeout: 8000 }).catch(() => fail("gallery: map basemap did not load"));
 if ((await page.locator("#map-south-asia .map-land").first().getAttribute("d") || "").length < 2000) fail("gallery: map land path too small");
@@ -311,17 +324,17 @@ let pythonRan = false;
 
 const bar = await page.locator(".scorebar").textContent();
 // choice, go-drive, plot-mean, tl-plassey, map-patali, py-var missed first; free is ungraded. py-var is unanswered if the CDN was unreachable.
-const expected = pythonRan ? "21 / 21 answered · 12 right first try" : "20 / 21 answered · 12 right first try";
+const expected = pythonRan ? "24 / 24 answered · 13 right first try" : "23 / 24 answered · 13 right first try";
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== (pythonRan ? 21 : 20)) fail(`gallery: expected ${pythonRan ? 21 : 20} logged attempts, got ${attempts.length}`);
+if (attempts.length !== (pythonRan ? 24 : 23)) fail(`gallery: expected ${pythonRan ? 24 : 23} logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,gm-ttt-hold,gm-nim-345,map-patali" + (pythonRan ? ",py-var" : "")).test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,gm-ttt-hold,gm-nim-345,fc-2,map-patali" + (pythonRan ? ",py-var" : "") + ".*guessed: conf-demo").test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 // "I don't know" (data-skip): skip before answering; after a wrong try it becomes "Show me the answer" (no second score)

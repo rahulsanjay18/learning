@@ -24,6 +24,7 @@ Live examples of every widget: `assets/gallery.html`.
 ```
 
 - `lp.js` adds the score bar and, on lesson pages, the footer: difficulty rating, "anything confusing?" note, **Copy my results**, and sync settings.
+- **"How sure were you?"** After a first-try right answer on an auto-graded quiz, the learner picks *I knew it* or *I guessed*. A guess counts as not known: it leaves "right first try", is listed as `guessed:` in the results line, and its review resets to tomorrow (in the browser and on the progress server). **On by default on pretest pages and in the review deck**; elsewhere set `data-confidence="true"` on `<main>` or one quiz (`"false"` turns it off). Use it wherever a guess could pass: multiple choice, sorting, ordering, game moves.
 - Pretests: `<main data-skip="true">` adds an **I don't know** button to every scored quiz (or set `data-skip` on one quiz). A skip counts as not known, reveals the `.explain`, and is listed as `skipped:` in the results line. After a wrong try the button becomes **Show me the answer** (reveals without scoring again; logged as a `reveal` event); it disappears once answered right.
 - Give every quiz a short `data-id` that is unique within the page. IDs stay stable when you edit the page and feed spaced review: `chess/0003-forks#fork-1`.
 - Topic-only styles go in `topics/<slug>/assets/topic.css`. Don't copy `lp.css`/`lp.js` into a topic. Add a widget here instead.
@@ -42,6 +43,7 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 | `categorize` | `data-buckets="A\|B"` `data-items="item>A\|other item>B"`; doubles as matching | auto |
 | `recall` | write from memory → reveal `.explain` → "I had it / I missed some" | self |
 | `checklist` | an `<ol>`/`<ul>` of real-world steps inside the quiz; done when all ticked | self |
+| `card` | flashcard: front = `.prompt`, back = `.explain`; "Show answer" then "I knew it / I didn't". Wrap several in `<div class="lp-deck">` to show one at a time with a counter and an end summary | self |
 | `free` | `<div class="rubric">` (hidden, for the grader) + optional `.explain` model answer shown after submitting | teacher, next session |
 
 ## Unscored widgets
