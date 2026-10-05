@@ -19,3 +19,6 @@
 - 2026-10-05: learner found lesson 2's six-statement sort "hard": it tested effect size/sample size before teaching it, and was
   all-or-nothing. Fixed: taught first, split into two 3-item sorts. **Rule: keep categorize/order items to 3–4 rows, and never
   test an idea the lesson hasn't taught.**
+- 2026-10-05: **lesson 3 = "Effect size and confidence intervals"** (learner: effect size is "missing entirely"). Order: what effect
+  size is (absolute, relative, in SE units), practical vs. statistical significance, CIs as size + uncertainty. The learner's
+  P(data | H1) / likelihood-ratio question comes after (lesson 4).

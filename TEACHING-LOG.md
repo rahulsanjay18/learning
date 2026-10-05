@@ -42,3 +42,7 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
    learner wasn't told. Fix: rule 11.
 10. **2026-10-05 · Pretest misses were mostly forgotten facts** (learner's words), not confusion. Fix: formula/reference sheets plus
     spaced review for recall gaps; save full lessons for ideas.
+11. **2026-10-05 · "Effect size" was used but never defined, even in the section added to fix entry 2.** Learner: "the effect size
+    thing is pretty much missing entirely." A fix for one gap can itself break rule 1. Fix: a plain definition where the term first
+    appears (absolute and relative lift); lesson 3 teaches effect size properly (practical vs. statistical significance) before CIs.
+    **Check every fix against rule 1 too.**
