@@ -31,3 +31,13 @@ for Data Scientists*, p. 108 (in collection). Base-rate arithmetic: lesson 2 wor
   not '96% sure it works'."
 
 Basis: definition of the p-value as P(result at least this extreme | H0) (Casella & Berger §8.3.4; Bruce, Bruce & Gedeck p. 108).
+
+## 2026-10-05 · "So what is 1 − P(data | H0)?"
+**1 − p = P(a result *less* extreme than ours | H0).** Still conditioned on H0: taking the complement flips the *event*, never the condition.
+
+- Rule: P(A | B) + P(not A | B) = 1. Same condition B on both sides.
+- Here A = "gap at least as big as ours", B = "no effect". So 1 − 0.038 = 0.962 = P(gap smaller than ours | no effect).
+- What people *want* is P(H1 | data) = 1 − P(H0 | data). That flips the condition, a different quantity that needs a base rate (Bayes).
+- Good wording that uses 96%: **"Our gap is bigger than 96% of the gaps a do-nothing page would produce."** It's the percentile of our
+  result in the null distribution: true, and exactly as strong as the p-value, no stronger.
+- Small precision: p is P(data *at least this extreme* | H0), not P(this exact data | H0); a single exact outcome has probability ≈ 0.
