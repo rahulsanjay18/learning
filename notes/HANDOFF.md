@@ -13,12 +13,14 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 |---|---|---|
 | Statistics | Lesson 4: P(data given H1), likelihood ratios, power (~55% in the A/B example) | Numbers in `topics/statistics/QUESTIONS.md` |
 | Indian History | Mission interview (PROGRAM.md §6), then lesson 0003: rest of Introduction + Indus with first primary source | `topics/indian-history/PROGRAM.md` |
+| Games (proposed fun major) | Learner to answer the 3 questions in `topics/games/PROGRAM.md`; chess would become its lab | Draft program written 2026-10-05 |
 | Chess (fun major) | Write `topics/chess/PROGRAM.md` as a major (CLAUDE.md: every subject is a major); existing lessons 0001–0002 | Chess.com: rahulsanjay18 |
 | AWS ML cert | Ask: which exam, target date, AWS experience, prep materials | Check AWS's current exam list (don't guess names) |
 | Economics | Parked; Principles solid (13/13) | Resume at intermediate level |
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 
 ## Open platform work
+- Widgets: **tiny-game boards vs. a minimax solver** (tic-tac-toe, Nim, Hex) for the Games major.
 - Widgets: **flashcards** + a **"How sure were you?"** step (guessed-right → treated as not known). Next in the widget queue.
 - "Today" page that shows the day's plan from `notes/study-plan.md` and marks it done (enforces "finish the plan first").
 - Book server: `/search?book=<id>`, page numbers per chunk, per-book section maps, then hybrid (embedding) search. See
