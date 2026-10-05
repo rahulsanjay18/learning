@@ -51,7 +51,7 @@
         "G101"
       ],
       "est_lessons": 4,
-      "note": "needs the tiny-game solver widget (tic-tac-toe, Nim, Hex); then 3D variant v0 on paper"
+      "note": "widget ready: assets/plugins/games.js (ttt, Nim, Hex vs exact solver). Then 3D variant v0 on paper"
     },
     {
       "id": "G201",

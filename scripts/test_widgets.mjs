@@ -217,6 +217,21 @@ if (await page.locator(`${q("tl-plassey")} .tl-marker.truth`).count()) fail("gal
 await page.click(`${q("tl-plassey")} button:text-is("Check")`); await expectOk("tl-plassey");
 if (!(await page.locator(`${q("tl-plassey")} .tl-marker.truth`).count())) fail("gallery: timeline did not show the true position");
 
+// games: quiz misses explain themselves (scored as a miss), right moves show the new position; the solver answers in play
+await page.locator(`${q("gm-ttt-hold")} .gm-cell`).nth(2).click();                 // O on c1, a corner: loses to a fork
+if (!/O on c1 loses/.test(await page.locator(`${q("gm-ttt-hold")} > .feedback`).textContent())) fail("gallery: ttt miss message wrong");
+await page.locator(`${q("gm-ttt-hold")} .gm-cell`).nth(1).click(); await expectOk("gm-ttt-hold");
+if ((await page.$$eval(`${q("gm-ttt-hold")} .gm-cell`, a => a.map(x => x.textContent || ".").join(""))) !== "XO..O...X") fail("gallery: ttt did not show the played move");
+await page.locator(`${q("gm-nim-345")} .gm-heap`).nth(2).locator(".gm-token").nth(4).click();   // take 1 from heap 3: loses
+await page.locator(`${q("gm-nim-345")} .gm-heap`).nth(2).locator(".gm-token").nth(3).click();   // second miss marks the winning move
+if (await page.locator(`${q("gm-nim-345")} .gm-token.hint.hW`).count() !== 1) fail("gallery: nim did not mark the one winning move");
+await page.locator(`${q("gm-nim-345")} .gm-heap`).nth(0).locator(".gm-token").nth(1).click(); await expectOk("gm-nim-345");
+await page.locator(`${q("gm-hex-open")} .gm-hexg`).nth(4).click(); await expectOk("gm-hex-open");
+await page.locator("#gm-play-ttt .gm-cell").nth(4).click();
+await page.waitForFunction(() => document.querySelectorAll("#gm-play-ttt .gm-cell.filled").length === 2, null, { timeout: 3000 }).catch(() => fail("gallery: ttt solver did not reply"));
+if (await page.locator("#gm-play-hex .gm-hexcell.black").count() !== 1) fail("gallery: hex solver did not open as Black");
+else console.log("ok   gallery: tiny games (ttt, nim, hex quizzes + solver play)");
+
 // map: basemap drawn from the vendored data; locate quiz: click on Delhi (miss, distance + direction), then pick "Patna" (right)
 await page.waitForSelector("#map-south-asia .map-land", { timeout: 8000 }).catch(() => fail("gallery: map basemap did not load"));
 if ((await page.locator("#map-south-asia .map-land").first().getAttribute("d") || "").length < 2000) fail("gallery: map land path too small");
@@ -296,17 +311,17 @@ let pythonRan = false;
 
 const bar = await page.locator(".scorebar").textContent();
 // choice, go-drive, plot-mean, tl-plassey, map-patali, py-var missed first; free is ungraded. py-var is unanswered if the CDN was unreachable.
-const expected = pythonRan ? "18 / 18 answered · 11 right first try" : "17 / 18 answered · 11 right first try";
+const expected = pythonRan ? "21 / 21 answered · 12 right first try" : "20 / 21 answered · 12 right first try";
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== (pythonRan ? 18 : 17)) fail(`gallery: expected ${pythonRan ? 18 : 17} logged attempts, got ${attempts.length}`);
+if (attempts.length !== (pythonRan ? 21 : 20)) fail(`gallery: expected ${pythonRan ? 21 : 20} logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,map-patali" + (pythonRan ? ",py-var" : "")).test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,gm-ttt-hold,gm-nim-345,map-patali" + (pythonRan ? ",py-var" : "")).test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 // "I don't know" (data-skip): skip before answering; after a wrong try it becomes "Show me the answer" (no second score)
