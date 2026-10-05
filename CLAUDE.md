@@ -24,7 +24,8 @@ PAGES_URL=https://rahulsanjay18.github.io/learning
 BOOKS_URL=https://books.tail59e10.ts.net
 
 ## About me as a learner (applies to every topic)
-- **Time: I can block out 1 hour a day for learning.** Plan lessons, reviews and practice to fit that hour (several short lessons + review, not one long one).
+- **Time: at least 1 hour a day for learning, total across all topics.** That is a floor I set myself, not a cap; it may go up.
+  Plan so a day's work fits in that hour (short lessons + review, not one long one), and offer more when I have more time.
 - Active topics (keep ~3 + a game): **Economics, Statistics** (start with a placement pretest; I have a math degree that included stats),
   **Indian History**, plus chess or Go on the side. Full wishlist: `notes/learning-wishlist.md`.
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.

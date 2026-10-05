@@ -97,7 +97,7 @@ Keyword search of `library/MANIFEST.csv` (titles only, so treat it as a first pa
 
 ## 5. Decided (2026-10-05)
 - Active: **Economics, Statistics (placement pretest first), Indian History**, plus chess or Go on the side.
-- Time budget: **1 hour a day**.
+- Time budget: **at least 1 hour a day across all topics** (a floor, not a cap).
 
 ## 6. Suggested next steps
 1. **Pick ~3 active topics.** Chess, military strategy, NASM-CPT and pixel art are already open. Spaced review piles up across every active topic.
