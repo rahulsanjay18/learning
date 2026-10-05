@@ -126,3 +126,8 @@ From Chapter 1 on (the cover-to-cover program), lessons are built from the readi
 Full walk-through in `reference/ci-dice-example.md`. In short: roll 600 times, 146 sixes, θ̂ = 0.243, plug-in SE = √(θ̂(1 − θ̂)/n) =
 0.0175, CLT makes θ̂ ≈ normal, so θ̂ ± 1.96·SE = [0.209, 0.278]. Fair 1/6 is outside, which is evidence of loading. 10,000 repeats: 94.8% of
 intervals covered the true 0.25.
+
+## 2026-10-05 · "What if θ is kept secret? How do you know you have a 95% interval?"
+Because the interval's steps never use θ, and the 95% is a property proved for **every** θ: exact coverage at n = 600 is 0.94–0.95
+for θ from 0.02 to 0.5, so it holds for whichever θ is yours. The worst case over θ is the confidence coefficient (C&B Def. 9.1.5).
+One interval is either right or wrong; "95%" is trust in the method. Details and a secret-θ demo: `reference/ci-dice-example.md` part 2.

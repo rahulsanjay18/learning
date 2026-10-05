@@ -73,3 +73,46 @@ With only **n = 60** rolls: 19 sixes, θ̂ = 0.317, interval **[0.199, 0.434]**.
   In collection (grade A).
 - Brown, Cai & DasGupta (2001), "Interval Estimation for a Binomial Proportion", *Statistical Science* 16(2), 101–133: the simple interval's poor coverage for small n (cited from memory).
 - Every number above came from a seeded Python simulation (die weights 0.15 × 5, 0.25 for six; n = 600; 10,000 repeats for coverage).
+
+---
+
+# Part 2: "But how do you know it's 95% if θ stays secret?"
+*Follow-up question, same day.*
+
+## The key point
+Steps 1–6 above **never used θ**. They used only the rolls: count, θ̂, SE, interval. θ = 0.25 appeared only in step 7, as a check.
+
+**You know it's 95% because the guarantee was proved for every possible θ before you rolled.** If the method covers 95% of the
+time whatever θ is, it covers 95% of the time for *your* θ, without your ever learning it.
+
+## A die with a truly secret θ
+The computer picked θ at random between 0.1 and 0.4 and hid it. Then:
+- 600 rolls, **72 sixes**, θ̂ = 0.120, SE = √(0.12 × 0.88 / 600) = 0.0133.
+- Interval: **0.120 ± 0.026 = [0.094, 0.146]**.
+- Again, nothing here needed θ.
+
+## Why the procedure works for every θ
+For a fixed θ, the chance that the interval catches it, P_θ(θ̂ − 1.96·SE ≤ θ ≤ θ̂ + 1.96·SE), can be computed exactly by adding up
+binomial probabilities. This is the **coverage probability** (Casella & Berger, Definition 9.1.4). Do it for many candidate θs:
+
+| If the secret θ were… | 0.02 | 0.05 | 0.10 | 1/6 | 0.25 | 0.40 | 0.50 |
+|---|---|---|---|---|---|---|---|
+| Coverage, **n = 600** | 0.945 | 0.937 | 0.939 | 0.949 | 0.946 | 0.950 | 0.945 |
+| Coverage, n = 60 | 0.701 | 0.806 | 0.941 | 0.932 | 0.939 | 0.934 | 0.948 |
+
+- With 600 rolls the method catches θ about 94–95% of the time **whichever θ it is**. So you don't need to know which one is yours.
+- Casella & Berger call the worst case over all θ the **confidence coefficient** (Definition 9.1.5). It's the honest guarantee:
+  "at least this often, no matter what θ is."
+- With 60 rolls the guarantee breaks for θ near 0 (70% at θ = 0.02). For those cases, "95%" would be false advertising. That's why
+  Chapter 9 builds better intervals.
+
+## So what does one interval tell you?
+The method is a machine that's right about 95% of the time, for any die. You ran it once and got [0.094, 0.146]. You can't know
+whether this run was one of the 95% or one of the 5%. "95% confident" is your trust in the machine, not a probability about this
+one interval. (The reveal: the secret θ was **0.136**, inside. But the next die could be the 1 in 20.)
+
+## Sources (part 2)
+- Casella & Berger, *Statistical Inference*, 2nd ed., §9.1, pp. 417–419: Definition 9.1.4 (coverage probability) and Definition
+  9.1.5 (confidence coefficient = infimum of coverage over θ). In collection (grade A).
+- Coverage table: exact binomial sums for the Wald interval, computed in Python. The secret-θ demo: seeded Python simulation, θ
+  drawn uniformly on [0.1, 0.4] and printed only after the interval.
