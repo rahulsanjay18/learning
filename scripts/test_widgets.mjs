@@ -186,6 +186,27 @@ const summary = await page.evaluate(() => LP.summary());
 if (!/missed: choice,go-drive,plot-mean/.test(summary) || !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
+// "I don't know" (data-skip): skip before answering; after a wrong try it becomes "Show me the answer" (no second score)
+{
+  const pre = await browser.newPage();
+  await pre.goto(`${BASE}/topics/statistics/lessons/0001-placement-pretest.html`);
+  const pq = (id) => `.quiz[data-id="${id}"]`;
+  await pre.click(`${pq("rv-geom")} button.skip`);
+  await pre.click(`${pq("prob-union")} button:text-is("0.80")`);
+  const label = await pre.locator(`${pq("prob-union")} button.skip`).textContent().catch(() => "");
+  if (label !== "Show me the answer") fail(`skip: after a wrong answer the button reads "${label}"`);
+  await pre.click(`${pq("prob-union")} button.skip`);
+  if (await pre.locator(`${pq("prob-union")} .explain`).isHidden()) fail("skip: answer not revealed after a wrong try");
+  await pre.click(`${pq("dist-2sd")} button:text-is("95%")`);
+  if (await pre.locator(`${pq("dist-2sd")} button.skip`).count()) fail("skip: button still shown after a right answer");
+  const sum = await pre.evaluate(() => LP.summary());
+  if (!/missed: prob-union \| skipped: rv-geom/.test(sum) || !/2\/21|1\/21/.test(sum)) fail("skip: summary wrong: " + sum);
+  const revealed = await pre.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]").filter(e => e.type === "reveal").length);
+  if (revealed !== 1) fail(`skip: expected 1 reveal event, got ${revealed}`);
+  if (!failures) console.log("ok   skip: skip, wrong→show answer, right→hidden\n     " + sum);
+  await pre.close();
+}
+
 await browser.close();
 server.kill();
 console.log(failures ? `\n${failures} failure(s)` : "\nall passed");

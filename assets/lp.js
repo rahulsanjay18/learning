@@ -128,21 +128,28 @@
   function addSkip(q, ctx) {
     var host = q.closest("[data-skip]");
     if (!host || host.dataset.skip === "false" || q.dataset.type === "checklist") return;
-    var row = el("div", "skiprow"), b = el("button", "skip", "I don't know");
+    var row = el("div", "skiprow"), b = el("button", "skip", "I don't know"), triedWrong = false;
     b.addEventListener("click", function () {
-      ctx.result(false, null, "skip");
-      q.classList.add("skipped");
+      // Before any attempt this is a skip (scored as not known). After a wrong try the miss is already
+      // recorded, so this only reveals the answer (logged as a "reveal" event, not a second attempt).
+      if (triedWrong) LP.emit({ type: "reveal", item: ctx.id });
+      else { ctx.result(false, null, "skip"); q.classList.add("skipped"); }
       q.querySelectorAll("input, textarea, button").forEach(function (x) { x.disabled = true; });
       var fb = q.querySelector(":scope > .feedback");
       if (!fb) { fb = el("div", "feedback"); q.appendChild(fb); }
       fb.innerHTML = "";
-      fb.appendChild(el("span", "verdict no", "Skipped. "));
+      fb.appendChild(el("span", "verdict no", triedWrong ? "Answer. " : "Skipped. "));
       var explain = q.querySelector(":scope > .explain");
       if (explain) { fb.appendChild(document.createTextNode("Here's the idea: ")); fb.appendChild(explain); explain.hidden = false; }
       row.remove();
     });
     row.appendChild(b); q.appendChild(row);
-    document.addEventListener("lp:event", function (e) { if (e.detail.item === ctx.id && e.detail.kind !== "skip") row.remove(); });
+    document.addEventListener("lp:event", function (e) {
+      var d = e.detail;
+      if (d.item !== ctx.id || d.type !== "attempt" || d.kind === "skip") return;
+      if (d.correct === false && d.kind === "auto") { triedWrong = true; b.textContent = "Show me the answer"; }
+      else row.remove();      // answered right, self-marked, or submitted for grading
+    });
   }
 
   // ---------- small DOM helpers (also used by plugins) ----------
