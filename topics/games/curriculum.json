@@ -18,10 +18,13 @@
         "0002-checks-first"
       ],
       "plan": [
-        "0003 next chess lesson: see topics/chess/NOTES.md and learning record 0003 (counting one square)"
+        "0003-what-did-it-stop-defending: a move can remove a defender (13. e4 in the 2 Oct game); warm-up = piece-by-piece check scan (missed q6 in 0002, LR 0004)",
+        "0004: double attack (fork), Seirawan Winning Chess Tactics ch. 2",
+        "game review: learner's next untimed bot game (checks-first habit)"
       ],
       "completed": [
-        "0001-is-it-safe"
+        "0001-is-it-safe",
+        "0002-checks-first"
       ]
     },
     {

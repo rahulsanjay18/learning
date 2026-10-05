@@ -20,4 +20,7 @@
   After that: what a move stops defending, then double attack (fork), then pin. Converting a winning position is a later theme.
 - Spacing: each lesson opens with 2 retrieval questions on the previous lesson(s). Lesson 3 should review checks-counting + one tally.
 - Lesson 2 positions: verify with `scripts/verify_checks.py` (python-chess + Stockfish).
-- Open question for the learner: is 428 (PGN WhiteElo) their real chess.com rating?
+- Open question for the learner: is 428 (PGN WhiteElo) their real chess.com rating? (CLAUDE.md: username rahulsanjay18, rarely plays online.)
+- Lessons 0001–0002 have no quiz data-ids, so lp.js uses positional ids (q1, q2, ...). NEVER reorder or insert quizzes in them,
+  or their review schedules break. Give every quiz in 0003+ a data-id.
+- Results: L1 9/10, L2 8/9 (missed q6 = count 6 checks after Kf1). Learner will play the next bot game "later": ask for the PGN.
