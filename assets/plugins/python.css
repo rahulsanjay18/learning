@@ -1,0 +1,16 @@
+/* Python plugin styles (assets/plugins/python.js). Load after assets/lp.css. */
+.lp-py { margin: 1.2rem 0; }
+.py-editor textarea.py-code { display: block; width: 100%; min-height: 0; margin: 0; padding: .5rem .7rem; resize: vertical;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .8rem; line-height: 1.45; tab-size: 4;
+  white-space: pre; overflow-x: auto; border: 1px solid var(--rule); border-radius: 0; background: var(--panel); color: var(--fg); }
+.py-editor textarea.py-code:focus { outline: none; border-color: var(--accent); }
+.py-bar { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: .5rem 0 0; }
+.lp-py button { font: inherit; font-size: .95rem; padding: .4rem 1rem; border: 1px solid var(--rule); background: var(--panel);
+  color: var(--fg); border-radius: 3px; cursor: pointer; }
+.lp-py button:hover:not(:disabled) { border-color: var(--accent); }
+.lp-py button:disabled { cursor: default; opacity: .75; }
+.py-status { font-size: .8rem; color: var(--muted); }
+pre.py-out { margin: .5rem 0 0; padding: .5rem .7rem; background: transparent; border-left: 2px solid var(--rule);
+  font-size: .8rem; line-height: 1.45; white-space: pre; overflow: auto; max-height: 24rem; }
+pre.py-out .err { color: var(--bad); }
+pre.py-out .note { color: var(--muted); font-style: italic; }

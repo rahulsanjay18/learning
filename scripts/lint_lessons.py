@@ -6,7 +6,9 @@
 ERROR (exit 1): broken local links/scripts, choice answer not among its options, categorize item in an unknown bucket,
                 duplicate data-id, cloze with no [[blanks]], order with < 2 items, chess-move/go-move missing their position or answer,
                 plot-set without data-fns/data-target or targeting a parameter that has no slider,
-                timeline-place without data-range/data-answer, map-locate without data-answer/data-view.
+                timeline-place without data-range/data-answer, map-locate without data-answer/data-view,
+                py quiz without a <pre class="code"> (starter code) and a <script class="check"> (the hidden test),
+                lp-py snippet without a <pre class="code">.
 WARN:           choice options with different word counts (SKILL.md: answers must not give away the answer by length),
                 lesson without a sources list.
 """
@@ -21,16 +23,24 @@ class Page(HTMLParser):
         super().__init__()
         self.quizzes, self.links, self.has_sources = [], [], False
         self._stack = []  # open quiz elements, to collect their text (for cloze)
+        self.py_snippets = []  # .lp-py blocks: {"line", "pre"}
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        classes = (a.get("class") or "").split()
+        if "lp-py" in classes:
+            self.py_snippets.append({"line": self.getpos()[0], "pre": False})
+        elif tag == "pre" and "code" in classes and self.py_snippets and not self._stack:
+            self.py_snippets[-1]["pre"] = True
+        if self._stack:
+            self._stack[-1]["children"].update(f"{tag}.{c}" for c in classes)
         for key in ("href", "src"):
             if a.get(key):
                 self.links.append(a[key])
         if "sources" in (a.get("class") or "").split():
             self.has_sources = True
         if "quiz" in (a.get("class") or "").split() and a.get("data-type"):
-            q = {"attrs": a, "text": "", "line": self.getpos()[0], "depth": 0}
+            q = {"attrs": a, "text": "", "line": self.getpos()[0], "depth": 0, "children": set()}
             self.quizzes.append(q)
             self._stack.append(q)
         elif self._stack:
@@ -108,6 +118,14 @@ def lint(path):
             errors.append(f"{where}: needs data-range and data-answer")
         elif t == "map-locate" and not (a.get("data-answer") and a.get("data-view")):
             errors.append(f"{where}: needs data-answer (lat,lon) and data-view")
+        elif t == "py":
+            if "pre.code" not in q["children"]:
+                errors.append(f'{where}: needs a <pre class="code"> with the starter code')
+            if "script.check" not in q["children"]:
+                errors.append(f'{where}: needs a <script type="text/python" class="check"> with the test')
+    for sn in page.py_snippets:
+        if not sn["pre"]:
+            errors.append(f'line {sn["line"]} (lp-py): needs a <pre class="code"> with the code')
 
     html = path.read_text(encoding="utf-8")
     body = re.sub(r"<script.*?</script>", "", html, flags=re.S)

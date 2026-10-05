@@ -76,6 +76,12 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
   - Locate it: `<div class="quiz" data-type="map-locate" data-id="…" data-view="…" data-answer="25.59,85.14" [data-tolerance-km="250"] [data-choices="25.59,85.14:Patna|28.61,77.21:New Delhi|…"]>`. The learner taps the map (or a candidate button) and presses Check; right = great-circle distance ≤ tolerance. A miss reports "off by N km" and the direction; the true point is drawn once right or after a second miss. Without `data-choices` the quiz says it needs a mouse or touch screen. With choices, exactly one must be within tolerance (the test checks). **Take coordinates from a source** (Wikipedia infobox) and cite it.
   - Borders are Natural Earth's de facto lines (e.g. Kashmir); say so in the caption where it matters.
   - `node scripts/test_timeline_map.js` checks year/BCE logic, ticks, lanes, haversine, projection, TopoJSON decoding, and that every timeline and map in the repo is valid.
+- **Python** (`plugins/python.js` + `plugins/python.css`): runnable Python in the page via Pyodide (CPython in WebAssembly), pinned and loaded from jsDelivr on the first Run (~10 MB once, then cached; **needs a connection**, it is not vendored).
+  - Snippet: `<div class="lp-py" [data-packages="numpy"] [data-timeout="10"]><pre class="code">print(sum(range(10)))</pre></div>`. Editable code box (Tab indents, Ctrl/Cmd+Enter runs), Run, Reset, and an output panel (stdout, plus errors in `--bad`). Unscored.
+  - Exercise: `<div class="quiz" data-type="py" data-id="…" [data-packages="numpy"]><p class="prompt">…</p><pre class="code">starter code</pre><script type="text/python" class="check">assert abs(mean([1, 2, 3]) - 2) < 1e-9, "mean([1, 2, 3]) should be 2"</script><div class="explain" hidden>…</div></div>`. **Check** runs the learner's code, then the check in the same namespace; right = no exception. A miss shows only the exception message (write a helpful `assert …, "message"`), never the check source. Syntax errors, timeouts and load failures aren't scored. Run is never scored.
+  - **Escaping:** the `<pre>` is HTML, so write `<` as `&lt;` and `&` as `&amp;` there. The check `<script>` is raw text: write `<` and `&` as is. Both are dedented.
+  - Each run gets a fresh namespace. Runs happen in a worker; one that runs past `data-timeout` seconds (default 10) is stopped and Python restarts. Text output only: no `input()`, no plots. Packages are Pyodide's (`numpy`, `scipy`, `pandas`, …), loaded per page on first use. **Run the check with real Python against a right and a wrong answer before publishing.**
+  - `node scripts/test_python.js` checks the helpers and that every Python widget has its code (and check).
 - **Pixel art** (`plugins/pixels.js` + `plugins/pixels.css`): `.px` pictures and `.px-draw` drills. Usage is in the header comment of `plugins/pixels.js`.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
@@ -99,5 +105,6 @@ node scripts/test_math.js                # math parser/equivalence + every math 
 node scripts/test_plot.js                # plot ticks/areas/paths + every plot and plot-set is valid
 node scripts/test_go_rules.js            # Go rules + every go-move problem's line is legal
 node scripts/test_timeline_map.js        # timeline years/ticks/lanes, map distance/projection/basemap + every timeline and map is valid
+node scripts/test_python.js              # python helpers (dedent, error messages) + every Python snippet/exercise is well formed
 node scripts/test_sync_e2e.mjs           # lesson page -> progress server round trip (needs fastapi + uvicorn)
 ```
