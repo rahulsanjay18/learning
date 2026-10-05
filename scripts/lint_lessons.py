@@ -104,6 +104,10 @@ def lint(path):
         elif t == "go-move" and not (a.get("data-size") and (a.get("data-answer") or a.get("data-solution"))):
             errors.append(f"{where}: needs data-size and data-answer or data-solution")
 
+    html = path.read_text(encoding="utf-8")
+    body = re.sub(r"<script.*?</script>", "", html, flags=re.S)
+    if re.search(r"\\\(|\$\$|\\\[", body) and "plugins/math.js" not in html:
+        errors.append("uses \\( \\) or $$ math but doesn't load plugins/math.js (it would show raw TeX)")
     if "/lessons/" in str(rel) and not page.has_sources:
         warns.append("no <ol class=\"sources\"> list")
     return rel, errors, warns

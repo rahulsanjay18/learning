@@ -34,6 +34,10 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - **No generated art or images.** Don't draw illustrations or decorative graphics yourself. If a lesson needs a picture, ask me
   (I'll supply it) or pull one from the web or my books, credited. Data-driven visuals (plots of formulas, game boards from
   positions, timelines from dates, maps from open map data) are fine unless I say otherwise.
+- **Each subject is a major**, not a single course: plan it as a multi-course program (prerequisites, courses, placement),
+  even for non-academic subjects like chess.
+- Fun subject: **chess** (friends play it; Go later). Non-technical subject: Economics or Indian History, to be chosen after
+  their pretests (`topics/<slug>/lessons/0001-placement-pretest.html`).
 - Study plan (proposed 2026-10-05, see `notes/study-plan.md`): 4 subjects, 2 full (Statistics, AWS ML cert) + 2 half
   (one non-technical, one fun), daily review first. **Finish the whole day's plan before going deeper on any one subject**;
   extra time beyond the 1-hour floor is welcome after that.
