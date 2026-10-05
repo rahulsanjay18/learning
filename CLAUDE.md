@@ -43,6 +43,12 @@ BOOKS_URL=https://books.tail59e10.ts.net
   extra time beyond the 1-hour floor is welcome after that.
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
 
+## Teaching log (read before writing any lesson)
+- `TEACHING-LOG.md` at the repo root lists past teaching mistakes and the rules that prevent them, across all subjects. Read it
+  before writing a lesson. When my questions or results reveal a flaw in an explanation or lesson, add an entry and a rule.
+- Each topic keeps a `QUESTIONS.md`: my questions with the answers given.
+- I'm happy to **read beforehand**: for definition-heavy lessons, assign a short, specific primary-source slice with a reading guide.
+
 ## Progress server (once deployed: `$BOOKS_URL/progress`, see `progress-server/README.md`)
 - At the start of a teaching session, `curl -s "$BOOKS_URL/progress/status"` (auth is injected) for a ~15-line digest; use
   `/progress/summary?topic=<slug>` for one topic and `/progress/ungraded` + `POST /progress/grades` to grade free responses.
