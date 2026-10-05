@@ -61,3 +61,12 @@ For the lesson-2 A/B test (12,000 per arm, 5.0% → 5.6%, z ≈ 2.08):
 
 Method: normal approximation, z-statistic ~ N(δ/SE, 1) under δ; ratio of normal densities at the observed z; computed in Python.
 Read: Casella & Berger §8.2.1 "Likelihood Ratio Tests" and §8.5.2 "Likelihood Ratio As Evidence".
+
+## 2026-10-05 · "I don't understand: 'with huge samples, tiny effects get tiny p-values' and 'p = 0.01 means a bigger effect than p = 0.20' (a misreading)"
+**One formula behind both:** p depends on z = effect / SE, and SE shrinks like 1/√n. Small p can mean a big effect *or* lots of data.
+
+- Same tiny lift (5.00% → 5.05%): 12,000 per arm → z 0.18, p 0.86; 5,000,000 per arm → z 3.62, p 0.0003.
+- Study A: lift 2.00 pts, 500 per arm → p 0.18. Study B: lift 0.15 pts, 300,000 per arm → p 0.008. Smaller p, 13× smaller effect.
+- So report the effect size (better: a confidence interval) with every p-value. ASA principle 5: a p-value "does not measure the size of an effect or the importance of a result".
+
+Numbers: pooled two-proportion z-test, two-sided, computed in Python. Source for principle 5: Bruce, Bruce & Gedeck p. 108 (ASA statement).

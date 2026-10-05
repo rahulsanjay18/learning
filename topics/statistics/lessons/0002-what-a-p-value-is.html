@@ -86,7 +86,7 @@
 <div class="quiz" data-type="categorize" data-id="sort-claims" data-buckets="Correct|Misreading"
   data-items="A small p means the data would be surprising if H0 were true>Correct|p is the probability that H0 is true>Misreading|p = 0.01 means a bigger effect than p = 0.20>Misreading|p is computed assuming H0 is true>Correct|1 − p is the probability the treatment works>Misreading|With huge samples, tiny effects get tiny p-values>Correct">
   <p class="prompt">Sort each statement.</p>
-  <div class="explain" hidden>Everything correct here is about the data under \(H_0\). Every misreading tries to make \(p\) say something about \(H_0\) itself, or about effect size.</div>
+  <div class="explain" hidden>Everything correct here is about the data under \(H_0\). Every misreading tries to make \(p\) say something about \(H_0\) itself, or about effect size. Why not effect size: \(p\) comes from \(z = \text{effect}/\text{SE}\), and SE shrinks like \(1/\sqrt n\). A 0.05-point lift gives \(p = 0.86\) with 12,000 users per arm but \(p = 0.0003\) with 5 million. A study with a 2-point lift and 500 users per arm can get \(p = 0.18\), while one with a 0.15-point lift and 300,000 per arm gets \(p = 0.008\).</div>
 </div>
 
 <div class="quiz" data-type="plot-set" data-id="find-196" data-x="-4:4" data-y="0:0.45" data-fns="exp(-x^2/2)/sqrt(2pi)" data-params="z=1:0:3.5:0.01" data-shade="z:inf" data-show-area="true" data-vline="z" data-target="z=1.96" data-tolerance="0.02" data-xlabel="z" data-ylabel="density">
