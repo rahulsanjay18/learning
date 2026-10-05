@@ -29,7 +29,14 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 14. **Check paraphrases against the source sentence**, not memory of it: reread the passage before compressing it. (Entry 14)
 15. **Reading guides flag notation traps:** where the source writes a familiar formula in an unfamiliar form (√(σ²/n) for σ/√n)
     or sets up an example earlier than the slice starts, say so in the reading box. (Entry 15)
-11. **Remind the learner that formula boxes take expressions** (`8/28`, `160*0.05/(...)`), so arithmetic slips don't cost a question. (Entry 9)
+11. **Remind the learner that formula boxes take expressions** (`8/28`, `160*0.05/(...)`), so arithmetic slips don't cost a question,
+    **and say how to type them**: `*` for ×, `/`, `^`, `sqrt( )`, on every page with a formula box. (Entries 9, 18)
+16. **Every problem is self-contained.** Restate every number and condition it needs (the setup, the threshold, the sample size);
+    never "lesson 2's test" or "our test". The learner does one lesson a day and the review deck shows questions out of context.
+    And **show where every number comes from** (e.g. derive an SE, don't just state it). (Entry 16)
+17. **Say how each section relates to the reading:** "from the reading" vs. "beyond the reading". (Entry 17)
+18. **Units in answer boxes are unambiguous** ("as a decimal, 0.10 means 10%"); prefer the form a mathematician would type. (Entry 18)
+19. **Use the learner's own vocabulary next to the textbook's** (Type I = false positive, Type II = false negative). (Entry 19)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -64,3 +71,12 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 15. **2026-10-05 · Lesson 3's reading (C&B Example 9.1.3) wrote SD(X̄) as √(1/4).** Learner: "why the 1/4 in the denominator? I
     thought the SD formula has the sqrt of the number of samples." It is σ/√n with σ = 1, n = 4, written as √(σ²/n), and the setup
     is in the previous example. Fix: a heads-up line in the reading box; rule 15.
+16. **2026-10-05 · Lesson 3 problems lacked context.** Learner: "You really don't give enough context for these problems. I'm doing
+    it like once a day, I don't remember every detail", and "how do you know the standard error? … was that given?" (it wasn't
+    derived). Fix: a restated running example, a derived SE, self-contained prompts; rule 16.
+17. **2026-10-05 · "I don't know how much of this has anything to do with the reading."** Lesson 3 mixed §9.1 with applied material
+    without saying so. Fix: section labels; rule 17.
+18. **2026-10-05 · Two right answers marked wrong by the format:** `rel-lift` wanted a percent, learner typed the decimal 0.5/4;
+    `ci-lower`, learner couldn't find how to type × and estimated 2 instead of 1.96. Fix: decimal answer, typing help; rules 11, 18.
+19. **2026-10-05 · "I usually remember type 1 and 2 errors as false positive and false negative."** Options used "missing a real
+    effect" etc. Fix: FP/FN in lesson 2's table and lesson 3's options; rule 19.

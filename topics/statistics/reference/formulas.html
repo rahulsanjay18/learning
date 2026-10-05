@@ -39,7 +39,7 @@
 
 <div class="card">
 <h3>95% confidence interval (large samples)</h3>
-<p>\(\text{estimate} \pm 1.96 \times \text{SE}\). For a difference of two proportions: \(\text{SE} = \sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}\).</p>
+<p>\(\text{estimate} \pm 1.96 \times \text{SE}\). For a difference of two proportions: \(\text{SE} = \sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}\) (a 0/1 outcome has variance \(p(1-p)\), so no sample SD is needed).</p>
 <p class="small muted">The 95% belongs to the method: intervals built this way cover the true value 95% of the time. The interval is random; the parameter isn't (Casella &amp; Berger, p. 418). Excludes 0 ⇔ two-sided test rejects at \(\alpha = 0.05\). See <a href="../lessons/0003-effect-size-and-confidence-intervals.html">lesson 3</a>.</p>
 </div>
 <div class="card">
@@ -66,6 +66,11 @@
 <h3>p-value</h3>
 <p>\(p = P(\text{result at least this extreme} \mid H_0)\). It is <strong>not</strong> \(P(H_0 \mid \text{data})\), and it isn't an effect size. See <a href="../lessons/0002-what-a-p-value-is.html">lesson 2</a>.</p>
 <p class="small muted">Two-sided test at \(\alpha = 0.05\): reject when \(|z| &gt; 1.96\).</p>
+</div>
+<div class="card">
+<h3>Errors and power</h3>
+<p>Type I = <strong>false positive</strong>: reject a true \(H_0\), rate \(\alpha\). Type II = <strong>false negative</strong>: miss a real effect, rate \(\beta\). Power \(= 1-\beta = P(\text{reject} \mid \text{real effect})\).</p>
+<p class="small muted">Watch out: Casella &amp; Berger write the <em>power function</em> as \(\beta(\theta)\) (p. 383), the opposite use of the letter.</p>
 </div>
 
 <h2>Where these are in your primary books</h2>

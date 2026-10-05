@@ -33,3 +33,5 @@
 - 2026-10-05: **chapter pretests** (learner's request): before each chapter, one item per section per skill (concept, calculation,
   proof); each section's lesson teaches only the missing skills, or is skipped. Mapping table in PROGRAM.md §2. Record each
   chapter's resulting plan here after its pretest.
+- 2026-10-05: lesson 3 results 1/12 (record 0007), mostly lesson-design problems; fixed the page (teaching log 16–19). Learner does
+  **one lesson a day and doesn't remember details from the day before**: restate everything in each problem.

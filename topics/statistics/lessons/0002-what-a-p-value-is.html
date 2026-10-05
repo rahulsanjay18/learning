@@ -29,8 +29,8 @@
 <p>Since the truth is either \(H_0\) or \(H_1\), and you either reject or don't, there are four outcomes and two ways to be wrong. Casella &amp; Berger note that these "traditionally have been given the non-mnemonic names" Type I and Type II.<cite class="ref"><a href="#s5">5</a></cite></p>
 <table class="matrix">
   <tr><th></th><th>You don't reject \(H_0\)</th><th>You reject \(H_0\)</th></tr>
-  <tr><th>\(H_0\) true (no effect)</th><td><strong>Correct</strong></td><td><strong>Type I error</strong><span>false alarm; happens with probability \(\alpha\)</span></td></tr>
-  <tr><th>\(H_1\) true (real effect)</th><td><strong>Type II error</strong><span>missed effect; probability \(\beta\)</span></td><td><strong>Correct</strong><span>probability \(1-\beta\) = <em>power</em></span></td></tr>
+  <tr><th>\(H_0\) true (no effect)</th><td><strong>Correct</strong></td><td><strong>Type I error</strong><span>false positive (false alarm); happens with probability \(\alpha\)</span></td></tr>
+  <tr><th>\(H_1\) true (real effect)</th><td><strong>Type II error</strong><span>false negative (missed effect); probability \(\beta\)</span></td><td><strong>Correct</strong><span>probability \(1-\beta\) = <em>power</em></span></td></tr>
 </table>
 <p>So \(\alpha = P(\text{reject} \mid H_0)\) and power \(= P(\text{reject} \mid H_1) = 1 - \beta\). The plot shows both. The dashed curve is the test statistic when \(H_0\) is true; you reject to the right of the line, which happens 5% of the time. The solid curve is the same statistic when the effect is real; its shaded area is the power. Slide the effect size \(d\) (in standard-error units):</p>
 <div class="lp-plot" data-x="-4:7" data-y="0:0.45" data-fns="exp(-(x-d)^2/2)/sqrt(2pi); exp(-x^2/2)/sqrt(2pi)" data-labels="If H1 is true (effect d);If H0 is true" data-params="d=2.5:0:5:0.1" data-shade="1.645:inf" data-show-area="true" data-vline="1.645" data-xlabel="test statistic" data-ylabel="density" data-caption="One-sided test at α = 0.05: reject right of 1.645. The shaded area is the power. At d = 2.5 it's about 0.80; at d = 1 only about 0.26. Bigger effects, or more data (which makes d bigger), mean more power."></div>

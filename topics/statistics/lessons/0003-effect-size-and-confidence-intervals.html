@@ -41,28 +41,31 @@
 </div>
 
 <h2>Block 2: the lesson</h2>
+<p class="small"><strong>Typing answers:</strong> number boxes take expressions. Type <code>*</code> for ×, <code>/</code> for ÷, <code>^</code> for powers and <code>sqrt( )</code> for roots, e.g. <code>3 - 1.96*0.2</code>.</p>
+<p class="small"><strong>How this connects to the reading:</strong> sections marked <em>From the reading</em> are Casella &amp; Berger §9.1 applied to an example; sections marked <em>Beyond the reading</em> are the applied side (effect size, decisions) that the book doesn't cover.</p>
+<div class="callout"><p><strong>The running example (an A/B test).</strong> You test a new checkout page with 12,000 users in each group. The old page converts 5.0% of users, the new page 5.6%. A test of "no difference" gives \(p \approx 0.038\).</p></div>
 <h3>Warm-up (from memory)</h3>
 <div class="quiz" data-type="choice" data-id="wu-size" data-answer="No: p mixes effect and sample size" data-options="Yes: smaller p always means bigger effect|No: p mixes effect and sample size|No: smaller p always means smaller effect|Only when both tests use alpha 0.05">
-  <p class="prompt">Test A has \(p = 0.002\), test B has \(p = 0.04\). Does A have the bigger effect?</p>
+  <p class="prompt">Two A/B tests on different pages, with different numbers of users. Test A has \(p = 0.002\), test B has \(p = 0.04\). Does A have the bigger effect?</p>
   <div class="explain" hidden>\(p\) comes from \(z = \text{effect}/\text{SE}\), and SE shrinks with \(n\). A could be a tiny effect measured on millions of users.</div>
 </div>
-<div class="quiz" data-type="choice" data-id="wu-type2" data-answer="Missing a real effect" data-options="A false positive alarm|Missing a real effect|Rejecting a true null|Using too much data">
+<div class="quiz" data-type="choice" data-id="wu-type2" data-answer="A false negative (miss)" data-options="A false positive (alarm)|A false negative (miss)|A correct rejection (hit)|An underpowered test (design)">
   <p class="prompt">A Type II error is…</p>
-  <div class="explain" hidden>Not rejecting \(H_0\) when there really is an effect. Its rate is \(\beta\); power is \(1-\beta\).</div>
+  <div class="explain" hidden>Type I = false positive (rejecting a true \(H_0\)); Type II = false negative (missing a real effect). Type II's rate is \(\beta\); power is \(1-\beta\).</div>
 </div>
 
-<h3>1 · Effect size: "how much?"</h3>
+<h3>1 · Effect size: "how much?" <span class="muted small">(beyond the reading)</span></h3>
 <p>The p-value answers "is it surprising if nothing's going on?". <strong>Effect size</strong> answers "<em>how big</em> is the difference?", in units someone cares about. Two common versions, using lesson 2's A/B test (5.0% → 5.6% conversion):</p>
 <ul>
   <li><strong>Absolute difference:</strong> \(5.6\% - 5.0\% = 0.6\) percentage points. "Percentage points" is the unit for a difference between two percentages.</li>
   <li><strong>Relative lift:</strong> \(0.6 / 5.0 = 12\%\). The same change, stated relative to the starting point. It sounds bigger, which is why it's popular in slide decks; always say which one you mean.</li>
 </ul>
-<div class="quiz" data-type="math" data-id="rel-lift" data-answer="0.5/4*100" data-tolerance="0.05" data-hint="Relative lift = absolute difference ÷ the starting rate, as a percent.">
-  <p class="prompt">Sign-ups go from 4.0% to 4.5%. What is the relative lift, in percent? (You can type an expression.)</p>
+<div class="quiz" data-type="math" data-id="rel-lift" data-answer="0.5/4" data-tolerance="0.0005" data-hint="Relative lift = absolute difference ÷ the starting rate.">
+  <p class="prompt">Sign-ups go from 4.0% to 4.5%. What is the relative lift, as a decimal (0.10 means 10%)? You can type an expression.</p>
   <div class="explain" hidden>Absolute: 0.5 points. Relative: \(0.5/4.0 = 12.5\%\).</div>
 </div>
 
-<h3>2 · Statistically significant vs. worth it</h3>
+<h3>2 · Statistically significant vs. worth it <span class="muted small">(beyond the reading)</span></h3>
 <p>Before a test, decide the <strong>smallest effect worth acting on</strong>: the lift that would pay for building and maintaining the change. Bruce, Bruce &amp; Gedeck call this the effect size you "hope to be able to detect", and it's what power is computed for.<cite class="ref"><a href="#s2">2</a></cite> Say it's 0.5 points for the checkout page. Then "significant" (detectably not zero) and "worth it" (at least 0.5) are separate questions.</p>
 <div class="quiz" data-type="categorize" data-id="sig-vs-worth" data-buckets="Significant and worth it|Significant, too small|Not significant"
   data-items="Lift 0.05 points, p = 0.0003, 5 million users>Significant, too small|Lift 1.2 points, p = 0.001>Significant and worth it|Lift 0.9 points, p = 0.31, 400 users>Not significant">
@@ -70,10 +73,12 @@
   <div class="explain" hidden>The 0.05-point lift is real but irrelevant. The 0.9-point lift might be worth it, but 400 users can't tell it apart from noise: not significant isn't the same as "no effect".</div>
 </div>
 
-<h3>3 · The confidence interval: size and uncertainty together</h3>
+<h3>3 · The confidence interval: size and uncertainty together <span class="muted small">(from the reading: §9.1, applied)</span></h3>
 <p>A <strong>95% confidence interval</strong> is the estimate plus or minus about two standard errors:</p>
 $$\text{estimate} \pm 1.96 \times \text{SE}$$
-<p>For the A/B test: estimate 0.6 points, SE 0.29 points, so</p>
+<p>For the A/B test the estimate is the observed difference, 0.6 points. Where the SE comes from: a conversion rate is an average of 0/1 outcomes, so its variance is fixed by the rate itself, \(p(1-p)/n\): no separate sample SD is needed. The difference of two independent rates adds the variances:</p>
+$$\text{SE} = \sqrt{\frac{0.050 \times 0.950}{12000} + \frac{0.056 \times 0.944}{12000}} = 0.00289 = 0.29 \text{ points}$$
+<p>so</p>
 $$0.6 \pm 1.96 \times 0.29 \;\Rightarrow\; [\,0.03,\ 1.17\,] \text{ points}$$
 <p>One line tells you three things:</p>
 <ul>
@@ -82,7 +87,7 @@ $$0.6 \pm 1.96 \times 0.29 \;\Rightarrow\; [\,0.03,\ 1.17\,] \text{ points}$$
   <li><strong>Significance:</strong> 0 is just outside, which matches \(p = 0.038 &lt; 0.05\). A 95% interval excludes 0 exactly when a two-sided test at \(\alpha = 0.05\) rejects (normal-approximation version).</li>
 </ul>
 
-<h3>4 · What the "95%" means</h3>
+<h3>4 · What the "95%" means <span class="muted small">(from the reading: Definition 9.1.4)</span></h3>
 <p>This is the pretest question you missed. The true lift is a fixed number we don't know. The interval is what changes from sample to sample: "the interval is the random quantity, not the parameter" (Casella &amp; Berger, p. 418).<cite class="ref"><a href="#s1">1</a></cite> So "95%" describes the <em>procedure</em>: build intervals this way over and over, and about 95% of them will contain the true value. Run this simulation a few times (each run builds 100 intervals for a mean whose true value is 10):</p>
 <div class="lp-py"><pre class="code">import random, math
 
@@ -97,16 +102,16 @@ for i in range(100):
 print(covered, "of 100 intervals contain the true mean")</pre></div>
 <p class="small muted">Expect numbers in the low-to-high 90s, averaging 95. Any single interval either contains 10 or doesn't; the 95% is the hit rate of the method.</p>
 
-<h3>5 · Using an interval to decide</h3>
+<h3>5 · Using an interval to decide <span class="muted small">(beyond the reading)</span></h3>
 <p>Compare the whole interval with the smallest effect worth acting on (0.5 points):</p>
 <div class="quiz" data-type="categorize" data-id="ci-decide" data-buckets="Ship it|Real but too small|Need more data"
-  data-items="[0.7, 1.3] points>Ship it|[0.02, 0.15] points>Real but too small|[−0.4, 1.6] points>Need more data|[0.03, 1.17] points (our test)>Need more data">
-  <p class="prompt">Sort each 95% interval for the lift.</p>
+  data-items="[0.7, 1.3] points>Ship it|[0.02, 0.15] points>Real but too small|[−0.4, 1.6] points>Need more data|[0.03, 1.17] points (the A/B test above)>Need more data">
+  <p class="prompt">Smallest lift worth acting on: 0.5 points. Sort each 95% interval for the lift.</p>
   <div class="explain" hidden>Ship it: every plausible value clears 0.5. Too small: real (excludes 0) but nowhere near 0.5. Need more data: the interval includes values on both sides of 0.5. That's our test: significant, yet still undecided about whether it's worth it.</div>
 </div>
 
 <h3>Practice</h3>
-<div class="quiz" data-type="math" data-id="ci-lower" data-answer="2.0-1.96*0.5" data-tolerance="0.01" data-hint="Lower end = estimate − 1.96 × SE.">
+<div class="quiz" data-type="math" data-id="ci-lower" data-answer="2.0-1.96*0.5" data-tolerance="0.01" data-hint="Lower end = estimate − 1.96 × SE. Type * for ×.">
   <p class="prompt">An estimate is 2.0 with standard error 0.5. What is the lower end of its 95% confidence interval?</p>
   <div class="explain" hidden>\(2.0 - 1.96 \times 0.5 = 1.02\). (Upper end: 2.98.)</div>
 </div>
@@ -116,7 +121,7 @@ print(covered, "of 100 intervals contain the true mean")</pre></div>
   <div class="explain" hidden>The 95% belongs to the method. The first option treats the true lift as random, which is the Bayesian "credible interval" reading, not a confidence interval.</div>
 </div>
 <div class="quiz" data-type="recall" data-id="say-it">
-  <p class="prompt">From memory: one sentence for your PM that gives the effect size and its uncertainty for this A/B test.</p>
+  <p class="prompt">From memory: one sentence for your PM that gives the effect size and its uncertainty for the A/B test (5.0% → 5.6%, 95% CI [0.03, 1.17] points; the bar for shipping is 0.5 points).</p>
   <div class="explain" hidden>"We estimate the new page lifts conversion by about 0.6 percentage points (12% relative), and the data are consistent with anything from almost nothing (0.03) to about 1.2 points, so it's probably helping, but we can't yet say it clears our 0.5-point bar." Avoid: "there's a 95% chance the lift is between 0.03 and 1.17."</div>
 </div>
 

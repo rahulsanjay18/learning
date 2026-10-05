@@ -92,3 +92,32 @@ A coin that lands heads 50.5% of the time (tiny bias).
 Check: simulated 200,000 samples of size 4 from n(0, 1): SD of X̄ = 0.501, coverage of [X̄ − 1, X̄ + 1] = 0.954 (Python).
 Source: Casella & Berger, *Statistical Inference*, 2nd ed., §9.1, Examples 9.1.2–9.1.3, pp. 417–418 (the reading for lesson 3);
 Var(X̄) = σ²/n is their Theorem 5.2.6 (§5.2) [section number from memory: book server was down, re-check].
+
+## 2026-10-05 · Lesson 3: "How do you know the standard error? Don't you need the sample SD? Was it given?"
+**It wasn't given: the lesson just stated "SE 0.29". That was a gap (teaching log entry 16).** For a conversion rate you don't need a
+separate sample SD, because a 0/1 outcome's variance is fixed by its rate.
+
+- Each user converts (1) or not (0): Bernoulli(p), variance p(1 − p). A rate is an average of n of these, so Var(p̂) = p(1 − p)/n.
+  The mean pins down the spread; that's special to 0/1 data (for, say, revenue per user you *would* need the sample SD).
+- The two groups are independent, so the variance of the difference is the sum (you got Var(aX + bY) right on the pretest):
+  SE = √(0.050 × 0.950 / 12,000 + 0.056 × 0.944 / 12,000) = 0.00289 = **0.29 percentage points**.
+- 95% CI: 0.6 ± 1.96 × 0.29 = [0.03, 1.17] points.
+- In `ci-lower` (estimate 2.0, SE 0.5) the SE *was* given.
+
+Check: computed in Python (unpooled SE 0.002892). Formula on the formula sheet; Bernoulli variance: Casella & Berger §3.2.
+
+## 2026-10-05 · "Is lesson 3 based on the reading or an extension of it?"
+**Both, and the lesson didn't say which part was which.** From the reading (C&B §9.1): what an interval estimator is, coverage
+probability, why the interval (not μ) is random: sections 3–4. Beyond the reading (applied, from *Practical Statistics for Data
+Scientists*): effect size, "significant vs. worth it", deciding with an interval: sections 1, 2, 5. The page now labels each section.
+From Chapter 1 on (the cover-to-cover program), lessons are built from the reading; applied extensions will be marked as such.
+
+## 2026-10-05 · Replies to the lesson 3 reading notes
+- **read-gain** ("P(sample mean is exactly a given number) is 0; with an interval we gain some confidence the true mean is in it"):
+  right. The sharper version: the *point estimate* X̄ equals μ with probability 0, while the interval [X̄ − 1, X̄ + 1] covers μ with
+  a **known** probability, .9544. The gain is a number you can state, not just "some confidence". (0.8)
+- **read-coverage** ("the probability that the true parameter is in the interval estimator"): exactly Definition 9.1.4. One addition:
+  it's computed over repeated samples, and it can depend on θ; the confidence coefficient is its worst case (infimum) over θ. (1.0)
+- **read-random** ("the parameter is fixed but unknown; the endpoints are random variables, so the interval is random"): right. The
+  second half of the question was why that matters for phrasing: since μ isn't random, "95%" describes the *method* across samples,
+  not "a 95% chance μ is in this one interval". Once you have the interval [0.03, 1.17], μ is either in it or not. (0.7)
