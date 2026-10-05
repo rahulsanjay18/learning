@@ -55,6 +55,13 @@ Theory lessons always point back to a game you've played.
 1. ~~Games replaces chess?~~ **Yes; chess is the first class** (answered 2026-10-05).
 2. Include **Go** in Stage 1 from the start, or wait until chess has some footing?
 3. **Backgammon** in Stage 2 (a great bridge from perfect information to chance), or straight to poker?
+   *Case for (2026-10-05):* adds one new ingredient (chance) while everything stays visible, before poker adds hidden information;
+   the doubling cube is a clean expected-value decision (take if p ≥ 25% ignoring gammons and cube ownership; "the takepoint in money
+   play is about 22%" per [Wikipedia: Doubling cube](https://en.wikipedia.org/wiki/Doubling_cube)); minimax → expectimax (chance
+   nodes); TD-Gammon (Tesauro, IBM, 1990s: self-play temporal-difference learning, near-expert level,
+   [Wikipedia](https://en.wikipedia.org/wiki/TD-Gammon)) is a precursor of AlphaZero, and it's covered in Sutton & Barto. *Against:* time
+   at half weight, no library book, fewer friends play, and the Pig dice game already teaches expected value.
+   **Suggested:** a 3–4 lesson backgammon unit inside G201 (cube, expectimax, TD-Gammon); grow it into a class only if it sticks.
 
 ## Sources
 - `library/MANIFEST.csv` (titles and grades above).
