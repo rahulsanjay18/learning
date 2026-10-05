@@ -22,6 +22,16 @@ general theory. **Confirmed: Games is the "fun" major and replaces chess; chess 
 - **Then the general theory:** combinatorial game theory, classical game theory, game-playing AI, and a capstone.
 - Half weight (2 blocks a week): this is a multi-year major, played and enjoyed as you go, not a race.
 
+## The running project: your 3D chess variant
+Not saved for the end. It starts early and grows with each class:
+| When | Project step |
+|---|---|
+| After G101 basics | **v0 on paper:** board geometry and size, how each piece moves in 3D, win condition. Play a few games against yourself. |
+| After G102 | Count it: branching factor and game length (estimate with a quick script). Is it too big to think in? |
+| Each later class | Steal or reject one idea: xiangqi's palace, shogi's drops, Go's komi, the pie rule… Record why in the design notebook. |
+| G504 (game AI) | A rules engine plus an MCTS agent for your variant; self-play to measure first-move advantage and draw rate. |
+| Stage 6 | Playtest with friends, balance from data, iterate: the capstone. |
+
 ## Why this order
 - Small steps from the familiar: xiangqi and shogi descend from the same ancestor as chess (chaturanga, from India), so you learn
   them *by transfer*, and each one changes more than the last (shogi's drops, where captured pieces come back, are the biggest
