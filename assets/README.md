@@ -55,6 +55,10 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
   - Diagram: `<div class="go-board" data-size="9|13|19" data-black="C3 D4" data-white="E5" [data-marks="E5"] [data-labels="D6:a"] [data-view="A1:J8"] [data-coords="false"] data-caption="…"></div>`. `data-view` crops to a corner or side.
   - Problem: `<div class="quiz" data-type="go-move" data-id="…" data-size="9" data-black="…" data-white="…" [data-to-play="W"] data-answer="E4|F3">` for one move, **or** `data-solution="E7 E4 E3"`, a line where the learner's moves alternate with scripted replies. Illegal moves (occupied, suicide, ko) are refused and not scored. A wrong move counts as a miss; "Start over" resets.
   - `node scripts/test_go_rules.js` checks that every problem's line is legal. **Whether it's the best move is your job**: read it out, and use an engine (e.g. KataGo) for anything non-trivial.
+- **Math** (`plugins/math.js` + `plugins/math.css`; KaTeX is vendored and loaded automatically):
+  - Typeset with `\( inline \)`, `$$ display $$` or `\[ display \]` anywhere in the page. **A single `$` is never math**, so prices are safe. Add class `no-math` to skip an element.
+  - Formula answer: `<div class="quiz" data-type="math" data-id="…" data-answer="p(1-p)" [data-forbid="(|)"] [data-tolerance="0.001"]>`. The learner types plain math (`2x^2+3`, `sqrt(2)/2`, `e^(-x)`, `sin(t)^2`, greek names like `theta`) and sees it typeset live. Any form equal at random sample points is accepted. `data-forbid` rejects listed substrings (e.g. `(|)` forces an expanded form) without scoring the attempt. `data-tolerance` is an absolute tolerance for numeric answers.
+  - `node scripts/test_math.js` checks that every math quiz's answer parses.
 - **Pixel art** (`plugins/pixels.js` + `plugins/pixels.css`): `.px` pictures and `.px-draw` drills. Usage is in the header comment of `plugins/pixels.js`.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
@@ -68,6 +72,7 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 ```sh
 python3 scripts/lint_lessons.py          # structure, answers, links, equal-length options
 node scripts/test_widgets.mjs            # opens every page in headless Chromium and drives the gallery
+node scripts/test_math.js                # math parser/equivalence + every math answer parses
 node scripts/test_go_rules.js            # Go rules + every go-move problem's line is legal
 node scripts/test_sync_e2e.mjs           # lesson page -> progress server round trip (needs fastapi + uvicorn)
 ```

@@ -28,6 +28,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
   Plan so a day's work fits in that hour (short lessons + review, not one long one), and offer more when I have more time.
 - Active topics (keep ~3 + a game): **Economics, Statistics** (start with a placement pretest; I have a math degree that included stats),
   **Indian History**, plus chess or Go on the side. Full wishlist: `notes/learning-wishlist.md`.
+- Two kinds of goals: **career** (Statistics, ML/AI, AWS ML-track certification, NASM-CPT exam) and **"good for the soul"**
+  (Indian History, Economics, games, arts...). Keep both in each week; exam prep is deadline-driven, so ask me for exam dates.
+  I can supply study materials (prep books, practice exams) for the certifications.
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
 
 ## Progress server (once deployed: `$BOOKS_URL/progress`, see `progress-server/README.md`)
@@ -38,7 +41,7 @@ BOOKS_URL=https://books.tail59e10.ts.net
 
 ## Shared lesson library (overrides the skill's per-topic `./assets/` guidance)
 - All lessons and reference pages use the shared files in `assets/` at the repo root: `lp.css`, `lp.js`, and `assets/plugins/*` for
-  subject-specific widgets (chess, Go, pixel art). Before writing a lesson, read `assets/README.md` (markup for every widget). Don't read the JS source.
+  subject-specific widgets (math, chess, Go, pixel art). Before writing a lesson, read `assets/README.md` (markup for every widget). Don't read the JS source.
 - Never create a per-topic copy of a stylesheet or quiz script. Topic-only styles go in `topics/<slug>/assets/topic.css`.
   A widget another topic could reuse goes in `assets/` (generic) or `assets/plugins/` (subject-specific), and gets an example in `assets/gallery.html`.
 - Keep CSS plain and quiet (one column, serif text, thin rules; no shadows, gradients or animation).

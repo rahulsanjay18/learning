@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="lp.css">
 <link rel="stylesheet" href="plugins/chess.css">
 <link rel="stylesheet" href="plugins/go.css">
+<link rel="stylesheet" href="plugins/math.css">
 </head>
 <body>
 <main>
@@ -78,6 +79,18 @@
 <h2>Video</h2>
 <div class="lp-video" data-youtube="kCc8FmEb1nY" data-start="0" data-caption="Andrej Karpathy, “Let's build GPT: from scratch, in code, spelled out.”"></div>
 
+<h2>Math plugin</h2>
+<p>Inline math like \(\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i\) sits in a sentence; a price like $5 stays a price. Display math:</p>
+$$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
+<div class="quiz" data-type="math" data-id="math-expand" data-answer="2x^2 + 2x" data-forbid="(|)" data-hint="Multiply 2x into each term.">
+  <p class="prompt">Expand \(2x(x+1)\).</p>
+  <div class="explain" hidden>\(2x \cdot x + 2x \cdot 1 = 2x^2 + 2x\).</div>
+</div>
+<div class="quiz" data-type="math" data-id="math-bernoulli" data-answer="p(1-p)" data-hint="Use Var(X) = E[X²] − (E[X])², and X² = X for a 0/1 variable.">
+  <p class="prompt">\(X\) is 1 with probability \(p\) and 0 otherwise. What is \(\operatorname{Var}(X)\) in terms of \(p\)?</p>
+  <div class="explain" hidden>\(E[X^2] - (E[X])^2 = p - p^2 = p(1-p)\). Any equivalent form is accepted.</div>
+</div>
+
 <h2>Chess plugin</h2>
 <div class="board-wrap" data-fen="6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1" data-arrows="d1-d8" data-caption="Static diagram with an arrow"></div>
 <div class="quiz" data-type="chess-move" data-id="chess-move" data-fen="6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1" data-answer="d1d8|Rd8#" data-hint="Look at Black's back rank.">
@@ -100,5 +113,6 @@
 <script src="lp.js"></script>
 <script src="plugins/chess.js"></script>
 <script src="plugins/go.js"></script>
+<script src="plugins/math.js"></script>
 </body>
 </html>

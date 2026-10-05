@@ -129,14 +129,26 @@ await goClick("go-drive", "E3"); await expectOk("go-drive");
 if (await page.locator(`${q("go-drive")} .go-stone.w`).count() !== 0) fail("gallery: go line did not capture");
 if (await page.locator(".go-board[data-size]:not(.quiz) svg").count() !== 2) fail("gallery: go diagrams missing");
 
+// math: KaTeX typesets the page; a forbidden form is refused without scoring; an equivalent form is accepted
+await page.waitForSelector(".katex", { timeout: 5000 }).catch(() => {});
+if ((await page.locator("main .katex").count()) < 4) fail("gallery: KaTeX did not typeset the page");
+if (!(await page.locator("p", { hasText: "a price like $5 stays a price" }).count())) fail("gallery: single $ was treated as math");
+await page.fill(`${q("math-expand")} input`, "2x(x+1)");
+await page.click(`${q("math-expand")} button`);
+if (!/asked-for form/.test(await page.locator(`${q("math-expand")} > .feedback`).textContent())) fail("gallery: math forbid not enforced");
+await page.fill(`${q("math-expand")} input`, "2x^2+2x");
+if (!(await page.locator(`${q("math-expand")} .math-preview .katex`).count())) fail("gallery: math live preview missing");
+await page.click(`${q("math-expand")} button`); await expectOk("math-expand");
+await page.fill(`${q("math-bernoulli")} input`, "p - p^2"); await page.click(`${q("math-bernoulli")} button`); await expectOk("math-bernoulli");
+
 const bar = await page.locator(".scorebar").textContent();
-const expected = "12 / 12 answered · 9 right first try"; // choice and go-drive missed first; free is ungraded
+const expected = "14 / 14 answered · 11 right first try"; // choice and go-drive missed first; free is ungraded
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== 12) fail(`gallery: expected 12 logged attempts, got ${attempts.length}`);
+if (attempts.length !== 14) fail(`gallery: expected 14 logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());

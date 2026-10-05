@@ -90,6 +90,8 @@ def lint(path):
             errors.append(f"{where}: no [[blanks]] found")
         elif t == "chess-move" and not (a.get("data-fen") and a.get("data-answer")):
             errors.append(f"{where}: needs data-fen and data-answer")
+        elif t == "math" and not a.get("data-answer"):
+            errors.append(f"{where}: needs data-answer")
         elif t == "go-move" and not (a.get("data-size") and (a.get("data-answer") or a.get("data-solution"))):
             errors.append(f"{where}: needs data-size and data-answer or data-solution")
 

@@ -1,0 +1,6 @@
+/* Math plugin styles (assets/plugins/math.js). Load after assets/lp.css. KaTeX's own CSS is loaded by math.js. */
+.quiz input.math-input { width: min(100%, 18rem); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .9rem; }
+.math-preview { min-height: 1.8rem; margin-top: .5rem; color: var(--fg); overflow-x: auto; }
+.math-preview.err { color: var(--muted); font-size: .85rem; font-style: italic; }
+.katex { font-size: 1.05em; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: .2rem 0; }
