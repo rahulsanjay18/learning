@@ -30,3 +30,6 @@
   Every lesson gets one proof task (free response, graded with a rubric). Solutions manual in collection: grade B, id 787c6e8c5c.
 - 2026-10-05: lesson 3 not done yet (learner asked for the link). Lesson 4 not built: wait for lesson 3 results. Its reading:
   C&B §8.3.1 pp. 382–385 (Def. 8.3.1 to Example 8.3.4); flag that C&B's β(θ) is power, not the Type II rate.
+- 2026-10-05: **chapter pretests** (learner's request): before each chapter, one item per section per skill (concept, calculation,
+  proof); each section's lesson teaches only the missing skills, or is skipped. Mapping table in PROGRAM.md §2. Record each
+  chapter's resulting plan here after its pretest.

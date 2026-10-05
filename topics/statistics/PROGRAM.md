@@ -8,9 +8,11 @@ subject: 4 blocks of 25 minutes a week (`notes/study-plan.md`).*
 - **First,** finish the A/B-testing arc already under way (S150: 2 more lessons, power and multiple testing). **Then** Chapter 1, page 1.
 - **One lesson = 2 blocks:** block 1 reads ~7 pages with a reading guide; block 2 is the lesson page: idea → worked example →
   practice → **one proof you write**. About 2 lessons a week.
-- **Size:** ~450 pages of text → ~66 lessons + 12 chapter checks ≈ **36 weeks (about 9 months)** at 4 blocks a week. Extra time
-  (after the day's plan is done) shortens it.
+- **Size:** ~450 pages of text → at most ~66 lessons + 12 pretests + 12 chapter checks ≈ **40 weeks** (132 + 14 + 12 = 158 blocks) at 4 blocks a week if you
+  knew nothing. Pretest skips will cut that, probably by a lot in Ch. 1–4. Extra time (after the day's plan is done) also shortens it.
 - **Proofs:** every lesson has one proof task, graded by me with a rubric. Exercises from the book are optional homework (rule 13).
+- **A pretest before every chapter.** It scores each section on three separate skills (**concept, calculation, proof**), and each
+  section's lesson teaches only what's missing, or is skipped entirely if you know all three (section 2 below).
 
 ---
 
@@ -35,12 +37,39 @@ Page ranges are the chapters' text, without exercises and miscellanea, from the 
 | S402 ANOVA and regression | Ch. 11 | 521–563 | 6 | One-way ANOVA, simple linear regression, prediction and confidence bands |
 | S403 Regression models | Ch. 12 | 577–602 | 4 | Errors in variables, logistic regression, robust regression |
 
-Total after S150: ~66 lessons. Each chapter ends with a **chapter check** (one block).
+Total after S150: **up to** ~66 lessons. Each chapter starts with a **pretest** and ends with a **chapter check** (one block each).
+Skipped and shortened sections bring the real number down; expect the biggest savings in Ch. 1–4.
 
 **After Casella & Berger** (electives, for the parts of the mission the book doesn't cover; sources still to choose, see RESOURCES.md Gaps):
 causal inference (the confounder → remedy gap in record 0004), Bayesian data analysis, and statistical learning (ISL) as the bridge to ML.
 
-## 2. One lesson (2 blocks)
+## 2. Chapter pretest: test out of what you already know
+Before each chapter (one block; two for the long chapters 4–5), a pretest asks **three questions per section**, one per skill:
+
+| Skill | What it checks | Item type (recall, not recognition: rule 8) |
+|---|---|---|
+| **Concept** | What it means, when it applies, why it's true in one sentence | short typed answer, sorting, or a "which is true and why" free box |
+| **Calculation** | Can you compute with it | a number or formula answer (accepts expressions) |
+| **Proof** | Can you prove the section's key result | a proof sketch (3–6 lines, free box, I grade it), sometimes "put the proof steps in order" |
+
+- Every item has an **I don't know** button. Pressing it counts as not known, which is the honest answer, not a failure. If you
+  guessed and got it right, say so in the note box and I'll count it as not known.
+- Item ids encode the section and skill (`c3-s2-calc`), so the results line maps straight onto this table.
+
+**What each section gets, from its three results:**
+
+| Concept | Calculation | Proof | That section's lesson |
+|---|---|---|---|
+| ✓ | ✓ | ✓ | **Skip it.** Its pretest items go into the daily review, and the chapter check confirms it later |
+| ✓ | ✓ | ✗ | **Proof lesson:** read only the proofs, then write them (1 block) |
+| ✓ | ✗ | ✗ | **Calculation + proofs:** worked examples, practice, then a proof |
+| ✗ | any | any | **Full lesson** (block 1 reading, block 2 the page) |
+| other mixes | | | Teach the missing skills only; e.g. calculation without the concept gets a short concept section, then proofs |
+
+Neighbouring short lessons can share a block. The plan for each chapter (which sections are skipped, short or full) goes in NOTES.md
+after its pretest, so you can see it.
+
+## 3. One lesson (2 blocks, or 1 for a short one)
 **Block 1: reading (~25 min).** About 7 pages of Casella & Berger, with a reading guide: 3 questions + "what surprised or confused you"
 as note boxes at the top of the lesson page (rule 12). The book says it plainly in its preface: "perhaps, the only way to master this
 material is through practice" [1], so read with paper and pencil.
@@ -55,25 +84,26 @@ material is through practice" [1], so read with paper and pencil.
      (correct claim, every step justified, no hidden assumptions) and reply.
 5. Optional homework: one book exercise, clearly marked optional. No later lesson depends on it.
 
-## 3. Every chapter
-- **Chapter check (1 block):** recall-heavy questions plus one proof, across the whole chapter.
+## 4. Every chapter
+- **Chapter check (1 block):** recall-heavy questions plus one proof, across the whole chapter, **including skipped sections**
+  (so a skip based on one lucky answer gets caught).
 - **Reference sheet:** each chapter adds to `reference/formulas.html` (results) and a new **theorem sheet** (statement, conditions,
   proof idea in one line).
 - **Glossary:** starts with S201. Once it exists, every lesson uses its terms (sufficient, complete, ancillary, size vs. level…).
 
-## 4. Checking proofs
+## 5. Checking proofs
 - I check every proof myself against the book's text (grade A) and with code where it helps (sympy for algebra, simulation for a
   distributional claim).
 - The *Solutions* manual for Casella & Berger is in the collection (grade B, id `787c6e8c5c`): I can use its prose to cross-check
   an argument, but never copy its equations. For exercises it covers, compare with your own copy after you've written yours.
 
-## 5. Notation warnings (things that will trip you up)
+## 6. Notation warnings (things that will trip you up)
 - In §8.3.1 Casella & Berger write the **power function** as \(\beta(\theta) = P_\theta(X \in R)\) [1, p. 383]. Many applied texts
   (and lesson 0002) use \(\beta\) for the **Type II error rate**, so power = \(1-\beta\). Same letter, opposite meaning: lessons will
   flag it each time.
 - Casella & Berger use "size" and "level" for different things (Definitions 8.3.5–8.3.6) [1, p. 385].
 
-## 6. Mission link
+## 7. Mission link
 - *A/B test end to end* → S150, then Ch. 8–9 and 11.
 - *Read p-values and CIs correctly* → S150, Ch. 8–9.
 - *Fit, interpret and critique a regression* → Ch. 11–12, then the causal-inference elective.
@@ -82,5 +112,5 @@ material is through practice" [1], so read with paper and pencil.
 ## Sources
 1. George Casella & Roger L. Berger, *Statistical Inference*, 2nd ed. (Duxbury, 2002): contents pages (pp. xiii–xvii) for the chapter
    and page ranges; preface quote; §8.3.1 pp. 382–385 for the notation notes. In collection (grade A, id `f9dc4d1d4c`), read on the book server.
-2. `notes/study-plan.md` (4 blocks a week for a full-weight subject); `TEACHING-LOG.md` rules 4, 7, 8, 12, 13.
+2. Learner's request, 2026-10-05: pretest each chapter, scored separately on concept, calculation and proof. `notes/study-plan.md` (4 blocks a week for a full-weight subject); `TEACHING-LOG.md` rules 4, 7, 8, 12, 13.
 3. *Solutions-Casella-Berger*, in collection (grade B, id `787c6e8c5c`), per `library/MANIFEST.csv`.
