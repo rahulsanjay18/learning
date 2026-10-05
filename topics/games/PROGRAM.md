@@ -33,7 +33,7 @@ general theory. Proposed as the "fun" major, with chess becoming its ongoing lab
 | 2 | **G210 Poker** | hand odds and pot odds; ranges; bluffing and balance; game-theory-optimal (GTO) vs. exploitative play | *Elements of Poker* (A); Acevedo, *Modern Poker Theory* (B) |
 | 3 | **G301 Combinatorial game theory** | Sprague–Grundy values; sums of games; games as numbers | *Winning Ways* vols. 1–3 |
 | 3 | **G310 Game theory** | strategic and extensive form; Nash equilibrium; von Neumann's minimax theorem; mixed strategies; backward induction | Binmore, *Game Theory* VSI (A); *Game Theory 101: The Rationality of War* (B; links to military strategy) |
-| 3 | **G320 Game-playing AI** | minimax + alpha-beta; Monte Carlo tree search (MCTS); counterfactual regret minimization (CFR) for poker; self-play reinforcement learning | Russell & Norvig, *AIMA* (B, adversarial search); Sutton & Barto (gap) |
+| 3 | **G320 Game-playing AI** | minimax + alpha-beta; Monte Carlo tree search (MCTS); counterfactual regret minimization (CFR) for poker; self-play reinforcement learning | Russell & Norvig, *AIMA* (B, adversarial search); Sutton & Barto, *Reinforcement Learning: An Introduction*, 2nd ed. (free PDF from the authors: http://incompleteideas.net/book/the-book-2nd.html) |
 | — | **Capstone** | build and analyse an agent for a small game, or a deep analysis of your own games | — |
 
 ## What a lesson looks like
@@ -50,7 +50,6 @@ Theory lessons always point back to a game you've played.
 - A real **game theory textbook** beyond the Very Short Introduction (e.g. an undergraduate text such as Osborne's or Maschler, Solan &
   Zamir's; check availability before choosing).
 - **Backgammon** (none in the collection) if we include it in Stage 2.
-- **Sutton & Barto**, *Reinforcement Learning: An Introduction* (not on the book server).
 
 ## Questions for you
 1. Does Games **replace chess as the fun major** (chess becomes the lab inside it)? That's my suggestion.
