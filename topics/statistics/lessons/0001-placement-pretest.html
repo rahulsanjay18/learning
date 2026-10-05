@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Statistics placement pretest</title>
+<link rel="stylesheet" href="../../../assets/lp.css">
+<link rel="stylesheet" href="../../../assets/plugins/math.css">
+</head>
+<body>
+<main data-skip="true">
+<nav class="crumbs"><a href="../../../index.html">All topics</a> · Statistics · Lesson 1</nav>
+<h1>Placement pretest</h1>
+<p class="subtitle">21 questions, about 25 minutes. This finds where to start; it isn't graded.</p>
+
+<div class="callout">
+<p><strong>How to take it:</strong> from memory, no looking things up. If you don't know, press <em>I don't know</em> instead of guessing. A skip tells me more than a lucky guess.</p>
+<p>Formula answers take plain math: <code>2x^2 + 3</code>, <code>1/p</code>, <code>e^-2</code>, <code>sqrt(2)/2</code>. You'll see it typeset as you type, and any equivalent form counts.</p>
+<p>At the end, press <strong>Copy my results</strong> and paste the line to me.</p>
+</div>
+
+<h2>1 · Probability</h2>
+<div class="quiz" data-type="math" data-id="prob-bayes" data-answer="0.009/(0.009+0.0495)" data-tolerance="0.005">
+  <p class="prompt">A disease affects 1% of people. A test catches 90% of cases and gives a false positive for 5% of healthy people. You test positive. What's the probability you have the disease? (A number; 2 decimals is fine.)</p>
+  <div class="explain" hidden>Bayes: \(P(D\mid +) = \frac{0.01 \cdot 0.9}{0.01 \cdot 0.9 + 0.99 \cdot 0.05} = \frac{0.009}{0.0585} \approx 0.154\). Most positives come from the large healthy group.</div>
+</div>
+<div class="quiz" data-type="choice" data-id="prob-union" data-answer="0.65" data-options="0.80|0.65|0.15|0.50">
+  <p class="prompt">\(A\) and \(B\) are independent, \(P(A)=0.3\), \(P(B)=0.5\). What is \(P(A \cup B)\)?</p>
+  <div class="explain" hidden>\(P(A)+P(B)-P(A)P(B) = 0.3+0.5-0.15 = 0.65\).</div>
+</div>
+
+<h2>2 · Random variables</h2>
+<div class="quiz" data-type="number" data-id="rv-var" data-answer="25">
+  <p class="prompt">\(X\) and \(Y\) are independent with \(\operatorname{Var}(X)=4\) and \(\operatorname{Var}(Y)=9\). What is \(\operatorname{Var}(2X - Y)\)?</p>
+  <div class="explain" hidden>\(\operatorname{Var}(aX+bY) = a^2\operatorname{Var}(X) + b^2\operatorname{Var}(Y)\) for independent variables: \(4 \cdot 4 + 1 \cdot 9 = 25\). The minus sign doesn't reduce variance.</div>
+</div>
+<div class="quiz" data-type="math" data-id="rv-geom" data-answer="1/p">
+  <p class="prompt">You repeat independent trials, each succeeding with probability \(p\), until the first success. What is the expected number of trials (in terms of \(p\))?</p>
+  <div class="explain" hidden>Geometric distribution: \(E[N] = \sum_{k\ge1} k(1-p)^{k-1}p = 1/p\). With \(p=0.25\) you expect 4 tries.</div>
+</div>
+
+<h2>3 · Distributions</h2>
+<div class="quiz" data-type="math" data-id="dist-poisson" data-answer="e^-2" data-tolerance="0.002">
+  <p class="prompt">Server errors arrive as a Poisson process averaging 2 per hour. What's the probability of zero errors in a given hour? (Exact form or a decimal.)</p>
+  <div class="explain" hidden>\(P(X=0) = \frac{\lambda^0 e^{-\lambda}}{0!} = e^{-2} \approx 0.135\).</div>
+</div>
+<div class="quiz" data-type="choice" data-id="dist-2sd" data-answer="95%" data-options="68%|95%|99.7%|90%">
+  <p class="prompt">Roughly what share of a normal distribution lies within 2 standard deviations of the mean?</p>
+  <div class="explain" hidden>About 95% (more precisely 95.4%). The 68–95–99.7 rule covers 1, 2 and 3 SDs.</div>
+</div>
+<div class="quiz" data-type="choice" data-id="dist-memoryless" data-answer="Exponential" data-options="Normal|Uniform|Exponential|Lognormal">
+  <p class="prompt">Which continuous distribution is <em>memoryless</em>: having waited \(t\) already doesn't change how much longer you expect to wait?</p>
+  <div class="explain" hidden>Exponential: \(P(T > s+t \mid T > s) = P(T > t)\). It's the continuous counterpart of the geometric distribution.</div>
+</div>
+
+<h2>4 · Sampling and the CLT</h2>
+<div class="quiz" data-type="number" data-id="clt-se" data-answer="1.5" data-tolerance="0.01">
+  <p class="prompt">You average 100 independent measurements, each with standard deviation 15. What is the standard deviation of the average?</p>
+  <div class="explain" hidden>Standard error \(= \sigma/\sqrt{n} = 15/10 = 1.5\).</div>
+</div>
+<div class="quiz" data-type="choice" data-id="clt-what" data-answer="sample mean" data-options="raw data|sample mean|population values|sample maximum">
+  <p class="prompt">For large \(n\), the Central Limit Theorem says which of these is approximately normal (for most well-behaved populations)?</p>
+  <div class="explain" hidden>The sampling distribution of the sample mean. The raw data keep whatever shape the population has.</div>
+</div>
+
+<h2>5 · Estimation</h2>
+<div class="quiz" data-type="choice" data-id="est-nminus1" data-answer="Makes it unbiased" data-options="Makes it consistent|Makes it unbiased|Reduces its variance|Makes it robust">
+  <p class="prompt">Why divide by \(n-1\) instead of \(n\) in the sample variance \(s^2\)?</p>
+  <div class="explain" hidden>With \(n-1\), \(E[s^2] = \sigma^2\). Using \(\bar x\) instead of the true mean makes the squared deviations too small on average, and \(n-1\) corrects that. (Both versions are consistent.)</div>
+</div>
+<div class="quiz" data-type="math" data-id="est-mle" data-answer="k/n">
+  <p class="prompt">You see \(k\) successes in \(n\) independent Bernoulli(\(p\)) trials. What is the maximum likelihood estimate of \(p\)?</p>
+  <div class="explain" hidden>Maximize \(\ell(p) = k\ln p + (n-k)\ln(1-p)\): \(\frac{k}{p} - \frac{n-k}{1-p} = 0 \Rightarrow \hat p = k/n\).</div>
+</div>
+<div class="quiz" data-type="choice" data-id="est-ci" data-answer="95% of intervals built this way would contain the true mean"
+  data-options="There is a 95% probability the true mean lies inside it|95% of intervals built this way would contain the true mean|95% of the individual sample data points fall inside this interval|The sample mean will land in it 95% of the time">
+  <p class="prompt">A study reports a 95% confidence interval for a mean. Which reading is correct?</p>
+  <div class="explain" hidden>Confidence is a property of the procedure: across repeated samples, 95% of the intervals it produces cover the true mean. Any one interval either contains it or not. The "95% probability" reading needs a Bayesian credible interval.</div>
+</div>
+
+<h2>6 · Hypothesis testing</h2>
+<div class="quiz" data-type="choice" data-id="ht-pvalue" data-answer="Probability of data this extreme if the null were true"
+  data-options="Probability that the null hypothesis is true given the data|Probability of data this extreme if the null were true|Probability that the alternative hypothesis is true given the data|Probability of making a mistake by rejecting the null hypothesis">
+  <p class="prompt">What is a p-value?</p>
+  <div class="explain" hidden>\(P(\text{test statistic at least this extreme} \mid H_0)\). It is not \(P(H_0 \mid \text{data})\): that needs a prior.</div>
+</div>
+<div class="quiz" data-type="choice" data-id="ht-power" data-answer="One minus Type II rate" data-options="One minus Type I rate|Equal to Type I rate|One minus Type II rate|Equal to Type II rate">
+  <p class="prompt">The <em>power</em> of a test is…</p>
+  <div class="explain" hidden>Power \(= P(\text{reject } H_0 \mid H_0 \text{ false}) = 1 - \beta\), where \(\beta\) is the Type II (missed effect) rate.</div>
+</div>
+<div class="quiz" data-type="math" data-id="ht-multiple" data-answer="1-0.95^20" data-tolerance="0.01">
+  <p class="prompt">You run 20 independent tests at \(\alpha = 0.05\) and every null is true. What's the probability of at least one false positive? (Exact form or a decimal.)</p>
+  <div class="explain" hidden>\(1 - 0.95^{20} \approx 0.64\). This is why multiple-comparison corrections (Bonferroni, Holm, FDR) exist.</div>
+</div>
+
+<h2>7 · Regression</h2>
+<div class="quiz" data-type="number" data-id="reg-slope" data-answer="3" data-tolerance="0.01">
+  <p class="prompt">In simple linear regression of \(y\) on \(x\): correlation \(r = 0.6\), \(s_y = 10\), \(s_x = 2\). What is the least-squares slope?</p>
+  <div class="explain" hidden>\(\hat\beta_1 = r \, s_y / s_x = 0.6 \cdot 10 / 2 = 3\).</div>
+</div>
+<div class="quiz" data-type="number" data-id="reg-r2" data-answer="0.36" data-tolerance="0.005">
+  <p class="prompt">Same regression. What is \(R^2\)?</p>
+  <div class="explain" hidden>In simple regression \(R^2 = r^2 = 0.36\): 36% of the variance in \(y\) is explained by the line.</div>
+</div>
+<div class="quiz" data-type="free" data-id="reg-causal">
+  <p class="prompt">Across months, ice-cream sales and drownings are strongly correlated. In two or three sentences: why can't you conclude ice cream causes drowning, and what would you check or do to get at causation?</p>
+  <div class="rubric">Full credit: names a confounder (heat/summer → more swimming and more ice cream); proposes controlling for it (stratify/regress on temperature or season) or, ideally, a randomized experiment / natural experiment. Partial: says "correlation isn't causation" without a mechanism or a remedy.</div>
+  <div class="explain" hidden>Warm weather drives both: more people swim (more drownings) and more people buy ice cream. Adjust for temperature or season, or use a design that breaks the confounding (randomization, a natural experiment).</div>
+</div>
+
+<h2>8 · Bayesian basics</h2>
+<div class="quiz" data-type="math" data-id="bayes-beta" data-answer="2/3" data-tolerance="0.005">
+  <p class="prompt">Prior on a success rate: \(\text{Beta}(1,1)\) (uniform). You observe 7 successes in 10 trials. What is the posterior mean?</p>
+  <div class="explain" hidden>Beta–binomial conjugacy: posterior \(\text{Beta}(1+7,\ 1+3)\), mean \(\frac{8}{12} = \frac23\). The prior acts like one extra success and one extra failure.</div>
+</div>
+
+<h2>9 · Statistics for ML and experiments</h2>
+<div class="quiz" data-type="choice" data-id="ml-biasvar" data-answer="Lowers bias and raises variance" data-options="Raises bias and lowers variance|Lowers both bias and variance|Lowers bias and raises variance|Raises both bias and variance">
+  <p class="prompt">Making a model more flexible (more parameters, less regularization) typically…</p>
+  <div class="explain" hidden>More flexibility fits the training data more closely (lower bias) but makes the fit swing more from sample to sample (higher variance). The best test error sits in between.</div>
+</div>
+<div class="quiz" data-type="choice" data-id="design-random" data-answer="Balances confounders across groups on average" data-options="Makes the two groups exactly identical|Balances confounders across groups on average|Increases the effective sample size available|Removes the need for control groups">
+  <p class="prompt">What does random assignment buy you in an experiment (e.g., an A/B test)?</p>
+  <div class="explain" hidden>Randomization makes treatment independent of every pre-existing factor, measured or not, so on average the groups differ only by treatment. That's what licenses a causal reading.</div>
+</div>
+
+<h2>Done</h2>
+<p>Press <strong>Copy my results</strong> below and paste the line to me. I'll turn it into a starting point: what to skip, what to refresh, and what to learn new. Questions about any item? Ask me; I'm your teacher for this, and nothing is too basic to ask.</p>
+<p><strong>Primary source for this course:</strong> Casella &amp; Berger, <em>Statistical Inference</em> (2nd ed.), in your collection. Read it alongside lessons for the rigorous version; we'll pick sections once we know your starting point.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>George Casella &amp; Roger L. Berger, <em>Statistical Inference</em>, 2nd ed. (Duxbury, 2002; ISBN 0-534-24312-6). In collection. Probability, distributions, estimation, testing, intervals.</li>
+  <li>Peter Bruce, Andrew Bruce &amp; Peter Gedeck, <em>Practical Statistics for Data Scientists</em>. In collection. A/B testing, multiple testing, regression, bias–variance.</li>
+  <li><a href="https://openstax.org/details/books/introductory-statistics-2e">OpenStax, <em>Introductory Statistics 2e</em></a>. Empirical rule, standard error, confidence-interval interpretation.</li>
+  <li><a href="https://seeing-theory.brown.edu/">Seeing Theory (Brown University)</a>. Visual Bayes' rule, CLT and Bayesian updating.</li>
+  <li>Every numeric answer on this page was checked with a short Python computation before publishing.</li>
+</ol>
+</main>
+<script src="../../../assets/lp.js"></script>
+<script src="../../../assets/plugins/math.js"></script>
+</body>
+</html>

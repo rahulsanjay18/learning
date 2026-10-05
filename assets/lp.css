@@ -121,6 +121,11 @@ table.matrix td span { font-size: .85rem; color: var(--muted); }
 .quiz .lp-rows button { min-width: 0; padding: .2rem .6rem; font-size: .85rem; }
 .quiz .lp-rows button.on { border-color: var(--accent); background: var(--sel); }
 
+/* "I don't know" (pretests) */
+.quiz .skiprow { margin-top: .5rem; }
+.quiz button.skip { min-width: 0; padding: .2rem .7rem; font-size: .8rem; color: var(--muted); background: transparent; }
+.quiz.skipped .prompt { color: var(--muted); }
+
 /* checklist */
 .lp-check { list-style: none; padding: 0; margin: 0; }
 .lp-check li { display: flex; gap: .6rem; align-items: baseline; padding: .3rem 0; }

@@ -6,7 +6,7 @@
   var LP = window.LP = window.LP || {};
   var regs = [], started = false;
   var total = 0, answered = 0, firstTryRight = 0, bar = null;
-  var missed = [], freeAnswers = [];
+  var missed = [], skipped = [], freeAnswers = [];
 
   // ---------- page identity + item IDs ----------
   var m = location.pathname.match(/\/topics\/([^\/]+)\/(lessons|reference)\/([^\/]+?)(\.html)?$/);
@@ -73,7 +73,8 @@
         if (done) return; done = true;
         answered++;
         if (ok === true) firstTryRight++;
-        if (ok === false) missed.push(id.replace(/^.*#/, ""));
+        if (kind === "skip") skipped.push(id.replace(/^.*#/, ""));
+        else if (ok === false) missed.push(id.replace(/^.*#/, ""));
         if (kind === "deferred") freeAnswers.push({ id: id, answer: answer });
         updateBar();
         LP.emit({ type: "attempt", item: id, widget: reg.type, kind: kind || "auto", correct: ok, answer: answer == null ? null : String(answer).slice(0, 4000) });
@@ -110,7 +111,8 @@
         if (el.dataset.lpReady) return;
         el.dataset.lpReady = "1";
         if (reg.scored) total++;
-        try { reg.init(el, makeCtx(el, reg)); }
+        var ctx = makeCtx(el, reg);
+        try { reg.init(el, ctx); if (reg.scored) addSkip(el, ctx); }
         catch (e) { el.dataset.lpError = String(e); console.error("lp widget " + reg.type + " failed:", e); }
       });
     });
@@ -120,6 +122,27 @@
       (document.querySelector("main") || document.body).appendChild(bar);
     }
     updateBar();
+  }
+
+  // "I don't know" button, for pretests: <main data-skip="true"> (or on one .quiz). Counts as not known, reveals the answer.
+  function addSkip(q, ctx) {
+    var host = q.closest("[data-skip]");
+    if (!host || host.dataset.skip === "false" || q.dataset.type === "checklist") return;
+    var row = el("div", "skiprow"), b = el("button", "skip", "I don't know");
+    b.addEventListener("click", function () {
+      ctx.result(false, null, "skip");
+      q.classList.add("skipped");
+      q.querySelectorAll("input, textarea, button").forEach(function (x) { x.disabled = true; });
+      var fb = q.querySelector(":scope > .feedback");
+      if (!fb) { fb = el("div", "feedback"); q.appendChild(fb); }
+      fb.innerHTML = "";
+      fb.appendChild(el("span", "verdict no", "Skipped. "));
+      var explain = q.querySelector(":scope > .explain");
+      if (explain) { fb.appendChild(document.createTextNode("Here's the idea: ")); fb.appendChild(explain); explain.hidden = false; }
+      row.remove();
+    });
+    row.appendChild(b); q.appendChild(row);
+    document.addEventListener("lp:event", function (e) { if (e.detail.item === ctx.id && e.detail.kind !== "skip") row.remove(); });
   }
 
   // ---------- small DOM helpers (also used by plugins) ----------
@@ -401,6 +424,7 @@
     var parts = ["lp-results " + LP.page, firstTryRight + "/" + total + " right first try"];
     if (answered < total) parts.push((total - answered) + " unanswered");
     if (missed.length) parts.push("missed: " + missed.join(","));
+    if (skipped.length) parts.push("skipped: " + skipped.join(","));
     if (LP.rating) parts.push("rating: " + LP.rating);
     if (LP.note) parts.push("note: " + LP.note.replace(/\s+/g, " "));
     var s = parts.join(" | ");

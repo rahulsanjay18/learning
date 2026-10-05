@@ -24,6 +24,7 @@ Live examples of every widget: `assets/gallery.html`.
 ```
 
 - `lp.js` adds the score bar and, on lesson pages, the footer: difficulty rating, "anything confusing?" note, **Copy my results**, and sync settings.
+- Pretests: `<main data-skip="true">` adds an **I don't know** button to every scored quiz (or set `data-skip` on one quiz). A skip counts as not known, reveals the `.explain`, and is listed as `skipped:` in the results line.
 - Give every quiz a short `data-id` that is unique within the page. IDs stay stable when you edit the page and feed spaced review: `chess/0003-forks#fork-1`.
 - Topic-only styles go in `topics/<slug>/assets/topic.css`. Don't copy `lp.css`/`lp.js` into a topic. Add a widget here instead.
 - Keep CSS plain: one column, serif text, thin rules. No shadows, gradients or animation.

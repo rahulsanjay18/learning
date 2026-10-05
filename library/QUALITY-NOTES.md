@@ -1,0 +1,1 @@
+f9dc4d1d4c | front matter + toc | front matter is OCR garbage (stray symbols, broken words); /toc returns 5 junk headings (lines starting with '#' inside text), so chapter structure can't be read from toc/
