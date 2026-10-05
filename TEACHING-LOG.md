@@ -27,6 +27,8 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 12. **Reading guides as note-taking:** for assigned readings, put 3 guide questions + "what surprised or confused you" as `free`
     boxes at the top of the lesson. They're the learner's notes, they reach the teacher with the results, and every answer gets a reply.
 14. **Check paraphrases against the source sentence**, not memory of it: reread the passage before compressing it. (Entry 14)
+15. **Reading guides flag notation traps:** where the source writes a familiar formula in an unfamiliar form (√(σ²/n) for σ/√n)
+    or sets up an example earlier than the slice starts, say so in the reading box. (Entry 15)
 11. **Remind the learner that formula boxes take expressions** (`8/28`, `160*0.05/(...)`), so arithmetic slips don't cost a question. (Entry 9)
 
 ## Entries
@@ -59,3 +61,6 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 14. **2026-10-05 · Indian History lesson 0002 paraphrased the Ghaggar passage wrongly** ("a tectonic shift sent its water into the
     Yamuna"); the book says the Yamuna once flowed *through* the Ghaggar valley and changed course. The learner's reading answer
     had it right, so the page contradicted the reading. Fix: corrected the page; rule 14.
+15. **2026-10-05 · Lesson 3's reading (C&B Example 9.1.3) wrote SD(X̄) as √(1/4).** Learner: "why the 1/4 in the denominator? I
+    thought the SD formula has the sqrt of the number of samples." It is σ/√n with σ = 1, n = 4, written as √(σ²/n), and the setup
+    is in the previous example. Fix: a heads-up line in the reading box; rule 15.

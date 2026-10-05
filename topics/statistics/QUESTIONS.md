@@ -77,3 +77,18 @@ A coin that lands heads 50.5% of the time (tiny bias).
 - 1,000,000 flips: noise ≈ ±500 heads; bias adds 5,000 heads → z ≈ 10, p astronomically small.
 - The bias grows in proportion to n; the noise only grows with √n. Enough data makes *any* nonzero effect "significant".
 - "Statistically significant" = detectably not zero, **not** big or important.
+
+## 2026-10-05 · Casella & Berger Example 9.1.3: "why is 1/4 in the denominator? I thought the SD formula has √(number of samples)"
+**It does. √(1/4) is σ/√n, written as √(σ²/n).** The example's setup (stated in Example 9.1.2, one example earlier) is a sample of
+**n = 4** from a normal with **σ = 1**, i.e. X₁, …, X₄ iid n(μ, 1).
+
+- Var(X̄) = σ²/n = 1/4, so SD(X̄) = √(σ²/n) = √(1/4) = 1/2. Same number as σ/√n = 1/√4 = 1/2. Casella & Berger write the
+  variance under the root, which hides the √n.
+- So the step is just standardizing: X̄ − μ ranges over [−1, 1]; dividing by SD(X̄) = 1/2 turns that into [−2, 2] in z-units.
+- Then P(−2 ≤ Z ≤ 2) = 0.9545 (the book's .9544 comes from table rounding).
+- **The general version:** P(μ ∈ [X̄ − c, X̄ + c]) = P(|Z| ≤ c√n/σ). Here c = 1, n = 4, σ = 1, so it's 2. With n = 16, the same
+  ±1 interval would cover with P(|Z| ≤ 4) ≈ 0.99994: more data means the same width buys more confidence.
+
+Check: simulated 200,000 samples of size 4 from n(0, 1): SD of X̄ = 0.501, coverage of [X̄ − 1, X̄ + 1] = 0.954 (Python).
+Source: Casella & Berger, *Statistical Inference*, 2nd ed., §9.1, Examples 9.1.2–9.1.3, pp. 417–418 (the reading for lesson 3);
+Var(X̄) = σ²/n is their Theorem 5.2.6 (§5.2) [section number from memory: book server was down, re-check].
