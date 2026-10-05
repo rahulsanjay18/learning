@@ -19,6 +19,10 @@ general theory. **Confirmed: Games is the "fun" major and replaces chess; chess 
      points to White, since moving first is worth about 5–7 points), Hex's pie rule (the second player may swap sides, so the
      first move has to be fair), shogi's drops (they keep endgames from drying up into draws), xiangqi's palace and river. You keep a
      **design notebook** of these: it becomes your toolkit.
+  4. **The strategist's lens** (proposed; folds in the Military Strategy topic): real strategy concepts as game mechanics:
+     fog of war → hidden information; supply lines and logistics → resource networks; attrition vs. manoeuvre → victory conditions;
+     Lanchester's laws → combat resolution; combined arms → asymmetric unit design; deterrence and commitment → game theory. Real
+     warfare is already 3D (air, sea, space): a source of ideas for your design.
 - **Then the general theory:** combinatorial game theory, classical game theory, game-playing AI, and a capstone.
 - Half weight (2 blocks a week): this is a multi-year major, played and enjoyed as you go, not a race.
 
@@ -55,6 +59,8 @@ Not saved for the end. It starts early and grows with each class:
 | 5 | **G502 Combinatorial game theory** | Sprague–Grundy values; sums of games; games as numbers | *Winning Ways* vols. 1–3 |
 | 5 | **G503 Game theory** | strategic and extensive form; Nash equilibrium; von Neumann's minimax theorem; mixed strategies; backward induction | Binmore, *Game Theory* VSI (A); *Game Theory 101: The Rationality of War* (B) |
 | 5 | **G504 Game-playing AI** | minimax + alpha-beta → expectimax → MCTS → CFR → self-play RL (AlphaZero across chess, shogi, Go) | Russell & Norvig, *AIMA* (B); Sutton & Barto, 2nd ed. (free PDF from the authors: http://incompleteideas.net/book/the-book-2nd.html) |
+| 2–4 | **G150 Strategy foundations** (proposed: the existing `topics/military-strategy/` lessons count) | ends–ways–means, capacity vs. will, the theorists (Sun Tzu, Clausewitz, Liddell Hart, Boyd, Schelling), campaign analyses | that topic's RESOURCES.md (many grade-A VSIs, e.g. *Clausewitz*, *Aerial Warfare*) |
+| 5 | **G350 Wargames** (proposed) | from Kriegsspiel (von Reisswitz, 1824: an umpire showed each side only what it could see, dice for combat) to modern simulations; modelling fog of war, logistics and combat | Wikipedia, "Kriegsspiel"; gap: a wargame-design book |
 | 6 | **G601 Anatomy of strategy games** | what makes a decision interesting; depth from simple rules (Go); branching factor, game length, draws; information and luck as design levers | Sellers, *Advanced Game Design: A Systems Approach* (A); your design notebook |
 | 6 | **G602 Balance** | symmetric vs. asymmetric balance; first-move advantage and fixes (komi, pie rule); dominant strategies; **measuring balance with self-play agents** | Tomašev, Paquet, Hassabis & Kramnik, "Assessing Game Balance with AlphaZero" (2020); your G504 agents |
 | 6 | **G603 Designing in 3D** | geometry (cubic vs. hexagonal cells), adjacency and movement, board size vs. complexity, how players *see* 3D space; why earlier 3D chess variants stayed niche | Wikipedia, "Three-dimensional chess" (Raumschach, 5×5×5, 1907); playtests |
@@ -80,6 +86,7 @@ Theory lessons always point back to a game you've played.
 - **Backgammon** (none in the collection) if we include it in Stage 2.
 
 ## Questions for you
+0. **Fold Military Strategy into this major** (G150 + G350 + the strategist's lens), instead of a separate fifth subject? Suggested: yes.
 1. ~~Games replaces chess?~~ **Yes; chess is the first class** (answered 2026-10-05).
 2. ~~Go timing?~~ **Answered:** after the chess family (stage 3); can move earlier if you want a contrast sooner.
 3. ~~Backgammon?~~ **Yes** (2026-10-05): a 3–4 lesson unit in G401. Original reasoning kept below.
@@ -99,6 +106,8 @@ Theory lessons always point back to a game you've played.
   common ancestor of the board games chess, xiangqi … shogi"; earliest reference to the name c. AD 625 (Banabhatta's *Harsha Charita*).
 - Tomašev, Paquet, Hassabis & Kramnik (2020), "Assessing Game Balance with AlphaZero: Exploring Alternative Rule Sets in Chess",
   [arXiv:2009.04374](https://arxiv.org/abs/2009.04374): "AlphaZero provides an alternative in silico means of game balance assessment."
+- Wikipedia, [Kriegsspiel](https://en.wikipedia.org/wiki/Kriegsspiel): perfected by von Reisswitz in 1824 for training Prussian officers;
+  "The umpire places pieces on the map only for troops which they judge to be visible to both sides"; dice for combat.
 - Wikipedia, [Komi (Go)](https://en.wikipedia.org/wiki/Komi_(Go)): 6.5 (Japanese/Korean) to 7.5 (Chinese/AGA); Black's first move is
   "generally considered to be between 5 and 7 points"; the half point prevents ties.
 - Wikipedia, [Pie rule](https://en.wikipedia.org/wiki/Pie_rule): used in Hex, TwixT and others; the cutter "will make as equal a division as possible".
