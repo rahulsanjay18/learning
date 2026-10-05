@@ -8,3 +8,6 @@ calculation, and sorting p-value statements (likely the effect-size items the le
 **Evidence:** lp-results 2026-10-05 for lesson 0002: 4/6 right first try; missed fdr, sort-claims.
 **Implications:** open lesson 3 with a retrieval warm-up on fdr (new numbers) and on "small p ≠ big effect"; both are also in the
 review deck. Lesson 3 then builds from the learner's own question (P(data | H1), likelihood ratios) into confidence intervals.
+
+**Update:** the learner says the fdr miss was an arithmetic slip, not a conceptual one. Treat the base-rate method as understood;
+no re-teaching, just the normal review repetition.
