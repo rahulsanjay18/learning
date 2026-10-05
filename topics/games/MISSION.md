@@ -15,6 +15,7 @@ and to test designs. The **most immediate project is a 3D chess variant**.
 - Keep its complexity learnable: humans can actually see and plan in the 3D space.
 
 ## Constraints
+- Military strategy feeds this major as abstract decision systems ("war as a game"); the learner dislikes war on principle.
 - Half-weight subject (2 blocks a week, inside the 1-hour-a-day floor); chess is the first class and the ongoing lab.
 - Strong technical background (math, CS, 5 years in AI): agents and simulations are fair game.
 

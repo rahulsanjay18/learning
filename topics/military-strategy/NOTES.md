@@ -27,3 +27,6 @@
 - Polybius, *Rise of the Roman Empire* (Penguin, grade A, id a1de43a246): Book I = First Punic War, Book VI ch 52 = Rome vs Carthage.
   Paragraphs in the server text start with the chapter number (e.g. '20\\.'), so cite as book.chapter.
 - Put learner analyses in analyses/YYYY-MM-DD-<war>.md: their text verbatim, then feedback, then a revision task.
+- 2026-10-05: **Framing preference:** the learner dislikes war on principle but finds it fascinating *as a game*: a system of
+  decisions under uncertainty. Teach military material as strategy and decision-making (and, for the Games major, as candidate
+  game mechanics), never as glorification. Acknowledge human cost plainly where it's part of the history; don't dwell on gore.
