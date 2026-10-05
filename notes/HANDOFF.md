@@ -15,7 +15,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | Indian History | Mission interview (PROGRAM.md §6), then lesson 0003: rest of Introduction + Indus with first primary source | `topics/indian-history/PROGRAM.md` |
 | Games (fun major) | **Mission: design a balanced 3D strategy game** (MISSION.md). Chess is class G101 (continue `topics/chess/`, lessons 0001–0002 done); program decided: chess → tiny games → xiangqi → shogi → Go → chance (Pig + backgammon unit) → poker → theory/AI | Chess.com: rahulsanjay18 |
 | AWS ML cert | Ask: which exam, target date, AWS experience, prep materials | Check AWS's current exam list (don't guess names) |
-| Military strategy | Proposed to fold into Games (G150 + G350); awaiting the learner's yes | `topics/games/PROGRAM.md` question 0 |
+| Military strategy | **Merged into Games** as G150 (lessons in `topics/military-strategy/`), feeding G350 Wargames and G360 Diplomacy | framed as "war as a game" (see its NOTES) |
 | Economics | Parked; Principles solid (13/13) | Resume at intermediate level |
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 

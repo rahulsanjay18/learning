@@ -19,7 +19,7 @@ general theory. **Confirmed: Games is the "fun" major and replaces chess; chess 
      points to White, since moving first is worth about 5–7 points), Hex's pie rule (the second player may swap sides, so the
      first move has to be fair), shogi's drops (they keep endgames from drying up into draws), xiangqi's palace and river. You keep a
      **design notebook** of these: it becomes your toolkit.
-  4. **The strategist's lens** (proposed; folds in the Military Strategy topic): real strategy concepts as game mechanics:
+  4. **The strategist's lens** (Military Strategy is part of this major): real strategy concepts as game mechanics:
      fog of war → hidden information; supply lines and logistics → resource networks; attrition vs. manoeuvre → victory conditions;
      Lanchester's laws → combat resolution; combined arms → asymmetric unit design; deterrence and commitment → game theory. Real
      warfare is already 3D (air, sea, space): a source of ideas for your design.
@@ -59,9 +59,9 @@ Not saved for the end. It starts early and grows with each class:
 | 5 | **G502 Combinatorial game theory** | Sprague–Grundy values; sums of games; games as numbers | *Winning Ways* vols. 1–3 |
 | 5 | **G503 Game theory** | strategic and extensive form; Nash equilibrium; von Neumann's minimax theorem; mixed strategies; backward induction | Binmore, *Game Theory* VSI (A); *Game Theory 101: The Rationality of War* (B) |
 | 5 | **G504 Game-playing AI** | minimax + alpha-beta → expectimax → MCTS → CFR → self-play RL (AlphaZero across chess, shogi, Go) | Russell & Norvig, *AIMA* (B); Sutton & Barto, 2nd ed. (free PDF from the authors: http://incompleteideas.net/book/the-book-2nd.html) |
-| 2–4 | **G150 Strategy foundations** (proposed: the existing `topics/military-strategy/` lessons count) | ends–ways–means, capacity vs. will, the theorists (Sun Tzu, Clausewitz, Liddell Hart, Boyd, Schelling), campaign analyses | that topic's RESOURCES.md (many grade-A VSIs, e.g. *Clausewitz*, *Aerial Warfare*) |
-| 5 | **G350 Wargames** (proposed) | from Kriegsspiel (von Reisswitz, 1824: an umpire showed each side only what it could see, dice for combat) to modern simulations; modelling fog of war, logistics and combat | Wikipedia, "Kriegsspiel"; gap: a wargame-design book |
-| 5 | **G360 Diplomacy and politics as games** (proposed) | bargaining model of war (private information, commitment problems); two-level games (domestic + foreign win-sets); repeated games and reputation; the board game *Diplomacy* (no dice) and Meta's CICERO | Binmore VSI (A); Fearon (1995); Putnam (1988); *Game Theory 101: The Rationality of War* (B) |
+| 2–4 | **G150 Strategy foundations** (the existing `topics/military-strategy/` lessons count; lessons stay in that folder) | ends–ways–means, capacity vs. will, the theorists (Sun Tzu, Clausewitz, Liddell Hart, Boyd, Schelling), campaign analyses | that topic's RESOURCES.md (many grade-A VSIs, e.g. *Clausewitz*, *Aerial Warfare*) |
+| 5 | **G350 Wargames** | from Kriegsspiel (von Reisswitz, 1824: an umpire showed each side only what it could see, dice for combat) to modern simulations; modelling fog of war, logistics and combat | Wikipedia, "Kriegsspiel"; gap: a wargame-design book |
+| 5 | **G360 Diplomacy and politics as games** | bargaining model of war (private information, commitment problems); two-level games (domestic + foreign win-sets); repeated games and reputation; the board game *Diplomacy* (no dice) and Meta's CICERO | Binmore VSI (A); Fearon (1995); Putnam (1988); *Game Theory 101: The Rationality of War* (B) |
 | 6 | **G601 Anatomy of strategy games** | what makes a decision interesting; depth from simple rules (Go); branching factor, game length, draws; information and luck as design levers | Sellers, *Advanced Game Design: A Systems Approach* (A); your design notebook |
 | 6 | **G602 Balance** | symmetric vs. asymmetric balance; first-move advantage and fixes (komi, pie rule); dominant strategies; **measuring balance with self-play agents** | Tomašev, Paquet, Hassabis & Kramnik, "Assessing Game Balance with AlphaZero" (2020); your G504 agents |
 | 6 | **G603 Designing in 3D** | geometry (cubic vs. hexagonal cells), adjacency and movement, board size vs. complexity, how players *see* 3D space; why earlier 3D chess variants stayed niche | Wikipedia, "Three-dimensional chess" (Raumschach, 5×5×5, 1907); playtests |
@@ -87,7 +87,7 @@ Theory lessons always point back to a game you've played.
 - **Backgammon** (none in the collection) if we include it in Stage 2.
 
 ## Questions for you
-0. **Fold Military Strategy into this major** (G150 + G350 + the strategist's lens), instead of a separate fifth subject? Suggested: yes.
+0. ~~Fold Military Strategy in?~~ **Yes** (2026-10-05): G150, G350, G360 and the strategist's lens.
 1. ~~Games replaces chess?~~ **Yes; chess is the first class** (answered 2026-10-05).
 2. ~~Go timing?~~ **Answered:** after the chess family (stage 3); can move earlier if you want a contrast sooner.
 3. ~~Backgammon?~~ **Yes** (2026-10-05): a 3–4 lesson unit in G401. Original reasoning kept below.

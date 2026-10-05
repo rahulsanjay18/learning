@@ -26,5 +26,5 @@ connect classic strategy to my AI work (game theory, adversarial search, multi-a
 - Nothing excluded so far. Tactics, weapons, nuclear strategy, insurgency, cyber and modern conflicts are all in scope.
 
 ## Link to the Games major (2026-10-05)
-The learner's deeper reason for this topic: designing a balanced 3D strategy game (`topics/games/MISSION.md`). Proposed: this topic
-becomes course G150 (and feeds G350 Wargames) inside the Games major. Point analyses toward "how would this be a game mechanic?".
+The learner's deeper reason for this topic: designing a balanced 3D strategy game (`topics/games/MISSION.md`). **Merged (2026-10-05):** this topic
+is course G150 Strategy foundations inside the Games major, and feeds G350 Wargames and G360 Diplomacy and politics as games. Point analyses toward "how would this be a game mechanic?".

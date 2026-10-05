@@ -37,7 +37,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - **Each subject is a major**, not a single course: plan it as a multi-course program (prerequisites, courses, placement),
   even for non-academic subjects like chess.
 - Fun subject: **the Games major** (`topics/games/PROGRAM.md`), replacing chess as a standalone major; **chess is its first class**
-  (lessons stay in `topics/chess/`), then tiny solvable games, Go, chance games/poker, game theory and game AI. Non-technical subject: **Indian History** (chosen 2026-10-05 after the
+  (lessons stay in `topics/chess/`). **Military Strategy is part of the Games major** (G150; lessons stay in `topics/military-strategy/`;
+  framed as decision systems, not glorifying war). Mission: design a balanced 3D strategy game; the 3D chess variant is the running project. Non-technical subject: **Indian History** (chosen 2026-10-05 after the
   pretests; Economics parked, already solid at Principles level). Each major has a `PROGRAM.md` in its topic folder.
 - Study plan (proposed 2026-10-05, see `notes/study-plan.md`): 4 subjects, 2 full (Statistics, AWS ML cert) + 2 half
   (one non-technical, one fun), daily review first. **Finish the whole day's plan before going deeper on any one subject**;
