@@ -76,7 +76,6 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
   - Locate it: `<div class="quiz" data-type="map-locate" data-id="…" data-view="…" data-answer="25.59,85.14" [data-tolerance-km="250"] [data-choices="25.59,85.14:Patna|28.61,77.21:New Delhi|…"]>`. The learner taps the map (or a candidate button) and presses Check; right = great-circle distance ≤ tolerance. A miss reports "off by N km" and the direction; the true point is drawn once right or after a second miss. Without `data-choices` the quiz says it needs a mouse or touch screen. With choices, exactly one must be within tolerance (the test checks). **Take coordinates from a source** (Wikipedia infobox) and cite it.
   - Borders are Natural Earth's de facto lines (e.g. Kashmir); say so in the caption where it matters.
   - `node scripts/test_timeline_map.js` checks year/BCE logic, ticks, lanes, haversine, projection, TopoJSON decoding, and that every timeline and map in the repo is valid.
-  - Neither plugin is loaded by the daily review deck (`review.html`) yet, so their quizzes can't be re-asked there.
 - **Pixel art** (`plugins/pixels.js` + `plugins/pixels.css`): `.px` pictures and `.px-draw` drills. Usage is in the header comment of `plugins/pixels.js`.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
@@ -84,7 +83,7 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 - Every scored answer updates a spaced schedule in the learner's browser (`localStorage["lp.review"]`, same 1/3/7/16/35/80/180-day boxes as the progress server). Misses and skips come back the next day.
 - The review page re-asks due questions **pulled live from their original lesson pages**, interleaved across topics, max 20 per session. With sync on it also merges the server's `/due` list (other devices).
 - So: **keep `data-id`s stable** (changing one orphans its schedule), and keep a question self-contained. If it depends on a diagram, put the diagram directly before the quiz or list its element ids in `data-context="id1 id2"`.
-- Every lesson footer links to it.
+- Every lesson footer links to it. **New plugin? Add its `<link>` and `<script>` to `review.html` too**, or its quizzes can't come back in review.
 
 ## Results and sync
 - Every answer, rating and note is logged to `localStorage["lp.queue"]` on the learner's device.
