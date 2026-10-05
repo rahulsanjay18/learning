@@ -7,8 +7,8 @@
       PROGRESS_TEACHER_TOKEN: ${BOOKS_TOKEN}   # same token the cloud environment already injects for this hostname
       PROGRESS_DB: /data/progress.db
       PROGRESS_ORIGINS: https://rahulsanjay18.github.io
+    network_mode: service:ts-books            # share the Tailscale sidecar's network, like book-server does
+    depends_on: [ts-books]
+    # No ports: section. Docker refuses to publish ports with network_mode: service:... ("conflicting options").
     volumes:
       - ./progress-server/data:/data          # writable; back this folder up (it's your learning history)
-    ports:
-      - "127.0.0.1:8089:8089"                 # local only; public access goes through the Tailscale sidecar
-    # If your ts-books sidecar shares book-server's network namespace instead (network_mode: service:...), do the same here.
