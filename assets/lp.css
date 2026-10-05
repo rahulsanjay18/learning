@@ -159,3 +159,8 @@ table.matrix td span { font-size: .85rem; color: var(--muted); }
   main { padding-top: 0; }
   a { color: inherit; }
 }
+
+/* Daily review deck (assets/review.html) */
+.review-card { border-top: 2px solid var(--rule); margin-top: 1.8rem; padding-top: .4rem; }
+.review-card > p.small { margin: 0; }
+.review-card .quiz { border-top: 0; padding-top: .4rem; }

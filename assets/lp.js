@@ -4,6 +4,7 @@
 (function () {
   "use strict";
   var LP = window.LP = window.LP || {};
+  var SELF = document.currentScript ? document.currentScript.src : location.href;
   var regs = [], started = false;
   var total = 0, answered = 0, firstTryRight = 0, bar = null;
   var missed = [], skipped = [], freeAnswers = [];
@@ -33,10 +34,38 @@
   LP.emit = function (ev) {
     ev.v = 1; ev.page = LP.page; ev.ts = new Date().toISOString();
     ev.eid = Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12); // server ignores resent events with the same eid
+    var sched = LP.schedule(); schedApply(sched, ev); store("lp.review", JSON.stringify(sched));
     var q = queue(); q.push(ev); saveQueue(q);
     document.dispatchEvent(new CustomEvent("lp:event", { detail: ev }));
     scheduleFlush();
   };
+
+  // ---------- local spaced-review schedule (same Leitner boxes as progress-server) ----------
+  // lp.review = { "<item id>": {box, due, last, reps, lapses, page} }. Built from the event log on first use, then kept
+  // up to date on every answer, so it survives the log being emptied by sync. Read by assets/review.html.
+  var INTERVALS = [1, 3, 7, 16, 35, 80, 180];
+  function schedApply(sched, ev) {
+    if (ev.type !== "attempt" || !ev.item || ev.correct == null || ev.kind === "deferred") return;
+    var r = sched[ev.item] || { box: -1, reps: 0, lapses: 0 };
+    if (ev.correct) r.box = Math.min(r.box + 1, INTERVALS.length - 1);
+    else { if (r.reps) r.lapses++; r.box = 0; }
+    r.reps++;
+    r.last = ev.ts;
+    r.due = new Date(new Date(ev.ts).getTime() + INTERVALS[Math.max(r.box, 0)] * 864e5).toISOString();
+    r.page = ev.item.split("#")[0];
+    sched[ev.item] = r;
+  }
+  LP.schedule = function () {
+    var sched = null;
+    try { sched = JSON.parse(store("lp.review") || "null"); } catch (e) { sched = null; }
+    if (!sched) {
+      sched = {};
+      queue().slice().sort(function (a, b) { return a.ts < b.ts ? -1 : 1; }).forEach(function (e) { schedApply(sched, e); });
+      store("lp.review", JSON.stringify(sched));
+    }
+    return sched;
+  };
+  LP.reviewUrl = new URL("review.html", SELF).href;
 
   var flushTimer = null;
   function scheduleFlush() { clearTimeout(flushTimer); flushTimer = setTimeout(LP.flush, 1500); }
@@ -477,7 +506,8 @@
       LP.configure(ep.trim(), (tok || "").trim());
       setStatus(ep ? "Sync on for this device." : "Sync off. Results stay on this device.");
     });
-    row2.appendChild(send); row2.appendChild(copy); row2.appendChild(cfg);
+    var rev = el("a", null, "Daily review"); rev.href = LP.reviewUrl;
+    row2.appendChild(send); row2.appendChild(copy); row2.appendChild(cfg); row2.appendChild(rev);
     f.appendChild(row2);
     statusEl = el("div", "status", LP.syncConfigured() ? "Results sync to your progress server." : "Results are saved on this device. Use “Copy my results” to share them.");
     f.appendChild(statusEl);
@@ -485,6 +515,7 @@
     main.insertBefore(f, sb || null);
   }
 
+  LP.scan = function () { scan(); };   // for pages that add widgets after load (assets/review.html)
   function start() { started = true; scan(); footer(); LP.flush(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else setTimeout(start, 0);
 })();

@@ -70,6 +70,12 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 - **Pixel art** (`plugins/pixels.js` + `plugins/pixels.css`): `.px` pictures and `.px-draw` drills. Usage is in the header comment of `plugins/pixels.js`.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
+## Daily review deck (`assets/review.html`)
+- Every scored answer updates a spaced schedule in the learner's browser (`localStorage["lp.review"]`, same 1/3/7/16/35/80/180-day boxes as the progress server). Misses and skips come back the next day.
+- The review page re-asks due questions **pulled live from their original lesson pages**, interleaved across topics, max 20 per session. With sync on it also merges the server's `/due` list (other devices).
+- So: **keep `data-id`s stable** (changing one orphans its schedule), and keep a question self-contained. If it depends on a diagram, put the diagram directly before the quiz or list its element ids in `data-context="id1 id2"`.
+- Every lesson footer links to it.
+
 ## Results and sync
 - Every answer, rating and note is logged to `localStorage["lp.queue"]` on the learner's device.
 - **Copy my results** gives one line the learner pastes into the next session, e.g.

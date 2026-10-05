@@ -46,6 +46,7 @@ BOOKS_URL=https://books.tail59e10.ts.net
   A widget another topic could reuse goes in `assets/` (generic) or `assets/plugins/` (subject-specific), and gets an example in `assets/gallery.html`.
 - Keep CSS plain and quiet (one column, serif text, thin rules; no shadows, gradients or animation).
 - Give every quiz a short `data-id`. Before committing a lesson run `python3 scripts/lint_lessons.py` and `node scripts/test_widgets.mjs`.
+- Daily review (`assets/review.html`) re-asks due questions from their lessons. Keep quiz `data-id`s stable; put a needed diagram right before its quiz (or use `data-context`).
 - If I paste an `lp-results …` line, it's my results from a lesson: use it for learning records and to choose what's next.
 
 ## My library (check before searching the web)

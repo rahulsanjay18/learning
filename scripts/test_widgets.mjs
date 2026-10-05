@@ -207,6 +207,39 @@ else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map
   await pre.close();
 }
 
+// Daily review deck: old misses (seeded event log, no schedule yet) come back, pulled from their lessons
+{
+  const rv = await browser.newPage();
+  const errs = []; rv.on("pageerror", e => errs.push(e.message));
+  await rv.goto(`${BASE}/assets/review.html`);
+  const twoDaysAgo = new Date(Date.now() - 2 * 864e5).toISOString(), soon = new Date(Date.now() - 1 * 3600e3).toISOString();
+  const evs = [
+    { type: "attempt", item: "statistics/0001-placement-pretest#prob-union", kind: "auto", correct: false, ts: twoDaysAgo },
+    { type: "attempt", item: "statistics/0001-placement-pretest#dist-poisson", kind: "skip", correct: false, ts: twoDaysAgo },
+    { type: "attempt", item: "chess/0001-is-it-safe#q1", kind: "auto", correct: false, ts: twoDaysAgo },
+    { type: "attempt", item: "statistics/0002-what-a-p-value-is#find-196", kind: "auto", correct: false, ts: twoDaysAgo },
+    { type: "attempt", item: "statistics/9999-deleted#gone", kind: "auto", correct: false, ts: twoDaysAgo },
+    { type: "attempt", item: "statistics/0001-placement-pretest#rv-var", kind: "auto", correct: true, ts: soon },   // due in 1 day: not shown
+  ];
+  await rv.evaluate((evs) => { localStorage.clear(); localStorage.setItem("lp.queue", JSON.stringify(evs)); }, evs);
+  await rv.reload();
+  await rv.waitForSelector(".review-card", { timeout: 8000 }).catch(() => {});
+  const status = await rv.textContent("#deck-status");
+  const cards = await rv.locator(".review-card").count();
+  if (cards !== 4) fail(`review: expected 4 cards, got ${cards} (${status})`);
+  if (!/4 due now/.test(status) || !/1 couldn't be loaded/.test(status)) fail(`review: status "${status}"`);
+  await rv.waitForSelector(".review-card .katex", { state: "attached", timeout: 5000 }).catch(() => fail("review: math not typeset"));
+  if (!(await rv.locator('.review-card .lp-plot svg, .review-card .quiz[data-type="plot-set"] svg').count())) fail("review: plot not rendered");
+  const rq = (id) => `.quiz[data-id="${id}"]`;
+  await rv.click(`${rq("statistics/0001-placement-pretest#prob-union")} button:text-is("0.65")`);
+  const entry = await rv.evaluate(() => JSON.parse(localStorage.getItem("lp.review"))["statistics/0001-placement-pretest#prob-union"]);
+  const days = (new Date(entry.due) - Date.now()) / 864e5;
+  if (entry.box !== 1 || days < 2.9 || days > 3.1) fail(`review: schedule not advanced: ${JSON.stringify(entry)}`);
+  if (errs.length) fail("review: page errors: " + errs.join("; "));
+  if (!failures) console.log(`ok   review: ${cards} due cards from 3 lessons, math+plot rendered, answer moved next review to +3 days\n     ${status}`);
+  await rv.close();
+}
+
 await browser.close();
 server.kill();
 console.log(failures ? `\n${failures} failure(s)` : "\nall passed");
