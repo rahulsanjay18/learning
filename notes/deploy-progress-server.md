@@ -106,3 +106,26 @@ Keep `"/progress": { "Proxy": "http://127.0.0.1:8089" }` in `serve.json`. Then r
 restarts, the containers that share its network need recreating too, or they lose their network.
 
 6. Docker docs, *docker run* `--network container:<name>` ("the new container ... can't publish ports"): https://docs.docker.com/engine/network/#container-networks
+
+## Update 2026-10-05: the `.env` file
+`.env` was never in this repo; `git log --all` shows no `.env` in any commit. It belongs on the server, in the same
+folder as `docker-compose.yml`, and should stay out of git because it holds secrets. Compose reads it automatically
+from that folder and fills in `${BOOKS_TOKEN}`. If it's missing, compose warns "variable is not set. Defaulting to a
+blank string", and book-server and progress-server start with an empty token [7].
+
+Recreate it on the server:
+```bash
+cd /path/to/folder-with-docker-compose.yml
+openssl rand -hex 32                 # only if you need a NEW token (see below)
+nano .env                            # add the lines below
+chmod 600 .env
+```
+```
+BOOKS_TOKEN=<the token>
+TS_AUTHKEY=<new Tailscale auth key>   # then use TS_AUTHKEY: ${TS_AUTHKEY} in docker-compose.yml
+```
+`BOOKS_TOKEN` must be the same value the cloud environment injects for books.tail59e10.ts.net (the `md_lib`
+credential in the environment's settings: environment menu in the session title bar, then Edit, then API credentials).
+If you can't recover the old value, make a new one and put it in both places.
+
+7. Docker docs, *Set environment variables within your container's environment* / `.env` interpolation: https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/
