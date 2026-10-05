@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="plugins/plot.css">
 <link rel="stylesheet" href="plugins/timeline.css">
 <link rel="stylesheet" href="plugins/map.css">
+<link rel="stylesheet" href="plugins/python.css">
 </head>
 <body>
 <main>
@@ -151,6 +152,40 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
   <p class="prompt">Pataliputra was the capital of the Maurya Empire. Tap where it stood (within 200 km), then press Check.</p>
   <div class="explain" hidden>Pataliputra is modern Patna, on the south bank of the Ganges in Bihar (25.59° N, 85.14° E).</div>
 </div>
+<h2>Python plugin</h2>
+<p>Runnable Python (Pyodide, loaded on the first Run). The central limit theorem: means of 30 uniform draws pile up in a bell around 0.5,
+with spread σ/√n.</p>
+<div class="lp-py" id="py-clt" data-packages="numpy"><pre class="code">import numpy as np
+
+rng = np.random.default_rng(1)
+n, reps = 30, 10_000
+means = rng.uniform(0, 1, size=(reps, n)).mean(axis=1)
+
+sigma = (1 / 12) ** 0.5            # SD of one Uniform(0, 1) draw
+print(f"mean of means: {means.mean():.4f}  theory 0.5")
+print(f"SD of means:   {means.std():.4f}  theory {sigma / n ** 0.5:.4f}")   # σ/√n
+
+counts, edges = np.histogram(means, bins=9)
+for c, lo in zip(counts, edges):
+    print(f"{lo:.3f} {'#' * (c // 125)}")</pre></div>
+<div class="quiz" data-type="py" data-id="py-var" data-hint="Square each deviation from the mean, add them up, divide by n − 1.">
+  <p class="prompt">Finish <code>sample_var(xs)</code>: the sample variance \(s^2 = \frac{1}{n-1}\sum (x_i - \bar{x})^2\). Press Check to test it against Python's <code>statistics.variance</code>.</p>
+  <pre class="code">def sample_var(xs):
+    """Sample variance of the list xs (divide by n - 1)."""
+    n = len(xs)
+    m = sum(xs) / n
+    # your code here: return the sum of squared deviations over n - 1</pre>
+  <script type="text/python" class="check">
+    import statistics
+    for xs in ([1, 2, 3, 4], [2.5, 2.5, 4.0], [10, 0], [3, 1, 4, 1, 5, 9, 2, 6]):
+        n, want, got = len(xs), statistics.variance(xs), sample_var(list(xs))
+        assert got is not None, "sample_var returned None: did you forget the return?"
+        assert abs(got - want * (n - 1) / n) > 1e-9, f"sample_var({xs}) gave {got:.4g}: that divides by n. Divide by n − 1."
+        assert abs(got - want) < 1e-9, f"sample_var({xs}) gave {got:.4g}, expected {want:.4g}"
+  </script>
+  <div class="explain" hidden>One answer: <code>return sum((x - m) ** 2 for x in xs) / (n - 1)</code>. For [1, 2, 3, 4] that is 5/3 ≈ 1.667;
+    dividing by n would give 1.25. Deviations from \(\bar{x}\) run a little smaller than deviations from the true mean, and n − 1 corrects for it (Bessel's correction).</div>
+</div>
 <ol class="sources">
   <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Maurya_Empire">Maurya Empire</a>: c. 321–185 BCE; Ashoka c. 268–232 BCE; capital Pataliputra (now Patna).</li>
   <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Delhi_Sultanate">Delhi Sultanate</a>: 1206–1526.</li>
@@ -169,5 +204,6 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
 <script src="plugins/plot.js"></script>
 <script src="plugins/timeline.js"></script>
 <script src="plugins/map.js"></script>
+<script src="plugins/python.js"></script>
 </body>
 </html>

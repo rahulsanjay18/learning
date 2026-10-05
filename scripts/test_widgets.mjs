@@ -2,9 +2,11 @@
 //   node scripts/test_widgets.mjs        (from the repo root; needs Playwright + Chromium)
 // 1. Opens every lesson, reference page and the gallery; fails on page errors or widgets that didn't initialise.
 // 2. Drives every widget in assets/gallery.html and checks scoring + the local event log.
+//    The Python section needs jsDelivr (via HTTPS_PROXY if set); if unreachable it is reported as skipped, not failed.
 import { createRequire } from "node:module";
 import { execSync, spawn } from "node:child_process";
-import { readdirSync, existsSync } from "node:fs";
+import { readdirSync, existsSync, readFileSync } from "node:fs";
+import { X509Certificate, createHash } from "node:crypto";
 import { join } from "node:path";
 
 const require = createRequire(import.meta.url);
@@ -23,14 +25,36 @@ for (const t of readdirSync("topics")) for (const d of ["lessons", "reference"])
 }
 
 const exe = existsSync("/opt/pw-browsers/chromium") ? "/opt/pw-browsers/chromium" : undefined;
+// The Python plugin loads Pyodide from jsDelivr. Where outbound HTTPS must go through a proxy (HTTPS_PROXY), route the TEST
+// browser through it; local pages bypass it ("<-loopback>" first: Playwright appends one, and Chromium lets the last matching
+// rule win). The proxy re-signs TLS. If its CA is in NODE_EXTRA_CA_CERTS, the test browser trusts exactly those keys
+// (--ignore-certificate-errors-spki-list); otherwise it falls back to ignoreHTTPSErrors, which in Chromium can fail worker
+// loads with ERR_TOO_MANY_RETRIES. Test-only: nothing here touches shipped code.
+const proxyServer = process.env.HTTPS_PROXY || process.env.https_proxy;
+function caPins() {
+  const f = process.env.NODE_EXTRA_CA_CERTS;
+  if (!proxyServer || !f || !existsSync(f)) return [];
+  const pems = readFileSync(f, "utf8").match(/-----BEGIN CERTIFICATE-----[\s\S]+?-----END CERTIFICATE-----/g) || [];
+  return pems.map(p => { try { return createHash("sha256").update(new X509Certificate(p).publicKey.export({ type: "spki", format: "der" })).digest("base64"); } catch { return null; } })
+    .filter(Boolean);
+}
+const pins = caPins();
+const launchOpts = proxyServer ? { proxy: { server: proxyServer, bypass: "<-loopback>,127.0.0.1,localhost" },
+  args: pins.length ? [`--ignore-certificate-errors-spki-list=${pins.join(",")}`] : [] } : {};
 let browser;
-try { browser = await chromium.launch(exe ? { executablePath: exe } : {}); }
-catch { browser = await chromium.launch(); }
+try { browser = await chromium.launch(exe ? { ...launchOpts, executablePath: exe } : launchOpts); }
+catch { browser = await chromium.launch(launchOpts); }
+// Only jsDelivr (Pyodide) goes out; other third-party loads (the YouTube embed) are aborted so a slow network can't stall "load".
+const newPage = async (opts = {}) => {
+  const p = await browser.newPage({ ignoreHTTPSErrors: !!proxyServer && !pins.length, ...opts });
+  await p.route(u => !/^(127\.0\.0\.1|localhost|cdn\.jsdelivr\.net)$/.test(u.hostname), r => r.abort());
+  return p;
+};
 let failures = 0;
 const fail = (msg) => { failures++; console.log("FAIL " + msg); };
 
 for (const p of pages) {
-  const page = await browser.newPage();
+  const page = await newPage();
   const errors = [];
   page.on("pageerror", e => errors.push(e.message));
   page.on("console", m => { if (m.type() === "error" && !/youtube|ERR_|net::|Failed to load resource/i.test(m.text())) errors.push(m.text()); });
@@ -53,7 +77,7 @@ for (const p of pages) {
 }
 
 // ---- drive the gallery ----
-const page = await browser.newPage();
+const page = await newPage();
 await page.goto(`${BASE}/assets/gallery.html`);
 await page.evaluate(() => localStorage.clear());
 await page.reload();
@@ -214,23 +238,77 @@ await page.click(`${q("map-patali")} button:text-is("Check")`); await expectOk("
 if (!/off by 0 km/.test(await page.locator(`${q("map-patali")} > .feedback`).textContent()) || !(await page.locator(`${q("map-patali")} .map-truth`).count()))
   fail("gallery: map did not show the true point and distance");
 
+// python: Pyodide from the CDN (through the proxy if one is set). Snippet runs numpy; an error in Run is shown, not scored;
+// the exercise misses with the assert message (wrong divisor), then is right. If the CDN can't be reached, say so and skip.
+let pythonRan = false;
+{
+  const t0 = Date.now();
+  await page.click(`#py-clt button:text-is("Run")`);
+  const loaded = await page.waitForFunction(() => {
+    const out = document.querySelector("#py-clt pre.py-out"), st = document.querySelector("#py-clt .py-status");
+    return (out && !out.hidden) ? "ran" : /Couldn't load/.test(st && st.textContent) ? st.textContent : false;
+  }, null, { timeout: 180000 }).then(h => h.jsonValue()).catch(() => "timed out after 180 s");
+  if (loaded !== "ran") {
+    console.log(`SKIP gallery: python — skipped: CDN unreachable (${loaded})`);
+  } else {
+    pythonRan = true;
+    const out = await page.locator("#py-clt pre.py-out").textContent();
+    if (!/mean of means: 0\.4993  theory 0\.5/.test(out) || !/SD of means:   0\.0527  theory 0\.0527/.test(out) || !/0\.471 #{29}\n/.test(out))
+      fail(`gallery: python CLT snippet output wrong:\n${out}`);
+    else console.log(`ok   gallery: python loaded via ${proxyServer ? "proxy" : "direct"} in ${((Date.now() - t0) / 1000).toFixed(1)} s; numpy CLT: mean 0.4993, SD 0.0527 (theory 0.0527)`);
+    const py = q("py-var"), ta = `${py} textarea.py-code`, starter = await page.inputValue(ta);
+    if (await page.locator(`${py} script.check`).isVisible() || /statistics/.test(starter)) fail("gallery: python check code is visible");
+    await page.fill(ta, "print(undefined_name)");
+    await page.click(`${py} button:text-is("Run")`);
+    await page.waitForSelector(`${py} pre.py-out .err`, { timeout: 30000 }).catch(() => {});
+    const errOut = await page.locator(`${py} pre.py-out`).textContent();
+    if (!/NameError: name 'undefined_name' is not defined/.test(errOut) || /_lp_run/.test(errOut)) fail(`gallery: python traceback wrong:\n${errOut}`);
+    if (await page.locator(`${py} > .feedback`).count()) fail("gallery: python Run was scored");
+    const feedback = () => page.locator(`${py} > .feedback`).textContent();
+    await page.fill(ta, starter + "\n    return sum((x - m) ** 2 for x in xs) / n");
+    await page.click(`${py} button:text-is("Check")`);
+    await page.waitForSelector(`${py} > .feedback .verdict`, { timeout: 30000 }).catch(() => {});
+    const miss = await feedback();
+    if (!/Not quite.*sample_var\(\[1, 2, 3, 4\]\) gave 1\.25: that divides by n/.test(miss) || /assert|statistics/.test(miss)) fail(`gallery: python miss message wrong: ${miss}`);
+    else console.log(`ok   gallery: py-var miss: ${miss}`);
+    await page.fill(ta, starter + "\n    return sum((x - m) ** 2 for x in xs) / (n - 1)");
+    await page.click(`${py} button:text-is("Check")`);
+    await page.waitForSelector(`${py} > .feedback .verdict.ok`, { timeout: 30000 }).catch(() => {});
+    await expectOk("py-var");
+    // an endless loop is stopped after data-timeout (default 10 s); Python restarts, with a fresh namespace per run
+    const runAndRead = async (code, wait) => {
+      await page.fill(ta, code); await page.click(`${py} button:text-is("Run")`);
+      await page.waitForFunction((sel) => !document.querySelector(sel).disabled, `${py} .py-bar button`, { timeout: wait });
+      return page.locator(`${py} pre.py-out`).textContent();
+    };
+    const t1 = Date.now(), stopped = await runAndRead("while True:\n    pass", 30000);
+    if (!/Stopped after 10 s/.test(stopped)) fail(`gallery: python endless loop not stopped: ${stopped}`);
+    const fresh = await runAndRead("print('means' in globals(), 'sample_var' in globals())", 60000);
+    if (fresh.trim() !== "False False") fail(`gallery: python namespace leaked or no restart: ${fresh}`);
+    else console.log(`ok   gallery: python endless loop stopped and restarted in ${((Date.now() - t1) / 1000).toFixed(1)} s; fresh namespace per run`);
+    await page.click(`${py} button:text-is("Reset")`);
+    if (await page.inputValue(ta) !== starter) fail("gallery: python Reset did not restore the starter code");
+  }
+}
+
 const bar = await page.locator(".scorebar").textContent();
-const expected = "17 / 17 answered · 11 right first try"; // choice, go-drive, plot-mean, tl-plassey, map-patali missed first; free is ungraded
+// choice, go-drive, plot-mean, tl-plassey, map-patali, py-var missed first; free is ungraded. py-var is unanswered if the CDN was unreachable.
+const expected = pythonRan ? "18 / 18 answered · 11 right first try" : "17 / 18 answered · 11 right first try";
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== 17) fail(`gallery: expected 17 logged attempts, got ${attempts.length}`);
+if (attempts.length !== (pythonRan ? 18 : 17)) fail(`gallery: expected ${pythonRan ? 18 : 17} logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!/missed: choice,go-drive,plot-mean,tl-plassey,map-patali/.test(summary) || !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,map-patali" + (pythonRan ? ",py-var" : "")).test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 // "I don't know" (data-skip): skip before answering; after a wrong try it becomes "Show me the answer" (no second score)
 {
-  const pre = await browser.newPage();
+  const pre = await newPage();
   await pre.goto(`${BASE}/topics/statistics/lessons/0001-placement-pretest.html`);
   const pq = (id) => `.quiz[data-id="${id}"]`;
   await pre.click(`${pq("rv-geom")} button.skip`);
@@ -251,7 +329,7 @@ else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map
 
 // Daily review deck: old misses (seeded event log, no schedule yet) come back, pulled from their lessons
 {
-  const rv = await browser.newPage();
+  const rv = await newPage();
   const errs = []; rv.on("pageerror", e => errs.push(e.message));
   await rv.goto(`${BASE}/assets/review.html`);
   const twoDaysAgo = new Date(Date.now() - 2 * 864e5).toISOString(), soon = new Date(Date.now() - 1 * 3600e3).toISOString();
