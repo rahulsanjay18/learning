@@ -156,3 +156,18 @@ What this buys:
 5. `library/README.md` (this repo), grade rules and equation rule 4.
 6. `book-server/app.py` and `book-server/build_index.py` (this repo); live check: `GET /books` → 200, `POST /books` → 405 from the app.
 7. `topics/*/assets/` (this repo); `md5sum` of `quiz.js` and `style.css` across the 4 topics.
+
+---
+
+## Update 2026-10-05: would a RAG database help? (yes: lessons from actually using the book server)
+The book server is already a keyword RAG (SQLite FTS5 + BM25). Using it to verify three pretests showed where it falls short:
+
+| What happened | Fix (in order of value) |
+|---|---|
+| Every search returned hits from all books; I fetched 30 and filtered for the one book I wanted, and sometimes the right passage wasn't in the 30 | **`/search?book=<id>`** filter (tiny change, biggest win) |
+| No page numbers on passages, so citing "p. 152" needed the index | **page numbers per chunk** at conversion time |
+| `/toc` is empty or junk for the two most important statistics books | **section map per book** extracted from the book's own contents page |
+| Exact phrasing mattered: "Panipat 1526" found nothing, "Panipat" alone did; dates and numbers search badly | **hybrid search**: add embeddings (e.g. sqlite-vec + a small local embedding model) alongside BM25, merged |
+| Meaning-level questions ("why did Ashoka change?") need the right words | same hybrid search |
+
+So: yes, but the first three fixes are plain engineering and help more than embeddings. Later: the same search over your own lessons and learning records.
