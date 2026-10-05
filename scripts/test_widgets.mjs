@@ -172,18 +172,60 @@ await slide(`${q("plot-mean")} input[data-param="mu"]`, 1.5);
 if (!/≈ 0\.8413/.test(await page.locator(`${q("plot-mean")} .plot-area`).textContent())) fail("gallery: plot-set area text did not update");
 await page.click(`${q("plot-mean")} button:text-is("Check")`); await expectOk("plot-mean");
 
+// timeline: diagram lanes/rows render; place quiz: a typed wrong year (scored miss, no reveal), then a click on 1757 (right, reveal)
+if (await page.locator("#tl-india .tl-bar").count() !== 4 || await page.locator("#tl-india .tl-dot").count() !== 4) fail("gallery: timeline diagram incomplete");
+if (!(await page.locator("#tl-india .tl-axis text", { hasText: "BCE" }).count())) fail("gallery: timeline BCE ticks missing");
+await page.fill(`${q("tl-plassey")} input`, "1700"); await page.click(`${q("tl-plassey")} button:text-is("Check")`);
+if (!/57 years too early/.test(await page.locator(`${q("tl-plassey")} > .feedback`).textContent())) fail("gallery: timeline miss message wrong");
+if (await page.locator(`${q("tl-plassey")} .tl-marker.truth`).count()) fail("gallery: timeline revealed the answer after one miss");
+{
+  await page.locator(`${q("tl-plassey")} svg.tl-svg`).scrollIntoViewIfNeeded();
+  const box = await page.locator(`${q("tl-plassey")} svg.tl-svg`).boundingBox();
+  const x = await page.evaluate(() => { const v = document.querySelector('.quiz[data-id="tl-plassey"] svg.tl-svg'), W = +v.getAttribute("width");
+    return LPTimeline.scale(1500, 1950, 12, W - 12).x(1757) * v.getBoundingClientRect().width / W; });
+  await page.mouse.click(box.x + x, box.y + box.height / 2);
+  const typed = await page.inputValue(`${q("tl-plassey")} input`);
+  if (Math.abs(parseInt(typed, 10) - 1757) > 2) fail(`gallery: timeline click picked ${typed}, wanted ~1757`);
+}
+await page.click(`${q("tl-plassey")} button:text-is("Check")`); await expectOk("tl-plassey");
+if (!(await page.locator(`${q("tl-plassey")} .tl-marker.truth`).count())) fail("gallery: timeline did not show the true position");
+
+// map: basemap drawn from the vendored data; locate quiz: click on Delhi (miss, distance + direction), then pick "Patna" (right)
+await page.waitForSelector("#map-south-asia .map-land", { timeout: 8000 }).catch(() => fail("gallery: map basemap did not load"));
+if ((await page.locator("#map-south-asia .map-land").first().getAttribute("d") || "").length < 2000) fail("gallery: map land path too small");
+if (!(await page.locator("#map-south-asia .map-land.hl").count())) fail("gallery: map highlight missing");
+if (await page.locator("#map-south-asia .map-label").count() !== 4) fail("gallery: map labels missing");
+const mapClick = async (id, lat, lon) => {
+  const sel = `${q(id)} svg.map-svg`;
+  await page.locator(sel).scrollIntoViewIfNeeded();
+  const box = await page.locator(sel).boundingBox();
+  const p = await page.evaluate(([sel, lat, lon]) => { const v = document.querySelector(sel), W = +v.getAttribute("viewBox").split(" ")[2];
+    const P = LPMap.projection([60, 5, 100, 38], W).project(lat, lon), k = v.getBoundingClientRect().width / W; return { x: P.x * k, y: P.y * k }; }, [sel, lat, lon]);
+  await page.mouse.click(box.x + p.x, box.y + p.y);
+};
+await mapClick("map-patali", 28.61, 77.21);
+await page.click(`${q("map-patali")} button:text-is("Check")`);
+const mapMiss = await page.locator(`${q("map-patali")} > .feedback`).textContent();
+const missKm = parseInt((mapMiss.match(/Off by (\d+) km/) || [])[1], 10);
+if (!(missKm > 830 && missKm < 880) || !/to the east of your pick/.test(mapMiss)) fail(`gallery: map miss message wrong: ${mapMiss}`);
+if (await page.locator(`${q("map-patali")} .map-truth`).count()) fail("gallery: map revealed the answer after one miss");
+await page.click(`${q("map-patali")} button:text-is("Patna")`);
+await page.click(`${q("map-patali")} button:text-is("Check")`); await expectOk("map-patali");
+if (!/off by 0 km/.test(await page.locator(`${q("map-patali")} > .feedback`).textContent()) || !(await page.locator(`${q("map-patali")} .map-truth`).count()))
+  fail("gallery: map did not show the true point and distance");
+
 const bar = await page.locator(".scorebar").textContent();
-const expected = "15 / 15 answered · 11 right first try"; // choice, go-drive and plot-mean missed first; free is ungraded
+const expected = "17 / 17 answered · 11 right first try"; // choice, go-drive, plot-mean, tl-plassey, map-patali missed first; free is ungraded
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== 15) fail(`gallery: expected 15 logged attempts, got ${attempts.length}`);
+if (attempts.length !== 17) fail(`gallery: expected 17 logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!/missed: choice,go-drive,plot-mean/.test(summary) || !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!/missed: choice,go-drive,plot-mean,tl-plassey,map-patali/.test(summary) || !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 // "I don't know" (data-skip): skip before answering; after a wrong try it becomes "Show me the answer" (no second score)
