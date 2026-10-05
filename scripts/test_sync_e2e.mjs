@@ -6,15 +6,19 @@ import { execSync, spawn } from "node:child_process";
 import { mkdtempSync, existsSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { createServer } from "node:net";
+// Pick a free port so parallel test runs (e.g. from background agents) can't collide.
+const freePort = () => new Promise(r => { const s = createServer(); s.listen(0, "127.0.0.1", () => { const p = s.address().port; s.close(() => r(p)); }); });
 
 const require = createRequire(import.meta.url);
 let chromium;
 try { ({ chromium } = require("playwright")); }
 catch { ({ chromium } = require(join(execSync("npm root -g").toString().trim(), "playwright"))); }
 
-const WEB = "http://127.0.0.1:8775", API = "http://127.0.0.1:8776/progress", TEACH = { Authorization: "Bearer teach" };
-const web = spawn("python3", ["-m", "http.server", "8775", "--bind", "127.0.0.1"], { stdio: "ignore" });
-const api = spawn("python3", ["-m", "uvicorn", "app:app", "--port", "8776", "--host", "127.0.0.1"], {
+const WP = await freePort(), AP = await freePort();
+const WEB = `http://127.0.0.1:${WP}`, API = `http://127.0.0.1:${AP}/progress`, TEACH = { Authorization: "Bearer teach" };
+const web = spawn("python3", ["-m", "http.server", String(WP), "--bind", "127.0.0.1"], { stdio: "ignore" });
+const api = spawn("python3", ["-m", "uvicorn", "app:app", "--port", String(AP), "--host", "127.0.0.1"], {
   cwd: "progress-server", stdio: "ignore",
   env: { ...process.env, PROGRESS_TEACHER_TOKEN: "teach", PROGRESS_DB: join(mkdtempSync(join(tmpdir(), "lp-")), "p.db"), PROGRESS_ORIGINS: WEB },
 });

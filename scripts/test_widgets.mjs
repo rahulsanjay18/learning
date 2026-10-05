@@ -8,13 +8,16 @@ import { execSync, spawn } from "node:child_process";
 import { readdirSync, existsSync, readFileSync } from "node:fs";
 import { X509Certificate, createHash } from "node:crypto";
 import { join } from "node:path";
+import { createServer } from "node:net";
+// Pick a free port so parallel test runs (e.g. from background agents) can't collide.
+const freePort = () => new Promise(r => { const s = createServer(); s.listen(0, "127.0.0.1", () => { const p = s.address().port; s.close(() => r(p)); }); });
 
 const require = createRequire(import.meta.url);
 let chromium;
 try { ({ chromium } = require("playwright")); }
 catch { ({ chromium } = require(join(execSync("npm root -g").toString().trim(), "playwright"))); }
 
-const PORT = 8765, BASE = `http://127.0.0.1:${PORT}`;
+const PORT = await freePort(), BASE = `http://127.0.0.1:${PORT}`;
 const server = spawn("python3", ["-m", "http.server", String(PORT), "--bind", "127.0.0.1"], { stdio: "ignore" });
 await new Promise(r => setTimeout(r, 800));
 
