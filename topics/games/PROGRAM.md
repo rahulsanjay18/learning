@@ -1,12 +1,12 @@
 # Games: the major (draft program)
 
 *Drafted 2026-10-05 from the learner's outline: intuition for perfect-information games → probabilistic / hidden-information games →
-general theory. Proposed as the "fun" major, with chess becoming its ongoing lab (to confirm). Half weight: 2 blocks a week.*
+general theory. **Confirmed: Games is the "fun" major and replaces chess; chess is the first class** (`topics/chess/` holds it). Half weight: 2 blocks a week.*
 
 ## TL;DR
-- **Stage 1, play and feel (deterministic, perfect information):** start with *tiny* games you can solve by hand (tic-tac-toe, Nim,
-  Hex). They teach the core ideas fast: game trees, winning and losing positions, minimax, tempo and parity. Chess (with friends)
-  and a first taste of Go run alongside as the "big" games.
+- **Stage 1, play and feel (deterministic, perfect information):** **chess first** (with friends; it continues as a lab through
+  every stage), then a short class on *tiny* games you can solve by hand (tic-tac-toe, Nim, Hex) that names the core ideas: game
+  trees, winning and losing positions, minimax, tempo and parity. Go follows.
 - **Stage 2, chance and secrets:** dice games (expected value, using your Statistics), then **poker** (hidden information, ranges,
   bluffing as a mixed strategy).
 - **Stage 3, the general theory:** combinatorial game theory, classical game theory (Nash equilibrium, the minimax theorem, backward
@@ -26,8 +26,8 @@ general theory. Proposed as the "fun" major, with chess becoming its ongoing lab
 
 | Stage | Course | Core ideas | Sources (library first) |
 |---|---|---|---|
-| 1 | **G101 Tiny games, big ideas** | game trees; win/lose positions; minimax by hand; parity and tempo; strategy stealing (Hex); Nim's binary trick | *Winning Ways* vol. 1 (grade C: point to chapters only) and vol. 2 (B); Martin Gardner, *Colossal Book of Mathematics* (B) |
-| 1 | **G110 Chess lab** (runs through all stages) | safety, tactics → strategy and endgames; your games reviewed with Stockfish | existing `topics/chess/` lessons; Seirawan's *Winning Chess* series (A); Capablanca; Silman (A) |
+| 1 | **G101 Chess** (first class; continues as a lab through every stage) | safety, tactics → strategy and endgames; your games reviewed with Stockfish | existing `topics/chess/` lessons 0001–0002 count; Seirawan's *Winning Chess* series (A); Capablanca; Silman (A) |
+| 1 | **G102 Tiny games, big ideas** (short: 3–4 lessons) | game trees; win/lose positions; minimax by hand; parity and tempo; strategy stealing (Hex); Nim's binary trick | *Winning Ways* vol. 1 (grade C: point to chapters only) and vol. 2 (B); Martin Gardner, *Colossal Book of Mathematics* (B) |
 | 1 | **G120 Go intuition** | capture and liberties, life and death on 9×9, territory vs. influence | *A Go Guide by a Beginner* (A); Janice Kim, *Learn to Play Go* IV–V (B) |
 | 2 | **G201 Decisions under chance** | expected value; risk vs. reward; when to stop (Pig dice game); simulation in Python | Haigh, *Probability* VSI (A); your Statistics course |
 | 2 | **G210 Poker** | hand odds and pot odds; ranges; bluffing and balance; game-theory-optimal (GTO) vs. exploitative play | *Elements of Poker* (A); Acevedo, *Modern Poker Theory* (B) |
@@ -52,7 +52,7 @@ Theory lessons always point back to a game you've played.
 - **Backgammon** (none in the collection) if we include it in Stage 2.
 
 ## Questions for you
-1. Does Games **replace chess as the fun major** (chess becomes the lab inside it)? That's my suggestion.
+1. ~~Games replaces chess?~~ **Yes; chess is the first class** (answered 2026-10-05).
 2. Include **Go** in Stage 1 from the start, or wait until chess has some footing?
 3. **Backgammon** in Stage 2 (a great bridge from perfect information to chance), or straight to poker?
 

@@ -13,8 +13,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 |---|---|---|
 | Statistics | Lesson 4: P(data given H1), likelihood ratios, power (~55% in the A/B example) | Numbers in `topics/statistics/QUESTIONS.md` |
 | Indian History | Mission interview (PROGRAM.md §6), then lesson 0003: rest of Introduction + Indus with first primary source | `topics/indian-history/PROGRAM.md` |
-| Games (proposed fun major) | Learner to answer the 3 questions in `topics/games/PROGRAM.md`; chess would become its lab | Draft program written 2026-10-05 |
-| Chess (fun major) | Write `topics/chess/PROGRAM.md` as a major (CLAUDE.md: every subject is a major); existing lessons 0001–0002 | Chess.com: rahulsanjay18 |
+| Games (fun major) | Chess is class G101 (continue `topics/chess/`, lessons 0001–0002 done); open questions 2–3 in `topics/games/PROGRAM.md` (Go timing, backgammon) | Chess.com: rahulsanjay18 |
 | AWS ML cert | Ask: which exam, target date, AWS experience, prep materials | Check AWS's current exam list (don't guess names) |
 | Economics | Parked; Principles solid (13/13) | Resume at intermediate level |
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |

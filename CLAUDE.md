@@ -36,7 +36,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
   positions, timelines from dates, maps from open map data) are fine unless I say otherwise.
 - **Each subject is a major**, not a single course: plan it as a multi-course program (prerequisites, courses, placement),
   even for non-academic subjects like chess.
-- Fun subject: **chess** (friends play it; Go later). Non-technical subject: **Indian History** (chosen 2026-10-05 after the
+- Fun subject: **the Games major** (`topics/games/PROGRAM.md`), replacing chess as a standalone major; **chess is its first class**
+  (lessons stay in `topics/chess/`), then tiny solvable games, Go, chance games/poker, game theory and game AI. Non-technical subject: **Indian History** (chosen 2026-10-05 after the
   pretests; Economics parked, already solid at Principles level). Each major has a `PROGRAM.md` in its topic folder.
 - Study plan (proposed 2026-10-05, see `notes/study-plan.md`): 4 subjects, 2 full (Statistics, AWS ML cert) + 2 half
   (one non-technical, one fun), daily review first. **Finish the whole day's plan before going deeper on any one subject**;
