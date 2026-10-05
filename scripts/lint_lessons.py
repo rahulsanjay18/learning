@@ -4,7 +4,8 @@
     python3 scripts/lint_lessons.py [files...]     (default: every topics/*/lessons|reference/*.html + assets/gallery.html)
 
 ERROR (exit 1): broken local links/scripts, choice answer not among its options, categorize item in an unknown bucket,
-                duplicate data-id, cloze with no [[blanks]], order with < 2 items, chess-move/go-move missing their position or answer.
+                duplicate data-id, cloze with no [[blanks]], order with < 2 items, chess-move/go-move missing their position or answer,
+                plot-set without data-fns/data-target or targeting a parameter that has no slider.
 WARN:           choice options with different word counts (SKILL.md: answers must not give away the answer by length),
                 lesson without a sources list.
 """
@@ -92,6 +93,14 @@ def lint(path):
             errors.append(f"{where}: needs data-fen and data-answer")
         elif t == "math" and not a.get("data-answer"):
             errors.append(f"{where}: needs data-answer")
+        elif t == "plot-set":
+            if not (a.get("data-fns") and a.get("data-target")):
+                errors.append(f"{where}: needs data-fns and data-target")
+            else:
+                sliders = {p.split("=")[0].strip() for p in split(a.get("data-params"))}
+                for tgt in split(a.get("data-target")):
+                    if tgt.split("=")[0].strip() not in sliders:
+                        errors.append(f"{where}: target {tgt!r} is not one of the data-params sliders")
         elif t == "go-move" and not (a.get("data-size") and (a.get("data-answer") or a.get("data-solution"))):
             errors.append(f"{where}: needs data-size and data-answer or data-solution")
 

@@ -7,13 +7,45 @@
 //   Right = equal to data-answer at random sample points (any algebraically equivalent form counts).
 //   data-forbid: "|"-separated strings the answer may not contain (e.g. "(|)" forces an expanded form).
 //   data-tolerance: absolute tolerance for purely numeric answers (default: tight relative tolerance).
+// Functions: sin cos tan asin acos atan sinh cosh tanh exp ln log(=log10) sqrt abs, fact(n) (= n!), choose(n, k) (two arguments).
 // Engine exported for Node: const M = require("assets/plugins/math.js"); M.parse, M.evaluate, M.toTeX, M.equivalent.
 (function () {
   "use strict";
 
   // ---------- expression engine ----------
   var FUNCS = { sin: Math.sin, cos: Math.cos, tan: Math.tan, asin: Math.asin, acos: Math.acos, atan: Math.atan,
-    sinh: Math.sinh, cosh: Math.cosh, tanh: Math.tanh, exp: Math.exp, ln: Math.log, log: Math.log10, sqrt: Math.sqrt, abs: Math.abs };
+    sinh: Math.sinh, cosh: Math.cosh, tanh: Math.tanh, exp: Math.exp, ln: Math.log, log: Math.log10, sqrt: Math.sqrt, abs: Math.abs,
+    fact: fact, choose: choose };
+  var ARITY = { choose: 2 };   // every other function takes one argument
+
+  // n! exactly for whole n (0..170), else Γ(n+1) so equivalence checks at random real points still work.
+  function whole(n) { var r = Math.round(n); return Math.abs(n - r) < 1e-9 ? r : null; }
+  function fact(n) {
+    var w = whole(n);
+    if (w !== null) { if (w < 0) return NaN; if (w > 170) return Infinity; var r = 1; for (var i = 2; i <= w; i++) r *= i; return r; }
+    return gamma(n + 1);
+  }
+  function gamma(z) {             // Lanczos approximation (g = 7), reflection for z < 1/2
+    if (z < 0.5) return Math.PI / (Math.sin(Math.PI * z) * gamma(1 - z));
+    var c = [0.99999999999980993, 676.5203681218851, -1259.1392167224028, 771.32342877765313, -176.61502916214059,
+      12.507343278686905, -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7];
+    z -= 1;
+    var a = c[0], t = z + 7.5;
+    for (var i = 1; i < 9; i++) a += c[i] / (z + i);
+    return Math.sqrt(2 * Math.PI) * Math.pow(t, z + 0.5) * Math.exp(-t) * a;
+  }
+  // Binomial coefficient: exact for whole n >= 0 and whole k (0 outside 0..n), else n!/(k!(n-k)!) via Γ.
+  function choose(n, k) {
+    var wn = whole(n), wk = whole(k);
+    if (wn !== null && wk !== null && wn >= 0) {
+      if (wk < 0 || wk > wn) return 0;
+      wk = Math.min(wk, wn - wk);
+      var r = 1;
+      for (var i = 1; i <= wk; i++) r = r * (wn - wk + i) / i;
+      return Math.round(r) < 9007199254740992 ? Math.round(r) : r;
+    }
+    return fact(n) / (fact(k) * fact(n - k));
+  }
   var CONSTS = { pi: Math.PI, e: Math.E };
   var GREEK = ["alpha", "beta", "gamma", "delta", "epsilon", "theta", "lambda", "mu", "sigma", "tau", "phi", "omega", "rho", "nu", "kappa"];
   var NAMES = Object.keys(FUNCS).concat(Object.keys(CONSTS), GREEK).sort(function (a, b) { return b.length - a.length; });
@@ -51,6 +83,7 @@
     if (!t.length) throw new Error("Empty");
     function peek() { return t[p] || { k: "end" }; }
     function eat(k) { if (peek().k !== k) throw new Error(k === ")" ? "Missing “)”" : "Expected “" + k + "”"); return t[p++]; }
+    function eat2(name) { if (peek().k !== ",") throw new Error(name + " needs two arguments: " + name + "(n, k)"); p++; }
     function startsAtom(tok) { return tok.k === "num" || tok.k === "id" || tok.k === "fn" || tok.k === "("; }
     function sum() {
       var a = term();
@@ -82,8 +115,13 @@
       if (tok.k === "id") { p++; return CONSTS[tok.v] !== undefined ? { t: "const", n: tok.v } : { t: "var", n: tok.v }; }
       if (tok.k === "fn") {
         p++;
-        var arg;
-        if (peek().k === "(") { p++; arg = sum(); eat(")"); }
+        var arg, arity = ARITY[tok.v] || 1;
+        if (peek().k === "(") {
+          p++; arg = sum();
+          if (arity === 2) { eat2(tok.v); var arg2 = sum(); eat(")"); return { t: "fn", f: tok.v, a: arg, b: arg2 }; }
+          eat(")");
+        }
+        else if (arity !== 1) throw new Error(tok.v + " needs two arguments: " + tok.v + "(n, k)");
         else if (peek().k === "^") {           // sin^2(x) = (sin x)^2
           p++; var ex = unary(); var inner = atom();
           return { t: "op", op: "^", a: { t: "fn", f: tok.v, a: inner }, b: ex };
@@ -105,7 +143,7 @@
       case "var": return env && n.n in env ? env[n.n] : NaN;
       case "group": return evaluate(n.a, env);
       case "neg": return -evaluate(n.a, env);
-      case "fn": return FUNCS[n.f](evaluate(n.a, env));
+      case "fn": return n.b ? FUNCS[n.f](evaluate(n.a, env), evaluate(n.b, env)) : FUNCS[n.f](evaluate(n.a, env));
       case "op":
         var a = evaluate(n.a, env), b = evaluate(n.b, env);
         return n.op === "+" ? a + b : n.op === "-" ? a - b : n.op === "*" ? a * b : n.op === "/" ? a / b : Math.pow(a, b);
@@ -130,6 +168,8 @@
       case "neg": return "-" + wrap(n.a, 2);
       case "fn":
         if (n.f === "sqrt") return "\\sqrt{" + toTeX(strip(n.a)) + "}";
+        if (n.f === "choose") return "\\binom{" + toTeX(strip(n.a)) + "}{" + toTeX(strip(n.b)) + "}";
+        if (n.f === "fact") return wrap(n.a, 5) + "!";
         if (n.f === "abs") return "\\left|" + toTeX(strip(n.a)) + "\\right|";
         return (TEXFN[n.f] || "\\" + n.f) + "\\left(" + toTeX(strip(n.a)) + "\\right)";
       case "op":
