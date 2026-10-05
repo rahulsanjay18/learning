@@ -26,6 +26,7 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 10. **Verify every fact and number** against a source or with code before publishing (already standard; keep doing it).
 12. **Reading guides as note-taking:** for assigned readings, put 3 guide questions + "what surprised or confused you" as `free`
     boxes at the top of the lesson. They're the learner's notes, they reach the teacher with the results, and every answer gets a reply.
+14. **Check paraphrases against the source sentence**, not memory of it: reread the passage before compressing it. (Entry 14)
 11. **Remind the learner that formula boxes take expressions** (`8/28`, `160*0.05/(...)`), so arithmetic slips don't cost a question. (Entry 9)
 
 ## Entries
@@ -55,3 +56,6 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     **Check every fix against rule 1 too.**
 13. **2026-10-05 · Learner's standing preference:** readings before lessons are welcome in every subject when they make sense;
     homework is fine, but the learner is unsure how much they'll do. Rules 9 and 13.
+14. **2026-10-05 · Indian History lesson 0002 paraphrased the Ghaggar passage wrongly** ("a tectonic shift sent its water into the
+    Yamuna"); the book says the Yamuna once flowed *through* the Ghaggar valley and changed course. The learner's reading answer
+    had it right, so the page contradicted the reading. Fix: corrected the page; rule 14.

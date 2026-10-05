@@ -15,3 +15,5 @@
   arc with causes; judge public history claims. All eras + cross-era themes. Lesson 0002 **not started yet**, so lesson 0003 waits
   for its results (reading-guide answers + lp-results). Lesson 0002's "Routes of Aryan Migration" section is the first chance to
   practise "judge a public claim": use it in 0003's debate box.
+- 2026-10-05: lesson 0002 done (record 0002; replies in QUESTIONS.md). Learner asks "was this really true?" questions: answer with
+  sources. Homework/readings: did the reading fully; answered 4/5 guide boxes.
