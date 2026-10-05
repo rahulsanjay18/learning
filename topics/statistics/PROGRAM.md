@@ -5,7 +5,7 @@ subject: 4 blocks of 25 minutes a week (`notes/study-plan.md`).*
 
 ## TL;DR
 - **Spine:** Casella & Berger, *Statistical Inference*, 2nd ed. (grade A, in collection), all 12 chapters, in order [1].
-- **First,** finish the A/B-testing arc already under way (S150: 2 more lessons, power and multiple testing). **Then** Chapter 1, page 1.
+- **First,** finish the A/B-testing arc already under way (S150: 2 more lessons, likelihood ratios and multiple testing). **Then** Chapter 1, page 1.
 - **One lesson = 2 blocks:** block 1 reads ~7 pages with a reading guide; block 2 is the lesson page: idea → worked example →
   practice → **one proof you write**. About 2 lessons a week.
 - **Size:** ~450 pages of text → at most ~66 lessons + 12 pretests + 12 chapter checks ≈ **40 weeks** (132 + 14 + 12 = 158 blocks) at 4 blocks a week if you
@@ -23,7 +23,7 @@ Page ranges are the chapters' text, without exercises and miscellanea, from the 
 | Course | Casella & Berger | Pages | Lessons | Notes |
 |---|---|---|---|---|
 | S100 Placement | — | — | 1 (done) | Lesson 0001. Probability mechanics solid; inference interpretation was the gap (records 0001–0002) |
-| **S150 Inference for practitioners** (now) | slices of §8.3, §9.1 | — | 5 (3 done) | 0002 p-values · 0003 effect size and CIs · **0004 power and likelihood ratios** · **0005 multiple testing**. Ties straight to the A/B-test goal in the mission |
+| **S150 Inference for practitioners** (now) | slices of §8.3, §9.1 | — | 6 (4 done) | 0002 p-values · 0003 effect size and CIs · 0004 power (§8.3.1) · **0005 likelihood ratios: P(data given H1)** · **0006 multiple testing**. Ties straight to the A/B-test goal in the mission |
 | S201 Probability theory | Ch. 1 | 1–37 | 4 | Fast: your pretest was strong here. Proof focus: from the axioms (Kolmogorov) |
 | S202 Transformations and expectations | Ch. 2 | 47–76 | 4 | Change of variables, mgfs, differentiating under the integral sign |
 | S203 Common families of distributions | Ch. 3 | 85–127 | 6 | Fixes the rusty recall in record 0003 (geometric, Poisson, memorylessness). Exponential families matter for GLMs |

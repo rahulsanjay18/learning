@@ -35,3 +35,6 @@
   chapter's resulting plan here after its pretest.
 - 2026-10-05: lesson 3 results 1/12 (record 0007), mostly lesson-design problems; fixed the page (teaching log 16–19). Learner does
   **one lesson a day and doesn't remember details from the day before**: restate everything in each problem.
+- 2026-10-05: **lesson 4 = power only** (all from the reading, §8.3.1), with the p-vs-effect revisit and a first proof task
+  (`proof-powerfn`). The likelihood-ratio question moved to lesson 5; multiple testing is lesson 6. Reply to read-powerfn,
+  read-binom, read-n, read-surprise4 and grade proof-powerfn when results come in.

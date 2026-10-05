@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power: how often a real effect gets caught</title>
+<link rel="stylesheet" href="../../../assets/lp.css">
+<link rel="stylesheet" href="../../../assets/plugins/math.css">
+<link rel="stylesheet" href="../../../assets/plugins/plot.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../../../index.html">All topics</a> · Statistics · Lesson 4</nav>
+<h1>Power: how often a real effect gets caught</h1>
+<p class="subtitle">Two blocks: the reading (about 20 minutes), then this page (about 25). One win: compute a test's power for a specific effect, and the sample size that would give 80%.</p>
+
+<h2>Block 1: read first</h2>
+<div class="reading">
+<h3>Reading</h3>
+<ol>
+  <li><strong>Casella &amp; Berger, <em>Statistical Inference</em>, §8.3.1 "Error Probabilities and the Power Function", pp. 382–385</strong>: from the start of §8.3 to the end of Example 8.3.4. Stop before Definition 8.3.5.</li>
+  <li>Companion, if you want the applied version: Bruce, Bruce &amp; Gedeck, <em>Practical Statistics for Data Scientists</em>, "Power and Sample Size".</li>
+</ol>
+<p class="small"><strong>Heads-up (notation traps):</strong></p>
+<ul class="small">
+  <li>Casella &amp; Berger write the <strong>power function</strong> as \(\beta(\theta)\). Lesson 2 (and most applied books) used \(\beta\) for the <em>Type II error rate</em>, so power was \(1-\beta\). Same letter, opposite meaning. On this page, \(\beta(\theta)\) always means power.</li>
+  <li>\(\Theta_0\) is the set of parameter values where \(H_0\) is true; \(\Theta_0^c\) is everything else. \(R\) is the rejection region: the data values that make you reject.</li>
+  <li>In Example 8.3.3, \(\sigma\) is known and \(c\) is the cutoff: reject when \((\bar X - \theta_0)/(\sigma/\sqrt n) &gt; c\).</li>
+</ul>
+<p class="small">Notes: answer the four boxes below in your own words while you read (a sentence or two each). They reach me with your results, and I'll reply to each.</p>
+</div>
+<div class="quiz" data-type="free" data-id="read-powerfn">
+  <p class="prompt">Definition 8.3.1: what does the power function \(\beta(\theta)\) give you when \(\theta\) is in \(\Theta_0\), and when it's in \(\Theta_0^c\)? What would the ideal power function look like?</p>
+  <div class="rubric">For θ in Θ0: the probability of a Type I error (false positive). For θ in Θ0ᶜ: one minus the probability of a Type II error (the chance of correctly rejecting). Ideal: 0 on all of Θ0 and 1 on all of Θ0ᶜ; not attainable except in trivial cases (p. 383).</div>
+</div>
+<div class="quiz" data-type="free" data-id="read-binom">
+  <p class="prompt">Example 8.3.2: the second test (reject if \(X\) = 3, 4 or 5) has a smaller Type II error than the first (reject only if \(X = 5\)). Why isn't it simply the better test?</p>
+  <div class="rubric">Its Type I error probability is larger too (β2(θ) is larger for θ ≤ 1/2). Fixed n: lowering one error raises the other; the researcher has to choose which error structure is acceptable.</div>
+</div>
+<div class="quiz" data-type="free" data-id="read-n">
+  <p class="prompt">Example 8.3.4: which two requirements pin down the cutoff \(c\) and the sample size \(n\)? Why does \(n\) end up as 5 when the calculation gives 4.49?</p>
+  <div class="rubric">Max Type I error .1 (gives c = 1.28, whatever n is) and Type II error at most .2 (power ≥ .8) when θ ≥ θ0 + σ (gives n = 4.49). n must be a whole number, and rounding up keeps power at least .8.</div>
+</div>
+<div class="quiz" data-type="free" data-id="read-surprise4">
+  <p class="prompt">One thing that surprised or confused you.</p>
+</div>
+
+<h2>Block 2: the lesson</h2>
+<p class="small"><strong>Typing answers:</strong> number boxes take expressions. Type <code>*</code> for ×, <code>/</code> for ÷, <code>^</code> for powers and <code>sqrt( )</code> for roots, e.g. <code>3 - 1.96*0.2</code>.</p>
+<p class="small"><strong>How this connects to the reading:</strong> sections 1–3 are §8.3.1 (Definition 8.3.1, Examples 8.3.2–8.3.4) applied to an A/B test. The warm-up and the "revisit" section are review from lessons 2–3.</p>
+<div class="callout"><p><strong>The running example (an A/B test).</strong> A new checkout page is tested with <strong>12,000 users in each group</strong>. The old page converts 5.0% of users, the new page 5.6%: an observed lift of 0.6 percentage points. Standard error of the difference: \(\text{SE} = \sqrt{0.05 \times 0.95/12000 + 0.056 \times 0.944/12000} = 0.29\) points. The test rejects "no difference" when \(|z| &gt; 1.96\), where \(z = \text{lift}/\text{SE}\) (two-sided, \(\alpha = 0.05\)). Here \(z \approx 2.08\) and \(p \approx 0.038\).</p></div>
+
+<h3>Warm-up (from memory)</h3>
+<div class="quiz" data-type="math" data-id="wu-ci-upper" data-answer="1.4+1.96*0.3" data-tolerance="0.01" data-hint="Upper end = estimate + 1.96 × SE. Type * for ×.">
+  <p class="prompt">An estimate is 1.4 with standard error 0.3. What is the upper end of its 95% confidence interval?</p>
+  <div class="explain" hidden>\(1.4 + 1.96 \times 0.3 = 1.988\).</div>
+</div>
+<div class="quiz" data-type="choice" data-id="wu-fn" data-answer="False negative (Type II)" data-options="False positive (Type I)|False negative (Type II)|Correct detection (true positive)|Correct non-rejection (true negative)">
+  <p class="prompt">The new page really does help, but the test says "no significant difference". That outcome is a…</p>
+  <div class="explain" hidden>A real effect, missed: false negative, Type II. Power is the chance of <em>avoiding</em> exactly this.</div>
+</div>
+
+<h3>Revisit: a small p-value doesn't mean a big effect</h3>
+<p>You've missed this one twice, so here it is with numbers. Recall \(z = \text{lift}/\text{SE}\), and the SE shrinks as the groups grow (\(\text{SE} \propto 1/\sqrt n\)). Two real tests:</p>
+<table>
+  <tr><th></th><th>Users per group</th><th>Conversion</th><th>Lift (effect size)</th><th>p</th></tr>
+  <tr><td>Test A</td><td>1,000,000</td><td>5.00% → 5.10%</td><td>0.1 points</td><td>0.001</td></tr>
+  <tr><td>Test B</td><td>2,000</td><td>5.0% → 6.5%</td><td>1.5 points</td><td>0.04</td></tr>
+</table>
+<p>A has the far smaller p-value and a <em>15 times smaller</em> effect. Its huge sample makes the SE tiny, so even a 0.1-point lift is many SEs from zero. The p-value measures "detectably not zero", which mixes effect size and sample size.</p>
+<div class="quiz" data-type="choice" data-id="pe-which" data-answer="D has smaller p and smaller effect" data-options="D has smaller p and smaller effect|D has smaller p and bigger effect|C has smaller p and bigger effect|C has smaller p and smaller effect">
+  <p class="prompt">Test C: 300 users per group, conversion 10% → 14% (lift 4 points). Test D: 500,000 users per group, 10.0% → 10.2% (lift 0.2 points). Which is true?</p>
+  <div class="explain" hidden>C: \(p \approx 0.13\) (big effect, too little data to rule out noise). D: \(p \approx 0.0009\) (tiny effect, measured very precisely). Effect size and p-value can point in opposite directions.</div>
+</div>
+
+<h3>1 · The power function <span class="muted small">(from the reading: Definition 8.3.1)</span></h3>
+<p>Casella &amp; Berger define the power function as \(\beta(\theta) = P_\theta(X \in R)\): the probability of rejecting, as a function of the true parameter.<cite class="ref"><a href="#s1">1</a></cite> In the A/B test the parameter is the true lift \(\delta\). Intuition first: suppose the new page <em>really</em> lifts conversion by \(\delta\), and you rerun the whole 12,000-per-group test many times. Each rerun gives a different \(z\). Those \(z\) values scatter around \(\delta/\text{SE}\) with standard deviation 1. Power is the fraction of reruns that land past the 1.96 cutoff.</p>
+<p>So the one number that matters is the true effect in SE units, \(d = \delta/\text{SE}\), and</p>
+$$\beta(\delta) \approx P(Z &gt; 1.96 - d)$$
+<p class="small muted">(Two-sided tests can also reject on the far negative side; for the effects on this page that adds less than 0.001, so we ignore it.)</p>
+<div class="lp-plot" id="power-plot" data-x="-4:7" data-y="0:0.45" data-fns="exp(-(x-d)^2/2)/sqrt(2pi); exp(-x^2/2)/sqrt(2pi)" data-labels="If the true lift is d SEs;If there is no effect" data-params="d=2.1:0:5:0.1" data-shade="1.96:inf" data-show-area="true" data-vline="1.96" data-xlabel="z from one rerun of the test" data-ylabel="density" data-caption="Reject right of 1.96. The shaded area under the solid curve is the power for a true lift of d standard errors. At d = 0 it would be the false-positive rate (about 0.025 on this side)."></div>
+<div class="lp-worked">
+  <div class="step"><p><strong>Worked example.</strong> Power of the 12,000-per-group test if the true lift is 0.5 points (SE 0.29 points).</p></div>
+  <div class="step"><p>Effect in SE units: \(d = 0.5 / 0.289 = 1.73\).</p></div>
+  <div class="step"><p>Power \(\approx P(Z &gt; 1.96 - 1.73) = P(Z &gt; 0.23) = 0.41\). Check it on the plot: set \(d\) to 1.7 and read the shaded area.</p></div>
+  <div class="step"><p>So a real 0.5-point lift would be detected only 41% of the time. And the lift you actually observed, 0.6 points (\(d = 2.08\)), gives power 0.55: <strong>a coin flip</strong> whether a real effect that size gets flagged.</p></div>
+</div>
+<div class="quiz" data-type="number" data-id="pow-08" data-answer="0.79" data-tolerance="0.03" data-context="power-plot" data-hint="d = 0.8 / 0.289. Set the slider to the nearest 0.1 and read the shaded area.">
+  <p class="prompt">Same test: 12,000 users per group, SE 0.29 points, reject when \(z &gt; 1.96\). What is the power if the true lift is 0.8 points? Use the plot above. (A decimal.)</p>
+  <div class="explain" hidden>\(d = 0.8/0.289 = 2.77\); power \(\approx P(Z &gt; -0.81) = 0.79\).</div>
+</div>
+
+<h3>2 · The trade-off <span class="muted small">(from the reading: Example 8.3.2)</span></h3>
+<p>Example 8.3.2 showed that with the sample size fixed, a test that rejects more easily catches more real effects but also raises more false alarms. You can't lower both error rates just by moving the cutoff.</p>
+<div class="quiz" data-type="choice" data-id="tradeoff" data-answer="It drops, about 0.55 to 0.31" data-options="It drops, about 0.55 to 0.31|It rises, about 0.55 to 0.79|It stays the same, about 0.55|It drops to exactly zero now">
+  <p class="prompt">Same A/B test, still 12,000 users per group. You make it stricter: \(\alpha = 0.01\), so you reject only when \(|z| &gt; 2.58\) instead of 1.96. What happens to the power for a true lift of 0.6 points?</p>
+  <div class="explain" hidden>Fewer false positives, more false negatives: the cutoff moves right, past more of the solid curve. Power \(\approx P(Z &gt; 2.58 - 2.08) = P(Z &gt; 0.50) = 0.31\). Only more data (a bigger \(d\)) buys both.</div>
+</div>
+
+<h3>3 · Choosing the sample size <span class="muted small">(from the reading: Example 8.3.4)</span></h3>
+<p>Example 8.3.4 turns the question around: choose \(n\) so the power is high enough for the smallest effect you care about. The common target is power 0.80.</p>
+<div class="quiz" data-type="plot-set" data-id="pow-80" data-x="-4:7" data-y="0:0.45" data-fns="exp(-(x-d)^2/2)/sqrt(2pi); exp(-x^2/2)/sqrt(2pi)" data-labels="If the true lift is d SEs;If there is no effect" data-params="d=1:0:5:0.1" data-shade="1.96:inf" data-show-area="true" data-vline="1.96" data-xlabel="z from one rerun of the test" data-ylabel="density" data-target="d=2.8" data-tolerance="0.05">
+  <p class="prompt">Cutoff 1.96 (two-sided \(\alpha = 0.05\)). Set \(d\), the true effect in standard errors, so that the power is about 0.80.</p>
+  <div class="explain" hidden>\(d = 2.8\): that's \(1.96 + 0.84\), where \(P(Z &gt; -0.84) = 0.80\). Rule of thumb: <strong>80% power needs the effect to be about 2.8 standard errors.</strong></div>
+</div>
+<p>Now use \(\text{SE} \propto 1/\sqrt n\): multiplying the sample by \(k\) divides the SE by \(\sqrt k\), so it multiplies \(d\) by \(\sqrt k\). To move \(d\) from its current value up to 2.8:</p>
+$$n_{\text{needed}} = n_{\text{now}} \times \left(\frac{2.8}{d_{\text{now}}}\right)^2$$
+<div class="lp-worked">
+  <div class="step"><p><strong>Worked example.</strong> How many users per group for 80% power if the true lift is 0.6 points?</p></div>
+  <div class="step"><p>Now: \(n = 12{,}000\), \(d = 0.6/0.289 = 2.08\).</p></div>
+  <div class="step"><p>\(n_{\text{needed}} = 12{,}000 \times (2.8/2.08)^2 = 12{,}000 \times 1.81 \approx 21{,}900\) per group. Almost twice the users.</p></div>
+</div>
+<div class="quiz" data-type="math" data-id="n-05" data-answer="12000*(2.8/(0.5/0.289))^2" data-tolerance="600" data-hint="First d now = 0.5 / 0.289, then 12000 * (2.8 / d)^2.">
+  <p class="prompt">The smallest lift worth shipping is 0.5 points. With 12,000 users per group the SE is 0.289 points. How many users per group give 80% power for a true lift of 0.5 points? (An expression is fine.)</p>
+  <div class="explain" hidden>\(d_{\text{now}} = 0.5/0.289 = 1.73\); \(12{,}000 \times (2.8/1.73)^2 \approx 31{,}400\) per group. Smaller effects need a lot more data: halve the effect and you need four times the users.</div>
+</div>
+
+<h3>Proof <span class="muted small">(from the reading: Example 8.3.3)</span></h3>
+<p>Casella &amp; Berger say the normal power function's behaviour is "easy to see". Prove it. Setup: \(X_1, \dots, X_n\) iid \(\text{n}(\theta, \sigma^2)\) with \(\sigma\) known; reject \(H_0: \theta \le \theta_0\) when \((\bar X - \theta_0)/(\sigma/\sqrt n) &gt; c\).</p>
+<div class="quiz" data-type="free" data-id="proof-powerfn">
+  <p class="prompt">Show that (a) \(\beta(\theta) = P\big(Z &gt; c + \frac{\theta_0 - \theta}{\sigma/\sqrt n}\big)\) with \(Z\) standard normal; (b) \(\beta\) is increasing in \(\theta\); (c) \(\beta(\theta) \to 0\) as \(\theta \to -\infty\) and \(\to 1\) as \(\theta \to \infty\); (d) \(\beta(\theta_0) = \alpha\) when \(P(Z &gt; c) = \alpha\). Plain text is fine (e.g. "Phi", "sqrt(n)").</p>
+  <div class="rubric">(a) Subtract and add θ: (X̄−θ0)/(σ/√n) > c ⇔ (X̄−θ)/(σ/√n) > c + (θ0−θ)/(σ/√n); under θ, (X̄−θ)/(σ/√n) ~ n(0,1) because X̄ ~ n(θ, σ²/n). (b) t(θ) = c + (θ0−θ)√n/σ is strictly decreasing in θ; P(Z > t) = 1 − Φ(t) is strictly decreasing in t (the normal density is positive); the composition is strictly increasing. (c) t → +∞ as θ → −∞ and t → −∞ as θ → ∞; 1 − Φ(t) → 0 and → 1. (d) t(θ0) = c. Full marks need the reason X̄ ~ n(θ, σ²/n) and the monotonicity of Φ stated, not just asserted.</div>
+  <div class="explain" hidden><p><strong>Model proof.</strong> (a) Under \(\theta\), \(\bar X \sim \text{n}(\theta, \sigma^2/n)\), so \(Z = (\bar X - \theta)/(\sigma/\sqrt n)\) is standard normal. Then \(\frac{\bar X - \theta_0}{\sigma/\sqrt n} &gt; c \iff Z &gt; c + \frac{\theta_0 - \theta}{\sigma/\sqrt n} =: t(\theta)\), so \(\beta(\theta) = 1 - \Phi(t(\theta))\).</p>
+  <p>(b) \(t(\theta)\) is strictly decreasing in \(\theta\) (slope \(-\sqrt n/\sigma\)), and \(\Phi\) is strictly increasing (its derivative, the normal density, is positive), so \(1 - \Phi(t(\theta))\) is strictly increasing. (c) As \(\theta \to -\infty\), \(t \to \infty\) and \(1 - \Phi(t) \to 0\); as \(\theta \to \infty\), \(t \to -\infty\) and \(1 - \Phi(t) \to 1\). (d) \(t(\theta_0) = c\), so \(\beta(\theta_0) = P(Z &gt; c) = \alpha\).</p></div>
+</div>
+
+<h3>Say it</h3>
+<div class="quiz" data-type="recall" data-id="say-power">
+  <p class="prompt">From memory, one or two sentences for your PM. The A/B test (12,000 users per group) had about 55% power for a true lift of 0.6 points. What does that mean, and what would you change next time?</p>
+  <div class="explain" hidden>"If the new page really lifts conversion by 0.6 points, a test this size would flag it only about half the time, so a 'no difference' result from it wouldn't have meant much. Next time, to catch a lift that size 80% of the time, we'd need about 22,000 users per group (about 31,000 for a 0.5-point lift)."</div>
+</div>
+
+<h2>Next</h2>
+<p>Lesson 5 takes your question from lesson 2: how likely the data are if the page <em>does</em> work (\(P(\text{data} \mid H_1)\)), likelihood ratios, and how sure you can really be after \(p = 0.038\). Then lesson 6 on multiple testing finishes this arc, and the cover-to-cover program starts with the Chapter 1 pretest (see the <a href="../PROGRAM.md">program</a>). The <a href="../reference/formulas.html">formula sheet</a> has a new "Errors and power" entry.</p>
+<p>Questions about any of this? Ask me.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1">George Casella &amp; Roger L. Berger, <em>Statistical Inference</em>, 2nd ed., §8.3.1 "Error Probabilities and the Power Function", pp. 382–385: Table 8.3.1, Definition 8.3.1 (power function \(\beta(\theta) = P_\theta(X \in R)\)), Examples 8.3.2 (binomial power functions), 8.3.3 (normal power function) and 8.3.4 (choosing \(c = 1.28\) and \(n = 5\)). In collection (grade A), read on the book server.</li>
+  <li id="s2">Peter Bruce, Andrew Bruce &amp; Peter Gedeck, <em>Practical Statistics for Data Scientists</em>, 2nd ed., "Power and Sample Size". In collection (grade A).</li>
+  <li>All numbers computed in Python: SE 0.289 points (unpooled); power 0.41, 0.55, 0.79 for true lifts 0.5, 0.6, 0.8 points; 0.31 at \(\alpha = 0.01\); 21,900 and 31,400 users per group for 80% power at 0.6 and 0.5 points (\(1.96 + 0.84 = 2.80\)); p-values for tests A–D from a pooled two-proportion z-test (0.0012, 0.042, 0.13, 0.0009).</li>
+</ol>
+</main>
+<script src="../../../assets/lp.js"></script>
+<script src="../../../assets/plugins/math.js"></script>
+<script src="../../../assets/plugins/plot.js"></script>
+</body>
+</html>

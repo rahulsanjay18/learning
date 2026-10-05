@@ -3,7 +3,7 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
-- Statistics **lesson 3** (reading Casella & Berger §9.1 pp. 417–419 first) and Indian History **IH 100.1** (reading Kulke & Rothermund
+- Statistics **lesson 4** (reading Casella & Berger §8.3.1 pp. 382–385 first) and Indian History **IH 100.1** (reading Kulke & Rothermund
   Introduction, first half). Both have reading-guide boxes: reply to those answers when results come in.
 - Daily review deck: `assets/review.html`.
 - Deploy `progress-server/` (steps in its README); then pair devices (see CLAUDE.md).
@@ -11,7 +11,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 ## Open teaching work
 | Topic | Next | Notes |
 |---|---|---|
-| Statistics | **Program: all of Casella & Berger with proofs; chapter pretest (concept/calc/proof per section) before each chapter** (`topics/statistics/PROGRAM.md`). Learner hasn't done lesson 3 yet. Then lesson 4: P(data given H1), likelihood ratios, power (~55% in the A/B example) | Numbers in `topics/statistics/QUESTIONS.md` |
+| Statistics | **Program: all of Casella & Berger with proofs; chapter pretest (concept/calc/proof per section) before each chapter** (`topics/statistics/PROGRAM.md`). Lesson 3 done (record 0007); **lesson 4 (power, §8.3.1) built**, learner does it next. Then lesson 5: P(data given H1), likelihood ratios, power (~55% in the A/B example) | Numbers in `topics/statistics/QUESTIONS.md` |
 | Indian History | Mission done (MISSION.md). Learner does lesson 0002 next; then lesson 0003: rest of Introduction + Indus with first primary source, and a first "judge a public claim" box (Aryan migration) | `topics/indian-history/PROGRAM.md` |
 | Games (fun major) | **Mission: design a balanced 3D strategy game** (MISSION.md). Chess is class G101 (continue `topics/chess/`, lessons 0001–0002 done); program decided: chess → tiny games → xiangqi → shogi → Go → chance (Pig + backgammon unit) → poker → theory/AI | Chess.com: rahulsanjay18 |
 | AWS ML cert | Ask: which exam, target date, AWS experience, prep materials | Check AWS's current exam list (don't guess names) |
