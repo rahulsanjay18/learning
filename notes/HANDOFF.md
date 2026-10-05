@@ -24,7 +24,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
   `scripts/test_programs.py`. AWS ML major still needs setup (`/program setup aws-ml`).
 - Widgets: **tiny-game boards vs. a minimax solver** (tic-tac-toe, Nim, Hex) and **xiangqi / shogi boards** for the Games major.
 - Widgets: **flashcards** + a **"How sure were you?"** step (guessed-right → treated as not known). Next in the widget queue.
-- "Today" page that shows the day's plan from `notes/study-plan.md` and marks it done (enforces "finish the plan first").
+- **Today page built** (`assets/today.html` + `today.js`, test `scripts/test_today.mjs`): plan from programs.json, ticks in localStorage.
 - Book server: `/search?book=<id>`, page numbers per chunk, per-book section maps, then hybrid (embedding) search. See
   `notes/program-layer-build-plan.md` (RAG update). Also a page-image endpoint for equations (`notes/math-books-strategy.md`).
 - Library: Casella & Berger's /toc is junk (logged in `library/QUALITY-NOTES.md`); its real contents page is in the text near line 600.
