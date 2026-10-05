@@ -14,6 +14,8 @@ forgotten definitions, not misconceptions. Lesson 2's practice items distinguish
 **Update 2:** the learner reports not knowing what α is (and got the power question wrong), while knowing what p is. So α, power and
 Type I/II errors were *not learned or forgotten*, not misconceived. Lesson 2 (revised) now teaches them before using them.
 
+**Update 4:** partly superseded by record 0005 (vocabulary and p-value reading now correct).
+
 **Update 3 (confirmed):** asked about lesson 2's opening, the learner read p = 0.038 as "4% chance it's luck, 96% it's the website",
 i.e. P(H0 | data). So the classic p-value misreading *is* present alongside the missing α/power vocabulary. Answer logged in
 QUESTIONS.md; re-test this specific reading in the next few lessons (it should come back via the review deck too).
