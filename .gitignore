@@ -5,3 +5,4 @@
 book-server/data/
 progress-server/data/
 __pycache__/
+.claude/worktrees/
