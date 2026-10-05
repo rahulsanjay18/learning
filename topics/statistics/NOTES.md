@@ -16,3 +16,6 @@
 - 2026-10-05: **teaching rule after feedback:** lesson 2 used α and power without defining them, and the learner couldn't follow.
   Before using a term, check the learning records: if it was missed or skipped on the pretest, **define it in the lesson first**.
   Prefer a worked example followed by a similar practice item over a cold question.
+- 2026-10-05: learner found lesson 2's six-statement sort "hard": it tested effect size/sample size before teaching it, and was
+  all-or-nothing. Fixed: taught first, split into two 3-item sorts. **Rule: keep categorize/order items to 3–4 rows, and never
+  test an idea the lesson hasn't taught.**

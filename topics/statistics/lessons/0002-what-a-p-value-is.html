@@ -76,6 +76,16 @@
   <li>Decisions shouldn't rest only on whether \(p\) crosses a threshold.</li>
 </ol>
 
+<h2>Why a small p isn't a big effect</h2>
+<p>The p-value comes from \(z = \dfrac{\text{observed effect}}{\text{standard error}}\), and the standard error shrinks like \(1/\sqrt{n}\). So \(z\) gets large, and \(p\) small, either because the effect is big <em>or</em> because there's a lot of data. The p-value can't tell you which.</p>
+<table class="values">
+  <tr><th>Study</th><th>True lift</th><th>Users per arm</th><th>p</th></tr>
+  <tr><td>A</td><td>2.00 points (big)</td><td class="num">500</td><td class="num">0.18</td></tr>
+  <tr><td>B</td><td>0.15 points (small)</td><td class="num">300,000</td><td class="num">0.008</td></tr>
+  <tr><td>C</td><td>0.05 points (tiny)</td><td class="num">5,000,000</td><td class="num">0.0003</td></tr>
+</table>
+<p>Study C is "highly significant" for a lift nobody should care about. Study A may have found something big but doesn't have enough data to be sure. So always report the <strong>effect size</strong> next to \(p\). Confidence intervals (lesson 3) show both at once.</p>
+
 <h2>Practice</h2>
 <div class="quiz" data-type="choice" data-id="read-p" data-answer="If the new page made no difference, results this extreme would happen 3.8% of the time"
   data-options="There is a 3.8% chance that the new page makes no difference at all to conversion|If the new page made no difference, results this extreme would happen 3.8% of the time|There is a 96.2% chance that the new page really does improve the overall conversion rate|The observed lift has a 3.8% chance of being caused by nothing but pure random luck">
@@ -84,9 +94,14 @@
 </div>
 
 <div class="quiz" data-type="categorize" data-id="sort-claims" data-buckets="Correct|Misreading"
-  data-items="A small p means the data would be surprising if H0 were true>Correct|p is the probability that H0 is true>Misreading|p = 0.01 means a bigger effect than p = 0.20>Misreading|p is computed assuming H0 is true>Correct|1 − p is the probability the treatment works>Misreading|With huge samples, tiny effects get tiny p-values>Correct">
-  <p class="prompt">Sort each statement.</p>
-  <div class="explain" hidden>Everything correct here is about the data under \(H_0\). Every misreading tries to make \(p\) say something about \(H_0\) itself, or about effect size. Why not effect size: \(p\) comes from \(z = \text{effect}/\text{SE}\), and SE shrinks like \(1/\sqrt n\). A 0.05-point lift gives \(p = 0.86\) with 12,000 users per arm but \(p = 0.0003\) with 5 million. A study with a 2-point lift and 500 users per arm can get \(p = 0.18\), while one with a 0.15-point lift and 300,000 per arm gets \(p = 0.008\).</div>
+  data-items="A small p means the data would be surprising if H0 were true>Correct|p is the probability that H0 is true>Misreading|1 − p is the probability the treatment works>Misreading">
+  <p class="prompt">Sort each statement about what \(p\) means.</p>
+  <div class="explain" hidden>Only the first stays inside the "no-effect world". The other two flip the conditional into \(P(H_0 \mid \text{data})\), or its complement.</div>
+</div>
+<div class="quiz" data-type="categorize" data-id="sort-size" data-buckets="Correct|Misreading"
+  data-items="p is computed assuming H0 is true>Correct|p = 0.01 means a bigger effect than p = 0.20>Misreading|With huge samples, tiny effects get tiny p-values>Correct">
+  <p class="prompt">Sort each statement about \(p\) and effect size.</p>
+  <div class="explain" hidden>\(p\) mixes effect size with sample size (\(z = \text{effect}/\text{SE}\)), so a smaller \(p\) doesn't mean a bigger effect: see studies A–C above.</div>
 </div>
 
 <div class="quiz" data-type="plot-set" data-id="find-196" data-x="-4:4" data-y="0:0.45" data-fns="exp(-x^2/2)/sqrt(2pi)" data-params="z=1:0:3.5:0.01" data-shade="z:inf" data-show-area="true" data-vline="z" data-target="z=1.96" data-tolerance="0.02" data-xlabel="z" data-ylabel="density">
