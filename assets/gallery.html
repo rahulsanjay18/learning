@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="plugins/go.css">
 <link rel="stylesheet" href="plugins/math.css">
 <link rel="stylesheet" href="plugins/plot.css">
+<link rel="stylesheet" href="plugins/timeline.css">
+<link rel="stylesheet" href="plugins/map.css">
 </head>
 <body>
 <main>
@@ -127,11 +129,45 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
   <p class="prompt">Black to play and capture. White will answer.</p>
   <div class="explain" hidden>E7 forces White down to E4, where D4 and F4 leave one liberty; E3 captures three stones. Starting with E4 lets White escape upward.</div>
 </div>
+<h2>Timeline plugin</h2>
+<div class="lp-timeline" id="tl-india" data-range="-600:1950"
+  data-spans="c-321:-185:Maurya Empire|1206:1526:Delhi Sultanate|1526:1857:Mughal Empire|1858:1947:British Raj"
+  data-events="c-268:Ashoka's reign begins|1526:First Battle of Panipat|1857:Revolt begins at Meerut|1947:Independence"
+  data-caption="Some empires of the subcontinent, c. 600 BCE to 1950 CE. “c.” marks approximate dates."></div>
+<div class="quiz" data-type="timeline-place" data-id="tl-plassey" data-range="1500:1950" data-answer="1757" data-tolerance="10"
+  data-spans="1526:1857:Mughal Empire|1858:1947:British Raj" data-events="1526:First Battle of Panipat"
+  data-hint="It came about a century before the Crown took over from the East India Company.">
+  <p class="prompt">At the Battle of Plassey, the East India Company defeated the Nawab of Bengal. Tap the timeline where it falls (within 10 years), then press Check.</p>
+  <div class="explain" hidden>23 June 1757. The victory gave the Company control of Bengal, a century before Crown rule began in 1858.</div>
+</div>
+
+<h2>Map plugin</h2>
+<div class="lp-map" id="map-south-asia" data-view="60,5,100,38" data-highlight="India"
+  data-points="28.61,77.21:New Delhi|19.08,72.88:Mumbai|22.57,88.37:Kolkata|13.08,80.28:Chennai"
+  data-caption="South Asia with four large cities, India tinted. Borders: Natural Earth (de facto lines)."></div>
+<div class="quiz" data-type="map-locate" data-id="map-patali" data-view="60,5,100,38" data-answer="25.59,85.14" data-tolerance-km="200"
+  data-choices="28.61,77.21:New Delhi|25.59,85.14:Patna|22.57,88.37:Kolkata|19.08,72.88:Mumbai"
+  data-hint="It stood on the Ganges, in the old kingdom of Magadha (today's Bihar).">
+  <p class="prompt">Pataliputra was the capital of the Maurya Empire. Tap where it stood (within 200 km), then press Check.</p>
+  <div class="explain" hidden>Pataliputra is modern Patna, on the south bank of the Ganges in Bihar (25.59° N, 85.14° E).</div>
+</div>
+<ol class="sources">
+  <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Maurya_Empire">Maurya Empire</a>: c. 321–185 BCE; Ashoka c. 268–232 BCE; capital Pataliputra (now Patna).</li>
+  <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Delhi_Sultanate">Delhi Sultanate</a>: 1206–1526.</li>
+  <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Mughal_Empire">Mughal Empire</a>: 1526–1857, founded at the First Battle of Panipat (21 April 1526).</li>
+  <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/British_Raj">British Raj</a>: 28 June 1858 to 15 August 1947.</li>
+  <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Indian_Rebellion_of_1857">Indian Rebellion of 1857</a>: began at Meerut on 10 May 1857.</li>
+  <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Battle_of_Plassey">Battle of Plassey</a>: 23 June 1757.</li>
+  <li>Coordinates from the Wikipedia infoboxes for <a href="https://en.wikipedia.org/wiki/New_Delhi">New Delhi</a>, <a href="https://en.wikipedia.org/wiki/Mumbai">Mumbai</a>, <a href="https://en.wikipedia.org/wiki/Kolkata">Kolkata</a>, <a href="https://en.wikipedia.org/wiki/Chennai">Chennai</a> and <a href="https://en.wikipedia.org/wiki/Patna">Patna</a>.</li>
+  <li>Basemap: <a href="https://www.naturalearthdata.com/">Natural Earth</a> 1:50m (public domain), via world-atlas 2.0.2 (ISC).</li>
+</ol>
 </main>
 <script src="lp.js"></script>
 <script src="plugins/chess.js"></script>
 <script src="plugins/go.js"></script>
 <script src="plugins/math.js"></script>
 <script src="plugins/plot.js"></script>
+<script src="plugins/timeline.js"></script>
+<script src="plugins/map.js"></script>
 </body>
 </html>

@@ -67,6 +67,16 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
   - `data-shade="a:b"` shades under the **first** formula between two expressions of the parameters (`-inf`/`inf` = the plot's edge); `data-show-area="true"` prints the area (trapezoid rule). `data-discrete="true"` draws whole `x` as bars, e.g. Binomial `choose(n,x) p^x (1-p)^(n-x)`; shading then sums the shaded bars. `data-vline` takes `;`-separated expressions.
   - Set the sliders: `<div class="quiz" data-type="plot-set" data-id="…" …plot attributes… data-target="mu=1.5" [data-tolerance="0.11"]>`. Right = every target parameter within tolerance (default half a slider step) when the learner presses Check. Pick a target the slider steps can reach.
   - `node scripts/test_plot.js` checks the plotting math and that every plot's formulas, sliders and targets are valid.
+- **Timeline** (`plugins/timeline.js` + `plugins/timeline.css`): horizontal SVG timelines (History, any dated sequence).
+  - Diagram: `<div class="lp-timeline" data-range="-600:1950" data-spans="c-321:-185:Maurya Empire|1526:1857:Mughal Empire" data-events="c-268:Ashoka's reign begins|1947:Independence" data-caption="…"></div>`. Spans are `start:end:label` (thin bars; overlaps stack in lanes), events `year:label` (dots; labels stack below the axis).
+  - Years are whole numbers, **negative = BCE, and there is no year 0** (−1 is 1 BCE, 1 is 1 CE; 0 is rejected). Labels read "322 BCE"; "CE" appears only when the range spans both eras. Prefix `c` for approximate dates (`c-268` shows "c. 268 BCE"): **mark every uncertain date this way.**
+  - Place it: `<div class="quiz" data-type="timeline-place" data-id="…" data-range="1500:1950" data-answer="1757" [data-tolerance="10"] [data-spans/data-events as context]>`. The learner taps the axis or types a year ("1757", "320 BCE") and presses Check; right = within `data-tolerance` years. A miss says "too early/late"; the true position is drawn once right or after a second miss. **Don't put the answer in the context events** (the test checks).
+- **Map** (`plugins/map.js` + `plugins/map.css`): offline outline maps, Natural Earth 1:50m borders (vendored in `vendor/world-atlas/`, loaded on first use; no tiles or web services).
+  - Diagram: `<div class="lp-map" data-view="60,5,100,38" data-points="28.61,77.21:New Delhi|19.08,72.88:Mumbai" [data-highlight="India|586"] data-caption="…"></div>`. Points are `lat,lon:label` (decimal degrees, north/east positive). `data-view` is `lonW,latS,lonE,latN` (South Asia: `60,5,100,38`; default: the world). `data-highlight` tints countries by world-atlas name ("India", "Pakistan") or ISO 3166-1 **numeric** code ("356"); there are no alpha-3 codes like "IND".
+  - Locate it: `<div class="quiz" data-type="map-locate" data-id="…" data-view="…" data-answer="25.59,85.14" [data-tolerance-km="250"] [data-choices="25.59,85.14:Patna|28.61,77.21:New Delhi|…"]>`. The learner taps the map (or a candidate button) and presses Check; right = great-circle distance ≤ tolerance. A miss reports "off by N km" and the direction; the true point is drawn once right or after a second miss. Without `data-choices` the quiz says it needs a mouse or touch screen. With choices, exactly one must be within tolerance (the test checks). **Take coordinates from a source** (Wikipedia infobox) and cite it.
+  - Borders are Natural Earth's de facto lines (e.g. Kashmir); say so in the caption where it matters.
+  - `node scripts/test_timeline_map.js` checks year/BCE logic, ticks, lanes, haversine, projection, TopoJSON decoding, and that every timeline and map in the repo is valid.
+  - Neither plugin is loaded by the daily review deck (`review.html`) yet, so their quizzes can't be re-asked there.
 - **Pixel art** (`plugins/pixels.js` + `plugins/pixels.css`): `.px` pictures and `.px-draw` drills. Usage is in the header comment of `plugins/pixels.js`.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
@@ -89,5 +99,6 @@ node scripts/test_widgets.mjs            # opens every page in headless Chromium
 node scripts/test_math.js                # math parser/equivalence + every math answer parses
 node scripts/test_plot.js                # plot ticks/areas/paths + every plot and plot-set is valid
 node scripts/test_go_rules.js            # Go rules + every go-move problem's line is legal
+node scripts/test_timeline_map.js        # timeline years/ticks/lanes, map distance/projection/basemap + every timeline and map is valid
 node scripts/test_sync_e2e.mjs           # lesson page -> progress server round trip (needs fastapi + uvicorn)
 ```

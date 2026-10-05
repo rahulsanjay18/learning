@@ -5,7 +5,8 @@
 
 ERROR (exit 1): broken local links/scripts, choice answer not among its options, categorize item in an unknown bucket,
                 duplicate data-id, cloze with no [[blanks]], order with < 2 items, chess-move/go-move missing their position or answer,
-                plot-set without data-fns/data-target or targeting a parameter that has no slider.
+                plot-set without data-fns/data-target or targeting a parameter that has no slider,
+                timeline-place without data-range/data-answer, map-locate without data-answer/data-view.
 WARN:           choice options with different word counts (SKILL.md: answers must not give away the answer by length),
                 lesson without a sources list.
 """
@@ -103,6 +104,10 @@ def lint(path):
                         errors.append(f"{where}: target {tgt!r} is not one of the data-params sliders")
         elif t == "go-move" and not (a.get("data-size") and (a.get("data-answer") or a.get("data-solution"))):
             errors.append(f"{where}: needs data-size and data-answer or data-solution")
+        elif t == "timeline-place" and not (a.get("data-range") and a.get("data-answer")):
+            errors.append(f"{where}: needs data-range and data-answer")
+        elif t == "map-locate" and not (a.get("data-answer") and a.get("data-view")):
+            errors.append(f"{where}: needs data-answer (lat,lon) and data-view")
 
     if "/lessons/" in str(rel) and not page.has_sources:
         warns.append("no <ol class=\"sources\"> list")
