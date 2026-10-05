@@ -5,6 +5,8 @@
 **Primary source for the course (learner's choice, 2026-10-05): Casella & Berger** (grade A). _All of Statistics_ is the
 companion read (grade B). Point every lesson at a Casella & Berger section, plus the matching AoS section when there is one.
 
+- Book: _Solutions-Casella-Berger_ (solutions manual) (in collection, grade B, id `787c6e8c5c`)
+  Use for: cross-checking the learner's proofs and exercises (prose only; never copy its equations).
 - Book: _All of Statistics: A Concise Course in Statistical Inference_ by Larry Wasserman (Springer, 2004) (in collection, grade B, id `051a7877e5`)
   Fast, modern, ML-friendly tour: probability (ch. 1–5), inference, bootstrap, MLE, testing (ch. 6–10), Bayesian (11),
   decision theory (12), regression (13), multivariate (14). Grade B: teach from prose and point to sections; **never copy its

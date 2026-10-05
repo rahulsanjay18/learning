@@ -25,3 +25,8 @@
 - 2026-10-05: lesson 3 (effect size and CIs) built, with reading Casella & Berger §9.1 pp. 417–419 (+ Practical Statistics "Confidence
   Intervals" from p. 65). Reading-guide answers arrive as free responses (read-gain, read-coverage, read-random, read-surprise): reply to them.
   Next: lesson 4 = the learner's P(data | H1) question (likelihood ratios, power ~55%), see QUESTIONS.md for the numbers.
+- 2026-10-05: **learner wants all of Casella & Berger, cover to cover, doing proofs themselves.** Order: finish S150 (lesson 4 power +
+  likelihood ratios, lesson 5 multiple testing), then Ch. 1 onward. Plan in `PROGRAM.md` (~66 lessons + 12 chapter checks, ~9 months).
+  Every lesson gets one proof task (free response, graded with a rubric). Solutions manual in collection: grade B, id 787c6e8c5c.
+- 2026-10-05: lesson 3 not done yet (learner asked for the link). Lesson 4 not built: wait for lesson 3 results. Its reading:
+  C&B §8.3.1 pp. 382–385 (Def. 8.3.1 to Example 8.3.4); flag that C&B's β(θ) is power, not the Type II rate.
