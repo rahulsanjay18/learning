@@ -1,0 +1,14 @@
+# Add under `services:` in your existing docker-compose.yml, next to book-server (same pattern as book-server/compose.snippet.yml).
+# The Tailscale sidecar proxies https://books.tail59e10.ts.net/progress -> http://127.0.0.1:8089 (see serve.json.example).
+  progress-server:
+    build: ./progress-server
+    restart: unless-stopped
+    environment:
+      PROGRESS_TEACHER_TOKEN: ${BOOKS_TOKEN}   # same token the cloud environment already injects for this hostname
+      PROGRESS_DB: /data/progress.db
+      PROGRESS_ORIGINS: https://rahulsanjay18.github.io
+    volumes:
+      - ./progress-server/data:/data          # writable; back this folder up (it's your learning history)
+    ports:
+      - "127.0.0.1:8089:8089"                 # local only; public access goes through the Tailscale sidecar
+    # If your ts-books sidecar shares book-server's network namespace instead (network_mode: service:...), do the same here.

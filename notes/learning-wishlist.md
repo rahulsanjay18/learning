@@ -95,7 +95,11 @@ Keyword search of `library/MANIFEST.csv` (titles only, so treat it as a first pa
 
 **Can't:** feel the cut or spot unsafe body position live. For that: a local class or a community (woodworking forums) is the "wisdom" part of the skill [13].
 
-## 5. Suggested next steps
+## 5. Decided (2026-10-05)
+- Active: **Economics, Statistics (placement pretest first), Indian History**, plus chess or Go on the side.
+- Time budget: **1 hour a day**.
+
+## 6. Suggested next steps
 1. **Pick ~3 active topics.** Chess, military strategy, NASM-CPT and pixel art are already open. Spaced review piles up across every active topic.
 2. **Major-style pilot:** two good candidates.
    - **Statistics** (one course): good library coverage, your math background, and it unlocks Poker and ML.

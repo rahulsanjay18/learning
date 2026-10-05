@@ -23,6 +23,18 @@ only see what's committed, so anything not pushed is lost.
 PAGES_URL=https://rahulsanjay18.github.io/learning
 BOOKS_URL=https://books.tail59e10.ts.net
 
+## About me as a learner (applies to every topic)
+- **Time: I can block out 1 hour a day for learning.** Plan lessons, reviews and practice to fit that hour (several short lessons + review, not one long one).
+- Active topics (keep ~3 + a game): **Economics, Statistics** (start with a placement pretest; I have a math degree that included stats),
+  **Indian History**, plus chess or Go on the side. Full wishlist: `notes/learning-wishlist.md`.
+- Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
+
+## Progress server (once deployed: `$BOOKS_URL/progress`, see `progress-server/README.md`)
+- At the start of a teaching session, `curl -s "$BOOKS_URL/progress/status"` (auth is injected) for a ~15-line digest; use
+  `/progress/summary?topic=<slug>` for one topic and `/progress/ungraded` + `POST /progress/grades` to grade free responses.
+- If it isn't reachable yet, fall back to `lp-results` lines I paste.
+- To pair a device: `POST /progress/devices {"name":"phone"}` and give me `<PAGES_URL>/assets/sync.html#endpoint=$BOOKS_URL/progress&token=<token>`.
+
 ## Shared lesson library (overrides the skill's per-topic `./assets/` guidance)
 - All lessons and reference pages use the shared files in `assets/` at the repo root: `lp.css`, `lp.js`, and `assets/plugins/*` for
   subject-specific widgets (chess, Go, pixel art). Before writing a lesson, read `assets/README.md` (markup for every widget). Don't read the JS source.

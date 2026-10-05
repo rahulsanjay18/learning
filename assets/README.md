@@ -62,11 +62,12 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 - Every answer, rating and note is logged to `localStorage["lp.queue"]` on the learner's device.
 - **Copy my results** gives one line the learner pastes into the next session, e.g.
   `lp-results chess/0003-forks | 7/9 right first try | missed: fork-2,pin-1 | rating: too-hard`, plus any free-response answers.
-- If sync is configured ("Sync settings": server URL + device token), events are POSTed as `{"events":[…]}` to `<url>/events` with `Authorization: Bearer <token>`. The progress server is not built yet.
+- If sync is configured ("Sync settings": server URL + device token), events are POSTed as `{"events":[…]}` to `<url>/events` with `Authorization: Bearer <token>`. Server: `progress-server/` (pair a device via `assets/sync.html`).
 
 ## Checks (run before committing a lesson)
 ```sh
 python3 scripts/lint_lessons.py          # structure, answers, links, equal-length options
 node scripts/test_widgets.mjs            # opens every page in headless Chromium and drives the gallery
 node scripts/test_go_rules.js            # Go rules + every go-move problem's line is legal
+node scripts/test_sync_e2e.mjs           # lesson page -> progress server round trip (needs fastapi + uvicorn)
 ```

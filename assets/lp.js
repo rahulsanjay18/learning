@@ -32,6 +32,7 @@
 
   LP.emit = function (ev) {
     ev.v = 1; ev.page = LP.page; ev.ts = new Date().toISOString();
+    ev.eid = Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12); // server ignores resent events with the same eid
     var q = queue(); q.push(ev); saveQueue(q);
     document.dispatchEvent(new CustomEvent("lp:event", { detail: ev }));
     scheduleFlush();

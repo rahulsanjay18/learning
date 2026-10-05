@@ -3,3 +3,5 @@
 *.mobi
 *.azw3
 book-server/data/
+progress-server/data/
+__pycache__/
