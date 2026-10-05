@@ -10,3 +10,6 @@ and "95% probability the parameter is in this interval".
 
 **Update (same day):** the learner says most pretest misses were facts they didn't remember rather than confusions. So these may be
 forgotten definitions, not misconceptions. Lesson 2's practice items distinguish the two; revise this record after it.
+
+**Update 2:** the learner reports not knowing what α is (and got the power question wrong), while knowing what p is. So α, power and
+Type I/II errors were *not learned or forgotten*, not misconceived. Lesson 2 (revised) now teaches them before using them.

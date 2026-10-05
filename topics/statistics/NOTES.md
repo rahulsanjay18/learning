@@ -13,3 +13,6 @@
 - Graded reg-causal 0.6/1: named the confounder (summer), but the proposed study is still observational; said "prove".
 - 2026-10-05: **Casella & Berger is the primary source** (grade A; learner's choice). All of Statistics is the companion (grade B: prose and section pointers only, no equations from it). Casella is dense: point to specific sections, never whole chapters.
 - Learner says most pretest misses were forgotten facts, not confusion. Prefer the formula sheet + spaced retrieval for recall gaps; keep lessons for ideas.
+- 2026-10-05: **teaching rule after feedback:** lesson 2 used α and power without defining them, and the learner couldn't follow.
+  Before using a term, check the learning records: if it was missed or skipped on the pretest, **define it in the lesson first**.
+  Prefer a worked example followed by a similar practice item over a cold question.

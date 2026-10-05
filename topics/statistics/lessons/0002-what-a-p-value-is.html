@@ -12,11 +12,33 @@
 <main>
 <nav class="crumbs"><a href="../../../index.html">All topics</a> · Statistics · Lesson 2</nav>
 <h1>What a p-value is (and isn't)</h1>
-<p class="subtitle">About 15 minutes. One win: read any p-value correctly, and know what it can't tell you.</p>
+<p class="subtitle">About 20 minutes. One win: read any p-value correctly, and know what it can't tell you.</p>
 
 <h2>The situation</h2>
 <p>You A/B test a new checkout page, 12,000 users per arm. Conversion goes from 5.0% to 5.6%. The test reports \(z \approx 2.08\), two-sided \(p \approx 0.038\). Your PM asks: <em>"So there's a 96% chance the new page is better?"</em></p>
 <p>No. And you already know why, from the pretest question you got right.</p>
+
+<h2>First, the vocabulary</h2>
+<p>A hypothesis test is a decision rule. Four terms make it work:</p>
+<ul>
+  <li><strong>\(H_0\), the null hypothesis:</strong> the boring explanation. Here: <em>the new page makes no difference</em>.</li>
+  <li><strong>\(H_1\), the alternative:</strong> there is a real effect.</li>
+  <li><strong>\(\alpha\) (alpha), the significance level:</strong> a threshold you <em>choose before</em> looking at the data, usually 0.05. The rule: reject \(H_0\) if \(p \le \alpha\).<cite class="ref"><a href="#s1">1</a></cite></li>
+  <li><strong>Power:</strong> the probability that the test rejects \(H_0\) <em>when there really is an effect</em> of a given size.<cite class="ref"><a href="#s1">1</a></cite></li>
+</ul>
+<p>Since the truth is either \(H_0\) or \(H_1\), and you either reject or don't, there are four outcomes and two ways to be wrong. Casella &amp; Berger note that these "traditionally have been given the non-mnemonic names" Type I and Type II.<cite class="ref"><a href="#s5">5</a></cite></p>
+<table class="matrix">
+  <tr><th></th><th>You don't reject \(H_0\)</th><th>You reject \(H_0\)</th></tr>
+  <tr><th>\(H_0\) true (no effect)</th><td><strong>Correct</strong></td><td><strong>Type I error</strong><span>false alarm; happens with probability \(\alpha\)</span></td></tr>
+  <tr><th>\(H_1\) true (real effect)</th><td><strong>Type II error</strong><span>missed effect; probability \(\beta\)</span></td><td><strong>Correct</strong><span>probability \(1-\beta\) = <em>power</em></span></td></tr>
+</table>
+<p>So \(\alpha = P(\text{reject} \mid H_0)\) and power \(= P(\text{reject} \mid H_1) = 1 - \beta\). The plot shows both. The dashed curve is the test statistic when \(H_0\) is true; you reject to the right of the line, which happens 5% of the time. The solid curve is the same statistic when the effect is real; its shaded area is the power. Slide the effect size \(d\) (in standard-error units):</p>
+<div class="lp-plot" data-x="-4:7" data-y="0:0.45" data-fns="exp(-(x-d)^2/2)/sqrt(2pi); exp(-x^2/2)/sqrt(2pi)" data-labels="If H1 is true (effect d);If H0 is true" data-params="d=2.5:0:5:0.1" data-shade="1.645:inf" data-show-area="true" data-vline="1.645" data-xlabel="test statistic" data-ylabel="density" data-caption="One-sided test at α = 0.05: reject right of 1.645. The shaded area is the power. At d = 2.5 it's about 0.80; at d = 1 only about 0.26. Bigger effects, or more data (which makes d bigger), mean more power."></div>
+<div class="quiz" data-type="categorize" data-id="vocab" data-buckets="Type I error|Type II error|Correct"
+  data-items="The page does nothing, but you conclude it works>Type I error|The page works, but your test says no difference>Type II error|The page works and your test detects it>Correct|The page does nothing and you don't reject H0>Correct">
+  <p class="prompt">Check the vocabulary: which outcome is each?</p>
+  <div class="explain" hidden>Type I = rejecting a true \(H_0\) (false alarm, rate \(\alpha\)). Type II = missing a real effect (rate \(\beta\)). Power is the chance of "the page works and your test detects it".</div>
+</div>
 
 <h2>The definition</h2>
 <div class="callout">
@@ -34,9 +56,16 @@
 <p>On the pretest you got the disease problem right: a test with a 5% false-positive rate, \(P(+ \mid \text{healthy}) = 0.05\), still left \(P(\text{disease} \mid +)\) at only about 15%, because the disease was rare. Flipping a conditional needs the base rate.</p>
 <p>A p-value is the same kind of quantity as that 5%: \(P(\text{data} \mid H_0)\). Turning it into \(P(H_0 \mid \text{data})\) needs a base rate too: how often your ideas actually work. A small p-value from a long shot is like a positive test for a rare disease.<cite class="ref"><a href="#s3">3</a></cite></p>
 
-<div class="quiz" data-type="math" data-id="fdr" data-answer="0.045/(0.045+0.08)" data-tolerance="0.01" data-hint="Count the significant results from duds (true nulls) and from real effects, like the disease problem.">
-  <p class="prompt">Of every 100 product ideas you A/B test, 10 truly work. You use \(\alpha = 0.05\), and your tests have power 0.8 (they detect a real effect 80% of the time). Among the results that come out significant, what fraction are duds? (A decimal.)</p>
-  <div class="explain" hidden>Duds: \(90 \times 0.05 = 4.5\) significant. Real: \(10 \times 0.8 = 8\) significant. Fraction of duds \(= \frac{4.5}{4.5+8} = 0.36\). Over a third of your "wins" are noise, even though every one had \(p &lt; 0.05\).</div>
+<p>Worked example (click through it): of every 100 product ideas you A/B test, 10 truly work. You test at \(\alpha = 0.05\), with power 0.8. Among the results that come out significant, what fraction are duds?</p>
+<div class="lp-worked">
+  <div class="step"><p><strong>Split the 100 ideas by the truth:</strong> 90 duds (\(H_0\) true) and 10 that really work (\(H_1\) true).</p></div>
+  <div class="step"><p><strong>Duds that come out significant</strong> are Type I errors, at rate \(\alpha\): \(90 \times 0.05 = 4.5\).</p></div>
+  <div class="step"><p><strong>Real effects that come out significant</strong> are detected at rate = power: \(10 \times 0.8 = 8\).</p></div>
+  <div class="step"><p><strong>Among all significant results,</strong> the fraction of duds is \(\frac{4.5}{4.5+8} = 0.36\). Over a third of your "wins" are noise, even though every one had \(p &lt; 0.05\). It's the disease problem again: a rare "condition" (ideas that work) plus a false-positive rate.</p></div>
+</div>
+<div class="quiz" data-type="math" data-id="fdr" data-answer="160*0.05/(160*0.05+40*0.5)" data-tolerance="0.01" data-hint="Same steps: split by the truth, multiply duds by α and real effects by power, then take duds over all significant results.">
+  <p class="prompt">Your turn, different numbers: 200 ideas, 20% truly work, \(\alpha = 0.05\), but your tests are underpowered at power 0.5. What fraction of significant results are duds? (A decimal.)</p>
+  <div class="explain" hidden>Duds: 160, and \(160 \times 0.05 = 8\) significant. Real: 40, and \(40 \times 0.5 = 20\) significant. Duds \(= \frac{8}{28} \approx 0.29\).</div>
 </div>
 
 <h2>What a p-value can't tell you</h2>
@@ -73,13 +102,14 @@
 <h2>Next</h2>
 <p>Lesson 3: confidence intervals, the other half of the same idea. Meanwhile, your <a href="../reference/formulas.html">formula sheet</a> collects the results that didn't come back on the pretest.</p>
 <p>Questions about any of this? Ask me.</p>
-<p><strong>Read next (primary source):</strong> Casella &amp; Berger, §8.3.4 "p-Values" (Definition 8.3.26). Companion reads: Wasserman, <em>All of Statistics</em>, §10.2 "p-values" (shorter); Bruce, Bruce &amp; Gedeck, "Statistical Significance and p-Values" (pp. 103–108; applied).</p>
+<p><strong>Read next (primary source):</strong> Casella &amp; Berger, §8.3.1 "Error Probabilities and the Power Function" (Type I/II errors, power), then §8.3.4 "p-Values" (Definition 8.3.26). Companion reads: Wasserman, <em>All of Statistics</em>, §10.2 "p-values" (shorter); Bruce, Bruce &amp; Gedeck, "Statistical Significance and p-Values" (pp. 103–108; applied).</p>
 
 <h2>Sources</h2>
 <ol class="sources">
-  <li id="s1">Peter Bruce, Andrew Bruce &amp; Peter Gedeck, <em>Practical Statistics for Data Scientists</em>, 2nd ed., "Statistical Significance and p-Values", pp. 103–108. In collection (grade A). Definition, alpha, the ASA principles.</li>
+  <li id="s1">Peter Bruce, Andrew Bruce &amp; Peter Gedeck, <em>Practical Statistics for Data Scientists</em>, 2nd ed., "Statistical Significance and p-Values", pp. 103–108, and "Power and Sample Size". In collection (grade A). Definition of the p-value, alpha as a threshold set in advance, power as "the probability of detecting a specified effect size", the ASA principles.</li>
   <li id="s2">Ronald L. Wasserstein &amp; Nicole A. Lazar, "The ASA Statement on p-Values: Context, Process, and Purpose", <em>The American Statistician</em> 70(2), 2016. <a href="https://doi.org/10.1080/00031305.2016.1154108">doi:10.1080/00031305.2016.1154108</a> (principles as quoted in source 1).</li>
   <li id="s3">John P. A. Ioannidis, <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124">"Why Most Published Research Findings Are False"</a>, <em>PLOS Medicine</em> 2(8), 2005. The base-rate argument behind the "fraction of duds" question.</li>
+  <li id="s5">George Casella &amp; Roger L. Berger, <em>Statistical Inference</em>, 2nd ed., §8.3.1 "Error Probabilities and the Power Function", Table 8.3.1 (two types of errors). In collection (grade A).</li>
   <li>Larry Wasserman, <em>All of Statistics</em> (Springer, 2004), ch. 10 "Hypothesis Testing and p-values", §10.2. In collection (grade B; section title from the book's contents page).</li>
   <li>George Casella &amp; Roger L. Berger, <em>Statistical Inference</em>, 2nd ed., §8.3.4 "p-Values", Definition 8.3.26. In collection (grade A).</li>
   <li>The A/B numbers (z ≈ 2.08, p ≈ 0.038 for 5.0% vs 5.6% at 12,000 per arm, pooled two-proportion z-test) and the 0.36 were checked in Python.</li>
