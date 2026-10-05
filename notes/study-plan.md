@@ -7,6 +7,8 @@
 - **4 subjects:** 2 at full weight (4 blocks a week each), 2 at half weight (2 blocks a week each).
   - Full: **Statistics** and **AWS ML certification** (career, and the exam has a deadline).
   - Half: **one non-technical subject** (Indian History *or* Economics; pick one, park the other) and **one fun one** (chess or Go).
+- **The hour is a floor, not a cap.** Rule: **finish the whole day's plan (review + both blocks) before going deeper on anything.**
+  After that, extra time is free: go deeper on whatever pulled you in, or add blocks for whatever is behind.
 - **6 days on, 1 day off** (or a review-only day). Exam crunch: the last 2–3 weeks before the AWS exam, AWS takes the half-subject blocks.
 
 ## The week (12 blocks over 6 days)
@@ -28,7 +30,9 @@ Totals: Statistics 4, AWS 4, non-technical 2, fun 2.
 - **Two different subjects per day** rather than one long block: mixing related material (interleaving) improves retention
   for practice-type learning ([2]), and switching keeps attention fresh. Full subjects never go more than a day without a touch.
 - **25-minute blocks** match the one-small-win lesson size; if a block runs over, stop anyway and pick up there next time.
-- **More time on a given day?** Add a third block for whatever is most behind, or do the review deck's "practice early".
+- **More time on a given day?** Only after the day's plan is done: go deeper on what interested you, add a block for whatever
+  is most behind, or use the review deck's "practice early". Finishing the plan first keeps one fascinating subject from
+  starving the others (a known ADHD trap: hyperfocus on the most interesting thing).
 
 ## AWS certification: questions before planning it properly
 - Which exam exactly? (Exam names and availability change; I'll check AWS's current listing when you tell me, rather than guess.)

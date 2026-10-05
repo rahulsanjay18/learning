@@ -35,7 +35,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
   (I'll supply it) or pull one from the web or my books, credited. Data-driven visuals (plots of formulas, game boards from
   positions, timelines from dates, maps from open map data) are fine unless I say otherwise.
 - Study plan (proposed 2026-10-05, see `notes/study-plan.md`): 4 subjects, 2 full (Statistics, AWS ML cert) + 2 half
-  (one non-technical, one fun), daily review first.
+  (one non-technical, one fun), daily review first. **Finish the whole day's plan before going deeper on any one subject**;
+  extra time beyond the 1-hour floor is welcome after that.
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
 
 ## Progress server (once deployed: `$BOOKS_URL/progress`, see `progress-server/README.md`)
