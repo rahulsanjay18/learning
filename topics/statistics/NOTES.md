@@ -8,3 +8,6 @@
   Map item ids to areas: prob-*, rv-*, dist-*, clt-*, est-*, ht-*, reg-*, bayes-*, ml-*, design-*.
 - Library: Casella & Berger (id f9dc4d1d4c) is grade A, but its front matter and /toc are garbage (logged in library/QUALITY-NOTES.md).
   Find sections with /search, not /toc. Don't cite chapter numbers from memory.
+- 2026-10-05: pretest results: 10/21 right first try, 6 missed, 4 skipped; rated it **too hard**. See learning-records 0001–0004.
+  Starting point: probability mechanics solid; inference interpretation is the gap. Lessons should be short and narrow.
+- Graded reg-causal 0.6/1: named the confounder (summer), but the proposed study is still observational; said "prove".
