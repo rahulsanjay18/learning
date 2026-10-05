@@ -1,0 +1,156 @@
+/* Shared stylesheet for every lesson and reference sheet in every topic. Tufte-leaning: one column, serif text, quiet chrome.
+   Topic-specific additions go in topics/<slug>/assets/topic.css (loaded after this file; may override --accent).
+   Widget reference: assets/README.md */
+:root {
+  --bg: #fffff8;
+  --fg: #1d1d1b;
+  --muted: #6b6b66;
+  --rule: #d9d6c8;
+  --accent: #8a3b12;
+  --ok: #2f6b3a;
+  --bad: #9b2c2c;
+  --panel: #f4f1e4;
+  --sel: rgba(138, 59, 18, 0.14);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161614;
+    --fg: #e8e6dc;
+    --muted: #a19f95;
+    --rule: #3a3933;
+    --accent: #e0915c;
+    --ok: #7cc48a;
+    --bad: #f08a8a;
+    --panel: #22211d;
+    --sel: rgba(224, 145, 92, 0.18);
+  }
+}
+
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.55;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+h1 { font-weight: 400; font-size: 2rem; line-height: 1.2; margin: 0 0 .3rem; }
+h2 { font-weight: 400; font-style: italic; font-size: 1.35rem; margin: 2.6rem 0 .6rem; }
+h3 { font-weight: 600; font-size: 1rem; margin: 1.6rem 0 .4rem; }
+.subtitle { color: var(--muted); font-style: italic; margin: 0 0 2rem; }
+a { color: var(--accent); }
+p, li { hyphens: auto; }
+code, .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .85em; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+nav.crumbs { font-size: .85rem; color: var(--muted); margin-bottom: 1.5rem; }
+nav.crumbs a { color: var(--muted); }
+blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 2px solid var(--rule); font-style: italic; }
+kbd { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .8em; border: 1px solid var(--rule); border-bottom-width: 2px;
+  border-radius: 3px; padding: 0 .3em; background: var(--panel); }
+pre { background: var(--panel); padding: .6rem .8rem; overflow-x: auto; font-size: .85rem; }
+ol.steps > li { margin: .45rem 0; }
+
+.callout { background: var(--panel); border-left: 3px solid var(--accent); padding: .8rem 1rem; margin: 1.2rem 0; }
+.callout p:first-child { margin-top: 0; }
+.callout p:last-child { margin-bottom: 0; }
+.muted { color: var(--muted); }
+.small { font-size: .85rem; }
+cite.ref { font-style: normal; font-size: .8em; vertical-align: super; }
+cite.ref a { text-decoration: none; }
+cite.ref + cite.ref::before { content: ","; }
+ol.sources { font-size: .85rem; color: var(--muted); }
+
+/* Reading guide and reference cards */
+.reading, .card { border: 1px solid var(--rule); padding: .9rem 1.1rem; margin: 1.2rem 0; break-inside: avoid; }
+.reading h3, .card h3 { margin-top: 0; }
+.reading ol { margin-bottom: 0; }
+
+/* Tables */
+table.values, table.tally { border-collapse: collapse; margin: 1rem 0; }
+table.tally { font-size: .9rem; width: 100%; }
+table.values th, table.values td, table.tally th, table.tally td { padding: .25rem .9rem; border-bottom: 1px solid var(--rule); text-align: left; }
+table.tally th, table.tally td { padding: .25rem .5rem; }
+table.values td.num, table.tally td.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.matrix { border-collapse: collapse; margin: 1.2rem auto; width: 100%; table-layout: fixed; }
+table.matrix th, table.matrix td { border: 1px solid var(--rule); padding: .6rem .7rem; vertical-align: top; }
+table.matrix th { font-weight: 400; font-style: italic; color: var(--muted); font-size: .9rem; }
+table.matrix td strong { display: block; font-size: 1.05rem; }
+table.matrix td span { font-size: .85rem; color: var(--muted); }
+
+/* Horizontal bars */
+.bars { margin: 1rem 0; }
+.bars .row { display: grid; grid-template-columns: 11rem 1fr 2.6rem; gap: .6rem; align-items: center; font-size: .9rem; margin: .3rem 0; }
+.bars .track { background: var(--panel); height: .8rem; }
+.bars .fill { background: var(--accent); height: 100%; }
+.bars .pct { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 30rem) { .bars .row { grid-template-columns: 7.5rem 1fr 2.4rem; font-size: .8rem; } }
+
+/* ---------- Widgets (assets/lp.js) ---------- */
+.quiz { border-top: 1px solid var(--rule); padding: 1.2rem 0 .4rem; }
+.quiz .prompt { margin: 0 0 .7rem; }
+.quiz .choices { display: flex; flex-wrap: wrap; gap: .5rem; }
+.quiz button, .quiz input, .quiz textarea, .lp-footer button { font: inherit; font-size: .95rem; }
+.quiz button, .lp-footer button, .lp-worked button { padding: .4rem 1rem; border: 1px solid var(--rule); background: var(--panel); color: var(--fg);
+  border-radius: 3px; cursor: pointer; }
+.quiz .choices button { min-width: 8.5rem; }
+.quiz button:hover:not(:disabled), .lp-footer button:hover:not(:disabled), .lp-worked button:hover { border-color: var(--accent); }
+.quiz button:disabled { cursor: default; opacity: .75; }
+.quiz button.right, .lp-footer button.picked { border-color: var(--ok); color: var(--ok); opacity: 1; }
+.quiz button.wrong { border-color: var(--bad); color: var(--bad); opacity: 1; }
+.quiz input { width: 6rem; padding: .3rem .5rem; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+.quiz input.ok { border-color: var(--ok); }
+.quiz input.no { border-color: var(--bad); }
+.quiz textarea { width: 100%; min-height: 5.5rem; padding: .5rem; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+.quiz .reveal, .quiz .actions { margin-top: .6rem; }
+.quiz .feedback { margin-top: .7rem; font-size: .95rem; }
+.quiz .feedback .verdict { font-weight: 600; }
+.quiz .feedback .verdict.ok { color: var(--ok); }
+.quiz .feedback .verdict.no { color: var(--bad); }
+
+/* cloze */
+.quiz input.blank { width: auto; min-width: 5rem; padding: .05rem .35rem; margin: 0 .15rem; font-size: .95em; }
+
+/* order + categorize: one row per item */
+.lp-rows { list-style: none; padding: 0; margin: 0 0 .4rem; }
+.lp-rows li { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; padding: .35rem .1rem; border-bottom: 1px solid var(--rule); }
+.lp-rows li .label { flex: 1 1 10rem; }
+.lp-rows li.right { color: var(--ok); }
+.lp-rows li.wrong { color: var(--bad); }
+.quiz .lp-rows button { min-width: 0; padding: .2rem .6rem; font-size: .85rem; }
+.quiz .lp-rows button.on { border-color: var(--accent); background: var(--sel); }
+
+/* checklist */
+.lp-check { list-style: none; padding: 0; margin: 0; }
+.lp-check li { display: flex; gap: .6rem; align-items: baseline; padding: .3rem 0; }
+.lp-check li.done .label { color: var(--muted); text-decoration: line-through; }
+.lp-check input { width: auto; }
+
+/* worked example: steps revealed one at a time */
+.lp-worked { border-left: 3px solid var(--rule); padding-left: 1rem; margin: 1.2rem 0; }
+.lp-worked .step[hidden] { display: none; }
+.lp-worked .step { margin: .6rem 0; }
+
+/* video (YouTube, privacy-enhanced embed) */
+.lp-video { margin: 1.2rem 0; }
+.lp-video .frame { position: relative; aspect-ratio: 16 / 9; background: var(--panel); }
+.lp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.lp-video .caption { font-size: .85rem; color: var(--muted); margin-top: .35rem; }
+
+/* score bar + lesson footer */
+.scorebar { position: sticky; bottom: 0; background: var(--bg); border-top: 1px solid var(--rule);
+  padding: .4rem 0; font-size: .85rem; color: var(--muted); text-align: right; z-index: 5; }
+.lp-footer { border-top: 1px solid var(--rule); margin-top: 2.5rem; padding-top: 1rem; font-size: .9rem; }
+.lp-footer .row { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: .5rem 0; }
+.lp-footer button { font-size: .85rem; padding: .3rem .8rem; }
+.lp-footer textarea { width: 100%; min-height: 3.5rem; font: inherit; font-size: .9rem; padding: .4rem; border: 1px solid var(--rule);
+  background: var(--bg); color: var(--fg); }
+.lp-footer .status { color: var(--muted); font-size: .8rem; }
+
+@media print {
+  :root { --bg: #fff; --fg: #000; --panel: #f3f3f3; }
+  .scorebar, .lp-footer, .no-print { display: none; }
+  main { padding-top: 0; }
+  a { color: inherit; }
+}

@@ -23,6 +23,15 @@ only see what's committed, so anything not pushed is lost.
 PAGES_URL=https://rahulsanjay18.github.io/learning
 BOOKS_URL=https://books.tail59e10.ts.net
 
+## Shared lesson library (overrides the skill's per-topic `./assets/` guidance)
+- All lessons and reference pages use the shared files in `assets/` at the repo root: `lp.css`, `lp.js`, and `assets/plugins/*` for
+  subject-specific widgets (chess, pixel art). Before writing a lesson, read `assets/README.md` (markup for every widget). Don't read the JS source.
+- Never create a per-topic copy of a stylesheet or quiz script. Topic-only styles go in `topics/<slug>/assets/topic.css`.
+  A widget another topic could reuse goes in `assets/` (generic) or `assets/plugins/` (subject-specific), and gets an example in `assets/gallery.html`.
+- Keep CSS plain and quiet (one column, serif text, thin rules; no shadows, gradients or animation).
+- Give every quiz a short `data-id`. Before committing a lesson run `python3 scripts/lint_lessons.py` and `node scripts/test_widgets.mjs`.
+- If I paste an `lp-results …` line, it's my results from a lesson: use it for learning records and to choose what's next.
+
 ## My library (check before searching the web)
 - Read `library/README.md` before using anything in `library/` or the book server, and follow it exactly. It says
   which books are safe to teach from (grades A/B/C/F in `library/MANIFEST.csv`).

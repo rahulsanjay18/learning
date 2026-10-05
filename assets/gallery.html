@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="lp-page" content="gallery/widgets">
+<title>Widget gallery</title>
+<link rel="stylesheet" href="lp.css">
+<link rel="stylesheet" href="plugins/chess.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../index.html">All topics</a> · Widget gallery</nav>
+<h1>Widget gallery</h1>
+<p class="subtitle">Every shared widget, working. Markup for each is in <code>assets/README.md</code>.</p>
+
+<h2>Multiple choice</h2>
+<div class="quiz" data-type="choice" data-id="choice" data-answer="Spacing" data-options="Cramming|Spacing|Rereading" data-hint="Which one spreads practice over time?">
+  <p class="prompt">Which study habit builds long-term retention best?</p>
+  <div class="explain" hidden>Spacing practice out over days beats massing it into one session.</div>
+</div>
+
+<h2>Typed answer</h2>
+<div class="quiz" data-type="number" data-id="number" data-answer="64">
+  <p class="prompt">How many squares are on a chessboard?</p>
+  <div class="explain" hidden>8 × 8 = 64.</div>
+</div>
+<div class="quiz" data-type="exact" data-id="exact" data-answer="Paris|Paris, France">
+  <p class="prompt">What is the capital of France?</p>
+  <div class="explain" hidden>Paris.</div>
+</div>
+
+<h2>Fill in the blanks</h2>
+<div class="quiz" data-type="cloze" data-id="cloze">
+  <p class="prompt">Water boils at [[100]] °C at sea level and freezes at [[0|zero]] °C.</p>
+  <div class="explain" hidden>Both at standard atmospheric pressure.</div>
+</div>
+
+<h2>Put in order</h2>
+<div class="quiz" data-type="order" data-id="order" data-items="Mercury|Venus|Earth|Mars">
+  <p class="prompt">Order these planets by distance from the Sun, closest first.</p>
+  <div class="explain" hidden>Mercury, Venus, Earth, Mars.</div>
+</div>
+
+<h2>Sort into groups</h2>
+<div class="quiz" data-type="categorize" data-id="categorize" data-buckets="Mammal|Bird" data-items="Bat>Mammal|Penguin>Bird|Whale>Mammal|Ostrich>Bird">
+  <p class="prompt">Mammal or bird?</p>
+  <div class="explain" hidden>Bats fly but are mammals; penguins and ostriches can't fly but are birds.</div>
+</div>
+
+<h2>Recall from memory</h2>
+<div class="quiz" data-type="recall" data-id="recall">
+  <p class="prompt">In one sentence: why does retrieval practice beat rereading?</p>
+  <div class="explain" hidden>Pulling an answer from memory strengthens it; rereading only makes it feel familiar.</div>
+</div>
+
+<h2>Free response (graded later)</h2>
+<div class="quiz" data-type="free" data-id="free">
+  <p class="prompt">Explain spaced repetition to a friend in two or three sentences.</p>
+  <div class="rubric">Mentions: reviewing just before forgetting; growing intervals; retrieval, not rereading.</div>
+  <div class="explain" hidden>Review something just as you're about to forget it, then wait longer before the next review. Each successful recall makes the memory last longer.</div>
+</div>
+
+<h2>Checklist</h2>
+<div class="quiz" data-type="checklist" data-id="checklist">
+  <p class="prompt">Before your next game:</p>
+  <ol><li>Play one 10-minute game.</li><li>Before every move, look for checks, captures and threats.</li><li>Write down one move you'd change.</li></ol>
+</div>
+
+<h2>Worked example</h2>
+<div class="lp-worked">
+  <div class="step"><p>Solve 3<i>x</i> + 5 = 20.</p></div>
+  <div class="step"><p>Subtract 5 from both sides: 3<i>x</i> = 15.</p></div>
+  <div class="step"><p>Divide both sides by 3: <i>x</i> = 5.</p></div>
+</div>
+
+<h2>Video</h2>
+<div class="lp-video" data-youtube="kCc8FmEb1nY" data-start="0" data-caption="Andrej Karpathy, “Let's build GPT: from scratch, in code, spelled out.”"></div>
+
+<h2>Chess plugin</h2>
+<div class="board-wrap" data-fen="6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1" data-arrows="d1-d8" data-caption="Static diagram with an arrow"></div>
+<div class="quiz" data-type="chess-move" data-id="chess-move" data-fen="6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1" data-answer="d1d8|Rd8#" data-hint="Look at Black's back rank.">
+  <p class="prompt">White to move and mate in one.</p>
+  <div class="explain" hidden>Rd8# — the pawns on f7, g7, h7 block the king's escape.</div>
+</div>
+</main>
+<script src="lp.js"></script>
+<script src="plugins/chess.js"></script>
+</body>
+</html>

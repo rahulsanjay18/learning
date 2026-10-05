@@ -1,0 +1,31 @@
+/* Chess plugin styles (assets/plugins/chess.js). Load after assets/lp.css. */
+:root {
+  --sq-light: #ecdcb8;
+  --sq-dark: #b58863;
+  --hl: rgba(255, 214, 0, 0.55);
+  --arrow: rgba(21, 101, 192, 0.8);
+  --piece-white: #ffffff;
+  --piece-black: #1a1a1a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --sq-light: #c9b892; --sq-dark: #8b6a4c; }
+}
+.board-wrap { margin: 1.2rem auto; width: min(100%, 22rem); }
+.board { position: relative; aspect-ratio: 1; display: grid; grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+  border: 1px solid var(--rule); user-select: none; }
+.board .sq { position: relative; display: flex; align-items: center; justify-content: center; }
+.board .sq.l { background: var(--sq-light); }
+.board .sq.d { background: var(--sq-dark); }
+.board .sq.hl::after { content: ""; position: absolute; inset: 0; background: var(--hl); }
+.board .pc { position: relative; z-index: 1; font-size: min(2.2rem, 8.5vw); line-height: 1;
+  font-family: "Segoe UI Symbol", "DejaVu Sans", "Noto Sans Symbols 2", "Arial Unicode MS", sans-serif; }
+.board .pc.w { color: var(--piece-white); text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 2px #000; }
+.board .pc.b { color: var(--piece-black); text-shadow: 0 0 1px #fff4; }
+.board .coord { position: absolute; font: 600 .55rem/1 system-ui, sans-serif; opacity: .7; color: #3b2a1a; }
+.board .coord.file { right: 2px; bottom: 1px; }
+.board .coord.rank { left: 2px; top: 1px; }
+.board svg.arrows { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+.board-caption { text-align: center; font-size: .85rem; color: var(--muted); margin-top: .35rem; }
+.board-wrap.interactive .sq { cursor: pointer; }
+.board-wrap.interactive .sq.sel { outline: 3px solid var(--accent); outline-offset: -3px; }
+.quiz .board-wrap { margin: .6rem 0 .8rem; }

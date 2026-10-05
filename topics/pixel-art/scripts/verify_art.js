@@ -1,6 +1,6 @@
 // Builds every pixel picture used in the lessons from segment lists, runs the same checker the lessons use,
 // and asserts each picture gets the verdict the lesson claims. Usage: node scripts/verify_art.js
-const PL = require("../assets/pixels.js");
+const PL = require("../../../assets/plugins/pixels.js");
 
 // segs: [["h",3],["v",2],["d",1]...]; a diagonal step joins consecutive segments. extra: [[x,y]] added pixels.
 function build(segs, { pad = 1, extra = [] } = {}) {
