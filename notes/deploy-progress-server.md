@@ -80,3 +80,29 @@ All your history is in `progress-server/data/progress.db`. Back it up with
 3. `progress-server/compose.snippet.yml` (this repo): `PROGRESS_TEACHER_TOKEN: ${BOOKS_TOKEN}`, port `127.0.0.1:8089`.
 4. Docker docs, *Networking in Compose* (services reach each other by service name; `network_mode`): https://docs.docker.com/compose/how-tos/networking/ ; Tailscale docs, *Using Tailscale with Docker* (`TS_SERVE_CONFIG`): https://tailscale.com/kb/1282/docker
 5. `progress-server/app.py` lines 11 and 281 (routes served at `/` and under `/progress`).
+
+## Update 2026-10-05: your actual setup (`network_mode: service:ts-books`)
+Your book-server shares the Tailscale container's network (`network_mode: service:ts-books`). That's why
+`127.0.0.1:8088` works from inside ts-books: both share one network namespace [4]. progress-server must join
+the same namespace, and then it **can't have a `ports:` section**. Docker refuses to publish ports on a container
+that uses another container's network, so `docker compose up` fails [6]. Use this block instead of the snippet:
+
+```yaml
+  progress-server:
+    build: ./progress-server
+    restart: unless-stopped
+    network_mode: service:ts-books        # same as book-server; no ports: section
+    depends_on: [ts-books]
+    environment:
+      PROGRESS_TEACHER_TOKEN: ${BOOKS_TOKEN}
+      PROGRESS_DB: /data/progress.db
+      PROGRESS_ORIGINS: https://rahulsanjay18.github.io
+    volumes:
+      - ./progress-server/data:/data
+```
+
+Keep `"/progress": { "Proxy": "http://127.0.0.1:8089" }` in `serve.json`. Then run
+`docker compose up -d --build --force-recreate ts-books book-server progress-server`. Recreate all three: when ts-books
+restarts, the containers that share its network need recreating too, or they lose their network.
+
+6. Docker docs, *docker run* `--network container:<name>` ("the new container ... can't publish ports"): https://docs.docker.com/engine/network/#container-networks
