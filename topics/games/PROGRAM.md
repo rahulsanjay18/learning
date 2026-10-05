@@ -4,37 +4,41 @@
 general theory. **Confirmed: Games is the "fun" major and replaces chess; chess is the first class** (`topics/chess/` holds it). Half weight: 2 blocks a week.*
 
 ## TL;DR
-- **Stage 1, play and feel (deterministic, perfect information):** **chess first** (with friends; it continues as a lab through
-  every stage), then a short class on *tiny* games you can solve by hand (tic-tac-toe, Nim, Hex) that names the core ideas: game
-  trees, winning and losing positions, minimax, tempo and parity. Go follows.
-- **Stage 2, chance and secrets:** dice games (expected value, using your Statistics), then **poker** (hidden information, ranges,
-  bluffing as a mixed strategy).
-- **Stage 3, the general theory:** combinatorial game theory, classical game theory (Nash equilibrium, the minimax theorem, backward
-  induction), and **game-playing AI** (minimax and alpha-beta, Monte Carlo tree search, CFR for poker, self-play reinforcement learning). That last
-  course meets your AI career.
-- **Design rule:** every theorem arrives *after* you've felt it in a game. Solve tic-tac-toe by hand before meeting backward induction;
-  bluff before meeting mixed strategies.
+- **One big new game at a time**, with chess as the ongoing lab. Games are grouped by *family*, ordered by distance from what you
+  already know: chess → its cousins (xiangqi, shogi) → Go (a different family) → chance (backgammon) → hidden information (poker).
+- **Two threads run through every class and do the generalizing:**
+  1. **Same ideas, different rules:** each class ends by asking what transferred from earlier games and what broke (tempo,
+     material vs. territory, king safety, initiative, endgame counting). A late seminar puts these side by side.
+  2. **How a computer plays it:** each class ends with a short "AI lens" lesson (alpha-beta for chess; why Go broke alpha-beta and
+     needed Monte Carlo tree search; expectimax for backgammon; CFR for poker). It culminates in AlphaZero, one algorithm that mastered
+     chess, shogi and Go from the rules alone. This is the career link.
+- **Then the general theory:** combinatorial game theory, classical game theory, game-playing AI, and a capstone.
+- Half weight (2 blocks a week): this is a multi-year major, played and enjoyed as you go, not a race.
 
-## Why this order works
-- Small solvable games give **complete feedback**: you can check every line, so intuition gets trained on ground truth, not vibes.
-  Big games (chess, Go) don't allow that, which is why they're a long-running lab rather than a prerequisite to finish.
-- Chance comes second because **expected value** is the new idea, and Statistics is giving you that toolkit in parallel.
-- Theory comes last but is **spiralled in early**: each Stage 1–2 course ends with one short "name the idea" lesson so Stage 3 feels
-  like recognition, not new material.
+## Why this order
+- Small steps from the familiar: xiangqi and shogi descend from the same ancestor as chess (chaturanga, from India), so you learn
+  them *by transfer*, and each one changes more than the last (shogi's drops, where captured pieces come back, are the biggest
+  change). Go comes after them because it's the most different (territory and influence, no king to checkmate).
+- Chance comes after the deterministic games, one ingredient at a time: backgammon adds dice while everything stays visible; poker
+  then adds hidden information.
+- Theory comes last but is never new: by then every concept has been felt in at least two games.
 
 ## Courses
 
 | Stage | Course | Core ideas | Sources (library first) |
 |---|---|---|---|
-| 1 | **G101 Chess** (first class; continues as a lab through every stage) | safety, tactics → strategy and endgames; your games reviewed with Stockfish | existing `topics/chess/` lessons 0001–0002 count; Seirawan's *Winning Chess* series (A); Capablanca; Silman (A) |
-| 1 | **G102 Tiny games, big ideas** (short: 3–4 lessons) | game trees; win/lose positions; minimax by hand; parity and tempo; strategy stealing (Hex); Nim's binary trick | *Winning Ways* vol. 1 (grade C: point to chapters only) and vol. 2 (B); Martin Gardner, *Colossal Book of Mathematics* (B) |
-| 1 | **G120 Go intuition** | capture and liberties, life and death on 9×9, territory vs. influence | *A Go Guide by a Beginner* (A); Janice Kim, *Learn to Play Go* IV–V (B) |
-| 2 | **G201 Decisions under chance** | expected value; risk vs. reward; when to stop (Pig dice game); simulation in Python | Haigh, *Probability* VSI (A); your Statistics course |
-| 2 | **G210 Poker** | hand odds and pot odds; ranges; bluffing and balance; game-theory-optimal (GTO) vs. exploitative play | *Elements of Poker* (A); Acevedo, *Modern Poker Theory* (B) |
-| 3 | **G301 Combinatorial game theory** | Sprague–Grundy values; sums of games; games as numbers | *Winning Ways* vols. 1–3 |
-| 3 | **G310 Game theory** | strategic and extensive form; Nash equilibrium; von Neumann's minimax theorem; mixed strategies; backward induction | Binmore, *Game Theory* VSI (A); *Game Theory 101: The Rationality of War* (B; links to military strategy) |
-| 3 | **G320 Game-playing AI** | minimax + alpha-beta; Monte Carlo tree search (MCTS); counterfactual regret minimization (CFR) for poker; self-play reinforcement learning | Russell & Norvig, *AIMA* (B, adversarial search); Sutton & Barto, *Reinforcement Learning: An Introduction*, 2nd ed. (free PDF from the authors: http://incompleteideas.net/book/the-book-2nd.html) |
-| — | **Capstone** | build and analyse an agent for a small game, or a deep analysis of your own games | — |
+| 1 | **G101 Chess** (first class; continues as the lab throughout) | safety, tactics → strategy and endgames; your games reviewed with Stockfish | existing `topics/chess/` lessons 0001–0002 count; Seirawan's *Winning Chess* series (A); Capablanca; Silman (A) |
+| 1 | **G102 Tiny games, big ideas** (3–4 lessons) | game trees; win/lose positions; minimax by hand; parity and tempo; strategy stealing (Hex); Nim's binary trick | *Winning Ways* vols. 1 (C) and 2 (B); Martin Gardner (B) |
+| 2 | **G201 Xiangqi** | what transfers from chess; the palace, river, cannon; elephants that can't cross | David H. Li, *First Syllabus on Xiangqi* and *Syllabus on Cannon* (B); W. F. Wong (F: recommend only) |
+| 2 | **G202 Shogi** | drops (captured pieces return), promotion zones; why games never simplify | Leggett, *Japanese Chess: The Game of Shogi* (B); Aono, *Better Moves for Better Shogi* (C) |
+| 3 | **G301 Go** | liberties, life and death, territory vs. influence, sente/gote; 9×9 → 13×13 | *A Go Guide by a Beginner* (A); Janice Kim, *Learn to Play Go* IV–V (B) |
+| 4 | **G401 Decisions under chance** | expected value (Pig dice game); **backgammon unit** (3–4 lessons): pip count, the doubling cube (take point ≈ 22–25%), expectimax, TD-Gammon | Haigh, *Probability* VSI (A); your Statistics course; backgammon: gap |
+| 4 | **G402 Poker** | hand and pot odds; ranges; bluffing and balance; GTO vs. exploitative play | *Elements of Poker* (A); Acevedo, *Modern Poker Theory* (B) |
+| 5 | **G501 Comparative strategy** (seminar) | the "same ideas, different rules" thread made explicit across all the games | your own notes and games |
+| 5 | **G502 Combinatorial game theory** | Sprague–Grundy values; sums of games; games as numbers | *Winning Ways* vols. 1–3 |
+| 5 | **G503 Game theory** | strategic and extensive form; Nash equilibrium; von Neumann's minimax theorem; mixed strategies; backward induction | Binmore, *Game Theory* VSI (A); *Game Theory 101: The Rationality of War* (B) |
+| 5 | **G504 Game-playing AI** | minimax + alpha-beta → expectimax → MCTS → CFR → self-play RL (AlphaZero across chess, shogi, Go) | Russell & Norvig, *AIMA* (B); Sutton & Barto, 2nd ed. (free PDF from the authors: http://incompleteideas.net/book/the-book-2nd.html) |
+| — | **Capstone** | one agent that plays several games, or a comparative study of your own games across families | — |
 
 ## What a lesson looks like
 Same pattern as the other majors (see `TEACHING-LOG.md`): a short reading with a guide when it's definition-heavy, then
@@ -42,6 +46,8 @@ Same pattern as the other majors (see `TEACHING-LOG.md`): a short reading with a
 Theory lessons always point back to a game you've played.
 
 ## Widgets this major needs (add to the widget queue)
+- **Xiangqi and shogi boards** with rules engines (like the chess and Go plugins); look for permissively licensed open-source rules
+  libraries before writing our own, and verify their licenses.
 - **Tiny-game boards you can play against a solver:** tic-tac-toe, Nim, Hex on a small board. The solver uses exact minimax, so feedback is
   ground truth ("this move loses in 3"). Boards are drawn from game state, which fits the no-generated-art rule.
 - Chess and Go: the existing plugins. Poker: a hand/range grid and pot-odds drills. Dice and backgammon: Python simulations.
@@ -53,8 +59,8 @@ Theory lessons always point back to a game you've played.
 
 ## Questions for you
 1. ~~Games replaces chess?~~ **Yes; chess is the first class** (answered 2026-10-05).
-2. Include **Go** in Stage 1 from the start, or wait until chess has some footing?
-3. **Backgammon** in Stage 2 (a great bridge from perfect information to chance), or straight to poker?
+2. ~~Go timing?~~ **Answered:** after the chess family (stage 3); can move earlier if you want a contrast sooner.
+3. ~~Backgammon?~~ **Yes** (2026-10-05): a 3–4 lesson unit in G401. Original reasoning kept below.
    *Case for (2026-10-05):* adds one new ingredient (chance) while everything stays visible, before poker adds hidden information;
    the doubling cube is a clean expected-value decision (take if p ≥ 25% ignoring gammons and cube ownership; "the takepoint in money
    play is about 22%" per [Wikipedia: Doubling cube](https://en.wikipedia.org/wiki/Doubling_cube)); minimax → expectimax (chance
@@ -67,4 +73,8 @@ Theory lessons always point back to a game you've played.
 - `library/MANIFEST.csv` (titles and grades above).
 - Ken Binmore, *Game Theory: A Very Short Introduction* (in collection, grade A): covers von Neumann's minimax theorem, mixed Nash
   equilibria, backward induction (checked via the book server).
+- Wikipedia, [Chaturanga](https://en.wikipedia.org/wiki/Chaturanga): "the prevailing view among chess historians is that chaturanga is the
+  common ancestor of the board games chess, xiangqi … shogi"; earliest reference to the name c. AD 625 (Banabhatta's *Harsha Charita*).
+- Wikipedia, [AlphaZero](https://en.wikipedia.org/wiki/AlphaZero): one self-play RL + MCTS algorithm mastered chess, shogi and Go
+  "given no domain knowledge except the rules"; published in *Science*, December 2018.
 - Berlekamp, Conway & Guy, *Winning Ways for Your Mathematical Plays*, vols. 1–3 (in collection; grades C, B, C).

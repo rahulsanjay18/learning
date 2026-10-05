@@ -13,13 +13,13 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 |---|---|---|
 | Statistics | Lesson 4: P(data given H1), likelihood ratios, power (~55% in the A/B example) | Numbers in `topics/statistics/QUESTIONS.md` |
 | Indian History | Mission interview (PROGRAM.md §6), then lesson 0003: rest of Introduction + Indus with first primary source | `topics/indian-history/PROGRAM.md` |
-| Games (fun major) | Chess is class G101 (continue `topics/chess/`, lessons 0001–0002 done); open questions 2–3 in `topics/games/PROGRAM.md` (Go timing, backgammon) | Chess.com: rahulsanjay18 |
+| Games (fun major) | Chess is class G101 (continue `topics/chess/`, lessons 0001–0002 done); program decided: chess → tiny games → xiangqi → shogi → Go → chance (Pig + backgammon unit) → poker → theory/AI | Chess.com: rahulsanjay18 |
 | AWS ML cert | Ask: which exam, target date, AWS experience, prep materials | Check AWS's current exam list (don't guess names) |
 | Economics | Parked; Principles solid (13/13) | Resume at intermediate level |
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 
 ## Open platform work
-- Widgets: **tiny-game boards vs. a minimax solver** (tic-tac-toe, Nim, Hex) for the Games major.
+- Widgets: **tiny-game boards vs. a minimax solver** (tic-tac-toe, Nim, Hex) and **xiangqi / shogi boards** for the Games major.
 - Widgets: **flashcards** + a **"How sure were you?"** step (guessed-right → treated as not known). Next in the widget queue.
 - "Today" page that shows the day's plan from `notes/study-plan.md` and marks it done (enforces "finish the plan first").
 - Book server: `/search?book=<id>`, page numbers per chunk, per-book section maps, then hybrid (embedding) search. See
