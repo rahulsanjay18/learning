@@ -7,3 +7,6 @@ and "95% probability the parameter is in this interval".
 
 **Evidence:** pretest 2026-10-05: missed ht-pvalue, est-ci, ht-power; skipped ht-multiple.
 **Implications:** teach p-value → CI → power → multiple testing, in that order; bridge from the base-rate problem they got right.
+
+**Update (same day):** the learner says most pretest misses were facts they didn't remember rather than confusions. So these may be
+forgotten definitions, not misconceptions. Lesson 2's practice items distinguish the two; revise this record after it.

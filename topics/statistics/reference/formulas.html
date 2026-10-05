@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Statistics formula sheet</title>
+<link rel="stylesheet" href="../../../assets/lp.css">
+<link rel="stylesheet" href="../../../assets/plugins/math.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../../../index.html">All topics</a> · Statistics · Reference</nav>
+<h1>Formula sheet</h1>
+<p class="subtitle">The results that didn't come back on the pretest, each with the one-line reason it's true. Grows as the course goes.</p>
+
+<h2>Named distributions</h2>
+<div class="card">
+<h3>Geometric: trials until the first success</h3>
+<p>\(P(N=k) = (1-p)^{k-1}p\), &nbsp; \(E[N] = \frac{1}{p}\), &nbsp; \(\operatorname{Var}(N) = \frac{1-p}{p^2}\)</p>
+<p class="small muted">Why \(1/p\): a success rate of \(p\) per trial means one success per \(1/p\) trials on average.</p>
+</div>
+<div class="card">
+<h3>Poisson(\(\lambda\)): counts of rare events in a fixed window</h3>
+<p>\(P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}\), &nbsp; \(E[X] = \operatorname{Var}(X) = \lambda\), &nbsp; so \(P(X=0) = e^{-\lambda}\)</p>
+<p class="small muted">Mean equals variance: a quick check for whether count data are plausibly Poisson.</p>
+</div>
+<div class="card">
+<h3>Exponential(\(\lambda\)): waiting time between Poisson events</h3>
+<p>\(P(T &gt; t) = e^{-\lambda t}\), &nbsp; \(E[T] = \frac{1}{\lambda}\). <strong>Memoryless:</strong> \(P(T &gt; s+t \mid T &gt; s) = \frac{e^{-\lambda(s+t)}}{e^{-\lambda s}} = e^{-\lambda t} = P(T &gt; t)\).</p>
+<p class="small muted">The continuous twin of the geometric; the only memoryless continuous distribution.</p>
+</div>
+
+<h2>Sampling</h2>
+<div class="card">
+<h3>Standard error of a mean</h3>
+<p>\(\operatorname{Var}(\bar X) = \frac{\sigma^2}{n}\), so \(\operatorname{SE}(\bar X) = \frac{\sigma}{\sqrt n}\)</p>
+<p class="small muted">Variances of \(n\) independent terms add (\(n\sigma^2\)), then dividing by \(n\) scales variance by \(1/n^2\). Four times the data halves the error.</p>
+</div>
+
+<h2>Regression</h2>
+<div class="card">
+<h3>Simple least squares</h3>
+<p>\(\hat\beta_1 = \frac{\sum (x_i-\bar x)(y_i-\bar y)}{\sum (x_i-\bar x)^2} = r\,\frac{s_y}{s_x}\), &nbsp; \(\hat\beta_0 = \bar y - \hat\beta_1 \bar x\), &nbsp; \(R^2 = r^2\)</p>
+<p class="small muted">The slope is the correlation rescaled from standard-deviation units into the units of \(y\) per unit of \(x\).</p>
+</div>
+
+<h2>Bayesian</h2>
+<div class="card">
+<h3>Beta–binomial updating</h3>
+<p>Prior \(\text{Beta}(a,b)\), then \(k\) successes in \(n\) trials gives posterior \(\text{Beta}(a+k,\; b+n-k)\), mean \(\frac{a+k}{a+b+n}\).</p>
+<p class="small muted">\(a\) and \(b\) act like prior successes and failures; data just add to the counts.</p>
+</div>
+
+<h2>Testing</h2>
+<div class="card">
+<h3>p-value</h3>
+<p>\(p = P(\text{result at least this extreme} \mid H_0)\). It is <strong>not</strong> \(P(H_0 \mid \text{data})\), and it isn't an effect size. See <a href="../lessons/0002-what-a-p-value-is.html">lesson 2</a>.</p>
+<p class="small muted">Two-sided test at \(\alpha = 0.05\): reject when \(|z| &gt; 1.96\).</p>
+</div>
+
+<h2>Where these are in your primary books</h2>
+<ul class="small">
+  <li><strong>Primary:</strong> <em>Statistical Inference</em> (Casella &amp; Berger): §8.3.4 "p-Values" (Definition 8.3.26). More section pointers get added as lessons cover them.</li>
+  <li>Companion: <em>All of Statistics</em> (Wasserman): ch. 2 "Random Variables" and ch. 3 "Expectation" (distributions, means, variances); ch. 5 "Convergence of Random Variables" (CLT, §5.4); ch. 10 "Hypothesis Testing and p-values" (§10.2 p-values); ch. 11 "Bayesian Inference"; ch. 13 "Linear and Logistic Regression".</li>
+</ul>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Larry Wasserman, <em>All of Statistics</em> (Springer, 2004). In collection (grade B): chapter titles from the book's own contents page; formulas here are not copied from the conversion.</li>
+  <li>George Casella &amp; Roger L. Berger, <em>Statistical Inference</em>, 2nd ed. (Duxbury, 2002). In collection (grade A).</li>
+  <li>Each formula on this page was checked numerically in Python (geometric mean/variance by summation, Poisson mean = variance, memorylessness, slope = \(r\,s_y/s_x\) on simulated data, Beta posterior mean).</li>
+</ol>
+</main>
+<script src="../../../assets/lp.js"></script>
+<script src="../../../assets/plugins/math.js"></script>
+</body>
+</html>

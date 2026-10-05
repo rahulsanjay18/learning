@@ -11,3 +11,5 @@
 - 2026-10-05: pretest results: 10/21 right first try, 6 missed, 4 skipped; rated it **too hard**. See learning-records 0001–0004.
   Starting point: probability mechanics solid; inference interpretation is the gap. Lessons should be short and narrow.
 - Graded reg-causal 0.6/1: named the confounder (summer), but the proposed study is still observational; said "prove".
+- 2026-10-05: **Casella & Berger is the primary source** (grade A; learner's choice). All of Statistics is the companion (grade B: prose and section pointers only, no equations from it). Casella is dense: point to specific sections, never whole chapters.
+- Learner says most pretest misses were forgotten facts, not confusion. Prefer the formula sheet + spaced retrieval for recall gaps; keep lessons for ideas.
