@@ -121,3 +121,8 @@ From Chapter 1 on (the cover-to-cover program), lessons are built from the readi
 - **read-random** ("the parameter is fixed but unknown; the endpoints are random variables, so the interval is random"): right. The
   second half of the question was why that matters for phrasing: since μ isn't random, "95%" describes the *method* across samples,
   not "a 95% chance μ is in this one interval". Once you have the interval [0.03, 1.17], μ is either in it or not. (0.7)
+
+## 2026-10-05 · "Describe creating a 95% CI from dice whose face probabilities you don't know: one cohesive example"
+Full walk-through in `reference/ci-dice-example.md`. In short: roll 600 times, 146 sixes, θ̂ = 0.243, plug-in SE = √(θ̂(1 − θ̂)/n) =
+0.0175, CLT makes θ̂ ≈ normal, so θ̂ ± 1.96·SE = [0.209, 0.278]. Fair 1/6 is outside, which is evidence of loading. 10,000 repeats: 94.8% of
+intervals covered the true 0.25.
