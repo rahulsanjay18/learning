@@ -16,8 +16,13 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 7. **Worked example before practice.** Walk through one, then give a similar one with new numbers. Not a cold question. (Entry 1)
 8. **Multiple choice measures recognition.** Don't treat a right multiple-choice answer as known; check with recall (typed answers,
    timelines, free response). The learner guesses sometimes and says so. (Entry 7)
-9. **Assign reading first when a lesson is definition-heavy.** The learner is happy to read beforehand: give a short, specific
-   slice of the primary source with a reading guide (3 questions), as its own block before the lesson. (Entry 8)
+9. **Assign reading before the lesson whenever it makes sense** (all subjects, not only definition-heavy ones). Give a short,
+   specific slice of the primary source with a reading guide (3 questions + "what surprised or confused you"), as its own block
+   before the lesson. (Entries 8, 13)
+13. **Homework is allowed but optional.** Keep it small and specific (one exercise, one game to play, one short write-up), mark it
+    clearly as optional, and **design every lesson so it still works if the homework was skipped** (the learner isn't sure how
+    much they'll do). Never make a later lesson depend on homework; if it builds on homework, include a 2-minute recap. Track what
+    gets done in the topic's NOTES.md and adjust the amount to what actually happens. (Entry 13)
 10. **Verify every fact and number** against a source or with code before publishing (already standard; keep doing it).
 12. **Reading guides as note-taking:** for assigned readings, put 3 guide questions + "what surprised or confused you" as `free`
     boxes at the top of the lesson. They're the learner's notes, they reach the teacher with the results, and every answer gets a reply.
@@ -48,3 +53,5 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     thing is pretty much missing entirely." A fix for one gap can itself break rule 1. Fix: a plain definition where the term first
     appears (absolute and relative lift); lesson 3 teaches effect size properly (practical vs. statistical significance) before CIs.
     **Check every fix against rule 1 too.**
+13. **2026-10-05 · Learner's standing preference:** readings before lessons are welcome in every subject when they make sense;
+    homework is fine, but the learner is unsure how much they'll do. Rules 9 and 13.

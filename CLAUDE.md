@@ -52,7 +52,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - `TEACHING-LOG.md` at the repo root lists past teaching mistakes and the rules that prevent them, across all subjects. Read it
   before writing a lesson. When my questions or results reveal a flaw in an explanation or lesson, add an entry and a rule.
 - Each topic keeps a `QUESTIONS.md`: my questions with the answers given.
-- I'm happy to **read beforehand**: for definition-heavy lessons, assign a short, specific primary-source slice with a reading guide.
+- **Lesson design, all subjects:** assign a reading before the lesson whenever it makes sense (a short, specific primary-source slice
+  with a reading guide). **Homework is fine but optional**: keep it small, and make every lesson work even if I skipped it
+  (I'm not sure how much I'll do). Details: TEACHING-LOG.md rules 9 and 13.
 
 ## Progress server (once deployed: `$BOOKS_URL/progress`, see `progress-server/README.md`)
 - At the start of a teaching session, `curl -s "$BOOKS_URL/progress/status"` (auth is injected) for a ~15-line digest; use
