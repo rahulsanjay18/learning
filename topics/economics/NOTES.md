@@ -4,3 +4,4 @@
   non-technical subject (the other gets parked). No MISSION.md yet: interview for the "why" once chosen.
 - Treat the subject as a **major** (multi-course program), not a single course.
 - Learner is procuring books; don't do subject research yet. Library primary: OpenStax Principles of Economics 3e (id b1da0964c9, grade A).
+- 2026-10-05: pretest 13/13, rated just-right (learning record 0001). Principles level is known; start at intermediate if chosen.
