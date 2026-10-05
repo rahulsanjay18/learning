@@ -4,7 +4,7 @@
     python3 scripts/lint_lessons.py [files...]     (default: every topics/*/lessons|reference/*.html + assets/gallery.html)
 
 ERROR (exit 1): broken local links/scripts, choice answer not among its options, categorize item in an unknown bucket,
-                duplicate data-id, cloze with no [[blanks]], order with < 2 items, chess-move without data-fen/data-answer.
+                duplicate data-id, cloze with no [[blanks]], order with < 2 items, chess-move/go-move missing their position or answer.
 WARN:           choice options with different word counts (SKILL.md: answers must not give away the answer by length),
                 lesson without a sources list.
 """
@@ -90,6 +90,8 @@ def lint(path):
             errors.append(f"{where}: no [[blanks]] found")
         elif t == "chess-move" and not (a.get("data-fen") and a.get("data-answer")):
             errors.append(f"{where}: needs data-fen and data-answer")
+        elif t == "go-move" and not (a.get("data-size") and (a.get("data-answer") or a.get("data-solution"))):
+            errors.append(f"{where}: needs data-size and data-answer or data-solution")
 
     if "/lessons/" in str(rel) and not page.has_sources:
         warns.append("no <ol class=\"sources\"> list")

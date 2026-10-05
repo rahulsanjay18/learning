@@ -25,7 +25,7 @@ BOOKS_URL=https://books.tail59e10.ts.net
 
 ## Shared lesson library (overrides the skill's per-topic `./assets/` guidance)
 - All lessons and reference pages use the shared files in `assets/` at the repo root: `lp.css`, `lp.js`, and `assets/plugins/*` for
-  subject-specific widgets (chess, pixel art). Before writing a lesson, read `assets/README.md` (markup for every widget). Don't read the JS source.
+  subject-specific widgets (chess, Go, pixel art). Before writing a lesson, read `assets/README.md` (markup for every widget). Don't read the JS source.
 - Never create a per-topic copy of a stylesheet or quiz script. Topic-only styles go in `topics/<slug>/assets/topic.css`.
   A widget another topic could reuse goes in `assets/` (generic) or `assets/plugins/` (subject-specific), and gets an example in `assets/gallery.html`.
 - Keep CSS plain and quiet (one column, serif text, thin rules; no shadows, gradients or animation).

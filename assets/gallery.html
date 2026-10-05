@@ -7,6 +7,7 @@
 <title>Widget gallery</title>
 <link rel="stylesheet" href="lp.css">
 <link rel="stylesheet" href="plugins/chess.css">
+<link rel="stylesheet" href="plugins/go.css">
 </head>
 <body>
 <main>
@@ -83,8 +84,21 @@
   <p class="prompt">White to move and mate in one.</p>
   <div class="explain" hidden>Rd8# — the pawns on f7, g7, h7 block the king's escape.</div>
 </div>
+
+<h2>Go plugin</h2>
+<div class="go-board" data-size="9" data-black="C3 D4 G7" data-white="E5 F3" data-marks="E5" data-labels="D6:a F5:b" data-caption="9×9 diagram with a mark and labels"></div>
+<div class="go-board" data-size="19" data-view="A1:J8" data-black="C3 D3 E3 C4" data-white="D4 E4 F3 F4" data-caption="Cropped corner of a 19×19 board"></div>
+<div class="quiz" data-type="go-move" data-id="go-capture" data-size="9" data-black="D5 F5 E6" data-white="E5" data-answer="E4" data-hint="Count White's liberties.">
+  <p class="prompt">Black to play: capture the white stone.</p>
+  <div class="explain" hidden>E4 takes White's last liberty.</div>
+</div>
+<div class="quiz" data-type="go-move" data-id="go-drive" data-size="9" data-black="D4 D5 D6 F4 F5 F6" data-white="E5 E6" data-solution="E7 E4 E3" data-hint="Atari from the side that drives White into your stones.">
+  <p class="prompt">Black to play and capture. White will answer.</p>
+  <div class="explain" hidden>E7 forces White down to E4, where D4 and F4 leave one liberty; E3 captures three stones. Starting with E4 lets White escape upward.</div>
+</div>
 </main>
 <script src="lp.js"></script>
 <script src="plugins/chess.js"></script>
+<script src="plugins/go.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+/* Go plugin styles (assets/plugins/go.js). Load after assets/lp.css. */
+:root {
+  --go-wood: #dcb36a;
+  --go-line: #3b2a14;
+  --go-black: #1a1a1a;
+  --go-white: #f7f5ee;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --go-wood: #b99555; --go-line: #2a1d0c; }
+}
+.go-board { margin: 1.2rem auto; width: min(100%, 24rem); }
+.quiz .go-board { margin: .6rem 0 .8rem; }
+.go-svg { display: block; width: 100%; height: auto; user-select: none; }
+.go-wood { fill: var(--go-wood); }
+.go-lines line { stroke: var(--go-line); stroke-width: .04; }
+.go-star { fill: var(--go-line); }
+.go-coord { font: 600 .38px system-ui, sans-serif; fill: var(--go-line); text-anchor: middle; opacity: .7; }
+.go-stone.b { fill: var(--go-black); }
+.go-stone.w { fill: var(--go-white); stroke: var(--go-line); stroke-width: .04; }
+.go-last { fill: none; stroke: var(--go-black); stroke-width: .07; }
+.go-mark { fill: none; stroke: var(--go-black); stroke-width: .07; }
+.go-last.on-b, .go-mark.on-b { stroke: var(--go-white); }
+.go-label { font: 600 .45px system-ui, sans-serif; fill: var(--go-black); text-anchor: middle; }
+.go-label.on-b { fill: var(--go-white); }
+.go-label-bg { fill: var(--go-wood); }
+.go-hit { fill: transparent; cursor: pointer; }
+.go-caption { text-align: center; font-size: .85rem; color: var(--muted); margin-top: .35rem; }

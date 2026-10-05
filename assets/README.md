@@ -51,6 +51,10 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 - **Chess** (`plugins/chess.js` + `plugins/chess.css`):
   - Diagram: `<div class="board-wrap" data-fen="…" data-hl="e5 c6" data-arrows="f3-e5" data-caption="…" [data-flip="true"]></div>`
   - Find the move: `<div class="quiz" data-type="chess-move" data-id="…" data-fen="…" data-answer="d1d8|Rd8#">`. The answer is UCI or SAN, with several separated by `|`. Legality comes from the vendored chess.js (`vendor/`). **Verify the answer with chess.js before publishing.**
+- **Go** (`plugins/go.js` + `plugins/go.css`): columns A–T without I, rows counted from the bottom.
+  - Diagram: `<div class="go-board" data-size="9|13|19" data-black="C3 D4" data-white="E5" [data-marks="E5"] [data-labels="D6:a"] [data-view="A1:J8"] [data-coords="false"] data-caption="…"></div>`. `data-view` crops to a corner or side.
+  - Problem: `<div class="quiz" data-type="go-move" data-id="…" data-size="9" data-black="…" data-white="…" [data-to-play="W"] data-answer="E4|F3">` for one move, **or** `data-solution="E7 E4 E3"`, a line where the learner's moves alternate with scripted replies. Illegal moves (occupied, suicide, ko) are refused and not scored. A wrong move counts as a miss; "Start over" resets.
+  - `node scripts/test_go_rules.js` checks that every problem's line is legal. **Whether it's the best move is your job**: read it out, and use an engine (e.g. KataGo) for anything non-trivial.
 - **Pixel art** (`plugins/pixels.js` + `plugins/pixels.css`): `.px` pictures and `.px-draw` drills. Usage is in the header comment of `plugins/pixels.js`.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
@@ -64,4 +68,5 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 ```sh
 python3 scripts/lint_lessons.py          # structure, answers, links, equal-length options
 node scripts/test_widgets.mjs            # opens every page in headless Chromium and drives the gallery
+node scripts/test_go_rules.js            # Go rules + every go-move problem's line is legal
 ```

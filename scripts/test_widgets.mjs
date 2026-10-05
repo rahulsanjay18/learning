@@ -115,18 +115,32 @@ await page.click(`${q("chess-move")} .sq[data-sq="d8"]`);
 await page.waitForTimeout(chessJsLoaded ? 300 : 1500);
 await expectOk("chess-move");
 
+// go: illegal (occupied) point refused without scoring; single capture; then a line with a wrong try, start over, solve
+const goClick = (id, pt) => page.click(`${q(id)} .go-hit[data-pt="${pt}"]`, { force: true });
+await goClick("go-capture", "E5");
+if (!/already taken/.test(await page.locator(`${q("go-capture")} > .feedback`).textContent())) fail("gallery: go occupied point not refused");
+await goClick("go-capture", "E4"); await expectOk("go-capture");
+if (await page.locator(`${q("go-capture")} .go-stone.w`).count()) fail("gallery: go captured stone still on board");
+await goClick("go-drive", "E4");
+await page.click(`${q("go-drive")} button:text-is("Start over")`);
+await goClick("go-drive", "E7");
+if (await page.locator(`${q("go-drive")} .go-stone.w`).count() !== 3) fail("gallery: go scripted reply missing");
+await goClick("go-drive", "E3"); await expectOk("go-drive");
+if (await page.locator(`${q("go-drive")} .go-stone.w`).count() !== 0) fail("gallery: go line did not capture");
+if (await page.locator(".go-board[data-size]:not(.quiz) svg").count() !== 2) fail("gallery: go diagrams missing");
+
 const bar = await page.locator(".scorebar").textContent();
-const expected = "10 / 10 answered · 8 right first try"; // choice missed first; free is ungraded
+const expected = "12 / 12 answered · 9 right first try"; // choice and go-drive missed first; free is ungraded
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== 10) fail(`gallery: expected 10 logged attempts, got ${attempts.length}`);
+if (attempts.length !== 12) fail(`gallery: expected 12 logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!/missed: choice/.test(summary) || !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!/missed: choice,go-drive/.test(summary) || !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 await browser.close();
