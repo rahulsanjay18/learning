@@ -43,6 +43,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
   extra time beyond the 1-hour floor is welcome after that.
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
 
+## Handoff
+- `notes/HANDOFF.md`: current state and to-do list across all topics and the platform. Read it at the start of a new thread; keep it current.
+
 ## Teaching log (read before writing any lesson)
 - `TEACHING-LOG.md` at the repo root lists past teaching mistakes and the rules that prevent them, across all subjects. Read it
   before writing a lesson. When my questions or results reveal a flaw in an explanation or lesson, add an entry and a rule.

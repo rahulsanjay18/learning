@@ -22,3 +22,6 @@
 - 2026-10-05: **lesson 3 = "Effect size and confidence intervals"** (learner: effect size is "missing entirely"). Order: what effect
   size is (absolute, relative, in SE units), practical vs. statistical significance, CIs as size + uncertainty. The learner's
   P(data | H1) / likelihood-ratio question comes after (lesson 4).
+- 2026-10-05: lesson 3 (effect size and CIs) built, with reading Casella & Berger §9.1 pp. 417–419 (+ Practical Statistics "Confidence
+  Intervals" from p. 65). Reading-guide answers arrive as free responses (read-gain, read-coverage, read-random, read-surprise): reply to them.
+  Next: lesson 4 = the learner's P(data | H1) question (likelihood ratios, power ~55%), see QUESTIONS.md for the numbers.

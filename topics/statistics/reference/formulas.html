@@ -37,6 +37,16 @@
 <p class="small muted">Variances of \(n\) independent terms add (\(n\sigma^2\)), then dividing by \(n\) scales variance by \(1/n^2\). Four times the data halves the error.</p>
 </div>
 
+<div class="card">
+<h3>95% confidence interval (large samples)</h3>
+<p>\(\text{estimate} \pm 1.96 \times \text{SE}\). For a difference of two proportions: \(\text{SE} = \sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}\).</p>
+<p class="small muted">The 95% belongs to the method: intervals built this way cover the true value 95% of the time. The interval is random; the parameter isn't (Casella &amp; Berger, p. 418). Excludes 0 ⇔ two-sided test rejects at \(\alpha = 0.05\). See <a href="../lessons/0003-effect-size-and-confidence-intervals.html">lesson 3</a>.</p>
+</div>
+<div class="card">
+<h3>Effect size</h3>
+<p>Absolute: \(p_2 - p_1\) (percentage <em>points</em>). Relative: \(\frac{p_2 - p_1}{p_1}\) (percent). Always say which.</p>
+</div>
+
 <h2>Regression</h2>
 <div class="card">
 <h3>Simple least squares</h3>
@@ -60,7 +70,7 @@
 
 <h2>Where these are in your primary books</h2>
 <ul class="small">
-  <li><strong>Primary:</strong> <em>Statistical Inference</em> (Casella &amp; Berger): §8.3.4 "p-Values" (Definition 8.3.26). More section pointers get added as lessons cover them.</li>
+  <li><strong>Primary:</strong> <em>Statistical Inference</em> (Casella &amp; Berger): §8.3.1 "Error Probabilities and the Power Function"; §8.3.4 "p-Values" (Definition 8.3.26); §9.1 "Introduction" to interval estimation, pp. 417–419. More section pointers get added as lessons cover them.</li>
   <li>Companion: <em>All of Statistics</em> (Wasserman): ch. 2 "Random Variables" and ch. 3 "Expectation" (distributions, means, variances); ch. 5 "Convergence of Random Variables" (CLT, §5.4); ch. 10 "Hypothesis Testing and p-values" (§10.2 p-values); ch. 11 "Bayesian Inference"; ch. 13 "Linear and Logistic Regression".</li>
 </ul>
 

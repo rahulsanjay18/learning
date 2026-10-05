@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Effect size and confidence intervals</title>
+<link rel="stylesheet" href="../../../assets/lp.css">
+<link rel="stylesheet" href="../../../assets/plugins/math.css">
+<link rel="stylesheet" href="../../../assets/plugins/python.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../../../index.html">All topics</a> · Statistics · Lesson 3</nav>
+<h1>Effect size and confidence intervals</h1>
+<p class="subtitle">Two blocks: the reading (about 20 minutes), then this page (about 25). One win: say how big an effect is, and how sure you are, in one sentence.</p>
+
+<h2>Block 1: read first</h2>
+<div class="reading">
+<h3>Reading</h3>
+<ol>
+  <li><strong>Casella &amp; Berger, <em>Statistical Inference</em>, §9.1 "Introduction", pp. 417–419</strong> (to Definition 9.1.5 and the paragraph after it). Short but dense: read it twice, slowly. Skip anything about infimum on the first pass.</li>
+  <li>Companion, if Casella feels heavy: Bruce, Bruce &amp; Gedeck, <em>Practical Statistics for Data Scientists</em>, the section "Confidence Intervals" (from p. 65).</li>
+</ol>
+<p class="small">Notes: answer the four boxes below in your own words while you read (a sentence or two each). They reach me with your results, and I'll reply to them next session.</p>
+</div>
+<div class="quiz" data-type="free" data-id="read-gain">
+  <p class="prompt">Casella &amp; Berger say that moving from a single number to an interval means giving up some precision. What do we gain in exchange (their Example 9.1.3)?</p>
+  <div class="rubric">Confidence: a positive, quantifiable probability that the interval covers the parameter (≈ .9544 in their example), where a point estimate is exactly right with probability 0.</div>
+</div>
+<div class="quiz" data-type="free" data-id="read-coverage">
+  <p class="prompt">In your own words: what is the <em>coverage probability</em> of an interval estimator (Definition 9.1.4)?</p>
+  <div class="rubric">The probability that the random interval [L(X), U(X)] contains the true parameter, computed over repeated samples.</div>
+</div>
+<div class="quiz" data-type="free" data-id="read-random">
+  <p class="prompt">In a confidence interval, which is random: the interval or the parameter? Why does that matter for how you phrase a result?</p>
+  <div class="rubric">The interval is random ("the interval is the random quantity, not the parameter", p. 418); the parameter is fixed. So "95%" describes the procedure across samples, not the probability that the parameter lies in one computed interval.</div>
+</div>
+<div class="quiz" data-type="free" data-id="read-surprise">
+  <p class="prompt">One thing that surprised or confused you.</p>
+</div>
+
+<h2>Block 2: the lesson</h2>
+<h3>Warm-up (from memory)</h3>
+<div class="quiz" data-type="choice" data-id="wu-size" data-answer="No: p mixes effect and sample size" data-options="Yes: smaller p always means bigger effect|No: p mixes effect and sample size|No: smaller p always means smaller effect|Only when both tests use alpha 0.05">
+  <p class="prompt">Test A has \(p = 0.002\), test B has \(p = 0.04\). Does A have the bigger effect?</p>
+  <div class="explain" hidden>\(p\) comes from \(z = \text{effect}/\text{SE}\), and SE shrinks with \(n\). A could be a tiny effect measured on millions of users.</div>
+</div>
+<div class="quiz" data-type="choice" data-id="wu-type2" data-answer="Missing a real effect" data-options="A false positive alarm|Missing a real effect|Rejecting a true null|Using too much data">
+  <p class="prompt">A Type II error is…</p>
+  <div class="explain" hidden>Not rejecting \(H_0\) when there really is an effect. Its rate is \(\beta\); power is \(1-\beta\).</div>
+</div>
+
+<h3>1 · Effect size: "how much?"</h3>
+<p>The p-value answers "is it surprising if nothing's going on?". <strong>Effect size</strong> answers "<em>how big</em> is the difference?", in units someone cares about. Two common versions, using lesson 2's A/B test (5.0% → 5.6% conversion):</p>
+<ul>
+  <li><strong>Absolute difference:</strong> \(5.6\% - 5.0\% = 0.6\) percentage points. "Percentage points" is the unit for a difference between two percentages.</li>
+  <li><strong>Relative lift:</strong> \(0.6 / 5.0 = 12\%\). The same change, stated relative to the starting point. It sounds bigger, which is why it's popular in slide decks; always say which one you mean.</li>
+</ul>
+<div class="quiz" data-type="math" data-id="rel-lift" data-answer="0.5/4*100" data-tolerance="0.05" data-hint="Relative lift = absolute difference ÷ the starting rate, as a percent.">
+  <p class="prompt">Sign-ups go from 4.0% to 4.5%. What is the relative lift, in percent? (You can type an expression.)</p>
+  <div class="explain" hidden>Absolute: 0.5 points. Relative: \(0.5/4.0 = 12.5\%\).</div>
+</div>
+
+<h3>2 · Statistically significant vs. worth it</h3>
+<p>Before a test, decide the <strong>smallest effect worth acting on</strong>: the lift that would pay for building and maintaining the change. Bruce, Bruce &amp; Gedeck call this the effect size you "hope to be able to detect", and it's what power is computed for.<cite class="ref"><a href="#s2">2</a></cite> Say it's 0.5 points for the checkout page. Then "significant" (detectably not zero) and "worth it" (at least 0.5) are separate questions.</p>
+<div class="quiz" data-type="categorize" data-id="sig-vs-worth" data-buckets="Significant and worth it|Significant, too small|Not significant"
+  data-items="Lift 0.05 points, p = 0.0003, 5 million users>Significant, too small|Lift 1.2 points, p = 0.001>Significant and worth it|Lift 0.9 points, p = 0.31, 400 users>Not significant">
+  <p class="prompt">Smallest lift worth acting on: 0.5 points, \(\alpha = 0.05\). Sort each result.</p>
+  <div class="explain" hidden>The 0.05-point lift is real but irrelevant. The 0.9-point lift might be worth it, but 400 users can't tell it apart from noise: not significant isn't the same as "no effect".</div>
+</div>
+
+<h3>3 · The confidence interval: size and uncertainty together</h3>
+<p>A <strong>95% confidence interval</strong> is the estimate plus or minus about two standard errors:</p>
+$$\text{estimate} \pm 1.96 \times \text{SE}$$
+<p>For the A/B test: estimate 0.6 points, SE 0.29 points, so</p>
+$$0.6 \pm 1.96 \times 0.29 \;\Rightarrow\; [\,0.03,\ 1.17\,] \text{ points}$$
+<p>One line tells you three things:</p>
+<ul>
+  <li><strong>Size:</strong> the middle, 0.6 points.</li>
+  <li><strong>Uncertainty:</strong> the width. Anything from a negligible 0.03 to a big 1.17 points is plausible.</li>
+  <li><strong>Significance:</strong> 0 is just outside, which matches \(p = 0.038 &lt; 0.05\). A 95% interval excludes 0 exactly when a two-sided test at \(\alpha = 0.05\) rejects (normal-approximation version).</li>
+</ul>
+
+<h3>4 · What the "95%" means</h3>
+<p>This is the pretest question you missed. The true lift is a fixed number we don't know. The interval is what changes from sample to sample: "the interval is the random quantity, not the parameter" (Casella &amp; Berger, p. 418).<cite class="ref"><a href="#s1">1</a></cite> So "95%" describes the <em>procedure</em>: build intervals this way over and over, and about 95% of them will contain the true value. Run this simulation a few times (each run builds 100 intervals for a mean whose true value is 10):</p>
+<div class="lp-py"><pre class="code">import random, math
+
+true_mean, sd, n = 10, 2, 25
+covered = 0
+for i in range(100):
+    xs = [random.gauss(true_mean, sd) for _ in range(n)]
+    xbar = sum(xs) / n
+    half = 1.96 * sd / math.sqrt(n)
+    if xbar - half &lt;= true_mean &lt;= xbar + half:
+        covered += 1
+print(covered, "of 100 intervals contain the true mean")</pre></div>
+<p class="small muted">Expect numbers in the low-to-high 90s, averaging 95. Any single interval either contains 10 or doesn't; the 95% is the hit rate of the method.</p>
+
+<h3>5 · Using an interval to decide</h3>
+<p>Compare the whole interval with the smallest effect worth acting on (0.5 points):</p>
+<div class="quiz" data-type="categorize" data-id="ci-decide" data-buckets="Ship it|Real but too small|Need more data"
+  data-items="[0.7, 1.3] points>Ship it|[0.02, 0.15] points>Real but too small|[−0.4, 1.6] points>Need more data|[0.03, 1.17] points (our test)>Need more data">
+  <p class="prompt">Sort each 95% interval for the lift.</p>
+  <div class="explain" hidden>Ship it: every plausible value clears 0.5. Too small: real (excludes 0) but nowhere near 0.5. Need more data: the interval includes values on both sides of 0.5. That's our test: significant, yet still undecided about whether it's worth it.</div>
+</div>
+
+<h3>Practice</h3>
+<div class="quiz" data-type="math" data-id="ci-lower" data-answer="2.0-1.96*0.5" data-tolerance="0.01" data-hint="Lower end = estimate − 1.96 × SE.">
+  <p class="prompt">An estimate is 2.0 with standard error 0.5. What is the lower end of its 95% confidence interval?</p>
+  <div class="explain" hidden>\(2.0 - 1.96 \times 0.5 = 1.02\). (Upper end: 2.98.)</div>
+</div>
+<div class="quiz" data-type="choice" data-id="ci-read" data-answer="Intervals built this way capture the true lift 95% of the time"
+  data-options="There is a 95% chance the true lift is in this interval|Intervals built this way capture the true lift 95% of the time|Exactly 95% of all individual users saw a lift inside this interval|The next observed lift will land inside here 95% of the time">
+  <p class="prompt">The interval is [0.03, 1.17] points. Which reading is correct?</p>
+  <div class="explain" hidden>The 95% belongs to the method. The first option treats the true lift as random, which is the Bayesian "credible interval" reading, not a confidence interval.</div>
+</div>
+<div class="quiz" data-type="recall" data-id="say-it">
+  <p class="prompt">From memory: one sentence for your PM that gives the effect size and its uncertainty for this A/B test.</p>
+  <div class="explain" hidden>"We estimate the new page lifts conversion by about 0.6 percentage points (12% relative), and the data are consistent with anything from almost nothing (0.03) to about 1.2 points, so it's probably helping, but we can't yet say it clears our 0.5-point bar." Avoid: "there's a 95% chance the lift is between 0.03 and 1.17."</div>
+</div>
+
+<h2>Next</h2>
+<p>Lesson 4 takes your question: how likely the data are under a specific real effect (\(P(\text{data} \mid H_1)\)), likelihood ratios, and why our test had only about 55% power. The <a href="../reference/formulas.html">formula sheet</a> now has a confidence-interval entry.</p>
+<p>Questions about any of this? Ask me.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1">George Casella &amp; Roger L. Berger, <em>Statistical Inference</em>, 2nd ed., §9.1 "Introduction", pp. 417–419: Examples 9.1.2–9.1.3, Definitions 9.1.4 (coverage probability) and 9.1.5 (confidence coefficient); "the interval is the random quantity, not the parameter". In collection (grade A); page numbers from the book's own contents page.</li>
+  <li id="s2">Peter Bruce, Andrew Bruce &amp; Peter Gedeck, <em>Practical Statistics for Data Scientists</em>, 2nd ed., "Confidence Intervals" (from p. 65) and "Power and Sample Size" (effect size as "the minimum size of the effect that you hope to be able to detect"). In collection (grade A).</li>
+  <li>The A/B numbers (unpooled SE 0.289 points, 95% CI [0.03, 1.17], relative lift 12%) and the coverage simulation (average 95.15 of 100 over 200 runs) were computed in Python.</li>
+</ol>
+</main>
+<script src="../../../assets/lp.js"></script>
+<script src="../../../assets/plugins/math.js"></script>
+<script src="../../../assets/plugins/python.js"></script>
+</body>
+</html>

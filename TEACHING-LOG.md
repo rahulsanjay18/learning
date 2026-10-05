@@ -19,6 +19,8 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 9. **Assign reading first when a lesson is definition-heavy.** The learner is happy to read beforehand: give a short, specific
    slice of the primary source with a reading guide (3 questions), as its own block before the lesson. (Entry 8)
 10. **Verify every fact and number** against a source or with code before publishing (already standard; keep doing it).
+12. **Reading guides as note-taking:** for assigned readings, put 3 guide questions + "what surprised or confused you" as `free`
+    boxes at the top of the lesson. They're the learner's notes, they reach the teacher with the results, and every answer gets a reply.
 11. **Remind the learner that formula boxes take expressions** (`8/28`, `160*0.05/(...)`), so arithmetic slips don't cost a question. (Entry 9)
 
 ## Entries
