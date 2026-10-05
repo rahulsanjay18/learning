@@ -18,3 +18,16 @@
 
 Sources: [1] Wasserstein & Lazar (2016), ASA statement on p-values, as quoted in Bruce, Bruce & Gedeck, *Practical Statistics
 for Data Scientists*, p. 108 (in collection). Base-rate arithmetic: lesson 2 worked example; Ioannidis (2005), PLOS Medicine.
+
+## 2026-10-05 · "How do I say it using the 96%? 96% chance this data appears given we changed the website?"
+**No:** both 4% and 96% are computed in the world where the page makes **no** difference.
+
+- Thought experiment: the page truly does nothing; rerun the A/B test 100 times. In ~4 reruns the gap is as big as 0.6 points or
+  bigger (either direction, since the test is two-sided): that's p = 0.038. In ~96 the gap is smaller.
+- Correct sentence with 96%: "If the new page made no difference, 96% of the time we'd see a smaller gap than this one."
+- "Given we changed the website" would be the *other* world (a real effect). How likely the data is there is a different
+  number (related to power), not 96%.
+- In practice don't quote 96%. Say: "If the page did nothing, a lift this big would be rare (about 4%). That's evidence it helps,
+  not '96% sure it works'."
+
+Basis: definition of the p-value as P(result at least this extreme | H0) (Casella & Berger §8.3.4; Bruce, Bruce & Gedeck p. 108).
