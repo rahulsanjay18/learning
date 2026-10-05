@@ -1,0 +1,29 @@
+{
+  "about": "Program layer above /teach. Read by .claude/skills/program/scripts/status.py. Human plan: notes/study-plan.md. Edit freely; run python3 scripts/test_programs.py after.",
+  "timezone": "America/New_York",
+  "review": "assets/review.html",
+  "week": {
+    "mon": ["statistics", "aws-ml"],
+    "tue": ["statistics", "indian-history"],
+    "wed": ["aws-ml", "statistics"],
+    "thu": ["aws-ml", "games"],
+    "fri": ["statistics", "aws-ml"],
+    "sat": ["indian-history", "games"],
+    "sun": []
+  },
+  "majors": [
+    {"slug": "statistics", "name": "Statistics", "weight": "full", "goal": "career",
+     "curriculum": "topics/statistics/curriculum.json"},
+    {"slug": "aws-ml", "name": "AWS ML certification", "weight": "full", "goal": "career", "curriculum": null,
+     "setup": "Not set up. Ask: which exam (check AWS's current list, don't guess names), target date, hands-on AWS experience, prep materials. Until then its blocks go to Statistics."},
+    {"slug": "indian-history", "name": "Indian History", "weight": "half", "goal": "soul",
+     "curriculum": "topics/indian-history/curriculum.json"},
+    {"slug": "games", "name": "Games", "weight": "half", "goal": "fun",
+     "curriculum": "topics/games/curriculum.json"}
+  ],
+  "parked": [
+    {"slug": "economics", "note": "Principles solid (13/13). Resume at intermediate level."},
+    {"slug": "nasm-cpt", "note": "Deadline-driven: ask for the exam date."},
+    {"slug": "pixel-art", "note": "One lesson so far; on the wishlist."}
+  ]
+}

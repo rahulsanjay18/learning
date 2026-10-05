@@ -6,7 +6,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 - Statistics **lesson 4** (reading Casella & Berger §8.3.1 pp. 382–385 first) and Indian History **IH 100.1** (reading Kulke & Rothermund
   Introduction, first half). Both have reading-guide boxes: reply to those answers when results come in.
 - Daily review deck: `assets/review.html`.
-- Progress server is **live** (deployed 2026-10-05; `/progress/health` → ok). Next: pair devices (see CLAUDE.md).
+- Progress server is **live** (deployed 2026-10-05; `/progress/health` → ok). Desktop + laptop share one device token (id 1, "desktop+laptop").
 
 ## Open teaching work
 | Topic | Next | Notes |
@@ -20,6 +20,8 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 
 ## Open platform work
+- **`/program` skill built** (2026-10-05): `.claude/skills/program/`, `programs.json`, `topics/{statistics,indian-history,games}/curriculum.json`,
+  `scripts/test_programs.py`. AWS ML major still needs setup (`/program setup aws-ml`).
 - Widgets: **tiny-game boards vs. a minimax solver** (tic-tac-toe, Nim, Hex) and **xiangqi / shogi boards** for the Games major.
 - Widgets: **flashcards** + a **"How sure were you?"** step (guessed-right → treated as not known). Next in the widget queue.
 - "Today" page that shows the day's plan from `notes/study-plan.md` and marks it done (enforces "finish the plan first").

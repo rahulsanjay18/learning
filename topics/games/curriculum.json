@@ -1,0 +1,181 @@
+{
+  "major": "games",
+  "program": "topics/games/PROGRAM.md",
+  "spine": "Play first; four threads every class: same ideas/different rules, AI lens, designer's lens, strategist's lens. Running project: a 3D chess variant.",
+  "rules": [
+    "Each class ends with an 'AI lens' lesson and a design-notebook entry (why does this rule exist?).",
+    "Military strategy is G150 (lessons stay in topics/military-strategy/), framed as decision systems."
+  ],
+  "courses": [
+    {
+      "id": "G101",
+      "title": "Chess (the ongoing lab)",
+      "topic": "chess",
+      "status": "active",
+      "est_lessons": 12,
+      "lessons": [
+        "0001-is-it-safe",
+        "0002-checks-first"
+      ],
+      "plan": [
+        "0003 next chess lesson: see topics/chess/NOTES.md and learning record 0003 (counting one square)"
+      ],
+      "completed": [
+        "0001-is-it-safe"
+      ]
+    },
+    {
+      "id": "G150",
+      "title": "Strategy foundations",
+      "topic": "military-strategy",
+      "status": "active",
+      "est_lessons": 8,
+      "lessons": [
+        "0001-capacity-or-will"
+      ],
+      "plan": [
+        "0002 annihilation vs. exhaustion: fix the 'offense = annihilation' mix-up from record 0002 (First Punic War analysis)"
+      ],
+      "completed": [
+        "0001-capacity-or-will"
+      ]
+    },
+    {
+      "id": "G102",
+      "title": "Tiny games, big ideas",
+      "status": "next",
+      "requires": [
+        "G101"
+      ],
+      "est_lessons": 4,
+      "note": "needs the tiny-game solver widget (tic-tac-toe, Nim, Hex); then 3D variant v0 on paper"
+    },
+    {
+      "id": "G201",
+      "title": "Xiangqi",
+      "status": "later",
+      "requires": [
+        "G102"
+      ],
+      "note": "needs xiangqi board widget"
+    },
+    {
+      "id": "G202",
+      "title": "Shogi",
+      "status": "later",
+      "requires": [
+        "G201"
+      ],
+      "note": "needs shogi board widget"
+    },
+    {
+      "id": "G301",
+      "title": "Go",
+      "status": "later",
+      "requires": [
+        "G102"
+      ],
+      "note": "Go plugin exists"
+    },
+    {
+      "id": "G401",
+      "title": "Decisions under chance (Pig, backgammon unit)",
+      "status": "later",
+      "requires": [
+        "G102"
+      ]
+    },
+    {
+      "id": "G402",
+      "title": "Poker",
+      "status": "later",
+      "requires": [
+        "G401"
+      ]
+    },
+    {
+      "id": "G350",
+      "title": "Wargames",
+      "status": "later",
+      "requires": [
+        "G150"
+      ]
+    },
+    {
+      "id": "G360",
+      "title": "Diplomacy and politics as games",
+      "status": "later",
+      "requires": [
+        "G150",
+        "G503"
+      ]
+    },
+    {
+      "id": "G501",
+      "title": "Comparative strategy (seminar)",
+      "status": "later",
+      "requires": [
+        "G202",
+        "G301"
+      ]
+    },
+    {
+      "id": "G502",
+      "title": "Combinatorial game theory",
+      "status": "later",
+      "requires": [
+        "G102"
+      ]
+    },
+    {
+      "id": "G503",
+      "title": "Game theory",
+      "status": "later",
+      "requires": [
+        "G401"
+      ]
+    },
+    {
+      "id": "G504",
+      "title": "Game-playing AI",
+      "status": "later",
+      "requires": [
+        "G301",
+        "G401"
+      ]
+    },
+    {
+      "id": "G601",
+      "title": "Anatomy of strategy games",
+      "status": "later",
+      "requires": [
+        "G501"
+      ]
+    },
+    {
+      "id": "G602",
+      "title": "Balance",
+      "status": "later",
+      "requires": [
+        "G504"
+      ]
+    },
+    {
+      "id": "G603",
+      "title": "Designing in 3D",
+      "status": "later",
+      "requires": [
+        "G601"
+      ]
+    },
+    {
+      "id": "G700",
+      "title": "Capstone: your game",
+      "status": "later",
+      "requires": [
+        "G602",
+        "G603"
+      ]
+    }
+  ]
+}

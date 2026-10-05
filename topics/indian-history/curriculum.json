@@ -1,0 +1,112 @@
+{
+  "major": "indian-history",
+  "program": "topics/indian-history/PROGRAM.md",
+  "spine": "Kulke & Rothermund, A History of India (grade A, in collection)",
+  "rules": [
+    "One lesson = one block: reading slice with a guide, story + timeline + map, one primary source, a 'why did this happen?' question.",
+    "Every unit (~5 lessons) ends with a unit check, a ~300-word historian's answer, and a debate paired with a present-day public claim."
+  ],
+  "courses": [
+    {
+      "id": "IH000",
+      "title": "Placement",
+      "status": "done",
+      "lessons": [
+        "0001-placement-pretest"
+      ],
+      "completed": [
+        "0001-placement-pretest"
+      ]
+    },
+    {
+      "id": "IH100",
+      "title": "The whole arc (environment to Republic)",
+      "source": "K&R Introduction + one lesson per chapter",
+      "status": "active",
+      "requires": [
+        "IH000"
+      ],
+      "est_lessons": 10,
+      "lessons": [
+        "0002-the-land-and-the-long-view"
+      ],
+      "plan": [
+        "0003 rest of Introduction + Indus: first primary source, first 'judge a public claim' box (Aryan migration)"
+      ],
+      "completed": [
+        "0002-the-land-and-the-long-view"
+      ]
+    },
+    {
+      "id": "IH201",
+      "title": "Ancient India",
+      "source": "K&R Ch. 1-2",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ]
+    },
+    {
+      "id": "IH202",
+      "title": "Early medieval and medieval",
+      "source": "K&R Ch. 3-4",
+      "status": "later",
+      "requires": [
+        "IH201"
+      ]
+    },
+    {
+      "id": "IH203",
+      "title": "The Mughals",
+      "source": "K&R Ch. 5",
+      "status": "later",
+      "requires": [
+        "IH202"
+      ]
+    },
+    {
+      "id": "IH204",
+      "title": "Colonial India",
+      "source": "K&R Ch. 6",
+      "status": "later",
+      "requires": [
+        "IH203"
+      ]
+    },
+    {
+      "id": "IH205",
+      "title": "Freedom and Partition",
+      "source": "K&R Ch. 7",
+      "status": "later",
+      "requires": [
+        "IH204"
+      ]
+    },
+    {
+      "id": "IH206",
+      "title": "The Republic",
+      "source": "K&R Ch. 8",
+      "status": "later",
+      "requires": [
+        "IH205"
+      ]
+    },
+    {
+      "id": "IH300",
+      "title": "Seminars (themes across eras)",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "note": "religion and philosophy, war and the state, economy, art, literature"
+    },
+    {
+      "id": "IH400",
+      "title": "Capstone research essay",
+      "status": "later",
+      "requires": [
+        "IH206"
+      ]
+    }
+  ]
+}

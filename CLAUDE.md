@@ -45,6 +45,11 @@ BOOKS_URL=https://books.tail59e10.ts.net
   extra time beyond the 1-hour floor is welcome after that.
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
 
+## Program layer (/program)
+- `/program` runs the majors: it prints today's plan and where each major stands (`programs.json` + `topics/<major>/curriculum.json`
+  + the progress server), then teaches with /teach conventions. Start a learning session with it.
+- After every lesson, update the major's `curriculum.json` (`lessons`, `plan`, `completed`) and run `python3 scripts/test_programs.py`.
+
 ## Handoff
 - `notes/HANDOFF.md`: current state and to-do list across all topics and the platform. Read it at the start of a new thread; keep it current.
 
