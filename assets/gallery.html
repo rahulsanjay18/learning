@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="plugins/chess.css">
 <link rel="stylesheet" href="plugins/go.css">
 <link rel="stylesheet" href="plugins/math.css">
+<link rel="stylesheet" href="plugins/plot.css">
 </head>
 <body>
 <main>
@@ -91,6 +92,23 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
   <div class="explain" hidden>\(E[X^2] - (E[X])^2 = p - p^2 = p(1-p)\). Any equivalent form is accepted.</div>
 </div>
 
+<h2>Plot plugin</h2>
+<div class="lp-plot" id="plot-normal" data-x="-4:4" data-y="0:0.8" data-fns="exp(-(x-mu)^2/(2 sigma^2))/(sigma sqrt(2 pi))"
+  data-params="mu=0:-2:2:0.1 | sigma=1:0.5:2:0.1" data-vline="mu" data-shade="mu-sigma:mu+sigma" data-show-area="true"
+  data-xlabel="x" data-ylabel="density" data-caption="Normal density. Whatever μ and σ you pick, the band μ ± σ holds the same share of the area."></div>
+<div class="lp-plot" id="plot-market" data-x="0:10" data-y="0:10" data-fns="8 - 0.6x + d; 1 + 0.5x" data-labels="Demand;Supply"
+  data-params="d=0:-3:2:0.5" data-vline="(7+d)/1.1" data-xlabel="quantity" data-ylabel="price"
+  data-caption="Shift demand with d. The dashed line marks the equilibrium quantity, where the curves cross."></div>
+<div class="lp-plot" id="plot-binomial" data-x="-0.6:20.6" data-y="0:0.6" data-discrete="true" data-fns="choose(n,x) p^x (1-p)^(n-x)"
+  data-params="n=10:5:20:1 | p=0.3:0.1:0.9:0.05" data-shade="0:3" data-show-area="true" data-xlabel="successes k" data-ylabel="P(X = k)"
+  data-caption="Binomial(n, p) probabilities. The filled bars are P(X ≤ 3)."></div>
+<div class="quiz" data-type="plot-set" data-id="plot-mean" data-x="-3:6" data-y="0:0.45" data-fns="exp(-(x-mu)^2/2)/sqrt(2pi)"
+  data-params="mu=0:-2:4:0.1" data-vline="2.5" data-shade="-inf:2.5" data-show-area="true" data-xlabel="x" data-target="mu=1.5" data-tolerance="0.11"
+  data-hint="84% is the share below μ + 1σ. Here σ = 1.">
+  <p class="prompt">X is normal with σ = 1. Move the mean so that about 84% of the probability lies left of x = 2.5.</p>
+  <div class="explain" hidden>μ = 1.5 puts x = 2.5 exactly one standard deviation above the mean, and Φ(1) ≈ 0.841.</div>
+</div>
+
 <h2>Chess plugin</h2>
 <div class="board-wrap" data-fen="6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1" data-arrows="d1-d8" data-caption="Static diagram with an arrow"></div>
 <div class="quiz" data-type="chess-move" data-id="chess-move" data-fen="6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1" data-answer="d1d8|Rd8#" data-hint="Look at Black's back rank.">
@@ -114,5 +132,6 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
 <script src="plugins/chess.js"></script>
 <script src="plugins/go.js"></script>
 <script src="plugins/math.js"></script>
+<script src="plugins/plot.js"></script>
 </body>
 </html>

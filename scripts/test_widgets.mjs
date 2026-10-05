@@ -141,18 +141,49 @@ if (!(await page.locator(`${q("math-expand")} .math-preview .katex`).count())) f
 await page.click(`${q("math-expand")} button`); await expectOk("math-expand");
 await page.fill(`${q("math-bernoulli")} input`, "p - p^2"); await page.click(`${q("math-bernoulli")} button`); await expectOk("math-bernoulli");
 
+// plot: sliders redraw the curve, the shaded area is printed, discrete bars respond; plot-set scores a miss then a hit
+const slide = (sel, v) => page.$eval(sel, (el, v) => { el.value = v; el.dispatchEvent(new Event("input", { bubbles: true })); }, String(v));
+const dOf = (sel) => page.locator(sel).first().getAttribute("d");
+if (await page.locator(".lp-plot svg.plot").count() !== 3) fail("gallery: plot diagrams missing");
+const normalArea = () => page.locator("#plot-normal .plot-area").textContent();
+if (!/≈ 0\.6827/.test(await normalArea())) fail(`gallery: normal ±1σ area wrong: ${await normalArea()}`);
+let before = await dOf("#plot-normal .plot-curve");
+await slide('#plot-normal input[data-param="sigma"]', 1.6);
+await slide('#plot-normal input[data-param="mu"]', -0.7);
+if ((await dOf("#plot-normal .plot-curve")) === before) fail("gallery: normal curve did not redraw");
+if (!/from −2\.30 to 0\.90 ≈ 0\.6827/.test(await normalArea())) fail(`gallery: normal area text did not update: ${await normalArea()}`);
+if (await page.locator("#plot-normal output").first().textContent() !== "−0.7") fail("gallery: slider value not shown");
+before = await dOf("#plot-market .plot-curve.c0");
+const vBefore = await page.locator("#plot-market .plot-vline").getAttribute("x1");
+await slide('#plot-market input[data-param="d"]', 2);
+if ((await dOf("#plot-market .plot-curve.c0")) === before || (await page.locator("#plot-market .plot-vline").getAttribute("x1")) === vBefore)
+  fail("gallery: demand shift did not redraw");
+if (await page.locator("#plot-market .plot-legend .plot-key").count() !== 2) fail("gallery: legend missing");
+const binArea = () => page.locator("#plot-binomial .plot-area").textContent();
+if (!/= 0\.6496/.test(await binArea())) fail(`gallery: binomial P(X≤3) wrong: ${await binArea()}`);
+before = await dOf("#plot-binomial .plot-bars");
+await slide('#plot-binomial input[data-param="p"]', 0.5);
+if ((await dOf("#plot-binomial .plot-bars")) === before) fail("gallery: binomial bars did not redraw");
+if (!/= 0\.1719/.test(await binArea())) fail(`gallery: binomial area did not update: ${await binArea()}`);
+else console.log("ok   gallery: plots redraw, areas update");
+await page.click(`${q("plot-mean")} button:text-is("Check")`);
+if (await verdictOk("plot-mean")) fail("gallery: plot-set accepted the starting value");
+await slide(`${q("plot-mean")} input[data-param="mu"]`, 1.5);
+if (!/≈ 0\.8413/.test(await page.locator(`${q("plot-mean")} .plot-area`).textContent())) fail("gallery: plot-set area text did not update");
+await page.click(`${q("plot-mean")} button:text-is("Check")`); await expectOk("plot-mean");
+
 const bar = await page.locator(".scorebar").textContent();
-const expected = "14 / 14 answered · 11 right first try"; // choice and go-drive missed first; free is ungraded
+const expected = "15 / 15 answered · 11 right first try"; // choice, go-drive and plot-mean missed first; free is ungraded
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== 14) fail(`gallery: expected 14 logged attempts, got ${attempts.length}`);
+if (attempts.length !== 15) fail(`gallery: expected 15 logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!/missed: choice,go-drive/.test(summary) || !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!/missed: choice,go-drive,plot-mean/.test(summary) || !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 await browser.close();

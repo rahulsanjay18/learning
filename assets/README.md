@@ -59,7 +59,14 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 - **Math** (`plugins/math.js` + `plugins/math.css`; KaTeX is vendored and loaded automatically):
   - Typeset with `\( inline \)`, `$$ display $$` or `\[ display \]` anywhere in the page. **A single `$` is never math**, so prices are safe. Add class `no-math` to skip an element.
   - Formula answer: `<div class="quiz" data-type="math" data-id="…" data-answer="p(1-p)" [data-forbid="(|)"] [data-tolerance="0.001"]>`. The learner types plain math (`2x^2+3`, `sqrt(2)/2`, `e^(-x)`, `sin(t)^2`, greek names like `theta`) and sees it typeset live. Any form equal at random sample points is accepted. `data-forbid` rejects listed substrings (e.g. `(|)` forces an expanded form) without scoring the attempt. `data-tolerance` is an absolute tolerance for numeric answers.
+  - Functions: `sin cos tan asin acos atan sinh cosh tanh exp ln log sqrt abs`, `fact(n)` (n!) and `choose(n, k)`.
   - `node scripts/test_math.js` checks that every math quiz's answer parses.
+- **Plot** (`plugins/plot.js` + `plugins/plot.css`; **load `plugins/math.js` first**, plot.js uses its parser): SVG function plots with sliders.
+  - Plot: `<div class="lp-plot" data-x="-4:4" data-y="0:0.8" data-fns="exp(-(x-mu)^2/(2 sigma^2))/(sigma sqrt(2pi))" [data-params="mu=0:-2:2:0.1 | sigma=1:0.5:2:0.1"] [data-labels="Demand;Supply"] [data-vline="mu"] [data-shade="mu-sigma:mu+sigma"] [data-show-area="true"] [data-points="1,2;3,4"] [data-discrete="true"] data-xlabel="x" data-ylabel="density" data-caption="…"></div>`
+  - `data-fns`: formulas in `x` (math-plugin syntax), several separated by `;`, drawn solid/dashed in `--accent`/`--fg`; `data-labels` adds a legend. `data-params`: `name=value:min:max:step`, `|`-separated, one slider each. **Parameter names must be one letter or a greek name** (`mu`, `sigma`, `lambda`…), never `x`.
+  - `data-shade="a:b"` shades under the **first** formula between two expressions of the parameters (`-inf`/`inf` = the plot's edge); `data-show-area="true"` prints the area (trapezoid rule). `data-discrete="true"` draws whole `x` as bars, e.g. Binomial `choose(n,x) p^x (1-p)^(n-x)`; shading then sums the shaded bars. `data-vline` takes `;`-separated expressions.
+  - Set the sliders: `<div class="quiz" data-type="plot-set" data-id="…" …plot attributes… data-target="mu=1.5" [data-tolerance="0.11"]>`. Right = every target parameter within tolerance (default half a slider step) when the learner presses Check. Pick a target the slider steps can reach.
+  - `node scripts/test_plot.js` checks the plotting math and that every plot's formulas, sliders and targets are valid.
 - **Pixel art** (`plugins/pixels.js` + `plugins/pixels.css`): `.px` pictures and `.px-draw` drills. Usage is in the header comment of `plugins/pixels.js`.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
@@ -74,6 +81,7 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 python3 scripts/lint_lessons.py          # structure, answers, links, equal-length options
 node scripts/test_widgets.mjs            # opens every page in headless Chromium and drives the gallery
 node scripts/test_math.js                # math parser/equivalence + every math answer parses
+node scripts/test_plot.js                # plot ticks/areas/paths + every plot and plot-set is valid
 node scripts/test_go_rules.js            # Go rules + every go-move problem's line is legal
 node scripts/test_sync_e2e.mjs           # lesson page -> progress server round trip (needs fastapi + uvicorn)
 ```
