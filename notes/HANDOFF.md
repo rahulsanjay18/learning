@@ -6,7 +6,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 - Statistics **lesson 4** (reading Casella & Berger §8.3.1 pp. 382–385 first) and Indian History **IH 100.1** (reading Kulke & Rothermund
   Introduction, first half). Both have reading-guide boxes: reply to those answers when results come in.
 - Daily review deck: `assets/review.html`.
-- Deploy `progress-server/` (steps in its README); then pair devices (see CLAUDE.md).
+- Progress server is **live** (deployed 2026-10-05; `/progress/health` → ok). Next: pair devices (see CLAUDE.md).
 
 ## Open teaching work
 | Topic | Next | Notes |
