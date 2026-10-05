@@ -31,6 +31,11 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - Two kinds of goals: **career** (Statistics, ML/AI, AWS ML-track certification, NASM-CPT exam) and **"good for the soul"**
   (Indian History, Economics, games, arts...). Keep both in each week; exam prep is deadline-driven, so ask me for exam dates.
   I can supply study materials (prep books, practice exams) for the certifications.
+- **No generated art or images.** Don't draw illustrations or decorative graphics yourself. If a lesson needs a picture, ask me
+  (I'll supply it) or pull one from the web or my books, credited. Data-driven visuals (plots of formulas, game boards from
+  positions, timelines from dates, maps from open map data) are fine unless I say otherwise.
+- Study plan (proposed 2026-10-05, see `notes/study-plan.md`): 4 subjects, 2 full (Statistics, AWS ML cert) + 2 half
+  (one non-technical, one fun), daily review first.
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
 
 ## Progress server (once deployed: `$BOOKS_URL/progress`, see `progress-server/README.md`)
