@@ -129,3 +129,11 @@ credential in the environment's settings: environment menu in the session title 
 If you can't recover the old value, make a new one and put it in both places.
 
 7. Docker docs, *Set environment variables within your container's environment* / `.env` interpolation: https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/
+
+## Update 2026-10-05: how `.env` gets used (nothing to "install")
+- **Docker Compose reads it automatically** when it sits in the project folder (where `docker-compose.yml` is) and is named exactly `.env`. You don't need to export it or source it [7].
+- **Your shell and curl never read it.** That's why the test commands start with `T=$(grep '^BOOKS_TOKEN=' .env | cut -d= -f2-)`.
+- **Running containers keep their old values.** Compose recreates a container when `docker compose up -d` sees a changed value. `docker compose restart` does **not** reread `.env`. When in doubt, use `docker compose up -d --force-recreate <service>`.
+- **Check without printing the secret:**
+  `docker exec documents-book-server-1 printenv BOOKS_TOKEN | sha256sum` and `grep '^BOOKS_TOKEN=' .env | cut -d= -f2- | sha256sum` should match.
+- **Gotchas:** no spaces around `=`; no Windows line endings (an invisible `\r` becomes part of the token, so check with `cat -A .env` for a `^M`); quotes are allowed but end up stripped.
