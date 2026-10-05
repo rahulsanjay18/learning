@@ -11,3 +11,7 @@
   Elephants and the Methods of Warfare" (the EPUB has no page numbers; cite section headings). Reading guide answers arrive as free
   responses. Next lesson: rest of the Introduction ("The Regional Pattern…", "The Maritime Periphery…") + Indus civilisation with the
   first primary source. **Mission interview still pending** (questions in PROGRAM.md §6): ask before lesson 0003.
+- 2026-10-05 (thread 2): **mission interview done** → MISSION.md. Why: heritage/family, India today, curiosity. Success: tell the
+  arc with causes; judge public history claims. All eras + cross-era themes. Lesson 0002 **not started yet**, so lesson 0003 waits
+  for its results (reading-guide answers + lp-results). Lesson 0002's "Routes of Aryan Migration" section is the first chance to
+  practise "judge a public claim": use it in 0003's debate box.
