@@ -22,6 +22,12 @@ Majors can have levels, like a BS and then graduate coursework (the learner's re
 - **Level II** ≈ master's and PhD coursework, **as far toward the PhD as self-study can go**: qualifying-exam-level courses, a
   written "quals" check, a research practicum (reproduce and extend a published result). The dissertation itself is out of scope.
 - No hard line between undergraduate and graduate courses: as many courses as the subject needs.
+- **Level II is opt-in**, per major (`enrolled_levels` in programs.json; default `["I"]`). Finishing Level I never commits the
+  learner to Level II; the tools won't activate a Level II course until it's enrolled.
+- **Testing out.** Every course opens with a short pretest (the Statistics chapter-pretest format: concept, calculation, proof or
+  the subject's equivalent per section). Pass all of it → the course is `done` with `"credit": "exam"` and no lessons; partial →
+  lessons only for what's missing. Expect a lot of this where a major overlaps a degree the learner already has (e.g. the
+  probability and analysis in Statistics, from the math degree).
 
 ## What every major's PROGRAM.md contains
 1. **Plan** (IAPC): 1 page. Starting point (placement results), aims (from MISSION.md), the shape of the program, level by level.

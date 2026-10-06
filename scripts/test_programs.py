@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STATUSES = {"done", "active", "next", "later"}
 COURSE_KEYS = {"id", "title", "status", "requires", "topic", "est_lessons", "lessons", "completed", "plan",
-               "pretest", "source", "note", "level", "group"}
+               "pretest", "source", "note", "level", "group", "credit"}
 GROUPS = {"core", "breadth", "elective", "practice", "independent", "capstone", "colloquium"}
 errors, warnings = [], []
 
@@ -50,6 +50,10 @@ for m in cfg["majors"]:
             err(f"{where}: bad group {c['group']!r}")
         if c.get("level") is not None and c["level"] not in ("I", "II", "III"):
             err(f"{where}: bad level {c['level']!r}")
+        if c.get("credit") not in (None, "exam", "lessons"):
+            err(f"{where}: credit must be exam (tested out) or lessons")
+        if c.get("level") == "II" and "II" not in m.get("enrolled_levels", ["I"]) and c["status"] in ("active", "done"):
+            err(f"{where}: Level II course is {c['status']} but the learner hasn't enrolled in Level II (programs.json enrolled_levels)")
         if c["status"] not in STATUSES:
             err(f"{where}: bad status {c['status']!r}")
         for r in c.get("requires", []):

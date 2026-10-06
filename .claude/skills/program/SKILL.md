@@ -45,6 +45,9 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
      (the /teach format), then write the lesson named by the first `plan` entry, following /teach and CLAUDE.md
      (reading guide, optional homework, shared assets, lint + widget tests).
    - **Plan empty / estimate reached** → write the course check (chapter check, unit check, or a game-review lesson), then go to step 3.
+3. **Starting a course:** open with its pretest unless the learner just tested out. Passing everything → set `"status": "done",
+   "credit": "exam"` and move on. Never start a Level II course unless that level is in the major's `enrolled_levels`;
+   when Level I is finished, ask whether they want to enroll in Level II.
 3. **Finishing a course:** once its check is DONE, set it `done`. Pick the next course whose `requires` are all `done`
    (prefer `next`, then the order in the file), set it `active`, and fill its `plan` from PROGRAM.md. If it has `pretest: true`,
    its first lesson is the pretest (see the major's PROGRAM.md for the format); after the pretest, rewrite `plan` to teach

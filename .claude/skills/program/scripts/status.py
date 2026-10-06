@@ -82,7 +82,8 @@ def main():
         done = sum(1 for c in courses if c["status"] == "done")
         active = [c for c in courses if c["status"] == "active"]
         if not active:
-            ready = [c for c in courses if c["status"] in ("next", "later")
+            enrolled = m.get("enrolled_levels", ["I"])
+            ready = [c for c in courses if c["status"] in ("next", "later") and c.get("level", "I") in enrolled
                      and all(any(x["id"] == r and x["status"] == "done" for x in courses) for r in c.get("requires", []))]
             out.append(f"{tag}: no active course ({done}/{len(courses)} done). Ready to start: "
                        + (", ".join(f"{c['id']} {c['title']}" for c in ready[:3]) or "none"))
