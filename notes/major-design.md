@@ -4,7 +4,7 @@
 and any new subject the learner asks for gets designed the same way. `/program setup <major>` follows this file.*
 
 ## TL;DR
-**This is assisted textbook reading, not a college.** A major is a good sequence of books, read with Claude's help, with pretests
+**This is assisted textbook reading, not a college.** The learner's words (2026-10-06): "I'm not trying to literally do a college major, I want to learn the things I want to learn." Deviate from any of this whenever it serves that. A major is a good sequence of books, read with Claude's help, with pretests
 to skip what's known. That sequence (the **core**) is the only requirement. Everything else below is an **optional extra**:
 offered when it would help or when the learner wants it, never a gate, never a credit count. Don't reproduce college
 bureaucracy (credit totals, distribution requirements, mandatory exams).

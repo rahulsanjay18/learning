@@ -34,6 +34,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - **No generated art or images.** Don't draw illustrations or decorative graphics yourself. If a lesson needs a picture, ask me
   (I'll supply it) or pull one from the web or my books, credited. Data-driven visuals (plots of formulas, game boards from
   positions, timelines from dates, maps from open map data) are fine unless I say otherwise.
+- **The point is learning what I want to learn, not completing a college major.** Majors are just an organizing tool: keep what helps
+  (book order, prerequisites, pretests, review) and deviate whenever there's real value in it (follow my interests, reorder, skip,
+  add a tangent). Say so briefly when you deviate; don't ask permission for small changes.
 - **Each subject is a major**, not a single course: plan it as a multi-course program (prerequisites, courses, placement),
   even for non-academic subjects like chess.
 - Fun subject: **the Games major** (`topics/games/PROGRAM.md`), replacing chess as a standalone major; **chess is its first class**
