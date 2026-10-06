@@ -10,9 +10,8 @@
 - **Level II (≈ graduate):** IH510 historiography seminar · IH520 primary sources in translation · IH530 regional histories ·
   electives IH540 Partition and memory, IH550 a source language (optional) · IH596 research practicum · IH598 colloquium · IH599 thesis.
 - **Books to ask for:** an economic history of India (IH330); historiography readers for IH510 (to choose together).
-The full map with prerequisites is `curriculum.json` (each course has a `level` and a `group`: core, breadth, elective,
-practice, capstone, colloquium). Each level ends with a **colloquium**: a 20–25 work List of Works, a 1,500–2,500 word
-rationale, and a 60-minute conversation, graded on the rubric in `notes/major-design.md`.
+The full map is `curriculum.json`. **Only the core courses are the major**; breadth, practice, capstone and the end-of-level
+conversation are optional extras, suggested when they'd help (`notes/major-design.md`).
 
 ## TL;DR
 - **Spine:** Kulke & Rothermund, *A History of India* (grade A, in collection). Its 8 chapters become the core courses.

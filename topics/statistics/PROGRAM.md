@@ -25,18 +25,20 @@ math degree, AI career. Aim (MISSION.md): read, run and defend real analyses (A/
 graduate theory. Level I finishes Casella & Berger with proofs and adds the applied courses a BS needs; Level II is
 qualifying-exam theory plus the modern topics an ML career leans on (causal, Bayesian, high-dimensional, bandits).
 
+**Only the core row is the major**; the other rows are optional extras, suggested when they'd help or you want them.
+
 | Group | Level I (≈ BS) | Level II (≈ MS + PhD coursework) |
 |---|---|---|
-| Core | S150 practitioners · S110 probability review · S201–S205, S301–S304, S401–S403 (all of C&B) · S310 applied regression/GLMs · S320 experiments and A/B testing · S330 computing and simulation · S340 Bayesian I | S500 analysis refresher · S501–S502 measure-theoretic probability · S511 estimation · S512 testing · S513 asymptotics · S520 GLM theory · S530 Bayesian · S540 causal · S550 learning theory and high-dimensional · S595 written quals |
+| Core | S150 practitioners · S110 probability review · S201–S205, S301–S304, S401–S403 (all of C&B) · S310 applied regression/GLMs · S320 experiments and A/B testing · S330 computing and simulation · S340 Bayesian I | S500 analysis refresher · S501–S502 measure-theoretic probability · S511 estimation · S512 testing · S513 asymptotics · S520 GLM theory · S530 Bayesian · S540 causal · S550 learning theory and high-dimensional |
 | Breadth | S190 history and philosophy of statistics · S195 measurement and ethics | S590 foundations of inference seminar |
 | Electives | S360 time series · S370 sampling · S380 statistical learning | S560 nonparametrics · S570 computational · S580 bandits |
-| Practice | S390 three real analyses end to end | S596 reproduce and extend a published result |
+| Practice | S390 three real analyses end to end | S595 quals-style self-check · S596 reproduce and extend a published result |
 | Capstone | S399 ~20-page analysis report | S599 ~40-page paper |
-| Colloquium | S398 | S598 |
+| End-of-level talk | S398 | S598 |
 
-Rough size: Level I ≈ 120 lessons (pretests will cut it), Level II ≈ 150. At 4 blocks a week that is years, which is expected.
+Rough size of the core: Level I ≈ 110 lessons (pretests will cut a lot, given the math degree), Level II ≈ 120. At 4 blocks a week that is years, which is expected.
 
-**List of Works (grows as courses use them; prune to 20–25 before each colloquium).** Level I so far: Casella & Berger;
+**Works read so far** (for the optional end-of-level talk). Level I so far: Casella & Berger;
 Bruce, Bruce & Gedeck; Hand, *Statistics* VSI; Kohavi et al. (when acquired). Candidates spanning periods and disciplines:
 Bayes (1763) and Laplace on inverse probability; Fisher, *Statistical Methods for Research Workers* (1925); Neyman & Pearson
 (1933); Jaynes; Tukey, "The Future of Data Analysis" (1962); Breiman, "Statistical Modeling: The Two Cultures" (2001).

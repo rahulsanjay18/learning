@@ -202,7 +202,7 @@
       "level": "II",
       "status": "later",
       "requires": [
-        "IH400"
+        "IH206"
       ],
       "note": "books to choose and request"
     },
@@ -213,7 +213,7 @@
       "level": "II",
       "status": "later",
       "requires": [
-        "IH400"
+        "IH206"
       ]
     },
     {
@@ -223,7 +223,7 @@
       "level": "II",
       "status": "later",
       "requires": [
-        "IH400"
+        "IH206"
       ],
       "source": "New Cambridge History volumes (several in collection)"
     },
@@ -283,7 +283,7 @@
   ],
   "design": "notes/major-design.md",
   "levels": {
-    "I": "≈ BA: the arc, the eras (K&R), how historians work, thematic breadth, practice, colloquium, research essay",
-    "II": "≈ graduate: historiography, primary sources, regional histories, research practicum, colloquium, thesis"
+    "I": "≈ BA-level reading: the arc, how historians work, the eras (K&R). Extras optional.",
+    "II": "≈ graduate reading: historiography, primary sources in translation, regional histories. Extras optional."
   }
 }

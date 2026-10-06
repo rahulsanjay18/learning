@@ -30,8 +30,8 @@ Arguments: `$ARGUMENTS` (empty = run today's plan).
 **`/program status`**: show the block above in plain words (what's done, what's the learner's next step) and stop.
 
 **`/program setup <major>`**, a new subject the learner asks for, or a major marked SETUP NEEDED: design it with
-`notes/major-design.md` (Gallatin-style: plan, core/breadth/elective/practice/capstone/colloquium groups, levels I and II, a
-"books needed" list for the learner). Ask its setup questions (the `setup` text in programs.json) with
+`notes/major-design.md`: a core sequence of books is the major (levels I and II); everything else is an optional extra.
+Keep a "books needed" list for the learner. Don't build college bureaucracy. Ask its setup questions (the `setup` text in programs.json) with
 AskUserQuestion where the answers are choices. Then write `topics/<slug>/MISSION.md`, `PROGRAM.md`, `curriculum.json` (placement first),
 set `"curriculum"` in programs.json, and run the test (below). Until it's set up, give its blocks to the other full-weight major.
 
@@ -48,8 +48,8 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
 3. **Starting a course:** open with its pretest unless the learner just tested out. Passing everything → set `"status": "done",
    "credit": "exam"` and move on. Never start a Level II course unless that level is in the major's `enrolled_levels`;
    when Level I is finished, ask whether they want to enroll in Level II.
-3. **Finishing a course:** once its check is DONE, set it `done`. Pick the next course whose `requires` are all `done`
-   (prefer `next`, then the order in the file), set it `active`, and fill its `plan` from PROGRAM.md. If it has `pretest: true`,
+3. **Finishing a course:** once its check is DONE, set it `done`. Pick the next **core** course whose `requires` are all `done`
+   (prefer `next`, then the order in the file); offer optional extras only when they'd clearly help or the learner asks, set it `active`, and fill its `plan` from PROGRAM.md. If it has `pretest: true`,
    its first lesson is the pretest (see the major's PROGRAM.md for the format); after the pretest, rewrite `plan` to teach
    only what's missing and note the decision in NOTES.md.
 4. **Keep the map true after every lesson:** append the new stem to `lessons`, drop the `plan` entry it fulfilled, add stems to

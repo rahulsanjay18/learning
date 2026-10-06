@@ -59,6 +59,8 @@ for m in cfg["majors"]:
         for r in c.get("requires", []):
             if r not in by_id:
                 err(f"{where}: requires unknown course {r}")
+            elif c.get("group", "core") == "core" and by_id[r].get("group", "core") != "core":
+                err(f"{where}: a core course may only require core courses ({r} is optional: {by_id[r].get('group')})")
             elif c["status"] in ("active", "done") and by_id[r]["status"] != "done":
                 warn(f"{where} is {c['status']} but prerequisite {r} is {by_id[r]['status']}")
         topic = c.get("topic", m["slug"])

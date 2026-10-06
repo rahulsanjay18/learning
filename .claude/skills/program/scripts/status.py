@@ -85,6 +85,7 @@ def main():
             enrolled = m.get("enrolled_levels", ["I"])
             ready = [c for c in courses if c["status"] in ("next", "later") and c.get("level", "I") in enrolled
                      and all(any(x["id"] == r and x["status"] == "done" for x in courses) for r in c.get("requires", []))]
+            ready.sort(key=lambda c: c.get("group", "core") != "core")      # core first; extras are optional
             out.append(f"{tag}: no active course ({done}/{len(courses)} done). Ready to start: "
                        + (", ".join(f"{c['id']} {c['title']}" for c in ready[:3]) or "none"))
         for c in active:

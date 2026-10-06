@@ -13,9 +13,8 @@ general theory. **Confirmed: Games is the "fun" major and replaces chess; chess 
 - **Level II (≈ graduate):** G502 combinatorial game theory, G504 game-playing AI, G601–G603 design and balance, G700 the 3D game
   capstone, G598 colloquium.
 - **Books to ask for:** Parlett, *The Oxford History of Board Games* (G190); a game-design classic (see Gaps).
-The full map with prerequisites is `curriculum.json` (each course has a `level` and a `group`: core, breadth, elective,
-practice, capstone, colloquium). Each level ends with a **colloquium**: a 20–25 work List of Works, a 1,500–2,500 word
-rationale, and a 60-minute conversation, graded on the rubric in `notes/major-design.md`.
+The full map is `curriculum.json`. **Only the core courses are the major**; breadth, practice, capstone and the end-of-level
+conversation are optional extras, suggested when they'd help (`notes/major-design.md`).
 
 ## TL;DR
 - **One big new game at a time**, with chess as the ongoing lab. Games are grouped by *family*, ordered by distance from what you

@@ -365,7 +365,7 @@
       "level": "II",
       "status": "later",
       "requires": [
-        "S399"
+        "S403"
       ],
       "source": "Abbott, Understanding Analysis (to buy); Fremlin, Measure Theory vol. 1 (in collection, B)",
       "est_lessons": 4,
@@ -477,7 +477,7 @@
       "status": "later",
       "requires": [
         "S513",
-        "S380"
+        "S310"
       ],
       "source": "ESL (free, check: https://hastie.su.domains/ElemStatLearn/); Vershynin, High-Dimensional Probability (in collection, B); Wainwright, High-Dimensional Statistics (to buy)",
       "est_lessons": 10
@@ -532,8 +532,8 @@
     },
     {
       "id": "S595",
-      "title": "Written qualifying exam (probability + theory)",
-      "group": "core",
+      "title": "Optional: quals-style self-check (probability + theory)",
+      "group": "practice",
       "level": "II",
       "status": "later",
       "requires": [
@@ -576,8 +576,8 @@
     }
   ],
   "levels": {
-    "I": "≈ BS in statistics: all of Casella & Berger with proofs, plus applied regression, experiments, computing, Bayesian I; colloquium + capstone",
-    "II": "≈ MS + PhD coursework up to qualifying exams: measure-theoretic probability, Lehmann-level theory, asymptotics, GLM theory, Bayesian, causal, high-dimensional; quals, research practicum, colloquium, capstone paper"
+    "I": "≈ BS-level books: all of Casella & Berger with proofs, then applied regression, experiments, computing, Bayesian I. Extras optional.",
+    "II": "≈ graduate books: measure-theoretic probability, Lehmann-level theory, asymptotics, GLM theory, Bayesian, causal, high-dimensional. Extras optional."
   },
   "design": "notes/major-design.md"
 }

@@ -262,7 +262,7 @@
   ],
   "design": "notes/major-design.md",
   "levels": {
-    "I": "≈ BA: play and understand the families of strategy games, theory foundations, strategy/history breadth, colloquium",
-    "II": "≈ graduate: game AI, combinatorial game theory, design and balance, the 3D game capstone, colloquium"
+    "I": "≈ BA-level: play and understand the families of strategy games, then the theory. Extras optional.",
+    "II": "≈ graduate: game AI, combinatorial game theory, design and balance. Extras optional."
   }
 }
