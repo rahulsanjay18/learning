@@ -17,3 +17,8 @@
   practise "judge a public claim": use it in 0003's debate box.
 - 2026-10-05: lesson 0002 done (record 0002; replies in QUESTIONS.md). Learner asks "was this really true?" questions: answer with
   sources. Homework/readings: did the reading fully; answered 4/5 guide boxes.
+- 2026-10-06: lesson 0003 "The Indus cities" built. **Deviation:** 0002 had promised the rest of the Introduction as this reading; with
+  the Indus chapter that was ~11 pages, so the Introduction's last sections became an optional skim summarised on 0003's page. Learner
+  says they'll read it all anyway ("I'll still try to read it in full"), so readings can run a little longer than planned.
+  Pacing flag: IH100 is meant as a ~10-lesson survey, but at this depth Chapter 1 alone takes 2 lessons. If that keeps happening,
+  propose either a faster survey (a chapter per lesson, lighter reading) or folding IH100 into IH201+ (ask; don't reorder unasked).

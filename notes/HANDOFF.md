@@ -3,8 +3,9 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
-- Statistics **lesson 4** (reading Casella & Berger §8.3.1 pp. 382–385 first) and Indian History **IH 100.1** (reading Kulke & Rothermund
-  Introduction, first half). Both have reading-guide boxes: reply to those answers when results come in.
+- (2026-10-06) Statistics **lesson 4** (power; reading C&B §8.3.1 pp. 382–385) still not done. Indian History **lesson 0003** (Indus
+  cities; reading K&R Ch. 1 Indus sections) built today. Both have reading-guide boxes: reply to those answers when results come in.
+- 2026-10-06: all 5 pending free responses graded and posted (stats ice-cream causal 0.75; IH 0002 answers).
 - Daily review deck: `assets/review.html`.
 - Progress server is **live** (deployed 2026-10-05; `/progress/health` → ok). Desktop + laptop share one device token (id 1, "desktop+laptop").
 
@@ -12,7 +13,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | Topic | Next | Notes |
 |---|---|---|
 | Statistics | **Program: all of Casella & Berger with proofs; chapter pretest (concept/calc/proof per section) before each chapter** (`topics/statistics/PROGRAM.md`). Lesson 3 done (record 0007); **lesson 4 (power, §8.3.1) built**, learner does it next. Then lesson 5: P(data given H1), likelihood ratios, power (~55% in the A/B example) | Numbers in `topics/statistics/QUESTIONS.md` |
-| Indian History | Mission done (MISSION.md). Learner does lesson 0002 next; then lesson 0003: rest of Introduction + Indus with first primary source, and a first "judge a public claim" box (Aryan migration) | `topics/indian-history/PROGRAM.md` |
+| Indian History | Lesson 0002 done (record 0002). **0003 "The Indus cities" built 2026-10-06** (Wheeler's "Indra stands accused" vs Dales 1964 + Rakhigarhi 2019 genome; claim box on the headline "DNA study debunks Aryan invasion theory"). Rest of the Introduction became an optional skim on 0003. Next: 0004 Indo-Aryans and the Vedic age (Rigveda hymn as first text source) | `topics/indian-history/PROGRAM.md` |
 | Games (fun major) | **Mission: design a balanced 3D strategy game** (MISSION.md). Chess is class G101 (continue `topics/chess/`, lessons 0001–0002 done: 9/10, 8/9; game 2 won as Black (LR 0005); next 0003 "what did their move do?"); program decided: chess → tiny games → xiangqi → shogi → Go → chance (Pig + backgammon unit) → poker → theory/AI | Chess.com: rahulsanjay18 |
 | AWS ML cert | Ask: which exam, target date, AWS experience, prep materials | Check AWS's current exam list (don't guess names) |
 | Military strategy | **Merged into Games** as G150 (lessons in `topics/military-strategy/`), feeding G350 Wargames and G360 Diplomacy | framed as "war as a game" (see its NOTES) |

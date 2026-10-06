@@ -131,3 +131,11 @@ intervals covered the true 0.25.
 Because the interval's steps never use θ, and the 95% is a property proved for **every** θ: exact coverage at n = 600 is 0.94–0.95
 for θ from 0.02 to 0.5, so it holds for whichever θ is yours. The worst case over θ is the confidence coefficient (C&B Def. 9.1.5).
 One interval is either right or wrong; "95%" is trust in the method. Details and a secret-θ demo: `reference/ci-dice-example.md` part 2.
+
+## 2026-10-06 · Pretest free response: "Ice cream and drownings: why not causal, and how would you get at causation?" (graded 0.75)
+**You named the confounder (summer), which is the key step.** The remedy is the weak part: "track people who got ice cream and then
+drowned" is still observational, so summer confounds it in exactly the same way (people eat ice cream *and* swim on hot days).
+- **Better remedies:** compare within the same weather (stratify, or regress drownings on ice-cream sales *and* temperature, and see
+  whether the ice-cream coefficient survives), or, the gold standard, randomize who gets ice cream.
+- **The sentence to reuse:** "The correlation is explained by a common cause, hot weather; holding temperature fixed, I'd expect the
+  association to vanish." Not: "correlation does not imply causation" alone, which names the problem without diagnosing it.
