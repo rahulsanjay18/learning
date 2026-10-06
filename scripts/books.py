@@ -5,10 +5,11 @@
     python3 scripts/books.py search "power function" [--book ID] [-n 10]
     python3 scripts/books.py grep ID "Definition 8.3.5" [-n 20]      line numbers of a phrase inside one book
     python3 scripts/books.py read ID START [N]                       lines START..START+N-1 (N ≤ 200, default 60)
+    python3 scripts/books.py new                                     books on the server but not in library/MANIFEST.csv (one request)
 
 Grade B books print their warning once: prose only, never equations/figures/tables/code (library/README.md).
 """
-import json, subprocess, sys, urllib.parse
+import csv, json, os, subprocess, sys, urllib.parse
 
 BASE = "https://books.tail59e10.ts.net"
 
@@ -68,6 +69,13 @@ def main(a):
         warn_once(set(), j)
         print(f"--- {j['title'][:80]} lines {j['start']}-{j['end']} of {j['lines']}")
         for i, l in enumerate(j["text"].splitlines(), j["start"]): print(f"{i}: {l}")
+    elif cmd == "new":
+        j, code, err = get("/catalog")
+        if j is None: sys.exit(f"HTTP {code} {err}" + ("  (/catalog needs the redeployed book server; never crawl /books instead)" if code == "404" else ""))
+        known = {r["id"] for r in csv.DictReader(open(os.path.join(os.path.dirname(__file__), "..", "library", "MANIFEST.csv")))}
+        new = [b for b in j if b[0] not in known]
+        for bid, grade, title in new: print(f"{bid}  {grade}  {title[:110]}")
+        print(f"{len(new)} of {len(j)} server books are not in MANIFEST.csv")
     else:
         sys.exit(__doc__)
 

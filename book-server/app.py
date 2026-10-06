@@ -9,6 +9,7 @@ Endpoints (all need 'Authorization: Bearer <BOOKS_TOKEN>'):
   GET /toc/{id}                            -> headings with line numbers
   GET /book/{id}                           -> metadata incl. grade + flags
   GET /books?q=sutton barto                -> title lookup: is this book on the server?
+  GET /catalog                             -> every book in one call: [[id, grade, title], ...] (diff it against MANIFEST.csv)
 """
 import hmac, os, re, sqlite3
 from pathlib import Path
@@ -109,3 +110,8 @@ def books(q: str = Query(min_length=2, max_length=200), limit: int = Query(10, g
         rows = c.execute(f"SELECT * FROM books WHERE {where} ORDER BY grade LIMIT ?",
                          [f"%{t}%" for t in terms] + [limit]).fetchall()
     return [meta(r) for r in rows]
+
+@app.get("/catalog", dependencies=[Depends(auth)])
+def catalog():
+    with db() as c:
+        return [[r["id"], r["grade"], r["title"]] for r in c.execute("SELECT id, grade, title FROM books ORDER BY title")]
