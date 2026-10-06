@@ -6,6 +6,7 @@ fail=0
 run() { local name="$1"; shift; if out=$("$@" 2>&1); then echo "ok    $name"; else echo "FAIL  $name"; echo "$out" | grep -E "FAIL|ERROR|Error" | head -5; fail=1; fi; }
 run lint        python3 scripts/lint_lessons.py
 run programs    python3 scripts/test_programs.py
+run dags        python3 scripts/major_dag.py --check
 run render      python3 scripts/test_render.py
 run today       node scripts/test_today.mjs
 run games       node scripts/test_games.js

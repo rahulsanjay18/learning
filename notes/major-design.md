@@ -42,6 +42,23 @@ Majors can have levels, like a BS and then graduate coursework (the learner's re
 
 Rule: **prerequisites only ever point at core courses.** No optional extra may block the core path or Level II.
 
+## A major is a DAG of books (the learner's framing, 2026-10-06)
+"You're not so much designing a curriculum but rather you're deciding what resources to use as primary, secondary, tertiary, … or
+not at all. Then you organize those blocks of books (effectively 'courses') into a DAG that creates our 'major'."
+
+- **A course is a block of one primary book** (a whole book, or a run of its chapters). Lessons follow that book's order, assign its
+  sections as readings, and draw practice, proofs and checks from **its own exercises** (TEACHING-LOG rule 22).
+- Every course lists its books by role in `curriculum.json` → `books`: **primary** (the spine; required for an active core course),
+  **secondary** (fills a specific gap: more practice, a primary source, another angle), **tertiary** (optional background), and
+  **skip** (considered and rejected, with the reason, so the choice isn't re-litigated). Library ids first (`library/MANIFEST.csv`).
+- **The major is the DAG** of those courses (`requires` = edges; `test_programs.py` rejects cycles). `scripts/major_dag.py` draws it
+  to `topics/<major>/DAG.md` (generated; `check_all.sh` fails if it's stale).
+- Claude chooses the primary book from the library and its knowledge of the field (the learner may override). Where a field has
+  standard texts (Statistics, History), follow them. **Games has no standard curriculum**, so Claude has more discretion there:
+  a course may be anchored on a book, on the learner's own games, or be project-led (the 3D variant), with the reason stated.
+- Claude's job per course is then choosing and ordering resources, slicing the primary book into lessons, and teaching the gaps,
+  not writing a curriculum from scratch.
+
 ## In curriculum.json
 Each course may carry `"level": "I" | "II"` and `"group": "core" | "breadth" | "elective" | "practice" | "independent" |
 "capstone" | "colloquium"`. `scripts/test_programs.py` checks the values.

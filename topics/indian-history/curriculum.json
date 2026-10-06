@@ -52,7 +52,20 @@
         "0002-the-land-and-the-long-view"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "621b57ff65 Kulke & Rothermund, A History of India: one key section per chapter (SYLLABUS.md)",
+        "secondary": [
+          "primary sources quoted in K&R (Rigveda, Ashokan edicts, Alberuni, Baburnama, Gandhi 1922, Nehru 1947)"
+        ],
+        "tertiary": [
+          "published papers and reporting for the 'judge a public claim' boxes (cited per lesson)",
+          "Wikipedia infoboxes for map coordinates"
+        ],
+        "skip": [
+          "New Cambridge History volumes: era depth belongs to IH201-206"
+        ]
+      }
     },
     {
       "id": "IH201",

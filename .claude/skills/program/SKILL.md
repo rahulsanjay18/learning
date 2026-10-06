@@ -22,7 +22,9 @@ Arguments: `$ARGUMENTS` (empty = run today's plan).
 - `topics/<major>/curriculum.json`: courses with `id`, `title`, `status` (`done` | `active` | `next` | `later`), `requires`,
   `topic` (lesson folder if not the major's own, e.g. Games → `chess`, `military-strategy`), `est_lessons`, `lessons` (file stems
   written), `completed` (stems the learner finished, recorded from pasted lp-results), `plan` (upcoming lessons, first = next),
-  `pretest` (true = start the course with a pretest), `source`, `note`.
+  `pretest` (true = start the course with a pretest), `source`, `note`, `books` ({primary, secondary[], tertiary[], skip[]}: a course
+  is a block of its primary book; required for an active core course; `notes/major-design.md`). `topics/<major>/DAG.md` is generated
+  by `scripts/major_dag.py`: rerun it after changing courses.
 - `topics/<major>/SYLLABUS.md`: lesson-level plan for the active (and next) course: reading + 2–3 objectives per lesson, and a
   "Changes" log. `plan` in curriculum.json mirrors it. Write the next lesson *from* it; when a course starts, write its syllabus first.
 - `topics/<major>/PROGRAM.md`: the human-readable plan and its reasons. Change it when the plan changes, not for routine progress.
@@ -51,7 +53,7 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
    "credit": "exam"` and move on. Never start a Level II course unless that level is in the major's `enrolled_levels`;
    when Level I is finished, ask whether they want to enroll in Level II.
 3. **Finishing a course:** once its check is DONE, set it `done`. Pick the next **core** course whose `requires` are all `done`
-   (prefer `next`, then the order in the file); offer optional extras only when they'd clearly help or the learner asks, set it `active`, and fill its `plan` from PROGRAM.md. If it has `pretest: true`,
+   (prefer `next`, then the order in the file); offer optional extras only when they'd clearly help or the learner asks, set it `active`, choose its `books` (primary first), and fill its `plan` by slicing the primary book (rerun `scripts/major_dag.py`). If it has `pretest: true`,
    its first lesson is the pretest (see the major's PROGRAM.md for the format); after the pretest, rewrite `plan` to teach
    only what's missing and note the decision in NOTES.md.
 4. **Grade by mastery (TEACHING-LOG rule 20):** each objective Got it / Not yet. Not yet → a 5-minute re-teach section in the

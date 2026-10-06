@@ -78,7 +78,20 @@
       ],
       "lessons": [
         "0005-ch1-pretest"
-      ]
+      ],
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference, Ch. 1 (sections, examples and exercises)",
+        "secondary": [
+          "61590a65c1 Patrick, Intermediate Counting and Probability (AoPS): extra counting practice if §1.2.3-1.2.4 is a gap"
+        ],
+        "tertiary": [
+          "a53c1f767c Haigh, Probability (VSI): intuition and history, optional"
+        ],
+        "skip": [
+          "fa09582d3b Ross, A First Course in Probability: grade C (garbled text)",
+          "f58aa520f3 Jaynes, Probability Theory: philosophy of probability; save for the Bayesian course"
+        ]
+      }
     },
     {
       "id": "S202",

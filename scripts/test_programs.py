@@ -7,7 +7,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STATUSES = {"done", "active", "next", "later"}
 COURSE_KEYS = {"id", "title", "status", "requires", "topic", "est_lessons", "lessons", "completed", "plan",
-               "pretest", "source", "note", "level", "group", "credit"}
+               "pretest", "source", "note", "level", "group", "credit", "books"}
+BOOK_ROLES = {"primary", "secondary", "tertiary", "skip"}
+MANIFEST_IDS = {l.split(",", 1)[0] for l in (ROOT / "library" / "MANIFEST.csv").read_text(encoding="utf-8").splitlines()[1:] if l}
 GROUPS = {"core", "breadth", "elective", "practice", "independent", "capstone", "colloquium"}
 errors, warnings = [], []
 
@@ -74,8 +76,36 @@ for m in cfg["majors"]:
         for s in c.get("completed", []):
             if s not in c.get("lessons", []):
                 err(f"{where}: completed {s} is not in lessons")
+        b = c.get("books")
+        if b is not None:
+            if not isinstance(b, dict) or set(b) - BOOK_ROLES or not isinstance(b.get("primary", ""), str):
+                err(f"{where}: books must be {{primary: str, secondary/tertiary/skip: [str]}}")
+            else:
+                for role in ("secondary", "tertiary", "skip"):
+                    if not isinstance(b.get(role, []), list):
+                        err(f"{where}: books.{role} must be a list")
+                for ref in [b.get("primary", "")] + b.get("secondary", []) + b.get("tertiary", []) + b.get("skip", []):
+                    bid = ref.split()[0].rstrip(":") if ref else ""
+                    if len(bid) == 10 and all(ch in "0123456789abcdef" for ch in bid) and bid not in MANIFEST_IDS:
+                        err(f"{where}: book id {bid} not in library/MANIFEST.csv")
+        if c["status"] == "active" and c.get("group", "core") == "core" and not (b or {}).get("primary"):
+            err(f"{where}: active core course needs books.primary (a major is a DAG of books: notes/major-design.md)")
         if c["status"] == "active" and not c.get("plan") and not c.get("est_lessons"):
             warn(f"{where}: active with no plan and no estimate")
+    # prerequisites must form a DAG (no cycles)
+    state = {}
+    def visit(cid, path):
+        if state.get(cid) == 1:
+            err(f"{m['slug']}: prerequisite cycle {' -> '.join(path + [cid])}")
+            return
+        if state.get(cid) == 2 or cid not in by_id:
+            return
+        state[cid] = 1
+        for r in by_id[cid].get("requires", []):
+            visit(r, path + [cid])
+        state[cid] = 2
+    for cid in by_id:
+        visit(cid, [])
     actives = [c for c in cur["courses"] if c["status"] == "active"]
     if not actives:
         warn(f"{m['slug']}: no active course")

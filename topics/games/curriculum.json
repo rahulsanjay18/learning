@@ -34,7 +34,21 @@
         "0002-checks-first"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "50634c974d Seirawan & Silman, Winning Chess Tactics (chapter per lesson)",
+        "secondary": [
+          "b7c9d62e2b Seirawan, Winning Chess Endings (king-and-pawn lesson)",
+          "your own games, reviewed with Stockfish (/game-review)"
+        ],
+        "tertiary": [
+          "d2e32f3e7e Capablanca, Chess Fundamentals"
+        ],
+        "skip": [
+          "725d5b0db7 Nimzowitsch, My System: positional, for a later strategy course",
+          "aff99a5c4f Silman, Complete Book of Chess Strategy: grade B; later"
+        ]
+      }
     },
     {
       "id": "G150",
@@ -58,7 +72,22 @@
         "0001-capacity-or-will"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "940de01b70 Echevarria, Military Strategy: A Very Short Introduction",
+        "secondary": [
+          "8cb37bf97d Clausewitz, On War (Bk 1 Ch. 1)",
+          "3329556537 Sun Tzu, The Art of War (Giles)",
+          "a1de43a246 Polybius, The Rise of the Roman Empire (Punic Wars cases)"
+        ],
+        "tertiary": [
+          "c589beef4b Howard, Clausewitz (VSI)",
+          "e47c5dab8b Freedman, Strategy: A History"
+        ],
+        "skip": [
+          "5727374d00 Gray, Modern Strategy: theory depth for G350, not foundations"
+        ]
+      }
     },
     {
       "id": "G102",

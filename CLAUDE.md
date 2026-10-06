@@ -53,6 +53,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
   (new or revised) follows `notes/major-design.md` (shape adapted from NYU Gallatin, but **this is assisted textbook reading, not a
   college**): a core sequence of books is the major; levels I (≈ undergraduate) and II (≈ graduate, opt-in); breadth, practice,
   capstones and an end-of-level conversation are optional extras, never requirements. Keep a "books needed" list; ask me for books.
+- **A major is a DAG of books** (2026-10-06): each course is a block of one primary book (plus secondary/tertiary/skip in
+  `curriculum.json` → `books`), lessons follow that book and use its exercises; Games gets more discretion. `notes/major-design.md`.
 - `/program` runs the majors: it prints today's plan and where each major stands (`programs.json` + `topics/<major>/curriculum.json`
   + the progress server), then teaches with /teach conventions. Start a learning session with it.
 - After every lesson, update the major's `curriculum.json` (`lessons`, `plan`, `completed`) and run `python3 scripts/test_programs.py`.
