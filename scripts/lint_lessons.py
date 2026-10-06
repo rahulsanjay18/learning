@@ -116,6 +116,12 @@ def lint(path):
             errors.append(f"{where}: needs data-size and data-answer or data-solution")
         elif t == "timeline-place" and not (a.get("data-range") and a.get("data-answer")):
             errors.append(f"{where}: needs data-range and data-answer")
+        elif t == "estimate" and not re.fullmatch(r"-?[\d.]+", (a.get("data-answer") or "").strip()):
+            errors.append(f"{where}: estimate needs a numeric data-answer")
+        elif t == "find-error" and not ("ol.steps" in q["children"] or a.get("data-steps")) or (t == "find-error" and not (a.get("data-answer") or "").isdigit()):
+            errors.append(f"{where}: find-error needs <ol class=\"steps\"> (or data-steps) and a step number in data-answer")
+        elif t == "highlight" and ("div.passage" not in q["children"] or "[[" not in q["text"]):
+            errors.append(f"{where}: highlight needs <div class=\"passage\"> with [[marked]] evidence")
         elif t == "map-locate" and not (a.get("data-answer") and a.get("data-view")):
             errors.append(f"{where}: needs data-answer (lat,lon) and data-view")
         elif t == "py":

@@ -78,6 +78,9 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 | `recall` | write from memory → reveal `.explain` → "I had it / I missed some" | self |
 | `checklist` | an `<ol>`/`<ul>` of real-world steps inside the quiz; done when all ticked | self |
 | `card` | flashcard: front = `.prompt`, back = `.explain`; "Show answer" then "I knew it / I didn't". Wrap several in `<div class="lp-deck">` to show one at a time with a counter and an end summary | self |
+| `estimate` | `data-answer="1526"` `[data-level="90"]` `[data-unit]` `[data-max-width]`: the learner types a low and high end they're 90% sure of; right = the range contains the answer (and isn't wider than max-width). A running calibration score is kept in the browser. Good for dates, magnitudes, Fermi questions | auto |
+| `find-error` | `<ol class="steps"><li>…</li></ol>` + `data-answer="4"` (the wrong step's number): click the faulty step of a proof, derivation or argument | auto |
+| `highlight` | `<div class="passage">` with the evidence marked `[[like this]]`; the rest splits into clickable sentences. Right = exactly the marked pieces. For source analysis ("which lines support the claim?") | auto |
 | `free` | `<div class="rubric">` (hidden, for the grader) + optional `.explain` model answer shown after submitting | teacher, next session |
 
 ## Unscored widgets
@@ -134,6 +137,11 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
   - Diagram / sandbox: `<div class="shogi-board" [data-sfen] [data-hl] [data-arrows="8h-2b"] [data-flip] [data-play="true"] [data-labels="latin"] data-caption="…"></div>`. Hands are drawn above and below; click a piece in hand to drop it. When promotion is optional the board asks.
   - Find the move: `<div class="quiz" data-type="shogi-move" data-id="…" data-sfen="…" data-answer="G*1b">`. Answers are USI. Illegal moves (nifu, pawn-drop mate, leaving the king in check, a piece that could never move) are never offered.
   - `node scripts/test_xiangqi_shogi.js` (about 10 s; `--quick` skips depth 4) runs the perfts and rule tests and checks every answer in the repo is legal.
+- **Simulations** (`plugins/sim.js` + `plugins/sim.css`): statistics labs, unscored; follow one with a quiz.
+  - `<div class="lp-sim" data-sim="ci-coverage" [data-n="5"] [data-level="0.95"] [data-method="t|z|z-plugin"]>`: intervals for a normal mean, misses in red, running coverage. `z-plugin` (sample s with the z value) visibly under-covers for small n.
+  - `<div class="lp-sim" data-sim="sampling-mean" [data-pop="exponential|uniform|normal|bimodal"] [data-n="2"]>`: 1,000 sample means, slider for n, sd(x̄) vs σ/√n (the CLT).
+  - `<div class="lp-sim" data-sim="multiple-testing" [data-k="20"] [data-alpha="0.05"]>`: k null tests per experiment; how often at least one p < α; Bonferroni toggle.
+  - `node scripts/test_sim.js` checks the z/t quantiles against tables and the coverage rates against theory.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
 ## Daily review deck (`assets/review.html`)

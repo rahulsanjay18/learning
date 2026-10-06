@@ -528,6 +528,104 @@
     w.appendChild(b);
   } });
 
+  // Calibration estimate: give a range you're N% sure contains the answer. data-answer="1526" [data-level="90"]
+  // [data-unit="years"] [data-max-width="100"]. Right = the range contains the answer (and is no wider than data-max-width,
+  // if set). Every range also feeds a running calibration score kept in this browser (lp.calibration).
+  LP.register({ type: "estimate", init: function (q, ctx) {
+    var ans = parseFloat(q.dataset.answer), level = parseFloat(q.dataset.level || "90"), maxW = parseFloat(q.dataset.maxWidth);
+    if (isNaN(ans)) throw new Error("estimate needs a numeric data-answer");
+    var row = el("div", "actions est"), lo = el("input"), hi = el("input"), b = el("button", null, "Check");
+    [lo, hi].forEach(function (x, i) { x.type = "text"; x.inputMode = "decimal"; x.size = 8; x.setAttribute("aria-label", i ? "high" : "low"); });
+    var unit = q.dataset.unit ? " " + q.dataset.unit : "";
+    row.appendChild(document.createTextNode("I'm " + level + "% sure it's between ")); row.appendChild(lo);
+    row.appendChild(document.createTextNode(" and ")); row.appendChild(hi);
+    row.appendChild(document.createTextNode(unit + " ")); row.appendChild(b);
+    var cal = el("p", "est-cal"); cal.hidden = true;
+    function num(s) { return parseFloat(String(s).replace(/[,\s]/g, "")); }
+    b.addEventListener("click", function () {
+      var a = num(lo.value), z = num(hi.value);
+      if (isNaN(a) || isNaN(z)) { ctx.feedback(false, "Type two numbers: a low and a high end."); return; }
+      if (a > z) { var t = a; a = z; z = t; }
+      var inside = a <= ans && ans <= z, narrow = isNaN(maxW) || z - a <= maxW, ok = inside && narrow;
+      var c = { n: 0, hits: 0 };
+      try { c = JSON.parse(store("lp.calibration") || "null") || c; } catch (e) {}
+      c.n++; if (inside) c.hits++; store("lp.calibration", JSON.stringify(c));
+      ctx.result(ok, a + " to " + z);
+      b.disabled = lo.disabled = hi.disabled = true;
+      var msg = "The answer is " + ans + unit + ". " + (inside ? (narrow ? "" : "Your range contained it but is wider than " + maxW + unit + ", too wide to be useful. ") : "Your range missed it. ");
+      ctx.feedback(ok, ok ? null : msg);
+      cal.hidden = false;
+      cal.textContent = (ok ? "The answer is " + ans + unit + ". " : "") + "Your calibration so far: " + c.hits + " of " + c.n + " ranges contained the truth (" +
+        Math.round(100 * c.hits / c.n) + "%). Aim: about " + level + "%." + (c.n >= 10 && c.hits / c.n < level / 100 - 0.15 ? " You're overconfident: widen your ranges." : "");
+    });
+    beforeExplain(q, row); q.appendChild(cal);
+  } });
+
+  // Find the error: click the step that's wrong. Steps as <ol class="steps"><li>…</li></ol> inside the quiz (or data-steps="a|b|c").
+  // data-answer = the wrong step's number (1-based).
+  LP.register({ type: "find-error", init: function (q, ctx) {
+    var ans = parseInt(q.dataset.answer, 10), list = q.querySelector(":scope > ol.steps");
+    if (!list) {
+      list = el("ol", "steps");
+      split(q.dataset.steps).forEach(function (s) { list.appendChild(el("li", null, s)); });
+      beforeExplain(q, list);
+    }
+    var items = Array.prototype.slice.call(list.children), done = false;
+    if (!(ans >= 1 && ans <= items.length)) throw new Error("find-error: data-answer must be a step number 1.." + items.length);
+    list.classList.add("lp-steps");
+    items.forEach(function (li, i) {
+      li.tabIndex = 0; li.setAttribute("role", "button");
+      function pick() {
+        if (done || li.classList.contains("fine")) return;
+        var ok = i + 1 === ans;
+        ctx.result(ok, "step " + (i + 1));
+        if (ok) { done = true; li.classList.add("wrongstep"); ctx.feedback(true, null); }
+        else { li.classList.add("fine"); ctx.feedback(false, "Step " + (i + 1) + " is fine. " + (q.dataset.hint || "Check each step's justification.")); }
+      }
+      li.addEventListener("click", pick);
+      li.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+    });
+  } });
+
+  // Highlight the evidence: in <div class="passage">, mark the right segments [[like this]]. The rest is split into sentences.
+  // The learner clicks segments to select them and presses Check. Right = exactly the marked segments.
+  LP.register({ type: "highlight", init: function (q, ctx) {
+    var host = q.querySelector(".passage");
+    if (!host) throw new Error("highlight needs a <div class=\"passage\"> with [[marked]] segments");
+    var segs = [], walker = document.createTreeWalker(host, NodeFilter.SHOW_TEXT), nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      var frag = document.createDocumentFragment();
+      node.nodeValue.split(/(\[\[.+?\]\])/).forEach(function (p) {
+        var mm = p.match(/^\[\[(.+)\]\]$/);
+        var pieces = mm ? [mm[1]] : p.split(/(?<=[.!?;:])\s+/);
+        pieces.forEach(function (t, k) {
+          if (!t.trim()) { if (t) frag.appendChild(document.createTextNode(t)); return; }
+          var s = el("span", "hl-seg", t); s.tabIndex = 0;
+          segs.push({ el: s, right: !!mm });
+          s.addEventListener("click", function () { if (!s.classList.contains("locked")) s.classList.toggle("on"); });
+          s.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); s.click(); } });
+          frag.appendChild(s);
+          if (!mm && k < pieces.length - 1) frag.appendChild(document.createTextNode(" "));
+        });
+      });
+      node.parentNode.replaceChild(frag, node);
+    });
+    if (!segs.some(function (s) { return s.right; })) throw new Error("highlight: mark at least one segment with [[ ]]");
+    var box = el("div", "actions"), b = el("button", null, "Check");
+    b.addEventListener("click", function () {
+      var picked = segs.filter(function (s) { return s.el.classList.contains("on"); });
+      if (!picked.length) { ctx.feedback(false, "Click the sentences that are your evidence first."); return; }
+      var missing = segs.filter(function (s) { return s.right && !s.el.classList.contains("on"); }).length;
+      var extra = picked.filter(function (s) { return !s.right; }).length, ok = !missing && !extra;
+      ctx.result(ok, picked.map(function (s) { return s.el.textContent.slice(0, 40); }).join(" / "));
+      if (ok) { segs.forEach(function (s) { s.el.classList.add("locked"); }); b.disabled = true; ctx.feedback(true, null); }
+      else ctx.feedback(false, (missing ? missing + " piece" + (missing > 1 ? "s" : "") + " of evidence still unselected. " : "") +
+        (extra ? extra + " selected piece" + (extra > 1 ? "s don't" : " doesn't") + " support the claim. " : "") + (q.dataset.hint || ""));
+    });
+    box.appendChild(b); beforeExplain(q, box);
+  } });
+
   // ---------- lesson footer: rating, note, copy results, sync ----------
   var statusEl = null;
   function setStatus(t) { if (statusEl) statusEl.textContent = t; }

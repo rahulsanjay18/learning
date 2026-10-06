@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="plugins/games.css">
 <link rel="stylesheet" href="plugins/xiangqi.css">
 <link rel="stylesheet" href="plugins/shogi.css">
+<link rel="stylesheet" href="plugins/sim.css">
 </head>
 <body>
 <main>
@@ -80,6 +81,31 @@
   <p class="prompt">How many sides does a triangle have? (After a right answer, say whether you knew it or guessed.)</p>
   <div class="explain" hidden>Three. "I guessed" counts it as not known: it comes back tomorrow.</div>
 </div>
+
+<h2>Estimate (calibration)</h2>
+<div class="quiz" data-type="estimate" data-id="est-panipat" data-answer="1526" data-level="90" data-unit="CE">
+  <p class="prompt">In what year was the First Battle of Panipat, which began the Mughal Empire? Give a range you're 90% sure of.</p>
+  <div class="explain" hidden>1526: Babur defeated Ibrahim Lodi.</div>
+</div>
+
+<h2>Find the error</h2>
+<div class="quiz" data-type="find-error" data-id="fe-one-two" data-answer="4">
+  <p class="prompt">This "proves" that 1 = 2. Click the wrong step.</p>
+  <ol class="steps"><li>Let \(a = b\).</li><li>Then \(a^2 = ab\), so \(a^2 - b^2 = ab - b^2\).</li><li>Factor: \((a+b)(a-b) = b(a-b)\).</li><li>Divide both sides by \(a - b\): \(a + b = b\).</li><li>So \(2b = b\), and \(2 = 1\).</li></ol>
+  <div class="explain" hidden>Step 4 divides by \(a - b\), which is 0.</div>
+</div>
+
+<h2>Highlight the evidence</h2>
+<div class="quiz" data-type="highlight" data-id="hl-ashoka">
+  <p class="prompt">Click the sentences that support this claim: Ashoka turned to dhamma <em>because of</em> the Kalinga war.</p>
+  <div class="passage"><p>The Kalinga war was fought around 261 BCE. [[After the conquest of Kalinga, the king felt deep remorse at the killing and deportation.]] War elephants were part of most armies of the time. [[Since then he has devoted himself to the practice and teaching of dhamma.]]</p></div>
+  <div class="explain" hidden>The two sentences give the sequence and the motive: conquest, remorse, dhamma (paraphrasing Rock Edict XIII). The other two are true but don't bear on the cause.</div>
+</div>
+
+<h2>Simulation plugin</h2>
+<div class="lp-sim" id="sim-ci" data-sim="ci-coverage" data-n="5" data-method="z-plugin" data-caption="Switch the method to 't' and draw 1,000: coverage returns to 95%."></div>
+<div class="lp-sim" id="sim-mean" data-sim="sampling-mean" data-pop="exponential" data-n="2"></div>
+<div class="lp-sim" id="sim-mt" data-sim="multiple-testing" data-k="20"></div>
 
 <h2>Free response (graded later)</h2>
 <div class="quiz" data-type="free" data-id="free">
@@ -262,5 +288,6 @@ for c, lo in zip(counts, edges):
 <script src="plugins/games.js"></script>
 <script src="plugins/xiangqi.js"></script>
 <script src="plugins/shogi.js"></script>
+<script src="plugins/sim.js"></script>
 </body>
 </html>

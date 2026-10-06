@@ -26,6 +26,9 @@ try:
         "plugins auto: math + chess": "plugins/math.js" in html and "plugins/chess.js" in html and "plugins/go.js" not in html,
         "sources list": '<ol class="sources">' in html,
         "main attrs": '<main data-confidence="true">' in html,
+        "estimate attrs": 'data-type="estimate" data-id="est1" data-answer="1526" data-unit="CE" data-level="90"' in html,
+        "find-error steps list + answer": 'data-type="find-error" data-id="fe1" data-answer="4"' in html and '<ol class="steps"><li>Let \\(a = b\\).</li>' in html,
+        "highlight passage": '<div class="passage"><p>The Kalinga war' in html and "[[After the conquest" in html,
         "worked steps": '<div class="step"><p>Step two.</p></div>' in html,
     }
     for name, ok in checks.items():

@@ -73,6 +73,29 @@ Step one.
 Step two.
 :::
 
+::: estimate est1 answer=1526 unit=CE level=90
+In what year did the Mughal Empire begin (First Battle of Panipat)?
+:::
+
+::: find-error fe1
+Find the wrong step in this "proof" that \(1 = 2\).
+- Let \(a = b\).
+- Then \(a^2 = ab\), so \(a^2 - b^2 = ab - b^2\).
+- Factor: \((a+b)(a-b) = b(a-b)\).
+- [x] Divide by \(a - b\): \(a + b = b\).
+- So \(2b = b\) and \(2 = 1\).
+--- explain
+Step 4 divides by \(a - b = 0\).
+:::
+
+::: highlight hl1
+Which sentences support the claim that Ashoka's turn to dhamma followed the Kalinga war?
+--- passage
+The Kalinga war was fought around 261 BCE. [[After the conquest of Kalinga, the king felt remorse.]] Elephants were used in war. [[He then turned to the practice of dhamma.]]
+--- explain
+The two marked sentences give the sequence: conquest, remorse, dhamma.
+:::
+
 ## Sources
 - Casella & Berger, *Statistical Inference*, 2nd ed.
 - Another source.

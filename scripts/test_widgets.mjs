@@ -264,6 +264,27 @@ await page.locator(`${q("sg-dropmate")} .sg-hand[data-hand="bP"]`).click();
 if (await page.locator(`${q("sg-dropmate")} .sg-sq[data-sq="1b"] .sg-dot`).count()) fail("gallery: shogi offered the illegal pawn-drop mate");
 await page.locator(`${q("sg-dropmate")} .sg-hand[data-hand="bG"]`).click(); await sgc(q("sg-dropmate"), "1b"); await expectOk("sg-dropmate");
 
+// estimate, find-error, highlight: a calibrated range is right; a fine step is a miss then the bad step is right; exact evidence is right
+await page.fill(`${q("est-panipat")} input[aria-label="low"]`, "1500"); await page.fill(`${q("est-panipat")} input[aria-label="high"]`, "1,550");
+await page.click(`${q("est-panipat")} button:text-is("Check")`); await expectOk("est-panipat");
+if (!/1 of 1 ranges/.test(await page.locator(`${q("est-panipat")} .est-cal`).textContent())) fail("gallery: calibration score missing");
+await page.locator(`${q("fe-one-two")} ol.steps li`).nth(1).click();
+if (!/Step 2 is fine/.test(await page.locator(`${q("fe-one-two")} > .feedback`).textContent())) fail("gallery: find-error miss message wrong");
+await page.locator(`${q("fe-one-two")} ol.steps li`).nth(3).click(); await expectOk("fe-one-two");
+const segs = page.locator(`${q("hl-ashoka")} .hl-seg`);
+if (await segs.count() !== 4) fail(`gallery: highlight should have 4 segments, has ${await segs.count()}`);
+await segs.nth(1).click(); await segs.nth(3).click();
+await page.click(`${q("hl-ashoka")} button:text-is("Check")`); await expectOk("hl-ashoka");
+// simulations: draw intervals and see a coverage line; slider redraws; multiple testing reports a rate
+await page.click('#sim-ci button:text-is("Draw 1,000")');
+if (!/of 1000 intervals contain/.test(await page.locator("#sim-ci .sim-info").textContent())) fail("gallery: ci-coverage did not report");
+if (await page.locator("#sim-ci .sim-ci").count() !== 40) fail("gallery: ci-coverage should show the last 40 intervals");
+await page.$eval("#sim-mean input[type=range]", el => { el.value = 30; el.dispatchEvent(new Event("input", { bubbles: true })); });
+if (!/n = 30 draws/.test(await page.locator("#sim-mean .sim-info").textContent())) fail("gallery: sampling-mean slider did not redraw");
+await page.click('#sim-mt button:text-is("Run 100")');
+if (!/of 100 \(/.test(await page.locator("#sim-mt .sim-info").textContent())) fail("gallery: multiple-testing did not report");
+else console.log("ok   gallery: estimate, find-error, highlight, simulations");
+
 // map: basemap drawn from the vendored data; locate quiz: click on Delhi (miss, distance + direction), then pick "Patna" (right)
 await page.waitForSelector("#map-south-asia .map-land", { timeout: 8000 }).catch(() => fail("gallery: map basemap did not load"));
 if ((await page.locator("#map-south-asia .map-land").first().getAttribute("d") || "").length < 2000) fail("gallery: map land path too small");
@@ -343,17 +364,17 @@ let pythonRan = false;
 
 const bar = await page.locator(".scorebar").textContent();
 // choice, go-drive, plot-mean, tl-plassey, map-patali, py-var missed first; free is ungraded. py-var is unanswered if the CDN was unreachable.
-const expected = pythonRan ? "26 / 26 answered · 14 right first try" : "25 / 26 answered · 14 right first try";
+const expected = pythonRan ? "29 / 29 answered · 16 right first try" : "28 / 29 answered · 16 right first try";
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== (pythonRan ? 26 : 25)) fail(`gallery: expected ${pythonRan ? 26 : 25} logged attempts, got ${attempts.length}`);
+if (attempts.length !== (pythonRan ? 29 : 28)) fail(`gallery: expected ${pythonRan ? 29 : 28} logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,gm-ttt-hold,gm-nim-345,fc-2,xq-win,map-patali" + (pythonRan ? ",py-var" : "") + ".*guessed: conf-demo").test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,gm-ttt-hold,gm-nim-345,fc-2,xq-win,fe-one-two,map-patali" + (pythonRan ? ",py-var" : "") + ".*guessed: conf-demo").test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 // "I don't know" (data-skip): skip before answering; after a wrong try it becomes "Show me the answer" (no second score)

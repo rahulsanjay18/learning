@@ -173,9 +173,12 @@ def render_widget(kind, header, body, used):
             data["buckets"], data["items"] = buckets, "|".join(f"{p[0].strip()}>{p[1].strip()}" for p in pairs)
             prompt = text_lines
         elif kind == "find-error" and items:
-            # steps: '- [x] wrong step' marks the error
-            data["steps"] = "|".join(re.sub(r"^\[[ xX]\]\s*", "", x) for x in items)
-            data["answer"] = str([i for i, x in enumerate(items) if re.match(r"^\[[xX]\]", x)][0] + 1) if any(re.match(r"^\[[xX]\]", x) for x in items) else ""
+            # steps: '- [x] wrong step' marks the error; rendered as <ol class="steps"> so math and formatting survive
+            marked = [i for i, x in enumerate(items) if re.match(r"^\[[xX]\]", x)]
+            if len(marked) != 1: raise ValueError(f"find-error {ident}: mark exactly one step with [x]")
+            data["answer"] = str(marked[0] + 1)
+            unmark = lambda x: re.sub(r"^\[[ xX]\]\s*", "", x)
+            steps_html = '<ol class="steps">' + "".join("<li>" + inline(unmark(x)) + "</li>" for x in items) + "</ol>"
             prompt = text_lines
         if "hint" in sec: data["hint"] = " ".join(" ".join(x) for x in sec["hint"]).strip()
         for k, v in attrs.items(): data[k] = v
@@ -184,6 +187,10 @@ def render_widget(kind, header, body, used):
         if any(l.strip() for l in prompt):
             p = blocks(prompt)
             inner.append(re.sub(r"^<p>", '<p class="prompt">', p, count=1) if p.startswith("<p>") else p)
+        if kind == "find-error" and items:
+            inner.append(steps_html)
+        if "passage" in sec:
+            inner.append('<div class="passage">' + blocks(sec["passage"][0]) + "</div>")
         if kind == "py" or "code" in sec:
             code = "\n".join(sec.get("code", [[]])[0]).strip("\n")
             inner.append(f'<pre class="code">{html.escape(code, quote=False)}</pre>')
