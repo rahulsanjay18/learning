@@ -49,3 +49,11 @@ Hourly figures assume the instance is started and stopped around each job.
 3. BenchLM, open-source leaderboard (Oct 2026): https://benchlm.ai/best/open-source · Morph, "Best open source LLMs (2026)": https://www.morphllm.com/best-open-source-llm
 4. Vantage, g5.xlarge: https://instances.vantage.sh/aws/ec2/g5.xlarge · Economize, g6e.xlarge ($1,358.53/month): https://www.economize.cloud/resources/aws/pricing/ec2/g6e.xlarge/
 5. Vantage, p5.48xlarge ($55.04/h): https://instances.vantage.sh/aws/ec2/p5.48xlarge
+
+## Spot instances (follow-up question)
+AWS advertises Spot at up to 90% off On-Demand, with the catch that AWS can reclaim the instance on short notice [6]. Overnight
+batch jobs tolerate that. Even at the full 90%: the 8× H100 box at 1 h/day ≈ **$2,000/year (10× Claude Pro)**; at a more modest
+70% ≈ $6,000. A small A10G at 2 h/night drops to ≈ $70–220/year, but that's the same small model your own 5070 Ti runs for ≈ $40.
+Plus: big-GPU spot capacity is often unavailable, and every start has to reload hundreds of GB of model weights. Verdict unchanged.
+
+6. AWS, "Amazon EC2 Spot Instances": https://aws.amazon.com/ec2/spot/
