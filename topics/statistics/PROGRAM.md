@@ -110,7 +110,8 @@ Before each chapter (one block; two for the long chapters 4–5), a pretest asks
 **Every chapter then gets one summary lesson, even when every section is skipped** (learner's request, 2026-10-06): the
 chapter's main results in one page, with recall practice, so a tested-out chapter is still consolidated.
 
-Neighbouring short lessons can share a block. The plan for each chapter (which sections are skipped, short or full) goes in NOTES.md
+**Merge by default:** neighbouring gap sections become one lesson when their combined reading fits a block (about 10 pages) and
+they build on each other (learner's suggestion, 2026-10-06). Neighbouring short lessons can share a block. The plan for each chapter (which sections are skipped, short or full) goes in NOTES.md
 after its pretest, so you can see it.
 
 ## 3. One lesson (2 blocks, or 1 for a short one)

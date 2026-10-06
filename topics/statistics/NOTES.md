@@ -54,3 +54,5 @@ Learner was tired ("Also i am tired"): read borderline results generously; the c
 Then 0010 Chapter 1 summary (always), 0011 chapter check. Pattern: calculations are solid (math degree); **formal definitions and
 proofs from definitions** are the gap, which is exactly what C&B Ch. 1 trains. Lessons: reason first, name second (rule 21), and
 proofs from C&B's own exercises (rule 22).
+
+2026-10-06 (later): §1.4–1.6 merged into one lesson 0008 at the learner's suggestion ("why not try to combine them?"); summary 0009, check 0010.

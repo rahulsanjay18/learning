@@ -67,16 +67,15 @@
         "S150",
         "S110"
       ],
-      "est_lessons": 7,
+      "est_lessons": 6,
       "pretest": true,
       "group": "core",
       "level": "I",
       "plan": [
         "0007 conditional probability and independence (§1.3)",
-        "0008 random variables and cdfs (§1.4-1.5)",
-        "0009 densities and mass functions (§1.6)",
-        "0010 Chapter 1 summary (always)",
-        "0011 Ch. 1 check"
+        "0008 random variables, cdfs and densities (§1.4-1.6, pp. 27-37; merged)",
+        "0009 Chapter 1 summary (always)",
+        "0010 Ch. 1 check"
       ],
       "lessons": [
         "0005-ch1-pretest",
