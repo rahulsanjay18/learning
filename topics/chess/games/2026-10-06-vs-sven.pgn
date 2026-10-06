@@ -1,0 +1,25 @@
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.06"]
+[Round "?"]
+[White "Sven"]
+[Black "rahulsanjay1814"]
+[Result "0-1"]
+[BlackElo "939"]
+[WhiteElo "1100"]
+[Termination "by checkmate"]
+[ECO "C50"]
+[EndDate "2026.10.06"]
+[Link "https://www.chess.com/game/computer/2276445094"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Bg5 h6 6. Bxf6 gxf6 7. Qd2 d6 8. b4
+Bxb4 9. c3 Ba5 10. a3 Bg4 11. Bxf7+ Kxf7 12. Qa2+ Ke8 13. h3 Bxf3 14. gxf3 Rg8
+15. Qxg8+ Ke7 16. Qh7+ Ke8 17. Qg6+ Ke7 18. Qh7+ Ke8 19. Qh8+ Ke7 20. Qxd8+
+Kxd8 21. Kf1 Kd7 22. f4 exf4 23. Ke2 Ne5 24. Rh2 f3+ 25. Ke3 Bb6+ 26. d4 Nc4+
+27. Kf4 Rg8 28. Rh1 Rg2 29. Kxf3 Rg6 30. Rc1 d5 31. Kf4 Rg2 32. Ra2 dxe4 33. Re1
+e3 34. Rh1 exf2 35. Kf5 Ne3+ 36. Kxf6 Rg1 37. Rxf2 Rxh1 38. Kg6 Rxb1 39. c4
+Bxd4 40. Kxh6 Nd1 41. Rd2 Ra1 42. Rxd4+ Kc6 43. Kg6 Nc3 44. Rg4 Rxa3 45. h4 a5
+46. Kh6 a4 47. Rg6+ Kc5 48. Rg4 Ra2 49. Rf4 a3 50. Kh7 Rc2 51. h5 a2 52. Rf5+
+Kb4 53. Rf1 Nb1 54. Rf5 a1=Q 55. Rg5 Rxc4 56. h6 Qf6 57. Rg6 Qe7+ 58. Rg7 Qf8
+59. Rd7 Qf5+ 60. Kg8 Qxd7 61. Kh8 Rh4 62. Kg8 Rxh6 63. Kf8 Rf6+ 64. Kg8 Qf7+
+65. Kh8 Rh6# 0-1
