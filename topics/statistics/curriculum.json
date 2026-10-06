@@ -72,7 +72,6 @@
       "group": "core",
       "level": "I",
       "plan": [
-        "0006 the three axioms and what follows from them (§1.2.1-1.2.2; short)",
         "0007 conditional probability and independence (§1.3)",
         "0008 random variables and cdfs (§1.4-1.5)",
         "0009 densities and mass functions (§1.6)",
@@ -80,7 +79,8 @@
         "0011 Ch. 1 check"
       ],
       "lessons": [
-        "0005-ch1-pretest"
+        "0005-ch1-pretest",
+        "0006-the-three-axioms"
       ],
       "books": {
         "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference, Ch. 1 (sections, examples and exercises)",
