@@ -1,10 +1,17 @@
-# Plan: offload easy work to a small language model on my server
+# Plan: an ensemble of services and models, with quality gates
 
 *Proposed 2026-10-06. Not urgent: deploy when convenient. Goal: a learning platform I can use for years, where Claude (the
 expensive model) only does the work that needs judgment.*
 
-## The principle
-Three layers, cheapest first:
+## The principle (revised 2026-10-06: quality first, cost second)
+**Every task goes to the cheapest component that meets that task's measured quality bar; anything uncertain escalates.** This is
+an "LLM cascade": research shows a tuned cascade can match the best single model at a fraction of the cost, or beat it at the same
+cost [3]. Quality is never traded away: a component only gets a task after passing that task's test set.
+
+**Model-agnostic:** every model sits behind one adapter (an OpenAI-style chat API with JSON-schema outputs). The "big model" is
+Claude today but could be anything; the small ones are whatever runs well on the server. Swapping a model = re-run its test sets.
+
+Layers, cheapest first:
 1. **Scripts and services** do anything deterministic (scheduling, rendering, status, lint). Already true (CLAUDE.md rule).
 2. **A small local model (SLM)** does easy, checkable language work, in the background, overnight.
 3. **Claude** does design, research, fact-checking, and anything the SLM flags as unsure.
@@ -30,11 +37,17 @@ Three layers, cheapest first:
 - **Book search:** embed every book once (chunked by section heading), then `books.py search` asks the worker for the top
   passages. The ungraded books (grade B/C) keep their library/README.md restrictions.
 
-## Trust it only after it's measured (mastery rule, applied to the grader)
-1. Build a test set from answers Claude already graded (the grades posted on the progress server).
-2. Run the SLM on them; measure agreement on Got it / Not yet.
-3. **Adopt for a subject only at ≥ 90% agreement**, and keep Claude re-grading a random 10% for the first month.
-   Re-measure whenever the model changes. Statistics and history may land differently; that's fine.
+## Quality gates (mastery rule, applied to the models)
+Each task type has a **test set**, a **bar**, and an **escalation trigger**:
+
+| Task | Test set | Bar to adopt | Escalate when |
+|---|---|---|---|
+| Book search | questions whose answer passages Claude already found | right passage in top 3, ≥ 90% | no passage scores above threshold |
+| Grading | answers Claude already graded (progress server) | ≥ 90% agreement on Got it / Not yet, per subject | two runs disagree, or low confidence |
+| Question drafts | — | every draft passes lint + Claude spot-check | always reviewed before publishing |
+
+Keep Claude re-checking a random 10% for the first month after adopting, and log every escalation: if one task escalates a lot,
+the bar is wrong or the model is too small. Re-run the test sets whenever a model changes.
 
 ## What I (the learner) need to decide or do
 1. **Server hardware:** GPU (model, VRAM)? RAM? This decides the model size (a ~3–8B-parameter model on a modest GPU or a
@@ -50,3 +63,5 @@ Three layers, cheapest first:
 ## Sources
 1. Ollama, "Structured outputs" (Dec 2024): https://registry.ollama.ai/blog/structured-outputs
 2. UCSF, "Using Ollama through the OpenAI API": https://researchai.ucsf.edu/class/lma/openai_ollama_python
+3. Chen, Zaharia & Zou, "FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance" (2023):
+   up to 98% cost reduction at the best single model's accuracy, or +4% accuracy at equal cost. https://arxiv.org/abs/2305.05176
