@@ -64,6 +64,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - `TEACHING-LOG.md` at the repo root lists past teaching mistakes and the rules that prevent them, across all subjects. Read it
   before writing a lesson. When my questions or results reveal a flaw in an explanation or lesson, add an entry and a rule.
 - Each topic keeps a `QUESTIONS.md`: my questions with the answers given.
+- **Syllabus + mastery grading (2026-10-06):** each major has `topics/<major>/SYLLABUS.md` (readings and 2–3 objectives per lesson,
+  planned ahead). Grade each objective Got it / Not yet and extend lessons only for a real gap, never for a thin answer: TEACHING-LOG rule 20.
+  I'm relying on you to set that line.
 - **Lesson design, all subjects:** assign a reading before the lesson whenever it makes sense (a short, specific primary-source slice
   with a reading guide). **Homework is fine but optional**: keep it small, and make every lesson work even if I skipped it
   (I'm not sure how much I'll do). Details: TEACHING-LOG.md rules 9 and 13.

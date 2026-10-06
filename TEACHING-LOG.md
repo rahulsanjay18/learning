@@ -37,6 +37,17 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 17. **Say how each section relates to the reading:** "from the reading" vs. "beyond the reading". (Entry 17)
 18. **Units in answer boxes are unambiguous** ("as a decimal, 0.10 means 10%"); prefer the form a mathematician would type. (Entry 18)
 19. **Use the learner's own vocabulary next to the textbook's** (Type I = false positive, Type II = false negative). (Entry 19)
+20. **Mastery rule: grade objectives Got it / Not yet, and extend only for "Not yet".** Every lesson has 2–3 "you can…" objectives
+    (from the major's `SYLLABUS.md`). Keep 0–1 scores for the server, but the *decision* is binary:
+    - **Got it:** the answer shows the idea correctly with no false statement, even if a detail is missing. Say what was missing in
+      the feedback; **no re-teaching**.
+    - **Not yet:** a false statement or misconception; the same objective missed twice (first try or in review); a skip, "I don't
+      know" or self-reported guess; or the learner says they're confused.
+    - **Can't tell** (a thin answer): one warm-up question on it next lesson; a miss there means Not yet.
+    - **Not yet → a 5-minute re-teach section at the start of the next lesson in that course**, syllabus otherwise unchanged. Add a
+      whole lesson only when the objective is a prerequisite for the next syllabus lessons, or it's still Not yet after one re-teach;
+      log that in the syllabus's "Changes". **Facts (dates, names) go to spaced review and warm-ups, not extra lessons** (entry 10).
+    - Plan the whole course up front in `SYLLABUS.md` (readings + objectives); sessions write the next lesson, they don't redesign. (Entry 20)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -80,3 +91,9 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     `ci-lower`, learner couldn't find how to type × and estimated 2 instead of 1.96. Fix: decimal answer, typing help; rules 11, 18.
 19. **2026-10-05 · "I usually remember type 1 and 2 errors as false positive and false negative."** Options used "missing a real
     effect" etc. Fix: FP/FN in lesson 2's table and lesson 3's options; rule 19.
+20. **2026-10-06 · "The threshold of 'good enough' to 'needs work' is blurry and I am relying on you to set the line."** Lessons were
+    being extended or planned one at a time, case by case. Learner: extend only for real gaps (not knowing vs. a lazy, thin answer),
+    plan a syllabus ahead (it also saves tokens), and grade like the mastery scheme from school ("did you learn the thing").
+    Mastery learning has research support with college students too (Kulik et al. 1990, 108 studies, ≈0.5 SD; self-paced versions
+    lowered completion, so keep a fixed pace) and a college form in Nilson's specifications grading (pass/fail at B level). Fix: rule
+    20, a `SYLLABUS.md` per major, objectives per lesson.

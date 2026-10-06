@@ -3,6 +3,9 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-06: syllabi + mastery grading.** Each major has `topics/<major>/SYLLABUS.md` (readings + objectives per lesson for the
+  active courses); `plan` in curriculum.json mirrors it. Grade objectives Got it / Not yet (TEACHING-LOG rule 20; explainer
+  `notes/mastery-grading.md`). Write lessons from the syllabus; don't redesign per session.
 - (2026-10-06) Statistics **lesson 4** (power; reading C&B §8.3.1 pp. 382–385) still not done. Indian History **lesson 0003** (Indus
   cities; reading K&R Ch. 1 Indus sections) built today. Both have reading-guide boxes: reply to those answers when results come in.
 - 2026-10-06: all 5 pending free responses graded and posted (stats ice-cream causal 0.75; IH 0002 answers).

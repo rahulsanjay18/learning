@@ -28,13 +28,25 @@
       "requires": [
         "IH000"
       ],
-      "est_lessons": 10,
+      "est_lessons": 16,
       "lessons": [
         "0002-the-land-and-the-long-view",
         "0003-the-indus-cities"
       ],
       "plan": [
-        "0004 Indo-Aryans and the Vedic age (K&R Ch. 1 rest, from 'Immigration and Settlement of the Indo-Aryans'): first text source, a Rigveda hymn; Mitanni treaty c. 1380 BC"
+        "0004 Indo-Aryans and the Vedic age (SYLLABUS.md)",
+        "0005 Cities, the Buddha and the first empire",
+        "0006 Ashoka",
+        "0007 The Guptas and the 'Golden Age'",
+        "0008 Early medieval India: kings, temples, bhakti",
+        "0009 The Delhi Sultanate",
+        "0010 Babur and Akbar",
+        "0011 Aurangzeb, Shivaji and the Europeans",
+        "0012 Company rule, the colonial economy, 1857",
+        "0013 Gandhi and the freedom movement",
+        "0014 Partition",
+        "0015 The Republic",
+        "0016 IH100 check"
       ],
       "completed": [
         "0002-the-land-and-the-long-view"

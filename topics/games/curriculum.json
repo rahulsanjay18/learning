@@ -20,7 +20,14 @@
       "plan": [
         "0003-what-did-their-move-do: before your move, list what the opponent's last move attacks (41. Rd2 from the 6 Oct game, LR 0005); warm-up = piece-by-piece check scan (LR 0004) + 14...Rg8 review",
         "0004-what-did-my-move-stop-defending: 13. e4 from the 2 Oct game",
-        "0005: double attack (fork) and the pin (41. Rd2 was both), Seirawan Winning Chess Tactics ch. 2-3"
+        "0005 the double attack (Tactics Ch. 2)",
+        "0006 pins and skewers (Tactics Ch. 3-4)",
+        "0007 king tactics and the back rank (Ch. 5)",
+        "0008 deflection and decoy (Ch. 6, 9)",
+        "0009 king and pawn endings (Endings)",
+        "0010 batteries and open files (Ch. 7)",
+        "0011 zwischenzug (Ch. 12)",
+        "0012 G101 check"
       ],
       "completed": [
         "0001-is-it-safe",
@@ -39,7 +46,13 @@
         "0001-capacity-or-will"
       ],
       "plan": [
-        "0002 annihilation vs. exhaustion: fix the 'offense = annihilation' mix-up from record 0002 (First Punic War analysis)"
+        "0002 annihilation vs. exhaustion: fix the 'offense = annihilation' mix-up from record 0002 (First Punic War analysis)",
+        "0003 deterrence and coercion (Echevarria Ch. 4)",
+        "0004 Clausewitz (On War Bk 1 Ch. 1)",
+        "0005 Sun Tzu and the indirect approach",
+        "0006 decapitation and terror as strategies (Ch. 5-6)",
+        "0007 why strategies succeed or fail (Ch. 8)",
+        "0008 G150 check: campaign analysis (Polybius III)"
       ],
       "completed": [
         "0001-capacity-or-will"
