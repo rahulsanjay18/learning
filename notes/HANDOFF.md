@@ -20,6 +20,12 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 
 ## Open platform work
+- **Built 2026-10-06:** lesson renderer (Markdown → HTML), grading packets (`scripts/grade.py`), results recorder
+  (`scripts/lp_results.py`), compact book client (`scripts/books.py`), `scripts/check_all.sh`; quiz types estimate / find-error /
+  highlight; simulation plugin (CI coverage, CLT, multiple testing); majors redesigned on NYU Gallatin (`notes/major-design.md`),
+  Statistics split into Level I and opt-in Level II. **5 free responses are waiting to be graded** (`python3 scripts/grade.py`).
+- **Learner to do:** redeploy book-server and progress-server (`git pull`, `docker compose up -d --build book-server progress-server`);
+  download the free books listed in `topics/statistics/PROGRAM.md` §0 into the library.
 - **`/program` skill built** (2026-10-05): `.claude/skills/program/`, `programs.json`, `topics/{statistics,indian-history,games}/curriculum.json`,
   `scripts/test_programs.py`. AWS ML major still needs setup (`/program setup aws-ml`).
 - **Tiny-games widget built** (`assets/plugins/games.js`: tic-tac-toe, Nim, Hex ≤ 4×4 vs an exact solver; play + `game-move` quiz; `scripts/test_games.js`). G102 is unblocked.

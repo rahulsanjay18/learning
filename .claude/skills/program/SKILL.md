@@ -58,6 +58,15 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
 5. **Commit and push** as CLAUDE.md says (`teach(<slug>): …` or `program: …`), update `notes/HANDOFF.md`, and end with the
    lesson links and the day's plan in one short list: review first, then block 1, then block 2.
 
+## Tools (use these instead of reading files or hand-editing; they save most of the tokens)
+| Job | Command |
+|---|---|
+| Grade free responses | `python3 scripts/grade.py` (answer + prompt + rubric per item), then `python3 scripts/grade.py post grades.json` |
+| Record pasted results | `python3 scripts/lp_results.py "<lp-results lines>"` (marks lessons completed in curriculum.json) |
+| Write a lesson | Markdown + `python3 scripts/render_lesson.py topics/<t>/lessons/NNNN-x.md --course <ID>` (updates index + curriculum) |
+| Look something up in a book | `python3 scripts/books.py search "…" --book <id>`, `grep <id> "Definition 8.3.5"`, `read <id> <line> 60` |
+| Check before committing | `bash scripts/check_all.sh --quick` (add the browser test by dropping `--quick` when widgets changed) |
+
 ## Rules
 - The learner's rule: **finish the whole day's plan before going deeper on one subject.** If they ask for more of one subject
   before the plan is done, say so once, then do what they ask.
