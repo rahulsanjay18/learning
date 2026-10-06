@@ -50,6 +50,9 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     - Plan the whole course up front in `SYLLABUS.md` (readings + objectives); sessions write the next lesson, they don't redesign. (Entry 20)
 21. **Reason first, name second.** Introduce each new definition by a question the learner works through in revealed steps
     (`::: worked`), then name it and give the formal statement. At most ~2 new definitions per lesson; more → split. (Entry 21)
+22. **Use the book's exercises; never leak answers.** Draw practice, pretest, proof and check items from the textbook's own
+    exercises where they fit (cite them: "C&B Exercise 1.33"), adapting numbers only when needed. And never state an answer to a
+    question the learner hasn't done yet, in chat or anywhere visible: verify answers with assertions that don't print them. (Entry 22)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -102,3 +105,7 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 21. **2026-10-06 · "A lot of these definitions can just be confusing and i think i need to sit and reason though stuff."**
     Statistics lesson 4 stacked the power function, Type I/II error probabilities, size/level and the 2.8-SE rule in one lesson.
     Results were good (all objectives Got it), but the learner felt rushed through definitions. Fix: rule 21.
+22. **2026-10-06 · Two catches from the Chapter 1 pretest.** (1) After writing it I printed three of its answers in chat while
+    "checking the numbers". Learner: "did you just list the answers to me". Those three items were replaced with book exercises.
+    (2) Learner: "are you borrowing questions from the exercises the book has? i think that may also be a good idea." I wasn't.
+    Fix: rule 22.

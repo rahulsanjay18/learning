@@ -23,7 +23,7 @@
     {
       "id": "S150",
       "title": "Inference for practitioners",
-      "status": "active",
+      "status": "done",
       "requires": [
         "S100"
       ],
@@ -33,37 +33,36 @@
         "0003-effect-size-and-confidence-intervals",
         "0004-power"
       ],
-      "plan": [
-        "0005 likelihood ratios: P(data given H1), power ~55% in the A/B example (C&B §8.2.1; SYLLABUS.md)",
-        "0006 multiple testing (Bruce et al. Ch. 3)",
-        "0007 S150 check: an A/B test end to end (+ 5-min re-teach: randomization vs. confounding)"
-      ],
+      "plan": [],
       "completed": [
         "0002-what-a-p-value-is",
         "0003-effect-size-and-confidence-intervals",
         "0004-power"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "note": "Closed early 2026-10-06 at the learner's request (start Ch. 1 from the ground up). Unwritten 0005 likelihood ratios, 0006 multiple testing and the A/B check fold into S303 (Ch. 8)."
     },
     {
       "id": "S110",
       "title": "Probability review (pretest; teach only gaps)",
       "group": "core",
       "level": "I",
-      "status": "later",
+      "status": "done",
       "requires": [
         "S100"
       ],
       "source": "Blitzstein & Hwang, Introduction to Probability (free PDF, check: https://projects.iq.harvard.edu/stat110/home); Bertsekas & Tsitsiklis (in collection, B)",
       "est_lessons": 3,
-      "pretest": true
+      "pretest": true,
+      "credit": "exam",
+      "note": "Merged into S201 (2026-10-06): the Ch. 1 pretest covers this probability review, and S201 teaches only the gaps. Credit comes from the S201 pretest."
     },
     {
       "id": "S201",
       "title": "Probability theory",
       "source": "C&B Ch. 1, pp. 1-37",
-      "status": "later",
+      "status": "active",
       "requires": [
         "S150",
         "S110"
@@ -71,7 +70,15 @@
       "est_lessons": 4,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "plan": [
+        "0006 Chapter 1 in one lesson: summary of all six sections (always, even if everything was known)",
+        "then gap lessons chosen by the pretest: sets and axioms (§1.1-1.2.1) · calculus and counting (§1.2.2-1.2.4) · conditional probability (§1.3) · random variables, cdfs, densities (§1.4-1.6)",
+        "Ch. 1 check"
+      ],
+      "lessons": [
+        "0005-ch1-pretest"
+      ]
     },
     {
       "id": "S202",
@@ -162,7 +169,8 @@
       "est_lessons": 5,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "note": "Includes S150's unwritten lessons: likelihood ratios (§8.2.1, A/B power ~55%), multiple testing (Bruce et al. Ch. 3), an A/B test end to end, and the 5-min randomization-vs-confounding re-teach."
     },
     {
       "id": "S304",

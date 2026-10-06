@@ -5,7 +5,7 @@ subject: 4 blocks of 25 minutes a week (`notes/study-plan.md`).*
 
 ## TL;DR
 - **Spine:** Casella & Berger, *Statistical Inference*, 2nd ed. (grade A, in collection), all 12 chapters, in order [1].
-- **First,** finish the A/B-testing arc already under way (S150: 2 more lessons, likelihood ratios and multiple testing). **Then** Chapter 1, page 1.
+- **Now (2026-10-06): Chapter 1, page 1.** S150 closed after lesson 4 at your request; its unwritten A/B lessons move into S303 (Ch. 8). S110 merged into the S201 pretest.
 - **One lesson = 2 blocks:** block 1 reads ~7 pages with a reading guide; block 2 is the lesson page: idea → worked example →
   practice → **one proof you write**. About 2 lessons a week.
 - **Size:** ~450 pages of text → at most ~66 lessons + 12 pretests + 12 chapter checks ≈ **40 weeks** (132 + 14 + 12 = 158 blocks) at 4 blocks a week if you
@@ -64,7 +64,7 @@ Page ranges are the chapters' text, without exercises and miscellanea, from the 
 | Course | Casella & Berger | Pages | Lessons | Notes |
 |---|---|---|---|---|
 | S100 Placement | — | — | 1 (done) | Lesson 0001. Probability mechanics solid; inference interpretation was the gap (records 0001–0002) |
-| **S150 Inference for practitioners** (now) | slices of §8.3, §9.1 | — | 6 (4 done) | 0002 p-values · 0003 effect size and CIs · 0004 power (§8.3.1) · **0005 likelihood ratios: P(data given H1)** · **0006 multiple testing**. Ties straight to the A/B-test goal in the mission |
+| S150 Inference for practitioners (closed early; leftovers → S303) | slices of §8.3, §9.1 | — | 6 (4 done) | 0002 p-values · 0003 effect size and CIs · 0004 power (§8.3.1) · **0005 likelihood ratios: P(data given H1)** · **0006 multiple testing**. Ties straight to the A/B-test goal in the mission |
 | S201 Probability theory | Ch. 1 | 1–37 | 4 | Fast: your pretest was strong here. Proof focus: from the axioms (Kolmogorov) |
 | S202 Transformations and expectations | Ch. 2 | 47–76 | 4 | Change of variables, mgfs, differentiating under the integral sign |
 | S203 Common families of distributions | Ch. 3 | 85–127 | 6 | Fixes the rusty recall in record 0003 (geometric, Poisson, memorylessness). Exponential families matter for GLMs |
@@ -106,6 +106,9 @@ Before each chapter (one block; two for the long chapters 4–5), a pretest asks
 | ✓ | ✗ | ✗ | **Calculation + proofs:** worked examples, practice, then a proof |
 | ✗ | any | any | **Full lesson** (block 1 reading, block 2 the page) |
 | other mixes | | | Teach the missing skills only; e.g. calculation without the concept gets a short concept section, then proofs |
+
+**Every chapter then gets one summary lesson, even when every section is skipped** (learner's request, 2026-10-06): the
+chapter's main results in one page, with recall practice, so a tested-out chapter is still consolidated.
 
 Neighbouring short lessons can share a block. The plan for each chapter (which sections are skipped, short or full) goes in NOTES.md
 after its pretest, so you can see it.
