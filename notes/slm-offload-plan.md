@@ -49,11 +49,22 @@ Each task type has a **test set**, a **bar**, and an **escalation trigger**:
 Keep Claude re-checking a random 10% for the first month after adopting, and log every escalation: if one task escalates a lot,
 the bar is wrong or the model is too small. Re-run the test sets whenever a model changes.
 
-## What I (the learner) need to decide or do
-1. **Server hardware:** GPU (model, VRAM)? RAM? This decides the model size (a ~3–8B-parameter model on a modest GPU or a
-   recent CPU; embeddings run fine on CPU). Pick specific models when deploying, after checking current benchmarks.
-2. Install Ollama and the worker (Claude writes the worker code, tests and a compose snippet, like progress-server/).
-3. Nothing else changes: same web pages, same review deck, same /program.
+## Hardware (learner's server, 2026-10-06): 32 GB RAM, 1× RTX 5070 Ti (16 GB GDDR7 [4])
+- **Enough for every stage.** Rough VRAM need ≈ parameters × bits ÷ 8, plus ~1–2 GB for context: an 8B model at 4-bit ≈ 5–6 GB,
+  a 14B at 4-bit ≈ 9–10 GB; embedding models are well under 1 GB and can run on the CPU.
+- **A second 5070 Ti: not now.** These jobs are small and run overnight in batches, so speed doesn't matter. A second card only
+  pays off if the grading test set shows we need a ~30B model (32 GB across two cards). Decide from the test results, not before.
+- **The other services come first:**
+  - jobs run only in a night window, one at a time;
+  - `keep_alive: 0` so a model unloads the moment a job finishes (Ollama's default keeps it 5 minutes) [5];
+  - `OLLAMA_MAX_LOADED_MODELS=1` (default 3) [5];
+  - the worker checks free VRAM (`nvidia-smi`) before each job and skips the night if another service is using the GPU;
+  - embeddings on the CPU if the GPU is ever contended.
+- Open question: which other services use the GPU, and when (e.g. media transcoding)? That sets the night window.
+
+## What I (the learner) need to do
+1. Install Ollama and the worker (Claude writes the worker code, tests and a compose snippet, like progress-server/).
+2. Nothing else changes: same web pages, same review deck, same /program.
 
 ## Order (when the time comes)
 1. Semantic book search (most tokens saved, lowest risk: a bad search result costs a re-search, not a wrong grade).
@@ -65,3 +76,5 @@ the bar is wrong or the model is too small. Re-run the test sets whenever a mode
 2. UCSF, "Using Ollama through the OpenAI API": https://researchai.ucsf.edu/class/lma/openai_ollama_python
 3. Chen, Zaharia & Zou, "FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance" (2023):
    up to 98% cost reduction at the best single model's accuracy, or +4% accuracy at equal cost. https://arxiv.org/abs/2305.05176
+4. RTX 5070 Ti specs (16 GB GDDR7, 256-bit, 896 GB/s): https://www.tomsguide.com/computing/nvidia-reveals-full-rtx-5070-ti-and-rtx-5070-specs-what-you-need-to-know
+5. Ollama FAQ (keep_alive default 5 min, OLLAMA_MAX_LOADED_MODELS default 3): https://ollama.readthedocs.io/en/faq/
