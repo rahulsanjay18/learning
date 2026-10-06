@@ -68,11 +68,26 @@ BOOKS_URL=https://books.tail59e10.ts.net
   with a reading guide). **Homework is fine but optional**: keep it small, and make every lesson work even if I skipped it
   (I'm not sure how much I'll do). Details: TEACHING-LOG.md rules 9 and 13.
 
-## Progress server (once deployed: `$BOOKS_URL/progress`, see `progress-server/README.md`)
-- At the start of a teaching session, `curl -s "$BOOKS_URL/progress/status"` (auth is injected) for a ~15-line digest; use
-  `/progress/summary?topic=<slug>` for one topic and `/progress/ungraded` + `POST /progress/grades` to grade free responses.
-- If it isn't reachable yet, fall back to `lp-results` lines I paste.
+## Progress server (`$BOOKS_URL/progress`, see `progress-server/README.md`)
+- Session start: `/program` shows the digest (it calls `/progress/status`). Grade waiting free responses with
+  `python3 scripts/grade.py` (answer + prompt + rubric), then `python3 scripts/grade.py post grades.json`.
+- If I paste `lp-results …` lines: `python3 scripts/lp_results.py "<lines>"` records them in the curriculum; then decide on a learning record.
+- If the server is unreachable, fall back to `lp-results` lines I paste.
 - To pair a device: `POST /progress/devices {"name":"phone"}` and give me `<PAGES_URL>/assets/sync.html#endpoint=$BOOKS_URL/progress&token=<token>`.
+
+## Tools: use these by default (they exist to save tokens; don't hand-roll what they do)
+| Job | Use |
+|---|---|
+| Start a learning session / what's next | the `/program` skill |
+| Write a lesson | Markdown + `python3 scripts/render_lesson.py topics/<t>/lessons/NNNN-x.md --course <ID>` (never hand-write lesson HTML) |
+| Grade free responses | `python3 scripts/grade.py`, then `grade.py post grades.json` |
+| Record pasted results | `python3 scripts/lp_results.py "<lp-results lines>"` |
+| Look things up in my books | `python3 scripts/books.py find / search --book <id> / grep <id> "<phrase>" / read <id> <line> <n>` |
+| Quick review in chat | the `/quiz-me` skill (`scripts/quiz.py`) |
+| A game I played | the `/game-review` skill |
+| I added books | the `/new-books` skill (`scripts/new_books.py`; server steps in `library/ADDING-BOOKS.md`) |
+| Before committing | `bash scripts/check_all.sh --quick` (drop `--quick` after widget changes) |
+| Widget markup | `assets/README.md` (don't read the JS source) |
 
 ## Shared lesson library (overrides the skill's per-topic `./assets/` guidance)
 - All lessons and reference pages use the shared files in `assets/` at the repo root: `lp.css`, `lp.js`, and `assets/plugins/*` for
@@ -83,7 +98,7 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - **Write new lessons in Markdown** and render them: `python3 scripts/render_lesson.py topics/<t>/lessons/NNNN-x.md --course <ID>` (syntax: assets/README.md "Writing lessons in Markdown"). It also updates index.html and curriculum.json.
 - Give every quiz a short `data-id`. Before committing run `bash scripts/check_all.sh` (all suites, one line each). Token-saving tools (grading packets, book lookups, results recording): the table in `.claude/skills/program/SKILL.md`.
 - Daily review (`assets/review.html`) re-asks due questions from their lessons. Keep quiz `data-id`s stable; put a needed diagram right before its quiz (or use `data-context`).
-- If I paste an `lp-results …` line, it's my results from a lesson: use it for learning records and to choose what's next.
+- If I paste an `lp-results …` line, it's my results from a lesson: record it with `scripts/lp_results.py`, then use it for learning records and to choose what's next.
 
 ## My library (check before searching the web)
 - Read `library/README.md` before using anything in `library/` or the book server, and follow it exactly. It says

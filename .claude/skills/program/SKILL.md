@@ -65,6 +65,7 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
 | Record pasted results | `python3 scripts/lp_results.py "<lp-results lines>"` (marks lessons completed in curriculum.json) |
 | Write a lesson | Markdown + `python3 scripts/render_lesson.py topics/<t>/lessons/NNNN-x.md --course <ID>` (updates index + curriculum) |
 | Look something up in a book | `python3 scripts/books.py search "…" --book <id>`, `grep <id> "Definition 8.3.5"`, `read <id> <line> 60` |
+| Quick review in chat (no new lesson) | the `/quiz-me` skill |
 | Check before committing | `bash scripts/check_all.sh --quick` (add the browser test by dropping `--quick` when widgets changed) |
 
 ## Rules
