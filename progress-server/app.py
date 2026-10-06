@@ -11,6 +11,7 @@ Auth: 'Authorization: Bearer <token>'. Device tokens (made by the teacher) may o
 Every route is served both at / and under /progress, so it works whether or not the reverse proxy strips the prefix.
 
 Teacher:  GET /status                      plain text, ~15 lines: per topic activity, due reviews, ungraded work, recent notes
+          GET /pages[?topic=chess]          lesson pages with answered questions (device token)
           GET /summary?topic=chess         plain text: per page right-first-try, missed items, ratings, notes, grades
           GET /ungraded                    JSON: free-response answers waiting for a grade
           POST /grades                     {"grades":[{"event":"<eid>","score":0..1,"feedback":"..."}]}
@@ -152,6 +153,17 @@ def due(limit: int = Query(20, ge=1, le=200), topic: str = "", who: str = Depend
     with db() as c:
         rows = c.execute(q + " ORDER BY due LIMIT ?", args + [limit]).fetchall()
     return [dict(x) for x in rows]
+
+
+@router.get("/pages")
+def pages(topic: str = "", who: str = Depends(caller)):
+    """Lesson pages with at least one answered question (any device), for the Today page's "done" check."""
+    q, args = "SELECT DISTINCT page FROM events WHERE type='attempt' AND page IS NOT NULL", []
+    if topic:
+        q += " AND page LIKE ?"
+        args.append(topic + "/%")
+    with db() as c:
+        return {"pages": sorted(x[0] for x in c.execute(q, args))}
 
 
 @router.get("/feedback")

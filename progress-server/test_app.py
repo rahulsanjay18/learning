@@ -93,6 +93,12 @@ def test_guessed_counts_as_not_known():
     assert "stats/0009-guess: 1/2 right first try" in s and "guessed: q2" in s, s
 
 
+def test_pages_lists_answered_lessons():
+    got = c.get("/pages", params={"topic": "chess"}, headers=T).json()["pages"]
+    assert "chess/0003-forks" in got and all(p.startswith("chess/") for p in got)
+    assert c.get("/pages", params={"topic": "nope"}, headers=T).json() == {"pages": []}
+    assert c.get("/pages").status_code == 401
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

@@ -28,6 +28,14 @@ ok(games && games.items.length === 2, "games offers G101 and G150");
 for (const p of [mon, thu, T.planFor(cfg, cur, new Date("2026-10-10T16:00:00Z"))])
   for (const b of p.blocks) for (const it of b.items || []) if (it.lesson)
     try { readFileSync(new URL(it.lesson.href.replace(/^\.\.\//, ""), root)); } catch { ok(false, "missing " + it.lesson.href); }
+// a lesson answered on the server (or in this browser) counts as done: the link moves on
+const tue = T.planFor(cfg, cur, new Date("2026-10-06T16:00:00Z"));
+const ih = it => it.course.startsWith("IH100");
+const before = tue.blocks.flatMap(b => b.items || []).find(ih);
+const after = T.planFor(cfg, cur, new Date("2026-10-06T16:00:00Z"), ["indian-history/0003-the-indus-cities"])
+  .blocks.flatMap(b => b.items || []).find(ih);
+ok(before && before.lesson && before.lesson.href.endsWith("0003-the-indus-cities.html"), "IH 0003 is today's lesson");
+ok(after && !after.lesson, "answered IH 0003 -> no unfinished IH lesson left");
 ok(T.pretty("0004-power") === "0004 power", "pretty");
 console.log(fails ? `today: ${fails} failed` : "today: all checks passed");
 process.exit(fails ? 1 : 0);

@@ -18,11 +18,12 @@
   }
 
   // One block's suggestion for a major: the newest lesson the learner hasn't finished, else "next lesson not written yet".
-  function blockFor(major, cur) {
+  // answered: lesson pages ("topic/stem") with at least one answered question, from this browser and the progress server.
+  function blockFor(major, cur, answered) {
     if (!cur) return { major: major.name, setup: major.setup || "Not set up yet." };
     var items = cur.courses.filter(function (c) { return c.status === "active"; }).map(function (c) {
       var topic = c.topic || major.slug, lessons = c.lessons || [], done = c.completed || [];
-      var todo = lessons.filter(function (s) { return done.indexOf(s) < 0; });
+      var todo = lessons.filter(function (s) { return done.indexOf(s) < 0 && (answered || []).indexOf(topic + "/" + s) < 0; });
       var stem = todo.length ? todo[0] : null;
       return {
         course: c.id + " " + c.title,
@@ -33,7 +34,7 @@
     return { major: major.name, slug: major.slug, items: items };
   }
 
-  function planFor(cfg, curricula, now) {
+  function planFor(cfg, curricula, now, answered) {
     var d = localDay(now, cfg.timezone || "UTC");
     var bySlug = {};
     cfg.majors.forEach(function (m) { bySlug[m.slug] = m; });
@@ -46,7 +47,7 @@
     });
     var blocks = slugs.map(function (s) {
       var parts = s.split("|"), m = bySlug[parts[0]];
-      var b = blockFor(m, curricula[parts[0]]);
+      var b = blockFor(m, curricula[parts[0]], answered);
       if (parts[1]) b.covering = bySlug[parts[1]].name;
       return b;
     });
@@ -118,12 +119,24 @@
     }
   }
 
+  // Pages answered in this browser (local review schedule) plus, when sync is set up, on any device (server /pages).
+  function answeredPages() {
+    var pages = {};
+    try { Object.keys(LP.schedule()).forEach(function (item) { pages[item.split("#")[0]] = 1; }); } catch (e) {}
+    var ep = store("lp.endpoint"), tok = store("lp.token");
+    var server = (ep && tok) ? fetch(ep + "/pages", { headers: { Authorization: "Bearer " + tok } })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { (j && j.pages || []).forEach(function (p) { pages[p] = 1; }); })
+      .catch(function () {}) : Promise.resolve();
+    return server.then(function () { return Object.keys(pages); });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     getJSON("../programs.json").then(function (cfg) {
       var curricula = {};
       return Promise.all(cfg.majors.filter(function (m) { return m.curriculum; }).map(function (m) {
         return getJSON("../" + m.curriculum).then(function (c) { curricula[m.slug] = c; }).catch(function () {});
-      })).then(function () { render(planFor(cfg, curricula, new Date())); });
+      })).then(answeredPages).then(function (answered) { render(planFor(cfg, curricula, new Date(), answered)); });
     }).catch(function (e) {
       document.getElementById("today-status").textContent = "Couldn't load the plan (" + e.message + ").";
     });
