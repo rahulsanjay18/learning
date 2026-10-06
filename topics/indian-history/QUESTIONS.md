@@ -75,3 +75,10 @@ thinking of is the rook-like elephant of *chaturaji*, a four-player dice variant
    proposed moves; Biruni c. 1030).
 5. Wikipedia, [Bishop (chess)](https://en.wikipedia.org/wiki/Bishop_(chess)) ("the alfil, meaning 'elephant', which could leap two
    squares along any diagonal").
+
+## 2026-10-06 · Lesson 0002 "Which periodisation would you use?" (graded 0.6)
+**Your choice (political structure) and your reason ("Hindu" is too nebulous a term for ancient and medieval times) are both sound.**
+- **Missing: one specific example.** E.g. "the Mughal state after 1526 was a new kind of centralised state, which a religious label
+  hides", or "Hindu traditions persisted under Islamic rule, so a 'Hindu period' that ends in 1206 misleads" (K&R, Introduction).
+- **Your "length of rule" point** is about how much weight to give each period, not where to draw the lines. Worth keeping, but it's a
+  separate argument. Lesson 0003's writing box asks explicitly for one specific piece of evidence.
