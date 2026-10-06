@@ -6,6 +6,17 @@ Every class serves that: you study existing games *as a future designer*.
 *Drafted 2026-10-05 from the learner's outline: intuition for perfect-information games → probabilistic / hidden-information games →
 general theory. **Confirmed: Games is the "fun" major and replaces chess; chess is the first class** (`topics/chess/` holds it). Half weight: 2 blocks a week.*
 
+
+## Levels and requirement groups (revised 2026-10-06; structure: `notes/major-design.md`, adapted from NYU Gallatin)
+- **Level I (≈ BA):** stages 1–4 and the theory courses G501–G503 · breadth: G190 history of board games, G150 strategy ·
+  practice: G195 play log · electives G350 wargames, G360 diplomacy · G398 colloquium.
+- **Level II (≈ graduate):** G502 combinatorial game theory, G504 game-playing AI, G601–G603 design and balance, G700 the 3D game
+  capstone, G598 colloquium.
+- **Books to ask for:** Parlett, *The Oxford History of Board Games* (G190); a game-design classic (see Gaps).
+The full map with prerequisites is `curriculum.json` (each course has a `level` and a `group`: core, breadth, elective,
+practice, capstone, colloquium). Each level ends with a **colloquium**: a 20–25 work List of Works, a 1,500–2,500 word
+rationale, and a 60-minute conversation, graded on the rubric in `notes/major-design.md`.
+
 ## TL;DR
 - **One big new game at a time**, with chess as the ongoing lab. Games are grouped by *family*, ordered by distance from what you
   already know: chess → its cousins (xiangqi, shogi) → Go (a different family) → chance (backgammon) → hidden information (poker).

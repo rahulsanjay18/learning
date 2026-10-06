@@ -7,7 +7,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STATUSES = {"done", "active", "next", "later"}
 COURSE_KEYS = {"id", "title", "status", "requires", "topic", "est_lessons", "lessons", "completed", "plan",
-               "pretest", "source", "note"}
+               "pretest", "source", "note", "level", "group"}
+GROUPS = {"core", "breadth", "elective", "practice", "independent", "capstone", "colloquium"}
 errors, warnings = [], []
 
 
@@ -45,6 +46,10 @@ for m in cfg["majors"]:
         extra = set(c) - COURSE_KEYS
         if extra:
             err(f"{where}: unknown keys {sorted(extra)} (add them to COURSE_KEYS and the skill's Files list)")
+        if c.get("group") is not None and c["group"] not in GROUPS:
+            err(f"{where}: bad group {c['group']!r}")
+        if c.get("level") is not None and c["level"] not in ("I", "II", "III"):
+            err(f"{where}: bad level {c['level']!r}")
         if c["status"] not in STATUSES:
             err(f"{where}: bad status {c['status']!r}")
         for r in c.get("requires", []):

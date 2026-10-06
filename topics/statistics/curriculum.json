@@ -16,7 +16,9 @@
       ],
       "completed": [
         "0001-placement-pretest"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S150",
@@ -38,7 +40,22 @@
       "completed": [
         "0002-what-a-p-value-is",
         "0003-effect-size-and-confidence-intervals"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "S110",
+      "title": "Probability review (pretest; teach only gaps)",
+      "group": "core",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S100"
+      ],
+      "source": "Blitzstein & Hwang, Introduction to Probability (free PDF, check: https://projects.iq.harvard.edu/stat110/home); Bertsekas & Tsitsiklis (in collection, B)",
+      "est_lessons": 3,
+      "pretest": true
     },
     {
       "id": "S201",
@@ -46,10 +63,13 @@
       "source": "C&B Ch. 1, pp. 1-37",
       "status": "later",
       "requires": [
-        "S150"
+        "S150",
+        "S110"
       ],
       "est_lessons": 4,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S202",
@@ -60,7 +80,9 @@
         "S201"
       ],
       "est_lessons": 4,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S203",
@@ -71,7 +93,9 @@
         "S202"
       ],
       "est_lessons": 6,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S204",
@@ -82,7 +106,9 @@
         "S203"
       ],
       "est_lessons": 7,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S205",
@@ -93,7 +119,9 @@
         "S204"
       ],
       "est_lessons": 7,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S301",
@@ -104,7 +132,9 @@
         "S205"
       ],
       "est_lessons": 5,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S302",
@@ -115,7 +145,9 @@
         "S301"
       ],
       "est_lessons": 7,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S303",
@@ -126,7 +158,9 @@
         "S302"
       ],
       "est_lessons": 5,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S304",
@@ -137,7 +171,9 @@
         "S303"
       ],
       "est_lessons": 5,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S401",
@@ -148,7 +184,9 @@
         "S304"
       ],
       "est_lessons": 6,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S402",
@@ -159,7 +197,9 @@
         "S304"
       ],
       "est_lessons": 6,
-      "pretest": true
+      "pretest": true,
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "S403",
@@ -170,34 +210,374 @@
         "S402"
       ],
       "est_lessons": 4,
+      "pretest": true,
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "S310",
+      "title": "Applied regression and GLMs",
+      "group": "core",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S402"
+      ],
+      "source": "ISL ch. 3-4 (free, check: https://www.statlearning.com/); Agresti, Foundations of Linear and Generalized Linear Models (to buy)",
+      "est_lessons": 6
+    },
+    {
+      "id": "S320",
+      "title": "Design of experiments and online A/B testing",
+      "group": "core",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S303",
+        "S304"
+      ],
+      "source": "Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments (to buy); Montgomery, Design and Analysis of Experiments (to buy)",
+      "est_lessons": 8
+    },
+    {
+      "id": "S330",
+      "title": "Statistical computing and simulation",
+      "group": "core",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S205"
+      ],
+      "source": "Efron & Hastie, Computer Age Statistical Inference (free, check: https://hastie.su.domains/CASI/); Python",
+      "est_lessons": 6
+    },
+    {
+      "id": "S340",
+      "title": "Bayesian statistics I",
+      "group": "core",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S302"
+      ],
+      "source": "Gelman et al., Bayesian Data Analysis 3rd ed., ch. 1-5 (free PDF, check: http://www.stat.columbia.edu/~gelman/book/)",
+      "est_lessons": 6
+    },
+    {
+      "id": "S190",
+      "title": "History and philosophy of statistics (breadth)",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S150"
+      ],
+      "source": "Hand, Statistics VSI (in collection, A); Jaynes, Probability Theory (in collection, B); Salsburg, The Lady Tasting Tea (to buy)",
+      "est_lessons": 4
+    },
+    {
+      "id": "S195",
+      "title": "Measurement, data and ethics (breadth)",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S150"
+      ],
+      "source": "Hand, Measurement VSI (in collection, A)",
+      "est_lessons": 3
+    },
+    {
+      "id": "S360",
+      "title": "Elective: time series and forecasting",
+      "group": "elective",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S310"
+      ],
+      "source": "Hyndman & Athanasopoulos, Forecasting: Principles and Practice 3rd ed. (free, check: https://otexts.com/fpp3/)",
+      "est_lessons": 6
+    },
+    {
+      "id": "S370",
+      "title": "Elective: survey sampling",
+      "group": "elective",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S304"
+      ],
+      "source": "Lohr, Sampling: Design and Analysis (to buy)",
+      "est_lessons": 5
+    },
+    {
+      "id": "S380",
+      "title": "Elective: statistical learning (bridge to ML)",
+      "group": "elective",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S310"
+      ],
+      "source": "ISL (free, check: https://www.statlearning.com/)",
+      "est_lessons": 8
+    },
+    {
+      "id": "S390",
+      "title": "Practicum: three real analyses end to end",
+      "group": "practice",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S310",
+        "S320"
+      ],
+      "note": "an A/B test from raw logs, a regression on public data, a Bayesian model; each a short report",
+      "est_lessons": 3
+    },
+    {
+      "id": "S398",
+      "title": "Level I colloquium (List of Works + rationale + oral)",
+      "group": "colloquium",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S390"
+      ],
+      "note": "notes/major-design.md: 20-25 works, 1,500-2,500 word rationale, 60-min conversation"
+    },
+    {
+      "id": "S399",
+      "title": "Level I capstone report",
+      "group": "capstone",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "S390"
+      ],
+      "note": "a ~20-page analysis of a question the learner chooses"
+    },
+    {
+      "id": "S500",
+      "title": "Real analysis and measure refresher (pretest first)",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S399"
+      ],
+      "source": "Abbott, Understanding Analysis (to buy); Fremlin, Measure Theory vol. 1 (in collection, B)",
+      "est_lessons": 4,
       "pretest": true
     },
     {
       "id": "S501",
-      "title": "Elective: causal inference",
+      "title": "Measure-theoretic probability",
       "status": "later",
       "requires": [
-        "S403"
+        "S500"
       ],
-      "note": "source to choose (RESOURCES.md Gaps)"
+      "group": "core",
+      "level": "II",
+      "source": "Durrett, Probability: Theory and Examples ch. 1-3 (free PDF, check: https://services.math.duke.edu/~rtd/PTE/pte.html)",
+      "est_lessons": 10
     },
     {
       "id": "S502",
-      "title": "Elective: Bayesian data analysis",
+      "title": "Martingales, Markov chains, Brownian motion",
       "status": "later",
       "requires": [
-        "S403"
+        "S501"
       ],
-      "note": "source to choose"
+      "group": "core",
+      "level": "II",
+      "source": "Durrett PTE ch. 4-8",
+      "est_lessons": 10
     },
     {
-      "id": "S503",
-      "title": "Elective: statistical learning (ISL), bridge to ML",
+      "id": "S511",
+      "title": "Theory of point estimation",
+      "group": "core",
+      "level": "II",
       "status": "later",
       "requires": [
-        "S403"
+        "S501"
       ],
-      "note": "source to choose"
+      "source": "Lehmann & Casella, Theory of Point Estimation 2nd ed. (to buy); Keener, Theoretical Statistics (to buy)",
+      "est_lessons": 10
+    },
+    {
+      "id": "S512",
+      "title": "Theory of hypothesis testing",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S511"
+      ],
+      "source": "Lehmann & Romano, Testing Statistical Hypotheses (to buy)",
+      "est_lessons": 10
+    },
+    {
+      "id": "S513",
+      "title": "Asymptotic statistics",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S511"
+      ],
+      "source": "van der Vaart, Asymptotic Statistics (to buy)",
+      "est_lessons": 10
+    },
+    {
+      "id": "S520",
+      "title": "Linear and generalized linear models (theory)",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S310",
+        "S511"
+      ],
+      "source": "Agresti, Foundations of Linear and Generalized Linear Models (to buy)",
+      "est_lessons": 8
+    },
+    {
+      "id": "S530",
+      "title": "Bayesian data analysis",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S340",
+        "S501"
+      ],
+      "source": "BDA3, full (free PDF, check: http://www.stat.columbia.edu/~gelman/book/)",
+      "est_lessons": 10
+    },
+    {
+      "id": "S540",
+      "title": "Causal inference",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S520"
+      ],
+      "source": "Hernan & Robins, Causal Inference: What If (free, check: https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/); Imbens & Rubin (to buy)",
+      "est_lessons": 10
+    },
+    {
+      "id": "S550",
+      "title": "Statistical learning theory and high-dimensional statistics",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S513",
+        "S380"
+      ],
+      "source": "ESL (free, check: https://hastie.su.domains/ElemStatLearn/); Vershynin, High-Dimensional Probability (in collection, B); Wainwright, High-Dimensional Statistics (to buy)",
+      "est_lessons": 10
+    },
+    {
+      "id": "S560",
+      "title": "Elective: nonparametric statistics",
+      "group": "elective",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S513"
+      ],
+      "source": "Wasserman, All of Nonparametric Statistics (to buy); Tsybakov (to buy)",
+      "est_lessons": 6
+    },
+    {
+      "id": "S570",
+      "title": "Elective: computational statistics (MCMC, EM, bootstrap theory)",
+      "group": "elective",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S530"
+      ],
+      "source": "CASI (free); Robert & Casella, Monte Carlo Statistical Methods (to buy)",
+      "est_lessons": 6
+    },
+    {
+      "id": "S580",
+      "title": "Elective: sequential decisions and bandits (adaptive experiments)",
+      "group": "elective",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S512"
+      ],
+      "source": "Lattimore & Szepesvari, Bandit Algorithms (free, check: https://tor-lattimore.com/downloads/book/book.pdf)",
+      "est_lessons": 6
+    },
+    {
+      "id": "S590",
+      "title": "Foundations of inference seminar (breadth)",
+      "group": "breadth",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S512"
+      ],
+      "source": "Jaynes (in collection, B); Mayo, Statistical Inference as Severe Testing (to buy); Savage, Foundations of Statistics (to buy)",
+      "est_lessons": 4
+    },
+    {
+      "id": "S595",
+      "title": "Written qualifying exam (probability + theory)",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S502",
+        "S512",
+        "S513"
+      ],
+      "note": "timed, closed book, modelled on PhD first-year quals; graded with rubrics"
+    },
+    {
+      "id": "S596",
+      "title": "Research practicum: reproduce and extend a published result",
+      "group": "practice",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S595"
+      ],
+      "est_lessons": 4
+    },
+    {
+      "id": "S598",
+      "title": "Level II colloquium",
+      "group": "colloquium",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S596"
+      ]
+    },
+    {
+      "id": "S599",
+      "title": "Level II capstone paper (~40 pages)",
+      "group": "capstone",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "S596"
+      ]
     }
-  ]
+  ],
+  "levels": {
+    "I": "≈ BS in statistics: all of Casella & Berger with proofs, plus applied regression, experiments, computing, Bayesian I; colloquium + capstone",
+    "II": "≈ MS + PhD coursework up to qualifying exams: measure-theoretic probability, Lehmann-level theory, asymptotics, GLM theory, Bayesian, causal, high-dimensional; quals, research practicum, colloquium, capstone paper"
+  },
+  "design": "notes/major-design.md"
 }

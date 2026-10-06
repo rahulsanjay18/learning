@@ -16,7 +16,9 @@
       ],
       "completed": [
         "0001-placement-pretest"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "IH100",
@@ -35,7 +37,9 @@
       ],
       "completed": [
         "0002-the-land-and-the-long-view"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "IH201",
@@ -44,7 +48,9 @@
       "status": "later",
       "requires": [
         "IH100"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "IH202",
@@ -53,7 +59,9 @@
       "status": "later",
       "requires": [
         "IH201"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "IH203",
@@ -62,7 +70,9 @@
       "status": "later",
       "requires": [
         "IH202"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "IH204",
@@ -71,7 +81,9 @@
       "status": "later",
       "requires": [
         "IH203"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "IH205",
@@ -80,7 +92,9 @@
       "status": "later",
       "requires": [
         "IH204"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
       "id": "IH206",
@@ -89,24 +103,187 @@
       "status": "later",
       "requires": [
         "IH205"
-      ]
+      ],
+      "group": "core",
+      "level": "I"
     },
     {
-      "id": "IH300",
-      "title": "Seminars (themes across eras)",
+      "id": "IH150",
+      "title": "How historians work: sources, evidence, historiography",
+      "group": "core",
+      "level": "I",
       "status": "later",
       "requires": [
         "IH100"
       ],
-      "note": "religion and philosophy, war and the state, economy, art, literature"
+      "est_lessons": 4,
+      "source": "Digital Inquiry Group, Reading Like a Historian (free online); K&R Introduction"
+    },
+    {
+      "id": "IH310",
+      "title": "Breadth: religion and philosophy across eras",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "source": "Buddhism, Hinduism, Indian Philosophy VSIs (in collection); Dasgupta, A History of Indian Philosophy (in collection)"
+    },
+    {
+      "id": "IH320",
+      "title": "Breadth: war and the state (links Games G150)",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ]
+    },
+    {
+      "id": "IH330",
+      "title": "Breadth: economic history (links Economics)",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "note": "source to choose; ask for a book"
+    },
+    {
+      "id": "IH340",
+      "title": "Breadth: art, architecture and literature",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "source": "New Cambridge History: Mughal and Rajput Painting (in collection); Mahabharata (Debroy) (in collection)"
+    },
+    {
+      "id": "IH390",
+      "title": "Practice: sites, museums and a family oral history",
+      "group": "practice",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH150"
+      ],
+      "note": "heritage aim in MISSION.md: interview a relative about Partition-era or family history; visit a museum collection"
+    },
+    {
+      "id": "IH398",
+      "title": "Level I colloquium",
+      "group": "colloquium",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH206",
+        "IH150"
+      ]
     },
     {
       "id": "IH400",
-      "title": "Capstone research essay",
+      "title": "Level I capstone: research essay",
+      "group": "capstone",
+      "level": "I",
       "status": "later",
       "requires": [
         "IH206"
+      ],
+      "note": "~20 pages on a question the learner chooses, several sources"
+    },
+    {
+      "id": "IH510",
+      "title": "Historiography seminar: Orientalist, nationalist, Marxist, Cambridge and Subaltern schools",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH400"
+      ],
+      "note": "books to choose and request"
+    },
+    {
+      "id": "IH520",
+      "title": "Primary sources in translation: Ashokan edicts, Arthashastra, Baburnama, Ain-i-Akbari, colonial records",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH400"
+      ]
+    },
+    {
+      "id": "IH530",
+      "title": "Regional histories (South India, Bengal, Punjab, the Deccan)",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH400"
+      ],
+      "source": "New Cambridge History volumes (several in collection)"
+    },
+    {
+      "id": "IH540",
+      "title": "Partition and memory",
+      "group": "elective",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH510"
+      ],
+      "source": "Manto (in collection); oral-history archives"
+    },
+    {
+      "id": "IH550",
+      "title": "Elective: a source language (Sanskrit or Persian basics)",
+      "group": "elective",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH520"
+      ],
+      "note": "optional; only if the learner wants it"
+    },
+    {
+      "id": "IH596",
+      "title": "Research practicum: an original question from primary sources",
+      "group": "practice",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH510",
+        "IH520"
+      ]
+    },
+    {
+      "id": "IH598",
+      "title": "Level II colloquium",
+      "group": "colloquium",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH596"
+      ]
+    },
+    {
+      "id": "IH599",
+      "title": "Level II capstone thesis (~40 pages)",
+      "group": "capstone",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH596"
       ]
     }
-  ]
+  ],
+  "design": "notes/major-design.md",
+  "levels": {
+    "I": "≈ BA: the arc, the eras (K&R), how historians work, thematic breadth, practice, colloquium, research essay",
+    "II": "≈ graduate: historiography, primary sources, regional histories, research practicum, colloquium, thesis"
+  }
 }

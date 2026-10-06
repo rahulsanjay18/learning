@@ -46,6 +46,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
 
 ## Program layer (/program)
+- This is a **general learning platform**: the majors in `programs.json` come first, but I'll ask for other subjects too. Every major
+  (new or revised) follows `notes/major-design.md` (adapted from NYU Gallatin): levels I (≈ undergraduate) and II (≈ graduate, as far
+  toward a PhD as self-study goes), requirement groups, a colloquium per level, and a "books needed" list. Ask me for books.
 - `/program` runs the majors: it prints today's plan and where each major stands (`programs.json` + `topics/<major>/curriculum.json`
   + the progress server), then teaches with /teach conventions. Start a learning session with it.
 - After every lesson, update the major's `curriculum.json` (`lessons`, `plan`, `completed`) and run `python3 scripts/test_programs.py`.

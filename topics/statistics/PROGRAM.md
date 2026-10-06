@@ -14,6 +14,45 @@ subject: 4 blocks of 25 minutes a week (`notes/study-plan.md`).*
 - **A pretest before every chapter.** It scores each section on three separate skills (**concept, calculation, proof**), and each
   section's lesson teaches only what's missing, or is skipped entirely if you know all three (section 2 below).
 
+
+## 0. Two levels (revised 2026-10-06; structure: `notes/major-design.md`, adapted from NYU Gallatin)
+The learner asked for **Stat I** (≈ an undergraduate major) and **Stat II** (≈ graduate coursework, as close to a PhD as
+self-study gets). The full course map, with prerequisites, is `curriculum.json`; sections 1–7 below describe the Casella &
+Berger core of Level I, unchanged.
+
+**Plan (the "IAPC").** Starting point: probability mechanics solid, inference interpretation was the gap (records 0001–0002);
+math degree, AI career. Aim (MISSION.md): read, run and defend real analyses (A/B tests first), then the theory behind them, then
+graduate theory. Level I finishes Casella & Berger with proofs and adds the applied courses a BS needs; Level II is
+qualifying-exam theory plus the modern topics an ML career leans on (causal, Bayesian, high-dimensional, bandits).
+
+| Group | Level I (≈ BS) | Level II (≈ MS + PhD coursework) |
+|---|---|---|
+| Core | S150 practitioners · S110 probability review · S201–S205, S301–S304, S401–S403 (all of C&B) · S310 applied regression/GLMs · S320 experiments and A/B testing · S330 computing and simulation · S340 Bayesian I | S500 analysis refresher · S501–S502 measure-theoretic probability · S511 estimation · S512 testing · S513 asymptotics · S520 GLM theory · S530 Bayesian · S540 causal · S550 learning theory and high-dimensional · S595 written quals |
+| Breadth | S190 history and philosophy of statistics · S195 measurement and ethics | S590 foundations of inference seminar |
+| Electives | S360 time series · S370 sampling · S380 statistical learning | S560 nonparametrics · S570 computational · S580 bandits |
+| Practice | S390 three real analyses end to end | S596 reproduce and extend a published result |
+| Capstone | S399 ~20-page analysis report | S599 ~40-page paper |
+| Colloquium | S398 | S598 |
+
+Rough size: Level I ≈ 120 lessons (pretests will cut it), Level II ≈ 150. At 4 blocks a week that is years, which is expected.
+
+**List of Works (grows as courses use them; prune to 20–25 before each colloquium).** Level I so far: Casella & Berger;
+Bruce, Bruce & Gedeck; Hand, *Statistics* VSI; Kohavi et al. (when acquired). Candidates spanning periods and disciplines:
+Bayes (1763) and Laplace on inverse probability; Fisher, *Statistical Methods for Research Workers* (1925); Neyman & Pearson
+(1933); Jaynes; Tukey, "The Future of Data Analysis" (1962); Breiman, "Statistical Modeling: The Two Cultures" (2001).
+
+**Books needed** (not in the library, or only as an unusable copy). Free ones first: please download them into the library.
+- Free from the authors: Blitzstein & Hwang, *Introduction to Probability*; Durrett, *Probability: Theory and Examples*;
+  Gelman et al., *Bayesian Data Analysis* 3rd ed.; Hernán & Robins, *Causal Inference: What If*; Hastie, Tibshirani &
+  Friedman, *Elements of Statistical Learning* (your copy is garbled); James et al., *ISL* (garbled copy); Efron & Hastie,
+  *Computer Age Statistical Inference*; Hyndman & Athanasopoulos, *FPP3*; Lattimore & Szepesvári, *Bandit Algorithms*.
+- To buy, by when they're needed: Kohavi, Tang & Xu, *Trustworthy Online Controlled Experiments* (S320, soonest);
+  Agresti, *Foundations of Linear and Generalized Linear Models* (S310/S520); Salsburg, *The Lady Tasting Tea* (S190);
+  Abbott, *Understanding Analysis* (S500); Lehmann & Casella, *Theory of Point Estimation*; Lehmann & Romano, *Testing
+  Statistical Hypotheses*; van der Vaart, *Asymptotic Statistics*; Keener, *Theoretical Statistics*; Imbens & Rubin, *Causal
+  Inference*; Wainwright, *High-Dimensional Statistics*; Lohr, *Sampling*; Wasserman, *All of Nonparametric Statistics*;
+  Mayo, *Statistical Inference as Severe Testing*.
+
 ---
 
 ## 1. Courses

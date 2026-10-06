@@ -29,7 +29,9 @@ Arguments: `$ARGUMENTS` (empty = run today's plan).
 
 **`/program status`**: show the block above in plain words (what's done, what's the learner's next step) and stop.
 
-**`/program setup <major>`** or a major marked SETUP NEEDED: ask its setup questions (the `setup` text in programs.json) with
+**`/program setup <major>`**, a new subject the learner asks for, or a major marked SETUP NEEDED: design it with
+`notes/major-design.md` (Gallatin-style: plan, core/breadth/elective/practice/capstone/colloquium groups, levels I and II, a
+"books needed" list for the learner). Ask its setup questions (the `setup` text in programs.json) with
 AskUserQuestion where the answers are choices. Then write `topics/<slug>/MISSION.md`, `PROGRAM.md`, `curriculum.json` (placement first),
 set `"curriculum"` in programs.json, and run the test (below). Until it's set up, give its blocks to the other full-weight major.
 
