@@ -12,6 +12,11 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 - Daily review deck: `assets/review.html`.
 - Progress server is **live** (deployed 2026-10-05; `/progress/health` → ok). Desktop + laptop share one device token (id 1, "desktop+laptop").
 
+## Platform ideas (not urgent; learner deploys on their server)
+- Small local model to offload easy work: `notes/slm-offload-plan.md` (semantic book search first, then first-pass grading with
+  escalation after a ≥90% agreement test). Waiting on: server hardware details.
+- AWS: target MLA-C02 (GA 2027-01-14). Waiting on: the old course's format, a target date.
+
 ## Open teaching work
 | Topic | Next | Notes |
 |---|---|---|
