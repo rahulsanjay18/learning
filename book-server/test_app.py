@@ -31,6 +31,10 @@ def test_grep():
     assert c.get("/grep/aaa", params={"q": "x"}, headers=H).status_code == 422
     assert c.get("/grep/aaa", params={"q": "power"}).status_code == 401
 
+def test_catalog():
+    assert c.get("/catalog", headers=H).json() == [["bbb", "B", "Physics book"], ["aaa", "A", "Stats book"]]
+    assert c.get("/catalog").status_code == 401
+
 if __name__ == "__main__":
     for n, f in list(globals().items()):
         if n.startswith("test_"): f(); print("ok  ", n)

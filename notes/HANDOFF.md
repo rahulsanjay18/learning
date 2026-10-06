@@ -21,6 +21,10 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 
 ## Open platform work
 - **Skills added 2026-10-06:** `/quiz-me` (`scripts/quiz.py`), `/game-review`, `/new-books` (`scripts/new_books.py`, `library/ADDING-BOOKS.md`); SessionStart hook installs test deps + stockfish + python-chess.
+- **New books reviewed 2026-10-06** (`notes/new-books-2026-10-06.md`; partial, because the server went down during the scan).
+  Use Schelling *Arms and Influence* (4bdcba34b3) in G150; McMahon *ML Engineering with Python* (7d3ec3450a) for AWS ML; British Empire
+  and Decolonization VSIs for IH204/205. WANTED.md reorganized by major. **Learner: restart/redeploy book-server** (502 since the scan);
+  new `GET /catalog` + `python3 scripts/books.py new` lists unmanifested books in one call. Rerun it then, and add the new books to MANIFEST.csv.
 - **Built 2026-10-06:** lesson renderer (Markdown → HTML), grading packets (`scripts/grade.py`), results recorder
   (`scripts/lp_results.py`), compact book client (`scripts/books.py`), `scripts/check_all.sh`; quiz types estimate / find-error /
   highlight; simulation plugin (CI coverage, CLT, multiple testing); majors redesigned on NYU Gallatin (`notes/major-design.md`),

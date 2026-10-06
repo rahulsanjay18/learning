@@ -7,8 +7,9 @@ argument-hint: "[optional: which books]"
 # /new-books
 
 The books live on the learner's server; this session sees only `library/MANIFEST.csv` (and the book server). The server-side
-steps are in `library/ADDING-BOOKS.md`. If the learner hasn't run them yet (no new rows in MANIFEST.csv after `git pull`),
-give them that file's steps and stop.
+steps are in `library/ADDING-BOOKS.md`. If MANIFEST.csv has no new rows after `git pull`, run `python3 scripts/books.py new`
+(one `/catalog` call): books can be indexed on the server before the manifest is committed. If that finds none either, give them
+ADDING-BOOKS.md's steps and stop. **Never enumerate the server by looping over `/books?q=`**: it took the server down on 2026-10-06.
 
 1. `git pull`, then `python3 scripts/new_books.py` (compares MANIFEST.csv with its previous version; `--since <ref>` for older).
    It lists new and regraded books and the requests each one appears to fill.
