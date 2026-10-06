@@ -24,3 +24,20 @@ You don't need `/teach` for your majors: `/program` uses the same teaching rules
 ## Levels
 Every major has Level I (≈ undergraduate) and Level II (≈ graduate). You're enrolled in Level I only; Level II is a separate
 choice later. Courses start with a pretest, so anything you already know (e.g. from the math degree) is credited without lessons.
+
+## /program vs /teach, in one line
+`/program` decides *what* to learn today across your majors and then teaches it using `/teach`'s rules; `/teach` teaches one
+topic and knows nothing about schedules or majors. For majors, only ever type `/program`. A `/teach` topic that grows can become a
+major with `/program setup <topic>`.
+
+## Skills that could be added (proposed 2026-10-06; not built yet)
+| Skill | What it would do | Why |
+|---|---|---|
+| `/game-review` | Paste a game (chess now; xiangqi/shogi/Go later) → engine analysis (`topics/chess/scripts/analyze_game.py`), written review, course plan updated | Done by hand twice already |
+| `/new-books` | After adding books: update `library/MANIFEST.csv`, grade them, say what to rerun on the server, tick off "books needed" lists | Packages `scripts/build_library.py` + `grade_library.py` |
+| `/quiz-me` | 5 minutes of due review questions in chat, results posted to the progress server | Phone-friendly, far cheaper than a lesson |
+| `/week` | Weekly digest from the progress server, what slipped, a small schedule adjustment | Keeps the 1-hour floor realistic |
+| SessionStart hook (not a skill) | Installs test dependencies at session start | Saves setup each session |
+
+A skill is just `.claude/skills/<name>/SKILL.md` (instructions, optionally scripts). Easiest way to make your own: describe it,
+Claude drafts it, you edit the wording.
