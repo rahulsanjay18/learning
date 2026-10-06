@@ -139,3 +139,25 @@ drowned" is still observational, so summer confounds it in exactly the same way 
   whether the ice-cream coefficient survives), or, the gold standard, randomize who gets ice cream.
 - **The sentence to reuse:** "The correlation is explained by a common cause, hot weather; holding temperature fixed, I'd expect the
   association to vanish." Not: "correlation does not imply causation" alone, which names the problem without diagnosing it.
+
+## 2026-10-06 · Lesson 0004 (power): reading-guide and proof replies
+Mastery (TEACHING-LOG rule 20): **all three objectives Got it** (compute power; how n, effect and α move it; false-negative
+rate = 1 − power). The one miss, `pow-80` (80% power needs the effect ≈ 2.8 SEs = 1.96 + 0.84), is a fact: it goes to review.
+
+- **read-powerfn: right on every point.** Θ0 → Type I error probability; Θ0ᶜ → 1 − Type II; ideal = 0 on Θ0 and 1 on Θ0ᶜ.
+  One addition from the book: that ideal is *not attainable* except in trivial cases (C&B p. 383), which is why the next two
+  examples are about trading the errors off.
+- **read-binom: right**, and you added the useful part: the trade-off is worth making only when one error costs more.
+- **read-n: right.** Type I ≤ .1 fixes c = 1.28 whatever n is; power ≥ .8 at θ ≥ θ0 + σ gives n = 4.49 → 5 (round up so power stays ≥ .8).
+- **proof-powerfn: the ideas are all right; the proof is a sketch.** "Dunno what more you wanted" is fair, so here is exactly what's missing:
+  - (a) The step that makes it a *Z*: under θ, X̄ ~ n(θ, σ²/n), so (X̄ − θ)/(σ/√n) ~ n(0, 1). Without that sentence, "subtract θ"
+    gives an inequality but no distribution.
+  - (b) Say *why* the probability rises: P(Z > t) = 1 − Φ(t) is strictly decreasing in t (the density is positive), and
+    t(θ) = c + (θ0 − θ)√n/σ is strictly decreasing in θ, so the composition increases.
+  - (c) State the limits, not just the direction: t → +∞ gives 1 − Φ(t) → 0; t → −∞ gives → 1.
+  - (d) Yours is right: t(θ0) = c, so β(θ0) = P(Z > c) = α.
+  - **Pattern:** a proof states each fact it uses (the distribution, the monotonicity), even when it feels obvious. That's the
+    habit S201 builds; not a gap for this lesson.
+- **Your note ("definitions can be confusing; I need to sit and reason through stuff").** Agreed, and it's a lesson-design issue,
+  not you: lesson 4 stacked several definitions. From lesson 5 on, each new idea starts from a question you reason through
+  step by step (revealed one step at a time), and only then gets its name. TEACHING-LOG entry 21.

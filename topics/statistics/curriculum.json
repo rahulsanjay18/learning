@@ -40,7 +40,8 @@
       ],
       "completed": [
         "0002-what-a-p-value-is",
-        "0003-effect-size-and-confidence-intervals"
+        "0003-effect-size-and-confidence-intervals",
+        "0004-power"
       ],
       "group": "core",
       "level": "I"

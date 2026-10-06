@@ -48,6 +48,8 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
       whole lesson only when the objective is a prerequisite for the next syllabus lessons, or it's still Not yet after one re-teach;
       log that in the syllabus's "Changes". **Facts (dates, names) go to spaced review and warm-ups, not extra lessons** (entry 10).
     - Plan the whole course up front in `SYLLABUS.md` (readings + objectives); sessions write the next lesson, they don't redesign. (Entry 20)
+21. **Reason first, name second.** Introduce each new definition by a question the learner works through in revealed steps
+    (`::: worked`), then name it and give the formal statement. At most ~2 new definitions per lesson; more → split. (Entry 21)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -97,3 +99,6 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     Mastery learning has research support with college students too (Kulik et al. 1990, 108 studies, ≈0.5 SD; self-paced versions
     lowered completion, so keep a fixed pace) and a college form in Nilson's specifications grading (pass/fail at B level). Fix: rule
     20, a `SYLLABUS.md` per major, objectives per lesson.
+21. **2026-10-06 · "A lot of these definitions can just be confusing and i think i need to sit and reason though stuff."**
+    Statistics lesson 4 stacked the power function, Type I/II error probabilities, size/level and the 2.8-SE rule in one lesson.
+    Results were good (all objectives Got it), but the learner felt rushed through definitions. Fix: rule 21.
