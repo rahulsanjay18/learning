@@ -27,15 +27,16 @@
       "requires": [
         "S100"
       ],
-      "est_lessons": 5,
+      "est_lessons": 6,
       "lessons": [
         "0002-what-a-p-value-is",
         "0003-effect-size-and-confidence-intervals",
         "0004-power"
       ],
       "plan": [
-        "0005 likelihood ratios: P(data given H1), power ~55% in the A/B example",
-        "0006 multiple testing"
+        "0005 likelihood ratios: P(data given H1), power ~55% in the A/B example (C&B §8.2.1; SYLLABUS.md)",
+        "0006 multiple testing (Bruce et al. Ch. 3)",
+        "0007 S150 check: an A/B test end to end (+ 5-min re-teach: randomization vs. confounding)"
       ],
       "completed": [
         "0002-what-a-p-value-is",

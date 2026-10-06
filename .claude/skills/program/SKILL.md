@@ -23,6 +23,8 @@ Arguments: `$ARGUMENTS` (empty = run today's plan).
   `topic` (lesson folder if not the major's own, e.g. Games → `chess`, `military-strategy`), `est_lessons`, `lessons` (file stems
   written), `completed` (stems the learner finished, recorded from pasted lp-results), `plan` (upcoming lessons, first = next),
   `pretest` (true = start the course with a pretest), `source`, `note`.
+- `topics/<major>/SYLLABUS.md`: lesson-level plan for the active (and next) course: reading + 2–3 objectives per lesson, and a
+  "Changes" log. `plan` in curriculum.json mirrors it. Write the next lesson *from* it; when a course starts, write its syllabus first.
 - `topics/<major>/PROGRAM.md`: the human-readable plan and its reasons. Change it when the plan changes, not for routine progress.
 
 ## What to do
@@ -52,10 +54,12 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
    (prefer `next`, then the order in the file); offer optional extras only when they'd clearly help or the learner asks, set it `active`, and fill its `plan` from PROGRAM.md. If it has `pretest: true`,
    its first lesson is the pretest (see the major's PROGRAM.md for the format); after the pretest, rewrite `plan` to teach
    only what's missing and note the decision in NOTES.md.
-4. **Keep the map true after every lesson:** append the new stem to `lessons`, drop the `plan` entry it fulfilled, add stems to
+4. **Grade by mastery (TEACHING-LOG rule 20):** each objective Got it / Not yet. Not yet → a 5-minute re-teach section in the
+   next lesson of that course; a new lesson only for a prerequisite or a repeat Not yet, logged in SYLLABUS.md "Changes".
+5. **Keep the map true after every lesson:** append the new stem to `lessons`, drop the `plan` entry it fulfilled, add stems to
    `completed` when the learner reports results without the progress server. Then run
    `python3 scripts/test_programs.py` and fix anything it reports.
-5. **Commit and push** as CLAUDE.md says (`teach(<slug>): …` or `program: …`), update `notes/HANDOFF.md`, and end with the
+6. **Commit and push** as CLAUDE.md says (`teach(<slug>): …` or `program: …`), update `notes/HANDOFF.md`, and end with the
    lesson links and the day's plan in one short list: review first, then block 1, then block 2.
 
 ## Tools (use these instead of reading files or hand-editing; they save most of the tokens)
