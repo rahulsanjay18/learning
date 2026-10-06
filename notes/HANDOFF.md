@@ -26,6 +26,6 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 - **Xiangqi + shogi boards built** (`assets/plugins/xiangqi.js`, `shogi.js`; perft-verified, `scripts/test_xiangqi_shogi.js`). Games widget queue is empty; next ideas: backgammon/dice sims (G401), poker range grid (G402).
 - **Flashcards + "How sure were you?" built** (`card` quiz, `.lp-deck`, confidence step; server resets guessed items). **Learner: redeploy progress-server** (`git pull`, then `docker compose up -d --build progress-server`) so guesses reset server-side too.
 - **Today page built** (`assets/today.html` + `today.js`, test `scripts/test_today.mjs`): plan from programs.json, ticks in localStorage.
-- Book server: `/search?book=<id>`, page numbers per chunk, per-book section maps, then hybrid (embedding) search. See
+- **Book server: `/search?book=<id>&compact=true` and `/grep/{id}?q=` written** (book-server/app.py, tests in book-server/test_app.py; client `scripts/books.py`). **Learner: redeploy book-server** (`git pull`, `docker compose up -d --build book-server`). Still to do: page numbers per chunk, per-book section maps, then hybrid (embedding) search. See
   `notes/program-layer-build-plan.md` (RAG update). Also a page-image endpoint for equations (`notes/math-books-strategy.md`).
 - Library: Casella & Berger's /toc is junk (logged in `library/QUALITY-NOTES.md`); its real contents page is in the text near line 600.
