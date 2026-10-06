@@ -64,6 +64,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - `TEACHING-LOG.md` at the repo root lists past teaching mistakes and the rules that prevent them, across all subjects. Read it
   before writing a lesson. When my questions or results reveal a flaw in an explanation or lesson, add an entry and a rule.
 - Each topic keeps a `QUESTIONS.md`: my questions with the answers given.
+- **Don't hand-track what a service or script already knows (2026-10-06).** Progress, completion, scores and review due dates come from
+  the progress server and `status.py`; never copy them into notes, HANDOFF or curriculum.json (`completed` only for pasted results
+  when sync is off). Keep HANDOFF to what no service knows: decisions, open questions, plans. Prefer automating over noting.
 - **Syllabus + mastery grading (2026-10-06):** each major has `topics/<major>/SYLLABUS.md` (readings and 2–3 objectives per lesson,
   planned ahead). Grade each objective Got it / Not yet and extend lessons only for a real gap, never for a thin answer: TEACHING-LOG rule 20.
   I'm relying on you to set that line.
