@@ -3,6 +3,40 @@
 Every lesson and reference page in every topic uses these files. **Read this file, not the JS source**, when writing a lesson.
 Live examples of every widget: `assets/gallery.html`.
 
+## Writing lessons in Markdown (preferred: fewer tokens, same HTML)
+Write `topics/<slug>/lessons/NNNN-name.md`, then `python3 scripts/render_lesson.py <that .md> [--course S150]`. It writes the
+`.html` next to it (shell, crumbs, plugin tags picked from what the page uses), appends the lesson to `index.html`, and with
+`--course` records it in the major's `curriculum.json`. Edit the `.md` and re-render; never hand-edit a generated `.html`.
+
+```
+---
+title: Power: how often a real effect gets caught
+subtitle: Two blocks … One win: …
+crumb: Statistics · Lesson 4          (optional; default "<Topic> · Lesson N")
+index: Power (reading: C&B §8.3.1)     (optional index.html text; default the title)
+main: data-skip=true                    (optional attributes on <main>: pretests, data-confidence=true)
+---
+## Headings, paragraphs, - lists, 1. lists, **bold**, *em*, `code`, [links](url), > quotes. Raw HTML lines pass through.
+Write math naturally: \( a < b \), $$ … $$ (the renderer escapes < > &).
+
+::: choice wu-size                      quiz: ::: <type> <data-id> key=value key="a b" …  (keys become data-*)
+Prompt text (Markdown).
+- [ ] wrong option
+- [x] right option                      choice: mark the answer with [x]
+--- hint
+Shown after a miss.
+--- explain
+Shown once right.
+:::
+```
+- `order`: list items in the correct order. `categorize`: `- item > Bucket`. `find-error`: steps as a list, `[x]` on the wrong one.
+  `free`: `--- rubric` section. `py`: `--- code` and `--- check`. Other types: attributes as usual (`::: number n1 answer=64`).
+- Diagrams and containers: `::: board fen=…`, `go`, `plot`, `timeline`, `map`, `game`, `xiangqi`, `shogi`, `python` (body = code),
+  `video`, `sim`, `worked` (steps split by `--- step`), `reading`, `callout`, any other word = a div with that class.
+  Nest with longer fences: `:::: deck` … `::: card c1` … `:::` … `::::`.
+- A `## Sources` heading followed by a list becomes the numbered `<ol class="sources">`.
+- Tested by `python3 scripts/test_render.py` (fixture: `scripts/fixtures/render-sample.md`, which shows every shorthand).
+
 ## Page skeleton (a lesson at `topics/<slug>/lessons/NNNN-name.html`)
 
 ```html
