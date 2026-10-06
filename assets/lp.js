@@ -231,13 +231,20 @@
     s = String(s).trim().replace(/\s+/g, " ");
     return caseSensitive ? s : s.toLowerCase();
   }
-  // True if `given` matches any accepted answer (text, or number within tolerance).
+  // A plain number ("0.375", "1,000", "2e3") or a simple fraction ("3/8", "-1/2"); NaN otherwise.
+  function num(t) {
+    var n = /^[-+]?[\d.,]+(e[-+]?\d+)?$/i, f = /^([-+]?[\d.]+)\s*\/\s*([\d.]+)$/.exec(t);
+    if (n.test(t)) return parseFloat(t.replace(/,/g, ""));
+    if (f && parseFloat(f[2]) !== 0) return parseFloat(f[1]) / parseFloat(f[2]);
+    return NaN;
+  }
+  // True if `given` matches any accepted answer (text, or number within tolerance; fractions count as numbers).
   function matches(given, accepted, opts) {
     opts = opts || {};
     var g = norm(given, opts.caseSensitive);
     return accepted.some(function (a) {
-      var gn = parseFloat(g.replace(/,/g, "")), an = parseFloat(String(a).replace(/,/g, ""));
-      var numeric = /^[-+]?[\d.,]+(e[-+]?\d+)?$/i.test(g) && /^[-+]?[\d.,]+(e[-+]?\d+)?$/i.test(String(a).trim());
+      var gn = num(g), an = num(String(a).trim());
+      var numeric = !isNaN(gn) && !isNaN(an);
       if (numeric && !isNaN(gn) && !isNaN(an)) return Math.abs(gn - an) <= (opts.tolerance || 0) + 1e-9;
       return g === norm(a, opts.caseSensitive);
     });

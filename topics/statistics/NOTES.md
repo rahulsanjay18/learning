@@ -38,3 +38,19 @@
 - 2026-10-05: **lesson 4 = power only** (all from the reading, §8.3.1), with the p-vs-effect revisit and a first proof task
   (`proof-powerfn`). The likelihood-ratio question moved to lesson 5; multiple testing is lesson 6. Reply to read-powerfn,
   read-binom, read-n, read-surprise4 and grade proof-powerfn when results come in.
+
+## 2026-10-06 · Chapter 1 pretest → plan (PROGRAM.md §2 table)
+Learner was tired ("Also i am tired"): read borderline results generously; the chapter check catches lucky skips.
+
+| § | Concept | Calc | Proof | Decision |
+|---|---|---|---|---|
+| 1.1 Sets | ✓ | ✓ | ✓ | **skip** (items go to review) |
+| 1.2 Axioms, rules, counting | ✗ (couldn't state the axioms) | ✓ | ✓ (Bonferroni) | **0006 short**: the three axioms and what follows from them |
+| 1.3 Conditional prob., independence | ✗ (pairwise vs mutual) | ✓ (Bayes) | ½ (assumed independence; no positivity) | **0007** |
+| 1.4 Random variables | ✗ | ✓ (3/8 rejected by a widget bug, now fixed) | ✗ | **0008** with 1.5 |
+| 1.5 Distribution functions | ✗ (F = P(X ≤ x), properties) | ✓ | ✗ | **0008** |
+| 1.6 Densities and mass functions | ✗ | ✗ | ½ (right intuition) | **0009 full** |
+
+Then 0010 Chapter 1 summary (always), 0011 chapter check. Pattern: calculations are solid (math degree); **formal definitions and
+proofs from definitions** are the gap, which is exactly what C&B Ch. 1 trains. Lessons: reason first, name second (rule 21), and
+proofs from C&B's own exercises (rule 22).

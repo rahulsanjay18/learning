@@ -67,14 +67,17 @@
         "S150",
         "S110"
       ],
-      "est_lessons": 4,
+      "est_lessons": 7,
       "pretest": true,
       "group": "core",
       "level": "I",
       "plan": [
-        "0006 Chapter 1 in one lesson: summary of all six sections (always, even if everything was known)",
-        "then gap lessons chosen by the pretest: sets and axioms (§1.1-1.2.1) · calculus and counting (§1.2.2-1.2.4) · conditional probability (§1.3) · random variables, cdfs, densities (§1.4-1.6)",
-        "Ch. 1 check"
+        "0006 the three axioms and what follows from them (§1.2.1-1.2.2; short)",
+        "0007 conditional probability and independence (§1.3)",
+        "0008 random variables and cdfs (§1.4-1.5)",
+        "0009 densities and mass functions (§1.6)",
+        "0010 Chapter 1 summary (always)",
+        "0011 Ch. 1 check"
       ],
       "lessons": [
         "0005-ch1-pretest"
@@ -91,7 +94,10 @@
           "fa09582d3b Ross, A First Course in Probability: grade C (garbled text)",
           "f58aa520f3 Jaynes, Probability Theory: philosophy of probability; save for the Bayesian course"
         ]
-      }
+      },
+      "completed": [
+        "0005-ch1-pretest"
+      ]
     },
     {
       "id": "S202",

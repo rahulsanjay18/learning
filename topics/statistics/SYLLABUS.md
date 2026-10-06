@@ -25,12 +25,12 @@ After the pretest there is **always one summary lesson** (learner's request, 202
 | # | Lesson | Reading (C&B) | Objectives: you can… |
 |---|---|---|---|
 | 0005 | Ch. 1 pretest (concept, calculation and proof per section) | — | — |
-| 0006 | **Chapter 1 summary (always)** | §1.1–1.6, skim | state the chapter's main results from memory and say what each is for |
-| — | Sets and the axioms | §1.1, §1.2.1 | prove a probability fact from the Kolmogorov axioms alone (e.g. P(Aᶜ) = 1 − P(A), Bonferroni's inequality) |
-| — | Calculus of probabilities and counting | §1.2.2–1.2.4 | count with/without replacement and order (the 4-way table) · prove inclusion–exclusion for two sets |
-| — | Conditional probability and independence | §1.3 | derive Bayes' rule and use it on a base-rate problem · tell pairwise from mutual independence |
-| — | Random variables, cdfs, densities | §1.4–1.6 | state the three properties of a cdf · move between pmf/pdf and cdf |
-| last | Ch. 1 check | — | recall plus one proof, across the whole chapter including skipped sections |
+| 0006 | The three axioms and what follows (short) | §1.2.1–1.2.2 | state Kolmogorov's axioms from memory · prove a consequence (P(Aᶜ) = 1 − P(A), P(A) ≤ 1) from them alone |
+| 0007 | Conditional probability and independence | §1.3 | tell pairwise from mutual independence (with a counterexample) · derive Bayes' rule stating exactly what it assumes |
+| 0008 | Random variables and cdfs | §1.4–1.5 | say what a random variable is (a function) and what it induces · define the cdf and its three properties · prove F nondecreasing for any X |
+| 0009 | Densities and mass functions | §1.6 | tell pmf from pdf (which can exceed 1) · find a normalizing constant · prove P(X = x) = 0 for continuous X |
+| 0010 | **Chapter 1 summary (always)** | §1.1–1.6, skim | state the chapter's main results from memory and say what each is for |
+| 0011 | Ch. 1 check | — | recall plus one proof, across the whole chapter including §1.1 |
 
 ## Known "Not yet" items (carried)
 - **Confounding remedy** (pretest free response, 2026-10-06 grading): named the confounder but proposed an observational fix. Re-teach
@@ -41,3 +41,4 @@ After the pretest there is **always one summary lesson** (learner's request, 202
 - 2026-10-06: **switched to Chapter 1 now** (learner: "thrust into the middle of something"; Ch. 1 "builds stuff from the ground up").
   S150 closed after 0004; its unwritten lessons (likelihood ratios, multiple testing, A/B check) move to S303. S110 merged into the
   S201 pretest. S201 lessons renumbered 0005–0010. Lessons follow TEACHING-LOG rule 21 (reason first, name second).
+- 2026-10-06: Ch. 1 pretest → §1.1 skipped; 0006–0009 teach the gaps (definitions and proofs; calculations were solid); 0010 summary; 0011 check. Details: NOTES.md.
