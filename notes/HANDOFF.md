@@ -15,7 +15,9 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 ## Platform ideas (not urgent; learner deploys on their server)
 - Small local model to offload easy work: `notes/slm-offload-plan.md` (semantic book search first, then first-pass grading with
   escalation after a ≥90% agreement test). Waiting on: server hardware details.
-- AWS: target MLA-C02 (GA 2027-01-14). Waiting on: the old course's format, a target date.
+- AWS: target MLA-C02 (GA 2027-01-14). Learner's course = a 2024 Solutions Architect (Associate) course: use its core-AWS modules
+  (IAM, S3, VPC, EC2, Lambda, CloudWatch) as the foundations course, then MLA-C02 prep from AWS's exam guide. Waiting on: the course
+  files (learner will send) and a target date.
 
 ## Open teaching work
 | Topic | Next | Notes |
