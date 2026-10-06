@@ -60,7 +60,7 @@
       "requires": [
         "G102"
       ],
-      "note": "needs xiangqi board widget"
+      "note": "widget ready: assets/plugins/xiangqi.js (sandbox + xiangqi-move quiz)"
     },
     {
       "id": "G202",
@@ -69,7 +69,7 @@
       "requires": [
         "G201"
       ],
-      "note": "needs shogi board widget"
+      "note": "widget ready: assets/plugins/shogi.js (sandbox with drops/promotion + shogi-move quiz)"
     },
     {
       "id": "G301",

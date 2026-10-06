@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="plugins/map.css">
 <link rel="stylesheet" href="plugins/python.css">
 <link rel="stylesheet" href="plugins/games.css">
+<link rel="stylesheet" href="plugins/xiangqi.css">
+<link rel="stylesheet" href="plugins/shogi.css">
 </head>
 <body>
 <main>
@@ -178,6 +180,22 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
   <div class="explain" hidden>Five of the nine openings win (c1, a2, b2, c2, a3); the centre wins fastest.</div>
 </div>
 
+<h2>Xiangqi plugin</h2>
+<div class="xq-board" id="xq-play" data-play="true" data-caption="The starting position. Sandbox: click a piece to see its legal moves; both sides move in turn."></div>
+<div class="quiz" data-type="xiangqi-move" data-id="xq-win" data-fen="3k5/R3a4/9/2H6/9/9/9/9/9/5K3 w" data-answer="a8a9|a8e8"
+  data-hint="The horse on c6 already covers d8.">
+  <p class="prompt">Red to move and win at once.</p>
+  <div class="explain" hidden>a8–a9 is checkmate: d8 is covered by the horse, e9 by the chariot. a8×e8 also wins: Black is not in check but has no legal move, and in xiangqi that loses (in chess it would be a stalemate draw).</div>
+</div>
+
+<h2>Shogi plugin</h2>
+<div class="shogi-board" id="sg-play" data-play="true" data-caption="The starting position. Sandbox: click a piece, or a piece in hand to drop it; you'll be asked whether to promote when it's optional."></div>
+<div class="quiz" data-type="shogi-move" data-id="sg-dropmate" data-sfen="7nk/7p1/8G/9/9/9/9/9/K8 b PG 1" data-answer="G*1b"
+  data-hint="Gote's own knight and pawn box the king in. Which drop on 1b is allowed?">
+  <p class="prompt">Sente to move: checkmate with a drop.</p>
+  <div class="explain" hidden>G*1b mates: the gold on 1c protects it, and the king's own pieces block 2a and 2b. A pawn drop on 1b would also be mate, which is exactly why it's illegal (uchifuzume): try it and the board won't let you.</div>
+</div>
+
 <h2>Map plugin</h2>
 <div class="lp-map" id="map-south-asia" data-view="60,5,100,38" data-highlight="India"
   data-points="28.61,77.21:New Delhi|19.08,72.88:Mumbai|22.57,88.37:Kolkata|13.08,80.28:Chennai"
@@ -242,5 +260,7 @@ for c, lo in zip(counts, edges):
 <script src="plugins/map.js"></script>
 <script src="plugins/python.js"></script>
 <script src="plugins/games.js"></script>
+<script src="plugins/xiangqi.js"></script>
+<script src="plugins/shogi.js"></script>
 </body>
 </html>

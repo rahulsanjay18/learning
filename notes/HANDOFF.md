@@ -23,7 +23,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 - **`/program` skill built** (2026-10-05): `.claude/skills/program/`, `programs.json`, `topics/{statistics,indian-history,games}/curriculum.json`,
   `scripts/test_programs.py`. AWS ML major still needs setup (`/program setup aws-ml`).
 - **Tiny-games widget built** (`assets/plugins/games.js`: tic-tac-toe, Nim, Hex ≤ 4×4 vs an exact solver; play + `game-move` quiz; `scripts/test_games.js`). G102 is unblocked.
-- Widgets: **xiangqi / shogi boards** for the Games major (G201/G202).
+- **Xiangqi + shogi boards built** (`assets/plugins/xiangqi.js`, `shogi.js`; perft-verified, `scripts/test_xiangqi_shogi.js`). Games widget queue is empty; next ideas: backgammon/dice sims (G401), poker range grid (G402).
 - **Flashcards + "How sure were you?" built** (`card` quiz, `.lp-deck`, confidence step; server resets guessed items). **Learner: redeploy progress-server** (`git pull`, then `docker compose up -d --build progress-server`) so guesses reset server-side too.
 - **Today page built** (`assets/today.html` + `today.js`, test `scripts/test_today.mjs`): plan from programs.json, ticks in localStorage.
 - Book server: `/search?book=<id>`, page numbers per chunk, per-book section maps, then hybrid (embedding) search. See
