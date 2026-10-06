@@ -17,7 +17,11 @@ ok(mon.blocks.length === 2, "two blocks on Monday");
 ok(mon.blocks[0].major === "Statistics", "block 1 statistics");
 ok(mon.blocks[1].covering === "AWS ML certification" && mon.blocks[1].major === "Statistics", "AWS block covered by Statistics");
 const st = mon.blocks[0].items[0];
-ok(st.lesson && /0004-power\.html$/.test(st.lesson.href), "statistics points at first unfinished lesson: " + JSON.stringify(st.lesson));
+// expected = the first written lesson not yet completed (null once all are done: then "next" names the lesson to write)
+const s150 = cur.statistics.courses.find(c => c.status === "active");
+const want = (s150.lessons || []).find(s => !(s150.completed || []).includes(s)) || null;
+ok(want ? st.lesson && st.lesson.href.endsWith(want + ".html") : st.lesson === null && !!st.next,
+   "statistics points at first unfinished lesson: " + JSON.stringify(st.lesson));
 // Late Sunday UTC is still Sunday in New York; Sunday is a rest day.
 const sun = T.planFor(cfg, cur, new Date("2026-10-12T02:00:00Z"));
 ok(sun.day === "sun" && sun.blocks.length === 0, "Sunday 22:00 New York is a rest day: " + sun.day);
