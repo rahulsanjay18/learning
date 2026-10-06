@@ -40,3 +40,20 @@ dense text on a screen**, not the lack of handwritten notes.
    reading comprehension", *Educational Research Review* 25, 2018, pp. 23–38. Open access: https://www.uv.es/lasalgon/papers/Delgado%202018%20dont%20throw%20away%20your%20printed%20books.pdf
 4. Sana, Weston & Cepeda, "Laptop multitasking hinders classroom learning for both users and nearby peers", *Computers &
    Education* 62, 2013, pp. 24–31. Summary: https://news.yorku.ca/2013/03/13/multitasking-on-laptop-impedes-classroom-learning-york-u-study-shows/
+
+## Follow-up: is this as effective as traditional (college) learning?
+**On learning per hour, probably yes, and possibly better; on staying with it, it's weaker unless the structure holds.**
+- What this is closest to is **tutoring**, not a lecture course. A meta-analysis found human tutoring raised scores by about 0.79 SD
+  over no tutoring, and well-designed step-by-step computer tutors (feedback on each step) reached about 0.76 [5].
+- A 2025 randomized trial in a Harvard physics course found students learned more, in less time, from a carefully designed AI tutor
+  than from an in-class active-learning session [6]. The gains came from the built-in teaching design (scaffolding, step-by-step
+  feedback), not the chatbot itself; unguided chatbot use hasn't shown the same benefit. That's why the platform keeps lessons,
+  syllabi, quizzes and review rather than "just chat".
+- What college gave you that this lacks: **deadlines and accountability** (self-paced programs lose people [Kulik et al., in
+  `mastery-grading.md`]), **peers to argue with**, and **a credential**. Substitutes here: the fixed daily plan and the weekly
+  rhythm; the "judge a public claim" boxes and optional reading groups for discussion; the AWS certification for a credential.
+
+5. VanLehn, "The relative effectiveness of human tutoring, intelligent tutoring systems, and other tutoring systems",
+   *Educational Psychologist* 46(4), 2011, pp. 197–221. Summary: https://marginalrevolution.com/marginalrevolution/2013/10/how-good-are-computers-as-tutors.html
+6. Kestin, Miller, Klales, Milbourne & Ponti, "AI tutoring outperforms in-class active learning: an RCT introducing a novel
+   research-based design in an authentic educational setting", *Scientific Reports* (2025). Coverage: https://hechingerreport.org/?p=103689
