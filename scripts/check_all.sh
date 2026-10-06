@@ -15,6 +15,8 @@ run plot        node scripts/test_plot.js
 run go          node scripts/test_go_rules.js
 run timeline    node scripts/test_timeline_map.js
 run python      node scripts/test_python.js
+run progress-server bash -c "cd progress-server && python3 test_app.py"
+run book-server bash -c "cd book-server && python3 test_app.py"
 if [ "$1" = "--quick" ]; then run xiangqi-shogi node scripts/test_xiangqi_shogi.js --quick
 else run xiangqi-shogi node scripts/test_xiangqi_shogi.js; run widgets node scripts/test_widgets.mjs; fi
 exit $fail
