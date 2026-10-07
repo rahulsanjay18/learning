@@ -74,6 +74,7 @@
   }
 
   function card(it, found) {
+    if (found && found.doc.querySelector('main[data-pretest="true"]')) { LP.unschedule(it.item); return "pretest"; }   // never taught: not review
     var local = it.item.slice(it.item.indexOf("#") + 1);
     var q = found && findQuiz(found.doc, local);
     if (!q) return null;
@@ -93,9 +94,11 @@
     var list = interleave(items).slice(0, MAX);
     return Promise.all(list.map(function (it) { return fetchPage(it.item.split("#")[0]).then(function (f) { return card(it, f); }); }))
       .then(function (cards) {
-        var shown = cards.filter(Boolean);
+        var pre = cards.filter(function (c) { return c === "pretest"; }).length;
+        var shown = cards.filter(function (c) { return c && c !== "pretest"; });
         shown.forEach(function (c) { root.appendChild(c); });
-        var missing = cards.length - shown.length;
+        var missing = cards.length - shown.length - pre;
+        if (!shown.length && !missing) { head.textContent = "All caught up."; return; }
         head.textContent = note.replace("{n}", shown.length) + (missing ? " (" + missing + " couldn't be loaded: the lesson changed.)" : "");
         LP.scan();
         if (window.LPMath && LPMath.typeset) LPMath.typeset(root);

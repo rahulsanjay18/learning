@@ -33,6 +33,7 @@
 
   LP.emit = function (ev) {
     ev.v = 1; ev.page = LP.page; ev.ts = new Date().toISOString();
+    if (document.querySelector('main[data-pretest="true"]')) ev.pretest = true;   // pretests measure; they never feed review
     ev.eid = Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12); // server ignores resent events with the same eid
     var sched = LP.schedule(); schedApply(sched, ev); store("lp.review", JSON.stringify(sched));
     var q = queue(); q.push(ev); saveQueue(q);
@@ -51,6 +52,7 @@
       g.due = new Date(new Date(ev.ts).getTime() + INTERVALS[0] * 864e5).toISOString();
       return;
     }
+    if (ev.pretest) return;
     if (ev.type !== "attempt" || !ev.item || ev.correct == null || ev.kind === "deferred") return;
     var r = sched[ev.item] || { box: -1, reps: 0, lapses: 0 };
     if (ev.correct) r.box = Math.min(r.box + 1, INTERVALS.length - 1);
@@ -71,6 +73,7 @@
     }
     return sched;
   };
+  LP.unschedule = function (item) { var sched = LP.schedule(); if (sched[item]) { delete sched[item]; store("lp.review", JSON.stringify(sched)); } };
   LP.reviewUrl = new URL("review.html", SELF).href;
 
   var flushTimer = null;

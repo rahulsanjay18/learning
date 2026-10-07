@@ -30,6 +30,9 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 
 ## Open platform work
+- **2026-10-07: pretests no longer feed review** (TEACHING-LOG rule 28). **Learner: redeploy progress-server**; then I call
+  `POST /progress/review/drop {"pages":["statistics/0001-placement-pretest","statistics/0005-ch1-pretest","indian-history/0001-placement-pretest","economics/0001-placement-pretest"]}`
+  to clear the old server rows (the review deck already hides them). **Staff books aren't on the book server** (title and full-text search, 2026-10-07): redeploy book-server, then `/new-books`; add Reilly Ch. 1 to eng 0001 once it's there.
 - **2026-10-07: ideas from three pi repos adopted** (`notes/inspiration-pi-repos-2026-10-07.md`): `.claude/skills/teach/PRINCIPLES.md` (TEACHING-LOG rule 26), agents `researcher` + `lesson-reviewer` in `.claude/agents/`, `/quiz-me` uses the AskUserQuestion picker with "I don't know", learning-record writing rules, lint warns when only the answer gives a reason. **Second pass:** TEACHING-LOG opens with "Why these rules exist" (understanding = connected facts; rules grouped under 4 ideas), rule 21 widened to every step; **diagram templates** `assets/plugins/diagram.js` (graph / sequence / venn) + `scripts/snap.mjs` to look at renders. Possible later: a session-transcript file (learn's md-log).
 - **Skills added 2026-10-06:** `/quiz-me` (`scripts/quiz.py`), `/game-review`, `/new-books` (`scripts/new_books.py`, `library/ADDING-BOOKS.md`); SessionStart hook installs test deps + stockfish + python-chess.
 - **New books reviewed 2026-10-06** (`notes/new-books-2026-10-06.md`; partial, because the server went down during the scan).

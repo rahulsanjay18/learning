@@ -73,7 +73,10 @@ def page_quizzes(page):
     for kind in ("lessons", "reference"):
         f = ROOT / "topics" / topic / kind / f"{stem}.html"
         if f.exists():
-            p = Quizzes(); p.feed(f.read_text(encoding="utf-8")); return p.quizzes
+            text = f.read_text(encoding="utf-8")
+            if 'data-pretest="true"' in text:
+                return []        # pretests measure what hasn't been taught; they never come back in review
+            p = Quizzes(); p.feed(text); return p.quizzes
     return []
 
 

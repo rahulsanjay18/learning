@@ -93,6 +93,19 @@ def test_guessed_counts_as_not_known():
     assert "stats/0009-guess: 1/2 right first try" in s and "guessed: q2" in s, s
 
 
+def test_pretest_answers_never_scheduled():
+    page = "stats/0010-pretest"
+    e1 = ev("p1", "q1", False, page=page); e1["pretest"] = True
+    c.post("/events", json={"events": [e1, ev("p2", "q2", False, page=page)]}, headers=T)
+    with server.db() as db:
+        items = [x["item"] for x in db.execute("SELECT item FROM review WHERE page=?", (page,))]
+    assert items == [page + "#q2"], items                          # the flagged miss isn't scheduled
+    assert c.post("/review/drop", json={"pages": [page]}, headers=T).json() == {"dropped": 1}
+    with server.db() as db:
+        assert not db.execute("SELECT 1 FROM review WHERE page=?", (page,)).fetchall()
+    assert c.post("/review/drop", json={"pages": "x"}, headers=T).status_code == 400
+
+
 def test_pages_lists_answered_lessons():
     got = c.get("/pages", params={"topic": "chess"}, headers=T).json()["pages"]
     assert "chess/0003-forks" in got and all(p.startswith("chess/") for p in got)

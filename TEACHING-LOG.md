@@ -10,7 +10,7 @@ re-derived instead of remembered.** Lone facts rot; connected ones don't. (This 
 reason through stuff" (entry 21), "not enough context" (entry 16).) The numbered rules below are mostly patches for single
 incidents; they follow from four ideas, and a new situation no rule covers should be decided by these:
 - **A. Solid ground first** (the learner can accept it as stated, so it sticks): define before use, build on what they already hold,
-  in their words, from the assigned source. Rules 1, 2, 9, 12, 15, 16, 17, 19, 24, 26.
+  in their words, from the assigned source. Rules 1, 2, 9, 12, 15, 16, 17, 19, 24, 26, 28.
 - **B. Every step motivated** (it feels discovered, not decreed): why are we doing this, why this step, where each number comes from.
   Rules 4, 7, 16, 21, 26.
 - **C. Check each piece landed before building on it, and measure knowing, not guessing.** Rules 3, 6, 8, 20, 23, 25.
@@ -83,6 +83,9 @@ Rules 11, 13 and 18 are format and logistics.
     Details: `.claude/skills/teach/PRINCIPLES.md`. Before committing a lesson, the `lesson-reviewer` agent can check it.
 27. **When comparing, say exactly how much overlaps.** "Is the same", "is the same but narrower (how)", "is missing"; never
     "leans this way" or "points the same way". (Entry 26)
+28. **Pretests measure; they never feed review.** Mark every pretest page `data-pretest="true"` (Markdown front matter
+    `main: data-skip=true data-pretest=true`): its answers stay out of spaced review everywhere. What a pretest finds missing gets
+    *taught* in a lesson, and that lesson's own questions are what come back in review. (Entry 27)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -153,3 +156,7 @@ Rules 11, 13 and 18 are format and logistics.
 26. **2026-10-07 · "lean, or they are this way? this is important."** I wrote that rules 4, 7 and 21 "already lean this way"
     compared with learn's teaching principles. Checked: rule 21 is principle 2 for definitions only, principle 1 had no rule,
     rule 4 is a different idea, rule 7 has no counterpart in learn. Fix: comparison table in `notes/inspiration-pi-repos-2026-10-07.md`, corrected PRINCIPLES.md; rule 27.
+27. **2026-10-07 · "Dunno how fair it is to put pretest questions I got wrong on the review. I didn't learn them, they were a
+    pretest."** Missed and skipped pretest items went into spaced review like lesson misses, so review asked about things never
+    taught (against rule 2). Fix: `data-pretest` on the four pretest pages; lp.js, the progress server, the review deck and
+    `scripts/quiz.py` all leave those answers out, and already-scheduled ones are dropped; rule 28.

@@ -15,6 +15,7 @@ Teacher:  GET /status                      plain text, ~15 lines: per topic acti
           GET /summary?topic=chess         plain text: per page right-first-try, missed items, ratings, notes, grades
           GET /ungraded                    JSON: free-response answers waiting for a grade
           POST /grades                     {"grades":[{"event":"<eid>","score":0..1,"feedback":"..."}]}
+          POST /review/drop {"pages":[...]}  unschedule whole pages (pretests: they measure, they don't teach)
           POST /devices {"name":"phone"}   -> {"id","token"} (token shown once);  GET /devices;  DELETE /devices/{id}
 Device:   POST /events                     {"events":[...]} exactly as lp.js sends them (deduplicated by eid)
           GET /due?limit=20&topic=chess    JSON: review items due now
@@ -137,11 +138,24 @@ def post_events(payload: dict = Body(...), who: str = Depends(caller)):
                 dup += 1
                 continue
             stored += 1
+            if e.get("pretest"):
+                continue    # pretests measure what hasn't been taught yet; they never feed spaced review
             if e.get("type") == "attempt" and e.get("item") and correct is not None:
                 schedule(c, e["item"], e.get("page"), bool(correct), t)
             elif e.get("type") == "confidence" and e.get("value") == "guessed" and e.get("item"):
                 schedule(c, e["item"], e.get("page"), False, t)     # right by luck = not known yet
     return {"stored": stored, "duplicates": dup}
+
+
+@router.post("/review/drop")
+def review_drop(payload: dict = Body(...), who: str = Depends(teacher)):
+    """Remove scheduled review items for whole pages, e.g. pretests: {"pages": ["statistics/0001-placement-pretest"]}."""
+    pages = payload.get("pages")
+    if not isinstance(pages, list) or not all(isinstance(x, str) for x in pages):
+        raise HTTPException(400, "pages must be a list of page ids")
+    with db() as c:
+        n = sum(c.execute("DELETE FROM review WHERE page=?", (pg,)).rowcount for pg in pages)
+    return {"dropped": n}
 
 
 @router.get("/due")

@@ -3,7 +3,7 @@ title: Chapter 1 pretest: probability theory
 subtitle: One block (about 25–30 min). No reading first. It decides which Chapter 1 sections need a lesson and which you skip.
 crumb: Statistics · Lesson 5 · Chapter 1 pretest
 index: Chapter 1 pretest (C&B Ch. 1)
-main: data-skip=true
+main: data-skip=true data-pretest=true
 ---
 ## How this works
 
