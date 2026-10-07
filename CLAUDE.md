@@ -69,6 +69,11 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - 3D chess repos: rahulsanjay18/3dChessInC, 3dChessRLAgent, 3dChessWeb, 3dChessServer, 3dChessInfra, 3dChessRelay, 3dChessDesktop.
   Re-check a ticket on GitHub before assigning it; ask before filing new issues.
 
+## Several sessions may run at once (2026-10-07)
+- Two Claude sessions have edited this repo at the same time. **Before writing any lesson or file: `git pull origin main`, then check
+  that the lesson number / file doesn't already exist** (`ls topics/<t>/lessons`, the course's `lessons` in curriculum.json). Pull
+  again right before pushing, and run `bash scripts/check_all.sh --quick` after the merge, not only before it.
+
 ## Handoff
 - `notes/HANDOFF.md`: current state and to-do list across all topics and the platform. Read it at the start of a new thread; keep it current.
 

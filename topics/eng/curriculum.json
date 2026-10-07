@@ -1,9 +1,10 @@
 {
   "major": "eng",
   "program": "topics/eng/PROGRAM.md",
-  "spine": "One continuous major for engineering career growth: Staff (SE), AWS (AW), C/C++/CUDA (CP), and career extras (CR), all practiced on the learner's 3D chess project. Every lesson pairs with a backlog ticket (backlog.json): the learner does the staff-level part (or the code, when the code is the skill); Claude writes the rest.",
+  "spine": "Explore vs. exploit, in the RL sense (learner's framing, 2026-10-07). EXPLOIT (3 of 4 weekly blocks): what's known to pay (senior→staff, big-tech-bar interviews, AWS, CUDA/inference, Spark), applied to projects the learner already cares about (3D chess) and, ideally, a side income (shipping the 3D chess game). EXPLORE (1 of 4 blocks): interesting topics that might pay off; one that shows evidence gets promoted into exploit. Every exploit lesson pairs with a 3D chess backlog ticket: the learner does the staff-level part (or the code, when the code is the skill); Claude writes the rest.",
   "rules": [
     "Continuous, four lanes, one per eng block: Mon staff, Wed tech, Thu interview, Fri interest (`lanes`). Each lane keeps one active course; when it ends the next in that lane activates at once, so the major never runs empty.",
+    "Explore/exploit: 3 exploit lanes (staff, tech, interview) and 1 explore lane (interest), so epsilon = 1/4 of eng blocks. Promotion rule: an explore topic moves into the tech lane when it shows pay or demand evidence in catalog.json, or the learner wants to go deep; a tech-lane topic whose evidence fades drops back to explore. Review this at each catalog refresh and log moves in CHANGES.md.",
     "Every staff/tech/interview lesson ends with a REQUIRED rep (interest-lane reps are optional): one ticket from backlog.json with a definition of done. The next lesson in that lane is not written until the rep is shipped (PR/doc link) or explicitly skipped with a reason. This overrides TEACHING-LOG rule 13 (optional homework) for this major only, at the learner's request (2026-10-07).",
     "Division of labor (learner's rule): Claude writes the code; the learner does the staff-level work (design docs, ADRs, decisions, prioritization, PR review and merge). When the lesson's skill is the code itself (C, C++, CUDA, Spark), the learner writes it and Claude reviews.",
     "Re-check a ticket's GitHub state before assigning it; never file a 'proposed' ticket without asking.",
@@ -1099,5 +1100,11 @@
     "wed": "tech",
     "thu": "interview",
     "fri": "interest"
+  },
+  "lanes_mode": {
+    "staff": "exploit",
+    "tech": "exploit",
+    "interview": "exploit",
+    "interest": "explore"
   }
 }

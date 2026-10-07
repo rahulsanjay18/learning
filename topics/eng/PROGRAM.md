@@ -3,6 +3,17 @@
 *Set 2026-10-07. Replaces the separate C/C++, Staff, Career and AWS ML plans (originals in `reference/`; their reasoning and
 sources still apply). Full weight: it takes the AWS ML major's 4 blocks a week (Mon, Wed, Thu, Fri).*
 
+## The idea: explore vs. exploit (your framing, 2026-10-07)
+Think of this major as a bandit problem:
+- **Exploit (3 of 4 weekly blocks: staff, tech, interview).** Spend most of the time on what's *known* to pay: senior → staff, interviews at
+  the big-tech staff bar, AWS, CUDA/inference, Spark. Apply it to projects you already care about (3D chess), so the skills get used
+  for real. Shipping the game could also become **side income**: its backlog already has monetization work (skins, subscriptions,
+  ads, a Steam release).
+- **Explore (1 of 4 blocks: interest).** Topics you find interesting that *might* pay off but don't have to. That makes ε = 1/4.
+- **Update the estimates.** When an explored topic shows pay or demand evidence (in `catalog.json`), or you want to go deep, it's
+  **promoted** into the tech lane. A tech topic whose evidence fades drops back to explore. These moves are reviewed at each catalog
+  refresh and logged in `CHANGES.md`.
+
 ## TL;DR
 - **Four lanes, one per weekly block** (revised 2026-10-07): **Mon staff · Wed tech · Thu interview · Fri interest.** The Today page shows
   only that day's lane.

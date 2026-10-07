@@ -6,6 +6,9 @@ grey = done, dashed = later or optional. Level II courses appear only once you e
 
 ```mermaid
 flowchart TB
+  IV000["IV000 Interview baseline at the big-tech staf…<br/><small>book: Big-tech staff loop formats</small>"]
+  IV100["IV100 Interview practice (continuous, rotatin…<br/><small>book: Xu, System Design Interview vol. 1-2 + Amin…</small>"]
+  IN100["IN100 Things I find interesting (continuous)<br/><small>book: book not chosen yet</small>"]
   VI100["VI100 Vim, every day<br/><small>book: Neil, Practical Vim 2nd ed.</small>"]
   SE000["SE000 Placement: where you are against a staf…<br/><small>book: Public staff rubrics</small>"]
   SE101["SE101 What staff is, and how people get there<br/><small>book: Reilly, The Staff Engineer's Path</small>"]
@@ -54,6 +57,7 @@ flowchart TB
   CR360["CR360 Language: Go<br/><small>book: book not chosen yet</small>"]
   CR370["CR370 Track: embedded and robotics software<br/><small>book: book not chosen yet</small>"]
   CR380["CR380 Platform engineering and SRE (CKA)<br/><small>book: Beyer et al., Site Reliability Engineering</small>"]
+  IV000 --> IV100
   SE000 --> SE101
   SE000 --> SE110
   SE000 --> SE120
@@ -105,6 +109,9 @@ flowchart TB
   classDef done fill:#eee,color:#777,stroke:#bbb
   classDef active stroke-width:3px
   classDef later stroke-dasharray:5 4
+  class IV000 active
+  class IV100 later
+  class IN100 active
   class VI100 later
   class SE000 active
   class SE101 later
@@ -156,6 +163,13 @@ flowchart TB
 ```
 
 ## Active courses: books by role
+
+**IV000 Interview baseline at the big-tech staff bar**
+- primary: Big-tech staff loop formats (Google L6, Meta E6: coding, two design rounds, behavioral/leadership, project retrospective; Meta adds an AI-assisted coding round) from 2026 prep guides
+- secondary: c0562da881 Skiena, The Algorithm Design Manual (grade B)
+
+**IN100 Things I find interesting (continuous)**
+- primary: —
 
 **SE000 Placement: where you are against a staff rubric**
 - primary: Public staff rubrics: Larson's archetypes (staffeng.com) + a public engineering career framework; your own work as the evidence
