@@ -397,6 +397,15 @@
       "you": "fill the gaps (API auth, sources, caps), build or delegate the server side",
       "claude": "the client script, tests, docs",
       "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Compute access for Claude on your server/cluster: a narrow job API (named job types, containers, no arbitrary shell) on the proxied host",
+      "course": "SE120",
+      "you": "design doc: job types, isolation, limits, who can run what; then build or delegate",
+      "claude": "client script, job definitions, tests",
+      "state": "open"
     }
   ]
 }

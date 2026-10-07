@@ -74,6 +74,9 @@ Default queue, seeded from the 3D chess project; reorder, delete or add anything
 3. Branching factor and game length of your variant, measured with your engine (feeds the Games major).
 4. WebAssembly: how the C++ engine runs in the browser.
 5. GPU search: batching MCTS leaf evaluation (RL #47).
+6. **A small HPC cluster built from mini PCs** (your idea, 2026-10-07): scheduling (Slurm or Ray), networking, MPI vs. actor
+   models, and running 3D chess self-play across the nodes. An explore topic with a clear promotion path: if it works, it's
+   ML-infrastructure experience (the RL repo's `hpc-learning` tickets) and a compute pool for the other lanes.
 
 ## 2. One lesson (one ~25-minute block; placements and mock rounds run longer, ~45 min)
 1. **Vim drill (2 min):** one *Practical Vim* tip, as a start text and a target text. You send your keystrokes; `vimcheck.py` replays them.

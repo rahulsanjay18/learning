@@ -79,7 +79,8 @@
         "AlphaZero and MuZero, read as papers (feeds RL #54 MuZero-lite)",
         "Branching factor and game length of your 3D variant, measured with the engine (feeds the Games major)",
         "WebAssembly: how the C++ engine runs in the browser",
-        "GPU search: can MCTS leaf evaluation be batched on a GPU (RL #47)"
+        "GPU search: can MCTS leaf evaluation be batched on a GPU (RL #47)",
+        "HPC from mini PCs: cluster design, Slurm/Ray, MPI; distributed 3D chess self-play (learner's hardware)"
       ],
       "note": "For fun, not career: picked by the learner; default queue seeded from the 3D chess project. Edit PROGRAM.md 1b to change it. Reps here are optional unless the learner wants them."
     },
