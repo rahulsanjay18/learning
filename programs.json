@@ -1,5 +1,5 @@
 {
-  "about": "Program layer above /teach. Read by .claude/skills/program/scripts/status.py. Human plan: notes/study-plan.md. Edit freely; run python3 scripts/test_programs.py after. enrolled_levels: Level II is opt-in per major (the learner enrolls separately after or alongside Level I).",
+  "about": "Program layer above /teach. Read by .claude/skills/program/scripts/status.py. Human plan: notes/study-plan.md. Edit freely; run python3 scripts/test_programs.py after. enrolled_levels: Level II is opt-in per major (the learner enrolls separately after or alongside Level I). Parked entries may carry a full curriculum (designed, not scheduled); the tests and DAGs cover them too.",
   "timezone": "America/New_York",
   "review": "assets/review.html",
   "week": {
@@ -70,6 +70,16 @@
     }
   ],
   "parked": [
+    {
+      "slug": "cpp",
+      "name": "C and C++",
+      "goal": "career",
+      "curriculum": "topics/cpp/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-07 (topics/cpp/PROGRAM.md); start with CP000 placement. Maybe after AWS ML or in its place. Buy C++ Concurrency in Action 2e before CP204."
+    },
     {
       "slug": "economics",
       "note": "Principles solid (13/13). Resume at intermediate level."

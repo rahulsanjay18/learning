@@ -18,7 +18,7 @@ If the block above is empty or shows an error, run `python3 .claude/skills/progr
 Arguments: `$ARGUMENTS` (empty = run today's plan).
 
 ## Files
-- `programs.json` (repo root): the week (which majors get today's two blocks), majors with weight, parked topics.
+- `programs.json` (repo root): the week (which majors get today's two blocks), majors with weight, parked topics (a parked entry may carry a designed `curriculum`; tests and DAGs cover it).
 - `topics/<major>/curriculum.json`: courses with `id`, `title`, `status` (`done` | `active` | `next` | `later`), `requires`,
   `topic` (lesson folder if not the major's own, e.g. Games → `chess`, `military-strategy`), `est_lessons`, `lessons` (file stems
   written), `completed` (stems the learner finished, recorded from pasted lp-results), `plan` (upcoming lessons, first = next),

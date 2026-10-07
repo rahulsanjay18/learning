@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Draw each major as a DAG of courses (each course = a block of its primary book), from curriculum.json.
 
-    python3 scripts/major_dag.py            write topics/<major>/DAG.md for every major with a curriculum
+    python3 scripts/major_dag.py            write topics/<major>/DAG.md for every major (or parked major) with a curriculum
     python3 scripts/major_dag.py --check    exit 1 if any DAG.md is out of date (run by check_all.sh)
 
 Generated files: never edit DAG.md by hand.
@@ -72,7 +72,7 @@ def main():
     check = "--check" in sys.argv
     cfg = json.loads((ROOT / "programs.json").read_text(encoding="utf-8"))
     stale = []
-    for m in cfg["majors"]:
+    for m in cfg["majors"] + cfg.get("parked", []):
         if not m.get("curriculum"):
             continue
         cur = json.loads((ROOT / m["curriculum"]).read_text(encoding="utf-8"))

@@ -27,6 +27,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | Games (fun major) | **Mission: design a balanced 3D strategy game** (MISSION.md). Chess is class G101 (continue `topics/chess/`, lessons 0001–0002 done: 9/10, 8/9; game 2 won as Black (LR 0005); next 0003 "what did their move do?"); program decided: chess → tiny games → xiangqi → shogi → Go → chance (Pig + backgammon unit) → poker → theory/AI | Chess.com: rahulsanjay18 |
 | AWS ML cert | Ask: which exam, target date, AWS experience, prep materials | Check AWS's current exam list (don't guess names) |
 | Military strategy | **Merged into Games** as G150 (lessons in `topics/military-strategy/`), feeding G350 Wargames and G360 Diplomacy | framed as "war as a game" (see its NOTES) |
+| C and C++ | **Designed 2026-10-07, parked** (`topics/cpp/PROGRAM.md`, `DAG.md`). C first (Modern C → CS:APP) then C++ (Primer → Effective Modern C++ → STL → concurrency); electives systems / CUDA / game engine / 3D-chess engine project. Learner may start it after AWS ML or instead of it. Start = CP000 placement pretest | Buy *C++ Concurrency in Action* 2e before CP204 |
 | Economics | Parked; Principles solid (13/13) | Resume at intermediate level |
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 

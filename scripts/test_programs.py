@@ -24,8 +24,9 @@ for day, blocks in cfg["week"].items():
     for b in blocks:
         if b not in slugs:
             err(f"programs.json week.{day}: unknown major {b!r}")
-for m in cfg["majors"]:
-    if m.get("weight") not in ("full", "half"):
+parked = [p for p in cfg.get("parked", []) if p.get("curriculum")]  # designed but not scheduled
+for m in cfg["majors"] + parked:
+    if m not in parked and m.get("weight") not in ("full", "half"):
         err(f"{m['slug']}: weight must be full or half")
     if not m.get("curriculum"):
         if not m.get("setup"):
@@ -107,7 +108,7 @@ for m in cfg["majors"]:
     for cid in by_id:
         visit(cid, [])
     actives = [c for c in cur["courses"] if c["status"] == "active"]
-    if not actives:
+    if not actives and m not in parked:
         warn(f"{m['slug']}: no active course")
     # every lesson file in a topic used by this major should belong to a course
     for topic in {c.get("topic", m["slug"]) for c in cur["courses"]}:

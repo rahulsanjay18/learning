@@ -32,4 +32,13 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 - _NASM Essentials of Personal Fitness Training, 7th ed._ — NASM (Jones & Bartlett) — for: nasm-cpt / all lessons — why: the textbook the current exam is written from; collection only has the 4th ed. (2012) — status: missing
 - _Pixel Logic: A Guide to Pixel Art_ — Michael Azzi — for: pixel-art / all early lessons — why: the most-recommended visual beginner guide (lines, clusters, palettes, shading) — status: missing
 
+## C and C++ (parked major, topics/cpp/PROGRAM.md)
+- _C++ Concurrency in Action_, 2nd ed. — Anthony Williams (Manning, 2019) — for: CP204 Concurrency (Level I core primary) — why: the standard book on C++ threads, memory model, atomics — status: missing (buy)
+- _The Linux Programming Interface_ — Michael Kerrisk (No Starch, 2010) — for: CP310 systems elective — status: missing
+- _A Tour of C++_, 3rd ed. — Bjarne Stroustrup (2022) — for: CP201/CP203, the C++20 delta over C++ Primer 5e — status: missing
+- _Effective C_, 2nd ed. — Robert Seacord (No Starch, 2024) — for: CP101 (would become primary; C23) — status: missing
+- _Modern C_, 3rd ed. — Jens Gustedt (Manning, 2025) — for: CP101, C23 update of the 2018 draft in collection (030e99498b) — status: missing
+- _Game Engine Architecture_, 3rd ed. — Jason Gregory (CRC, 2018) — for: CP330 elective — status: missing
+- _C++ Templates: The Complete Guide_, 2nd ed. (2017) and Iglberger, _C++ Software Design_ (2022) — for: Level II CP401/CP402 — status: missing (collection has only the 2002 1st ed. of Templates, 1062457b20)
+
 AWS ML certification: nothing yet; the books depend on which exam you choose (the major isn't set up).
