@@ -15,10 +15,10 @@
       "est_lessons": 12,
       "lessons": [
         "0001-is-it-safe",
-        "0002-checks-first"
+        "0002-checks-first",
+        "0003-what-did-their-move-do"
       ],
       "plan": [
-        "0003-what-did-their-move-do: before your move, list what the opponent's last move attacks (41. Rd2 from the 6 Oct game, LR 0005); warm-up = piece-by-piece check scan (LR 0004) + 14...Rg8 review",
         "0004-what-did-my-move-stop-defending: 13. e4 from the 2 Oct game",
         "0005 the double attack (Tactics Ch. 2)",
         "0006 pins and skewers (Tactics Ch. 3-4)",
