@@ -15,7 +15,7 @@ Think of this major as a bandit problem:
   small-model offload plan, a platform strategy, SLOs) are in `backlog.json` alongside the 3D chess tickets.
 - **Where a skill gets practiced** (your point: not every profitable skill fits 3D chess). Each rep picks the best venue: a 3D chess
   ticket first, then a learning-platform item, then a **standalone lab** built for that skill (an AWS sandbox exercise, Spark on a
-  public dataset, a timed LeetCode set, an open-source issue), then your day job (sanitized). The lesson says which venue and why.
+  public dataset, a timed LeetCode set, an open-source issue, or your **astrophotography pipeline** for CUDA/HPC work), then your day job (sanitized). The lesson says which venue and why.
 - **Explore (1 of 4 blocks: interest).** Topics you find interesting that *might* pay off but don't have to. That makes ε = 1/4.
 - **Update the estimates.** When an explored topic shows pay or demand evidence (in `catalog.json`), or you want to go deep, it's
   **promoted** into the tech lane. A tech topic whose evidence fades drops back to explore. These moves are reviewed at each catalog
@@ -77,6 +77,9 @@ Default queue, seeded from the 3D chess project; reorder, delete or add anything
 6. **A small HPC cluster built from mini PCs** (your idea, 2026-10-07): scheduling (Slurm or Ray), networking, MPI vs. actor
    models, and running 3D chess self-play across the nodes. An explore topic with a clear promotion path: if it works, it's
    ML-infrastructure experience (the RL repo's `hpc-learning` tickets) and a compute pool for the other lanes.
+7. **Astrophotography processing on that cluster** (your goal for the HPC): calibrating, aligning and stacking hundreds of frames is
+   a natural GPU/HPC workload. It doubles as a **practice venue** for career skills that don't fit 3D chess: a CUDA stacking kernel
+   (CP320), distributing a stacking job across nodes (HPC), and Spark or Ray for batch processing of a whole night's frames.
 
 ## 2. One lesson (one ~25-minute block; placements and mock rounds run longer, ~45 min)
 1. **Vim drill (2 min):** one *Practical Vim* tip, as a start text and a target text. You send your keystrokes; `vimcheck.py` replays them.
