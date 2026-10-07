@@ -83,7 +83,7 @@ thinking of is the rook-like elephant of *chaturaji*, a four-player dice variant
 - **Your "length of rule" point** is about how much weight to give each period, not where to draw the lines. Worth keeping, but it's a
   separate argument. Lesson 0003's writing box asks explicitly for one specific piece of evidence.
 
-## 2026-10-07 · Lesson 0003 "Judge the headline 'New DNA study debunks Aryan invasion theory'" (graded 0.6)
+## 2026-10-07 · Lesson 0003 "Judge the headline 'New DNA study debunks Aryan invasion theory'" (graded 0.6, regraded 0.75 the same day)
 **Your answer (short):** the DNA was pooled because no single source had enough; it showed little or no Aryan DNA. But the
 cities peaked c. 2300 BCE and declined in the drought of 1800–1500 BCE, before the Aryans arrived (Mitanni treaty, 2nd
 millennium BCE). Pooling DNA is bad science, conclusion-first, and the quoted people sounded triumphant.
@@ -93,15 +93,15 @@ that of 3000 BC"; Mitanni treaty "about 1380 BC") [1]. Using dates to show the c
 argument that killed the invasion story. That's the specific evidence record 0002 asked for.
 
 **What to fix:**
-- **The pooling.** It was one person: 61 skeletons screened, one (I6113) had usable DNA, and the lab made many sequencing
-  libraries from that one sample and merged the 68 good ones [2]. That's standard for degraded ancient DNA, not mixing people.
-  The real limit is **n = 1**: one genome from one city.
-- **What the result means.** "Little if any steppe ancestry" in a Harappan, when it's common in South Asia today, means that
+- **The pooling (regraded: not a fault).** The article you were given quotes David Reich: "each of the individual data sets did not
+  produce enough DNA, pooling them resulted in sufficient genetic data" [4]. Reading that as pooling different sources is fair. The
+  paper shows the data sets were 100+ sequencing attempts on **one** woman's skeleton [2], but the paper wasn't assigned, so
+  my first grading held you to a source you weren't given (TEACHING-LOG 24). Your caution about a thin sample was right: n = 1.
+- **What the result means (this one was on the lesson page).** "Little if any steppe ancestry" in a Harappan, when it's common in South Asia today, means that
   ancestry arrived **later**. The paper says Indo-European languages most naturally came "via Central Asia in the first half of the
   2nd millennium BCE" [2]. So the study *supports* a later migration; it only "debunks" an invasion theory that was already dead.
-- **Your tone instinct was right, aimed at the wrong person.** The first author, Vasant Shinde, told the press the study "completely
-  sets aside the Aryan Migration/Invasion Theory"; his own paper concluded otherwise, and journalists and co-authors pushed back [3].
-  The triumph was in the press release, not the science.
+- **Your tone instinct was right, and well aimed.** The triumphant claims in the article are Vasant Shinde's ("completely reject",
+  "very flimsy ground") [4], and his own paper concluded otherwise [2][3].
 
 **Sources**
 1. Kulke & Rothermund, *A History of India*, Ch. 1, "Prehistory and the Indus Civilisation", "The secret of the decline", and
@@ -110,5 +110,7 @@ argument that killed the invasion story. That's the specific evidence record 000
    pp. 729–735. [PMC6800651](https://pmc.ncbi.nlm.nih.gov/articles/PMC6800651)
 3. Wikipedia, [Vasant Shinde (archaeologist)](https://en.wikipedia.org/wiki/Vasant_Shinde_(archaeologist)) (press note and the
    criticism, with its sources). Tertiary; points to the primary press coverage.
+4. "New DNA study debunks Aryan invasion theory", *The Week*, 6 Sep 2019 (the article the lesson linked).
+   [theweek.in](https://www.theweek.in/news/india/2019/09/06/new-study-debunks-aryan-invasion-theory.html)
 
 **Map question:** you were right, the four labelled buttons gave the answer away. It's now click-on-the-map only (TEACHING-LOG 23).

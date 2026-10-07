@@ -56,6 +56,9 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 23. **Choices must not give the answer away.** A candidate button labelled with the answer's own name (a map choice named
     "Lothal" when the question asks where Lothal is) tests reading, not knowing. Unlabelled map clicks, or labels that don't name
     the target. (Entry 23)
+24. **Grade only against what was assigned.** If a rubric point needs a fact from a source the learner wasn't given (the
+    paper behind a news article), it isn't a fault when they miss it; mention it as extra. Check what the assigned source
+    actually says before calling an answer wrong. (Entry 24)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -115,3 +118,7 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 23. **2026-10-07 · "The map question was useless, i just clicked lothal and then clicked the x."** Indian History 0003's
     `map-locate` had `data-choices` with place names on the buttons, so the answer was a label to click, not a place to know.
     Fix: dropped the choices (click the map); rule 23.
+24. **2026-10-07 · "Did you expect me to actually read the paper? I just read the article you linked."** I marked down the
+    learner's "pooling DNA is bad science" using details from the *Cell* paper. The linked article (The Week) quotes Reich on
+    "pooling" data sets without saying they came from one skeleton, so the learner's reading was fair. Fix: regraded 0.6 → 0.75;
+    rule 24.
