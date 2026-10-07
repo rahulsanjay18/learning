@@ -70,6 +70,13 @@
       "added": "2026-10-07",
       "text": "On or after 2027-01-24 (day 90 at the new job): decide whether growing into staff there is the goal, and whether the day job becomes the staff lane's main venue.",
       "why": "You asked not to presume before knowing the job."
+    },
+    {
+      "id": "sp-sync",
+      "major": "platform",
+      "added": "2026-10-07",
+      "text": "After installing Super Productivity: turn on WebDAV sync to a folder on your server, sync once, and send Claude a copy (or the file names + first lines) of what lands there. Also decide: work-task privacy (default: counts and time only) and encryption on/off.",
+      "why": "So Claude can build the read-only /sp digest endpoint against your real file format (notes/super-productivity-reader.md)."
     }
   ]
 }
