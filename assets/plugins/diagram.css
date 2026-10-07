@@ -9,6 +9,7 @@
 .dg-edge.dashed { stroke-dasharray: 5 4; }
 .dg-arrowhead { fill: var(--muted); }
 .dg-edge-label { font-size: 11.5px; fill: var(--muted); paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round; }
+.dg-label-bg { fill: var(--bg); }
 .dg-lifeline { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 3 3; }
 .dg-universe { fill: none; stroke: var(--fg); stroke-width: 1; }
 .dg-set { fill: none; stroke: var(--fg); stroke-width: 1.2; }

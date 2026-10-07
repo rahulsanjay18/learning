@@ -353,7 +353,11 @@
       el("rect", { x: b.x - b.w / 2, y: b.y - b.h / 2, width: b.w, height: b.h, rx: 4 }, grp);
       textLines(grp, b.lines, b.x, b.y, "dg-label");
     });
-    LL.labels.forEach(function (r) { if (r) textLines(svg, r.lines, r.x, r.y, "dg-edge-label"); });
+    LL.labels.forEach(function (r) {
+      if (!r) return;
+      el("rect", { x: r.x - r.w / 2, y: r.y - r.h / 2, width: r.w, height: r.h, class: "dg-label-bg" }, svg);   // hides the line behind the gaps
+      textLines(svg, r.lines, r.x, r.y, "dg-edge-label");
+    });
     return svg;
   }
 

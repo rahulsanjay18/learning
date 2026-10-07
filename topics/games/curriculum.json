@@ -57,10 +57,10 @@
       "status": "active",
       "est_lessons": 8,
       "lessons": [
-        "0001-capacity-or-will"
+        "0001-capacity-or-will",
+        "0002-annihilation-vs-exhaustion"
       ],
       "plan": [
-        "0002 annihilation vs. exhaustion: fix the 'offense = annihilation' mix-up from record 0002 (First Punic War analysis)",
         "0003 deterrence and coercion (Echevarria Ch. 4)",
         "0004 Clausewitz (On War Bk 1 Ch. 1)",
         "0005 Sun Tzu and the indirect approach",
