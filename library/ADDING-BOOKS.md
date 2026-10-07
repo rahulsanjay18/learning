@@ -6,6 +6,20 @@ Your paths (2026-10-07): originals in `"/media/rahul/Drive 2/Library/Library"`, 
 `"/media/rahul/Drive 2/Library/Markdown_Library"` (quote them: the drive name has a space). Repo assumed at `~/Documents/learning`,
 compose file in `~/Documents`. Note the flag names differ: `reconvert.py` takes `--books-root`, `grade_library.py` takes `--src-root`.
 
+**One command (2026-10-07):** put the files in the originals folder, then on the server:
+
+```bash
+cd ~/Documents/learning && python3 scripts/add_books.py
+```
+
+It pulls the repo, converts every book with no Markdown yet, grades, rebuilds the index (at the path your compose file mounts
+for book-server), rebuilds book-server and progress-server, and commits + pushes `library/`, with progress bars. Your paths
+are its defaults. Options: `--dry-run` (list only), `--pdf` (also PDF/DjVu via marker: OCR, slow; off by default),
+`--retry-failed`, `--limit N`, `--only epub`, `--no-docker`, `--no-commit`, `--no-pull`. Needs `tqdm` (`pip install tqdm`).
+Then run `/new-books` in a Claude session.
+
+**The individual steps** (what the script does, if you need one by hand):
+
 1. **Put the files** (PDF/EPUB/…) in the originals folder, in a sensible category folder.
 2. **Convert to Markdown** into the Markdown folder (same folder structure). The tools `scripts/reconvert.py` uses:
    EPUB → `pandoc book.epub -t gfm -o book.md`; PDF → `marker_single book.pdf --output_dir …` (handles OCR and LaTeX).

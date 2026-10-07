@@ -90,6 +90,54 @@ def run(cmds):
             return False, (r.stderr or r.stdout).strip().splitlines()[-1:] or ["failed"]
     return True, []
 
+def convert_one(rel, books_root, md_root, mode=None):
+    """Convert one book (path relative to books_root). Returns (status, message): ok / FAILED / skipped / missing source."""
+    src, dest = books_root / rel, (md_root / rel).with_suffix(".md")
+    if not src.exists():
+        return "missing source", ""
+    with tempfile.TemporaryDirectory() as td:
+        tmp = Path(td)
+        cmds, kind = plan(src, dest, tmp, mode)
+        if not cmds:
+            return "skipped", f"unsupported format {src.suffix}"
+        tool = missing_tool(cmds)
+        if tool:
+            return "skipped", tool
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        ok, err = run(cmds)
+        if ok and kind == "marker":
+            ok = collect_marker(tmp, Path(cmds[-1][1]).stem, dest)
+            err = [] if ok else ["marker produced no markdown"]
+        if not ok and src.suffix.lower() == ".epub":  # retry broken epub through calibre
+            fixed = tmp / "fixed.epub"
+            ok, err = run([["ebook-convert", str(src), str(fixed)], pandoc(fixed, dest)])
+        return ("ok" if ok else "FAILED"), " ".join(err)
+
+def convert_all(rows, books_root, md_root, mode=None, dry=False):
+    """Convert rows ({"path", "ext"}) with a progress bar; returns [[path, status, message], ...] (also appended to the log)."""
+    from tqdm import tqdm
+    todo = [Path(r["path"].lstrip("./")) for r in rows]
+    todo = [rel for rel in todo if not (md_root / rel).with_suffix(".md").exists()]
+    if dry:
+        for rel in todo:
+            print("  would convert:", rel)
+        return []
+    log = []
+    with tqdm(todo, desc="convert", unit="book") as bar:
+        for rel in bar:
+            bar.set_postfix_str(rel.name[:40])
+            status, msg = convert_one(rel, books_root, md_root, mode)
+            log.append([str(rel), status, msg])
+            if status != "ok":
+                bar.write(f"  {status}: {rel}" + (f" ({msg})" if msg else ""))
+    if log:
+        with open(LIB / "RECONVERT-LOG.csv", "a", newline="", encoding="utf-8") as f:
+            csv.writer(f).writerows(log)
+        skipped = sorted({x[2] for x in log if x[1] == "skipped" and x[2].startswith("missing tool")})
+        if skipped:
+            print("skipped for missing tools:", "; ".join(skipped))
+    return log
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--books-root", required=True, type=Path)
@@ -106,42 +154,9 @@ def main():
         rows = [r for r in rows if r["ext"] in only]
     if a.limit:
         rows = rows[: a.limit]
-    log = []
-    for i, r in enumerate(rows, 1):
-        rel = Path(r["path"].lstrip("./"))
-        src, dest = a.books_root / rel, (a.md_root / rel).with_suffix(".md")
-        if dest.exists():
-            continue
-        with tempfile.TemporaryDirectory() as td:
-            tmp = Path(td)
-            cmds, kind = plan(src, dest, tmp, a.mode)
-            print(f"[{i}/{len(rows)}] {rel}")
-            for c in cmds:
-                print("   $", " ".join(f'"{x}"' if " " in x else x for x in c))
-            if not a.run or not cmds:
-                continue
-            if not src.exists():
-                log.append([str(rel), "missing source", ""]); continue
-            tool = missing_tool(cmds)
-            if tool:
-                log.append([str(rel), "skipped", tool]); print("   -> skipped:", tool); continue
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            ok, err = run(cmds)
-            if ok and kind == "marker":
-                ok = collect_marker(tmp, Path(cmds[-1][1]).stem, dest)
-                err = [] if ok else ["marker produced no markdown"]
-            if not ok and r["ext"] == ".epub":  # retry broken epub through calibre
-                fixed = tmp / "fixed.epub"
-                ok, err = run([["ebook-convert", str(src), str(fixed)], pandoc(fixed, dest)])
-            log.append([str(rel), "ok" if ok else "FAILED", " ".join(err)])
-            print("   ->", "ok" if ok else f"FAILED: {' '.join(err)}")
-    if a.run and log:
-        with open(LIB / "RECONVERT-LOG.csv", "a", newline="", encoding="utf-8") as f:
-            csv.writer(f).writerows(log)
-        print(f"logged {len(log)} results to library/RECONVERT-LOG.csv")
-        skipped = sorted({x[2] for x in log if x[1] == "skipped"})
-        if skipped:
-            print("skipped for missing tools:", "; ".join(skipped))
+    log = convert_all(rows, a.books_root, a.md_root, a.mode, dry=not a.run)
+    if log:
+        print(f"{sum(x[1] == 'ok' for x in log)}/{len(log)} converted; logged to library/RECONVERT-LOG.csv")
     if not a.run:
         print("\nDry run only. Add --run to execute.", file=sys.stderr)
 

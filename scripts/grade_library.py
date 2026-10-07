@@ -69,30 +69,27 @@ def source_for(md, md_root, src_root):
             return ext.lstrip("."), str(cand.relative_to(src_root))
     return "", ""
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--md-root", required=True, type=Path)
-    ap.add_argument("--src-root", type=Path)
-    ap.add_argument("--copy", default="", help="grades whose text to copy into library/text, e.g. A,B")
-    ap.add_argument("--copy-categories", default="", help="only copy text for these top-level folders, comma-separated")
-    ap.add_argument("--sample", type=int, default=0, help="only grade the first N files (dry run)")
-    a = ap.parse_args()
-    copy = {g.strip().upper() for g in a.copy.split(",") if g.strip()}
-    cats = {c.strip() for c in a.copy_categories.split(",") if c.strip()}
-    mds = sorted(p for p in a.md_root.rglob("*.md") if "/tmp/" not in p.as_posix())
-    if a.sample:
-        mds = mds[: a.sample]
+def grade_all(md_root, src_root=None, copy=(), cats=(), sample=0):
+    """Grade every .md under md_root; writes MANIFEST.csv and toc/. Returns {grade: count}."""
+    from tqdm import tqdm
+    copy, cats = set(copy), set(cats)
+    mds = sorted(p for p in md_root.rglob("*.md") if "tmp" not in p.relative_to(md_root).parts)
+    if sample:
+        mds = mds[:sample]
+    if not mds:
+        print(f"no Markdown under {md_root}; MANIFEST.csv left as is")
+        return {}
     (ROOT / "toc").mkdir(parents=True, exist_ok=True)
     if copy:
         (ROOT / "text").mkdir(parents=True, exist_ok=True)
     rows, counts = [], {}
-    for i, md in enumerate(mds, 1):
+    for md in tqdm(mds, desc="grade", unit="book"):
         text = md.read_text(encoding="utf-8", errors="replace")
         s = stats(text)
         g, flags = grade(s)
-        rel = md.relative_to(a.md_root)
+        rel = md.relative_to(md_root)
         bid = hashlib.sha1(str(rel).encode()).hexdigest()[:10]
-        fmt, src = source_for(md, a.md_root, a.src_root)
+        fmt, src = source_for(md, md_root, src_root)
         if fmt in ("pdf", "djvu") and g == "A" and s["latex"] == 0 and s["raw_math_line_pct"] > 0.5:
             g = "B"; flags.append("PDF source with stray math symbols")
         if g != "F":
@@ -103,11 +100,22 @@ def main():
         rows.append({"id": bid, "grade": g, "flags": "; ".join(flags), "category": rel.parts[0] if len(rel.parts) > 1 else "",
                      "title": rel.stem, "source_format": fmt, "source_path": src, "md_path": str(rel), **s})
         counts[g] = counts.get(g, 0) + 1
-        if i % 200 == 0:
-            print(f"  {i}/{len(mds)}", file=sys.stderr)
     with open(ROOT / "MANIFEST.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
     print("grades:", dict(sorted(counts.items())), f"-> {ROOT/'MANIFEST.csv'}")
+    return counts
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--md-root", required=True, type=Path)
+    ap.add_argument("--src-root", type=Path)
+    ap.add_argument("--copy", default="", help="grades whose text to copy into library/text, e.g. A,B")
+    ap.add_argument("--copy-categories", default="", help="only copy text for these top-level folders, comma-separated")
+    ap.add_argument("--sample", type=int, default=0, help="only grade the first N files (dry run)")
+    a = ap.parse_args()
+    copy = {g.strip().upper() for g in a.copy.split(",") if g.strip()}
+    cats = {c.strip() for c in a.copy_categories.split(",") if c.strip()}
+    grade_all(a.md_root, a.src_root, copy, cats, a.sample)
 
 if __name__ == "__main__":
     main()
