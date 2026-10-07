@@ -33,7 +33,8 @@ and infrastructure/security roles are where remote and high pay overlap best (my
 2. **CR150 Interviewing and negotiation** alongside, from the start.
 3. **Specialty, pick one first:**
    - **Infrastructure/platform:** CR110 Kubernetes (CKAD) → CR380 Platform engineering and SRE (CKA).
-   - **Inference/performance:** CR130 Fine-tuning and post-training → CR140 Inference optimization (+ the C/C++ major).
+   - **Inference/performance (recommended, 2026-10-07):** CUDA has the best pay evidence of the three: senior-to-staff GPU engineers at $300k–$700k+, kernel writers at the top [21]. Path: C/C++ CP101 → CP320 CUDA (PMPP, in collection) → CR140; CR130 fine-tuning optional.
+   - **Quick win alongside: Spark** (CR170, ~6 lessons): advertised floor ~$180k, $50–70k above the market median [22]; lower ceiling than CUDA but weeks, not months.
    - **AI and cloud security:** CR330 (after CR110).
 4. **CR390 Portfolio** throughout: every course ends in something public.
 
@@ -136,4 +137,6 @@ Level II: CR490, reproduce a recent paper in public (optional). The full map: `c
 18. Interview Kickstart, *How much do machine learning engineers make in 2026?* (big-tech MLE median TC $264,400; senior). https://interviewkickstart.com/blogs/articles/machine-learning-engineer-salary
 19. Levels.fyi, *Data Engineer salary* (US median TC; per-company pages for Google, Meta, Apple). https://www.levels.fyi/t/software-engineer/title/data-engineer
 20. Careery, *Will AI replace software engineers?* (most AI-resistant: architecture, distributed systems, security, ML infrastructure); Algeria Tech News summary of Q1 2026 listings (security +23%, AI-security +31% premium). https://careery.pro/research/will-ai-replace-software-engineers ; https://algeriatech.news/?p=28794
+21. HeroHunt, *How to recruit GPU kernel engineers (2026)*. https://www.herohunt.ai/blog/how-to-recruit-gpu-kernel-engineers-2026/ ; ctaio.dev, *Nvidia salary (2026)*. https://ctaio.dev/en/salary/nvidia-salary/
+22. SeekerScore, *The highest-paid skills in 2026, from 73,374 job postings that disclosed pay*. https://www.seekerscore.com/insights/highest-paying-skills-2026 ; KORE1, *Databricks engineer salary guide*. https://www.kore1.com/databricks-engineer-salary-guide/
 Exam facts (AWS, Azure, NVIDIA, Databricks, Anthropic, CNCF, HashiCorp, PyTorch): per-entry sources in `catalog.json`.

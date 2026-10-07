@@ -14,7 +14,7 @@ flowchart TB
   CR140["CR140 Inference optimization and serving<br/><small>book: vLLM docs</small>"]
   CR150["CR150 Interviewing and negotiation<br/><small>book: Skiena, The Algorithm Design Manual</small>"]
   CR160["CR160 Distributed systems and architecture<br/><small>book: Kleppmann, Designing Data-Intensive Applica…</small>"]
-  CR170["CR170 Data engineering<br/><small>book: book not chosen yet</small>"]
+  CR170["CR170 Data engineering with Spark<br/><small>book: book not chosen yet</small>"]
   CR210["CR210 Google Professional ML Engineer<br/><small>book: book not chosen yet</small>"]
   CR220["CR220 Azure AI Apps and Agents Developer (AI-…<br/><small>book: book not chosen yet</small>"]
   CR230["CR230 Databricks Generative AI Engineer Assoc…<br/><small>book: book not chosen yet</small>"]

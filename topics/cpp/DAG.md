@@ -25,8 +25,7 @@ flowchart TB
   CP202 --> CP204
   CP120 --> CP204
   CP120 --> CP310
-  CP201 --> CP320
-  CP120 --> CP320
+  CP101 --> CP320
   CP202 --> CP330
   CP202 --> CP390
   classDef done fill:#eee,color:#777,stroke:#bbb

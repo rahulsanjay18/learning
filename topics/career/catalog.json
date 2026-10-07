@@ -624,6 +624,35 @@
       "sources": [
         "https://devopscube.com/best-kubernetes-certifications/"
       ]
+    },
+    {
+      "id": "skill-cuda",
+      "kind": "skill",
+      "name": "CUDA / GPU kernel engineering",
+      "pick": "core",
+      "course": "CR140",
+      "why": "Senior-to-staff GPU engineers reported at $300k-$700k+; kernel development from scratch is the top-paid inference skill, and engineers combining it with serving frameworks (vLLM, SGLang, TensorRT-LLM) reported 30-50% above standard rates. NVIDIA median TC $390k. Takes months (C/C++ first).",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.herohunt.ai/blog/how-to-recruit-gpu-kernel-engineers-2026/",
+        "https://ctaio.dev/en/salary/nvidia-salary/",
+        "https://www.acceler8talent.com/resources/blog/gpu-engineer-recruitment--bay-area-and-boston-2026/"
+      ]
+    },
+    {
+      "id": "skill-spark",
+      "kind": "skill",
+      "name": "Apache Spark / PySpark (+ Databricks)",
+      "pick": "elective",
+      "course": "CR170",
+      "why": "Advertised floor ~$180k in one analysis of 73k postings that disclosed pay, $50-70k above the market median; Databricks lead/staff base $190-260k. Lower ceiling than CUDA, but quick for an ML engineer (weeks) and pays most combined with ML and distributed systems.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.seekerscore.com/insights/highest-paying-skills-2026",
+        "https://www.kore1.com/databricks-engineer-salary-guide/"
+      ]
     }
   ]
 }

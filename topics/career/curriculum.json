@@ -135,7 +135,7 @@
         ],
         "skip": []
       },
-      "note": "Priority 4, step 2; pairs with the C/C++ major (CP320 CUDA, CP403 performance)."
+      "note": "Recommended specialty (2026-10-07: learner flagged CUDA pay). Path: cpp CP101 -> CP320 CUDA (PMPP 4th ed., in collection) -> this course (quantization, serving frameworks, kernels in production)."
     },
     {
       "id": "CR150",
@@ -187,14 +187,15 @@
     },
     {
       "id": "CR170",
-      "title": "Data engineering",
+      "title": "Data engineering with Spark",
       "status": "later",
       "requires": [
         "CR100"
       ],
       "group": "elective",
       "level": "I",
-      "note": "Adjacent option: Levels.fyi median TC ~$157k (higher at big tech). Spark, dbt, Airflow, streaming; Databricks cert (CR230) as the badge."
+      "note": "Quick win (weeks): Spark/PySpark at scale (partitioning, shuffles, joins, Structured Streaming), then the Databricks Generative AI Engineer badge (CR230) or a Databricks data-engineering cert. Spark pays best combined with ML and distributed systems (SE120).",
+      "est_lessons": 6
     },
     {
       "id": "CR210",

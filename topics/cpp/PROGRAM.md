@@ -55,7 +55,7 @@ CP120 and CP201 both need only CP101, so they can run side by side if you want v
 | Course | Book | Requires | Ties to |
 |---|---|---|---|
 | CP310 Linux systems programming (elective) | *The Linux Programming Interface* (Kerrisk) [4] (**to buy**) | CP120 | systems |
-| CP320 GPU programming with CUDA (elective) | *Programming Massively Parallel Processors* 4th ed. (A, in collection) | CP201, CP120 | ML / perf |
+| **CP320 GPU programming with CUDA (elective, recommended early)** | *Programming Massively Parallel Processors* 4th ed. (A, in collection) | CP101 (changed 2026-10-07: PMPP teaches CUDA in C) | ML / perf: the best-paid branch (see career catalog `skill-cuda`) |
 | CP330 Game engine programming (elective) | *Game Engine Architecture* 3rd ed. (Gregory) [5] (to buy); *Game Coding Complete* 4th ed. (B) | CP202 | Games major |
 | CP390 Project: engine for the 3D chess variant (practice) | your own code; board representation → move generation + perft tests → search → threads | CP202 | Games major |
 

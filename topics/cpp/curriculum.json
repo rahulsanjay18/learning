@@ -22,7 +22,9 @@
       "id": "CP101",
       "title": "C, properly",
       "status": "later",
-      "requires": ["CP000"],
+      "requires": [
+        "CP000"
+      ],
       "est_lessons": 10,
       "pretest": true,
       "group": "core",
@@ -47,7 +49,9 @@
       "id": "CP120",
       "title": "C and the machine",
       "status": "later",
-      "requires": ["CP101"],
+      "requires": [
+        "CP101"
+      ],
       "est_lessons": 10,
       "pretest": true,
       "group": "core",
@@ -72,7 +76,9 @@
       "id": "CP201",
       "title": "Core C++",
       "status": "later",
-      "requires": ["CP101"],
+      "requires": [
+        "CP101"
+      ],
       "est_lessons": 14,
       "pretest": true,
       "group": "core",
@@ -96,7 +102,9 @@
       "id": "CP202",
       "title": "Effective modern C++",
       "status": "later",
-      "requires": ["CP201"],
+      "requires": [
+        "CP201"
+      ],
       "est_lessons": 12,
       "group": "core",
       "level": "I",
@@ -116,7 +124,9 @@
       "id": "CP203",
       "title": "Generic programming and the standard library",
       "status": "later",
-      "requires": ["CP201"],
+      "requires": [
+        "CP201"
+      ],
       "est_lessons": 10,
       "pretest": true,
       "group": "core",
@@ -140,7 +150,10 @@
       "id": "CP204",
       "title": "Concurrency",
       "status": "later",
-      "requires": ["CP202", "CP120"],
+      "requires": [
+        "CP202",
+        "CP120"
+      ],
       "est_lessons": 10,
       "group": "core",
       "level": "I",
@@ -159,15 +172,21 @@
       "id": "CP310",
       "title": "Linux systems programming",
       "status": "later",
-      "requires": ["CP120"],
+      "requires": [
+        "CP120"
+      ],
       "est_lessons": 10,
       "group": "elective",
       "level": "I",
       "source": "The Linux Programming Interface (to buy), selected chapters",
       "books": {
         "primary": "Kerrisk, The Linux Programming Interface (2010): wanted (buy); files, processes, signals, sockets, mmap",
-        "secondary": ["4e0baa8c79 OSTEP: persistence piece (grade B)"],
-        "tertiary": ["man7.org man pages"],
+        "secondary": [
+          "4e0baa8c79 OSTEP: persistence piece (grade B)"
+        ],
+        "tertiary": [
+          "man7.org man pages"
+        ],
         "skip": []
       }
     },
@@ -175,39 +194,52 @@
       "id": "CP320",
       "title": "GPU programming with CUDA",
       "status": "later",
-      "requires": ["CP201", "CP120"],
+      "requires": [
+        "CP101"
+      ],
       "est_lessons": 10,
       "group": "elective",
       "level": "I",
       "source": "PMPP 4th ed. Parts I-II",
       "books": {
         "primary": "be9492d77e Hwu, Kirk & El Hajj, Programming Massively Parallel Processors 4th ed. (2023): Parts I-II (grade A)",
-        "secondary": ["NVIDIA CUDA C++ Programming Guide (docs.nvidia.com)"],
+        "secondary": [
+          "NVIDIA CUDA C++ Programming Guide (docs.nvidia.com)"
+        ],
         "tertiary": [],
         "skip": []
-      }
+      },
+      "note": "Recommended early (2026-10-07: CUDA pays a premium; see topics/career/catalog.json skill-cuda). PMPP teaches CUDA in C, so CP101 is enough; read CS:APP Ch. 6 (memory hierarchy) alongside. Feeds career CR140."
     },
     {
       "id": "CP330",
       "title": "Game engine programming",
       "status": "later",
-      "requires": ["CP202"],
+      "requires": [
+        "CP202"
+      ],
       "est_lessons": 10,
       "group": "elective",
       "level": "I",
       "source": "Game Engine Architecture 3rd ed. (to buy), engine-support and game-loop chapters",
       "books": {
         "primary": "Gregory, Game Engine Architecture 3rd ed. (2018): wanted (buy)",
-        "secondary": ["4f1b4dd501 McShaffry & Graham, Game Coding Complete 4th ed. (grade B)"],
+        "secondary": [
+          "4f1b4dd501 McShaffry & Graham, Game Coding Complete 4th ed. (grade B)"
+        ],
         "tertiary": [],
-        "skip": ["7419348db8 Unity in Action: C#, not C++"]
+        "skip": [
+          "7419348db8 Unity in Action: C#, not C++"
+        ]
       }
     },
     {
       "id": "CP390",
       "title": "Project: an engine for the 3D chess variant",
       "status": "later",
-      "requires": ["CP202"],
+      "requires": [
+        "CP202"
+      ],
       "group": "practice",
       "level": "I",
       "note": "Optional running project tying to the Games major: board representation, move generation, perft tests, search, then threads (after CP204). Reviewed like code review, not lessons."
@@ -216,21 +248,27 @@
       "id": "CP401",
       "title": "Templates and metaprogramming",
       "status": "later",
-      "requires": ["CP203"],
+      "requires": [
+        "CP203"
+      ],
       "group": "core",
       "level": "II",
       "books": {
         "primary": "Vandevoorde, Josuttis & Gregor, C++ Templates: The Complete Guide 2nd ed. (2017): wanted",
         "secondary": [],
         "tertiary": [],
-        "skip": ["1062457b20 1st ed. (2002): pre-C++11"]
+        "skip": [
+          "1062457b20 1st ed. (2002): pre-C++11"
+        ]
       }
     },
     {
       "id": "CP402",
       "title": "Software design in C++",
       "status": "later",
-      "requires": ["CP202"],
+      "requires": [
+        "CP202"
+      ],
       "group": "core",
       "level": "II",
       "books": {
@@ -247,12 +285,18 @@
       "id": "CP403",
       "title": "Performance engineering",
       "status": "later",
-      "requires": ["CP120", "CP204"],
+      "requires": [
+        "CP120",
+        "CP204"
+      ],
       "group": "core",
       "level": "II",
       "books": {
         "primary": "Drepper, What Every Programmer Should Know About Memory (2007, free PDF) + Agner Fog, Optimizing software in C++ (free manual)",
-        "secondary": ["5243893029 CS:APP Ch. 5-6 (already read in CP120)", "perf, valgrind/cachegrind, Google Benchmark"],
+        "secondary": [
+          "5243893029 CS:APP Ch. 5-6 (already read in CP120)",
+          "perf, valgrind/cachegrind, Google Benchmark"
+        ],
         "tertiary": [],
         "skip": []
       }
@@ -261,7 +305,9 @@
       "id": "CP490",
       "title": "Reading real C++ ML systems",
       "status": "later",
-      "requires": ["CP403"],
+      "requires": [
+        "CP403"
+      ],
       "group": "practice",
       "level": "II",
       "note": "Optional: write a PyTorch C++/CUDA extension; read ggml/llama.cpp's tensor and kernel code."
@@ -270,7 +316,9 @@
       "id": "CP499",
       "title": "Capstone: contribute to an open-source C/C++ project",
       "status": "later",
-      "requires": ["CP402"],
+      "requires": [
+        "CP402"
+      ],
       "group": "capstone",
       "level": "II",
       "note": "Optional: one merged pull request to a real C/C++ project you use."
