@@ -60,8 +60,8 @@
     {
       "id": "private-hosting",
       "major": "eng",
-      "added": "2026-10-07",
-      "text": "Review notes/design-private-source-public-site.md (private learning-src repo + public site repo, same Pages URL) and say go / no-go; it lists your ~15-minute migration steps.",
+      "added": "2026-10-06",
+      "text": "URGENT-ish: library/MANIFEST.csv (2,000+ book titles, 509 naming libgen/z-lib/Anna's Archive) is publicly served at rahulsanjay18.github.io/learning/library/MANIFEST.csv. Decide on the private-source split (notes/design-private-source-public-site.md); its step 1 (make this repo private) removes it from public view.",
       "why": "GitHub Pages on the free plan is always public; until decided, don't put anything private in this repo (inbox included)."
     }
   ]

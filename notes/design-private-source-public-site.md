@@ -13,6 +13,12 @@
 - **Runtime private data stays on your server** (progress server pattern). The **research service** (forum search) is a small,
   read-only endpoint on the same host; its API is specified below so you can build it and fill in the gaps.
 
+## 0. Why this matters now (found 2026-10-07)
+`library/MANIFEST.csv` and `library/toc/` are public on GitHub and served by Pages (HTTP 200 checked 2026-10-07): over 2,000 book
+titles, 509 of them with source tags naming shadow libraries. The book *text* stays on the learner's own server (tailnet), which is the
+right place for it; the list of titles is what's exposed. Making this repo private (migration step 1) takes it out of public view.
+Already-public history can't be recalled from anyone who cloned it, but there's no sign anyone has.
+
 ## 1. Goals and non-goals
 **Goals:** nothing personal is publicly readable; lessons still work on GitHub Pages for free; Claude sessions keep one repo to
 work in; no new credentials inside Claude sessions.
