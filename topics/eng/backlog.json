@@ -383,10 +383,19 @@
     {
       "repo": "learning",
       "n": null,
-      "title": "Decision record: what's public vs private on the learning site, and where private things live (see notes/private-hosting-options.md)",
+      "title": "Design review + decision: private source repo, public site repo (notes/design-private-source-public-site.md)",
       "course": "SE110",
-      "you": "write the ADR: options, decision, consequences",
+      "you": "review the design as a staff reviewer (risks, missing pieces), then decide",
       "claude": "implement it (private repo, server endpoints, or Cloudflare Access)",
+      "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Research service: read-only forum search on the book-server host (spec in notes/design-private-source-public-site.md §6)",
+      "course": "CR100",
+      "you": "fill the gaps (API auth, sources, caps), build or delegate the server side",
+      "claude": "the client script, tests, docs",
       "state": "open"
     }
   ]

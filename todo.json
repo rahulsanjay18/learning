@@ -61,7 +61,7 @@
       "id": "private-hosting",
       "major": "eng",
       "added": "2026-10-07",
-      "text": "Decide where private things live (notes/private-hosting-options.md): private repo + your server (recommended), or the whole site behind Cloudflare Access.",
+      "text": "Review notes/design-private-source-public-site.md (private learning-src repo + public site repo, same Pages URL) and say go / no-go; it lists your ~15-minute migration steps.",
       "why": "GitHub Pages on the free plan is always public; until decided, don't put anything private in this repo (inbox included)."
     }
   ]
