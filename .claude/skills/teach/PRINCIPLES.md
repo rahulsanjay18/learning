@@ -1,8 +1,10 @@
 # How to explain: two principles, a probe, and quiz-option construction
 
 Adapted 2026-10-07 from Amos Blomqvist's `teach` skill (github.com/amosblomqvist/learn, `skills/teach/SKILL.md`), rewritten
-for this repo (HTML lessons, `assets/` widgets, TEACHING-LOG rules). Read it with TEACHING-LOG rules 4, 7, 20 and 21, which
-already point the same way. This file is *how* to explain; SKILL.md and CLAUDE.md say *what* to produce.
+for this repo (HTML lessons, `assets/` widgets, TEACHING-LOG rules). Overlap with existing rules, exactly: rule 21 *is*
+principle 2, but only for new definitions; principle 2 extends it to every step (formulas, proofs, manipulations). Rule 4
+(concrete story first) is the *motivate* step of the loop below. Nothing before this file covered principle 1, bracketing,
+or building options by mutation. This file is *how* to explain; SKILL.md and CLAUDE.md say *what* to produce.
 
 ## Goal: connected facts, not a pile of them
 

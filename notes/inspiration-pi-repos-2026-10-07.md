@@ -23,9 +23,19 @@ subagents (researcher, svg-maker, mermaid-maker) and TUI extensions (`quiz`, `as
 separate **"I don't know"** (so a gap isn't recorded as an unlucky guess) and a free-text note field. `md-log.ts` mirrors the session
 (prose + Q&A, never answer keys before answering) into a Markdown file rendered live in Obsidian.
 
-**How it compares to ours.** Our TEACHING-LOG rules 4, 7 and 21 already point this way, and our HTML lessons already do instant
-grading, "I don't know" (`data-skip`) and confidence checks. What we lacked: the *bracketing* rule for probes, the *mutation*
-procedure for options, and an explicit "unconditional truth" vocabulary. Note: learn has **no license file**, so legally it's
+**How it compares to ours** (corrected 2026-10-07; the first version said our rules "already point this way", which overstated it):
+
+| learn's idea | Our rule before today | Same? |
+|---|---|---|
+| Principle ii, motivated discovery of **every** step | Rule 21: reason through a **new definition** in revealed steps before naming it | Same idea, **narrower**: definitions only, not derivations, proofs or formula manipulations |
+| Principle i, unconditional truths first | none | **Missing**. Rule 4 (concrete story → numbers → formula) is a different rule: it orders abstraction, not which facts anchor the lesson. It fits learn's loop as the *motivate* step |
+| Probe until each strand is bracketed (one right, one miss) | Rule 8 (multiple choice ≠ known), confidence check, "I don't know" | **Missing**: we measure guessing, not where the edge is |
+| Build options by mutating the right claim | Lint for equal word counts; rule 23 (labels mustn't name the answer) | **Partial**: we check the result, not the construction |
+| Instant grading, "I don't know", note field | `lp.js` quizzes, `data-skip`, confidence step | **Same** |
+| (none) | Rule 7: worked example before practice | **Ours only** |
+
+In practice rule 21 has been applied in one lesson so far (Statistics 0006 is the only lesson Markdown with a `::: worked` block).
+Note: learn has **no license file**, so legally it's
 "all rights reserved"; I paraphrased and credited it instead of copying text verbatim.
 
 **Adopted:**

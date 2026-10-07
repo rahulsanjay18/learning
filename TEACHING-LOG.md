@@ -65,6 +65,8 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     accepted as stated, motivate each step ("how could I have discovered this?"), bracket the edge when probing (a right *and* a
     wrong answer per strand), and write the right option first, then mutate it into distractors with no reasons in any option.
     Details: `.claude/skills/teach/PRINCIPLES.md`. Before committing a lesson, the `lesson-reviewer` agent can check it.
+27. **When comparing, say exactly how much overlaps.** "Is the same", "is the same but narrower (how)", "is missing"; never
+    "leans this way" or "points the same way". (Entry 26)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -132,3 +134,6 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     migration, the point was to reject both."** The claim-headline rubric required "distinguish invasion from migration", but the
     prompt only asked what the evidence supports. The learner's answer ("the Aryans arrived centuries later") already implied it.
     Fix: objective → Got it, regraded 0.9, re-teach dropped; rule 25.
+26. **2026-10-07 · "lean, or they are this way? this is important."** I wrote that rules 4, 7 and 21 "already lean this way"
+    compared with learn's teaching principles. Checked: rule 21 is principle 2 for definitions only, principle 1 had no rule,
+    rule 4 is a different idea, rule 7 has no counterpart in learn. Fix: comparison table in `notes/inspiration-pi-repos-2026-10-07.md`, corrected PRINCIPLES.md; rule 27.
