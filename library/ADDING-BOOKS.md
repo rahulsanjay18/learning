@@ -9,6 +9,8 @@ compose file in `~/Documents`. Note the flag names differ: `reconvert.py` takes 
 1. **Put the files** (PDF/EPUB/…) in the originals folder, in a sensible category folder.
 2. **Convert to Markdown** into the Markdown folder (same folder structure). The tools `scripts/reconvert.py` uses:
    EPUB → `pandoc book.epub -t gfm -o book.md`; PDF → `marker_single book.pdf --output_dir …` (handles OCR and LaTeX).
+   Easiest: `--new` converts every book that has no Markdown yet (point both roots at one subfolder to limit it):
+   `python3 scripts/reconvert.py --books-root "…/Library/<folder>" --md-root "…/Markdown_Library/<folder>" --new --run`.
    Or put them in `library/RECONVERT.csv` and run
    `python3 scripts/reconvert.py --books-root "/media/rahul/Drive 2/Library/Library" --md-root "/media/rahul/Drive 2/Library/Markdown_Library"`
    (dry run), then the same with `--run`.
