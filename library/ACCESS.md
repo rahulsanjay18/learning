@@ -21,6 +21,7 @@ and how to check each one. Claude never needs a title list.
 | 1 | My collection | grep `library/MANIFEST.csv` and `library/LIBRARY.md` | no |
 | 2 | <e.g. library app> | <search URL with {q}, e.g. https://example.org/search?q={q}> | yes, give me the link |
 | 3 | <e.g. subscription through work/school> | <search URL with {q}> | yes, give me the link |
+| 3b | **Pages behind a login, fetched by the learner** (Blind, paywalled articles, course portals) | Ask: add a `todo.json` item with the URL and what you need; the learner saves it to `inbox/` (`inbox/README.md`). Claude never gets the account | the learner logs in |
 | 4 | Open Library (metadata, ISBNs, borrowable e-books) | `https://openlibrary.org/search.json?q={q}&fields=key,title,author_name,isbn,ebook_access&limit=5` | no |
 
 Notes:
