@@ -29,3 +29,4 @@ meaningful progress": they share what they think is cool, and Claude keeps it in
 | 2026-10-07 | Compute-access job API for Claude on the learner's server | platform; staff design practice | ticket in topics/eng/backlog.json |
 | 2026-10-07 | WebAssembly: how the C++ engine runs in the browser | eng interest lane | was in the interest queue; parked to keep the queue at 2 |
 | 2026-10-07 | 3D chess as a side income (skins, subscriptions, Steam) | exploit lane, later | after the web MVP ships |
+| 2026-10-07 | OR-Tools (Google's optimization library) | a study-week scheduler (CP-SAT: blocks, lanes, exam deadlines, review load); RL tournament pairings; cluster job scheduling; the CR326 optimization toolkit | **not a service**: it's a pip library and runs in Claude's sessions already (ortools 9.15 tested 2026-10-07). Revisit when the weekly plan has real constraints (exam dates, variable availability) |
