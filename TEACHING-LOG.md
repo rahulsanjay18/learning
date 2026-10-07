@@ -19,7 +19,7 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 9. **Assign reading before the lesson whenever it makes sense** (all subjects, not only definition-heavy ones). Give a short,
    specific slice of the primary source with a reading guide (3 questions + "what surprised or confused you"), as its own block
    before the lesson. (Entries 8, 13)
-13. **Homework is allowed but optional.** Keep it small and specific (one exercise, one game to play, one short write-up), mark it
+13. **(Exception 2026-10-07: in the Engineering career major `topics/eng/`, the rep is required at the learner's request; see its PROGRAM.md §3.)** **Homework is allowed but optional.** Keep it small and specific (one exercise, one game to play, one short write-up), mark it
     clearly as optional, and **design every lesson so it still works if the homework was skipped** (the learner isn't sure how
     much they'll do). Never make a later lesson depend on homework; if it builds on homework, include a 2-minute recap. Track what
     gets done in the topic's NOTES.md and adjust the amount to what actually happens. (Entry 13)

@@ -124,6 +124,21 @@ def main():
         if nxt_c:
             out.append(f"    queued: " + ", ".join(f"{c['id']} {c['title']}" for c in nxt_c))
 
+    for m in cfg["majors"]:  # required reps (topics/<major>/backlog.json): open ones block the next lesson in their lane
+        bp = ROOT / "topics" / m["slug"] / "backlog.json"
+        if not bp.exists():
+            continue
+        try:
+            t = json.loads(bp.read_text())["tickets"]
+            open_ = sorted((x for x in t if x.get("state") == "assigned"), key=lambda x: x.get("assigned_on", ""))
+            line = f"{m['name']} REPS: {len(open_)} assigned"
+            if open_:
+                o = open_[0]
+                age = (d - date.fromisoformat(o["assigned_on"])).days if o.get("assigned_on") else "?"
+                line += f"; oldest {o['repo']}#{o['n']} '{o['title'][:50]}' ({age} days): ship it or skip with a reason before that lane's next lesson"
+            out.append(line)
+        except Exception as e:
+            warn.append(f"{bp}: {e}")
     try:  # self-updating catalogs (scripts/catalog.py): entries due for a web re-check
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / "catalog.py"), "--date", d.isoformat()],
                            capture_output=True, text=True, timeout=20)

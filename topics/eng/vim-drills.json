@@ -1,0 +1,9 @@
+{
+  "about": "Vim drills for the eng major, checked by replaying keystrokes in real Vim: python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> \"<keys>\". One per lesson, following Practical Vim's tips; text comes from the 3D chess repos where possible. par = a good keystroke count (verified by the reference solution).",
+  "drills": [
+    {"id": "v01-dot", "tip": "Practical Vim tip 1-2: the dot command",
+     "start": "x = 1\ny = 2\nz = 3\n", "target": "x = 1;\ny = 2;\nz = 3;\n", "par": 7, "reference": "A;<Esc>j.j."},
+    {"id": "v02-ciw", "tip": "Practical Vim tips on text objects: change inner word",
+     "start": "def select_action(self, obs, legal, info):\n", "target": "def choose_move(self, obs, legal, info):\n", "par": 16, "reference": "wciwchoose_move<Esc>"}
+  ]
+}

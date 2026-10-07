@@ -32,7 +32,7 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 - _NASM Essentials of Personal Fitness Training, 7th ed._ — NASM (Jones & Bartlett) — for: nasm-cpt / all lessons — why: the textbook the current exam is written from; collection only has the 4th ed. (2012) — status: missing
 - _Pixel Logic: A Guide to Pixel Art_ — Michael Azzi — for: pixel-art / all early lessons — why: the most-recommended visual beginner guide (lines, clusters, palettes, shading) — status: missing
 
-## C and C++ (parked major, topics/cpp/PROGRAM.md)
+## Engineering career: C and C++ (topics/eng/, CP courses)
 - _C++ Concurrency in Action_, 2nd ed. — Anthony Williams (Manning, 2019) — for: CP204 Concurrency (Level I core primary) — why: the standard book on C++ threads, memory model, atomics — status: missing (buy)
 - _The Linux Programming Interface_ — Michael Kerrisk (No Starch, 2010) — for: CP310 systems elective — status: missing
 - _A Tour of C++_, 3rd ed. — Bjarne Stroustrup (2022) — for: CP201/CP203, the C++20 delta over C++ Primer 5e — status: missing
@@ -41,18 +41,18 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 - _Game Engine Architecture_, 3rd ed. — Jason Gregory (CRC, 2018) — for: CP330 elective — status: missing
 - _C++ Templates: The Complete Guide_, 2nd ed. (2017) and Iglberger, _C++ Software Design_ (2022) — for: Level II CP401/CP402 — status: missing (collection has only the 2002 1st ed. of Templates, 1062457b20)
 
-## Staff engineer (parked major, topics/staff/PROGRAM.md)
+## Engineering career: staff (topics/eng/, SE courses)
 - _The Staff Engineer's Path_ — Tanya Reilly (O'Reilly, 2022) — for: SE101/SE140/SE150/SE160, the backbone — status: owned by the learner (2026-10-07), not on the book server yet
 - _A Philosophy of Software Design_, 2nd ed. — John Ousterhout (2021) — for: SE130 — status: missing
 - _An Elegant Puzzle_ — Will Larson (2019) — for: SE150 strategy — status: missing
 - _System Design Interview_ vol. 1–2 — Alex Xu; _Machine Learning System Design Interview_ — Aminian & Xu — for: SE120/SE160 — status: missing
 - _Good Strategy/Bad Strategy_ — Richard Rumelt; _Team Topologies_ — Skelton & Pais — for: SE150 (nice to have) — status: missing
 
-## Career: earning power and a fallback (parked major, topics/career/PROGRAM.md)
+## Engineering career: career extras (topics/eng/, CR courses)
 - SOA Exam P study manual (ACTEX or Coaching Actuaries) — for: CR325 actuary, the main fallback's first exam — status: missing (wanted first)
 - A USPTO patent-bar prep course or book — for: CR327 patent agent — status: missing (later)
 - _AI Engineering_ — Chip Huyen (O'Reilly, 2025) — for: CR120/CR140 boosters — status: missing
 - _System Design Interview_ vol. 1–2 — Alex Xu — for: CR150 interviewing — status: missing
 - _Trading and Exchanges_ — Larry Harris — for: CR310 quant developer (on hold: remote-only) — status: missing
 
-AWS ML certification: nothing yet; the books depend on which exam you choose (the major isn't set up).
+AWS ML certification (topics/eng/, AW courses): MLA-C02 exam guide (free); your 2024 Solutions Architect course (you have it).

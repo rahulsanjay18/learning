@@ -5,23 +5,23 @@
   "week": {
     "mon": [
       "statistics",
-      "aws-ml"
+      "eng"
     ],
     "tue": [
       "statistics",
       "indian-history"
     ],
     "wed": [
-      "aws-ml",
+      "eng",
       "statistics"
     ],
     "thu": [
-      "aws-ml",
+      "eng",
       "games"
     ],
     "fri": [
       "statistics",
-      "aws-ml"
+      "eng"
     ],
     "sat": [
       "indian-history",
@@ -41,12 +41,15 @@
       ]
     },
     {
-      "slug": "aws-ml",
-      "name": "AWS ML certification",
+      "slug": "eng",
+      "name": "Engineering career (staff, AWS, C/C++/CUDA, on 3D chess)",
       "weight": "full",
       "goal": "career",
-      "curriculum": null,
-      "setup": "Not set up. Ask: which exam (check AWS's current list, don't guess names), target date, hands-on AWS experience, prep materials. Until then its blocks go to Statistics."
+      "curriculum": "topics/eng/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "The single home for everything job-related (learner, 2026-10-07): staff skills, AWS (old aws-ml major folded in), C/C++/CUDA, Spark, career extras and the safety net. Reps come from the 3D chess backlog (topics/eng/backlog.json)."
     },
     {
       "slug": "indian-history",
@@ -70,36 +73,6 @@
     }
   ],
   "parked": [
-    {
-      "slug": "staff",
-      "name": "Staff engineer",
-      "goal": "career",
-      "curriculum": "topics/staff/curriculum.json",
-      "enrolled_levels": [
-        "I"
-      ],
-      "note": "Designed 2026-10-07 (topics/staff/PROGRAM.md). Takes over aws-ml's blocks after the first AWS cert, or sooner if the learner chooses it instead. Start: SE000 placement. Buy Reilly, The Staff Engineer's Path."
-    },
-    {
-      "slug": "cpp",
-      "name": "C and C++",
-      "goal": "career",
-      "curriculum": "topics/cpp/curriculum.json",
-      "enrolled_levels": [
-        "I"
-      ],
-      "note": "Designed 2026-10-07 (topics/cpp/PROGRAM.md); start with CP000 placement. Maybe after AWS ML or in its place. Buy C++ Concurrency in Action 2e before CP204."
-    },
-    {
-      "slug": "career",
-      "name": "Career: earning more in ML/AI-adjacent tech",
-      "goal": "career",
-      "curriculum": "topics/career/curriculum.json",
-      "enrolled_levels": [
-        "I"
-      ],
-      "note": "Designed 2026-10-07 (topics/career/PROGRAM.md). Main priority: staff-level design + interviewing, then one specialty (platform, inference, or AI security). Safety net: actuary, patent agent. Self-updating catalog: scripts/catalog.py."
-    },
     {
       "slug": "economics",
       "note": "Principles solid (13/13). Resume at intermediate level."

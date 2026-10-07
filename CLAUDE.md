@@ -28,7 +28,7 @@ BOOKS_URL=https://books.tail59e10.ts.net
   Plan so a day's work fits in that hour (short lessons + review, not one long one), and offer more when I have more time.
 - Active topics (keep ~3 + a game): **Economics, Statistics** (start with a placement pretest; I have a math degree that included stats),
   **Indian History**, plus chess or Go on the side. Full wishlist: `notes/learning-wishlist.md`.
-- Two kinds of goals: **career** (Statistics, ML/AI, AWS ML-track certification, NASM-CPT exam) and **"good for the soul"**
+- Two kinds of goals: **career** (Statistics, the Engineering career major `topics/eng/` incl. the AWS ML cert, NASM-CPT exam) and **"good for the soul"**
   (Indian History, Economics, games, arts...). Keep both in each week; exam prep is deadline-driven, so ask me for exam dates.
   I can supply study materials (prep books, practice exams) for the certifications.
 - **No generated art or images.** Don't draw illustrations or decorative graphics yourself. If a lesson needs a picture, ask me
@@ -58,6 +58,15 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - `/program` runs the majors: it prints today's plan and where each major stands (`programs.json` + `topics/<major>/curriculum.json`
   + the progress server), then teaches with /teach conventions. Start a learning session with it.
 - After every lesson, update the major's `curriculum.json` (`lessons`, `plan`, `completed`) and run `python3 scripts/test_programs.py`.
+
+## Engineering career major (`topics/eng/`, 2026-10-07)
+- **Everything job-related lives here** (staff skills, AWS cert, C/C++/CUDA, Spark, career extras, safety net); it replaced the aws-ml major.
+- Continuous, two lanes (Staff + Tech). Every lesson ends with a **required rep** from my 3D chess backlog (`topics/eng/backlog.json`):
+  the next lesson in that lane waits until it ships (PR/doc link) or I skip it with a reason. This overrides "homework is optional" for this major only.
+- **You write the code; I do the staff-level work** (design docs, ADRs, decisions, review). When the code is the skill (C, C++, CUDA, Spark), I write it.
+- Every lesson opens with a Vim drill; check my keystrokes with `python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> "<keys>"`.
+- 3D chess repos: rahulsanjay18/3dChessInC, 3dChessRLAgent, 3dChessWeb, 3dChessServer, 3dChessInfra, 3dChessRelay, 3dChessDesktop.
+  Re-check a ticket on GitHub before assigning it; ask before filing new issues.
 
 ## Handoff
 - `notes/HANDOFF.md`: current state and to-do list across all topics and the platform. Read it at the start of a new thread; keep it current.

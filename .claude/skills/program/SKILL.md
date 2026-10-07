@@ -27,6 +27,8 @@ Arguments: `$ARGUMENTS` (empty = run today's plan).
   by `scripts/major_dag.py`: rerun it after changing courses.
 - `topics/<major>/SYLLABUS.md`: lesson-level plan for the active (and next) course: reading + 2–3 objectives per lesson, and a
   "Changes" log. `plan` in curriculum.json mirrors it. Write the next lesson *from* it; when a course starts, write its syllabus first.
+- `topics/<major>/backlog.json` (optional, eng): project tickets mapped to courses; each lesson assigns one as a required rep
+  (state assigned/shipped/skipped + dates); status shows open reps. Re-check the ticket on GitHub before assigning.
 - `topics/<major>/catalog.json` (optional): a self-updating list of certs/skills/tracks with sources and a `verified` date;
   `scripts/catalog.py` lists what's due. Status shows CATALOG REFRESH DUE → re-check those entries on the web (official page first),
   update them, log changes in the topic's `CHANGES.md`; propose (don't make) plan changes they imply.
@@ -75,6 +77,7 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
 | Write a lesson | Markdown + `python3 scripts/render_lesson.py topics/<t>/lessons/NNNN-x.md --course <ID>` (updates index + curriculum) |
 | Look something up in a book | `python3 scripts/books.py search "…" --book <id>`, `grep <id> "Definition 8.3.5"`, `read <id> <line> 60` |
 | Quick review in chat (no new lesson) | the `/quiz-me` skill |
+| Check a Vim drill (eng major) | `python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> "<keys>"` |
 | Check before committing | `bash scripts/check_all.sh --quick` (add the browser test by dropping `--quick` when widgets changed) |
 
 ## Rules

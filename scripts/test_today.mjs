@@ -10,12 +10,12 @@ for (const m of cfg.majors) if (m.curriculum) cur[m.slug] = JSON.parse(readFileS
 let fails = 0;
 const ok = (c, msg) => { if (!c) { fails++; console.log("FAIL", msg); } };
 
-// 2026-10-05 is a Monday in New York (noon UTC): statistics + aws-ml, and aws-ml lends its block to statistics.
+// 2026-10-05 is a Monday in New York (noon UTC): statistics + eng (the engineering career major took the old aws-ml slot).
 const mon = T.planFor(cfg, cur, new Date("2026-10-05T16:00:00Z"));
 ok(mon.day === "mon" && mon.date === "2026-10-05", "Monday date " + JSON.stringify([mon.day, mon.date]));
 ok(mon.blocks.length === 2, "two blocks on Monday");
 ok(mon.blocks[0].major === "Statistics", "block 1 statistics");
-ok(mon.blocks[1].covering === "AWS ML certification" && mon.blocks[1].major === "Statistics", "AWS block covered by Statistics");
+ok(mon.blocks[1].slug === "eng" && !mon.blocks[1].covering, "block 2 is the engineering career major");
 const st = mon.blocks[0].items[0];
 // expected = the first written lesson not yet completed (null once all are done: then "next" names the lesson to write)
 const s150 = cur.statistics.courses.find(c => c.status === "active");
