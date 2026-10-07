@@ -3,7 +3,7 @@
 *Drafted 2026-10-07 from the request; correct anything that's off.*
 
 ## Why
-Five years in AI. Mainly wants **a fallback** that pays well if the AI/ML path doesn't pan out; also skills that are current **and advertisable**: certifications and frameworks that show up on a resume,
+Five years in AI. Main priority (revised 2026-10-07): **earn more in ML/AI- and SWE-adjacent tech**; keep **a fallback** that pays well if the AI/ML path doesn't pan out; also skills that are current **and advertisable**: certifications and frameworks that show up on a resume,
 LinkedIn or a portfolio, kept up to date automatically because this field's certs and tools change every few months.
 
 ## Success looks like

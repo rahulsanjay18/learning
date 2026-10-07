@@ -82,13 +82,13 @@
     },
     {
       "slug": "career",
-      "name": "Career: earning power and a fallback",
+      "name": "Career: earning more in ML/AI-adjacent tech",
       "goal": "career",
       "curriculum": "topics/career/curriculum.json",
       "enrolled_levels": [
         "I"
       ],
-      "note": "Designed 2026-10-07 (topics/career/PROGRAM.md). Fallback-first: actuary (probe: SOA Exam P) then patent agent; boosters for the AI path. Self-updating catalog: scripts/catalog.py."
+      "note": "Designed 2026-10-07 (topics/career/PROGRAM.md). Main priority: staff-level design + interviewing, then one specialty (platform, inference, or AI security). Safety net: actuary, patent agent. Self-updating catalog: scripts/catalog.py."
     },
     {
       "slug": "economics",

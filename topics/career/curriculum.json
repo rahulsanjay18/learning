@@ -1,7 +1,7 @@
 {
   "major": "career",
   "program": "topics/career/PROGRAM.md",
-  "spine": "A fallback plan first: well-paid careers you could switch to if AI/ML doesn't pan out, ranked by pay evidence and how much of your math/CE/SWE background carries over. Boosters for the current path are optional extras. Certs are one tool among skills, languages, math and portfolio work. catalog.json keeps the evidence current (scripts/catalog.py).",
+  "spine": "Main priority (2026-10-07): computer jobs adjacent to ML/AI and software engineering that pay well, work remotely and hold up if AI hype cools or AI automates routine coding: ML infrastructure and platform, AI security, inference and performance, distributed systems. Safety net kept: actuary and patent agent (outside tech). catalog.json keeps the evidence current (scripts/catalog.py).",
   "rules": [
     "Every course names its deliverable up front: a cert (exam booked before the course starts), a public repo with a write-up, or a result (offer, promotion case, interview loop passed).",
     "Cert courses follow the official exam guide's domains, one domain slice per lesson, and end with a timed practice exam.",
@@ -16,7 +16,7 @@
       "pretest": true,
       "group": "core",
       "level": "I",
-      "note": "Done in part 2026-10-07 by questions: insuring against AI hype cooling and AI automating SWE; accepts years of exams; no rush; remote only. Remaining: pay benchmark, quick checks, book the Exam P probe date."
+      "note": "Done in part 2026-10-07 by questions: insuring against AI hype cooling and AI automating SWE; accepts years of exams; no rush; remote only. Remaining: pay benchmark, quick checks, book the Exam P probe date. 2026-10-07: main priority switched to ML/AI- and SWE-adjacent tech skills; non-tech fallbacks kept as a safety net."
     },
     {
       "id": "CR100",
@@ -26,7 +26,7 @@
         "CR000"
       ],
       "est_lessons": 8,
-      "group": "elective",
+      "group": "core",
       "level": "I",
       "source": "Huyen, Designing ML Systems, all chapters; deliverable: a public design doc + a small MLflow/Docker/CI pipeline repo",
       "books": {
@@ -41,17 +41,17 @@
           "8fdeaa246b Geron, Hands-On ML: model-level, below your level"
         ]
       },
-      "note": "Booster for the current AI/ML path (optional)."
+      "note": "Priority 1 (ML infrastructure and platform), step 1."
     },
     {
       "id": "CR110",
       "title": "Kubernetes for ML (CKAD)",
       "status": "later",
       "requires": [
-        "CR000"
+        "CR100"
       ],
       "est_lessons": 8,
-      "group": "elective",
+      "group": "core",
       "level": "I",
       "source": "CNCF CKAD curriculum domains; deliverable: CKAD",
       "books": {
@@ -64,7 +64,7 @@
         ],
         "skip": []
       },
-      "note": "Booster for the current AI/ML path (optional)."
+      "note": "Priority 1, step 2: CKAD."
     },
     {
       "id": "CR120",
@@ -97,7 +97,7 @@
         "CR100"
       ],
       "est_lessons": 10,
-      "group": "elective",
+      "group": "core",
       "level": "I",
       "source": "Fine-tuning, RLHF/DPO and distributed training (the highest-premium AI skill per 2026 pay data); NVIDIA NCP-GENL exam guide; deliverable: NCP-GENL and/or a public fine-tuning repo with DDP/FSDP and evals",
       "books": {
@@ -111,7 +111,7 @@
         ],
         "skip": []
       },
-      "note": "Booster for the current AI/ML path (optional)."
+      "note": "Priority 4 (inference and performance), step 1."
     },
     {
       "id": "CR140",
@@ -122,7 +122,7 @@
         "CR130"
       ],
       "est_lessons": 8,
-      "group": "elective",
+      "group": "core",
       "level": "I",
       "source": "Quantization, batching, speculative decoding, vLLM/TensorRT-LLM, CUDA where needed; deliverable: a model served on Kubernetes with a published latency/cost benchmark",
       "books": {
@@ -135,7 +135,7 @@
         ],
         "skip": []
       },
-      "note": "Booster for the current AI/ML path (optional)."
+      "note": "Priority 4, step 2; pairs with the C/C++ major (CP320 CUDA, CP403 performance)."
     },
     {
       "id": "CR150",
@@ -161,6 +161,39 @@
           "5b5fd77cfb Competitive Programmer's Handbook: grade C, and contest-level is past what interviews need"
         ]
       }
+    },
+    {
+      "id": "CR160",
+      "title": "Distributed systems and architecture",
+      "status": "later",
+      "requires": [
+        "CR100"
+      ],
+      "est_lessons": 10,
+      "group": "core",
+      "level": "I",
+      "note": "Priority 3: cited among the most AI-resistant skills (system architecture, distributed systems), and it's the senior/staff interview core.",
+      "books": {
+        "primary": "e66241afb4 Kleppmann, Designing Data-Intensive Applications (grade A)",
+        "secondary": [
+          "Xu, System Design Interview vol. 1-2: wanted"
+        ],
+        "tertiary": [
+          "3f6c0f02f8 Takada, Distributed Systems for Fun and Profit (grade A)"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "CR170",
+      "title": "Data engineering",
+      "status": "later",
+      "requires": [
+        "CR100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Adjacent option: Levels.fyi median TC ~$157k (higher at big tech). Spark, dbt, Airflow, streaming; Databricks cert (CR230) as the badge."
     },
     {
       "id": "CR210",
@@ -219,7 +252,7 @@
     },
     {
       "id": "CR310",
-      "title": "Fallback: quant developer (low-latency C++)",
+      "title": "Safety net (on hold): quant developer",
       "status": "later",
       "requires": [
         "CR000"
@@ -230,7 +263,7 @@
     },
     {
       "id": "CR320",
-      "title": "Fallback: quant research",
+      "title": "Safety net (on hold): quant research",
       "status": "later",
       "requires": [
         "CR000"
@@ -241,14 +274,14 @@
     },
     {
       "id": "CR325",
-      "title": "Main fallback: actuary (SOA exams)",
+      "title": "Safety net: actuary (SOA exams)",
       "status": "later",
       "requires": [
         "CR000"
       ],
       "group": "elective",
       "level": "I",
-      "note": "Recommended main fallback (2026-10-07): exam-gated (you accept years of exams), remote-friendly (consultancies especially), outside the software job market, and the accountable sign-off work is the part least exposed to automation. Your Python/ML is in demand there. Ladder: P -> FM -> ASA (FAM, SRM, ATPA, ...). Exam P overlaps the Statistics major. BLS median $125,770."
+      "note": "Safety net outside tech (kept 2026-10-07 when adjacent tech became the main priority): exam-gated (you accept years of exams), remote-friendly (consultancies especially), outside the software job market, and the accountable sign-off work is the part least exposed to automation. Your Python/ML is in demand there. Ladder: P -> FM -> ASA (FAM, SRM, ATPA, ...). Exam P overlaps the Statistics major. BLS median $125,770."
     },
     {
       "id": "CR326",
@@ -263,7 +296,7 @@
     },
     {
       "id": "CR327",
-      "title": "Second fallback: patent agent (USPTO registration exam)",
+      "title": "Safety net: patent agent (USPTO registration exam)",
       "status": "later",
       "requires": [
         "CR000"
@@ -274,14 +307,15 @@
     },
     {
       "id": "CR330",
-      "title": "Fallback: cloud and AI security",
+      "title": "AI and cloud security",
       "status": "later",
       "requires": [
-        "CR000"
+        "CR110"
       ],
-      "group": "elective",
+      "group": "core",
       "level": "I",
-      "note": "Security certs top general IT-pay surveys (AWS Security Specialty, CCSP, CISSP); add LLM/AI security (prompt injection, model supply chain) as the differentiator."
+      "note": "Priority 2: security hiring reported +23% with AI security the main driver, and AI-security roles at a 31% premium (Q1 2026 listings). LLM threats (prompt injection, data/model supply chain), cloud IAM and network security; badge: AWS Security Specialty (check code) or similar.",
+      "est_lessons": 8
     },
     {
       "id": "CR340",
@@ -329,14 +363,25 @@
     },
     {
       "id": "CR380",
-      "title": "Track: SRE and platform engineering",
+      "title": "Platform engineering and SRE (CKA)",
       "status": "later",
       "requires": [
         "CR110"
       ],
-      "group": "elective",
+      "group": "core",
       "level": "I",
-      "note": "Builds on CKAD; Google's SRE book (free at sre.google) as primary; CKA as the badge."
+      "note": "Priority 1, step 3: Google's SRE book (free at sre.google) + CKA; Terraform (CR240) as an optional badge alongside.",
+      "est_lessons": 8,
+      "books": {
+        "primary": "Beyer et al., Site Reliability Engineering (Google, free at sre.google)",
+        "secondary": [
+          "b1d434d949 Rosso et al., Production Kubernetes (grade B)"
+        ],
+        "tertiary": [
+          "Terraform docs (CR240)"
+        ],
+        "skip": []
+      }
     },
     {
       "id": "CR390",

@@ -1,47 +1,59 @@
-# Career: earning power and a fallback
+# Career: earning more in ML/AI-adjacent tech, with a safety net
 
-*Designed 2026-10-07, revised the same day after your answers (MISSION.md) with `/program setup` (`notes/major-design.md`). **Parked**: nothing is scheduled until you say so.*
-*What you asked for: a fallback that pays well if the AI/ML path doesn't pan out; anything goes (certs, frameworks, languages,
-other kinds of engineering, math); suggestions welcome. So this file recommends, rather than lists.*
+*Designed 2026-10-07 and revised twice the same day after your answers (MISSION.md), with `/program setup` (`notes/major-design.md`). **Parked**: nothing is scheduled until you say so.*
+*What you asked for: first a fallback; then (revised) **earning more in computer jobs adjacent to ML/AI and software engineering**
+as the main priority, keeping the fallback as a safety net. Anything goes (certs, frameworks, languages, math); suggestions welcome,
+so this file recommends rather than lists.*
 
-## TL;DR: what I recommend (after your answers, 2026-10-07)
-Your answers: insure against AI hype cooling **and** AI automating software work; years of exams are fine; no rush; **remote only**;
-no relocation, finance hours or more school. Your goal in your words: **"a chill life and a lot of money"**, so every option below is
-scored on both (the "Chill" column). That points away from tech-adjacent fallbacks and toward **exam-gated, remote-friendly
-work outside the software job market**.
+## TL;DR: what earns more in a career like yours (revised 2026-10-07)
+You asked to make **computer jobs adjacent to ML/AI and software engineering** the main priority (keeping the safety net), and
+"what will earn me more money in a career similar to mine". Ranked by how much each lever moves pay, with evidence:
 
-1. **Main fallback: actuary.** It has the best evidence on both counts: repeatedly ranked a top job for pay, low stress and
-   work-life balance (CareerCast ranked it #1; most actuaries rarely work over 50 hours a week, though consulting runs longer) [15]. A ladder of exams (the credentials *are* the career, so certs genuinely pay here), BLS median
-   $125,770 [3]. Remote/hybrid is common: in one 2025 survey 89% of insurance/actuarial staff had a remote option, and consultancies
-   keep the most flexibility [12]. On automation: routine reserving and reporting are exposed, but signed-off judgment is not, and
-   2026 reports describe a shortage, especially of actuaries with data/ML skills [13], which is you. **First step: SOA Exam P
-   (probability)**, which overlaps the Statistics major you're already doing [5]. Course CR325.
-2. **Second fallback: patent agent.** One exam (the USPTO registration exam), no law degree; your CE and CS degrees qualify you;
-   median around $124k [14]. Regulated legal work on software, AI and hardware patents. Fully remote firms exist, some letting you set your own
-   billable-hour target; law-firm billable hours are the stress risk, and in-house roles are calmer [16]. Course CR327.
-3. **If only AI hype cools** (software still fine): your remote, same-industry pivots are SRE/platform or embedded (CR380, CR370), and
-   the boosters below keep your current path strong.
-4. **On hold:** quant developer and quant research. They pay the most [1][4], but top firms are mostly on-site in a few hubs.
-   Revisit if remote-only changes.
-5. **Always worth it:** interviewing and negotiation (CR150) and a public portfolio (CR390).
-6. **The chill-and-rich sweet spot is probably where you already are:** a remote AI/ML job at a well-paying company. The cheapest way
-   to raise both is the boosters (fine-tuning and inference pay the biggest premiums [2]) plus CR150, since a job switch with good
-   negotiation usually moves pay more than a new skill does (my judgment). The fallbacks are there so that a bad year in AI is an
-   inconvenience rather than a crisis.
+| # | Lever | How much it moves pay | Course |
+|---|---|---|---|
+| 1 | **Level: senior → staff** | Senior MLE TC often $250k+; staff at FAANG-tier $600k–$950k (Levels.fyi via ResumeGeni) [17][18] | CR160 + CR150 |
+| 2 | **Company tier** | Same title, different employer: data-engineer median TC ~$157k overall vs. ~$240k at Google/Meta/Apple [19]; frontier labs highest [17] | CR150 |
+| 3 | **Specialty premium** | Fine-tuning/post-training +25–40% over standard MLEs; inference optimization $205–331k at NVIDIA; ML infra +$20–40k [2]; AI security +31% over non-AI security [20] | CR130, CR140, CR100–CR110, CR330 |
+| 4 | **Switching and negotiating** | Usually beats a raise (my judgment; no clean figure) | CR150 |
+| 5 | Certifications | Smallest and weakest evidence for AI roles [10]; real value in credential-gated work | as needed |
 
-Honest trade-off: both main fallbacks start well below your likely current pay (ML-engineer median $261k [2]). They are insurance
-with a solid floor, and actuarial pay climbs with each exam passed. They are not upgrades on day one.
+Two consequences for the plan:
+- **Staff-level skills come first**: distributed systems and architecture (also cited as among the most AI-resistant skills [20]) plus
+  the interview loop that gets you leveled correctly. Leveling is decided at hiring, so CR150 is not an afterthought.
+- **Pick one premium specialty and go deep**, rather than many badges: infrastructure/platform (most remote-friendly, needed whether
+  AI booms or cools), or inference/performance (highest premium; uses the C/C++ major), or AI security (fastest growth).
+
+Remote caveat: the very top of levers 1–2 (frontier labs, some big-tech teams) is often hybrid or on-site. Remote-first companies
+and infrastructure/security roles are where remote and high pay overlap best (my judgment).
+
+### Main priority: adjacent tech (core courses, in order)
+1. **CR100 ML systems design and MLOps** → **CR160 Distributed systems and architecture** (staff-level design; DDIA, in collection).
+2. **CR150 Interviewing and negotiation** alongside, from the start.
+3. **Specialty, pick one first:**
+   - **Infrastructure/platform:** CR110 Kubernetes (CKAD) → CR380 Platform engineering and SRE (CKA).
+   - **Inference/performance:** CR130 Fine-tuning and post-training → CR140 Inference optimization (+ the C/C++ major).
+   - **AI and cloud security:** CR330 (after CR110).
+4. **CR390 Portfolio** throughout: every course ends in something public.
+
+### Safety net (kept from the first version)
+If tech as a whole turns bad: **actuary** (exam ladder, top-ranked low-stress job, remote/hybrid common, BLS median $125,770; first step
+SOA Exam P, which overlaps the Statistics major) and **patent agent** (one exam your degrees qualify you for, median ~$124k). Quant
+developer/research stay on hold (on-site). Details in the comparison table below.
 
 ## 1. All the options, compared
-| Fallback | Pay evidence | Chill (remote, hours, stress) | Carries over from you | Barrier | Verdict |
+| Option | Pay evidence | Chill (remote, hours, stress) | Carries over from you | Barrier | Verdict |
 |---|---|---|---|---|---|
-| **Actuary** | BLS median $125,770 [3] | high: top-ranked for low stress; ~40–50 h; remote/hybrid common [12][15] | probability/stats, Python/ML | years of exams [5] | **main fallback** |
-| **Patent agent** | median ~$124k [14] | medium–high: remote firms exist; billable hours at firms, calmer in-house [16] | CE + CS degrees (exam eligibility), technical reading | one exam | **second fallback** |
+| ML infrastructure / platform | +$20–40k over generalists; roles +41.8% YoY [2] | medium–high: remote-friendly, some on-call (my judgment) | what you do now | low | **main priority** |
+| Inference / performance | $205–331k at NVIDIA [2] | medium | ML + C/C++/CUDA | C++ depth | **main priority (specialty)** |
+| AI / cloud security | +31% premium; hiring +23% [20] | medium | AI + cloud | new domain | **main priority (specialty)** |
+| Data engineering | median TC ~$157k [19] | medium–high | data pipelines, SQL | low | adjacent option (CR170) |
+| **Actuary** | BLS median $125,770 [3] | high: top-ranked for low stress; ~40–50 h; remote/hybrid common [12][15] | probability/stats, Python/ML | years of exams [5] | safety net (outside tech) |
+| **Patent agent** | median ~$124k [14] | medium–high: remote firms exist; billable hours at firms, calmer in-house [16] | CE + CS degrees (exam eligibility), technical reading | one exam | safety net (outside tech) |
 | SRE / platform | median reported $164k–$225k (sources disagree) [6] | medium: on-call (my judgment) | infra, Kubernetes | low | remote pivot if only AI cools |
 | Embedded software | median reported $165k–$220k [7] | medium: often on-site hardware labs (my judgment) | computer engineering, C | moderate | same |
 | Quant developer (C++) | $300–550k new grad at top firms [1] | low: on-site, intense (my judgment) | SWE, CE, C++, math | on-site, competitive | on hold (remote) |
 | Quant researcher | base median ~$213k [4] | low–medium: on-site (my judgment) | math, stats, ML | PhD near-baseline at top firms [4] | on hold |
-| Cloud / AI security, solutions architect | security and architect certs top general IT pay surveys [9] | medium: incident response / client travel (my judgment) | cloud, AI | new domain | optional |
+| Solutions architect | security and architect certs top general IT pay surveys [9] | medium: incident response / client travel (my judgment) | cloud, AI | new domain | optional |
 | Operations research analyst | BLS median $88,940 [3] | high | math | low | skill, not a destination |
 
 A note on certs: most "certs raise pay 20–50%" claims come from training and cert-selling sites [10], so treat them as weak evidence.
@@ -49,36 +61,35 @@ Certs pay off most where the field is **credential-gated** (actuarial exams, the
 work counts for more. That's why every course here ends in something you can show.
 
 ## 2. Courses
-**Core (small on purpose; it serves any path)**
-| Course | What | Deliverable |
+**Main priority (core, in order)**
+| Course | Primary resource | Deliverable |
 |---|---|---|
-| CR000 Skills audit and choosing a fallback | pay benchmark, quick checks per track, pick main fallback + one probe, set exam dates | a one-page plan |
-| CR150 Interviewing and negotiation | coding (Skiena), ML/system design (Huyen), negotiation (Qureshi) | a passed mock loop, a negotiation script |
-| CR390 Portfolio and visibility (ongoing) | resume/LinkedIn line after each result; public write-ups | the "advertise" part |
+| CR000 Skills audit and targets | pay benchmark (Levels.fyi band now vs. target level and company), quick checks | a one-page plan; which specialty first |
+| CR100 ML systems design and MLOps | Huyen, *Designing ML Systems* (A, in collection) | design doc + pipeline repo |
+| CR160 Distributed systems and architecture | Kleppmann, *DDIA* (A, in collection); Xu (wanted) | staff-level design docs |
+| CR150 Interviewing and negotiation | Skiena (B), Huyen's ML interviews book (free), Qureshi (free) | a passed mock loop; a negotiation script |
+| CR110 → CR380 Infrastructure/platform | CNCF CKAD curriculum, then Google *SRE* book (free) | CKAD, then CKA |
+| CR130 → CR140 Inference/performance | NVIDIA NCP-GENL guide, PyTorch distributed docs, vLLM docs (+ C/C++ major) | NCP-GENL and/or a public repo; a benchmarked deployment |
+| CR330 AI and cloud security | LLM-security references + AWS Security Specialty guide | a security badge + a public threat model of an LLM app |
+| CR390 Portfolio and visibility (ongoing) | — | resume/LinkedIn line after each result; public write-ups |
 
-**Fallback tracks (recommended: CR325 main, CR327 second)**
+**Adjacent options (optional)**
+| Course | When |
+|---|---|
+| CR120 LLM apps and agents (Huyen, *AI Engineering*: wanted) | if your work moves toward agents; Claude Certified Architect if eligible |
+| CR170 Data engineering | if a target employer is data-platform heavy (Databricks badge: CR230) |
+| CR340 Solutions architect | AWS SAA (course in hand) → Professional |
+| CR350 Rust · CR360 Go · CR240 Terraform | only if a target job asks |
+| CR370 Embedded and robotics | lower pay/remote fit; only for interest |
+| CR210 GCP · CR220 Azure · CR230 Databricks · CR250 AWS GenAI Pro | only if a job asks |
+
+**Safety net (outside tech)**
 | Course | Path |
 |---|---|
-| CR310 Quant developer (on hold) | C/C++ major CP101→CP204, then CP403 performance; market microstructure (Harris, *Trading and Exchanges*: wanted); a low-latency order-book project |
-| CR320 Quant research (on hold) | Statistics major + probability-puzzle prep (*Heard on the Street*, Zhou's "Green Book": wanted) + convex optimization |
 | **CR325 Actuary** | SOA Exam P → FM → (ASA path: FAM, SRM, ...) [5] |
 | **CR327 Patent agent** | USPTO registration exam |
 | CR326 Math toolkit: optimization / OR | Boyd & Vandenberghe (in collection); LP/IP |
-| CR330 Cloud and AI security | AWS Security Specialty; LLM security |
-| CR340 Solutions architect | AWS SAA (course in hand) → Professional, or GCP Cloud Architect |
-| CR370 Embedded and robotics | C/C++ major CP101 + CP120, Holt *Embedded Operating Systems* (A), a microcontroller project |
-| CR380 SRE and platform | Google SRE book (free), CKA |
-| CR350 Rust · CR360 Go | official books; only if a target job asks |
-
-**Boosters for the current AI/ML path (optional)**
-| Course | Deliverable |
-|---|---|
-| CR100 ML systems design and MLOps (Huyen, *Designing ML Systems*, in collection) | design doc + pipeline repo |
-| CR110 Kubernetes for ML | CKAD |
-| CR120 LLM apps and agents (Huyen, *AI Engineering*: wanted) | public agent + evals; Claude Certified Architect if you're eligible |
-| CR130 Fine-tuning and post-training at scale | NVIDIA NCP-GENL and/or a public fine-tuning repo |
-| CR140 Inference optimization and serving | a benchmarked deployment |
-| CR210–CR250 other cloud certs | only if a job asks |
+| CR310 Quant developer · CR320 Quant research | on hold (on-site) |
 
 Level II: CR490, reproduce a recent paper in public (optional). The full map: `curriculum.json`, `DAG.md`.
 
@@ -119,4 +130,8 @@ Level II: CR490, reproduce a recent paper in public (optional). The full map: `c
 14. UpCounsel, *What is a patent agent* (eligibility: engineering, computer science or hard-science degree; median ~$123,590 per Salary.com). https://www.upcounsel.com/what-is-a-patent-agent
 15. beanactuary.org (SOA/CAS), *Will I have a social life?* and the CareerCast "best job" rankings (2010, 2013, via PlanAdviser and The Globe and Mail). https://beanactuary.org/?p=561 ; https://planadviser.com/?p=20026
 16. PatentPC, *Transitioning from private practice to in-house: work-life balance*. https://patentpc.com/blog/transitioning-from-private-practice-to-in-house-how-it-affected-my-work-life-balance ; Patently-O job listing, *Patent agent/attorney, small law firm, remote (flexible hours)*. https://patentlyo.com/jobs/2019/04/patent-attorney-remote-flexible.html
+17. ResumeGeni, *Data scientist / ML engineer hub: staff level* (cites Levels.fyi 2026: FAANG-tier staff $600k–$900k; Google L6 MLE $650k–$950k). https://resumegeni.com/blog/data-scientist/staff
+18. Interview Kickstart, *How much do machine learning engineers make in 2026?* (big-tech MLE median TC $264,400; senior). https://interviewkickstart.com/blogs/articles/machine-learning-engineer-salary
+19. Levels.fyi, *Data Engineer salary* (US median TC; per-company pages for Google, Meta, Apple). https://www.levels.fyi/t/software-engineer/title/data-engineer
+20. Careery, *Will AI replace software engineers?* (most AI-resistant: architecture, distributed systems, security, ML infrastructure); Algeria Tech News summary of Q1 2026 listings (security +23%, AI-security +31% premium). https://careery.pro/research/will-ai-replace-software-engineers ; https://algeriatech.news/?p=28794
 Exam facts (AWS, Azure, NVIDIA, Databricks, Anthropic, CNCF, HashiCorp, PyTorch): per-entry sources in `catalog.json`.

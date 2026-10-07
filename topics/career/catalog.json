@@ -329,7 +329,7 @@
       "name": "AWS Certified Security – Specialty",
       "code": "SCS-C03?",
       "state": "check",
-      "pick": "elective",
+      "pick": "core",
       "course": "CR330",
       "why": "Top of Skillsoft's highest-paying IT certifications list for 2025.",
       "note": "Exam code not verified: check aws.amazon.com.",
@@ -428,7 +428,7 @@
       "id": "track-sre",
       "kind": "track",
       "name": "SRE / platform",
-      "pick": "elective",
+      "pick": "core",
       "course": "CR380",
       "why": "Median reported $164k (another source $225k).",
       "confidence": "third-party",
@@ -481,7 +481,7 @@
       "id": "track-actuary",
       "kind": "track",
       "name": "Actuary",
-      "pick": "core",
+      "pick": "elective",
       "course": "CR325",
       "why": "BLS median $125,770; exam-driven credential ladder. Remote/hybrid common: 89% of surveyed insurance/actuarial staff had a remote option; consultancies keep the most flexibility.",
       "confidence": "official",
@@ -499,7 +499,7 @@
       "name": "Exam P (Probability)",
       "code": "P",
       "state": "check",
-      "pick": "core",
+      "pick": "elective",
       "course": "CR325",
       "why": "First actuarial exam; overlaps the Statistics major's probability course. Cheapest probe of the actuarial path.",
       "note": "Confirm current syllabus and dates on soa.org.",
@@ -566,6 +566,63 @@
       "verified": "2026-10-07",
       "sources": [
         "https://www.upcounsel.com/what-is-a-patent-agent"
+      ]
+    },
+    {
+      "id": "skill-ai-security",
+      "kind": "skill",
+      "name": "AI security (LLM threats, model/data supply chain) + cloud security",
+      "pick": "core",
+      "course": "CR330",
+      "why": "Security hiring +23% with AI security the main driver; AI-security roles at a 31% premium over non-AI security roles (Q1 2026 listings).",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://algeriatech.news/?p=28794",
+        "https://careery.pro/research/will-ai-replace-software-engineers"
+      ]
+    },
+    {
+      "id": "skill-distributed-systems",
+      "kind": "skill",
+      "name": "Distributed systems and architecture",
+      "pick": "core",
+      "course": "CR160",
+      "why": "Cited with security and ML infrastructure as the most AI-resistant skills.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://careery.pro/research/will-ai-replace-software-engineers"
+      ]
+    },
+    {
+      "id": "track-data-engineering",
+      "kind": "track",
+      "name": "Data engineering",
+      "pick": "elective",
+      "course": "CR170",
+      "why": "Levels.fyi median TC ~$157k; ~$240k at Google/Meta/Apple.",
+      "confidence": "official",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.levels.fyi/t/software-engineer/title/data-engineer"
+      ]
+    },
+    {
+      "id": "lf-cka",
+      "kind": "cert",
+      "vendor": "Linux Foundation / CNCF",
+      "name": "Certified Kubernetes Administrator",
+      "code": "CKA",
+      "state": "current",
+      "cost_usd": 445,
+      "pick": "core",
+      "course": "CR380",
+      "why": "Hands-on exam; the platform/SRE counterpart to CKAD.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://devopscube.com/best-kubernetes-certifications/"
       ]
     }
   ]
