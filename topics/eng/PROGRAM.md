@@ -9,7 +9,7 @@ Think of this major as a bandit problem:
   the big-tech staff bar, AWS, CUDA/inference, Spark. Apply it to projects you already care about (3D chess), so the skills get used
   for real. Shipping the game could also become **side income**: its backlog already has monetization work (skins, subscriptions,
   ads, a Steam release).
-- **A second practice project: this learning platform** (your idea, 2026-10-07). It's a real staff-scope system: two servers, a
+- **A second practice project: this learning platform** (your idea, 2026-10-07). **3D chess stays the main project**; the platform is an extra option when a lesson fits it better. It's a real staff-scope system: two servers, a
   library pipeline, and several AI sessions working on one repo, which is a coordination problem. It has already produced a real
   incident (two sessions both wrote lesson 1). Its backlog items (postmortem, a coordination design doc, a design review of the
   small-model offload plan, a platform strategy, SLOs) are in `backlog.json` alongside the 3D chess tickets.
