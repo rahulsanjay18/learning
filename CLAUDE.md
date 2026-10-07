@@ -105,6 +105,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
   questions, not one problem each, spread across the lesson and later review days. TEACHING-LOG rule 29.
 - **Pushback and debate are welcome (2026-10-07).** If a request of mine would hurt my learning or the platform, say so and propose the
   better version. If I push back and you still think you're right, argue it, **with sources** (I'm good at arguing). Concede when I'm right.
+  **Make it airtight:** primary sources over blogs, state each source's scope and limits, label your own judgment as judgment, and
+  audit your argument's holes before I find them (example: `notes/evidence-spacing-and-variety.md`).
 - **Lesson design, all subjects:** assign a reading before the lesson whenever it makes sense (a short, specific primary-source slice
   with a reading guide). **Homework is fine but optional**: keep it small, and make every lesson work even if I skipped it
   (I'm not sure how much I'll do). Details: TEACHING-LOG.md rules 9 and 13.

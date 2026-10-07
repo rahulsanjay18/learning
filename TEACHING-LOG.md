@@ -86,16 +86,12 @@ Rules 11, 13 and 18 are format and logistics.
 28. **Pretests measure; they never feed review.** Mark every pretest page `data-pretest="true"` (Markdown front matter
     `main: data-skip=true data-pretest=true`): its answers stay out of spaced review everywhere. What a pretest finds missing gets
     *taught* in a lesson, and that lesson's own questions are what come back in review. (Entry 27)
-29. **Verbose is fine; recap and vary.** (a) Restate any earlier concept a lesson leans on, in a short "recap" box, even if it was
-    taught last week: the learner wants reminders, not brevity. (b) Practice each concept with **several varied questions**
-    (different angles: compute it, explain it, spot the error, apply it to a new situation, compare it with a neighbour), not one
-    problem per concept. Mixing problem types makes the learner choose the method, which is what transfers (interleaved and varied
-    practice: Rohrer & Taylor 2007, *Instructional Science* 35:481–498, Exp. 2: mixed practice was "vastly superior" on a test a week
-    later, though it *felt* worse during practice). Keep sorting items small (rule 3). **But spread the variety over time**, not all into one sitting: 2–3 varied
-    questions per concept in the lesson, and more variants that come back through the daily review on later days (spacing beats
-    cramming: Rohrer & Taylor 2007 Exp. 1; Cepeda et al. 2006, *Psychological Bulletin* 132:354–380, a meta-analysis of 317
-    experiments, finds the best gap between sessions grows with how long you need to remember; and a long lesson is the one that gets abandoned). Recaps stay short, in a collapsible box, so the new material isn't
-    buried. (Entry 28; the "spread it out" part was Claude's pushback, accepted under "pushback is acceptable".)
+29. **Verbose is fine; recap, space, and vary.** (a) Restate any earlier concept a lesson leans on, in a short collapsible "recap"
+    box: the learner wants reminders. (b) 2–3 varied questions per concept in the lesson (compute, explain, spot the error, apply),
+    and **more variants on later days through review**: spacing is the strongest evidence here, for concepts (Cepeda et al. 2006),
+    and positive on average for skills (Donovan & Radosevich 1999). (c) **Interleave confusable problem types on purpose**
+    (interleaving helps most when items are similar: Brunmair & Richter 2019). Evidence is thinner for complex skills, so measure
+    on the learner's own review data. Full audit with limits: `notes/evidence-spacing-and-variety.md`. (Entry 28)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
