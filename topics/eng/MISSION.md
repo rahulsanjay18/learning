@@ -11,8 +11,9 @@ file is calibration for Claude.
 Calibration that follows (Claude's judgment):
 - Prefer skills that raise **output per hour** (deep focus, automation, AI-assisted development, writing that replaces meetings) and
   roles judged on outcomes, not presence.
-- Of Larson's staff archetypes, the **Solver** (hard problems, deep work) and **Architect** fit "complete tasks" better than the
-  meeting-heavy **Tech Lead** or **Right Hand**. Worth weighing when the staff lane gets to "which archetype do you want".
+- **Be a generally good staff engineer** (learner, 2026-10-07): train all archetypes, not a narrow one. Which shape fits the
+  money/remote/time goal (Solver and Architect look closer to "complete tasks" than Tech Lead or Right Hand, Claude's judgment)
+  gets discussed concretely once the learner has seen the role at the new job (the day-90 revisit, 2027-01-24).
 - **Async communication** (design docs, decision records, clear status writing) is the remote skill that buys back time; the staff
   lane's writing course is doubly useful.
 
