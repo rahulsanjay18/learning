@@ -406,6 +406,33 @@
       "you": "design doc: job types, isolation, limits, who can run what; then build or delegate",
       "claude": "client script, job definitions, tests",
       "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Build-vs-don't: is a fallback server worth it? (cost model + SLO + what breaks when the server is down)",
+      "course": "SE150",
+      "you": "a one-page decision with numbers (Claude's 2026-10-07 estimate: $81-191/yr on EC2, ~$0 on Lambda at current volume) and the condition that would flip it",
+      "claude": "the cost script and an uptime check",
+      "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Risk assessment: the public library manifest (found 2026-10-07) and what else in the repo shouldn't be public",
+      "course": "CR330",
+      "you": "threat model and remediation plan (likelihood, impact, fix order)",
+      "claude": "an audit script that lists publicly served files by sensitivity",
+      "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Platform strategy: a personal tool server (MCP-shaped) vs. scripts in sessions; which tools first",
+      "course": "SE150",
+      "you": "strategy doc: when a script becomes a service, the first 3 tools, the security model",
+      "claude": "prototype the first tool",
+      "state": "open"
     }
   ]
 }
