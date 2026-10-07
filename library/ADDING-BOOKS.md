@@ -14,8 +14,11 @@ cd ~/Documents/learning && python3 scripts/add_books.py
 
 It pulls the repo, converts every book with no Markdown yet, grades, rebuilds the index (at the path your compose file mounts
 for book-server), rebuilds book-server and progress-server, and commits + pushes `library/`, with progress bars. Your paths
-are its defaults. Options: `--dry-run` (list only), `--pdf` (also PDF/DjVu via marker: OCR, slow; off by default),
-`--retry-failed`, `--limit N`, `--only epub`, `--no-docker`, `--no-commit`, `--no-pull`. Needs `tqdm` (`pip install tqdm`).
+are its defaults. PDFs are checked first: one whose text layer grades A (clean prose) is converted from that layer
+with no OCR; scans and math-heavy PDFs are listed with their grade and left for `--pdf`. Options: `--dry-run` (list only),
+`--pdf` (also the hard ones and DjVu, via marker: OCR, slow; off by default),
+`--retry-failed`, `--limit N`, `--only epub`, `--no-docker`, `--no-commit`, `--no-pull`. Needs `tqdm`; `pymupdf4llm` is recommended for PDFs (keeps headings; without it, poppler's `pdftotext` is used):
+`pip install tqdm pymupdf4llm`.
 Then run `/new-books` in a Claude session.
 
 **The individual steps** (what the script does, if you need one by hand):

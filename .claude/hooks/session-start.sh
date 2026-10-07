@@ -9,7 +9,7 @@ if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then exit 0; fi
 
 have_py() { python3 -c "import $1" >/dev/null 2>&1; }
 
-for mod in fastapi:fastapi uvicorn:uvicorn httpx:httpx shogi:python-shogi; do
+for mod in fastapi:fastapi uvicorn:uvicorn httpx:httpx shogi:python-shogi tqdm:tqdm pymupdf4llm:pymupdf4llm; do
   m="${mod%%:*}"; pkg="${mod##*:}"
   have_py "$m" || pip install -q "$pkg" 2>&1 | grep -v -i warning || true
 done

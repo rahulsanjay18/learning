@@ -7,7 +7,8 @@
 Steps:
   1. git pull this repo
   2. convert every book in BOOKS_ROOT with no Markdown in MD_ROOT yet (scripts/reconvert.py). By default only formats
-     that convert cleanly without OCR (EPUB, AZW3/MOBI, HTML, DOCX, TXT); add --pdf for PDF/DjVu (marker: OCR, slow).
+     that convert cleanly without OCR (EPUB, AZW3/MOBI, HTML, DOCX, TXT, and PDFs whose text layer grades A by
+     grade_library's rules); add --pdf for the rest (scans, math, DjVu: marker, OCR, slow).
      Books that already FAILED (library/RECONVERT-LOG.csv) are skipped unless --retry-failed
   3. grade all Markdown -> library/MANIFEST.csv + library/toc/ (scripts/grade_library.py)
   4. rebuild the search index at the db path your compose file mounts for book-server (book-server/build_index.py)
@@ -115,13 +116,23 @@ def main():
     only = {"." + e.strip(". ").lower() for e in a.only.split(",") if e.strip()}
     if only:
         rows = [r for r in rows if r["ext"] in only]
-    hard = [r for r in rows if r["ext"] not in EASY]
+    pdfs = [r for r in rows if r["ext"] == ".pdf"]
+    if pdfs:
+        from tqdm import tqdm
+        for r in tqdm(pdfs, desc="check pdfs", unit="pdf"):
+            r["light"], g, why = reconvert.pdf_check(a.books_root / r["path"])
+            r["why"] = f"grade {g}" + (f": {why}" if why else "")
+    hard = [r for r in rows if r["ext"] not in EASY and not r.get("light")]
     if not a.pdf:
-        rows = [r for r in rows if r["ext"] in EASY]
+        rows = [r for r in rows if r["ext"] in EASY or r.get("light")]
     if a.limit:
         rows = rows[: a.limit]
-    if hard and not a.pdf:
-        print(f"{len(hard)} PDF/DjVu books need OCR: not converted (add --pdf to include them)")
+    if hard:
+        print(f"{len(hard)} books need OCR/marker" + ("" if a.pdf else ": not converted (add --pdf to include them)"))
+        for r in hard[:20]:
+            print(f"  {r['path']}  ({r.get('why') or r['ext']})")
+        if len(hard) > 20:
+            print(f"  … and {len(hard) - 20} more")
     print(f"{len(rows)} books to convert" + (f" ({len(skip)} earlier failures skipped; --retry-failed to retry)" if skip else ""))
     log = reconvert.convert_all(rows, a.books_root, a.md_root, a.mode, dry=a.dry_run)
     if a.dry_run:

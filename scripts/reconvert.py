@@ -90,11 +90,52 @@ def run(cmds):
             return False, (r.stderr or r.stdout).strip().splitlines()[-1:] or ["failed"]
     return True, []
 
-def convert_one(rel, books_root, md_root, mode=None):
+def pdf_text(src):
+    """The PDF's own text layer (no OCR): PyMuPDF if installed, else poppler's pdftotext. "" if neither works."""
+    try:
+        import pymupdf
+        with pymupdf.open(src) as doc:
+            return "\n".join(page.get_text() for page in doc)
+    except ImportError:
+        pass
+    except Exception:
+        return ""
+    if shutil.which("pdftotext"):
+        r = subprocess.run(["pdftotext", "-layout", str(src), "-"], capture_output=True, text=True, errors="replace")
+        return r.stdout if r.returncode == 0 else ""
+    return ""
+
+def pdf_check(src):
+    """Is this PDF easy (clean text layer, no broken math)? Grades its text layer with grade_library's rules:
+    A = easy; B (math/figures), C (garbled), F (scan or empty) need marker. Returns (easy, grade, reason)."""
+    import grade_library
+    g, flags = grade_library.grade(grade_library.stats(pdf_text(src)))
+    return g == "A", g, "; ".join(flags)
+
+def convert_pdf_light(src, dest):
+    """Text-layer PDF -> Markdown without OCR: pymupdf4llm (keeps headings) if installed, else the plain text layer."""
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        import pymupdf4llm
+        try:
+            md = pymupdf4llm.to_markdown(str(src), use_ocr=False, show_progress=False)
+        except TypeError:
+            md = pymupdf4llm.to_markdown(str(src))
+    except ImportError:
+        md = pdf_text(src)
+    if not md.strip():
+        return False, ["no text layer"]
+    dest.write_text(md, encoding="utf-8")
+    return True, []
+
+def convert_one(rel, books_root, md_root, mode=None, light=False):
     """Convert one book (path relative to books_root). Returns (status, message): ok / FAILED / skipped / missing source."""
     src, dest = books_root / rel, (md_root / rel).with_suffix(".md")
     if not src.exists():
         return "missing source", ""
+    if light and src.suffix.lower() == ".pdf":
+        ok, err = convert_pdf_light(src, dest)
+        return ("ok" if ok else "FAILED"), " ".join(err)
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
         cmds, kind = plan(src, dest, tmp, mode)
@@ -114,19 +155,21 @@ def convert_one(rel, books_root, md_root, mode=None):
         return ("ok" if ok else "FAILED"), " ".join(err)
 
 def convert_all(rows, books_root, md_root, mode=None, dry=False):
-    """Convert rows ({"path", "ext"}) with a progress bar; returns [[path, status, message], ...] (also appended to the log)."""
+    """Convert rows ({"path", "ext"[, "light"]}) with a progress bar; returns [[path, status, message], ...] (also logged).
+    Rows with "light" are PDFs that pdf_check() found easy: converted from their text layer, no marker."""
     from tqdm import tqdm
+    light = {str(Path(r["path"].lstrip("./"))) for r in rows if r.get("light")}
     todo = [Path(r["path"].lstrip("./")) for r in rows]
     todo = [rel for rel in todo if not (md_root / rel).with_suffix(".md").exists()]
     if dry:
         for rel in todo:
-            print("  would convert:", rel)
+            print("  would convert:", rel, "(text layer)" if str(rel) in light else "")
         return []
     log = []
     with tqdm(todo, desc="convert", unit="book") as bar:
         for rel in bar:
             bar.set_postfix_str(rel.name[:40])
-            status, msg = convert_one(rel, books_root, md_root, mode)
+            status, msg = convert_one(rel, books_root, md_root, mode, light=str(rel) in light)
             log.append([str(rel), status, msg])
             if status != "ok":
                 bar.write(f"  {status}: {rel}" + (f" ({msg})" if msg else ""))
