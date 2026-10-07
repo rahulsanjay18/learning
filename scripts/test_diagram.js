@@ -14,7 +14,7 @@ check("edge label and dashes", g.edges[1].label === "Thm 1.2.8" && !g.edges[0].d
 check("cycles rejected", throws(() => D.parseGraph("", "a>b|b>c|c>a"), /cycle/));
 check("self-loop rejected", throws(() => D.parseGraph("", "a>a"), /self-loop/));
 check("bad edge rejected", throws(() => D.parseGraph("", "a-b"), /bad edge/));
-let L = D.layoutGraph(g);
+let L = D.layoutGraph(g), lab0;
 const box = id => L.boxes.find(b => b.id === id);
 check("down: every edge points down", g.edges.every(e => box(e.from).y < box(e.to).y));
 const overlap = (a, b) => Math.abs(a.x - b.x) < (a.w + b.w) / 2 && Math.abs(a.y - b.y) < (a.h + b.h) / 2;
@@ -35,6 +35,19 @@ check("long edge layers: d below c", L.boxes.find(b => b.id === "d").y > L.boxes
 L = D.layoutGraph(D.parseGraph("", "a>b|a>c"), "right");
 check("right: edges point right", L.edges.every(e => e.pts[0].x < e.pts[e.pts.length - 1].x) && noOverlap(L));
 check("wrapLabel", same(D.wrapLabel("P of the complement equals one minus P", 20), ["P of the complement", "equals one minus P"]));
+
+// ---------- edge labels ----------
+g = D.parseGraph("a:One clue|b:Another clue|c:A third clue|r:Result", "a>r:gods and language already exist|b>r:latest parts no older|c>r:count back through the texts");
+({ L, labels: lab0 } = D.layoutWithLabels(g));
+const lab = lab0;
+const ovl = (a, b) => Math.abs(a.x - b.x) < (a.w + b.w) / 2 && Math.abs(a.y - b.y) < (a.h + b.h) / 2;
+check("fan-in: every label found a clean spot", lab.every(r => r.ok), JSON.stringify(lab.map(r => r.ok)));
+check("fan-in: labels don't overlap each other", lab.every((a, i) => lab.every((b, j) => i >= j || !ovl(a, b))));
+check("fan-in: labels don't overlap nodes", lab.every(a => L.boxes.every(b => !ovl(a, b))));
+check("fan-in: no other edge runs through a label", lab.every((a, i) => L.edges.every((e, j) => i === j ||
+  Array.from({ length: 41 }, (_, k) => D.pointAt(e.pts, false, k / 40)).every(q => !(Math.abs(q.x - a.x) < a.w / 2 - 2 && Math.abs(q.y - a.y) < a.h / 2 - 2)))));
+check("pointAt ends are the edge ends", (() => { const e = L.edges[0], p0 = D.pointAt(e.pts, false, 0), p1 = D.pointAt(e.pts, false, 1);
+  return Math.hypot(p0.x - e.pts[0].x, p0.y - e.pts[0].y) < 1e-9 && Math.hypot(p1.x - e.pts.at(-1).x, p1.y - e.pts.at(-1).y) < 1e-9; })());
 
 // ---------- sets ----------
 const S2 = ["A", "B"], S3 = ["A", "B", "C"];
@@ -73,6 +86,8 @@ for (const f of files) {
         const G = D.parseGraph(attr(tag, "nodes"), attr(tag, "edges")), LL = D.layoutGraph(G, attr(tag, "dir"));
         if (G.nodes.length > 12) throw new Error(`${G.nodes.length} nodes: split it (one idea, fewest elements)`);
         if (!noOverlap(LL)) throw new Error("boxes overlap");
+        const bad = D.layoutWithLabels(G, attr(tag, "dir")).labels.filter(r => r && !r.ok);
+        if (bad.length) throw new Error("edge labels collide: " + bad.map(r => r.lines.join(" ")).join("; ") + " (shorten them or drop some)");
       } else if (kind === "sequence") D.layoutSequence(D.parseSequence(attr(tag, "actors"), attr(tag, "steps")));
       else if (kind === "venn") { const s = (attr(tag, "sets") || "").split("|"); if (attr(tag, "shade")) D.shadedRegions(attr(tag, "shade"), s); }
       else throw new Error("unknown kind");

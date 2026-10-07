@@ -23,8 +23,13 @@
   var CH = 7.2, LINE = 16, PADX = 10, PADY = 7, MAXCH = 20;   // text metrics (13px system-ui ≈ 7.2px per char)
 
   // ---------- text ----------
+  // Greedy wrap at max characters, then the narrowest width that keeps the same line count (no lone "BC" on the last line).
   function wrapLabel(s, max) {
-    max = max || MAXCH;
+    var lines = greedyWrap(s, max || MAXCH);
+    for (var w = 4; w < (max || MAXCH); w++) { var t = greedyWrap(s, w); if (t.length === lines.length) return t; }
+    return lines;
+  }
+  function greedyWrap(s, max) {
     var words = String(s).trim().split(/\s+/), lines = [], cur = "";
     words.forEach(function (w) {
       if (cur && (cur + " " + w).length > max) { lines.push(cur); cur = w; } else cur = cur ? cur + " " + w : w;
@@ -78,7 +83,7 @@
 
   // Layout: longest-path layers, dummy nodes on long edges, barycentre ordering sweeps, then x by neighbour pull.
   // Returns boxes {id, x, y, w, h, lines} (centre coords) and edge polylines, in a "down" frame; dir=right transposes.
-  function layoutGraph(g, dir) {
+  function layoutGraph(g, dir, lgap) {
     var right = dir === "right", layerOf = {}, preds = {}, succ = {};
     g.nodes.forEach(function (n) { preds[n.id] = []; succ[n.id] = []; });
     g.edges.forEach(function (e) { preds[e.to].push(e.from); succ[e.from].push(e.to); });
@@ -128,7 +133,7 @@
     }
     layers.forEach(function (l, i) { layers[i] = best[i]; }); index();
     // across-axis coordinates: pack, then pull toward neighbour mean while keeping order and gaps
-    var GAP = 28, x = {};
+    var GAP = g.edges.some(function (e) { return e.label; }) ? 44 : 28, x = {};
     layers.forEach(function (l) { var c = 0; l.forEach(function (v) { x[v] = c + size[v].w / 2; c += size[v].w + GAP; }); });
     function settle(l) {
       for (var i = 1; i < l.length; i++) { var lo = x[l[i - 1]] + (size[l[i - 1]].w + size[l[i]].w) / 2 + GAP; if (x[l[i]] < lo) x[l[i]] = lo; }
@@ -146,7 +151,7 @@
     var minX = Infinity, maxX = -Infinity;
     Object.keys(x).forEach(function (v) { minX = Math.min(minX, x[v] - size[v].w / 2); maxX = Math.max(maxX, x[v] + size[v].w / 2); });
     // along-axis coordinates: each layer as deep as its largest node, with room for edge labels
-    var hasLabels = g.edges.some(function (e) { return e.label; }), LGAP = hasLabels ? 64 : 44, y = [], cy = 0;
+    var hasLabels = g.edges.some(function (e) { return e.label; }), LGAP = lgap || (hasLabels ? 84 : 44), y = [], cy = 0;
     layers.forEach(function (l, k) {
       var h = Math.max.apply(null, [0].concat(l.map(function (v) { return size[v].h; })));
       y[k] = { mid: cy + h / 2, h: h }; cy += h + LGAP;
@@ -166,6 +171,58 @@
       return { from: e.from, to: e.to, label: e.label, dashed: e.dashed, pts: pts };
     });
     return { boxes: boxes, edges: edges, width: right ? H : W, height: right ? W : H, crossings: bestC, right: right };
+  }
+
+  // Point at fraction t (0 = source, 1 = target) along an edge drawn by curve(): cubic per segment, tangents along the layer axis.
+  function pointAt(pts, right, t) {
+    var n = pts.length - 1, k = Math.min(Math.floor(t * n), n - 1), u = t * n - k, p = pts[k], q = pts[k + 1];
+    var c1 = right ? { x: (p.x + q.x) / 2, y: p.y } : { x: p.x, y: (p.y + q.y) / 2 };
+    var c2 = right ? { x: (p.x + q.x) / 2, y: q.y } : { x: q.x, y: (p.y + q.y) / 2 };
+    var a = (1 - u) * (1 - u) * (1 - u), b = 3 * (1 - u) * (1 - u) * u, c = 3 * (1 - u) * u * u, d = u * u * u;
+    return { x: a * p.x + b * c1.x + c * c2.x + d * q.x, y: a * p.y + b * c1.y + c * c2.y + d * q.y };
+  }
+  // Edge labels: try spots along each edge (middle first, then toward either end) and keep the first whose box hits no node and
+  // no label already placed. Returns [{x, y, lines, w, h, ok}] per edge (null when unlabelled); ok=false = no clean spot found.
+  var LCH = 6.6, LLINE = 14;
+  function placeEdgeLabels(L) {
+    var placed = L.boxes.map(function (b) { return { x: b.x, y: b.y, w: b.w + 4, h: b.h + 4 }; }), out = [];
+    var samples = L.edges.map(function (e) { var a = []; for (var i = 0; i <= 40; i++) a.push(pointAt(e.pts, L.right, i / 40)); return a; });
+    var own = -1;
+    function hits(r) {
+      if (placed.some(function (o) { return Math.abs(r.x - o.x) < (r.w + o.w) / 2 && Math.abs(r.y - o.y) < (r.h + o.h) / 2; })) return true;
+      return samples.some(function (pts, j) {    // another edge running through the label's text
+        return j !== own && pts.some(function (q) { return Math.abs(q.x - r.x) < r.w / 2 - 2 && Math.abs(q.y - r.y) < r.h / 2 - 2; });
+      });
+    }
+    function inside(r) { return r.x - r.w / 2 >= 0 && r.y - r.h / 2 >= 0 && r.x + r.w / 2 <= L.width && r.y + r.h / 2 <= L.height; }
+    L.edges.forEach(function (e, ei) {
+      own = ei;
+      if (!e.label) { out.push(null); return; }
+      var lines = wrapLabel(e.label, 18), w = textW(lines) / CH * LCH + 6, h = lines.length * LLINE + 2, best = null;
+      var side = (L.right ? h : w) / 2 + 5;   // beside the edge: offset across the layer axis
+      [0.5, 0.35, 0.65, 0.25, 0.75, 0.15, 0.85].some(function (t) {
+        var p = pointAt(e.pts, L.right, t);
+        return [0, side, -side].some(function (d) {
+          var r = L.right ? { x: p.x, y: p.y + d, w: w, h: h } : { x: p.x + d, y: p.y, w: w, h: h };
+          if (!best) best = r;
+          if (!hits(r) && inside(r)) { best = r; best.ok = true; return true; }
+          return false;
+        });
+      });
+      best.lines = lines; best.ok = !!best.ok; placed.push(best); out.push(best);
+    });
+    return out;
+  }
+
+  // Layout plus labels: widen the gap between layers until every edge label has a clean spot (or give up after a few tries).
+  function layoutWithLabels(g, dir) {
+    var L, labels;
+    for (var gap = 84; gap <= 244; gap += 40) {
+      L = layoutGraph(g, dir, g.edges.some(function (e) { return e.label; }) ? gap : 0);
+      labels = placeEdgeLabels(L);
+      if (labels.every(function (r) { return !r || r.ok; })) break;
+    }
+    return { L: L, labels: labels };
   }
 
   // ---------- sets ----------
@@ -247,7 +304,7 @@
     return { x: x, heads: heads, top: top, rows: rows, width: width, height: rows[rows.length - 1] + 30 };
   }
 
-  var api = { parseGraph: parseGraph, layoutGraph: layoutGraph, crossings: crossings, wrapLabel: wrapLabel, parseEdge: parseEdge,
+  var api = { parseGraph: parseGraph, layoutGraph: layoutGraph, placeEdgeLabels: placeEdgeLabels, layoutWithLabels: layoutWithLabels, pointAt: pointAt, crossings: crossings, wrapLabel: wrapLabel, parseEdge: parseEdge,
     parseSetExpr: parseSetExpr, shadedRegions: shadedRegions, parseSequence: parseSequence, layoutSequence: layoutSequence };
   if (typeof module !== "undefined" && module.exports) { module.exports = api; return; }
 
@@ -285,7 +342,7 @@
   }
 
   function drawGraph(d) {
-    var g = parseGraph(d.nodes, d.edges), L = layoutGraph(g, d.dir), svg = svgRoot(L.width, L.height), id = "dga" + (++uid);
+    var g = parseGraph(d.nodes, d.edges), LL = layoutWithLabels(g, d.dir), L = LL.L, svg = svgRoot(L.width, L.height), id = "dga" + (++uid);
     var hl = splitList((d.hl || "").replace(/\s+/g, "|"));
     arrowDefs(svg, id);
     L.edges.forEach(function (e) {
@@ -296,11 +353,7 @@
       el("rect", { x: b.x - b.w / 2, y: b.y - b.h / 2, width: b.w, height: b.h, rx: 4 }, grp);
       textLines(grp, b.lines, b.x, b.y, "dg-label");
     });
-    L.edges.forEach(function (e) {
-      if (!e.label) return;
-      var p = e.pts, a = p[Math.floor((p.length - 1) / 2)], b = p[Math.floor((p.length - 1) / 2) + 1];
-      textLines(svg, wrapLabel(e.label, 24), (a.x + b.x) / 2, (a.y + b.y) / 2, "dg-edge-label");
-    });
+    LL.labels.forEach(function (r) { if (r) textLines(svg, r.lines, r.x, r.y, "dg-edge-label"); });
     return svg;
   }
 
