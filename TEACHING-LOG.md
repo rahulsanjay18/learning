@@ -53,6 +53,9 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 22. **Use the book's exercises; never leak answers.** Draw practice, pretest, proof and check items from the textbook's own
     exercises where they fit (cite them: "C&B Exercise 1.33"), adapting numbers only when needed. And never state an answer to a
     question the learner hasn't done yet, in chat or anywhere visible: verify answers with assertions that don't print them. (Entry 22)
+23. **Choices must not give the answer away.** A candidate button labelled with the answer's own name (a map choice named
+    "Lothal" when the question asks where Lothal is) tests reading, not knowing. Unlabelled map clicks, or labels that don't name
+    the target. (Entry 23)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -109,3 +112,6 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     "checking the numbers". Learner: "did you just list the answers to me". Those three items were replaced with book exercises.
     (2) Learner: "are you borrowing questions from the exercises the book has? i think that may also be a good idea." I wasn't.
     Fix: rule 22.
+23. **2026-10-07 · "The map question was useless, i just clicked lothal and then clicked the x."** Indian History 0003's
+    `map-locate` had `data-choices` with place names on the buttons, so the answer was a label to click, not a place to know.
+    Fix: dropped the choices (click the map); rule 23.

@@ -86,8 +86,8 @@ Put these in order, earliest first.
 7th millennium BC → 4th millennium → c. 2500–1800 BC → Late Harappan, before c. 1700 BC.
 :::
 
-::: map-locate map-lothal answer=22.521,72.250 tolerance-km=150 view=60,18,82,36 choices="22.521,72.250:Lothal|29.38,67.62:Mehrgarh|29.47,74.13:Kalibangan|30.629,72.864:Harappa"
-**Lothal** was founded late (c. 2200 BC) as a trading town with a big brick basin that may have been a dock, and supplied the Indus cities with Gujarat's cotton. Where is it?
+::: map-locate map-lothal answer=22.521,72.250 tolerance-km=150 view=60,18,82,36
+**Lothal** was founded late (c. 2200 BC) as a trading town with a big brick basin that may have been a dock, and supplied the Indus cities with Gujarat's cotton. Click the map where you think it is.
 --- explain
 Lothal is near Ahmedabad in Gujarat, by the coast: the right spot for a port feeding the Indus cities and trading toward Mesopotamia. (Coordinates: Wikipedia.)
 :::
