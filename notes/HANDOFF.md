@@ -6,7 +6,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 - **2026-10-06: syllabi + mastery grading.** Each major has `topics/<major>/SYLLABUS.md` (readings + objectives per lesson for the
   active courses); `plan` in curriculum.json mirrors it. Grade objectives Got it / Not yet (TEACHING-LOG rule 20; explainer
   `notes/mastery-grading.md`). Write lessons from the syllabus; don't redesign per session.
-- Statistics: Ch. 1 pretest (0005) done 2026-10-06; **0006 the three axioms** (reading C&B pp. 7–11) next, learner plans it for 2026-10-07. Indian History **lesson 0003 done 2026-10-07** (record 0003: invasion vs. migration Not yet; re-teach in 0004, due Saturday). Both have reading-guide boxes: reply to those answers when results come in.
+- Statistics: Ch. 1 pretest (0005) done 2026-10-06; **0006 the three axioms** (reading C&B pp. 7–11) next, learner plans it for 2026-10-07. Indian History **lesson 0003 done 2026-10-07** (record 0003; re-teach the Indus origin stages in 0004, due Saturday). Both have reading-guide boxes: reply to those answers when results come in.
 - 2026-10-06: all 5 pending free responses graded and posted (stats ice-cream causal 0.75; IH 0002 answers).
 - Daily review deck: `assets/review.html`.
 - Progress server is **live** (deployed 2026-10-05; `/progress/health` → ok). Desktop + laptop share one device token (id 1, "desktop+laptop").

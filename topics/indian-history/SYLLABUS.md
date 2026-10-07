@@ -42,5 +42,5 @@ IH150 how historians work → IH201–206 the eras, one K&R chapter each, readin
 - 2026-10-06: syllabus written. IH100 grows from 10 to 16 lessons because Chapter 1 needs two lessons and a reading-based lesson
   covers 7–11 pages; the alternative (a whole chapter per lesson) would mean ~40-page readings.
 - 2026-10-06: the Introduction's last sections ("The Regional Pattern…", "The Maritime Periphery…") are an optional skim on 0003.
-- 2026-10-07: 0003 graded (record 0003). Not yet: Indus origin sequence and invasion vs. migration. 0004 opens with a 5-minute
-  re-teach of the origin stages, and its claim box asks "what does the source itself conclude?" first.
+- 2026-10-07: 0003 graded (record 0003). Not yet: Indus origin sequence only (invasion vs. migration regraded Got it). 0004 opens
+  with a 5-minute re-teach of the origin stages; its claim prompt names exactly what the rubric grades (TEACHING-LOG 25).

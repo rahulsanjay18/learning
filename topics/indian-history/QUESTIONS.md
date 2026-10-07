@@ -83,7 +83,7 @@ thinking of is the rook-like elephant of *chaturaji*, a four-player dice variant
 - **Your "length of rule" point** is about how much weight to give each period, not where to draw the lines. Worth keeping, but it's a
   separate argument. Lesson 0003's writing box asks explicitly for one specific piece of evidence.
 
-## 2026-10-07 · Lesson 0003 "Judge the headline 'New DNA study debunks Aryan invasion theory'" (graded 0.6, regraded 0.85 the same day)
+## 2026-10-07 · Lesson 0003 "Judge the headline 'New DNA study debunks Aryan invasion theory'" (graded 0.6; regraded 0.85, then 0.9 the same day)
 **Your answer (short):** the DNA was pooled because no single source had enough; it showed little or no Aryan DNA. But the
 cities peaked c. 2300 BCE and declined in the drought of 1800–1500 BCE, before the Aryans arrived (Mitanni treaty, 2nd
 millennium BCE). Pooling DNA is bad science, conclusion-first, and the quoted people sounded triumphant.
@@ -102,6 +102,13 @@ argument that killed the invasion story. That's the specific evidence record 000
   several people, a pool with no steppe ancestry still means none of them carried much, because mixing can't remove an ancestry
   that's present. Pooled sequencing of many individuals is a standard method for estimating allele frequencies [5]. So the right
   verdict was "weak evidence (thin sample)", not "no evidence".
+- **Follow-up: "What was I supposed to say with 'invasion vs. migration'? The study's point was to reject both."** The model
+  line: *the headline treats invasion and migration as one theory; the evidence kills the invasion (the cities had already
+  fallen) but not the migration (the Aryans still arrived, later).* Your answer already had the substance: "the Aryans arrived
+  centuries later" **is** a migration, so your own dates contradict the "reject both" claim. You didn't name it, and the prompt
+  didn't ask you to by name: the rubric graded something the question didn't state (TEACHING-LOG 25). Objective changed to
+  Got it; regraded 0.9 (the 0.1 is "means nothing" vs. "weak evidence", above). The Mohenjo-Daro-only massacres were optional
+  evidence; your dates did the same job.
 - **What the result means (this one was on the lesson page).** "Little if any steppe ancestry" in a Harappan, when it's common in South Asia today, means that
   ancestry arrived **later**. The paper says Indo-European languages most naturally came "via Central Asia in the first half of the
   2nd millennium BCE" [2]. So the study *supports* a later migration; it only "debunks" an invasion theory that was already dead.

@@ -59,6 +59,8 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 24. **Grade only against what was assigned.** If a rubric point needs a fact from a source the learner wasn't given (the
     paper behind a news article), it isn't a fault when they miss it; mention it as extra. Check what the assigned source
     actually says before calling an answer wrong. (Entry 24)
+25. **The prompt names what the rubric grades.** If full credit needs a specific move ("separate invasion from migration"),
+    the question asks for it in words. Implicit understanding of an unasked point counts as Got it. (Entry 25)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -122,3 +124,7 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     learner's "pooling DNA is bad science" using details from the *Cell* paper. The linked article (The Week) quotes Reich on
     "pooling" data sets without saying they came from one skeleton, so the learner's reading was fair. Fix: regraded 0.6 → 0.75, then 0.85
     after the learner pointed out the answer did address the result (rejected it as pooled); rule 24.
+25. **2026-10-07 · "What was I supposed to say with this? … The point of this study didn't differentiate between invasion and
+    migration, the point was to reject both."** The claim-headline rubric required "distinguish invasion from migration", but the
+    prompt only asked what the evidence supports. The learner's answer ("the Aryans arrived centuries later") already implied it.
+    Fix: objective → Got it, regraded 0.9, re-teach dropped; rule 25.
