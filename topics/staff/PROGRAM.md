@@ -14,9 +14,8 @@ first AWS cert, or sooner if you choose it instead of AWS.*
 - **Each lesson** is a short reading, the idea, **one "at work this week" action** (15 minutes or less), and one graded free response
   (a doc section, a design critique, a decision write-up). You also keep a **brag document** from lesson 1.
 - **Both routes stay open** (your choice): the same evidence becomes a promotion packet (promotion) or an interview story bank (switching).
-- **Books:** 3 of the main books are in your library (*Designing Data-Intensive Applications*, *Designing ML Systems*, *Clean
-  Architecture*) and 2 are free online (*Software Engineering at Google*, Larson's staffeng.com guides). **Buy one:** Reilly, *The
-  Staff Engineer's Path*. It's the backbone of four courses.
+- **Books:** 3 of the main books are in your library (*Designing Data-Intensive Applications*, 2nd ed. 2026, *Designing ML Systems*, *Clean
+  Architecture*) and 2 are free online (*Software Engineering at Google*, Larson's staffeng.com guides). You have the staff books (2026-10-07); adding them to the book server lets lessons quote exact passages.
 
 ## 1. Plan
 **Starting point.** Senior. You already do the work Larson calls the *Tech Lead* archetype (leading a cross-functional initiative) and
@@ -64,7 +63,7 @@ The generated map is `DAG.md`. The Career major's CR150 (interviewing) and CR160
 ## 4. Books needed
 | Book | For | Status |
 |---|---|---|
-| Reilly, *The Staff Engineer's Path* (O'Reilly, 2022) [1] | SE101, SE140, SE150, SE160 | **buy**: the backbone |
+| Reilly, *The Staff Engineer's Path* (O'Reilly, 2022) [1] | SE101, SE140, SE150, SE160 | **owned** (2026-10-07); add it to the book server so lessons can quote it |
 | Ousterhout, *A Philosophy of Software Design* 2nd ed. (2021) [5] | SE130 | wanted (short; the 2nd edition's new material is a free download) |
 | Larson, *An Elegant Puzzle* (2019) | SE150 | wanted |
 | Xu, *System Design Interview* vol. 1–2; Aminian & Xu, *ML System Design Interview* | SE120, SE160 | wanted (interview route) |
