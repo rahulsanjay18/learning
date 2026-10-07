@@ -83,7 +83,7 @@ thinking of is the rook-like elephant of *chaturaji*, a four-player dice variant
 - **Your "length of rule" point** is about how much weight to give each period, not where to draw the lines. Worth keeping, but it's a
   separate argument. Lesson 0003's writing box asks explicitly for one specific piece of evidence.
 
-## 2026-10-07 · Lesson 0003 "Judge the headline 'New DNA study debunks Aryan invasion theory'" (graded 0.6, regraded 0.75 the same day)
+## 2026-10-07 · Lesson 0003 "Judge the headline 'New DNA study debunks Aryan invasion theory'" (graded 0.6, regraded 0.85 the same day)
 **Your answer (short):** the DNA was pooled because no single source had enough; it showed little or no Aryan DNA. But the
 cities peaked c. 2300 BCE and declined in the drought of 1800–1500 BCE, before the Aryans arrived (Mitanni treaty, 2nd
 millennium BCE). Pooling DNA is bad science, conclusion-first, and the quoted people sounded triumphant.
@@ -97,6 +97,11 @@ argument that killed the invasion story. That's the specific evidence record 000
   produce enough DNA, pooling them resulted in sufficient genetic data" [4]. Reading that as pooling different sources is fair. The
   paper shows the data sets were 100+ sequencing attempts on **one** woman's skeleton [2], but the paper wasn't assigned, so
   my first grading held you to a source you weren't given (TEACHING-LOG 24). Your caution about a thin sample was right: n = 1.
+- **Follow-up: "I said the result means nothing because they pooled DNA from multiple sources."** Fair: you did address the
+  result, by rejecting it on a premise your source supported (regraded 0.85). One step overshoots: even if the DNA had come from
+  several people, a pool with no steppe ancestry still means none of them carried much, because mixing can't remove an ancestry
+  that's present. Pooled sequencing of many individuals is a standard method for estimating allele frequencies [5]. So the right
+  verdict was "weak evidence (thin sample)", not "no evidence".
 - **What the result means (this one was on the lesson page).** "Little if any steppe ancestry" in a Harappan, when it's common in South Asia today, means that
   ancestry arrived **later**. The paper says Indo-European languages most naturally came "via Central Asia in the first half of the
   2nd millennium BCE" [2]. So the study *supports* a later migration; it only "debunks" an invasion theory that was already dead.
@@ -112,5 +117,7 @@ argument that killed the invasion story. That's the specific evidence record 000
    criticism, with its sources). Tertiary; points to the primary press coverage.
 4. "New DNA study debunks Aryan invasion theory", *The Week*, 6 Sep 2019 (the article the lesson linked).
    [theweek.in](https://www.theweek.in/news/india/2019/09/06/new-study-debunks-aryan-invasion-theory.html)
+5. Schlötterer et al., "Sequencing pools of individuals: mining genome-wide polymorphism data without big funding", *Nature
+   Reviews Genetics* 15, 2014, pp. 749–763. [doi:10.1038/nrg3803](https://www.doi.org/10.1038/NRG3803)
 
 **Map question:** you were right, the four labelled buttons gave the answer away. It's now click-on-the-map only (TEACHING-LOG 23).

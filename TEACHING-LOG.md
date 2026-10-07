@@ -120,5 +120,5 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     Fix: dropped the choices (click the map); rule 23.
 24. **2026-10-07 · "Did you expect me to actually read the paper? I just read the article you linked."** I marked down the
     learner's "pooling DNA is bad science" using details from the *Cell* paper. The linked article (The Week) quotes Reich on
-    "pooling" data sets without saying they came from one skeleton, so the learner's reading was fair. Fix: regraded 0.6 → 0.75;
-    rule 24.
+    "pooling" data sets without saying they came from one skeleton, so the learner's reading was fair. Fix: regraded 0.6 → 0.75, then 0.85
+    after the learner pointed out the answer did address the result (rejected it as pooled); rule 24.
