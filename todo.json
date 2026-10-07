@@ -1,13 +1,68 @@
 {
   "about": "Things Claude needs from the learner (accesses, decisions, setup, materials). Shown at the top of assets/today.html and in /program's status. Claude adds items when it is blocked on the learner and removes them (done: true + done_on) once the learner confirms in a session. Ticking a box on the Today page only hides it in that browser; say it in a session so it's closed for real.",
   "items": [
-    {"id": "vim-setup", "major": "eng", "added": "2026-10-07", "text": "Rep 0: make Vim your editor: git config --global core.editor vim; export EDITOR=vim VISUAL=vim in your shell rc; Vim keybindings in your IDE (VSCodeVim / IdeaVim); run vimtutor once (~30 min).", "why": "Every eng lesson opens with a Vim drill and reps are edited in Vim."},
-    {"id": "push-3dchess", "major": "eng", "added": "2026-10-07", "text": "Tell Claude 'push access OK' for the 3D chess repos when the first code rep starts (they're attached read-only now).", "why": "Claude writes the code for reps as PRs you review."},
-    {"id": "mla-date", "major": "eng", "added": "2026-10-07", "text": "Pick a target date for the AWS MLA-C02 exam (book it, or give a target month).", "why": "Exam prep is deadline-driven; the AWS lane is paced backwards from it (lesson 0002)."},
-    {"id": "aws-course", "major": "eng", "added": "2026-10-06", "text": "Send the files from your 2024 AWS Solutions Architect Associate course (or say where they are).", "why": "AW101 uses its core modules (IAM, S3, VPC, EC2, Lambda, CloudWatch) as the foundations."},
-    {"id": "staff-books", "major": "eng", "added": "2026-10-07", "text": "Add your staff books (Reilly, Larson, Ousterhout, ...) to the book server, then say 'I added books' (/new-books).", "why": "Lessons can then quote exact passages and set exercises from them."},
-    {"id": "proposed-tickets", "major": "eng", "added": "2026-10-07", "text": "Yes/no on filing two proposed 3D chess tickets: Spark self-play analytics (RLAgent) and an engine hot-path profile (3dChessInC).", "why": "Claude never files issues without asking."},
-    {"id": "interests", "major": "eng", "added": "2026-10-07", "text": "Edit the 'things I find interesting' list in topics/eng/PROGRAM.md §1b (or tell Claude): it drives the Friday interest block.", "why": "Some of this major is meant to be for fun."},
-    {"id": "catalog-routine", "major": "eng", "added": "2026-10-07", "text": "Optional: want a monthly scheduled refresh of the cert/skill/pay catalog, even on days you don't study? (yes/no)", "why": "Otherwise it refreshes when a session sees it's due."}
+    {
+      "id": "vim-setup",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "Rep 0: make Vim your editor: git config --global core.editor vim; export EDITOR=vim VISUAL=vim in your shell rc; Vim keybindings in your IDE (VSCodeVim / IdeaVim); run vimtutor once (~30 min).",
+      "why": "Every eng lesson opens with a Vim drill and reps are edited in Vim."
+    },
+    {
+      "id": "push-3dchess",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "Tell Claude 'push access OK' for the 3D chess repos when the first code rep starts (they're attached read-only now).",
+      "why": "Claude writes the code for reps as PRs you review."
+    },
+    {
+      "id": "mla-date",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "Pick a target date for the AWS MLA-C02 exam (book it, or give a target month).",
+      "why": "Exam prep is deadline-driven; the AWS lane is paced backwards from it (lesson 0002)."
+    },
+    {
+      "id": "aws-course",
+      "major": "eng",
+      "added": "2026-10-06",
+      "text": "Send the files from your 2024 AWS Solutions Architect Associate course (or say where they are).",
+      "why": "AW101 uses its core modules (IAM, S3, VPC, EC2, Lambda, CloudWatch) as the foundations."
+    },
+    {
+      "id": "staff-books",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "Add your staff books (Reilly, Larson, Ousterhout, ...) to the book server, then say 'I added books' (/new-books).",
+      "why": "Lessons can then quote exact passages and set exercises from them."
+    },
+    {
+      "id": "proposed-tickets",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "Yes/no on filing two proposed 3D chess tickets: Spark self-play analytics (RLAgent) and an engine hot-path profile (3dChessInC).",
+      "why": "Claude never files issues without asking."
+    },
+    {
+      "id": "interests",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "Edit the 'things I find interesting' list in topics/eng/PROGRAM.md §1b (or tell Claude): it drives the Friday interest block.",
+      "why": "Some of this major is meant to be for fun."
+    },
+    {
+      "id": "catalog-routine",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "Optional: want a monthly scheduled refresh of the cert/skill/pay catalog, even on days you don't study? (yes/no)",
+      "why": "Otherwise it refreshes when a session sees it's due."
+    },
+    {
+      "id": "private-hosting",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "Decide where private things live (notes/private-hosting-options.md): private repo + your server (recommended), or the whole site behind Cloudflare Access.",
+      "why": "GitHub Pages on the free plan is always public; until decided, don't put anything private in this repo (inbox included)."
+    }
   ]
 }

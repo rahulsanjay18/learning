@@ -379,6 +379,15 @@
       "you": "pick SLIs/SLOs and alert thresholds",
       "claude": "implement the checks",
       "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Decision record: what's public vs private on the learning site, and where private things live (see notes/private-hosting-options.md)",
+      "course": "SE110",
+      "you": "write the ADR: options, decision, consequences",
+      "claude": "implement it (private repo, server endpoints, or Cloudflare Access)",
+      "state": "open"
     }
   ]
 }
