@@ -3,6 +3,19 @@
 *Set 2026-10-07. The single home for everything job-related (learner's words: "keep everything job-related in this thread").
 Merges the earlier C/C++, Staff, Career and AWS ML plans; their original write-ups are in `reference/`.*
 
+## The actual goal (learner, 2026-10-07)
+**More money, more remote, more time for me.** "When done well and with enough focus, many dev jobs don't need 8 hrs/day, and that's
+the dream: hang out online for 8 hrs/day if someone needs me, shift my work mentality to completing tasks." Everything else in this
+file is calibration for Claude.
+
+Calibration that follows (Claude's judgment):
+- Prefer skills that raise **output per hour** (deep focus, automation, AI-assisted development, writing that replaces meetings) and
+  roles judged on outcomes, not presence.
+- Of Larson's staff archetypes, the **Solver** (hard problems, deep work) and **Architect** fit "complete tasks" better than the
+  meeting-heavy **Tech Lead** or **Right Hand**. Worth weighing when the staff lane gets to "which archetype do you want".
+- **Async communication** (design docs, decision records, clear status writing) is the remote skill that buys back time; the staff
+  lane's writing course is doubly useful.
+
 ## The whole point (learner, 2026-10-07)
 "I'm just trying to get more career skills and trying to do it in the most fun way possible, that's all." When a plan choice is
 close, pick the more fun option; when a career skill has a boring default exercise, find a version on something the learner cares about.
