@@ -4,6 +4,11 @@
 prioritizing correctness and saving tokens." Principles first, then what already exists, then the few next steps worth doing.
 New ideas from future brainstorms go to `notes/ideas.md` (focus keeper), not here.*
 
+## The rule (learner, 2026-10-07): compute, don't narrate
+"I don't want you to do reasoning in prose unless you absolutely have to (the problem's lines are fuzzy enough that I can't code it)."
+So the test for every step is: **could a program get this right?** If yes, write and run the program, and show its output. If no,
+reason in prose and label it as judgment. This applies to everything, not only planning.
+
 ## TL;DR: five principles
 1. **Exact things go to tools, judgment goes to the model.** Anything with a checkable answer (arithmetic, schedules, legal moves,
    keystrokes, coverage, due dates) is computed by code. The model writes the code or the model once, and explains and decides.

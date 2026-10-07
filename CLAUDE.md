@@ -69,6 +69,12 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - 3D chess repos: rahulsanjay18/3dChessInC, 3dChessRLAgent, 3dChessWeb, 3dChessServer, 3dChessInfra, 3dChessRelay, 3dChessDesktop.
   Re-check a ticket on GitHub before assigning it; ask before filing new issues.
 
+## Compute, don't narrate (2026-10-07)
+- **Don't reason in prose when code can do it.** If a question has a checkable answer (arithmetic, counts, dates, probabilities,
+  comparisons, consistency between files, data lookups, search/optimization), write and run code (Python, sympy, OR-Tools, grep,
+  an engine) and report the result. Prose reasoning only where the problem's lines are too fuzzy to code (judgment, taste,
+  pedagogy, trade-offs), and say that it's judgment. Principles and examples: `notes/assistant-principles.md`.
+
 ## Focus keeper (2026-10-07: "steer me to focusing on a handful so I make meaningful progress")
 - I have ADHD and a million interests; I'll tell you what I think is cool. **Log new ideas in `notes/ideas.md`, say so in one line,
   and steer back to the day's plan.** Don't add them to curricula or lesson plans.
