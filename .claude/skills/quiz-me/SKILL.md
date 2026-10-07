@@ -12,7 +12,7 @@ Arguments: `$ARGUMENTS` (optional topic slug, optional count; default 5).
    (ask which topic if none was given, or pick the one studied most recently) and say it's early practice.
    The output has a `KEY:` (and sometimes `WHY:`) line per question: **never show those before the learner answers.**
 2. Ask **one question at a time**. Keep the wording of the `Q:` line. Math in plain text or LaTeX.
-   - **Choice questions use the picker UI** (`AskUserQuestion`, one question per call, header = topic). Shuffle the options so
+   - **Choice questions use a picker UI if the harness has one** (Claude Code: `AskUserQuestion`, one question per call, header = topic; elsewhere: plain text, options lettered). Shuffle the options so
      the key isn't always in the same place. With ≤ 3 options, add a last option **"I don't know"** (description: "No guess:
      shows the answer"); with 4, the picker's built-in "Other" box takes "idk" or a note. Never put the key or `WHY:` in a label
      or description. (Pattern from the `quiz` popup in github.com/amosblomqvist/learn: a separate "I don't know" so a gap isn't

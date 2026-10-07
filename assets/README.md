@@ -142,6 +142,12 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
   - `<div class="lp-sim" data-sim="sampling-mean" [data-pop="exponential|uniform|normal|bimodal"] [data-n="2"]>`: 1,000 sample means, slider for n, sd(x̄) vs σ/√n (the CLT).
   - `<div class="lp-sim" data-sim="multiple-testing" [data-k="20"] [data-alpha="0.05"]>`: k null tests per experiment; how often at least one p < α; Bonferroni toggle.
   - `node scripts/test_sim.js` checks the z/t quantiles against tables and the coverage rates against theory.
+- **Diagram** (`plugins/diagram.js` + `plugins/diagram.css`): code-drawn templates; you give the facts, the code lays them out.
+  - Graph (dependency map, flow, tree; must be acyclic): `<div class="lp-diagram" data-kind="graph" data-nodes="ax:The three axioms|comp:P(Aᶜ) = 1 − P(A)" data-edges="ax>comp:label|comp>le1|a~>b" [data-dir="down|right"] [data-hl="comp"] data-caption="…"></div>`. Nodes are `id:label` (an edge end with no node entry is labelled by its id); edges `from>to[:label]`, `~>` dashed. Layered layout with crossing reduction; labels wrap at ~20 characters. More than 12 nodes fails the test: split it.
+  - Sequence: `<div class="lp-diagram" data-kind="sequence" data-actors="Client|Server" data-steps="Client>Server:SYN|Server~>Client:SYN-ACK|Server>Server:check">`. `~>` dashed (a reply); `A>A` is a self-step.
+  - Venn: `<div class="lp-diagram" data-kind="venn" data-sets="A|B|C" [data-universe="S"] [data-shade="(A ∪ B)ᶜ ∩ C"]>`. 2 or 3 sets. Shade syntax: `∩ & and`, `∪ | + or`, complement `!A`, `not A`, `A'`, `Aᶜ`, `A^c`, difference `A \ B` or `A − B`, parentheses.
+  - Markdown: `::: diagram kind=graph caption="…"` with list lines: `- id: label` (nodes), `- a > b: label` (edges or steps), `- A` (sets or actors).
+  - **Look at it before committing:** `node scripts/snap.mjs <page.html> [selector] [--dark] [--width 380]` saves PNGs of each diagram. `node scripts/test_diagram.js` checks layout, set algebra and every diagram in the repo.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
 ## Daily review deck (`assets/review.html`)

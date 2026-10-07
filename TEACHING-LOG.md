@@ -3,6 +3,20 @@
 Read this **before writing any lesson, in any subject**. When the learner's questions or results show that an explanation or a
 lesson was flawed, add an entry: what happened (with the question that exposed it), why, and the rule. Rules apply to every topic.
 
+## Why these rules exist (read first)
+The point of every lesson is **understanding: each fact is connected to things the learner already accepts, so it can be
+re-derived instead of remembered.** Lone facts rot; connected ones don't. (This framing comes from amosblomqvist/learn's
+`teach` skill; the learner's own complaints point the same way: "you never describe what alpha is" (entry 1), "I need to sit and
+reason through stuff" (entry 21), "not enough context" (entry 16).) The numbered rules below are mostly patches for single
+incidents; they follow from four ideas, and a new situation no rule covers should be decided by these:
+- **A. Solid ground first** (the learner can accept it as stated, so it sticks): define before use, build on what they already hold,
+  in their words, from the assigned source. Rules 1, 2, 9, 12, 15, 16, 17, 19, 24, 26.
+- **B. Every step motivated** (it feels discovered, not decreed): why are we doing this, why this step, where each number comes from.
+  Rules 4, 7, 16, 21, 26.
+- **C. Check each piece landed before building on it, and measure knowing, not guessing.** Rules 3, 6, 8, 20, 23, 25.
+- **D. One wrong fact poisons everything built on it.** Rules 5, 10, 14, 22.
+Rules 11, 13 and 18 are format and logistics.
+
 ## Rules (the short version)
 1. **Define before use.** Before a lesson uses a term, check the topic's learning records. If the term was missed, skipped or never
    taught, define it in the lesson first. (Entry 1)
@@ -48,8 +62,10 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
       whole lesson only when the objective is a prerequisite for the next syllabus lessons, or it's still Not yet after one re-teach;
       log that in the syllabus's "Changes". **Facts (dates, names) go to spaced review and warm-ups, not extra lessons** (entry 10).
     - Plan the whole course up front in `SYLLABUS.md` (readings + objectives); sessions write the next lesson, they don't redesign. (Entry 20)
-21. **Reason first, name second.** Introduce each new definition by a question the learner works through in revealed steps
-    (`::: worked`), then name it and give the formal statement. At most ~2 new definitions per lesson; more → split. (Entry 21)
+21. **Reason first, name second, for every step, not only definitions.** Introduce each new definition, formula, theorem or proof
+    move by a question the learner works through in revealed steps (`::: worked`), then name it and give the formal statement.
+    Open each lesson with the problem that makes it necessary ("why are we doing this?"). At most ~2 new definitions per lesson;
+    more → split. (Entry 21; widened 2026-10-07: the learner asked to "reason through stuff", which is broader than definitions.)
 22. **Use the book's exercises; never leak answers.** Draw practice, pretest, proof and check items from the textbook's own
     exercises where they fit (cite them: "C&B Exercise 1.33"), adapting numbers only when needed. And never state an answer to a
     question the learner hasn't done yet, in chat or anywhere visible: verify answers with assertions that don't print them. (Entry 22)

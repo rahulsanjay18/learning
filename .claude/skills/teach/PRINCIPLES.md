@@ -1,10 +1,8 @@
 # How to explain: two principles, a probe, and quiz-option construction
 
 Adapted 2026-10-07 from Amos Blomqvist's `teach` skill (github.com/amosblomqvist/learn, `skills/teach/SKILL.md`), rewritten
-for this repo (HTML lessons, `assets/` widgets, TEACHING-LOG rules). Overlap with existing rules, exactly: rule 21 *is*
-principle 2, but only for new definitions; principle 2 extends it to every step (formulas, proofs, manipulations). Rule 4
-(concrete story first) is the *motivate* step of the loop below. Nothing before this file covered principle 1, bracketing,
-or building options by mutation. This file is *how* to explain; SKILL.md and CLAUDE.md say *what* to produce.
+for this repo (HTML lessons, `assets/` widgets, TEACHING-LOG rules). TEACHING-LOG's "Why these rules exist" section is
+the short form of this file; rule 21 (widened 2026-10-07) is principle 2. This file is *how* to explain; SKILL.md and CLAUDE.md say *what* to produce.
 
 ## Goal: connected facts, not a pile of them
 
@@ -62,6 +60,16 @@ Auditing options after writing them isn't enough, because the answer has already
 
 If, reading the set cold, you can tell the answer without knowing the material, regenerate it; don't patch it.
 `scripts/lint_lessons.py` warns on unequal word counts and on a justification word that appears only in the answer.
+
+## Visuals: one idea, fewest elements, look before shipping
+
+Draw a diagram only when it shows something words can't: a dependency map, a flow, who-sends-what-when, set regions, geometry.
+Use the code templates in `assets/plugins/diagram.js` (graph, sequence, venn; markup in `assets/README.md`) or the plot,
+timeline and map plugins; never draw or generate pictures by hand. Before briefing yourself, cut to the fewest elements that
+carry the idea (about 7 nodes; ask of each "if I delete this, is the idea still clear?"). Every edge is a claim: verify it like any
+other fact. Then **look at it**: `node scripts/snap.mjs <page> [selector] [--dark] [--width 380]` writes PNGs; open them, check
+every arrow and label is true and readable in both themes and at phone width, and fix before committing.
+(From amosblomqvist/learn's `visualize` skill and its maker agents' render-and-inspect loop.)
 
 ## Verify before you say it
 

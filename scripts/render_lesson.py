@@ -100,13 +100,13 @@ QUIZ_TYPES = {"choice", "number", "exact", "cloze", "order", "categorize", "reca
               "shogi-move", "estimate", "find-error", "highlight"}
 DIV_CLASSES = {"board": "board-wrap", "go": "go-board", "plot": "lp-plot", "timeline": "lp-timeline", "map": "lp-map",
                "game": "lp-game", "xiangqi": "xq-board", "shogi": "shogi-board", "python": "lp-py", "video": "lp-video",
-               "worked": "lp-worked", "deck": "lp-deck", "reading": "reading", "callout": "callout", "sim": "lp-sim"}
+               "worked": "lp-worked", "deck": "lp-deck", "reading": "reading", "callout": "callout", "sim": "lp-sim", "diagram": "lp-diagram"}
 PLUGIN_OF = {"chess-move": ["chess"], "board-wrap": ["chess"], "go-move": ["go"], "go-board": ["go"], "math": ["math"],
              "plot-set": ["math", "plot"], "lp-plot": ["math", "plot"], "timeline-place": ["timeline"], "lp-timeline": ["timeline"],
              "map-locate": ["map"], "lp-map": ["map"], "py": ["python"], "lp-py": ["python"], "game-move": ["games"],
              "lp-game": ["games"], "xiangqi-move": ["xiangqi"], "xq-board": ["xiangqi"], "shogi-move": ["shogi"],
-             "shogi-board": ["shogi"], "lp-sim": ["sim"]}
-PLUGIN_ORDER = ["math", "plot", "chess", "go", "timeline", "map", "python", "games", "xiangqi", "shogi", "sim", "pixels"]
+             "shogi-board": ["shogi"], "lp-sim": ["sim"], "lp-diagram": ["diagram"]}
+PLUGIN_ORDER = ["math", "plot", "chess", "go", "timeline", "map", "python", "games", "xiangqi", "shogi", "sim", "diagram", "pixels"]
 
 
 def parse_attrs(s):
@@ -135,6 +135,16 @@ def render_widget(kind, header, body, used):
     """One ::: block. Sections after the prompt: '--- explain', '--- rubric', '--- hint', '--- code', '--- check', '--- step'."""
     ident, attrs = parse_attrs(header)
     cls = DIV_CLASSES.get(kind, kind)
+    if kind == "diagram":       # list lines are the data: '- id: label' nodes, '- a > b: label' edges/steps, '- A' sets/actors
+        items = list_items(body)
+        key = {"sequence": "steps"}.get(attrs.get("kind", "graph"), "edges")
+        conn = [x for x in items if ">" in x and not re.match(r"^[\w.-]+\s*:", x)]   # 'id: P(A) > 0' is a node
+        rest = [x for x in items if x not in conn]
+        if conn and key not in attrs: attrs[key] = "|".join(conn)
+        if rest:
+            k = {"graph": "nodes", "sequence": "actors", "venn": "sets"}.get(attrs.get("kind", "graph"), "nodes")
+            attrs.setdefault(k, "|".join(rest))
+        body = [l for l in body if not re.match(r"^\s*([-*]|\d+\.)\s+", l)]
     if kind not in QUIZ_TYPES and cls not in ("lp-py", "lp-worked"):     # containers: the body is ordinary content (may nest blocks)
         used.update(PLUGIN_OF.get(cls, []))
         attr_s = (f' id="{esc(ident)}"' if ident else "") + "".join(f' data-{k}="{esc(v)}"' for k, v in attrs.items())

@@ -81,6 +81,53 @@ evidence by `data-id`, and the durable-value test before writing a record.
 **Not adopted:** the background observer/reflector agents themselves. Cloud sessions here are short and file-backed, so there's
 little compaction to protect against; revisit if sessions start running long.
 
+## What the point is (second pass, after "use this to understand what the point of this all is")
+
+My first pass bolted learn's ideas on as an extra file and an extra rule. Read for its *purpose*, learn says something about our
+rules themselves: **the goal is understanding, meaning each fact is connected to things you already accept, so it can be re-derived
+instead of remembered.** It argues that a pile of lone facts doesn't stick while a few generating ideas do.
+
+Our TEACHING-LOG was exactly such a pile: 25 rules, each a patch for one incident. Read through learn's lens, almost all of them
+follow from four ideas, and your own complaints are all missing foundations or missing links:
+
+| Idea | Our rules it explains | Your words that exposed it |
+|---|---|---|
+| A. Solid ground first (accepted as stated) | 1, 2, 9, 12, 15, 16, 17, 19, 24 | "you never describe what alpha is" (entry 1) |
+| B. Every step motivated (discovered, not decreed) | 4, 7, 16, 21 | "I need to sit and reason through stuff" (entry 21) |
+| C. Check each piece landed; measure knowing, not guessing | 3, 6, 8, 20, 23, 25 | "some of these answers were guesses" (entry 7) |
+| D. One wrong fact poisons what's built on it | 5, 10, 14, 22 | the Ghaggar paraphrase (entry 14) |
+
+**What changed because of it:**
+- TEACHING-LOG now opens with "Why these rules exist": the purpose plus these four ideas. When no numbered rule covers a situation,
+  the four ideas decide it.
+- **Rule 21 widened.** It had turned your "reason through stuff" into "reason through *definitions*". Now it covers every new
+  definition, formula, theorem and proof move, and each lesson opens with the problem that makes it necessary.
+- Rule 4 (story → numbers → formula) isn't in conflict with "unconditional truths first": the story is the *motivate* step, and the
+  truth comes right after it.
+- **Left alone on purpose:** spaced review of plain facts (dates, names). Learn would say understood facts don't need drilling, but
+  some facts in history are just facts. Linking them to a timeline or a cause is the learn-style improvement, case by case.
+
+## Diagram templates (after "you can code diagram templates… then plug in the information")
+
+`assets/plugins/diagram.js`: three templates drawn by code from facts you supply, with no hand-drawn or generated pictures:
+a **graph** (dependency maps, flows, trees; layered layout with crossing reduction), a **sequence** diagram (who sends what to whom),
+and a **Venn** diagram (2–3 sets, any shaded set expression such as `(A ∪ B)ᶜ ∩ C`). In Markdown lessons: `::: diagram` with
+list lines. Learn's most important visual habit is adopted too: **look at the render before shipping.** `scripts/snap.mjs`
+screenshots each diagram (light/dark, phone width) for checking, and every edge is verified like any other claim (the gallery's
+axiom map follows the derivations as taught in Statistics lesson 0006). Tests: `scripts/test_diagram.js` (layout, De Morgan, distributive
+law, every diagram in the repo).
+
+## Does this work with other LLMs?
+
+Mostly yes, by design (`notes/platform-portability.md`: essentials in scripts/APIs, `SKILL.md` as plain English, Claude-only
+conveniences optional). Today's additions:
+- **Model-free:** the diagram plugin, `snap.mjs`, the lint warning, the tests, everything in TEACHING-LOG, PRINCIPLES.md and
+  the learning-record rules (plain text any model can follow).
+- **Claude Code-specific, with a fallback:** `/quiz-me`'s picker (`AskUserQuestion`); the skill now says to use plain lettered options
+  where a harness has no picker. The two agents in `.claude/agents/` use Claude Code's agent format; their bodies are plain prompts
+  another harness can run as a sub-task, but the `tools:` line and the folder are Claude Code's.
+- **Needs a vision-capable model:** the "look at the render" step (reading the PNGs).
+
 ## Sources
 1. pi coding agent: https://github.com/badlogic/pi-mono (linked from [3]'s README).
 2. Amos Blomqvist, *learn*: https://github.com/amosblomqvist/learn (README; `skills/teach/SKILL.md`; `extensions/quiz.ts`;

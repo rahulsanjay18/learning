@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="plugins/xiangqi.css">
 <link rel="stylesheet" href="plugins/shogi.css">
 <link rel="stylesheet" href="plugins/sim.css">
+<link rel="stylesheet" href="plugins/diagram.css">
 </head>
 <body>
 <main>
@@ -232,6 +233,17 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
   <p class="prompt">Pataliputra was the capital of the Maurya Empire. Tap where it stood (within 200 km), then press Check.</p>
   <div class="explain" hidden>Pataliputra is modern Patna, on the south bank of the Ganges in Bihar (25.59° N, 85.14° E).</div>
 </div>
+<h2>Diagram plugin</h2>
+<p>Code-drawn templates: you give the facts, the plugin does the layout. A dependency map (C&amp;B §1.2):</p>
+<div class="lp-diagram" id="dg-axioms" data-kind="graph"
+  data-nodes="ax:The three axioms|comp:P(Aᶜ) = 1 − P(A)|le1:P(A) ≤ 1|empty:P(∅) = 0|union:P(A ∪ B) = P(A) + P(B) − P(A ∩ B)|bonf:Bonferroni: P(A ∩ B) ≥ P(A) + P(B) − 1"
+  data-edges="ax>comp:A, Aᶜ partition S|comp>le1|ax>empty|ax>union|union>bonf|le1>bonf" data-hl="comp"
+  data-caption="How Casella &amp; Berger derive the basic rules from the axioms (Theorems 1.2.8–1.2.9 and (1.2.10); see Statistics lesson 0006)."></div>
+<div class="lp-diagram" id="dg-tcp" data-kind="sequence" data-actors="Client|Server"
+  data-steps="Client&gt;Server:SYN|Server~&gt;Client:SYN-ACK|Client&gt;Server:ACK|Client&gt;Server:GET /|Server~&gt;Client:200 OK"
+  data-caption="TCP's three-way handshake, then one request (RFC 9293 §3.5)."></div>
+<div class="lp-diagram" id="dg-venn" data-kind="venn" data-sets="A|B|C" data-shade="(A ∪ B)ᶜ ∩ C"
+  data-caption="(A ∪ B)ᶜ ∩ C: in C but in neither A nor B."></div>
 <h2>Python plugin</h2>
 <p>Runnable Python (Pyodide, loaded on the first Run). The central limit theorem: means of 30 uniform draws pile up in a bell around 0.5,
 with spread σ/√n.</p>
@@ -289,5 +301,6 @@ for c, lo in zip(counts, edges):
 <script src="plugins/xiangqi.js"></script>
 <script src="plugins/shogi.js"></script>
 <script src="plugins/sim.js"></script>
+<script src="plugins/diagram.js"></script>
 </body>
 </html>

@@ -15,6 +15,7 @@ run math        node scripts/test_math.js
 run plot        node scripts/test_plot.js
 run go          node scripts/test_go_rules.js
 run timeline    node scripts/test_timeline_map.js
+run diagram     node scripts/test_diagram.js
 run python      node scripts/test_python.js
 run progress-server bash -c "cd progress-server && python3 test_app.py"
 run book-server bash -c "cd book-server && python3 test_app.py"

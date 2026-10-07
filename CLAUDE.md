@@ -33,7 +33,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
   I can supply study materials (prep books, practice exams) for the certifications.
 - **No generated art or images.** Don't draw illustrations or decorative graphics yourself. If a lesson needs a picture, ask me
   (I'll supply it) or pull one from the web or my books, credited. Data-driven visuals (plots of formulas, game boards from
-  positions, timelines from dates, maps from open map data) are fine unless I say otherwise.
+  positions, timelines from dates, maps from open map data, and code diagram templates you fill with facts: `assets/plugins/diagram.js`)
+  are fine unless I say otherwise.
 - **The point is learning what I want to learn, not completing a college major.** Majors are just an organizing tool: keep what helps
   (book order, prerequisites, pretests, review) and deviate whenever there's real value in it (follow my interests, reorder, skip,
   add a tangent). Say so briefly when you deviate; don't ask permission for small changes.

@@ -1,0 +1,17 @@
+/* Diagram plugin styles (assets/plugins/diagram.js). Load after assets/lp.css. Colours come from the lp.css tokens. */
+.lp-diagram { margin: 1.4rem 0; }
+.dg-scroll { overflow-x: auto; overflow-y: hidden; }   /* wide diagrams scroll inside the widget, never the page */
+.dg-svg { display: block; margin: 0 auto; max-width: none; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.dg-node rect { fill: var(--bg); stroke: var(--fg); stroke-width: 1; }
+.dg-node.hl rect { fill: var(--sel); stroke: var(--accent); stroke-width: 1.5; }
+.dg-label { font-size: 13px; fill: var(--fg); }
+.dg-edge { fill: none; stroke: var(--muted); stroke-width: 1.2; }
+.dg-edge.dashed { stroke-dasharray: 5 4; }
+.dg-arrowhead { fill: var(--muted); }
+.dg-edge-label { font-size: 11.5px; fill: var(--muted); paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round; }
+.dg-lifeline { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 3 3; }
+.dg-universe { fill: none; stroke: var(--fg); stroke-width: 1; }
+.dg-set { fill: none; stroke: var(--fg); stroke-width: 1.2; }
+.dg-set-label { font-size: 14px; font-style: italic; fill: var(--fg); }
+.dg-shade { fill: var(--accent); fill-opacity: .28; }
+.dg-caption { font-size: .85rem; color: var(--muted); margin-top: .4rem; }
