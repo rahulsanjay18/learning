@@ -3,6 +3,10 @@
 *Set 2026-10-07. The single home for everything job-related (learner's words: "keep everything job-related in this thread").
 Merges the earlier C/C++, Staff, Career and AWS ML plans; their original write-ups are in `reference/`.*
 
+## The whole point (learner, 2026-10-07)
+"I'm just trying to get more career skills and trying to do it in the most fun way possible, that's all." When a plan choice is
+close, pick the more fun option; when a career skill has a boring default exercise, find a version on something the learner cares about.
+
 ## Why
 "A chill life and a lot of money." Senior now; the biggest pay lever is **senior → staff**, then a premium specialty (CUDA/inference,
 infrastructure, AI security; Spark as a quick win), then an AWS ML cert. A safety net outside tech (actuary, patent agent) stays on file.
