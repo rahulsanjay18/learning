@@ -16,7 +16,7 @@ Steps:
   6. commit + push library/
 Then run /new-books in a Claude session.
 """
-import argparse, csv, re, shutil, subprocess, sys
+import argparse, re, subprocess, sys
 from pathlib import Path
 
 try:
@@ -28,10 +28,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path[:0] = [str(REPO / "scripts"), str(REPO / "book-server")]
 import reconvert, grade_library, build_index  # noqa: E402
 
-BOOKS_ROOT = Path("/media/rahul/Drive 2/Library/Library")
-MD_ROOT = Path("/media/rahul/Drive 2/Library/Markdown_Library")
 COMPOSE_DIR = Path.home() / "Documents"
-EASY = {".epub", ".azw3", ".mobi", ".html", ".htm", ".docx", ".txt"}  # no OCR needed
 COMPOSE_FILES = ("docker-compose.yml", "docker-compose.yaml", "compose.yml", "compose.yaml")
 
 
@@ -65,39 +62,16 @@ def compose_mounts(compose_dir):
     return f, mounts.get("/data"), mounts.get("/books_md")
 
 
-def failed_before():
-    log = REPO / "library" / "RECONVERT-LOG.csv"
-    if not log.exists():
-        return set()
-    last = {}
-    for row in csv.reader(open(log, encoding="utf-8")):
-        if len(row) >= 2:
-            last[row[0]] = row[1]
-    return {p for p, s in last.items() if s == "FAILED"}
-
-
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--books-root", type=Path, default=BOOKS_ROOT)
-    ap.add_argument("--md-root", type=Path, default=MD_ROOT)
+    reconvert.add_args(ap)  # the conversion flags, same as running reconvert.py on its own
     ap.add_argument("--compose-dir", type=Path, default=COMPOSE_DIR)
     ap.add_argument("--db", type=Path, help="index path (default: the host path compose mounts at /data, + books.db)")
-    ap.add_argument("--only", default="", help="only convert these extensions, e.g. epub,pdf")
-    ap.add_argument("--limit", type=int, default=0, help="convert at most N books")
-    ap.add_argument("--pdf", action="store_true", help="also convert PDF and DjVu (marker: OCR + LaTeX, slow, needs marker_single)")
-    ap.add_argument("--mode", choices=["fast", "balanced"], help="marker mode for --pdf")
-    ap.add_argument("--retry-failed", action="store_true", help="also retry books that failed to convert before")
     ap.add_argument("--dry-run", action="store_true", help="list what would be converted, change nothing")
     ap.add_argument("--no-pull", action="store_true")
     ap.add_argument("--no-docker", action="store_true")
     ap.add_argument("--no-commit", action="store_true")
     a = ap.parse_args()
-
-    for root, name in ((a.books_root, "books root"), (a.md_root, "markdown root")):
-        if not root.is_dir():
-            sys.exit(f"{name} not found: {root} (is the drive mounted?)")
-    tools = {t: bool(shutil.which(t)) for t in reconvert.TOOLS if a.pdf or t not in ("marker_single", "ddjvu")}
-    print("converters:", ", ".join(f"{t} {'ok' if ok else 'MISSING'}" for t, ok in tools.items()))
 
     compose_file, data_dir, md_mount = compose_mounts(a.compose_dir)
     db = a.db or (data_dir / "books.db" if data_dir else REPO / "book-server" / "data" / "books.db")
@@ -110,36 +84,11 @@ def main():
         print(r.stdout.strip().splitlines()[-1] if r.returncode == 0 and r.stdout.strip() else "pull failed; continuing with local copy")
 
     step(2, "convert new books")
-    rows = reconvert.new_books(a.books_root, a.md_root)
-    skip = set() if a.retry_failed else failed_before()
-    rows = [r for r in rows if r["path"] not in skip]
-    only = {"." + e.strip(". ").lower() for e in a.only.split(",") if e.strip()}
-    if only:
-        rows = [r for r in rows if r["ext"] in only]
-    pdfs = [r for r in rows if r["ext"] == ".pdf"]
-    if pdfs:
-        from tqdm import tqdm
-        for r in tqdm(pdfs, desc="check pdfs", unit="pdf"):
-            r["light"], g, why = reconvert.pdf_check(a.books_root / r["path"])
-            r["why"] = f"grade {g}" + (f": {why}" if why else "")
-    hard = [r for r in rows if r["ext"] not in EASY and not r.get("light")]
-    if not a.pdf:
-        rows = [r for r in rows if r["ext"] in EASY or r.get("light")]
-    if a.limit:
-        rows = rows[: a.limit]
-    if hard:
-        print(f"{len(hard)} books need OCR/marker" + ("" if a.pdf else ": not converted (add --pdf to include them)"))
-        for r in hard[:20]:
-            print(f"  {r['path']}  ({r.get('why') or r['ext']})")
-        if len(hard) > 20:
-            print(f"  … and {len(hard) - 20} more")
-    print(f"{len(rows)} books to convert" + (f" ({len(skip)} earlier failures skipped; --retry-failed to retry)" if skip else ""))
-    log = reconvert.convert_all(rows, a.books_root, a.md_root, a.mode, dry=a.dry_run)
+    log = reconvert.run(a, dry=a.dry_run)
     if a.dry_run:
         print("\ndry run: nothing changed")
         return
     ok = sum(x[1] == "ok" for x in log)
-    print(f"converted {ok}/{len(log)}")
 
     step(3, "grade")
     grade_library.grade_all(a.md_root, a.books_root)

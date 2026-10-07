@@ -21,20 +21,17 @@ with no OCR; scans and math-heavy PDFs are listed with their grade and left for 
 `pip install tqdm pymupdf4llm`.
 Then run `/new-books` in a Claude session.
 
-**The individual steps** (what the script does, if you need one by hand):
+**One code path.** `add_books.py` only strings the modules together; each step is also a script you can run alone, with the
+same flags and the same defaults (your paths live in `scripts/library_paths.py`; override with `LIB_BOOKS_ROOT` / `LIB_MD_ROOT`):
 
-1. **Put the files** (PDF/EPUB/…) in the originals folder, in a sensible category folder.
-2. **Convert to Markdown** into the Markdown folder (same folder structure). The tools `scripts/reconvert.py` uses:
-   EPUB → `pandoc book.epub -t gfm -o book.md`; PDF → `marker_single book.pdf --output_dir …` (handles OCR and LaTeX).
-   Easiest: `--new` converts every book that has no Markdown yet (point both roots at one subfolder to limit it):
-   `python3 scripts/reconvert.py --books-root "…/Library/<folder>" --md-root "…/Markdown_Library/<folder>" --new --run`.
-   Or put them in `library/RECONVERT.csv` and run
-   `python3 scripts/reconvert.py --books-root "/media/rahul/Drive 2/Library/Library" --md-root "/media/rahul/Drive 2/Library/Markdown_Library"`
-   (dry run), then the same with `--run`.
-3. **Grade** (rewrites `library/MANIFEST.csv` and `library/toc/`):
-   `cd ~/Documents/learning && python3 scripts/grade_library.py --md-root "/media/rahul/Drive 2/Library/Markdown_Library" --src-root "/media/rahul/Drive 2/Library/Library"`
-4. **Rebuild the search index and restart the book server:**
-   `cd ~/Documents/learning/book-server && python3 build_index.py --manifest ../library/MANIFEST.csv --md-root "/media/rahul/Drive 2/Library/Markdown_Library" --db data/books.db`
-   then `cd ~/Documents && docker compose up -d --build book-server` (`--build` also picks up new server code) (use the db path your compose file mounts).
-5. **Commit and push** the catalog: `cd ~/Documents/learning && git add library && git commit -m "library: new books" && git push`.
-6. In a Claude session: `/new-books`.
+| Step | Alone | Function `add_books.py` calls |
+|---|---|---|
+| Convert | `python3 scripts/reconvert.py` (dry run), `--run` | `reconvert.run()` (flags from `reconvert.add_args()`) |
+| Grade | `python3 scripts/grade_library.py` | `grade_library.grade_all()` |
+| Index | `python3 book-server/build_index.py --manifest library/MANIFEST.csv --md-root … --db …` | `build_index.build()` |
+
+Change a step in its module and both ways of running it get the change.
+
+## Server setup notes
+- Rebuild servers after code changes: `cd ~/Documents && docker compose up -d --build book-server progress-server`.
+- Use the db path your compose file mounts for book-server (`add_books.py` reads it from the compose file).

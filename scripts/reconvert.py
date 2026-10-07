@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Retry the books in library/RECONVERT.csv with a converter suited to each format.
+"""Convert books to Markdown with a converter suited to each format (also step 2 of scripts/add_books.py).
 
 Default is a DRY RUN that only prints commands. Add --run to execute.
 Never modifies your originals. Skips any book whose .md already exists.
@@ -11,10 +11,10 @@ Never modifies your originals. Skips any book whose .md already exists.
   html/docx  -> pandoc
   txt        -> copied as .md
 
-Usage:
-  python3 scripts/reconvert.py --books-root ~/Books --md-root ~/BooksMD --new --run     # convert books added since last time
-  python3 scripts/reconvert.py --books-root ~/Books --md-root ~/BooksMD                 # dry run, everything in RECONVERT.csv
-  python3 scripts/reconvert.py --books-root ~/Books --md-root ~/BooksMD --only pdf --limit 3 --run
+Usage (paths default to scripts/library_paths.py):
+  python3 scripts/reconvert.py              # dry run: books with no Markdown yet, and which PDFs need OCR
+  python3 scripts/reconvert.py --run        # convert them (clean PDFs from their text layer; add --pdf for scans/math)
+  python3 scripts/reconvert.py --csv --run  # the old retry list, library/RECONVERT.csv
 Then re-run scripts/grade_library.py.
 """
 import argparse, csv, shutil, subprocess, sys, tempfile
@@ -159,8 +159,7 @@ def convert_all(rows, books_root, md_root, mode=None, dry=False):
     Rows with "light" are PDFs that pdf_check() found easy: converted from their text layer, no marker."""
     from tqdm import tqdm
     light = {str(Path(r["path"].lstrip("./"))) for r in rows if r.get("light")}
-    todo = [Path(r["path"].lstrip("./")) for r in rows]
-    todo = [rel for rel in todo if not (md_root / rel).with_suffix(".md").exists()]
+    todo = [Path(r["path"]) for r in rows]
     if dry:
         for rel in todo:
             print("  would convert:", rel, "(text layer)" if str(rel) in light else "")
@@ -181,25 +180,80 @@ def convert_all(rows, books_root, md_root, mode=None, dry=False):
             print("skipped for missing tools:", "; ".join(skipped))
     return log
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--books-root", required=True, type=Path)
-    ap.add_argument("--md-root", required=True, type=Path)
-    ap.add_argument("--only", default="", help="comma list of extensions, e.g. pdf,djvu")
-    ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--mode", choices=["fast", "balanced"], help="marker mode (default: balanced on GPU, fast on CPU)")
-    ap.add_argument("--run", action="store_true")
-    ap.add_argument("--new", action="store_true", help="convert every book with no .md yet, instead of RECONVERT.csv")
-    a = ap.parse_args()
-    only = {"." + e.strip(". ").lower() for e in a.only.split(",") if e.strip()}
-    rows = new_books(a.books_root, a.md_root) if a.new else list(csv.DictReader(open(LIB / "RECONVERT.csv", encoding="utf-8")))
-    if only:
-        rows = [r for r in rows if r["ext"] in only]
-    if a.limit:
-        rows = rows[: a.limit]
-    log = convert_all(rows, a.books_root, a.md_root, a.mode, dry=not a.run)
+EASY = {".epub", ".azw3", ".mobi", ".html", ".htm", ".docx", ".txt"}  # convert cleanly, no OCR
+
+def failed_before():
+    """Books whose latest attempt in RECONVERT-LOG.csv FAILED (paths relative to the books root)."""
+    log = LIB / "RECONVERT-LOG.csv"
+    if not log.exists():
+        return set()
+    last = {}
+    for row in csv.reader(open(log, encoding="utf-8")):
+        if len(row) >= 2:
+            last[row[0]] = row[1]
+    return {p for p, s in last.items() if s == "FAILED"}
+
+def select(books_root, md_root, from_csv=False, pdf=False, retry_failed=False, only="", limit=0):
+    """Which books to convert. Default: every book with no .md yet (or RECONVERT.csv with from_csv), minus earlier failures.
+    PDFs are checked with pdf_check(): clean ones convert from their text layer; scans/math/DjVu only with pdf=True.
+    Returns (rows, hard, n_failed_skipped)."""
+    from tqdm import tqdm
+    rows = list(csv.DictReader(open(LIB / "RECONVERT.csv", encoding="utf-8"))) if from_csv else new_books(books_root, md_root)
+    for r in rows:
+        r["path"] = str(Path(r["path"].lstrip("./")))
+    skip = set() if retry_failed else failed_before()
+    n_skipped = sum(r["path"] in skip for r in rows)
+    rows = [r for r in rows if r["path"] not in skip and not (md_root / r["path"]).with_suffix(".md").exists()]
+    exts = {"." + e.strip(". ").lower() for e in only.split(",") if e.strip()}
+    if exts:
+        rows = [r for r in rows if r["ext"] in exts]
+    for r in tqdm([r for r in rows if r["ext"] == ".pdf"], desc="check pdfs", unit="pdf"):
+        r["light"], g, why = pdf_check(books_root / r["path"])
+        r["why"] = f"grade {g}" + (f": {why}" if why else "")
+    hard = [r for r in rows if r["ext"] not in EASY and not r.get("light")]
+    if not pdf:
+        rows = [r for r in rows if r["ext"] in EASY or r.get("light")]
+    return (rows[:limit] if limit else rows), hard, n_skipped
+
+def add_args(ap):
+    """The conversion flags, shared by this script and scripts/add_books.py."""
+    from library_paths import BOOKS_ROOT, MD_ROOT
+    ap.add_argument("--books-root", type=Path, default=BOOKS_ROOT)
+    ap.add_argument("--md-root", type=Path, default=MD_ROOT)
+    ap.add_argument("--only", default="", help="only these extensions, e.g. epub,pdf")
+    ap.add_argument("--limit", type=int, default=0, help="convert at most N books")
+    ap.add_argument("--pdf", action="store_true", help="also scanned/math PDFs and DjVu (marker: OCR + LaTeX, slow)")
+    ap.add_argument("--mode", choices=["fast", "balanced"], help="marker mode for --pdf (default: balanced on GPU, fast on CPU)")
+    ap.add_argument("--retry-failed", action="store_true", help="also retry books that failed before")
+    ap.add_argument("--csv", action="store_true", help="convert library/RECONVERT.csv instead of every book without Markdown")
+
+def run(a, dry=False):
+    """Select, report and convert (the whole conversion step). Returns the log rows."""
+    for root, name in ((a.books_root, "books root"), (a.md_root, "markdown root")):
+        if not root.is_dir():
+            sys.exit(f"{name} not found: {root} (is the drive mounted?)")
+    tools = [t for t in TOOLS if a.pdf or t not in ("marker_single", "ddjvu")]
+    print("converters:", ", ".join(f"{t} {'ok' if shutil.which(t) else 'MISSING'}" for t in tools))
+    rows, hard, n_skipped = select(a.books_root, a.md_root, a.csv, a.pdf, a.retry_failed, a.only, a.limit)
+    if hard:
+        print(f"{len(hard)} books need OCR/marker" + ("" if a.pdf else ": not converted (add --pdf to include them)"))
+        for r in hard[:20]:
+            print(f"  {r['path']}  ({r.get('why') or r['ext']})")
+        if len(hard) > 20:
+            print(f"  … and {len(hard) - 20} more")
+    print(f"{len(rows)} books to convert" + (f" ({n_skipped} earlier failures skipped; --retry-failed to retry)" if n_skipped else ""))
+    log = convert_all(rows, a.books_root, a.md_root, a.mode, dry=dry)
     if log:
-        print(f"{sum(x[1] == 'ok' for x in log)}/{len(log)} converted; logged to library/RECONVERT-LOG.csv")
+        print(f"converted {sum(x[1] == 'ok' for x in log)}/{len(log)}; logged to library/RECONVERT-LOG.csv")
+    return log
+
+def main():
+    ap = argparse.ArgumentParser(description="Convert books to Markdown (dry run unless --run).")
+    add_args(ap)
+    ap.add_argument("--run", action="store_true", help="actually convert (default: list only)")
+    ap.add_argument("--new", action="store_true", help=argparse.SUPPRESS)  # old flag; new books are now the default
+    a = ap.parse_args()
+    run(a, dry=not a.run)
     if not a.run:
         print("\nDry run only. Add --run to execute.", file=sys.stderr)
 

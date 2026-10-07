@@ -8,7 +8,7 @@ Grades (see library/README.md for how skills must use them):
   F  empty / failed / scanned                       -> excluded
 
 Usage:
-  python3 scripts/grade_library.py --md-root ~/BooksMD [--src-root ~/Books] [--copy A,B] [--sample 0]
+  python3 scripts/grade_library.py [--md-root ~/BooksMD] [--src-root ~/Books] [--copy A,B] [--sample 0]  (defaults: library_paths.py)
 
 Writes library/MANIFEST.csv, library/toc/<id>.md for every non-F book, and (with --copy)
 library/text/<id>.md for the grades you list. Nothing is ever modified in --md-root.
@@ -107,8 +107,9 @@ def grade_all(md_root, src_root=None, copy=(), cats=(), sample=0):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--md-root", required=True, type=Path)
-    ap.add_argument("--src-root", type=Path)
+    from library_paths import BOOKS_ROOT, MD_ROOT
+    ap.add_argument("--md-root", type=Path, default=MD_ROOT)
+    ap.add_argument("--src-root", type=Path, default=BOOKS_ROOT)
     ap.add_argument("--copy", default="", help="grades whose text to copy into library/text, e.g. A,B")
     ap.add_argument("--copy-categories", default="", help="only copy text for these top-level folders, comma-separated")
     ap.add_argument("--sample", type=int, default=0, help="only grade the first N files (dry run)")
