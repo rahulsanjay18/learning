@@ -2,6 +2,17 @@
 
 *Drafted 2026-10-05. A part-time "major" at 2 blocks a week (see `notes/study-plan.md`). Mission set 2026-10-05 (`MISSION.md`).*
 
+
+## Levels and requirement groups (revised 2026-10-06; structure: `notes/major-design.md`, adapted from NYU Gallatin)
+- **Level I (≈ BA):** IH100 the arc → IH150 how historians work → IH201–206 the eras (K&R) · breadth: IH310 religion and
+  philosophy, IH320 war and the state, IH330 economic history, IH340 art and literature · practice: IH390 sites, museums and a
+  family oral history · IH398 colloquium · IH400 research essay.
+- **Level II (≈ graduate):** IH510 historiography seminar · IH520 primary sources in translation · IH530 regional histories ·
+  electives IH540 Partition and memory, IH550 a source language (optional) · IH596 research practicum · IH598 colloquium · IH599 thesis.
+- **Books to ask for:** an economic history of India (IH330); historiography readers for IH510 (to choose together).
+The full map is `curriculum.json`. **Only the core courses are the major**; breadth, practice, capstone and the end-of-level
+conversation are optional extras, suggested when they'd help (`notes/major-design.md`).
+
 ## TL;DR
 - **Spine:** Kulke & Rothermund, *A History of India* (grade A, in collection). Its 8 chapters become the core courses.
 - **Each lesson** (one 25-minute block): read a short slice with a reading guide → a lesson page that tells the story, places it on a

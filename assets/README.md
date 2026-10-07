@@ -3,6 +3,40 @@
 Every lesson and reference page in every topic uses these files. **Read this file, not the JS source**, when writing a lesson.
 Live examples of every widget: `assets/gallery.html`.
 
+## Writing lessons in Markdown (preferred: fewer tokens, same HTML)
+Write `topics/<slug>/lessons/NNNN-name.md`, then `python3 scripts/render_lesson.py <that .md> [--course S150]`. It writes the
+`.html` next to it (shell, crumbs, plugin tags picked from what the page uses), appends the lesson to `index.html`, and with
+`--course` records it in the major's `curriculum.json`. Edit the `.md` and re-render; never hand-edit a generated `.html`.
+
+```
+---
+title: Power: how often a real effect gets caught
+subtitle: Two blocks … One win: …
+crumb: Statistics · Lesson 4          (optional; default "<Topic> · Lesson N")
+index: Power (reading: C&B §8.3.1)     (optional index.html text; default the title)
+main: data-skip=true                    (optional attributes on <main>: pretests, data-confidence=true)
+---
+## Headings, paragraphs, - lists, 1. lists, **bold**, *em*, `code`, [links](url), > quotes. Raw HTML lines pass through.
+Write math naturally: \( a < b \), $$ … $$ (the renderer escapes < > &).
+
+::: choice wu-size                      quiz: ::: <type> <data-id> key=value key="a b" …  (keys become data-*)
+Prompt text (Markdown).
+- [ ] wrong option
+- [x] right option                      choice: mark the answer with [x]
+--- hint
+Shown after a miss.
+--- explain
+Shown once right.
+:::
+```
+- `order`: list items in the correct order. `categorize`: `- item > Bucket`. `find-error`: steps as a list, `[x]` on the wrong one.
+  `free`: `--- rubric` section. `py`: `--- code` and `--- check`. Other types: attributes as usual (`::: number n1 answer=64`).
+- Diagrams and containers: `::: board fen=…`, `go`, `plot`, `timeline`, `map`, `game`, `xiangqi`, `shogi`, `python` (body = code),
+  `video`, `sim`, `worked` (steps split by `--- step`), `reading`, `callout`, any other word = a div with that class.
+  Nest with longer fences: `:::: deck` … `::: card c1` … `:::` … `::::`.
+- A `## Sources` heading followed by a list becomes the numbered `<ol class="sources">`.
+- Tested by `python3 scripts/test_render.py` (fixture: `scripts/fixtures/render-sample.md`, which shows every shorthand).
+
 ## Page skeleton (a lesson at `topics/<slug>/lessons/NNNN-name.html`)
 
 ```html
@@ -24,6 +58,7 @@ Live examples of every widget: `assets/gallery.html`.
 ```
 
 - `lp.js` adds the score bar and, on lesson pages, the footer: difficulty rating, "anything confusing?" note, **Copy my results**, and sync settings.
+- **"How sure were you?"** After a first-try right answer on an auto-graded quiz, the learner picks *I knew it* or *I guessed*. A guess counts as not known: it leaves "right first try", is listed as `guessed:` in the results line, and its review resets to tomorrow (in the browser and on the progress server). **On by default on pretest pages and in the review deck**; elsewhere set `data-confidence="true"` on `<main>` or one quiz (`"false"` turns it off). Use it wherever a guess could pass: multiple choice, sorting, ordering, game moves.
 - Pretests: `<main data-skip="true">` adds an **I don't know** button to every scored quiz (or set `data-skip` on one quiz). A skip counts as not known, reveals the `.explain`, and is listed as `skipped:` in the results line. After a wrong try the button becomes **Show me the answer** (reveals without scoring again; logged as a `reveal` event); it disappears once answered right.
 - Give every quiz a short `data-id` that is unique within the page. IDs stay stable when you edit the page and feed spaced review: `chess/0003-forks#fork-1`.
 - Topic-only styles go in `topics/<slug>/assets/topic.css`. Don't copy `lp.css`/`lp.js` into a topic. Add a widget here instead.
@@ -42,6 +77,10 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 | `categorize` | `data-buckets="A\|B"` `data-items="item>A\|other item>B"`; doubles as matching | auto |
 | `recall` | write from memory → reveal `.explain` → "I had it / I missed some" | self |
 | `checklist` | an `<ol>`/`<ul>` of real-world steps inside the quiz; done when all ticked | self |
+| `card` | flashcard: front = `.prompt`, back = `.explain`; "Show answer" then "I knew it / I didn't". Wrap several in `<div class="lp-deck">` to show one at a time with a counter and an end summary | self |
+| `estimate` | `data-answer="1526"` `[data-level="90"]` `[data-unit]` `[data-max-width]`: the learner types a low and high end they're 90% sure of; right = the range contains the answer (and isn't wider than max-width). A running calibration score is kept in the browser. Good for dates, magnitudes, Fermi questions | auto |
+| `find-error` | `<ol class="steps"><li>…</li></ol>` + `data-answer="4"` (the wrong step's number): click the faulty step of a proof, derivation or argument | auto |
+| `highlight` | `<div class="passage">` with the evidence marked `[[like this]]`; the rest splits into clickable sentences. Right = exactly the marked pieces. For source analysis ("which lines support the claim?") | auto |
 | `free` | `<div class="rubric">` (hidden, for the grader) + optional `.explain` model answer shown after submitting | teacher, next session |
 
 ## Unscored widgets
@@ -83,6 +122,26 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
   - Each run gets a fresh namespace. Runs happen in a worker; one that runs past `data-timeout` seconds (default 10) is stopped and Python restarts. Text output only: no `input()`, no plots. Packages are Pyodide's (`numpy`, `scipy`, `pandas`, …), loaded per page on first use. **Run the check with real Python against a right and a wrong answer before publishing.**
   - `node scripts/test_python.js` checks the helpers and that every Python widget has its code (and check).
 - **Pixel art** (`plugins/pixels.js` + `plugins/pixels.css`): `.px` pictures and `.px-draw` drills. Usage is in the header comment of `plugins/pixels.js`.
+- **Tiny games** (`plugins/games.js` + `plugins/games.css`): tic-tac-toe, Nim and Hex against an **exact solver** (minimax over every position), so feedback is ground truth. Boards are drawn from the position.
+  - Positions: `ttt` rows top to bottom, `"X.O/.X./..O"` (X moves first; side to move from the counts). `nim` heap sizes `"3 4 5"` (normal play: taking the last object wins; heaps ≤ 15, product of (heap+1) ≤ 20000). `hex` an n×n rhombus `"B../.W./..."`, n ≤ 4; **Black moves first and joins top to bottom, White joins left to right**; a 4×4 position needs ≥ 4 stones (the empty 4×4 board takes ~10 s). Cells: `a1` = top-left, letters for columns, numbers for rows from the top.
+  - Play: `<div class="lp-game" data-game="ttt|nim|hex" [data-position="…"] [data-you="first|second"] [data-hints="true"] data-caption="…"></div>`. Unscored. The solver plays the best move (fastest win, slowest loss); `data-hints` adds a toggle that labels every move W/D/L for the side to move.
+  - Find a good move: `<div class="quiz" data-type="game-move" data-id="…" data-game="…" data-position="…" [data-hint="…"]>`. **No `data-answer`**: right = any move that keeps the position's best outcome (any winning move, or any drawing move in a drawn position). A wrong move says whether it loses or only draws; after two misses the good moves are marked. The position must not be lost for the mover and must have at least one worse move (the test checks).
+  - `node scripts/test_games.js` checks the solver (Nim against the nim-sum theorem, Hex's no-draw property) and every game widget in the repo.
+- **Xiangqi** (`plugins/xiangqi.js` + `plugins/xiangqi.css`): our own rules engine, checked against published perft counts.
+  - Position: FEN from Black's back rank (rank 9) to Red's (rank 0), then `w`/`b`; the start is the default. Uppercase Red (moves first), lowercase Black: K general, A advisor, E elephant (B ok), H horse (N ok), R chariot, C cannon, P soldier. Squares: files `a`–`i` from Red's left, ranks `0`–`9` from Red's side; moves like `h2e2`.
+  - Diagram / sandbox: `<div class="xq-board" [data-fen] [data-hl="e2 e9"] [data-arrows="h2-e2"] [data-flip="true"] [data-play="true"] [data-labels="latin"] data-caption="…"></div>`. `data-play` lets the learner move both sides with legal-move dots, Undo and Start over. Pieces show their characters (帥將…); `data-labels="latin"` shows letters.
+  - Find the move: `<div class="quiz" data-type="xiangqi-move" data-id="…" data-fen="…" data-answer="a8a9|a8e8">`. Only legal moves can be played; a legal wrong move is a scored miss.
+  - Rules worth flagging in lessons: generals may not face on an open file; **no legal move loses (stalemate is a loss, unlike chess)**; repetition rules are not enforced.
+- **Shogi** (`plugins/shogi.js` + `plugins/shogi.css`): our own engine, checked by perft and against python-shogi.
+  - Position: SFEN `board side hands`, e.g. `7nk/7p1/8G/9/9/9/9/9/K8 b PG 1`; the start is the default. Uppercase Sente (▲, moves first), lowercase Gote; `+` promoted. Moves in USI: `7g7f`, `8h2b+`, drops `P*5e`.
+  - Diagram / sandbox: `<div class="shogi-board" [data-sfen] [data-hl] [data-arrows="8h-2b"] [data-flip] [data-play="true"] [data-labels="latin"] data-caption="…"></div>`. Hands are drawn above and below; click a piece in hand to drop it. When promotion is optional the board asks.
+  - Find the move: `<div class="quiz" data-type="shogi-move" data-id="…" data-sfen="…" data-answer="G*1b">`. Answers are USI. Illegal moves (nifu, pawn-drop mate, leaving the king in check, a piece that could never move) are never offered.
+  - `node scripts/test_xiangqi_shogi.js` (about 10 s; `--quick` skips depth 4) runs the perfts and rule tests and checks every answer in the repo is legal.
+- **Simulations** (`plugins/sim.js` + `plugins/sim.css`): statistics labs, unscored; follow one with a quiz.
+  - `<div class="lp-sim" data-sim="ci-coverage" [data-n="5"] [data-level="0.95"] [data-method="t|z|z-plugin"]>`: intervals for a normal mean, misses in red, running coverage. `z-plugin` (sample s with the z value) visibly under-covers for small n.
+  - `<div class="lp-sim" data-sim="sampling-mean" [data-pop="exponential|uniform|normal|bimodal"] [data-n="2"]>`: 1,000 sample means, slider for n, sd(x̄) vs σ/√n (the CLT).
+  - `<div class="lp-sim" data-sim="multiple-testing" [data-k="20"] [data-alpha="0.05"]>`: k null tests per experiment; how often at least one p < α; Bonferroni toggle.
+  - `node scripts/test_sim.js` checks the z/t quantiles against tables and the coverage rates against theory.
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
 ## Daily review deck (`assets/review.html`)

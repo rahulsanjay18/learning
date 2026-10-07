@@ -1,0 +1,968 @@
+{
+  "major": "eng",
+  "program": "topics/eng/PROGRAM.md",
+  "spine": "One continuous major for engineering career growth: Staff (SE), AWS (AW), C/C++/CUDA (CP), and career extras (CR), all practiced on the learner's 3D chess project. Every lesson pairs with a backlog ticket (backlog.json): the learner does the staff-level part (or the code, when the code is the skill); Claude writes the rest.",
+  "rules": [
+    "Continuous: two lanes always active, Staff (SE) and Tech (AW first, then CP320 CUDA / CR170 Spark / others). Blocks alternate lanes. When a lane's course ends, the next course in that lane activates at once; the major never runs empty.",
+    "Every lesson ends with a REQUIRED rep: one ticket from backlog.json with a definition of done. The next lesson in that lane is not written until the rep is shipped (PR/doc link) or explicitly skipped with a reason. This overrides TEACHING-LOG rule 13 (optional homework) for this major only, at the learner's request (2026-10-07).",
+    "Division of labor (learner's rule): Claude writes the code; the learner does the staff-level work (design docs, ADRs, decisions, prioritization, PR review and merge). When the lesson's skill is the code itself (C, C++, CUDA, Spark), the learner writes it and Claude reviews.",
+    "Re-check a ticket's GitHub state before assigning it; never file a 'proposed' ticket without asking.",
+    "Vim (learner's request, 2026-10-07): every eng lesson opens with a 2-minute Practical Vim drill, and reps are edited in Vim (VI100)."
+  ],
+  "courses": [
+    {
+      "id": "VI100",
+      "title": "Vim, every day",
+      "status": "later",
+      "group": "practice",
+      "level": "I",
+      "note": "Embedded: runs inside every eng lesson (no lessons of its own). Ongoing, inside every eng lesson: a 2-minute Practical Vim drill (one tip per lesson, in order) as the warm-up, and the rep is done in Vim. Setup is the first rep of SE000: git core.editor=vim, EDITOR/VISUAL=vim, and Vim keybindings in any IDE you use (VSCodeVim / IdeaVim), so Vim motions are the only way to edit.",
+      "books": {
+        "primary": "59a28fc891 Neil, Practical Vim 2nd ed. (2015): one tip per lesson (grade B: prose only, keystrokes re-checked before use)",
+        "secondary": [
+          "vimtutor (ships with Vim): the first evening"
+        ],
+        "tertiary": [],
+        "skip": []
+      }
+    },
+    {
+      "id": "SE000",
+      "title": "Placement: where you are against a staff rubric",
+      "status": "active",
+      "est_lessons": 1,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "note": "Self-assessment against a public staff-level rubric (Larson's archetypes; a public career framework such as Dropbox's), a timed system-design exercise, a design-doc critique, and an inventory of evidence you already have (you lead cross-team projects, mentor and set direction). Sets which courses shrink.",
+      "plan": [
+        "0001 Staff placement: rubric self-assessment, timed design exercise on a real 3D chess ticket (Server #13 WebSocket relay), evidence inventory"
+      ],
+      "books": {
+        "primary": "Public staff rubrics: Larson's archetypes (staffeng.com) + a public engineering career framework; your own work as the evidence",
+        "secondary": [
+          "Reilly, The Staff Engineer's Path, Ch. 1 (owned)"
+        ],
+        "tertiary": [],
+        "skip": []
+      }
+    },
+    {
+      "id": "SE101",
+      "title": "What staff is, and how people get there",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "est_lessons": 4,
+      "group": "core",
+      "level": "I",
+      "source": "Reilly Part I (The Big Picture) + Larson's archetypes and 'work on what matters'",
+      "books": {
+        "primary": "Reilly, The Staff Engineer's Path (O'Reilly, 2022), Part I: wanted",
+        "secondary": [
+          "Larson, Staff Engineer: Leadership beyond the management track (2021); its guides and stories are free at staffeng.com"
+        ],
+        "tertiary": [
+          "Julia Evans, 'Get your work recognized: write a brag document' (free, jvns.ca)"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "SE110",
+      "title": "Writing: design docs, RFCs and decision records",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "est_lessons": 6,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "source": "Your gap from setup (design docs not selected). Deliverable: one real design doc taken through review, and an architecture decision record",
+      "books": {
+        "primary": "Winters, Manshreck & Wright, Software Engineering at Google (2020; free at abseil.io/resources/swe-book): documentation, design and code-review chapters",
+        "secondary": [
+          "Reilly, The Staff Engineer's Path: writing sections (wanted)"
+        ],
+        "tertiary": [
+          "f4c42b4190 King, On Writing (grade A): plain-prose habits"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "SE120",
+      "title": "System and ML system design at depth",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "est_lessons": 12,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "source": "DDIA Parts I-III, sliced; ML design from Designing ML Systems; deliverable: three written designs (one ML) at staff depth: requirements, trade-offs, failure modes, migration plan",
+      "books": {
+        "primary": "e66241afb4 Kleppmann, Designing Data-Intensive Applications (grade A)",
+        "secondary": [
+          "dd8b0182f3 Huyen, Designing Machine Learning Systems (grade A)",
+          "Xu, System Design Interview vol. 1-2: wanted",
+          "Aminian & Xu, Machine Learning System Design Interview: wanted"
+        ],
+        "tertiary": [
+          "3f6c0f02f8 Takada, Distributed Systems for Fun and Profit (grade A)"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "SE130",
+      "title": "Software design: complexity, modules and interfaces",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "est_lessons": 5,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "source": "Ousterhout, short and opinionated; staff engineers set code-level standards for a group",
+      "books": {
+        "primary": "Ousterhout, A Philosophy of Software Design 2nd ed. (2021): wanted (short)",
+        "secondary": [
+          "684d733795 Martin, Clean Architecture (grade A): boundaries and dependency rules",
+          "Software Engineering at Google: code review, testing, deprecation chapters"
+        ],
+        "tertiary": [],
+        "skip": [
+          "125d83bab7 Clean Code: line-level style, below staff scope"
+        ]
+      }
+    },
+    {
+      "id": "SE140",
+      "title": "Execution: leading cross-team work without authority",
+      "status": "later",
+      "requires": [
+        "SE101"
+      ],
+      "est_lessons": 6,
+      "group": "core",
+      "level": "I",
+      "source": "Reilly Part II (Execution); you already lead cross-team projects, so lessons sharpen what you do (kickoffs, alignment, unsticking, ending projects) rather than start from zero",
+      "books": {
+        "primary": "Reilly, The Staff Engineer's Path, Part II: wanted",
+        "secondary": [
+          "Larson, Staff Engineer: 'Stay aligned with authority', 'Manage technical quality' (staffeng.com)"
+        ],
+        "tertiary": [
+          "b5a84cf093 Brooks, The Mythical Man-Month (grade B): the classic failure modes"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "SE150",
+      "title": "Technical strategy and direction",
+      "status": "later",
+      "requires": [
+        "SE110",
+        "SE140"
+      ],
+      "est_lessons": 5,
+      "group": "core",
+      "level": "I",
+      "source": "You already set direction; this course makes it written and defensible. Deliverable: a technical strategy doc for your area (diagnosis, guiding policy, actions)",
+      "books": {
+        "primary": "Larson, An Elegant Puzzle (2019): strategy and vision chapters: wanted",
+        "secondary": [
+          "Reilly, The Staff Engineer's Path, Part I strategy chapters",
+          "Rumelt, Good Strategy/Bad Strategy: wanted"
+        ],
+        "tertiary": [
+          "Skelton & Pais, Team Topologies: wanted"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "SE160",
+      "title": "Evidence and leveling: promo packet or staff interview loop",
+      "status": "later",
+      "requires": [
+        "SE120",
+        "SE150"
+      ],
+      "est_lessons": 6,
+      "group": "core",
+      "level": "I",
+      "source": "Both routes (setup answer): turn the brag doc into a promo packet AND a staff interview story bank; staff system-design and ML-design mock loops; leveling and negotiation",
+      "books": {
+        "primary": "Larson, Staff Engineer: 'Promotion packets' and 'Getting the title where you are' (staffeng.com)",
+        "secondary": [
+          "Reilly, The Staff Engineer's Path, Part III (Leveling Up)",
+          "23413d88d9 Voss, Never Split the Difference (grade A): offer negotiation"
+        ],
+        "tertiary": [],
+        "skip": []
+      }
+    },
+    {
+      "id": "SE170",
+      "title": "Mentoring and raising the bar",
+      "status": "later",
+      "requires": [
+        "SE101"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Optional: you already mentor. Reilly Part III on being a role model, sponsoring, and code/design review as teaching."
+    },
+    {
+      "id": "SE390",
+      "title": "Practice: one staff-scope project, written up",
+      "status": "later",
+      "requires": [
+        "SE140"
+      ],
+      "group": "practice",
+      "level": "I",
+      "note": "Ongoing: pick one cross-team project at work and run it with the course tools (kickoff doc, design doc, decision log, retro). It is the centerpiece of the promo packet or interview stories."
+    },
+    {
+      "id": "SE399",
+      "title": "Capstone: the staff title (promotion or offer)",
+      "status": "later",
+      "requires": [
+        "SE160"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "note": "The real-world result. If it doesn't land, the gap list from the review becomes the next plan."
+    },
+    {
+      "id": "SE401",
+      "title": "Principal: org-wide strategy and influence",
+      "status": "later",
+      "requires": [
+        "SE160"
+      ],
+      "group": "core",
+      "level": "II",
+      "note": "Opt-in after staff. Larson's later writing on engineering strategy; to choose then."
+    },
+    {
+      "id": "AW000",
+      "title": "AWS placement and exam date",
+      "status": "active",
+      "est_lessons": 1,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "plan": [
+        "0002 AWS placement: pretest across SAA foundations + MLA-C02 domains; book the MLA-C02 date"
+      ],
+      "note": "Folds in the old aws-ml major (target: MLA-C02; GA 2027-01-14 per HANDOFF). Your 2024 Solutions Architect course covers the foundations.",
+      "books": {
+        "primary": "AWS MLA-C02 exam guide (domains and task statements)",
+        "secondary": [
+          "Your 2024 AWS Solutions Architect Associate course (learner-supplied)"
+        ],
+        "tertiary": [],
+        "skip": []
+      }
+    },
+    {
+      "id": "AW101",
+      "title": "AWS foundations through the RL training fleet",
+      "status": "later",
+      "requires": [
+        "AW000"
+      ],
+      "est_lessons": 8,
+      "group": "core",
+      "level": "I",
+      "source": "IAM, S3, VPC, EC2 spot, ECR, budgets, Terraform: one lesson per area, each paired with a 3dChessRLAgent AWS/Terraform ticket (#141-#144, #110)",
+      "books": {
+        "primary": "Your 2024 AWS Solutions Architect Associate course (learner-supplied) + AWS docs",
+        "secondary": [
+          "MLA-C02 exam guide (aws.amazon.com)"
+        ],
+        "tertiary": [
+          "Terraform docs"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "AW201",
+      "title": "ML on AWS (MLA-C02 domains)",
+      "status": "later",
+      "requires": [
+        "AW101"
+      ],
+      "est_lessons": 10,
+      "group": "core",
+      "level": "I",
+      "source": "MLA-C02 exam guide domains; each lesson contrasts how the RL agent does it (EC2/Ray/MLflow) with the SageMaker way the exam tests; tickets #101, #124, #151",
+      "books": {
+        "primary": "AWS Certified Machine Learning Engineer - Associate (MLA-C02) exam guide",
+        "secondary": [
+          "dd8b0182f3 Huyen, Designing ML Systems (grade A)",
+          "SageMaker developer guide"
+        ],
+        "tertiary": [],
+        "skip": []
+      }
+    },
+    {
+      "id": "AW290",
+      "title": "MLA-C02 exam",
+      "status": "later",
+      "requires": [
+        "AW201"
+      ],
+      "est_lessons": 3,
+      "group": "core",
+      "level": "I",
+      "note": "Timed practice exams, then the real one. Then AWS GenAI Developer Pro (CR250) is optional."
+    },
+    {
+      "id": "CP000",
+      "title": "Placement",
+      "status": "later",
+      "est_lessons": 1,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "note": "One pretest across CP101-CP204: per course, predict (output or UB?), fix (find the bug), write (a short function, graded free response). Sets which courses are done by exam and which sections each remaining course teaches.",
+      "requires": []
+    },
+    {
+      "id": "CP101",
+      "title": "C, properly",
+      "status": "later",
+      "requires": [
+        "CP000"
+      ],
+      "est_lessons": 10,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "source": "Modern C Levels 1-2, selected Level 3",
+      "books": {
+        "primary": "030e99498b Gustedt, Modern C (2018 CC draft, C17): Levels 1-2 and selected Level 3 (prose only, grade B)",
+        "secondary": [
+          "fe1d5678f5 van der Linden, Expert C Programming: declarations, arrays vs. pointers, linking, the runtime (grade A)",
+          "Seacord, Effective C 2nd ed. (2024, C23): wanted; would replace Modern C as primary if supplied"
+        ],
+        "tertiary": [
+          "a0c926ec4e Kernighan & Ritchie, The C Programming Language 2nd ed.: exercises only (grade B)"
+        ],
+        "skip": [
+          "fe56862d75 OOP in C: grade C, and a curiosity rather than a core skill",
+          "6a620d02e4 C GUI Programming: off-path"
+        ]
+      }
+    },
+    {
+      "id": "CP120",
+      "title": "C and the machine",
+      "status": "later",
+      "requires": [
+        "CP101"
+      ],
+      "est_lessons": 10,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "source": "CS:APP Ch. 2, 3, 5, 6, 7, 9 (pretest will cut much of the arch/OS you already know)",
+      "books": {
+        "primary": "5243893029 Bryant & O'Hallaron, Computer Systems: A Programmer's Perspective 3rd ed.: Ch. 2, 3, 5, 6, 7, 9 (grade B; point to sections, no code copied)",
+        "secondary": [
+          "fe1d5678f5 van der Linden, Expert C Programming: linking and the runtime",
+          "Compiler Explorer (godbolt.org): read the assembly your own code compiles to"
+        ],
+        "tertiary": [
+          "4e0baa8c79 Arpaci-Dusseau, Operating Systems: Three Easy Pieces: memory API and virtualization chapters (grade B)"
+        ],
+        "skip": [
+          "e2e4d85f05 second CS:APP copy (duplicate)",
+          "267461269d Hennessy & Patterson, Computer Architecture: hardware-designer depth you don't need here"
+        ]
+      }
+    },
+    {
+      "id": "CP201",
+      "title": "Core C++",
+      "status": "later",
+      "requires": [
+        "CP101"
+      ],
+      "est_lessons": 14,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "source": "C++ Primer Parts I-III, skipping what the pretest shows you know; C++20 additions from A Tour of C++",
+      "books": {
+        "primary": "a82d29f81e Lippman, Lajoie & Moo, C++ Primer 5th ed. (C++11): Parts I-III selected (grade A)",
+        "secondary": [
+          "Stroustrup, A Tour of C++ 3rd ed. (2022, C++20): wanted; concepts, ranges, modules, the C++11->20 delta",
+          "cppreference.com: the reference for every lesson"
+        ],
+        "tertiary": [
+          "ad765ef54b Stroustrup, Programming: Principles and Practice Using C++ 2nd ed. (grade A): beginner-paced, exercises only"
+        ],
+        "skip": [
+          "88a1fccccb Big C++ 2nd ed.: grade C and a beginner text"
+        ]
+      }
+    },
+    {
+      "id": "CP202",
+      "title": "Effective modern C++",
+      "status": "later",
+      "requires": [
+        "CP201"
+      ],
+      "est_lessons": 12,
+      "group": "core",
+      "level": "I",
+      "source": "Effective Modern C++, 42 items, about 3-4 items per lesson",
+      "books": {
+        "primary": "c5bfc8c895 Meyers, Effective Modern C++ (C++11/14): all 42 items (grade A)",
+        "secondary": [
+          "9c8942f75d Meyers, Effective C++ 3rd ed.: the items EMC++ assumes (RAII, resource management, constructors and destructors) (grade A)"
+        ],
+        "tertiary": [
+          "C++ Core Guidelines (isocpp.github.io/CppCoreGuidelines): cross-reference per item"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "CP203",
+      "title": "Generic programming and the standard library",
+      "status": "later",
+      "requires": [
+        "CP201"
+      ],
+      "est_lessons": 10,
+      "pretest": true,
+      "group": "core",
+      "level": "I",
+      "source": "Josuttis STL chapters + C++ Primer Ch. 16 (templates)",
+      "books": {
+        "primary": "f7bb17ec2f Josuttis, The C++ Standard Library 2nd ed. (C++11): STL, containers, iterators, algorithms, strings (grade B; prose only)",
+        "secondary": [
+          "a82d29f81e C++ Primer 5th ed. Ch. 16: templates and generic programming (grade A)",
+          "A Tour of C++ 3rd ed.: concepts and ranges (wanted)"
+        ],
+        "tertiary": [
+          "cppreference.com algorithm and container pages"
+        ],
+        "skip": [
+          "1062457b20 C++ Templates 1st ed. (2002): pre-C++11; the 2nd ed. is wanted for CP401"
+        ]
+      }
+    },
+    {
+      "id": "CP204",
+      "title": "Concurrency",
+      "status": "later",
+      "requires": [
+        "CP202",
+        "CP120"
+      ],
+      "est_lessons": 10,
+      "group": "core",
+      "level": "I",
+      "source": "C++ Concurrency in Action 2nd ed. (to buy)",
+      "books": {
+        "primary": "Williams, C++ Concurrency in Action 2nd ed. (2019, C++17): wanted (buy)",
+        "secondary": [
+          "4e0baa8c79 Arpaci-Dusseau, OSTEP: the concurrency piece (locks, condition variables, common bugs) (grade B)",
+          "030e99498b Modern C: threads and atomics in C"
+        ],
+        "tertiary": [],
+        "skip": []
+      }
+    },
+    {
+      "id": "CP310",
+      "title": "Linux systems programming",
+      "status": "later",
+      "requires": [
+        "CP120"
+      ],
+      "est_lessons": 10,
+      "group": "elective",
+      "level": "I",
+      "source": "The Linux Programming Interface (to buy), selected chapters",
+      "books": {
+        "primary": "Kerrisk, The Linux Programming Interface (2010): wanted (buy); files, processes, signals, sockets, mmap",
+        "secondary": [
+          "4e0baa8c79 OSTEP: persistence piece (grade B)"
+        ],
+        "tertiary": [
+          "man7.org man pages"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "CP320",
+      "title": "GPU programming with CUDA",
+      "status": "later",
+      "requires": [
+        "CP101"
+      ],
+      "est_lessons": 10,
+      "group": "elective",
+      "level": "I",
+      "source": "PMPP 4th ed. Parts I-II",
+      "books": {
+        "primary": "be9492d77e Hwu, Kirk & El Hajj, Programming Massively Parallel Processors 4th ed. (2023): Parts I-II (grade A)",
+        "secondary": [
+          "NVIDIA CUDA C++ Programming Guide (docs.nvidia.com)"
+        ],
+        "tertiary": [],
+        "skip": []
+      },
+      "note": "Recommended early (2026-10-07: CUDA pays a premium; see topics/eng/catalog.json skill-cuda). PMPP teaches CUDA in C, so CP101 is enough; read CS:APP Ch. 6 (memory hierarchy) alongside. Feeds career CR140."
+    },
+    {
+      "id": "CP330",
+      "title": "Game engine programming",
+      "status": "later",
+      "requires": [
+        "CP202"
+      ],
+      "est_lessons": 10,
+      "group": "elective",
+      "level": "I",
+      "source": "Game Engine Architecture 3rd ed. (to buy), engine-support and game-loop chapters",
+      "books": {
+        "primary": "Gregory, Game Engine Architecture 3rd ed. (2018): wanted (buy)",
+        "secondary": [
+          "4f1b4dd501 McShaffry & Graham, Game Coding Complete 4th ed. (grade B)"
+        ],
+        "tertiary": [],
+        "skip": [
+          "7419348db8 Unity in Action: C#, not C++"
+        ]
+      }
+    },
+    {
+      "id": "CP401",
+      "title": "Templates and metaprogramming",
+      "status": "later",
+      "requires": [
+        "CP203"
+      ],
+      "group": "core",
+      "level": "II",
+      "books": {
+        "primary": "Vandevoorde, Josuttis & Gregor, C++ Templates: The Complete Guide 2nd ed. (2017): wanted",
+        "secondary": [],
+        "tertiary": [],
+        "skip": [
+          "1062457b20 1st ed. (2002): pre-C++11"
+        ]
+      }
+    },
+    {
+      "id": "CP402",
+      "title": "Software design in C++",
+      "status": "later",
+      "requires": [
+        "CP202"
+      ],
+      "group": "core",
+      "level": "II",
+      "books": {
+        "primary": "Iglberger, C++ Software Design (2022): wanted",
+        "secondary": [
+          "4ad11466a5 Gamma et al., Design Patterns (grade A)",
+          "2c2ed34328 Feathers, Working Effectively with Legacy Code (grade B)"
+        ],
+        "tertiary": [],
+        "skip": []
+      }
+    },
+    {
+      "id": "CP403",
+      "title": "Performance engineering",
+      "status": "later",
+      "requires": [
+        "CP120",
+        "CP204"
+      ],
+      "group": "core",
+      "level": "II",
+      "books": {
+        "primary": "Drepper, What Every Programmer Should Know About Memory (2007, free PDF) + Agner Fog, Optimizing software in C++ (free manual)",
+        "secondary": [
+          "5243893029 CS:APP Ch. 5-6 (already read in CP120)",
+          "perf, valgrind/cachegrind, Google Benchmark"
+        ],
+        "tertiary": [],
+        "skip": []
+      }
+    },
+    {
+      "id": "CP490",
+      "title": "Reading real C++ ML systems",
+      "status": "later",
+      "requires": [
+        "CP403"
+      ],
+      "group": "practice",
+      "level": "II",
+      "note": "Optional: write a PyTorch C++/CUDA extension; read ggml/llama.cpp's tensor and kernel code."
+    },
+    {
+      "id": "CP499",
+      "title": "Capstone: contribute to an open-source C/C++ project",
+      "status": "later",
+      "requires": [
+        "CP402"
+      ],
+      "group": "capstone",
+      "level": "II",
+      "note": "Optional: one merged pull request to a real C/C++ project you use."
+    },
+    {
+      "id": "CR100",
+      "title": "ML systems design and MLOps",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "est_lessons": 8,
+      "group": "core",
+      "level": "I",
+      "source": "Huyen, Designing ML Systems, all chapters; deliverable: a public design doc + a small MLflow/Docker/CI pipeline repo",
+      "books": {
+        "primary": "dd8b0182f3 Huyen, Designing Machine Learning Systems (2022) (grade A)",
+        "secondary": [
+          "e66241afb4 Kleppmann, Designing Data-Intensive Applications (grade A): data systems chapters"
+        ],
+        "tertiary": [
+          "MLflow and Docker docs"
+        ],
+        "skip": [
+          "8fdeaa246b Geron, Hands-On ML: model-level, below your level"
+        ]
+      },
+      "note": "Priority 1 (ML infrastructure and platform), step 1."
+    },
+    {
+      "id": "CR110",
+      "title": "Kubernetes for ML (CKAD)",
+      "status": "later",
+      "requires": [
+        "CR100"
+      ],
+      "est_lessons": 8,
+      "group": "core",
+      "level": "I",
+      "source": "CNCF CKAD curriculum domains; deliverable: CKAD",
+      "books": {
+        "primary": "CNCF CKAD curriculum (github.com/cncf/curriculum) + kubernetes.io docs (allowed in the exam)",
+        "secondary": [
+          "b1d434d949 Rosso et al., Production Kubernetes (grade B)"
+        ],
+        "tertiary": [
+          "killer.sh practice sessions (come with the exam)"
+        ],
+        "skip": []
+      },
+      "note": "Priority 1, step 2: CKAD."
+    },
+    {
+      "id": "CR120",
+      "title": "LLM applications and agents",
+      "status": "later",
+      "requires": [
+        "CR100"
+      ],
+      "est_lessons": 10,
+      "group": "elective",
+      "level": "I",
+      "source": "Huyen, AI Engineering + MCP spec + Claude docs; deliverable: a public agent with an eval suite, plus Claude Certified Architect if eligible",
+      "books": {
+        "primary": "Huyen, AI Engineering (O'Reilly, 2025): wanted",
+        "secondary": [
+          "Model Context Protocol spec (modelcontextprotocol.io)",
+          "Anthropic docs and Anthropic Academy courses",
+          "CCA-F exam guide (catalog: anthropic-cca-f)"
+        ],
+        "tertiary": [],
+        "skip": []
+      },
+      "note": "Booster for the current AI/ML path (optional)."
+    },
+    {
+      "id": "CR130",
+      "title": "Fine-tuning and post-training LLMs at scale",
+      "status": "later",
+      "requires": [
+        "CR100"
+      ],
+      "est_lessons": 10,
+      "group": "core",
+      "level": "I",
+      "source": "Fine-tuning, RLHF/DPO and distributed training (the highest-premium AI skill per 2026 pay data); NVIDIA NCP-GENL exam guide; deliverable: NCP-GENL and/or a public fine-tuning repo with DDP/FSDP and evals",
+      "books": {
+        "primary": "NVIDIA NCP-GENL exam guide and study path (catalog: nvidia-ncp-genl)",
+        "secondary": [
+          "88ec033ebb Raschka, Build a Large Language Model (From Scratch) (grade B): pretraining and fine-tuning chapters",
+          "PyTorch distributed and FSDP docs"
+        ],
+        "tertiary": [
+          "be9492d77e PMPP 4th ed. (grade A), if CUDA kernels come up (shared with C/C++ CP320)"
+        ],
+        "skip": []
+      },
+      "note": "Priority 4 (inference and performance), step 1."
+    },
+    {
+      "id": "CR140",
+      "title": "Inference optimization and serving",
+      "status": "later",
+      "requires": [
+        "CR110",
+        "CR130"
+      ],
+      "est_lessons": 8,
+      "group": "core",
+      "level": "I",
+      "source": "Quantization, batching, speculative decoding, vLLM/TensorRT-LLM, CUDA where needed; deliverable: a model served on Kubernetes with a published latency/cost benchmark",
+      "books": {
+        "primary": "vLLM docs (docs.vllm.ai) + Huyen, AI Engineering, inference optimization chapter (wanted)",
+        "secondary": [
+          "dd8b0182f3 Huyen, Designing ML Systems: deployment and monitoring chapters"
+        ],
+        "tertiary": [
+          "be9492d77e PMPP 4th ed. (grade A): pairs with the C/C++ major's CP320 CUDA elective"
+        ],
+        "skip": []
+      },
+      "note": "Recommended specialty (2026-10-07: learner flagged CUDA pay). Path: cpp CP101 -> CP320 CUDA (PMPP 4th ed., in collection) -> this course (quantization, serving frameworks, kernels in production)."
+    },
+    {
+      "id": "CR170",
+      "title": "Data engineering with Spark",
+      "status": "later",
+      "requires": [
+        "CR100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Quick win (weeks): Spark/PySpark at scale (partitioning, shuffles, joins, Structured Streaming), then the Databricks Generative AI Engineer badge (CR230) or a Databricks data-engineering cert. Spark pays best combined with ML and distributed systems (SE120).",
+      "est_lessons": 6
+    },
+    {
+      "id": "CR210",
+      "title": "Google Professional ML Engineer",
+      "status": "later",
+      "requires": [
+        "CR100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Second cloud. Catalog: gcp-pmle."
+    },
+    {
+      "id": "CR220",
+      "title": "Azure AI Apps and Agents Developer (AI-103)",
+      "status": "later",
+      "requires": [
+        "CR120"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Only if Azure matters to an employer. Catalog: azure-ai-103."
+    },
+    {
+      "id": "CR230",
+      "title": "Databricks Generative AI Engineer Associate",
+      "status": "later",
+      "requires": [
+        "CR120"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Catalog: databricks-genai."
+    },
+    {
+      "id": "CR240",
+      "title": "Terraform Associate (004)",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Quick infra badge. Catalog: hashicorp-terraform-004."
+    },
+    {
+      "id": "CR250",
+      "title": "AWS Generative AI Developer – Professional",
+      "status": "later",
+      "requires": [
+        "CR120"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "After MLA-C02 (aws-ml major). Catalog: aws-aip-c01."
+    },
+    {
+      "id": "CR310",
+      "title": "Safety net (on hold): quant developer",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "WATCH (2026-10-07: remote-only rules out most top firms, which are on-site in a few hubs). Path if that changes: C/C++ major CP101-CP204 + CP403, Harris, Trading and Exchanges (wanted), 8ca4543585 Carver, Systematic Trading (A)."
+    },
+    {
+      "id": "CR320",
+      "title": "Safety net (on hold): quant research",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "WATCH (remote-only, no more school). Highest ceiling of the math fallbacks, but top firms treat a PhD as near-baseline, so aim at mid-tier funds and systematic-trading teams. Uses the Statistics major (probability, inference, time series) + probability-puzzle interview prep (Crack, Heard on the Street; Zhou, A Practical Guide to Quantitative Finance Interviews: wanted) + 59fb31351d Boyd & Vandenberghe, Convex Optimization (B)."
+    },
+    {
+      "id": "CR325",
+      "title": "Safety net: actuary (SOA exams)",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Safety net outside tech (kept 2026-10-07 when adjacent tech became the main priority): exam-gated (you accept years of exams), remote-friendly (consultancies especially), outside the software job market, and the accountable sign-off work is the part least exposed to automation. Your Python/ML is in demand there. Ladder: P -> FM -> ASA (FAM, SRM, ATPA, ...). Exam P overlaps the Statistics major. BLS median $125,770."
+    },
+    {
+      "id": "CR326",
+      "title": "Math toolkit: optimization and operations research",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Math that strengthens every fallback (quant, OR, ML): convex optimization (59fb31351d Boyd, B) and linear/integer programming. OR analyst as a job title pays less (BLS median $88,940), so treat this as a skill, not a destination."
+    },
+    {
+      "id": "CR327",
+      "title": "Safety net: patent agent (USPTO registration exam)",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "One exam, no law degree: your CE and CS degrees qualify you for the USPTO registration exam. Regulated legal work (filings carry a registered practitioner's name) on software/AI/hardware patents. Median ~$124k. Probe: read the exam's MPEP scope and do one practice exam."
+    },
+    {
+      "id": "CR330",
+      "title": "AI and cloud security",
+      "status": "later",
+      "requires": [
+        "CR110"
+      ],
+      "group": "core",
+      "level": "I",
+      "note": "Priority 2: security hiring reported +23% with AI security the main driver, and AI-security roles at a 31% premium (Q1 2026 listings). LLM threats (prompt injection, data/model supply chain), cloud IAM and network security; badge: AWS Security Specialty (check code) or similar.",
+      "est_lessons": 8
+    },
+    {
+      "id": "CR340",
+      "title": "Fallback: cloud / AI solutions architect",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Customer-facing architect roles pay well and value certs most. AWS Solutions Architect Associate (you already have a 2024 course for it) then Professional, or GCP Professional Cloud Architect."
+    },
+    {
+      "id": "CR350",
+      "title": "Language: Rust",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Systems, infra, embedded and crypto roles; reported among the top-paying languages. Primary: The Rust Programming Language (official, free at doc.rust-lang.org/book). Easier after the C/C++ major's CP101."
+    },
+    {
+      "id": "CR360",
+      "title": "Language: Go",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "The language of cloud infrastructure (Kubernetes, Terraform are written in it). Primary: Donovan & Kernighan, The Go Programming Language (wanted) or the official Go tour."
+    },
+    {
+      "id": "CR370",
+      "title": "Track: embedded and robotics software",
+      "status": "later",
+      "requires": [
+        "SE000"
+      ],
+      "group": "elective",
+      "level": "I",
+      "note": "Uses your computer-engineering degree; edge AI (models on devices) is the bridge from your current work. Path: C/C++ major CP101+CP120, then 28a32b9b90 Holt, Embedded Operating Systems (A) and 35ab9520bd Ganssle, The Art of Designing Embedded Systems (B), plus a microcontroller project."
+    },
+    {
+      "id": "CR380",
+      "title": "Platform engineering and SRE (CKA)",
+      "status": "later",
+      "requires": [
+        "CR110"
+      ],
+      "group": "core",
+      "level": "I",
+      "note": "Priority 1, step 3: Google's SRE book (free at sre.google) + CKA; Terraform (CR240) as an optional badge alongside.",
+      "est_lessons": 8,
+      "books": {
+        "primary": "Beyer et al., Site Reliability Engineering (Google, free at sre.google)",
+        "secondary": [
+          "b1d434d949 Rosso et al., Production Kubernetes (grade B)"
+        ],
+        "tertiary": [
+          "Terraform docs (CR240)"
+        ],
+        "skip": []
+      }
+    },
+    {
+      "id": "CR490",
+      "title": "Reproduce a recent paper in public",
+      "status": "later",
+      "requires": [
+        "CR130"
+      ],
+      "group": "capstone",
+      "level": "II",
+      "note": "Optional: reproduce one recent ML paper's key result, with code and a blog post."
+    }
+  ]
+}

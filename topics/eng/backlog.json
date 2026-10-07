@@ -1,0 +1,338 @@
+{
+  "about": "3D chess backlog tickets mapped to eng courses. Each lesson assigns one ticket as its 'rep'. Division of labor (learner's rule, 2026-10-07): the learner does the staff-level work for the ticket (design doc, ADR, acceptance criteria, decision, PR review and merge, or the code itself when the lesson's skill IS the code: C, C++, CUDA); Claude writes the rest of the code as a PR for the learner to review. Re-check each ticket's state on GitHub before assigning it. state: open | assigned | shipped | skipped | proposed (not filed yet: ask before filing). When a ticket is assigned, set state 'assigned' and 'assigned_on' (YYYY-MM-DD); when shipped, 'shipped_on' and 'evidence' (PR/doc URL).",
+  "repos": [
+    "rahulsanjay18/3dChessInC",
+    "rahulsanjay18/3dChessRLAgent",
+    "rahulsanjay18/3dChessWeb",
+    "rahulsanjay18/3dChessServer",
+    "rahulsanjay18/3dChessInfra",
+    "rahulsanjay18/3dChessRelay",
+    "rahulsanjay18/3dChessDesktop"
+  ],
+  "tickets": [
+    {
+      "repo": "3dChessRLAgent",
+      "n": 54,
+      "title": "Design: MuZero-lite (learned model) - decision document",
+      "course": "SE110",
+      "you": "write the decision doc (options, trade-offs, recommendation)",
+      "claude": "prototype numbers you ask for",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessDesktop",
+      "n": 15,
+      "title": "Offline mode ADR",
+      "course": "SE110",
+      "you": "write the ADR",
+      "claude": "nothing until accepted",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessDesktop",
+      "n": 13,
+      "title": "Auto-update: signing, verification, channel ADR",
+      "course": "SE110",
+      "you": "write the channel ADR",
+      "claude": "implement after acceptance",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessServer",
+      "n": 13,
+      "title": "WebSocket move relay for real-time official games",
+      "course": "SE120",
+      "you": "design doc: connection model, ordering, reconnects, scale",
+      "claude": "implement to your design",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessServer",
+      "n": 9,
+      "title": "Matchmaking queue",
+      "course": "SE120",
+      "you": "design doc: queue model, rating windows, fairness, failure modes",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessServer",
+      "n": 15,
+      "title": "MCTS analysis async job queue (premium tier)",
+      "course": "SE120",
+      "you": "design doc: job queue, back-pressure, cost limits",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessServer",
+      "n": 1,
+      "title": "Database schema (accounts, games, ELO, skins, agents)",
+      "course": "SE120",
+      "you": "data model + review the migration",
+      "claude": "write models and Alembic migration",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessWeb",
+      "n": 29,
+      "title": "Game API client + useGameSession hook (state machine)",
+      "course": "SE130",
+      "you": "specify the state machine and interface; review",
+      "claude": "implement + tests",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRelay",
+      "n": 1,
+      "title": "Stateless WebSocket relay server (two-player room)",
+      "course": "SE130",
+      "you": "module boundaries and interface; review",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessWeb",
+      "n": 71,
+      "title": "main is broken: Dependabot majors merged without peer-compat check",
+      "course": "SE140",
+      "you": "incident write-up + the policy that prevents it (dependency-update rules)",
+      "claude": "the fix PR",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 69,
+      "title": "RL program tracker: backlog, dependency graph, P0 critical path",
+      "course": "SE140",
+      "you": "re-prioritize: cut, sequence, set the next milestone",
+      "claude": "update issue links/labels as you decide",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessWeb",
+      "n": 50,
+      "title": "Umbrella: spec pass, MVP path, security, backlog order",
+      "course": "SE150",
+      "you": "a one-page technical strategy for the whole 3D chess platform (what ships first and why)",
+      "claude": "nothing",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 141,
+      "title": "Terraform: skeleton + S3/DynamoDB remote state backend",
+      "course": "AW101",
+      "you": "review IAM/state design against AWS best practice; run plan/apply",
+      "claude": "write the Terraform",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 142,
+      "title": "Terraform: import the hand-built foundation (bucket, IAM, ECR, budgets)",
+      "course": "AW101",
+      "you": "least-privilege IAM review; do the import (owner-action)",
+      "claude": "write import blocks",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 143,
+      "title": "Terraform: spot worker launch template + single-AZ network pin",
+      "course": "AW101",
+      "you": "decide spot strategy and AZ trade-off (write it down)",
+      "claude": "write the template",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 144,
+      "title": "Terraform: CI plan gate via GitHub OIDC (no static keys)",
+      "course": "AW101",
+      "you": "trust-policy review (security)",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 110,
+      "title": "AWS: Tailscale bridge for the on-prem Ray head",
+      "course": "AW101",
+      "you": "network design (VPC, security groups) and do the owner steps",
+      "claude": "scripts",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 101,
+      "title": "AWS: first distributed PPO run on the spot cluster",
+      "course": "AW201",
+      "you": "run it; cost/perf write-up; compare with how SageMaker would do it (exam prep)",
+      "claude": "fix what breaks",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 124,
+      "title": "Phase 2: run MLflow + inference service on AWS by configuration alone",
+      "course": "AW201",
+      "you": "deployment design: SageMaker endpoint vs ECS vs EC2 (MLA-C02 domain 3)",
+      "claude": "implement your choice",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 151,
+      "title": "Phase 2: Prometheus for full-AWS runs",
+      "course": "AW201",
+      "you": "monitoring plan (MLA-C02 domain 4)",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 140,
+      "title": "EPIC: Orchestrate the RL pipeline with Apache Airflow",
+      "course": "CR100",
+      "you": "pipeline design doc (DAG, eval gate, failure handling)",
+      "claude": "implement #145-#147",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 118,
+      "title": "EPIC: Observability + serving",
+      "course": "CR100",
+      "you": "decide what to measure and the SLOs",
+      "claude": "implement #119, #149",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 123,
+      "title": "In-repo inference service (FastAPI + onnxruntime)",
+      "course": "CR140",
+      "you": "latency/throughput targets and the benchmark plan; review",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessServer",
+      "n": 14,
+      "title": "Policy-only RL agent inference endpoint (free tier)",
+      "course": "CR140",
+      "you": "serving design and cost model",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 129,
+      "title": "EPIC: Shrink the RL wire format (spatial policy head + mask transport)",
+      "course": "CR140",
+      "you": "design review and measurements plan",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 47,
+      "title": "MCTS efficiency: batched leaf eval, sparse targets, virtual loss",
+      "course": "CP320",
+      "you": "write the batched GPU leaf evaluation yourself (the CUDA/GPU skill)",
+      "claude": "review, tests, the rest",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 46,
+      "title": "torch.compile on Chess3DCNN + AMP/bf16",
+      "course": "CP320",
+      "you": "profile before/after and explain the speedup",
+      "claude": "the code change",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 44,
+      "title": "Adopt chess3d_count_legal_moves for count-only call sites",
+      "course": "CP101",
+      "you": "do it yourself (C API boundary)",
+      "claude": "review",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessInC",
+      "n": null,
+      "title": "Engine hot-path profile: perf/cachegrind on perft, one measured speedup",
+      "course": "CP120",
+      "you": "write the C yourself",
+      "claude": "review",
+      "state": "proposed"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": null,
+      "title": "Self-play game analytics with Spark (openings, game length, first-move advantage at scale)",
+      "course": "CR170",
+      "you": "write the PySpark job yourself (the Spark skill) + the analysis",
+      "claude": "data export and plumbing",
+      "state": "proposed"
+    },
+    {
+      "repo": "3dChessWeb",
+      "n": 34,
+      "title": "Auth token transport: httpOnly-cookie session flow",
+      "course": "CR330",
+      "you": "threat model + design; review",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessWeb",
+      "n": 39,
+      "title": "Ad-SDK isolation: ads never execute with access to auth state",
+      "course": "CR330",
+      "you": "threat model and isolation design",
+      "claude": "implement",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessDesktop",
+      "n": 7,
+      "title": "Electron security posture (epic)",
+      "course": "CR330",
+      "you": "security review checklist and decisions (#8-#11)",
+      "claude": "implement children",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 65,
+      "title": "Eval science: Glicko-2 methodology audit",
+      "course": "CR100",
+      "you": "the statistics (ties to the Statistics major)",
+      "claude": "code",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 66,
+      "title": "Eval science: tournament statistical power (games-until-separation)",
+      "course": "CR100",
+      "you": "the power analysis (Statistics major: power, lesson 0004)",
+      "claude": "code",
+      "state": "open"
+    },
+    {
+      "repo": "3dChessRLAgent",
+      "n": 36,
+      "title": "MVP: competent ONNX checkpoint + reproducible training recipe (beats random >=55%)",
+      "course": "CR130",
+      "you": "own the recipe and the eval gate",
+      "claude": "training code fixes (#131)",
+      "state": "open"
+    }
+  ]
+}

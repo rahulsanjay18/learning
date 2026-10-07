@@ -13,6 +13,10 @@
 <link rel="stylesheet" href="plugins/timeline.css">
 <link rel="stylesheet" href="plugins/map.css">
 <link rel="stylesheet" href="plugins/python.css">
+<link rel="stylesheet" href="plugins/games.css">
+<link rel="stylesheet" href="plugins/xiangqi.css">
+<link rel="stylesheet" href="plugins/shogi.css">
+<link rel="stylesheet" href="plugins/sim.css">
 </head>
 <body>
 <main>
@@ -59,6 +63,49 @@
   <p class="prompt">In one sentence: why does retrieval practice beat rereading?</p>
   <div class="explain" hidden>Pulling an answer from memory strengthens it; rereading only makes it feel familiar.</div>
 </div>
+
+<h2>Flashcards</h2>
+<div class="lp-deck">
+  <div class="quiz" data-type="card" data-id="fc-1">
+    <p class="prompt">Leitner box intervals used by the review deck?</p>
+    <div class="explain" hidden>1, 3, 7, 16, 35, 80 and 180 days.</div>
+  </div>
+  <div class="quiz" data-type="card" data-id="fc-2">
+    <p class="prompt">What happens to a card you didn't know?</p>
+    <div class="explain" hidden>It drops to the first box and comes back tomorrow.</div>
+  </div>
+</div>
+
+<h2>How sure were you?</h2>
+<div class="quiz" data-type="choice" data-id="conf-demo" data-confidence="true" data-options="Two|Three|Four" data-answer="Three">
+  <p class="prompt">How many sides does a triangle have? (After a right answer, say whether you knew it or guessed.)</p>
+  <div class="explain" hidden>Three. "I guessed" counts it as not known: it comes back tomorrow.</div>
+</div>
+
+<h2>Estimate (calibration)</h2>
+<div class="quiz" data-type="estimate" data-id="est-panipat" data-answer="1526" data-level="90" data-unit="CE">
+  <p class="prompt">In what year was the First Battle of Panipat, which began the Mughal Empire? Give a range you're 90% sure of.</p>
+  <div class="explain" hidden>1526: Babur defeated Ibrahim Lodi.</div>
+</div>
+
+<h2>Find the error</h2>
+<div class="quiz" data-type="find-error" data-id="fe-one-two" data-answer="4">
+  <p class="prompt">This "proves" that 1 = 2. Click the wrong step.</p>
+  <ol class="steps"><li>Let \(a = b\).</li><li>Then \(a^2 = ab\), so \(a^2 - b^2 = ab - b^2\).</li><li>Factor: \((a+b)(a-b) = b(a-b)\).</li><li>Divide both sides by \(a - b\): \(a + b = b\).</li><li>So \(2b = b\), and \(2 = 1\).</li></ol>
+  <div class="explain" hidden>Step 4 divides by \(a - b\), which is 0.</div>
+</div>
+
+<h2>Highlight the evidence</h2>
+<div class="quiz" data-type="highlight" data-id="hl-ashoka">
+  <p class="prompt">Click the sentences that support this claim: Ashoka turned to dhamma <em>because of</em> the Kalinga war.</p>
+  <div class="passage"><p>The Kalinga war was fought around 261 BCE. [[After the conquest of Kalinga, the king felt deep remorse at the killing and deportation.]] War elephants were part of most armies of the time. [[Since then he has devoted himself to the practice and teaching of dhamma.]]</p></div>
+  <div class="explain" hidden>The two sentences give the sequence and the motive: conquest, remorse, dhamma (paraphrasing Rock Edict XIII). The other two are true but don't bear on the cause.</div>
+</div>
+
+<h2>Simulation plugin</h2>
+<div class="lp-sim" id="sim-ci" data-sim="ci-coverage" data-n="5" data-method="z-plugin" data-caption="Switch the method to 't' and draw 1,000: coverage returns to 95%."></div>
+<div class="lp-sim" id="sim-mean" data-sim="sampling-mean" data-pop="exponential" data-n="2"></div>
+<div class="lp-sim" id="sim-mt" data-sim="multiple-testing" data-k="20"></div>
 
 <h2>Free response (graded later)</h2>
 <div class="quiz" data-type="free" data-id="free">
@@ -142,6 +189,39 @@ $$s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2$$
   <div class="explain" hidden>23 June 1757. The victory gave the Company control of Bengal, a century before Crown rule began in 1858.</div>
 </div>
 
+<h2>Tiny games plugin</h2>
+<div class="lp-game" id="gm-play-ttt" data-game="ttt" data-hints="true" data-caption="Play tic-tac-toe against a perfect solver. With best play from both sides it's a draw."></div>
+<div class="lp-game" id="gm-play-nim" data-game="nim" data-position="3 4 5" data-hints="true" data-caption="Nim 3-4-5. The first player wins with best play."></div>
+<div class="lp-game" id="gm-play-hex" data-game="hex" data-position=".../.../..." data-you="second" data-caption="3×3 Hex. You play White (second); the solver opens as Black."></div>
+<div class="quiz" data-type="game-move" data-id="gm-ttt-hold" data-game="ttt" data-position="X../.O./..X" data-hint="Taking a corner lets X make two threats at once.">
+  <p class="prompt">O to move. X holds opposite corners. Find a move that keeps the draw.</p>
+  <div class="explain" hidden>Any edge (b1, a2, c2, b3) holds the draw; a corner loses to a fork.</div>
+</div>
+<div class="quiz" data-type="game-move" data-id="gm-nim-345" data-game="nim" data-position="3 4 5" data-hint="Write the heaps in binary and make every column even.">
+  <p class="prompt">You move first in Nim 3-4-5. Find the winning move.</p>
+  <div class="explain" hidden>3 XOR 4 XOR 5 = 2, so take 2 from heap 1 (3 → 1): 1 XOR 4 XOR 5 = 0, a losing position for your opponent.</div>
+</div>
+<div class="quiz" data-type="game-move" data-id="gm-hex-open" data-game="hex" data-position=".../.../...">
+  <p class="prompt">3×3 Hex, Black to move first. Find an opening move that wins.</p>
+  <div class="explain" hidden>Five of the nine openings win (c1, a2, b2, c2, a3); the centre wins fastest.</div>
+</div>
+
+<h2>Xiangqi plugin</h2>
+<div class="xq-board" id="xq-play" data-play="true" data-caption="The starting position. Sandbox: click a piece to see its legal moves; both sides move in turn."></div>
+<div class="quiz" data-type="xiangqi-move" data-id="xq-win" data-fen="3k5/R3a4/9/2H6/9/9/9/9/9/5K3 w" data-answer="a8a9|a8e8"
+  data-hint="The horse on c6 already covers d8.">
+  <p class="prompt">Red to move and win at once.</p>
+  <div class="explain" hidden>a8–a9 is checkmate: d8 is covered by the horse, e9 by the chariot. a8×e8 also wins: Black is not in check but has no legal move, and in xiangqi that loses (in chess it would be a stalemate draw).</div>
+</div>
+
+<h2>Shogi plugin</h2>
+<div class="shogi-board" id="sg-play" data-play="true" data-caption="The starting position. Sandbox: click a piece, or a piece in hand to drop it; you'll be asked whether to promote when it's optional."></div>
+<div class="quiz" data-type="shogi-move" data-id="sg-dropmate" data-sfen="7nk/7p1/8G/9/9/9/9/9/K8 b PG 1" data-answer="G*1b"
+  data-hint="Gote's own knight and pawn box the king in. Which drop on 1b is allowed?">
+  <p class="prompt">Sente to move: checkmate with a drop.</p>
+  <div class="explain" hidden>G*1b mates: the gold on 1c protects it, and the king's own pieces block 2a and 2b. A pawn drop on 1b would also be mate, which is exactly why it's illegal (uchifuzume): try it and the board won't let you.</div>
+</div>
+
 <h2>Map plugin</h2>
 <div class="lp-map" id="map-south-asia" data-view="60,5,100,38" data-highlight="India"
   data-points="28.61,77.21:New Delhi|19.08,72.88:Mumbai|22.57,88.37:Kolkata|13.08,80.28:Chennai"
@@ -205,5 +285,9 @@ for c, lo in zip(counts, edges):
 <script src="plugins/timeline.js"></script>
 <script src="plugins/map.js"></script>
 <script src="plugins/python.js"></script>
+<script src="plugins/games.js"></script>
+<script src="plugins/xiangqi.js"></script>
+<script src="plugins/shogi.js"></script>
+<script src="plugins/sim.js"></script>
 </body>
 </html>

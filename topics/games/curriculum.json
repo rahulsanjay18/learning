@@ -1,0 +1,310 @@
+{
+  "major": "games",
+  "program": "topics/games/PROGRAM.md",
+  "spine": "Play first; four threads every class: same ideas/different rules, AI lens, designer's lens, strategist's lens. Running project: a 3D chess variant.",
+  "rules": [
+    "Each class ends with an 'AI lens' lesson and a design-notebook entry (why does this rule exist?).",
+    "Military strategy is G150 (lessons stay in topics/military-strategy/), framed as decision systems."
+  ],
+  "courses": [
+    {
+      "id": "G101",
+      "title": "Chess (the ongoing lab)",
+      "topic": "chess",
+      "status": "active",
+      "est_lessons": 12,
+      "lessons": [
+        "0001-is-it-safe",
+        "0002-checks-first"
+      ],
+      "plan": [
+        "0003-what-did-their-move-do: before your move, list what the opponent's last move attacks (41. Rd2 from the 6 Oct game, LR 0005); warm-up = piece-by-piece check scan (LR 0004) + 14...Rg8 review",
+        "0004-what-did-my-move-stop-defending: 13. e4 from the 2 Oct game",
+        "0005 the double attack (Tactics Ch. 2)",
+        "0006 pins and skewers (Tactics Ch. 3-4)",
+        "0007 king tactics and the back rank (Ch. 5)",
+        "0008 deflection and decoy (Ch. 6, 9)",
+        "0009 king and pawn endings (Endings)",
+        "0010 batteries and open files (Ch. 7)",
+        "0011 zwischenzug (Ch. 12)",
+        "0012 G101 check"
+      ],
+      "completed": [
+        "0001-is-it-safe",
+        "0002-checks-first"
+      ],
+      "group": "core",
+      "level": "I",
+      "books": {
+        "primary": "50634c974d Seirawan & Silman, Winning Chess Tactics (chapter per lesson)",
+        "secondary": [
+          "b7c9d62e2b Seirawan, Winning Chess Endings (king-and-pawn lesson)",
+          "your own games, reviewed with Stockfish (/game-review)"
+        ],
+        "tertiary": [
+          "d2e32f3e7e Capablanca, Chess Fundamentals"
+        ],
+        "skip": [
+          "725d5b0db7 Nimzowitsch, My System: positional, for a later strategy course",
+          "aff99a5c4f Silman, Complete Book of Chess Strategy: grade B; later"
+        ]
+      }
+    },
+    {
+      "id": "G150",
+      "title": "Strategy foundations",
+      "topic": "military-strategy",
+      "status": "active",
+      "est_lessons": 8,
+      "lessons": [
+        "0001-capacity-or-will"
+      ],
+      "plan": [
+        "0002 annihilation vs. exhaustion: fix the 'offense = annihilation' mix-up from record 0002 (First Punic War analysis)",
+        "0003 deterrence and coercion (Echevarria Ch. 4)",
+        "0004 Clausewitz (On War Bk 1 Ch. 1)",
+        "0005 Sun Tzu and the indirect approach",
+        "0006 decapitation and terror as strategies (Ch. 5-6)",
+        "0007 why strategies succeed or fail (Ch. 8)",
+        "0008 G150 check: campaign analysis (Polybius III)"
+      ],
+      "completed": [
+        "0001-capacity-or-will"
+      ],
+      "group": "core",
+      "level": "I",
+      "books": {
+        "primary": "940de01b70 Echevarria, Military Strategy: A Very Short Introduction",
+        "secondary": [
+          "8cb37bf97d Clausewitz, On War (Bk 1 Ch. 1)",
+          "3329556537 Sun Tzu, The Art of War (Giles)",
+          "a1de43a246 Polybius, The Rise of the Roman Empire (Punic Wars cases)"
+        ],
+        "tertiary": [
+          "c589beef4b Howard, Clausewitz (VSI)",
+          "e47c5dab8b Freedman, Strategy: A History"
+        ],
+        "skip": [
+          "5727374d00 Gray, Modern Strategy: theory depth for G350, not foundations"
+        ]
+      }
+    },
+    {
+      "id": "G102",
+      "title": "Tiny games, big ideas",
+      "status": "next",
+      "requires": [
+        "G101"
+      ],
+      "est_lessons": 4,
+      "note": "widget ready: assets/plugins/games.js (ttt, Nim, Hex vs exact solver). Then 3D variant v0 on paper",
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "G201",
+      "title": "Xiangqi",
+      "status": "later",
+      "requires": [
+        "G102"
+      ],
+      "note": "widget ready: assets/plugins/xiangqi.js (sandbox + xiangqi-move quiz)",
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "G202",
+      "title": "Shogi",
+      "status": "later",
+      "requires": [
+        "G201"
+      ],
+      "note": "widget ready: assets/plugins/shogi.js (sandbox with drops/promotion + shogi-move quiz)",
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "G301",
+      "title": "Go",
+      "status": "later",
+      "requires": [
+        "G102"
+      ],
+      "note": "Go plugin exists",
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "G401",
+      "title": "Decisions under chance (Pig, backgammon unit)",
+      "status": "later",
+      "requires": [
+        "G102"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "G402",
+      "title": "Poker",
+      "status": "later",
+      "requires": [
+        "G401"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "G350",
+      "title": "Wargames",
+      "status": "later",
+      "requires": [
+        "G150"
+      ],
+      "group": "elective",
+      "level": "I"
+    },
+    {
+      "id": "G360",
+      "title": "Diplomacy and politics as games",
+      "status": "later",
+      "requires": [
+        "G150",
+        "G503"
+      ],
+      "group": "elective",
+      "level": "I"
+    },
+    {
+      "id": "G501",
+      "title": "Comparative strategy (seminar)",
+      "status": "later",
+      "requires": [
+        "G202",
+        "G301"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "G502",
+      "title": "Combinatorial game theory",
+      "status": "later",
+      "requires": [
+        "G102"
+      ],
+      "group": "core",
+      "level": "II"
+    },
+    {
+      "id": "G503",
+      "title": "Game theory",
+      "status": "later",
+      "requires": [
+        "G401"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "G504",
+      "title": "Game-playing AI",
+      "status": "later",
+      "requires": [
+        "G301",
+        "G401"
+      ],
+      "group": "core",
+      "level": "II"
+    },
+    {
+      "id": "G601",
+      "title": "Anatomy of strategy games",
+      "status": "later",
+      "requires": [
+        "G501"
+      ],
+      "group": "core",
+      "level": "II"
+    },
+    {
+      "id": "G602",
+      "title": "Balance",
+      "status": "later",
+      "requires": [
+        "G504"
+      ],
+      "group": "core",
+      "level": "II"
+    },
+    {
+      "id": "G603",
+      "title": "Designing in 3D",
+      "status": "later",
+      "requires": [
+        "G601"
+      ],
+      "group": "core",
+      "level": "II"
+    },
+    {
+      "id": "G700",
+      "title": "Capstone: your game",
+      "status": "later",
+      "requires": [
+        "G602",
+        "G603"
+      ],
+      "group": "capstone",
+      "level": "II"
+    },
+    {
+      "id": "G190",
+      "title": "Breadth: history of board games",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "G101"
+      ],
+      "note": "ask for Parlett, The Oxford History of Board Games, or Murray, A History of Chess"
+    },
+    {
+      "id": "G195",
+      "title": "Practice: play log (games played and reviewed each class)",
+      "group": "practice",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "G101"
+      ],
+      "note": "each class: a few real games (bots or friends), one reviewed in writing"
+    },
+    {
+      "id": "G398",
+      "title": "Level I colloquium",
+      "group": "colloquium",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "G402",
+        "G501"
+      ]
+    },
+    {
+      "id": "G598",
+      "title": "Level II colloquium",
+      "group": "colloquium",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "G700"
+      ]
+    }
+  ],
+  "design": "notes/major-design.md",
+  "levels": {
+    "I": "≈ BA-level: play and understand the families of strategy games, then the theory. Extras optional.",
+    "II": "≈ graduate: game AI, combinatorial game theory, design and balance. Extras optional."
+  }
+}

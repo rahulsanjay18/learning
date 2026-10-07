@@ -41,6 +41,13 @@ Authentication is attached automatically by the environment; never ask for or pr
     curl -s "$BOOKS_URL/toc/<id>"                             # headings with line numbers
     curl -s "$BOOKS_URL/read/<id>?start=120&n=80"             # max 200 lines per call
 
+  **Prefer the compact client** (same endpoints, plain text, far fewer tokens):
+
+    python3 scripts/books.py find "sutton barto"
+    python3 scripts/books.py search "power function" --book f9dc4d1d4c -n 5   # one book only
+    python3 scripts/books.py grep f9dc4d1d4c "Definition 8.3.5"              # line numbers of a phrase
+    python3 scripts/books.py read f9dc4d1d4c 4200 60
+
 - Web research stays the primary way to find resources (as the /teach skill says). Books are an EXTRA resource. Search when a lesson topic might be covered; if nothing relevant comes back, move on.
 - Every response carries the book's grade. Grade B responses include a warning: obey it.
 - Read the smallest slice that answers the question. Don't page through whole books.

@@ -19,7 +19,7 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 9. **Assign reading before the lesson whenever it makes sense** (all subjects, not only definition-heavy ones). Give a short,
    specific slice of the primary source with a reading guide (3 questions + "what surprised or confused you"), as its own block
    before the lesson. (Entries 8, 13)
-13. **Homework is allowed but optional.** Keep it small and specific (one exercise, one game to play, one short write-up), mark it
+13. **(Exception 2026-10-07: in the Engineering career major `topics/eng/`, the rep is required at the learner's request; see its PROGRAM.md §3.)** **Homework is allowed but optional.** Keep it small and specific (one exercise, one game to play, one short write-up), mark it
     clearly as optional, and **design every lesson so it still works if the homework was skipped** (the learner isn't sure how
     much they'll do). Never make a later lesson depend on homework; if it builds on homework, include a 2-minute recap. Track what
     gets done in the topic's NOTES.md and adjust the amount to what actually happens. (Entry 13)
@@ -37,6 +37,30 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
 17. **Say how each section relates to the reading:** "from the reading" vs. "beyond the reading". (Entry 17)
 18. **Units in answer boxes are unambiguous** ("as a decimal, 0.10 means 10%"); prefer the form a mathematician would type. (Entry 18)
 19. **Use the learner's own vocabulary next to the textbook's** (Type I = false positive, Type II = false negative). (Entry 19)
+20. **Mastery rule: grade objectives Got it / Not yet, and extend only for "Not yet".** Every lesson has 2–3 "you can…" objectives
+    (from the major's `SYLLABUS.md`). Keep 0–1 scores for the server, but the *decision* is binary:
+    - **Got it:** the answer shows the idea correctly with no false statement, even if a detail is missing. Say what was missing in
+      the feedback; **no re-teaching**.
+    - **Not yet:** a false statement or misconception; the same objective missed twice (first try or in review); a skip, "I don't
+      know" or self-reported guess; or the learner says they're confused.
+    - **Can't tell** (a thin answer): one warm-up question on it next lesson; a miss there means Not yet.
+    - **Not yet → a 5-minute re-teach section at the start of the next lesson in that course**, syllabus otherwise unchanged. Add a
+      whole lesson only when the objective is a prerequisite for the next syllabus lessons, or it's still Not yet after one re-teach;
+      log that in the syllabus's "Changes". **Facts (dates, names) go to spaced review and warm-ups, not extra lessons** (entry 10).
+    - Plan the whole course up front in `SYLLABUS.md` (readings + objectives); sessions write the next lesson, they don't redesign. (Entry 20)
+21. **Reason first, name second.** Introduce each new definition by a question the learner works through in revealed steps
+    (`::: worked`), then name it and give the formal statement. At most ~2 new definitions per lesson; more → split. (Entry 21)
+22. **Use the book's exercises; never leak answers.** Draw practice, pretest, proof and check items from the textbook's own
+    exercises where they fit (cite them: "C&B Exercise 1.33"), adapting numbers only when needed. And never state an answer to a
+    question the learner hasn't done yet, in chat or anywhere visible: verify answers with assertions that don't print them. (Entry 22)
+23. **Choices must not give the answer away.** A candidate button labelled with the answer's own name (a map choice named
+    "Lothal" when the question asks where Lothal is) tests reading, not knowing. Unlabelled map clicks, or labels that don't name
+    the target. (Entry 23)
+24. **Grade only against what was assigned.** If a rubric point needs a fact from a source the learner wasn't given (the
+    paper behind a news article), it isn't a fault when they miss it; mention it as extra. Check what the assigned source
+    actually says before calling an answer wrong. (Entry 24)
+25. **The prompt names what the rubric grades.** If full credit needs a specific move ("separate invasion from migration"),
+    the question asks for it in words. Implicit understanding of an unasked point counts as Got it. (Entry 25)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -80,3 +104,27 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     `ci-lower`, learner couldn't find how to type × and estimated 2 instead of 1.96. Fix: decimal answer, typing help; rules 11, 18.
 19. **2026-10-05 · "I usually remember type 1 and 2 errors as false positive and false negative."** Options used "missing a real
     effect" etc. Fix: FP/FN in lesson 2's table and lesson 3's options; rule 19.
+20. **2026-10-06 · "The threshold of 'good enough' to 'needs work' is blurry and I am relying on you to set the line."** Lessons were
+    being extended or planned one at a time, case by case. Learner: extend only for real gaps (not knowing vs. a lazy, thin answer),
+    plan a syllabus ahead (it also saves tokens), and grade like the mastery scheme from school ("did you learn the thing").
+    Mastery learning has research support with college students too (Kulik et al. 1990, 108 studies, ≈0.5 SD; self-paced versions
+    lowered completion, so keep a fixed pace) and a college form in Nilson's specifications grading (pass/fail at B level). Fix: rule
+    20, a `SYLLABUS.md` per major, objectives per lesson.
+21. **2026-10-06 · "A lot of these definitions can just be confusing and i think i need to sit and reason though stuff."**
+    Statistics lesson 4 stacked the power function, Type I/II error probabilities, size/level and the 2.8-SE rule in one lesson.
+    Results were good (all objectives Got it), but the learner felt rushed through definitions. Fix: rule 21.
+22. **2026-10-06 · Two catches from the Chapter 1 pretest.** (1) After writing it I printed three of its answers in chat while
+    "checking the numbers". Learner: "did you just list the answers to me". Those three items were replaced with book exercises.
+    (2) Learner: "are you borrowing questions from the exercises the book has? i think that may also be a good idea." I wasn't.
+    Fix: rule 22.
+23. **2026-10-07 · "The map question was useless, i just clicked lothal and then clicked the x."** Indian History 0003's
+    `map-locate` had `data-choices` with place names on the buttons, so the answer was a label to click, not a place to know.
+    Fix: dropped the choices (click the map); rule 23.
+24. **2026-10-07 · "Did you expect me to actually read the paper? I just read the article you linked."** I marked down the
+    learner's "pooling DNA is bad science" using details from the *Cell* paper. The linked article (The Week) quotes Reich on
+    "pooling" data sets without saying they came from one skeleton, so the learner's reading was fair. Fix: regraded 0.6 → 0.75, then 0.85
+    after the learner pointed out the answer did address the result (rejected it as pooled); rule 24.
+25. **2026-10-07 · "What was I supposed to say with this? … The point of this study didn't differentiate between invasion and
+    migration, the point was to reject both."** The claim-headline rubric required "distinguish invasion from migration", but the
+    prompt only asked what the evidence supports. The learner's answer ("the Aryans arrived centuries later") already implied it.
+    Fix: objective → Got it, regraded 0.9, re-teach dropped; rule 25.

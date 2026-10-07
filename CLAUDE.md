@@ -28,12 +28,15 @@ BOOKS_URL=https://books.tail59e10.ts.net
   Plan so a day's work fits in that hour (short lessons + review, not one long one), and offer more when I have more time.
 - Active topics (keep ~3 + a game): **Economics, Statistics** (start with a placement pretest; I have a math degree that included stats),
   **Indian History**, plus chess or Go on the side. Full wishlist: `notes/learning-wishlist.md`.
-- Two kinds of goals: **career** (Statistics, ML/AI, AWS ML-track certification, NASM-CPT exam) and **"good for the soul"**
+- Two kinds of goals: **career** (Statistics, the Engineering career major `topics/eng/` incl. the AWS ML cert, NASM-CPT exam) and **"good for the soul"**
   (Indian History, Economics, games, arts...). Keep both in each week; exam prep is deadline-driven, so ask me for exam dates.
   I can supply study materials (prep books, practice exams) for the certifications.
 - **No generated art or images.** Don't draw illustrations or decorative graphics yourself. If a lesson needs a picture, ask me
   (I'll supply it) or pull one from the web or my books, credited. Data-driven visuals (plots of formulas, game boards from
   positions, timelines from dates, maps from open map data) are fine unless I say otherwise.
+- **The point is learning what I want to learn, not completing a college major.** Majors are just an organizing tool: keep what helps
+  (book order, prerequisites, pretests, review) and deviate whenever there's real value in it (follow my interests, reorder, skip,
+  add a tangent). Say so briefly when you deviate; don't ask permission for small changes.
 - **Each subject is a major**, not a single course: plan it as a multi-course program (prerequisites, courses, placement),
   even for non-academic subjects like chess.
 - Fun subject: **the Games major** (`topics/games/PROGRAM.md`), replacing chess as a standalone major; **chess is its first class**
@@ -45,6 +48,26 @@ BOOKS_URL=https://books.tail59e10.ts.net
   extra time beyond the 1-hour floor is welcome after that.
 - Chess.com username: rahulsanjay18 (I rarely play online). No Go account; I don't play Go online.
 
+## Program layer (/program)
+- This is a **general learning platform**: the majors in `programs.json` come first, but I'll ask for other subjects too. Every major
+  (new or revised) follows `notes/major-design.md` (shape adapted from NYU Gallatin, but **this is assisted textbook reading, not a
+  college**): a core sequence of books is the major; levels I (≈ undergraduate) and II (≈ graduate, opt-in); breadth, practice,
+  capstones and an end-of-level conversation are optional extras, never requirements. Keep a "books needed" list; ask me for books.
+- **A major is a DAG of books** (2026-10-06): each course is a block of one primary book (plus secondary/tertiary/skip in
+  `curriculum.json` → `books`), lessons follow that book and use its exercises; Games gets more discretion. `notes/major-design.md`.
+- `/program` runs the majors: it prints today's plan and where each major stands (`programs.json` + `topics/<major>/curriculum.json`
+  + the progress server), then teaches with /teach conventions. Start a learning session with it.
+- After every lesson, update the major's `curriculum.json` (`lessons`, `plan`, `completed`) and run `python3 scripts/test_programs.py`.
+
+## Engineering career major (`topics/eng/`, 2026-10-07)
+- **Everything job-related lives here** (staff skills, AWS cert, C/C++/CUDA, Spark, career extras, safety net); it replaced the aws-ml major.
+- Continuous, two lanes (Staff + Tech). Every lesson ends with a **required rep** from my 3D chess backlog (`topics/eng/backlog.json`):
+  the next lesson in that lane waits until it ships (PR/doc link) or I skip it with a reason. This overrides "homework is optional" for this major only.
+- **You write the code; I do the staff-level work** (design docs, ADRs, decisions, review). When the code is the skill (C, C++, CUDA, Spark), I write it.
+- Every lesson opens with a Vim drill; check my keystrokes with `python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> "<keys>"`.
+- 3D chess repos: rahulsanjay18/3dChessInC, 3dChessRLAgent, 3dChessWeb, 3dChessServer, 3dChessInfra, 3dChessRelay, 3dChessDesktop.
+  Re-check a ticket on GitHub before assigning it; ask before filing new issues.
+
 ## Handoff
 - `notes/HANDOFF.md`: current state and to-do list across all topics and the platform. Read it at the start of a new thread; keep it current.
 
@@ -52,15 +75,36 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - `TEACHING-LOG.md` at the repo root lists past teaching mistakes and the rules that prevent them, across all subjects. Read it
   before writing a lesson. When my questions or results reveal a flaw in an explanation or lesson, add an entry and a rule.
 - Each topic keeps a `QUESTIONS.md`: my questions with the answers given.
+- **Don't hand-track what a service or script already knows (2026-10-06).** Progress, completion, scores and review due dates come from
+  the progress server and `status.py`; never copy them into notes, HANDOFF or curriculum.json (`completed` only for pasted results
+  when sync is off). Keep HANDOFF to what no service knows: decisions, open questions, plans. Prefer automating over noting.
+- **Syllabus + mastery grading (2026-10-06):** each major has `topics/<major>/SYLLABUS.md` (readings and 2–3 objectives per lesson,
+  planned ahead). Grade each objective Got it / Not yet and extend lessons only for a real gap, never for a thin answer: TEACHING-LOG rule 20.
+  I'm relying on you to set that line.
 - **Lesson design, all subjects:** assign a reading before the lesson whenever it makes sense (a short, specific primary-source slice
   with a reading guide). **Homework is fine but optional**: keep it small, and make every lesson work even if I skipped it
   (I'm not sure how much I'll do). Details: TEACHING-LOG.md rules 9 and 13.
 
-## Progress server (once deployed: `$BOOKS_URL/progress`, see `progress-server/README.md`)
-- At the start of a teaching session, `curl -s "$BOOKS_URL/progress/status"` (auth is injected) for a ~15-line digest; use
-  `/progress/summary?topic=<slug>` for one topic and `/progress/ungraded` + `POST /progress/grades` to grade free responses.
-- If it isn't reachable yet, fall back to `lp-results` lines I paste.
+## Progress server (`$BOOKS_URL/progress`, see `progress-server/README.md`)
+- Session start: `/program` shows the digest (it calls `/progress/status`). Grade waiting free responses with
+  `python3 scripts/grade.py` (answer + prompt + rubric), then `python3 scripts/grade.py post grades.json`.
+- If I paste `lp-results …` lines: `python3 scripts/lp_results.py "<lines>"` records them in the curriculum; then decide on a learning record.
+- If the server is unreachable, fall back to `lp-results` lines I paste.
 - To pair a device: `POST /progress/devices {"name":"phone"}` and give me `<PAGES_URL>/assets/sync.html#endpoint=$BOOKS_URL/progress&token=<token>`.
+
+## Tools: use these by default (they exist to save tokens; don't hand-roll what they do)
+| Job | Use |
+|---|---|
+| Start a learning session / what's next | the `/program` skill |
+| Write a lesson | Markdown + `python3 scripts/render_lesson.py topics/<t>/lessons/NNNN-x.md --course <ID>` (never hand-write lesson HTML) |
+| Grade free responses | `python3 scripts/grade.py`, then `grade.py post grades.json` |
+| Record pasted results | `python3 scripts/lp_results.py "<lp-results lines>"` |
+| Look things up in my books | `python3 scripts/books.py find / search --book <id> / grep <id> "<phrase>" / read <id> <line> <n>` |
+| Quick review in chat | the `/quiz-me` skill (`scripts/quiz.py`) |
+| A game I played | the `/game-review` skill |
+| I added books | the `/new-books` skill (`scripts/new_books.py`; server steps in `library/ADDING-BOOKS.md`) |
+| Before committing | `bash scripts/check_all.sh --quick` (drop `--quick` after widget changes) |
+| Widget markup | `assets/README.md` (don't read the JS source) |
 
 ## Shared lesson library (overrides the skill's per-topic `./assets/` guidance)
 - All lessons and reference pages use the shared files in `assets/` at the repo root: `lp.css`, `lp.js`, and `assets/plugins/*` for
@@ -68,9 +112,10 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - Never create a per-topic copy of a stylesheet or quiz script. Topic-only styles go in `topics/<slug>/assets/topic.css`.
   A widget another topic could reuse goes in `assets/` (generic) or `assets/plugins/` (subject-specific), and gets an example in `assets/gallery.html`.
 - Keep CSS plain and quiet (one column, serif text, thin rules; no shadows, gradients or animation).
-- Give every quiz a short `data-id`. Before committing a lesson run `python3 scripts/lint_lessons.py` and `node scripts/test_widgets.mjs`.
+- **Write new lessons in Markdown** and render them: `python3 scripts/render_lesson.py topics/<t>/lessons/NNNN-x.md --course <ID>` (syntax: assets/README.md "Writing lessons in Markdown"). It also updates index.html and curriculum.json.
+- Give every quiz a short `data-id`. Before committing run `bash scripts/check_all.sh` (all suites, one line each). Token-saving tools (grading packets, book lookups, results recording): the table in `.claude/skills/program/SKILL.md`.
 - Daily review (`assets/review.html`) re-asks due questions from their lessons. Keep quiz `data-id`s stable; put a needed diagram right before its quiz (or use `data-context`).
-- If I paste an `lp-results …` line, it's my results from a lesson: use it for learning records and to choose what's next.
+- If I paste an `lp-results …` line, it's my results from a lesson: record it with `scripts/lp_results.py`, then use it for learning records and to choose what's next.
 
 ## My library (check before searching the web)
 - Read `library/README.md` before using anything in `library/` or the book server, and follow it exactly. It says

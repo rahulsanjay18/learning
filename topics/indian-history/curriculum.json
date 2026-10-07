@@ -1,0 +1,316 @@
+{
+  "major": "indian-history",
+  "program": "topics/indian-history/PROGRAM.md",
+  "spine": "Kulke & Rothermund, A History of India (grade A, in collection)",
+  "rules": [
+    "One lesson = one block: reading slice with a guide, story + timeline + map, one primary source, a 'why did this happen?' question.",
+    "Every unit (~5 lessons) ends with a unit check, a ~300-word historian's answer, and a debate paired with a present-day public claim."
+  ],
+  "courses": [
+    {
+      "id": "IH000",
+      "title": "Placement",
+      "status": "done",
+      "lessons": [
+        "0001-placement-pretest"
+      ],
+      "completed": [
+        "0001-placement-pretest"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "IH100",
+      "title": "The whole arc (environment to Republic)",
+      "source": "K&R Introduction + one lesson per chapter",
+      "status": "active",
+      "requires": [
+        "IH000"
+      ],
+      "est_lessons": 16,
+      "lessons": [
+        "0002-the-land-and-the-long-view",
+        "0003-the-indus-cities"
+      ],
+      "plan": [
+        "0004 Indo-Aryans and the Vedic age (SYLLABUS.md)",
+        "0005 Cities, the Buddha and the first empire",
+        "0006 Ashoka",
+        "0007 The Guptas and the 'Golden Age'",
+        "0008 Early medieval India: kings, temples, bhakti",
+        "0009 The Delhi Sultanate",
+        "0010 Babur and Akbar",
+        "0011 Aurangzeb, Shivaji and the Europeans",
+        "0012 Company rule, the colonial economy, 1857",
+        "0013 Gandhi and the freedom movement",
+        "0014 Partition",
+        "0015 The Republic",
+        "0016 IH100 check"
+      ],
+      "completed": [
+        "0002-the-land-and-the-long-view",
+        "0003-the-indus-cities"
+      ],
+      "group": "core",
+      "level": "I",
+      "books": {
+        "primary": "621b57ff65 Kulke & Rothermund, A History of India: one key section per chapter (SYLLABUS.md)",
+        "secondary": [
+          "primary sources quoted in K&R (Rigveda, Ashokan edicts, Alberuni, Baburnama, Gandhi 1922, Nehru 1947)"
+        ],
+        "tertiary": [
+          "published papers and reporting for the 'judge a public claim' boxes (cited per lesson)",
+          "Wikipedia infoboxes for map coordinates"
+        ],
+        "skip": [
+          "New Cambridge History volumes: era depth belongs to IH201-206"
+        ]
+      }
+    },
+    {
+      "id": "IH201",
+      "title": "Ancient India",
+      "source": "K&R Ch. 1-2",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "IH202",
+      "title": "Early medieval and medieval",
+      "source": "K&R Ch. 3-4",
+      "status": "later",
+      "requires": [
+        "IH201"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "IH203",
+      "title": "The Mughals",
+      "source": "K&R Ch. 5",
+      "status": "later",
+      "requires": [
+        "IH202"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "IH204",
+      "title": "Colonial India",
+      "source": "K&R Ch. 6",
+      "status": "later",
+      "requires": [
+        "IH203"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "IH205",
+      "title": "Freedom and Partition",
+      "source": "K&R Ch. 7",
+      "status": "later",
+      "requires": [
+        "IH204"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "IH206",
+      "title": "The Republic",
+      "source": "K&R Ch. 8",
+      "status": "later",
+      "requires": [
+        "IH205"
+      ],
+      "group": "core",
+      "level": "I"
+    },
+    {
+      "id": "IH150",
+      "title": "How historians work: sources, evidence, historiography",
+      "group": "core",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "est_lessons": 4,
+      "source": "Digital Inquiry Group, Reading Like a Historian (free online); K&R Introduction"
+    },
+    {
+      "id": "IH310",
+      "title": "Breadth: religion and philosophy across eras",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "source": "Buddhism, Hinduism, Indian Philosophy VSIs (in collection); Dasgupta, A History of Indian Philosophy (in collection)"
+    },
+    {
+      "id": "IH320",
+      "title": "Breadth: war and the state (links Games G150)",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ]
+    },
+    {
+      "id": "IH330",
+      "title": "Breadth: economic history (links Economics)",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "note": "source to choose; ask for a book"
+    },
+    {
+      "id": "IH340",
+      "title": "Breadth: art, architecture and literature",
+      "group": "breadth",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "source": "New Cambridge History: Mughal and Rajput Painting (in collection); Mahabharata (Debroy) (in collection)"
+    },
+    {
+      "id": "IH390",
+      "title": "Practice: sites, museums and a family oral history",
+      "group": "practice",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH150"
+      ],
+      "note": "heritage aim in MISSION.md: interview a relative about Partition-era or family history; visit a museum collection"
+    },
+    {
+      "id": "IH398",
+      "title": "Level I colloquium",
+      "group": "colloquium",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH206",
+        "IH150"
+      ]
+    },
+    {
+      "id": "IH400",
+      "title": "Level I capstone: research essay",
+      "group": "capstone",
+      "level": "I",
+      "status": "later",
+      "requires": [
+        "IH206"
+      ],
+      "note": "~20 pages on a question the learner chooses, several sources"
+    },
+    {
+      "id": "IH510",
+      "title": "Historiography seminar: Orientalist, nationalist, Marxist, Cambridge and Subaltern schools",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH206"
+      ],
+      "note": "books to choose and request"
+    },
+    {
+      "id": "IH520",
+      "title": "Primary sources in translation: Ashokan edicts, Arthashastra, Baburnama, Ain-i-Akbari, colonial records",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH206"
+      ]
+    },
+    {
+      "id": "IH530",
+      "title": "Regional histories (South India, Bengal, Punjab, the Deccan)",
+      "group": "core",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH206"
+      ],
+      "source": "New Cambridge History volumes (several in collection)"
+    },
+    {
+      "id": "IH540",
+      "title": "Partition and memory",
+      "group": "elective",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH510"
+      ],
+      "source": "Manto (in collection); oral-history archives"
+    },
+    {
+      "id": "IH550",
+      "title": "Elective: a source language (Sanskrit or Persian basics)",
+      "group": "elective",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH520"
+      ],
+      "note": "optional; only if the learner wants it"
+    },
+    {
+      "id": "IH596",
+      "title": "Research practicum: an original question from primary sources",
+      "group": "practice",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH510",
+        "IH520"
+      ]
+    },
+    {
+      "id": "IH598",
+      "title": "Level II colloquium",
+      "group": "colloquium",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH596"
+      ]
+    },
+    {
+      "id": "IH599",
+      "title": "Level II capstone thesis (~40 pages)",
+      "group": "capstone",
+      "level": "II",
+      "status": "later",
+      "requires": [
+        "IH596"
+      ]
+    }
+  ],
+  "design": "notes/major-design.md",
+  "levels": {
+    "I": "≈ BA-level reading: the arc, how historians work, the eras (K&R). Extras optional.",
+    "II": "≈ graduate reading: historiography, primary sources in translation, regional histories. Extras optional."
+  }
+}

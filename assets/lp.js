@@ -7,7 +7,7 @@
   var SELF = document.currentScript ? document.currentScript.src : location.href;
   var regs = [], started = false;
   var total = 0, answered = 0, firstTryRight = 0, bar = null;
-  var missed = [], skipped = [], freeAnswers = [];
+  var missed = [], skipped = [], guessed = [], freeAnswers = [];
 
   // ---------- page identity + item IDs ----------
   var m = location.pathname.match(/\/topics\/([^\/]+)\/(lessons|reference)\/([^\/]+?)(\.html)?$/);
@@ -45,6 +45,12 @@
   // up to date on every answer, so it survives the log being emptied by sync. Read by assets/review.html.
   var INTERVALS = [1, 3, 7, 16, 35, 80, 180];
   function schedApply(sched, ev) {
+    if (ev.type === "confidence" && ev.value === "guessed" && ev.item && sched[ev.item]) {   // right by luck = not known yet
+      var g = sched[ev.item];
+      g.box = 0; g.lapses = (g.lapses || 0) + 1; g.last = ev.ts;
+      g.due = new Date(new Date(ev.ts).getTime() + INTERVALS[0] * 864e5).toISOString();
+      return;
+    }
     if (ev.type !== "attempt" || !ev.item || ev.correct == null || ev.kind === "deferred") return;
     var r = sched[ev.item] || { box: -1, reps: 0, lapses: 0 };
     if (ev.correct) r.box = Math.min(r.box + 1, INTERVALS.length - 1);
@@ -107,6 +113,7 @@
         if (kind === "deferred") freeAnswers.push({ id: id, answer: answer });
         updateBar();
         LP.emit({ type: "attempt", item: id, widget: reg.type, kind: kind || "auto", correct: ok, answer: answer == null ? null : String(answer).slice(0, 4000) });
+        if (ok === true && (kind || "auto") === "auto" && confidenceOn(el)) setTimeout(function () { addConfidence(el, id); }, 0);
       },
       feedback: function (ok, explainOrMsg) { feedback(el, ok, explainOrMsg); }
     };
@@ -124,6 +131,31 @@
     var explain = q.querySelector(":scope > .explain");
     if (ok && explain) { fb.appendChild(explain); explain.hidden = false; }
     if (!ok) fb.appendChild(document.createTextNode(typeof extra === "string" ? extra : q.dataset.hint || "Look again and try once more."));
+  }
+
+  // "How sure were you?" after a first-try right answer. On for pretests (<main data-skip="true">) and wherever
+  // data-confidence="true" is set (on <main> or one quiz); data-confidence="false" turns it off. "I guessed" counts the
+  // item as not known: it leaves "right first try", is listed as guessed, and comes back in review tomorrow.
+  function confidenceOn(q) {
+    var host = q.closest("[data-confidence]");
+    if (host) return host.dataset.confidence === "true";
+    return !!q.closest('[data-skip="true"]');
+  }
+  function addConfidence(q, id) {
+    if (q.querySelector(":scope > .confrow")) return;
+    var row = el("div", "confrow"), knew = el("button", "conf", "I knew it"), guess = el("button", "conf", "I guessed");
+    row.appendChild(el("span", "conflabel", "How sure were you? "));
+    [knew, guess].forEach(function (b) {
+      b.addEventListener("click", function () {
+        var g = b === guess;
+        LP.emit({ type: "confidence", item: id, value: g ? "guessed" : "knew" });
+        if (g) { firstTryRight--; guessed.push(id.replace(/^.*#/, "")); updateBar(); }
+        row.textContent = g ? "Noted: a lucky guess counts as not known yet, so it comes back in tomorrow's review." : "";
+        if (!g) row.remove();
+      });
+      row.appendChild(b);
+    });
+    q.appendChild(row);
   }
 
   // ---------- registry ----------
@@ -156,7 +188,7 @@
   // "I don't know" button, for pretests: <main data-skip="true"> (or on one .quiz). Counts as not known, reveals the answer.
   function addSkip(q, ctx) {
     var host = q.closest("[data-skip]");
-    if (!host || host.dataset.skip === "false" || q.dataset.type === "checklist") return;
+    if (!host || host.dataset.skip === "false" || q.dataset.type === "checklist" || q.dataset.type === "card") return;
     var row = el("div", "skiprow"), b = el("button", "skip", "I don't know"), triedWrong = false;
     b.addEventListener("click", function () {
       // Before any attempt this is a skip (scored as not known). After a wrong try the miss is already
@@ -199,13 +231,20 @@
     s = String(s).trim().replace(/\s+/g, " ");
     return caseSensitive ? s : s.toLowerCase();
   }
-  // True if `given` matches any accepted answer (text, or number within tolerance).
+  // A plain number ("0.375", "1,000", "2e3") or a simple fraction ("3/8", "-1/2"); NaN otherwise.
+  function num(t) {
+    var n = /^[-+]?[\d.,]+(e[-+]?\d+)?$/i, f = /^([-+]?[\d.]+)\s*\/\s*([\d.]+)$/.exec(t);
+    if (n.test(t)) return parseFloat(t.replace(/,/g, ""));
+    if (f && parseFloat(f[2]) !== 0) return parseFloat(f[1]) / parseFloat(f[2]);
+    return NaN;
+  }
+  // True if `given` matches any accepted answer (text, or number within tolerance; fractions count as numbers).
   function matches(given, accepted, opts) {
     opts = opts || {};
     var g = norm(given, opts.caseSensitive);
     return accepted.some(function (a) {
-      var gn = parseFloat(g.replace(/,/g, "")), an = parseFloat(String(a).replace(/,/g, ""));
-      var numeric = /^[-+]?[\d.,]+(e[-+]?\d+)?$/i.test(g) && /^[-+]?[\d.,]+(e[-+]?\d+)?$/i.test(String(a).trim());
+      var gn = num(g), an = num(String(a).trim());
+      var numeric = !isNaN(gn) && !isNaN(an);
       if (numeric && !isNaN(gn) && !isNaN(an)) return Math.abs(gn - an) <= (opts.tolerance || 0) + 1e-9;
       return g === norm(a, opts.caseSensitive);
     });
@@ -279,6 +318,50 @@
       });
     });
     beforeExplain(q, ta); beforeExplain(q, reveal);
+  } });
+
+  // Flashcard: front = .prompt, back = .explain. Show answer, then mark yourself. Self-marked, so no confidence step.
+  LP.register({ type: "card", init: function (q, ctx) {
+    var explain = q.querySelector(":scope > .explain");
+    var row = el("div", "choices reveal"), show = el("button", null, "Show answer");
+    row.appendChild(show);
+    show.addEventListener("click", function () {
+      if (explain) { explain.hidden = false; explain.classList.add("card-back"); }
+      show.remove();
+      var got = el("button", null, "I knew it"), miss = el("button", null, "I didn't");
+      [got, miss].forEach(function (b) {
+        b.addEventListener("click", function () {
+          ctx.result(b === got, null, "self");
+          b.classList.add(b === got ? "right" : "wrong");
+          got.disabled = miss.disabled = true;
+        });
+        row.appendChild(b);
+      });
+    });
+    q.appendChild(row);
+  } });
+
+  // Deck: <div class="lp-deck"> holding card quizzes. Shows one card at a time with a counter; a summary at the end.
+  LP.register({ type: "deck", selector: ".lp-deck", scored: false, init: function (deck) {
+    var cards = Array.prototype.slice.call(deck.querySelectorAll(':scope > .quiz[data-type="card"]'));
+    if (!cards.length) return;
+    var i = 0, known = 0, counter = el("p", "deck-count"), next = el("button", "deck-next", "Next card"), end = el("p", "deck-end");
+    next.hidden = true; end.hidden = true;
+    deck.insertBefore(counter, deck.firstChild); deck.appendChild(next); deck.appendChild(end);
+    function show() {
+      cards.forEach(function (c, k) { c.hidden = k !== i; });
+      counter.textContent = "Card " + (i + 1) + " of " + cards.length;
+      next.hidden = true;
+    }
+    document.addEventListener("lp:event", function (e) {
+      var d = e.detail, c = cards[i];
+      if (!c || d.type !== "attempt" || !d.item || d.item.replace(/^.*#/, "") !== c.dataset.id) return;
+      if (d.correct) known++;
+      if (i < cards.length - 1) next.hidden = false;
+      else { end.hidden = false; end.textContent = "Deck done: " + known + " of " + cards.length + " known. Cards you didn't know come back in the daily review."; }
+    });
+    next.addEventListener("click", function () { i++; show(); });
+    show();
   } });
 
   // Fill in the blanks: write [[answer|alternative]] inside .prompt (or .text). One Check button for all blanks.
@@ -452,6 +535,104 @@
     w.appendChild(b);
   } });
 
+  // Calibration estimate: give a range you're N% sure contains the answer. data-answer="1526" [data-level="90"]
+  // [data-unit="years"] [data-max-width="100"]. Right = the range contains the answer (and is no wider than data-max-width,
+  // if set). Every range also feeds a running calibration score kept in this browser (lp.calibration).
+  LP.register({ type: "estimate", init: function (q, ctx) {
+    var ans = parseFloat(q.dataset.answer), level = parseFloat(q.dataset.level || "90"), maxW = parseFloat(q.dataset.maxWidth);
+    if (isNaN(ans)) throw new Error("estimate needs a numeric data-answer");
+    var row = el("div", "actions est"), lo = el("input"), hi = el("input"), b = el("button", null, "Check");
+    [lo, hi].forEach(function (x, i) { x.type = "text"; x.inputMode = "decimal"; x.size = 8; x.setAttribute("aria-label", i ? "high" : "low"); });
+    var unit = q.dataset.unit ? " " + q.dataset.unit : "";
+    row.appendChild(document.createTextNode("I'm " + level + "% sure it's between ")); row.appendChild(lo);
+    row.appendChild(document.createTextNode(" and ")); row.appendChild(hi);
+    row.appendChild(document.createTextNode(unit + " ")); row.appendChild(b);
+    var cal = el("p", "est-cal"); cal.hidden = true;
+    function num(s) { return parseFloat(String(s).replace(/[,\s]/g, "")); }
+    b.addEventListener("click", function () {
+      var a = num(lo.value), z = num(hi.value);
+      if (isNaN(a) || isNaN(z)) { ctx.feedback(false, "Type two numbers: a low and a high end."); return; }
+      if (a > z) { var t = a; a = z; z = t; }
+      var inside = a <= ans && ans <= z, narrow = isNaN(maxW) || z - a <= maxW, ok = inside && narrow;
+      var c = { n: 0, hits: 0 };
+      try { c = JSON.parse(store("lp.calibration") || "null") || c; } catch (e) {}
+      c.n++; if (inside) c.hits++; store("lp.calibration", JSON.stringify(c));
+      ctx.result(ok, a + " to " + z);
+      b.disabled = lo.disabled = hi.disabled = true;
+      var msg = "The answer is " + ans + unit + ". " + (inside ? (narrow ? "" : "Your range contained it but is wider than " + maxW + unit + ", too wide to be useful. ") : "Your range missed it. ");
+      ctx.feedback(ok, ok ? null : msg);
+      cal.hidden = false;
+      cal.textContent = (ok ? "The answer is " + ans + unit + ". " : "") + "Your calibration so far: " + c.hits + " of " + c.n + " ranges contained the truth (" +
+        Math.round(100 * c.hits / c.n) + "%). Aim: about " + level + "%." + (c.n >= 10 && c.hits / c.n < level / 100 - 0.15 ? " You're overconfident: widen your ranges." : "");
+    });
+    beforeExplain(q, row); q.appendChild(cal);
+  } });
+
+  // Find the error: click the step that's wrong. Steps as <ol class="steps"><li>…</li></ol> inside the quiz (or data-steps="a|b|c").
+  // data-answer = the wrong step's number (1-based).
+  LP.register({ type: "find-error", init: function (q, ctx) {
+    var ans = parseInt(q.dataset.answer, 10), list = q.querySelector(":scope > ol.steps");
+    if (!list) {
+      list = el("ol", "steps");
+      split(q.dataset.steps).forEach(function (s) { list.appendChild(el("li", null, s)); });
+      beforeExplain(q, list);
+    }
+    var items = Array.prototype.slice.call(list.children), done = false;
+    if (!(ans >= 1 && ans <= items.length)) throw new Error("find-error: data-answer must be a step number 1.." + items.length);
+    list.classList.add("lp-steps");
+    items.forEach(function (li, i) {
+      li.tabIndex = 0; li.setAttribute("role", "button");
+      function pick() {
+        if (done || li.classList.contains("fine")) return;
+        var ok = i + 1 === ans;
+        ctx.result(ok, "step " + (i + 1));
+        if (ok) { done = true; li.classList.add("wrongstep"); ctx.feedback(true, null); }
+        else { li.classList.add("fine"); ctx.feedback(false, "Step " + (i + 1) + " is fine. " + (q.dataset.hint || "Check each step's justification.")); }
+      }
+      li.addEventListener("click", pick);
+      li.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+    });
+  } });
+
+  // Highlight the evidence: in <div class="passage">, mark the right segments [[like this]]. The rest is split into sentences.
+  // The learner clicks segments to select them and presses Check. Right = exactly the marked segments.
+  LP.register({ type: "highlight", init: function (q, ctx) {
+    var host = q.querySelector(".passage");
+    if (!host) throw new Error("highlight needs a <div class=\"passage\"> with [[marked]] segments");
+    var segs = [], walker = document.createTreeWalker(host, NodeFilter.SHOW_TEXT), nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      var frag = document.createDocumentFragment();
+      node.nodeValue.split(/(\[\[.+?\]\])/).forEach(function (p) {
+        var mm = p.match(/^\[\[(.+)\]\]$/);
+        var pieces = mm ? [mm[1]] : p.split(/(?<=[.!?;:])\s+/);
+        pieces.forEach(function (t, k) {
+          if (!t.trim()) { if (t) frag.appendChild(document.createTextNode(t)); return; }
+          var s = el("span", "hl-seg", t); s.tabIndex = 0;
+          segs.push({ el: s, right: !!mm });
+          s.addEventListener("click", function () { if (!s.classList.contains("locked")) s.classList.toggle("on"); });
+          s.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); s.click(); } });
+          frag.appendChild(s);
+          if (!mm && k < pieces.length - 1) frag.appendChild(document.createTextNode(" "));
+        });
+      });
+      node.parentNode.replaceChild(frag, node);
+    });
+    if (!segs.some(function (s) { return s.right; })) throw new Error("highlight: mark at least one segment with [[ ]]");
+    var box = el("div", "actions"), b = el("button", null, "Check");
+    b.addEventListener("click", function () {
+      var picked = segs.filter(function (s) { return s.el.classList.contains("on"); });
+      if (!picked.length) { ctx.feedback(false, "Click the sentences that are your evidence first."); return; }
+      var missing = segs.filter(function (s) { return s.right && !s.el.classList.contains("on"); }).length;
+      var extra = picked.filter(function (s) { return !s.right; }).length, ok = !missing && !extra;
+      ctx.result(ok, picked.map(function (s) { return s.el.textContent.slice(0, 40); }).join(" / "));
+      if (ok) { segs.forEach(function (s) { s.el.classList.add("locked"); }); b.disabled = true; ctx.feedback(true, null); }
+      else ctx.feedback(false, (missing ? missing + " piece" + (missing > 1 ? "s" : "") + " of evidence still unselected. " : "") +
+        (extra ? extra + " selected piece" + (extra > 1 ? "s don't" : " doesn't") + " support the claim. " : "") + (q.dataset.hint || ""));
+    });
+    box.appendChild(b); beforeExplain(q, box);
+  } });
+
   // ---------- lesson footer: rating, note, copy results, sync ----------
   var statusEl = null;
   function setStatus(t) { if (statusEl) statusEl.textContent = t; }
@@ -461,6 +642,7 @@
     if (answered < total) parts.push((total - answered) + " unanswered");
     if (missed.length) parts.push("missed: " + missed.join(","));
     if (skipped.length) parts.push("skipped: " + skipped.join(","));
+    if (guessed.length) parts.push("guessed: " + guessed.join(","));
     if (LP.rating) parts.push("rating: " + LP.rating);
     if (LP.note) parts.push("note: " + LP.note.replace(/\s+/g, " "));
     var s = parts.join(" | ");

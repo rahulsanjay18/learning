@@ -1,0 +1,89 @@
+{
+  "about": "Program layer above /teach. Read by .claude/skills/program/scripts/status.py. Human plan: notes/study-plan.md. Edit freely; run python3 scripts/test_programs.py after. enrolled_levels: Level II is opt-in per major (the learner enrolls separately after or alongside Level I). Parked entries may carry a full curriculum (designed, not scheduled); the tests and DAGs cover them too.",
+  "timezone": "America/New_York",
+  "review": "assets/review.html",
+  "week": {
+    "mon": [
+      "statistics",
+      "eng"
+    ],
+    "tue": [
+      "statistics",
+      "indian-history"
+    ],
+    "wed": [
+      "eng",
+      "statistics"
+    ],
+    "thu": [
+      "eng",
+      "games"
+    ],
+    "fri": [
+      "statistics",
+      "eng"
+    ],
+    "sat": [
+      "indian-history",
+      "games"
+    ],
+    "sun": []
+  },
+  "majors": [
+    {
+      "slug": "statistics",
+      "name": "Statistics",
+      "weight": "full",
+      "goal": "career",
+      "curriculum": "topics/statistics/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ]
+    },
+    {
+      "slug": "eng",
+      "name": "Engineering career (staff, AWS, C/C++/CUDA, on 3D chess)",
+      "weight": "full",
+      "goal": "career",
+      "curriculum": "topics/eng/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "The single home for everything job-related (learner, 2026-10-07): staff skills, AWS (old aws-ml major folded in), C/C++/CUDA, Spark, career extras and the safety net. Reps come from the 3D chess backlog (topics/eng/backlog.json)."
+    },
+    {
+      "slug": "indian-history",
+      "name": "Indian History",
+      "weight": "half",
+      "goal": "soul",
+      "curriculum": "topics/indian-history/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ]
+    },
+    {
+      "slug": "games",
+      "name": "Games",
+      "weight": "half",
+      "goal": "fun",
+      "curriculum": "topics/games/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ]
+    }
+  ],
+  "parked": [
+    {
+      "slug": "economics",
+      "note": "Principles solid (13/13). Resume at intermediate level."
+    },
+    {
+      "slug": "nasm-cpt",
+      "note": "Deadline-driven: ask for the exam date."
+    },
+    {
+      "slug": "pixel-art",
+      "note": "One lesson so far; on the wishlist."
+    }
+  ]
+}

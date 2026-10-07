@@ -1,0 +1,30 @@
+/* Shogi plugin styles (assets/plugins/shogi.js). Load after assets/lp.css. */
+:root { --sg-board: #e8c97a; --sg-line: #4a3515; --sg-piece: #f6e3b4; --sg-ink: #1d1d1b; --sg-promoted: #b3261e; }
+@media (prefers-color-scheme: dark) { :root { --sg-board: #c4a65e; --sg-line: #2e200a; --sg-piece: #efd9a5; } }
+.shogi-board { margin: 1.2rem 0; }
+.sg-box { width: min(100%, 24rem); }
+.sg-svg { display: block; width: 100%; height: auto; user-select: none; }
+.sg-boardbg { fill: var(--sg-board); }
+.sg-grid line { stroke: var(--sg-line); stroke-width: 1; }
+.sg-star { fill: var(--sg-line); }
+.sg-coord, .sg-handlabel { font: 600 10px system-ui, sans-serif; fill: var(--muted); }
+.sg-hit { fill: transparent; }
+.sg-sq.live, .sg-hand.live { cursor: pointer; }
+.sg-pc polygon { fill: var(--sg-piece); stroke: var(--sg-line); stroke-width: 1; }
+.sg-pc text { font: 600 18px "Noto Serif CJK JP", "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif; fill: var(--sg-ink); pointer-events: none; }
+.sg-pc text.latin { font: 700 14px system-ui, sans-serif; }
+.sg-pc.promoted text { fill: var(--sg-promoted); }
+.sg-count { font: 700 11px system-ui, sans-serif; fill: var(--fg); }
+.sg-sel { fill: none; stroke: var(--accent); stroke-width: 3; }
+.sg-hl { fill: rgba(255, 214, 0, .45); }
+.sg-last { fill: rgba(138, 59, 18, .18); }
+.sg-dot { fill: var(--accent); opacity: .8; pointer-events: none; }
+.sg-cap { fill: none; stroke: var(--accent); stroke-width: 2.5; pointer-events: none; }
+.sg-arrow { stroke: rgba(21, 101, 192, .8); stroke-width: 5; stroke-linecap: round; pointer-events: none; }
+.sg-arrowhead { fill: rgba(21, 101, 192, .8); pointer-events: none; }
+.sg-legend, .sg-caption { font-size: .85rem; color: var(--muted); margin: .3rem 0; }
+.sg-status { margin: .3rem 0; }
+.sg-chooser { min-height: 0; margin: .3rem 0; }
+.sg-chooser button, .sg-controls button { font: inherit; font-size: .9rem; padding: .3rem .9rem; margin-right: .4rem; border: 1px solid var(--rule); background: var(--panel); color: var(--fg); cursor: pointer; }
+.sg-chooser button:hover, .sg-controls button:hover { border-color: var(--accent); }
+.sg-controls { display: flex; gap: .5rem; }

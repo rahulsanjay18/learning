@@ -1,0 +1,30 @@
+/* Xiangqi plugin styles (assets/plugins/xiangqi.js). Load after assets/lp.css. */
+:root { --xq-board: #f1dfb4; --xq-line: #5a4320; --xq-red: #b3261e; --xq-black: #1d1d1b; --xq-piece: #fbf3df; }
+@media (prefers-color-scheme: dark) { :root { --xq-board: #c9b48a; --xq-line: #3d2c14; --xq-red: #a3201a; --xq-piece: #f4ead2; } }
+.xq-board { margin: 1.2rem 0; }
+.xq-box { width: min(100%, 24rem); }
+.xq-svg { display: block; width: 100%; height: auto; background: var(--xq-board); border: 1px solid var(--rule); user-select: none; }
+.xq-lines line { stroke: var(--xq-line); stroke-width: 1; }
+.xq-river { font: italic 13px Georgia, serif; fill: var(--xq-line); opacity: .7; }
+.xq-coord { font: 600 10px system-ui, sans-serif; fill: var(--xq-line); opacity: .75; }
+.xq-hit { fill: transparent; }
+.xq-pt.live { cursor: pointer; }
+.xq-pc { fill: var(--xq-piece); stroke-width: 2; }
+.xq-pc.red { stroke: var(--xq-red); }
+.xq-pc.black { stroke: var(--xq-black); }
+.xq-pc.sel { stroke: var(--accent); stroke-width: 3.5; }
+.xq-ch { font: 600 20px "Noto Serif CJK SC", "Songti SC", "SimSun", "PingFang SC", "Microsoft YaHei", serif; pointer-events: none; }
+.xq-ch.latin { font: 700 16px system-ui, sans-serif; }
+.xq-ch.red { fill: var(--xq-red); }
+.xq-ch.black { fill: var(--xq-black); }
+.xq-dot { fill: var(--accent); opacity: .8; pointer-events: none; }
+.xq-cap { fill: none; stroke: var(--accent); stroke-width: 2.5; pointer-events: none; }
+.xq-hl { fill: rgba(255, 214, 0, .45); }
+.xq-last { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.xq-arrow { stroke: rgba(21, 101, 192, .8); stroke-width: 5; stroke-linecap: round; pointer-events: none; }
+.xq-arrowhead { fill: rgba(21, 101, 192, .8); pointer-events: none; }
+.xq-legend, .xq-caption { font-size: .85rem; color: var(--muted); margin: .3rem 0; }
+.xq-status { margin: .3rem 0; }
+.xq-controls { display: flex; gap: .5rem; }
+.xq-controls button { font: inherit; font-size: .9rem; padding: .3rem .9rem; border: 1px solid var(--rule); background: var(--panel); color: var(--fg); cursor: pointer; }
+.xq-controls button:hover { border-color: var(--accent); }

@@ -12,7 +12,8 @@ Never modifies your originals. Skips any book whose .md already exists.
   txt        -> copied as .md
 
 Usage:
-  python3 scripts/reconvert.py --books-root ~/Books --md-root ~/BooksMD                 # dry run, everything
+  python3 scripts/reconvert.py --books-root ~/Books --md-root ~/BooksMD --new --run     # convert books added since last time
+  python3 scripts/reconvert.py --books-root ~/Books --md-root ~/BooksMD                 # dry run, everything in RECONVERT.csv
   python3 scripts/reconvert.py --books-root ~/Books --md-root ~/BooksMD --only pdf --limit 3 --run
 Then re-run scripts/grade_library.py.
 """
@@ -61,9 +62,30 @@ def collect_marker(tmp, stem, dest):
             shutil.move(str(p), assets / p.name)
     return True
 
+TOOLS = {"ddjvu": "djvulibre-bin", "ebook-convert": "calibre", "pandoc": "pandoc", "marker_single": "pip install marker-pdf"}
+EXTS = (".pdf", ".djvu", ".azw3", ".mobi", ".epub", ".html", ".htm", ".docx", ".txt")
+
+def missing_tool(cmds):
+    for c in cmds:
+        if c[0] in TOOLS and not shutil.which(c[0]):
+            return f"missing tool {c[0]} (install: {TOOLS[c[0]]})"
+    return None
+
+def new_books(books_root, md_root):
+    """Books with no Markdown yet (same relative path, .md), as RECONVERT.csv-style rows."""
+    rows = []
+    for src in sorted(books_root.rglob("*")):
+        rel = src.relative_to(books_root)
+        if src.is_file() and src.suffix.lower() in EXTS and not (md_root / rel).with_suffix(".md").exists():
+            rows.append({"path": str(rel), "ext": src.suffix.lower()})
+    return rows
+
 def run(cmds):
     for c in cmds:
-        r = subprocess.run(c, capture_output=True, text=True)
+        try:
+            r = subprocess.run(c, capture_output=True, text=True)
+        except FileNotFoundError:
+            return False, [f"missing tool {c[0]}"]
         if r.returncode != 0:
             return False, (r.stderr or r.stdout).strip().splitlines()[-1:] or ["failed"]
     return True, []
@@ -76,9 +98,10 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--mode", choices=["fast", "balanced"], help="marker mode (default: balanced on GPU, fast on CPU)")
     ap.add_argument("--run", action="store_true")
+    ap.add_argument("--new", action="store_true", help="convert every book with no .md yet, instead of RECONVERT.csv")
     a = ap.parse_args()
     only = {"." + e.strip(". ").lower() for e in a.only.split(",") if e.strip()}
-    rows = list(csv.DictReader(open(LIB / "RECONVERT.csv", encoding="utf-8")))
+    rows = new_books(a.books_root, a.md_root) if a.new else list(csv.DictReader(open(LIB / "RECONVERT.csv", encoding="utf-8")))
     if only:
         rows = [r for r in rows if r["ext"] in only]
     if a.limit:
@@ -99,6 +122,9 @@ def main():
                 continue
             if not src.exists():
                 log.append([str(rel), "missing source", ""]); continue
+            tool = missing_tool(cmds)
+            if tool:
+                log.append([str(rel), "skipped", tool]); print("   -> skipped:", tool); continue
             dest.parent.mkdir(parents=True, exist_ok=True)
             ok, err = run(cmds)
             if ok and kind == "marker":
@@ -113,6 +139,9 @@ def main():
         with open(LIB / "RECONVERT-LOG.csv", "a", newline="", encoding="utf-8") as f:
             csv.writer(f).writerows(log)
         print(f"logged {len(log)} results to library/RECONVERT-LOG.csv")
+        skipped = sorted({x[2] for x in log if x[1] == "skipped"})
+        if skipped:
+            print("skipped for missing tools:", "; ".join(skipped))
     if not a.run:
         print("\nDry run only. Add --run to execute.", file=sys.stderr)
 

@@ -5,7 +5,7 @@ subject: 4 blocks of 25 minutes a week (`notes/study-plan.md`).*
 
 ## TL;DR
 - **Spine:** Casella & Berger, *Statistical Inference*, 2nd ed. (grade A, in collection), all 12 chapters, in order [1].
-- **First,** finish the A/B-testing arc already under way (S150: 2 more lessons, likelihood ratios and multiple testing). **Then** Chapter 1, page 1.
+- **Now (2026-10-06): Chapter 1, page 1.** S150 closed after lesson 4 at your request; its unwritten A/B lessons move into S303 (Ch. 8). S110 merged into the S201 pretest.
 - **One lesson = 2 blocks:** block 1 reads ~7 pages with a reading guide; block 2 is the lesson page: idea → worked example →
   practice → **one proof you write**. About 2 lessons a week.
 - **Size:** ~450 pages of text → at most ~66 lessons + 12 pretests + 12 chapter checks ≈ **40 weeks** (132 + 14 + 12 = 158 blocks) at 4 blocks a week if you
@@ -13,6 +13,47 @@ subject: 4 blocks of 25 minutes a week (`notes/study-plan.md`).*
 - **Proofs:** every lesson has one proof task, graded by me with a rubric. Exercises from the book are optional homework (rule 13).
 - **A pretest before every chapter.** It scores each section on three separate skills (**concept, calculation, proof**), and each
   section's lesson teaches only what's missing, or is skipped entirely if you know all three (section 2 below).
+
+
+## 0. Two levels (revised 2026-10-06; structure: `notes/major-design.md`, adapted from NYU Gallatin)
+The learner asked for **Stat I** (≈ an undergraduate major) and **Stat II** (≈ graduate coursework, as close to a PhD as
+self-study gets). The full course map, with prerequisites, is `curriculum.json`; sections 1–7 below describe the Casella &
+Berger core of Level I, unchanged.
+
+**Plan (the "IAPC").** Starting point: probability mechanics solid, inference interpretation was the gap (records 0001–0002);
+math degree, AI career. Aim (MISSION.md): read, run and defend real analyses (A/B tests first), then the theory behind them, then
+graduate theory. Level I finishes Casella & Berger with proofs and adds the applied courses a BS needs; Level II is
+qualifying-exam theory plus the modern topics an ML career leans on (causal, Bayesian, high-dimensional, bandits).
+
+**Only the core row is the major**; the other rows are optional extras, suggested when they'd help or you want them.
+
+| Group | Level I (≈ BS) | Level II (≈ MS + PhD coursework) |
+|---|---|---|
+| Core | S150 practitioners · S110 probability review · S201–S205, S301–S304, S401–S403 (all of C&B) · S310 applied regression/GLMs · S320 experiments and A/B testing · S330 computing and simulation · S340 Bayesian I | S500 analysis refresher · S501–S502 measure-theoretic probability · S511 estimation · S512 testing · S513 asymptotics · S520 GLM theory · S530 Bayesian · S540 causal · S550 learning theory and high-dimensional |
+| Breadth | S190 history and philosophy of statistics · S195 measurement and ethics | S590 foundations of inference seminar |
+| Electives | S360 time series · S370 sampling · S380 statistical learning | S560 nonparametrics · S570 computational · S580 bandits |
+| Practice | S390 three real analyses end to end | S595 quals-style self-check · S596 reproduce and extend a published result |
+| Capstone | S399 ~20-page analysis report | S599 ~40-page paper |
+| End-of-level talk | S398 | S598 |
+
+Rough size of the core: Level I ≈ 110 lessons (pretests will cut a lot, given the math degree), Level II ≈ 120. At 4 blocks a week that is years, which is expected.
+
+**Works read so far** (for the optional end-of-level talk). Level I so far: Casella & Berger;
+Bruce, Bruce & Gedeck; Hand, *Statistics* VSI; Kohavi et al. (when acquired). Candidates spanning periods and disciplines:
+Bayes (1763) and Laplace on inverse probability; Fisher, *Statistical Methods for Research Workers* (1925); Neyman & Pearson
+(1933); Jaynes; Tukey, "The Future of Data Analysis" (1962); Breiman, "Statistical Modeling: The Two Cultures" (2001).
+
+**Books needed** (not in the library, or only as an unusable copy). Free ones first: please download them into the library.
+- Free from the authors: Blitzstein & Hwang, *Introduction to Probability*; Durrett, *Probability: Theory and Examples*;
+  Gelman et al., *Bayesian Data Analysis* 3rd ed.; Hernán & Robins, *Causal Inference: What If*; Hastie, Tibshirani &
+  Friedman, *Elements of Statistical Learning* (your copy is garbled); James et al., *ISL* (garbled copy); Efron & Hastie,
+  *Computer Age Statistical Inference*; Hyndman & Athanasopoulos, *FPP3*; Lattimore & Szepesvári, *Bandit Algorithms*.
+- To buy, by when they're needed: Kohavi, Tang & Xu, *Trustworthy Online Controlled Experiments* (S320, soonest);
+  Agresti, *Foundations of Linear and Generalized Linear Models* (S310/S520); Salsburg, *The Lady Tasting Tea* (S190);
+  Abbott, *Understanding Analysis* (S500); Lehmann & Casella, *Theory of Point Estimation*; Lehmann & Romano, *Testing
+  Statistical Hypotheses*; van der Vaart, *Asymptotic Statistics*; Keener, *Theoretical Statistics*; Imbens & Rubin, *Causal
+  Inference*; Wainwright, *High-Dimensional Statistics*; Lohr, *Sampling*; Wasserman, *All of Nonparametric Statistics*;
+  Mayo, *Statistical Inference as Severe Testing*.
 
 ---
 
@@ -23,7 +64,7 @@ Page ranges are the chapters' text, without exercises and miscellanea, from the 
 | Course | Casella & Berger | Pages | Lessons | Notes |
 |---|---|---|---|---|
 | S100 Placement | — | — | 1 (done) | Lesson 0001. Probability mechanics solid; inference interpretation was the gap (records 0001–0002) |
-| **S150 Inference for practitioners** (now) | slices of §8.3, §9.1 | — | 6 (4 done) | 0002 p-values · 0003 effect size and CIs · 0004 power (§8.3.1) · **0005 likelihood ratios: P(data given H1)** · **0006 multiple testing**. Ties straight to the A/B-test goal in the mission |
+| S150 Inference for practitioners (closed early; leftovers → S303) | slices of §8.3, §9.1 | — | 6 (4 done) | 0002 p-values · 0003 effect size and CIs · 0004 power (§8.3.1) · **0005 likelihood ratios: P(data given H1)** · **0006 multiple testing**. Ties straight to the A/B-test goal in the mission |
 | S201 Probability theory | Ch. 1 | 1–37 | 4 | Fast: your pretest was strong here. Proof focus: from the axioms (Kolmogorov) |
 | S202 Transformations and expectations | Ch. 2 | 47–76 | 4 | Change of variables, mgfs, differentiating under the integral sign |
 | S203 Common families of distributions | Ch. 3 | 85–127 | 6 | Fixes the rusty recall in record 0003 (geometric, Poisson, memorylessness). Exponential families matter for GLMs |
@@ -66,7 +107,11 @@ Before each chapter (one block; two for the long chapters 4–5), a pretest asks
 | ✗ | any | any | **Full lesson** (block 1 reading, block 2 the page) |
 | other mixes | | | Teach the missing skills only; e.g. calculation without the concept gets a short concept section, then proofs |
 
-Neighbouring short lessons can share a block. The plan for each chapter (which sections are skipped, short or full) goes in NOTES.md
+**Every chapter then gets one summary lesson, even when every section is skipped** (learner's request, 2026-10-06): the
+chapter's main results in one page, with recall practice, so a tested-out chapter is still consolidated.
+
+**Merge by default:** neighbouring gap sections become one lesson when their combined reading fits a block (about 10 pages) and
+they build on each other (learner's suggestion, 2026-10-06). Neighbouring short lessons can share a block. The plan for each chapter (which sections are skipped, short or full) goes in NOTES.md
 after its pretest, so you can see it.
 
 ## 3. One lesson (2 blocks, or 1 for a short one)

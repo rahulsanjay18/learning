@@ -80,6 +80,25 @@ def test_limits():
     assert c.post("/events", json={"nope": 1}, headers=T).status_code == 400
 
 
+def test_guessed_counts_as_not_known():
+    page = "stats/0009-guess"
+    c.post("/events", json={"events": [ev("g1", "q1", True, page=page), ev("g2", "q2", True, page=page),
+        {"v": 1, "eid": "g3", "type": "confidence", "page": page, "item": page + "#q2", "value": "guessed", "ts": "2026-10-05T10:05:00Z"},
+        {"v": 1, "eid": "g4", "type": "confidence", "page": page, "item": page + "#q1", "value": "knew", "ts": "2026-10-05T10:05:01Z"}]}, headers=T)
+    with server.db() as db:
+        r = {x["item"].split("#")[1]: x for x in db.execute("SELECT * FROM review WHERE page=?", (page,))}
+    assert r["q2"]["box"] == 0 and r["q2"]["lapses"] == 1      # lucky guess: reset like a miss
+    assert r["q1"]["lapses"] == 0                                # "knew" changes nothing
+    s = c.get("/summary", params={"topic": "stats"}, headers=T).text
+    assert "stats/0009-guess: 1/2 right first try" in s and "guessed: q2" in s, s
+
+
+def test_pages_lists_answered_lessons():
+    got = c.get("/pages", params={"topic": "chess"}, headers=T).json()["pages"]
+    assert "chess/0003-forks" in got and all(p.startswith("chess/") for p in got)
+    assert c.get("/pages", params={"topic": "nope"}, headers=T).json() == {"pages": []}
+    assert c.get("/pages").status_code == 401
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

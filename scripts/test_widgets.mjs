@@ -217,6 +217,74 @@ if (await page.locator(`${q("tl-plassey")} .tl-marker.truth`).count()) fail("gal
 await page.click(`${q("tl-plassey")} button:text-is("Check")`); await expectOk("tl-plassey");
 if (!(await page.locator(`${q("tl-plassey")} .tl-marker.truth`).count())) fail("gallery: timeline did not show the true position");
 
+// games: quiz misses explain themselves (scored as a miss), right moves show the new position; the solver answers in play
+await page.locator(`${q("gm-ttt-hold")} .gm-cell`).nth(2).click();                 // O on c1, a corner: loses to a fork
+if (!/O on c1 loses/.test(await page.locator(`${q("gm-ttt-hold")} > .feedback`).textContent())) fail("gallery: ttt miss message wrong");
+await page.locator(`${q("gm-ttt-hold")} .gm-cell`).nth(1).click(); await expectOk("gm-ttt-hold");
+if ((await page.$$eval(`${q("gm-ttt-hold")} .gm-cell`, a => a.map(x => x.textContent || ".").join(""))) !== "XO..O...X") fail("gallery: ttt did not show the played move");
+await page.locator(`${q("gm-nim-345")} .gm-heap`).nth(2).locator(".gm-token").nth(4).click();   // take 1 from heap 3: loses
+await page.locator(`${q("gm-nim-345")} .gm-heap`).nth(2).locator(".gm-token").nth(3).click();   // second miss marks the winning move
+if (await page.locator(`${q("gm-nim-345")} .gm-token.hint.hW`).count() !== 1) fail("gallery: nim did not mark the one winning move");
+await page.locator(`${q("gm-nim-345")} .gm-heap`).nth(0).locator(".gm-token").nth(1).click(); await expectOk("gm-nim-345");
+await page.locator(`${q("gm-hex-open")} .gm-hexg`).nth(4).click(); await expectOk("gm-hex-open");
+await page.locator("#gm-play-ttt .gm-cell").nth(4).click();
+await page.waitForFunction(() => document.querySelectorAll("#gm-play-ttt .gm-cell.filled").length === 2, null, { timeout: 3000 }).catch(() => fail("gallery: ttt solver did not reply"));
+if (await page.locator("#gm-play-hex .gm-hexcell.black").count() !== 1) fail("gallery: hex solver did not open as Black");
+else console.log("ok   gallery: tiny games (ttt, nim, hex quizzes + solver play)");
+
+// flashcards: deck shows one card at a time; self-marking advances; summary at the end
+if (await page.locator(`${q("fc-2")}`).isVisible()) fail("gallery: deck showed card 2 before card 1");
+await page.click(`${q("fc-1")} button:text-is("Show answer")`); await page.click(`${q("fc-1")} button:text-is("I knew it")`);
+await page.click(".lp-deck button.deck-next");
+await page.click(`${q("fc-2")} button:text-is("Show answer")`); await page.click(`${q("fc-2")} button:text-is("I didn't")`);
+if (!/1 of 2 known/.test(await page.locator(".lp-deck .deck-end").textContent())) fail("gallery: deck summary wrong");
+// confidence: a right answer asks "How sure were you?"; "I guessed" takes it out of right-first-try and lists it as guessed
+await page.click(`${q("conf-demo")} button:text-is("Three")`);
+await page.click(`${q("conf-demo")} button:text-is("I guessed")`);
+const confSched = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.review"))["gallery/widgets#conf-demo"]);
+if (!confSched || confSched.box !== 0 || confSched.lapses !== 1) fail("gallery: guessed answer not reset in the review schedule " + JSON.stringify(confSched));
+else console.log("ok   gallery: flashcard deck + confidence step");
+
+// xiangqi + shogi: sandbox shows legal targets and alternates sides; quizzes score a legal-but-wrong move, then the answer;
+// shogi asks before an optional promotion, and an illegal pawn-drop mate is never offered
+const xq = (root, sq) => page.locator(`${root} .xq-pt[data-sq="${sq}"]`).click();
+const sgc = (root, sq) => page.locator(`${root} .sg-sq[data-sq="${sq}"]`).click();
+await xq("#xq-play", "h2");
+if (await page.locator("#xq-play .xq-dot, #xq-play .xq-cap").count() !== 12) fail("gallery: xiangqi cannon h2 should show 12 targets");
+await xq("#xq-play", "e2");
+if (!/Black to move/.test(await page.locator("#xq-play .xq-status").textContent())) fail("gallery: xiangqi sandbox did not pass the move");
+await xq(q("xq-win"), "a8"); await xq(q("xq-win"), "a7");
+if (!/legal, but not the move/.test(await page.locator(`${q("xq-win")} > .feedback`).textContent())) fail("gallery: xiangqi miss message wrong");
+await xq(q("xq-win"), "a8"); await xq(q("xq-win"), "a9"); await expectOk("xq-win");
+for (const [a, b2] of [["7g", "7f"], ["3c", "3d"], ["8h", "2b"]]) { await sgc("#sg-play", a); await sgc("#sg-play", b2); }
+if (!/Promote\?/.test(await page.locator("#sg-play .sg-chooser").textContent())) fail("gallery: shogi did not ask about promotion");
+await page.click('#sg-play .sg-chooser button:text-is("Promote")');
+if (await page.locator('#sg-play .sg-hand[data-hand="bB"]').count() !== 1) fail("gallery: captured bishop not in Sente's hand");
+await page.locator(`${q("sg-dropmate")} .sg-hand[data-hand="bP"]`).click();
+if (await page.locator(`${q("sg-dropmate")} .sg-sq[data-sq="1b"] .sg-dot`).count()) fail("gallery: shogi offered the illegal pawn-drop mate");
+await page.locator(`${q("sg-dropmate")} .sg-hand[data-hand="bG"]`).click(); await sgc(q("sg-dropmate"), "1b"); await expectOk("sg-dropmate");
+
+// estimate, find-error, highlight: a calibrated range is right; a fine step is a miss then the bad step is right; exact evidence is right
+await page.fill(`${q("est-panipat")} input[aria-label="low"]`, "1500"); await page.fill(`${q("est-panipat")} input[aria-label="high"]`, "1,550");
+await page.click(`${q("est-panipat")} button:text-is("Check")`); await expectOk("est-panipat");
+if (!/1 of 1 ranges/.test(await page.locator(`${q("est-panipat")} .est-cal`).textContent())) fail("gallery: calibration score missing");
+await page.locator(`${q("fe-one-two")} ol.steps li`).nth(1).click();
+if (!/Step 2 is fine/.test(await page.locator(`${q("fe-one-two")} > .feedback`).textContent())) fail("gallery: find-error miss message wrong");
+await page.locator(`${q("fe-one-two")} ol.steps li`).nth(3).click(); await expectOk("fe-one-two");
+const segs = page.locator(`${q("hl-ashoka")} .hl-seg`);
+if (await segs.count() !== 4) fail(`gallery: highlight should have 4 segments, has ${await segs.count()}`);
+await segs.nth(1).click(); await segs.nth(3).click();
+await page.click(`${q("hl-ashoka")} button:text-is("Check")`); await expectOk("hl-ashoka");
+// simulations: draw intervals and see a coverage line; slider redraws; multiple testing reports a rate
+await page.click('#sim-ci button:text-is("Draw 1,000")');
+if (!/of 1000 intervals contain/.test(await page.locator("#sim-ci .sim-info").textContent())) fail("gallery: ci-coverage did not report");
+if (await page.locator("#sim-ci .sim-ci").count() !== 40) fail("gallery: ci-coverage should show the last 40 intervals");
+await page.$eval("#sim-mean input[type=range]", el => { el.value = 30; el.dispatchEvent(new Event("input", { bubbles: true })); });
+if (!/n = 30 draws/.test(await page.locator("#sim-mean .sim-info").textContent())) fail("gallery: sampling-mean slider did not redraw");
+await page.click('#sim-mt button:text-is("Run 100")');
+if (!/of 100 \(/.test(await page.locator("#sim-mt .sim-info").textContent())) fail("gallery: multiple-testing did not report");
+else console.log("ok   gallery: estimate, find-error, highlight, simulations");
+
 // map: basemap drawn from the vendored data; locate quiz: click on Delhi (miss, distance + direction), then pick "Patna" (right)
 await page.waitForSelector("#map-south-asia .map-land", { timeout: 8000 }).catch(() => fail("gallery: map basemap did not load"));
 if ((await page.locator("#map-south-asia .map-land").first().getAttribute("d") || "").length < 2000) fail("gallery: map land path too small");
@@ -296,17 +364,17 @@ let pythonRan = false;
 
 const bar = await page.locator(".scorebar").textContent();
 // choice, go-drive, plot-mean, tl-plassey, map-patali, py-var missed first; free is ungraded. py-var is unanswered if the CDN was unreachable.
-const expected = pythonRan ? "18 / 18 answered · 11 right first try" : "17 / 18 answered · 11 right first try";
+const expected = pythonRan ? "29 / 29 answered · 16 right first try" : "28 / 29 answered · 16 right first try";
 if (bar.trim() !== expected) fail(`gallery: scorebar "${bar}" != "${expected}"`); else console.log("ok   gallery: scorebar");
 
 await page.click(".lp-footer button:text-is('Just right')");
 const log = await page.evaluate(() => JSON.parse(localStorage.getItem("lp.queue") || "[]"));
 const attempts = log.filter(e => e.type === "attempt");
-if (attempts.length !== (pythonRan ? 18 : 17)) fail(`gallery: expected ${pythonRan ? 18 : 17} logged attempts, got ${attempts.length}`);
+if (attempts.length !== (pythonRan ? 29 : 28)) fail(`gallery: expected ${pythonRan ? 29 : 28} logged attempts, got ${attempts.length}`);
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,map-patali" + (pythonRan ? ",py-var" : "")).test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,gm-ttt-hold,gm-nim-345,fc-2,xq-win,fe-one-two,map-patali" + (pythonRan ? ",py-var" : "") + ".*guessed: conf-demo").test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 // "I don't know" (data-skip): skip before answering; after a wrong try it becomes "Show me the answer" (no second score)

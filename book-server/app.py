@@ -3,10 +3,13 @@
 Env: BOOKS_TOKEN (required), BOOKS_DB (default books.db), BOOKS_MD_ROOT (default /books_md)
 Endpoints (all need 'Authorization: Bearer <BOOKS_TOKEN>'):
   GET /search?q=policy gradient&limit=10   -> matching passages: book id, title, grade, line range, snippet
+        [&book=<id>] search one book only;  [&compact=true] -> {"books": {id: meta}, "hits": [{id, start_line, snippet}]}
+  GET /grep/{id}?q=Definition 8.3&limit=20 -> lines containing the text (case-insensitive), with line numbers
   GET /read/{id}?start=120&n=80            -> lines start..start+n (max 200)
   GET /toc/{id}                            -> headings with line numbers
   GET /book/{id}                           -> metadata incl. grade + flags
   GET /books?q=sutton barto                -> title lookup: is this book on the server?
+  GET /catalog                             -> every book in one call: [[id, grade, title], ...] (diff it against MANIFEST.csv)
 """
 import hmac, os, re, sqlite3
 from pathlib import Path
@@ -42,17 +45,40 @@ def meta(b):
     return d
 
 @app.get("/search", dependencies=[Depends(auth)])
-def search(q: str = Query(min_length=2, max_length=200), limit: int = Query(10, ge=1, le=30)):
+def search(q: str = Query(min_length=2, max_length=200), limit: int = Query(10, ge=1, le=30),
+           book: str = Query("", max_length=40), compact: bool = False):
     terms = re.findall(r"\w+", q)
     if not terms:
         raise HTTPException(400, "empty query")
     fts = " ".join(f'"{t}"' for t in terms)  # quoted terms: no FTS syntax injection
+    where, args = "chunks MATCH ?", [fts]
+    if book:
+        where += " AND ch.book_id = ?"
+        args.append(book)
     with db() as c:
+        if book:
+            book_or_404(c, book)
         rows = c.execute(
-            """SELECT b.*, ch.start_line, snippet(chunks, 2, '[', ']', ' … ', 24) AS snip
+            f"""SELECT b.*, ch.start_line, snippet(chunks, 2, '[', ']', ' … ', 24) AS snip
                FROM chunks ch JOIN books b ON b.id = ch.book_id
-               WHERE chunks MATCH ? ORDER BY bm25(chunks), b.grade LIMIT ?""", (fts, limit)).fetchall()
+               WHERE {where} ORDER BY bm25(chunks), b.grade LIMIT ?""", args + [limit]).fetchall()
+    if compact:   # each book's metadata once, then short hits: far fewer tokens for the reader
+        return {"books": {r["id"]: meta(r) for r in rows},
+                "hits": [{"id": r["id"], "start_line": r["start_line"], "snippet": r["snip"]} for r in rows]}
     return [{**meta(r), "start_line": r["start_line"], "snippet": r["snip"]} for r in rows]
+
+@app.get("/grep/{bid}", dependencies=[Depends(auth)])
+def grep(bid: str, q: str = Query(min_length=2, max_length=200), limit: int = Query(20, ge=1, le=100)):
+    """Lines of one book containing q (case-insensitive substring), e.g. "Definition 8.3.5" or "Theorem 6.2.10"."""
+    with db() as c:
+        b = book_or_404(c, bid)
+    needle, out = q.lower(), []
+    for i, line in enumerate((MD_ROOT / b["md_path"]).read_text(encoding="utf-8", errors="replace").splitlines(), 1):
+        if needle in line.lower():
+            out.append({"line": i, "text": line.strip()[:240]})
+            if len(out) >= limit:
+                break
+    return {**meta(b), "matches": out}
 
 @app.get("/read/{bid}", dependencies=[Depends(auth)])
 def read(bid: str, start: int = Query(1, ge=1), n: int = Query(80, ge=1, le=MAX_LINES)):
@@ -84,3 +110,8 @@ def books(q: str = Query(min_length=2, max_length=200), limit: int = Query(10, g
         rows = c.execute(f"SELECT * FROM books WHERE {where} ORDER BY grade LIMIT ?",
                          [f"%{t}%" for t in terms] + [limit]).fetchall()
     return [meta(r) for r in rows]
+
+@app.get("/catalog", dependencies=[Depends(auth)])
+def catalog():
+    with db() as c:
+        return [[r["id"], r["grade"], r["title"]] for r in c.execute("SELECT id, grade, title FROM books ORDER BY title")]

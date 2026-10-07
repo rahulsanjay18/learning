@@ -5,6 +5,10 @@ disable-model-invocation: true
 argument-hint: "What would you like to learn about?"
 ---
 
+> **This repo overrides parts of this skill** (CLAUDE.md wins): topics live in `topics/<slug>/`; lessons are written as Markdown
+> and rendered with `scripts/render_lesson.py` onto the shared library in `assets/` (no per-topic HTML/CSS/JS); use the tools
+> table in CLAUDE.md (grading, results, book lookups, checks). For the learner's majors, `/program` is the entry point.
+
 The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over multiple sessions.
 
 ## Teaching Workspace

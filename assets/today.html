@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Today</title>
+<link rel="stylesheet" href="lp.css">
+<style>
+  .today-plan { padding-left: 1.2rem; }
+  .today-plan li { margin: 0 0 1rem; }
+  .today-plan p { margin: .25rem 0 0; }
+</style>
+</head>
+<body>
+<main data-lp-footer="off">
+<nav class="crumbs"><a href="../index.html">All topics</a> · Today</nav>
+<h1>Today</h1>
+<p class="subtitle">Review first, then the day's two blocks. Finish the whole plan before going deeper on any one subject.</p>
+<p id="today-status" class="callout">Loading…</p>
+<div id="today"></div>
+<p class="muted">The plan comes from <code>programs.json</code> and each major's <code>curriculum.json</code>; ticks are kept in this browser only.
+The weekly pattern and its reasons: <code>notes/study-plan.md</code>.</p>
+</main>
+<script src="lp.js"></script>
+<script src="today.js"></script>
+</body>
+</html>
