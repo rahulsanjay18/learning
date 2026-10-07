@@ -63,6 +63,11 @@ A big-tech staff loop, as 2026 prep guides describe it (exact rounds vary by com
   design round is usually disqualifying at staff level (a single-source claim).
 - **Staff ML loops** add ML system design and ML fundamentals/coding, plus a deep dive on past ML projects [4].
 
+**Own projects first, standard prompts too.** Interview practice uses prompts from your projects (relay, matchmaking, RL training
+platform, the learning platform) because you care about them. But real loops ask the standard ones ("design a URL shortener / news
+feed / rate limiter"), so roughly one mock in three uses a standard prompt, and the last weeks before a real loop use mostly
+standard ones (my judgment: practice should end up looking like the test).
+
 So IV100 rotates through six round types: **coding (timed, in Vim) · system design · behavioral/leadership · ML system design ·
 AI-assisted coding · project deep dive.** The 3D chess platform supplies design prompts and a project to deep-dive (the RL training
 platform is a good staff-scope story).
