@@ -62,7 +62,7 @@ BOOKS_URL=https://books.tail59e10.ts.net
 
 ## Engineering career major (`topics/eng/`, 2026-10-07)
 - **Everything job-related lives here** (staff skills, AWS cert, C/C++/CUDA, Spark, career extras, safety net); it replaced the aws-ml major.
-- Continuous, two lanes (Staff + Tech). Every lesson ends with a **required rep** from my 3D chess backlog (`topics/eng/backlog.json`):
+- Continuous, four lanes (Mon staff, Wed tech, Thu interview, Fri interest = explore). Every lesson ends with a **required rep** from my 3D chess backlog (or another venue: platform, lab, day job) (`topics/eng/backlog.json`):
   the next lesson in that lane waits until it ships (PR/doc link) or I skip it with a reason. This overrides "homework is optional" for this major only.
 - **You write the code; I do the staff-level work** (design docs, ADRs, decisions, review). When the code is the skill (C, C++, CUDA, Spark), I write it.
 - Every lesson opens with a Vim drill; check my keystrokes with `python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> "<keys>"`.
