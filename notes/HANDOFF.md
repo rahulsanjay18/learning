@@ -3,6 +3,9 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-07 (later): lessons built ahead** with current info: eng 0001 staff placement and 0002 AWS placement (pretest), IH 0004
+  Vedic age (opens with the Indus-stages re-teach), chess 0003 "what did their move do?", military strategy 0002 annihilation vs.
+  exhaustion. Stats 0007 waits on 0006 results. MLA-C02 GA is **"TBD"** on AWS's page (not 2027-01-14); 0002 asks the learner for a target date.
 - **2026-10-06: syllabi + mastery grading.** Each major has `topics/<major>/SYLLABUS.md` (readings + objectives per lesson for the
   active courses); `plan` in curriculum.json mirrors it. Grade objectives Got it / Not yet (TEACHING-LOG rule 20; explainer
   `notes/mastery-grading.md`). Write lessons from the syllabus; don't redesign per session.
@@ -14,7 +17,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 ## Platform ideas (not urgent; learner deploys on their server)
 - Small local model to offload easy work: `notes/slm-offload-plan.md` (semantic book search first, then first-pass grading with
   escalation after a ≥90% agreement test). Hardware known (32 GB RAM, 1× 5070 Ti 16 GB): enough; no second GPU yet. Waiting on: which other services use the GPU.
-- AWS: target MLA-C02 (GA 2027-01-14). Learner's course = a 2024 Solutions Architect (Associate) course: use its core-AWS modules
+- AWS: target MLA-C02 (GA "TBD" per AWS, checked 2026-10-07; beta running). Learner's course = a 2024 Solutions Architect (Associate) course: use its core-AWS modules
   (IAM, S3, VPC, EC2, Lambda, CloudWatch) as the foundations course, then MLA-C02 prep from AWS's exam guide. Waiting on: the course
   files (learner will send) and a target date.
 

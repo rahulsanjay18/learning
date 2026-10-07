@@ -262,9 +262,7 @@
       "pretest": true,
       "group": "core",
       "level": "I",
-      "plan": [
-        "0002 AWS placement: pretest across SAA foundations + MLA-C02 domains; book the MLA-C02 date"
-      ],
+      "plan": [],
       "note": "Folds in the old aws-ml major (target: MLA-C02; GA 2027-01-14 per HANDOFF). Your 2024 Solutions Architect course covers the foundations.",
       "books": {
         "primary": "AWS MLA-C02 exam guide (domains and task statements)",
@@ -273,7 +271,10 @@
         ],
         "tertiary": [],
         "skip": []
-      }
+      },
+      "lessons": [
+        "0002-aws-placement"
+      ]
     },
     {
       "id": "AW101",
