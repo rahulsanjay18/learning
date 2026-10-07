@@ -117,6 +117,11 @@ for m in cfg["majors"] + parked:
             if (topic, f.stem) not in seen_stems:
                 err(f"{m['slug']}: topics/{topic}/lessons/{f.name} is not in any course's lessons")
 
+import subprocess
+r = subprocess.run([sys.executable, str(ROOT / "scripts" / "catalog.py"), "--check"], capture_output=True, text=True)
+if r.returncode:
+    errors += [f"catalog: {l}" for l in r.stdout.splitlines()]
+
 for w in warnings:
     print("WARN", w)
 for e in errors:

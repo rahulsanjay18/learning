@@ -27,6 +27,9 @@ Arguments: `$ARGUMENTS` (empty = run today's plan).
   by `scripts/major_dag.py`: rerun it after changing courses.
 - `topics/<major>/SYLLABUS.md`: lesson-level plan for the active (and next) course: reading + 2–3 objectives per lesson, and a
   "Changes" log. `plan` in curriculum.json mirrors it. Write the next lesson *from* it; when a course starts, write its syllabus first.
+- `topics/<major>/catalog.json` (optional): a self-updating list of certs/skills/tracks with sources and a `verified` date;
+  `scripts/catalog.py` lists what's due. Status shows CATALOG REFRESH DUE → re-check those entries on the web (official page first),
+  update them, log changes in the topic's `CHANGES.md`; propose (don't make) plan changes they imply.
 - `topics/<major>/PROGRAM.md`: the human-readable plan and its reasons. Change it when the plan changes, not for routine progress.
 
 ## What to do

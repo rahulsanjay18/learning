@@ -124,6 +124,14 @@ def main():
         if nxt_c:
             out.append(f"    queued: " + ", ".join(f"{c['id']} {c['title']}" for c in nxt_c))
 
+    try:  # self-updating catalogs (scripts/catalog.py): entries due for a web re-check
+        r = subprocess.run([sys.executable, str(ROOT / "scripts" / "catalog.py"), "--date", d.isoformat()],
+                           capture_output=True, text=True, timeout=20)
+        heads = [l for l in r.stdout.splitlines() if l and not l.startswith(" ")]
+        if heads:
+            out.append("CATALOG REFRESH DUE: " + "; ".join(heads) + " (run python3 scripts/catalog.py; re-check on the web, log in CHANGES.md)")
+    except Exception as e:
+        warn.append(f"catalog check failed: {e}")
     if cfg.get("parked"):
         out.append("Parked: " + ", ".join(p["slug"] for p in cfg["parked"]))
     out += ["WARN " + w for w in warn]

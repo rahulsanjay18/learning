@@ -1,0 +1,572 @@
+{
+  "about": "Self-updating list of certs, skills and pay evidence for the Career major. scripts/catalog.py flags entries whose 'verified' date is older than refresh_days, or whose watch_date is near; /program then re-checks them on the web (official page first) and logs changes in CHANGES.md. confidence: official = checked on the vendor's page; third-party = only training/blog sites so far.",
+  "refresh_days": 60,
+  "entries": [
+    {
+      "id": "aws-mla-c02",
+      "kind": "cert",
+      "vendor": "AWS",
+      "name": "AWS Certified Machine Learning Engineer – Associate",
+      "code": "MLA-C02",
+      "state": "current",
+      "cost_usd": 150,
+      "pick": "core",
+      "course": "aws-ml major",
+      "why": "Your chosen AWS target; now includes generative and agentic AI. Most-recognised cloud ML cert.",
+      "note": "Registration opened 2026-09-01 (beta $75, 85 questions, 170 min); English MLA-C01 retired 2026-09-28; HANDOFF has GA 2027-01-14.",
+      "watch_date": "2027-01-14",
+      "confidence": "official",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+        "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+      ]
+    },
+    {
+      "id": "aws-aip-c01",
+      "kind": "cert",
+      "vendor": "AWS",
+      "name": "AWS Certified Generative AI Developer – Professional",
+      "code": "AIP-C01",
+      "state": "current",
+      "pick": "elective",
+      "course": "CR250",
+      "why": "Professional-level GenAI cert; natural step after MLA-C02.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://bestaicertifications.com/aws-ai-certifications/"
+      ]
+    },
+    {
+      "id": "aws-aif-c01",
+      "kind": "cert",
+      "vendor": "AWS",
+      "name": "AWS Certified AI Practitioner",
+      "code": "AIF-C01",
+      "state": "current",
+      "cost_usd": 100,
+      "pick": "skip",
+      "why": "Foundational; below your level, adds little next to MLA-C02.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://getaiwork.com/articles/aws-ai-certification/"
+      ]
+    },
+    {
+      "id": "aws-mls-c01",
+      "kind": "cert",
+      "vendor": "AWS",
+      "name": "AWS Certified Machine Learning – Specialty",
+      "code": "MLS-C01",
+      "state": "retired",
+      "pick": "skip",
+      "why": "Last exam day 2026-03-31.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://bestaicertifications.com/aws-ai-certifications/"
+      ]
+    },
+    {
+      "id": "gcp-pmle",
+      "kind": "cert",
+      "vendor": "Google Cloud",
+      "name": "Professional Machine Learning Engineer",
+      "code": "PMLE",
+      "state": "current",
+      "cost_usd": 200,
+      "pick": "elective",
+      "course": "CR210",
+      "why": "The other big cloud ML cert; now covers Vertex AI generative AI and Agent Builder.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.examcert.app/blog/gcp-pmle-complete-guide/"
+      ]
+    },
+    {
+      "id": "azure-ai-103",
+      "kind": "cert",
+      "vendor": "Microsoft",
+      "name": "Azure AI Apps and Agents Developer Associate",
+      "code": "AI-103",
+      "state": "current",
+      "pick": "elective",
+      "course": "CR220",
+      "why": "Replaced AI-102 (retired 2026-06-30); agentic apps on Azure AI Foundry.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://vladtalkstech.com/microsoft-learning-and-credential-news/microsoft-certification-retirements-2026/",
+        "https://learn.microsoft.com/en-us/answers/questions/5846224/is-there-a-updated-ai-certification-in-ai"
+      ]
+    },
+    {
+      "id": "azure-ai-300",
+      "kind": "cert",
+      "vendor": "Microsoft",
+      "name": "Machine Learning Operations Engineer",
+      "code": "AI-300",
+      "state": "current",
+      "pick": "watch",
+      "why": "Replaced DP-100 (retired 2026-06-01). Only if you end up on Azure.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://vladtalkstech.com/microsoft-learning-and-credential-news/microsoft-certification-retirements-2026/"
+      ]
+    },
+    {
+      "id": "nvidia-ncp-genl",
+      "kind": "cert",
+      "vendor": "NVIDIA",
+      "name": "NVIDIA-Certified Professional: Generative AI LLMs",
+      "code": "NCP-GENL",
+      "state": "check",
+      "cost_usd": 200,
+      "pick": "core",
+      "course": "CR130",
+      "why": "Training, fine-tuning and optimizing LLMs; recommends 2-3 years of LLM work, which fits you. The associate (NCA-GENL) is below your level.",
+      "note": "One source says 'coming soon' on NVIDIA's page: confirm it's bookable before CR130 starts.",
+      "confidence": "official",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-professional/"
+      ]
+    },
+    {
+      "id": "databricks-genai",
+      "kind": "cert",
+      "vendor": "Databricks",
+      "name": "Databricks Certified Generative AI Engineer Associate",
+      "code": "",
+      "state": "current",
+      "pick": "elective",
+      "course": "CR230",
+      "why": "Popular with data-platform employers; exam changed 2026-03-18.",
+      "confidence": "official",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.databricks.com/sites/default/files/2026-02/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Interrim-Feb26.pdf"
+      ]
+    },
+    {
+      "id": "anthropic-cca-f",
+      "kind": "cert",
+      "vendor": "Anthropic",
+      "name": "Claude Certified Architect – Foundations",
+      "code": "CCA-F",
+      "state": "check",
+      "cost_usd": 125,
+      "pick": "core",
+      "course": "CR120",
+      "why": "Agentic architecture, Claude Code, prompt engineering, tool design and MCP, context management: exactly CR120's content.",
+      "note": "Launched 2026-03-12. Sources say access is currently through Anthropic partner companies only; a Developer – Foundations cert is also reported. Confirm eligibility on Anthropic's own pages.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://tutorialsdojo.com/how-to-book-cca-f-exam/",
+        "https://dev.to/mcrolly/inside-anthropics-claude-certified-architect-program-what-it-tests-and-who-should-pursue-it-1dk6"
+      ]
+    },
+    {
+      "id": "lf-ckad",
+      "kind": "cert",
+      "vendor": "Linux Foundation / CNCF",
+      "name": "Certified Kubernetes Application Developer",
+      "code": "CKAD",
+      "state": "current",
+      "cost_usd": 445,
+      "pick": "core",
+      "course": "CR110",
+      "why": "Hands-on (performance-based) exam, so it carries weight; Kubernetes is where most model serving runs.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://devopscube.com/best-kubernetes-certifications/"
+      ]
+    },
+    {
+      "id": "hashicorp-terraform-004",
+      "kind": "cert",
+      "vendor": "HashiCorp",
+      "name": "Terraform Associate",
+      "code": "004",
+      "state": "current",
+      "pick": "elective",
+      "course": "CR240",
+      "why": "Cheap, common infra-as-code badge; tests Terraform 1.12.",
+      "confidence": "official",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004"
+      ]
+    },
+    {
+      "id": "pytorch-ptca",
+      "kind": "cert",
+      "vendor": "Linux Foundation / PyTorch Foundation",
+      "name": "PyTorch Certified Associate",
+      "code": "PTCA",
+      "state": "current",
+      "pick": "skip",
+      "why": "New, but aimed at people starting deep learning. Watch for a professional-level PyTorch cert instead.",
+      "confidence": "official",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://pytorch.org/blog/just-launched-pytorch-certified-associate-ptca/"
+      ]
+    },
+    {
+      "id": "fw-pytorch-distributed",
+      "kind": "framework",
+      "name": "PyTorch distributed training (DDP, FSDP2, torch.compile, profiler)",
+      "pick": "core",
+      "course": "CR130",
+      "why": "No cert covers it well; advertise with a public training repo and a write-up.",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://pytorch.org/docs/stable/distributed.html"
+      ]
+    },
+    {
+      "id": "fw-llm-serving",
+      "kind": "framework",
+      "name": "LLM serving: vLLM, quantization, Kubernetes deployment",
+      "pick": "core",
+      "course": "CR140",
+      "why": "The most-asked production skill in LLM jobs; advertise with a benchmarked deployment.",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://docs.vllm.ai/"
+      ]
+    },
+    {
+      "id": "fw-agents-mcp",
+      "kind": "framework",
+      "name": "Agents: Model Context Protocol, Claude Agent SDK, evals",
+      "pick": "core",
+      "course": "CR120",
+      "why": "Current agent stack; advertise with a public agent plus its eval suite.",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://modelcontextprotocol.io/",
+        "https://docs.claude.com/"
+      ]
+    },
+    {
+      "id": "fw-mlops",
+      "kind": "framework",
+      "name": "MLOps: Docker, MLflow, CI/CD for models",
+      "pick": "core",
+      "course": "CR100",
+      "why": "Underpins every ML cert above.",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://mlflow.org/docs/latest/"
+      ]
+    },
+    {
+      "id": "skill-finetuning",
+      "kind": "skill",
+      "name": "LLM fine-tuning and post-training (RLHF/DPO)",
+      "pick": "core",
+      "course": "CR130",
+      "why": "Reported as the single highest-premium AI skill: 25-40% over standard ML engineers.",
+      "pay_evidence": "letsdatascience 2026; Levels.fyi ML engineer median $261k (Q1 2026)",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://letsdatascience.com/blog/the-56-premium-what-ai-skills-actually-pay-in-2026"
+      ]
+    },
+    {
+      "id": "skill-inference",
+      "kind": "skill",
+      "name": "Inference optimization (CUDA, quantization, speculative decoding, vLLM/TensorRT-LLM)",
+      "pick": "core",
+      "course": "CR140",
+      "why": "Rare and paid accordingly; NVIDIA ML engineers in this area reported at $205k-$331k TC.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://letsdatascience.com/blog/the-56-premium-what-ai-skills-actually-pay-in-2026"
+      ]
+    },
+    {
+      "id": "skill-ml-infra",
+      "kind": "skill",
+      "name": "ML infrastructure / MLOps",
+      "pick": "core",
+      "course": "CR110",
+      "why": "Roles reported up 41.8% year over year; +$20-40k over generalists.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://letsdatascience.com/blog/the-56-premium-what-ai-skills-actually-pay-in-2026"
+      ]
+    },
+    {
+      "id": "skill-lowlatency-cpp",
+      "kind": "skill",
+      "name": "Low-latency C++ (quant developer)",
+      "pick": "watch",
+      "course": "CR310",
+      "why": "Fallback with the highest ceiling: new grads $300-550k at top HFT firms; senior $500k-$1M+ in strong years. On hold: top firms are mostly on-site, and you want remote only.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://nexusitgroup.com/what-quant-firms-are-paying-for-c-engineers/",
+        "https://www.quantt.co.uk/resources/quant-developer-salary"
+      ]
+    },
+    {
+      "id": "aws-security-specialty",
+      "kind": "cert",
+      "vendor": "AWS",
+      "name": "AWS Certified Security – Specialty",
+      "code": "SCS-C03?",
+      "state": "check",
+      "pick": "elective",
+      "course": "CR330",
+      "why": "Top of Skillsoft's highest-paying IT certifications list for 2025.",
+      "note": "Exam code not verified: check aws.amazon.com.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://skillsoft.com/jp/blog/top-paying-it-certifications"
+      ]
+    },
+    {
+      "id": "gcp-pca",
+      "kind": "cert",
+      "vendor": "Google Cloud",
+      "name": "Professional Cloud Architect",
+      "code": "PCA",
+      "state": "current",
+      "pick": "elective",
+      "course": "CR340",
+      "why": "Second on Skillsoft's 2025 highest-paying list.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://skillsoft.com/jp/blog/top-paying-it-certifications"
+      ]
+    },
+    {
+      "id": "aws-saa",
+      "kind": "cert",
+      "vendor": "AWS",
+      "name": "AWS Certified Solutions Architect – Associate",
+      "code": "SAA-C03?",
+      "state": "check",
+      "pick": "elective",
+      "course": "CR340",
+      "why": "On Skillsoft's 2025 list; you already have a 2024 course for it, and it doubles as AWS foundations for MLA-C02.",
+      "note": "Exam code not verified.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://skillsoft.com/jp/blog/top-paying-it-certifications"
+      ]
+    },
+    {
+      "id": "lang-rust",
+      "kind": "language",
+      "name": "Rust",
+      "pick": "elective",
+      "course": "CR350",
+      "why": "Reported $140-185k US and among the top-paid languages (+15-25% over median).",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://langpop.com/blog/highest-paying-programming-languages-2026"
+      ]
+    },
+    {
+      "id": "lang-go",
+      "kind": "language",
+      "name": "Go",
+      "pick": "elective",
+      "course": "CR360",
+      "why": "Reported $120-155k US; the cloud-infrastructure language.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://langpop.com/blog/highest-paying-programming-languages-2026"
+      ]
+    },
+    {
+      "id": "lang-cpp",
+      "kind": "language",
+      "name": "C and C++",
+      "pick": "core",
+      "course": "cpp major",
+      "why": "Needed for inference optimization (CR140), quant dev (CR310) and embedded (CR370): the one language that serves three pay paths.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://nexusitgroup.com/what-quant-firms-are-paying-for-c-engineers/"
+      ]
+    },
+    {
+      "id": "track-embedded",
+      "kind": "track",
+      "name": "Embedded software",
+      "pick": "elective",
+      "course": "CR370",
+      "why": "Median reported $165k (another source $220k): data sources disagree.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.recruitingfromscratch.com/blog/embedded-systems-engineer-salary-in-2026-real-data-from-1-9-million-job-postings"
+      ]
+    },
+    {
+      "id": "track-sre",
+      "kind": "track",
+      "name": "SRE / platform",
+      "pick": "elective",
+      "course": "CR380",
+      "why": "Median reported $164k (another source $225k).",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://jobspipe.dev/salary/site-reliability-engineer/usa"
+      ]
+    },
+    {
+      "id": "track-robotics",
+      "kind": "track",
+      "name": "Robotics software",
+      "pick": "watch",
+      "course": "CR370",
+      "why": "Median base reported $128k, TC ~$165k mid-career: below ML engineering today.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://resumegeni.com/blog/robotics-engineer-salary-guide"
+      ]
+    },
+    {
+      "id": "baseline-ml-engineer",
+      "kind": "benchmark",
+      "name": "Baseline: ML engineer pay",
+      "pick": "watch",
+      "why": "Levels.fyi ML engineer median $261k (Q1 2026, n=9,517); BLS medians (May 2025): software developers $135,980, research scientists $140,300. Compare every track against this.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://letsdatascience.com/blog/the-56-premium-what-ai-skills-actually-pay-in-2026",
+        "https://www.bls.gov/ooh/Computer-and-Information-Technology"
+      ]
+    },
+    {
+      "id": "track-quant-research",
+      "kind": "track",
+      "name": "Quant researcher",
+      "pick": "watch",
+      "course": "CR320",
+      "why": "Base median ~$213k; first-year TC $250-450k at top funds; PhD near-baseline at the top. On hold: top firms are mostly on-site, and you want remote only.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.tradermath.org/salaries/quant-researcher",
+        "https://www.selbyjennings.com/en-us/industry-insights/compensation-guides/usa-quantitative-analytics-research-trading-compensation-guide-2026"
+      ]
+    },
+    {
+      "id": "track-actuary",
+      "kind": "track",
+      "name": "Actuary",
+      "pick": "core",
+      "course": "CR325",
+      "why": "BLS median $125,770; exam-driven credential ladder. Remote/hybrid common: 89% of surveyed insurance/actuarial staff had a remote option; consultancies keep the most flexibility.",
+      "confidence": "official",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.bls.gov/ooh/math/",
+        "https://www.soa.org/education/fsa/",
+        "https://actuary.info/careers/remote-actuary-jobs/"
+      ]
+    },
+    {
+      "id": "soa-exam-p",
+      "kind": "cert",
+      "vendor": "Society of Actuaries",
+      "name": "Exam P (Probability)",
+      "code": "P",
+      "state": "check",
+      "pick": "core",
+      "course": "CR325",
+      "why": "First actuarial exam; overlaps the Statistics major's probability course. Cheapest probe of the actuarial path.",
+      "note": "Confirm current syllabus and dates on soa.org.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://actuary.info/become-an-actuary/actuarial-exams/"
+      ]
+    },
+    {
+      "id": "track-operations-research",
+      "kind": "track",
+      "name": "Operations research analyst",
+      "pick": "watch",
+      "course": "CR326",
+      "why": "BLS median $88,940 (May 2025): lower than your current path; useful as a skill.",
+      "confidence": "official",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.bls.gov/ooh/math/operations-research-analysts.htm"
+      ]
+    },
+    {
+      "id": "actuary-ai-exposure",
+      "kind": "benchmark",
+      "name": "Actuarial work vs. automation",
+      "pick": "watch",
+      "course": "CR325",
+      "why": "Routine reserving, data cleaning and reporting are most exposed; regulatory accountability and judgment least. Shortage reported in 2026, strongest for actuaries with data/ML skills.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://actuary.info/insights/big-tech-ai-pivot-actuarial-job-market-2026",
+        "https://careers.legalandgeneral.com/blog/2026-4/can-actuaries-be-replaced-by-ai"
+      ]
+    },
+    {
+      "id": "track-patent-agent",
+      "kind": "track",
+      "name": "Patent agent",
+      "pick": "elective",
+      "course": "CR327",
+      "why": "Median ~$124k; engineering/CS degree qualifies for the USPTO registration exam; regulated work.",
+      "note": "Remote availability not verified yet.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.upcounsel.com/what-is-a-patent-agent",
+        "https://legacy.vault.com/industries-professions/professions/p/patent-agents"
+      ]
+    },
+    {
+      "id": "uspto-registration-exam",
+      "kind": "cert",
+      "vendor": "USPTO",
+      "name": "Registration Examination for Patent Attorneys and Agents (patent bar)",
+      "code": "",
+      "state": "check",
+      "pick": "elective",
+      "course": "CR327",
+      "why": "The single credential for patent agent work.",
+      "note": "Confirm format, fee and eligibility category on uspto.gov before the course.",
+      "confidence": "third-party",
+      "verified": "2026-10-07",
+      "sources": [
+        "https://www.upcounsel.com/what-is-a-patent-agent"
+      ]
+    }
+  ]
+}
