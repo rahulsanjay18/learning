@@ -12,6 +12,12 @@ meaningful progress": they share what they think is cool, and Claude keeps it in
 - **Gentle redirect:** when a new idea comes up mid-session, Claude logs it here, says so in one line, and goes back to the day's plan.
 - **Review:** once a month (or when the interest lane's active topic finishes), Claude suggests at most one promotion from this list,
   favoring ideas that feed something already active (the "tie it to what you're doing" rule).
+- **Mine it for intersections** (learner, 2026-10-07: "the most interesting things often occur at the intersections of domains").
+  Before writing a lesson or choosing a rep's venue, scan this list. A parked idea can be used **as material** (an example, a design
+  prompt, a dataset, a venue) whenever it fits what's already being taught, e.g. an interview design prompt about distributed
+  astrophoto stacking, or a statistics example from 3D chess self-play. Using an idea as material adds no new commitment, so it
+  doesn't count against the limits. Say in the lesson which idea it came from. Turning it into its own course or topic still
+  goes through one in, one out.
 - Long-term subject wishes live in `notes/learning-wishlist.md`; this file is for smaller ideas and project tangents.
 
 ## Parked ideas

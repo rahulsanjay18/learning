@@ -74,6 +74,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
   and steer back to the day's plan.** Don't add them to curricula or lesson plans.
 - WIP limits: eng interest lane = 1 active + 2 queued; one active course per major (Games: two). One in, one out: propose a swap
   when something finishes; I decide. Prefer ideas that feed what's already active.
+- **But mine `notes/ideas.md` for intersections** (the interesting stuff is where domains meet): before writing a lesson or picking a
+  rep's venue, check it, and use a parked idea as *material* (example, design prompt, dataset, venue) when it fits. That adds no
+  commitment; making it its own topic still goes one in, one out. Check `notes/learning-wishlist.md` the same way.
 
 ## Pages behind a login (2026-10-07)
 - If research needs a page that requires an account (Blind, paywalls, course portals), **ask me**: add a `todo.json` item with the URL
