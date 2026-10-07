@@ -61,6 +61,10 @@ lesson was flawed, add an entry: what happened (with the question that exposed i
     actually says before calling an answer wrong. (Entry 24)
 25. **The prompt names what the rubric grades.** If full credit needs a specific move ("separate invasion from migration"),
     the question asks for it in words. Implicit understanding of an unasked point counts as Got it. (Entry 25)
+26. **Explain from unconditional truths, and build options by mutation** (adopted 2026-10-07, no incident): start from facts
+    accepted as stated, motivate each step ("how could I have discovered this?"), bracket the edge when probing (a right *and* a
+    wrong answer per strand), and write the right option first, then mutate it into distractors with no reasons in any option.
+    Details: `.claude/skills/teach/PRINCIPLES.md`. Before committing a lesson, the `lesson-reviewer` agent can check it.
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't

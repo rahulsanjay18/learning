@@ -41,6 +41,21 @@ Write one when any of these is true:
 - Anything already captured tersely in [[GLOSSARY.md]] as a term definition. Don't duplicate.
 - Session-by-session activity logs. Learning records are not a journal: they are decision-grade insights.
 
+## Writing rules (adapted from pi-observational-memory's observer and reflector prompts)
+
+Records are the only memory a future session has of the learner, so write them so they can't be misread
+(github.com/elpapi42/pi-observational-memory, `src/agents/observer/prompts.ts`, `reflector/prompts.ts`; MIT):
+
+- **Assertions vs questions.** "Learner stated they learned type I/II errors as false positive/negative" is not the same as
+  "Learner asked what type I error means". A statement about themselves is authoritative; a later question doesn't undo it.
+- **Quote the learner's own terms** when they're non-standard ("I usually remember them as false positive and false negative").
+- **Frame changes as supersession**: "now reads p-values correctly (previously read p as P(H0 is true))", so both states are visible.
+- **Mark completions**: "completed: 0006 objectives 1–2 Got it", so nothing is re-taught by accident.
+- **One fact per line.** Split compound findings; a future "did they get X?" should match one line.
+- **Cite the evidence** by id: the lesson and quiz `data-id`, the QUESTIONS.md entry or the grading result.
+- **Only durable facts.** Before writing, ask: would a future session make a wrong decision, redo work or break a learner
+  preference without this? If not, it isn't a record (scores and due dates live on the progress server).
+
 ## Supersession
 
 When a later record contradicts an earlier one (the user's understanding deepened or corrected), mark the old record `Status: superseded by LR-NNNN` rather than deleting it. The history of how understanding evolved is itself useful signal.

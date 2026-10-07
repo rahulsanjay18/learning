@@ -8,6 +8,10 @@ argument-hint: "What would you like to learn about?"
 > **This repo overrides parts of this skill** (CLAUDE.md wins): topics live in `topics/<slug>/`; lessons are written as Markdown
 > and rendered with `scripts/render_lesson.py` onto the shared library in `assets/` (no per-topic HTML/CSS/JS); use the tools
 > table in CLAUDE.md (grading, results, book lookups, checks). For the learner's majors, `/program` is the entry point.
+>
+> **How to explain:** [PRINCIPLES.md](./PRINCIPLES.md) (unconditional truths first; "how could I have discovered this?"; bracket
+> the edge when probing; build choice options by mutating the right claim). Agents: `researcher` (fact checks, library first)
+> and `lesson-reviewer` (pre-commit review of a draft) in `.claude/agents/`.
 
 The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over multiple sessions.
 

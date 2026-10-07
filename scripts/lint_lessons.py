@@ -10,6 +10,7 @@ ERROR (exit 1): broken local links/scripts, choice answer not among its options,
                 py quiz without a <pre class="code"> (starter code) and a <script class="check"> (the hidden test),
                 lp-py snippet without a <pre class="code">.
 WARN:           choice options with different word counts (SKILL.md: answers must not give away the answer by length),
+                a justification word (because/since/so that/which means) only in the answer (teach/PRINCIPLES.md),
                 lesson without a sources list.
 """
 import sys, re, pathlib
@@ -90,6 +91,9 @@ def lint(path):
             counts = {len(o.split()) for o in opts}
             if len(counts) > 1:
                 warns.append(f"{where}: options differ in word count: " + " | ".join(opts))
+            why = re.compile(r"\b(because|since|so that|which means|due to)\b", re.I)
+            if why.search(a.get("data-answer") or "") and not any(why.search(o) for o in opts if o != a.get("data-answer")):
+                warns.append(f"{where}: only the answer gives a reason (move it to the explanation)")
         elif t == "categorize":
             buckets = split(a.get("data-buckets"))
             for item in split(a.get("data-items")):

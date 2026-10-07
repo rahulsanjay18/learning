@@ -30,6 +30,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 
 ## Open platform work
+- **2026-10-07: ideas from three pi repos adopted** (`notes/inspiration-pi-repos-2026-10-07.md`): `.claude/skills/teach/PRINCIPLES.md` (TEACHING-LOG rule 26), agents `researcher` + `lesson-reviewer` in `.claude/agents/`, `/quiz-me` uses the AskUserQuestion picker with "I don't know", learning-record writing rules, lint warns when only the answer gives a reason. Possible later: a session-transcript file (learn's md-log).
 - **Skills added 2026-10-06:** `/quiz-me` (`scripts/quiz.py`), `/game-review`, `/new-books` (`scripts/new_books.py`, `library/ADDING-BOOKS.md`); SessionStart hook installs test deps + stockfish + python-chess.
 - **New books reviewed 2026-10-06** (`notes/new-books-2026-10-06.md`; partial, because the server went down during the scan).
   Use Schelling *Arms and Influence* (4bdcba34b3), Paret *Makers of Modern Strategy* (6979109f6e) and Perla *Art of Wargaming* (eb72110b76) in G150/G350; McMahon *ML Engineering with Python* (7d3ec3450a) for AWS ML; British Empire
