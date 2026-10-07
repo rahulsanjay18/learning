@@ -15,6 +15,10 @@ infrastructure, AI security; Spark as a quick win), then an AWS ML cert. A safet
   review). When the skill is the code itself (C, C++, CUDA, Spark), the learner writes it.
 - **Vim**: knows a little; wants to be pushed. Every lesson has a Vim drill checked by replaying the keystrokes.
 
+## Timeline (2026-10-07)
+New job; if it goes well, **no job search for about 18 months**. So the staff route leans toward growing into staff *at the new job*,
+and interview prep can run in maintenance mode until a search gets close (proposal in PROGRAM.md, pending the learner's OK).
+
 ## Facts from setup
 Senior; leads cross-team projects, mentors, sets direction; doesn't write design docs yet. Remote only. Insures against AI hype
 cooling or AI automating SWE. Owns the staff books (not on the book server yet). AWS target: MLA-C02.
