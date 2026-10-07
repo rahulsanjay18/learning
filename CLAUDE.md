@@ -102,7 +102,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
   planned ahead). Grade each objective Got it / Not yet and extend lessons only for a real gap, never for a thin answer: TEACHING-LOG rule 20.
   I'm relying on you to set that line.
 - **Verbose is fine (2026-10-07):** restate earlier concepts a lesson uses (recap boxes), and practice each concept with several varied
-  questions, not one problem each. TEACHING-LOG rule 29.
+  questions, not one problem each, spread across the lesson and later review days. TEACHING-LOG rule 29.
+- **Pushback is welcome (2026-10-07).** If a request of mine would hurt my learning or the platform, say so and propose the better version.
 - **Lesson design, all subjects:** assign a reading before the lesson whenever it makes sense (a short, specific primary-source slice
   with a reading guide). **Homework is fine but optional**: keep it small, and make every lesson work even if I skipped it
   (I'm not sure how much I'll do). Details: TEACHING-LOG.md rules 9 and 13.

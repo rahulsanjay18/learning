@@ -90,7 +90,10 @@ Rules 11, 13 and 18 are format and logistics.
     taught last week: the learner wants reminders, not brevity. (b) Practice each concept with **several varied questions**
     (different angles: compute it, explain it, spot the error, apply it to a new situation, compare it with a neighbour), not one
     problem per concept. Mixing problem types makes the learner choose the method, which is what transfers (interleaved and varied
-    practice; Rohrer & Taylor 2007). Keep sorting items small (rule 3). (Entry 28)
+    practice; Rohrer & Taylor 2007). Keep sorting items small (rule 3). **But spread the variety over time**, not all into one sitting: 2–3 varied
+    questions per concept in the lesson, and more variants that come back through the daily review on later days (spacing beats
+    cramming, and a long lesson is the one that gets abandoned). Recaps stay short, in a collapsible box, so the new material isn't
+    buried. (Entry 28; the "spread it out" part was Claude's pushback, accepted under "pushback is acceptable".)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
