@@ -5,7 +5,7 @@
   "rules": [
     "Continuous, four lanes, one per eng block: Mon staff, Wed tech, Thu interview, Fri interest (`lanes`). Each lane keeps one active course; when it ends the next in that lane activates at once, so the major never runs empty.",
     "Explore/exploit: 3 exploit lanes (staff, tech, interview) and 1 explore lane (interest), so epsilon = 1/4 of eng blocks. Promotion rule: an explore topic moves into the tech lane when it shows pay or demand evidence in catalog.json, or the learner wants to go deep; a tech-lane topic whose evidence fades drops back to explore. Review this at each catalog refresh and log moves in CHANGES.md.",
-    "Practice venue (learner, 2026-10-07: 'not all profitable skills apply to 3dchess'): each rep uses the best-fitting venue, in this order of preference: (1) a 3D chess ticket, (2) a learning-platform item, (3) a standalone lab built for the skill (e.g. an AWS sandbox exercise, Spark on a public dataset, a LeetCode set, an open-source issue, the learner's astrophotography pipeline), (4) your day job, sanitized. Never force a skill onto 3D chess when it doesn't fit; say which venue and why in the lesson.",
+    "Practice venue (learner, 2026-10-07: 'not all profitable skills apply to 3dchess'): each rep uses the best-fitting venue, in this order of preference: (1) a 3D chess ticket, (2) a learning-platform item, (3) a standalone lab built for the skill (e.g. an AWS sandbox exercise, Spark on a public dataset, a LeetCode set, an open-source issue), (4) your day job, sanitized. Never force a skill onto 3D chess when it doesn't fit; say which venue and why in the lesson.",
     "Every staff/tech/interview lesson ends with a REQUIRED rep (interest-lane reps are optional): one ticket from backlog.json with a definition of done. The next lesson in that lane is not written until the rep is shipped (PR/doc link) or explicitly skipped with a reason. This overrides TEACHING-LOG rule 13 (optional homework) for this major only, at the learner's request (2026-10-07).",
     "Division of labor (learner's rule): Claude writes the code; the learner does the staff-level work (design docs, ADRs, decisions, prioritization, PR review and merge). When the lesson's skill is the code itself (C, C++, CUDA, Spark), the learner writes it and Claude reviews.",
     "Re-check a ticket's GitHub state before assigning it; never file a 'proposed' ticket without asking.",
@@ -77,13 +77,9 @@
       "plan": [
         "0004 How chess engines search (alpha-beta, transposition tables, NNUE) and what changes on an 8x8x8 board",
         "AlphaZero and MuZero, read as papers (feeds RL #54 MuZero-lite)",
-        "Branching factor and game length of your 3D variant, measured with the engine (feeds the Games major)",
-        "WebAssembly: how the C++ engine runs in the browser",
-        "GPU search: can MCTS leaf evaluation be batched on a GPU (RL #47)",
-        "HPC from mini PCs: cluster design, Slurm/Ray, MPI; distributed 3D chess self-play (learner's hardware)",
-        "Astrophotography on the cluster: calibration, registration, stacking; a CUDA stacking kernel (venue for CP320)"
+        "Branching factor and game length of your 3D variant, measured with the engine (feeds the Games major)"
       ],
-      "note": "For fun, not career: picked by the learner; default queue seeded from the 3D chess project. Edit PROGRAM.md 1b to change it. Reps here are optional unless the learner wants them."
+      "note": "WIP limit: 1 active + 2 queued (notes/ideas.md holds everything else; one in, one out). Default queue feeds 3D chess, the main project."
     },
     {
       "id": "VI100",
