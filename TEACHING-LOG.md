@@ -86,6 +86,11 @@ Rules 11, 13 and 18 are format and logistics.
 28. **Pretests measure; they never feed review.** Mark every pretest page `data-pretest="true"` (Markdown front matter
     `main: data-skip=true data-pretest=true`): its answers stay out of spaced review everywhere. What a pretest finds missing gets
     *taught* in a lesson, and that lesson's own questions are what come back in review. (Entry 27)
+29. **Verbose is fine; recap and vary.** (a) Restate any earlier concept a lesson leans on, in a short "recap" box, even if it was
+    taught last week: the learner wants reminders, not brevity. (b) Practice each concept with **several varied questions**
+    (different angles: compute it, explain it, spot the error, apply it to a new situation, compare it with a neighbour), not one
+    problem per concept. Mixing problem types makes the learner choose the method, which is what transfers (interleaved and varied
+    practice; Rohrer & Taylor 2007). Keep sorting items small (rule 3). (Entry 28)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -160,3 +165,7 @@ Rules 11, 13 and 18 are format and logistics.
     pretest."** Missed and skipped pretest items went into spaced review like lesson misses, so review asked about things never
     taught (against rule 2). Fix: `data-pretest` on the four pretest pages; lp.js, the progress server, the review deck and
     `scripts/quiz.py` all leave those answers out, and already-scheduled ones are dropped; rule 28.
+28. **2026-10-07 · "In lessons it's okay to be verbose and restate concepts you mentioned before in previous lessons to remind me.
+    You kinda do that with singular problems and that's nice but it's the least useful, because a variety of problems/questions
+    centering around a concept is better for learning."** Lessons recapped by attaching one problem to an old concept, and gave
+    most concepts a single practice item. Fix: rule 29 (recap boxes; several varied questions per concept).
