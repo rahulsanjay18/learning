@@ -13,6 +13,9 @@ Think of this major as a bandit problem:
   library pipeline, and several AI sessions working on one repo, which is a coordination problem. It has already produced a real
   incident (two sessions both wrote lesson 1). Its backlog items (postmortem, a coordination design doc, a design review of the
   small-model offload plan, a platform strategy, SLOs) are in `backlog.json` alongside the 3D chess tickets.
+- **Where a skill gets practiced** (your point: not every profitable skill fits 3D chess). Each rep picks the best venue: a 3D chess
+  ticket first, then a learning-platform item, then a **standalone lab** built for that skill (an AWS sandbox exercise, Spark on a
+  public dataset, a timed LeetCode set, an open-source issue), then your day job (sanitized). The lesson says which venue and why.
 - **Explore (1 of 4 blocks: interest).** Topics you find interesting that *might* pay off but don't have to. That makes ε = 1/4.
 - **Update the estimates.** When an explored topic shows pay or demand evidence (in `catalog.json`), or you want to go deep, it's
   **promoted** into the tech lane. A tech topic whose evidence fades drops back to explore. These moves are reviewed at each catalog
