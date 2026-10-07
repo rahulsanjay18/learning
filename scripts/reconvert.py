@@ -80,7 +80,7 @@ def new_books(books_root, md_root):
             rows.append({"path": str(rel), "ext": src.suffix.lower()})
     return rows
 
-def run(cmds):
+def run_cmds(cmds):
     for c in cmds:
         try:
             r = subprocess.run(c, capture_output=True, text=True)
@@ -145,13 +145,13 @@ def convert_one(rel, books_root, md_root, mode=None, light=False):
         if tool:
             return "skipped", tool
         dest.parent.mkdir(parents=True, exist_ok=True)
-        ok, err = run(cmds)
+        ok, err = run_cmds(cmds)
         if ok and kind == "marker":
             ok = collect_marker(tmp, Path(cmds[-1][1]).stem, dest)
             err = [] if ok else ["marker produced no markdown"]
         if not ok and src.suffix.lower() == ".epub":  # retry broken epub through calibre
             fixed = tmp / "fixed.epub"
-            ok, err = run([["ebook-convert", str(src), str(fixed)], pandoc(fixed, dest)])
+            ok, err = run_cmds([["ebook-convert", str(src), str(fixed)], pandoc(fixed, dest)])
         return ("ok" if ok else "FAILED"), " ".join(err)
 
 def convert_all(rows, books_root, md_root, mode=None, dry=False):
