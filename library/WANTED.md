@@ -41,6 +41,13 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 - _Game Engine Architecture_, 3rd ed. — Jason Gregory (CRC, 2018) — for: CP330 elective — status: missing
 - _C++ Templates: The Complete Guide_, 2nd ed. (2017) and Iglberger, _C++ Software Design_ (2022) — for: Level II CP401/CP402 — status: missing (collection has only the 2002 1st ed. of Templates, 1062457b20)
 
+## Staff engineer (parked major, topics/staff/PROGRAM.md)
+- _The Staff Engineer's Path_ — Tanya Reilly (O'Reilly, 2022) — for: SE101/SE140/SE150/SE160, the backbone — status: missing (buy)
+- _A Philosophy of Software Design_, 2nd ed. — John Ousterhout (2021) — for: SE130 — status: missing
+- _An Elegant Puzzle_ — Will Larson (2019) — for: SE150 strategy — status: missing
+- _System Design Interview_ vol. 1–2 — Alex Xu; _Machine Learning System Design Interview_ — Aminian & Xu — for: SE120/SE160 — status: missing
+- _Good Strategy/Bad Strategy_ — Richard Rumelt; _Team Topologies_ — Skelton & Pais — for: SE150 (nice to have) — status: missing
+
 ## Career: earning power and a fallback (parked major, topics/career/PROGRAM.md)
 - SOA Exam P study manual (ACTEX or Coaching Actuaries) — for: CR325 actuary, the main fallback's first exam — status: missing (wanted first)
 - A USPTO patent-bar prep course or book — for: CR327 patent agent — status: missing (later)

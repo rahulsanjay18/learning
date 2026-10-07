@@ -27,6 +27,8 @@ Remote caveat: the very top of levers 1–2 (frontier labs, some big-tech teams)
 and infrastructure/security roles are where remote and high pay overlap best (my judgment).
 
 ### Main priority: adjacent tech (core courses, in order)
+**Update 2026-10-07:** the staff-level part (CR160 design, CR150 interviewing) is now its own major, `topics/staff/PROGRAM.md`, done first.
+
 1. **CR100 ML systems design and MLOps** → **CR160 Distributed systems and architecture** (staff-level design; DDIA, in collection).
 2. **CR150 Interviewing and negotiation** alongside, from the start.
 3. **Specialty, pick one first:**

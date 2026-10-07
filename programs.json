@@ -71,6 +71,16 @@
   ],
   "parked": [
     {
+      "slug": "staff",
+      "name": "Staff engineer",
+      "goal": "career",
+      "curriculum": "topics/staff/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-07 (topics/staff/PROGRAM.md). Takes over aws-ml's blocks after the first AWS cert, or sooner if the learner chooses it instead. Start: SE000 placement. Buy Reilly, The Staff Engineer's Path."
+    },
+    {
       "slug": "cpp",
       "name": "C and C++",
       "goal": "career",

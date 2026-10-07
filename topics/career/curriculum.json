@@ -160,7 +160,8 @@
         "skip": [
           "5b5fd77cfb Competitive Programmer's Handbook: grade C, and contest-level is past what interviews need"
         ]
-      }
+      },
+      "note": "Covered by the Staff major's SE160 (evidence, interview loops, negotiation); keep this only for non-staff switches."
     },
     {
       "id": "CR160",
@@ -172,7 +173,7 @@
       "est_lessons": 10,
       "group": "core",
       "level": "I",
-      "note": "Priority 3: cited among the most AI-resistant skills (system architecture, distributed systems), and it's the senior/staff interview core.",
+      "note": "Covered by the Staff major's SE120 (DDIA + Designing ML Systems).",
       "books": {
         "primary": "e66241afb4 Kleppmann, Designing Data-Intensive Applications (grade A)",
         "secondary": [
