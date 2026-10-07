@@ -34,4 +34,7 @@ Change a step in its module and both ways of running it get the change.
 
 ## Server setup notes
 - Rebuild servers after code changes: `cd ~/Documents && docker compose up -d --build book-server progress-server`.
+  **`--build` is what picks up new code**: the code is copied into the image at build time, so `--force-recreate` alone restarts
+  the old image. And compose must build from the repo clone (`build: ./learning/book-server`, `./learning/progress-server`),
+  not from a copied folder, or `git pull` never reaches the server; `add_books.py` warns if it doesn't.
 - Use the db path your compose file mounts for book-server (`add_books.py` reads it from the compose file).

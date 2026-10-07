@@ -16,7 +16,7 @@ Steps:
   6. commit + push library/
 Then run /new-books in a Claude session.
 """
-import argparse, re, subprocess, sys
+import argparse, os, re, subprocess, sys
 from pathlib import Path
 
 try:
@@ -62,6 +62,33 @@ def compose_mounts(compose_dir):
     return f, mounts.get("/data"), mounts.get("/books_md")
 
 
+def compose_builds(compose_file, compose_dir, services=("book-server", "progress-server")):
+    """{service: resolved host path of its `build:` context} for the given services (missing ones left out)."""
+    out, svc, indent = {}, None, 0
+    for line in compose_file.read_text().splitlines():
+        m = re.match(r"^(\s*)([\w.-]+):\s*$", line)
+        if m and m.group(2) in services:
+            svc, indent = m.group(2), len(m.group(1)); continue
+        if svc and line.strip() and not line.strip().startswith("#") and len(line) - len(line.lstrip()) <= indent:
+            svc = None
+        b = re.match(r"^\s*build:\s*[\"']?([^\"'#\s]+)", line) if svc else None
+        if b:
+            path = Path(b.group(1)).expanduser()
+            out[svc] = path if path.is_absolute() else (compose_dir / path).resolve()
+    return out
+
+
+def check_builds(compose_file, compose_dir):
+    """Warn when compose builds a server from somewhere other than this repo: then `git pull` never reaches it."""
+    bad = 0
+    for svc, path in compose_builds(compose_file, compose_dir).items():
+        if path.resolve() != (REPO / svc).resolve():
+            bad += 1
+            print(f"WARNING: {compose_file} builds {svc} from {path}, not {REPO / svc}: pulled code never reaches it. "
+                  f"Set `build: {os.path.relpath(REPO / svc, compose_dir)}` there.")
+    return bad
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     reconvert.add_args(ap)  # the conversion flags, same as running reconvert.py on its own
@@ -75,6 +102,8 @@ def main():
 
     compose_file, data_dir, md_mount = compose_mounts(a.compose_dir)
     db = a.db or (data_dir / "books.db" if data_dir else REPO / "book-server" / "data" / "books.db")
+    if compose_file:
+        check_builds(compose_file, a.compose_dir)
     if md_mount and md_mount.resolve() != a.md_root.resolve():
         print(f"WARNING: {compose_file} mounts {md_mount} as /books_md, not {a.md_root}: the server won't see new books")
 
