@@ -35,9 +35,7 @@
       "group": "core",
       "level": "I",
       "note": "Self-assessment against a public staff-level rubric (Larson's archetypes; a public career framework such as Dropbox's), a timed system-design exercise, a design-doc critique, and an inventory of evidence you already have (you lead cross-team projects, mentor and set direction). Sets which courses shrink.",
-      "plan": [
-        "0001 Staff placement: rubric self-assessment, timed design exercise on a real 3D chess ticket (Server #13 WebSocket relay), evidence inventory"
-      ],
+      "plan": [],
       "books": {
         "primary": "Public staff rubrics: Larson's archetypes (staffeng.com) + a public engineering career framework; your own work as the evidence",
         "secondary": [
@@ -45,7 +43,10 @@
         ],
         "tertiary": [],
         "skip": []
-      }
+      },
+      "lessons": [
+        "0001-staff-placement"
+      ]
     },
     {
       "id": "SE101",
