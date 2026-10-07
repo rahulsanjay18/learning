@@ -17,7 +17,7 @@ for book-server), rebuilds book-server and progress-server, and commits + pushes
 are its defaults. PDFs are checked first: one whose text layer grades A (clean prose) is converted from that layer
 with no OCR; scans and math-heavy PDFs are listed with their grade and left for `--pdf`. Options: `--dry-run` (list only),
 `--pdf` (also the hard ones and DjVu, via marker: OCR, slow; off by default),
-`--retry-failed`, `--limit N`, `--only epub`, `--no-docker`, `--no-commit`, `--no-pull`. Needs `tqdm`; `pymupdf4llm` is recommended for PDFs (keeps headings; without it, poppler's `pdftotext` is used):
+`--retry-failed`, `--limit N`, `--only epub`, `--timeout MIN` (per book, default 30; a timed-out book is logged FAILED and skipped next time: retry with `--retry-failed --timeout 0`), `--media` (also extract images; off by default, nothing uses them and they make big EPUBs slow), `--no-docker`, `--no-commit`, `--no-pull`. Needs `tqdm`; `pymupdf4llm` is recommended for PDFs (keeps headings; without it, poppler's `pdftotext` is used):
 `pip install tqdm pymupdf4llm`.
 Then run `/new-books` in a Claude session.
 
@@ -31,6 +31,9 @@ same flags and the same defaults (your paths live in `scripts/library_paths.py`;
 | Index | `python3 book-server/build_index.py --manifest library/MANIFEST.csv --md-root … --db …` | `build_index.build()` |
 
 Change a step in its module and both ways of running it get the change.
+
+Stopping a run with Ctrl-C is safe: every finished book keeps its Markdown and its log line, a half-converted book leaves no
+partial file, and the next run picks up where this one stopped. Only the later steps (grade, index, rebuild) need the rerun.
 
 ## Server setup notes
 - Rebuild servers after code changes: `cd ~/Documents && docker compose up -d --build book-server progress-server`.

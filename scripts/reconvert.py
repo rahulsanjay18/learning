@@ -22,9 +22,13 @@ from pathlib import Path
 
 LIB = Path(__file__).resolve().parent.parent / "library"
 
+EXTRACT_MEDIA = False   # --media: also write each book's images to <name>_assets/. Off by default: nothing reads them
+                        # (the book server indexes text only), and image-heavy EPUBs spend most of their time there.
+
 def pandoc(src, dest, fmt=None):
-    cmd = ["pandoc", str(src), "-t", "gfm", "--wrap=none", "-o", str(dest),
-           f"--extract-media={dest.parent / (dest.stem + '_assets')}"]
+    cmd = ["pandoc", str(src), "-t", "gfm", "--wrap=none", "-o", str(dest)]
+    if EXTRACT_MEDIA:
+        cmd.append(f"--extract-media={dest.parent / (dest.stem + '_assets')}")
     return cmd[:2] + (["-f", fmt] if fmt else []) + cmd[2:]
 
 def plan(src, dest, tmp, mode):
@@ -80,12 +84,15 @@ def new_books(books_root, md_root):
             rows.append({"path": str(rel), "ext": src.suffix.lower()})
     return rows
 
-def run_cmds(cmds):
+def run_cmds(cmds, timeout=None):
+    """Run commands in order; stop at the first failure. timeout: seconds per command (None = no limit)."""
     for c in cmds:
         try:
-            r = subprocess.run(c, capture_output=True, text=True)
+            r = subprocess.run(c, capture_output=True, text=True, timeout=timeout)
         except FileNotFoundError:
             return False, [f"missing tool {c[0]}"]
+        except subprocess.TimeoutExpired:
+            return False, [f"timed out after {timeout / 60:g} min ({c[0]})"]
         if r.returncode != 0:
             return False, (r.stderr or r.stdout).strip().splitlines()[-1:] or ["failed"]
     return True, []
@@ -128,13 +135,20 @@ def convert_pdf_light(src, dest):
     dest.write_text(md, encoding="utf-8")
     return True, []
 
-def convert_one(rel, books_root, md_root, mode=None, light=False):
-    """Convert one book (path relative to books_root). Returns (status, message): ok / FAILED / skipped / missing source."""
+def convert_one(rel, books_root, md_root, mode=None, light=False, timeout=None):
+    """Convert one book (path relative to books_root). Returns (status, message): ok / FAILED / skipped / missing source.
+    timeout: seconds per converter step (None = no limit); a timed-out or failed book leaves no partial .md behind."""
     src, dest = books_root / rel, (md_root / rel).with_suffix(".md")
     if not src.exists():
         return "missing source", ""
-    if light and src.suffix.lower() == ".pdf":
-        ok, err = convert_pdf_light(src, dest)
+    status, msg = _convert(src, dest, mode, light, timeout)
+    if status == "FAILED" and dest.exists():
+        dest.unlink()       # a partial .md would look converted to the next run
+    return status, msg
+
+def _convert(src, dest, mode, light, timeout):
+    if light and src.suffix.lower() == ".pdf":   # in a child process, so the timeout can stop it
+        ok, err = run_cmds([[sys.executable, str(Path(__file__).resolve()), "--light-one", str(src), str(dest)]], timeout)
         return ("ok" if ok else "FAILED"), " ".join(err)
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
@@ -145,16 +159,16 @@ def convert_one(rel, books_root, md_root, mode=None, light=False):
         if tool:
             return "skipped", tool
         dest.parent.mkdir(parents=True, exist_ok=True)
-        ok, err = run_cmds(cmds)
+        ok, err = run_cmds(cmds, timeout)
         if ok and kind == "marker":
             ok = collect_marker(tmp, Path(cmds[-1][1]).stem, dest)
             err = [] if ok else ["marker produced no markdown"]
         if not ok and src.suffix.lower() == ".epub":  # retry broken epub through calibre
             fixed = tmp / "fixed.epub"
-            ok, err = run_cmds([["ebook-convert", str(src), str(fixed)], pandoc(fixed, dest)])
+            ok, err = run_cmds([["ebook-convert", str(src), str(fixed)], pandoc(fixed, dest)], timeout)
         return ("ok" if ok else "FAILED"), " ".join(err)
 
-def convert_all(rows, books_root, md_root, mode=None, dry=False):
+def convert_all(rows, books_root, md_root, mode=None, dry=False, timeout=None):
     """Convert rows ({"path", "ext"[, "light"]}) with a progress bar; returns [[path, status, message], ...] (also logged).
     Rows with "light" are PDFs that pdf_check() found easy: converted from their text layer, no marker."""
     from tqdm import tqdm
@@ -167,14 +181,16 @@ def convert_all(rows, books_root, md_root, mode=None, dry=False):
     log = []
     with tqdm(todo, desc="convert", unit="book") as bar:
         for rel in bar:
-            bar.set_postfix_str(rel.name[:40])
-            status, msg = convert_one(rel, books_root, md_root, mode, light=str(rel) in light)
+            src = books_root / rel
+            mb = src.stat().st_size / 1e6 if src.exists() else 0
+            bar.set_postfix_str(f"{rel.name[:40]} ({mb:.0f} MB)")
+            status, msg = convert_one(rel, books_root, md_root, mode, light=str(rel) in light, timeout=timeout)
             log.append([str(rel), status, msg])
+            with open(LIB / "RECONVERT-LOG.csv", "a", newline="", encoding="utf-8") as f:   # per book: Ctrl-C keeps the record
+                csv.writer(f).writerow(log[-1])
             if status != "ok":
                 bar.write(f"  {status}: {rel}" + (f" ({msg})" if msg else ""))
     if log:
-        with open(LIB / "RECONVERT-LOG.csv", "a", newline="", encoding="utf-8") as f:
-            csv.writer(f).writerows(log)
         skipped = sorted({x[2] for x in log if x[1] == "skipped" and x[2].startswith("missing tool")})
         if skipped:
             print("skipped for missing tools:", "; ".join(skipped))
@@ -225,10 +241,15 @@ def add_args(ap):
     ap.add_argument("--pdf", action="store_true", help="also scanned/math PDFs and DjVu (marker: OCR + LaTeX, slow)")
     ap.add_argument("--mode", choices=["fast", "balanced"], help="marker mode for --pdf (default: balanced on GPU, fast on CPU)")
     ap.add_argument("--retry-failed", action="store_true", help="also retry books that failed before")
+    ap.add_argument("--media", action="store_true", help="also extract each book's images (slow for big EPUBs; nothing uses them yet)")
+    ap.add_argument("--timeout", type=float, default=30, help="minutes per book step before giving up (logged as FAILED; "
+                    "retry with --retry-failed --timeout 0 for no limit). Default 30")
     ap.add_argument("--csv", action="store_true", help="convert library/RECONVERT.csv instead of every book without Markdown")
 
 def run(a, dry=False):
     """Select, report and convert (the whole conversion step). Returns the log rows."""
+    global EXTRACT_MEDIA
+    EXTRACT_MEDIA = getattr(a, "media", False)
     for root, name in ((a.books_root, "books root"), (a.md_root, "markdown root")):
         if not root.is_dir():
             sys.exit(f"{name} not found: {root} (is the drive mounted?)")
@@ -242,12 +263,17 @@ def run(a, dry=False):
         if len(hard) > 20:
             print(f"  … and {len(hard) - 20} more")
     print(f"{len(rows)} books to convert" + (f" ({n_skipped} earlier failures skipped; --retry-failed to retry)" if n_skipped else ""))
-    log = convert_all(rows, a.books_root, a.md_root, a.mode, dry=dry)
+    log = convert_all(rows, a.books_root, a.md_root, a.mode, dry=dry, timeout=(a.timeout * 60) or None)
     if log:
         print(f"converted {sum(x[1] == 'ok' for x in log)}/{len(log)}; logged to library/RECONVERT-LOG.csv")
     return log
 
 def main():
+    if sys.argv[1:2] == ["--light-one"]:          # internal: one text-layer PDF, run as a child so it can time out
+        ok, err = convert_pdf_light(Path(sys.argv[2]), Path(sys.argv[3]))
+        if not ok:
+            print(" ".join(err), file=sys.stderr)
+        sys.exit(0 if ok else 1)
     ap = argparse.ArgumentParser(description="Convert books to Markdown (dry run unless --run).")
     add_args(ap)
     ap.add_argument("--run", action="store_true", help="actually convert (default: list only)")
