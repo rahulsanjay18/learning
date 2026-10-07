@@ -25,8 +25,11 @@ LIB = Path(__file__).resolve().parent.parent / "library"
 EXTRACT_MEDIA = False   # --media: also write each book's images to <name>_assets/. Off by default: nothing reads them
                         # (the book server indexes text only), and image-heavy EPUBs spend most of their time there.
 
+MEM_GB = 4              # --mem-gb: memory cap per converter. Pandoc holds a whole book in memory, and a 250 MB EPUB once
+                        # used up the server's RAM (2026-10-07: logins hung). Over the cap = "Heap exhausted" = FAILED, skipped.
+
 def pandoc(src, dest, fmt=None):
-    cmd = ["pandoc", str(src), "-t", "gfm", "--wrap=none", "-o", str(dest)]
+    cmd = ["pandoc", "+RTS", f"-M{MEM_GB:g}g", "-RTS", str(src), "-t", "gfm", "--wrap=none", "-o", str(dest)]
     if EXTRACT_MEDIA:
         cmd.append(f"--extract-media={dest.parent / (dest.stem + '_assets')}")
     return cmd[:2] + (["-f", fmt] if fmt else []) + cmd[2:]
@@ -84,11 +87,19 @@ def new_books(books_root, md_root):
             rows.append({"path": str(rel), "ext": src.suffix.lower()})
     return rows
 
+def _cap_memory():
+    """Child-process address-space cap for Python converters (not used for pandoc, which has its own +RTS -M cap,
+    or for GPU tools like marker, whose large virtual reservations a hard cap would break)."""
+    import resource
+    cap = int(MEM_GB * 2**30)
+    resource.setrlimit(resource.RLIMIT_AS, (cap, cap))
+
 def run_cmds(cmds, timeout=None):
     """Run commands in order; stop at the first failure. timeout: seconds per command (None = no limit)."""
     for c in cmds:
+        capped = c[0] == sys.executable          # our own --light-one child
         try:
-            r = subprocess.run(c, capture_output=True, text=True, timeout=timeout)
+            r = subprocess.run(c, capture_output=True, text=True, timeout=timeout, preexec_fn=_cap_memory if capped else None)
         except FileNotFoundError:
             return False, [f"missing tool {c[0]}"]
         except subprocess.TimeoutExpired:
@@ -163,9 +174,13 @@ def _convert(src, dest, mode, light, timeout):
         if ok and kind == "marker":
             ok = collect_marker(tmp, Path(cmds[-1][1]).stem, dest)
             err = [] if ok else ["marker produced no markdown"]
-        if not ok and src.suffix.lower() == ".epub":  # retry broken epub through calibre
+        too_big = any(k in e for e in err for k in ("Heap exhausted", "+RTS -M", "timed out"))
+        if not ok and src.suffix.lower() == ".epub" and not too_big:  # retry a broken epub through calibre
             fixed = tmp / "fixed.epub"
-            ok, err = run_cmds([["ebook-convert", str(src), str(fixed)], pandoc(fixed, dest)], timeout)
+            ok2, err2 = run_cmds([["ebook-convert", str(src), str(fixed)], pandoc(fixed, dest)], timeout)
+            ok, err = ok2, (err if any(e.startswith("missing tool") for e in err2) else err2)
+        if too_big and not any("timed out" in e for e in err):
+            err = [f"over the {MEM_GB:g} GB memory cap (pandoc: Heap exhausted); retry with --retry-failed --mem-gb N"]
         return ("ok" if ok else "FAILED"), " ".join(err)
 
 def convert_all(rows, books_root, md_root, mode=None, dry=False, timeout=None):
@@ -241,6 +256,7 @@ def add_args(ap):
     ap.add_argument("--pdf", action="store_true", help="also scanned/math PDFs and DjVu (marker: OCR + LaTeX, slow)")
     ap.add_argument("--mode", choices=["fast", "balanced"], help="marker mode for --pdf (default: balanced on GPU, fast on CPU)")
     ap.add_argument("--retry-failed", action="store_true", help="also retry books that failed before")
+    ap.add_argument("--mem-gb", type=float, default=4, help="memory cap per book converter in GB (default 4); a book over it is logged FAILED")
     ap.add_argument("--media", action="store_true", help="also extract each book's images (slow for big EPUBs; nothing uses them yet)")
     ap.add_argument("--timeout", type=float, default=30, help="minutes per book step before giving up (logged as FAILED; "
                     "retry with --retry-failed --timeout 0 for no limit). Default 30")
@@ -248,8 +264,9 @@ def add_args(ap):
 
 def run(a, dry=False):
     """Select, report and convert (the whole conversion step). Returns the log rows."""
-    global EXTRACT_MEDIA
+    global EXTRACT_MEDIA, MEM_GB
     EXTRACT_MEDIA = getattr(a, "media", False)
+    MEM_GB = getattr(a, "mem_gb", MEM_GB)
     for root, name in ((a.books_root, "books root"), (a.md_root, "markdown root")):
         if not root.is_dir():
             sys.exit(f"{name} not found: {root} (is the drive mounted?)")

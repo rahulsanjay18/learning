@@ -17,7 +17,7 @@ for book-server), rebuilds book-server and progress-server, and commits + pushes
 are its defaults. PDFs are checked first: one whose text layer grades A (clean prose) is converted from that layer
 with no OCR; scans and math-heavy PDFs are listed with their grade and left for `--pdf`. Options: `--dry-run` (list only),
 `--pdf` (also the hard ones and DjVu, via marker: OCR, slow; off by default),
-`--retry-failed`, `--limit N`, `--only epub`, `--timeout MIN` (per book, default 30; a timed-out book is logged FAILED and skipped next time: retry with `--retry-failed --timeout 0`), `--media` (also extract images; off by default, nothing uses them and they make big EPUBs slow), `--no-docker`, `--no-commit`, `--no-pull`. Needs `tqdm`; `pymupdf4llm` is recommended for PDFs (keeps headings; without it, poppler's `pdftotext` is used):
+`--retry-failed`, `--limit N`, `--only epub`, `--timeout MIN` (per book, default 30; a timed-out book is logged FAILED and skipped next time: retry with `--retry-failed --timeout 0`), `--mem-gb N` (memory cap per book, default 4: a book over it is logged FAILED instead of exhausting the server's RAM, as a 250 MB EPUB did on 2026-10-07), `--media` (also extract images; off by default, nothing uses them and they make big EPUBs slow), `--no-docker`, `--no-commit`, `--no-pull`. Needs `tqdm`; `pymupdf4llm` is recommended for PDFs (keeps headings; without it, poppler's `pdftotext` is used):
 `pip install tqdm pymupdf4llm`.
 Then run `/new-books` in a Claude session.
 
