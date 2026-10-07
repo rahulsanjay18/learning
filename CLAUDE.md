@@ -103,7 +103,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
   I'm relying on you to set that line.
 - **Verbose is fine (2026-10-07):** restate earlier concepts a lesson uses (recap boxes), and practice each concept with several varied
   questions, not one problem each, spread across the lesson and later review days. TEACHING-LOG rule 29.
-- **Pushback is welcome (2026-10-07).** If a request of mine would hurt my learning or the platform, say so and propose the better version.
+- **Pushback and debate are welcome (2026-10-07).** If a request of mine would hurt my learning or the platform, say so and propose the
+  better version. If I push back and you still think you're right, argue it, **with sources** (I'm good at arguing). Concede when I'm right.
 - **Lesson design, all subjects:** assign a reading before the lesson whenever it makes sense (a short, specific primary-source slice
   with a reading guide). **Homework is fine but optional**: keep it small, and make every lesson work even if I skipped it
   (I'm not sure how much I'll do). Details: TEACHING-LOG.md rules 9 and 13.

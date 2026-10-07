@@ -90,9 +90,11 @@ Rules 11, 13 and 18 are format and logistics.
     taught last week: the learner wants reminders, not brevity. (b) Practice each concept with **several varied questions**
     (different angles: compute it, explain it, spot the error, apply it to a new situation, compare it with a neighbour), not one
     problem per concept. Mixing problem types makes the learner choose the method, which is what transfers (interleaved and varied
-    practice; Rohrer & Taylor 2007). Keep sorting items small (rule 3). **But spread the variety over time**, not all into one sitting: 2–3 varied
+    practice: Rohrer & Taylor 2007, *Instructional Science* 35:481–498, Exp. 2: mixed practice was "vastly superior" on a test a week
+    later, though it *felt* worse during practice). Keep sorting items small (rule 3). **But spread the variety over time**, not all into one sitting: 2–3 varied
     questions per concept in the lesson, and more variants that come back through the daily review on later days (spacing beats
-    cramming, and a long lesson is the one that gets abandoned). Recaps stay short, in a collapsible box, so the new material isn't
+    cramming: Rohrer & Taylor 2007 Exp. 1; Cepeda et al. 2006, *Psychological Bulletin* 132:354–380, a meta-analysis of 317
+    experiments, finds the best gap between sessions grows with how long you need to remember; and a long lesson is the one that gets abandoned). Recaps stay short, in a collapsible box, so the new material isn't
     buried. (Entry 28; the "spread it out" part was Claude's pushback, accepted under "pushback is acceptable".)
 
 ## Entries
