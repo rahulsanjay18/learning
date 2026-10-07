@@ -16,8 +16,12 @@ infrastructure, AI security; Spark as a quick win), then an AWS ML cert. A safet
 - **Vim**: knows a little; wants to be pushed. Every lesson has a Vim drill checked by replaying the keystrokes.
 
 ## Timeline (2026-10-07)
-New job; if it goes well, **no job search for about 18 months**. So the staff route leans toward growing into staff *at the new job*,
-and interview prep can run in maintenance mode until a search gets close (proposal in PROGRAM.md, pending the learner's OK).
+New job starts **2026-10-26**; if it goes well, **no job search for about 18 months** (to ~2028-04-26).
+- **Interviews:** maintenance, then ramp, but keep growing design skills. Until 2027-10-26 Thursdays alternate a design round
+  (growth) and a short coding mock (maintenance); weekly full mocks from 2027-10-26; two interview blocks a week from 2028-02-26.
+- **Staff:** aim for staff, but the learner doesn't know the new job yet and doesn't want to presume. Both routes stay open; 3D chess and
+  the platform stay the main venues; the day job becomes a venue only where it clearly fits. Revisit at day 90 (2027-01-24). The brag
+  document starts on day 1 either way.
 
 ## Facts from setup
 Senior; leads cross-team projects, mentors, sets direction; doesn't write design docs yet. Remote only. Insures against AI hype

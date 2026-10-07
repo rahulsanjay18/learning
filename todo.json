@@ -63,6 +63,13 @@
       "added": "2026-10-06",
       "text": "URGENT-ish: library/MANIFEST.csv (2,000+ book titles, 509 naming libgen/z-lib/Anna's Archive) is publicly served at rahulsanjay18.github.io/learning/library/MANIFEST.csv. Decide on the private-source split (notes/design-private-source-public-site.md); its step 1 (make this repo private) removes it from public view.",
       "why": "GitHub Pages on the free plan is always public; until decided, don't put anything private in this repo (inbox included)."
+    },
+    {
+      "id": "staff-day90",
+      "major": "eng",
+      "added": "2026-10-07",
+      "text": "On or after 2027-01-24 (day 90 at the new job): decide whether growing into staff there is the goal, and whether the day job becomes the staff lane's main venue.",
+      "why": "You asked not to presume before knowing the job."
     }
   ]
 }

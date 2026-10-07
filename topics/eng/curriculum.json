@@ -45,12 +45,12 @@
       "group": "core",
       "level": "I",
       "plan": [
-        "coding (timed, in Vim)",
-        "system design (staff depth)",
-        "behavioral / leadership story",
-        "ML system design",
-        "coding (AI-assisted format)",
-        "project deep dive / retrospective"
+        "design round (your-version prompt, growth)",
+        "coding mock (timed, in Vim; maintenance)",
+        "design round (ML system design, growth)",
+        "coding mock (maintenance)",
+        "design round (standard twin prompt)",
+        "behavioral / project deep dive"
       ],
       "books": {
         "primary": "Xu, System Design Interview vol. 1-2 + Aminian & Xu, Machine Learning System Design Interview (owned? else wanted)",
@@ -65,7 +65,7 @@
         ],
         "skip": []
       },
-      "note": "Rotates through the six round types; design prompts come from the 3D chess platform where they fit (relay, matchmaking, MCTS job queue, RL training fleet). The weakest round type comes up twice as often."
+      "note": "Cadence (learner, 2026-10-07; new job starts 2026-10-26, no search for ~18 months): maintenance then ramp, but keep growing design skills. Until 2027-10-26: Thursdays alternate a design round (growth: system + ML design, mostly your-version prompts) and a short coding mock (maintenance). 2027-10-26 to 2028-02-26: weekly full mocks across all round types. 2028-02-26 to 2028-04-26: two interview blocks a week, mostly standard prompts. The weakest round type still comes up twice as often."
     },
     {
       "id": "IN100",

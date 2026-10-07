@@ -68,6 +68,9 @@ platform, the learning platform) because you care about them. But real loops ask
 feed / rate limiter"), so roughly one mock in three uses a standard prompt (each of your prompts has a standard twin: `reference/design-prompts.md`), and the last weeks before a real loop use mostly
 standard ones (my judgment: practice should end up looking like the test).
 
+**Cadence** (new job starts 2026-10-26, no search for ~18 months): until 2027-10-26, Thursdays alternate a **design round** (growth)
+and a short **coding mock** (maintenance); weekly full mocks from 2027-10-26; two interview blocks a week from 2028-02-26 to ~2028-04-26.
+
 So IV100 rotates through six round types: **coding (timed, in Vim) · system design · behavioral/leadership · ML system design ·
 AI-assisted coding · project deep dive.** The 3D chess platform supplies design prompts and a project to deep-dive (the RL training
 platform is a good staff-scope story).
