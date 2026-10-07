@@ -1,5 +1,5 @@
 {
-  "about": "3D chess backlog tickets mapped to eng courses. Each lesson assigns one ticket as its 'rep'. Division of labor (learner's rule, 2026-10-07): the learner does the staff-level work for the ticket (design doc, ADR, acceptance criteria, decision, PR review and merge, or the code itself when the lesson's skill IS the code: C, C++, CUDA); Claude writes the rest of the code as a PR for the learner to review. Re-check each ticket's state on GitHub before assigning it. state: open | assigned | shipped | skipped | proposed (not filed yet: ask before filing). When a ticket is assigned, set state 'assigned' and 'assigned_on' (YYYY-MM-DD); when shipped, 'shipped_on' and 'evidence' (PR/doc URL).",
+  "about": "3D chess backlog tickets mapped to eng courses. Each lesson assigns one ticket as its 'rep'. Division of labor (learner's rule, 2026-10-07): the learner does the staff-level work for the ticket (design doc, ADR, acceptance criteria, decision, PR review and merge, or the code itself when the lesson's skill IS the code: C, C++, CUDA); Claude writes the rest of the code as a PR for the learner to review. Re-check each ticket's state on GitHub before assigning it. state: open | assigned | shipped | skipped | proposed (not filed yet: ask before filing). When a ticket is assigned, set state 'assigned' and 'assigned_on' (YYYY-MM-DD); when shipped, 'shipped_on' and 'evidence' (PR/doc URL). Platform items (repo 'learning') aren't GitHub issues; they live only here, so no filing is needed.",
   "repos": [
     "rahulsanjay18/3dChessInC",
     "rahulsanjay18/3dChessRLAgent",
@@ -7,7 +7,8 @@
     "rahulsanjay18/3dChessServer",
     "rahulsanjay18/3dChessInfra",
     "rahulsanjay18/3dChessRelay",
-    "rahulsanjay18/3dChessDesktop"
+    "rahulsanjay18/3dChessDesktop",
+    "rahulsanjay18/learning (this platform)"
   ],
   "tickets": [
     {
@@ -332,6 +333,51 @@
       "course": "CR130",
       "you": "own the recipe and the eval gate",
       "claude": "training code fixes (#131)",
+      "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Incident: two parallel Claude sessions wrote eng lesson 0001; one overwrote the other in its working copy (2026-10-07)",
+      "course": "SE140",
+      "you": "blameless postmortem (timeline, contributing causes, why the checks didn't catch it) + the prevention policy",
+      "claude": "implement the guard you choose (e.g. render_lesson refuses to overwrite a lesson that exists on origin/main)",
+      "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Design doc: coordinating several AI sessions on one repo (claims, locks or a session-per-major rule)",
+      "course": "SE110",
+      "you": "write the design doc: options, trade-offs, decision",
+      "claude": "build it",
+      "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Design review of notes/slm-offload-plan.md (small local model for grading and book search)",
+      "course": "SE120",
+      "you": "review it as a staff ML-system design: what's missing, the riskiest assumption, the eval plan",
+      "claude": "revise and prototype",
+      "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "Strategy one-pager for the learning platform: who it serves, what it's for, the next 3 months",
+      "course": "SE150",
+      "you": "write it (diagnosis, guiding policy, actions)",
+      "claude": "turn the actions into tasks",
+      "state": "open"
+    },
+    {
+      "repo": "learning",
+      "n": null,
+      "title": "SLOs and monitoring for the progress and book servers",
+      "course": "CR100",
+      "you": "pick SLIs/SLOs and alert thresholds",
+      "claude": "implement the checks",
       "state": "open"
     }
   ]

@@ -9,6 +9,10 @@ Think of this major as a bandit problem:
   the big-tech staff bar, AWS, CUDA/inference, Spark. Apply it to projects you already care about (3D chess), so the skills get used
   for real. Shipping the game could also become **side income**: its backlog already has monetization work (skins, subscriptions,
   ads, a Steam release).
+- **A second practice project: this learning platform** (your idea, 2026-10-07). It's a real staff-scope system: two servers, a
+  library pipeline, and several AI sessions working on one repo, which is a coordination problem. It has already produced a real
+  incident (two sessions both wrote lesson 1). Its backlog items (postmortem, a coordination design doc, a design review of the
+  small-model offload plan, a platform strategy, SLOs) are in `backlog.json` alongside the 3D chess tickets.
 - **Explore (1 of 4 blocks: interest).** Topics you find interesting that *might* pay off but don't have to. That makes ε = 1/4.
 - **Update the estimates.** When an explored topic shows pay or demand evidence (in `catalog.json`), or you want to go deep, it's
   **promoted** into the tech lane. A tech topic whose evidence fades drops back to explore. These moves are reviewed at each catalog
