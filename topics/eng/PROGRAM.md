@@ -4,9 +4,13 @@
 sources still apply). Full weight: it takes the AWS ML major's 4 blocks a week (Mon, Wed, Thu, Fri).*
 
 ## TL;DR
-- **Two lanes are always active, and blocks alternate between them:**
-  - **Staff lane (SE):** placement → what staff is → writing design docs → system/ML design → software design → execution → strategy → getting the title.
-  - **Tech lane:** AWS first (AW: placement → foundations → ML on AWS → MLA-C02 exam), then CUDA (CP320), Spark (CR170), C/C++ (CP), security (CR330) and so on.
+- **Four lanes, one per weekly block** (revised 2026-10-07): **Mon staff · Wed tech · Thu interview · Fri interest.** The Today page shows
+  only that day's lane.
+  - **Staff (SE):** placement → what staff is → writing design docs → system/ML design → software design → execution → strategy → getting the title.
+  - **Tech:** AWS first (AW: placement → foundations → ML on AWS → MLA-C02 exam), then CUDA (CP320), Spark (CR170), C/C++ (CP), security (CR330) and so on.
+  - **Interview (IV):** interview skills at the **big-tech staff bar** (your words: big tech isn't the goal, but it has the highest bar).
+    A baseline, then continuous mock rounds rotating through the loop's round types; the weakest type comes up twice as often.
+  - **Interest (IN):** things you find interesting, for their own sake. Reps are optional here.
 - **Every lesson ends with a required rep: a real ticket from your 3D chess backlog** (`backlog.json`, 36 mapped so far out of 119 open
   issues). The next lesson in that lane isn't written until the rep is **shipped** (a PR or doc link) or **skipped with a reason**.
   `/program` shows open reps and how old they are.
@@ -32,7 +36,28 @@ sources still apply). Full weight: it takes the AWS ML major's 4 blocks a week (
 
 The ordering after AWS is a default. Say the word and a different tech course goes next.
 
-## 2. One lesson (one ~25-minute block)
+### 1a. The interview bar
+A big-tech staff loop, as 2026 prep guides describe it (exact rounds vary by company, team and recruiter):
+- **Google L6:** a hiring assessment and phone screens, then about 5–6 interviews: coding, **two system design rounds**, role-related
+  knowledge, and a leadership/"Googliness" round. A hiring committee decides, then team matching [1].
+- **Meta E6:** 1–2 coding rounds (now one is **AI-assisted**), **two design rounds** (infrastructure or product architecture track),
+  a behavioral round focused on scope and influence, and sometimes a project retrospective [2][3]. One guide says failing either
+  design round is usually disqualifying at staff level (a single-source claim).
+- **Staff ML loops** add ML system design and ML fundamentals/coding, plus a deep dive on past ML projects [4].
+
+So IV100 rotates through six round types: **coding (timed, in Vim) · system design · behavioral/leadership · ML system design ·
+AI-assisted coding · project deep dive.** The 3D chess platform supplies design prompts and a project to deep-dive (the RL training
+platform is a good staff-scope story).
+
+### 1b. Things I find interesting (edit this list)
+Default queue, seeded from the 3D chess project; reorder, delete or add anything:
+1. How chess engines search (alpha-beta, transposition tables, NNUE) and what changes on an 8×8×8 board.
+2. AlphaZero and MuZero, read as papers (feeds the MuZero-lite decision, RL #54).
+3. Branching factor and game length of your variant, measured with your engine (feeds the Games major).
+4. WebAssembly: how the C++ engine runs in the browser.
+5. GPU search: batching MCTS leaf evaluation (RL #47).
+
+## 2. One lesson (one ~25-minute block; placements and mock rounds run longer, ~45 min)
 1. **Vim drill (2 min):** one *Practical Vim* tip, as a start text and a target text. You send your keystrokes; `vimcheck.py` replays them.
 2. **Reading (~10 min):** a slice of the course's primary book, with a reading guide.
 3. **The idea (~8 min)**, tied to the ticket you're about to work.
@@ -58,6 +83,13 @@ I can't make you do anything. What I can do:
 The staff books are yours (add them to the book server so lessons can quote them). Also: *DDIA* 2nd ed., *Designing ML Systems*,
 *PMPP* 4th ed., *Practical Vim*, *Modern C* and *C++ Primer* are all in your library. Buy *C++ Concurrency in Action* before CP204.
 Full list: `library/WANTED.md`.
+
+## Sources
+1. Hello Interview, *Google L6 (Staff) Software Engineer Interview Guide*. https://www.hellointerview.com/guides/google/l6
+2. Hello Interview, *Meta E6 Interview Guides & Questions (2026)*. https://www.hellointerview.com/guides/meta/e6
+3. PracHub, *Meta E6 Software Engineer Interview Guide 2026*. https://prachub.com/resources/meta-e6-software-engineer-interview-guide-2026-coding-system-design-leadership-and-leveling
+4. Interview Kickstart, *Senior Machine Learning Engineer Interview Process Guide (2026)*. https://interviewkickstart.com/blogs/articles/senior-machine-learning-engineer-interview-process
+5. Larson, *Staff archetypes*. https://staffeng.com/guides/staff-archetypes/
 
 ## Files
 `curriculum.json` (courses and lanes) · `backlog.json` (tickets → courses, rep state) · `catalog.json` + `CHANGES.md` (self-updating

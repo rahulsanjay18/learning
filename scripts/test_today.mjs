@@ -22,6 +22,17 @@ const s150 = cur.statistics.courses.find(c => c.status === "active");
 const want = (s150.lessons || []).find(s => !(s150.completed || []).includes(s)) || null;
 ok(want ? st.lesson && st.lesson.href.endsWith(want + ".html") : st.lesson === null && !!st.next,
    "statistics points at first unfinished lesson: " + JSON.stringify(st.lesson));
+// eng has lanes: Monday shows only the staff lane's active course(s), Thursday only the interview lane's
+const engMon = mon.blocks.find(b => b.slug === "eng");
+ok(engMon && engMon.items.length && engMon.items.every(it => it.course.startsWith("SE")), "eng Monday = staff lane: " + JSON.stringify(engMon && engMon.items.map(i => i.course)));
+const engThu = T.planFor(cfg, cur, new Date("2026-10-08T16:00:00Z")).blocks.find(b => b.slug === "eng");
+ok(engThu && engThu.items.every(it => it.course.startsWith("IV")), "eng Thursday = interview lane");
+// the learner's to-do list (todo.json): only open items, oldest first
+const todo = JSON.parse(readFileSync(new URL("todo.json", root)));
+const open = T.openTodos(todo);
+ok(open.length === todo.items.filter(t => !t.done).length && open.every(t => !t.done), "openTodos keeps only open items");
+ok(open.every((t, i) => i === 0 || (open[i - 1].added || "") <= (t.added || "")), "openTodos sorted oldest first");
+ok(T.openTodos({ items: [{ id: "a", done: true }] }).length === 0, "done items hidden");
 // Late Sunday UTC is still Sunday in New York; Sunday is a rest day.
 const sun = T.planFor(cfg, cur, new Date("2026-10-12T02:00:00Z"));
 ok(sun.day === "sun" && sun.blocks.length === 0, "Sunday 22:00 New York is a rest day: " + sun.day);

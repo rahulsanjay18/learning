@@ -147,6 +147,14 @@ def main():
             out.append("CATALOG REFRESH DUE: " + "; ".join(heads) + " (run python3 scripts/catalog.py; re-check on the web, log in CHANGES.md)")
     except Exception as e:
         warn.append(f"catalog check failed: {e}")
+    try:  # things Claude needs from the learner (todo.json; also shown on assets/today.html)
+        todo = [t for t in load("todo.json").get("items", []) if not t.get("done")]
+        if todo:
+            out.append(f"WAITING ON YOU ({len(todo)}, todo.json): " + "; ".join(t["id"] for t in todo))
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        warn.append(f"todo.json: {e}")
     if cfg.get("parked"):
         out.append("Parked: " + ", ".join(p["slug"] for p in cfg["parked"]))
     out += ["WARN " + w for w in warn]

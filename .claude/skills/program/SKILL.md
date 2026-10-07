@@ -22,7 +22,7 @@ Arguments: `$ARGUMENTS` (empty = run today's plan).
 - `topics/<major>/curriculum.json`: courses with `id`, `title`, `status` (`done` | `active` | `next` | `later`), `requires`,
   `topic` (lesson folder if not the major's own, e.g. Games → `chess`, `military-strategy`), `est_lessons`, `lessons` (file stems
   written), `completed` (stems the learner finished, recorded from pasted lp-results), `plan` (upcoming lessons, first = next),
-  `pretest` (true = start the course with a pretest), `source`, `note`, `books` ({primary, secondary[], tertiary[], skip[]}: a course
+  `pretest` (true = start the course with a pretest), `source`, `note`, `lane` (optional; with the curriculum's top-level `lanes` {day: lane}, the Today page shows only that day's lane), `books` ({primary, secondary[], tertiary[], skip[]}: a course
   is a block of its primary book; required for an active core course; `notes/major-design.md`). `topics/<major>/DAG.md` is generated
   by `scripts/major_dag.py`: rerun it after changing courses.
 - `topics/<major>/SYLLABUS.md`: lesson-level plan for the active (and next) course: reading + 2–3 objectives per lesson, and a

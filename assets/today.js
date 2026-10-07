@@ -19,9 +19,13 @@
 
   // One block's suggestion for a major: the newest lesson the learner hasn't finished, else "next lesson not written yet".
   // answered: lesson pages ("topic/stem") with at least one answered question, from this browser and the progress server.
-  function blockFor(major, cur, answered) {
+  // day: "mon".."sun". A curriculum with "lanes" ({mon: "staff", ...}) shows only the active courses of that day's lane.
+  function blockFor(major, cur, answered, day) {
     if (!cur) return { major: major.name, setup: major.setup || "Not set up yet." };
-    var items = cur.courses.filter(function (c) { return c.status === "active"; }).map(function (c) {
+    var lane = cur.lanes && day ? cur.lanes[day] : null;
+    var active = cur.courses.filter(function (c) { return c.status === "active"; });
+    var inLane = lane ? active.filter(function (c) { return c.lane === lane; }) : [];
+    var items = (inLane.length ? inLane : active).map(function (c) {
       var topic = c.topic || major.slug, lessons = c.lessons || [], done = c.completed || [];
       var todo = lessons.filter(function (s) { return done.indexOf(s) < 0 && (answered || []).indexOf(topic + "/" + s) < 0; });
       var stem = todo.length ? todo[0] : null;
@@ -31,7 +35,13 @@
         next: (c.plan || [])[0] || null
       };
     });
-    return { major: major.name, slug: major.slug, items: items };
+    return { major: major.name + (lane && inLane.length ? " (" + lane + " lane)" : ""), slug: major.slug, items: items };
+  }
+
+  // Open to-do items for the learner (todo.json at the repo root), oldest first.
+  function openTodos(todo) {
+    return ((todo && todo.items) || []).filter(function (t) { return !t.done; })
+      .sort(function (a, b) { return (a.added || "") < (b.added || "") ? -1 : 1; });
   }
 
   function planFor(cfg, curricula, now, answered) {
@@ -47,14 +57,14 @@
     });
     var blocks = slugs.map(function (s) {
       var parts = s.split("|"), m = bySlug[parts[0]];
-      var b = blockFor(m, curricula[parts[0]], answered);
+      var b = blockFor(m, curricula[parts[0]], answered, d.day);
       if (parts[1]) b.covering = bySlug[parts[1]].name;
       return b;
     });
     return { date: d.iso, day: d.day, review: cfg.review, blocks: blocks };
   }
 
-  root.LPToday = { planFor: planFor, pretty: pretty, localDay: localDay };
+  root.LPToday = { planFor: planFor, pretty: pretty, localDay: localDay, openTodos: openTodos };
   if (typeof module !== "undefined") module.exports = root.LPToday;
 
   if (typeof document === "undefined") return;
@@ -70,6 +80,24 @@
     return n;
   }
   function getJSON(url) { return fetch(url, { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(url + " " + r.status); return r.json(); }); }
+
+  function renderTodos(todo) {
+    var items = openTodos(todo), box = document.getElementById("todo");
+    if (!box || !items.length) return;
+    box.appendChild(el("h2", { text: "Things I need from you (" + items.length + ")" }));
+    box.appendChild(el("p", { "class": "muted", text: "Accesses, decisions and setup Claude is waiting on. Ticking hides an item in this browser; tell Claude in a session to close it." }));
+    var ul = el("ul", { "class": "today-plan" });
+    items.forEach(function (t) {
+      var id = "todo." + t.id, cb = el("input", { type: "checkbox", id: id });
+      cb.checked = !!store(id);
+      var li = el("li", {}, [cb, " ", el("label", { "for": id, text: t.text })]);
+      if (t.why) li.appendChild(el("p", { "class": "muted", text: "Why: " + t.why }));
+      li.hidden = cb.checked;
+      cb.addEventListener("change", function () { store(id, cb.checked); li.hidden = cb.checked; });
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  }
 
   function render(plan) {
     var out = document.getElementById("today"), status = document.getElementById("today-status");
@@ -132,6 +160,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    getJSON("../todo.json").then(renderTodos).catch(function () {});
     getJSON("../programs.json").then(function (cfg) {
       var curricula = {};
       return Promise.all(cfg.majors.filter(function (m) { return m.curriculum; }).map(function (m) {

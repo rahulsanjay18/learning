@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STATUSES = {"done", "active", "next", "later"}
 COURSE_KEYS = {"id", "title", "status", "requires", "topic", "est_lessons", "lessons", "completed", "plan",
-               "pretest", "source", "note", "level", "group", "credit", "books"}
+               "pretest", "source", "note", "level", "group", "credit", "books", "lane"}
 BOOK_ROLES = {"primary", "secondary", "tertiary", "skip"}
 MANIFEST_IDS = {l.split(",", 1)[0] for l in (ROOT / "library" / "MANIFEST.csv").read_text(encoding="utf-8").splitlines()[1:] if l}
 GROUPS = {"core", "breadth", "elective", "practice", "independent", "capstone", "colloquium"}
