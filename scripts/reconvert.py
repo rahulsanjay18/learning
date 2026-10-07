@@ -224,7 +224,18 @@ def failed_before():
             last[row[0]] = row[1]
     return {p for p, s in last.items() if s == "FAILED"}
 
-def select(books_root, md_root, from_csv=False, pdf=False, retry_failed=False, only="", limit=0):
+def too_big(rows, books_root, max_mb):
+    """Split off books whose file is over max_mb (0 = no limit). Returns (kept, [(path, MB), ...])."""
+    if not max_mb:
+        return rows, []
+    kept, big = [], []
+    for r in rows:
+        f = books_root / r["path"]
+        mb = f.stat().st_size / 1e6 if f.exists() else 0
+        (big.append((r["path"], mb)) if mb > max_mb else kept.append(r))
+    return kept, big
+
+def select(books_root, md_root, from_csv=False, pdf=False, retry_failed=False, only="", limit=0, max_mb=0, big=None):
     """Which books to convert. Default: every book with no .md yet (or RECONVERT.csv with from_csv), minus earlier failures.
     PDFs are checked with pdf_check(): clean ones convert from their text layer; scans/math/DjVu only with pdf=True.
     Returns (rows, hard, n_failed_skipped)."""
@@ -238,6 +249,9 @@ def select(books_root, md_root, from_csv=False, pdf=False, retry_failed=False, o
     exts = {"." + e.strip(". ").lower() for e in only.split(",") if e.strip()}
     if exts:
         rows = [r for r in rows if r["ext"] in exts]
+    rows, over = too_big(rows, books_root, max_mb)   # before the PDF check: it reads each PDF's whole text layer
+    if big is not None:
+        big.extend(over)
     for r in tqdm([r for r in rows if r["ext"] == ".pdf"], desc="check pdfs", unit="pdf"):
         r["light"], g, why = pdf_check(books_root / r["path"])
         r["why"] = f"grade {g}" + (f": {why}" if why else "")
@@ -256,6 +270,8 @@ def add_args(ap):
     ap.add_argument("--pdf", action="store_true", help="also scanned/math PDFs and DjVu (marker: OCR + LaTeX, slow)")
     ap.add_argument("--mode", choices=["fast", "balanced"], help="marker mode for --pdf (default: balanced on GPU, fast on CPU)")
     ap.add_argument("--retry-failed", action="store_true", help="also retry books that failed before")
+    ap.add_argument("--max-mb", type=float, default=100, help="skip book files larger than this many MB (default 100; 0 = no limit). "
+                    "Skipped, not failed: they're listed on every run until you raise the limit")
     ap.add_argument("--mem-gb", type=float, default=4, help="memory cap per book converter in GB (default 4); a book over it is logged FAILED")
     ap.add_argument("--media", action="store_true", help="also extract each book's images (slow for big EPUBs; nothing uses them yet)")
     ap.add_argument("--timeout", type=float, default=30, help="minutes per book step before giving up (logged as FAILED; "
@@ -272,7 +288,13 @@ def run(a, dry=False):
             sys.exit(f"{name} not found: {root} (is the drive mounted?)")
     tools = [t for t in TOOLS if a.pdf or t not in ("marker_single", "ddjvu")]
     print("converters:", ", ".join(f"{t} {'ok' if shutil.which(t) else 'MISSING'}" for t in tools))
-    rows, hard, n_skipped = select(a.books_root, a.md_root, a.csv, a.pdf, a.retry_failed, a.only, a.limit)
+    big = []
+    rows, hard, n_skipped = select(a.books_root, a.md_root, a.csv, a.pdf, a.retry_failed, a.only, a.limit,
+                                   max_mb=getattr(a, "max_mb", 0), big=big)
+    if big:
+        print(f"{len(big)} books over {a.max_mb:g} MB: skipped (raise --max-mb, e.g. --max-mb 300 --mem-gb 12, to convert them)")
+        for path, mb in big:
+            print(f"  {path}  ({mb:.0f} MB)")
     if hard:
         print(f"{len(hard)} books need OCR/marker" + ("" if a.pdf else ": not converted (add --pdf to include them)"))
         for r in hard[:20]:
