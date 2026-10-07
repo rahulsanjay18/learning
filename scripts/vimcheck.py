@@ -28,6 +28,7 @@ def decode(keys):
 
 
 def run(start, target, keys):
+    keys = re.sub(r"(<Esc>)?(:wq|:x)<CR>\s*$|ZZ\s*$", "", keys.strip(), flags=re.I)  # saving/quitting doesn't count
     raw, count = decode(keys)
     if not raw.rstrip().endswith(":wq\r") and not raw.rstrip().endswith(":x\r"):
         raw += "\x1b:wq\r"

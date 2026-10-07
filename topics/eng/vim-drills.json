@@ -1,9 +1,22 @@
 {
   "about": "Vim drills for the eng major, checked by replaying keystrokes in real Vim: python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> \"<keys>\". One per lesson, following Practical Vim's tips; text comes from the 3D chess repos where possible. par = a good keystroke count (verified by the reference solution).",
   "drills": [
-    {"id": "v01-dot", "tip": "Practical Vim tip 1-2: the dot command",
-     "start": "x = 1\ny = 2\nz = 3\n", "target": "x = 1;\ny = 2;\nz = 3;\n", "par": 7, "reference": "A;<Esc>j.j."},
-    {"id": "v02-ciw", "tip": "Practical Vim tips on text objects: change inner word",
-     "start": "def select_action(self, obs, legal, info):\n", "target": "def choose_move(self, obs, legal, info):\n", "par": 16, "reference": "wciwchoose_move<Esc>"}
-  ]
+    {
+      "id": "v01-dot",
+      "tip": "Practical Vim tip 1-2: the dot command",
+      "start": "x = 1\ny = 2\nz = 3\n",
+      "target": "x = 1;\ny = 2;\nz = 3;\n",
+      "par": 7,
+      "reference": "A;<Esc>j.j."
+    },
+    {
+      "id": "v02-ciw",
+      "tip": "Practical Vim tips on text objects: change inner word",
+      "start": "def select_action(self, obs, legal, info):\n",
+      "target": "def choose_move(self, obs, legal, info):\n",
+      "par": 16,
+      "reference": "wciwchoose_move<Esc>"
+    }
+  ],
+  "how_to_record": "Record exactly what you type: `vim -W ~/keys.log drill.txt`, do the drill, finish with :wq. Then convert the recording to paste-able notation: `python3 scripts/vimkeys.py ~/keys.log` (or, without the repo: python3 -c \"import sys;d=open(sys.argv[1],'rb').read();m={27:'<Esc>',13:'<CR>',10:'<CR>',9:'<Tab>',8:'<BS>',127:'<BS>',60:'<lt>'};print(''.join(m.get(b,'<C-%s>'%chr(b+96) if b<32 else chr(b)) for b in d))\" ~/keys.log). The final :wq isn't counted."
 }
