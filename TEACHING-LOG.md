@@ -95,6 +95,11 @@ Rules 11, 13 and 18 are format and logistics.
 30. **Skills on the side get taught, not tested.** A side skill inside a lesson (Vim in the eng major) is a one-minute tip that shows the
     exact keys and what each does, optional to try and send; correct what the learner sends. No par, no golf scoring, no setup homework.
     (Entry 29)
+31. **Write like a person teaching a course.** Learner-facing text (lessons, syllabi, program pages, chat answers) uses plain sentences
+    a teacher would say out loud. No internal jargon (lane, spine, DAG, gate, rep venue, credit by exam), no file paths or rule numbers in
+    the prose, no idioms or metaphors standing in for a plain statement, and **don't quote or restate the learner's own words back to
+    them** ("at your request", "your framing", "as you said"). Say what the course does, not why the learner asked for it. File paths and
+    rule references belong in notes meant for Claude. (Entry 30)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -177,3 +182,8 @@ Rules 11, 13 and 18 are format and logistics.
     opened with a keystroke-golf drill (par 7, replayed and scored) plus a Vim-setup rep, for a learner who knows the basics and asked to
     be taught as they go ("just correct me as I go"). The attempt walked to each line end with w/l instead of `A`, i.e. the tip itself
     had never been shown. Fix: Vim is a one-minute tip with the keys shown; sending keys is optional and gets a correction; Rep 0 waived; rule 30.
+30. **2026-10-08 · "Should be human readable and should also be like you're a real person teaching a course … you do AI-speak by using
+    jargon and idioms and restating things i already said … i dont like you doing that generally but certainly not this."** The first
+    syllabus drafts quoted the learner's requests back, used platform vocabulary ("spine", "lane", "credit by exam") and file paths in
+    student-facing prose. Fix: rewrote all syllabi and the course policies in plain teacher's prose; rule 31, for every subject.
+

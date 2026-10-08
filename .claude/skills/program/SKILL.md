@@ -27,6 +27,9 @@ Arguments: `$ARGUMENTS` (empty = run today's plan).
   by `scripts/major_dag.py`: rerun it after changing courses.
 - `topics/<major>/SYLLABUS.md`: lesson-level plan for the active (and next) course: reading + 2–3 objectives per lesson, and a
   "Changes" log. `plan` in curriculum.json mirrors it. Write the next lesson *from* it; when a course starts, write its syllabus first.
+- `topics/<major>/syllabi/<COURSE>.md` + `syllabi/PLAN.md`: the college-style course syllabus and program of study (every course,
+  not only active ones; `notes/syllabus-standard.md`). The lesson-level SYLLABUS.md must agree with the course syllabus's schedule; when
+  you change one, change the other and run `python3 scripts/render_syllabi.py`. New course or major → write its syllabus first.
 - `topics/<major>/backlog.json` (optional, eng): project tickets mapped to courses; each lesson assigns one as a required rep
   (state assigned/shipped/skipped + dates); status shows open reps. Re-check the ticket on GitHub before assigning.
 - `topics/<major>/catalog.json` (optional): a self-updating list of certs/skills/tracks with sources and a `verified` date;

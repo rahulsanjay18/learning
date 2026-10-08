@@ -60,6 +60,15 @@ BOOKS_URL=https://books.tail59e10.ts.net
   + the progress server), then teaches with /teach conventions. Start a learning session with it.
 - After every lesson, update the major's `curriculum.json` (`lessons`, `plan`, `completed`) and run `python3 scripts/test_programs.py`.
 
+## Course syllabi and program pages (2026-10-08, standard for every course and major, new ones included)
+- Every course in a `curriculum.json` has a college-style syllabus `topics/<major>/syllabi/<COURSE>.md` (description, objectives,
+  texts with real chapters, weekly schedule, assessment), and every major has `syllabi/PLAN.md` (the program of study). Template and
+  rules: `notes/syllabus-standard.md`; shared policies: `notes/course-policies.md`. When you add a course or a major, write these first.
+- Render with `python3 scripts/render_syllabi.py` (fills in prerequisites, meeting days and estimated dates; never write those by
+  hand). `check_all.sh` fails if a course has no syllabus.
+- Write them like a real professor: plain sentences, no internal jargon or file paths, no restating my words back (TEACHING-LOG rule 31).
+- Assume every book is available. Books I still need go on the major's books list; if I can't get one, I'll say so and we pick another.
+
 ## Engineering career major (`topics/eng/`, 2026-10-07)
 - **Everything job-related lives here** (staff skills, AWS cert, C/C++/CUDA, Spark, career extras, safety net); it replaced the aws-ml major.
 - Continuous, four lanes (Mon staff, Wed tech, Thu interview, Fri interest = explore). Every lesson ends with a **required rep** from my 3D chess backlog (or another venue: platform, lab, day job) (`topics/eng/backlog.json`):

@@ -29,8 +29,8 @@ your grade.
 Most courses start with a pretest. It never counts against you. If you already know a section, you skip it. If you pass the
 whole pretest, the course counts as complete. When you don't know something, say "I don't know". That's the answer that helps.
 
-Each syllabus gives grade weights the way a normal course would. The letter grade is there so you can see where you stand. It
-doesn't gate anything.
+Each syllabus gives grade weights the way a normal course would. The letter grade is there so you can see where you stand.
+Nothing else depends on it.
 
 | Grade | What it means |
 |---|---|

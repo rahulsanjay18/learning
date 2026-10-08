@@ -4,7 +4,8 @@ per major (topics/<major>/syllabi/index.html = the program of study: PLAN.md + p
 
     python3 scripts/render_syllabi.py            # render every major
     python3 scripts/render_syllabi.py statistics # one major
-    python3 scripts/render_syllabi.py --check    # exit 1 if a course has no syllabus or an HTML page is stale
+    python3 scripts/render_syllabi.py --check    # exit 1 if a course has no syllabus or PLAN.md, or a section is missing;
+                                                 # out-of-date HTML is only a warning
 
 Why: a syllabus is the college-style handout for one course (description, objectives, texts, weekly schedule, grading,
 policies). The author writes only those sections; this script adds the facts that already live elsewhere, so they are never
@@ -23,6 +24,7 @@ DAYS = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
 GROUP_NAME = {"core": "Required", "breadth": "Optional (breadth)", "elective": "Optional (elective)",
               "practice": "Optional (practice)", "independent": "Optional (independent study)",
               "capstone": "Optional (capstone)", "colloquium": "Optional (end-of-level conversation)"}
+STATUS_NAME = {"done": "Completed", "active": "In progress", "next": "Next up", "later": "Not started"}
 LEVEL_NAME = {"I": "Level I (undergraduate)", "II": "Level II (graduate, if you sign up for it)"}
 # Lessons per week for one course of the major, from the weekly blocks in programs.json and the lesson size in each PROGRAM.md:
 # Statistics 4 blocks, 2 blocks a lesson; Indian History 2 blocks, 2 a lesson; Games 2 blocks shared by its 2 active courses,
@@ -144,7 +146,7 @@ def header_rows(progs, entry, cur, major, c, meta, proj):
     n = lessons_for(c, meta)
     done = len(c.get("completed", []))
     written = len(c.get("lessons", []))
-    status = {"done": "Completed", "active": "In progress", "next": "Next up", "later": "Not started"}.get(c.get("status"), c.get("status"))
+    status = STATUS_NAME.get(c.get("status"), c.get("status"))
     if c.get("credit") == "exam":
         status += " (passed by pretest)"
     rows = [("Course", f"{c['id']} · {html.escape(c['title'])}"),
@@ -231,11 +233,11 @@ def render_major(major, write=True):
         if not cs:
             continue
         rows.append(f"<h2>{LEVEL_NAME[grp]}</h2>")
-        rows.append('<table class="syllabus"><thead><tr><th>Course</th><th>Group</th><th>Status</th><th>Prerequisites</th><th>Estimated dates</th></tr></thead><tbody>')
+        rows.append('<table class="syllabus"><thead><tr><th>Course</th><th>Type</th><th>Status</th><th>Prerequisites</th><th>Estimated dates</th></tr></thead><tbody>')
         for c in cs:
             p = proj.get(c["id"])
             link = f'<a href="{c["id"]}.html">{c["id"]} {html.escape(c["title"])}</a>' if c["id"] in bodies else f'{c["id"]} {html.escape(c["title"])}'
-            rows.append(f"<tr><td>{link}</td><td>{c.get('group', 'core')}</td><td>{c.get('status')}</td>"
+            rows.append(f"<tr><td>{link}</td><td>{GROUP_NAME.get(c.get('group', 'core'), c.get('group'))}</td><td>{STATUS_NAME.get(c.get('status'), c.get('status'))}</td>"
                         f"<td>{', '.join(c.get('requires', [])) or '—'}</td><td>{fmt(p[0]) + ' to ' + (fmt(p[1]) if p[1] else 'ongoing') if p else '—'}</td></tr>")
         rows.append("</tbody></table>")
     terms = {}
@@ -268,7 +270,7 @@ def main(argv):
     majors = [a for a in argv if not a.startswith("--")]
     progs = json.loads((ROOT / "programs.json").read_text())
     majors = majors or [m["slug"] for m in progs["majors"]]
-    all_problems = []
+    all_problems, stale = [], []
     for m in majors:
         problems, pages = render_major(m, write=not check)
         all_problems += problems
@@ -278,9 +280,11 @@ def main(argv):
                 # dates in the projection change daily; compare with dates masked
                 mask = lambda s: re.sub(r"[A-Z][a-z]{2} \d{1,2}, \d{4}", "DATE", s)
                 if mask(old) != mask(text):
-                    all_problems.append(f"stale: {p.relative_to(ROOT)} (run python3 scripts/render_syllabi.py)")
+                    stale.append(str(p.relative_to(ROOT)))
     for p in all_problems:
         print("FAIL", p)
+    if stale:   # generated pages drift whenever curriculum.json changes; a warning, not a failure
+        print(f"WARN {len(stale)} syllabus page(s) out of date (e.g. {stale[0]}): run python3 scripts/render_syllabi.py")
     if not check:
         print(f"rendered syllabi for {', '.join(majors)}; {len(all_problems)} problem(s)")
     return 1 if all_problems else 0

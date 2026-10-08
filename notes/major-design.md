@@ -59,6 +59,10 @@ not at all. Then you organize those blocks of books (effectively 'courses') into
 - Claude's job per course is then choosing and ordering resources, slicing the primary book into lessons, and teaching the gaps,
   not writing a curriculum from scratch.
 
+## Syllabi (2026-10-08)
+Every course gets a college-style syllabus and every major a program-of-study page, written when the course or major is created:
+`notes/syllabus-standard.md`. `scripts/render_syllabi.py --check` (in `check_all.sh`) enforces it.
+
 ## In curriculum.json
 Each course may carry `"level": "I" | "II"` and `"group": "core" | "breadth" | "elective" | "practice" | "independent" |
 "capstone" | "colloquium"`. `scripts/test_programs.py` checks the values.

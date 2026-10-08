@@ -26,7 +26,7 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 
 ## Indian History
 - _A History of Ancient and Early Medieval India_, 2nd ed. — Upinder Singh (Pearson, 2024) — for: IH201 Ancient India — why: the standard deep text for the period, built around primary sources and archaeology (fits the "one source in your hands" lesson design) — status: missing
-- _The Economic History of India, 1857–2010_, 4th ed. — Tirthankar Roy (OUP, 2020) — for: IH330 economic history (the "economic history of India" PROGRAM.md asks for); links to Economics — status: missing
+- _The Economic History of India, 1857–2010_, 4th ed. — Tirthankar Roy (OUP, 2020) — for: IH330 economic history (the "economic history of India" PROGRAM.md asks for); links to Economics — status: got (8b573d9c6b, grade A; on the server, not yet in MANIFEST.csv; found 2026-10-08)
 
 ## Fitness and art (parked)
 - _NASM Essentials of Personal Fitness Training, 7th ed._ — NASM (Jones & Bartlett) — for: nasm-cpt / all lessons — why: the textbook the current exam is written from; collection only has the 4th ed. (2012) — status: missing
@@ -53,6 +53,65 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 - A USPTO patent-bar prep course or book — for: CR327 patent agent — status: missing (later)
 - _AI Engineering_ — Chip Huyen (O'Reilly, 2025) — for: CR120/CR140 boosters — status: missing
 - _System Design Interview_ vol. 1–2 — Alex Xu — for: CR150 interviewing — status: missing
-- _Trading and Exchanges_ — Larry Harris — for: CR310 quant developer (on hold: remote-only) — status: missing
+- _Trading and Exchanges_ — Larry Harris — for: CR310 quant developer (on hold: remote-only) — status: got (ae0bc03662, grade A; on the server, not yet in MANIFEST.csv; found 2026-10-08)
 
 AWS ML certification (topics/eng/, AW courses): MLA-C02 exam guide (free); your 2024 Solutions Architect course (you have it).
+
+## Added 2026-10-08 for the course syllabi (topics/<major>/syllabi/)
+Ordered by when each is first needed. Every syllabus assumes these are available; if one can't be found as a convertible copy, say so
+and the syllabus gets an alternative. All status: missing (checked on the server by title, 2026-10-08) unless noted.
+
+**Free from the authors (please download):**
+- _Probability: Theory and Examples_, 5th ed. — Durrett — for: S501–S502
+- _Computer Age Statistical Inference_ — Efron & Hastie — for: S330, S511, S570
+- _Bandit Algorithms_ — Lattimore & Szepesvári — for: S580
+- _Reinforcement Learning: An Introduction_, 2nd ed. — Sutton & Barto — for: G401, G504
+- _Software Engineering at Google_ — Winters, Manshreck & Wright — for: SE110, SE130 — status: your copy (cd049207e7) is an early release with 3 chapters; the full book is free at abseil.io
+- _Designing Data-Intensive Applications_, 2nd ed. (final) — Kleppmann & Riccomini — for: SE120 weeks 7–9 — status: your copy (e66241afb4) is an early release, Chapters 1–7 only
+- _Site Reliability Engineering_ — Beyer et al. — for: CR380 (free at sre.google)
+- _The Rust Programming Language_ — Klabnik & Nichols — for: CR350 (free at doc.rust-lang.org)
+
+**Engineering (to buy):**
+- _System Design Interview_ vols 1–2 — Xu (vol 2 with Lam) — for: IV100, SE120
+- _Machine Learning System Design Interview_ — Aminian & Xu — for: IV100, SE120
+- _Good Strategy/Bad Strategy_ — Rumelt — for: SE150
+- _AI Engineering_ — Huyen (2025) — for: CR120, CR140
+- _A Tour of C++_, 3rd ed. — Stroustrup — for: CP201, CP203
+- _C++ Concurrency in Action_, 2nd ed. — Williams — for: CP204
+- _Learning Spark_, 2nd ed. — Damji et al. — for: CR170
+- _Threat Modeling: Designing for Security_ — Shostack — for: CR330
+- _The Linux Programming Interface_ — Kerrisk — for: CP310
+- _Game Engine Architecture_, 3rd ed. — Gregory — for: CP330
+- _C++ Templates_, 2nd ed. — Vandevoorde, Josuttis & Gregor; _C++ Software Design_ — Iglberger — for: CP401, CP402
+- _Team Topologies_ — Skelton & Pais — for: SE150 (optional)
+- _The Go Programming Language_ — Donovan & Kernighan — for: CR360
+- _A Practical Guide to Quantitative Finance Interviews_ — Zhou; _Heard on the Street_ — Crack — for: CR320 (on hold). (_Trading and Exchanges_ — Harris is already on the server: ae0bc03662, grade A)
+
+**Statistics (to buy):**
+- _Foundations of Linear and Generalized Linear Models_ — Agresti — for: S310, S520
+- _Design and Analysis of Experiments_ — Montgomery (any recent edition) — for: S320
+- _The Lady Tasting Tea_ — Salsburg — for: S190
+- _Sampling: Design and Analysis_, 3rd ed. — Lohr — for: S370
+- Level II: _Theory of Point Estimation_ — Lehmann & Casella; _Testing Statistical Hypotheses_ — Lehmann & Romano; _Asymptotic Statistics_ — van der Vaart; _Theoretical Statistics_ — Keener; _Causal Inference for Statistics, Social, and Biomedical Sciences_ — Imbens & Rubin; _High-Dimensional Statistics_ — Wainwright; _All of Nonparametric Statistics_ — Wasserman; _Monte Carlo Statistical Methods_ — Robert & Casella; _Statistical Inference as Severe Testing_ — Mayo; _The Foundations of Statistics_ — Savage
+
+**Indian History (to buy):**
+- _What Is History?_ — E. H. Carr — for: IH150
+- _India in the Persianate Age, 1000–1765_ — Richard Eaton — for: IH202, IH203
+- _The Mughal Empire_ (New Cambridge History) — John F. Richards — for: IH203
+- _Modern South Asia_, 4th ed. — Bose & Jalal — for: IH203–IH205
+- _The Great Partition_, 2nd ed. — Yasmin Khan — for: IH205
+- _India After Gandhi_ (2017 or later) — Ramachandra Guha — for: IH206
+- _The Other Side of Silence_ — Urvashi Butalia — for: IH205, IH390, IH540
+- _King, Governance, and Law in Ancient India: Kautilya's Arthaśāstra_ — Olivelle (trans.) — for: IH201, IH320, IH520
+- _The Baburnama_ — Thackston (trans.) — for: IH203, IH520 (Alberuni's _India_, Sachau trans., and the _Ain-i-Akbari_ are public domain)
+- _Mughal Warfare_ — Jos Gommans — for: IH320
+- _Indian Art_ (Oxford History of Art) — Partha Mitter — for: IH340
+- Level II: _Orientalism_ — Said; _Aryans and British India_ — Trautmann; _An Introduction to the Study of Indian History_ — Kosambi; _Indian Feudalism_ — R. S. Sharma; _India's Struggle for Independence_ — Bipan Chandra et al.; _The Emergence of Indian Nationalism_ — Seal; _Indian Society and the Making of the British Empire_ — Bayly; _Provincializing Europe_ — Chakrabarty; _The Past Before Us_ — Thapar; _Aśoka and the Decline of the Mauryas_ — Thapar; _A Concise History of South India_ — Karashima (ed.); _A Social History of the Deccan_ — Eaton; _The Long Partition_ — Zamindar; _The Cambridge Introduction to Sanskrit_ — Ruppel; _An Introduction to Persian_ — Thackston
+
+**Games (to buy):**
+- _Lessons in Play_, 2nd ed. — Albert, Nowakowski & Wolfe — for: G102, G502
+- _Backgammon_ — Paul Magriel — for: G401
+- _The Oxford History of Board Games_ — Parlett — for: G190 (also _A History of Chess_ — Murray, public domain; _Ancient Board Games in Perspective_ — Finkel)
+- _Simulating War_ — Philip Sabin — for: G350
+- _Game Balance_ — Schreiber & Romero — for: G602
+- _Combinatorial Game Theory_ — Siegel — for: G502 (optional)

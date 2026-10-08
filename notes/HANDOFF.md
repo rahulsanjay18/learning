@@ -3,6 +3,10 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-08: course syllabi for every course** (149 courses + a program-of-study page per major) in `topics/<major>/syllabi/`,
+  rendered by `scripts/render_syllabi.py`; standard for all new courses/majors (`notes/syllabus-standard.md`, CLAUDE.md, TEACHING-LOG
+  rule 31 on plain teacher's voice). Book gaps found: DDIA 2e and *SWE at Google* copies are early releases; Ousterhout copy is 1st ed.;
+  Reilly, Larson x2, Ousterhout, Roy, Harris are on the server but not in MANIFEST.csv. Full to-get list: `library/WANTED.md` (2026-10-08 section).
 - **2026-10-08: eng 0001 graded** (record eng/0001: tech lead, target Solver; nothing shrinks). SE000 done, **SE101 active: write its
   syllabus before Monday's staff block** (prefer Reilly Part I once the staff books are indexed). Vim is now a shown tip (rule 30).
 - **2026-10-07 (later): lessons built ahead** with current info: eng 0001 staff placement and 0002 AWS placement (pretest), IH 0004
