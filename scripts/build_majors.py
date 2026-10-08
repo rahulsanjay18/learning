@@ -417,8 +417,10 @@ course("MU190", "Breadth: the physics of sound and hearing", [], 8, B(
     "8e3ad00192 Goldsmith, Sound VSI (grade A)", ["8f4b3a9ae8 Walmsley, Light VSI (for the wave ideas)"]),
     note="Meets Physics PH214 (waves).")
 course("MU290", "Practice: your instrument (applied lessons, with a teacher if possible)", ["MU100"], 20, B(
-    "your instrument's method or exam syllabus (guitar: db709588b0 Hal Leonard Guitar Method; piano: ABRSM grade books; "
-    "voice: 6d6ec0d253 RCM Voice Syllabus)"))
+    "your instrument's method: guitar, db709588b0 Hal Leonard Guitar Method (complete edition)",
+    ["533fd56a14 Guitar Head, Memorize the Fretboard (grade A)",
+     "f7b82990ad Shearer, Classic Guitar Technique vol. 1 (grade C: your copy; if you go classical)",
+     "piano, if you return to it: e213219df8 Faber Adult Piano Adventures, then the ABRSM grade books"]))
 course("MU398", "End-of-level conversation (Level I)", ["MU320", "MU233"], 1, B("list of works + conversation"))
 course("MU399", "Capstone: an analysis paper or a short recital", ["MU320", "MU233"], 12, B("optional"))
 course("MU501", "Schenkerian analysis", ["MU300", "MU310"], 24, B(
@@ -621,11 +623,12 @@ MAJORS = {
         "breadth": ["MU190"], "practice": ["MU290", "MU595"], "colloquium": ["MU398"], "capstone": ["MU399", "MU599"],
         "entry": {
             "credited": [],
-            "maybe": ["MU100", "MU101"],
-            "start": ["MU110", "MU120"],
-            "basis": "Placeholder until you say: no music courses on either Penn State transcript that I know of. If you read "
-                     "notation and know keys and intervals, MU100 is a skim; MU101 (listening) is a skim if you already listen "
-                     "closely to classical music. Tell me your instrument(s) and I'll adjust.",
+            "maybe": ["MU101", "MU120"],
+            "start": ["MU100"],
+            "basis": "You play guitar, used to play piano and read basic notation; no music courses on either transcript. "
+                     "MU100 is the start but runs as a fast pass (skip what you know; keys, intervals and triads are where it "
+                     "slows down). MU120 keyboard is 'maybe' (a refresher for a former pianist). MU101 listening is 'maybe'. "
+                     "Guitar is the instrument for MU290 practice.",
         },
     },
     "english": {
@@ -639,8 +642,8 @@ MAJORS = {
             "maybe": [],
             "start": ["EN100"],
             "basis": "Both Penn State degrees required first-year composition (ENGL 15) and the CompE degree ENGL 202C (technical "
-                     "writing), so EN015 is credited. No literature courses known; tell me any you took (gen-ed lit courses "
-                     "would credit parts of the surveys).",
+                     "writing), so EN015 is credited. No college literature courses. AP Literature in high school (no exam) "
+                     "gives no credit, but it covers much of EN100 and some of EN130, so expect both to go quickly.",
         },
     }
 }

@@ -8,9 +8,11 @@
   counterpoint, a three-part history of Western music, and Hindustani classical music. Level II is graduate theory and
   musicology (Schenkerian analysis, post-tonal theory, ethnomusicology).
 - **Written for a high-school graduate** who may not read music yet (start: MU100 fundamentals and MU101 listening).
-- **Your entry point is a placeholder:** I don't know your music background. For now nothing is credited, and fundamentals
-  and listening are "maybe". **Tell me what you play and whether you read notation**, and I'll move the entry point.
-- **Size:** ≈ 250 lessons of Level I core from scratch (≈ 4.8 years at one lesson a week, ≈ 2.4 at two). Level II ≈ 90.
+- **Your entry point:** you play guitar, used to play piano and read basic notation. You start at **MU100 fundamentals as a
+  fast pass**: skip what you know; keys, intervals and triads are where it slows down. Keyboard skills (MU120) is "maybe", a
+  refresher for a former pianist, and so is listening (MU101). Guitar is your instrument for the optional performance practice.
+- **Size from your entry point:** ≈ 250 lessons of Level I core with the "maybe" courses, ≈ 220 without (≈ 4.8 / 2.4 years
+  at one or two lessons a week). MU100 will likely run well under its 16. Level II ≈ 90.
 - **Books:** your music shelf covers almost all of it. The main theory text, Clendinning & Marvin's *The Musician's Guide to
   Theory and Analysis*, is grade A. The history courses need Burkholder's *A History of Western Music* (to acquire).
 
@@ -35,8 +37,9 @@ MU110 → MU210 beside them, keyboard MU120, counterpoint MU310, history MU231 �
   Your Gauldin copy is grade C, so its exercises are read from your copy.
 - *Hindustani music:* Bakshi's *101 Ragas* (grade A) plus the sitar method on your shelf. It meets the Indian History major.
 
-**Practice (optional):** your instrument (MU290, ideally with a teacher). Guitar, piano, ukulele and voice methods are all on
-your shelf, plus the ABRSM and RCM exam syllabi if you want graded goals.
+**Practice (optional):** guitar (MU290, ideally with a teacher): the Hal Leonard method and *Memorize the Fretboard* from
+your shelf, Shearer if you go classical. Theory will lean on the guitar too: voicings, the fretboard as an interval map.
+Piano returns through keyboard skills (MU120) if you want it.
 
 ## 2. Courses
 
@@ -44,10 +47,10 @@ your shelf, plus the ABRSM and RCM exam syllabi if you want graded goals.
 
 | Course | Title | Primary book | Requires | Lessons | You |
 |---|---|---|---|---|---|
-| MU100 | Music fundamentals: notation, rhythm, scales, keys, intervals, triads | Clendinning & Marvin, The Musician's Guide to Theory and Analysis (fundamentals chapters; grade A; to confirm) *(in library)* | — | 16 | maybe |
+| MU100 | Music fundamentals: notation, rhythm, scales, keys, intervals, triads | Clendinning & Marvin, The Musician's Guide to Theory and Analysis (fundamentals chapters; grade A; to confirm) *(in library)* | — | 16 | **start** |
 | MU101 | Listening: how music works | Copland, What to Listen for in Music (grade A) *(in library)* | — | 10 | maybe |
-| MU110 | Aural skills I: sight-singing and dictation | Ottman & Rogers, Music for Sight Singing (diatonic units) *(in library)* | MU100 | 18 | **start** |
-| MU120 | Keyboard skills (functional piano) | Faber, Adult Piano Adventures All-in-One Book 1 *(in library)* | MU100 | 20 | **start** |
+| MU110 | Aural skills I: sight-singing and dictation | Ottman & Rogers, Music for Sight Singing (diatonic units) *(in library)* | MU100 | 18 |  |
+| MU120 | Keyboard skills (functional piano) | Faber, Adult Piano Adventures All-in-One Book 1 *(in library)* | MU100 | 20 | maybe |
 | MU200 | Theory II: diatonic harmony and voice leading | Clendinning & Marvin (diatonic harmony chapters; to confirm) *(in library)* | MU100 | 24 |  |
 | MU210 | Aural skills II: chromatic sight-singing, harmonic dictation | Ottman & Rogers, Music for Sight Singing (chromatic units) *(in library)* | MU110, MU200 | 18 |  |
 | MU300 | Theory III: chromatic harmony, modulation and form | Clendinning & Marvin (chromatic harmony and form chapters; to confirm) *(in library)* | MU200 | 24 |  |
@@ -67,7 +70,7 @@ your shelf, plus the ABRSM and RCM exam syllabi if you want graded goals.
 | MU270 | Orchestration (elective) | Adler, The Study of Orchestration *(to acquire)* | MU300 | 18 |  |
 | MU280 | Composition: short pieces in notation software (elective) | MuseScore (free notation software: https://musescore.org) + Clendinning & Marvin composition exercises | MU300 | 16 |  |
 | MU190 | Breadth: the physics of sound and hearing (breadth) | Goldsmith, Sound VSI (grade A) *(in library)* | — | 8 |  |
-| MU290 | Practice: your instrument (applied lessons, with a teacher if possible) (practice) | your instrument's method or exam syllabus (guitar: db709588b0 Hal Leonard Guitar Method; piano: ABRSM grade books; voice: 6d6ec0d253 RCM Voice Syllabus) | MU100 | 20 |  |
+| MU290 | Practice: your instrument (applied lessons, with a teacher if possible) (practice) | your instrument's method: guitar, db709588b0 Hal Leonard Guitar Method (complete edition) | MU100 | 20 |  |
 | MU398 | End-of-level conversation (Level I) (colloquium) | list of works + conversation | MU320, MU233 | 1 |  |
 | MU399 | Capstone: an analysis paper or a short recital (capstone) | optional | MU320, MU233 | 12 |  |
 

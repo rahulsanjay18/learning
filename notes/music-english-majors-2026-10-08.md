@@ -5,7 +5,7 @@
 ## TL;DR
 | Major | Level I core from high school | From your entry | Half / full time | Start |
 |---|---|---|---|---|
-| Music | 250 lessons (13 courses) | 250 (placeholder: nothing credited yet) | ≈ 4.8 / 2.4 yr | MU100 fundamentals + MU101 listening (both "maybe"), MU110 aural, MU120 keyboard |
+| Music | 250 lessons (13 courses) | 250 (≈ 220 without the "maybe" courses) | ≈ 4.8 / 2.4 yr | MU100 fundamentals, as a fast pass |
 | English | 340 (14 courses) | 328 (composition credited) | ≈ 6.3 / 3.2 yr | EN100 how to read literature |
 
 Computed by `python3 scripts/build_majors.py --stats`; lesson counts are estimates (one lesson = two 25-minute blocks).
@@ -19,7 +19,7 @@ Computed by `python3 scripts/build_majors.py --stats`; lesson counts are estimat
   optional practice course.
 - **Free extra:** *Open Music Theory* v2, CC BY-SA, a full undergraduate theory text with worksheets [2].
 - **Blocked on a widget:** aural skills want the music-notation and ear-training widget from the wishlist (not built).
-- **Needs from you:** your instrument(s) and whether you read notation.
+- **You:** guitar, former pianist, basic notation. Fundamentals is a fast pass; keyboard and listening are "maybe"; guitar is the practice instrument.
 
 ## English
 - **Core:** how to read literature (Foster, Culler, Adler), poetry (Norton Anthology of Poetry), British I–II and American
@@ -28,7 +28,7 @@ Computed by `python3 scripts/build_majors.py --stats`; lesson counts are estimat
 - **A reading major:** mostly reading days, a seminar every few days, an essay per course; Extra practice is mostly one article.
 - **Overlap with Critical Theory:** EN300 is the same material as CT100 + CT201; several novels are on both lists. One reading counts for both.
 - **To acquire first:** Norton Anthology of English Literature vol. 1 (Beowulf to the Restoration).
-- **Needs from you:** any literature courses you took (gen-eds would credit parts of the surveys).
+- **You:** no college literature; AP Lit (no exam) means EN100 and EN130 should go quickly.
 
 ## Sources
 1. NASM Handbook: https://nasm.arts-accredit.org/accreditation/standards-guidelines/handbook/ (65% figure via Normandale's copy:

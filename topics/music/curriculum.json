@@ -14,14 +14,13 @@
     ],
     "credited": [],
     "maybe": [
-      "MU100",
-      "MU101"
-    ],
-    "start": [
-      "MU110",
+      "MU101",
       "MU120"
     ],
-    "basis": "Placeholder until you say: no music courses on either Penn State transcript that I know of. If you read notation and know keys and intervals, MU100 is a skim; MU101 (listening) is a skim if you already listen closely to classical music. Tell me your instrument(s) and I'll adjust."
+    "start": [
+      "MU100"
+    ],
+    "basis": "You play guitar, used to play piano and read basic notation; no music courses on either transcript. MU100 is the start but runs as a fast pass (skip what you know; keys, intervals and triads are where it slows down). MU120 keyboard is 'maybe' (a refresher for a former pianist). MU101 listening is 'maybe'. Guitar is the instrument for MU290 practice."
   },
   "courses": [
     {
@@ -408,7 +407,12 @@
       "level": "I",
       "est_lessons": 20,
       "books": {
-        "primary": "your instrument's method or exam syllabus (guitar: db709588b0 Hal Leonard Guitar Method; piano: ABRSM grade books; voice: 6d6ec0d253 RCM Voice Syllabus)"
+        "primary": "your instrument's method: guitar, db709588b0 Hal Leonard Guitar Method (complete edition)",
+        "secondary": [
+          "533fd56a14 Guitar Head, Memorize the Fretboard (grade A)",
+          "f7b82990ad Shearer, Classic Guitar Technique vol. 1 (grade C: your copy; if you go classical)",
+          "piano, if you return to it: e213219df8 Faber Adult Piano Adventures, then the ABRSM grade books"
+        ]
       }
     },
     {

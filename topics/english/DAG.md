@@ -87,4 +87,4 @@ Written as if starting from high school (EN015, EN100 first). Your entry point:
 - **Credited** (pale grey, from your degrees): EN015
 - **Maybe** (dotted: skim or skip, your call): none
 - **Start here** (thick border): EN100
-- Basis: Both Penn State degrees required first-year composition (ENGL 15) and the CompE degree ENGL 202C (technical writing), so EN015 is credited. No literature courses known; tell me any you took (gen-ed lit courses would credit parts of the surveys).
+- Basis: Both Penn State degrees required first-year composition (ENGL 15) and the CompE degree ENGL 202C (technical writing), so EN015 is credited. No college literature courses. AP Literature in high school (no exam) gives no credit, but it covers much of EN100 and some of EN130, so expect both to go quickly.

@@ -24,7 +24,7 @@ flowchart TB
   MU270["MU270 Orchestration<br/><small>book: Adler, The Study of Orchestration</small>"]
   MU280["MU280 Composition: short pieces in notation s…<br/><small>book: MuseScore</small>"]
   MU190["MU190 Breadth: the physics of sound and heari…<br/><small>book: Goldsmith, Sound VSI</small>"]
-  MU290["MU290 Practice: your instrument (applied less…<br/><small>book: your instrument's method or exam syllabus</small>"]
+  MU290["MU290 Practice: your instrument (applied less…<br/><small>book: your instrument's method</small>"]
   MU398["MU398 End-of-level conversation (Level I)<br/><small>book: list of works + conversation</small>"]
   MU399["MU399 Capstone: an analysis paper or a short …<br/><small>book: optional</small>"]
   MU100 --> MU110
@@ -54,10 +54,10 @@ flowchart TB
   classDef credited fill:#e8e8e8,color:#999,stroke:#ccc
   classDef maybe fill:#f4f4f4,color:#666,stroke:#aaa,stroke-dasharray:2 2
   classDef start stroke-width:4px,stroke:#000
-  class MU100 maybe
+  class MU100 start
   class MU101 maybe
-  class MU110 start
-  class MU120 start
+  class MU110 later
+  class MU120 maybe
   class MU200 later
   class MU210 later
   class MU300 later
@@ -81,6 +81,6 @@ flowchart TB
 
 Written as if starting from high school (MU100, MU101 first). Your entry point:
 - **Credited** (pale grey, from your degrees): 
-- **Maybe** (dotted: skim or skip, your call): MU100, MU101
-- **Start here** (thick border): MU110, MU120
-- Basis: Placeholder until you say: no music courses on either Penn State transcript that I know of. If you read notation and know keys and intervals, MU100 is a skim; MU101 (listening) is a skim if you already listen closely to classical music. Tell me your instrument(s) and I'll adjust.
+- **Maybe** (dotted: skim or skip, your call): MU101, MU120
+- **Start here** (thick border): MU100
+- Basis: You play guitar, used to play piano and read basic notation; no music courses on either transcript. MU100 is the start but runs as a fast pass (skip what you know; keys, intervals and triads are where it slows down). MU120 keyboard is 'maybe' (a refresher for a former pianist). MU101 listening is 'maybe'. Guitar is the instrument for MU290 practice.

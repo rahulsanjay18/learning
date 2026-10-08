@@ -10,8 +10,8 @@ course is about to start.*
   on one author. Writing electives (fiction, drama and screenwriting, nonfiction). Level II is graduate study: theory,
   Old English, Chaucer, Milton, modernism.
 - **Written for a high-school graduate.** **Your entry point:** composition is credited (both degrees required first-year
-  writing, and computer engineering added technical writing), so you start at **EN100 How to read literature**. If you took
-  literature gen-eds, tell me and I'll credit them.
+  writing, and computer engineering added technical writing), so you start at **EN100 How to read literature**. AP Literature
+  (no exam) earns no credit but covers much of EN100 and some of poetry (EN130), so expect both to go fast.
 - **Size from your entry point:** ≈ 328 lessons of Level I core (≈ 6.3 years at one lesson a week, ≈ 3.2 at two). Most days are
   reading days; a lesson here is two 25-minute sittings.
 - **Books:** your library has almost everything: the Norton anthologies of English (vol. 2), American literature and
