@@ -78,7 +78,7 @@ instruments (pendulum period, centripetal acceleration, Doppler, magnetometer). 
 | PH394 | General relativity (undergraduate) (elective) | Schutz, A First Course in General Relativity 2nd *(in library)* | PH352, PH341 | 20 |  |
 | PH395 | Solid state physics (elective) | Simon, The Oxford Solid State Basics *(in library)* | PH361, PH371 | 18 |  |
 | PH396 | Astrophysics (elective) | Carroll & Ostlie, An Introduction to Modern Astrophysics 2nd *(in library)* | PH237, PH341 | 24 |  |
-| MA412 | Fourier series and partial differential equations (elective) | Strauss, Partial Differential Equations: An Introduction (ch. 1-7) *(in library)* | MA250, MA230 | 18 | maybe |
+| MA412 | Fourier series and partial differential equations (elective) | Strauss, Partial Differential Equations: An Introduction (ch. 1-7) *(in library)* | MA250, MA230 | 18 | **start** |
 | PH190 | Breadth: what physics is, how it got here, how it knows (breadth) | Perkowitz, Physics VSI (grade A) *(in library)* | — | 8 |  |
 | PH390 | Practice: tabletop and phone-sensor experiments (practice) | phyphox (free phone-sensor lab app, RWTH Aachen: https://phyphox.org) + University Physics lab-style problems | PH211 | 8 |  |
 | PH398 | End-of-level conversation (Level I) (colloquium) | list of works + conversation | PH352, PH362, PH371 | 1 |  |

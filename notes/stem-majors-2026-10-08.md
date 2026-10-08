@@ -13,12 +13,12 @@
 
 | Major | From high school | From your entry | Half subject (1 lesson/wk) | Full (2/wk) | You start with |
 |---|---|---|---|---|---|
-| Mathematics | 306 lessons | 62 | ≈ 1.2 yr | ≈ 0.6 yr | MA435 groups, MA429 topology (then MA437) |
+| Mathematics | 306 lessons | 62 (+18 for the MA412 retake) | ≈ 1.2 yr | ≈ 0.6 yr | MA435 groups, MA429 topology, MA412 PDEs (then MA437) |
 | Physics | 404 | 80 (50 without the "maybe" course) | ≈ 1.5 yr | ≈ 0.8 yr | PH361 quantum mechanics I |
 | Mechanical Eng. | 528 | 306 | ≈ 5.9 yr | ≈ 2.9 yr | statics, thermodynamics, materials, CAD |
 | Unified Eng. | 616 | 360 | ≈ 6.9 yr | ≈ 3.5 yr | Unified I minus circuits (same courses as ME's start) |
 
-  All four together, counting shared courses once: 1102 lessons from high school, 578 from your entry points. Lesson counts are
+  All four together, counting shared courses once: 1102 lessons from high school, 596 from your entry points. Lesson counts are
   estimates until each course's syllabus is written.
 - **New rule for every course:** each lesson ends with an optional **Extra practice** section: book problems (numbers changed
   for math-heavy courses), one extra reading, and **one extra article**. For reading-heavy majors it's mostly the article.
@@ -29,7 +29,8 @@
 ## 1. Where you enter, and why
 Based on Penn State's current bulletins [1][2]. Your catalog year may differ a little.
 - **Math:** every option requires MATH 140, 141, 220, 230, 250, 311W, 312, 414 and 415. You did the Applied option (adds
-  403, 412, 436, 455) and took complex analysis (421), so all of those are credited. Left in the core: abstract algebra I and
+  403, 412, 436, 455) and took complex analysis (421) and 456, so those are credited except 412 (PDEs), which you're
+  retaking (one course, counts in every major). Left in the core: abstract algebra I and
   II (groups, then rings/fields/Galois) and topology.
 - **Physics:** computer engineering required PHYS 211, 212 and 214, and you also took modern physics, classical mechanics,
   electrodynamics and thermal physics, so all of those are credited, both E&M courses included (section 5). Quantum mechanics

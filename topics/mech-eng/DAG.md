@@ -144,7 +144,7 @@ flowchart TB
   class ME350 later
   class ME360 later
   class ME370 later
-  class MA412 maybe
+  class MA412 start
   class ME410 later
   class ME420 later
   class ME430 later
@@ -161,6 +161,6 @@ flowchart TB
 
 Written as if starting from high school (MA100 first). Your entry point:
 - **Credited** (pale grey, from your degrees): CH110, ES250, MA100, MA140, MA141, MA220, MA230, MA250, MA414, PH211, PH212
-- **Maybe** (dotted: skim or skip, your call): ES160, MA412
-- **Start here** (thick border): ES211, ES221, ES240, ES150
+- **Maybe** (dotted: skim or skip, your call): ES160
+- **Start here** (thick border): ES211, ES221, ES240, ES150, MA412
 - Basis: Penn State BS Computer Engineering: MATH 140/141/220/231/250, PHYS 211/212, CHEM 110, EE 210 (circuits), STAT 418 or 414 (probability), CMPSC 121/122 (programming). No engineering mechanics (EMCH) course, so Statics is the real start. EE 353 (signals and systems) covers the transform half of ES340, not the feedback half.

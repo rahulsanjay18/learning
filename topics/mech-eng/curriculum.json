@@ -25,14 +25,14 @@
       "ES250"
     ],
     "maybe": [
-      "ES160",
-      "MA412"
+      "ES160"
     ],
     "start": [
       "ES211",
       "ES221",
       "ES240",
-      "ES150"
+      "ES150",
+      "MA412"
     ],
     "basis": "Penn State BS Computer Engineering: MATH 140/141/220/231/250, PHYS 211/212, CHEM 110, EE 210 (circuits), STAT 418 or 414 (probability), CMPSC 121/122 (programming). No engineering mechanics (EMCH) course, so Statics is the real start. EE 353 (signals and systems) covers the transform half of ES340, not the feedback half."
   },

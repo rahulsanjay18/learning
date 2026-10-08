@@ -369,13 +369,13 @@ MAJORS = {
         "breadth": ["MA190"], "practice": ["MA390", "MA595"], "colloquium": ["MA398", "MA598"], "capstone": ["MA399", "MA599"],
         "entry": {
             "credited": ["MA100", "MA140", "MA141", "MA220", "MA230", "MA250", "MA311", "MA312", "MA414", "MA421",
-                         "MA403", "MA436", "MA412", "MA455"],
+                         "MA403", "MA436", "MA455"],
             "maybe": ["MA417"],
-            "start": ["MA435", "MA429"],
+            "start": ["MA435", "MA429", "MA412"],
             "basis": "Penn State BS Mathematics common core (MATH 140, 141, 220, 230, 250/251, 311W, 312, 414, 415). The option "
                      "you took decides the 'maybe' row: General adds MATH 403 and one of 435/436; Graduate Study adds 403, 404, 421, "
                      "429, 435, 436; Applied adds 403, 412, 436, 455. Course ids here follow Penn State numbers on purpose. You took the Applied option (403, 412, 436, 455 "
-                     "required) plus complex analysis (421) and Numerical Analysis II (456, inside MA455's book), so those are credited. Applied doesn't require 435, so abstract "
+                     "required) plus complex analysis (421) and Numerical Analysis II (456, inside MA455's book), so those are credited, except 412 (PDEs), which you want to retake. Applied doesn't require 435, so abstract "
                      "algebra starts at MA435. MA417 is 'maybe': MATH 417 was one of Applied's elective choices.",
         },
     },
@@ -389,8 +389,8 @@ MAJORS = {
         "entry": {
             "credited": ["MA100", "MA140", "MA141", "MA220", "MA230", "MA250", "PH211", "PH212", "PH213", "PH214",
                          "PH237", "PH341", "PH351", "PH352", "PH371"],
-            "maybe": ["PH300", "MA412"],
-            "start": ["PH361"],
+            "maybe": ["PH300"],
+            "start": ["PH361", "MA412"],
             "basis": "Penn State BS Computer Engineering requires PHYS 211 (mechanics), 212 (E&M) and 214 (waves and quantum); "
                      "the math degree covers the calculus, linear algebra and ODE rows. PHYS 213 (fluids, thermal) was not required. "
                      "Boas (PH300) becomes a look-up shelf rather than a course. You also took modern physics, classical mechanics, "
@@ -410,8 +410,8 @@ MAJORS = {
         "capstone": ["ME399", "ME599"],
         "entry": {
             "credited": ["MA100", "MA140", "MA141", "MA220", "MA230", "MA250", "MA414", "PH211", "PH212", "CH110", "ES250"],
-            "maybe": ["ES160", "MA412"],
-            "start": ["ES211", "ES221", "ES240", "ES150"],
+            "maybe": ["ES160"],
+            "start": ["ES211", "ES221", "ES240", "ES150", "MA412"],
             "basis": "Penn State BS Computer Engineering: MATH 140/141/220/231/250, PHYS 211/212, CHEM 110, EE 210 (circuits), "
                      "STAT 418 or 414 (probability), CMPSC 121/122 (programming). No engineering mechanics (EMCH) course, so Statics is "
                      "the real start. EE 353 (signals and systems) covers the transform half of ES340, not the feedback half.",

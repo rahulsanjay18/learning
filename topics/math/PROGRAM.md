@@ -8,7 +8,7 @@
   then functional analysis, manifolds and algebraic topology).
 - **Written for a high-school graduate** (start: MA100 Precalculus). **Your entry point** skips the courses your math degree
   covered (the Applied Mathematics option, plus complex analysis) and starts at **MA435 (abstract algebra I: groups) and
-  MA429 (topology)**. Then MA437 (rings, fields, Galois) finishes Level I's core. Drawn in `DAG.md`.
+  MA429 (topology)**, plus a retake of MA412 (Fourier series and PDEs). Then MA437 (rings, fields, Galois) finishes Level I's core. Drawn in `DAG.md`.
 - **No pretests.** Credited courses come from your transcript; when a gap shows mid-course, you ask or look it up.
 - **Size from your entry point:** about 62 lessons of Level I core: three courses (≈ 1.2 years as a half subject at one
   lesson a week, ≈ 0.6 years as a full subject). Level II core is another ≈ 198 lessons. Computed by `build_stem_majors.py --stats`.
@@ -35,7 +35,8 @@ copies, so the calculus courses use OpenStax (free, clean equations on the web e
 **Where you enter (Penn State BS Mathematics, 2026 bulletin [1]).** Every option requires MATH 140, 141, 220, 230, 250/251,
 311W, 312, 414 and 415; those are credited. The rest depends on your option: General adds 403 and one of 435/436; Graduate
 Study adds 403, 404, 421, 429, 435 and 436; Applied adds 403, 412, 436 and 455. You did Applied and also took complex
-analysis (421), so 403, 412, 421, 436 and 455 are credited. Applied doesn't require abstract algebra (435) or topology (429),
+analysis (421) and numerical analysis II (456), so 403, 421, 436 and 455 are credited. PDEs (412) you want to
+retake, so MA412 is a start course even though it is an elective here (≈ 18 lessons on top of the core). Applied doesn't require abstract algebra (435) or topology (429),
 so those are where the core continues. MA417 (dynamical systems) is "maybe": MATH 417 was one of Applied's elective choices.
 The bulletin is today's; your catalog year may differ slightly.
 
@@ -65,7 +66,7 @@ The bulletin is today's; your catalog year may differ slightly.
 
 | Course | Title | Primary book | Requires | Lessons | You |
 |---|---|---|---|---|---|
-| MA412 | Fourier series and partial differential equations (elective) | Strauss, Partial Differential Equations: An Introduction (ch. 1-7) *(in library)* | MA250, MA230 | 18 | credited |
+| MA412 | Fourier series and partial differential equations (elective) | Strauss, Partial Differential Equations: An Introduction (ch. 1-7) *(in library)* | MA250, MA230 | 18 | **start** |
 | MA455 | Numerical analysis (elective) | Burden & Faires, Numerical Analysis *(in library)* | MA250, MA220 | 18 | credited |
 | MA360 | Concrete and discrete mathematics: sums, recurrences, generating functions (elective) | Graham, Knuth & Patashnik, Concrete Mathematics (grade A) *(in library)* | MA311 | 18 |  |
 | MA465 | Number theory (elective) | Silverman, A Friendly Introduction to Number Theory *(to acquire)* | MA311 | 14 |  |

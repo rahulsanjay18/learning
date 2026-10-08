@@ -40,7 +40,8 @@ are shared, one course each, with the Unified Engineering major. **ME** numbers 
 
 **Where you enter (Penn State BS Computer Engineering, 2026 bulletin [1]).** Credited: MATH 140/141/220/231/250 (and the math
 degree), PHYS 211/212, CHEM 110, EE 210 (circuits and devices), STAT 418 or 414 (probability), CMPSC 121/122 (programming).
-"Maybe": ES160 (numerical methods: you can program, but numerical methods for engineers may be new) and MA412 (PDEs).
+"Maybe": ES160 (numerical methods: you can program, but numerical methods for engineers may be new). MA412 (PDEs) is a
+start course: you're retaking it, and one finish counts in every major.
 EE 353 (signals and systems) covers the Laplace-transform half of ES340 Control, so that course will move faster.
 
 ## 2. Courses
@@ -75,7 +76,7 @@ EE 353 (signals and systems) covers the Laplace-transform half of ES340 Control,
 | ME350 | Machine design (failure theories, fatigue, shafts, bearings, fasteners) | Budynas & Nisbett, Shigley's Mechanical Engineering Design *(to acquire)* | ES213, ES240, ME310 | 26 |  |
 | ME360 | Manufacturing processes (machining, casting, forming, additive) | Kalpakjian & Schmid, Manufacturing Engineering and Technology *(to acquire)* | ES240, ES150 | 18 |  |
 | ME370 | Applied thermodynamics and energy systems (cycles, refrigeration, combustion) | Cengel & Boles, Thermodynamics: An Engineering Approach *(to acquire)* (cycles chapters) | ES221, ES231 | 14 |  |
-| MA412 | Fourier series and partial differential equations | Strauss, Partial Differential Equations: An Introduction (ch. 1-7) *(in library)* | MA250, MA230 | 18 | maybe |
+| MA412 | Fourier series and partial differential equations | Strauss, Partial Differential Equations: An Introduction (ch. 1-7) *(in library)* | MA250, MA230 | 18 | **start** |
 
 #### Level I: optional extras
 
