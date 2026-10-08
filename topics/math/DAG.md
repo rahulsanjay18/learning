@@ -84,18 +84,18 @@ flowchart TB
   class MA250 credited
   class MA311 credited
   class MA312 credited
-  class MA403 maybe
+  class MA403 credited
   class MA414 credited
-  class MA435 maybe
-  class MA436 maybe
-  class MA437 start
+  class MA435 start
+  class MA436 credited
+  class MA437 later
   class MA421 credited
   class MA429 start
-  class MA412 maybe
-  class MA455 maybe
+  class MA412 credited
+  class MA455 credited
   class MA360 later
   class MA465 later
-  class MA417 later
+  class MA417 maybe
   class MA470 later
   class MA480 later
   class MA457 later
@@ -108,7 +108,7 @@ flowchart TB
 ## Where you enter
 
 Written as if starting from high school (MA100 first). Your entry point:
-- **Credited** (pale grey, from your degrees): MA100, MA140, MA141, MA220, MA230, MA250, MA311, MA312, MA414, MA421
-- **Maybe** (dotted: skim or skip, your call): MA403, MA412, MA435, MA436, MA455
-- **Start here** (thick border): MA437, MA429
-- Basis: Penn State BS Mathematics common core (MATH 140, 141, 220, 230, 250/251, 311W, 312, 414, 415). The option you took decides the 'maybe' row: General adds MATH 403 and one of 435/436; Graduate Study adds 403, 404, 421, 429, 435, 436; Applied adds 403, 412, 436, 455. Course ids here follow Penn State numbers on purpose. You took complex analysis (MATH 421), so MA421 is credited.
+- **Credited** (pale grey, from your degrees): MA100, MA140, MA141, MA220, MA230, MA250, MA311, MA312, MA403, MA412, MA414, MA421, MA436, MA455
+- **Maybe** (dotted: skim or skip, your call): MA417
+- **Start here** (thick border): MA435, MA429
+- Basis: Penn State BS Mathematics common core (MATH 140, 141, 220, 230, 250/251, 311W, 312, 414, 415). The option you took decides the 'maybe' row: General adds MATH 403 and one of 435/436; Graduate Study adds 403, 404, 421, 429, 435, 436; Applied adds 403, 412, 436, 455. Course ids here follow Penn State numbers on purpose. You took the Applied option (403, 412, 436, 455 required) plus complex analysis (421) and Numerical Analysis II (456, inside MA455's book), so those are credited. Applied doesn't require 435, so abstract algebra starts at MA435. MA417 is 'maybe': MATH 417 was one of Applied's elective choices.

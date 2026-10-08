@@ -7,11 +7,11 @@
 - **What it is:** a pure-math major from precalculus to the graduate core (algebra, measure theory, complex analysis, topology,
   then functional analysis, manifolds and algebraic topology).
 - **Written for a high-school graduate** (start: MA100 Precalculus). **Your entry point** skips the courses your math degree
-  covered and starts at the upper-division courses that depend on which option you took: **MA437 (rings, fields, Galois)
-  and MA429 (topology)**, with MA403/435/436 as "maybe" (skim or skip). You took complex analysis, so MA421 is credited. Drawn in `DAG.md`.
+  covered (the Applied Mathematics option, plus complex analysis) and starts at **MA435 (abstract algebra I: groups) and
+  MA429 (topology)**. Then MA437 (rings, fields, Galois) finishes Level I's core. Drawn in `DAG.md`.
 - **No pretests.** Credited courses come from your transcript; when a gap shows mid-course, you ask or look it up.
-- **Size from your entry point:** about 106 lessons of Level I core (≈ 2.0 years as a half subject at one lesson a week,
-  ≈ 1.0 year as a full subject). Level II core is another ≈ 198 lessons. Computed by `build_stem_majors.py --stats`.
+- **Size from your entry point:** about 62 lessons of Level I core: three courses (≈ 1.2 years as a half subject at one
+  lesson a week, ≈ 0.6 years as a full subject). Level II core is another ≈ 198 lessons. Computed by `build_stem_majors.py --stats`.
 - **Books:** almost everything is in your library; Level II needs Dummit & Foote, Folland, Munkres, Kreyszig and Lee.
 
 ## 1. Plan
@@ -34,8 +34,10 @@ copies, so the calculus courses use OpenStax (free, clean equations on the web e
 
 **Where you enter (Penn State BS Mathematics, 2026 bulletin [1]).** Every option requires MATH 140, 141, 220, 230, 250/251,
 311W, 312, 414 and 415; those are credited. The rest depends on your option: General adds 403 and one of 435/436; Graduate
-Study adds 403, 404, 421, 429, 435 and 436; Applied adds 403, 412, 436 and 455. So 403, 435, 436, 412 and 455 are marked
-"maybe". You took complex analysis (421), so it's credited. Tell me your option and I'll move them. The bulletin is today's; your catalog year may differ slightly.
+Study adds 403, 404, 421, 429, 435 and 436; Applied adds 403, 412, 436 and 455. You did Applied and also took complex
+analysis (421), so 403, 412, 421, 436 and 455 are credited. Applied doesn't require abstract algebra (435) or topology (429),
+so those are where the core continues. MA417 (dynamical systems) is "maybe": MATH 417 was one of Applied's elective choices.
+The bulletin is today's; your catalog year may differ slightly.
 
 ## 2. Courses
 
@@ -51,11 +53,11 @@ Study adds 403, 404, 421, 429, 435 and 436; Applied adds 403, 412, 436 and 455. 
 | MA250 | Ordinary differential equations | Zill, Differential Equations with Boundary-Value Problems 8th (ch. 1-8, 11-12; to confirm) *(in library)* | MA141, MA220 | 20 | credited |
 | MA311 | Proofs: logic, sets, induction, relations, functions | Velleman, How to Prove It (ch. 1-7) *(in library)* | MA141 | 18 | credited |
 | MA312 | Real analysis I: the real line, sequences, series, continuity, derivative | Abbott, Understanding Analysis (ch. 1-5) *(in library)* | MA311 | 20 | credited |
-| MA403 | Real analysis II: metric spaces, uniform convergence, Riemann-Stieltjes, several variables | Rudin, Principles of Mathematical Analysis (ch. 2-7, 9) *(in library)* | MA312, MA230 | 24 | maybe |
+| MA403 | Real analysis II: metric spaces, uniform convergence, Riemann-Stieltjes, several variables | Rudin, Principles of Mathematical Analysis (ch. 2-7, 9) *(in library)* | MA312, MA230 | 24 | credited |
 | MA414 | Probability | Bertsekas & Tsitsiklis, Introduction to Probability 2nd (ch. 1-9) *(in library)* | MA230 | 16 | credited |
-| MA435 | Abstract algebra I: groups and symmetry | Artin, Algebra 1st ed. (ch. 2 Groups, 5 Symmetry, 6 More Group Theory; grade A) *(in library)* | MA311, MA220 | 22 | maybe |
-| MA436 | Linear algebra done abstractly: vector spaces, operators, spectral theorem | Axler, Linear Algebra Done Right (ch. 1-8) *(in library)* | MA311, MA220 | 20 | maybe |
-| MA437 | Abstract algebra II: rings, factorization, fields, Galois theory | Artin, Algebra (ch. 10 Rings, 11 Factorization, 13 Fields, 14 Galois Theory) *(in library)* | MA435 | 24 | **start** |
+| MA435 | Abstract algebra I: groups and symmetry | Artin, Algebra 1st ed. (ch. 2 Groups, 5 Symmetry, 6 More Group Theory; grade A) *(in library)* | MA311, MA220 | 22 | **start** |
+| MA436 | Linear algebra done abstractly: vector spaces, operators, spectral theorem | Axler, Linear Algebra Done Right (ch. 1-8) *(in library)* | MA311, MA220 | 20 | credited |
+| MA437 | Abstract algebra II: rings, factorization, fields, Galois theory | Artin, Algebra (ch. 10 Rings, 11 Factorization, 13 Fields, 14 Galois Theory) *(in library)* | MA435 | 24 |  |
 | MA421 | Complex analysis | Bak & Newman, Complex Analysis 3rd (UTM) *(in library)* | MA312, MA230 | 18 | credited |
 | MA429 | Topology: metric and topological spaces | Sutherland, Introduction to Metric and Topological Spaces *(in library)* | MA312 | 16 | **start** |
 
@@ -63,11 +65,11 @@ Study adds 403, 404, 421, 429, 435 and 436; Applied adds 403, 412, 436 and 455. 
 
 | Course | Title | Primary book | Requires | Lessons | You |
 |---|---|---|---|---|---|
-| MA412 | Fourier series and partial differential equations (elective) | Strauss, Partial Differential Equations: An Introduction (ch. 1-7) *(in library)* | MA250, MA230 | 18 | maybe |
-| MA455 | Numerical analysis (elective) | Burden & Faires, Numerical Analysis *(in library)* | MA250, MA220 | 18 | maybe |
+| MA412 | Fourier series and partial differential equations (elective) | Strauss, Partial Differential Equations: An Introduction (ch. 1-7) *(in library)* | MA250, MA230 | 18 | credited |
+| MA455 | Numerical analysis (elective) | Burden & Faires, Numerical Analysis *(in library)* | MA250, MA220 | 18 | credited |
 | MA360 | Concrete and discrete mathematics: sums, recurrences, generating functions (elective) | Graham, Knuth & Patashnik, Concrete Mathematics (grade A) *(in library)* | MA311 | 18 |  |
 | MA465 | Number theory (elective) | Silverman, A Friendly Introduction to Number Theory *(to acquire)* | MA311 | 14 |  |
-| MA417 | Dynamical systems and chaos (elective) | Strogatz, Nonlinear Dynamics and Chaos 2nd *(to acquire)* (7774a5cc7e is a grade C copy) | MA250, MA220 | 18 |  |
+| MA417 | Dynamical systems and chaos (elective) | Strogatz, Nonlinear Dynamics and Chaos 2nd *(to acquire)* (7774a5cc7e is a grade C copy) | MA250, MA220 | 18 | maybe |
 | MA470 | Geometry: Euclid and beyond (elective) | Euclid, Elements (Books I-VI) *(in library)* | MA311 | 14 |  |
 | MA480 | Differential forms and calculus on manifolds (elective) | Bachman, A Visual Introduction to Differential Forms and Calculus on Manifolds *(in library)* | MA230, MA436 | 14 |  |
 | MA457 | Mathematical logic (elective) | Enderton, A Mathematical Introduction to Logic (ch. 1-2) *(in library)* | MA311 | 16 |  |

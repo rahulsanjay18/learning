@@ -368,12 +368,15 @@ MAJORS = {
         "elective": ["MA412", "MA455", "MA360", "MA465", "MA417", "MA470", "MA480", "MA457"],
         "breadth": ["MA190"], "practice": ["MA390", "MA595"], "colloquium": ["MA398", "MA598"], "capstone": ["MA399", "MA599"],
         "entry": {
-            "credited": ["MA100", "MA140", "MA141", "MA220", "MA230", "MA250", "MA311", "MA312", "MA414", "MA421"],
-            "maybe": ["MA403", "MA435", "MA436", "MA412", "MA455"],
-            "start": ["MA437", "MA429"],
+            "credited": ["MA100", "MA140", "MA141", "MA220", "MA230", "MA250", "MA311", "MA312", "MA414", "MA421",
+                         "MA403", "MA436", "MA412", "MA455"],
+            "maybe": ["MA417"],
+            "start": ["MA435", "MA429"],
             "basis": "Penn State BS Mathematics common core (MATH 140, 141, 220, 230, 250/251, 311W, 312, 414, 415). The option "
                      "you took decides the 'maybe' row: General adds MATH 403 and one of 435/436; Graduate Study adds 403, 404, 421, "
-                     "429, 435, 436; Applied adds 403, 412, 436, 455. Course ids here follow Penn State numbers on purpose. You took complex analysis (MATH 421), so MA421 is credited.",
+                     "429, 435, 436; Applied adds 403, 412, 436, 455. Course ids here follow Penn State numbers on purpose. You took the Applied option (403, 412, 436, 455 "
+                     "required) plus complex analysis (421) and Numerical Analysis II (456, inside MA455's book), so those are credited. Applied doesn't require 435, so abstract "
+                     "algebra starts at MA435. MA417 is 'maybe': MATH 417 was one of Applied's elective choices.",
         },
     },
     "physics": {
