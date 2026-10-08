@@ -1,0 +1,44 @@
+# TOC: Koran,_The_-_OxfordUP.VSI_-_Cook,_Michael.Feb.2000
+grade: A
+
+- <span class="calibre4">**THE KORAN**</span>
+  - <span class="calibre8"><span class="calibre9"></span>Preface</span>
+  - <span class="calibre8"><span class="calibre9"></span>Acknowledgements</span>
+  - <span class="calibre8"><span class="calibre9"></span>Contents</span>
+  - <span class="calibre8"><span class="calibre9"></span>List of Illustrations</span>
+  - <span class="calibre8"><span class="calibre9"></span>Part One **Introduction**</span>
+    - <span class="calibre14">The idea of scripture</span>
+    - <span class="calibre14">A preliminary sketch of the history of the Koran</span>
+    - <span class="calibre14">The Fātiḥa</span>
+    - <span class="calibre14">The friends of God</span>
+    - <span class="calibre14">The enemies of God</span>
+    - <span class="calibre14">Guidance</span>
+    - <span class="calibre14">God</span>
+  - <span class="calibre8"><span class="calibre9"></span>Part Two **The Koran in the modern world**</span>
+    - <span class="calibre14">Commentators then and now</span>
+    - <span class="calibre14">The Koran and the scientific world-view</span>
+    - <span class="calibre14">Tolerating the beliefs of others</span>
+  - <span class="calibre8"><span class="calibre9"></span>Part Three **The Koran in the traditional Muslim world**</span>
+    - <span class="calibre14">The rise of the codex</span>
+    - <span class="calibre14">Strategies for preserving a text</span>
+    - <span class="calibre14">Black, red, and yellow</span>
+    - <span class="calibre14">Variant readings</span>
+    - <span class="calibre14">The liturgical and semi-liturgical role of the Koran</span>
+    - <span class="calibre14">How the Koran is recited</span>
+    - <span class="calibre14">Translating the Koran</span>
+    - <span class="calibre14">The Sabbath-breakers</span>
+    - <span class="calibre14">Tolerating false religion</span>
+    - <span class="calibre14">Men and women</span>
+    - <span class="calibre14">Shī‘ite commentators</span>
+  - <span class="calibre8"><span class="calibre9"></span>Part Four **The formation of the Koran**</span>
+    - <span class="calibre14">Occasions of revelation</span>
+    - <span class="calibre14">Rough edges</span>
+  - <span class="calibre8"><span class="calibre9"></span>**A note on Arabic**</span>
+    - <span class="calibre14">The Arabic language</span>
+    - <span class="calibre14">The pronunciation of Arabic</span>
+  - <span class="calibre8"><span class="calibre9"></span>Going further</span>
+    - <span class="calibre14">The Koran in translation</span>
+    - <span class="calibre14">The Koran itself</span>
+    - <span class="calibre14">Books about the Koran</span>
+    - <span class="calibre14">My sources</span>
+  - <span class="calibre8"><span class="calibre9"></span>Index</span>

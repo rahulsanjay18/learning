@@ -1,0 +1,38 @@
+# TOC: The Unredeemed Captive A Family Story from Early America
+grade: A
+
+- Contents
+- P<span class="small1">REFACE</span>
+- B<span class="small1">EGINNINGS</span>
+- <span id="Demo_9780307790699_epub_c01_r1.htm#page11"></span>O<span class="small1">NE</span>
+- <span id="Demo_9780307790699_epub_c02_r1.htm#page40"></span>T<span class="small1">WO</span>
+- <span id="Demo_9780307790699_epub_c03_r1.htm#page55"></span>T<span class="small1">HREE</span>
+  - O<span class="small">CTOBER</span> 1705: A P<span class="small">RISONER’S</span> P<span class="small">LEA</span>
+  - M<span class="small">AY</span> 1706: A P<span class="small">ASTOR’S</span> Q<span class="small">UESTION</span>
+  - D<span class="small">ECEMBER</span> 1706: A C<span class="small">ONQUEROR’S</span> G<span class="small">LORY</span>
+  - M<span class="small"></span>
+  - P<span class="small">OSTSCRIPT:</span> A C<span class="small">APTIVE’S</span> J<span class="small">OURNEY</span>
+- <span id="Demo_9780307790699_epub_c04_r1.htm#page77"></span>F<span class="small1">OUR</span>
+- <span id="Demo_9780307790699_epub_c05_r1.htm#page100"></span>F<span class="small1">IVE</span>
+- <span id="Demo_9780307790699_epub_c06_r1.htm#page120"></span>S<span class="small1">IX</span>
+- <span id="Demo_9780307790699_epub_c07_r1.htm#page140"></span>S<span class="small1">EVEN</span>
+- <span id="Demo_9780307790699_epub_c08_r1.htm#page167"></span>E<span class="small1">IGHT</span>
+- <span id="Demo_9780307790699_epub_c09_r1.htm#page188"></span>N<span class="small1">INE</span>
+- <span id="Demo_9780307790699_epub_c10_r1.htm#page214"></span>T<span class="small1">EN</span>
+- <span id="Demo_9780307790699_epub_app_r1.htm#page237"></span>E<span class="small1">NDINGS</span>
+- <span id="Demo_9780307790699_epub_epl_r1.htm#page242"></span>E<span class="small1">PILOGUE</span>
+- <span id="Demo_9780307790699_epub_nts_r1.htm#page253"></span>N<span class="small1">OTES</span>
+  - A<span class="small">BBREVIATIONS</span>
+  - B<span class="small">EGINNINGS</span>
+  - O<span class="small">NE</span>
+  - T<span class="small">WO</span>
+  - T<span class="small">HREE</span>
+  - F<span class="small">OUR</span>
+  - F<span class="small">IVE</span>
+  - S<span class="small">IX</span>
+  - <span id="Demo_9780307790699_epub_nts_r1.htm#page282"></span>S<span class="small">EVEN</span>
+  - E<span class="small">IGHT</span>
+  - N<span class="small">INE</span>
+  - T<span class="small">EN</span>
+  - E<span class="small">NDINGS</span>
+  - E<span class="small">PILOGUE</span>

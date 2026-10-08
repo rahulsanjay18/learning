@@ -1,0 +1,84 @@
+# TOC: The proteus paradox _ how online games and virtual worlds -- Yee, Nick -- Yale University Press, New Haven, 2014 -- Yale University Press -- isbn13 9780300190991 -- 58e42569341a95ced8822f3772a29a11 -- Anna’s Archive
+grade: A
+
+- THE PROTEUS PARADOX
+  - <span id="contents.html#page_vii"></span>CONTENTS
+  - <span id="acknow.html#page_ix"></span>ACKNOWLEDGMENTS
+  - <span id="intro.html#page_1"></span>INTRODUCTION MIRROR, MIRROR ON THE WALL
+  - <span id="ch01.html#page_9"></span>CHAPTER 1 THE NEW WORLD
+    - **One Short Day**
+    - **Historical Accidents and Digital Vestiges**
+  - <span id="ch02.html#page_22"></span>CHAPTER 2 WHO PLAYS AND WHY
+    - **Debunking the Stereotypes**
+    - **Why People Play**
+    - **The Paradox of Escape**
+  - <span id="ch03.html#page_39"></span>CHAPTER 3 SUPERSTITIONS
+    - **Spawn Dances**
+    - **Dungeon Seeding**
+    - **Lucky Charms**
+    - **Over-Enchanting**
+    - <span id="ch03.html#page_49"></span>**Treasure Negotiation**
+    - **The Social Reinforcement of Superstitions**
+    - **Old Dogs and New Tricks**
+    - **The Supernatural in Online Games**
+  - <span id="ch04.html#page_59"></span>CHAPTER 4 THE LABOR OF FUN
+    - **Corellian Wheat**
+    - **Hadean Drive Yards**
+    - <span id="ch04.html#page_65"></span>**Dragon-Slaying**
+    - <span id="ch04.html#page_73"></span>**A Second Job**
+    - **The Blurring of Work and Play**
+  - <span id="ch05.html#page_78"></span>CHAPTER 5 YI-SHAN-GUAN
+    - **The Grind**
+    - **Virtually Chinese**
+    - **Are You a Gold Farmer?**
+    - **Gold Mountain**
+    - **The Price of Cotton**
+  - <span id="ch06.html#page_96"></span>CHAPTER 6 THE LOCKER ROOM UTOPIA
+    - **Boys Only. Do Not Enter.**
+    - **Male Fantasies**
+    - **A Wrinkle in the Numbers**
+    - <span id="ch06.html#page_111"></span>**Gender-Bending and Gendered Bodies**
+    - **Rethinking Utopias**
+  - <span id="ch07.html#page_117"></span>CHAPTER 7 THE “IMPOSSIBLE” ROMANCE
+    - **Sketches of Love**
+    - **Making the Impossible Possible**
+    - **A Modern-Day Fairy Tale**
+  - <span id="ch08.html#page_138"></span>CHAPTER 8 TOOLS OF PERSUASION AND CONTROL
+    - **Stealing Faces**
+    - **Breaking Reality**
+    - **The Proteus Effect**
+    - **Digital Doppelgängers**
+    - **Hijacking the Brain**
+  - <span id="ch09.html#page_159"></span>CHAPTER 9 INTROVERTED ELVES, CONSCIENTIOUS GNOMES, AND THE QUEST FOR BIG DATA
+    - **The Magic Box**
+    - **Dividing Nature**
+    - **Quelling Pandora’s Box**
+    - **The Digital Panopticon**
+  - <span id="ch10.html#page_177"></span>CHAPTER 10 CHANGING THE RULES
+    - **The Price of Immortality**
+    - <span id="ch10.html#page_184"></span>**Weaving the Social Fabric**
+    - **Information Access**
+    - **The Give and Take**
+  - <span id="ch11.html#page_197"></span>CHAPTER 11 THE HIDDEN LOGIC OF AVATARS
+    - **Breaking the Rules**
+  - <span id="ch12.html#page_209"></span>CHAPTER 12 REFLECTIONS AND THE FUTURE OF VIRTUAL WORLDS
+    - **Replicating Reality**
+    - **Influencing Reality**
+    - **Reimagining Reality**
+    - **How Do We Get There?**
+  - <span id="notes.html#page_217"></span>NOTES
+    - **Introduction**
+    - Chapter One. **The New World**
+    - Chapter Two. **Who Plays and Why**
+    - <span id="notes.html#page_222"></span>Chapter Three. **Superstitions**
+    - Chapter Four. **The Labor of Fun**
+    - Chapter Five. **Yi-Shan-Guan**
+    - Chapter Six. **The Locker Room Utopia**
+    - Chapter Seven. **The “Impossible” Romance**
+    - <span id="notes.html#page_229"></span>Chapter Eight. **Tools of Persuasion and Control**
+    - Chapter Nine. **Introverted Elves, Conscientious Gnomes, and the Quest for Big Data**
+    - Chapter Ten. **Changing the Rules**
+    - Chapter Eleven. **The Hidden Logic of Avatars**
+    - Chapter Twelve. **Reflections and the Future of Virtual Worlds**
+  - <span id="glossary.html#page_235"></span>GLOSSARY OF ONLINE GAMING TERMS
+  - <span id="index.html#page_241"></span>INDEX

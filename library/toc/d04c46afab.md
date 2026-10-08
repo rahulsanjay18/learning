@@ -1,0 +1,156 @@
+# TOC: The Light Bearer
+grade: A
+
+- Prologue
+- Seven Bean Soup
+- Gutrot House
+- Inadequately Suspicious
+- Grass Strudel
+- Results of the Cloud Referendum
+- Grappling an Eel
+- Stone Dome
+- Mortimer Falls
+- Imitating an Arrow
+  - 10
+- Ignoring the Smirk
+  - 11
+- Soldier's Cold
+  - 12
+- Not a Choice, Really
+  - 13
+- The Dragged Foot
+  - 14
+- Kääächööö
+  - 15
+- Bongos de Bongos
+  - 16
+- But I Don't Want to Dance
+  - 17
+- Podcaster
+  - 18
+- Gesundheit
+  - 19
+- Glimpse
+  - 20
+- The Rustling of Furtive Feet
+  - 21
+- Tea With Wombats
+  - 22
+- Head Smackers
+  - 23
+- Close Enough to Fine
+  - 24
+- Acrostic Crossing
+  - 25
+- Lovely Night For It
+  - 26
+- No Advantages
+  - 27
+- Welcome to the Central Ranges
+  - 28
+- The Step of the Steppe
+  - 29
+- The Sack
+  - 30
+- Disturbance
+  - 31
+- Tarantella
+  - 32
+- Nose Snorting
+  - 33
+- Welcoming Committee
+  - 34
+- There Is No Plan
+  - 35
+- Observation
+  - 36
+- Panic Plus Something
+  - 37
+- Smash and Grab
+  - 38
+- Grab and Smash
+  - 39
+- His Alacrity
+  - 40
+- The Dream Wife
+  - 41
+- Poultice
+  - 42
+- The Ring
+  - 43
+- Inconclusive, But Noted
+  - 44
+- Oat Cakes
+  - 45
+- The Light Borne
+  - 46
+- Unpleasantnesses
+  - 47
+- Drunken Pieman Slicing
+  - 48
+- May You Be Cleansed
+  - 49
+- Melveeta's Admonitions
+  - 50
+- Accord
+  - 51
+- Soap
+  - 52
+- Emanations
+  - 53
+- Returned
+  - 54
+- Considerations
+  - 55
+- Left Flutter Run Run Hypothesis
+  - 56
+- Plan A and Plan B
+  - 57
+- Still Not a Mushroom
+  - 58
+- Repaired
+  - 59
+- The Grass Strudel to Beat All Grass Strudels
+  - 60
+- A Heck of a Way to Say Goodbye
+  - 61
+- Escorted
+  - 62
+- Loon Bridge
+  - 63
+- Xrossing
+  - 64
+- Like a Sneeze
+  - 65
+- Grub in the Scrub
+  - 66
+- Power to the People
+  - 67
+- Twice, Thrice
+  - 68
+- Still Whacking Great
+  - 69
+- Seven-Word Plan
+  - 70
+- More Plummeting
+  - 71
+- Bade to Be Silent
+  - 72
+- Detritus Soup
+  - 73
+- Acrobatic Python
+  - 74
+- A Hot Bath and a Cool Healer
+  - 75
+- It's Mother
+  - 76
+- Some Measure of Distress
+- Epilogue
+- Did you enjoy this book?
+- Get Your Free Copy of The Wombanditos
+- Queen Eloise
+    - Book Four: The Western Lands and All That Really Matters
+- Crown Plonking
+- Acknowledgments
+- About the Author
+- In This Series

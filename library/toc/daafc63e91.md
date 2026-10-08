@@ -1,0 +1,278 @@
+# TOC: Njal's Saga (Penguin Classics) [Retail]
+grade: A
+
+  - NJAL’S SAGA
+- <span id="part0001_split_003.html#page-iii" class="calibre6"></span>NJAL’S SAGA
+  - <span id="part0001_split_005.html#page-v" class="calibre6"></span> *Contents*
+  - <span id="part0001_split_006.html#page-vi" class="calibre6"></span> *Acknowledgements*
+  - <span id="part0001_split_007.html#page-vii" class="calibre6"></span> *Introduction*
+    - <span id="part0001_split_007.html#page-viii" class="calibre6"></span>BACKGROUND
+    - THE SAGA
+    - LAW
+    - CHRISTIAN AND PAGAN
+    - THE TWO PARTS
+    - POSTSCRIPT
+  - *Further Reading*
+    - *Translations into English*
+    - *Other Primary Sources in Translation*
+    - *General Criticism of the Sagas of Icelanders*
+    - <span id="part0001_split_008.html#page-xxxvi" class="calibre6"></span>*Studies of* Njal’s Saga
+  - <span id="part0001_split_009.html#page-xxxvii" class="calibre6"></span> *A Note on the Translation*
+  - <span id="part0001_split_010.html#page-xl" class="calibre6"></span> *Chronology of Njal’s Saga*
+  - <span id="part0002_split_000.html#page-1" class="calibre6"></span>NJAL’S SAGA
+  - <span id="part0002_split_001.html#page-3" class="calibre6"></span>1
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - <span id="part0018.html#page-32" class="calibre6"></span>17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - <span id="part0045.html#page-73" class="calibre6"></span>44
+  - 45
+  - 46
+  - 47
+  - <span id="part0049.html#page-81" class="calibre6"></span>48
+  - 49
+  - <span id="part0051.html#page-86" class="calibre6"></span>50
+  - 51
+  - 52
+  - 53
+  - 54
+  - <span id="part0056.html#page-94" class="calibre6"></span>55
+  - 56
+  - <span id="part0058.html#page-98" class="calibre6"></span>57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - <span id="part0070.html#page-115" class="calibre6"></span>69
+  - 70
+  - 71
+  - <span id="part0073.html#page-119" class="calibre6"></span>72
+  - 73
+  - <span id="part0075.html#page-122" class="calibre6"></span>74
+  - <span id="part0076.html#page-123" class="calibre6"></span>75
+  - 76
+  - <span id="part0078.html#page-126" class="calibre6"></span>77
+  - 78
+  - 79
+  - 80
+  - 81
+  - 82
+  - <span id="part0084.html#page-136" class="calibre6"></span>83
+  - 84
+  - 85
+  - 86
+  - 87
+  - 88
+  - 89
+  - 90
+  - 91
+  - 92
+  - 93
+  - <span id="part0095.html#page-162" class="calibre6"></span>94
+  - 95
+  - 96
+  - <span id="part0098.html#page-164" class="calibre6"></span>97
+  - <span id="part0099.html#page-168" class="calibre6"></span>98
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - <span id="part0107.html#page-182" class="calibre6"></span>106
+  - 107
+  - 108
+  - 109
+  - 110
+  - <span id="part0112.html#page-188" class="calibre6"></span>111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - <span id="part0123.html#page-207" class="calibre6"></span>122
+  - 123
+  - 124
+  - 125
+  - 126
+  - 127
+  - 128
+  - 129
+  - 130
+  - 131
+  - 132
+  - 133
+  - <span id="part0135.html#page-234" class="calibre6"></span>134
+  - 135
+  - 136
+  - 137
+  - 138
+  - 139
+  - 140
+  - 141
+  - 142
+  - <span id="part0144.html#page-264" class="calibre6"></span>143
+  - <span id="part0145.html#page-265" class="calibre6"></span>144
+  - <span id="part0146.html#page-270" class="calibre6"></span>145
+  - 146
+  - 147
+  - 148
+  - <span id="part0150.html#page-286" class="calibre6"></span>149
+  - 150
+  - 151
+  - 152
+  - 153
+  - 154
+  - 155
+  - 156
+  - 157
+  - 158
+  - 159
+  - <span id="part0161.html#page-311" class="calibre6"></span>*Notes*
+    - *Chapter 1*
+    - *Chapter 2*
+    - <span id="part0161.html#page-312" class="calibre6"></span>*Chapter 3*
+    - *Chapter 4*
+    - *Chapter 5*
+    - *Chapter 6*
+    - *Chapter 7*
+    - *Chapter 8*
+    - *Chapter 9*
+    - *Chapter 12*
+    - *Chapter 13*
+    - *Chapter 14*
+    - *Chapter 16*
+    - <span id="part0161.html#page-315" class="calibre6"></span>*Chapter 17*
+    - *Chapter 19*
+    - *Chapter 26*
+    - <span id="part0161.html#page-316" class="calibre6"></span>*Chapter 29*
+    - *Chapter 31*
+    - *Chapter 33*
+    - *Chapter 34*
+    - *Chapter 35*
+    - *Chapter 39*
+    - *Chapter 41*
+    - *Chapter 44*
+    - *Chapter 45*
+    - <span id="part0161.html#page-318" class="calibre6"></span>*Chapter 46*
+    - *Chapter 47*
+    - *Chapter 49*
+    - <span id="part0161.html#page-319" class="calibre6"></span>*Chapter 50*
+    - *Chapter 51*
+    - *Chapter 52*
+    - *Chapter 53*
+    - *Chapter 56*
+    - *Chapter 59*
+    - *Chapter 60*
+    - *Chapter 64*
+    - *Chapter 65*
+    - *Chapter 66*
+    - *Chapter 69*
+    - *Chapter 71*
+    - *Chapter 72*
+    - <span id="part0161.html#page-322" class="calibre6"></span>*Chapter 73*
+    - *Chapter 74*
+    - *Chapter 75*
+    - <span id="part0161.html#page-323" class="calibre6"></span>*Chapter 77*
+    - *Chapter 78*
+    - *Chapter 80*
+    - *Chapter 81*
+    - <span id="part0161.html#page-324" class="calibre6"></span>*Chapter 83*
+    - *Chapter 85*
+    - *Chapter 88*
+    - *Chapter 89*
+    - *Chapter 91*
+    - *Chapter 92*
+    - *Chapter 93*
+    - *Chapter 95*
+    - *Chapter 96*
+    - *Chapter 97*
+    - *Chapter 98*
+    - *Chapter 99*
+    - *Chapter 100*
+    - *Chapter 101*
+    - <span id="part0161.html#page-328" class="calibre6"></span>*Chapter 102*
+    - *Chapter 104*
+    - *Chapter 105*
+    - <span id="part0161.html#page-329" class="calibre6"></span>*Chapter 106*
+    - *Chapter 107*
+    - *Chapter 108*
+    - *Chapter 109*
+    - <span id="part0161.html#page-330" class="calibre6"></span>*Chapter 111*
+    - *Chapter 112*
+    - *Chapter 116*
+    - <span id="part0161.html#page-331" class="calibre6"></span>*Chapter 119*
+    - <span id="part0161.html#page-332" class="calibre6"></span>*Chapter 120*
+    - *Chapter 122*
+    - *Chapter 123*
+    - *Chapter 124*
+    - <span id="part0161.html#page-334" class="calibre6"></span>*Chapter 126*
+    - *Chapter 129*
+    - *Chapter 130*
+    - *Chapter 131*
+    - <span id="part0161.html#page-335" class="calibre6"></span>*Chapter 133*
+    - <span id="part0161.html#page-336" class="calibre6"></span>*Chapter 134*
+    - *Chapter 135*
+    - *Chapter 136*
+    - *Chapter 138*
+    - *Chapter 139*
+    - *Chapter 141*
+    - *Chapter 142*
+    - *Chapter 144*
+    - <span id="part0161.html#page-339" class="calibre6"></span>*Chapter 146*
+    - *Chapter 147*
+    - <span id="part0161.html#page-340" class="calibre6"></span>*Chapter 149*
+    - *Chapter 150*
+    - *Chapter 152*
+    - <span id="part0161.html#page-341" class="calibre6"></span>*Chapter 154*
+    - *Chapter 155*
+    - *Chapter 157*
+    - *Chapter 158*
+    - *Chapter 159*
+  - <span id="part0162_split_000.html#page-344" class="calibre6"></span>*Plot Summary*
+  - *Genealogical Tables*
+  - <span id="part0164.html#page-362" class="calibre6"></span>*Glossary*
+  - <span id="part0165.html#page-369" class="calibre6"></span>*Index of Characters*

@@ -1,0 +1,210 @@
+# TOC: Business Park and Industrial Development Handbook
+grade: B
+
+- <span id="008_Acknowledgment.html#page_v"></span>**Acknowledgments**
+- <span id="009_Contents.html#page_vii"></span>**Contents**
+- <span id="010_Foreword.html#page_x"></span>**Foreword**
+- <span id="012_Chapter01.html#page_2"></span><span id="012_Chapter01.html#page_3"></span>**1. Introduction**
+- <span id="012_Chapter01.html#page_4"></span>**What Is a Business Park?**
+- **Categories of Parks**
+- **Origins of Today’s Business Parks**
+- **Zoning and Community Regulations**
+- **Covenants, Conditions, and Restrictions**
+- **The Development Process**
+- **The Development Team**
+- **Land Planners**
+- **Engineers**
+- **Architects**
+- **Landscape Architects**
+- **Environmental Specialists**
+- **Transportation Consultant**
+- **Construction Contractors**
+- **Market Analysts**
+- **Finance Specialists**
+- **Leasing Agents**
+- **Marketing and Public Relations Consultants**
+- **Property Managers**
+- **Attorneys**
+- **Summary of Chapters**
+- <span id="013_Chapter02.html#page_22"></span><span id="013_Chapter02.html#page_23"></span>2. Project Feasibility
+- **Market Analysis**
+- **Market Screening**
+- <span id="013_Chapter02.html#page_25"></span>**Site Selection**
+- **Submarket Analysis**
+- **Industrial Space Demand Analysis**
+- **The Outlook**
+- **Financial Feasibility Analysis**
+- **Development Budget**
+- **Project Pro Forma**
+- **Cash Flow Analysis**
+- **Key Financial Ratios**
+- **Sensitivity Analysis**
+- **Summing Up**
+- <span id="014_Chapter03.html#page_50"></span><span id="014_Chapter03.html#page_51"></span>3. Financing and Investment
+- **The Capital Market for Industrial Development**
+- <span id="014_Chapter03.html#page_55"></span>**Ownership Structures for Industrial Development Ventures**
+- **Individual Direct Ownership**
+- **Partnerships**
+- **Limited Liability Companies**
+- **C Corporations**
+- **S Corporations**
+- **Real Estate Investment Trusts**
+- **Lenders’ Requirements**
+- **Loan Underwriting Process**
+- **Lenders’/Investors’ Analysis of Business Park Development**
+- **Lenders’/Investors’ Analysis of Industrial Building Development**
+- **Cap Rates and DCF Analysis**
+- **Making Sense of the Ratios Lenders Use**
+- **Equity Investors’ Requirements**
+- **Turnkey Development**
+- **Build-to-Own Development**
+- **Joint Venture Build-to-Own Development**
+- **Financing the Stages of Development**
+- **Predevelopment Financing**
+- **Construction Financing**
+- **Interim Financing**
+- **Permanent Financing**
+- **The Financing Package**
+- **Site Planning for Business Parks**
+- **Site Design**
+- <span id="015_Chapter04.html#page_104"></span>**Access and Internal Streets**
+- **Parking**
+- **Site Works**
+- **Utility Systems**
+- **Telecommunications**
+- **Lighting**
+- **Landscaping**
+- **Graphics and Signage**
+- **Amenities**
+- **Security**
+- **Construction Planning and Phasing**
+- **Erosion Control during Site Development**
+- **Industrial Building Design**
+- **General Design Considerations**
+- **Warehouse/Distribution Facilities**
+- **Manufacturing/Assembly Facilities**
+- <span id="015_Chapter04.html#page_138"></span>**Flex Space**
+- **R&D Facilities**
+- **Multiuse Buildings**
+- **Web Hosting Facilities**
+- <span id="015_Chapter04.html#page_143"></span>**Build-to-Suit Facilities**
+- **Renovation and Adaptive Use Redesigning, Renovating, and Repositioning Older Parks.**
+- **Support Services**
+- <span id="016_Chapter05.html#page_148"></span><span id="016_Chapter05.html#page_149"></span>5. Marketing and Leasing
+- **Marketing**
+- **The Marketing Plan**
+- **Setting Marketing Goals**
+- **The Marketing Budget**
+- **Establishing the Project’s Identity**
+- **Lead Tenant**
+- **Marketing Materials**
+- **Merchandising**
+- **Generating Leads**
+- **Leasing**
+- **Organizing the Leasing Effort**
+- **Selling Prospects and Negotiating**
+- **The Lease**
+- **Management Goals and Strategy**
+- **Establishing a Management Function**
+- **Ongoing Management Practices**
+- **Operating Plans and Budgets**
+- **Reporting**
+- **Cost Control**
+- **Lease Administration and Collections**
+- **Utility Management and General Maintenance and Repairs**
+- <span id="017_Chapter06.html#page_188"></span>**Parking Administration**
+- **Project Management**
+- **Tenant Services**
+- **Legal Compliance and Standards Enforcement**
+- **Tax Monitoring**
+- **Insurance and Risk Management**
+- **Asset Management**
+- <span id="018_Chapter07.html#page_196"></span><span id="018_Chapter07.html#page_197"></span>7 Case Studies
+- <span id="018_Chapter07.html#page_198"></span>**Alliance**
+- **Site**
+- **Infrastructure Development**
+- **Planning and Approvals**
+- **Commercial Development**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_204"></span>**Avis Farms Research and Business Park**
+- **Site**
+- **Planning and Development**
+- **Marketing**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_210"></span>**Beacon Centre**
+- **Site and Development Process**
+- **Planning and Design**
+- **Marketing and Management**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_216"></span>**Gateway Business Park**
+- **Development Process**
+- **Planning and Design**
+- **Financing and Ownership**
+- **Leasing**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_222"></span>**Gewerbepark Regensburg**
+- **Market**
+- **Development**
+- **Marketing**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_228"></span>**Harte Hanks Building**
+- **Site**
+- **Development and Financing**
+- **Marketing**
+- **Planning and Design**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_234"></span>**LakeView Corporate Park**
+- **Site**
+- **Development and Financing**
+- **Planning and Design**
+- <span id="018_Chapter07.html#page_237"></span>**Marketing**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_240"></span>**Meridian Business Campus**
+- **Development and Financing**
+- **Land Planning**
+- **Building Design**
+- <span id="018_Chapter07.html#page_244"></span>**Marketing**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_248"></span>**O’Hare Express Center**
+- **Development Process**
+- **Planning and Design**
+- **Financing and Ownership**
+- **Leasing**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_254"></span>**Shekou Logistics Center**
+- **Site and Development Process**
+- **Design and Construction**
+- **Financing, Marketing, and Management**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_260"></span>**Starbucks Center**
+- **Site and Development**
+- **Approvals**
+- **Financing**
+- **Marketing**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_267"></span><span id="018_Chapter07.html#page_268"></span>**Subic Bay Freeport**
+- **Site and History**
+- **Development**
+- **Infrastructure**
+- **Tourism**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_276"></span>**SubTropolis**
+- **Site**
+- **Design and Development Process**
+- **Marketing and Management**
+- **Experience Gained**
+- <span id="018_Chapter07.html#page_282"></span>**Union Seventy Center**
+- **Site and Market**
+- **Development Process**
+- **Marketing**
+- **Experience Gained**
+- <span id="019_Chapter08.html#page_288"></span><span id="019_Chapter08.html#page_289"></span>**8. Trends and Outlook**
+- **Locational Trends**
+- **Changing Business Patterns**
+- **Design Trends**
+- <span id="019_Chapter08.html#page_297"></span>**Financing Trends**
+- **Sustainable Development**
+- **Conclusion**
+- **Bibliography and Index**
+- <span id="021_Bibliography.html#page_300"></span>**Bibliography**
+- **Index**

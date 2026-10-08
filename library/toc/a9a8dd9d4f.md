@@ -1,0 +1,216 @@
+# TOC: Horace - The Complete Odes and Epodes (Penguin Classics) [Retail]
+grade: A
+
+  - Horace
+    - THE COMPLETE ODES AND EPODES WITH THE CENTENNIAL HYMN
+  - Contents
+  - Introduction
+  - Translator’s Foreword
+  - EPODES
+  - Ibis Liburnis
+  - Beatus ille
+  - Parentis olim
+  - Lupis et agnis
+  - At, o deorum
+  - Quid immerentis hospites
+  - Quo, quo, scelesti ruitis?
+  - Rogare longo
+  - Quando repostum Caecubum
+  - 10
+  - Mala soluta navis
+  - 11
+  - Petti, nihil me
+  - 12
+  - Quid tibi vis
+  - 13
+  - Horrida tempestas
+  - 14
+  - Mollis inertia
+  - 15
+  - Nox erat et caelo
+  - 16
+  - Altera iam teritur
+  - 17
+  - Iam iam efficaci
+  - ODES
+  - Maecenas atavis edite
+  - Iam satis terris
+  - Sic te diva
+  - Solvitur acris hiems
+  - Quis multa gracilis
+  - Scriberis Vario
+  - Laudabunt alii
+  - Lydia, dic, Per omnis
+  - Vides ut alta
+  - 10
+  - Mercuri, facunde
+  - 11
+  - Tu ne quaesieris
+  - 12
+  - Quem virum aut heroa
+  - 13
+  - Cum tu, Lydia
+  - 14
+  - O navis, referent
+  - 15
+  - Pastor cum traheret
+  - 16
+  - O matre pulchra
+  - 17
+  - Velox amoenum
+  - 18
+  - Nullam, Vare, sacra
+  - 19
+  - Mater saeva <span id="part0044.html#com0002164" class="calibre9 pcalibre"></span>Cupidinum
+  - 20
+  - Vile potabis
+  - 21
+  - Dianam tenerae
+  - 22
+  - Integer vitae
+  - 23
+  - Vitas inuleo
+  - 24
+  - Quis desiderio
+  - 25
+  - Parcius iunctas
+  - 26
+  - Musis amicus
+  - 27
+  - Natis in usum
+  - 28
+  - Te maris et terrae
+  - 29
+  - Icci, beatis
+  - 30
+  - O Venus, regina
+  - 31
+  - Quid dedicatum
+  - 32
+  - Poscimur. Si quid
+  - 33
+  - Albi, ne doleas
+  - 34
+  - Parcus deorum cultor
+  - 35
+  - O diva, gratum
+  - 36
+  - Et ture et fidibus
+  - 37
+  - Nunc est bibendum
+  - 38
+  - Persicos odi
+  - ODES
+  - Motum ex Metello
+  - Nullus argento
+  - Aequam memento
+  - Ne sit ancillae
+  - Nondum subacta
+  - Septimi, Gades aditure
+  - O saepe mecum
+  - Ulla si iuris
+  - Non semper imbres
+  - 10
+  - Rectius vives
+  - 11
+  - Quid bellicosus
+  - 12
+  - Nolis longa ferae
+  - 13
+  - Ille et nefasto
+  - 14
+  - Eheu fugaces
+  - 15
+  - Iam pauca aratro
+  - 16
+  - Otium divos
+  - 17
+  - Cur me querelis
+  - 18
+  - Non ebur neque aureum
+  - 19
+  - Bacchum in remotis
+  - 20
+  - Non usitata
+  - ODES
+  - Odi profanum vulgus
+  - Angustam amice
+  - Iustum et tenacem
+  - Descende caelo
+  - Caelo tonantem
+  - Delicta maiorum
+  - Quid fles, Asterie
+  - Martiis caelebs
+  - Donec gratus eram
+  - 10
+  - Extremum Tanain
+  - 11
+  - Mercuri–nam te
+  - 12
+  - Miserarum est
+  - 13
+  - O fons <span id="part0098.html#com0004136" class="calibre9 pcalibre"></span>Bandusiae
+  - 14
+  - Herculis ritu
+  - 15
+  - Uxor pauperis Ibyci
+  - 16
+  - Inclusam Danaen
+  - 17
+  - Aeli vetusto
+  - 18
+  - Faune, Nympharum
+  - 19
+  - Quantum distet
+  - 20
+  - Non vides quanto
+  - 21
+  - O nata mecum
+  - 22
+  - Montium custos
+  - 23
+  - Caelo supinas
+  - 24
+  - Intactis opulentior
+  - 25
+  - Quo me, Bacche, rapis
+  - 26
+  - Vixi puellis nuper
+  - 27
+  - Impios parrae
+  - 28
+  - Festo quid potius die
+  - 29
+  - Tyrrhena regum progenies
+  - 30
+  - Exegi monumentum
+  - Centennial Hymn
+  - Phoebe silvarumque
+  - ODES
+  - Intermissa, Venus
+  - Pindarum quisquis
+  - Quem tu, Melpomene
+  - Qualem ministrum
+  - Divis orte bonis
+  - Dive, quem proles
+  - Diffugere nives
+  - Donarem pateras
+  - Ne forte credas
+  - 10
+  - O crudelis adhuc
+  - 11
+  - Est mihi nonum
+  - 12
+  - Iam veris comites
+  - 13
+  - Audivere, Lyce
+  - 14
+  - Quae cura patrum
+  - 15
+  - Phoebus volentem
+  - Appendix
+  - Notes
+  - Select Bibliography
+  - Glossary of Proper Names
+  - Index to Poems
+  - THE BEGINNING

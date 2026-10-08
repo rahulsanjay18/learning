@@ -1,0 +1,200 @@
+# TOC: Modeling Economic Growth in Contemporary Malaysia
+grade: A
+
+- <span id="title.xhtml#pagebreak_iii"></span>Modeling Economic Growth in Contemporary Malaysia
+    - <span id="contents.xhtml#pagebreak_v"></span>Table of Contents
+    - <span id="tables.xhtml#pagebreak_ix"></span>List of Tables and Figures<span id="tables.xhtml#s5"></span>
+    - <span id="editor.xhtml#pagebreak_xiii"></span>About the Editors<span id="editor.xhtml#s6"></span>
+    - <span id="contri.xhtml#pagebreak_xv"></span>About the Contributors<span id="contri.xhtml#s7"></span>
+  - <span id="978-1-80043-806-420211002.xhtml#pagebreak_1"></span>Chapter 1
+  - SMEs Retailing in Malaysia: Challenges for Industrial Revolution 4.0 Implementation
+    - Abstract
+    - 1. SMEs Retailing<span id="978-1-80043-806-420211002.xhtml#s1"></span>
+    - 2. Industrial Revolution<span id="978-1-80043-806-420211002.xhtml#s2"></span>
+    - 3. Impact of IR 4.0<span id="978-1-80043-806-420211002.xhtml#s3"></span>
+    - 4. Recommendation and Conclusion<span id="978-1-80043-806-420211002.xhtml#s4"></span>
+    - References
+  - <span id="978-1-80043-806-420211003.xhtml#pagebreak_17"></span>Chapter 2
+  - Education and Innovation Growth: Establishing Entrepreneurial University Framework in Malaysia
+    - Abstract
+    - 2. Malaysian Higher Education Systems<span id="978-1-80043-806-420211003.xhtml#s2"></span>
+    - 3. Public HEIs<span id="978-1-80043-806-420211003.xhtml#s3"></span>
+    - 4. Private Universities<span id="978-1-80043-806-420211003.xhtml#s4"></span>
+    - 5. University Colleges<span id="978-1-80043-806-420211003.xhtml#s5"></span>
+    - 6. Private Colleges<span id="978-1-80043-806-420211003.xhtml#s6"></span>
+    - 8. MOHE – The Governing Authority<span id="978-1-80043-806-420211003.xhtml#s8"></span>
+    - 9. Entrepreneurial University Agenda<span id="978-1-80043-806-420211003.xhtml#s9"></span>
+    - 10. What Is Entrepreneurial Architecture?<span id="978-1-80043-806-420211003.xhtml#s10"></span>
+    - 11. Artificial Intelligence (AI)<span id="978-1-80043-806-420211003.xhtml#s11"></span>
+    - 12. Why Entrepreneurial University Agenda Is So Important?<span id="978-1-80043-806-420211003.xhtml#s12"></span>
+    - 13. Conclusion<span id="978-1-80043-806-420211003.xhtml#s13"></span>
+    - References
+  - <span id="978-1-80043-806-420211004.xhtml#pagebreak_31"></span>Chapter 3
+  - An Overview of Malaysian Small and Medium Enterprises: Contributions, Issues, and Challenges
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211004.xhtml#s1"></span>
+    - 2. Definition of Malaysian SMEs<span id="978-1-80043-806-420211004.xhtml#s2"></span>
+    - 3. The Contributions of SMEs in Malaysia<span id="978-1-80043-806-420211004.xhtml#s3"></span>
+    - 5. Common Issues and Challenges of SMEs in Malaysia<span id="978-1-80043-806-420211004.xhtml#s5"></span>
+    - 6. Conclusion<span id="978-1-80043-806-420211004.xhtml#s6"></span>
+    - <span id="978-1-80043-806-420211004.xhtml#pagebreak_41"></span>References
+  - <span id="978-1-80043-806-420211005.xhtml#pagebreak_43"></span>Chapter 4
+  - STEM Education in Malaysia: Fulfilling SMEs’ Expectation
+    - Abstract
+    - 2. Literature Review<span id="978-1-80043-806-420211005.xhtml#s2"></span>
+    - 3. Education System of Malaysia<span id="978-1-80043-806-420211005.xhtml#s3"></span>
+    - 4. STEM in Malaysia<span id="978-1-80043-806-420211005.xhtml#s4"></span>
+    - 5. Gap between STEM Demands and Offerings<span id="978-1-80043-806-420211005.xhtml#s5"></span>
+    - 6. Industrialization of Malaysia<span id="978-1-80043-806-420211005.xhtml#s6"></span>
+    - References
+  - <span id="978-1-80043-806-420211006.xhtml#pagebreak_59"></span>Chapter 5
+  - Technological Parks, Clusters, and Innovation Networks: Expected Transformation of Innovative Sectors
+    - Abstract
+    - 2. Technological Parks<span id="978-1-80043-806-420211006.xhtml#s2"></span>
+    - 3. Innovative Industrial Cluster<span id="978-1-80043-806-420211006.xhtml#s3"></span>
+    - 4. Innovation Networks<span id="978-1-80043-806-420211006.xhtml#s4"></span>
+    - 5. Expected Transformation of Innovative Sectors<span id="978-1-80043-806-420211006.xhtml#s5"></span>
+    - 6. Conclusion<span id="978-1-80043-806-420211006.xhtml#s6"></span>
+    - References
+  - <span id="978-1-80043-806-420211007.xhtml#pagebreak_71"></span>Chapter 6
+  - Post COVID-19: Strategic Digital Entrepreneurship in Malaysia
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211007.xhtml#s1"></span>
+    - 2. The Business Environment Effecting Malaysian Entrepreneurs<span id="978-1-80043-806-420211007.xhtml#s2"></span>
+    - 3. The Strategic Digital Entrepreneurship<span id="978-1-80043-806-420211007.xhtml#s3"></span>
+    - 4. Conclusion<span id="978-1-80043-806-420211007.xhtml#s4"></span>
+    - References
+  - <span id="978-1-80043-806-420211008.xhtml#pagebreak_81"></span>Chapter 7
+  - Agrarian Sector: Past, Present, and Future Directions toward Sustainable Palm Oil Plantations based on World Demand
+    - Abstract
+    - 1 Introduction<span id="978-1-80043-806-420211008.xhtml#s1"></span>
+    - 3 The Future of Palm Oil<span id="978-1-80043-806-420211008.xhtml#s3"></span>
+    - 4 Conclusion<span id="978-1-80043-806-420211008.xhtml#s4"></span>
+    - References
+  - <span id="978-1-80043-806-420211009.xhtml#pagebreak_91"></span>Chapter 8
+  - Malaysia on the Way to Sustainable Development: Circular Economy and Green Technologies
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211009.xhtml#s1"></span>
+    - 2. Concept and Definition<span id="978-1-80043-806-420211009.xhtml#s2"></span>
+    - 3. Sustainable Development in Malaysia<span id="978-1-80043-806-420211009.xhtml#s3"></span>
+    - 4. Circular Economy<span id="978-1-80043-806-420211009.xhtml#s4"></span>
+    - 5. Green Economy and Circular Economy<span id="978-1-80043-806-420211009.xhtml#s5"></span>
+    - References
+  - <span id="978-1-80043-806-420211010.xhtml#pagebreak_117"></span>Chapter 9
+  - The Importance of Industry Value Chain for Development of Malaysian Halal Industry
+    - Abstract
+    - 2. Value Chain Analysis: In Brief<span id="978-1-80043-806-420211010.xhtml#s2"></span>
+    - 3. Outlook, Constraints, and Needs<span id="978-1-80043-806-420211010.xhtml#s3"></span>
+    - 4. Lessons Learned<span id="978-1-80043-806-420211010.xhtml#s4"></span>
+    - References
+  - <span id="978-1-80043-806-420211011.xhtml#pagebreak_127"></span>Chapter 10
+  - Malaysia in Global Ratings: Position and Dynamics
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211011.xhtml#s1"></span>
+    - 2. Malaysia's Economy Outlook<span id="978-1-80043-806-420211011.xhtml#s2"></span>
+    - 3. Safeguarding the Stability of the Financial System<span id="978-1-80043-806-420211011.xhtml#s2-1"></span>
+    - 4. Key Enablers for the Development of the Financial System<span id="978-1-80043-806-420211011.xhtml#s3"></span>
+    - 5. Enhancing Regional and International Financial Linkages<span id="978-1-80043-806-420211011.xhtml#s4"></span>
+    - 7. Conclusion<span id="978-1-80043-806-420211011.xhtml#s6"></span>
+    - References
+  - <span id="978-1-80043-806-420211012.xhtml#pagebreak_135"></span>Chapter 11
+  - How to Create a Competitive Organization, Leveraging Strategic Capabilities in Malaysia
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211012.xhtml#s1"></span>
+    - 2. Challenges to Staying Competitive in Today's Economy<span id="978-1-80043-806-420211012.xhtml#s2"></span>
+    - 3. Strategies to Remain Competitive in Today's Global Market<span id="978-1-80043-806-420211012.xhtml#s3"></span>
+    - 5. Conclusion<span id="978-1-80043-806-420211012.xhtml#s5"></span>
+    - References
+  - <span id="978-1-80043-806-420211013.xhtml#pagebreak_151"></span>Chapter 12
+  - Human Capital Development in Malaysia: Issues and Challenges
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211013.xhtml#s1"></span>
+    - 2. Early Human Capital Development in Malaysia<span id="978-1-80043-806-420211013.xhtml#s2"></span>
+    - 4. Human Capital Development in Malaysia<span id="978-1-80043-806-420211013.xhtml#s4"></span>
+    - 5. Issues and Challenges<span id="978-1-80043-806-420211013.xhtml#s5"></span>
+    - 6. Conclusion<span id="978-1-80043-806-420211013.xhtml#s6"></span>
+    - References
+  - <span id="978-1-80043-806-420211014.xhtml#pagebreak_177"></span>Chapter 13
+  - Public–Private Partnership and Social Innovation in Malaysia
+    - Abstract
+    - 2. Malaysian Context<span id="978-1-80043-806-420211014.xhtml#s2"></span>
+    - 3. Issues and Challenges<span id="978-1-80043-806-420211014.xhtml#s3"></span>
+    - 4. Conclusions<span id="978-1-80043-806-420211014.xhtml#s4"></span>
+    - References
+  - <span id="978-1-80043-806-420211015.xhtml#pagebreak_191"></span>Chapter 14
+  - Administrative Arrangement, Spatial Development, and Regional Policy in Malaysia
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211015.xhtml#s1"></span>
+    - 2. Local Governments and Spatial Planning System<span id="978-1-80043-806-420211015.xhtml#s2"></span>
+    - 3. Socioeconomic Planning Systems at the National Level<span id="978-1-80043-806-420211015.xhtml#s3"></span>
+    - 4. Metropolitan Planning System<span id="978-1-80043-806-420211015.xhtml#s4"></span>
+    - 5. Rapidly Growing Urban Areas<span id="978-1-80043-806-420211015.xhtml#s5"></span>
+    - 6. Economic Regions<span id="978-1-80043-806-420211015.xhtml#s6"></span>
+    - 7. Regional Policy: Northern Corridor Economic Region<span id="978-1-80043-806-420211015.xhtml#s7"></span>
+    - Northern Corridor Economic Region<span id="978-1-80043-806-420211015.xhtml#s8"></span>
+    - References
+  - <span id="978-1-80043-806-420211016.xhtml#pagebreak_201"></span>Chapter 15
+  - Keeping Public Servants' Mental Health Intact During and Post COVID-19 Pandemic through the Islamic Mental Health Model
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211016.xhtml#s1"></span>
+    - 3. The Rise of Mental Health Problem during COVID-19 Pandemic<span id="978-1-80043-806-420211016.xhtml#s3"></span>
+    - 7. Conclusion<span id="978-1-80043-806-420211016.xhtml#s7"></span>
+    - <span id="978-1-80043-806-420211016.xhtml#pagebreak_213"></span>References
+  - <span id="978-1-80043-806-420211017.xhtml#pagebreak_215"></span>Chapter 16
+  - Easing Up Transition: A Strategic Roadmap Toward Industry 4.0
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211017.xhtml#s1"></span>
+    - 2. Reacting to Industry 4.0<span id="978-1-80043-806-420211017.xhtml#s2"></span>
+    - 5. Discussion and Development of Strategic Roadmap<span id="978-1-80043-806-420211017.xhtml#s5"></span>
+    - 6. Conclusions, Limitations, and Future Research<span id="978-1-80043-806-420211017.xhtml#s6"></span>
+    - Acknowledgements
+    - References
+  - <span id="978-1-80043-806-420211018.xhtml#pagebreak_235"></span>Chapter 17
+  - Fintech and Commercial Banks Development in Malaysia: Continuous Intention to Use Fintech Services in IR 4.0 Environment
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211018.xhtml#s1"></span>
+    - 2. Fintech Services<span id="978-1-80043-806-420211018.xhtml#s2"></span>
+    - 3. Literature Review and Theoretical Background<span id="978-1-80043-806-420211018.xhtml#s3"></span>
+    - References
+  - <span id="978-1-80043-806-420211019.xhtml#pagebreak_255"></span>Chapter 18
+  - Franchising Perspective in Malaysia: Development, Supports, Issues, and Challenges
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211019.xhtml#s1"></span>
+    - 3. Development of Franchise Industry in Malaysia<span id="978-1-80043-806-420211019.xhtml#s3"></span>
+    - 5. Franchise Supports in Malaysia<span id="978-1-80043-806-420211019.xhtml#s5"></span>
+    - 7. Conclusion<span id="978-1-80043-806-420211019.xhtml#s7"></span>
+    - References
+  - <span id="978-1-80043-806-420211020.xhtml#pagebreak_267"></span>Chapter 19
+  - Malaysia's Foreign Economic Policy and Trade Performance
+    - Abstract
+    - 1. An Overview of Malaysia's Foreign Policy<span id="978-1-80043-806-420211020.xhtml#s1"></span>
+    - 2. Foreign Economic Policies and Strategies<span id="978-1-80043-806-420211020.xhtml#s2"></span>
+    - 3. Foreign Economics Relationship: Malaysia and the European Union<span id="978-1-80043-806-420211020.xhtml#s3"></span>
+    - 4. Malaysia's Trade Performance<span id="978-1-80043-806-420211020.xhtml#s4"></span>
+    - 5. Future Direction<span id="978-1-80043-806-420211020.xhtml#s5"></span>
+    - References
+  - <span id="978-1-80043-806-420211021.xhtml#pagebreak_279"></span>Chapter 20
+  - Current and Future Prospect of Logistics and Transportation Sector in Malaysia
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211021.xhtml#s1"></span>
+    - 2. Malaysia: An Overview<span id="978-1-80043-806-420211021.xhtml#s2"></span>
+    - 3. Road Transport<span id="978-1-80043-806-420211021.xhtml#s3"></span>
+    - 4. Air Transport<span id="978-1-80043-806-420211021.xhtml#s4"></span>
+    - 5. Water Transport: Maritime<span id="978-1-80043-806-420211021.xhtml#s5"></span>
+    - 6. Rail Transport<span id="978-1-80043-806-420211021.xhtml#s6"></span>
+    - 7. Logistics Sector: The Government Initiative<span id="978-1-80043-806-420211021.xhtml#s7"></span>
+    - 8. Logistics Sector: The Future Outlooks<span id="978-1-80043-806-420211021.xhtml#s8"></span>
+    - 9. Conclusion<span id="978-1-80043-806-420211021.xhtml#s9"></span>
+    - References
+  - <span id="978-1-80043-806-420211022.xhtml#pagebreak_291"></span>Chapter 21
+    - Abstract
+    - 1. Introduction<span id="978-1-80043-806-420211022.xhtml#s1"></span>
+    - 2. Background of Small and Medium Enterprises in Malaysia<span id="978-1-80043-806-420211022.xhtml#s2"></span>
+    - 3. Scenarios of COVID-19<span id="978-1-80043-806-420211022.xhtml#s3"></span>
+    - 5. The Impact of COVID-19 on SMEs<span id="978-1-80043-806-420211022.xhtml#s5"></span>
+    - 6. Government Business Supports and Assistances<span id="978-1-80043-806-420211022.xhtml#s6"></span>
+    - 7. Monitoring of Government Supports and Assistances<span id="978-1-80043-806-420211022.xhtml#s7"></span>
+    - 8. Suggestions for SME Recovery from COVID-19 Pandemic Crisis<span id="978-1-80043-806-420211022.xhtml#s8"></span>
+    - 9. Conclusion<span id="978-1-80043-806-420211022.xhtml#s9"></span>
+    - References
+  - ## Index

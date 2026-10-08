@@ -1,0 +1,2 @@
+verdict	confidence	reason	name
+not book	0.10	The file name 'Karan Ghelo' does not resemble typical book titles and appears to be a personal name or a place name.	Karan Ghelo

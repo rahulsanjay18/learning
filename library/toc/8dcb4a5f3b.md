@@ -1,0 +1,42 @@
+# TOC: Medea SparkNotes Literature Guide
+grade: A
+
+- Medea
+  - *Euripides*
+  - Contents
+  - Context
+  - Comprehensive Summary
+  - Characters
+  - ## Lines 1-16
+    - Summary
+    - Commentary
+  - Lines 17-130
+    - Summary
+    - Commentary
+  - Lines 130-213
+    - Summary
+    - Commentary
+  - Lines 214-447
+    - Summary
+    - Commentary
+  - Lines 448-660
+    - Summary
+    - Commentary
+  - Lines 660-868
+    - Summary
+    - Commentary
+  - Lines 869-1001
+    - Summary
+    - Commentary
+  - Lines 1002-1116
+    - Summary
+    - Commentary
+  - Lines 1117-1231
+    - Summary
+    - Commentary
+  - Lines 1317-1419
+    - Summary
+    - Commentary
+  - Study Questions
+  - Quiz
+  - Further Reading

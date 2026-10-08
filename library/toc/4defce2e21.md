@@ -1,0 +1,111 @@
+# TOC: Attitudes And Persuasion  Classic And Contemporary Approaches
+grade: A
+
+- Attitudes and Persuasion: Classic and Contemporary Approaches
+  - Contents
+  - <a href="#B004_contents.xhtml#rforeword" class="item1">Foreword</a>
+  - <a href="#B004_contents.xhtml#rpreface1" class="item1">Preface</a>
+  - <a href="#B004_contents.xhtml#rack" class="item1">Acknowledgments</a>
+  - <a href="#B004_contents.xhtml#rchapter1" class="item1">Introduction to Attitudes and Persuasion</a>
+    - <a href="#B004_contents.xhtml#rsec1_1" class="item1">What Is an Attitude?</a>
+    - <a href="#B004_contents.xhtml#rsec1_2" class="item1">Why Do People Have Attitudes?</a>
+    - <a href="#B004_contents.xhtml#rsec1_4" class="item1">Direct Procedures</a>
+    - <a href="#B004_contents.xhtml#rsec1_7" class="item1">Do Attitudes Predict Behaviors?</a>
+    - <a href="#B004_contents.xhtml#rsec1_8" class="item1">What Kinds of Attitudes Predict Behaviors?</a>
+    - <a href="#B004_contents.xhtml#rsec1_9" class="item1">What Other Variables Enhance Behavioral Prediction?</a>
+    - <a href="#B004_contents.xhtml#rsec1_10" class="item1">How Is Attitude Change Studied Experimentally?</a>
+    - <a href="#B004_contents.xhtml#rsec1_12" class="item1">The Validity of the Attitude Change Experiment</a>
+    - <a href="#B004_contents.xhtml#rsec1_13" class="item1">Evaluating a Theory</a>
+    - <a href="#B004_contents.xhtml#rsec1_14" class="item1">The Approaches to Persuasion</a>
+    - <a href="#B004_contents.xhtml#rsec1_15" class="item1">Retrospective</a>
+    - <span id="C009_chapter1.xhtml#page_37" class="calibre6"></span>Notes
+  - <a href="#B004_contents.xhtml#rchapter2" class="item1">Conditioning and Modeling Approaches</a>
+    - <a href="#B004_contents.xhtml#rsec2_1" class="item1">Classical Conditioning</a>
+    - <a href="#B004_contents.xhtml#rsec2_2" class="item1">Classical Conditioning of Attitudes</a>
+    - <a href="#B004_contents.xhtml#rsec2_5" class="item1">Operant Conditioning of Attitudes</a>
+    - <a href="#B004_contents.xhtml#rsec2_6" class="item1">Two-factor Theory of Verbal Conditioning</a>
+    - <a href="#B004_contents.xhtml#rsec2_7" class="item1">Observational Learning</a>
+    - <a href="#B004_contents.xhtml#rsec2_10" class="item1">Retrospective</a>
+    - <span id="C010_chapter2.xhtml#page_57" class="calibre6"></span>Notes
+  - <a href="#B004_contents.xhtml#rchapter3" class="item1">The Message-learning Approach</a>
+    - <a href="#B004_contents.xhtml#rsec3_1" class="item1">Skills Learning as a Model for Persuasion</a>
+    - <a href="#B004_contents.xhtml#rsec3_2" class="item1">Determinants of Attitude Change in Persuasive Communications</a>
+    - <a href="#B004_contents.xhtml#rsec3_3" class="item1">Source Factors</a>
+    - <a href="#B004_contents.xhtml#rsec3_8" class="item1">Message Factors</a>
+    - <a href="#B004_contents.xhtml#rsec3_9" class="item1">Recipient Factors</a>
+    - <a href="#B004_contents.xhtml#rsec3_11" class="item1">The Persistence of Attitude Change</a>
+    - <a href="#B004_contents.xhtml#rsec3_12" class="item1">Retrospective</a>
+    - Notes
+  - <a href="#B004_contents.xhtml#rchapter4" class="item1">Judgmental Approaches</a>
+    - <a href="#B004_contents.xhtml#rsec4_1" class="item1">Adaptation Level Approach</a>
+    - <a href="#B004_contents.xhtml#rsec4_3" class="item1">Communication Discrepancy</a>
+    - <a href="#B004_contents.xhtml#rsec4_4" class="item1">Ego Involvement</a>
+    - <a href="#B004_contents.xhtml#rsec4_5" class="item1">Evaluation of Social Judgment Theory</a>
+    - <a href="#B004_contents.xhtml#rsec4_6" class="item1">The Variable Perspective Approach</a>
+    - <a href="#B004_contents.xhtml#rsec4_7" class="item1">Indirect Influence</a>
+    - <a href="#B004_contents.xhtml#rsec4_9" class="item1">Comparison of Approaches: Perception versus Description</a>
+    - <a href="#B004_contents.xhtml#rsec4_10" class="item1">Retrospective</a>
+    - <span id="C012_chapter4.xhtml#page_123" class="calibre6"></span>Notes
+  - <a href="#B004_contents.xhtml#rchapter5" class="item1">Motivational Approaches</a>
+    - <a href="#B004_contents.xhtml#rsec5_1" class="item1">Cognitive Elements and Systems</a>
+    - <a href="#B004_contents.xhtml#rsec5_2" class="item1">The Motive to Maintain Cognitive Consistency</a>
+    - <a href="#B004_contents.xhtml#rsec5_3" class="item1">Balance Theory</a>
+    - <a href="#B004_contents.xhtml#rsec5_4" class="item1">Terminology</a>
+    - <a href="#B004_contents.xhtml#rsec5_5" class="item1">Determining Imbalance in a Cognitive System</a>
+    - <a href="#B004_contents.xhtml#rsec5_6" class="item1">Consequences of Imbalance</a>
+    - <a href="#B004_contents.xhtml#rsec5_7" class="item1">Empirical Research</a>
+    - <a href="#B004_contents.xhtml#rsec5_8" class="item1">Congruity Theory</a>
+    - <a href="#B004_contents.xhtml#rsec5_10" class="item1">Determining and Resolving Disequilibrium (Incongruity)</a>
+    - <a href="#B004_contents.xhtml#rsec5_12" class="item1">Empirical Research</a>
+    - <a href="#B004_contents.xhtml#rsec5_14" class="item1">Effects of Cognitive Dissonance</a>
+    - <a href="#B004_contents.xhtml#rsec5_15" class="item1">Effect of Disconfirming an Important Belief</a>
+    - <a href="#B004_contents.xhtml#rsec5_16" class="item1">Dissonance and the Decision Process</a>
+    - <a href="#B004_contents.xhtml#rsec5_17" class="item1">Insufficient Justification</a>
+    - <a href="#B004_contents.xhtml#rsec5_18" class="item1">Necessary Conditions for Dissonance Arousal</a>
+    - <a href="#B004_contents.xhtml#rsec5_19" class="item1">Temporal Characteristics of Dissonance Reduction</a>
+    - <a href="#B004_contents.xhtml#rsec5_20" class="item1">The Nature of Cognitive Dissonance</a>
+    - <a href="#B004_contents.xhtml#rsec5_21" class="item1">Impression Management Theory</a>
+    - <a href="#B004_contents.xhtml#rsec5_22" class="item1">Psychological Reactance Theory</a>
+    - <a href="#B004_contents.xhtml#rsec5_24" class="item1">Consequences of the Arousal of Reactance</a>
+    - <a href="#B004_contents.xhtml#rsec5_25" class="item1">Retrospective</a>
+    - Notes
+  - <a href="#B004_contents.xhtml#rchapter6" class="item1">Attributional Approaches</a>
+    - <a href="#B004_contents.xhtml#rsec6_1" class="item1">Self-perception Theory</a>
+    - <a href="#B004_contents.xhtml#rsec6_2" class="item1">The Foot-in-the-door Effect</a>
+    - <a href="#B004_contents.xhtml#rsec6_3" class="item1">Overjustification Effects</a>
+    - <a href="#B004_contents.xhtml#rsec6_5" class="item1">Effects of Ambiguous Internal Cues on Attitudes</a>
+    - <a href="#B004_contents.xhtml#rsec6_6" class="item1">Emotional Plasticity</a>
+    - <a href="#B004_contents.xhtml#rsec6_7" class="item1">Effects of Bogus Physiological Feedback</a>
+    - <a href="#B004_contents.xhtml#rsec6_9" class="item1">Retrospective</a>
+    - Notes
+  - <a href="#B004_contents.xhtml#rchapter7" class="item1">Combinatory Approaches</a>
+    - <a href="#B004_contents.xhtml#rsec7_1" class="item1">Probabilogical Approaches to Belief Change</a>
+    - <a href="#B004_contents.xhtml#rsec7_2" class="item1">The Theory of Reasoned Action</a>
+    - <a href="#B004_contents.xhtml#rsec7_4" class="item1">Subjective Norm</a>
+    - <a href="#B004_contents.xhtml#rsec7_5" class="item1">Behavioral Intention</a>
+    - <a href="#B004_contents.xhtml#rsec7_6" class="item1">Behavior</a>
+    - <a href="#B004_contents.xhtml#rsec7_8" class="item1">Changing Beliefs, Attitudes, Norms, Intentions, and Behaviors</a>
+    - <a href="#B004_contents.xhtml#rsec7_9" class="item1">Information Integration Theory (Cognitive Algebra)</a>
+    - Notes
+  - <a href="#B004_contents.xhtml#rchapter8" class="item1">Self-persuasion Approaches</a>
+    - <a href="#B004_contents.xhtml#rsec8_3" class="item1">Why Is Role Playing So Effective?</a>
+    - <a href="#B004_contents.xhtml#rsec8_4" class="item1">Can Dissonance Theory Account for Role-playing Effects?</a>
+    - <a href="#B004_contents.xhtml#rsec8_5" class="item1">Mere Thought as a Determinant of Attitude Polarization</a>
+    - <a href="#B004_contents.xhtml#rsec8_6" class="item1">Empirical Research on Mere Thought</a>
+    - <a href="#B004_contents.xhtml#rsec8_7" class="item1">Other Determinants of Mere Thought</a>
+    - <a href="#B004_contents.xhtml#rsec8_8" class="item1">The Cognitive Response Approach to Persuasion</a>
+    - <a href="#B004_contents.xhtml#rsec8_9" class="item1">Premessage Inductions That Produce Resistance to Persuasion</a>
+    - <a href="#B004_contents.xhtml#rsec8_12" class="item1">The Postmessage Persistence of Persuasion</a>
+    - <a href="#B004_contents.xhtml#rsec8_14" class="item1">Retrospective</a>
+    - Notes
+    - <a href="#B004_contents.xhtml#rsec9_1" class="item1">Central versus Peripheral Routes to Attitude Change</a>
+    - <a href="#B004_contents.xhtml#rsec9_2" class="item1">Anticipatory Attitude Changes</a>
+    - <a href="#B004_contents.xhtml#rsec9_5" class="item1">The Elaboration Likelihood Model</a>
+    - <a href="#B004_contents.xhtml#rsec9_6" class="item1">Motivation and Ability to Process the Message</a>
+    - <a href="#B004_contents.xhtml#rsec9_7" class="item1">Motivation and Ability to Think about the Issue</a>
+    - <a href="#B004_contents.xhtml#rsec9_8" class="item1">The Central Route: A Difficult Way to Change Attitudes</a>
+    - <a href="#B004_contents.xhtml#rsec9_10" class="item1">Retrospective</a>
+    - Notes
+  - <a href="#B004_contents.xhtml#rreferences" class="item1">References</a>
+  - **<a href="#B004_contents.xhtml#rindex" class="item1">Author Index</a>**
+  - **<a href="#B004_contents.xhtml#rindex1" class="item1">Subject Index</a>**

@@ -1,0 +1,172 @@
+# TOC: Shaping a New International Financial System Challenges of Governance in a Globalizing World
+grade: A
+
+- <span id="frontmatter1.xhtml#page_i"></span>Shaping a New International Financial System
+- <span id="frontmatter2.xhtml#page_ii"></span>The G8 and Global Governance Series
+- <span id="contents.xhtml#page_v"></span><span id="contents.xhtml#page_va"></span>Contents
+  - Guide
+- <span id="Figures1.xhtml#page_vii"></span>[List of Figures](#contents.xhtml#bck_ht0005)
+- <span id="Figures2.xhtml#page_viii"></span>[List of Tables](#contents.xhtml#bck_ht0006)
+- <span id="Contributors.xhtml#page_ix"></span>[List of Contributors](#contents.xhtml#bck_ht0007)
+- <span id="Preface.xhtml#page_xii"></span><span id="Preface.xhtml#page_xiii"></span>[Preface](#contents.xhtml#bck_ht0008)
+- <span id="part1.xhtml#page_1"></span>[Introduction](#contents.xhtml#bck_ht0009)
+  - Introduction: The Crisis and the Challenge
+  - The Approach
+  - The Core Issues
+  - The Analyses
+  - Agreement on Fundamental Issues
+  - Introduction
+  - <span id="Ch02.xhtml#page_21"></span>Episode 1. The Legitimisation of Floating Rates: Rambouillet 1975
+  - Episode 2. The Commercial Bank Debt Crisis: Versailles 1982 to Paris 1989
+  - Episode 3. Debt Relief for the Poorest: Toronto 1988 to Cologne 1999
+  - Episode 4. The Speculative Financial Crisis: Halifax 1995 to Cologne 1999
+  - Lessons from the Past and Present
+    - <span class="italic">Leadership</span>
+    - <span class="italic">Effectiveness</span>
+    - <span class="italic">Durability</span>
+    - <span class="italic">Acceptability</span>
+  - Recommendations for the Future
+  - <span id="Ch02.xhtml#page_33"></span>Notes
+  - References
+  - Introduction
+  - The Asian Crisis and Its Causes
+  - The Japanese Response
+  - Implications for International Financial System Reform
+  - References
+  - Introduction
+  - The G7 and Developing Countries
+    - <span class="italic">Macroeconomic Co-ordination</span>
+    - <span class="italic">Developing Country Indebtedness</span>
+  - Reform of the International Financial Architecture
+  - Evaluating the Cologne Summit 1999
+    - <span class="italic">Strengthening and Reforming the International Financial Institutions and Arrangements</span>
+    - <span class="italic">Enhancing Transparency and Promoting Best Practices</span>
+    - <span class="italic">Strengthening Macroeconomic Policies and Financial Systems in Emerging Markets</span>
+    - <span class="italic">Improving Crisis Prevention and Management and Involving the Private Sector</span>
+    - <span class="italic">Promoting Social Policies to Protect the Poor and Most Vulnerable</span>
+    - <span class="italic">The Cologne Debt-Relief Initiative</span>
+  - Prospects for a More Inclusive and Effective G7
+  - Conclusion: The Future for the G7 and Developing Countries
+  - Notes
+  - References
+  - Introduction
+  - Phase 1: The Asian Crisis of 1997-98
+  - Phase 2: The Global Crisis of 1998
+  - Phase 3: System Reconstruction, 1999
+  - Conclusion
+  - <span id="Ch05.xhtml#page_90"></span>Notes
+  - <span id="Ch05.xhtml#page_91"></span>References
+  - Introduction
+  - Perspective
+  - Political Transparency
+    - <span class="italic">Transparency as Oversight and Quid Pro Quo</span>
+  - Statistical Transparency: Miracle Drug for Crisis Prevention or Much Less?
+    - <span class="italic">Sunspot Activity and Transparency: It's No Use to Look Into the Sun</span>
+  - <span id="Ch06.xhtml#page_108"></span>Conclusion
+  - References
+  - Introduction
+  - <span id="Ch07.xhtml#page_115"></span>Benefits of International Capital Flows
+    - <span class="italic">The Role of Financial Intermediaries</span>
+    - <span class="italic">Financial Sector Development and Economic Growth</span>
+    - <span class="italic">Misallocation of Capital</span>
+  - Financial Markets and Economic Policy
+    - <span class="italic">Risks, Distortions, and Microeconomic Policy</span>
+    - <span class="italic">Financial Market Liberalisation and Macroeconomic Policy</span>
+  - The Role of Foreign Capital in Recent Crises
+  - Preventative Policy: G7 Recommendations
+    - <span class="italic">General Overview of Assessment and Proposals</span>
+    - <span class="italic">Risk Management</span>
+    - <span class="italic">Private Sector Bail-In and Involvement</span>
+    - <span id="Ch07.xhtml#page_127"></span><span class="italic">Co-ordination of Reform</span>
+    - <span id="Ch07.xhtml#page_128"></span><span class="italic">Exchange Rate Management: A Special Problem</span>
+  - Emerging G7 Responsibilities
+    - <span class="italic">2.</span> <span class="italic">Co-ordinate and/or Co-operate among Themselves</span>
+    - <span class="italic">3.</span> <span class="italic">Encourage Competition</span>
+    - <span class="italic">4.</span> <span class="italic">Encourage and Allow for Broader Participation</span>
+    - <span class="italic">5.</span> <span class="italic">Continue Work on Standards</span>
+    - <span class="italic">6.</span> <span class="italic">Provide Incentives</span>
+    - <span id="Ch07.xhtml#page_131"></span><span class="italic">7.</span> <span class="italic">Do Not Over-Advertise</span>
+  - Conclusion
+  - Notes
+  - References
+  - Introduction
+  - <span id="Ch08.xhtml#page_136"></span>Transparency
+  - The Financial Stability Forum
+  - <span id="Ch08.xhtml#page_138"></span>Equity Ratios for Financial Institutions
+  - Supervision
+  - <span id="Ch08.xhtml#page_140"></span>Additional Issues: Russia and Trade
+  - Conclusion: The Need for a Bankruptcy Mechanism
+  - <span id="Ch08.xhtml#page_142"></span>Note
+  - References
+  - Introduction
+  - Limitations on International Organisations
+  - Changes at the Margin
+  - Conclusion
+  - Note
+  - Reference
+  - The Consensus, Revisited
+    - <span class="italic">The End of Fixed Rates</span>
+    - <span id="Ch010.xhtml#page_157"></span><span class="italic">The Challenges of Flexibility</span>
+    - <span class="italic">Is Monetary Sovereignty Still Relevant?</span>
+    - <span class="italic">Beyond the Consensus</span>
+  - The Fourth Option
+    - <span class="italic">Elastic Flexibility as an Antidote Against Speculation</span>
+    - <span class="italic">A New Class of Fixed-But-Adjustable Rates: Adjustable Reference Parties</span>
+    - <span class="italic">An Attractive Option for Emerging Countries</span>
+  - <span id="Ch010.xhtml#page_166"></span>Learning How to Manage Floating Rates
+    - <span class="italic">Economic Fundamentals in the Foreign Exchange Market</span>
+    - <span class="italic">Monitoring the FX Market</span>
+    - <span class="italic">The Public Sphere as an Expectations Co-ordinator</span>
+  - <span id="Ch010.xhtml#page_175"></span>The Institutional Setting: The Role of the IMF and the G7
+    - <span class="italic">Multilateral Surveillance of Emerging Markets' Exchange Rate Policies</span>
+    - <span class="italic">G7 Exchange Rate Monitoring</span>
+    - <span class="italic">Beyond Monitoring</span>
+  - <span id="Ch010.xhtml#page_182"></span>Concluding Remarks
+  - <span id="Ch010.xhtml#page_183"></span>Notes
+  - References
+  - Introduction
+  - Floating Exchange Rates
+  - Currency Boards
+  - <span id="Ch011.xhtml#page_194"></span>Bimonetarism and the Way Out of Transition Problems
+  - Forms of Monetary Union
+    - <span class="italic">Monetary Union is for the Economically Integrated Countries of a Region</span>
+  - Conclusion
+  - Note
+  - <span id="Ch011.xhtml#page_201"></span>References
+  - Introduction
+  - Competing Conceptions of Globalisation
+  - The Role of Multinational Enterprises
+  - <span id="Ch012.xhtml#page_208"></span>Triad-Based Production
+  - Regional Production and Marketing
+  - Regionalisation
+  - MNEs as Flagship Firms
+  - Conclusion: Key Implications for Managers
+  - References
+  - Introduction
+  - <span id="Ch013.xhtml#page_222"></span>The Conventional Wisdom: A Brief Survey
+  - The Consensus of the Conventional Wisdom
+  - <span id="Ch013.xhtml#page_228"></span>Challenges and Contributions to the Conventional Wisdom
+  - The Role of the G7
+    - <span class="italic">The Relevance and Leadership Role of the G7</span>
+    - <span class="italic">The G7's Relationship to the Other Financial Institutions</span>
+  - The Effectiveness of G7 Action in Crisis Response and System Reconstruction
+  - The G7's Focus for the Future
+  - Note
+  - References
+  - Introduction
+  - A. Strengthening and reforming the international financial institutions and arrangements
+  - B. Enhancing Transparency and Promoting Best Practices
+  - <span id="Apendix.xhtml#page_243"></span>C. Strengthening Financial Regulation in Industrial Countries
+  - D. Strengthening Macroeconomic Policies and Financial Systems in Emerging Markets
+    - <span class="italic">Exchange Rate Regimes in Emerging Economies</span>
+    - <span class="italic">Financial Systems</span>
+    - <span class="italic">Capital Flows</span>
+    - <span class="italic">Debt Management</span>
+  - E. Improving Crisis Prevention and Management, and Involving the Private Sector
+    - <span class="italic">A</span> <span class="italic">Framework for Private Sector Involvement in Crisis Resolution</span>
+    - <span class="italic">Principles</span>
+    - <span class="italic">Considerations</span>
+    - <span class="italic">Tools</span>
+  - F. Promoting Social Policies to Protect the Poor and Most Vulnerable
+- <span id="Reference.xhtml#page_259"></span>[Bibliography](#contents.xhtml#bck_ht0187)
+- <span id="index.xhtml#page_271"></span>[Index](#contents.xhtml#bck_ht0188)

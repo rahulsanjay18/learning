@@ -1,0 +1,35 @@
+note	title	path
+odd extension, detected as pdf	HACKING Ultimate Beginner s Gu - Dexter Jackson	Engineering/Computer Science/Cybersecurity/HACKING_ Ultimate Beginner_s Gu - Dexter Jackson.p
+LLM not_book (0.80): The file is related to game development and is in a computer science folder.	Game Programmer	Engineering/Computer Science/Game Dev/game-programmer.pdf
+LLM not_book (0.80): No title, and 'Dsa' is not a recognizable book title.	Dsa	Engineering/Computer Science/General Computing/Dsa.pdf
+odd extension, detected as epub	The Art of Scalability - Martin L. Abbott,Michael T. Fisher	Engineering/Computer Science/Linux/MARTIN~1.EPU
+odd extension, detected as pdf	The Linux Programming Interface-Michael Kerrisk	Engineering/Computer Science/Linux/The Linux Programming Interface-Michael Kerrisk.pd
+odd extension, detected as epub	The Art of Scalability - Martin L. Abbott,Michael T. Fisher	Engineering/Computer Science/MARTIN~1.EPU
+LLM unsure (0.70): The file name and folder path do not indicate it is related to engineering, computer science, ML, AI, or data science.	ESLII print12	Engineering/Computer Science/ML, AI, Data Science/ESLII_print12.pdf
+LLM not_book (0.80): The file name suggests it is a specific version of notes or documentation.	ComputerScienceOne v1.3.5	Engineering/Computer Science/Other/ComputerScienceOne_v1.3.5.pdf
+odd extension, detected as pdf	Oreilly.Csharp.5.0.in .a.Nutshell.5th.Edition	Engineering/Computer Science/Other/Oreilly.Csharp.5.0.in_.a.Nutshell.5th.Edition.June
+LLM not_book (0.80): The file name and folder path suggest it is related to Python programming.	LPTHW	Engineering/Computer Science/Python/LPTHW.pdf
+LLM not_book (0.80): The file name suggests it is a technical document.	Modern C	Engineering/ModernC.pdf
+LLM not_book (0.80): The file name and folder path suggest it is part of a course or learning material.	Japanese Level 1 Notes	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Absolute Pimsleur's Japanese #/EXTRAS/Japanese Level 1 Notes (Original Work).pdf
+LLM not_book (0.80): Part of an audio course series.	Mastering Japanese - Ear Audio Cover	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mastering Japanese by Ear Audio/Mastering Japanese by Ear Audio Cover.pdf
+LLM not_book (0.80): It is a workbook related to Japanese particles.	Particles Kana Answer	Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Particles/Meguro Language Center/Particles/ParticlesKanaAnswer.pdf
+LLM not_book (0.80): The file is named 'Particles Romaji Answer' and is located in a workbook folder.	Particles Romaji Answer	Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Particles/Meguro Language Center/Particles/ParticlesRomajiAnswer.pdf
+LLM not_book (0.80): Part of a vocabulary set for Japanese learning.	Basic Verb100	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Basic verb 100/BasicVerb100(Kana).pdf
+LLM not_book (0.80): Part of a vocabulary set for Japanese learning.	Basic Verb100	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Basic verb 100/BasicVerb100(Roman).pdf
+LLM not_book (0.80): Part of a vocabulary set in a language learning context.	40Verbs Kana	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Meguro Language Center/40 Verbs/40VerbsKana.pdf
+LLM not_book (0.80): Part of a vocabulary set for Japanese learning.	40Verbs Romaji	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Meguro Language Center/40 Verbs/40VerbsRomaji.pdf
+LLM not_book (0.80): The file name suggests it's an answer key or solution manual for vocabulary learning.	Gimonshi Kana Answer	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Meguro Language Center/Interrogatives/GimonshiKanaAnswer.pdf
+LLM not_book (0.80): The file name suggests it contains answers, and the folder path indicates it is related to language learning materials.	Gimonshi Romaji Answer	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Meguro Language Center/Interrogatives/GimonshiRomajiAnswer.pdf
+LLM not_book (0.80): The file name suggests it is related to Japanese language learning but does not fit the criteria for a book-like reading material.	Calendar Kanji	Foreign Languages/Japanese/08.Miscellaneous/calendar kanji.pdf
+LLM unsure (0.70): The file is named after a chess figure and is in a chess folder.	Capablanca-Chess Fundamentals	Games/Chess/Capablanca-ChessFundamentals.pdf
+LLM not_book (0.80): The file is named after a chess topic and is in a chess folder.	Villa, de la Jesus - 100 Endgames You Must Know Vital Lessons for Every Chess Player Improved and Expanded.-New in Chess	Games/Chess/Villa, de la Jesus - 100 Endgames You Must Know _ Vital Lessons for Every Chess Player Improved and Expanded.-New in Chess (2008).pdf
+LLM unsure (0.70): The file name and folder path suggest it is related to mathematical logic.	Napkin	Math _ Logic/Napkin.pdf
+LLM not_book (0.80): The file name suggests it contains answers, and the folder path indicates it is related to theoretical math.	Numbers Groups and Codes answers	Math _ Logic/Theoretical Math/Logic and Analysis/Numbers Groups and Codes answers.pdf
+odd extension, detected as epub	Easy Pop Melodies - Hal Leonard Corp.	Music/Songbooks/EASYPO~1.EPU
+LLM unsure (0.50): File name does not provide clear context and folder is 'Pedagogy'	s2.0-S0021929016312301-main	Pedagogy/1-s2.0-S0021929016312301-main.pdf
+LLM not_book (0.80): The file is in a 'Reference Documents' folder, which suggests it is a personal or work-related document.	Gopher Repeller	Reference Documents/Gopher_Repeller.pdf
+LLM not_book (0.80): The file is in a 'Reference Documents' folder, which suggests it is a personal or work file.	Saving Seeds	Reference Documents/Saving_Seeds.pdf
+LLM not_book (0.80): AP Physics is a common title for educational materials.	AP Physics	Science/Physics/Elementary Physics/AP Physics.pdf
+odd extension, detected as epub	The Back to Basics Handbook - Abigail R. Gehring	Survival/(BACKT~1.EPU
+weak filename and no readable metadata; LLM unsure (0.50): File name does not provide enough context.	THDD4B~1	Survival/THDD4B~1.PDF
+LLM unsure (0.50): File name does not provide enough context.	1903.08478	Unsure/1903.08478.pdf

@@ -1,0 +1,47 @@
+# TOC: Fair trade and social justice global ethnographies
+grade: A
+
+    - **About NYU Press**
+- <span id="title.html#page_ii"></span><span id="title.html#page_iii"></span>Fair Trade and Social Justice
+  - <span id="content.html#page_v"></span>Contents
+  - <span id="acknowledgment.html#page_vii"></span>Acknowledgments
+    - <span id="chapter01.html#page_1"></span>*1*  What’s Fair?
+    - *The Paradox of Seeking Justice through Markets*
+  - <span id="part01.html#page_24"></span><span id="part01.html#page_25"></span>*Part I*  Global Markets and Local Realities
+  - *Regulating and Expanding Fair Trade*
+    - <span id="chapter02.html#page_28"></span>*2*
+    - Fair Trade and the Specialty Coffee Market
+    - *Growing Alliances, Shifting Rivalries*
+    - <span id="chapter03.html#page_47"></span>*3*
+    - A New World?
+    - *Neoliberalism and Fair Trade Farming in the Eastern Caribbean*
+    - <span id="chapter04.html#page_72"></span>*4*
+    - Fair Flowers
+    - *Environmental and Social Labeling in the Global Cut Flower Trade*
+    - <span id="chapter05.html#page_97"></span>*5*
+    - Colonial Pasts and Fair Trade Futures
+    - *Changing Modes of Production and Regulation on Darjeeling Tea Plantations*
+  - <span id="part02.html#page_123"></span>*Part II*  Negotiating Difference and Identity in Fair Trade Markets
+    - <span id="chapter06.html#page_125"></span>*6*
+    - A Market of Our Own
+    - *Women’s Livelihoods and Fair Trade Markets*
+    - <span id="chapter07.html#page_147"></span>*7*
+    - Fractured Ties
+    - *The Business of Development in Kenyan Fair Trade Tea*
+    - <span id="chapter08.html#page_176"></span>*8*
+    - Fair Trade Craft Production and Indigenous Economies
+    - *Reflections on “Acceptable” Indigeneities*
+    - <span id="chapter09.html#page_202"></span>*9*
+    - Fair Money, Fair Trade
+    - *Tracing Alternative Consumption in a Local Currency Economy*
+    - <span id="chapter10.html#page_229"></span>*10*
+    - Relationship Coffees
+    - *Structure and Agency in the Fair Trade System*
+    - <span id="chapter11.html#page_258"></span>*11*
+    - Novica, Navajo Knock-Offs, and the ’Net
+    - *A Critique of Fair Trade Marketing Practices*
+    - <span id="chapter12.html#page_283"></span>*12*
+    - Naming Rights
+    - *Ethnographies of Fair Trade*
+  - <span id="contributor.html#page_299"></span>About the Contributors
+  - <span id="index.html#page_301"></span>Index

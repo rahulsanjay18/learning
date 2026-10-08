@@ -1,0 +1,225 @@
+# TOC: Andrew P. McMahon - Machine Learning Engineering with Python (2023, Packt) - libgen.li
+grade: A
+
+- Foreword
+- Contributors
+- About the author
+- About the reviewers
+- Join our community on Discord
+- Landmarks
+- Preface
+- Who this book is for
+- What this book covers
+- To get the most out of this book
+  - Download the example code files
+  - Download the color images
+  - Conventions used
+- Get in touch
+- Share your thoughts
+- Download a free PDF copy of this book
+- Introduction to ML Engineering
+- Technical requirements
+- Defining a taxonomy of data disciplines
+  - Data scientist
+  - ML engineer
+  - ML operations engineer
+  - Data engineer
+- Working as an effective team
+- ML engineering in the real world
+- What does an ML solution look like?
+  - Why Python?
+- High-level ML system design
+  - Example 1: Batch anomaly detection service
+  - Example 2: Forecasting API
+  - Example 3: Classification pipeline
+- Summary
+- Join our community on Discord
+- The Machine Learning Development Process
+- Technical requirements
+- Setting up our tools
+  - Setting up an AWS account
+- Concept to solution in four steps
+  - Comparing this to CRISP-DM
+  - Discover
+    - Using user stories
+  - Play
+  - Develop
+    - Selecting a software development methodology
+    - Package management (conda and pip)
+    - Poetry
+    - Code version control
+    - Git strategies
+- Configure an ML pipeline, which consists of three stages: tokenizer, hashingTF, and lr.
+- Branch pipeline1spark - Commit 1 (Engineer A)
+- Branch pipeline - Commit 2 (Engineer B)
+    - Model version control
+  - Deploy
+    - Knowing your deployment options
+    - Understanding DevOps and MLOps
+    - Building our first CI/CD example with GitHub Actions
+    - Continuous model performance testing
+    - Continuous model training
+- Summary
+- Join our community on Discord
+- From Model to Model Factory
+- Technical requirements
+- Defining the model factory
+- Learning about learning
+  - Defining the target
+  - Cutting your losses
+  - Preparing the data
+- Engineering features for machine learning
+  - Engineering categorical features
+- Print returns [[0.]
+- [1.]
+- [2.]]
+- Print returns [[1. 0. 0.]
+- [0. 1. 0.]
+- [0. 0. 1.]]
+  - Engineering numerical features
+- Designing your training system
+  - Training system design options
+  - Train-run
+  - Train-persist
+- Retraining required
+  - Detecting data drift
+  - Detecting concept drift
+  - Setting the limits
+  - Diagnosing the drift
+  - Remediating the drift
+  - Other tools for monitoring
+  - Automating training
+  - Hierarchies of automation
+  - Optimizing hyperparameters
+    - Hyperopt
+    - Optuna
+  - AutoML
+    - auto-sklearn
+    - AutoKeras
+- Persisting your models
+- Building the model factory with pipelines
+  - Scikit-learn pipelines
+  - Spark ML pipelines
+- Summary
+- Join our community on Discord
+- Packaging Up
+- Technical requirements
+- Writing good Python
+  - Recapping the basics
+  - Tips and tricks
+  - Adhering to standards
+  - Writing good PySpark
+- Choosing a style
+  - Object-oriented programming
+  - Functional programming
+- Packaging your code
+  - Why package?
+  - Selecting use cases for packaging
+  - Designing your package
+- Building your package
+  - Managing your environment with Makefiles
+- Set up virtual (conda) environment for this project
+  - Install or update Python Dependencies in the virtual (conda) environment
+  - Getting all poetic with Poetry
+- Testing, logging, securing, and error handling
+  - Testing
+  - Securing your solutions
+  - Analyzing your own code for security issues
+  - Analyzing dependencies for security issues
+  - Logging
+  - Error handling
+- Not reinventing the wheel
+- Summary
+- Join our community on Discord
+- Deployment Patterns and Tools
+- Technical requirements
+- Architecting systems
+  - Building with principles
+- Exploring some standard ML patterns
+  - Swimming in data lakes
+  - Microservices
+  - Event-based designs
+  - Batching
+- Containerizing
+- Hosting your own microservice on AWS
+  - Pushing to ECR
+  - Hosting on ECS
+- Building general pipelines with Airflow
+  - Airflow
+    - Airflow on AWS
+    - Revisiting CI/CD for Airflow
+- Building advanced ML pipelines
+  - Finding your ZenML
+  - Going with the Kubeflow
+- Selecting your deployment strategy
+- Summary
+- Join our community on Discord
+- Scaling Up
+- Technical requirements
+- Scaling with Spark
+  - Spark tips and tricks
+  - Spark on the cloud
+    - AWS EMR example
+- Spinning up serverless infrastructure
+- Containerizing at scale with Kubernetes
+- Scaling with Ray
+- Create an actor from this class.
+  - Getting started with Ray for ML
+    - Scaling your compute for Ray
+    - Scaling your serving layer with Ray
+- Designing systems at scale
+- Summary
+- Join our community on Discord
+- Deep Learning, Generative AI, and LLMOps
+- Going deep with deep learning
+  - Getting started with PyTorch
+  - Scaling and taking deep learning into production
+  - Fine-tuning and transfer learning
+- Living it large with LLMs
+  - Understanding LLMs
+  - Consuming LLMs via API
+  - Coding with LLMs
+- Building the future with LLMOps
+  - Validating LLMs
+  - PromptOps
+- Summary
+- Join our community on Discord
+- Building an Example ML Microservice
+- Technical requirements
+- Understanding the forecasting problem
+- Designing our forecasting service
+- Selecting the tools
+- Training at scale
+- train and predict
+- Serving the models with FastAPI
+  - Response and request schemas
+  - Managing models in your microservice
+- mwaa_env_name = 'YOUR_ENVIRONMENT_NAME'
+- dag_name = 'YOUR_DAG_NAME'
+  - Pulling it all together
+- Logging
+- # Containerizing and deploying to Kubernetes
+  - Containerizing the application
+  - Scaling up with Kubernetes
+  - Deployment strategies
+- Summary
+- Join our community on Discord
+- Building an Extract, Transform, Machine Learning Use Case
+- Technical requirements
+- Understanding the batch processing problem
+- Designing an ETML solution
+- Selecting the tools
+  - Interfaces and storage
+  - Scaling of models
+  - Scheduling of ETML pipelines
+- Executing the build
+  - Building an ETML pipeline with advanced Airflow features
+- Bucket name could be read in as an environment variable.
+- Summary
+- Join our community on Discord
+- Why subscribe?
+- Other Books You May Enjoy
+- Packt is searching for authors like you
+- Share your thoughts
+- Index
+- Download a free PDF copy of this book

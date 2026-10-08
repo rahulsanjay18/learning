@@ -1,0 +1,263 @@
+reason	path
+not an ebook file (.zip) x1	./
+not an ebook file (.txt) x1	A Very Short Introduction/
+tiny file (4483 bytes)	Engineering/Computer Science/Basically any other topic_s books can be found her.docx
+not an ebook file (.zi) x1	Engineering/Computer Science/C-C++/
+not an ebook file (.jpg) x1	Engineering/Computer Science/Game Dev/
+tiny file (1048 bytes)	Engineering/Computer Science/Get CS Jobs Reading Track.rtf
+empty file (0 bytes, broken download?)	Engineering/Computer Science/ML, AI, Data Science/Large Language Models_ A Deep Dive _ Bridging Theory and -- Uday Kamath, Kevin Keenan, Garrett Somers, Sarah Sorenson -- 2, 2025 -- Springer Nature -- 9783031656460 -- d2480a0d588f020a515e282b1707c5e6 -- Anna’s Archi.pdf
+junk-word name	Engineering/Computer Science/Other/Fortran95_notes.pdf
+not an ebook file (.html) x1	Engineering/Computer Science/Software Development/
+not an ebook file (.doc) x9	Engineering/Electrical and Computer Engineering/SM/
+not an ebook file (.jpeg) x4	Engineering/Electrical and Computer Engineering/SM/HW 5/
+not an ebook file (.jpg) x1	Fiction/
+not an ebook file (.rar) x1	Fiction/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/A Hat Full Of Sky (335)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Carpe Jugulum (482)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Equal Rites (463)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Eric (469)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Extras/Nation (422)/
+not an ebook file (.zip) x1	Fiction/Discworld Novels/Extras/Short Story Collection (1981)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Extras/Short Story Collection (1981)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Extras/The Folklore of Discworld (977)/
+not an ebook file (.zip) x1	Fiction/Discworld Novels/Extras/The Science of Discworld (1605)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Extras/The Science of Discworld (1605)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Extras/The Wit & Wisdom of Discworld (935)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Feet of Clay (478)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Going Postal (486)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Guards! Guards! (468)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Hogfather (479)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/I Shall Wear Midnight (330)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Interesting Times (476)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Jingo (480)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Lords and Ladies (473)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Making Money (452)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Maskerade (477)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Men at Arms (474)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Monstrous Regiment (436)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Mort (464)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Moving Pictures (470)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Night Watch (485)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Pyramids (467)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Reaper Man (471)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Small Gods (333)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Soul Music (475)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Sourcery (465)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/The Amazing Maurice and His Educated Rod (727)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/The Colour of Magic (500)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/The Fifth Elephant (483)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/The Last Continent (481)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/The Last Hero (487)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/The Light Fantastic (501)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/The Truth (454)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/The Wee Free Men (336)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Thief of Time (484)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Thud! (453)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Unseen Academicals (423)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Wintersmith (337)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Witches Abroad (472)/
+not an ebook file (.jpg) x1	Fiction/Discworld Novels/Wyrd Sisters (466)/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/50 listening tasks for Beginners-Intermediate Students/
+not an ebook file (.html) x4	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Absolute Pimsleur's Japanese #/EXTRAS/
+not an ebook file (.jpg) x16	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Absolute Pimsleur's Japanese #/EXTRAS/Images/
+LLM: It is an owner's manual within a course folder. (1.00)	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Absolute Pimsleur's Japanese #/EXTRAS/Owner's Manual.pdf
+not an ebook file (.mp3) x60	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Absolute Pimsleur's Japanese #/Japanese I - 3rd Ed/
+not an ebook file (.mp3) x60	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Absolute Pimsleur's Japanese #/Japanese II - 2nd Ed/
+not an ebook file (.mp3) x60	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Absolute Pimsleur's Japanese #/Japanese III - 2nd Ed/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Berlitz Japanese Course/
+not an ebook file (.mp3) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Berlitz Japanese Course/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Bunka Nihongo Chuukyuu/Bunka Nihongo Chuukyuu 1 Intermediate Japanese Course/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Bunka Nihongo Chuukyuu/Bunka Nihongo Chuukyuu 2/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Chuukyuu kara manabu JP/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Collins Easy Learning Japanese Audio Course #/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Colloquial Japanese/
+LLM: It is an answer key for a textbook. (1.00)	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Genki/Genki Answer Key I and II.pdf
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Genki/Genki I/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Genki/Genki II/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Hugo Japanese in 3 Months/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Intermediate Japanese An Integrated Course/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Introduction To Intermediate Japanese/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/JBridge/JBridge for Beginners/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/JBridge/JBridge to Intermediate Japanese/
+not an ebook file (.bin) x2	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese The Spoken Language [prog]/
+not an ebook file (.cue) x2	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese The Spoken Language [prog]/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Busy People/Japanese for Busy People I/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Busy People/Japanese for Busy People II/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Everyone/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Today/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for You The Art of Communication/
+not an ebook file (.jpg) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese in Mangaland/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Kiite Oboeru Hanashikata Nihongo Nama Chuukei Speaking Skills Learned through Listening Japanese Live/
+not an ebook file (.iso) x2	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Learn Japanese now! [prog]/
+not an ebook file (.avi) x26	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Let's Learn Japanese Basic/Let's Learn Japanese Basic I/
+not an ebook file (.avi) x26	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Let's Learn Japanese Basic/Let's Learn Japanese Basic II/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Linguaphone Japanese Course/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mastering Japanese by Ear Audio/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mimi Kara Oboeru N3/
+not an ebook file (.rar) x2	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Minna no Nihongo/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mirai Stage 1 Coursebook/
+not an ebook file (.rar) x2	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nakama Communication, Culture, Contex/Nakama 1-2 Communication, Culture, Contex (old version)/Nakama 2/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nameraka nihongo kaiwa (Successful Communication in Japanese)/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/New Approach Japanese Intermediate/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nihongo Chuukyuu J301/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Oxford Take Off In Japanese Audio/
+not an ebook file (.jpg) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Rosetta Stone V3 [prog]/
+not an ebook file (.iso) x3	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Rosetta Stone V3 [prog]/Japanese - Level 1, 2, 3/
+not an ebook file (.exe) x2	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Rosetta Stone V3 [prog]/_Setup/
+not an ebook file (.exe) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Rosetta Stone V3 [prog]/_Setup/Crack/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Bunka Shoukyuu Nihongo/II/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Nihongo no Kiso/Shin Nihongo no Kiso I/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Nihongo no Kiso/Shin Nihongo no Kiso II/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Speak Japanese with Confidence/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Teach Yourself Instant Japanese/
+not an ebook file (.jpg) x12	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Teach Yourself Instant Japanese/Pages/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Teach Yourself Japanese Complete Course/
+not an ebook file (.jpg) x4	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Teach Yourself Japanese Complete Course/Screens/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Teach Yourself Phone Japanese/
+not an ebook file (.jpg) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Teach Yourself Phone Japanese/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/02.Audio Courses, Textbooks/Ultimate Japanese Advanced/
+not an ebook file (.jpg) x229	Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Grammar/Chuukyuu Nihongo Bunpo Youten Seiri Pointo 20 The 20 Essential Grammar Points of Intermediate Japanese/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Preparing for the Japanese Language Proficiency Tests/1kyuu gokaku dekiru Level 1/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Preparing for the Japanese Language Proficiency Tests/2 kyuu gokaku dekiru Level 2/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Preparing for the Japanese Language Proficiency Tests/3 kyuu Korede Daijoubu Level 3/
+LLM: The file is named 'How To Make Nai-form From Masu-form Kana Answer' and is located in a 'Workbooks' folder. (0.90)	Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Verbs/Meguro Language Center/How to make verb nai-form/HowToMakeNai-formFromMasu-formKanaAnswer.pdf
+not an ebook file (.rar) x1	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/101 Japanese Idioms/
+not an ebook file (.swf) x1	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Meguro Language Center/40 Verbs/40 verbs (FLASH)/
+not an ebook file (.swf) x1	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Meguro Language Center/Useful Daily Expressions (FLASH)/
+not an ebook file (.swf) x5	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Meguro Language Center/i-adj/i-adj. (FLASH)/
+not an ebook file (.swf) x2	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Meguro Language Center/na-adj/na-adj. (FLASH)/
+not an ebook file (.nfo) x1	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Subliminal Japanese/
+not an ebook file (.mp3) x39	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Subliminal Japanese/CD 1/
+not an ebook file (.mp3) x37	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Subliminal Japanese/CD 2/
+not an ebook file (.txt) x1	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Textfugu Ultimate Vocabulary Packs/
+not an ebook file (.zip) x1	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Textfugu Ultimate Vocabulary Packs/Ultimate Japanese Adjectives Pack/
+not an ebook file (.zip) x2	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Textfugu Ultimate Vocabulary Packs/Ultimate Japanese Nouns Pack/
+not an ebook file (.zip) x1	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Textfugu Ultimate Vocabulary Packs/Ultimate Japanese Verbs Pack/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 1/Disc 1 Nouns/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 1/Disc 2 Adj & Adv/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 1/Disc 3 Expression/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 1/Disc 4 Verbs/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 2/Disc 1 Nouns/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 2/Disc 2 Adj & Adv/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 2/Disc 3 Expressions/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 2/Disc 4 Verbs/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 3/Disc 1 Nouns/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 3/Disc 2 Adj. Adv/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 3/Disc 3 Expressions/
+not an ebook file (.mp3) x4	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 3/Disc 4 Verbs/
+not an ebook file (.png) x6	Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Screens/
+not an ebook file (.rar) x2	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese Graded readers level 1 vol 3/
+not an ebook file (.jpg) x17	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese Graded readers level 1 vol 3/Books/basu/
+not an ebook file (.jpg) x14	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese Graded readers level 1 vol 3/Books/doshite ebi ga/
+not an ebook file (.jpg) x14	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese Graded readers level 1 vol 3/Books/jon-san no natsuyasumi/
+not an ebook file (.jpg) x16	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese Graded readers level 1 vol 3/Books/kimono/
+not an ebook file (.gif) x1	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese Graded readers level 1 vol 3/Books/kimono/
+not an ebook file (.jpg) x13	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese Graded readers level 1 vol 3/Books/shitakiri suzume/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 2 vol 3/
+not an ebook file (.jpg) x2	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 2 vol 3/
+not an ebook file (.jpg) x15	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 2 vol 3/Books/Gonkitsune/
+not an ebook file (.jpg) x15	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 2 vol 3/Books/Houi to chan'a/
+not an ebook file (.jpg) x15	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 2 vol 3/Books/Ikkyuusan sononi/
+not an ebook file (.jpg) x15	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 2 vol 3/Books/Nihon no ofuro/
+not an ebook file (.jpg) x15	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 2 vol 3/Books/Sopi- no fuyu no ie/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 4 vol 1/
+not an ebook file (.jpg) x2	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 4 vol 1/
+not an ebook file (.jpg) x23	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 4 vol 1/Books/hashire merosu/
+not an ebook file (.jpg) x24	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 4 vol 1/Books/nagai takashi genbaku no chi nagasaki ni ikite/
+not an ebook file (.jpg) x23	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 4 vol 1/Books/nogiku no haka/
+not an ebook file (.jpg) x23	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 4 vol 1/Books/toshishun/
+not an ebook file (.jpg) x23	Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Japanese graded readers level 4 vol 1/Books/yuki onna/
+not an ebook file (.rar) x12	Foreign Languages/Japanese/05.Children's Books, Readers/Light Novels (ranobe)/
+not an ebook file (.jpg) x10	Foreign Languages/Japanese/05.Children's Books, Readers/Light Novels (ranobe)/Sample Book Covers/
+not an ebook file (.txt) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/
+not an ebook file (.exe) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese dictionary [prog]/
+not an ebook file (.gif) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.dll) x25	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.ocx) x4	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.hlp) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.zip) x4	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.mdb) x2	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.exe) x8	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.ttf) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.lst) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.tlb) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.ini) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.htm) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.txt) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.cab) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Japanese talking dictionary [prog]/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/The Rough Guide Phrasebook Japanese/
+LLM: It is a cheatsheet, not a published or professionally produced reading material. (1.00)	Foreign Languages/Japanese/08.Miscellaneous/Cheatsheets/NihonShock's Ultimate Japanese Cheat Sheet/japanese-cheatsheet-hiragana-8511.pdf
+LLM: It's a cheatsheet, not a published reading material. (1.00)	Foreign Languages/Japanese/08.Miscellaneous/Cheatsheets/NihonShock's Ultimate Japanese Cheat Sheet/japanese-cheatsheet-romaji-8511.pdf
+LLM: It is a cheatsheet, not a published reading material. (1.00)	Foreign Languages/Japanese/08.Miscellaneous/Cheatsheets/conjugation-cheatsheet.pdf
+not an ebook file (.htm) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/JRPG/
+not an ebook file (.zip) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/JRPG/
+not an ebook file (.txt) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/Knuckles/
+not an ebook file (.clv) x18	Foreign Languages/Japanese/08.Miscellaneous/Game/Knuckles/Kanji_and_Vocab/
+not an ebook file (.msi) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/Knuckles/KnucklesSetup/
+not an ebook file (.exe) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/Knuckles/KnucklesSetup/
+not an ebook file (.ini) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/Knuckles/KnucklesSetup/
+not an ebook file (.7z) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/Nintendo DS/Rom/
+not an ebook file (.rar) x4	Foreign Languages/Japanese/08.Miscellaneous/Game/Nintendo DS/Rom/
+not an ebook file (.exe) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/Slime Forest Adventure/
+not an ebook file (.htm) x1	Foreign Languages/Japanese/08.Miscellaneous/Game/Slime Forest Adventure/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/08.Miscellaneous/Introduction to Japanese Pronunciation Theory and Practice/
+not an ebook file (.jpg) x1	Foreign Languages/Japanese/08.Miscellaneous/Introduction to Japanese Pronunciation Theory and Practice/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/08.Miscellaneous/Learning Japanese from Songs/
+not an ebook file (.flv) x1	Foreign Languages/Japanese/08.Miscellaneous/Learning Japanese from Songs/
+not an ebook file (.jpg) x1	Foreign Languages/Japanese/08.Miscellaneous/Learning Japanese from Songs/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/08.Miscellaneous/Pronounce It Perfectly in Japanese/
+not an ebook file (.gif) x30	Foreign Languages/Japanese/08.Miscellaneous/Pronounce It Perfectly in Japanese/Book/
+not an ebook file (.jpg) x2	Foreign Languages/Japanese/08.Miscellaneous/Sing and Learn Japanese/
+not an ebook file (.rar) x1	Foreign Languages/Japanese/08.Miscellaneous/Sing and Learn Japanese/
+not an ebook file (.htm) x12	Foreign Languages/Japanese/08.Miscellaneous/websites/Freesites/
+not an ebook file (.htm) x11	Foreign Languages/Japanese/08.Miscellaneous/websites/Paysites/
+not an ebook file (.html) x1	Games/
+tiny file (6205 bytes)	Games/Chess/Winning Chess/order to read.docx
+not an ebook file (.pgn) x5	Games/Chess/games/
+not an ebook file (.txt) x1	Games/Go/Elementary Go Series/
+not an ebook file (.txt) x1	Games/Go/Learn To Play Go Series/
+not an ebook file (.htm) x1	Music/
+empty file (0 bytes, broken download?)	Music/History/J. Peter Burkholder y Claude V. Palisca (eds.) - Norton Anthology of Western Music. Vol. 2_ Classic to Romantic (7th Ed.) 2 (2014, Norton) - libgen.li.pdf
+empty file (0 bytes, broken download?)	Music/History/J. Peter Burkholder, Donald Jay Grout, Claude V. Palisca - A History of Western Music (2014, W. W. Norton & Co) - libgen.li.pdf
+not an ebook file (.txt) x1	Philosophy/
+not an ebook file (.jpg) x20	Practical Engineering/20 Woodworking Books Collection Pack-9/Covers/
+tiny file (6335 bytes)	Social Sciences/M. Laxmikanth - Indian Polity_ For Civil Services and Other Competitive Examinations (2020, McGraw Hill Education (India)) - libgen.li.pdf
+empty file (0 bytes, broken download?)	Social Sciences/US History/Oxford American History/The Framers’ Coup The Making of the United States Constitution by Michael J. Klarman (z-lib.org).pdf
+LLM: It matches the description of an owner's manual. (1.00)	Technical Docs/6502_Users_Manual.pdf
+LLM: The file is in a 'Technical Docs/Video Game Docs' folder, indicating it is related to video game documentation. (1.00)	Technical Docs/Video Game Docs/NESDoc.pdf
+not an ebook file (.me) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.src) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.0) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.1) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.2) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.3) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.4) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.5) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.6) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.7) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.8) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.doc) x2	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.zip) x1	Technical Docs/Video Game Docs/SNES/
+not an ebook file (.html) x1	_Self Help_/
+not an ebook file (.txt) x5	book lists/
+not an ebook file (.html) x15	book lists/
+not an ebook file (.png) x6	book lists/
+not an ebook file (.jpg) x1	book lists/
+saved web page assets x30	book lists/Astronomy Textbook Recommendations _ _sci_ Wiki _ Fandom_files/
+saved web page assets x30	book lists/Biology Textbook Recommendations _ _sci_ Wiki _ Fandom_files/
+saved web page assets x31	book lists/Chemical Engineering _ _sci_ Wiki _ Fandom_files/
+saved web page assets x30	book lists/Chemistry Textbook Recommendations _ _sci_ Wiki _ Fandom_files/
+saved web page assets x30	book lists/Computer Science and Engineering _ _sci_ Wiki _ Fandom_files/
+saved web page assets x31	book lists/Economics Textbook Recommendations _ _sci_ Wiki _ Fandom_files/
+saved web page assets x31	book lists/Electrical and Electronics Engineering _ _sci_ Wiki _ Fandom_files/
+saved web page assets x31	book lists/Geoscience Textbook Recommendations _ _sci_ Wiki _ Fandom_files/
+saved web page assets x27	book lists/Mathematics _ _sci_ Wiki _ Fandom_files/
+saved web page assets x31	book lists/Mechanical and Aerospace Engineering _ _sci_ Wiki _ Fandom_files/
+saved web page assets x31	book lists/Nuclear Science and Engineering _ _sci_ Wiki _ Fandom_files/
+saved web page assets x30	book lists/Physics Textbook Recommendations _ _sci_ Wiki _ Fandom_files/
+saved web page assets x16	book lists/Physics — Susan Rigetti_files/
+saved web page assets x30	book lists/Programming Textbook Recommendations _ _sci_ Wiki _ Fandom_files/
+saved web page assets x30	book lists/Universal Material _ _sci_ Wiki _ Fandom_files/

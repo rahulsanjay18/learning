@@ -1,0 +1,61 @@
+# TOC: Byzantium__-_OxfordUP.VSI_-_Sarris,_Peter.Jul.2015
+grade: A
+
+- Byzantium: A Very Short Introduction
+- BYZANTIUM
+- A Very Short Introduction
+- <span class="calibre3">Contents</span>
+- <a href="#part0006.html#r_actrade-9780199236114-miscMatter-7" class="calibre5"><span class="calibre3">Preface</span></a>
+- <a href="#part0006.html#r_actrade-9780199236114-chapter-1" class="calibre5"><span class="calibre3">Chapter 1</span></a>
+- <span class="calibre3">Faith, reason, and empire</span>
+- <span class="calibre3">Why ‘Byzantium’?</span>
+- <span class="calibre3">From Diocletian to Constantine</span>
+- <span class="calibre3">A new religion</span>
+- <span class="calibre3">A new politics</span>
+- <a href="#part0006.html#r_actrade-9780199236114-chapter-2" class="calibre5"><span class="calibre3">Chapter 2</span></a>
+- <span class="calibre3">Projecting power</span>
+- <span class="calibre3">The medieval city</span>
+- <span class="calibre3">Order and disorder</span>
+- <a href="#part0006.html#r_actrade-9780199236114-chapter-3" class="calibre5"><span class="calibre3">Chapter 3</span></a>
+- <span class="calibre3">Containing the crisis</span>
+- <span class="calibre3">Heraclius and holy war</span>
+- <span class="calibre3">Restoration and collapse</span>
+- <span class="calibre3">The end of the ancient world</span>
+- <a href="#part0006.html#r_actrade-9780199236114-chapter-4" class="calibre5"><span class="calibre3">Chapter 4</span></a>
+- <span class="calibre3">Defining the enemy</span>
+- <span class="calibre3">Rivalry and emulation</span>
+- <span class="calibre3">A frontier society</span>
+- <span class="calibre3">The vicissitudes of war</span>
+- <a href="#part0006.html#r_actrade-9780199236114-chapter-5" class="calibre5"><span class="calibre3">Chapter 5</span></a>
+- <span class="calibre3">History and diplomacy</span>
+- <span class="calibre3">The legacy of antiquity</span>
+- <span class="calibre3">New crises and new solutions</span>
+- <a href="#part0006.html#r_actrade-9780199236114-chapter-6" class="calibre5"><span class="calibre3">Chapter 6</span></a>
+- <span class="calibre3">Culture and conservatism</span>
+- <span class="calibre3">‘Honey from a whore’s lips’</span>
+- <span class="calibre3">Images and the imagination</span>
+- <span class="calibre3">Necessity and innovation</span>
+- <span class="calibre3">Free thinkers</span>
+- <a href="#part0006.html#r_actrade-9780199236114-chapter-7" class="calibre5"><span class="calibre3">Chapter 7</span></a>
+- <span class="calibre3">Romans, Franks, Greeks, and Turks</span>
+- <span class="calibre3">‘What dost thou now, ancient glory of Rome?’</span>
+- <span class="calibre3">In the palace of the Caesars</span>
+- <span class="calibre3">The vision of empire</span>
+- Chapter 1: What was Byzantium?
+- Chapter 2: Constantinople the ruling city
+- Chapter 3: From antiquity to the Middle Ages
+- Chapter 4: Byzantium and Islam
+- Chapter 5: Strategies for survival
+- Chapter 6: Text, image, space, and spirit
+- Chapter 7: End of empire
+- General
+- Chapter 1: What was Byzantium?
+- Chapter 2: Constantinople the ruling city
+- Chapter 3: From antiquity to the Middle Ages
+- Chapter 4: Byzantium and Islam
+- Chapter 5: Strategies for survival
+- Chapter 6: Text, image, space, and spirit
+- Chapter 7: End of empire
+- <a href="#part0006.html#r_actrade-9780199236114-indexGroup-1" class="calibre5"><span class="calibre3">Index</span></a>
+- <span class="calibre3">Expand your collection of</span>
+- Very Short Introductions

@@ -1,0 +1,32 @@
+# TOC: Climate Future Averting and Adapting to Climate Change
+grade: A
+
+- <span class="title"> Climate Future </span>
+- *Averting and Adapting to Climate Change*
+- [<span class="label">1</span>](#006_FM_contents.xhtml#r_oso-9780197647349-chapter-1)
+    - <span id="008_chapter.xhtml#oso-9780197647349-chapter-1-div3-7"></span><span class="title">Private Adaptation</span>
+    - <span id="008_chapter.xhtml#oso-9780197647349-chapter-1-div3-8"></span><span class="title">Public Adaptation</span>
+    - <span id="008_chapter.xhtml#oso-9780197647349-chapter-1-div3-10"></span><span class="title">Resilience</span>
+- [<span class="label">2</span>](#006_FM_contents.xhtml#r_oso-9780197647349-chapter-2)
+- [<span class="label">3</span>](#006_FM_contents.xhtml#r_oso-9780197647349-chapter-3)
+    - <span id="010_chapter.xhtml#oso-9780197647349-chapter-3-div3-1"></span><span class="title">Carbon Intensity</span>
+    - <span id="010_chapter.xhtml#oso-9780197647349-chapter-3-div3-2"></span><span class="title">GDP Growth</span>
+    - <span id="010_chapter.xhtml#oso-9780197647349-chapter-3-div3-3"></span><span class="title">Energy Intensity</span>
+    - <span id="010_chapter.xhtml#oso-9780197647349-chapter-3-div3-4"></span><span class="title">Energy Efficiency</span>
+    - <span id="010_chapter.xhtml#oso-9780197647349-chapter-3-div3-5"></span><span class="title">Carbon Intensity</span>
+- [<span class="label">4</span>](#006_FM_contents.xhtml#r_oso-9780197647349-chapter-4)
+    - <span id="011_chapter.xhtml#oso-9780197647349-chapter-4-div3-6"></span><span class="title">The Example</span>
+    - <span id="011_chapter.xhtml#oso-9780197647349-chapter-4-div3-7"></span><span class="title">Revising the Example</span>
+    - <span id="011_chapter.xhtml#oso-9780197647349-chapter-4-div3-8"></span><span class="title">A Homework Exercise</span>
+- [<span class="label">5</span>](#006_FM_contents.xhtml#r_oso-9780197647349-chapter-5)
+    - <span id="012_chapter.xhtml#oso-9780197647349-chapter-5-div3-1"></span><span class="title">The U.K.</span>
+    - <span id="012_chapter.xhtml#oso-9780197647349-chapter-5-div3-2"></span><span class="title">Europe</span>
+    - <span id="012_chapter.xhtml#oso-9780197647349-chapter-5-div3-6"></span><span class="title">Methane</span>
+- [<span class="label">6</span>](#006_FM_contents.xhtml#r_oso-9780197647349-chapter-6)
+    - <span id="013_chapter.xhtml#oso-9780197647349-chapter-6-div3-2"></span><span class="title">A Temperature Target</span>
+    - <span id="013_chapter.xhtml#oso-9780197647349-chapter-6-div3-3"></span><span class="title">Deforestation</span>
+    - <span id="013_chapter.xhtml#oso-9780197647349-chapter-6-div3-7"></span><span class="title">Bioenergy</span>
+- [<span class="label">7</span>](#006_FM_contents.xhtml#r_oso-9780197647349-chapter-7)
+    - <span id="014_chapter.xhtml#oso-9780197647349-chapter-7-div3-1"></span><span class="title">Ocean Acidification</span>
+- [<span class="title">Bibliography</span>](#006_FM_contents.xhtml#r_oso-9780197647349-bibliography-1)
+- [<span class="title"> Index </span>](#006_FM_contents.xhtml#r_oso-9780197647349-indexGroup-1)

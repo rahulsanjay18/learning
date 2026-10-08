@@ -1,0 +1,66 @@
+# TOC: [Henry L. Stimson lectures Yale University] Schelling, Thomas C - Arms and Influence (2009_2008, Yale University Press) - libgen.li
+grade: A
+
+- <span id="part0001.html#page_iii" class="calibre1"></span>*ARMS AND INFLUENCE*
+  - <span id="part0003.html#page_v" class="calibre1"></span>*CONTENTS*
+  - <span id="part0004.html#page_vii" class="calibre1"></span>*PREFACE TO THE 2008 EDITION*
+  - <span id="part0005.html#page_xiii" class="calibre1"></span>*PREFACE*
+  - <span id="part0007.html#page_1" class="calibre1"></span>*1 THE DIPLOMACY OF VIOLENCE*
+    - *The Contrast of Brute Force with Coercion*
+    - *Coercive Violence in Warfare*
+    - <span id="part0007.html#page_12" class="calibre1"></span>*The Strategic Role of Pain and Damage*
+    - *The Nuclear Contribution to Terror and Violence*
+    - *From Battlefield Warfare to the Diplomacy of Violence*
+  - <span id="part0008.html#page_35" class="calibre1"></span>*2 THE ART OF COMMITMENT*
+    - *Credibility and Rationality*
+    - *Coupling Capabilities to Objectives: Relinquishing the Initiative*
+    - *Coupling Capabilities to Objectives: The Process of “Commitment”*
+    - *The Interdependence of Commitments*
+    - *Discrediting an Adversary’s Commitments*
+    - *Escaping Commitments*
+    - *Circumventing an Adversary’s Commitments*
+    - *The Distinction Between Deterrence and “Compellence”*
+    - *Defense and Deterrence, Offense and Compellence*
+    - *“Connectedness” in Compellent Threats*
+    - *Compellence and Brinkmanship*
+  - <span id="part0009.html#page_92" class="calibre1"></span>*3 THE MANIPULATION OF RISK*
+    - *Brinkmanship: The Manipulation of Risk*
+    - *Limited War as a Generator of Risk*
+    - *Nuclear Weapons and the Enhancement of Risk*
+    - *Face, Nerve, and Expectations*
+  - <span id="part0010.html#page_126" class="calibre1"></span>*4 THE IDIOM OF MILITARY ACTION*
+    - *Tacit Bargains and Conventional Limits*
+    - *The Idiom of Reprisal*
+    - *Tactical Responses and Diplomatic Responses*
+    - *Manipulation of Conventional Thresholds*
+    - *Characteristics of Thresholds*
+    - *An “Ultimate Limit” ?*
+    - *Wars of the Battlefield, Wars of Risk, and Wars of Pain and Destruction*
+    - *Reprisal and Hot Pursuit*
+    - *Coercive Warfare*
+    - *Coercive Warfare and Compellence*
+    - *Coercive Nuclear Warfare*
+    - *China as a “Strategic-Warfare” Adversary*
+  - <span id="part0011.html#page_190" class="calibre1"></span>*5 THE DIPLOMACY OF ULTIMATE SURVIVAL*
+    - *Enemy Forces and Enemy Cities*
+    - *The Confrontation of Violence with Violence*
+    - *The Crucial Challenge: Ending It*
+    - *Armistice and Arms Control*
+    - *Some Hard Choices*
+    - *Negotiation in Warfare*
+  - <span id="part0012.html#page_221" class="calibre1"></span>*6 THE DYNAMICS OF MUTUAL ALARM*
+    - *The Mischievous Influence of Haste*
+    - *“Vulnerability” and Deterrence*
+    - *The Char act of Weapons: Strength vs. Stability*
+    - *Mobilization: A Contemporary Example*
+    - *The Problem of Stability in an Armed World*
+    - *The Problem of Stability in a Disarmed World*
+    - *An International Military Autho ity*
+    - *Designing Disarmament for Stability*
+  - <span id="part0013.html#page_260" class="calibre1"></span>*7 THE DIALOGUE OF COMPETITIVE ARMAMENT*
+    - *The Continuous Dialogue*
+    - *Implicit Bargaining over Arms Levels*
+    - <span id="part0013.html#page_271" class="calibre1"></span>*Communicating Military-Force Goals*
+    - *Feedback in the Arms Competition*
+    - *On the Subdual of Violence*
+  - <span id="part0015.html#page_305" class="calibre1"></span>*INDEX*

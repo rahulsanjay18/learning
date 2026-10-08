@@ -1,0 +1,53 @@
+# TOC: Cultural_Revolution,_The_-_OxfordUP.VSI_-_Kraus,_Richard_Curt.Jan.2012
+grade: A
+
+  - <span id="part0006.html#page_xii" class="calibre1"></span>**List of illustrations**
+  - <span id="part0007.html#page_xiii" class="calibre1"></span>**Preface**
+  - <span id="part0008.html#page_1" class="calibre1"></span>**Chapter 1 Introduction: China’s unfinished revolution**
+    - Modernization and nationalism in China’s revolutions
+    - The first seventeen years
+    - Rekindling the fire of revolution
+    - The rise and fall of the Cultural Revolution, a drama in two acts
+    - <span id="part0008.html#page_20" class="calibre1"></span>Interpretations
+  - <span id="part0009.html#page_24" class="calibre1"></span>**Chapter 2 “Politics in Command”**
+    - <span id="part0009.html#page_26" class="calibre1"></span>Theatricality
+    - The Mao cult
+    - Rebellion
+    - Discipline
+    - <span id="part0009.html#page_41" class="calibre1"></span>Refuge in personal networks
+  - <span id="part0010.html#page_43" class="calibre1"></span>**Chapter 3 Culture: “destroy the old, establish the new”**
+    - <span id="part0010.html#page_44" class="calibre1"></span>Destroying the four olds
+    - Jiang Qing and the model theatrical works
+    - Cultural Revolution aesthetics
+    - Political control and the fear of spontaneity
+    - The perils of cultural work
+  - <span id="part0011.html#page_63" class="calibre1"></span>**Chapter 4 An economy of “self-reliance”**
+    - Poverty and economic growth
+    - Economic ideals and rhetoric
+    - A chronic urban-rural gap
+    - Improving the workforce
+    - Industrial investment
+    - A rhetoric of world revolution
+    - Cold war realities
+    - Mao tilts toward the United States
+    - Awkward adjustments
+    - Groundwork for neoliberalism
+  - <span id="part0013.html#page_101" class="calibre1"></span>**Chapter 6 Coming to terms with the Cultural Revolution**
+    - Ending the Cultural Revolution
+    - Assigning responsibility
+    - <span id="part0013.html#page_108" class="calibre1"></span>The 1989 upheaval and Cultural Revolution nostalgia
+    - A discomfiting heritage
+    - The future of the Cultural Revolution
+  - <span id="part0014.html#page_119" class="calibre1"></span>**Timeline**
+  - <span id="part0015.html#page_123" class="calibre1"></span>**Major actors in the Cultural Revolution**
+  - <span id="part0016.html#page_125" class="calibre1"></span>**References**
+    - Chapter 1
+    - Chapter 2
+    - Chapter 3
+    - <span id="part0016.html#page_126" class="calibre1"></span>Chapter 4
+    - Chapter 5
+    - Chapter 6
+  - <span id="part0017.html#page_127" class="calibre1"></span>**Further reading**
+  - <span id="part0018.html#page_130" class="calibre1"></span>**Websites**
+  - <span id="part0019.html#page_131" class="calibre1"></span>**Index**
+    - <span id="part0019.html#page_135" class="calibre1"></span>K

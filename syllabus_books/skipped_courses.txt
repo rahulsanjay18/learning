@@ -1,0 +1,861 @@
+reason	course	url
+LLM error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)	MIT 17.261 Congress and the American Political System II	https://ocw.mit.edu/courses/17-261-congress-and-the-american-political-system-ii-fall-2005/
+LLM error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)	MIT 21A.461 What is Capitalism?	https://ocw.mit.edu/courses/21a-461-what-is-capitalism-fall-2021/
+LLM error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)	MIT 21M.785 Playwrights' Workshop	https://ocw.mit.edu/courses/21m-785-playwrights-workshop-spring-2012/
+no book mentions	MIT 1.133 Masters of Engineering Concepts of Engineering Practice	https://ocw.mit.edu/courses/1-133-masters-of-engineering-concepts-of-engineering-practice-fall-2007/
+no book mentions	MIT 1.63 Advanced Fluid Dynamics of the Environment	https://ocw.mit.edu/courses/1-63-advanced-fluid-dynamics-of-the-environment-fall-2002/
+no book mentions	MIT 1.731 Water Resource Systems	https://ocw.mit.edu/courses/1-731-water-resource-systems-fall-2006/
+no book mentions	MIT 1.782 Environmental Engineering Masters of Engineering Project	https://ocw.mit.edu/courses/1-782-environmental-engineering-masters-of-engineering-project-fall-2003-spring-2004/
+no book mentions	MIT 1.782 Environmental Engineering Masters of Engineering Project	https://ocw.mit.edu/courses/1-782-environmental-engineering-masters-of-engineering-project-fall-2007-spring-2008/
+no book mentions	MIT 10.492 Integrated Chemical Engineering Topics I: Process Control by Design	https://ocw.mit.edu/courses/10-492-1-integrated-chemical-engineering-topics-i-process-control-by-design-fall-2004/
+no book mentions	MIT 11.362 Environmental Management Practicum: Brownfield Redevelopment	https://ocw.mit.edu/courses/11-362-environmental-management-practicum-brownfield-redevelopment-fall-2006/
+no book mentions	MIT 11.384 Malaysia Sustainable Cities Practicum	https://ocw.mit.edu/courses/11-384-malaysia-sustainable-cities-practicum-spring-2018/
+no book mentions	MIT 11.942 Use of Joint Fact Finding in Science Intensive Policy Disputes, Part II	https://ocw.mit.edu/courses/11-942-use-of-joint-fact-finding-in-science-intensive-policy-disputes-part-ii-spring-2004/
+no book mentions	MIT 12.009J Theoretical Environmental Analysis	https://ocw.mit.edu/courses/12-009j-theoretical-environmental-analysis-spring-2015/
+no book mentions	MIT 12.086 Modeling Environmental Complexity	https://ocw.mit.edu/courses/12-086-modeling-environmental-complexity-fall-2014/
+no book mentions	MIT 12.103 Science and Policy of Natural Hazards	https://ocw.mit.edu/courses/12-103-science-and-policy-of-natural-hazards-spring-2010/
+no book mentions	MIT 12.445 Oral Communication in the Earth, Atmospheric, and Planetary Sciences	https://ocw.mit.edu/courses/12-445-oral-communication-in-the-earth-atmospheric-and-planetary-sciences-fall-2010/
+no book mentions	MIT 12.453 Crosby Lectures in Geology: History of Africa	https://ocw.mit.edu/courses/12-453-crosby-lectures-in-geology-history-of-africa-fall-2005/
+no book mentions	MIT 12.740 Paleoceanography	https://ocw.mit.edu/courses/12-740-paleoceanography-spring-2008/
+no book mentions	MIT 12.746 Marine Organic Geochemistry	https://ocw.mit.edu/courses/12-746-marine-organic-geochemistry-spring-2005/
+no book mentions	MIT 12.804 Large-scale Flow Dynamics Lab	https://ocw.mit.edu/courses/12-804-large-scale-flow-dynamics-lab-fall-2009/
+no book mentions	MIT 12.810 Dynamics of the Atmosphere	https://ocw.mit.edu/courses/12-810-dynamics-of-the-atmosphere-spring-2008/
+no book mentions	MIT 15.277 Special Seminar in Communications: Leadership and Personal Effectiveness Coaching	https://ocw.mit.edu/courses/15-277-special-seminar-in-communications-leadership-and-personal-effectiveness-coaching-fall-2008/
+no book mentions	MIT 15.834 Marketing Strategy	https://ocw.mit.edu/courses/15-834-marketing-strategy-spring-2003/
+no book mentions	MIT 16.621 Experimental Projects I	https://ocw.mit.edu/courses/16-621-experimental-projects-i-spring-2003/
+no book mentions	MIT 16.622 Experimental Projects II	https://ocw.mit.edu/courses/16-622-experimental-projects-ii-fall-2003/
+no book mentions	MIT 16.687 Private Pilot Ground School	https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/
+no book mentions	MIT 16.881 Robust System Design	https://ocw.mit.edu/courses/16-881-robust-system-design-summer-1998/
+no book mentions	MIT 18.102 Introduction to Functional Analysis	https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2009/
+no book mentions	MIT 18.318 Topics in Algebraic Combinatorics	https://ocw.mit.edu/courses/18-318-topics-in-algebraic-combinatorics-spring-2006/
+no book mentions	MIT 18.650 Statistics for Applications 	https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/
+no book mentions	MIT 18.915 Graduate Topology Seminar: Kan Seminar	https://ocw.mit.edu/courses/18-915-graduate-topology-seminar-kan-seminar-fall-2014/
+no book mentions	MIT 2.017J Design of Electromechanical Robotic Systems	https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/
+no book mentions	MIT 2.082 Ship Structural Analysis & Design (13.122)	https://ocw.mit.edu/courses/2-082-ship-structural-analysis-design-13-122-spring-2003/
+no book mentions	MIT 2.993 Designing Paths to Peace	https://ocw.mit.edu/courses/2-993-designing-paths-to-peace-fall-2002/
+no book mentions	MIT 20.380J Biological Engineering Design	https://ocw.mit.edu/courses/20-380j-biological-engineering-design-spring-2010/
+no book mentions	MIT 21A.150 Teaching and Learning: Cross-Cultural Perspectives	https://ocw.mit.edu/courses/21a-150-teaching-and-learning-cross-cultural-perspectives-fall-2014/
+no book mentions	MIT 24.134 Experiential Ethics	https://ocw.mit.edu/courses/24-134-experiential-ethics-summer-2025/
+no book mentions	MIT 3.034 Organic & Biomaterials Chemistry	https://ocw.mit.edu/courses/3-034-organic-biomaterials-chemistry-fall-2005/
+no book mentions	MIT 4.107 MArch Portfolio Seminar	https://ocw.mit.edu/courses/4-107-march-portfolio-seminar-fall-2003/
+no book mentions	MIT 4.123 Architectural Design, Level I: Perceptions and Processes	https://ocw.mit.edu/courses/4-123-architectural-design-level-i-perceptions-and-processes-fall-2003/
+no book mentions	MIT 4.184 Architectural Design Workshop: Collage - Method and Form	https://ocw.mit.edu/courses/4-184-architectural-design-workshop-collage-method-and-form-spring-2004/
+no book mentions	MIT 4.191 Introduction to Integrated Design	https://ocw.mit.edu/courses/4-191-introduction-to-integrated-design-fall-2006/
+no book mentions	MIT 4.491 Form-Finding and Structural Optimization: Gaudi Workshop	https://ocw.mit.edu/courses/4-491-form-finding-and-structural-optimization-gaudi-workshop-fall-2004/
+no book mentions	MIT 4.501 Architectural Construction and Computation	https://ocw.mit.edu/courses/4-501-architectural-construction-and-computation-fall-2005/
+no book mentions	MIT 5.36 Biochemistry Laboratory	https://ocw.mit.edu/courses/5-36-biochemistry-laboratory-spring-2009/
+no book mentions	MIT 5.37 Introduction to Organic Synthesis Laboratory	https://ocw.mit.edu/courses/5-37-introduction-to-organic-synthesis-laboratory-spring-2009/
+no book mentions	MIT 6.088 Introduction to C Memory Management and C++ Object-Oriented Programming	https://ocw.mit.edu/courses/6-088-introduction-to-c-memory-management-and-c-object-oriented-programming-january-iap-2010/
+no book mentions	MIT 6.091 Hands-On Introduction to Electrical Engineering Lab Skills	https://ocw.mit.edu/courses/6-091-hands-on-introduction-to-electrical-engineering-lab-skills-january-iap-2008/
+no book mentions	MIT 6.189 Multicore Programming Primer	https://ocw.mit.edu/courses/6-189-multicore-programming-primer-january-iap-2007/
+no book mentions	MIT 6.632 Electromagnetic Wave Theory	https://ocw.mit.edu/courses/6-632-electromagnetic-wave-theory-spring-2003/
+no book mentions	MIT 8.512 Theory of Solids II	https://ocw.mit.edu/courses/8-512-theory-of-solids-ii-spring-2009/
+no book mentions	MIT 9.913 Intensive Neuroanatomy	https://ocw.mit.edu/courses/9-913-a-intensive-neuroanatomy-january-iap-2002/
+no book mentions	MIT 9.95 Research Topics in Neuroscience	https://ocw.mit.edu/courses/9-95-a-research-topics-in-neuroscience-january-iap-2003/
+no book mentions	MIT 9.97 Introduction to Neuroanatomy	https://ocw.mit.edu/courses/9-97-introduction-to-neuroanatomy-january-iap-2003/
+no book mentions	MIT ESD.290 Special Topics in Supply Chain Management	https://ocw.mit.edu/courses/esd-290-special-topics-in-supply-chain-management-spring-2005/
+no book mentions	MIT HST.021 Musculoskeletal Pathophysiology	https://ocw.mit.edu/courses/hst-021-musculoskeletal-pathophysiology-january-iap-2006/
+no book mentions	MIT HST.525J Tumor Pathophysiology and Transport Phenomena	https://ocw.mit.edu/courses/hst-525j-tumor-pathophysiology-and-transport-phenomena-fall-2005/
+no book mentions	MIT How to Win at Texas Hold'em Poker	https://ocw.mit.edu/courses/15-s50-how-to-win-at-texas-holdem-poker-january-iap-2016/
+no book mentions	MIT IDS.910 Leadership Development	https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2002/
+no book mentions	MIT Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic	https://ocw.mit.edu/courses/18-s190-introduction-to-computational-thinking-with-julia-with-applications-to-modeling-the-covid-19-pandemic-spring-2020/
+no book mentions	MIT MAS.666 Developmental Entrepreneurship	https://ocw.mit.edu/courses/mas-666-developmental-entrepreneurship-fall-2003/
+no book mentions	MIT MAS.966 Digital Anthropology	https://ocw.mit.edu/courses/mas-966-digital-anthropology-spring-2003/
+no book mentions	MIT RES.2.006 Girls Who Build Cameras	https://ocw.mit.edu/courses/res-2-006-girls-who-build-cameras-summer-2016/
+no book mentions	MIT RES.ENV.001 Climate Action Hands-On: Harnessing Science with Communities to Cut Carbon	https://ocw.mit.edu/courses/res-env-001-climate-action-hands-on-harnessing-science-with-communities-to-cut-carbon-january-iap-2017/
+no book mentions	MIT RES.ENV.007 Geothermal Energy Networks: Transforming Our Thermal Energy System	https://ocw.mit.edu/courses/res-env-007-geothermal-energy-networks-transforming-our-thermal-energy-system-january-iap-2025/
+no book mentions	MIT RES.ES.001 MIT Prison Education Initiative Discussion About Incarceration	https://ocw.mit.edu/courses/res-es-001-mit-prison-education-initiative-discussion-about-incarceration-january-iap-2021/
+no book mentions	MIT RES.LL.003 Build a Small Radar System Capable of Sensing Range, Doppler, and Synthetic Aperture Radar Imaging	https://ocw.mit.edu/courses/res-ll-003-build-a-small-radar-system-capable-of-sensing-range-doppler-and-synthetic-aperture-radar-imaging-january-iap-2011/
+no book mentions	MIT Risk Aware and Robust Nonlinear Planning	https://ocw.mit.edu/courses/16-s498-risk-aware-and-robust-nonlinear-planning-fall-2019/
+no book mentions	MIT Water Jet Technologies	https://ocw.mit.edu/courses/ec-s02-water-jet-technologies-spring-2005/
+no book mentions	TU Delft Video course on Reflexive Policy Making	https://ocw.tudelft.nl/courses/video-course-on-reflexive-policy-making/
+no books found	MIT 1.012 Introduction to Civil Engineering Design	https://ocw.mit.edu/courses/1-012-introduction-to-civil-engineering-design-spring-2002/
+no books found	MIT 1.050 Engineering Mechanics I	https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/
+no books found	MIT 1.101 Introduction to Civil and Environmental Engineering Design I	https://ocw.mit.edu/courses/1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2005/
+no books found	MIT 1.101 Introduction to Civil and Environmental Engineering Design I	https://ocw.mit.edu/courses/1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2006/
+no books found	MIT 1.103 Civil Engineering Materials Laboratory	https://ocw.mit.edu/courses/1-103-civil-engineering-materials-laboratory-spring-2004/
+no books found	MIT 1.105 Solid Mechanics Laboratory	https://ocw.mit.edu/courses/1-105-solid-mechanics-laboratory-fall-2003/
+no books found	MIT 1.322 Soil Behavior	https://ocw.mit.edu/courses/1-322-soil-behavior-spring-2005/
+no books found	MIT 1.364 Advanced Geotechnical Engineering	https://ocw.mit.edu/courses/1-364-advanced-geotechnical-engineering-fall-2003/
+no books found	MIT 1.464 E-Commerce and the Internet in Real Estate and Construction	https://ocw.mit.edu/courses/1-464-e-commerce-and-the-internet-in-real-estate-and-construction-spring-2004/
+no books found	MIT 1.74 Land, Water, Food, and Climate	https://ocw.mit.edu/courses/1-74-land-water-food-and-climate-fall-2020/
+no books found	MIT 1.963 A Sustainable Transportation Plan for MIT	https://ocw.mit.edu/courses/1-963-a-sustainable-transportation-plan-for-mit-spring-2007/
+no books found	MIT 1.963 Environmental Engineering Applications of Geographic Information Systems	https://ocw.mit.edu/courses/1-963-environmental-engineering-applications-of-geographic-information-systems-fall-2004/
+no books found	MIT 10.01 Ethics for Engineers: Artificial Intelligence	https://ocw.mit.edu/courses/10-01-ethics-for-engineers-artificial-intelligence-spring-2020/
+no books found	MIT 10.467 Polymer Science Laboratory	https://ocw.mit.edu/courses/10-467-polymer-science-laboratory-fall-2005/
+no books found	MIT 11.013J American Urban History	https://ocw.mit.edu/courses/11-013j-american-urban-history-spring-2025/
+no books found	MIT 11.312 Engaging Community: Models and Methods for Designers and Planners	https://ocw.mit.edu/courses/11-312-engaging-community-models-and-methods-for-designers-and-planners-spring-2020/
+no books found	MIT 11.405 Just Money: Banking as if Society Mattered	https://ocw.mit.edu/courses/11-405-just-money-banking-as-if-society-mattered-spring-2021/
+no books found	MIT 11.409 Institutions of Modern Capitalism	https://ocw.mit.edu/courses/11-409-institutions-of-modern-capitalism-spring-2020/
+no books found	MIT 11.423 Information and Communication Technologies in Community Development	https://ocw.mit.edu/courses/11-423-information-and-communication-technologies-in-community-development-spring-2004/
+no books found	MIT 11.941 Learning by Comparison: First World/Third World Cities	https://ocw.mit.edu/courses/11-941-learning-by-comparison-first-world-third-world-cities-fall-2008/
+no books found	MIT 11.943 Special Studies in Urban Studies and Planning - The Cardener River Corridor Workshop	https://ocw.mit.edu/courses/11-943-special-studies-in-urban-studies-and-planning-the-cardener-river-corridor-workshop-fall-2001/
+no books found	MIT 11.946J Beijing Urban Design Studio	https://ocw.mit.edu/courses/11-946j-beijing-urban-design-studio-summer-2004/
+no books found	MIT 11.952 Foshan China Workshop	https://ocw.mit.edu/courses/11-952-foshan-china-workshop-spring-2004/
+no books found	MIT 12.000 Solving Complex Problems	https://ocw.mit.edu/courses/12-000-solving-complex-problems-fall-2003/
+no books found	MIT 12.010 Computational Methods of Scientific Programming	https://ocw.mit.edu/courses/12-010-computational-methods-of-scientific-programming-fall-2011/
+no books found	MIT 12.010 Computational Methods of Scientific Programming	https://ocw.mit.edu/courses/12-010-computational-methods-of-scientific-programming-fall-2024/
+no books found	MIT 12.085 Seminar in Environmental Science	https://ocw.mit.edu/courses/12-085-seminar-in-environmental-science-spring-2008/
+no books found	MIT 12.090 Introduction to Fluid Motions, Sediment Transport, and Current-Generated Sedimentary Structures	https://ocw.mit.edu/courses/12-090-introduction-to-fluid-motions-sediment-transport-and-current-generated-sedimentary-structures-fall-2006/
+no books found	MIT 12.090 The Environment of the Earth's Surface	https://ocw.mit.edu/courses/12-090-the-environment-of-the-earths-surface-spring-2007/
+no books found	MIT 12.091 Trace Element Analysis of Geological, Biological & Environmental Materials by Neutron Activation Analysis: An Exposure	https://ocw.mit.edu/courses/12-091-trace-element-analysis-of-geological-biological-environmental-materials-by-neutron-activation-analysis-an-exposure-january-iap-2005/
+no books found	MIT 12.103 Strange Bedfellows: Science and Environmental Policy	https://ocw.mit.edu/courses/12-103-strange-bedfellows-science-and-environmental-policy-fall-2005/
+no books found	MIT 12.110 Sedimentary Geology	https://ocw.mit.edu/courses/12-110-sedimentary-geology-spring-2007/
+no books found	MIT 12.163 Surface Processes and Landscape Evolution	https://ocw.mit.edu/courses/12-163-surface-processes-and-landscape-evolution-fall-2004/
+no books found	MIT 12.491 Non-conventional Light Stable Isotope Geochemistry	https://ocw.mit.edu/courses/12-491-non-conventional-light-stable-isotope-geochemistry-spring-2012/
+no books found	MIT 12.570 Seminar in Geophysics: Mantle Convection	https://ocw.mit.edu/courses/12-570-seminar-in-geophysics-mantle-convection-spring-1998/
+no books found	MIT 12.570 Structure and Dynamics of the CMB Region	https://ocw.mit.edu/courses/12-570-structure-and-dynamics-of-the-cmb-region-spring-2004/
+no books found	MIT 12.571 Near-Surface Geophysical Imaging	https://ocw.mit.edu/courses/12-571-near-surface-geophysical-imaging-fall-2009/
+no books found	MIT 12.581 Phase Transitions in the Earth's Interior	https://ocw.mit.edu/courses/12-581-phase-transitions-in-the-earths-interior-spring-2005/
+no books found	MIT 12.744 Marine Isotope Chemistry	https://ocw.mit.edu/courses/12-744-marine-isotope-chemistry-fall-2012/
+no books found	MIT 12.808 Introduction to Observational Physical Oceanography	https://ocw.mit.edu/courses/12-808-introduction-to-observational-physical-oceanography-fall-2004/
+no books found	MIT 12.811 Tropical Meteorology	https://ocw.mit.edu/courses/12-811-tropical-meteorology-spring-2011/
+no books found	MIT 12.820 Turbulence in the Ocean and Atmosphere	https://ocw.mit.edu/courses/12-820-turbulence-in-the-ocean-and-atmosphere-spring-2006/
+no books found	MIT 12.820 Turbulence in the Ocean and Atmosphere	https://ocw.mit.edu/courses/12-820-turbulence-in-the-ocean-and-atmosphere-spring-2007/
+no books found	MIT 14.05 Intermediate Macroeconomics	https://ocw.mit.edu/courses/14-05-intermediate-macroeconomics-spring-2013/
+no books found	MIT 14.12 Economic Applications of Game Theory 	https://ocw.mit.edu/courses/14-12-economic-applications-of-game-theory-fall-2025/
+no books found	MIT 14.454 Economic Crises	https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/
+no books found	MIT 15.224 Global Markets, National Politics and the Competitive Advantage of Firms	https://ocw.mit.edu/courses/15-224-global-markets-national-politics-and-the-competitive-advantage-of-firms-spring-2003/
+no books found	MIT 15.317 Organizational Leadership and Change	https://ocw.mit.edu/courses/15-317-organizational-leadership-and-change-summer-2009/
+no books found	MIT 15.328 Team Project	https://ocw.mit.edu/courses/15-328-team-project-fall-2003/
+no books found	MIT 15.387 Entrepreneurial Sales	https://ocw.mit.edu/courses/15-387-entrepreneurial-sales-spring-2015/
+no books found	MIT 15.389A Global Entrepreneurship Lab: Asia-Pacific	https://ocw.mit.edu/courses/15-389a-global-entrepreneurship-lab-asia-pacific-fall-2010/
+no books found	MIT 15.389B Global Entrepreneurship Lab: Latin America, the Middle East, and Africa	https://ocw.mit.edu/courses/15-389b-global-entrepreneurship-lab-latin-america-the-middle-east-and-africa-fall-2010/
+no books found	MIT 15.393 Nuts and Bolts of New Ventures	https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/
+no books found	MIT 15.395 Entrepreneurship Without Borders	https://ocw.mit.edu/courses/15-395-entrepreneurship-without-borders-fall-2016/
+no books found	MIT 15.565J Integrating eSystems & Global Information Systems	https://ocw.mit.edu/courses/15-565j-integrating-esystems-global-information-systems-spring-2002/
+no books found	MIT 15.566 Information Technology as an Integrating Force in Manufacturing	https://ocw.mit.edu/courses/15-566-information-technology-as-an-integrating-force-in-manufacturing-spring-2003/
+no books found	MIT 15.598 IT and Business Transformation	https://ocw.mit.edu/courses/15-598-it-and-business-transformation-spring-2003/
+no books found	MIT 15.599 Workshop in IT: Collaborative Innovation Networks	https://ocw.mit.edu/courses/15-599-workshop-in-it-collaborative-innovation-networks-fall-2011/
+no books found	MIT 15.660 Strategic HR Management	https://ocw.mit.edu/courses/15-660-strategic-hr-management-spring-2003/
+no books found	MIT 15.792J Proseminar in Manufacturing	https://ocw.mit.edu/courses/15-792j-proseminar-in-manufacturing-fall-2005/
+no books found	MIT 15.810 Marketing Management: Analytics, Frameworks, and Applications	https://ocw.mit.edu/courses/15-810-marketing-management-analytics-frameworks-and-applications-fall-2015/
+no books found	MIT 15.972 Professional Seminar in Sustainability	https://ocw.mit.edu/courses/15-972-professional-seminar-in-sustainability-spring-2010/
+no books found	MIT 15.974 Leadership Lab	https://ocw.mit.edu/courses/15-974-leadership-lab-spring-2003/
+no books found	MIT 15.990 Architecture and Communication in Organizations	https://ocw.mit.edu/courses/15-990-architecture-and-communication-in-organizations-fall-2003/
+no books found	MIT 16.01 Unified Engineering I, II, III, & IV	https://ocw.mit.edu/courses/16-01-unified-engineering-i-ii-iii-iv-fall-2005-spring-2006/
+no books found	MIT 16.121 Analytical Subsonic Aerodynamics	https://ocw.mit.edu/courses/16-121-analytical-subsonic-aerodynamics-fall-2017/
+no books found	MIT 16.412J Cognitive Robotics	https://ocw.mit.edu/courses/16-412j-cognitive-robotics-spring-2016/
+no books found	MIT 16.660J Introduction to Lean Six Sigma Methods	https://ocw.mit.edu/courses/16-660j-introduction-to-lean-six-sigma-methods-january-iap-2012/
+no books found	MIT 16.682 Technology in Transportation	https://ocw.mit.edu/courses/16-682-technology-in-transportation-spring-2011/
+no books found	MIT 16.72 Air Traffic Control	https://ocw.mit.edu/courses/16-72-air-traffic-control-fall-2006/
+no books found	MIT 16.810 Engineering Design and Rapid Prototyping	https://ocw.mit.edu/courses/16-810-engineering-design-and-rapid-prototyping-january-iap-2007/
+no books found	MIT 16.83X Space Systems Engineering	https://ocw.mit.edu/courses/16-83x-space-systems-engineering-spring-2002-spring-2003/
+no books found	MIT 16.885J Aircraft Systems Engineering	https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2004/
+no books found	MIT 16.885J Aircraft Systems Engineering	https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/
+no books found	MIT 16.886 Air Transportation Systems Architecting	https://ocw.mit.edu/courses/16-886-air-transportation-systems-architecting-spring-2004/
+no books found	MIT 17.561 European Politics	https://ocw.mit.edu/courses/17-561-european-politics-fall-2020/
+no books found	MIT 18.01SC Single Variable Calculus	https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/
+no books found	MIT 18.02SC Multivariable Calculus	https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/
+no books found	MIT 18.031 System Functions and the Laplace Transform	https://ocw.mit.edu/courses/18-031-system-functions-and-the-laplace-transform-spring-2019/
+no books found	MIT 18.05 Introduction to Probability and Statistics	https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/
+no books found	MIT 18.102 Introduction to Functional Analysis	https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2021/
+no books found	MIT 18.152 Introduction to Partial Differential Equations	https://ocw.mit.edu/courses/18-152-introduction-to-partial-differential-equations-fall-2005/
+no books found	MIT 18.156 Projection Theory	https://ocw.mit.edu/courses/18-156-projection-theory-spring-2025/
+no books found	MIT 18.200 Principles of Discrete Applied Mathematics	https://ocw.mit.edu/courses/18-200-principles-of-discrete-applied-mathematics-spring-2024/
+no books found	MIT 18.217 Graph Theory and Additive Combinatorics	https://ocw.mit.edu/courses/18-217-graph-theory-and-additive-combinatorics-fall-2019/
+no books found	MIT 18.310 Principles of Discrete Applied Mathematics	https://ocw.mit.edu/courses/18-310-principles-of-discrete-applied-mathematics-fall-2013/
+no books found	MIT 18.330 Introduction to Numerical Analysis	https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/
+no books found	MIT 18.337J Parallel Computing	https://ocw.mit.edu/courses/18-337j-parallel-computing-fall-2011/
+no books found	MIT 18.338J Infinite Random Matrix Theory	https://ocw.mit.edu/courses/18-338j-infinite-random-matrix-theory-fall-2004/
+no books found	MIT 18.408 Topics in Theoretical Computer Science: Probabilistically Checkable Proofs	https://ocw.mit.edu/courses/18-408-topics-in-theoretical-computer-science-probabilistically-checkable-proofs-fall-2022/
+no books found	MIT 18.409 Algorithmic Aspects of Machine Learning	https://ocw.mit.edu/courses/18-409-algorithmic-aspects-of-machine-learning-spring-2015/
+no books found	MIT 18.642 Topics in Mathematics with Applications in Finance	https://ocw.mit.edu/courses/18-642-topics-in-mathematics-with-applications-in-finance-fall-2024/
+no books found	MIT 18.735 Double Affine Hecke Algebras in Representation Theory, Combinatorics, Geometry, and Mathematical Physics	https://ocw.mit.edu/courses/18-735-double-affine-hecke-algebras-in-representation-theory-combinatorics-geometry-and-mathematical-physics-fall-2009/
+no books found	MIT 18.755 Lie Groups and Lie Algebras II	https://ocw.mit.edu/courses/18-755-lie-groups-and-lie-algebras-ii-spring-2024/
+no books found	MIT 18.769 Topics in Lie Theory: Tensor Categories	https://ocw.mit.edu/courses/18-769-topics-in-lie-theory-tensor-categories-spring-2009/
+no books found	MIT 18.821 Project Laboratory in Mathematics	https://ocw.mit.edu/courses/18-821-project-laboratory-in-mathematics-spring-2013/
+no books found	MIT 18.900 Geometry and Topology in the Plane	https://ocw.mit.edu/courses/18-900-geometry-and-topology-in-the-plane-spring-2023/
+no books found	MIT 18.906 Algebraic Topology II	https://ocw.mit.edu/courses/18-906-algebraic-topology-ii-spring-2020/
+no books found	MIT 18.969 Topics in Geometry: Dirac Geometry	https://ocw.mit.edu/courses/18-969-topics-in-geometry-dirac-geometry-fall-2006/
+no books found	MIT 18.996 Random Matrix Theory and Its Applications	https://ocw.mit.edu/courses/18-996-random-matrix-theory-and-its-applications-spring-2004/
+no books found	MIT 18.996 Topics in Theoretical Computer Science : Internet Research Problems	https://ocw.mit.edu/courses/18-996-topics-in-theoretical-computer-science-internet-research-problems-spring-2002/
+no books found	MIT 2.000 How and Why Machines Work	https://ocw.mit.edu/courses/2-000-how-and-why-machines-work-spring-2002/
+no books found	MIT 2.007 Design and Manufacturing I	https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/
+no books found	MIT 2.00AJ Exploring Sea, Space, & Earth: Fundamentals of Engineering Design	https://ocw.mit.edu/courses/2-00aj-exploring-sea-space-earth-fundamentals-of-engineering-design-spring-2009/
+no books found	MIT 2.00B Toy Product Design	https://ocw.mit.edu/courses/2-00b-toy-product-design-spring-2021/
+no books found	MIT 2.062J Wave Propagation	https://ocw.mit.edu/courses/2-062j-wave-propagation-spring-2017/
+no books found	MIT 2.23 Hydrofoils and Propellers	https://ocw.mit.edu/courses/2-23-hydrofoils-and-propellers-spring-2007/
+no books found	MIT 2.60J Fundamentals of Advanced Energy Conversion	https://ocw.mit.edu/courses/2-60j-fundamentals-of-advanced-energy-conversion-spring-2020/
+no books found	MIT 2.670 Mechanical Engineering Tools	https://ocw.mit.edu/courses/2-670-mechanical-engineering-tools-january-iap-2004/
+no books found	MIT 2.672 Project Laboratory	https://ocw.mit.edu/courses/2-672-project-laboratory-spring-2009/
+no books found	MIT 2.674 Micro/Nano Engineering Laboratory	https://ocw.mit.edu/courses/2-674-micro-nano-engineering-laboratory-spring-2016/
+no books found	MIT 2.737 Mechatronics	https://ocw.mit.edu/courses/2-737-mechatronics-fall-2014/
+no books found	MIT 2.782J Design of Medical Devices and Implants	https://ocw.mit.edu/courses/2-782j-design-of-medical-devices-and-implants-spring-2025/
+no books found	MIT 2.785J Cell-Matrix Mechanics	https://ocw.mit.edu/courses/2-785j-cell-matrix-mechanics-fall-2016/
+no books found	MIT 2.787J Tissue Engineering and Organ Regeneration	https://ocw.mit.edu/courses/2-787j-tissue-engineering-and-organ-regeneration-fall-2024/
+no books found	MIT 2.79J Biomaterials-Tissue Interactions	https://ocw.mit.edu/courses/2-79j-biomaterials-tissue-interactions-fall-2022/
+no books found	MIT 2.96 Management in Engineering	https://ocw.mit.edu/courses/2-96-management-in-engineering-fall-2012/
+no books found	MIT 2.971 2nd Summer Introduction to Design	https://ocw.mit.edu/courses/2-971-2nd-summer-introduction-to-design-january-iap-2003/
+no books found	MIT 2.996 Biomedical Devices Design Laboratory	https://ocw.mit.edu/courses/2-996-biomedical-devices-design-laboratory-fall-2007/
+no books found	MIT 20.020 Introduction to Biological Engineering Design	https://ocw.mit.edu/courses/20-020-introduction-to-biological-engineering-design-spring-2009/
+no books found	MIT 20.109 Laboratory Fundamentals in Biological Engineering	https://ocw.mit.edu/courses/20-109-laboratory-fundamentals-in-biological-engineering-fall-2007/
+no books found	MIT 20.109 Laboratory Fundamentals in Biological Engineering	https://ocw.mit.edu/courses/20-109-laboratory-fundamentals-in-biological-engineering-spring-2010/
+no books found	MIT 20.180 Biological Engineering Programming	https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/
+no books found	MIT 20.181 Computation for Biological Engineers	https://ocw.mit.edu/courses/20-181-computation-for-biological-engineers-fall-2006/
+no books found	MIT 20.219 Becoming the Next Bill Nye: Writing and Hosting the Educational Show	https://ocw.mit.edu/courses/20-219-becoming-the-next-bill-nye-writing-and-hosting-the-educational-show-january-iap-2015/
+no books found	MIT 20.320 Analysis of Biomolecular and Cellular Systems	https://ocw.mit.edu/courses/20-320-analysis-of-biomolecular-and-cellular-systems-fall-2012/
+no books found	MIT 20.416J Topics in Biophysics and Physical Biology	https://ocw.mit.edu/courses/20-416j-topics-in-biophysics-and-physical-biology-fall-2014/
+no books found	MIT 20.453J Biomedical Information Technology	https://ocw.mit.edu/courses/20-453j-biomedical-information-technology-fall-2008/
+no books found	MIT 21A.442J Violence, Human Rights, and Justice	https://ocw.mit.edu/courses/21a-442j-violence-human-rights-and-justice-fall-2014/
+no books found	MIT 21G.025 Africa and the Politics of Knowledge	https://ocw.mit.edu/courses/21g-025-africa-and-the-politics-of-knowledge-spring-2019/
+no books found	MIT 21G.026 Global Africa: Creative Cultures	https://ocw.mit.edu/courses/21g-026-global-africa-creative-cultures-spring-2018/
+no books found	MIT 21G.027 Asia in the Modern World: Images & Representations	https://ocw.mit.edu/courses/21g-027-asia-in-the-modern-world-images-representations-fall-2016/
+no books found	MIT 21G.105 Chinese V (Regular): Chinese Cultures & Society	https://ocw.mit.edu/courses/21g-105-chinese-v-regular-chinese-cultures-society-fall-2003/
+no books found	MIT 21G.106 Chinese VI (Regular): Discovering Chinese Cultures and Societies	https://ocw.mit.edu/courses/21g-106-chinese-vi-regular-discovering-chinese-cultures-and-societies-spring-2003/
+no books found	MIT 21G.321 Childhood and Youth in French and Francophone Cultures	https://ocw.mit.edu/courses/21g-321-childhood-and-youth-in-french-and-francophone-cultures-spring-2024/
+no books found	MIT 21G.346 North America through French Eyes	https://ocw.mit.edu/courses/21g-346-north-america-through-french-eyes-fall-2023/
+no books found	MIT 21G.414 German Culture, Media, and Society	https://ocw.mit.edu/courses/21g-414-german-culture-media-and-society-fall-2006/
+no books found	MIT 21H.211 The United States in the Nuclear Age	https://ocw.mit.edu/courses/21h-211-the-united-states-in-the-nuclear-age-spring-2016/
+no books found	MIT 21H.991 Theories and Methods in the Study of History	https://ocw.mit.edu/courses/21h-991-theories-and-methods-in-the-study-of-history-fall-2014/
+no books found	MIT 21L.004 Major Poets	https://ocw.mit.edu/courses/21l-004-major-poets-fall-2001/
+no books found	MIT 21L.019 Introduction to European and Latin American Fiction: Great Books on the Page and on the Screen	https://ocw.mit.edu/courses/21l-019-introduction-to-european-and-latin-american-fiction-great-books-on-the-page-and-on-the-screen-spring-2017/
+no books found	MIT 21L.435 Shakespeare, Film and Media	https://ocw.mit.edu/courses/21l-435-shakespeare-film-and-media-fall-2002/
+no books found	MIT 21L.449 End of Nature	https://ocw.mit.edu/courses/21l-449-end-of-nature-spring-2002/
+no books found	MIT 21L.701 Literary Interpretation: Interpreting Poetry	https://ocw.mit.edu/courses/21l-701-literary-interpretation-interpreting-poetry-fall-2003/
+no books found	MIT 21M.011 Introduction to Western Music	https://ocw.mit.edu/courses/21m-011-introduction-to-western-music-fall-2024/
+no books found	MIT 21M.065 Introduction to Musical Composition	https://ocw.mit.edu/courses/21m-065-introduction-to-musical-composition-spring-2014/
+no books found	MIT 21M.361 Composing with Computers I (Electronic Music Composition)	https://ocw.mit.edu/courses/21m-361-composing-with-computers-i-electronic-music-composition-spring-2008/
+no books found	MIT 21M.410 Vocal Repertoire and Performance: African American Composers	https://ocw.mit.edu/courses/21m-410-vocal-repertoire-and-performance-african-american-composers-spring-2005/
+no books found	MIT 21M.410 Vocal Repertoire and Performance: Women Composers	https://ocw.mit.edu/courses/21m-410-vocal-repertoire-and-performance-women-composers-spring-2007/
+no books found	MIT 21M.542 Interdisciplinary Approaches to Musical Time	https://ocw.mit.edu/courses/21m-542-interdisciplinary-approaches-to-musical-time-january-iap-2010/
+no books found	MIT 21M.675 Dance Theory and Composition	https://ocw.mit.edu/courses/21m-675-dance-theory-and-composition-fall-2003/
+no books found	MIT 21M.715 The Craft of Costume Design	https://ocw.mit.edu/courses/21m-715-the-craft-of-costume-design-fall-2009/
+no books found	MIT 21M.873 Theater Arts Topics - Suburbia	https://ocw.mit.edu/courses/21m-873-theater-arts-topics-suburbia-january-iap-2008/
+no books found	MIT 21W.015 Writing and Rhetoric: Writing about Sports	https://ocw.mit.edu/courses/21w-015-writing-and-rhetoric-writing-about-sports-fall-2013/
+no books found	MIT 21W.021 Writing and Experience: MIT: Inside, Live	https://ocw.mit.edu/courses/21w-021-writing-and-experience-mit-inside-live-fall-2013/
+no books found	MIT 21W.031 Science Writing and New Media: Explorations in Communicating about Science & Technology	https://ocw.mit.edu/courses/21w-031-science-writing-and-new-media-explorations-in-communicating-about-science-technology-spring-2017/
+no books found	MIT 21W.035 Science Writing and New Media: Communicating Science to the Public	https://ocw.mit.edu/courses/21w-035-science-writing-and-new-media-communicating-science-to-the-public-fall-2016/
+no books found	MIT 21W.794 Graduate Technical Writing Workshop	https://ocw.mit.edu/courses/21w-794-graduate-technical-writing-workshop-january-iap-2019/
+no books found	MIT 22.011 Nuclear Engineering: Science, Systems and Society	https://ocw.mit.edu/courses/22-011-nuclear-engineering-science-systems-and-society-spring-2020/
+no books found	MIT 22.012 Seminar: Fusion and Plasma Physics	https://ocw.mit.edu/courses/22-012-seminar-fusion-and-plasma-physics-spring-2006/
+no books found	MIT 22.033 Nuclear Systems Design Project	https://ocw.mit.edu/courses/22-033-nuclear-systems-design-project-fall-2011/
+no books found	MIT 22.081J Introduction to Sustainable Energy	https://ocw.mit.edu/courses/22-081j-introduction-to-sustainable-energy-fall-2010/
+no books found	MIT 22.920 A Hands-On Introduction to Nuclear Magnetic Resonance	https://ocw.mit.edu/courses/22-920-a-hands-on-introduction-to-nuclear-magnetic-resonance-january-iap-1997/
+no books found	MIT 24.242 Logic II	https://ocw.mit.edu/courses/24-242-logic-ii-spring-2004/
+no books found	MIT 24.902 Language and its Structure II: Syntax	https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2015/
+no books found	MIT 24.917 ConLangs: How to Construct a Language	https://ocw.mit.edu/courses/24-917-conlangs-how-to-construct-a-language-fall-2018/
+no books found	MIT 3.003 Principles of Engineering Practice	https://ocw.mit.edu/courses/3-003-principles-of-engineering-practice-spring-2010/
+no books found	MIT 3.014 Materials Laboratory	https://ocw.mit.edu/courses/3-014-materials-laboratory-fall-2006/
+no books found	MIT 3.021J Introduction to Modeling and Simulation	https://ocw.mit.edu/courses/3-021j-introduction-to-modeling-and-simulation-spring-2012/
+no books found	MIT 3.042 Materials Project Laboratory	https://ocw.mit.edu/courses/3-042-materials-project-laboratory-spring-2008/
+no books found	MIT 3.064 Polymer Engineering	https://ocw.mit.edu/courses/3-064-polymer-engineering-fall-2003/
+no books found	MIT 3.091SC Introduction to Solid State Chemistry	https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/
+no books found	MIT 3.093 Information Exploration: Becoming a Savvy Scholar	https://ocw.mit.edu/courses/3-093-information-exploration-becoming-a-savvy-scholar-fall-2006/
+no books found	MIT 3.15X Electrical, Optical, and Magnetic Materials and Devices	https://ocw.mit.edu/courses/3-15x-electrical-optical-and-magnetic-materials-and-devices-spring-2020/
+no books found	MIT 3.37 Welding and Joining Processes	https://ocw.mit.edu/courses/3-37-welding-and-joining-processes-fall-2002/
+no books found	MIT 4.101 Experiencing Architecture Studio	https://ocw.mit.edu/courses/4-101-experiencing-architecture-studio-spring-2003/
+no books found	MIT 4.104 Architectural Design: Intentions	https://ocw.mit.edu/courses/4-104-architectural-design-intentions-spring-2004/
+no books found	MIT 4.125 Architecture Studio: Building in Landscapes	https://ocw.mit.edu/courses/4-125-architecture-studio-building-in-landscapes-fall-2002/
+no books found	MIT 4.125A Architecture Studio: Building in Landscapes	https://ocw.mit.edu/courses/4-125a-architecture-studio-building-in-landscapes-fall-2005/
+no books found	MIT 4.125B Architecture Studio: Building in Landscapes	https://ocw.mit.edu/courses/4-125b-architecture-studio-building-in-landscapes-fall-2005/
+no books found	MIT 4.131 Architectural Design, Level II: Material Essence: The Glass House	https://ocw.mit.edu/courses/4-131-architectural-design-level-ii-material-essence-the-glass-house-fall-2003/
+no books found	MIT 4.131B Architectural Design, Level II: Material and Tectonic Transformations: The Herreshoff Museum	https://ocw.mit.edu/courses/4-131b-architectural-design-level-ii-material-and-tectonic-transformations-the-herreshoff-museum-fall-2003/
+no books found	MIT 4.143 Immaterial Limits: Process and Duration	https://ocw.mit.edu/courses/4-143-immaterial-limits-process-and-duration-fall-2002/
+no books found	MIT 4.144 Architectural Design, Level II: New Orleans Studio	https://ocw.mit.edu/courses/4-144-architectural-design-level-ii-new-orleans-studio-spring-2006/
+no books found	MIT 4.155B Architectural Design, Level III: A Student Center for MIT	https://ocw.mit.edu/courses/4-155b-architectural-design-level-iii-a-student-center-for-mit-fall-2004/
+no books found	MIT 4.170 Ecuador Workshop	https://ocw.mit.edu/courses/4-170-ecuador-workshop-fall-2006/
+no books found	MIT 4.171 The Space Between Workshop	https://ocw.mit.edu/courses/4-171-the-space-between-workshop-fall-2004/
+no books found	MIT 4.183 Sustainable Design and Technology Research Workshop	https://ocw.mit.edu/courses/4-183-sustainable-design-and-technology-research-workshop-spring-2004/
+no books found	MIT 4.184 Architectural Design Workshops: Computational Design for Housing	https://ocw.mit.edu/courses/4-184-architectural-design-workshops-computational-design-for-housing-spring-2002/
+no books found	MIT 4.196 Architecture Design, Level II: Cuba Studio	https://ocw.mit.edu/courses/4-196-architecture-design-level-ii-cuba-studio-spring-2004/
+no books found	MIT 4.241J The Making of Cities	https://ocw.mit.edu/courses/4-241j-the-making-of-cities-spring-2025/
+no books found	MIT 4.303 Dialogue in Art, Architecture, and Urbanism	https://ocw.mit.edu/courses/4-303-dialogue-in-art-architecture-and-urbanism-fall-2003/
+no books found	MIT 4.322 Introduction to Sculpture	https://ocw.mit.edu/courses/4-322-introduction-to-sculpture-fall-2003/
+no books found	MIT 4.341 Introduction to Photography	https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/
+no books found	MIT 4.343 Photography and Related Media	https://ocw.mit.edu/courses/4-343-photography-and-related-media-fall-2002/
+no books found	MIT 4.401 Environmental Technologies in Buildings	https://ocw.mit.edu/courses/4-401-environmental-technologies-in-buildings-fall-2018/
+no books found	MIT 4.493 Emergent Materials II	https://ocw.mit.edu/courses/4-493-emergent-materials-ii-spring-2005/
+no books found	MIT 4.493 Natural Light in Design	https://ocw.mit.edu/courses/4-493-natural-light-in-design-january-iap-2006/
+no books found	MIT 4.500 Introduction to Design Computing	https://ocw.mit.edu/courses/4-500-introduction-to-design-computing-fall-2008/
+no books found	MIT 4.511 Digital Mock-Up Workshop	https://ocw.mit.edu/courses/4-511-digital-mock-up-workshop-spring-2006/
+no books found	MIT 5.35 Introduction to Experimental Chemistry	https://ocw.mit.edu/courses/5-35-introduction-to-experimental-chemistry-fall-2012/
+no books found	MIT 6.00 Introduction to Computer Science and Programming	https://ocw.mit.edu/courses/6-00-introduction-to-computer-science-and-programming-fall-2008/
+no books found	MIT 6.004 Computation Structures	https://ocw.mit.edu/courses/6-004-computation-structures-spring-2009/
+no books found	MIT 6.004 Computation Structures	https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/
+no books found	MIT 6.005 Elements of Software Construction	https://ocw.mit.edu/courses/6-005-elements-of-software-construction-fall-2008/
+no books found	MIT 6.005 Software Construction	https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/
+no books found	MIT 6.01SC Introduction to Electrical Engineering and Computer Science I	https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/
+no books found	MIT 6.02 Introduction to EECS II: Digital Communication Systems	https://ocw.mit.edu/courses/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/
+no books found	MIT 6.042J Mathematics for Computer Science	https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/
+no books found	MIT 6.050J Information and Entropy	https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/
+no books found	MIT 6.057 Introduction to MATLAB	https://ocw.mit.edu/courses/6-057-introduction-to-matlab-january-iap-2019/
+no books found	MIT 6.090 Building Programming Experience: A Lead-In to 6.001	https://ocw.mit.edu/courses/6-090-building-programming-experience-a-lead-in-to-6-001-january-iap-2005/
+no books found	MIT 6.092 Introduction to Programming in Java	https://ocw.mit.edu/courses/6-092-introduction-to-programming-in-java-january-iap-2010/
+no books found	MIT 6.096 Introduction to C++	https://ocw.mit.edu/courses/6-096-introduction-to-c-january-iap-2011/
+no books found	MIT 6.172 Performance Engineering of Software Systems	https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/
+no books found	MIT 6.186 Mobile Autonomous Systems Laboratory	https://ocw.mit.edu/courses/6-186-mobile-autonomous-systems-laboratory-january-iap-2005/
+no books found	MIT 6.270 Autonomous Robot Design Competition	https://ocw.mit.edu/courses/6-270-autonomous-robot-design-competition-january-iap-2005/
+no books found	MIT 6.302 Feedback Systems	https://ocw.mit.edu/courses/6-302-feedback-systems-spring-2007/
+no books found	MIT 6.336J Introduction to Numerical Simulation (SMA 5211)	https://ocw.mit.edu/courses/6-336j-introduction-to-numerical-simulation-sma-5211-fall-2003/
+no books found	MIT 6.370 Robocraft Programming Competition	https://ocw.mit.edu/courses/6-370-robocraft-programming-competition-january-iap-2005/
+no books found	MIT 6.370 The Battlecode Programming Competition	https://ocw.mit.edu/courses/6-370-the-battlecode-programming-competition-january-iap-2013/
+no books found	MIT 6.451 Principles of Digital Communication II	https://ocw.mit.edu/courses/6-451-principles-of-digital-communication-ii-spring-2005/
+no books found	MIT 6.453 Quantum Optical Communication	https://ocw.mit.edu/courses/6-453-quantum-optical-communication-fall-2016/
+no books found	MIT 6.5630 Advanced Topics in Cryptography	https://ocw.mit.edu/courses/6-5630-advanced-topics-in-cryptography-fall-2023/
+no books found	MIT 6.701 Introduction to Nanoelectronics	https://ocw.mit.edu/courses/6-701-introduction-to-nanoelectronics-spring-2010/
+no books found	MIT 6.7220J Nonlinear Optimization	https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/
+no books found	MIT 6.781J Submicrometer and Nanometer Technology	https://ocw.mit.edu/courses/6-781j-submicrometer-and-nanometer-technology-spring-2006/
+no books found	MIT 6.801 Machine Vision	https://ocw.mit.edu/courses/6-801-machine-vision-fall-2020/
+no books found	MIT 6.803 The Human Intelligence Enterprise	https://ocw.mit.edu/courses/6-803-the-human-intelligence-enterprise-spring-2019/
+no books found	MIT 6.826 Principles of Computer Systems	https://ocw.mit.edu/courses/6-826-principles-of-computer-systems-spring-2002/
+no books found	MIT 6.828 Operating System Engineering	https://ocw.mit.edu/courses/6-828-operating-system-engineering-fall-2012/
+no books found	MIT 6.831 User Interface Design and Implementation	https://ocw.mit.edu/courses/6-831-user-interface-design-and-implementation-spring-2011/
+no books found	MIT 6.844 Computability Theory of and with Scheme	https://ocw.mit.edu/courses/6-844-computability-theory-of-and-with-scheme-spring-2003/
+no books found	MIT 6.851 Advanced Data Structures	https://ocw.mit.edu/courses/6-851-advanced-data-structures-spring-2012/
+no books found	MIT 6.857 Network and Computer Security	https://ocw.mit.edu/courses/6-857-network-and-computer-security-spring-2014/
+no books found	MIT 6.876J Advanced Topics in Cryptography	https://ocw.mit.edu/courses/6-876j-advanced-topics-in-cryptography-spring-2003/
+no books found	MIT 6.881 Representation and Modeling for Image Analysis	https://ocw.mit.edu/courses/6-881-representation-and-modeling-for-image-analysis-spring-2005/
+no books found	MIT 6.896 Theory of Parallel Hardware (SMA 5511)	https://ocw.mit.edu/courses/6-896-theory-of-parallel-hardware-sma-5511-spring-2004/
+no books found	MIT 6.897 Selected Topics in Cryptography	https://ocw.mit.edu/courses/6-897-selected-topics-in-cryptography-spring-2004/
+no books found	MIT 6.901 Inventions and Patents	https://ocw.mit.edu/courses/6-901-inventions-and-patents-fall-2005/
+no books found	MIT 6.912 Introduction to Copyright Law	https://ocw.mit.edu/courses/6-912-introduction-to-copyright-law-january-iap-2006/
+no books found	MIT 6.973 Organic Optoelectronics	https://ocw.mit.edu/courses/6-973-organic-optoelectronics-spring-2003/
+no books found	MIT 7.00 COVID-19, SARS-CoV-2, and the Pandemic	https://ocw.mit.edu/courses/7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2021/
+no books found	MIT 7.002 Fundamentals of Experimental Molecular Biology	https://ocw.mit.edu/courses/7-002-fundamentals-of-experimental-molecular-biology-spring-2025/
+no books found	MIT 7.003 Applied Molecular Biology Lab	https://ocw.mit.edu/courses/7-003-applied-molecular-biology-lab-spring-2022/
+no books found	MIT 7.02CI Experimental Biology - Communications Intensive	https://ocw.mit.edu/courses/7-02ci-experimental-biology-communications-intensive-spring-2005/
+no books found	MIT 7.13 Experimental Microbial Genetics	https://ocw.mit.edu/courses/7-13-experimental-microbial-genetics-fall-2008/
+no books found	MIT 7.15 Experimental Molecular Genetics	https://ocw.mit.edu/courses/7-15-experimental-molecular-genetics-spring-2015/
+no books found	MIT 7.16 Experimental Molecular Biology: Biotechnology II	https://ocw.mit.edu/courses/7-16-experimental-molecular-biology-biotechnology-ii-spring-2005/
+no books found	MIT 7.18 Topics in Experimental Biology	https://ocw.mit.edu/courses/7-18-topics-in-experimental-biology-fall-2005/
+no books found	MIT 7.60 Cell Biology: Structure and Functions of the Nucleus	https://ocw.mit.edu/courses/7-60-cell-biology-structure-and-functions-of-the-nucleus-spring-2010/
+no books found	MIT 7.88J Protein Folding and Human Disease	https://ocw.mit.edu/courses/7-88j-protein-folding-and-human-disease-spring-2015/
+no books found	MIT 8.02 Physics II: Electricity and Magnetism	https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2019/
+no books found	MIT 8.13 Experimental Physics I & II "Junior Lab"	https://ocw.mit.edu/courses/8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017/
+no books found	MIT 8.21 The Physics of Energy	https://ocw.mit.edu/courses/8-21-the-physics-of-energy-fall-2009/
+no books found	MIT 8.370X Quantum Information Science I	https://ocw.mit.edu/courses/8-370x-quantum-information-science-i-spring-2018/
+no books found	MIT 8.371X Quantum Information Science II	https://ocw.mit.edu/courses/8-371x-quantum-information-science-ii-spring-2018/
+no books found	MIT 8.513 Modern Quantum Many-body Physics for Condensed Matter Systems	https://ocw.mit.edu/courses/8-513-modern-quantum-many-body-physics-for-condensed-matter-systems-fall-2021/
+no books found	MIT 9.20 Animal Behavior	https://ocw.mit.edu/courses/9-20-animal-behavior-fall-2013/
+no books found	MIT 9.357 Special Topics in Vision Science	https://ocw.mit.edu/courses/9-357-special-topics-in-vision-science-fall-2001/
+no books found	MIT 9.40 Introduction to Neural Computation	https://ocw.mit.edu/courses/9-40-introduction-to-neural-computation-spring-2018/
+no books found	MIT 9.401 Tools for Robust Science	https://ocw.mit.edu/courses/9-401-tools-for-robust-science-fall-2022/
+no books found	MIT 9.458 Parkinson's Disease Workshop	https://ocw.mit.edu/courses/9-458-parkinsons-disease-workshop-summer-2006/
+no books found	MIT 9.459 Scene Understanding Symposium	https://ocw.mit.edu/courses/9-459-scene-understanding-symposium-spring-2006/
+no books found	MIT 9.46 Neuroscience of Morality	https://ocw.mit.edu/courses/9-46-neuroscience-of-morality-fall-2017/
+no books found	MIT 9.52 Computational Cognitive Science	https://ocw.mit.edu/courses/9-52-c-computational-cognitive-science-spring-2003/
+no books found	MIT 9.52 Investigating the Neural Substrates of Remote Memory using fMRI	https://ocw.mit.edu/courses/9-52-a-investigating-the-neural-substrates-of-remote-memory-using-fmri-spring-2003/
+no books found	MIT 9.63 Laboratory in Cognitive Science	https://ocw.mit.edu/courses/9-63-laboratory-in-cognitive-science-fall-2002/
+no books found	MIT 9.67 Object and Face Recognition	https://ocw.mit.edu/courses/9-67-object-and-face-recognition-spring-2001/
+no books found	MIT 9.912 Special Topics in Brain and Cognitive Sciences	https://ocw.mit.edu/courses/9-912-special-topics-in-brain-and-cognitive-sciences-fall-2001/
+no books found	MIT 9.914 Special Topics: Genetics, Neurobiology, and Pathophysiology of Psychiatric Disorders	https://ocw.mit.edu/courses/9-914-special-topics-genetics-neurobiology-and-pathophysiology-of-psychiatric-disorders-fall-2008/
+no books found	MIT 9.96 Experimental Methods of Adjustable Tetrode Array Neurophysiology	https://ocw.mit.edu/courses/9-96-experimental-methods-of-adjustable-tetrode-array-neurophysiology-january-iap-2001/
+no books found	MIT 9.98 Language and Mind	https://ocw.mit.edu/courses/9-98-language-and-mind-january-iap-2003/
+no books found	MIT Blockchain and Money	https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/
+no books found	MIT CMS.100 Introduction to Media Studies	https://ocw.mit.edu/courses/cms-100-introduction-to-media-studies-fall-2014/
+no books found	MIT CMS.361 Networked Social Movements: Media & Mobilization	https://ocw.mit.edu/courses/cms-361-networked-social-movements-media-mobilization-spring-2014/
+no books found	MIT CMS.615 Games for Social Change	https://ocw.mit.edu/courses/cms-615-games-for-social-change-fall-2013/
+no books found	MIT CMS.633 Digital Humanities	https://ocw.mit.edu/courses/cms-633-digital-humanities-spring-2015/
+no books found	MIT Career Options for Biomedical Research	https://ocw.mit.edu/courses/22-a09-career-options-for-biomedical-research-fall-2006/
+no books found	MIT Cryptocurrency Engineering and Design	https://ocw.mit.edu/courses/mas-s62-cryptocurrency-engineering-and-design-spring-2018/
+no books found	MIT Design for Demining	https://ocw.mit.edu/courses/ec-s06-design-for-demining-spring-2007/
+no books found	MIT Drugs and the Brain	https://ocw.mit.edu/courses/es-s10-drugs-and-the-brain-spring-2013/
+no books found	MIT EC.722 Special Topics at Edgerton Center:Developing World Prosthetics	https://ocw.mit.edu/courses/ec-722-special-topics-at-edgerton-center-developing-world-prosthetics-spring-2010/
+no books found	MIT ES.253 AIDS and Poverty in Africa	https://ocw.mit.edu/courses/es-253-aids-and-poverty-in-africa-spring-2005/
+no books found	MIT ES.255 Physics of Rock Climbing	https://ocw.mit.edu/courses/es-255-physics-of-rock-climbing-spring-2006/
+no books found	MIT ES.259 Information and Communication Technology in Africa	https://ocw.mit.edu/courses/es-259-information-and-communication-technology-in-africa-spring-2006/
+no books found	MIT ES.269 Passing: Flexibility in Race and Gender	https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/
+no books found	MIT ES.272 Culture Tech	https://ocw.mit.edu/courses/es-272-culture-tech-spring-2003/
+no books found	MIT ES.293 Lego Robotics	https://ocw.mit.edu/courses/es-293-lego-robotics-spring-2007/
+no books found	MIT ES.333 Producing Educational Videos	https://ocw.mit.edu/courses/es-333-producing-educational-videos-spring-2015/
+no books found	MIT ESD.69 Seminar on Health Care Systems Innovation	https://ocw.mit.edu/courses/esd-69-seminar-on-health-care-systems-innovation-fall-2010/
+no books found	MIT ESD.70J Engineering Economy Module	https://ocw.mit.edu/courses/esd-70j-engineering-economy-module-fall-2009/
+no books found	MIT Effective Programming in C and C++	https://ocw.mit.edu/courses/6-s096-effective-programming-in-c-and-c-january-iap-2014/
+no books found	MIT Engineering Health: Towards the Tricorder	https://ocw.mit.edu/courses/mas-s63-engineering-health-towards-the-tricorder-fall-2013/
+no books found	MIT FinTech: Shaping the Financial World 	https://ocw.mit.edu/courses/15-s08-fintech-shaping-the-financial-world-spring-2020/
+no books found	MIT Freshman Seminar: Structural Basis of Genetic Material: Nucleic Acids	https://ocw.mit.edu/courses/7-a12-freshman-seminar-structural-basis-of-genetic-material-nucleic-acids-fall-2005/
+no books found	MIT GPS: Where Are You?	https://ocw.mit.edu/courses/12-s56-gps-where-are-you-fall-2008/
+no books found	MIT Global Health Innovation: Delivering Targeted Advice to an Organization in the Field	https://ocw.mit.edu/courses/15-es718-global-health-innovation-delivering-targeted-advice-to-an-organization-in-the-field-spring-2015/
+no books found	MIT Green Supply Chain Management	https://ocw.mit.edu/courses/esd-s43-green-supply-chain-management-spring-2014/
+no books found	MIT HST.071 Human Reproductive Biology	https://ocw.mit.edu/courses/hst-071-human-reproductive-biology-fall-2005/
+no books found	MIT HST.410J Projects in Microscale Engineering for the Life Sciences	https://ocw.mit.edu/courses/hst-410j-projects-in-microscale-engineering-for-the-life-sciences-spring-2007/
+no books found	MIT HST.590 Biomedical Engineering Seminar Series: Developing Professional Skills	https://ocw.mit.edu/courses/hst-590-biomedical-engineering-seminar-series-developing-professional-skills-fall-2006/
+no books found	MIT HST.921 Information Technology in the Health Care System of the Future	https://ocw.mit.edu/courses/hst-921-information-technology-in-the-health-care-system-of-the-future-spring-2009/
+no books found	MIT HST.934J Introduction to Global Medicine: Bioscience, Technologies, Disparities, Strategies	https://ocw.mit.edu/courses/hst-934j-introduction-to-global-medicine-bioscience-technologies-disparities-strategies-spring-2010/
+no books found	MIT HST.951J Medical Decision Support	https://ocw.mit.edu/courses/hst-951j-medical-decision-support-fall-2005/
+no books found	MIT HST.953 Clinical Data Learning, Visualization, and Deployments	https://ocw.mit.edu/courses/hst-953-clinical-data-learning-visualization-and-deployments-fall-2024/
+no books found	MIT HST.953 Collaborative Data Science for Healthcare	https://ocw.mit.edu/courses/hst-953-collaborative-data-science-for-healthcare-fall-2020/
+no books found	MIT Health Information Systems to Improve Quality of Care in Resource-Poor Settings	https://ocw.mit.edu/courses/hst-s14-health-information-systems-to-improve-quality-of-care-in-resource-poor-settings-spring-2012/
+no books found	MIT High-Dimensional Statistics	https://ocw.mit.edu/courses/18-s997-high-dimensional-statistics-spring-2015/
+no books found	MIT Increasing Your Physical Intelligence, Enhancing Your Social Smarts	https://ocw.mit.edu/courses/es-s71-increasing-your-physical-intelligence-enhancing-your-social-smarts-spring-2014/
+no books found	MIT Introduction To MATLAB Programming	https://ocw.mit.edu/courses/18-s997-introduction-to-matlab-programming-fall-2011/
+no books found	MIT Introduction to C and C++	https://ocw.mit.edu/courses/6-s096-introduction-to-c-and-c-january-iap-2013/
+no books found	MIT Introduction to Computational Thinking	https://ocw.mit.edu/courses/18-s191-introduction-to-computational-thinking-fall-2020/
+no books found	MIT Introduction to Computational Thinking	https://ocw.mit.edu/courses/18-s191-introduction-to-computational-thinking-fall-2022/
+no books found	MIT Introduction to Deep Learning	https://ocw.mit.edu/courses/6-s191-introduction-to-deep-learning-january-iap-2020/
+no books found	MIT Linguistics in K–12 Education	https://ocw.mit.edu/courses/24-s95-linguistics-in-k-12-education-spring-2023/
+no books found	MIT MAS.111 Introduction to Doing Research in Media Arts and Sciences	https://ocw.mit.edu/courses/mas-111-introduction-to-doing-research-in-media-arts-and-sciences-spring-2011/
+no books found	MIT MAS.531 Computational Camera and Photography	https://ocw.mit.edu/courses/mas-531-computational-camera-and-photography-fall-2009/
+no books found	MIT MAS.878 Special Topics in Multimedia Production: Experiences in Interactive Art	https://ocw.mit.edu/courses/mas-878-special-topics-in-multimedia-production-experiences-in-interactive-art-fall-2003/
+no books found	MIT MAS.964 Common Sense Reasoning for Interactive Applications	https://ocw.mit.edu/courses/mas-964-common-sense-reasoning-for-interactive-applications-fall-2002/
+no books found	MIT Marine Autonomy, Sensing and Communications	https://ocw.mit.edu/courses/2-s998-marine-autonomy-sensing-and-communications-spring-2012/
+no books found	MIT Matrix Calculus for Machine Learning and Beyond	https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/
+no books found	MIT Modern Blacksmithing and Physical Metallurgy	https://ocw.mit.edu/courses/3-a04-modern-blacksmithing-and-physical-metallurgy-fall-2008/
+no books found	MIT Nanomaker	https://ocw.mit.edu/courses/6-s079-nanomaker-spring-2013/
+no books found	MIT PE.550 Designing Your Life	https://ocw.mit.edu/courses/pe-550-designing-your-life-january-iap-2007/
+no books found	MIT PE.550 Designing Your Life	https://ocw.mit.edu/courses/pe-550-designing-your-life-spring-2009/
+no books found	MIT PE.910 Physical Intelligence	https://ocw.mit.edu/courses/pe-910-physical-intelligence-january-iap-2002/
+no books found	MIT PE.920 PE for ME	https://ocw.mit.edu/courses/pe-920-pe-for-me-spring-2005/
+no books found	MIT Photovoltaic Solar Energy Systems	https://ocw.mit.edu/courses/ec-s07-photovoltaic-solar-energy-systems-fall-2004/
+no books found	MIT Poker Theory and Analytics	https://ocw.mit.edu/courses/15-s50-poker-theory-and-analytics-january-iap-2015/
+no books found	MIT RES.14.001 Abdul Latif Jameel Poverty Action Lab Executive Training: Evaluating Social Programs 2009	https://ocw.mit.edu/courses/res-14-001-abdul-latif-jameel-poverty-action-lab-executive-training-evaluating-social-programs-2009-spring-2009/
+no books found	MIT RES.15.002 Mission & Metrics: Finance Training for Federal Credit Program Professionals	https://ocw.mit.edu/courses/res-15-002-mission-metrics-finance-training-for-federal-credit-program-professionals-summer-2016/
+no books found	MIT RES.18.006 Calculus Revisited: Single Variable Calculus	https://ocw.mit.edu/courses/res-18-006-calculus-revisited-single-variable-calculus-fall-2010/
+no books found	MIT RES.18.007 Calculus Revisited: Multivariable Calculus	https://ocw.mit.edu/courses/res-18-007-calculus-revisited-multivariable-calculus-fall-2011/
+no books found	MIT RES.18.008 Calculus Revisited: Complex Variables, Differential Equations, and Linear Algebra	https://ocw.mit.edu/courses/res-18-008-calculus-revisited-complex-variables-differential-equations-and-linear-algebra-fall-2011/
+no books found	MIT RES.2.005 Girls Who Build: Make Your Own Wearables Workshop	https://ocw.mit.edu/courses/res-2-005-girls-who-build-make-your-own-wearables-workshop-spring-2015/
+no books found	MIT RES.2.008 Thermodynamics and Climate Change	https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/
+no books found	MIT RES.3.002 Collaborative Design and Creative Expression with Arduino Microcontrollers	https://ocw.mit.edu/courses/res-3-002-collaborative-design-and-creative-expression-with-arduino-microcontrollers-january-iap-2017/
+no books found	MIT RES.3.003 Learn to Build Your Own Videogame with the Unity Game Engine and Microsoft Kinect	https://ocw.mit.edu/courses/res-3-003-learn-to-build-your-own-videogame-with-the-unity-game-engine-and-microsoft-kinect-january-iap-2017/
+no books found	MIT RES.6.009 How to Process, Analyze and Visualize Data	https://ocw.mit.edu/courses/res-6-009-how-to-process-analyze-and-visualize-data-january-iap-2012/
+no books found	MIT RES.7.005 Biology Teaching Assistant (TA) Training	https://ocw.mit.edu/courses/res-7-005-biology-teaching-assistant-ta-training-fall-2021/
+no books found	MIT RES.8.010 Introduction to Statistical Physics	https://ocw.mit.edu/courses/res-8-010-introduction-to-statistical-physics-summer-2018/
+no books found	MIT RES.9.003 Brains, Minds and Machines Summer Course	https://ocw.mit.edu/courses/res-9-003-brains-minds-and-machines-summer-course-summer-2015/
+no books found	MIT RES.CMS.001 Media Literacy in the Age of Deepfakes	https://ocw.mit.edu/courses/res-cms-001-media-literacy-in-the-age-of-deepfakes-spring-2021/
+no books found	MIT RES.ENV.006 Teaching with Sustainability	https://ocw.mit.edu/courses/res-env-006-teaching-with-sustainability-january-iap-2022/
+no books found	MIT RES.HS.001 Chandra Astrophysics Institute	https://ocw.mit.edu/courses/res-hs-001-chandra-astrophysics-institute/
+no books found	MIT RES.STP.001 Science Policy Bootcamp	https://ocw.mit.edu/courses/res-stp-001-science-policy-bootcamp-january-iap-2011/
+no books found	MIT Reparations for Slavery and Colonization: Contemporary Movements for Justice	https://ocw.mit.edu/courses/21a-s01-reparations-for-slavery-and-colonization-contemporary-movements-for-justice-fall-2021/
+no books found	MIT Seeing the City Afresh	https://ocw.mit.edu/courses/11-s948-seeing-the-city-afresh-spring-2018/
+no books found	MIT Speak Italian With Your Mouth Full	https://ocw.mit.edu/courses/es-s41-speak-italian-with-your-mouth-full-spring-2012/
+no books found	MIT Systems Leadership and Management Praxis	https://ocw.mit.edu/courses/esd-s51-systems-leadership-and-management-praxis-summer-2014/
+no books found	MIT The Engineer of 2020	https://ocw.mit.edu/courses/16-a47-the-engineer-of-2020-fall-2009/
+no books found	MIT The Polynomial Method	https://ocw.mit.edu/courses/18-s997-the-polynomial-method-fall-2012/
+no books found	MIT The Sustainability Response to COVID-19	https://ocw.mit.edu/courses/11-s955-the-sustainability-response-to-covid-19-january-iap-2021/
+no books found	MIT Topics in Mathematics of Data Science	https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-of-data-science-fall-2015/
+no books found	MIT Topics in Mathematics with Applications in Finance	https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/
+no books found	MIT Topics in Multiagent Learning	https://ocw.mit.edu/courses/6-s890-topics-in-multiagent-learning-fall-2024/
+no books found	MIT Undergraduate Thesis Tutorial	https://ocw.mit.edu/courses/22-tht-undergraduate-thesis-tutorial-fall-2015/
+no books found	MIT Undergraduate Thesis for Course 2-A	https://ocw.mit.edu/courses/2-tha-undergraduate-thesis-for-course-2-a-january-iap-2007/
+no books found	MIT Unmanageability: Pathless Realities and Approaches	https://ocw.mit.edu/courses/4-s33-unmanageability-pathless-realities-and-approaches-spring-2015/
+no books found	MIT WGS.110J Sexual and Gender Identities in the Modern United States	https://ocw.mit.edu/courses/wgs-110j-sexual-and-gender-identities-in-the-modern-united-states-spring-2024/
+no books found	MIT Wanderings in Psychogeography: Exploring Landscapes of History, Biography, Memory, Culture, Nature, Poetry, Surreality, Fantasy, and Madness	https://ocw.mit.edu/courses/11-s942-wanderings-in-psychogeography-exploring-landscapes-of-history-biography-memory-culture-nature-poetry-surreality-fantasy-and-madness-fall-2020/
+no books found	Penn State BIOET 533 Ethical Dimensions of Renewable Energy and Sustainability Systems	https://dutton.psu.edu/bioet533_sample_syllabus
+no books found	Penn State EARTH 10 Energy and Earth's Climate	https://dutton.psu.edu/earth10_sample_syllabus
+no books found	Penn State EARTH 103N Earth in the Future	https://dutton.psu.edu/earth103n_sample_syllabus
+no books found	Penn State EARTH 104N Energy and the Environment	https://dutton.psu.edu/earth104n_sample_syllabus
+no books found	Penn State EARTH 107N Coastal Processes, Hazards, and Society	https://dutton.psu.edu/earth107n_sample_syllabus
+no books found	Penn State EBF 483 Introduction to Electricity Markets	https://dutton.psu.edu/ebf483_sample_syllabus
+no books found	Penn State EGEE 101 Energy and the Environment	https://dutton.psu.edu/egee101_sample_syllabus
+no books found	Penn State EGEE 102 Energy Conservation for Environmental Protection	https://dutton.psu.edu/egee102_sample_syllabus
+no books found	Penn State EGEE 110 Environmental Health and Safety Science	https://dutton.psu.edu/egee110n_sample_syllabus
+no books found	Penn State EGEE 299 Foreign Studies	https://dutton.psu.edu/egee299_sample_syllabus
+no books found	Penn State EGEE 401 Energy in a Changing World	https://dutton.psu.edu/egee401_sample_syllabus
+no books found	Penn State EGEE 439 Alternative Fuels from Biomass Sources	https://dutton.psu.edu/egee439_sample_syllabus
+no books found	Penn State EGEE 495 Energy and Sustainability Policy Internship	https://dutton.psu.edu/egee495_sample_syllabus
+no books found	Penn State EME 200 Subsurface Energy Engineering	https://dutton.psu.edu/eme200_sample_syllabus
+no books found	Penn State EME 432 Energy Policy	https://dutton.psu.edu/eme432_sample_syllabus
+no books found	Penn State EME 444 Global Energy Enterprise	https://dutton.psu.edu/eme444_sample_syllabus
+no books found	Penn State EME 466 Energy and Sustainability in Society	https://dutton.psu.edu/eme466_sample_syllabus
+no books found	Penn State EME 504 Foundations in Sustainability Systems	https://dutton.psu.edu/eme504_sample_syllabus
+no books found	Penn State EME 589 Management and Design of RESS	https://dutton.psu.edu/eme589_sample_syllabus
+no books found	Penn State EME 801 Energy Markets, Policy, and Regulation	https://dutton.psu.edu/eme801_sample_syllabus
+no books found	Penn State EME 803 Applied Energy Policy	https://dutton.psu.edu/eme803_sample_syllabus
+no books found	Penn State EME 805 Renewable Energy and Non-Market Enterprise	https://dutton.psu.edu/eme805_sample_syllabus
+no books found	Penn State EME 807 Technologies for Sustainability Systems	https://dutton.psu.edu/eme807_sample_syllabus
+no books found	Penn State EME 812 Utility Solar Power and Concentration	https://dutton.psu.edu/eme812_sample_syllabus
+no books found	Penn State EME 897 Solar Energy Integration and Economics	https://dutton.psu.edu/eme897_sample_syllabus
+no books found	Penn State EMSC 299 Foreign Studies	https://dutton.psu.edu/emsc299_sample_syllabus
+no books found	Penn State EMSC 302 Orientation to Energy and Sustainability Policy	https://dutton.psu.edu/emsc302_sample_syllabus
+no books found	Penn State ESP 481 Local Scale Climate Policy I: GHG Inventories	https://dutton.psu.edu/esp481_sample_syllabus
+no books found	Penn State ESP 482 Local Climate Policy II: Climate Action	https://dutton.psu.edu/esp482_sample_syllabus
+no books found	Penn State GEOG 1N Global Parks and Sustainability	https://dutton.psu.edu/geog1n_sample_syllabus
+no books found	Penn State GEOG 2N Apocalyptic Geographies	https://dutton.psu.edu/geog2n_sample_syllabus
+no books found	Penn State GEOG 30N Environment and Society in a Changing World	https://dutton.psu.edu/geog30n_sample_syllabus
+no books found	Penn State GEOG 3N Food and the Future Environment	https://dutton.psu.edu/geog3n_sample_syllabus
+no books found	Penn State GEOG 430 Human Use of the Environment	https://dutton.psu.edu/geog430_sample_syllabus
+no books found	Penn State GEOG 438W Human Dimensions of Global Warming	https://dutton.psu.edu/geog438w_sample_syllabus
+no books found	Penn State GEOG 482 Making Maps that Matter with GIS	https://dutton.psu.edu/geog482_sample_syllabus
+no books found	Penn State GEOG 484 GIS Database Development	https://dutton.psu.edu/geog484_sample_syllabus
+no books found	Penn State GEOG 486 Cartography and Visualization	https://dutton.psu.edu/geog486_sample_syllabus
+no books found	Penn State GEOG 487 Environmental Challenges in Spatial Data Science	https://dutton.psu.edu/geog487_sample_syllabus
+no books found	Penn State GEOG 489 Advanced Python Programming for GIS	https://dutton.psu.edu/geog489_sample_syllabus
+no books found	Penn State GEOG 571 Intelligence Analysis, Cultural Geography, and Homeland Security	https://dutton.psu.edu/geog571_sample_syllabus
+no books found	Penn State GEOG 580 Geovisual Analytics	https://dutton.psu.edu/geog580_sample_syllabus
+no books found	Penn State GEOG 581 Spatial Data Science Ethics	https://dutton.psu.edu/geog581_sample_syllabus
+no books found	Penn State GEOG 583 Geospatial System Analysis and Design	https://dutton.psu.edu/geog583_sample_syllabus
+no books found	Penn State GEOG 585 Open Web Mapping	https://dutton.psu.edu/geog585_sample_syllabus
+no books found	Penn State GEOG 587 Conservation GIS	https://dutton.psu.edu/geog587_sample_syllabus
+no books found	Penn State GEOG 588 Analytical Approaches for Spatial Data Science	https://dutton.psu.edu/geog588_sample_syllabus
+no books found	Penn State GEOG 589 Emerging Trends in Remote Sensing	https://dutton.psu.edu/geog589_sample_syllabus
+no books found	Penn State GEOG 594A Culminating Experiences in Geospatial Intelligence	https://dutton.psu.edu/geog594a_sample_syllabus
+no books found	Penn State GEOG 596A Individual Studies - Development of Capstone Project Proposal with Peer Review	https://dutton.psu.edu/geog596a_sample_syllabus
+no books found	Penn State GEOG 596B Individual Studies – Completion of Capstone Project and Professional Presentation	https://dutton.psu.edu/geog596b_sample_syllabus
+no books found	Penn State GEOG 596I Independent Study in Geospatial Intelligence	https://dutton.psu.edu/geog596i_sample_syllabus
+no books found	Penn State GEOG 597G Challenges in Global Geospatial Analytics	https://dutton.psu.edu/geog597g_sample_syllabus
+no books found	Penn State GEOG 600A Thesis Proposal	https://dutton.psu.edu/geog600a_sample_syllabus
+no books found	Penn State GEOG 600B Thesis Research	https://dutton.psu.edu/geog600b_sample_syllabus
+no books found	Penn State GEOG 6N Maps and the Geospatial Revolution	https://dutton.psu.edu/geog6N_sample_syllabus
+no books found	Penn State GEOG 865 Cloud and Server GIS	https://dutton.psu.edu/geog865_sample_syllabus
+no books found	Penn State GEOG 885 Analytical Methods and GEOAI in Geospatial Intelligence	https://dutton.psu.edu/geog885_sample_syllabus
+no books found	Penn State GEOSC 10 Geology of the National Parks	https://dutton.psu.edu/geosc10_sample_syllabus
+no books found	Penn State GEOSC 107N Rocks, Minerals, and the History of Art	https://dutton.psu.edu/geosc107n_sample_syllabus
+no books found	Penn State GEOSC 30 Volcanoes	https://dutton.psu.edu/geosc30_sample_syllabus
+no books found	Penn State GEOSC 40 The Sea around Us	https://dutton.psu.edu/geosc40_sample_syllabus
+no books found	Penn State GEOSC 50 Planetary Geology	https://dutton.psu.edu/geosc50_sample_syllabus
+no books found	Penn State MATSE 120 Materials and the Games People Play	https://dutton.psu.edu/matse120_sample_syllabus
+no books found	Penn State MATSE 201 Introduction to Materials Science	https://dutton.psu.edu/matse201_sample_syllabus
+no books found	Penn State METEO 1N Surviving the Storm: Navigating Weather Disasters	https://dutton.psu.edu/meteo1n_sample_syllabus
+no books found	Penn State METEO 241 Fundamentals of Tropical Forecasting	https://dutton.psu.edu/meteo241_sample_syllabus
+no books found	Penn State METEO 3 Introductory Meteorology	https://dutton.psu.edu/meteo3_sample_syllabus
+no books found	Penn State METEO 361 Fundamentals of Mesoscale Weather Forecasting	https://dutton.psu.edu/meteo361_sample_syllabus
+no books found	Penn State METEO 410 Advanced Topics in Weather Forecasting	https://dutton.psu.edu/meteo410_sample_syllabus
+no books found	Penn State METEO 7 An Introduction to Climate Sciences: Climate Change, Variability, and Society	https://dutton.psu.edu/meteo7_sample_syllabus
+no books found	Stanford S tanford E ngineering E verywhere	https://see.stanford.edu/Course/CS106A
+no books found	TU Delft AI in Practice: Preparing for AI	https://ocw.tudelft.nl/courses/ai-in-practice-preparing-for-ai/
+no books found	TU Delft Acoustic Remote Sensing and Sea Floor Mapping	https://ocw.tudelft.nl/courses/acoustic-remote-sensing-and-sea-floor-mapping/
+no books found	TU Delft Advanced Design and Optimization of Composite Structures I	https://ocw.tudelft.nl/courses/advanced-design-optimization-composite-structures/
+no books found	TU Delft Advanced Device Physics	https://ocw.tudelft.nl/courses/advanced-device-physics/
+no books found	TU Delft Advanced Solid State Physics	https://ocw.tudelft.nl/courses/advanced-solid-state-physics/
+no books found	TU Delft Advanced Structural Analysis	https://ocw.tudelft.nl/courses/advanced-structural-analysis/
+no books found	TU Delft Advanced Transport Phenomena	https://ocw.tudelft.nl/courses/advanced-transport-phenomena/
+no books found	TU Delft Agent Based Modeling of Complex Adaptive Systems (Basic)	https://ocw.tudelft.nl/courses/agent-based-modeling-of-complex-adaptive-systems-basic/
+no books found	TU Delft Agent Based Modeling of Complex Adaptive Systems (advanced)	https://ocw.tudelft.nl/courses/agent-based-modeling-complex-adaptive-systems-advanced/
+no books found	TU Delft Algoritmiek	https://ocw.tudelft.nl/courses/algoritmiek/
+no books found	TU Delft Bed, Bank and Shoreline Protection	https://ocw.tudelft.nl/courses/bed-bank-and-shoreline-protection/
+no books found	TU Delft Bio Inspired Design	https://ocw.tudelft.nl/courses/bio-inspired-design/
+no books found	TU Delft Bio mechatronics	https://ocw.tudelft.nl/courses/bio-mechatronics/
+no books found	TU Delft Biobased Products for a Sustainable (Bio)economy	https://ocw.tudelft.nl/courses/biobased-products-sustainable-bioeconomy/
+no books found	TU Delft Biomedical Engineering Design	https://ocw.tudelft.nl/courses/biomedical-engineering-design/
+no books found	TU Delft Blending Your Education	https://ocw.tudelft.nl/courses/blending-your-education/
+no books found	TU Delft Buckling of Structures	https://ocw.tudelft.nl/courses/buckling-of-structures/
+no books found	TU Delft Building Inclusive Cities: Tackling Urban Inequality and Segregation	https://ocw.tudelft.nl/courses/building-inclusive-cities-tackling-urban-inequality-and-segregation/
+no books found	TU Delft Business Model Implementation	https://ocw.tudelft.nl/courses/business-model-implementation/
+no books found	TU Delft Business Model Metrics and Advanced Tools	https://ocw.tudelft.nl/courses/business-model-metrics-advanced-tools/
+no books found	TU Delft Business Model Testing	https://ocw.tudelft.nl/courses/business-model-testing/
+no books found	TU Delft Cavitation on Ship Propellers	https://ocw.tudelft.nl/courses/cavitation-ship-propellers/
+no books found	TU Delft Circular Economy	https://ocw.tudelft.nl/courses/circular-economy/
+no books found	TU Delft Circular Economy for a Sustainable Built Environment	https://ocw.tudelft.nl/courses/circular-economy-for-a-sustainable-built-environment/
+no books found	TU Delft Citizens Co-creating Sustainable Cities	https://ocw.tudelft.nl/courses/citizens-co-creating-sustainable-cities/
+no books found	TU Delft Civil Engineering in Developing Countries	https://ocw.tudelft.nl/courses/civil-engineering-developing-countries/
+no books found	TU Delft Comfort and Health in Buildings	https://ocw.tudelft.nl/courses/comfort-and-health-in-buildings/
+no books found	TU Delft Creative Problem Solving and Decision making	https://ocw.tudelft.nl/courses/creative-problem-solving-and-decision-making/
+no books found	TU Delft Cyber Security Economics	https://ocw.tudelft.nl/courses/cyber-security-economics/
+no books found	TU Delft Data Analysis: Take it to the MAX	https://ocw.tudelft.nl/courses/data-analysis-take-it-to-the-max/
+no books found	TU Delft Data Analysis: Visualization and Dashboard Design	https://ocw.tudelft.nl/courses/data-analysis-visualization-dashboard-design/
+no books found	TU Delft Design Practice in Business	https://ocw.tudelft.nl/courses/design-practice-business/
+no books found	TU Delft Digital Signal Processing	https://ocw.tudelft.nl/courses/digital-signal-processing/
+no books found	TU Delft Diversity in Educational Settings	https://ocw.tudelft.nl/courses/diversity-educational-settings/
+no books found	TU Delft Dredging Processes	https://ocw.tudelft.nl/courses/dredging-processes/
+no books found	TU Delft Drinking Water Treatment 2	https://ocw.tudelft.nl/courses/drinking-water-treatment-2/
+no books found	TU Delft Dynamics and Stability	https://ocw.tudelft.nl/courses/dynamics-and-stability/
+no books found	TU Delft Educational Software	https://ocw.tudelft.nl/courses/educational-software/
+no books found	TU Delft Efficient HVAC Systems	https://ocw.tudelft.nl/courses/efficient-hvac-systems/
+no books found	TU Delft Electric Cars: Business	https://ocw.tudelft.nl/courses/electric-cars-business/
+no books found	TU Delft Electric Cars: Introduction	https://ocw.tudelft.nl/courses/electric-cars-introduction/
+no books found	TU Delft Electric Cars: Policy	https://ocw.tudelft.nl/courses/electric-cars-policy/
+no books found	TU Delft Electrical machines and drives	https://ocw.tudelft.nl/courses/electrical-machines-and-drives/
+no books found	TU Delft Electronic Instrumentation	https://ocw.tudelft.nl/courses/electronic-instrumentation/
+no books found	TU Delft Elementary Ergonomics	https://ocw.tudelft.nl/courses/elementary-ergonomics/
+no books found	TU Delft Empirical Research Methods	https://ocw.tudelft.nl/courses/empirical-research-methods/
+no books found	TU Delft Energy Demand in Buildings	https://ocw.tudelft.nl/courses/energy-demand-in-buildings/
+no books found	TU Delft Energy Supply Systems for Buildings	https://ocw.tudelft.nl/courses/energy-supply-systems-for-buildings/
+no books found	TU Delft Engineering Design for Circular Economy	https://ocw.tudelft.nl/courses/engineering-design-circular-economy/
+no books found	TU Delft Engineering: Building with Nature	https://ocw.tudelft.nl/courses/engineering-building-nature/
+no books found	TU Delft Entrepreneurship for Engineers	https://ocw.tudelft.nl/courses/entrepreneurship-for-engineers/
+no books found	TU Delft Entrepreneurship for Global Challenges in Emerging Markets	https://ocw.tudelft.nl/courses/entrepreneurship-global-challenges-emerging-markets/
+no books found	TU Delft Ethical Dilemmas in Professional Engineering	https://ocw.tudelft.nl/courses/dealing-ethical-dilemmas-professional-engineering/
+no books found	TU Delft Flight & Orbital Mechanics	https://ocw.tudelft.nl/courses/flight-orbital-mechanics/
+no books found	TU Delft Geo-information Technology for Crisis Management	https://ocw.tudelft.nl/courses/geo-information-technology-crisis-management/
+no books found	TU Delft Geology I	https://ocw.tudelft.nl/courses/geology-i/
+no books found	TU Delft Global  Software Engineering	https://ocw.tudelft.nl/courses/globally-distributed-software-engineering-2/
+no books found	TU Delft Global Housing Design	https://ocw.tudelft.nl/courses/global-housing-design/
+no books found	TU Delft Hello (Real) World with ROS – Robot Operating System	https://ocw.tudelft.nl/courses/hello-real-world-ros-robot-operating-system/
+no books found	TU Delft Hydrological Measurements	https://ocw.tudelft.nl/courses/hydrological-measurements/
+no books found	TU Delft Hyperloop: changing the Future of Transportation	https://ocw.tudelft.nl/courses/hyperloop-changing-future-transportation/
+no books found	TU Delft IMAGE	https://ocw.tudelft.nl/courses/image-ability-visualizing-unimaginable/
+no books found	TU Delft Inclusive Energy Systems: Exploring Sustainable Energy for All	https://ocw.tudelft.nl/courses/inclusive-energy-systems-exploring-sustainable-energy-for-all/
+no books found	TU Delft Industrial Biotechnology	https://ocw.tudelft.nl/courses/industrial-biotechnology/
+no books found	TU Delft Influencing Stakeholders: Dealing with Power and Dynamics in Teams and Networks	https://ocw.tudelft.nl/courses/influencing-stakeholders-dealing-power-dynamics-teams-networks/
+no books found	TU Delft Information Literacy I	https://ocw.tudelft.nl/courses/information-literacy-i/
+no books found	TU Delft Information Literacy II	https://ocw.tudelft.nl/courses/information-literacy-ii/
+no books found	TU Delft Information Literacy for Master’s and PhD students	https://ocw.tudelft.nl/courses/information-literacy-for-masters-and-phd-students/
+no books found	TU Delft Integrated Water Management	https://ocw.tudelft.nl/courses/integrated-water-management/
+no books found	TU Delft Introductie: Minor Stedenbouw in de Delta	https://ocw.tudelft.nl/courses/introductie-minor-stedenbouw-in-de-delta/
+no books found	TU Delft Introduction to Aerospace Engineering I	https://ocw.tudelft.nl/courses/introduction-aerospace-engineering/
+no books found	TU Delft Introduction to Aerospace Engineering II	https://ocw.tudelft.nl/courses/introduction-aerospace-engineering-ii/
+no books found	TU Delft Introduction to Aerospace Structures and Materials	https://ocw.tudelft.nl/courses/introduction-aerospace-structures-materials/
+no books found	TU Delft Introduction to Credit Risk Management	https://ocw.tudelft.nl/courses/introduction-credit-risk-management/
+no books found	TU Delft Introduction to Drinking Water Treatment	https://ocw.tudelft.nl/courses/introduction-to-drinking-water-treatment/
+no books found	TU Delft Introduction to Functional Programming	https://ocw.tudelft.nl/courses/introduction-to-functional-programming/
+no books found	TU Delft Introduction to Reflection Seismics	https://ocw.tudelft.nl/courses/introduction-reflection-seismics/
+no books found	TU Delft Introduction to Seismic Essentials in Groningen	https://ocw.tudelft.nl/courses/introduction-seismic-essentials-groningen/
+no books found	TU Delft Introduction to Water and Climate	https://ocw.tudelft.nl/courses/introduction-water-climate/
+no books found	TU Delft Irrigation and Drainage	https://ocw.tudelft.nl/courses/irrigation-and-drainage/
+no books found	TU Delft Legal Aspects of MAS Design	https://ocw.tudelft.nl/courses/legal-aspects-mas-design/
+no books found	TU Delft Linear Algebra 1 (English)	https://ocw.tudelft.nl/courses/linear-algebra-1/
+no books found	TU Delft Math Explained	https://ocw.tudelft.nl/courses/math-explained/
+no books found	TU Delft Mathematical Modeling Basics	https://ocw.tudelft.nl/courses/mathematical-modeling-basics/
+no books found	TU Delft Measurement Science	https://ocw.tudelft.nl/courses/measurement-science/
+no books found	TU Delft Mechatronic System Design	https://ocw.tudelft.nl/courses/mechatronic-system-design/
+no books found	TU Delft Mesoscopic Physics	https://ocw.tudelft.nl/courses/mesoscopic-physics/
+no books found	TU Delft Mind of the Universe: Robots in Society – Blessing or Curse?	https://ocw.tudelft.nl/courses/mind-of-the-universe/
+no books found	TU Delft Modelling	https://ocw.tudelft.nl/courses/modelling/
+no books found	TU Delft Models in Architecture – Design through Physical & Digital Models	https://ocw.tudelft.nl/courses/models-architecture-design-physical-digital-models/
+no books found	TU Delft Modern Distributed Systems	https://ocw.tudelft.nl/courses/modern-distributed-systems/
+no books found	TU Delft Multidisciplinary Research Methods for Engineers	https://ocw.tudelft.nl/courses/multidisciplinary-research-methods-for-engineers/
+no books found	TU Delft Nature Based Metropolitan Solutions	https://ocw.tudelft.nl/courses/nature-based-metropolitan-solutions/
+no books found	TU Delft Next Generation Infrastructures	https://ocw.tudelft.nl/courses/ngi-2/
+no books found	TU Delft Offshore Hydromechanics	https://ocw.tudelft.nl/courses/offshore-hydromechanics/
+no books found	TU Delft Offshore Hydromechanics Part 1	https://ocw.tudelft.nl/courses/offshore-hydromechanics-part-1/
+no books found	TU Delft Offshore Hydromechanics Part 2	https://ocw.tudelft.nl/courses/offshore-hydromechanics-part-2/
+no books found	TU Delft Offshore Moorings	https://ocw.tudelft.nl/courses/offshore-moorings/
+no books found	TU Delft Offshore Wind Farm Design	https://ocw.tudelft.nl/courses/offshore-wind-farm-design/
+no books found	TU Delft Ontwerpproject deel 2: stedenbouwkundig project	https://ocw.tudelft.nl/courses/ontwerpproject-deel-2-stedenbouwkundig-project/
+no books found	TU Delft Open Government	https://ocw.tudelft.nl/courses/open-government/
+no books found	TU Delft Optimaliseren in Netwerken	https://ocw.tudelft.nl/courses/optimaliseren-in-netwerken/
+no books found	TU Delft Pre-University Calculus	https://ocw.tudelft.nl/courses/pre-university-calculus/
+no books found	TU Delft Problem Structuring Methods	https://ocw.tudelft.nl/courses/problem-structuring-methods/
+no books found	TU Delft Process Intensification	https://ocw.tudelft.nl/courses/process-intensification/
+no books found	TU Delft Project Management: mastering complexity	https://ocw.tudelft.nl/courses/project-management-mastering-complexity/
+no books found	TU Delft Public Hygiene and Epidemiology	https://ocw.tudelft.nl/courses/public-hygiene-and-epidemiology/
+no books found	TU Delft Pumping Stations and Transport Pipelines	https://ocw.tudelft.nl/courses/pumping-stations-and-transport-pipelines/
+no books found	TU Delft Quantum Cryptography	https://ocw.tudelft.nl/courses/quantum-cryptography/
+no books found	TU Delft Quantum Information Processing	https://ocw.tudelft.nl/courses/quantum-information-processing/
+no books found	TU Delft Railway Engineering: An Integral Approach	https://ocw.tudelft.nl/courses/railway-engineering-integral-approach/
+no books found	TU Delft Responsible Innovation	https://ocw.tudelft.nl/courses/responsible-innovation/
+no books found	TU Delft Sanitary engineering	https://ocw.tudelft.nl/courses/sanitary-engineering/
+no books found	TU Delft Satellite Navigation	https://ocw.tudelft.nl/courses/satellite-navigation/
+no books found	TU Delft Self Study English for Dutch Students	https://ocw.tudelft.nl/courses/self-study-english-dutch-students/
+no books found	TU Delft Solar Cells	https://ocw.tudelft.nl/courses/solar-cells/
+no books found	TU Delft Solar Energy	https://ocw.tudelft.nl/courses/solar-energy/
+no books found	TU Delft Solar Energy Engineering: Photovoltaic Energy Conversion	https://ocw.tudelft.nl/courses/solar-energy-engineering-photovoltaic-energy-conversion/
+no books found	TU Delft Solar Energy: Photovoltaic (PV) Technologies	https://ocw.tudelft.nl/courses/solar-energy-photovoltaic-pv-technologies/
+no books found	TU Delft Spacecraft Technology	https://ocw.tudelft.nl/courses/spacecraft-technology/
+no books found	TU Delft Spatial Tools in Water Resources Management	https://ocw.tudelft.nl/courses/spatial-tools-in-water-resources-management/
+no books found	TU Delft Stochastic Evolution Equations	https://ocw.tudelft.nl/courses/stochastic-evolution-equations/
+no books found	TU Delft Sustainable Aviation: The Route to Climate-Neutral Aviation	https://ocw.tudelft.nl/courses/sustainable-aviation-the-route-to-climate-neutral-aviation/
+no books found	TU Delft Sustainable Hydrogen and Electrical Energy Storage	https://ocw.tudelft.nl/courses/sustainable-hydrogen-electrical-energy-storage/
+no books found	TU Delft Sustainable Urban Development	https://ocw.tudelft.nl/courses/sustainable-urban-development/
+no books found	TU Delft Sustainable Urban Freight Transport: a Global Perspective	https://ocw.tudelft.nl/courses/sustainable-urban-freight-transport-global-perspective/
+no books found	TU Delft System Identification and Parameter Estimation	https://ocw.tudelft.nl/courses/system-identification-and-parameter-estimation/
+no books found	TU Delft System Validation	https://ocw.tudelft.nl/courses/system-validation/
+no books found	TU Delft TULib	https://ocw.tudelft.nl/courses/tulib/
+no books found	TU Delft Technics and Future	https://ocw.tudelft.nl/courses/technics-and-future/
+no books found	TU Delft Technology Dynamics and Transition Management	https://ocw.tudelft.nl/courses/tech-dynamics-transition-mgmt/
+no books found	TU Delft Technology Dynamics for Sustainable Innovation	https://ocw.tudelft.nl/courses/tech-dynamics-sus-innov/
+no books found	TU Delft Technology for Biobased Products	https://ocw.tudelft.nl/courses/technology-for-biobased-products/
+no books found	TU Delft Technology in Sustainable Development	https://ocw.tudelft.nl/courses/tech-in-sustainable-development/
+no books found	TU Delft Technology of Intelligent and Integrated Energy Systems	https://ocw.tudelft.nl/courses/technology-of-intelligent-and-integrated-energy-systems/
+no books found	TU Delft The Basics of Transport Phenomena	https://ocw.tudelft.nl/courses/basics-transport-phenomena/
+no books found	TU Delft The Building Blocks of a Quantum Computer: Part 2	https://ocw.tudelft.nl/courses/building-blocks-quantum-computer-part-2/
+no books found	TU Delft The Human Controller	https://ocw.tudelft.nl/courses/the-human-controller/
+no books found	TU Delft The Value of Business Models	https://ocw.tudelft.nl/courses/value-business-models/
+no books found	TU Delft Theory of Computation	https://ocw.tudelft.nl/courses/theory-of-computation/
+no books found	TU Delft Topology in Condensed Matter	https://ocw.tudelft.nl/courses/topology-condensed-matter-concept/
+no books found	TU Delft Traffic Flow Theory and Simulation	https://ocw.tudelft.nl/courses/traffic-flow-theory-simulation/
+no books found	TU Delft Treatment of Urban Sewage	https://ocw.tudelft.nl/courses/urban-sewage-treatment/
+no books found	TU Delft Understanding Nuclear Energy	https://ocw.tudelft.nl/courses/understanding-nuclear-energy/
+no books found	TU Delft Urban Design for the Public Good: Dutch Urbanism	https://ocw.tudelft.nl/courses/urban-design-public-good-dutch-urbanism/
+no books found	TU Delft Use of Underground Space	https://ocw.tudelft.nl/courses/use-of-underground-space/
+no books found	TU Delft VLSI Test Technology & Reliabillity	https://ocw.tudelft.nl/courses/vlsi-test-technology-reliabillity/
+no books found	TU Delft Waste Management and Critical Raw Materials	https://ocw.tudelft.nl/courses/waste-management-critical-raw-materials/
+no books found	TU Delft Wastewater Treatment	https://ocw.tudelft.nl/courses/wastewater-treatment/
+no books found	TU Delft Water Management in Urban Areas	https://ocw.tudelft.nl/courses/water-management-in-urban-areas/
+no books found	Yale Freshman Organic Chemistry I	https://oyc.yale.edu/chemistry/chem-125a
+no books found	Yale Frontiers and Controversies in Astrophysics	https://oyc.yale.edu/astronomy/astr-160
+no syllabus page	MIT 11.308J Ecological Urbanism	https://ocw.mit.edu/courses/11-308j-ecological-urbanism-spring-2024/
+no syllabus page	MIT 11.309J Sensing Place: Photography as Inquiry	https://ocw.mit.edu/courses/11-309j-sensing-place-photography-as-inquiry-spring-2024/
+no syllabus page	MIT 12.307 Weather and Climate Laboratory	https://ocw.mit.edu/courses/12-307-weather-and-climate-laboratory-spring-2025/
+no syllabus page	MIT 12.340X Global Warming Science	https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/
+no syllabus page	MIT 14.01SC Principles of Microeconomics	https://ocw.mit.edu/courses/14-01sc-principles-of-microeconomics-fall-2011/
+no syllabus page	MIT 15.053X Optimization Methods in Business Analytics	https://ocw.mit.edu/courses/15-053x-optimization-methods-in-business-analytics-summer-2021/
+no syllabus page	MIT 15.392 Scaling Entrepreneurial Ventures	https://ocw.mit.edu/courses/15-392-scaling-entrepreneurial-ventures-spring-2026/
+no syllabus page	MIT 15.480X The Science and Business of Biotechnology	https://ocw.mit.edu/courses/15-480x-the-science-and-business-of-biotechnology-fall-2021/
+no syllabus page	MIT 15.481X Adaptive Markets: Financial Market Dynamics and Human Behavior	https://ocw.mit.edu/courses/15-481x-adaptive-markets-financial-market-dynamics-and-human-behavior-fall-2022/
+no syllabus page	MIT 15.960 New Executive Thinking Social-Impact Technology Projects	https://ocw.mit.edu/courses/15-960-new-executive-thinking-social-impact-technology-projects-fall-2017-spring-2018/
+no syllabus page	MIT 18.01 Calculus I: Single Variable Calculus	https://ocw.mit.edu/courses/18-01-calculus-i-single-variable-calculus-fall-2020/
+no syllabus page	MIT 18.03SC Differential Equations	https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/
+no syllabus page	MIT 2.009 Product Engineering Process	https://ocw.mit.edu/courses/2-009-product-engineering-process-fall-2021/
+no syllabus page	MIT 21L.430 Popular Culture and Narrative: Serial Storytelling	https://ocw.mit.edu/courses/21l-430-popular-culture-and-narrative-serial-storytelling-spring-2013/
+no syllabus page	MIT 21M.846 Topics in Performance Studies: Comedy Across Media	https://ocw.mit.edu/courses/21m-846-topics-in-performance-studies-comedy-across-media-spring-2018/
+no syllabus page	MIT 21W.780 Communicating in Technical Organizations	https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001/
+no syllabus page	MIT 3.012SX Structure of Materials	https://ocw.mit.edu/courses/3-012sx-structure-of-materials-spring-2019/
+no syllabus page	MIT 6.00SC Introduction to Computer Science and Programming	https://ocw.mit.edu/courses/6-00sc-introduction-to-computer-science-and-programming-spring-2011/
+no syllabus page	MIT 6.036 Introduction to Machine Learning	https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/
+no syllabus page	MIT 6.4210 Robotic Manipulation	https://ocw.mit.edu/courses/6-4210-robotic-manipulation-fall-2022/
+no syllabus page	MIT 6.4590 Foundations of Information Policy	https://ocw.mit.edu/courses/6-4590-foundations-of-information-policy-fall-2024/
+no syllabus page	MIT 6.5060 Algorithm Engineering	https://ocw.mit.edu/courses/6-5060-algorithm-engineering-spring-2023/
+no syllabus page	MIT 6.5660 Computer Systems Security	https://ocw.mit.edu/courses/6-5660-computer-systems-security-spring-2024/
+no syllabus page	MIT 6.5830 Database Systems	https://ocw.mit.edu/courses/6-5830-database-systems-fall-2023/
+no syllabus page	MIT 6.5950 Secure Hardware Design	https://ocw.mit.edu/courses/6-5950-secure-hardware-design-spring-2025/
+no syllabus page	MIT 6.8300 Advances in Computer Vision	https://ocw.mit.edu/courses/6-8300-advances-in-computer-vision-spring-2025/
+no syllabus page	MIT 6.832 Underactuated Robotics	https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2022/
+no syllabus page	MIT 7.00 COVID-19, SARS-CoV-2 and the Pandemic	https://ocw.mit.edu/courses/7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2020/
+no syllabus page	MIT 9.00SC Introduction to Psychology	https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/
+no syllabus page	MIT Blended Learning Open Source Science or Math Studies (BLOSSOMS)	https://ocw.mit.edu/courses/res-bloss-blended-learning-open-source-science-or-math-studies-blossoms-spring-2010/
+no syllabus page	MIT Business and Impact Planning for Social Enterprises (0.SolveX)	https://ocw.mit.edu/courses/res-solvex-business-and-impact-planning-for-social-enterprises-0-solvex-summer-2021/
+no syllabus page	MIT ES.114 Non-violence as a Way of Life	https://ocw.mit.edu/courses/es-114-non-violence-as-a-way-of-life-fall-2018/
+no syllabus page	MIT Foundation Models and Generative AI	https://ocw.mit.edu/courses/6-s087-foundation-models-and-generative-ai-january-iap-2024/
+no syllabus page	MIT Generative Artificial Intelligence in K–12 Education	https://ocw.mit.edu/courses/6-s062-generative-artificial-intelligence-in-k12-education-fall-2023/
+no syllabus page	MIT Global Enterprise for Micro-Mechanics and Molecular Medicine (GEM4)	https://ocw.mit.edu/courses/res-gem4-global-enterprise-for-micro-mechanics-and-molecular-medicine-gem4-summer-2006-summer-2007/
+no syllabus page	MIT HST.936X Global Health Informatics to Improve Quality of Care	https://ocw.mit.edu/courses/hst-936x-global-health-informatics-to-improve-quality-of-care-spring-2020/
+no syllabus page	MIT How to AI (Almost) Anything	https://ocw.mit.edu/courses/mas-s60-how-to-ai-almost-anything-spring-2025/
+no syllabus page	MIT Interactive Data Visualization and Society	https://ocw.mit.edu/courses/6-c35-interactive-data-visualization-and-society-spring-2025/
+no syllabus page	MIT Introduction to R and Geographic Information Systems (GIS)	https://ocw.mit.edu/courses/introduction-to-r-and-gis-fall-2023/
+no syllabus page	MIT LL EduCATE: Introduction to Engineering Concepts	https://ocw.mit.edu/courses/res.ll-004-ll-educate-introduction-to-engineering-concepts-spring-2022/
+no syllabus page	MIT Machine Learning for Inverse Graphics	https://ocw.mit.edu/courses/6-s980-machine-learning-for-inverse-graphics-fall-2022/
+no syllabus page	MIT Nuclear Weapons – History and Future Prospects	https://ocw.mit.edu/courses/8-s271-nuclear-weapons-history-and-future-prospects-spring-2022/
+no syllabus page	MIT RES.1.001 Project Evaluation: Essays and Case Studies	https://ocw.mit.edu/courses/res-1-001-project-evaluation-essays-and-case-studies-fall-2023/
+no syllabus page	MIT RES.10 Physics of COVID-19 Transmission	https://ocw.mit.edu/courses/res-10-s95-physics-of-covid-19-transmission-fall-2020/
+no syllabus page	MIT RES.10.002 Ethics of AI Bias	https://ocw.mit.edu/courses/res-10-002-ethics-of-ai-bias-spring-2023/
+no syllabus page	MIT RES.11.001 CITE Reports	https://ocw.mit.edu/courses/res-11-001-cite-reports-fall-2015/
+no syllabus page	MIT RES.11.002 Intentional Public Disruptions: Art, Responsibility, and Pedagogy	https://ocw.mit.edu/courses/res-11-002-intentional-public-disruptions-art-responsibility-and-pedagogy-fall-2017/
+no syllabus page	MIT RES.11.003 Climate Justice Instructional Toolkit	https://ocw.mit.edu/courses/res-11-003-climate-justice-instructional-toolkit-spring-2025/
+no syllabus page	MIT RES.11.004 Facilitative Leadership in the Public Sector	https://ocw.mit.edu/courses/res-11-004-facilitative-leadership-in-the-public-sector-fall-2024/
+no syllabus page	MIT RES.11.550 Leveraging Urban Mobility Disruptions to Create Better Cities	https://ocw.mit.edu/courses/res-11-550-leveraging-urban-mobility-disruptions-to-create-better-cities-spring-2021/
+no syllabus page	MIT RES.12.000 Evolution of Physical Oceanography	https://ocw.mit.edu/courses/res-12-000-evolution-of-physical-oceanography-spring-2007/
+no syllabus page	MIT RES.12.001 Topics in Fluid Dynamics	https://ocw.mit.edu/courses/res-12-001-topics-in-fluid-dynamics-fall-2024/
+no syllabus page	MIT RES.12.002 Terrascope	https://ocw.mit.edu/courses/res-12-002-terrascope-spring-2023/
+no syllabus page	MIT RES.12.003 Fluid Motions, Sediment Transport, and Current-Generated Sedimentary Structures	https://ocw.mit.edu/courses/res-12-003-fluid-motions-sediment-transport-and-current-generated-sedimentary-structures-fall-2025/
+no syllabus page	MIT RES.14.003 The Roosevelt Project	https://ocw.mit.edu/courses/res-14-003-the-roosevelt-project-spring-2023/
+no syllabus page	MIT RES.14.004 Seven Questions About Tariffs That Everyone Should Know the Answer To	https://ocw.mit.edu/courses/res-14-004-seven-questions-about-tariffs-that-everyone-should-know-the-answer-to-january-iap-2026/
+no syllabus page	MIT RES.15.001 MIT Sloan Teaching Resources Library	https://ocw.mit.edu/courses/res-15-001-mit-sloan-learningedge-fall-2008/
+no syllabus page	MIT RES.15.004 System Dynamics: Systems Thinking and Modeling for a Complex World	https://ocw.mit.edu/courses/res-15-004-system-dynamics-systems-thinking-and-modeling-for-a-complex-world-january-iap-2020/
+no syllabus page	MIT RES.15.005 Healthcare Finance (15.482x)	https://ocw.mit.edu/courses/res-15-005-healthcare-finance-15-482x-spring-2019/
+no syllabus page	MIT RES.15.009 Lead User Innovation Handbook 	https://ocw.mit.edu/courses/res-15-009-lead-user-innovation-handbook-spring-2026/
+no syllabus page	MIT RES.16.001 Lean Enterprise en Español	https://ocw.mit.edu/courses/res-16-001-lean-enterprise-en-espanol-january-iap-2012/
+no syllabus page	MIT RES.16.002 How to CAD Almost Anything	https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/
+no syllabus page	MIT RES.17.001 MIT Election Data + Science Lab	https://ocw.mit.edu/courses/res-17-001-mit-election-data-science-lab-fall-2020/
+no syllabus page	MIT RES.17.002 MIT Governance Lab	https://ocw.mit.edu/courses/res-17-002-mit-governance-lab-spring-2023/
+no syllabus page	MIT RES.17.003 Election Resource Hub	https://ocw.mit.edu/courses/res-17-003-election-resource-hub-spring-2026/
+no syllabus page	MIT RES.18.001 Calculus Open Textbook	https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/
+no syllabus page	MIT RES.18.002 Introduction to MATLAB	https://ocw.mit.edu/courses/res-18-002-introduction-to-matlab-spring-2008/
+no syllabus page	MIT RES.18.003 Calculus for Beginners and Artists	https://ocw.mit.edu/courses/res-18-003-calculus-for-beginners-and-artists-spring-2005/
+no syllabus page	MIT RES.18.004 The Torch or The Firehose: A Guide to Section Teaching	https://ocw.mit.edu/courses/res-18-004-the-torch-or-the-firehose-a-guide-to-section-teaching-spring-2009/
+no syllabus page	MIT RES.18.005 Highlights of Calculus	https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010/
+no syllabus page	MIT RES.18.009 Learn Differential Equations: Up Close with Gilbert Strang and Cleve Moler	https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/
+no syllabus page	MIT RES.18.010 A Vision of Linear Algebra	https://ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/
+no syllabus page	MIT RES.18.011 Algebra I Student Notes	https://ocw.mit.edu/courses/res-18-011-algebra-i-student-notes-fall-2021/
+no syllabus page	MIT RES.18.012 Algebra II Student Notes	https://ocw.mit.edu/courses/res-18-012-algebra-ii-student-notes-spring-2022/
+no syllabus page	MIT RES.18.015 Topics in Fourier Analysis 	https://ocw.mit.edu/courses/res-18-015-topics-in-fourier-analysis-spring-2024/
+no syllabus page	MIT RES.18.016 Multivariable Calculus Recitation Notes	https://ocw.mit.edu/courses/res-18-016-multivariable-calculus-recitation-notes-fall-2024/
+no syllabus page	MIT RES.2.002 Finite Element Procedures for Solids and Structures	https://ocw.mit.edu/courses/res-2-002-finite-element-procedures-for-solids-and-structures-spring-2010/
+no syllabus page	MIT RES.21G.001 The User-friendly Classroom	https://ocw.mit.edu/courses/res-21g-001-the-user-friendly-classroom-fall-2020/
+no syllabus page	MIT RES.21G.003 Learning Chinese: A Foundation Course in Mandarin (汉语基础教材)	https://ocw.mit.edu/courses/res-21g-003-learning-chinese-a-foundation-course-in-mandarin-spring-2011/
+no syllabus page	MIT RES.21G.01 Kana	https://ocw.mit.edu/courses/res-21g-01-kana-spring-2010/
+no syllabus page	MIT RES.21G.108 Project-Based Language Learning for Chinese II (Streamlined)	https://ocw.mit.edu/courses/res-21g-108-project-based-language-learning-for-chinese-streamlined-ii-spring-2024/
+no syllabus page	MIT RES.21G.3001 Teaching La Princesse de Clèves	https://ocw.mit.edu/courses/res-21g-3001-teaching-la-princesse-de-cleves-fall-2023/
+no syllabus page	MIT RES.21G.3002 Teaching Marguerite de Navarre's Heptaméron	https://ocw.mit.edu/courses/res-21g-3002-teaching-marguerite-de-navarres-heptameron-fall-2023/
+no syllabus page	MIT RES.21G.3003 Marguerite de Roberval: A Web-Based Approach to Teaching a Renaissance Heroine	https://ocw.mit.edu/courses/res-21g-3003-marguerite-de-roberval-a-web-based-approach-to-teaching-a-renaissance-heroine-fall-2023/
+no syllabus page	MIT RES.21G.3004 Marguerite de Navarre Society Website	https://ocw.mit.edu/courses/res-21g-3004-marguerite-de-navarre-society-website-fall-2023/
+no syllabus page	MIT RES.21G.601 Телемосты (Telebridges) Russian Conversation Exchange Site	https://ocw.mit.edu/courses/res-21g-601-telebridges-russian-conversation-exchange-site-fall-2021/
+no syllabus page	MIT RES.21H.001 Visualizing the Birth of Modern Tokyo	https://ocw.mit.edu/courses/res-21h-001-visualizing-the-birth-of-modern-tokyo-spring-2021/
+no syllabus page	MIT RES.21M.001 Heavy Metal 101	https://ocw.mit.edu/courses/res-21m-001-heavy-metal-101-january-iap-2025/
+no syllabus page	MIT RES.21W.01 Angles	https://ocw.mit.edu/courses/res-21w-01-angles-fall-2015/
+no syllabus page	MIT RES.24.002 MIT-Haiti Initiative / Inisyativ MIT-Ayiti	https://ocw.mit.edu/courses/res-24-002-mit-haiti-initiative-inisyativ-mit-ayiti-spring-2023/
+no syllabus page	MIT RES.3.004 Visualizing Materials Science	https://ocw.mit.edu/courses/res-3-004-visualizing-materials-science-fall-2017/
+no syllabus page	MIT RES.3.006 MICRO Mentoring Resources and Materials Science Curriculum	https://ocw.mit.edu/courses/res-3-006-micro-mentoring-resources-and-materials-science-curriculum-spring-2021/
+no syllabus page	MIT RES.5.0001 Digital Lab Techniques Manual	https://ocw.mit.edu/courses/res-5-0001-digital-lab-techniques-manual-spring-2007/
+no syllabus page	MIT RES.6 Discrete-Time Signal Processing: Oppenheim and Schafer	https://ocw.mit.edu/courses/res-6-dtsp-discrete-time-signal-processing/
+no syllabus page	MIT RES.6.001 Continuum Electromechanics	https://ocw.mit.edu/courses/res-6-001-continuum-electromechanics-spring-2009/
+no syllabus page	MIT RES.6.001 Electromagnetic Fields and Energy	https://ocw.mit.edu/courses/res-6-001-electromagnetic-fields-and-energy-spring-2008/
+no syllabus page	MIT RES.6.002 Electromagnetic Field Theory: A Problem Solving Approach	https://ocw.mit.edu/courses/res-6-002-electromagnetic-field-theory-a-problem-solving-approach-spring-2008/
+no syllabus page	MIT RES.6.003 Electromechanical Dynamics	https://ocw.mit.edu/courses/res-6-003-electromechanical-dynamics-spring-2009/
+no syllabus page	MIT RES.6.004 Principles of Computer System Design: An Introduction	https://ocw.mit.edu/courses/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/
+no syllabus page	MIT RES.6.005 Understanding Lasers and Fiberoptics	https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/
+no syllabus page	MIT RES.6.006 Video Demonstrations in Lasers and Optics	https://ocw.mit.edu/courses/res-6-006-video-demonstrations-in-lasers-and-optics-spring-2008/
+no syllabus page	MIT RES.6.010 Electronic Feedback Systems	https://ocw.mit.edu/courses/res-6-010-electronic-feedback-systems-spring-2013/
+no syllabus page	MIT RES.6.011 The Art of Insight in Science and Engineering: Mastering Complexity	https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/
+no syllabus page	MIT RES.6.012 Introduction to Probability	https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/
+no syllabus page	MIT RES.6.013 AI 101	https://ocw.mit.edu/courses/res-6-013-ai-101-fall-2021/
+no syllabus page	MIT RES.6.015 Discrete-Time Signals and Systems: An Operator Approach	https://ocw.mit.edu/courses/res-6-015-discrete-time-signals-and-systems-an-operator-approach/
+no syllabus page	MIT RES.7.001 Pre-7.01: Getting up to Speed in Biology	https://ocw.mit.edu/courses/res-7-001-pre-7-01-getting-up-to-speed-in-biology-summer-2019/
+no syllabus page	MIT RES.7.003 Brave New Planet	https://ocw.mit.edu/courses/res-7-003-brave-new-planet-fall-2020/
+no syllabus page	MIT RES.7.004 BioNook Online Biology Resources	https://ocw.mit.edu/courses/res-7-004-bionook-online-biology-resources-spring-2021/
+no syllabus page	MIT RES.7.006 7.03x Genetics	https://ocw.mit.edu/courses/res-7-006-7-03x-genetics/
+no syllabus page	MIT RES.7.007 7.06x Cell Biology	https://ocw.mit.edu/courses/res-7-007-7-06x-cell-biology/
+no syllabus page	MIT RES.7.008 7.28x Molecular Biology	https://ocw.mit.edu/courses/res-7-008-7-28x-molecular-biology/
+no syllabus page	MIT RES.7.009 7.InT: Inclusive Teaching Module	https://ocw.mit.edu/courses/res-7-009-7-int-inclusive-teaching-module-fall-2022/
+no syllabus page	MIT RES.8.001 Applied Geometric Algebra	https://ocw.mit.edu/courses/res-8-001-applied-geometric-algebra-spring-2009/
+no syllabus page	MIT RES.8.002 A WikiTextBook for Introductory Mechanics	https://ocw.mit.edu/courses/res-8-002-a-wikitextbook-for-introductory-mechanics-fall-2009/
+no syllabus page	MIT RES.8.003 Physics Demonstration Videos	https://ocw.mit.edu/courses/res-8-003-physics-demonstration-videos-spring-2012/
+no syllabus page	MIT RES.8.004 Reducing the Danger of Nuclear Weapons and Proliferation	https://ocw.mit.edu/courses/res-8-004-reducing-the-danger-of-nuclear-weapons-and-proliferation-january-iap-2015/
+no syllabus page	MIT RES.8.005 Vibrations and Waves Problem Solving	https://ocw.mit.edu/courses/res-8-005-vibrations-and-waves-problem-solving-fall-2012/
+no syllabus page	MIT RES.8.007 Cosmic Origin of the Chemical Elements 	https://ocw.mit.edu/courses/res-8-007-cosmic-origin-of-the-chemical-elements-fall-2019/
+no syllabus page	MIT RES.8.008 Nuclear Weapons Education Project	https://ocw.mit.edu/courses/res-8-008-nuclear-weapons-education-project-spring-2022/
+no syllabus page	MIT RES.9.004 Nancy's Brain Talks	https://ocw.mit.edu/courses/res-9-004-nancys-brain-talks-fall-2022/
+no syllabus page	MIT RES.9.005 fMRI Bootcamp	https://ocw.mit.edu/courses/res-9-005-fmri-bootcamp-fall-2017/
+no syllabus page	MIT RES.9.006 AFNI Training Bootcamp	https://ocw.mit.edu/courses/res-9-006-afni-training-bootcamp-spring-2018/
+no syllabus page	MIT RES.9.007 MEG Workshop	https://ocw.mit.edu/courses/res-9-007-meg-workshop-spring-2019/
+no syllabus page	MIT RES.9.008 Brain and Cognitive Sciences Computational Tutorial Series	https://ocw.mit.edu/courses/res-9-008-brain-and-cognitive-sciences-computational-tutorials/
+no syllabus page	MIT RES.9.009 Introduction to Computational Neuroscience with Neuroblox	https://ocw.mit.edu/courses/res-9-009-introduction-to-computational-neuroscience-with-neuroblox-january-iap-2025/
+no syllabus page	MIT RES.9.010 Brain and Cognitive Sciences Computational Tutorial: Optimizing the Full Stack for Generative Image and Video Models	https://ocw.mit.edu/courses/res-9-010-bcs-tutorials-optimizing-the-full-stack-for-generative-image-and-video-models-fall-2025/
+no syllabus page	MIT RES.CMS.154 Launching Innovation in Schools	https://ocw.mit.edu/courses/res-cms-154-launching-innovation-in-schools-spring-2019/
+no syllabus page	MIT RES.CMS.155 Design Thinking for Leading and Learning	https://ocw.mit.edu/courses/res-cms-155-design-thinking-for-leading-and-learning-spring-2019/
+no syllabus page	MIT RES.CMS.501 Envisioning the Graduate of the Future	https://ocw.mit.edu/courses/res-cms-501-envisioning-the-graduate-of-the-future-spring-2020/
+no syllabus page	MIT RES.CMS.502 Competency-Based Education: The Why, What, and How	https://ocw.mit.edu/courses/res-cms-502-competency-based-education-the-why-what-and-how-spring-2020/
+no syllabus page	MIT RES.CMS.503 Becoming a More Equitable Educator: Mindsets and Practices	https://ocw.mit.edu/courses/res-cms-503-becoming-a-more-equitable-educator-mindsets-and-practices-spring-2020/
+no syllabus page	MIT RES.CMS.504 Sorting Truth From Fiction: Civic Online Reasoning	https://ocw.mit.edu/courses/res-cms-504-sorting-truth-from-fiction-civic-online-reasoning-spring-2021/
+no syllabus page	MIT RES.EC.001 Exploring Fairness in Machine Learning for International Development	https://ocw.mit.edu/courses/res-ec-001-exploring-fairness-in-machine-learning-for-international-development-spring-2020/
+no syllabus page	MIT RES.EC.002 Lean Research Skills for Conducting Interviews	https://ocw.mit.edu/courses/res-ec-002-lean-research-skills-for-conducting-interviews-spring-2021/
+no syllabus page	MIT RES.EC.003 D-Lab Student Showcases	https://ocw.mit.edu/courses/res-ec-003-d-lab-student-showcases-spring-2022/
+no syllabus page	MIT RES.EC.004 Energy Needs Assessment Toolkit	https://ocw.mit.edu/courses/res-ec-004-energy-needs-assessment-toolkit/
+no syllabus page	MIT RES.ENV.003 EarthDNA's Climate 101	https://ocw.mit.edu/courses/res-env-003-earthdnas-climate-101-fall-2019/
+no syllabus page	MIT RES.ENV.004 MIT Climate Portal	https://ocw.mit.edu/courses/res-env-004-mit-climate-portal-fall-2020/
+no syllabus page	MIT RES.ENV.005 Climate Science, Risk & Solutions: A Climate Primer	https://ocw.mit.edu/courses/res-env-005-climate-science-risk-solutions-a-climate-primer/
+no syllabus page	MIT RES.ENV.008 Climate, Environment, and Sustainability Infusion Fellowship (CESIF)	https://ocw.mit.edu/courses/res-env-008-climate-environment-and-sustainability-infusion-fellowship-cesif-spring-2025/
+no syllabus page	MIT RES.ENV.009 CS3 Lecture Series: Fundamentals of Climate Science and Policy	https://ocw.mit.edu/courses/res-env-009-cs3-lecture-series-fundamentals-of-climate-science-and-policy-january-iap-2026/
+no syllabus page	MIT RES.HS.002 Chemistry Behind the Magic: Chemical Demonstrations for the Classroom	https://ocw.mit.edu/courses/res-hs-002-chemistry-behind-the-magic-chemical-demonstrations-for-the-classroom/
+no syllabus page	MIT RES.HS.003 ChemLab Boot Camp	https://ocw.mit.edu/courses/res-hs-003-chemlab-boot-camp/
+no syllabus page	MIT RES.HSO.001 MIT Haystack Observatory K–12 STEM Lesson Plans 	https://ocw.mit.edu/courses/res-hso-001-mit-haystack-observatory-k12-stem-lesson-plans/
+no syllabus page	MIT RES.LL.001 Introduction to Radar Systems	https://ocw.mit.edu/courses/res-ll-001-introduction-to-radar-systems-spring-2007/
+no syllabus page	MIT RES.LL.002 Adaptive Antennas and Phased Arrays	https://ocw.mit.edu/courses/res-ll-002-adaptive-antennas-and-phased-arrays-spring-2010/
+no syllabus page	MIT RES.MAS.001 RAISE (Responsible AI for Social Empowerment and Education)	https://ocw.mit.edu/courses/res-mas-001-raise-responsible-ai-for-social-empowerment-and-education-spring-2022/
+no syllabus page	MIT RES.MAS.002 Day of AI	https://ocw.mit.edu/courses/res-mas-002-day-of-ai-spring-2022/
+no syllabus page	MIT RES.SP.001 Defining Real-World Problems With the D.I.S. Method: Describe, Inquire, State	https://ocw.mit.edu/courses/res-sp-001-defining-real-world-problems-with-the-d-i-s-method-describe-inquire-state-spring-2024/
+no syllabus page	MIT RES.STR.001 Geographic Information System (GIS) Tutorial	https://ocw.mit.edu/courses/res-str-001-geographic-information-system-gis-tutorial-january-iap-2022/
+no syllabus page	MIT RES.STR.002 Data Management	https://ocw.mit.edu/courses/res-str-002-data-management-spring-2016/
+no syllabus page	MIT RES.STS.001 MIT Project on Embodied Education	https://ocw.mit.edu/courses/res-sts-001-mit-project-on-embodied-education-fall-2024/
+no syllabus page	MIT RES.SUD.01 Substance Use Disorder Ventures Program 	https://ocw.mit.edu/courses/res-sud-01-substance-use-disorder-ventures-program-spring-2025/
+no syllabus page	MIT RES.TL.002 STAR: Software Tools for Academics and Researchers	https://ocw.mit.edu/courses/res-tl-002-star-software-tools-for-academics-and-researchers-spring-2012/
+no syllabus page	MIT RES.TLL.004 STEM Concept Videos	https://ocw.mit.edu/courses/res-tll-004-stem-concept-videos-fall-2013/
+no syllabus page	MIT RES.TLL.005 How to Speak	https://ocw.mit.edu/courses/res-tll-005-how-to-speak-january-iap-2018/
+no syllabus page	MIT RES.TLL.007 Case Studies in Social and Ethical Responsibilities of Computing	https://ocw.mit.edu/courses/res-tll-007-case-studies-in-social-and-ethical-responsibilities-of-computing-fall-2021/
+no syllabus page	MIT RES.TLL.008 Social and Ethical Responsibilities of Computing (SERC)	https://ocw.mit.edu/courses/res-tll-008-social-and-ethical-responsibilities-of-computing-serc/
+no syllabus page	MIT RES.TLL.009 Indian Institutes of Technology Joint Entrance Exam	https://ocw.mit.edu/courses/res-tll-009-iit-joint-entrance-exam-preparation-fall-2022/
+no syllabus page	MIT RES.TLL.010 Syllabus Checklist to Support Student Belonging & Achievement	https://ocw.mit.edu/courses/res-tll-010-syllabus-checklist-to-support-student-belonging-achievement-spring-2025/
+no syllabus page	MIT SP.248 The NEET Experience	https://ocw.mit.edu/courses/sp-248-the-neet-experience-fall-2025/
+no syllabus page	MIT WGS.160J Science Activism: Gender, Race, and Power	https://ocw.mit.edu/courses/wgs-160j-science-activism-gender-race-and-power-fall-2019/
+not English	MIT 21G.311 Introduction to French Culture	https://ocw.mit.edu/courses/21g-311-introduction-to-french-culture-spring-2014/
+not English	MIT 21G.315 Cross-Cultural Perspectives on Contemporary French Society	https://ocw.mit.edu/courses/21g-315-cross-cultural-perspectives-on-contemporary-french-society-fall-2011/
+not English	MIT 21G.341 Contemporary French Film and Social Issues	https://ocw.mit.edu/courses/21g-341-contemporary-french-film-and-social-issues-spring-2014/
+not English	MIT 21G.410 Advanced German: Professional Communication	https://ocw.mit.edu/courses/21g-410-advanced-german-professional-communication-spring-2017/
+not English	MIT 21G.412 Texts, Topics, and Times in German Literature	https://ocw.mit.edu/courses/21g-412-texts-topics-and-times-in-german-literature-fall-2009/
+not English	MIT 21G.703 Spanish III	https://ocw.mit.edu/courses/21g-703-spanish-iii-spring-2006/
+not English	MIT 21G.711 Advanced Spanish Conversation and Composition	https://ocw.mit.edu/courses/21g-711-advanced-spanish-conversation-and-composition-spring-2014/
+not English	MIT 21G.712 Spanish Conversation and Composition	https://ocw.mit.edu/courses/21g-712-spanish-conversation-and-composition-fall-2003/
+not English	MIT 21G.714 Spanish for Bilingual Students	https://ocw.mit.edu/courses/21g-714-spanish-for-bilingual-students-spring-2003/
+not English	TU Delft Caleidoscoop	https://ocw.tudelft.nl/courses/caleidoscoop/
+not English	TU Delft Digitale Systemen	https://ocw.tudelft.nl/courses/digitale-systemen/
+not English	TU Delft Economie en Bedrijf	https://ocw.tudelft.nl/courses/economie-en-bedrijf/
+not English	TU Delft Elektronische signaalbewerking II	https://ocw.tudelft.nl/courses/elektronische-signaalbewerking-ii/
+not English	TU Delft Evolving Design	https://ocw.tudelft.nl/courses/evolving-design/
+not English	TU Delft Flitscolleges TU Delft	https://ocw.tudelft.nl/courses/flitscolleges-tu-delft/
+not English	TU Delft Hydrologie	https://ocw.tudelft.nl/courses/hydrologie/
+not English	TU Delft Hydromechanica 1	https://ocw.tudelft.nl/courses/hydromechanica-1/
+not English	TU Delft Hydromechanica 3	https://ocw.tudelft.nl/courses/hydromechanica-3/
+not English	TU Delft Inleiding Civiele Techniek	https://ocw.tudelft.nl/courses/inleiding-civiele-techniek/
+not English	TU Delft Inleiding Watermanagement	https://ocw.tudelft.nl/courses/inleiding-watermanagement/
+not English	TU Delft Instaptoets wiskunde	https://ocw.tudelft.nl/courses/instaptoets-wiskunde/
+not English	TU Delft Introductie in energie- en industriesystemen	https://ocw.tudelft.nl/courses/introductie-energie-en-industriesystemen/
+not English	TU Delft Introductiecursus Technische Bestuurskunde	https://ocw.tudelft.nl/courses/introductiecursus-technische-bestuurskunde/
+not English	TU Delft Lineaire Algebra 1	https://ocw.tudelft.nl/courses/lineaire-algebra-1/
+not English	TU Delft Lineaire schakelingen	https://ocw.tudelft.nl/courses/lineaire_schakelingen/
+not English	TU Delft Materiaalkunde 1	https://ocw.tudelft.nl/courses/materiaalkunde-1/
+not English	TU Delft Meten aan water	https://ocw.tudelft.nl/courses/meten-aan-water/
+not English	TU Delft Ontwerpproject deel 1: analyse stadsregio	https://ocw.tudelft.nl/courses/ontwerpproject-deel-1-analyse-stadsregio/
+not English	TU Delft Programmeren in C	https://ocw.tudelft.nl/courses/programmeren-in-c/
+not English	TU Delft Programmeren voor leerkrachten met Scratch	https://ocw.tudelft.nl/courses/programmeren-voor-leerkrachten-met-scratch/
+not English	TU Delft Project Maritieme industrie	https://ocw.tudelft.nl/courses/project-maritieme-industrie/
+not English	TU Delft Redeneren en Logica	https://ocw.tudelft.nl/courses/redeneren-en-logica/
+not English	TU Delft Regeltechniek	https://ocw.tudelft.nl/courses/regeltechniek/
+not English	TU Delft Scratch: Programmeren voor kinderen (8+)	https://ocw.tudelft.nl/courses/scratch-programmeren-voor-kinderen-8/
+not English	TU Delft Statica	https://ocw.tudelft.nl/courses/statica/
+not English	TU Delft Stedenbouwkundige Ontwerpmethode	https://ocw.tudelft.nl/courses/stedenbouwkundige-ontwerpmethode/
+not English	TU Delft Stromingsleer	https://ocw.tudelft.nl/courses/stromingsleer/
+not English	TU Delft Thermodynamica 1	https://ocw.tudelft.nl/courses/thermodynamica-1/
+not English	TU Delft Thermodynamica 2	https://ocw.tudelft.nl/courses/thermodynamica-2/
+not English	TU Delft Transport en planning	https://ocw.tudelft.nl/courses/transport-en-planning/
+not English	TU Delft Wiskundige structuren	https://ocw.tudelft.nl/courses/wiskundige-structuren/
