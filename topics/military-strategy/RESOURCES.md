@@ -60,8 +60,8 @@ Grades refer to `library/MANIFEST.csv` (A = teach and quote; B = prose only, no 
   Hub for professional wargaming and serious games. Use for: the wargaming side of the mission.
 
 ## Gaps
-- **Deterrence and coercion theory**: Schelling, _Arms and Influence_ / _The Strategy of Conflict_ not in collection. Added to WANTED.md.
-- **Survey of theorists**: _Makers of Modern Strategy_ (Paret ed.) not in collection (Open Library has the Earle edition borrowable). Added to WANTED.md.
-- **Wargaming method**: Perla, _The Art of Wargaming_ not in collection. Added to WANTED.md.
+- **Deterrence and coercion theory**: Schelling, _Arms and Influence_ now in collection (grade A, id 4bdcba34b3); _The Strategy of Conflict_ still not.
+- **Survey of theorists**: _Makers of Modern Strategy_ (Paret ed.) now in collection (grade A, id 6979109f6e).
+- **Wargaming method**: Perla, _The Art of Wargaming_ now in collection (grade A, id eb72110b76).
 - **Lanchester's laws**: no primary source yet. Derive in-lesson from first principles; find a high-trust web source when that lesson comes.
 - **Tactics and weapons**: no dedicated tactics text yet (the learner put this in scope). Search when the first tactics lesson is planned.

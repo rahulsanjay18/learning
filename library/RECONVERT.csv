@@ -556,3 +556,4 @@ Survival,.pdf,marker (text PDFs) / ocrmypdf then marker (scans),./Survival/THDD4
 to_sort,.pdf,marker (text PDFs) / ocrmypdf then marker (scans),"./to_sort/Dan Heisman - Is Your Move Safe_ (2016, Mongoose Press) - libgen.li.pdf"
 to_sort,.pdf,marker (text PDFs) / ocrmypdf then marker (scans),"./to_sort/Michael Azzi - Pixel Logic_ A Guide to Pixel Art (2019, Independent) - libgen.li.pdf"
 to_sort,.pdf,marker (text PDFs) / ocrmypdf then marker (scans),"./to_sort/National Academy of Sports Medicine (NASM) - NASM Essentials of Personal Fitness Training (2017, Jones and Bartlett Learning) - libgen.li.pdf"
+to_sort,.epub,"garbled text (grade C): calibre ebook-convert -> .epub, then reconvert","./to_sort/Dan Heisman - A Guide to Chess Improvement_ The Best of Novice Nook - libgen.li.epub"
