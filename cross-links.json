@@ -1,0 +1,25 @@
+{
+  "about": "Links between courses in DIFFERENT majors whose ids differ (a course with the same id in two majors is already one course). kind: same = finishing either counts as both; overlap = shared material, the second goes faster; feeds = the first is a real prerequisite for the second. Read by scripts/master_dag.py and scripts/schedule.py; checked by scripts/test_programs.py. Judgment, 2026-10-08.",
+  "links": [
+    {"a": "math/MA414", "b": "statistics/S201", "kind": "same", "why": "both are first-course probability; S201 is Casella & Berger ch. 1, MA414 Bertsekas & Tsitsiklis"},
+    {"a": "english/EN300", "b": "critical-theory/CT100", "kind": "same", "why": "both open literary theory with Culler's Literary Theory VSI"},
+    {"a": "english/EN300", "b": "critical-theory/CT201", "kind": "overlap", "why": "close reading / New Criticism"},
+    {"a": "math/MA403", "b": "statistics/S500", "kind": "overlap", "why": "S500 is a real-analysis refresher"},
+    {"a": "math/MA511", "b": "statistics/S501", "kind": "overlap", "why": "measure theory under both"},
+    {"a": "english/EN330", "b": "critical-theory/CT211", "kind": "overlap", "why": "postcolonial literature and the postcolonial lens"},
+    {"a": "english/EN330", "b": "critical-theory/CT340", "kind": "overlap", "why": "Indian fiction (Midnight's Children)"},
+    {"a": "english/EN230", "b": "critical-theory/CT370", "kind": "overlap", "why": "the long novels (Middlemarch)"},
+    {"a": "english/EN330", "b": "indian-history/IH340", "kind": "overlap", "why": "Indian literature"},
+    {"a": "music/MU240", "b": "indian-history/IH340", "kind": "overlap", "why": "Hindustani music in the arts of India"},
+    {"a": "indian-history/IH320", "b": "games/G150", "kind": "overlap", "why": "war and the state / strategy foundations"},
+    {"a": "music/MU190", "b": "physics/PH214", "kind": "overlap", "why": "waves and sound"},
+    {"a": "unified-eng/UE370", "b": "eng/CR326", "kind": "overlap", "why": "operations research"},
+    {"a": "mech-eng/ME561", "b": "eng/CR326", "kind": "overlap", "why": "optimization"},
+    {"a": "unified-eng/UE335", "b": "eng/CP120", "kind": "overlap", "why": "how the machine runs code"},
+    {"a": "english/EN342", "b": "eng/SE110", "kind": "overlap", "why": "technical and design-doc writing"},
+    {"a": "math/MA230", "b": "statistics/S201", "kind": "feeds", "why": "joint distributions need multivariable calculus"},
+    {"a": "math/MA220", "b": "statistics/S402", "kind": "feeds", "why": "regression in matrix form"},
+    {"a": "math/MA312", "b": "statistics/S500", "kind": "feeds", "why": "first analysis course before the refresher"},
+    {"a": "math/MA414", "b": "games/G401", "kind": "feeds", "why": "probability for decisions under chance"}
+  ]
+}

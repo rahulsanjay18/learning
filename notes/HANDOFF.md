@@ -10,6 +10,10 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
   Applied option + MATH 421, 456 (412 taken but being retaken); physics: modern, classical mechanics, 400-level E&M (Griffiths), thermal. **Ask the learner:**
   career or soul for each major. Course syllabi are written when a course is about to start (parked
   majors aren't rendered by `render_syllabi.py`), a deliberate deviation from the syllabus standard.
+- **2026-10-08: master graph + time estimates.** `scripts/master_dag.py` merges every curriculum and `cross-links.json`
+  (links between courses with different ids: same / overlap / feeds) into `notes/MASTER-DAG.md` and simulates the remaining
+  Level I core at platform pace and at a real college workload (`notes/TIME-ESTIMATES.md`). Regenerate after any
+  curriculum change (check_all fails when stale). Add cross-links when two majors share material.
 - **2026-10-08: Music and English majors designed and parked**, same builder (renamed `scripts/build_majors.py`). Learner: guitar,
   former pianist, basic notation (MU100 fast pass); English: composition credited, AP Lit only (no college lit). English EN300 = Critical Theory CT100/CT201 (either counts). Explainer: `notes/music-english-majors-2026-10-08.md`.
 - **2026-10-08: rule 32, Extra practice** on every lesson (book problems, numbers changed for math-heavy courses; one extra

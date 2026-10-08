@@ -151,6 +151,7 @@ BOOKS_URL=https://books.tail59e10.ts.net
 | Quick review in chat | the `/quiz-me` skill (`scripts/quiz.py`) |
 | A game I played | the `/game-review` skill |
 | I added books | the `/new-books` skill (`scripts/new_books.py`; server steps in `library/ADDING-BOOKS.md`) |
+| How majors connect / how long they take | `python3 scripts/master_dag.py` → `notes/MASTER-DAG.md`, `notes/TIME-ESTIMATES.md`; links in `cross-links.json` |
 | Before committing | `bash scripts/check_all.sh --quick` (drop `--quick` after widget changes) |
 | Widget markup | `assets/README.md` (don't read the JS source) |
 
