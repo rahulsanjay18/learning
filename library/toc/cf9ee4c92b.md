@@ -1,0 +1,36 @@
+# TOC: 001 disaster-recovery-workloads-on-aws
+grade: A
+
+- Disaster Recovery of Workloads on AWS: Recovery in the Cloud
+- Introduction
+  - Disaster recovery and availability
+  - Are you Well-Architected?
+- Shared Responsibility Model for Resiliency
+  - AWS responsibility “Resiliency of the Cloud”
+  - Customer responsibility “Resiliency in the Cloud”
+- What is a disaster?
+- High availability is not disaster recovery
+- Business Continuity Plan (BCP)
+  - Business impact analysis and risk assessment
+  - Recovery objectives (RTO and RPO)
+- Disaster recovery is different in the cloud
+  - Single AWS Region
+  - Multiple AWS Regions
+- Disaster recovery options in the cloud
+  - Backup and restore
+    - AWS services
+  - Pilot light
+    - AWS services
+    - AWS Elastic Disaster Recovery
+  - Warm standby
+    - AWS services
+  - Multi-site active/active
+    - AWS services
+- Detection
+- Testing disaster recovery
+- Conclusion
+- Contributors
+- Further reading
+- Document history
+- Notices
+- AWS glossary

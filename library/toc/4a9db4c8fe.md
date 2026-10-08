@@ -1,0 +1,403 @@
+# TOC: Low-tech Magazine - Volume II -- Kris De Decker -- 2024 -- Low-tech Magazine -- isbn13 9781794796294 -- fd93d4de1b535b4ef0e31f2de804270f -- Anna’s Archive
+grade: A
+
+- <span class="CharOverride-1" lang="en-US">Low←tech Magazine</span>
+  - <span class="Grupo-de-estilos-2_Caps">Introduction</span>
+    - A Solar Powered Website
+    - A Printed Website
+    - Second Edition
+    - Thanks
+  - <span class="Grupo-de-estilos-2_Caps">How to Build a Low-tech Website?</span>
+    - Our new website is designed to radically reduce the energy use associated with accessing our content.
+    - Why a Low-tech Website?
+    - Websites are getting “fatter”
+    - We’re always online
+    - Surveillance
+    - Addressing these issues
+    - Static Site Generator
+    - Dithered Images
+    - Default typeface / No logo
+    - No Third-Party Tracking, No Advertising Services, No Cookies
+    - Why does the website go offline?
+    - How often is the website offline?
+    - When is the best time to visit?
+  - <span class="Grupo-de-estilos-2_Caps">We Can’t Do It Ourselves</span>
+    - Climate Change Policies
+    - Behavioral Change Policies
+    - Individual Choice
+    - The Limits of Individual Choice
+    - Blaming Each Other
+    - Beyond Individual Behavior
+    - The New Normal
+  - <span class="Grupo-de-estilos-2_Caps">Ditch the Batteries: Off-grid Compressed Air Energy Storage</span>
+    - Why Small-scale CAES?
+    - Challenge: Limiting Storage Size
+    - Two Strategies to Make Micro CAES Work
+    - Small-scale, High Pressure
+    - Small-scale, Low Pressure
+    - New Types of Compressors and Expanders
+    - Varying Air Pressure
+    - Off-the-Grid Power Storage
+    - Build it Yourself?
+  - <span class="Grupo-de-estilos-2_Caps">History and Future of the Compressed Air Economy</span>
+    - The Promise of Compressed Air
+    - The Problem with Compressed Air
+    - 4,000 Years of History
+    - The Paris Compressed Air Network
+    - First Lesson: Avoid Energy Conversions
+    - Second Lesson: Use Heat and Cold for Other Purposes
+    - Third Lesson: Improve the Air Compressor
+    - The Future of Compressed Air
+  - <span class="Grupo-de-estilos-2_Caps">How Much Energy Do We Need?</span>
+    - Researchers have calculated minimum levels of energy use needed to live a decent life, but what about maximum levels?
+    - Energy Use Per Capita
+    - Beyond Energy Poverty: Energy Decadence
+    - Calculating Floors and Ceilings
+    - Needs and Wants
+    - Change over Time: Increasing Dependency on Energy
+    - Challenging Needs and Wants
+  - <span class="Grupo-de-estilos-2_Caps">Bedazzled by Energy Efficiency</span>
+    - To focus on energy efficiency is to make present ways of life non-negotiable.
+    - Energy Efficiency Policy
+    - What Are the Results?
+    - Rebound Effects?
+    - Beyond the Rebound Argument
+    - A Parellel Universe
+    - Measuring Something that Doesn’t Exist
+    - What is it That is Efficient?
+    - How Efficient is a Clothesline?
+    - Unsustainable Concepts of Service
+    - Towards an Energy Inefficiency Policy?
+    - From Efficiency to Sufficiency?
+  - <span class="Grupo-de-estilos-2_Caps">How to Run the Economy on the Weather</span>
+    - Adjusting energy demand to supply would make switching to renewable energy much more realistic than it is today.
+    - Renewable Energy in Pre-Industrial Times
+    - Dealing with Intermittency in Pre-Industrial Times
+    - Adjusting Demand to Supply: Factories
+    - Adjusting Demand to Supply: Sailboats
+    - Old Approach, New Technology
+    - Industrial Manufacturing
+    - Thermal Energy
+    - Limited Energy Storage
+    - The New Age of Sail
+    - Wind and Solar Powered Trains
+    - Consequences for Society: Consumption & Production
+    - Consequences for the Workforce
+    - What About the Internet?
+  - <span class="Grupo-de-estilos-2_Caps">How (Not) to Run a Modern Society on Solar and Wind Power Alone</span>
+    - 100% Renewable Energy
+    - The Intermittency of Solar Energy
+    - The Intermittency of Wind Energy
+    - How to Match Supply with Demand?
+    - Strategy 1: Backup Power Plants
+    - Strategy 2: Oversizing Renewable Power Production
+    - Strategy 3: Supergrids
+    - Strategy 4: Energy Storage
+    - Matching Supply to Demand = Overbuilding the Infrastructure
+    - Adjusting Demand to Supply
+  - <span class="Grupo-de-estilos-2_Caps">Could We Run Modern Society on Human Power Alone?</span>
+    - Unlike solar and wind energy, human power is always available, no matter the season or time of day.
+    - The Rise and Fall of Human Power
+    - Why Human Power?
+    - Lessons from the Gym
+    - How to Motivate Human Power?
+    - Designing the Prototype
+    - Water Under Pressure
+    - For Rent: 750 Human Powered Student Rooms
+    - Power Generation Schedule
+  - <span class="Grupo-de-estilos-2_Caps">Heat Storage Hypocausts: Air Heating in the Middle Ages</span>
+    - The heat storage hypocaust could keep a room warm for days with just one firing of the furnace.
+    - Hypocausts
+    - Heat Storage Hypocausts
+    - A Weekly Fire
+    - Baltic Sea Region
+    - Hypocausts in Tallinn
+    - Tile Stoves
+    - <span class="Grupo-de-estilos-2_Character-Style-3">Welcome to the Office</span>
+    - The Energy Footprint of Office Work
+    - How Did We Get Here?
+    - Cultural Differences
+    - The Promise of Remote Working
+    - Does it Matter Where We Work?
+    - How Much Office Work Do We Need?
+  - <span class="Grupo-de-estilos-2_Caps">Why the Office Needs a Typewriter Revolution</span>
+    - Could we rethink and redesign office equipment, combining the best of mechanical and digital devices?
+    - The Artisanal Office (Antiquity–1870s)
+    - The Mechanized Office (1870s–1950s)
+    - Typewriters
+    - Mechanical Calculators
+    - Teletypewriters
+    - The Energy Footprint of the Mechanized Office
+    - The Digital Office (1950s–today)
+    - Screens, Printers and Scanners
+    - Welcome to the Paperless Office
+    - The Energy Footprint of the Digital Office
+    - The Lower Energy Office of the Future
+    - The “Back-in-Time” Sustainable Office
+    - The Low-tech Sustainable Office
+    - E-Typewriters
+    - Hardware Word Processors
+    - Dot-Matrix Printers
+  - <span class="Grupo-de-estilos-2_Caps">How to Get Your Apartment Off the Grid</span>
+    - How to get your apartment off the grid using a low-voltage direct current solar system on window sills and balconies.
+    - Solar Powered Home Office
+    - Home Office Power Use
+    - 1. Adjust the Tilt of the Solar Panels
+    - 2. Opt for a Low-Voltage DC System
+    - 3. Adjust Energy Demand to Meet Available Supply
+    - Build Multiple Solar PV Systems
+    - Learning from Your Mistakes
+    - Before You Start
+  - <span class="Grupo-de-estilos-2_Caps">Slow Electricity: The Return of DC Power?</span>
+    - Renewed Interest in DC Power
+    - More Solar Power for Less Money
+    - How Much Energy Can Be Saved?
+    - The Importance of Energy Storage
+    - Off-Grid Solar Systems
+    - Cable Losses
+    - How to Limit Cable Losses
+    - Slow Electricity
+  - <span class="Grupo-de-estilos-2_Caps">Power Water Networks</span>
+    - A Machine for Multiplying Forces
+    - The Hydraulic Press
+    - Harbors and Dockyards
+    - The Hydraulic Accumulator
+    - Water Powered Factory Machinery
+    - Power Water Networks
+    - London Hydraulic Power Company
+    - Power Networks Outside Britain
+    - Power Water Versus Electricity
+    - Advantages of Electric Power
+    - Advantages of Power Water
+    - Hydraulics Today
+    - Alternatives to Electricity
+  - <span class="Grupo-de-estilos-2_Caps">Fruit Walls: Urban Farming in the 1600</span>s
+    - Glass Greenhouse
+    - Fruit Walls
+    - Peach Walls in Paris
+    - Grapes in Thomery
+    - Serpentine Fruit Walls
+    - Heated Fruit Walls
+    - The Birth of the Greenhouse
+  - <span class="Grupo-de-estilos-2_Caps">Reinventing the Greenhouse</span>
+    - Contrary to its fully glazed counterpart, a passive solar greenhouse is designed to retain as much warmth as possible.
+    - Fruit Walls
+    - The Chinese Solar Greenhouse
+    - Improving the Chinese Solar Greenhouse
+    - Performance of the Chinese Solar Greenhouse
+    - Solar Greenhouses in Northern Climates
+    - More Space Needed
+    - Compost Heated Greenhouses
+  - <span class="Grupo-de-estilos-2_Caps">Why We Need a Speed Limit for the Internet</span>
+    - The energy use of the internet can only stop growing when energy sources run out, unless we impose self-chosen limits.
+    - How Much Energy Does the Internet Consume?
+    - Eight Billion Pedallers to Power the Internet
+    - Increasing Energy Consumption per User
+    - High-Speed Wireless Internet
+    - More Time Online
+    - Increasing Bit Rates: Music & Video
+    - Does the Internet Save Energy?
+    - Time and Distance
+    - Rebound Effects
+    - Efficiency Drives Energy Use
+    - Sufficiency
+    - A Speed Limit for the Internet
+  - <span class="Grupo-de-estilos-2_Caps">How to Build a Low-tech Internet</span>
+    - The “Worldwide” Web
+    - WiFi-based Long Distance Networks
+    - Advantages of Long Range WiFi
+    - Long Range WiFi Networks in Poor Countries
+    - WiFi-Based Community Networks in Europe
+    - Performance of Low-tech Networks
+    - Delay-Tolerant Networks
+    - Data Mules
+    - Delay-Tolerant Software
+    - Sneakernets
+    - Resilient Networks
+  - <span class="Grupo-de-estilos-2_Caps">How Sustainable is PV Solar power?</span>
+    - The Good News
+    - Manufacturing of Solar Panels has Moved to China
+    - LCA of Solar Panels Manufactured in China
+    - Energy Cannibalism
+    - The CO<span class="Grupo-de-estilos-2_Sub _idGenCharOverride-3">2</span> Balance of Solar PV
+    - The Solution: Rethink the Manufacture and Use of Solar PV
+    - What About Storage?
+  - <span class="Grupo-de-estilos-2_Caps">How Sustainable is Stored Sunlight?</span>
+    - Energy storage is often ignored when scientists investigate the sustainability of PV systems.
+    - A Positive Bias
+    - Off-grid Solar Power is Back
+    - Lead-Acid Battery Storage
+    - Battery Lifespan
+    - Made in China
+    - Lithium-ion Battery Storage System
+    - 6× Less Batteries Needed
+    - GHG Emissions of the Off-grid System with Lithium-ion Batteries
+    - Battery Production Powered by Renewable Energy?
+  - <span class="Grupo-de-estilos-2_Caps">Restoring the Old Way of Warming: Heating People, not Places</span>
+    - Conduction, Convection, Radiation
+    - Thermal Comfort at Low Air Temperatures
+    - The Old Way of Warming
+    - Local Insulation
+    - Portable Heating Systems
+    - Conductive Heating Systems
+    - Why We Also Need Modern Technology
+  - <span class="Grupo-de-estilos-2_Caps">The Revenge of the Circulating Fan</span>
+    - The Rise of Air-Conditioning
+    - Peak Power Demand
+    - The Historical Evolution of the Fan
+    - How to Keep People Cool?
+    - Why AC is Inefficient
+    - The Cooling Potential of Circulating Fans
+    - Energy Savings of Circulating Fans
+    - The Limitations of Fans
+    - Greater Comfort
+    - Why are Fans Overlooked as a Cooling Option?
+    - AC has Produced AC-Architecture
+  - <span class="Grupo-de-estilos-2_Caps">Well-Tended Fires Outperform Modern Cooking Stoves</span>
+    - Despite technological advancements since the Industrial Revolution, cooking remains a spectacularly inefficient process.
+    - Three-stone Fire
+    - The Thermal Efficiency of a Three-stone Fire
+    - The Thermal Efficiency of Improved Biomass Stoves
+    - Cooking in Wealthy Households
+    - Power Conversion Losses
+    - Heat Transfer Loss
+    - Indoor Air Pollution in Rich vs. Poor Households
+    - Air Pollution and Greenhouse Gas Emissions
+    - What’s the Solution?
+  - <span class="Grupo-de-estilos-2_Caps">If We Insulate Our Houses, Why Not Our Cooking Pots?</span>
+    - Why is Cooking so Inefficient?
+    - Pot Skirts
+    - Pressure Cookers
+    - Fireless Cookers
+    - Fireless Cookers in History
+    - Improved Fireless Cookers
+    - Time Saving
+    - Solar Cookers + Fireless Cookers
+    - Indoor Solar Cooking
+    - Making Cooking Sustainable: “Integrated Cooking”
+  - <span class="Grupo-de-estilos-2_Caps">Modular Cargo Cycles</span>
+    - Modular cargo cycles are cheap to build and easy to customize.
+    - Innovation
+    - Modular Cargo Cycles
+    - Easy to Build and Customize
+    - Available Models and Free Plans
+  - <span class="Grupo-de-estilos-2_Caps">High Speed Trains are Killing the European Railway Network</span>
+    - Not Flying
+    - Paris–Brussels–Amsterdam
+    - Killing the Alternatives
+    - Barcelona–Paris
+    - Let’s go East!
+    - High Speed Trains are Not Sustainable
+    - Modal Shift
+    - High Speed Trains Fuel Air Traffic
+    - Towards a Truly Sustainable Transportation System
+    - High Speed Rail in the 1950s
+    - High Speed Trains for Everybody: EuroCity
+    - What Makes a Train Affordable?
+    - What Makes a Train Fast?
+    - High Speed Night Trains
+    - Anti-Progress?
+  - <span class="Grupo-de-estilos-2_Caps">Power from the Tap: Water Motors</span>
+    - Power from the Tap
+    - Water Powered Household Devices
+    - Output and Efficiency of a Water Motor
+    - Water Use
+    - Irregular Water Pressure
+    - In Search of a Better Solution: the Hydraulic Accumulator
+  - <span class="Grupo-de-estilos-2_Caps">Back to Basics: Direct Hydropower</span>
+    - The hydro power installations in use today are less energy efficient than those of earlier centuries.
+    - From Water Wheel to Turbine
+    - Why Modern Hydro Power is Less Efficient
+    - Why Direct Hydropower Makes Sense
+    - Old-School Approach, Modern Materials
+    - Precise Control
+    - Direct Hydropowered Woodworking Unit
+    - Upgrading Medieval Water Mills
+    - Replacing Diesel Engines
+    - The Best of Both Worlds
+  - <span class="Grupo-de-estilos-2_Caps">The Mechanical Transmission of Power: Stangenkunst</span>
+    - Long-distance power transmission predates the invention of electricity by almost four centuries.
+    - Revival of the Mining Industry
+    - Solution One: Bring Water to the Mine
+    - Stangenkunst: Transporting Water Power Uphill
+    - Vertical Power Transmission
+    - Round Corners, Up-hill, Down-dale
+    - The Hoisting Machines of Christopher Polhem
+    - Man Engines
+    - Stangenkunsten during the Industrial Revolution
+    - Stangenkunsten on Rails
+    - Steel Cables Replace Wooden Rods
+    - The Stangenkunst Embraces the Steam Engine
+  - <span class="Grupo-de-estilos-2_Caps">The Mechanical Transmission of Power: Jerker Line Systems</span>
+    - History
+    - The Canadian Jerker Line System
+    - Subdividing and Distributing Power
+    - The Pennsylvania Jerker Line System
+    - One Engine Powers 45 Pumps
+    - Implications for Field Layout
+    - A Balanced System
+    - Shacklework
+    - Jerker Line Systems Still in Operation
+    - More Efficient
+    - Future Applications
+  - <span class="Grupo-de-estilos-2_Caps">The Mechanical Transmission of Power: Endless Rope Drives</span>
+    - Mechanical Power Transmission
+    - The Millwork
+    - Wire Rope Power Transmission
+    - Wire Rope
+    - How Did it Work?
+    - Diffusion of the Technology
+    - The Schaffhausen Transmission
+    - Other Examples
+    - Efficiency
+    - How Would a Present-day Wire Rope Transmission Compare to Electricity?
+    - Substituting Velocity for Mass
+    - Running Stronger Ropes at Higher Speeds
+    - More Efficient for Small-scale, Decentralized Energy Production
+    - Long-distance Rope Drives
+  - <span class="Grupo-de-estilos-2_Caps">How to Make Everything Ourselves: Open Modular Hardware</span>
+    - Modular Products
+    - Grid Beam, Bit Beam, Open Beam, Maker Beam and Contraptor
+    - OpenStructures
+    - Open versus Closed Modular Systems
+    - Sustainable Consumer Goods
+    - Circulation of Parts
+    - Cargo Cycle
+    - A Modular Database
+    - Not Everyone is a Designer
+    - Economic Model: Who Produces the Parts?
+    - Collaborative Economy
+    - Organizing Re-use
+    - Compatibility between Open Modular Systems
+    - About a quarter of the existent wind turbines would suffice to power as many electric velomobiles as there are people.
+    - Cycling Distance
+    - The Advantages of an Electric Assist Velomobile
+    - Test Driving a Ferrari
+    - Cycling at 50 km/h
+    - Maximizing Range and Efficiency
+    - 80 times More Efficient than Electric Cars
+    - Range Anxiety
+    - Fast and Smooth Traffic
+    - Legal Limbo
+    - Towards a New Class of Vehicles?
+    - Pimp up Your Velomobile
+    - Trading Efficiency and Range for Speed or Comfort
+  - <span class="Grupo-de-estilos-2_Caps">Cargo Cyclists Replace Truck Drivers on European City Streets</span>
+    - A cargo cycle is at least as fast as a delivery van in the city — and much cheaper to use.
+    - City Cargo Transport
+    - Cargo Cycles Are Fast, Efficient, Clean and Quiet
+    - 98 Percent Cheaper
+    - Europe Promotes Cargo Cycling
+    - Electric Assisted Cargo Cycles in Germany
+    - Courier Services
+    - Tradesmen & Service Providers
+    - Learning from the Past
+    - Private Use of Cargo Cycles
+    - Will Cargo Cycles Work Everywhere?
+  - <span class="Grupo-de-estilos-2_Caps">The Solar Envelope: How to Heat and Cool Cities without Fossil Fuels</span>
+    - Passive Solar Buildings
+    - From Solar Oriented Buildings to Solar Oriented Cities
+    - Modification of Traditional Zoning Practices
+    - The Geometry of the Solar Envelope
+    - Defining Solar Access
+    - What About Existing Buildings?
