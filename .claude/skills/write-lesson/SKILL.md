@@ -53,7 +53,9 @@ Arguments: `$ARGUMENTS` (major slug, course id, optional topic; with no topic, w
    - Plain teacher's prose: no file paths, rule numbers, platform jargon, or the learner's words quoted back (rule 31).
 5. **Questions: invoke the `write-questions` skill** for every objective (and the warm-up), giving it the objective, what this
    and earlier lessons taught, the reading span, and the book's exercise numbers. Place what it returns at the right spot in the
-   body. Do not write question rules here or improvise questions without it.
+   body; variants beyond v1–v2 go in the lesson's `.variants.md` bank. Then run
+   `python3 .claude/skills/write-questions/check_questions.py <lesson.md>` and fix every error. Do not write question rules here
+   or improvise questions without it.
 6. **Check every fact and number.** Compute anything checkable with code (sympy, Python, dates) using assertions that don't print
    answers (rule 22). Anything you're unsure of, or any paraphrase of the book: send the `researcher` agent, or reread the
    source sentence yourself (rules 10, 14). If a check changes the teaching, say so.

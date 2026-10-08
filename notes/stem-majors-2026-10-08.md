@@ -64,7 +64,8 @@ Full proposal: `notes/practice-variants.md`. Short version:
   typed answer), the problem in reverse, an application to a new situation, and a near-miss that differs only in the detail
   people confuse. A miss brings back a sibling question, not the same one. For math-heavy courses, textbook exercises with the
   numbers changed are the default source (your suggestion). Answers are recomputed in code, and the library's grade rules still
-  apply: on grade-B books, equations are retyped from the original page, never copied from the converted text.
+  apply: on grade-B books, a problem's wording can be reused, but any formula is derived and checked in code (never copied
+  from the converted text), or the lesson just cites the exercise number for you to read in your own copy.
 - **Status:** the naming convention for question families is in place now. Making the review deck pick a sibling is a code
   change (lp.js, review.html, quiz.py, server), listed in HANDOFF.
 

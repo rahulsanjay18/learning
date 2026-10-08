@@ -24,9 +24,12 @@ phase 2 (the review deck picks a sibling) is a to-do in HANDOFF, not built yet.*
    - **Transfer:** the idea in a situation the lesson never showed (Butler's "new inferential questions" [2]).
    - **Discriminate:** a near-miss that only differs in the confusable detail (Type I vs II). Interleaving works best on
      confusable pairs [see notes/evidence-spacing-and-variety.md].
-3. Where they live: v1 (and often v2) in the lesson; the rest in a later lesson's warm-up or review day, or in the family bank
+3. Math-heavy courses: the default variant source is the course's own textbook exercises with the numbers changed (cite
+   "adapted from …"; recompute in code). Grade-B books: reuse the wording, derive any formula yourself and check it in code, or
+   cite the exercise number only (library/README.md). Details: the `write-questions` skill.
+4. Where they live: v1 (and often v2) in the lesson; the rest in a later lesson's warm-up or review day, or in the family bank
    at `topics/<t>/lessons/NNNN-name.variants.md` (Markdown quiz blocks, same syntax as lessons) for phase 2 to draw from.
-4. Every variant obeys the question rules (TEACHING-LOG rules 2, 3, 5, 6, 8, 11, 16, 18, 19, 23, 25; self-contained, unambiguous,
+5. Every variant obeys the question rules (TEACHING-LOG rules 2, 3, 5, 6, 8, 11, 16, 18, 19, 23, 25; self-contained, unambiguous,
    options equal in length).
 
 ## Phase 2: the review deck uses families (to build; HANDOFF)
