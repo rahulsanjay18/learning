@@ -113,8 +113,8 @@ flowchart TB
   class IV100 later
   class IN100 active
   class VI100 later
-  class SE000 active
-  class SE101 later
+  class SE000 done
+  class SE101 active
   class SE110 later
   class SE120 later
   class SE130 later
@@ -171,9 +171,10 @@ flowchart TB
 **IN100 Things I find interesting (continuous)**
 - primary: —
 
-**SE000 Placement: where you are against a staff rubric**
-- primary: Public staff rubrics: Larson's archetypes (staffeng.com) + a public engineering career framework; your own work as the evidence
-- secondary: Reilly, The Staff Engineer's Path, Ch. 1 (owned)
+**SE101 What staff is, and how people get there**
+- primary: Reilly, The Staff Engineer's Path (O'Reilly, 2022), Part I: wanted
+- secondary: Larson, Staff Engineer: Leadership beyond the management track (2021); its guides and stories are free at staffeng.com
+- tertiary: Julia Evans, 'Get your work recognized: write a brag document' (free, jvns.ca)
 
 **AW000 AWS placement and exam date**
 - primary: AWS MLA-C02 exam guide (domains and task statements)

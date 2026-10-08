@@ -3,6 +3,8 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-08: eng 0001 graded** (record eng/0001: tech lead, target Solver; nothing shrinks). SE000 done, **SE101 active: write its
+  syllabus before Monday's staff block** (prefer Reilly Part I once the staff books are indexed). Vim is now a shown tip (rule 30).
 - **2026-10-07 (later): lessons built ahead** with current info: eng 0001 staff placement and 0002 AWS placement (pretest), IH 0004
   Vedic age (opens with the Indus-stages re-teach), chess 0003 "what did their move do?", military strategy 0002 annihilation vs.
   exhaustion. Stats 0007 waits on 0006 results. MLA-C02 GA is **"TBD"** on AWS's page (not 2027-01-14); 0002 asks the learner for a target date.

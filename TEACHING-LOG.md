@@ -92,6 +92,9 @@ Rules 11, 13 and 18 are format and logistics.
     and positive on average for skills (Donovan & Radosevich 1999). (c) **Interleave confusable problem types on purpose**
     (interleaving helps most when items are similar: Brunmair & Richter 2019). Evidence is thinner for complex skills, so measure
     on the learner's own review data. Full audit with limits: `notes/evidence-spacing-and-variety.md`. (Entry 28)
+30. **Skills on the side get taught, not tested.** A side skill inside a lesson (Vim in the eng major) is a one-minute tip that shows the
+    exact keys and what each does, optional to try and send; correct what the learner sends. No par, no golf scoring, no setup homework.
+    (Entry 29)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -170,3 +173,7 @@ Rules 11, 13 and 18 are format and logistics.
     You kinda do that with singular problems and that's nice but it's the least useful, because a variety of problems/questions
     centering around a concept is better for learning."** Lessons recapped by attaching one problem to an old concept, and gave
     most concepts a single practice item. Fix: rule 29 (recap boxes; several varied questions per concept).
+29. **2026-10-08 · "Maybe I went too hard on you on the Vim stuff, I do want to learn it but this level feels excessive."** Eng 0001
+    opened with a keystroke-golf drill (par 7, replayed and scored) plus a Vim-setup rep, for a learner who knows the basics and asked to
+    be taught as they go ("just correct me as I go"). The attempt walked to each line end with w/l instead of `A`, i.e. the tip itself
+    had never been shown. Fix: Vim is a one-minute tip with the keys shown; sending keys is optional and gets a correction; Rep 0 waived; rule 30.

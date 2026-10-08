@@ -33,8 +33,13 @@ def from_caret(rec):
     """`cat -v` text of a `vim -W` recording -> Vim notation, without the final save-and-quit."""
     names = {"[": "<Esc>", "M": "<CR>", "I": "<Tab>", "?": "<BS>", "H": "<BS>", "J": "<CR>"}
     out, i, rec = [], 0, rec.rstrip("\n")
+    arrows = {"ku": "<Up>", "kd": "<Down>", "kl": "<Left>", "kr": "<Right>"}
     while i < len(rec):
         c = rec[i]
+        if rec.startswith("M-^@M-}", i):        # Vim's internal pseudo-key (K_SPECIAL KS_EXTRA x), e.g. logged after <Esc>:
+            i += 8; continue                      # not something the learner typed
+        if rec.startswith("M-^@", i) and rec[i + 4:i + 6] in arrows:   # Vim's -s replay ignores arrow keys, so it can't check them
+            sys.exit(f"this recording uses arrow keys ({arrows[rec[i + 4:i + 6]]}), which replay can't check: redo it with h j k l")
         if c == "^" and i + 1 < len(rec) and (rec[i + 1] in names or rec[i + 1].isalpha()):
             nxt = rec[i + 1]
             out.append(names.get(nxt) or f"<C-{nxt.lower()}>"); i += 2; continue

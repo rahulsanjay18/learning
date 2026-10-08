@@ -15,14 +15,14 @@
 <h2>How this works</h2>
 <p>This is a <strong>pretest</strong>: nothing here was taught yet, and none of it comes back in your review deck. Press <strong>I don't know</strong> rather than guess; a guess makes the map wrong. You'll also be asked how sure you were after right answers. The questions follow the official <strong>MLA-C02 exam guide</strong>: four domains, weighted 28% / 24% / 24% / 24% [1], plus a few AWS foundations the exam assumes.</p>
 <p><strong>One thing to know first:</strong> MLA-C02 is new. Its beta started on 29 September 2026; AWS lists general availability as "TBD" [2]. The C02 guide adds foundation models, RAG and agents to the older ML engineering content. And two services that older prep material leans on, SageMaker Model Monitor and SageMaker Clarify, are now "no longer open to new customers" [3][4]; the C02 guide's monitoring skills name CloudWatch generative AI observability and Amazon Bedrock evaluations instead [1]. So check the date of any prep course or practice exam against the C02 guide.</p>
-<h2>Warm-up: Vim (2 minutes)</h2>
-<div class="callout"><p><strong>Practical Vim, text objects: change inner word.</strong> Rename the method to <code>choose_move</code> with as few keystrokes as you can. The cursor starts on the <code>d</code> of <code>def</code>, in Normal mode. Par is 16. Easiest: record them with <code>vim -W keys.log drill.txt</code> and paste the output of <code>cat -v keys.log</code> (<a href="../reference/vim-drills.md">how</a>).</p>
-<p>Start: <code>def select_action(self, obs, legal, info):</code></p>
-<p>Target: <code>def choose_move(self, obs, legal, info):</code></p></div>
+<h2>Vim tip (1 minute, optional)</h2>
+<div class="callout"><p><strong>Change inner word: <code>ciw</code>.</strong> With the cursor anywhere inside a word, <code>ciw</code> deletes the whole word and puts you in Insert mode, so you can type its replacement. You don't need to move to the word's start first.</p>
+<p>Example: renaming <code>select_action</code> to <code>choose_move</code> in <code>def select_action(self, obs, legal, info):</code>, with the cursor on the <code>d</code> of <code>def</code>: <code>w</code> (jump to the next word, <code>select_action</code>), <code>ciw</code>, type <code>choose_move</code>, <code>&lt;Esc&gt;</code>. That's it.</p>
+<p>Try it on any file if you like. If you want feedback, paste your keys below (or a <code>vim -W</code> recording: <a href="../reference/vim-drills.md">how</a>).</p></div>
 
 <div class="quiz" data-type="free" data-id="vim-v02">
-<p class="prompt">Your keystrokes (write Escape as <code>&lt;Esc&gt;</code>):</p>
-<div class="rubric"><p>Checked by replaying: python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json v02-ciw "&lt;keys&gt;". PASS = buffer equals target. Par 16 (wciwchoose_move&lt;Esc&gt;). The tip: <code>ciw</code> changes the whole word wherever the cursor is inside it.</p></div>
+<p class="prompt">(Optional) Your keys, if you tried it:</p>
+<div class="rubric"><p>Optional, no score pressure. Replay with python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json v02-ciw "&lt;keys&gt;" (add --caret for a cat -v recording). Give one correction if there's a shorter or more idiomatic way; otherwise say it's right.</p></div>
 </div>
 <h2>Part 1: AWS foundations the exam assumes</h2>
 <div class="quiz" data-type="choice" data-id="f-iam" data-options="An execution role allowing only read actions on that one bucket|An execution role that has the AWS managed AdministratorAccess policy attached|Long-term access keys for an IAM user, stored in the script|A bucket policy that allows public read access to the bucket" data-answer="An execution role allowing only read actions on that one bucket">

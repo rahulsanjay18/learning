@@ -34,8 +34,9 @@ Think of this major as a bandit problem:
   `/program` shows open reps and how old they are.
 - **Who does what:** you do the staff-level part of the ticket: design doc, ADR, decision, prioritization, threat model, PR review and
   merge. I write the code as a PR for you to review. When the lesson's skill *is* the code (C, C++, CUDA, Spark), you write it and I review.
-- **Vim, every lesson:** a 2-minute drill from *Practical Vim* (in your library). You paste your keystrokes, and I replay them in real Vim to check
-  the result and count them (`scripts/vimcheck.py`). Your reps are edited in Vim too.
+- **Vim, as you go** (changed 2026-10-08 at your request: the drills felt excessive): each lesson shows one *Practical Vim* tip with the
+  exact keys and what each does. Trying it is optional; if you send keys (typed, or a `vim -W` recording), I replay them
+  (`scripts/vimcheck.py`) and correct you. No par, no scoring, no setup homework.
 - **Never empty:** when a course ends, the next one in its lane starts at once.
 - **Self-updating:** the cert/skill/pay catalog (`catalog.json`) re-checks itself (`scripts/catalog.py`), and each rep's ticket is
   re-checked on GitHub before it's assigned.

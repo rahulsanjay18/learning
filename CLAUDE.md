@@ -65,7 +65,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
 - Continuous, four lanes (Mon staff, Wed tech, Thu interview, Fri interest = explore). Every lesson ends with a **required rep** from my 3D chess backlog (or another venue: platform, lab, day job) (`topics/eng/backlog.json`):
   the next lesson in that lane waits until it ships (PR/doc link) or I skip it with a reason. This overrides "homework is optional" for this major only.
 - **You write the code; I do the staff-level work** (design docs, ADRs, decisions, review). When the code is the skill (C, C++, CUDA, Spark), I write it.
-- Every lesson opens with a Vim drill; check my keystrokes with `python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> "<keys>"`.
+- Every lesson opens with a one-minute Vim tip (keys shown, optional to try; 2026-10-08: drills felt excessive). If I send keys, replay them with
+  `python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> "<keys>"` (`--caret` for a `cat -v` recording) and correct me. TEACHING-LOG rule 30.
 - **Use what I care about, not generic corporate problems** (2026-10-07: "a lot of corporate problems I really don't care about").
   Anything I bring up that can build a career skill becomes material: turn my spitballing into backlog exercises
   (`topics/eng/backlog.json`, platform or 3D chess). Exception: the interview lane also uses some standard prompts, because real

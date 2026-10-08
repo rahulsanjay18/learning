@@ -1,7 +1,7 @@
 # Engineering career: syllabus (lesson-level plan for the active courses)
 
-Lanes: **Mon staff · Wed tech · Thu interview · Fri interest** (`curriculum.json` → `lanes`). Every lesson opens with a Vim drill
-(`vim-drills.json`, checked by `scripts/vimcheck.py`) and ends with a rep from `backlog.json` (required except in the interest lane).
+Lanes: **Mon staff · Wed tech · Thu interview · Fri interest** (`curriculum.json` → `lanes`). Every lesson opens with a one-minute Vim tip
+(keys shown; optional to send; corrections via `scripts/vimcheck.py`; TEACHING-LOG rule 30) and ends with a rep from `backlog.json` (required except in the interest lane).
 Objectives are graded Got it / Not yet (TEACHING-LOG rule 20).
 
 ## SE000 Placement: where you are against a staff rubric (staff lane)

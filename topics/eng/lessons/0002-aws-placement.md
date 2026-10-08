@@ -16,22 +16,23 @@ material leans on, SageMaker Model Monitor and SageMaker Clarify, are now "no lo
 monitoring skills name CloudWatch generative AI observability and Amazon Bedrock evaluations instead [1]. So check the date of any
 prep course or practice exam against the C02 guide.
 
-## Warm-up: Vim (2 minutes)
+## Vim tip (1 minute, optional)
 
 ::: callout
-**Practical Vim, text objects: change inner word.** Rename the method to `choose_move` with as few keystrokes as you can. The cursor
-starts on the `d` of `def`, in Normal mode. Par is 16. Easiest: record them with `vim -W keys.log drill.txt` and paste the output of `cat -v keys.log` ([how](../reference/vim-drills.md)).
+**Change inner word: `ciw`.** With the cursor anywhere inside a word, `ciw` deletes the whole word and puts you in Insert mode, so you
+can type its replacement. You don't need to move to the word's start first.
 
-Start: `def select_action(self, obs, legal, info):`
+Example: renaming `select_action` to `choose_move` in `def select_action(self, obs, legal, info):`, with the cursor on the `d` of `def`:
+`w` (jump to the next word, `select_action`), `ciw`, type `choose_move`, `<Esc>`. That's it.
 
-Target: `def choose_move(self, obs, legal, info):`
+Try it on any file if you like. If you want feedback, paste your keys below (or a `vim -W` recording: [how](../reference/vim-drills.md)).
 :::
 
 ::: free vim-v02
-Your keystrokes (write Escape as `<Esc>`):
+(Optional) Your keys, if you tried it:
 --- rubric
-Checked by replaying: python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json v02-ciw "<keys>". PASS = buffer equals target.
-Par 16 (wciwchoose_move<Esc>). The tip: `ciw` changes the whole word wherever the cursor is inside it.
+Optional, no score pressure. Replay with python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json v02-ciw "<keys>" (add --caret for
+a cat -v recording). Give one correction if there's a shorter or more idiomatic way; otherwise say it's right.
 :::
 
 ## Part 1: AWS foundations the exam assumes

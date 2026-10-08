@@ -101,7 +101,7 @@
     {
       "id": "SE000",
       "title": "Placement: where you are against a staff rubric",
-      "status": "active",
+      "status": "done",
       "est_lessons": 1,
       "pretest": true,
       "group": "core",
@@ -119,12 +119,15 @@
       "lessons": [
         "0001-staff-placement"
       ],
-      "lane": "staff"
+      "lane": "staff",
+      "completed": [
+        "0001-staff-placement"
+      ]
     },
     {
       "id": "SE101",
       "title": "What staff is, and how people get there",
-      "status": "later",
+      "status": "active",
       "requires": [
         "SE000"
       ],
@@ -142,7 +145,8 @@
         ],
         "skip": []
       },
-      "lane": "staff"
+      "lane": "staff",
+      "note": "Placement 2026-10-08: tech lead at team scope, target archetype Solver; no written strategy, no cross-team conflict work yet. Nothing shrinks; emphasize Solver (SE120 depth)."
     },
     {
       "id": "SE110",
