@@ -41,7 +41,9 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
   no partial files. Also fixed: add_books crash (two `run` functions) and a compose build-path check. Servers now on current code;
   47 old pretest review rows dropped. **Next:** learner reruns `add_books.py`, then `/new-books` (staff books).
   **2026-10-08:** `add_books.py` step 2 now runs `scripts/safe_convert.py` (triage, light engines, RAM/temperature watchdog,
-  DANGEROUS.csv); `reconvert.py` stays for manual use. Watchdog kills so far are all CPU temperature (DANGEROUS.csv).
+  DANGEROUS.csv); `reconvert.py` stays for manual use. Same day, defaults revised from the log: heat waits instead of
+  blacklisting (all 120 kills had been temperature false positives at 85 °C; DANGEROUS.csv cleared), 95 °C, Tdie not Tctl, pandoc heap cap,
+  --max-mb 2048, EPUBs no size limit (timeout instead), --max-pages 1100 (PDFs only).
 - **2026-10-07: pretests no longer feed review** (TEACHING-LOG rule 28). **Learner: redeploy progress-server**; then I call
   `POST /progress/review/drop {"pages":["statistics/0001-placement-pretest","statistics/0005-ch1-pretest","indian-history/0001-placement-pretest","economics/0001-placement-pretest"]}`
   to clear the old server rows (the review deck already hides them). **Staff books aren't on the book server** (title and full-text search, 2026-10-07): redeploy book-server, then `/new-books`; add Reilly Ch. 1 to eng 0001 once it's there.

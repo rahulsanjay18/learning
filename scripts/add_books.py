@@ -7,10 +7,11 @@
 Steps:
   1. git pull this repo
   2. convert every book in BOOKS_ROOT with no Markdown in MD_ROOT yet, with the crash-safe converter (scripts/safe_convert.py):
-     triage first (skips encrypted/damaged files, files over --max-mb, PDFs over --max-pages), light engines only by default
-     (text PDFs, EPUB, AZW3/MOBI, HTML, DOCX, TXT; scanned PDFs and DjVu only with --allow-ocr/--pdf), and a watchdog that
-     kills a converter on low system RAM, high converter RAM, CPU temperature or timeout. Killed books go on
-     library/DANGEROUS.csv and are skipped unless --retry-dangerous
+     triage first (skips encrypted/damaged files, files over --max-mb, PDFs over --max-pages; EPUBs: no size or page limit),
+     light engines only by default (text PDFs, EPUB, AZW3/MOBI, HTML, DOCX, TXT; scanned PDFs and DjVu only with --allow-ocr/--pdf),
+     and a watchdog that kills a converter on low system RAM, high converter RAM or timeout (killed books go on
+     library/DANGEROUS.csv and are skipped unless --retry-dangerous). Heat only pauses: it waits for the CPU to cool before
+     each book, and a book stopped for heat is retried next run, never blacklisted
   3. grade all Markdown -> library/MANIFEST.csv + library/toc/ (scripts/grade_library.py)
   4. rebuild the search index at the db path your compose file mounts for book-server (book-server/build_index.py)
   5. docker compose up -d --build book-server progress-server

@@ -16,13 +16,18 @@ It pulls the repo, converts every book with no Markdown yet, grades, rebuilds th
 for book-server), rebuilds book-server and progress-server, and commits + pushes `library/`. Your paths are its defaults.
 
 **Conversion is crash-safe by default (2026-10-08): step 2 is `scripts/safe_convert.py`**, not `reconvert.py`.
-- Triage first: encrypted, damaged and empty files, files over `--max-mb` (100), and PDFs over `--max-pages` (800) are skipped.
+- Triage first: encrypted, damaged and empty files are skipped, and so are PDFs over `--max-pages` (1100; PDFs only) and files over
+  `--max-mb` (2048: above every book in the library, so it only catches absurd files). EPUBs have no size or page limit
+  (`--max-mb-epub`, default 0): a slow one ends at `--timeout`. Measured: a 2,000-page text EPUB took 25 s and 1.05 GB.
 - Only light engines run: text PDFs go through pymupdf4llm; EPUB/AZW3/MOBI/HTML/DOCX/TXT go through pandoc, calibre or a plain copy;
   the GPU is hidden. Scanned PDFs and DjVu are skipped unless you pass `--allow-ocr` (alias `--pdf`).
-- A watchdog kills a converter when system free RAM drops below `--min-free-gb` (4), when the converter uses more than
-  `--max-rss-gb` (6), when the CPU passes `--max-temp-c` (85 °C), or after `--timeout` seconds (1200).
-  A killed book goes on `library/DANGEROUS.csv` and is skipped from then on unless you pass `--retry-dangerous`.
-  After 5 kills the run stops (`--max-kills`).
+- RAM watchdog: a converter is killed when system free RAM drops below `--min-free-gb` (4), when it uses more than `--max-rss-gb` (6; pandoc
+  also gets a hard heap cap of the same size), or after `--timeout` seconds (1200). A killed book goes on `library/DANGEROUS.csv`
+  and is skipped from then on unless you pass `--retry-dangerous`. After 5 kills the run stops (`--max-kills`).
+- Heat is the machine's state, not the book's: before each book the run waits until the CPU is below `--max-temp-c` (95 °C), and a
+  converter is stopped only after `--hot-seconds` (30) above it. That book is logged `hot`, is **not** put on DANGEROUS.csv, and is
+  tried again next run. On AMD it reads Tdie/Tccd, not Tctl. (Up to 2026-10-08 all 120 kills were temperature kills 0–9 s into a book,
+  all at 85 °C; those 12 DANGEROUS.csv entries were cleared.) If the run waits forever, run `sensors` at idle.
 
 Other options: `--dry-run` (triage report only), `--limit N`, `--only epub`, `--source csv` (the `library/RECONVERT.csv`
 retry list instead of new books), `--no-docker`, `--no-commit`, `--no-pull`. Needs `pip install tqdm psutil pymupdf4llm`.

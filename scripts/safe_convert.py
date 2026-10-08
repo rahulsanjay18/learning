@@ -3,7 +3,7 @@
 
 Three layers of protection:
   1. TRIAGE before touching a book (cheap, no ML):
-     - skips encrypted / unreadable files, files over --max-mb, PDFs over --max-pages
+     - skips encrypted / unreadable files, files over --max-mb (EPUBs: --max-mb-epub), PDFs over --max-pages
      - skips scanned PDFs and djvu (they need OCR = heavy ML) unless --allow-ocr
   2. LIGHT ENGINES by default, no GPU, no ML models:
      - text PDFs  -> pymupdf4llm (low memory)
@@ -11,11 +11,15 @@ Three layers of protection:
      - GPU is hidden from every child process (CUDA_VISIBLE_DEVICES="")
   3. WATCHDOG while each book converts (polls every 0.5 s):
      - kills the converter if system free RAM drops below --min-free-gb,
-       the converter's own RAM passes --max-rss-gb, CPU temp passes --max-temp-c,
-       or it runs longer than --timeout
+       the converter's own RAM passes --max-rss-gb, or it runs longer than --timeout
      - a killed book goes on library/DANGEROUS.csv and is never retried
        (unless --retry-dangerous); the run pauses --cooldown seconds afterwards
      - the run stops entirely after --max-kills watchdog kills
+  4. HEAT is the machine's state, not the book's (all 120 temperature kills up to 2026-10-08 came 0-9 s into a book):
+     - before each book, wait until the CPU is below --max-temp-c
+     - a converter is stopped only after --hot-seconds above it; that book is logged "hot",
+       NOT put on DANGEROUS.csv and not counted as a kill, and is tried again next run
+     - AMD: reads Tdie/Tccd when present, not Tctl (k10temp's Tctl is a fan-control scale, not a temperature)
 
 Usage:
   pip install pymupdf4llm psutil
@@ -83,9 +87,10 @@ def triage_pdf(path, max_pages, a, env):
 def plan(src, dest, tmp, a, env):
     ext = src.suffix.lower()
     size_mb = src.stat().st_size / 1e6
-    if size_mb > a.max_mb:
-        return None, f"{size_mb:.0f} MB > --max-mb"
-    pandoc = lambda s, fmt=None: ["pandoc", str(s)] + (["-f", fmt] if fmt else []) + [
+    limit, flag = (a.max_mb_epub, "--max-mb-epub") if ext == ".epub" else (a.max_mb, "--max-mb")
+    if limit and size_mb > limit:
+        return None, f"{size_mb:.0f} MB > {flag}"
+    pandoc = lambda s, fmt=None: ["pandoc", "+RTS", f"-M{a.max_rss_gb:g}g", "-RTS", str(s)] + (["-f", fmt] if fmt else []) + [
         "-t", "gfm", "--wrap=none", "-o", str(dest), f"--extract-media={dest.parent / (dest.stem + '_assets')}"]
     if ext == ".pdf":
         kind, why, _ = triage_pdf(src, a.max_pages, a, env)
@@ -126,8 +131,17 @@ def cpu_temp():
         temps = psutil.sensors_temperatures()
     except Exception:
         return None
-    vals = [t.current for name, ts in temps.items() if name in ("coretemp", "k10temp", "zenpower", "cpu_thermal")
-            for t in ts if t.current]
+    vals = []
+    for name, ts in temps.items():
+        if name not in ("coretemp", "k10temp", "zenpower", "cpu_thermal"):
+            continue
+        ts = [t for t in ts if t.current]
+        if name in ("k10temp", "zenpower"):   # Tctl is a fan-control scale (docs.kernel.org/hwmon/k10temp.html): prefer real die temps
+            real = [t for t in ts if t.label.startswith(("Tdie", "Tccd"))]
+            ts = real or ts
+        elif name == "coretemp":              # package sensor: one steady number instead of the hottest core's spikes
+            ts = [t for t in ts if t.label.startswith("Package")] or ts
+        vals += [t.current for t in ts]
     return max(vals) if vals else None
 
 
@@ -150,7 +164,7 @@ def run_watched(cmd, a, env, timeout=None, capture=False):
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE if capture else subprocess.DEVNULL, stderr=subprocess.PIPE,
                          text=True, env=env, start_new_session=True, preexec_fn=lambda: os.nice(19))
     ps, start, reason = psutil.Process(p.pid), time.time(), None
-    err_buf, out_buf = [], []
+    err_buf, out_buf, hot_since = [], [], None
     t = threading.Thread(target=lambda: err_buf.append(p.stderr.read()), daemon=True)
     t.start()
     if capture:
@@ -160,12 +174,14 @@ def run_watched(cmd, a, env, timeout=None, capture=False):
         avail = psutil.virtual_memory().available / GB
         rss = tree_rss(ps) / GB
         temp = cpu_temp()
+        hot_since = (hot_since or time.time()) if temp and temp > a.max_temp_c else None
+        status = "killed"
         if avail < a.min_free_gb:
             reason = f"system free RAM {avail:.1f} GB < {a.min_free_gb}"
         elif rss > a.max_rss_gb:
             reason = f"converter RAM {rss:.1f} GB > {a.max_rss_gb}"
-        elif temp and temp > a.max_temp_c:
-            reason = f"CPU {temp:.0f}C > {a.max_temp_c}"
+        elif hot_since and time.time() - hot_since >= a.hot_seconds:
+            status, reason = "hot", f"CPU {temp:.0f}C > {a.max_temp_c:g} for {a.hot_seconds}s"
         elif time.time() - start > timeout:
             reason = f"timeout {timeout}s"
         if reason:
@@ -174,7 +190,7 @@ def run_watched(cmd, a, env, timeout=None, capture=False):
             except ProcessLookupError:
                 pass
             p.wait()
-            return "killed", reason
+            return status, reason
         time.sleep(0.5)
     t.join(timeout=2)
     if capture:
@@ -215,12 +231,15 @@ def add_args(ap):
                     help="csv: library/RECONVERT.csv; new: every book with no Markdown yet. Default: csv run alone, new from add_books.py")
     ap.add_argument("--only", default="", help="extensions, e.g. pdf,epub")
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--max-mb", type=float, default=100)
-    ap.add_argument("--max-pages", type=int, default=800)
+    ap.add_argument("--max-mb", type=float, default=2048, help="skip files over this many MB (default 2048, above every book in the 2026-10 log; 0 = no limit); EPUBs use --max-mb-epub")
+    ap.add_argument("--max-mb-epub", type=float, default=0, help="the same for EPUBs (default 0 = no limit: a slow EPUB ends at "
+                    "--timeout; pandoc is still capped at --max-rss-gb and watched, so a big one fails instead of filling RAM)")
+    ap.add_argument("--max-pages", type=int, default=1100, help="PDFs only (EPUBs have no page limit)")
     ap.add_argument("--allow-ocr", "--pdf", action="store_true", help="convert scanned PDFs/djvu with marker (CPU only, heavy)")
     ap.add_argument("--min-free-gb", type=float, default=4, help="kill if system free RAM drops below this")
     ap.add_argument("--max-rss-gb", type=float, default=6, help="kill if converter uses more RAM than this")
-    ap.add_argument("--max-temp-c", type=float, default=85, help="kill if CPU gets hotter than this")
+    ap.add_argument("--max-temp-c", type=float, default=95, help="wait before each book until the CPU is below this")
+    ap.add_argument("--hot-seconds", type=int, default=30, help="stop a converter after this long above --max-temp-c (not blacklisted)")
     ap.add_argument("--timeout", type=int, default=1200, help="seconds per converter step")
     ap.add_argument("--triage-timeout", type=int, default=60, help="seconds allowed to inspect one PDF")
     ap.add_argument("--cooldown", type=int, default=60, help="pause after a kill")
@@ -267,6 +286,9 @@ def run(a, dry=False):
         while status is None and psutil.virtual_memory().available / GB < a.min_free_gb + 2:
             print("   waiting: system RAM is low before starting the next book ...")
             time.sleep(30)
+        while status is None and (temp := cpu_temp() or 0) > a.max_temp_c:
+            print(f"   waiting: CPU {temp:.0f}C > --max-temp-c {a.max_temp_c:g} (if this never ends: check `sensors` at idle)")
+            time.sleep(30)
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
             if status is None:
@@ -307,6 +329,9 @@ def run(a, dry=False):
                 print(f"STOPPING: {kills} watchdog kills. Check library/DANGEROUS.csv.")
                 break
             print(f"   cooling down {a.cooldown}s ...")
+            time.sleep(a.cooldown)
+        elif status == "hot":
+            print(f"   too hot; not blacklisted, tried again next run. cooling down {a.cooldown}s ...")
             time.sleep(a.cooldown)
     log_f.close()
     print("summary:", dict(sorted(counts.items())))
