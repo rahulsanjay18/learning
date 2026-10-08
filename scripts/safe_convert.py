@@ -273,9 +273,12 @@ def run(a, dry=False):
     log = csv.writer(log_f)
     kills, counts, out = 0, {}, []
 
-    for i, r in enumerate(rows, 1):
+    from tqdm import tqdm
+    bar = tqdm(rows, desc="dry run" if dry else "convert", unit="book")
+    for i, r in enumerate(bar, 1):
         rel = Path(r["path"].removeprefix("./"))
         src, dest = a.books_root / rel, (a.md_root / rel).with_suffix(".md")
+        bar.set_postfix_str(f"{rel.name[:40]} ({src.stat().st_size / 1e6 if src.exists() else 0:.0f} MB)")
         status, detail = None, ""
         if dest.exists():
             continue
@@ -284,10 +287,10 @@ def run(a, dry=False):
         elif str(rel) in dangerous:
             status, detail = "skipped", "on DANGEROUS.csv (killed before)"
         while status is None and psutil.virtual_memory().available / GB < a.min_free_gb + 2:
-            print("   waiting: system RAM is low before starting the next book ...")
+            bar.write("   waiting: system RAM is low before starting the next book ...")
             time.sleep(30)
         while status is None and (temp := cpu_temp() or 0) > a.max_temp_c:
-            print(f"   waiting: CPU {temp:.0f}C > --max-temp-c {a.max_temp_c:g} (if this never ends: check `sensors` at idle)")
+            bar.write(f"   waiting: CPU {temp:.0f}C > --max-temp-c {a.max_temp_c:g} (if this never ends: check `sensors` at idle)")
             time.sleep(30)
         with tempfile.TemporaryDirectory() as td:
             tmp = Path(td)
@@ -315,7 +318,8 @@ def run(a, dry=False):
                         status, detail = "failed", "marker produced no markdown"
                     if status != "ok" and dest.exists():
                         dest.unlink()
-        print(f"[{i}/{len(rows)}] {status:13} {rel}  {detail}")
+        if status != "ok":          # finished books just move the bar; everything else gets a line
+            bar.write(f"[{i}/{len(rows)}] {status:13} {rel}  {detail}")
         counts[status] = counts.get(status, 0) + 1
         out.append([str(rel), status, detail])
         if not dry:
@@ -326,14 +330,15 @@ def run(a, dry=False):
             with open(LIB / "DANGEROUS.csv", "a", newline="", encoding="utf-8") as f:
                 csv.writer(f).writerow([str(rel), detail])
             if kills >= a.max_kills:
-                print(f"STOPPING: {kills} watchdog kills. Check library/DANGEROUS.csv.")
+                bar.write(f"STOPPING: {kills} watchdog kills. Check library/DANGEROUS.csv.")
                 break
-            print(f"   cooling down {a.cooldown}s ...")
+            bar.write(f"   cooling down {a.cooldown}s ...")
             time.sleep(a.cooldown)
         elif status == "hot":
-            print(f"   too hot; not blacklisted, tried again next run. cooling down {a.cooldown}s ...")
+            bar.write(f"   too hot; not blacklisted, tried again next run. cooling down {a.cooldown}s ...")
             time.sleep(a.cooldown)
     log_f.close()
+    bar.close()
     print("summary:", dict(sorted(counts.items())))
     return out
 
