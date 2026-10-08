@@ -6,10 +6,11 @@
 
 Steps:
   1. git pull this repo
-  2. convert every book in BOOKS_ROOT with no Markdown in MD_ROOT yet (scripts/reconvert.py). By default only formats
-     that convert cleanly without OCR (EPUB, AZW3/MOBI, HTML, DOCX, TXT, and PDFs whose text layer grades A by
-     grade_library's rules); add --pdf for the rest (scans, math, DjVu: marker, OCR, slow).
-     Books that already FAILED (library/RECONVERT-LOG.csv) are skipped unless --retry-failed
+  2. convert every book in BOOKS_ROOT with no Markdown in MD_ROOT yet, with the crash-safe converter (scripts/safe_convert.py):
+     triage first (skips encrypted/damaged files, files over --max-mb, PDFs over --max-pages), light engines only by default
+     (text PDFs, EPUB, AZW3/MOBI, HTML, DOCX, TXT; scanned PDFs and DjVu only with --allow-ocr/--pdf), and a watchdog that
+     kills a converter on low system RAM, high converter RAM, CPU temperature or timeout. Killed books go on
+     library/DANGEROUS.csv and are skipped unless --retry-dangerous
   3. grade all Markdown -> library/MANIFEST.csv + library/toc/ (scripts/grade_library.py)
   4. rebuild the search index at the db path your compose file mounts for book-server (book-server/build_index.py)
   5. docker compose up -d --build book-server progress-server
@@ -20,13 +21,13 @@ import argparse, os, re, subprocess, sys
 from pathlib import Path
 
 try:
-    import tqdm  # noqa: F401  (used by the step modules)
-except ImportError:
-    sys.exit("needs tqdm: pip install tqdm   (or: sudo apt install python3-tqdm)")
+    import tqdm, psutil  # noqa: F401  (used by the step modules)
+except ImportError as e:
+    sys.exit(f"needs {e.name}: pip install tqdm psutil pymupdf4llm   (or: sudo apt install python3-{e.name})")
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path[:0] = [str(REPO / "scripts"), str(REPO / "book-server")]
-import reconvert, grade_library, build_index  # noqa: E402
+import safe_convert, grade_library, build_index  # noqa: E402
 
 COMPOSE_DIR = Path.home() / "Documents"
 COMPOSE_FILES = ("docker-compose.yml", "docker-compose.yaml", "compose.yml", "compose.yaml")
@@ -91,7 +92,8 @@ def check_builds(compose_file, compose_dir):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    reconvert.add_args(ap)  # the conversion flags, same as running reconvert.py on its own
+    safe_convert.add_args(ap)  # the conversion flags, same as running safe_convert.py on its own
+    ap.set_defaults(source="new")  # new books, not the RECONVERT.csv retry list (--source csv for that)
     ap.add_argument("--compose-dir", type=Path, default=COMPOSE_DIR)
     ap.add_argument("--db", type=Path, help="index path (default: the host path compose mounts at /data, + books.db)")
     ap.add_argument("--dry-run", action="store_true", help="list what would be converted, change nothing")
@@ -113,7 +115,7 @@ def main():
         print(r.stdout.strip().splitlines()[-1] if r.returncode == 0 and r.stdout.strip() else "pull failed; continuing with local copy")
 
     step(2, "convert new books")
-    log = reconvert.run(a, dry=a.dry_run)
+    log = safe_convert.run(a, dry=a.dry_run)
     if a.dry_run:
         print("\ndry run: nothing changed")
         return

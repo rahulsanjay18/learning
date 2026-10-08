@@ -13,12 +13,19 @@ cd ~/Documents/learning && python3 scripts/add_books.py
 ```
 
 It pulls the repo, converts every book with no Markdown yet, grades, rebuilds the index (at the path your compose file mounts
-for book-server), rebuilds book-server and progress-server, and commits + pushes `library/`, with progress bars. Your paths
-are its defaults. PDFs are checked first: one whose text layer grades A (clean prose) is converted from that layer
-with no OCR; scans and math-heavy PDFs are listed with their grade and left for `--pdf`. Options: `--dry-run` (list only),
-`--pdf` (also the hard ones and DjVu, via marker: OCR, slow; off by default),
-`--retry-failed`, `--limit N`, `--only epub`, `--timeout MIN` (per book, default 30; a timed-out book is logged FAILED and skipped next time: retry with `--retry-failed --timeout 0`), `--max-mb N` (skip book files over N MB before converting or even checking them; default 100, 0 = no limit; listed on every run, not marked failed), `--mem-gb N` (memory cap per book, default 4: a book over it is logged FAILED instead of exhausting the server's RAM, as a 250 MB EPUB did on 2026-10-07), `--media` (also extract images; off by default, nothing uses them and they make big EPUBs slow), `--no-docker`, `--no-commit`, `--no-pull`. Needs `tqdm`; `pymupdf4llm` is recommended for PDFs (keeps headings; without it, poppler's `pdftotext` is used):
-`pip install tqdm pymupdf4llm`.
+for book-server), rebuilds book-server and progress-server, and commits + pushes `library/`. Your paths are its defaults.
+
+**Conversion is crash-safe by default (2026-10-08): step 2 is `scripts/safe_convert.py`**, not `reconvert.py`.
+- Triage first: encrypted, damaged and empty files, files over `--max-mb` (100), and PDFs over `--max-pages` (800) are skipped.
+- Only light engines run: text PDFs go through pymupdf4llm; EPUB/AZW3/MOBI/HTML/DOCX/TXT go through pandoc, calibre or a plain copy;
+  the GPU is hidden. Scanned PDFs and DjVu are skipped unless you pass `--allow-ocr` (alias `--pdf`).
+- A watchdog kills a converter when system free RAM drops below `--min-free-gb` (4), when the converter uses more than
+  `--max-rss-gb` (6), when the CPU passes `--max-temp-c` (85 °C), or after `--timeout` seconds (1200).
+  A killed book goes on `library/DANGEROUS.csv` and is skipped from then on unless you pass `--retry-dangerous`.
+  After 5 kills the run stops (`--max-kills`).
+
+Other options: `--dry-run` (triage report only), `--limit N`, `--only epub`, `--source csv` (the `library/RECONVERT.csv`
+retry list instead of new books), `--no-docker`, `--no-commit`, `--no-pull`. Needs `pip install tqdm psutil pymupdf4llm`.
 Then run `/new-books` in a Claude session.
 
 **One code path.** `add_books.py` only strings the modules together; each step is also a script you can run alone, with the
@@ -26,7 +33,7 @@ same flags and the same defaults (your paths live in `scripts/library_paths.py`;
 
 | Step | Alone | Function `add_books.py` calls |
 |---|---|---|
-| Convert | `python3 scripts/reconvert.py` (dry run), `--run` | `reconvert.run()` (flags from `reconvert.add_args()`) |
+| Convert | `python3 scripts/safe_convert.py` (triage only), `--run` (alone it reads RECONVERT.csv; `--source new` for new books) | `safe_convert.run()` (flags from `safe_convert.add_args()`) |
 | Grade | `python3 scripts/grade_library.py` | `grade_library.grade_all()` |
 | Index | `python3 book-server/build_index.py --manifest library/MANIFEST.csv --md-root … --db …` | `build_index.build()` |
 

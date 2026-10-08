@@ -205,30 +205,43 @@ def load_dangerous():
     return {r[0] for r in csv.reader(open(f, encoding="utf-8"))} if f.exists() else set()
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--books-root", required=True, type=Path)
-    ap.add_argument("--md-root", required=True, type=Path)
-    ap.add_argument("--run", action="store_true", help="actually convert (default: triage report only)")
+def add_args(ap):
+    """The conversion flags, shared by this script and scripts/add_books.py (paths default to scripts/library_paths.py)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from library_paths import BOOKS_ROOT, MD_ROOT
+    ap.add_argument("--books-root", type=Path, default=BOOKS_ROOT)
+    ap.add_argument("--md-root", type=Path, default=MD_ROOT)
+    ap.add_argument("--source", choices=["csv", "new"], default="csv",
+                    help="csv: library/RECONVERT.csv; new: every book with no Markdown yet. Default: csv run alone, new from add_books.py")
     ap.add_argument("--only", default="", help="extensions, e.g. pdf,epub")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--max-mb", type=float, default=100)
     ap.add_argument("--max-pages", type=int, default=800)
-    ap.add_argument("--allow-ocr", action="store_true", help="convert scanned PDFs/djvu with marker (CPU only, heavy)")
+    ap.add_argument("--allow-ocr", "--pdf", action="store_true", help="convert scanned PDFs/djvu with marker (CPU only, heavy)")
     ap.add_argument("--min-free-gb", type=float, default=4, help="kill if system free RAM drops below this")
     ap.add_argument("--max-rss-gb", type=float, default=6, help="kill if converter uses more RAM than this")
     ap.add_argument("--max-temp-c", type=float, default=85, help="kill if CPU gets hotter than this")
-    ap.add_argument("--timeout", type=int, default=1200)
+    ap.add_argument("--timeout", type=int, default=1200, help="seconds per converter step")
     ap.add_argument("--triage-timeout", type=int, default=60, help="seconds allowed to inspect one PDF")
     ap.add_argument("--cooldown", type=int, default=60, help="pause after a kill")
     ap.add_argument("--max-kills", type=int, default=5, help="stop the whole run after this many kills")
     ap.add_argument("--retry-dangerous", action="store_true")
-    a = ap.parse_args()
 
+
+def select_rows(a):
+    """RECONVERT.csv rows, or (--source new) every book with no Markdown yet, as {"path", "ext"} dicts."""
+    if a.source == "new":
+        import reconvert
+        return reconvert.new_books(a.books_root, a.md_root)
+    return list(csv.DictReader(open(LIB / "RECONVERT.csv", encoding="utf-8")))
+
+
+def run(a, dry=False):
+    """Triage and (unless dry) convert. Returns [[path, status, detail], ...] for the books it looked at."""
     env = dict(os.environ, CUDA_VISIBLE_DEVICES="", TORCH_DEVICE="cpu",
                OMP_NUM_THREADS="2", MKL_NUM_THREADS="2", OPENBLAS_NUM_THREADS="2")
     only = {"." + e.strip(". ").lower() for e in a.only.split(",") if e.strip()}
-    rows = list(csv.DictReader(open(LIB / "RECONVERT.csv", encoding="utf-8")))
+    rows = select_rows(a)
     if only:
         rows = [r for r in rows if r["ext"] in only]
     sz = lambda r: (a.books_root / r["path"].removeprefix("./")).stat().st_size \
@@ -239,7 +252,7 @@ def main():
     dangerous = set() if a.retry_dangerous else load_dangerous()
     log_f = open(LIB / "SAFE-CONVERT-LOG.csv", "a", newline="", encoding="utf-8")
     log = csv.writer(log_f)
-    kills, counts = 0, {}
+    kills, counts, out = 0, {}, []
 
     for i, r in enumerate(rows, 1):
         rel = Path(r["path"].removeprefix("./"))
@@ -263,7 +276,7 @@ def main():
                     cmds, why = None, f"error during triage: {type(e).__name__}: {str(e)[:80]}"
                 if cmds is None:
                     status, detail = "skipped", why
-                elif not a.run:
+                elif dry:
                     status, detail = "would convert", why
                 else:
                     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -282,7 +295,8 @@ def main():
                         dest.unlink()
         print(f"[{i}/{len(rows)}] {status:13} {rel}  {detail}")
         counts[status] = counts.get(status, 0) + 1
-        if a.run:
+        out.append([str(rel), status, detail])
+        if not dry:
             log.writerow([time.strftime("%F %T"), str(rel), status, detail])
             log_f.flush()
         if status == "killed":
@@ -294,7 +308,17 @@ def main():
                 break
             print(f"   cooling down {a.cooldown}s ...")
             time.sleep(a.cooldown)
+    log_f.close()
     print("summary:", dict(sorted(counts.items())))
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    add_args(ap)
+    ap.add_argument("--run", action="store_true", help="actually convert (default: triage report only)")
+    a = ap.parse_args()
+    run(a, dry=not a.run)
 
 
 if __name__ == "__main__":
