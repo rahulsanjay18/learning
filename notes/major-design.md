@@ -59,6 +59,14 @@ not at all. Then you organize those blocks of books (effectively 'courses') into
 - Claude's job per course is then choosing and ordering resources, slicing the primary book into lessons, and teaching the gaps,
   not writing a curriculum from scratch.
 
+## Reading majors (2026-10-08, Critical Theory)
+Learner: "this is fundamentally a different kind of major and a different kind of pedagogical structure. One could argue you'd
+mostly just be assigning me readings." For reading-heavy humanities majors, lean into it: **reading days** (a ~25-minute slice +
+2–3 guide questions, nothing to submit) are the course; a **seminar** lesson page every few reading days does the lecture and
+discussion work; a short **essay** per unit is the mastery check. Plan the readings as data and generate the schedule
+(`topics/critical-theory/build_plan.py`, `build_syllabus.py`). Draw the background from every discipline the subject stands
+on, as general-education cores do, not only from the home department.
+
 ## In curriculum.json
 Each course may carry `"level": "I" | "II"` and `"group": "core" | "breadth" | "elective" | "practice" | "independent" |
 "capstone" | "colloquium"`. `scripts/test_programs.py` checks the values.

@@ -84,6 +84,16 @@
     {
       "slug": "pixel-art",
       "note": "One lesson so far; on the wishlist."
+    },
+    {
+      "slug": "critical-theory",
+      "name": "Critical Theory",
+      "goal": "soul",
+      "curriculum": "topics/critical-theory/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08 at the learner's request, explicitly 'not one I would do now'. A reading major: Tyson + the Norton Anthology of Theory and Criticism + one novel per lens, with foundations from philosophy, social theory and psychology. SYLLABUS.md is the professor's syllabus (128 weeks at 5 sittings/week). One in, one out when it starts."
     }
   ]
 }
