@@ -20,7 +20,7 @@ prep course or practice exam against the C02 guide.
 
 ::: callout
 **Practical Vim, text objects: change inner word.** Rename the method to `choose_move` with as few keystrokes as you can. The cursor
-starts on the `d` of `def`, in Normal mode. Par is 16.
+starts on the `d` of `def`, in Normal mode. Par is 16. Easiest: record them with `vim -W keys.log drill.txt` and paste the output of `cat -v keys.log` ([how](../reference/vim-drills.md)).
 
 Start: `def select_action(self, obs, legal, info):`
 

@@ -13,7 +13,7 @@ to know where you already work at staff level and where you don't, so the Staff 
 
 ::: callout
 **Practical Vim, tips 1–2: the dot command.** In Vim, turn the start text into the target text with as few keystrokes as you can.
-Paste your keystrokes below exactly as typed (write Escape as `<Esc>`). I replay them in real Vim and count them; par is 7.
+Paste your keystrokes below exactly as typed (write Escape as `<Esc>`). Easiest: record them with `vim -W keys.log drill.txt` and paste the output of `cat -v keys.log` ([how](../reference/vim-drills.md)). I replay them in real Vim and count them; par is 7.
 
 Start:
 ```

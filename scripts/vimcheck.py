@@ -5,6 +5,8 @@
     python3 scripts/vimcheck.py --drill topics/eng/vim-drills.json <id> "KEYS"
 
 KEYS uses Vim notation: <Esc> <CR> <Tab> <BS> <C-x> (any Ctrl key) and <lt> for a literal '<'. ':wq' is appended if missing.
+--caret: KEYS is a recording shown by `cat -v` (from `vim -W keys.log file`): ^[ = Esc, ^M = Enter, ^X = Ctrl-X, ^? = Backspace.
+         A trailing :wq / :x / ZZ is dropped from the count (the recording includes how you quit).
 Prints PASS/FAIL, the keystroke count (fewer is better) and a diff on failure. Exit 0 on pass.
 """
 import difflib, json, re, subprocess, sys, tempfile
@@ -25,6 +27,23 @@ def decode(keys):
                 out.append(chr(ord(m.group(1).upper()) - 64)); n += 1; continue
         out.append(tok); n += len(tok)
     return "".join(out), n
+
+
+def from_caret(rec):
+    """`cat -v` text of a `vim -W` recording -> Vim notation, without the final save-and-quit."""
+    names = {"[": "<Esc>", "M": "<CR>", "I": "<Tab>", "?": "<BS>", "H": "<BS>", "J": "<CR>"}
+    out, i, rec = [], 0, rec.rstrip("\n")
+    while i < len(rec):
+        c = rec[i]
+        if c == "^" and i + 1 < len(rec) and (rec[i + 1] in names or rec[i + 1].isalpha()):
+            nxt = rec[i + 1]
+            out.append(names.get(nxt) or f"<C-{nxt.lower()}>"); i += 2; continue
+        out.append("<lt>" if c == "<" else c); i += 1
+    keys = "".join(out)
+    for end in (":wq<CR>", ":x<CR>", "ZZ", ":wq!<CR>"):
+        if keys.endswith(end):
+            return keys[: -len(end)]
+    return keys
 
 
 def run(start, target, keys):
@@ -48,6 +67,10 @@ def run(start, target, keys):
 
 def main():
     a = sys.argv[1:]
+    if "--caret" in a:
+        a.remove("--caret")
+        a[-1] = from_caret(a[-1])
+        print(f"as Vim notation: {a[-1]}")
     if a and a[0] == "--drill":
         drills = {x["id"]: x for x in json.loads(Path(a[1]).read_text())["drills"]}
         dr = drills[a[2]]
