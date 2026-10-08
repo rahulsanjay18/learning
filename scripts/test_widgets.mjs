@@ -374,7 +374,7 @@ if (attempts.length !== (pythonRan ? 29 : 28)) fail(`gallery: expected ${pythonR
 if (!log.some(e => e.type === "rating" && e.value === "just-right")) fail("gallery: rating not logged");
 if (attempts.some(e => !e.item.startsWith("gallery/widgets#"))) fail("gallery: bad item ids");
 const summary = await page.evaluate(() => LP.summary());
-if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,gm-ttt-hold,gm-nim-345,fc-2,xq-win,fe-one-two,map-patali" + (pythonRan ? ",py-var" : "") + ".*guessed: conf-demo").test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary)) fail("gallery: summary wrong:\n" + summary);
+if (!new RegExp("missed: choice,go-drive,plot-mean,tl-plassey,gm-ttt-hold,gm-nim-345,fc-2,xq-win,fe-one-two,map-patali" + (pythonRan ? ",py-var" : "") + ".*guessed: conf-demo").test(summary)|| !/rating: just-right/.test(summary) || !/free free:/.test(summary) || !/\nmiss choice: /.test(summary)) fail("gallery: summary wrong:\n" + summary);
 else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map(l => "     " + l).join("\n"));
 
 // "I don't know" (data-skip): skip before answering; after a wrong try it becomes "Show me the answer" (no second score)

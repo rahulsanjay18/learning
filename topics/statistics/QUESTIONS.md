@@ -161,3 +161,8 @@ rate = 1 − power). The one miss, `pow-80` (80% power needs the effect ≈ 2.8 
 - **Your note ("definitions can be confusing; I need to sit and reason through stuff").** Agreed, and it's a lesson-design issue,
   not you: lesson 4 stacked several definitions. From lesson 5 on, each new idea starts from a question you reason through
   step by step (revealed one step at a time), and only then gets its name. TEACHING-LOG entry 21.
+
+## 2026-10-08 · Should the results include my wrong answer, not just that I got it wrong?
+Yes. The page already sent the wrong answer to the progress server when sync was on; only the copied results line dropped it.
+The line now adds `miss <id>: <your first wrong answer>` for each missed quiz (same as the `free` lines), so a near miss
+(two steps swapped) can be told apart from a misconception without sync. Grading still uses the first try.

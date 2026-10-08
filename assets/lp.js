@@ -7,7 +7,7 @@
   var SELF = document.currentScript ? document.currentScript.src : location.href;
   var regs = [], started = false;
   var total = 0, answered = 0, firstTryRight = 0, bar = null;
-  var missed = [], skipped = [], guessed = [], freeAnswers = [];
+  var missed = [], skipped = [], guessed = [], freeAnswers = [], missAnswers = [];
 
   // ---------- page identity + item IDs ----------
   var m = location.pathname.match(/\/topics\/([^\/]+)\/(lessons|reference)\/([^\/]+?)(\.html)?$/);
@@ -112,7 +112,10 @@
         answered++;
         if (ok === true) firstTryRight++;
         if (kind === "skip") skipped.push(id.replace(/^.*#/, ""));
-        else if (ok === false) missed.push(id.replace(/^.*#/, ""));
+        else if (ok === false) {
+          missed.push(id.replace(/^.*#/, ""));
+          if (answer != null && String(answer).trim()) missAnswers.push({ id: id, answer: String(answer) });
+        }
         if (kind === "deferred") freeAnswers.push({ id: id, answer: answer });
         updateBar();
         LP.emit({ type: "attempt", item: id, widget: reg.type, kind: kind || "auto", correct: ok, answer: answer == null ? null : String(answer).slice(0, 4000) });
@@ -649,6 +652,8 @@
     if (LP.rating) parts.push("rating: " + LP.rating);
     if (LP.note) parts.push("note: " + LP.note.replace(/\s+/g, " "));
     var s = parts.join(" | ");
+    // The first wrong answer, so a near miss can be told from a misconception without sync.
+    missAnswers.forEach(function (m) { s += "\nmiss " + m.id.replace(/^.*#/, "") + ": " + m.answer.replace(/\s+/g, " ").slice(0, 400); });
     freeAnswers.forEach(function (f) { s += "\nfree " + f.id.replace(/^.*#/, "") + ": " + f.answer.replace(/\s+/g, " "); });
     return s;
   };

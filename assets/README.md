@@ -162,7 +162,8 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 ## Results and sync
 - Every answer, rating and note is logged to `localStorage["lp.queue"]` on the learner's device.
 - **Copy my results** gives one line the learner pastes into the next session, e.g.
-  `lp-results chess/0003-forks | 7/9 right first try | missed: fork-2,pin-1 | rating: too-hard`, plus any free-response answers.
+  `lp-results chess/0003-forks | 7/9 right first try | missed: fork-2,pin-1 | rating: too-hard`, then one `miss <id>: <first wrong answer>`
+  line per missed quiz and one `free <id>: <answer>` line per free response.
 - If sync is configured ("Sync settings": server URL + device token), events are POSTed as `{"events":[…]}` to `<url>/events` with `Authorization: Bearer <token>`. Server: `progress-server/` (pair a device via `assets/sync.html`).
 
 ## Checks (run before committing a lesson)
