@@ -37,6 +37,9 @@ Shown once right.
 - A `## Sources` heading followed by a list becomes the numbered `<ol class="sources">`.
 - Tested by `python3 scripts/test_render.py` (fixture: `scripts/fixtures/render-sample.md`, which shows every shorthand).
 
+## Typography (2026-10-08)
+Text (p, li, headings, callouts, reading boxes) is held to `--measure: 56ch` in `lp.css`: about 65 characters per line, 90% at 70 or fewer, measured on rendered lessons in wide and narrow serifs (Luna, *Typography: A VSI*: 50–70). Widgets keep the full 40rem column. Change the measure in one place, then re-measure.
+
 ## Page skeleton (a lesson at `topics/<slug>/lessons/NNNN-name.html`)
 
 ```html
