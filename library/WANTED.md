@@ -56,3 +56,15 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 - _Trading and Exchanges_ — Larry Harris — for: CR310 quant developer (on hold: remote-only) — status: missing
 
 AWS ML certification (topics/eng/, AW courses): MLA-C02 exam guide (free); your 2024 Solutions Architect course (you have it).
+
+Critical Theory (topics/critical-theory/, parked):
+- _Civilization and Its Discontents_ — Sigmund Freud — for: CT130 Foundations III — why: the Columbia CC staple; Freud's social theory, which the Frankfurt School builds on — status: missing
+- _Dialectic of Enlightenment_ — Horkheimer & Adorno — for: CT510 (Level II) — why: the Frankfurt School's central book — status: missing
+- _Illuminations_ — Walter Benjamin — for: CT530 (Level II) — status: missing
+- _Discipline and Punish_ — Michel Foucault — for: CT550 (Level II) — status: missing
+- _Orientalism_ — Edward Said — for: CT560 (Level II) — status: missing
+- _The Political Unconscious_ — Fredric Jameson — for: CT570 (Level II) — status: missing
+- _Gender Trouble_ — Judith Butler — for: CT580 (Level II) — status: missing
+- _The Structural Transformation of the Public Sphere_ — Jürgen Habermas — for: CT595 (Level II) — status: missing
+- _A Companion to Marx's Capital_ — David Harvey — for: CT590 (Level II) — status: missing
+- _The Dialectical Imagination_ — Martin Jay — for: CT260 (optional) — why: the standard history of the Frankfurt School — status: missing

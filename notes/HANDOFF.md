@@ -11,7 +11,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 - **2026-10-06: syllabi + mastery grading.** Each major has `topics/<major>/SYLLABUS.md` (readings + objectives per lesson for the
   active courses); `plan` in curriculum.json mirrors it. Grade objectives Got it / Not yet (TEACHING-LOG rule 20; explainer
   `notes/mastery-grading.md`). Write lessons from the syllabus; don't redesign per session.
-- Statistics: Ch. 1 pretest (0005) done 2026-10-06; **0006 the three axioms** (reading C&B pp. 7–11) next, learner plans it for 2026-10-07. Indian History **lesson 0003 done 2026-10-07** (record 0003; re-teach the Indus origin stages in 0004, due Saturday). Both have reading-guide boxes: reply to those answers when results come in.
+- Statistics: Ch. 1 pretest (0005) done 2026-10-06; **0006 the three axioms** (reading C&B pp. 7–11) next, learner planned it for 2026-10-07, **moved to Thu 2026-10-08** (ran out of time). Thu's plan is eng + games, so stats is a carried-over 3rd block that day; if the hour is tight, stats takes the games slot (games also has Sat). Indian History **lesson 0003 done 2026-10-07** (record 0003; re-teach the Indus origin stages in 0004, due Saturday). Both have reading-guide boxes: reply to those answers when results come in.
 - 2026-10-06: all 5 pending free responses graded and posted (stats ice-cream causal 0.75; IH 0002 answers).
 - Daily review deck: `assets/review.html`.
 - Progress server is **live** (deployed 2026-10-05; `/progress/health` → ok). Desktop + laptop share one device token (id 1, "desktop+laptop").
@@ -32,6 +32,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | Military strategy | **Merged into Games** as G150 (lessons in `topics/military-strategy/`), feeding G350 Wargames and G360 Diplomacy | framed as "war as a game" (see its NOTES) |
 | Engineering career (`topics/eng/`) | **New job starts 2026-10-26; no search for ~18 months.** Interview lane: alternate design (growth) / coding (maintenance) until 2027-10-26, then weekly mocks, then 2 blocks/week from 2028-02-26. Staff-at-new-job decision at day 90 (2027-01-24); don't presume. |
 | Engineering career (`topics/eng/`, setup) | **Started 2026-10-07** as one continuous major (replaces cpp/staff/career/aws-ml; takes aws-ml's 4 blocks). Next: lesson 0001 SE000 staff placement (design exercise on Server #13) and 0002 AW000 AWS placement + MLA-C02 date. Rep 0 = Vim setup + vimtutor. Reps from `backlog.json`; required. Code reps need push access to the 3D chess repos (attached read-only) | Staff books owned, not on the book server; ask before filing the 2 proposed tickets; monthly catalog refresh? |
+| Critical Theory | **Designed 2026-10-08, parked** (learner: "not one I would do now"). Reading major: `topics/critical-theory/` PROGRAM.md, SYLLABUS.md (professor-style, 128 weeks), READING-PLAN.md; regenerate with `build_plan.py` then `build_syllabus.py`. Open: MISSION.md questions (why, novel swaps, pace) | Needs *Civilization and Its Discontents* (CT130) before it starts |
 | Economics | Parked; Principles solid (13/13) | Resume at intermediate level |
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 
