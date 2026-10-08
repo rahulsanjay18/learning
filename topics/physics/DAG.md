@@ -102,7 +102,7 @@ flowchart TB
   class PH300 maybe
   class PH341 credited
   class PH351 credited
-  class PH352 maybe
+  class PH352 credited
   class PH361 start
   class PH362 later
   class PH371 credited
@@ -122,7 +122,7 @@ flowchart TB
 ## Where you enter
 
 Written as if starting from high school (MA100 first). Your entry point:
-- **Credited** (pale grey, from your degrees): MA100, MA140, MA141, MA220, MA230, MA250, PH211, PH212, PH213, PH214, PH237, PH341, PH351, PH371
-- **Maybe** (dotted: skim or skip, your call): MA412, PH300, PH352
+- **Credited** (pale grey, from your degrees): MA100, MA140, MA141, MA220, MA230, MA250, PH211, PH212, PH213, PH214, PH237, PH341, PH351, PH352, PH371
+- **Maybe** (dotted: skim or skip, your call): MA412, PH300
 - **Start here** (thick border): PH361
-- Basis: Penn State BS Computer Engineering requires PHYS 211 (mechanics), 212 (E&M) and 214 (waves and quantum); the math degree covers the calculus, linear algebra and ODE rows. PHYS 213 (fluids, thermal) was not required. Boas (PH300) becomes a look-up shelf rather than a course. You also took modern physics, classical mechanics, electrodynamics and thermal physics (physics department), so PH237, PH341, PH351 and PH371 are credited (PH213 with them); PH352 is 'maybe' in case your E&M course stopped before radiation and relativity.
+- Basis: Penn State BS Computer Engineering requires PHYS 211 (mechanics), 212 (E&M) and 214 (waves and quantum); the math degree covers the calculus, linear algebra and ODE rows. PHYS 213 (fluids, thermal) was not required. Boas (PH300) becomes a look-up shelf rather than a course. You also took modern physics, classical mechanics, electrodynamics and thermal physics (physics department), so PH237, PH341, PH351, PH352 and PH371 are credited (PH213 with them). Penn State's PHYS 400 (Griffiths) runs through potentials and fields and an introduction to radiation, i.e. both E&M courses here; only Griffiths ch. 11-12 in depth may be new.

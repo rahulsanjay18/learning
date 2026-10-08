@@ -10,14 +10,13 @@
 - **Written for a high-school graduate** (start: MA100 Precalculus, then PH211 Mechanics alongside Calculus I).
 - **Your entry point:** **PH361 Quantum Mechanics I.** Your computer engineering degree required the calculus-based physics
   sequence (Penn State PHYS 211, 212, 214), your math degree covers the math rows, and you took modern physics, classical
-  mechanics, electrodynamics and thermal physics, so all of those are credited. "Maybe": PH300 (math methods; Boas becomes a
-  book you look things up in) and PH352 (E&M II: radiation and relativity, in case your E&M course stopped before them).
-- **Size from your entry point:** ≈ 102 lessons of Level I core with both "maybe" courses, ≈ 50 without (quantum I and II)
-  (≈ 2.0 / 1.0 years half-time / full-time with them). Level II core ≈ 242. The upper-division electives (GR, solid state,
+  mechanics, electrodynamics (both E&M courses here) and thermal physics, so all of those are credited. "Maybe": PH300 (math
+  methods; Boas becomes a book you look things up in).
+- **Size from your entry point:** ≈ 80 lessons of Level I core with the "maybe" course, ≈ 50 without (quantum I and II)
+  (≈ 1.5 years at one lesson a week, under a year at two). Level II core ≈ 242. The upper-division electives (GR, solid state,
   astrophysics, particles) open up right away.
-- **Books:** most are in the library, including Griffiths & Schroeter for quantum, your start. For Level I you'd need only
-  **Griffiths E&M** (you have only the solutions manual), and only if you take E&M II. Taylor and Schroeder are for courses
-  you've had. Boas, Schutz, Simon and Carroll & Ostlie are on the shelf.
+- **Books:** everything for your remaining Level I is in the library (Griffiths & Schroeter for quantum). Taylor, Schroeder
+  and Griffiths E&M are for courses you've had. Boas, Schutz, Simon and Carroll & Ostlie are on the shelf.
 
 ## 1. Plan
 **Why (draft; correct it in MISSION.md):** a "good for the soul" major. The wishlist's physics track (PDEs → quantum → general
@@ -37,7 +36,9 @@ engineering statics course, so it's marked "not used".
 **Where you enter (Penn State BS Computer Engineering, 2026 bulletin [1]).** Required: PHYS 211 (mechanics), 212 (E&M), 214
 (wave motion and quantum physics), MATH 140/141/220/231/250. Not required: PHYS 213 (fluids and thermal physics), but your thermal physics course covers it.
 On top of that you took modern physics, classical mechanics, electrodynamics and thermal physics, which credits PH237, PH341,
-PH351 and PH371. Your catalog year may differ slightly from today's bulletin.
+PH351, PH352 and PH371. Penn State's 400-level E&M course (PHYS 400, Griffiths) covers statics in vacuum and matter, Maxwell's
+equations, conservation laws, waves, potentials and fields, and an introduction to radiation [3]: that is both E&M courses here.
+Only radiation in depth and the relativity chapter (Griffiths ch. 11–12) might be new, and GR (PH394) re-teaches relativity anyway. Your catalog year may differ slightly from today's bulletin.
 
 **Practice without a lab.** PH390 uses phyphox, a free phone app from RWTH Aachen that turns the phone's sensors into lab
 instruments (pendulum period, centripetal acceleration, Doppler, magnetometer). It's optional.
@@ -62,7 +63,7 @@ instruments (pendulum period, centripetal acceleration, Doppler, magnetometer). 
 | PH300 | Mathematical methods for physics | Boas, Mathematical Methods in the Physical Sciences 3rd *(in library)* | MA230, MA250, MA220 | 30 | maybe |
 | PH341 | Classical mechanics: oscillators, Lagrangian and Hamiltonian mechanics | Taylor, Classical Mechanics *(to acquire)* | PH211, PH300 | 28 | credited |
 | PH351 | Electromagnetism I: electrostatics, magnetostatics, fields in matter | Griffiths, Introduction to Electrodynamics 4th *(to acquire)* (ch. 1-6; library has only the grade C solutions manual) | PH212, PH300 | 28 | credited |
-| PH352 | Electromagnetism II: electrodynamics, waves, radiation, relativity | Griffiths, Introduction to Electrodynamics 4th *(to acquire)* (ch. 7-12) | PH351 | 22 | maybe |
+| PH352 | Electromagnetism II: electrodynamics, waves, radiation, relativity | Griffiths, Introduction to Electrodynamics 4th *(to acquire)* (ch. 7-12) | PH351 | 22 | credited |
 | PH361 | Quantum mechanics I | Griffiths & Schroeter, Introduction to Quantum Mechanics 3rd (ch. 1-4) *(in library)* | PH237, PH300 | 26 | **start** |
 | PH362 | Quantum mechanics II: identical particles, perturbation theory, scattering | Griffiths & Schroeter (ch. 5-11; to confirm) *(in library)* | PH361 | 24 |  |
 | PH371 | Thermal and statistical physics | Schroeder, An Introduction to Thermal Physics *(to acquire)* | PH213, PH237, MA230 | 24 | credited |
@@ -111,7 +112,7 @@ Ordered by the first course from your entry point that needs them. Free books ar
 - Spivak, Calculus: MA140  (credited for you; skip)
 - Schey, Div, Grad, Curl, and All That: MA230  (credited for you; skip)
 - Taylor, Classical Mechanics: PH341  (credited for you; skip)
-- Griffiths, Introduction to Electrodynamics 4th: PH351, PH352
+- Griffiths, Introduction to Electrodynamics 4th: PH351, PH352  (credited for you; skip)
 - Schroeder, An Introduction to Thermal Physics: PH371  (credited for you; skip)
 - Goldstein, Poole & Safko, Classical Mechanics 3rd: PH501
 - Jackson, Classical Electrodynamics 3rd: PH511
@@ -135,3 +136,4 @@ Ordered by the first course from your entry point that needs them. Free books ar
 ## Sources
 1. Penn State University Bulletin, *Computer Engineering, B.S.* (current): https://bulletins.psu.edu/undergraduate/colleges/engineering/computer-engineering-bs/
 2. phyphox: https://phyphox.org
+3. Penn State course descriptions, PHYS 400 Intermediate Electricity and Magnetism: https://bulletins.psu.edu/university-course-descriptions/undergraduate/phys/

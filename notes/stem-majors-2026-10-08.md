@@ -14,11 +14,11 @@
 | Major | From high school | From your entry | Half subject (1 lesson/wk) | Full (2/wk) | You start with |
 |---|---|---|---|---|---|
 | Mathematics | 306 lessons | 106 | ≈ 2.0 yr | ≈ 1.0 yr | MA437 rings/fields/Galois, MA429 topology |
-| Physics | 404 | 102 (50 without the "maybe" courses) | ≈ 2.0 yr | ≈ 1.0 yr | PH361 quantum mechanics I |
+| Physics | 404 | 80 (50 without the "maybe" course) | ≈ 1.5 yr | ≈ 0.8 yr | PH361 quantum mechanics I |
 | Mechanical Eng. | 528 | 306 | ≈ 5.9 yr | ≈ 2.9 yr | statics, thermodynamics, materials, CAD |
 | Unified Eng. | 616 | 360 | ≈ 6.9 yr | ≈ 3.5 yr | Unified I minus circuits (same courses as ME's start) |
 
-  All four together, counting shared courses once: 1102 lessons from high school, 662 from your entry points. Lesson counts are
+  All four together, counting shared courses once: 1102 lessons from high school, 640 from your entry points. Lesson counts are
   estimates until each course's syllabus is written.
 - **New rule for every course:** each lesson ends with an optional **Extra practice** section: book problems (numbers changed
   for math-heavy courses), one extra reading, and **one extra article**. For reading-heavy majors it's mostly the article.
@@ -32,8 +32,8 @@ Based on Penn State's current bulletins [1][2]. Your catalog year may differ a l
   (you took complex analysis). Which other courses you took depends on the option, so 403, 435, 436, 412 and 455 are "maybe".
   **Tell me your option** and I'll update them.
 - **Physics:** computer engineering required PHYS 211, 212 and 214, and you also took modern physics, classical mechanics,
-  electrodynamics and thermal physics, so all of those are credited. Quantum mechanics is the start. "Maybe": math methods
-  (Boas, now a book you look things up in) and E&M II (radiation and relativity), in case your E&M course stopped before them.
+  electrodynamics and thermal physics, so all of those are credited, both E&M courses included (section 5). Quantum mechanics
+  is the start. "Maybe": math methods (Boas, now a book you look things up in).
 - **Mechanical / Unified:** computer engineering had no engineering-mechanics course, so Statics is where new material starts.
   Circuits (EE 210), signals and systems (EE 353) and the digital courses are credited.
 
@@ -80,6 +80,26 @@ points to those files instead of copying them, so there's only one copy of each 
 - `/write-questions`: question families in the lesson Markdown syntax, every numeric answer computed in code, checked against the
   question rules.
 
+## 5. What "E&M II" covers, and why it's credited for you
+Griffiths, *Introduction to Electrodynamics* (4th ed.), has twelve chapters [8]: 1 Vector Analysis, 2 Electrostatics,
+3 Potentials, 4 Electric Fields in Matter, 5 Magnetostatics, 6 Magnetic Fields in Matter, 7 Electrodynamics, 8 Conservation
+Laws, 9 Electromagnetic Waves, 10 Potentials and Fields, 11 Radiation, 12 Electrodynamics and Relativity.
+- **E&M I (PH351) = ch. 1–6:** static fields. Charges and currents that don't change in time, in vacuum and in matter.
+- **E&M II (PH352) = ch. 7–12:** what happens when fields change in time. Faraday's law and Maxwell's correction give the full
+  Maxwell equations (ch. 7). Fields carry energy and momentum: the Poynting vector, the stress tensor (ch. 8). Light as an
+  electromagnetic wave: reflection, refraction, waveguides (ch. 9). Retarded potentials and the fields of a moving charge
+  (Liénard–Wiechert, ch. 10). How accelerating charges and dipoles radiate (ch. 11). Electromagnetism rewritten in special
+  relativity's language: four-vectors and the field tensor (ch. 12).
+- **Your course:** intro physics II (PHYS 212) was the calculus-based survey. A 400-level E&M course on Griffiths is a
+  different, deeper course. Penn State's current one, PHYS 400, covers statics in vacuum and matter, time-varying fields up to
+  Maxwell's equations, conservation laws, waves in vacuum, matter and at boundaries, potentials and fields, and "an
+  introduction to radiation" [9]. That's roughly ch. 1–10 plus part of 11, i.e. both courses here, so PH352 is now credited.
+- **What might be new:** radiation in depth (ch. 11) and the relativity chapter (ch. 12). Neither blocks anything: the
+  general relativity elective (Schutz) starts by re-teaching special relativity, and Jackson (Level II) covers radiation fully.
+  If you want to fill the gap, Griffiths ch. 11–12 makes a short optional reading project.
+- **Limit:** this uses today's bulletin entry; your year's syllabus may have stopped earlier. You said you don't remember how
+  far it went; if ch. 9–10 feel unfamiliar when they come up, we treat them as a look-up, not a course.
+
 ## Sources
 1. Penn State Bulletin, *Mathematics, B.S.*: https://bulletins.psu.edu/undergraduate/colleges/eberly-science/mathematics-bs/
 2. Penn State Bulletin, *Computer Engineering, B.S.*: https://bulletins.psu.edu/undergraduate/colleges/engineering/computer-engineering-bs/
@@ -93,3 +113,5 @@ points to those files instead of copying them, so there's only one copy of each 
 6. Pan & Rickard (2018), *Psychological Bulletin* 144(7):710–756, doi:10.1037/bul0000151 (moderator tables not read).
 7. MIT Unified Engineering: https://www.ocw.mit.edu/courses/16-001-unified-engineering-materials-and-structures-fall-2021/pages/syllabus ;
    https://firstyear.mit.edu/wp-content/uploads/2025/02/Course-16-2025.pdf
+8. Griffiths, *Introduction to Electrodynamics* 4th ed., contents (Cambridge reprint): https://assets.cambridge.org/97810093/97759/toc/9781009397759_toc.pdf
+9. Penn State course descriptions, PHYS 400 Intermediate Electricity and Magnetism: https://bulletins.psu.edu/university-course-descriptions/undergraduate/phys/
