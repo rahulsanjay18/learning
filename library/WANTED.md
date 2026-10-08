@@ -5,11 +5,7 @@ Last reviewed 2026-10-08. Find what's new on the server with `python3 scripts/bo
 Every "missing" line was also checked on the server by title on 2026-10-06 (one request each).
 
 ## Games (G101 chess, G150 strategy, design)
-- _Arms and Influence_ — Thomas C. Schelling — for: military-strategy / deterrence & coercion — why: the classic theory of coercion — status: got (4bdcba34b3, grade A, 2026-10-06)
-- _Is Your Move Safe?_ — Dan Heisman — for: chess / lesson 0001 is-it-safe — why: the definitive treatment of the safety-check skill for improving adults — status: got (6de58327fa, grade A, 2026-10-08; served, not yet in MANIFEST.csv)
 - _A Guide to Chess Improvement: The Best of Novice Nook_ — Dan Heisman — for: chess thinking process — why: award-winning column for adult improvers, matches the learner's level — status: needs reconversion (de9de7888a, grade C garbled epub, 2026-10-08; in RECONVERT.csv)
-- _Makers of Modern Strategy from Machiavelli to the Nuclear Age_ — Peter Paret (ed.) — for: military-strategy / theorists — why: standard survey of the theorists the mission names — status: got (6979109f6e, grade A, 2026-10-06)
-- _The Art of Wargaming_ — Peter Perla — for: military-strategy / wargaming — why: standard text on professional and hobby wargaming — status: got (eb72110b76, grade A, 2026-10-06)
 - _The First Punic War: A Military History_ — J. F. Lazenby — for: military-strategy / First Punic War analysis — why: standard modern military history of the war; checks Polybius — status: missing
 - _An Introduction to Game Theory_ — Martin J. Osborne (OUP, 2003) — for: games / classical game theory course — why: the real textbook PROGRAM.md's gap list asks for; light on math prerequisites, covers extensive and repeated games — status: missing
 - _Characteristics of Games_ — Elias, Garfield & Gutschera — for: games / design notebook — why: the most analytical of the design classics (balance, first-player advantage, luck vs. skill), fits the 3D-chess project — status: missing
