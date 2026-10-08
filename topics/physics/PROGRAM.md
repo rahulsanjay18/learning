@@ -8,12 +8,16 @@
   methods, then the four pillars: classical mechanics, electromagnetism, quantum mechanics, thermal and statistical physics),
   with a graduate core as Level II (Goldstein, Jackson, Sakurai, Pathria, then GR, QFT, condensed matter).
 - **Written for a high-school graduate** (start: MA100 Precalculus, then PH211 Mechanics alongside Calculus I).
-- **Your entry point:** **PH237 Modern Physics and PH341 Classical Mechanics.** Your computer engineering degree required the
-  calculus-based physics sequence (Penn State PHYS 211, 212, 214) and your math degree covers the math rows, so those are credited.
-  PH213 (fluids, thermal) and PH300 (math methods) are "maybe": Boas becomes a book you look things up in rather than a course.
-- **Size from your entry point:** ≈ 214 lessons of Level I core (≈ 4.1 years half-time, ≈ 2.1 years full-time). Level II core ≈ 242.
-- **Books:** most are in the library. To acquire for Level I: **Taylor** (classical mechanics), **Griffiths E&M** (you have only
-  the solutions manual), **Schroeder** (thermal). Griffiths QM, Krane, Boas, Schutz, Simon, Carroll & Ostlie are on the shelf.
+- **Your entry point:** **PH361 Quantum Mechanics I.** Your computer engineering degree required the calculus-based physics
+  sequence (Penn State PHYS 211, 212, 214), your math degree covers the math rows, and you took modern physics, classical
+  mechanics, electrodynamics and thermal physics, so all of those are credited. "Maybe": PH300 (math methods; Boas becomes a
+  book you look things up in) and PH352 (E&M II: radiation and relativity, in case your E&M course stopped before them).
+- **Size from your entry point:** ≈ 102 lessons of Level I core with both "maybe" courses, ≈ 50 without (quantum I and II)
+  (≈ 2.0 / 1.0 years half-time / full-time with them). Level II core ≈ 242. The upper-division electives (GR, solid state,
+  astrophysics, particles) open up right away.
+- **Books:** most are in the library, including Griffiths & Schroeter for quantum, your start. For Level I you'd need only
+  **Griffiths E&M** (you have only the solutions manual), and only if you take E&M II. Taylor and Schroeder are for courses
+  you've had. Boas, Schutz, Simon and Carroll & Ostlie are on the shelf.
 
 ## 1. Plan
 **Why (draft; correct it in MISSION.md):** a "good for the soul" major. The wishlist's physics track (PDEs → quantum → general
@@ -31,8 +35,9 @@ mechanics, so it's the problem source rather than the main text. The library's "
 engineering statics course, so it's marked "not used".
 
 **Where you enter (Penn State BS Computer Engineering, 2026 bulletin [1]).** Required: PHYS 211 (mechanics), 212 (E&M), 214
-(wave motion and quantum physics), MATH 140/141/220/231/250. Not required: PHYS 213 (fluids and thermal physics), hence "maybe".
-Your catalog year may differ slightly from today's bulletin.
+(wave motion and quantum physics), MATH 140/141/220/231/250. Not required: PHYS 213 (fluids and thermal physics), but your thermal physics course covers it.
+On top of that you took modern physics, classical mechanics, electrodynamics and thermal physics, which credits PH237, PH341,
+PH351 and PH371. Your catalog year may differ slightly from today's bulletin.
 
 **Practice without a lab.** PH390 uses phyphox, a free phone app from RWTH Aachen that turns the phone's sensors into lab
 instruments (pendulum period, centripetal acceleration, Doppler, magnetometer). It's optional.
@@ -51,16 +56,16 @@ instruments (pendulum period, centripetal acceleration, Doppler, magnetometer). 
 | MA250 | Ordinary differential equations | Zill, Differential Equations with Boundary-Value Problems 8th (ch. 1-8, 11-12; to confirm) *(in library)* | MA141, MA220 | 20 | credited |
 | PH211 | Mechanics (calculus-based) | OpenStax, University Physics Volume 1 (ch. 1-13) *(in library)* | MA140 | 24 | credited |
 | PH212 | Electricity and magnetism (calculus-based) | OpenStax, University Physics Volume 2 (ch. 5-16) *(in library)* | PH211, MA141 | 22 | credited |
-| PH213 | Fluids and thermal physics (intro) | University Physics Vol. 1 ch. 14 (fluids) + 9fc1f17d2b Vol. 2 ch. 1-4 (thermodynamics) *(in library)* | PH211, MA141 | 10 | maybe |
+| PH213 | Fluids and thermal physics (intro) | University Physics Vol. 1 ch. 14 (fluids) + 9fc1f17d2b Vol. 2 ch. 1-4 (thermodynamics) *(in library)* | PH211, MA141 | 10 | credited |
 | PH214 | Waves, optics and the first quantum ideas | OpenStax, University Physics Volume 3 (ch. 1-4 optics, 6-7 photons and matter waves) + Vol. 1 ch. 15-17 (waves) *(in library)* | PH212 | 16 | credited |
-| PH237 | Modern physics: relativity, quanta, atoms, nuclei | Krane, Modern Physics 3rd *(in library)* | PH214, MA250 | 22 | **start** |
+| PH237 | Modern physics: relativity, quanta, atoms, nuclei | Krane, Modern Physics 3rd *(in library)* | PH214, MA250 | 22 | credited |
 | PH300 | Mathematical methods for physics | Boas, Mathematical Methods in the Physical Sciences 3rd *(in library)* | MA230, MA250, MA220 | 30 | maybe |
-| PH341 | Classical mechanics: oscillators, Lagrangian and Hamiltonian mechanics | Taylor, Classical Mechanics *(to acquire)* | PH211, PH300 | 28 | **start** |
-| PH351 | Electromagnetism I: electrostatics, magnetostatics, fields in matter | Griffiths, Introduction to Electrodynamics 4th *(to acquire)* (ch. 1-6; library has only the grade C solutions manual) | PH212, PH300 | 28 |  |
-| PH352 | Electromagnetism II: electrodynamics, waves, radiation, relativity | Griffiths, Introduction to Electrodynamics 4th *(to acquire)* (ch. 7-12) | PH351 | 22 |  |
-| PH361 | Quantum mechanics I | Griffiths & Schroeter, Introduction to Quantum Mechanics 3rd (ch. 1-4) *(in library)* | PH237, PH300 | 26 |  |
+| PH341 | Classical mechanics: oscillators, Lagrangian and Hamiltonian mechanics | Taylor, Classical Mechanics *(to acquire)* | PH211, PH300 | 28 | credited |
+| PH351 | Electromagnetism I: electrostatics, magnetostatics, fields in matter | Griffiths, Introduction to Electrodynamics 4th *(to acquire)* (ch. 1-6; library has only the grade C solutions manual) | PH212, PH300 | 28 | credited |
+| PH352 | Electromagnetism II: electrodynamics, waves, radiation, relativity | Griffiths, Introduction to Electrodynamics 4th *(to acquire)* (ch. 7-12) | PH351 | 22 | maybe |
+| PH361 | Quantum mechanics I | Griffiths & Schroeter, Introduction to Quantum Mechanics 3rd (ch. 1-4) *(in library)* | PH237, PH300 | 26 | **start** |
 | PH362 | Quantum mechanics II: identical particles, perturbation theory, scattering | Griffiths & Schroeter (ch. 5-11; to confirm) *(in library)* | PH361 | 24 |  |
-| PH371 | Thermal and statistical physics | Schroeder, An Introduction to Thermal Physics *(to acquire)* | PH213, PH237, MA230 | 24 |  |
+| PH371 | Thermal and statistical physics | Schroeder, An Introduction to Thermal Physics *(to acquire)* | PH213, PH237, MA230 | 24 | credited |
 
 #### Level I: optional extras
 
@@ -105,9 +110,9 @@ Ordered by the first course from your entry point that needs them. Free books ar
 
 - Spivak, Calculus: MA140  (credited for you; skip)
 - Schey, Div, Grad, Curl, and All That: MA230  (credited for you; skip)
-- Taylor, Classical Mechanics: PH341
+- Taylor, Classical Mechanics: PH341  (credited for you; skip)
 - Griffiths, Introduction to Electrodynamics 4th: PH351, PH352
-- Schroeder, An Introduction to Thermal Physics: PH371
+- Schroeder, An Introduction to Thermal Physics: PH371  (credited for you; skip)
 - Goldstein, Poole & Safko, Classical Mechanics 3rd: PH501
 - Jackson, Classical Electrodynamics 3rd: PH511
 - Pathria & Beale, Statistical Mechanics 3rd: PH531
@@ -121,7 +126,7 @@ Ordered by the first course from your entry point that needs them. Free books ar
 - One lesson = two 25-minute blocks: reading (a few pages + guide) and a lesson page: intuition → numbers → formula, a worked
   example, several varied problems, and one derivation you do yourself.
 - Every lesson ends with **Extra practice (optional)**: end-of-chapter problems from the course book, a problem from Lim's
-  series, and one article (often a classic paper or a history piece; e.g. Einstein 1905 for PH237).
+  series, and one article (often a classic paper or a history piece; e.g. Bell's 1964 paper for PH362).
 - Equations come only from grade-A sources, cited web sources, or are derived in the lesson and checked with sympy
   (library rule 4). Most physics books here are grade B, so the openstax.org web editions and the lesson's own derivations
   carry the equations.

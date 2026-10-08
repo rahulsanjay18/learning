@@ -384,12 +384,15 @@ MAJORS = {
         "elective": ["PH380", "PH391", "PH393", "PH394", "PH395", "PH396", "MA412"],
         "breadth": ["PH190"], "practice": ["PH390", "PH595"], "colloquium": ["PH398", "PH598"], "capstone": ["PH399", "PH599"],
         "entry": {
-            "credited": ["MA100", "MA140", "MA141", "MA220", "MA230", "MA250", "PH211", "PH212", "PH214"],
-            "maybe": ["PH213", "PH300", "MA412"],
-            "start": ["PH237", "PH341"],
+            "credited": ["MA100", "MA140", "MA141", "MA220", "MA230", "MA250", "PH211", "PH212", "PH213", "PH214",
+                         "PH237", "PH341", "PH351", "PH371"],
+            "maybe": ["PH300", "PH352", "MA412"],
+            "start": ["PH361"],
             "basis": "Penn State BS Computer Engineering requires PHYS 211 (mechanics), 212 (E&M) and 214 (waves and quantum); "
                      "the math degree covers the calculus, linear algebra and ODE rows. PHYS 213 (fluids, thermal) was not required. "
-                     "Boas (PH300) becomes a look-up shelf rather than a course.",
+                     "Boas (PH300) becomes a look-up shelf rather than a course. You also took modern physics, classical mechanics, "
+                     "electrodynamics and thermal physics (physics department), so PH237, PH341, PH351 and PH371 are credited "
+                     "(PH213 with them); PH352 is 'maybe' in case your E&M course stopped before radiation and relativity.",
         },
     },
     "mech-eng": {

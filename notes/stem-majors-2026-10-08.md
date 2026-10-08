@@ -14,11 +14,11 @@
 | Major | From high school | From your entry | Half subject (1 lesson/wk) | Full (2/wk) | You start with |
 |---|---|---|---|---|---|
 | Mathematics | 306 lessons | 106 | ≈ 2.0 yr | ≈ 1.0 yr | MA437 rings/fields/Galois, MA429 topology |
-| Physics | 404 | 214 | ≈ 4.1 yr | ≈ 2.1 yr | PH237 modern physics, PH341 classical mechanics |
+| Physics | 404 | 102 (50 without the "maybe" courses) | ≈ 2.0 yr | ≈ 1.0 yr | PH361 quantum mechanics I |
 | Mechanical Eng. | 528 | 306 | ≈ 5.9 yr | ≈ 2.9 yr | statics, thermodynamics, materials, CAD |
 | Unified Eng. | 616 | 360 | ≈ 6.9 yr | ≈ 3.5 yr | Unified I minus circuits (same courses as ME's start) |
 
-  All four together, counting shared courses once: 1102 lessons from high school, 792 from your entry points. Lesson counts are
+  All four together, counting shared courses once: 1102 lessons from high school, 662 from your entry points. Lesson counts are
   estimates until each course's syllabus is written.
 - **New rule for every course:** each lesson ends with an optional **Extra practice** section: book problems (numbers changed
   for math-heavy courses), one extra reading, and **one extra article**. For reading-heavy majors it's mostly the article.
@@ -31,8 +31,9 @@ Based on Penn State's current bulletins [1][2]. Your catalog year may differ a l
 - **Math:** every math option requires MATH 140, 141, 220, 230, 250, 311W, 312, 414 and 415, so those are credited, plus 421
   (you took complex analysis). Which other courses you took depends on the option, so 403, 435, 436, 412 and 455 are "maybe".
   **Tell me your option** and I'll update them.
-- **Physics:** computer engineering required PHYS 211, 212 and 214. PHYS 213 (fluids and thermal physics) was not required, so
-  it's "maybe", along with math methods (Boas), which becomes a book you look things up in rather than a course.
+- **Physics:** computer engineering required PHYS 211, 212 and 214, and you also took modern physics, classical mechanics,
+  electrodynamics and thermal physics, so all of those are credited. Quantum mechanics is the start. "Maybe": math methods
+  (Boas, now a book you look things up in) and E&M II (radiation and relativity), in case your E&M course stopped before them.
 - **Mechanical / Unified:** computer engineering had no engineering-mechanics course, so Statics is where new material starts.
   Circuits (EE 210), signals and systems (EE 353) and the digital courses are credited.
 
