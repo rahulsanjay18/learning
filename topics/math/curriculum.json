@@ -1,0 +1,673 @@
+{
+  "major": "math",
+  "program": "topics/math/PROGRAM.md",
+  "generated_by": "scripts/build_stem_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-08 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MA100"
+    ],
+    "credited": [
+      "MA100",
+      "MA140",
+      "MA141",
+      "MA220",
+      "MA230",
+      "MA250",
+      "MA311",
+      "MA312",
+      "MA414",
+      "MA421"
+    ],
+    "maybe": [
+      "MA403",
+      "MA435",
+      "MA436",
+      "MA412",
+      "MA455"
+    ],
+    "start": [
+      "MA437",
+      "MA429"
+    ],
+    "basis": "Penn State BS Mathematics common core (MATH 140, 141, 220, 230, 250/251, 311W, 312, 414, 415). The option you took decides the 'maybe' row: General adds MATH 403 and one of 435/436; Graduate Study adds 403, 404, 421, 429, 435, 436; Applied adds 403, 412, 436, 455. Course ids here follow Penn State numbers on purpose. You took complex analysis (MATH 421), so MA421 is credited."
+  },
+  "courses": [
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA140",
+      "title": "Calculus I: limits, derivatives, integrals",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "94a6ff068c OpenStax, Calculus Volume 1 (whole; equations from the openstax.org web edition)",
+        "secondary": [
+          "Spivak, Calculus (TO ACQUIRE) (the proof-first alternative, for the math major)"
+        ],
+        "skip": [
+          "9c143e072e Stewart, Calculus 8th: grade C copy",
+          "71f8006738 Thomas' Calculus: grade C copy"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA141",
+      "title": "Calculus II: integration techniques, sequences and series, parametric and polar",
+      "status": "later",
+      "requires": [
+        "MA140"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "0db419bb48 OpenStax, Calculus Volume 2 (whole)"
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA220",
+      "title": "Matrices: computational linear algebra",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "d694d5cc9d Strang, Introduction to Linear Algebra (ch. 1-7)",
+        "secondary": [
+          "44e0e775eb Lay, Linear Algebra and Its Applications (more worked examples)"
+        ],
+        "tertiary": [
+          "0ea7f89d5e Savov, No Bullshit Guide to Linear Algebra"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA230",
+      "title": "Calculus of several variables and vector analysis",
+      "status": "later",
+      "requires": [
+        "MA141",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "8f45554212 OpenStax, Calculus Volume 3 (whole)",
+        "secondary": [
+          "Schey, Div, Grad, Curl, and All That (TO ACQUIRE) (vector calculus the way physics uses it)"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA250",
+      "title": "Ordinary differential equations",
+      "status": "later",
+      "requires": [
+        "MA141",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "3153c30773 Zill, Differential Equations with Boundary-Value Problems 8th (ch. 1-8, 11-12; to confirm)",
+        "secondary": [
+          "c83f1abba8 Ordinary Differential Equations (second source; identify author when the course starts)"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA311",
+      "title": "Proofs: logic, sets, induction, relations, functions",
+      "status": "later",
+      "requires": [
+        "MA141"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "7657f3ebf3 Velleman, How to Prove It (ch. 1-7)",
+        "secondary": [
+          "1bc1423cf5 Halmos, Naive Set Theory (grade A)",
+          "d9694b9899 Chartrand et al., Mathematical Proofs (more exercises)"
+        ],
+        "tertiary": [
+          "4aaff76254 Cummings, Proofs: A Long-Form Mathematics Textbook"
+        ]
+      }
+    },
+    {
+      "id": "MA312",
+      "title": "Real analysis I: the real line, sequences, series, continuity, derivative",
+      "status": "later",
+      "requires": [
+        "MA311"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "1f0fdaeaa7 Abbott, Understanding Analysis (ch. 1-5)",
+        "secondary": [
+          "7bd6779091 Ross, Elementary Analysis (more routine exercises)",
+          "e2b4dd743f Tao, Analysis I (construction of the reals)"
+        ]
+      }
+    },
+    {
+      "id": "MA403",
+      "title": "Real analysis II: metric spaces, uniform convergence, Riemann-Stieltjes, several variables",
+      "status": "later",
+      "requires": [
+        "MA312",
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "eb63d86f9a Rudin, Principles of Mathematical Analysis (ch. 2-7, 9)",
+        "secondary": [
+          "1f0fdaeaa7 Abbott ch. 6-8 (gentler first pass on sequences of functions)"
+        ]
+      }
+    },
+    {
+      "id": "MA414",
+      "title": "Probability",
+      "status": "later",
+      "requires": [
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "4aac0e45ba Bertsekas & Tsitsiklis, Introduction to Probability 2nd (ch. 1-9)",
+        "secondary": [
+          "a53c1f767c Haigh, Probability VSI (grade A)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering, Unified Engineering: finishing it in any of them counts here. Also covered by the Statistics major (Casella & Berger ch. 1-5): either one counts."
+    },
+    {
+      "id": "MA435",
+      "title": "Abstract algebra I: groups and symmetry",
+      "status": "later",
+      "requires": [
+        "MA311",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "84078260e2 Artin, Algebra 1st ed. (ch. 2 Groups, 5 Symmetry, 6 More Group Theory; grade A)",
+        "secondary": [
+          "07f3b2e15e Numbers, Groups and Codes (gentler examples)"
+        ]
+      }
+    },
+    {
+      "id": "MA436",
+      "title": "Linear algebra done abstractly: vector spaces, operators, spectral theorem",
+      "status": "later",
+      "requires": [
+        "MA311",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "b7c48458b1 Axler, Linear Algebra Done Right (ch. 1-8)",
+        "secondary": [
+          "84078260e2 Artin ch. 3-4, 7 (bilinear forms, spectral theorem)"
+        ]
+      }
+    },
+    {
+      "id": "MA437",
+      "title": "Abstract algebra II: rings, factorization, fields, Galois theory",
+      "status": "later",
+      "requires": [
+        "MA435"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "84078260e2 Artin, Algebra (ch. 10 Rings, 11 Factorization, 13 Fields, 14 Galois Theory)",
+        "secondary": [
+          "c2d9599de2 Emil Artin, Galois Theory (the classic short treatment)"
+        ]
+      }
+    },
+    {
+      "id": "MA421",
+      "title": "Complex analysis",
+      "status": "later",
+      "requires": [
+        "MA312",
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "1646f5592d Bak & Newman, Complex Analysis 3rd (UTM)",
+        "tertiary": [
+          "31ba41c2be Ahlfors (saved for Level II)"
+        ]
+      }
+    },
+    {
+      "id": "MA429",
+      "title": "Topology: metric and topological spaces",
+      "status": "later",
+      "requires": [
+        "MA312"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "bb6ca17498 Sutherland, Introduction to Metric and Topological Spaces"
+      }
+    },
+    {
+      "id": "MA501",
+      "title": "Graduate algebra: groups, rings, modules, fields",
+      "status": "later",
+      "requires": [
+        "MA437",
+        "MA436"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 36,
+      "books": {
+        "primary": "Dummit & Foote, Abstract Algebra 3rd (TO ACQUIRE)",
+        "secondary": [
+          "c2d9599de2 E. Artin, Galois Theory"
+        ]
+      }
+    },
+    {
+      "id": "MA511",
+      "title": "Measure and integration",
+      "status": "later",
+      "requires": [
+        "MA403",
+        "MA429"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 30,
+      "books": {
+        "primary": "Folland, Real Analysis 2nd (TO ACQUIRE)",
+        "secondary": [
+          "4dc05f0beb Fremlin, Measure Theory vol. 1"
+        ]
+      },
+      "note": "Overlaps Statistics S501 (measure-theoretic probability): either covers the measure theory."
+    },
+    {
+      "id": "MA521",
+      "title": "Complex analysis (graduate)",
+      "status": "later",
+      "requires": [
+        "MA421",
+        "MA403"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "ffc847bb21 Ahlfors, Complex Analysis 3rd",
+        "secondary": [
+          "0c1388fa95 Solutions to Ahlfors"
+        ]
+      }
+    },
+    {
+      "id": "MA531",
+      "title": "Topology (graduate)",
+      "status": "later",
+      "requires": [
+        "MA429"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Munkres, Topology 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MA541",
+      "title": "Functional analysis",
+      "status": "later",
+      "requires": [
+        "MA511",
+        "MA436"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Kreyszig, Introductory Functional Analysis with Applications (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MA551",
+      "title": "Smooth manifolds",
+      "status": "later",
+      "requires": [
+        "MA531",
+        "MA403"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 30,
+      "books": {
+        "primary": "Lee, Introduction to Smooth Manifolds 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MA561",
+      "title": "Algebraic topology",
+      "status": "later",
+      "requires": [
+        "MA531",
+        "MA501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 30,
+      "books": {
+        "primary": "Hatcher, Algebraic Topology (free: https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)"
+      }
+    },
+    {
+      "id": "MA412",
+      "title": "Fourier series and partial differential equations",
+      "status": "later",
+      "requires": [
+        "MA250",
+        "MA230"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "498a8db119 Strauss, Partial Differential Equations: An Introduction (ch. 1-7)",
+        "secondary": [
+          "4d1d41414b Haberman, Applied Partial Differential Equations (engineering flavour)"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA455",
+      "title": "Numerical analysis",
+      "status": "later",
+      "requires": [
+        "MA250",
+        "MA220"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "f489dc5bbb Burden & Faires, Numerical Analysis"
+      }
+    },
+    {
+      "id": "MA360",
+      "title": "Concrete and discrete mathematics: sums, recurrences, generating functions",
+      "status": "later",
+      "requires": [
+        "MA311"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "f33a3eecfe Graham, Knuth & Patashnik, Concrete Mathematics (grade A)"
+      }
+    },
+    {
+      "id": "MA465",
+      "title": "Number theory",
+      "status": "later",
+      "requires": [
+        "MA311"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Silverman, A Friendly Introduction to Number Theory (TO ACQUIRE)",
+        "secondary": [
+          "4dbcaf8f24 Wilson, Number Theory VSI"
+        ]
+      }
+    },
+    {
+      "id": "MA417",
+      "title": "Dynamical systems and chaos",
+      "status": "later",
+      "requires": [
+        "MA250",
+        "MA220"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Strogatz, Nonlinear Dynamics and Chaos 2nd (TO ACQUIRE) (7774a5cc7e is a grade C copy)",
+        "secondary": [
+          "bcad5b159e Smith, Chaos VSI (grade A)"
+        ]
+      }
+    },
+    {
+      "id": "MA470",
+      "title": "Geometry: Euclid and beyond",
+      "status": "later",
+      "requires": [
+        "MA311"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "104491854b Euclid, Elements (Books I-VI)",
+        "secondary": [
+          "Hartshorne, Geometry: Euclid and Beyond (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MA480",
+      "title": "Differential forms and calculus on manifolds",
+      "status": "later",
+      "requires": [
+        "MA230",
+        "MA436"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "5ca9747aa6 Bachman, A Visual Introduction to Differential Forms and Calculus on Manifolds"
+      }
+    },
+    {
+      "id": "MA457",
+      "title": "Mathematical logic",
+      "status": "later",
+      "requires": [
+        "MA311"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "8d01f38f50 Enderton, A Mathematical Introduction to Logic (ch. 1-2)",
+        "secondary": [
+          "b4cb422d7f Priest, Logic VSI"
+        ]
+      }
+    },
+    {
+      "id": "MA190",
+      "title": "Breadth: what mathematics is, and its history",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "8b1e10be36 Stedall, The History of Mathematics VSI (grade A)",
+        "secondary": [
+          "23bb8dac0b Gowers, Mathematics VSI",
+          "52315ec509 Gowers (ed.), Princeton Companion to Mathematics (dip in)"
+        ]
+      }
+    },
+    {
+      "id": "MA390",
+      "title": "Practice: problem solving (Putnam-style)",
+      "status": "later",
+      "requires": [
+        "MA311"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "57583b8957 Zeitz, The Art and Craft of Problem Solving 3rd",
+        "secondary": [
+          "0e6b3043b5 Engel, Problem-Solving Strategies",
+          "829f2d5a5a Gelca & Andreescu, Putnam and Beyond"
+        ]
+      }
+    },
+    {
+      "id": "MA595",
+      "title": "Practice: qualifying-exam self-check",
+      "status": "later",
+      "requires": [
+        "MA501",
+        "MA511",
+        "MA521"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "d609983fe4 Problems and Solutions in Mathematics (grade A; graduate qualifying problems)"
+      }
+    },
+    {
+      "id": "MA398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "MA403",
+        "MA437"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a typed conversation"
+      }
+    },
+    {
+      "id": "MA598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "MA501",
+        "MA511"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "MA399",
+      "title": "Capstone: an expository paper on a topic you pick",
+      "status": "later",
+      "requires": [
+        "MA403",
+        "MA437"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional; to choose with you"
+      }
+    },
+    {
+      "id": "MA599",
+      "title": "Capstone: reproduce and extend a published result",
+      "status": "later",
+      "requires": [
+        "MA501",
+        "MA511"
+      ],
+      "group": "capstone",
+      "level": "II",
+      "est_lessons": 12,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

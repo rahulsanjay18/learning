@@ -36,10 +36,17 @@ def render(major, cur):
     enrolled = set(major.get("enrolled_levels", ["I"]))
     shown = [c for c in courses if c.get("level", "I") in enrolled]
     ids = {c["id"] for c in shown}
-    for c in shown:
+    terms = cur.get("terms") or {}       # optional: courses taken together (Unified Engineering), drawn as boxes
+    term_of = {cid: t for t, cids in terms.items() for cid in cids}
+    def node(c, pad="  "):
         book = (c.get("books") or {}).get("primary") or c.get("source") or "book not chosen yet"
         text = f"{c['id']} {label(c['title'], 40)}<br/><small>book: {label(book_short(book), 44)}</small>"
-        lines.append(f'  {c["id"]}["{text}"]')
+        return f'{pad}{c["id"]}["{text}"]'
+    for i, (t, cids) in enumerate(terms.items()):
+        lines.append(f'  subgraph T{i}["{t}"]')
+        lines += [node(c, "    ") for c in shown if c["id"] in cids]
+        lines.append("  end")
+    lines += [node(c) for c in shown if c["id"] not in term_of]
     for c in shown:
         for r in c.get("requires", []):
             if r in ids:
@@ -47,13 +54,28 @@ def render(major, cur):
     lines += ["  classDef done fill:#eee,color:#777,stroke:#bbb",
               "  classDef active stroke-width:3px",
               "  classDef later stroke-dasharray:5 4"]
+    entry = cur.get("entry_points") or {}
+    credited, maybe, start = (set(entry.get(k, [])) for k in ("credited", "maybe", "start"))
+    if entry:
+        lines += ["  classDef credited fill:#e8e8e8,color:#999,stroke:#ccc",
+                  "  classDef maybe fill:#f4f4f4,color:#666,stroke:#aaa,stroke-dasharray:2 2",
+                  "  classDef start stroke-width:4px,stroke:#000"]
     for c in shown:
         cls = {"done": "done", "active": "active"}.get(c["status"])
+        if cls is None and c["id"] in credited | maybe | start:
+            cls = "credited" if c["id"] in credited else "maybe" if c["id"] in maybe else "start"
         if cls is None and (c["status"] == "later" or c.get("group", "core") != "core"):
             cls = "later"
         if cls:
             lines.append(f"  class {c['id']} {cls}")
     lines += ["```", ""]
+    if entry:
+        lines += ["## Where you enter", "",
+                  "Written as if starting from high school (" + ", ".join(entry.get("high_school", [])) + " first). Your entry point:",
+                  "- **Credited** (pale grey, from your degrees): " + ", ".join(sorted(credited)),
+                  "- **Maybe** (dotted: skim or skip, your call): " + (", ".join(sorted(maybe)) or "none"),
+                  "- **Start here** (thick border): " + ", ".join(entry.get("start", [])),
+                  "- Basis: " + entry.get("basis", ""), ""]
     active = [c for c in shown if c["status"] == "active"]
     if active:
         lines += ["## Active courses: books by role", ""]

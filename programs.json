@@ -94,6 +94,46 @@
         "I"
       ],
       "note": "Designed 2026-10-08 at the learner's request, explicitly 'not one I would do now'. A reading major: Tyson + the Norton Anthology of Theory and Criticism + one novel per lens, with foundations from philosophy, social theory and psychology. SYLLABUS.md is the professor's syllabus (128 weeks at 5 sittings/week). One in, one out when it starts."
+    },
+    {
+      "slug": "math",
+      "name": "Mathematics",
+      "goal": "soul",
+      "curriculum": "topics/math/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_stem_majors.py. Pure math from precalculus to graduate algebra, analysis and topology. Your entry point is the upper-division algebra/topology/complex courses."
+    },
+    {
+      "slug": "physics",
+      "name": "Physics",
+      "goal": "soul",
+      "curriculum": "topics/physics/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_stem_majors.py. Undergraduate physics through quantum, E&M and stat mech, graduate core in Level II. Entry: modern physics + classical mechanics."
+    },
+    {
+      "slug": "mech-eng",
+      "name": "Mechanical Engineering",
+      "goal": "soul",
+      "curriculum": "topics/mech-eng/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_stem_majors.py. Depth engineering major. Shares math, physics and engineering-science courses with Unified Engineering. Entry: statics, thermo, materials."
+    },
+    {
+      "slug": "unified-eng",
+      "name": "Unified Engineering",
+      "goal": "soul",
+      "curriculum": "topics/unified-eng/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_stem_majors.py. Breadth-first engineering across every discipline, run as MIT-Unified-style terms of four parallel courses with one shared weekly design problem. Entry: Unified I minus circuits."
     }
   ]
 }

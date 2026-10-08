@@ -1,0 +1,1056 @@
+{
+  "major": "unified-eng",
+  "program": "topics/unified-eng/PROGRAM.md",
+  "generated_by": "scripts/build_stem_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-08 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MA100"
+    ],
+    "credited": [
+      "MA100",
+      "MA140",
+      "MA141",
+      "MA220",
+      "MA230",
+      "MA250",
+      "MA414",
+      "PH211",
+      "PH212",
+      "CH110",
+      "ES250",
+      "UE202",
+      "UE335"
+    ],
+    "maybe": [
+      "ES160",
+      "UE330"
+    ],
+    "start": [
+      "ES211",
+      "ES240",
+      "ES221",
+      "ES150"
+    ],
+    "basis": "Penn State BS Computer Engineering: the math and physics base, CHEM 110, EE 210 (circuits), EE 353 (signals and systems), CMPEN 270/331 and CMPSC 311/473-level systems courses (digital systems), EE 310 (electronic circuit design; the embedded half may be new). So Unified I runs three of its four courses for you."
+  },
+  "courses": [
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA140",
+      "title": "Calculus I: limits, derivatives, integrals",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "94a6ff068c OpenStax, Calculus Volume 1 (whole; equations from the openstax.org web edition)",
+        "secondary": [
+          "Spivak, Calculus (TO ACQUIRE) (the proof-first alternative, for the math major)"
+        ],
+        "skip": [
+          "9c143e072e Stewart, Calculus 8th: grade C copy",
+          "71f8006738 Thomas' Calculus: grade C copy"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA141",
+      "title": "Calculus II: integration techniques, sequences and series, parametric and polar",
+      "status": "later",
+      "requires": [
+        "MA140"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "0db419bb48 OpenStax, Calculus Volume 2 (whole)"
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA220",
+      "title": "Matrices: computational linear algebra",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "d694d5cc9d Strang, Introduction to Linear Algebra (ch. 1-7)",
+        "secondary": [
+          "44e0e775eb Lay, Linear Algebra and Its Applications (more worked examples)"
+        ],
+        "tertiary": [
+          "0ea7f89d5e Savov, No Bullshit Guide to Linear Algebra"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA230",
+      "title": "Calculus of several variables and vector analysis",
+      "status": "later",
+      "requires": [
+        "MA141",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "8f45554212 OpenStax, Calculus Volume 3 (whole)",
+        "secondary": [
+          "Schey, Div, Grad, Curl, and All That (TO ACQUIRE) (vector calculus the way physics uses it)"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA250",
+      "title": "Ordinary differential equations",
+      "status": "later",
+      "requires": [
+        "MA141",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "3153c30773 Zill, Differential Equations with Boundary-Value Problems 8th (ch. 1-8, 11-12; to confirm)",
+        "secondary": [
+          "c83f1abba8 Ordinary Differential Equations (second source; identify author when the course starts)"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA414",
+      "title": "Probability",
+      "status": "later",
+      "requires": [
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "4aac0e45ba Bertsekas & Tsitsiklis, Introduction to Probability 2nd (ch. 1-9)",
+        "secondary": [
+          "a53c1f767c Haigh, Probability VSI (grade A)"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Mechanical Engineering: finishing it in any of them counts here. Also covered by the Statistics major (Casella & Berger ch. 1-5): either one counts."
+    },
+    {
+      "id": "PH211",
+      "title": "Mechanics (calculus-based)",
+      "status": "later",
+      "requires": [
+        "MA140"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "7a77752ee7 OpenStax, University Physics Volume 1 (ch. 1-13)",
+        "secondary": [
+          "dd59c2b9cb Feynman, Leighton & Sands, The Feynman Lectures vol. 1 (grade A)",
+          "1df1fdcbf3 Epstein, Thinking Physics (grade A; concept questions)"
+        ],
+        "tertiary": [
+          "b467b6c3a7 Irodov, Problems in General Physics (hard problems)"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "PH212",
+      "title": "Electricity and magnetism (calculus-based)",
+      "status": "later",
+      "requires": [
+        "PH211",
+        "MA141"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "9fc1f17d2b OpenStax, University Physics Volume 2 (ch. 5-16)",
+        "secondary": [
+          "dd59c2b9cb Feynman Lectures vol. 2",
+          "837676dd13 Blundell, Magnetism VSI"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "CH110",
+      "title": "Chemical principles for engineers",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "705ba8c1cf OpenStax, Chemistry 2e (ch. 1-12 and 16-17; to confirm)",
+        "secondary": [
+          "007dfde23b Cottrell, Matter VSI (grade A)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES150",
+      "title": "Engineering graphics and CAD (sketching, drawings, parametric and code CAD)",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 10,
+      "books": {
+        "primary": "843d235737 Gohde & Kintel, Programming with OpenSCAD",
+        "secondary": [
+          "8eac849bc8 Measure Twice, Cut Once (grade A; measuring and drawing for makers)",
+          "FreeCAD documentation and tutorials (free: https://wiki.freecad.org)"
+        ],
+        "tertiary": [
+          "08bb9f58a1 Fine Woodworking's SketchUp Guide (grade A)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES160",
+      "title": "Programming and numerical methods for engineers (Python)",
+      "status": "later",
+      "requires": [
+        "MA141",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "505e09624e Hoffman, Numerical Methods for Engineers and Scientists 2nd",
+        "secondary": [
+          "a56cacd7a7 OpenStax, Introduction to Python Programming"
+        ],
+        "tertiary": [
+          "071a589458 Press et al., Numerical Recipes"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES211",
+      "title": "Statics",
+      "status": "later",
+      "requires": [
+        "PH211",
+        "MA141"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Baker & Haynes, Engineering Statics: Open and Interactive (free, CC BY-NC-SA: https://engineeringstatics.org; ch. 1-7)",
+        "secondary": [
+          "fe2e3113f4 Hibbeler, Engineering Mechanics: Statics 14th (grade C: chapters only, for more problems from your copy)"
+        ],
+        "tertiary": [
+          "dfd4403935 Muir Wood, Civil Engineering VSI"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES240",
+      "title": "Materials science and engineering",
+      "status": "later",
+      "requires": [
+        "CH110",
+        "PH211"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "520676d836 Callister & Rethwisch, Materials Science and Engineering: An Introduction 8th",
+        "secondary": [
+          "dbed43e44b Hall, Materials VSI (grade A)",
+          "4111984f2e McLeish, Soft Matter VSI"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES250",
+      "title": "Circuits and electronics for engineers",
+      "status": "later",
+      "requires": [
+        "PH212",
+        "MA250"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Kuphaldt, Lessons in Electric Circuits vols. I-III (free: https://www.ibiblio.org/kuphaldt/electricCircuits/)",
+        "secondary": [
+          "d46e47e293 Horowitz & Hill, The Art of Electronics 3rd (grade A; ch. 1-2)"
+        ],
+        "skip": [
+          "e94b9176a5 Agarwal & Lang, Foundations of Analog and Digital Electronic Circuits: grade C copy"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES221",
+      "title": "Thermodynamics",
+      "status": "later",
+      "requires": [
+        "PH211",
+        "CH110",
+        "MA141"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "c4fa854434 Cengel, Introduction to Thermodynamics and Heat Transfer 2nd (thermodynamics chapters; to confirm)",
+        "secondary": [
+          "26a7bb9d15 Atkins, The Laws of Thermodynamics VSI",
+          "762ad02c0c Fermi, Thermodynamics"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES212",
+      "title": "Dynamics",
+      "status": "later",
+      "requires": [
+        "ES211",
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "411547e234 Hibbeler, Engineering Mechanics: Dynamics 14th (ch. 12-22)",
+        "secondary": [
+          "4192f403ff Hibbeler Dynamics instructor's solutions manual"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES213",
+      "title": "Mechanics of materials: stress, strain, axial, torsion, bending, buckling",
+      "status": "later",
+      "requires": [
+        "ES211",
+        "MA250"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "8fdf44f6f1 Hibbeler, Mechanics of Materials 10th (grade C: read your copy; needs reconversion before lessons quote it)",
+        "secondary": [
+          "Philpot, Mechanics of Materials (TO ACQUIRE) (if reconversion fails)",
+          "aa149abd72 Blockley, Structural Engineering VSI"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES231",
+      "title": "Fluid mechanics",
+      "status": "later",
+      "requires": [
+        "ES212",
+        "ES221",
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 26,
+      "books": {
+        "primary": "8b71085809 Cengel & Cimbala, Fluid Mechanics: Fundamentals and Applications (ch. 1-10; to confirm)"
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "UE202",
+      "title": "Signals and systems",
+      "status": "later",
+      "requires": [
+        "ES250",
+        "MA250"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Oppenheim, Willsky & Nawab, Signals and Systems 2nd (TO ACQUIRE)",
+        "secondary": [
+          "MIT OpenCourseWare 6.003 Signals and Systems notes (free: https://ocw.mit.edu)"
+        ]
+      }
+    },
+    {
+      "id": "ES340",
+      "title": "System dynamics and feedback control",
+      "status": "later",
+      "requires": [
+        "ES212",
+        "ES250",
+        "MA250"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Astrom & Murray, Feedback Systems 2nd (book site: https://fbsbook.org)",
+        "secondary": [
+          "Nise, Control Systems Engineering (TO ACQUIRE) (more drill)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ES370",
+      "title": "Heat transfer",
+      "status": "later",
+      "requires": [
+        "ES221",
+        "ES231"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "c4fa854434 Cengel, Introduction to Thermodynamics and Heat Transfer 2nd (heat transfer chapters; to confirm)",
+        "secondary": [
+          "Incropera et al., Fundamentals of Heat and Mass Transfer (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "UE204",
+      "title": "Chemical process principles: material and energy balances, kinetics",
+      "status": "later",
+      "requires": [
+        "CH110",
+        "ES221"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "UE309",
+      "title": "Applied electromagnetics: transmission lines, waves, antennas",
+      "status": "later",
+      "requires": [
+        "PH212",
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "3d37842821 Ulaby & Ravaioli, Fundamentals of Applied Electromagnetics"
+      }
+    },
+    {
+      "id": "UE310",
+      "title": "Civil and structural engineering: how structures stand",
+      "status": "later",
+      "requires": [
+        "ES213"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Gordon, Structures: Or Why Things Don't Fall Down (TO ACQUIRE)",
+        "secondary": [
+          "aa149abd72 Blockley, Structural Engineering VSI (grade A)",
+          "dfd4403935 Muir Wood, Civil Engineering VSI (grade A)"
+        ]
+      }
+    },
+    {
+      "id": "UE320",
+      "title": "Environmental and water engineering",
+      "status": "later",
+      "requires": [
+        "UE204",
+        "ES231"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Davis & Cornwell, Introduction to Environmental Engineering (TO ACQUIRE)",
+        "secondary": [
+          "67b9e15438 Fundamentals of Air Pollution (grade A)",
+          "9a87e2b584 What We Know About Climate Change (grade A)"
+        ]
+      }
+    },
+    {
+      "id": "UE330",
+      "title": "Electronics and embedded systems",
+      "status": "later",
+      "requires": [
+        "ES250",
+        "UE202"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "d46e47e293 Horowitz & Hill, The Art of Electronics 3rd (grade A)",
+        "secondary": [
+          "a7c45d57dd Valvano, Introduction to Embedded Systems (grade A)",
+          "18ce1e24d2 Sedra & Smith, Microelectronic Circuits 7th"
+        ]
+      }
+    },
+    {
+      "id": "UE335",
+      "title": "Digital systems and computer organization",
+      "status": "later",
+      "requires": [
+        "ES250"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Harris & Harris, Digital Design and Computer Architecture (TO ACQUIRE)",
+        "secondary": [
+          "e2e4d85f05 Bryant & O'Hallaron, Computer Systems: A Programmer's Perspective"
+        ]
+      }
+    },
+    {
+      "id": "UE340",
+      "title": "Aerospace engineering: flight, aerodynamics, propulsion, orbits",
+      "status": "later",
+      "requires": [
+        "ES231",
+        "ES221",
+        "ES212"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Anderson, Introduction to Flight (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "UE350",
+      "title": "Nuclear engineering",
+      "status": "later",
+      "requires": [
+        "PH212",
+        "ES221",
+        "MA250"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "9eab129029 Lamarsh & Baratta, Introduction to Nuclear Engineering 3rd",
+        "secondary": [
+          "61c68f51f7 Irvine, Nuclear Power VSI (grade A)"
+        ]
+      }
+    },
+    {
+      "id": "UE360",
+      "title": "Biomedical engineering: biomechanics and the body as a machine",
+      "status": "later",
+      "requires": [
+        "ES212",
+        "ES213"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "7094714a5f Knudson, Fundamentals of Biomechanics 2nd (grade A)",
+        "secondary": [
+          "528dbed011 OpenStax, Anatomy and Physiology (grade A; selected)",
+          "98f51948ba Winter, Biomechanics and Motor Control"
+        ]
+      }
+    },
+    {
+      "id": "UE370",
+      "title": "Industrial and systems engineering: operations research, quality, lean",
+      "status": "later",
+      "requires": [
+        "MA414",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Hillier & Lieberman, Introduction to Operations Research (TO ACQUIRE)",
+        "secondary": [
+          "77965156a6 Liker, The Toyota Way",
+          "613ff03b6d Six-Hour Safety Culture (grade A)"
+        ]
+      }
+    },
+    {
+      "id": "ME360",
+      "title": "Manufacturing processes (machining, casting, forming, additive)",
+      "status": "later",
+      "requires": [
+        "ES240",
+        "ES150"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Kalpakjian & Schmid, Manufacturing Engineering and Technology (TO ACQUIRE)",
+        "secondary": [
+          "b07551d382 OpenStax, Additive Manufacturing Essentials",
+          "ed3f2a9abf Moltrecht, Machining for Hobbyists"
+        ],
+        "tertiary": [
+          "d9c944e630 Pye, The Nature and Art of Workmanship"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "UE400",
+      "title": "Systems engineering and integrated design",
+      "status": "later",
+      "requires": [
+        "ES340",
+        "UE310",
+        "UE330",
+        "UE340"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "NASA Systems Engineering Handbook, SP-2016-6105 Rev 2 (free: https://www.nasa.gov/reference/systems-engineering-handbook/)",
+        "secondary": [
+          "4fd15e571e Blockley, Engineering VSI"
+        ]
+      }
+    },
+    {
+      "id": "UE501",
+      "title": "Multidisciplinary design optimization",
+      "status": "later",
+      "requires": [
+        "ES160",
+        "UE400"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Martins & Ning, Engineering Design Optimization (free online edition: https://mdobook.github.io)",
+        "secondary": [
+          "942be832c7 Nocedal & Wright, Numerical Optimization"
+        ]
+      }
+    },
+    {
+      "id": "UE511",
+      "title": "System architecture",
+      "status": "later",
+      "requires": [
+        "UE400"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Crawley, Cameron & Selva, System Architecture: Strategy and Product Development for Complex Systems (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "UE521",
+      "title": "Linear systems theory (state space)",
+      "status": "later",
+      "requires": [
+        "ES340",
+        "UE202",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Hespanha, Linear Systems Theory 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "UE531",
+      "title": "Reliability, risk and safety engineering",
+      "status": "later",
+      "requires": [
+        "MA414",
+        "UE400"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Leveson, Engineering a Safer World (free from MIT Press: https://mitpress.mit.edu/9780262533690/)"
+      }
+    },
+    {
+      "id": "ME310",
+      "title": "Kinematics and dynamics of machinery (linkages, cams, gears)",
+      "status": "later",
+      "requires": [
+        "ES212",
+        "ES150"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Norton, Design of Machinery (TO ACQUIRE)",
+        "secondary": [
+          "Uicker, Pennock & Shigley, Theory of Machines and Mechanisms (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ME330",
+      "title": "Mechanical vibrations",
+      "status": "later",
+      "requires": [
+        "ES212",
+        "MA250",
+        "MA220"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Rao, Mechanical Vibrations (TO ACQUIRE)",
+        "secondary": [
+          "913318cd5d King, Vibrations and Waves"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ME350",
+      "title": "Machine design (failure theories, fatigue, shafts, bearings, fasteners)",
+      "status": "later",
+      "requires": [
+        "ES213",
+        "ES240",
+        "ME310"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 26,
+      "books": {
+        "primary": "Budynas & Nisbett, Shigley's Mechanical Engineering Design (TO ACQUIRE)",
+        "secondary": [
+          "c22369401a Avallone et al., Marks' Standard Handbook for Mechanical Engineers (grade A; reference)"
+        ],
+        "tertiary": [
+          "c0026d8da4 Machinery's Handbook 31 (grade C; reference from your copy)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ME410",
+      "title": "Finite element analysis",
+      "status": "later",
+      "requires": [
+        "ES213",
+        "ES160"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Logan, A First Course in the Finite Element Method (TO ACQUIRE)"
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "ME430",
+      "title": "Robotics",
+      "status": "later",
+      "requires": [
+        "ES212",
+        "ES340",
+        "MA220"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Lynch & Park, Modern Robotics (free: https://hades.mech.northwestern.edu/index.php/Modern_Robotics)"
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA412",
+      "title": "Fourier series and partial differential equations",
+      "status": "later",
+      "requires": [
+        "MA250",
+        "MA230"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "498a8db119 Strauss, Partial Differential Equations: An Introduction (ch. 1-7)",
+        "secondary": [
+          "4d1d41414b Haberman, Applied Partial Differential Equations (engineering flavour)"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "UE190",
+      "title": "Breadth: what engineering is (all the disciplines, and why things fail)",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "4fd15e571e Blockley, Engineering VSI (grade A)",
+        "secondary": [
+          "af4f4570dd Hammack, The Things We Make (grade A)",
+          "Petroski, To Engineer Is Human (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "UE195",
+      "title": "Breadth: engineering economics and ethics",
+      "status": "later",
+      "requires": [
+        "MA141"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "Newnan et al., Engineering Economic Analysis (TO ACQUIRE)",
+        "secondary": [
+          "bec5d9e593 OpenStax, Business Ethics (grade A)",
+          "NSPE Code of Ethics (free: https://www.nspe.org/resources/ethics/code-ethics)"
+        ]
+      }
+    },
+    {
+      "id": "ES380",
+      "title": "Practice: measurement and instrumentation lab (Arduino, phone sensors)",
+      "status": "later",
+      "requires": [
+        "ES250",
+        "MA414"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "d46e47e293 Horowitz & Hill (measurement chapters)",
+        "secondary": [
+          "a7c45d57dd Valvano, Introduction to Embedded Systems (grade A)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "UE395",
+      "title": "Practice: FE exam (Other Disciplines) self-check",
+      "status": "later",
+      "requires": [
+        "ES231",
+        "ES213",
+        "ES340"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "NCEES FE Reference Handbook (free with an NCEES account: https://ncees.org/exams/fe-exam/)",
+        "secondary": [
+          "f269980212 Lindeburg, FE Mechanical Practice Problems (grade A; most topics overlap)"
+        ]
+      }
+    },
+    {
+      "id": "ME385",
+      "title": "Practice: shop work (woodworking and machining as engineering)",
+      "status": "later",
+      "requires": [
+        "ES150"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "a5d96fb4c8 Wearing, The Essential Woodworker (grade A)",
+        "secondary": [
+          "ed3f2a9abf Moltrecht, Machining for Hobbyists"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "UE398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "UE400"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "UE399",
+      "title": "Capstone: a multidisciplinary design-build",
+      "status": "later",
+      "requires": [
+        "UE400"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "optional; to choose with you"
+      }
+    },
+    {
+      "id": "UE599",
+      "title": "Capstone: thesis-scale multidisciplinary project",
+      "status": "later",
+      "requires": [
+        "UE501",
+        "UE511"
+      ],
+      "group": "capstone",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ],
+  "terms": {
+    "Base": [
+      "MA100",
+      "MA140",
+      "MA141",
+      "MA220",
+      "MA230",
+      "MA250",
+      "MA414",
+      "PH211",
+      "PH212",
+      "CH110",
+      "ES150",
+      "ES160"
+    ],
+    "Unified I": [
+      "ES211",
+      "ES240",
+      "ES250",
+      "ES221"
+    ],
+    "Unified II": [
+      "ES212",
+      "ES213",
+      "ES231",
+      "UE202"
+    ],
+    "Unified III": [
+      "ES340",
+      "ES370",
+      "UE204",
+      "UE309"
+    ],
+    "Discipline tour": [
+      "UE310",
+      "UE320",
+      "UE330",
+      "UE335",
+      "UE340",
+      "UE350",
+      "UE360",
+      "UE370",
+      "ME360"
+    ],
+    "Integration": [
+      "UE400"
+    ]
+  }
+}

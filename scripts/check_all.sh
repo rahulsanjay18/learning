@@ -8,6 +8,7 @@ run lint        python3 scripts/lint_lessons.py
 run programs    python3 scripts/test_programs.py
 run syllabi     python3 scripts/render_syllabi.py --check
 run dags        python3 scripts/major_dag.py --check
+run stem-majors python3 scripts/test_stem_majors.py
 run render      python3 scripts/test_render.py
 run today       node scripts/test_today.mjs
 run games       node scripts/test_games.js

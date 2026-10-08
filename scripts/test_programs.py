@@ -107,6 +107,21 @@ for m in cfg["majors"] + parked:
         state[cid] = 2
     for cid in by_id:
         visit(cid, [])
+    ep = cur.get("entry_points")
+    if ep:   # insertion points into the DAG (designed majors): ids exist; each start course's prerequisites are credited or maybe
+        for k in ("high_school", "credited", "maybe", "start"):
+            for cid in ep.get(k, []):
+                if cid not in by_id:
+                    err(f"{m['slug']}: entry_points.{k} names unknown course {cid}")
+        sets = {k: set(ep.get(k, [])) for k in ("credited", "maybe", "start")}
+        for a, b in (("credited", "maybe"), ("credited", "start"), ("maybe", "start")):
+            if sets[a] & sets[b]:
+                err(f"{m['slug']}: entry_points {a} and {b} overlap: {sorted(sets[a] & sets[b])}")
+        known = set(ep.get("credited", [])) | set(ep.get("maybe", []))
+        for cid in ep.get("start", []):
+            gap = [r for r in by_id.get(cid, {}).get("requires", []) if r not in known]
+            if gap:
+                err(f"{m['slug']}: entry_points.start {cid} needs {gap}, which are neither credited nor maybe")
     actives = [c for c in cur["courses"] if c["status"] == "active"]
     if not actives and m not in parked:
         warn(f"{m['slug']}: no active course")
