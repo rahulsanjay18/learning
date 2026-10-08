@@ -3,6 +3,15 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-08: four STEM majors designed and parked** (Mathematics, Physics, Mechanical Engineering, Unified Engineering;
+  "not trying to do this now"). One builder for all four: `scripts/build_stem_majors.py` (shared courses = same id; edit there,
+  re-run, then `major_dag.py`). Entry points from the Penn State degrees are drawn in each `DAG.md`; tests in
+  `scripts/test_stem_majors.py`. Saved explainer: `notes/stem-majors-2026-10-08.md`. **Ask the learner:** which BS Math option
+  (moves the "maybe" courses); career or soul for each. Course syllabi are written when a course is about to start (parked
+  majors aren't rendered by `render_syllabi.py`), a deliberate deviation from the syllabus standard.
+- **2026-10-08: rule 32, Extra practice** on every lesson (book problems, numbers changed for math-heavy courses; one extra
+  reading; one extra article). Lint warns on new lessons without it (old ones listed in `scripts/fixtures/pre-extra-practice.txt`).
+- **2026-10-08: skills `/write-lesson` and `/write-questions`** (built by subagents). Question families: `notes/practice-variants.md`.
 - **2026-10-08: course syllabi for every course** (149 courses + a program-of-study page per major) in `topics/<major>/syllabi/`,
   rendered by `scripts/render_syllabi.py`; standard for all new courses/majors (`notes/syllabus-standard.md`, CLAUDE.md, TEACHING-LOG
   rule 31 on plain teacher's voice). Book gaps found: DDIA 2e and *SWE at Google* copies are early releases; Ousterhout copy is 1st ed.;
@@ -41,6 +50,13 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 | NASM-CPT | Started earlier (`topics/nasm-cpt/`); exam date unknown | Deadline-driven: ask for the date |
 
 ## Open platform work
+- **Question families in review (phase 2 of `notes/practice-variants.md`):** review.html / lp.js / quiz.py / progress server pick
+  an unseen sibling (`<family>-v<n>`) when a missed item is due; parametric numeric variants via the math plugin. Not built.
+- **Pedagogy reading (optional):** Felder & Brent, *Teaching and Learning STEM* (40d76146c5), the chapters on objectives and assignments, then revise
+  `notes/syllabus-standard.md` and the two new skills to match.
+- **Stale docs found 2026-10-08:** `.claude/skills/teach/SKILL.md` body still assumes local `./lessons` and per-topic assets
+  (banner says CLAUDE.md overrides); TEACHING-LOG rule list is out of numeric order (9, 13, 10, 12, …); reading-day format is
+  defined only for Critical Theory.
 - **2026-10-07 near-outage:** a 250 MB EPUB made pandoc use up the home server's RAM (logins hung, servers 502; no crash).
   Fixed in `scripts/reconvert.py`: memory cap per book (`--mem-gb`, default 4), 30-min timeout, no image extraction, per-book log,
   no partial files. Also fixed: add_books crash (two `run` functions) and a compose build-path check. Servers now on current code;

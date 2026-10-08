@@ -54,6 +54,10 @@ One row per week at this major's pace (Statistics 2 lessons/week, Indian History
 |---|---|---|
 Weights add to 100%. They describe what the course grade is made of; nothing is a gate except mastery (notes/course-policies.md).
 
+## Extra practice
+Where the optional practice for this course comes from: which exercise sets in the primary book (and whether it has an answer key),
+which secondary book supplies extra problems or a second angle, and the kind of article each lesson will add (rule 32).
+
 ## Notes (optional)
 Anything course-specific: notation traps, how the course connects to other majors, deliverables, exam logistics.
 ```

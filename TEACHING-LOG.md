@@ -101,6 +101,14 @@ Rules 11, 13 and 18 are format and logistics.
     them** ("at your request", "your framing", "as you said"). Say what the course does, not why the learner asked for it. File paths and
     rule references belong in notes meant for Claude. (Entry 30)
 
+32. **Every lesson ends with "Extra practice (optional)".** Where it applies: (a) 2–5 numbered exercises from the course's own
+    books (exercise numbers, with the answer key's location if the book has one), easiest first; (b) one extra reading from a
+    secondary book for another angle; (c) **one extra article per lesson**, something genuinely interesting that connects to the
+    lesson (a classic paper, a good essay, a history piece, a surprising application), with a working link and one line on why
+    it's worth reading. For reading-heavy majors (Critical Theory, history) the article is the main extra and problems usually
+    don't apply; judgment. All of it is optional and never assumed by a later lesson (rule 13). Heading text must start
+    "Extra practice" (the lint warns otherwise). (Entry 31)
+
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
    know what the first problem even means." Both were pretest misses (learning records). Fix: vocabulary section with the
@@ -186,4 +194,7 @@ Rules 11, 13 and 18 are format and logistics.
     jargon and idioms and restating things i already said … i dont like you doing that generally but certainly not this."** The first
     syllabus drafts quoted the learner's requests back, used platform vocabulary ("spine", "lane", "credit by exam") and file paths in
     student-facing prose. Fix: rewrote all syllabi and the course policies in plain teacher's prose; rule 31, for every subject.
-
+31. **2026-10-08 · "I want a broad rule for all courses, where applicable, to have explicitly listed optional homework, extra
+    reading, maybe problems from one of the books assigned, just extra practice if need be"**, plus "an extra article to read per
+    lesson" (judgment for reading-heavy majors). Lessons had at most one optional exercise and no standing place for more. Fix: a
+    fixed closing section on every lesson, a matching "Extra practice" line in each course syllabus, a lint warning; rule 32.

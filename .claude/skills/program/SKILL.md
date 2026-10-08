@@ -55,7 +55,7 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
      (`<PAGES_URL>/topics/<topic>/lessons/<stem>.html`) and its reading, if any. Only prepare the next lesson if they ask or have extra time.
    - **Latest lesson DONE** → `GET /progress/summary?topic=<topic>`, write a learning record if it showed something new
      (the /teach format), then write the lesson named by the first `plan` entry, following /teach and CLAUDE.md
-     (reading guide, optional homework, shared assets, lint + widget tests).
+     (reading guide, shared assets, an "Extra practice" closing section per TEACHING-LOG rule 32, lint + widget tests; the procedure is `/write-lesson`).
    - **Plan empty / estimate reached** → write the course check (chapter check, unit check, or a game-review lesson), then go to step 3.
 3. **Starting a course:** open with its pretest unless the learner just tested out. Passing everything → set `"status": "done",
    "credit": "exam"` and move on. Never start a Level II course unless that level is in the major's `enrolled_levels`;

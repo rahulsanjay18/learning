@@ -10,7 +10,7 @@ subject: 4 blocks of 25 minutes a week (`notes/study-plan.md`).*
   practice → **one proof you write**. About 2 lessons a week.
 - **Size:** ~450 pages of text → at most ~66 lessons + 12 pretests + 12 chapter checks ≈ **40 weeks** (132 + 14 + 12 = 158 blocks) at 4 blocks a week if you
   knew nothing. Pretest skips will cut that, probably by a lot in Ch. 1–4. Extra time (after the day's plan is done) also shortens it.
-- **Proofs:** every lesson has one proof task, graded by me with a rubric. Exercises from the book are optional homework (rule 13).
+- **Proofs:** every lesson has one proof task, graded by me with a rubric. Exercises from the book (numbers changed where useful) go in each lesson's optional Extra practice section (rules 13, 32).
 - **A pretest before every chapter.** It scores each section on three separate skills (**concept, calculation, proof**), and each
   section's lesson teaches only what's missing, or is skipped entirely if you know all three (section 2 below).
 
@@ -127,7 +127,7 @@ material is through practice" [1], so read with paper and pencil.
    - *proof skeleton* (warm-up): put the steps of a proof in order, or fill the missing step;
    - *your proof* (main): write it in a free-response box (plain text or LaTeX). I grade it next session with a rubric
      (correct claim, every step justified, no hidden assumptions) and reply.
-5. Optional homework: one book exercise, clearly marked optional. No later lesson depends on it.
+5. Extra practice (optional; rule 32): 2–5 book exercises, one extra reading, one article. No later lesson depends on it.
 
 ## 4. Every chapter
 - **Chapter check (1 block):** recall-heavy questions plus one proof, across the whole chapter, **including skipped sections**

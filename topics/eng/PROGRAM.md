@@ -87,7 +87,7 @@ Parked for now (in `notes/ideas.md`): the mini-PC HPC cluster, astrophotography 
 chess as a side income. The cluster is the strongest candidate for the next swap, because it feeds 3D chess self-play.
 
 ## 2. One lesson (one ~25-minute block; placements and mock rounds run longer, ~45 min)
-1. **Vim drill (2 min):** one *Practical Vim* tip, as a start text and a target text. You send your keystrokes; `vimcheck.py` replays them.
+1. **Vim tip (1 min):** one *Practical Vim* tip with the keys shown. Trying it is optional; if you send your keystrokes, `vimcheck.py` replays them and I correct them (TEACHING-LOG rule 30).
 2. **Reading (~10 min):** a slice of the course's primary book, with a reading guide.
 3. **The idea (~8 min)**, tied to the ticket you're about to work.
 4. **Practice:** a graded free response (a doc section, a design critique, a decision record).

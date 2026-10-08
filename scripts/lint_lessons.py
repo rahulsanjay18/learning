@@ -11,12 +11,16 @@ ERROR (exit 1): broken local links/scripts, choice answer not among its options,
                 lp-py snippet without a <pre class="code">.
 WARN:           choice options with different word counts (SKILL.md: answers must not give away the answer by length),
                 a justification word (because/since/so that/which means) only in the answer (teach/PRINCIPLES.md),
-                lesson without a sources list.
+                lesson without a sources list,
+                lesson without an "Extra practice" heading (TEACHING-LOG rule 32; lessons listed in
+                scripts/fixtures/pre-extra-practice.txt predate the rule and are exempt).
 """
 import sys, re, pathlib
 from html.parser import HTMLParser
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+_gf = ROOT / "scripts" / "fixtures" / "pre-extra-practice.txt"
+GRANDFATHERED = set(_gf.read_text().split()) if _gf.exists() else set()
 
 
 class Page(HTMLParser):
@@ -143,6 +147,8 @@ def lint(path):
         errors.append("uses \\( \\) or $$ math but doesn't load plugins/math.js (it would show raw TeX)")
     if "/lessons/" in str(rel) and not page.has_sources:
         warns.append("no <ol class=\"sources\"> list")
+    if "/lessons/" in str(rel) and str(rel) not in GRANDFATHERED and not re.search(r"<h2[^>]*>\s*Extra practice", body, re.I):
+        warns.append("no 'Extra practice' section (optional problems from the course's books + one extra article; rule 32)")
     return rel, errors, warns
 
 
