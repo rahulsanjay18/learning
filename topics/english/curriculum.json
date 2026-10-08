@@ -1,0 +1,555 @@
+{
+  "major": "english",
+  "program": "topics/english/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-08 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "EN015",
+      "EN100"
+    ],
+    "credited": [
+      "EN015"
+    ],
+    "maybe": [],
+    "start": [
+      "EN100"
+    ],
+    "basis": "Both Penn State degrees required first-year composition (ENGL 15) and the CompE degree ENGL 202C (technical writing), so EN015 is credited. No literature courses known; tell me any you took (gen-ed lit courses would credit parts of the surveys)."
+  },
+  "courses": [
+    {
+      "id": "EN015",
+      "title": "Rhetoric and composition: the academic essay",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "ed156636dd Zinsser, On Writing Well (grade A)",
+        "secondary": [
+          "29aad591c6 Strunk & White, The Elements of Style 4th (grade A)",
+          "009f44376d Toye, Rhetoric VSI (grade A)",
+          "Graff & Birkenstein, They Say / I Say (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EN100",
+      "title": "How to read literature: an introduction to literary study",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "86cc8dfe39 Foster, How to Read Literature Like a Professor 2nd (grade A)",
+        "secondary": [
+          "68dc21333b Culler, Literary Theory VSI (grade A)",
+          "ddb25171a8 Adler & Van Doren, How to Read a Book (grade A)",
+          "24529ef5be Joyce, Dubliners (the stories practiced on)"
+        ]
+      }
+    },
+    {
+      "id": "EN130",
+      "title": "Poetry: form, meter and close reading",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "db6c479d03 Ferguson, Salter & Stallworthy (eds.), The Norton Anthology of Poetry",
+        "secondary": [
+          "2a5cb957c3 O'Donoghue, Poetry VSI (grade A)",
+          "Fussell, Poetic Meter and Poetic Form (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EN201",
+      "title": "British literature I: Beowulf to the Restoration",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 30,
+      "books": {
+        "primary": "Greenblatt (ed.), The Norton Anthology of English Literature vol. 1 (Middle Ages to Restoration) (TO ACQUIRE)",
+        "secondary": [
+          "afded2e0b5 Beowulf: Old English Text, Translations and Dual Text (grade A)",
+          "1172ccd4a1 Wallace, Chaucer VSI",
+          "7a8435a997 Treharne, Medieval Literature VSI",
+          "474dc72906 The Complete Works of William Shakespeare (grade A)"
+        ]
+      }
+    },
+    {
+      "id": "EN202",
+      "title": "British literature II: the Romantics to the present",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 30,
+      "books": {
+        "primary": "dd0088d6df Greenblatt (ed.), The Norton Anthology of English Literature vol. 2 (grade A)",
+        "secondary": [
+          "c1b4282699 Ferber, Romanticism VSI",
+          "4d6765aa21 Hartley, Charles Dickens VSI",
+          "d5cf574ff7 MacCabe, James Joyce VSI"
+        ]
+      }
+    },
+    {
+      "id": "EN211",
+      "title": "American literature I: beginnings to 1865",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "ad622c35f0 Levine (ed.), The Norton Anthology of American Literature (vols. A-B; grade A)",
+        "tertiary": [
+          "bfbf59da94 Melville, Moby-Dick (whole, optional)"
+        ]
+      }
+    },
+    {
+      "id": "EN212",
+      "title": "American literature II: 1865 to the present",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "2057305a99 Levine (ed.), The Norton Anthology of American Literature, vols. C-E (grade A)",
+        "secondary": [
+          "7003a0782e Ellison, Invisible Man",
+          "3ab366d4fe Faulkner, The Sound and the Fury",
+          "b45a47fec5 Caplan, American Poetry VSI"
+        ]
+      }
+    },
+    {
+      "id": "EN220",
+      "title": "Shakespeare: eight plays and the sonnets",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 30,
+      "books": {
+        "primary": "474dc72906 The Complete Works of William Shakespeare (grade A)",
+        "secondary": [
+          "16f09c51b6 Wells, Shakespeare's Tragedies VSI",
+          "3c99a223f7 van Es, Shakespeare's Comedies VSI",
+          "Garber, Shakespeare After All (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EN230",
+      "title": "The novel: Cervantes to Woolf",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 36,
+      "books": {
+        "primary": "88c7e9ae14 Austen, Complete Works (Pride and Prejudice; grade A)",
+        "secondary": [
+          "9c33a3ab3b Cervantes, Don Quixote (Grossman; part I)",
+          "00a65b8d86 Eliot, Middlemarch",
+          "5705dee3e9 Woolf, To the Lighthouse",
+          "Watt, The Rise of the Novel (TO ACQUIRE)"
+        ]
+      },
+      "note": "Middlemarch and To the Lighthouse also appear in Critical Theory: one reading counts for both."
+    },
+    {
+      "id": "EN300",
+      "title": "Literary theory and criticism",
+      "status": "later",
+      "requires": [
+        "EN130"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "68dc21333b Culler, Literary Theory VSI + face941c2e Norton Anthology of Theory and Criticism (selections; grade A)",
+        "secondary": [
+          "Tyson, Critical Theory Today (in the library; the Critical Theory major's main book)"
+        ]
+      },
+      "note": "Equivalent to the Critical Theory major's orientation and close-reading courses (CT100, CT201): finishing either counts."
+    },
+    {
+      "id": "EN310",
+      "title": "The English language: its history and how it works",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "d953c2c693 Horobin, The English Language VSI (grade A)",
+        "secondary": [
+          "37cdcc8fa1 The Earliest English: An Introduction to Old English Language (grade A)",
+          "fd4ffb9c9c Matthews, Linguistics VSI",
+          "447856339f Edwards, Sociolinguistics VSI"
+        ]
+      }
+    },
+    {
+      "id": "EN320",
+      "title": "World literature in translation: Homer to Kafka",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 30,
+      "books": {
+        "primary": "6418dc4bea Homer, The Odyssey (grade A)",
+        "secondary": [
+          "8af5d41030 Dante, The Divine Comedy (Inferno)",
+          "7070af1518 Voltaire, Candide",
+          "ba765724a5 Kafka, The Trial",
+          "03b989e36d Graziosi, Homer VSI",
+          "f2e3b6de81 Hainsworth & Robey, Dante VSI"
+        ]
+      }
+    },
+    {
+      "id": "EN330",
+      "title": "Postcolonial and Indian literature in English",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "a2a924addb Rushdie, Midnight's Children (grade A)",
+        "secondary": [
+          "f6b767de9a Achebe, The African Trilogy (Things Fall Apart)",
+          "30b0d85a0f Adiga, The White Tiger",
+          "8b30ac33e8 Sahgal, Rich Like Us"
+        ]
+      },
+      "note": "Meets Critical Theory (postcolonial lens) and Indian History."
+    },
+    {
+      "id": "EN400",
+      "title": "Senior seminar: one author in depth (default: Joyce)",
+      "status": "later",
+      "requires": [
+        "EN202",
+        "EN300"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 30,
+      "books": {
+        "primary": "6e7b60467d Joyce, Ulysses (grade A)",
+        "secondary": [
+          "24529ef5be Joyce, Dubliners",
+          "d5cf574ff7 MacCabe, James Joyce VSI",
+          "Gifford, Ulysses Annotated (TO ACQUIRE)"
+        ]
+      },
+      "note": "Author is your choice; Joyce is the default because the library has him whole."
+    },
+    {
+      "id": "EN501",
+      "title": "Graduate theory and methods",
+      "status": "later",
+      "requires": [
+        "EN300"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 30,
+      "books": {
+        "primary": "face941c2e Norton Anthology of Theory and Criticism (whole; grade A)",
+        "secondary": [
+          "Rivkin & Ryan (eds.), Literary Theory: An Anthology (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EN511",
+      "title": "Old English: Beowulf in the original",
+      "status": "later",
+      "requires": [
+        "EN310",
+        "EN201"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 30,
+      "books": {
+        "primary": "Mitchell & Robinson, A Guide to Old English (TO ACQUIRE)",
+        "secondary": [
+          "afded2e0b5 Beowulf: Old English Text, Translations and Dual Text",
+          "37cdcc8fa1 The Earliest English"
+        ]
+      }
+    },
+    {
+      "id": "EN521",
+      "title": "Chaucer in Middle English",
+      "status": "later",
+      "requires": [
+        "EN201",
+        "EN310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 26,
+      "books": {
+        "primary": "Benson (ed.), The Riverside Chaucer (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "EN531",
+      "title": "Milton",
+      "status": "later",
+      "requires": [
+        "EN201"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Milton, Paradise Lost (Norton Critical Edition) (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "EN541",
+      "title": "Modernism seminar",
+      "status": "later",
+      "requires": [
+        "EN400"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "5705dee3e9 Woolf, To the Lighthouse",
+        "secondary": [
+          "3ab366d4fe Faulkner, The Sound and the Fury",
+          "6e7b60467d Joyce, Ulysses"
+        ]
+      }
+    },
+    {
+      "id": "EN340",
+      "title": "Creative writing: fiction",
+      "status": "later",
+      "requires": [
+        "EN015"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "f4c42b4190 King, On Writing (grade A)",
+        "secondary": [
+          "7e0b635d56 The Elements of Fiction Writing: Characters and Viewpoint (grade A)",
+          "7e1c299bc3 Bell, Refuse to Be Done (grade A)"
+        ]
+      }
+    },
+    {
+      "id": "EN341",
+      "title": "Dramatic writing and screenwriting",
+      "status": "later",
+      "requires": [
+        "EN015"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "216adb3f8c Egri, The Art of Dramatic Writing (grade A)",
+        "secondary": [
+          "f18d3d0024 Field, Screenplay (grade A)",
+          "ae4c201b31 Snyder, Save the Cat! (grade A)"
+        ]
+      }
+    },
+    {
+      "id": "EN342",
+      "title": "Advanced nonfiction and technical writing",
+      "status": "later",
+      "requires": [
+        "EN015"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "f959bb5a1c Zinsser, Writing to Learn (grade A)",
+        "secondary": [
+          "b291b01109 Minto, The Pyramid Principle"
+        ]
+      },
+      "note": "Feeds the Engineering career major's design-doc work."
+    },
+    {
+      "id": "EN350",
+      "title": "The Russian novel",
+      "status": "later",
+      "requires": [
+        "EN230"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "f6dbd55b62 Dostoevsky, The Brothers Karamazov (grade A)",
+        "secondary": [
+          "438c0ee90a Tolstoy, War and Peace",
+          "e0870fea4a Knapp, Tolstoy VSI"
+        ]
+      }
+    },
+    {
+      "id": "EN360",
+      "title": "Classical literature: Greek tragedy, Ovid, epic",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "22ee27b70d Allan, Classical Literature VSI (grade A)",
+        "secondary": [
+          "6cb2ad9fee Homer, The Iliad",
+          "fc35a1e99e Ovid, Erotic Poems",
+          "53a669da9a Sophocles, The Oedipus Plays (study guide only)"
+        ]
+      }
+    },
+    {
+      "id": "EN370",
+      "title": "Dystopian fiction",
+      "status": "later",
+      "requires": [
+        "EN100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "5876f05a9c Orwell, 1984 (grade A)",
+        "secondary": [
+          "65357a2857 Huxley, Brave New World",
+          "0492b02901 Burgess, A Clockwork Orange"
+        ]
+      }
+    },
+    {
+      "id": "EN190",
+      "title": "Breadth: writing systems and the book",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "b14ef2d5a0 Robinson, Writing and Script VSI (grade A)",
+        "secondary": [
+          "561e96a88d Anderson, Languages VSI"
+        ]
+      }
+    },
+    {
+      "id": "EN595",
+      "title": "Practice: a comprehensive-exam reading list (100 works) and self-check",
+      "status": "later",
+      "requires": [
+        "EN501"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 10,
+      "books": {
+        "primary": "a list built with you from the anthologies read"
+      }
+    },
+    {
+      "id": "EN398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "EN400"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "EN399",
+      "title": "Capstone: a 20-page critical essay (honors thesis)",
+      "status": "later",
+      "requires": [
+        "EN400"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "optional; topic with you"
+      }
+    },
+    {
+      "id": "EN599",
+      "title": "Capstone: a publishable-length essay",
+      "status": "later",
+      "requires": [
+        "EN501"
+      ],
+      "group": "capstone",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

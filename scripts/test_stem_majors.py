@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for the STEM-major builder and the checks added with it (build_stem_majors, test_programs entry points,
+"""Tests for the STEM-major builder and the checks added with it (build_majors, test_programs entry points,
 major_dag terms/entry points, lint_lessons Extra practice warning).   python3 scripts/test_stem_majors.py"""
 import copy, importlib.util, json, re, shutil, subprocess, sys, tempfile, unittest
 from pathlib import Path
@@ -16,7 +16,7 @@ def load(name):
     return mod
 
 
-bsm = load("build_stem_majors")
+bsm = load("build_majors")
 dag = load("major_dag")
 lint = load("lint_lessons")
 BUILT = {s: bsm.build(s) for s in SLUGS}
@@ -82,7 +82,7 @@ class Build(unittest.TestCase):
     def test_committed_files_not_stale(self):
         for s, cur in BUILT.items():
             p = ROOT / "topics" / s / "curriculum.json"
-            self.assertEqual(json.loads(p.read_text(encoding="utf-8")), cur, f"{p} is stale: run build_stem_majors.py")
+            self.assertEqual(json.loads(p.read_text(encoding="utf-8")), cur, f"{p} is stale: run build_majors.py")
 
     def test_entry_points(self):
         for s, cur in BUILT.items():
@@ -128,7 +128,7 @@ class Build(unittest.TestCase):
         self.assertEqual(bsm.build("math"), BUILT["math"])
 
     def test_stats_runs(self):
-        r = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_stem_majors.py"), "--stats"],
+        r = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_majors.py"), "--stats"],
                            capture_output=True, text=True, cwd=ROOT)
         self.assertEqual(r.returncode, 0, r.stderr)
         self.assertIn("Unified Engineering", r.stdout)

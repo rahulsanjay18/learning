@@ -1,7 +1,7 @@
 {
   "major": "unified-eng",
   "program": "topics/unified-eng/PROGRAM.md",
-  "generated_by": "scripts/build_stem_majors.py (edit there, not here)",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
   "rules": [
     "Designed 2026-10-08 and parked: written as if starting from high school, with your real entry point in entry_points.",
     "No pretests (your call, 2026-10-08): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",

@@ -8,8 +8,8 @@
   greyed out as credited, "maybe" courses are dotted, and the courses you'd start with have a thick border.
 - **Shared courses are one course.** Calculus I has the same number (MA140) in all four majors, and Statics (ES211) is the same
   course in both engineering majors. Finishing a course anywhere counts everywhere. One script builds all four course maps from a
-  single list: `scripts/build_stem_majors.py`.
-- **Size from your entry points** (Level I core, computed by `build_stem_majors.py --stats`):
+  single list: `scripts/build_majors.py`.
+- **Size from your entry points** (Level I core, computed by `build_majors.py --stats`):
 
 | Major | From high school | From your entry | Half subject (1 lesson/wk) | Full (2/wk) | You start with |
 |---|---|---|---|---|---|

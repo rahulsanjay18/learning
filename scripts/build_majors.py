@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Build the curriculum.json of the four parked STEM majors (math, physics, mech-eng, unified-eng) from ONE course list.
+"""Build the curriculum.json of the parked majors designed 2026-10-08 (math, physics, mech-eng, unified-eng, music, english)
+from ONE course list.
 
-    python3 scripts/build_stem_majors.py          write topics/<major>/curriculum.json for all four
-    python3 scripts/build_stem_majors.py --stats  print size tables (lessons, weeks) from high school and from your entry point
+    python3 scripts/build_majors.py          write topics/<major>/curriculum.json for all of them
+    python3 scripts/build_majors.py --stats  print size tables (lessons, weeks) from high school and from your entry point
 
 Why one file: the majors share courses (Calculus I is the same course in all four, Statics in two). A shared course has one id and
 one definition here, so finishing it in any major counts in every major that lists it ("cross-listed"). Edit here, re-run, then
@@ -357,6 +358,171 @@ course("UE531", "Reliability, risk and safety engineering", ["MA414", "UE400"], 
     "Leveson, Engineering a Safer World (free from MIT Press: https://mitpress.mit.edu/9780262533690/)"), level="II")
 course("UE599", "Capstone: thesis-scale multidisciplinary project", ["UE501", "UE511"], 16, B("optional"), level="II")
 
+# ---------------------------------------------------------------- music
+OMT = "Open Music Theory (free: https://viva.pressbooks.pub/openmusictheory/)"
+course("MU100", "Music fundamentals: notation, rhythm, scales, keys, intervals, triads", [], 16, B(
+    "e73692249d Clendinning & Marvin, The Musician's Guide to Theory and Analysis (fundamentals chapters; grade A; to confirm)",
+    ["d400c8d44a Royal Conservatory of Music, Theory Syllabus (grade A; graded rudiments checklist)", OMT],
+    ["639b84c0f8 Taylor, The AB Guide to Music Theory vol. 1"]))
+course("MU101", "Listening: how music works", [], 10, B(
+    "60312d739e Copland, What to Listen for in Music (grade A)",
+    ["806faa35e9 Forney & Machlis, The Enjoyment of Music (listening guides)"]))
+course("MU110", "Aural skills I: sight-singing and dictation", ["MU100"], 18, B(
+    "501f6a9e3d Ottman & Rogers, Music for Sight Singing (diatonic units)",
+    ["48060ae852 Benward & Kolosick, Ear Training: A Technique for Listening"]),
+    note="Short daily drills suit spaced review; needs the music-notation and ear-training widget from the wishlist.")
+course("MU120", "Keyboard skills (functional piano)", ["MU100"], 20, B(
+    "e213219df8 Faber, Adult Piano Adventures All-in-One Book 1",
+    ["74f6e6593f Faber, Accelerated Piano Adventures for the Older Beginner"],
+    ["e8feff6f46 Palmer et al., The Complete Book of Scales, Chords, Arpeggios and Cadences (grade C; your copy)"]))
+course("MU200", "Theory II: diatonic harmony and voice leading", ["MU100"], 24, B(
+    "e73692249d Clendinning & Marvin (diatonic harmony chapters; to confirm)",
+    ["a0290b01c4 Aldwell, Schachter & Cadwallader, Harmony and Voice Leading", "14e41cafd9 Kostka, Payne & Almen, Tonal Harmony"],
+    ["a8a79b9404 Levy, A Theory of Harmony (grade A; the theory behind the rules)"],
+    ["f77cae55dc Kostka older edition: grade C copy (use 14e41cafd9)"]))
+course("MU210", "Aural skills II: chromatic sight-singing, harmonic dictation", ["MU110", "MU200"], 18, B(
+    "501f6a9e3d Ottman & Rogers, Music for Sight Singing (chromatic units)", ["48060ae852 Benward & Kolosick"]))
+course("MU300", "Theory III: chromatic harmony, modulation and form", ["MU200"], 24, B(
+    "e73692249d Clendinning & Marvin (chromatic harmony and form chapters; to confirm)",
+    ["de3227ca92 Laitz, The Complete Musician", "14e41cafd9 Kostka, Payne & Almen"]))
+course("MU310", "Counterpoint: species and 18th-century style", ["MU200"], 16, B(
+    "Fux, The Study of Counterpoint (Gradus ad Parnassum, trans. Mann) " + ACQ,
+    [OMT + " (counterpoint chapters)",
+     "28f93f91f0 Gauldin, A Practical Approach to 18th-Century Counterpoint (grade C: exercises from your copy)"]))
+course("MU320", "Theory IV: post-tonal music (sets, serialism, minimalism)", ["MU300"], 20, B(
+    "e73692249d Clendinning & Marvin (post-tonal chapters; to confirm)",
+    ["Straus, Introduction to Post-Tonal Theory " + ACQ]))
+course("MU231", "Music history I: antiquity to Bach", ["MU101"], 24, B(
+    "Burkholder, Grout & Palisca, A History of Western Music " + ACQ + " (with the Norton Anthology of Western Music)",
+    ["da9d880141 Norton Introduction to Music History anthology (grade C: scores from your copy)"]))
+course("MU232", "Music history II: Haydn to Mahler", ["MU231"], 24, B(
+    "Burkholder, Grout & Palisca, A History of Western Music " + ACQ))
+course("MU233", "Music history III: the twentieth century to now", ["MU232"], 20, B(
+    "e1b23ab193 Ross, The Rest Is Noise (grade A)",
+    ["5ac11c0dc7 Morgan (ed.), Anthology of Twentieth-Century Music (grade C: scores from your copy)"]))
+course("MU240", "Hindustani classical music and world music", ["MU100"], 16, B(
+    "732f4b1550 Bakshi, 101 Raga-s for the 21st Century and Beyond (grade A)",
+    ["6c644b528a Sharma, How to Play Sitar", "Bor (ed.), The Raga Guide " + ACQ]),
+    note="Meets the Indian History major (music at the Mughal courts, the bhakti poets).")
+course("MU250", "Jazz theory and improvisation", ["MU200"], 20, B(
+    "a435b20858 Terefenko, Jazz Theory: From Basic to Advanced Study 2nd",
+    ["dd82cef0ea The Great American Songbook: Jazz (tunes to analyze)"]))
+course("MU260", "Songwriting and lyric writing", ["MU200"], 14, B(
+    "649d3cf76e Davis, The Craft of Lyric Writing (grade A)",
+    ["0ce53e3d46 McCandless & McIntyre, The Craft of Contemporary Commercial Music"]))
+course("MU270", "Orchestration", ["MU300"], 18, B("Adler, The Study of Orchestration " + ACQ))
+course("MU280", "Composition: short pieces in notation software", ["MU300"], 16, B(
+    "MuseScore (free notation software: https://musescore.org) + Clendinning & Marvin composition exercises"))
+course("MU190", "Breadth: the physics of sound and hearing", [], 8, B(
+    "8e3ad00192 Goldsmith, Sound VSI (grade A)", ["8f4b3a9ae8 Walmsley, Light VSI (for the wave ideas)"]),
+    note="Meets Physics PH214 (waves).")
+course("MU290", "Practice: your instrument (applied lessons, with a teacher if possible)", ["MU100"], 20, B(
+    "your instrument's method or exam syllabus (guitar: db709588b0 Hal Leonard Guitar Method; piano: ABRSM grade books; "
+    "voice: 6d6ec0d253 RCM Voice Syllabus)"))
+course("MU398", "End-of-level conversation (Level I)", ["MU320", "MU233"], 1, B("list of works + conversation"))
+course("MU399", "Capstone: an analysis paper or a short recital", ["MU320", "MU233"], 12, B("optional"))
+course("MU501", "Schenkerian analysis", ["MU300", "MU310"], 24, B(
+    "Cadwallader & Gagne, Analysis of Tonal Music: A Schenkerian Approach " + ACQ,
+    ["a0290b01c4 Aldwell & Schachter (Schenkerian roots)"]), level="II")
+course("MU511", "Post-tonal theory (graduate)", ["MU320"], 22, B("Straus, Introduction to Post-Tonal Theory " + ACQ), level="II")
+course("MU521", "Musicology: reading music history critically", ["MU233"], 24, B(
+    "Taruskin, The Oxford History of Western Music (selected chapters) " + ACQ), level="II")
+course("MU531", "Ethnomusicology", ["MU240", "MU233"], 20, B("Nettl, The Study of Ethnomusicology " + ACQ), level="II")
+course("MU595", "Practice: graduate entrance diagnostic (theory, aural, history)", ["MU501", "MU521"], 4, B(
+    "past diagnostic exams (to collect)"), level="II")
+course("MU599", "Capstone: a thesis-scale analysis or composition", ["MU501"], 16, B("optional"), level="II")
+
+# ---------------------------------------------------------------- English
+# A reading major (notes/major-design.md, "Reading majors"): most sittings are reading days (one ~25-minute block) with a seminar
+# every few days. est_lessons uses the same unit as every other major (one lesson = two blocks), so 30 lessons ≈ 60 sittings.
+course("EN015", "Rhetoric and composition: the academic essay", [], 12, B(
+    "ed156636dd Zinsser, On Writing Well (grade A)",
+    ["29aad591c6 Strunk & White, The Elements of Style 4th (grade A)", "009f44376d Toye, Rhetoric VSI (grade A)",
+     "Graff & Birkenstein, They Say / I Say " + ACQ]))
+course("EN100", "How to read literature: an introduction to literary study", [], 16, B(
+    "86cc8dfe39 Foster, How to Read Literature Like a Professor 2nd (grade A)",
+    ["68dc21333b Culler, Literary Theory VSI (grade A)", "ddb25171a8 Adler & Van Doren, How to Read a Book (grade A)",
+     "24529ef5be Joyce, Dubliners (the stories practiced on)"]))
+course("EN130", "Poetry: form, meter and close reading", ["EN100"], 18, B(
+    "db6c479d03 Ferguson, Salter & Stallworthy (eds.), The Norton Anthology of Poetry",
+    ["2a5cb957c3 O'Donoghue, Poetry VSI (grade A)", "Fussell, Poetic Meter and Poetic Form " + ACQ]))
+course("EN201", "British literature I: Beowulf to the Restoration", ["EN100"], 30, B(
+    "Greenblatt (ed.), The Norton Anthology of English Literature vol. 1 (Middle Ages to Restoration) " + ACQ,
+    ["afded2e0b5 Beowulf: Old English Text, Translations and Dual Text (grade A)", "1172ccd4a1 Wallace, Chaucer VSI",
+     "7a8435a997 Treharne, Medieval Literature VSI", "474dc72906 The Complete Works of William Shakespeare (grade A)"]))
+course("EN202", "British literature II: the Romantics to the present", ["EN100"], 30, B(
+    "dd0088d6df Greenblatt (ed.), The Norton Anthology of English Literature vol. 2 (grade A)",
+    ["c1b4282699 Ferber, Romanticism VSI", "4d6765aa21 Hartley, Charles Dickens VSI", "d5cf574ff7 MacCabe, James Joyce VSI"]))
+course("EN211", "American literature I: beginnings to 1865", ["EN100"], 24, B(
+    "ad622c35f0 Levine (ed.), The Norton Anthology of American Literature (vols. A-B; grade A)",
+    [], ["bfbf59da94 Melville, Moby-Dick (whole, optional)"]))
+course("EN212", "American literature II: 1865 to the present", ["EN100"], 24, B(
+    "2057305a99 Levine (ed.), The Norton Anthology of American Literature, vols. C-E (grade A)",
+    ["7003a0782e Ellison, Invisible Man", "3ab366d4fe Faulkner, The Sound and the Fury", "b45a47fec5 Caplan, American Poetry VSI"]))
+course("EN220", "Shakespeare: eight plays and the sonnets", ["EN100"], 30, B(
+    "474dc72906 The Complete Works of William Shakespeare (grade A)",
+    ["16f09c51b6 Wells, Shakespeare's Tragedies VSI", "3c99a223f7 van Es, Shakespeare's Comedies VSI",
+     "Garber, Shakespeare After All " + ACQ]))
+course("EN230", "The novel: Cervantes to Woolf", ["EN100"], 36, B(
+    "88c7e9ae14 Austen, Complete Works (Pride and Prejudice; grade A)",
+    ["9c33a3ab3b Cervantes, Don Quixote (Grossman; part I)", "00a65b8d86 Eliot, Middlemarch",
+     "5705dee3e9 Woolf, To the Lighthouse", "Watt, The Rise of the Novel " + ACQ]),
+    note="Middlemarch and To the Lighthouse also appear in Critical Theory: one reading counts for both.")
+course("EN300", "Literary theory and criticism", ["EN130"], 20, B(
+    "68dc21333b Culler, Literary Theory VSI + face941c2e Norton Anthology of Theory and Criticism (selections; grade A)",
+    ["Tyson, Critical Theory Today (in the library; the Critical Theory major's main book)"]),
+    note="Equivalent to the Critical Theory major's orientation and close-reading courses (CT100, CT201): finishing either counts.")
+course("EN310", "The English language: its history and how it works", ["EN100"], 16, B(
+    "d953c2c693 Horobin, The English Language VSI (grade A)",
+    ["37cdcc8fa1 The Earliest English: An Introduction to Old English Language (grade A)",
+     "fd4ffb9c9c Matthews, Linguistics VSI", "447856339f Edwards, Sociolinguistics VSI"]))
+course("EN320", "World literature in translation: Homer to Kafka", ["EN100"], 30, B(
+    "6418dc4bea Homer, The Odyssey (grade A)",
+    ["8af5d41030 Dante, The Divine Comedy (Inferno)", "7070af1518 Voltaire, Candide", "ba765724a5 Kafka, The Trial",
+     "03b989e36d Graziosi, Homer VSI", "f2e3b6de81 Hainsworth & Robey, Dante VSI"]))
+course("EN330", "Postcolonial and Indian literature in English", ["EN100"], 24, B(
+    "a2a924addb Rushdie, Midnight's Children (grade A)",
+    ["f6b767de9a Achebe, The African Trilogy (Things Fall Apart)", "30b0d85a0f Adiga, The White Tiger",
+     "8b30ac33e8 Sahgal, Rich Like Us"]),
+    note="Meets Critical Theory (postcolonial lens) and Indian History.")
+course("EN400", "Senior seminar: one author in depth (default: Joyce)", ["EN202", "EN300"], 30, B(
+    "6e7b60467d Joyce, Ulysses (grade A)",
+    ["24529ef5be Joyce, Dubliners", "d5cf574ff7 MacCabe, James Joyce VSI", "Gifford, Ulysses Annotated " + ACQ]),
+    note="Author is your choice; Joyce is the default because the library has him whole.")
+course("EN340", "Creative writing: fiction", ["EN015"], 16, B(
+    "f4c42b4190 King, On Writing (grade A)",
+    ["7e0b635d56 The Elements of Fiction Writing: Characters and Viewpoint (grade A)", "7e1c299bc3 Bell, Refuse to Be Done (grade A)"]))
+course("EN341", "Dramatic writing and screenwriting", ["EN015"], 14, B(
+    "216adb3f8c Egri, The Art of Dramatic Writing (grade A)",
+    ["f18d3d0024 Field, Screenplay (grade A)", "ae4c201b31 Snyder, Save the Cat! (grade A)"]))
+course("EN342", "Advanced nonfiction and technical writing", ["EN015"], 12, B(
+    "f959bb5a1c Zinsser, Writing to Learn (grade A)", ["b291b01109 Minto, The Pyramid Principle"]),
+    note="Feeds the Engineering career major's design-doc work.")
+course("EN350", "The Russian novel", ["EN230"], 24, B(
+    "f6dbd55b62 Dostoevsky, The Brothers Karamazov (grade A)", ["438c0ee90a Tolstoy, War and Peace", "e0870fea4a Knapp, Tolstoy VSI"]))
+course("EN360", "Classical literature: Greek tragedy, Ovid, epic", ["EN100"], 18, B(
+    "22ee27b70d Allan, Classical Literature VSI (grade A)",
+    ["6cb2ad9fee Homer, The Iliad", "fc35a1e99e Ovid, Erotic Poems", "53a669da9a Sophocles, The Oedipus Plays (study guide only)"]))
+course("EN370", "Dystopian fiction", ["EN100"], 12, B(
+    "5876f05a9c Orwell, 1984 (grade A)", ["65357a2857 Huxley, Brave New World", "0492b02901 Burgess, A Clockwork Orange"]))
+course("EN190", "Breadth: writing systems and the book", [], 6, B(
+    "b14ef2d5a0 Robinson, Writing and Script VSI (grade A)", ["561e96a88d Anderson, Languages VSI"]))
+course("EN398", "End-of-level conversation (Level I)", ["EN400"], 1, B("list of works + conversation"))
+course("EN399", "Capstone: a 20-page critical essay (honors thesis)", ["EN400"], 16, B("optional; topic with you"))
+course("EN501", "Graduate theory and methods", ["EN300"], 30, B(
+    "face941c2e Norton Anthology of Theory and Criticism (whole; grade A)", ["Rivkin & Ryan (eds.), Literary Theory: An Anthology " + ACQ]),
+    level="II")
+course("EN511", "Old English: Beowulf in the original", ["EN310", "EN201"], 30, B(
+    "Mitchell & Robinson, A Guide to Old English " + ACQ,
+    ["afded2e0b5 Beowulf: Old English Text, Translations and Dual Text", "37cdcc8fa1 The Earliest English"]), level="II")
+course("EN521", "Chaucer in Middle English", ["EN201", "EN310"], 26, B("Benson (ed.), The Riverside Chaucer " + ACQ), level="II")
+course("EN531", "Milton", ["EN201"], 24, B("Milton, Paradise Lost (Norton Critical Edition) " + ACQ), level="II")
+course("EN541", "Modernism seminar", ["EN400"], 28, B(
+    "5705dee3e9 Woolf, To the Lighthouse", ["3ab366d4fe Faulkner, The Sound and the Fury", "6e7b60467d Joyce, Ulysses"]), level="II")
+course("EN595", "Practice: a comprehensive-exam reading list (100 works) and self-check", ["EN501"], 10, B(
+    "a list built with you from the anthologies read"), level="II")
+course("EN599", "Capstone: a publishable-length essay", ["EN501"], 16, B("optional"), level="II")
+
 # ---------------------------------------------------------------- majors
 # group per course in this major (default core). Order = display order.
 MAJORS = {
@@ -447,6 +613,36 @@ MAJORS = {
                      "design; the embedded half may be new). So Unified I runs three of its four courses for you.",
         },
     },
+    "music": {
+        "name": "Music",
+        "core": ["MU100", "MU101", "MU110", "MU120", "MU200", "MU210", "MU300", "MU310", "MU320", "MU231", "MU232", "MU233",
+                 "MU240", "MU501", "MU511", "MU521", "MU531"],
+        "elective": ["MU250", "MU260", "MU270", "MU280"],
+        "breadth": ["MU190"], "practice": ["MU290", "MU595"], "colloquium": ["MU398"], "capstone": ["MU399", "MU599"],
+        "entry": {
+            "credited": [],
+            "maybe": ["MU100", "MU101"],
+            "start": ["MU110", "MU120"],
+            "basis": "Placeholder until you say: no music courses on either Penn State transcript that I know of. If you read "
+                     "notation and know keys and intervals, MU100 is a skim; MU101 (listening) is a skim if you already listen "
+                     "closely to classical music. Tell me your instrument(s) and I'll adjust.",
+        },
+    },
+    "english": {
+        "name": "English",
+        "core": ["EN015", "EN100", "EN130", "EN201", "EN202", "EN211", "EN212", "EN220", "EN230", "EN300", "EN310", "EN320",
+                 "EN330", "EN400", "EN501", "EN511", "EN521", "EN531", "EN541"],
+        "elective": ["EN340", "EN341", "EN342", "EN350", "EN360", "EN370"],
+        "breadth": ["EN190"], "practice": ["EN595"], "colloquium": ["EN398"], "capstone": ["EN399", "EN599"],
+        "entry": {
+            "credited": ["EN015"],
+            "maybe": [],
+            "start": ["EN100"],
+            "basis": "Both Penn State degrees required first-year composition (ENGL 15) and the CompE degree ENGL 202C (technical "
+                     "writing), so EN015 is credited. No literature courses known; tell me any you took (gen-ed lit courses "
+                     "would credit parts of the surveys).",
+        },
+    }
 }
 GROUP_KEYS = ["core", "elective", "breadth", "practice", "colloquium", "capstone"]
 
@@ -478,7 +674,7 @@ def build(slug):
     cur = {
         "major": slug,
         "program": f"topics/{slug}/PROGRAM.md",
-        "generated_by": "scripts/build_stem_majors.py (edit there, not here)",
+        "generated_by": "scripts/build_majors.py (edit there, not here)",
         "rules": [
             "Designed 2026-10-08 and parked: written as if starting from high school, with your real entry point in entry_points.",
             "No pretests (your call, 2026-10-08): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; "
@@ -507,7 +703,7 @@ def stats():
         print(f"| {m['name']} | {n_hs} ({len(core1)} courses) | {n_you} | {n_you} (≈{n_you / 52:.1f} yr) | {-(-n_you // 2)} (≈{n_you / 104:.1f} yr) | {n2} | {opt} |")
     allI = {c for s, m in MAJORS.items() for c in m["core"] if C[c]["level"] == "I"}
     cred = {c for m in MAJORS.values() for c in m["entry"]["credited"]}
-    print(f"\nAll four Level I cores together, each shared course counted once: {sum(C[c]['est_lessons'] for c in allI)} lessons "
+    print(f"\nAll Level I cores together, each shared course counted once: {sum(C[c]['est_lessons'] for c in allI)} lessons "
           f"from high school, {sum(C[c]['est_lessons'] for c in allI - cred)} from your entry points.")
 
 

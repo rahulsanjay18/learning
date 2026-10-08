@@ -103,7 +103,7 @@
       "enrolled_levels": [
         "I"
       ],
-      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_stem_majors.py. Pure math from precalculus to graduate algebra, analysis and topology. Your entry point is the upper-division algebra/topology/complex courses."
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py. Pure math from precalculus to graduate algebra, analysis and topology. Your entry point is the upper-division algebra/topology/complex courses."
     },
     {
       "slug": "physics",
@@ -113,7 +113,7 @@
       "enrolled_levels": [
         "I"
       ],
-      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_stem_majors.py. Undergraduate physics through quantum, E&M and stat mech, graduate core in Level II. Entry: modern physics + classical mechanics."
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py. Undergraduate physics through quantum, E&M and stat mech, graduate core in Level II. Entry: modern physics + classical mechanics."
     },
     {
       "slug": "mech-eng",
@@ -123,7 +123,7 @@
       "enrolled_levels": [
         "I"
       ],
-      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_stem_majors.py. Depth engineering major. Shares math, physics and engineering-science courses with Unified Engineering. Entry: statics, thermo, materials."
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py. Depth engineering major. Shares math, physics and engineering-science courses with Unified Engineering. Entry: statics, thermo, materials."
     },
     {
       "slug": "unified-eng",
@@ -133,7 +133,27 @@
       "enrolled_levels": [
         "I"
       ],
-      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_stem_majors.py. Breadth-first engineering across every discipline, run as MIT-Unified-style terms of four parallel courses with one shared weekly design problem. Entry: Unified I minus circuits."
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py. Breadth-first engineering across every discipline, run as MIT-Unified-style terms of four parallel courses with one shared weekly design problem. Entry: Unified I minus circuits."
+    },
+    {
+      "slug": "music",
+      "name": "Music",
+      "goal": "soul",
+      "curriculum": "topics/music/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, not scheduled; parked with a full curriculum (one in, one out). Built by scripts/build_majors.py. A conservatory-shaped music major: theory I-IV, aural skills, keyboard, counterpoint, three-semester history, Hindustani music; instrument practice optional. Entry is a placeholder until the learner states their background."
+    },
+    {
+      "slug": "english",
+      "name": "English",
+      "goal": "soul",
+      "curriculum": "topics/english/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, not scheduled; parked with a full curriculum (one in, one out). Built by scripts/build_majors.py. A reading major: surveys (British, American), Shakespeare, poetry, the novel, theory (= Critical Theory's first courses), history of the language, world and postcolonial literature, senior seminar. Writing electives."
     }
   ]
 }

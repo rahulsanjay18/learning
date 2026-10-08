@@ -1,0 +1,474 @@
+{
+  "major": "music",
+  "program": "topics/music/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-08 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MU100",
+      "MU101"
+    ],
+    "credited": [],
+    "maybe": [
+      "MU100",
+      "MU101"
+    ],
+    "start": [
+      "MU110",
+      "MU120"
+    ],
+    "basis": "Placeholder until you say: no music courses on either Penn State transcript that I know of. If you read notation and know keys and intervals, MU100 is a skim; MU101 (listening) is a skim if you already listen closely to classical music. Tell me your instrument(s) and I'll adjust."
+  },
+  "courses": [
+    {
+      "id": "MU100",
+      "title": "Music fundamentals: notation, rhythm, scales, keys, intervals, triads",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "e73692249d Clendinning & Marvin, The Musician's Guide to Theory and Analysis (fundamentals chapters; grade A; to confirm)",
+        "secondary": [
+          "d400c8d44a Royal Conservatory of Music, Theory Syllabus (grade A; graded rudiments checklist)",
+          "Open Music Theory (free: https://viva.pressbooks.pub/openmusictheory/)"
+        ],
+        "tertiary": [
+          "639b84c0f8 Taylor, The AB Guide to Music Theory vol. 1"
+        ]
+      }
+    },
+    {
+      "id": "MU101",
+      "title": "Listening: how music works",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 10,
+      "books": {
+        "primary": "60312d739e Copland, What to Listen for in Music (grade A)",
+        "secondary": [
+          "806faa35e9 Forney & Machlis, The Enjoyment of Music (listening guides)"
+        ]
+      }
+    },
+    {
+      "id": "MU110",
+      "title": "Aural skills I: sight-singing and dictation",
+      "status": "later",
+      "requires": [
+        "MU100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "501f6a9e3d Ottman & Rogers, Music for Sight Singing (diatonic units)",
+        "secondary": [
+          "48060ae852 Benward & Kolosick, Ear Training: A Technique for Listening"
+        ]
+      },
+      "note": "Short daily drills suit spaced review; needs the music-notation and ear-training widget from the wishlist."
+    },
+    {
+      "id": "MU120",
+      "title": "Keyboard skills (functional piano)",
+      "status": "later",
+      "requires": [
+        "MU100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "e213219df8 Faber, Adult Piano Adventures All-in-One Book 1",
+        "secondary": [
+          "74f6e6593f Faber, Accelerated Piano Adventures for the Older Beginner"
+        ],
+        "tertiary": [
+          "e8feff6f46 Palmer et al., The Complete Book of Scales, Chords, Arpeggios and Cadences (grade C; your copy)"
+        ]
+      }
+    },
+    {
+      "id": "MU200",
+      "title": "Theory II: diatonic harmony and voice leading",
+      "status": "later",
+      "requires": [
+        "MU100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "e73692249d Clendinning & Marvin (diatonic harmony chapters; to confirm)",
+        "secondary": [
+          "a0290b01c4 Aldwell, Schachter & Cadwallader, Harmony and Voice Leading",
+          "14e41cafd9 Kostka, Payne & Almen, Tonal Harmony"
+        ],
+        "tertiary": [
+          "a8a79b9404 Levy, A Theory of Harmony (grade A; the theory behind the rules)"
+        ],
+        "skip": [
+          "f77cae55dc Kostka older edition: grade C copy (use 14e41cafd9)"
+        ]
+      }
+    },
+    {
+      "id": "MU210",
+      "title": "Aural skills II: chromatic sight-singing, harmonic dictation",
+      "status": "later",
+      "requires": [
+        "MU110",
+        "MU200"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "501f6a9e3d Ottman & Rogers, Music for Sight Singing (chromatic units)",
+        "secondary": [
+          "48060ae852 Benward & Kolosick"
+        ]
+      }
+    },
+    {
+      "id": "MU300",
+      "title": "Theory III: chromatic harmony, modulation and form",
+      "status": "later",
+      "requires": [
+        "MU200"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "e73692249d Clendinning & Marvin (chromatic harmony and form chapters; to confirm)",
+        "secondary": [
+          "de3227ca92 Laitz, The Complete Musician",
+          "14e41cafd9 Kostka, Payne & Almen"
+        ]
+      }
+    },
+    {
+      "id": "MU310",
+      "title": "Counterpoint: species and 18th-century style",
+      "status": "later",
+      "requires": [
+        "MU200"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Fux, The Study of Counterpoint (Gradus ad Parnassum, trans. Mann) (TO ACQUIRE)",
+        "secondary": [
+          "Open Music Theory (free: https://viva.pressbooks.pub/openmusictheory/) (counterpoint chapters)",
+          "28f93f91f0 Gauldin, A Practical Approach to 18th-Century Counterpoint (grade C: exercises from your copy)"
+        ]
+      }
+    },
+    {
+      "id": "MU320",
+      "title": "Theory IV: post-tonal music (sets, serialism, minimalism)",
+      "status": "later",
+      "requires": [
+        "MU300"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "e73692249d Clendinning & Marvin (post-tonal chapters; to confirm)",
+        "secondary": [
+          "Straus, Introduction to Post-Tonal Theory (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MU231",
+      "title": "Music history I: antiquity to Bach",
+      "status": "later",
+      "requires": [
+        "MU101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Burkholder, Grout & Palisca, A History of Western Music (TO ACQUIRE) (with the Norton Anthology of Western Music)",
+        "secondary": [
+          "da9d880141 Norton Introduction to Music History anthology (grade C: scores from your copy)"
+        ]
+      }
+    },
+    {
+      "id": "MU232",
+      "title": "Music history II: Haydn to Mahler",
+      "status": "later",
+      "requires": [
+        "MU231"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Burkholder, Grout & Palisca, A History of Western Music (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MU233",
+      "title": "Music history III: the twentieth century to now",
+      "status": "later",
+      "requires": [
+        "MU232"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "e1b23ab193 Ross, The Rest Is Noise (grade A)",
+        "secondary": [
+          "5ac11c0dc7 Morgan (ed.), Anthology of Twentieth-Century Music (grade C: scores from your copy)"
+        ]
+      }
+    },
+    {
+      "id": "MU240",
+      "title": "Hindustani classical music and world music",
+      "status": "later",
+      "requires": [
+        "MU100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "732f4b1550 Bakshi, 101 Raga-s for the 21st Century and Beyond (grade A)",
+        "secondary": [
+          "6c644b528a Sharma, How to Play Sitar",
+          "Bor (ed.), The Raga Guide (TO ACQUIRE)"
+        ]
+      },
+      "note": "Meets the Indian History major (music at the Mughal courts, the bhakti poets)."
+    },
+    {
+      "id": "MU501",
+      "title": "Schenkerian analysis",
+      "status": "later",
+      "requires": [
+        "MU300",
+        "MU310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Cadwallader & Gagne, Analysis of Tonal Music: A Schenkerian Approach (TO ACQUIRE)",
+        "secondary": [
+          "a0290b01c4 Aldwell & Schachter (Schenkerian roots)"
+        ]
+      }
+    },
+    {
+      "id": "MU511",
+      "title": "Post-tonal theory (graduate)",
+      "status": "later",
+      "requires": [
+        "MU320"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Straus, Introduction to Post-Tonal Theory (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MU521",
+      "title": "Musicology: reading music history critically",
+      "status": "later",
+      "requires": [
+        "MU233"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Taruskin, The Oxford History of Western Music (selected chapters) (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MU531",
+      "title": "Ethnomusicology",
+      "status": "later",
+      "requires": [
+        "MU240",
+        "MU233"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Nettl, The Study of Ethnomusicology (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MU250",
+      "title": "Jazz theory and improvisation",
+      "status": "later",
+      "requires": [
+        "MU200"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "a435b20858 Terefenko, Jazz Theory: From Basic to Advanced Study 2nd",
+        "secondary": [
+          "dd82cef0ea The Great American Songbook: Jazz (tunes to analyze)"
+        ]
+      }
+    },
+    {
+      "id": "MU260",
+      "title": "Songwriting and lyric writing",
+      "status": "later",
+      "requires": [
+        "MU200"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "649d3cf76e Davis, The Craft of Lyric Writing (grade A)",
+        "secondary": [
+          "0ce53e3d46 McCandless & McIntyre, The Craft of Contemporary Commercial Music"
+        ]
+      }
+    },
+    {
+      "id": "MU270",
+      "title": "Orchestration",
+      "status": "later",
+      "requires": [
+        "MU300"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Adler, The Study of Orchestration (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MU280",
+      "title": "Composition: short pieces in notation software",
+      "status": "later",
+      "requires": [
+        "MU300"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "MuseScore (free notation software: https://musescore.org) + Clendinning & Marvin composition exercises"
+      }
+    },
+    {
+      "id": "MU190",
+      "title": "Breadth: the physics of sound and hearing",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "8e3ad00192 Goldsmith, Sound VSI (grade A)",
+        "secondary": [
+          "8f4b3a9ae8 Walmsley, Light VSI (for the wave ideas)"
+        ]
+      },
+      "note": "Meets Physics PH214 (waves)."
+    },
+    {
+      "id": "MU290",
+      "title": "Practice: your instrument (applied lessons, with a teacher if possible)",
+      "status": "later",
+      "requires": [
+        "MU100"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "your instrument's method or exam syllabus (guitar: db709588b0 Hal Leonard Guitar Method; piano: ABRSM grade books; voice: 6d6ec0d253 RCM Voice Syllabus)"
+      }
+    },
+    {
+      "id": "MU595",
+      "title": "Practice: graduate entrance diagnostic (theory, aural, history)",
+      "status": "later",
+      "requires": [
+        "MU501",
+        "MU521"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 4,
+      "books": {
+        "primary": "past diagnostic exams (to collect)"
+      }
+    },
+    {
+      "id": "MU398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "MU320",
+        "MU233"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "MU399",
+      "title": "Capstone: an analysis paper or a short recital",
+      "status": "later",
+      "requires": [
+        "MU320",
+        "MU233"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "optional"
+      }
+    },
+    {
+      "id": "MU599",
+      "title": "Capstone: a thesis-scale analysis or composition",
+      "status": "later",
+      "requires": [
+        "MU501"
+      ],
+      "group": "capstone",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

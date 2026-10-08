@@ -4,12 +4,15 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
 
 ## Learner's next actions
 - **2026-10-08: four STEM majors designed and parked** (Mathematics, Physics, Mechanical Engineering, Unified Engineering;
-  "not trying to do this now"). One builder for all four: `scripts/build_stem_majors.py` (shared courses = same id; edit there,
+  "not trying to do this now"). One builder for all four: `scripts/build_majors.py` (shared courses = same id; edit there,
   re-run, then `major_dag.py`). Entry points from the Penn State degrees are drawn in each `DAG.md`; tests in
   `scripts/test_stem_majors.py`. Saved explainer: `notes/stem-majors-2026-10-08.md`. Learner's transcript (2026-10-08): BS Math
   Applied option + MATH 421, 456 (412 taken but being retaken); physics: modern, classical mechanics, 400-level E&M (Griffiths), thermal. **Ask the learner:**
   career or soul for each major. Course syllabi are written when a course is about to start (parked
   majors aren't rendered by `render_syllabi.py`), a deliberate deviation from the syllabus standard.
+- **2026-10-08: Music and English majors designed and parked**, same builder (renamed `scripts/build_majors.py`). Music's entry
+  point is a placeholder: **ask the learner** what they play and whether they read notation; English: composition credited,
+  ask about literature gen-eds. English EN300 = Critical Theory CT100/CT201 (either counts). Explainer: `notes/music-english-majors-2026-10-08.md`.
 - **2026-10-08: rule 32, Extra practice** on every lesson (book problems, numbers changed for math-heavy courses; one extra
   reading; one extra article). Lint warns on new lessons without it (old ones listed in `scripts/fixtures/pre-extra-practice.txt`).
 - **2026-10-08: skills `/write-lesson` and `/write-questions`** (built by subagents). Question families: `notes/practice-variants.md`.
