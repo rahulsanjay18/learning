@@ -1,15 +1,11 @@
 # Books Claude has asked for
 
 I'll get these myself, add them to the server, then regrade + reindex.
-Last reviewed 2026-10-06. Find what's new on the server with `python3 scripts/books.py new` (needs the redeployed book server).
+Last reviewed 2026-10-08. Find what's new on the server with `python3 scripts/books.py new` (needs the redeployed book server).
 Every "missing" line was also checked on the server by title on 2026-10-06 (one request each).
 
 ## Games (G101 chess, G150 strategy, design)
-- _Arms and Influence_ — Thomas C. Schelling — for: military-strategy / deterrence & coercion — why: the classic theory of coercion — status: got (4bdcba34b3, grade A, 2026-10-06; on the server, not yet in MANIFEST.csv)
-- _Is Your Move Safe?_ — Dan Heisman — for: chess / lesson 0001 is-it-safe — why: the definitive treatment of the safety-check skill for improving adults — status: missing (not on server 2026-10-06)
-- _A Guide to Chess Improvement: The Best of Novice Nook_ — Dan Heisman — for: chess thinking process — why: award-winning column for adult improvers, matches the learner's level — status: missing
-- _Makers of Modern Strategy from Machiavelli to the Nuclear Age_ — Peter Paret (ed.) — for: military-strategy / theorists — why: standard survey of the theorists the mission names — status: got (6979109f6e, grade A, 2026-10-06; on the server, not yet in MANIFEST.csv)
-- _The Art of Wargaming_ — Peter Perla — for: military-strategy / wargaming — why: standard text on professional and hobby wargaming — status: got (eb72110b76, grade A, 2026-10-06; on the server, not yet in MANIFEST.csv)
+- _A Guide to Chess Improvement: The Best of Novice Nook_ — Dan Heisman — for: chess thinking process — why: award-winning column for adult improvers, matches the learner's level — status: needs reconversion (de9de7888a, grade C garbled epub, 2026-10-08; in RECONVERT.csv)
 - _The First Punic War: A Military History_ — J. F. Lazenby — for: military-strategy / First Punic War analysis — why: standard modern military history of the war; checks Polybius — status: missing
 - _An Introduction to Game Theory_ — Martin J. Osborne (OUP, 2003) — for: games / classical game theory course — why: the real textbook PROGRAM.md's gap list asks for; light on math prerequisites, covers extensive and repeated games — status: missing
 - _Characteristics of Games_ — Elias, Garfield & Gutschera — for: games / design notebook — why: the most analytical of the design classics (balance, first-player advantage, luck vs. skill), fits the 3D-chess project — status: missing
@@ -30,7 +26,7 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 
 ## Fitness and art (parked)
 - _NASM Essentials of Personal Fitness Training, 7th ed._ — NASM (Jones & Bartlett) — for: nasm-cpt / all lessons — why: the textbook the current exam is written from; collection only has the 4th ed. (2012) — status: missing
-- _Pixel Logic: A Guide to Pixel Art_ — Michael Azzi — for: pixel-art / all early lessons — why: the most-recommended visual beginner guide (lines, clusters, palettes, shading) — status: missing
+- _Pixel Logic: A Guide to Pixel Art_ — Michael Azzi — for: pixel-art / all early lessons — why: the most-recommended visual beginner guide (lines, clusters, palettes, shading) — status: needs reconversion (PDF in to_sort, listed in RECONVERT.csv; 2026-10-08)
 
 ## Engineering career: C and C++ (topics/eng/, CP courses)
 - _C++ Concurrency in Action_, 2nd ed. — Anthony Williams (Manning, 2019) — for: CP204 Concurrency (Level I core primary) — why: the standard book on C++ threads, memory model, atomics — status: missing (buy)
@@ -43,8 +39,8 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 
 ## Engineering career: staff (topics/eng/, SE courses)
 - _The Staff Engineer's Path_ — Tanya Reilly (O'Reilly, 2022) — for: SE101/SE140/SE150/SE160, the backbone — status: owned by the learner (2026-10-07), not on the book server yet
-- _A Philosophy of Software Design_, 2nd ed. — John Ousterhout (2021) — for: SE130 — status: missing
-- _An Elegant Puzzle_ — Will Larson (2019) — for: SE150 strategy — status: missing
+- _A Philosophy of Software Design_, 2nd ed. — John Ousterhout (2021) — for: SE130 — status: 1st ed. got (4e1b680f8b, grade A; SE130 uses it); 2nd ed. still wanted for its added chapter
+- _An Elegant Puzzle_ — Will Larson (2019) — for: SE150 strategy — status: got (df35dc4f27, grade B)
 - _System Design Interview_ vol. 1–2 — Alex Xu; _Machine Learning System Design Interview_ — Aminian & Xu — for: SE120/SE160 — status: missing
 - _Good Strategy/Bad Strategy_ — Richard Rumelt; _Team Topologies_ — Skelton & Pais — for: SE150 (nice to have) — status: missing
 
@@ -115,3 +111,15 @@ and the syllabus gets an alternative. All status: missing (checked on the server
 - _Simulating War_ — Philip Sabin — for: G350
 - _Game Balance_ — Schreiber & Romero — for: G602
 - _Combinatorial Game Theory_ — Siegel — for: G502 (optional)
+
+Critical Theory (topics/critical-theory/, parked):
+- _Civilization and Its Discontents_ — Sigmund Freud — for: CT130 Foundations III — why: the Columbia CC staple; Freud's social theory, which the Frankfurt School builds on — status: missing
+- _Dialectic of Enlightenment_ — Horkheimer & Adorno — for: CT510 (Level II) — why: the Frankfurt School's central book — status: missing
+- _Illuminations_ — Walter Benjamin — for: CT530 (Level II) — status: missing
+- _Discipline and Punish_ — Michel Foucault — for: CT550 (Level II) — status: missing
+- _Orientalism_ — Edward Said — for: CT560 (Level II) — status: missing
+- _The Political Unconscious_ — Fredric Jameson — for: CT570 (Level II) — status: missing
+- _Gender Trouble_ — Judith Butler — for: CT580 (Level II) — status: missing
+- _The Structural Transformation of the Public Sphere_ — Jürgen Habermas — for: CT595 (Level II) — status: missing
+- _A Companion to Marx's Capital_ — David Harvey — for: CT590 (Level II) — status: missing
+- _The Dialectical Imagination_ — Martin Jay — for: CT260 (optional) — why: the standard history of the Frankfurt School — status: missing

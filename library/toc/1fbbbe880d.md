@@ -1,0 +1,329 @@
+# TOC: Yudkowsky, Eliezer - Rationality_ From AI to Zombies (2015, Machine Intelligence Research Institute) - libgen.li
+grade: A
+
+- Rationality
+  - From AI to Zombies
+  - <span id="SEQUENCESli1.html#x2-1000"></span>Contents
+  - Preface
+  - Biases: An Introduction <span class="small">by Rob Bensinger</span>
+    - <span id="SEQUENCESli3.html#x4-40001"></span>Rational Feelings
+    - <span id="SEQUENCESli3.html#x4-50006"></span>The Many Faces of Bias
+    - <span id="SEQUENCESli3.html#x4-600019"></span>A Word About This Text
+    - <span id="SEQUENCESli3.html#x4-700019"></span>Map and Territory
+    - Acknowledgments
+- <span class="titlemark">Book I</span> Map and Territory
+- <span class="titlemark">Part A</span> Predictably Wrong
+  - <span class="titlemark">1</span> <span id="SEQUENCESch1.html#x8-110001"></span>What Do I Mean By “Rationality”?
+  - <span class="titlemark">2</span> <span id="SEQUENCESch2.html#x9-120002"></span>Feeling Rational
+  - <span class="titlemark">3</span> <span id="SEQUENCESch3.html#x10-130003"></span>Why Truth? And . . .
+  - <span class="titlemark">4</span> <span id="SEQUENCESch4.html#x11-140004"></span>. . . What’s a Bias, Again?
+  - <span class="titlemark">5</span> <span id="SEQUENCESch5.html#x12-150005"></span>Availability
+  - <span class="titlemark">6</span> <span id="SEQUENCESch6.html#x13-160006"></span>Burdensome Details
+  - <span class="titlemark">7</span> <span id="SEQUENCESch7.html#x14-170007"></span>Planning Fallacy
+  - <span class="titlemark">9</span> <span id="SEQUENCESch9.html#x16-190009"></span>Expecting Short Inferential Distances
+  - <span class="titlemark">10</span> <span id="SEQUENCESch10.html#x17-2000010"></span>The Lens That Sees Its Own Flaws
+- <span class="titlemark">Part B</span> Fake Beliefs
+  - <span class="titlemark">12</span> <span id="SEQUENCESch12.html#x20-2300012"></span>A Fable of Science and Politics
+  - <span class="titlemark">13</span> <span id="SEQUENCESch13.html#x21-2400013"></span>Belief in Belief
+  - <span class="titlemark">14</span> <span id="SEQUENCESch14.html#x22-2500014"></span>Bayesian Judo
+  - <span class="titlemark">15</span> <span id="SEQUENCESch15.html#x23-2600015"></span>Pretending to be Wise
+  - <span class="titlemark">17</span> <span id="SEQUENCESch17.html#x25-2800017"></span>Professing and Cheering
+  - <span class="titlemark">18</span> <span id="SEQUENCESch18.html#x26-2900018"></span>Belief as Attire
+  - <span class="titlemark">19</span> <span id="SEQUENCESch19.html#x27-3000019"></span>Applause Lights
+- <span class="titlemark">Part C</span> Noticing Confusion
+  - <span class="titlemark">20</span> <span id="SEQUENCESch20.html#x29-3200020"></span>Focus Your Uncertainty
+  - <span class="titlemark">21</span> <span id="SEQUENCESch21.html#x30-3300021"></span>What Is Evidence?
+  - <span class="titlemark">23</span> <span id="SEQUENCESch23.html#x32-3500023"></span>How Much Evidence Does It Take?
+  - <span class="titlemark">24</span> <span id="SEQUENCESch24.html#x33-3600024"></span>Einstein’s Arrogance
+  - <span class="titlemark">25</span> <span id="SEQUENCESch25.html#x34-3700025"></span>Occam’s Razor
+  - <span class="titlemark">26</span> <span id="SEQUENCESch26.html#x35-3800026"></span>Your Strength as a Rationalist
+  - <span class="titlemark">28</span> <span id="SEQUENCESch28.html#x37-4000028"></span>Conservation of Expected Evidence
+  - <span class="titlemark">29</span> <span id="SEQUENCESch29.html#x38-4100029"></span>Hindsight Devalues Science
+- <span class="titlemark">Part D</span> Mysterious Answers
+  - <span class="titlemark">30</span> <span id="SEQUENCESch30.html#x40-4300030"></span>Fake Explanations
+  - <span class="titlemark">31</span> <span id="SEQUENCESch31.html#x41-4400031"></span>Guessing the Teacher’s Password
+  - <span class="titlemark">32</span> <span id="SEQUENCESch32.html#x42-4500032"></span>Science as Attire
+  - <span class="titlemark">33</span> <span id="SEQUENCESch33.html#x43-4600033"></span>Fake Causality
+  - <span class="titlemark">34</span> <span id="SEQUENCESch34.html#x44-4700034"></span>Semantic Stopsigns
+  - <span class="titlemark">36</span> <span id="SEQUENCESch36.html#x46-4900036"></span>The Futility of Emergence
+  - <span class="titlemark">37</span> <span id="SEQUENCESch37.html#x47-5000037"></span>Say Not “Complexity”
+  - <span class="titlemark">38</span> <span id="SEQUENCESch38.html#x48-5100038"></span>Positive Bias: Look into the Dark
+  - <span class="titlemark">39</span> <span id="SEQUENCESch39.html#x49-5200039"></span>Lawful Uncertainty
+  - <span class="titlemark">40</span> <span id="SEQUENCESch40.html#x50-5300040"></span>My Wild and Reckless Youth
+  - <span class="titlemark">41</span> <span id="SEQUENCESch41.html#x51-5400041"></span>Failing to Learn from History
+  - <span class="titlemark">42</span> <span id="SEQUENCESch42.html#x52-5500042"></span>Making History Available
+  - <span class="titlemark">43</span> <span id="SEQUENCESch43.html#x53-5600043"></span>Explain/Worship/Ignore?
+  - <span class="titlemark">44</span> <span id="SEQUENCESch44.html#x54-5700044"></span>“Science” as Curiosity-Stopper
+  - <span class="titlemark">45</span> <span id="SEQUENCESch45.html#x55-5800045"></span>Truly Part of You
+  - <span id="SEQUENCESli6.html#x56-590002"></span><span class="titlemark">Interlude</span> The Simple Truth
+- <span class="titlemark">Book II</span> How to Actually Change Your Mind
+  - Rationality: An Introduction <span class="small">by Rob Bensinger</span>
+    - <span id="SEQUENCESli9.html#x59-630002"></span>How to Not Actually Change Your Mind
+    - <span id="SEQUENCESli9.html#x59-640009"></span>The Mathematics of Rationality
+    - <span id="SEQUENCESli9.html#x59-650009"></span>Rationality Applied
+- <span class="titlemark">Part E</span> Overly Convenient Excuses
+  - <span class="titlemark">46</span> <span id="SEQUENCESch46.html#x61-6700046"></span>The Proper Use of Humility
+  - <span class="titlemark">47</span> <span id="SEQUENCESch47.html#x62-6800047"></span>The Third Alternative
+  - <span class="titlemark">48</span> <span id="SEQUENCESch48.html#x63-6900048"></span>Lotteries: A Waste of Hope
+  - <span class="titlemark">49</span> <span id="SEQUENCESch49.html#x64-7000049"></span>New Improved Lottery
+  - <span class="titlemark">50</span> <span id="SEQUENCESch50.html#x65-7100050"></span>But There’s Still a Chance, Right?
+  - <span class="titlemark">51</span> <span id="SEQUENCESch51.html#x66-7200051"></span>The Fallacy of Gray
+  - <span class="titlemark">52</span> <span id="SEQUENCESch52.html#x67-7300052"></span>Absolute Authority
+  - <span class="titlemark">53</span> <span id="SEQUENCESch53.html#x68-7400053"></span>How to Convince Me That 2 + 2 = 3
+  - <span class="titlemark">54</span> <span id="SEQUENCESch54.html#x69-7500054"></span>Infinite Certainty
+  - <span class="titlemark">55</span> <span id="SEQUENCESch55.html#x70-7600055"></span>0 And 1 Are Not Probabilities
+  - <span class="titlemark">56</span> <span id="SEQUENCESch56.html#x71-7700056"></span>Your Rationality Is My Business
+- <span class="titlemark">Part F</span> Politics and Rationality
+  - <span class="titlemark">57</span> <span id="SEQUENCESch57.html#x73-7900057"></span>Politics is the Mind-Killer
+  - <span class="titlemark">60</span> <span id="SEQUENCESch60.html#x76-8200060"></span>Correspondence Bias
+  - <span class="titlemark">61</span> <span id="SEQUENCESch61.html#x77-8300061"></span>Are Your Enemies Innately Evil?
+  - <span class="titlemark">63</span> <span id="SEQUENCESch63.html#x79-8500063"></span>Argument Screens Off Authority
+  - <span class="titlemark">64</span> <span id="SEQUENCESch64.html#x80-8600064"></span>Hug the Query
+  - <span class="titlemark">65</span> <span id="SEQUENCESch65.html#x81-8700065"></span>Rationality and the English Language
+  - <span class="titlemark">66</span> <span id="SEQUENCESch66.html#x82-8800066"></span>Human Evil and Muddled Thinking
+- <span class="titlemark">Part G</span> <span id="SEQUENCESpa7.html#x83-89000G"></span>Against Rationalization
+  - <span class="titlemark">67</span> <span id="SEQUENCESch67.html#x84-9000067"></span>Knowing About Biases Can Hurt People
+  - <span class="titlemark">68</span> <span id="SEQUENCESch68.html#x85-9100068"></span>Update Yourself Incrementally
+  - <span class="titlemark">69</span> <span id="SEQUENCESch69.html#x86-9200069"></span>One Argument Against An Army
+  - <span class="titlemark">70</span> <span id="SEQUENCESch70.html#x87-9300070"></span>The Bottom Line
+  - <span class="titlemark">71</span> <span id="SEQUENCESch71.html#x88-9400071"></span>What Evidence Filtered Evidence?
+  - <span class="titlemark">72</span> <span id="SEQUENCESch72.html#x89-9500072"></span>Rationalization
+  - <span class="titlemark">73</span> <span id="SEQUENCESch73.html#x90-9600073"></span>A Rational Argument
+  - <span class="titlemark">76</span> <span id="SEQUENCESch76.html#x93-9900076"></span>Fake Justification
+  - <span class="titlemark">77</span> <span id="SEQUENCESch77.html#x94-10000077"></span>Is That Your True Rejection?
+  - <span class="titlemark">78</span> <span id="SEQUENCESch78.html#x95-10100078"></span>Entangled Truths, Contagious Lies
+  - <span class="titlemark">79</span> <span id="SEQUENCESch79.html#x96-10200079"></span>Of Lies and Black Swan Blowups
+  - <span class="titlemark">80</span> <span id="SEQUENCESch80.html#x97-10300080"></span>Dark Side Epistemology
+- <span class="titlemark">Part H</span> <span id="SEQUENCESpa8.html#x98-104000H"></span>Against Doublethink
+  - <span class="titlemark">81</span> <span id="SEQUENCESch81.html#x99-10500081"></span>Singlethink
+  - <span class="titlemark">82</span> <span id="SEQUENCESch82.html#x100-10600082"></span>Doublethink (Choosing to be Biased)
+  - <span class="titlemark">83</span> <span id="SEQUENCESch83.html#x101-10700083"></span>No, Really, I’ve Deceived Myself
+  - <span class="titlemark">84</span> <span id="SEQUENCESch84.html#x102-10800084"></span>Belief in Self-Deception
+  - <span class="titlemark">85</span> <span id="SEQUENCESch85.html#x103-10900085"></span>Moore’s Paradox
+  - <span class="titlemark">86</span> <span id="SEQUENCESch86.html#x104-11000086"></span>Don’t Believe You’ll Self-Deceive
+- <span class="titlemark">Part I</span> <span id="SEQUENCESpa9.html#x105-111000I"></span>Seeing with Fresh Eyes
+  - <span class="titlemark">87</span> <span id="SEQUENCESch87.html#x106-11200087"></span>Anchoring and Adjustment
+  - <span class="titlemark">88</span> <span id="SEQUENCESch88.html#x107-11300088"></span>Priming and Contamination
+  - <span class="titlemark">90</span> <span id="SEQUENCESch90.html#x109-11500090"></span>Cached Thoughts
+  - <span class="titlemark">91</span> <span id="SEQUENCESch91.html#x110-11600091"></span>The “Outside the Box” Box
+  - <span class="titlemark">92</span> <span id="SEQUENCESch92.html#x111-11700092"></span>Original Seeing
+  - <span class="titlemark">93</span> <span id="SEQUENCESch93.html#x112-11800093"></span>Stranger than History
+  - <span class="titlemark">95</span> <span id="SEQUENCESch95.html#x114-12000095"></span>The Virtue of Narrowness
+  - <span class="titlemark">96</span> <span id="SEQUENCESch96.html#x115-12100096"></span>How to Seem (and Be) Deep
+  - <span class="titlemark">98</span> <span id="SEQUENCESch98.html#x117-12300098"></span>Hold Off On Proposing Solutions
+  - <span class="titlemark">99</span> <span id="SEQUENCESch99.html#x118-12400099"></span>The Genetic Fallacy
+- <span class="titlemark">Part J</span> <span id="SEQUENCESpa10.html#x119-125000J"></span>Death Spirals
+  - <span class="titlemark">100</span> <span id="SEQUENCESch100.html#x120-126000100"></span>The Affect Heuristic
+  - <span class="titlemark">103</span> <span id="SEQUENCESch103.html#x123-129000103"></span>The Halo Effect
+  - <span class="titlemark">104</span> <span id="SEQUENCESch104.html#x124-130000104"></span>Superhero Bias
+  - <span class="titlemark">105</span> <span id="SEQUENCESch105.html#x125-131000105"></span>Mere Messiahs
+  - <span class="titlemark">106</span> <span id="SEQUENCESch106.html#x126-132000106"></span>Affective Death Spirals
+  - <span class="titlemark">107</span> <span id="SEQUENCESch107.html#x127-133000107"></span>Resist the Happy Death Spiral
+  - <span class="titlemark">108</span> <span id="SEQUENCESch108.html#x128-134000108"></span>Uncritical Supercriticality
+  - <span class="titlemark">110</span> <span id="SEQUENCESch110.html#x130-136000110"></span>When None Dare Urge Restraint
+  - <span class="titlemark">111</span> <span id="SEQUENCESch111.html#x131-137000111"></span>The Robbers Cave Experiment
+  - <span class="titlemark">112</span> <span id="SEQUENCESch112.html#x132-138000112"></span>Every Cause Wants to Be a Cult
+  - <span class="titlemark">113</span> <span id="SEQUENCESch113.html#x133-139000113"></span>Guardians of the Truth
+  - <span class="titlemark">114</span> <span id="SEQUENCESch114.html#x134-140000114"></span>Guardians of the Gene Pool
+  - <span class="titlemark">115</span> <span id="SEQUENCESch115.html#x135-141000115"></span>Guardians of Ayn Rand
+  - <span class="titlemark">116</span> <span id="SEQUENCESch116.html#x136-142000116"></span>Two Cult Koans
+  - <span class="titlemark">117</span> <span id="SEQUENCESch117.html#x137-143000117"></span>Asch’s Conformity Experiment
+  - <span class="titlemark">118</span> <span id="SEQUENCESch118.html#x138-144000118"></span>On Expressing Your Concerns
+  - <span class="titlemark">119</span> <span id="SEQUENCESch119.html#x139-145000119"></span>Lonely Dissent
+  - <span class="titlemark">120</span> <span id="SEQUENCESch120.html#x140-146000120"></span>Cultish Countercultishness
+- <span class="titlemark">Part K</span> <span id="SEQUENCESpa11.html#x141-147000K"></span>Letting Go
+  - <span class="titlemark">121</span> <span id="SEQUENCESch121.html#x142-148000121"></span>The Importance of Saying “Oops”
+  - <span class="titlemark">122</span> <span id="SEQUENCESch122.html#x143-149000122"></span>The Crackpot Offer
+  - <span class="titlemark">123</span> <span id="SEQUENCESch123.html#x144-150000123"></span>Just Lose Hope Already
+  - <span class="titlemark">124</span> <span id="SEQUENCESch124.html#x145-151000124"></span>The Proper Use of Doubt
+  - <span class="titlemark">125</span> <span id="SEQUENCESch125.html#x146-152000125"></span>You Can Face Reality
+  - <span class="titlemark">126</span> <span id="SEQUENCESch126.html#x147-153000126"></span>The Meditation on Curiosity
+  - <span class="titlemark">128</span> <span id="SEQUENCESch128.html#x149-155000128"></span>Leave a Line of Retreat
+  - <span class="titlemark">129</span> <span id="SEQUENCESch129.html#x150-156000129"></span>Crisis of Faith
+  - <span class="titlemark">130</span> <span id="SEQUENCESch130.html#x151-157000130"></span>The Ritual
+- <span id="SEQUENCESli10.html#x152-158000130"></span><span class="titlemark">Book III</span> The Machine in the Ghost
+  - <span id="SEQUENCESli12.html#x154-160000130"></span>Minds: An Introduction <span class="small">by Rob Bensinger</span>
+    - <span id="SEQUENCESli12.html#x154-161000130"></span>Ghosts and Machines
+    - <span id="SEQUENCESli12.html#x154-1620001"></span>Rebuilding Intelligence
+  - <span id="SEQUENCESli13.html#x155-1630007"></span><span class="titlemark">Interlude</span> The Power of Intelligence
+- <span class="titlemark">Part L</span> <span id="SEQUENCESpa12.html#x156-164000L"></span>The Simple Math of Evolution
+  - <span class="titlemark">131</span> <span id="SEQUENCESch131.html#x157-165000131"></span>An Alien God
+  - <span class="titlemark">132</span> <span id="SEQUENCESch132.html#x158-166000132"></span>The Wonder of Evolution
+  - <span class="titlemark">135</span> <span id="SEQUENCESch135.html#x161-169000135"></span>Evolving to Extinction
+  - <span class="titlemark">137</span> <span id="SEQUENCESch137.html#x163-171000137"></span>Fake Optimization Criteria
+  - <span class="titlemark">139</span> <span id="SEQUENCESch139.html#x165-173000139"></span>Evolutionary Psychology
+  - <span class="titlemark">142</span> <span id="SEQUENCESch142.html#x168-176000142"></span>Thou Art Godshatter
+- <span class="titlemark">Part M</span> <span id="SEQUENCESpa13.html#x169-177000M"></span>Fragile Purposes
+  - <span class="titlemark">143</span> <span id="SEQUENCESch143.html#x170-178000143"></span>Belief in Intelligence
+  - <span class="titlemark">144</span> <span id="SEQUENCESch144.html#x171-179000144"></span>Humans in Funny Suits
+  - <span class="titlemark">146</span> <span id="SEQUENCESch146.html#x173-181000146"></span>Ghosts in the Machine
+  - <span class="titlemark">147</span> <span id="SEQUENCESch147.html#x174-182000147"></span>Artificial Addition
+  - <span class="titlemark">149</span> <span id="SEQUENCESch149.html#x176-184000149"></span>Leaky Generalizations
+  - <span class="titlemark">150</span> <span id="SEQUENCESch150.html#x177-185000150"></span>The Hidden Complexity of Wishes
+  - <span class="titlemark">151</span> <span id="SEQUENCESch151.html#x178-186000151"></span>Anthropomorphic Optimism
+  - <span class="titlemark">152</span> <span id="SEQUENCESch152.html#x179-187000152"></span>Lost Purposes
+- <span class="titlemark">Part N</span> <span id="SEQUENCESpa14.html#x180-188000N"></span>A Human’s Guide to Words
+  - <span class="titlemark">153</span> <span id="SEQUENCESch153.html#x181-189000153"></span>The Parable of the Dagger
+  - <span class="titlemark">154</span> <span id="SEQUENCESch154.html#x182-190000154"></span>The Parable of Hemlock
+  - <span class="titlemark">155</span> <span id="SEQUENCESch155.html#x183-191000155"></span>Words as Hidden Inferences
+  - <span class="titlemark">156</span> <span id="SEQUENCESch156.html#x184-192000156"></span>Extensions and Intensions
+  - <span class="titlemark">157</span> <span id="SEQUENCESch157.html#x185-193000157"></span>Similarity Clusters
+  - <span class="titlemark">160</span> <span id="SEQUENCESch160.html#x188-196000160"></span>Disguised Queries
+  - <span class="titlemark">161</span> <span id="SEQUENCESch161.html#x189-197000161"></span>Neural Categories
+  - <span class="titlemark">163</span> <span id="SEQUENCESch163.html#x191-199000163"></span>Disputing Definitions
+  - <span class="titlemark">164</span> <span id="SEQUENCESch164.html#x192-200000164"></span>Feel the Meaning
+  - <span class="titlemark">165</span> <span id="SEQUENCESch165.html#x193-201000165"></span>The Argument from Common Usage
+  - <span class="titlemark">166</span> <span id="SEQUENCESch166.html#x194-202000166"></span>Empty Labels
+  - <span class="titlemark">167</span> <span id="SEQUENCESch167.html#x195-203000167"></span>Taboo Your Words
+  - <span class="titlemark">169</span> <span id="SEQUENCESch169.html#x197-205000169"></span>Fallacies of Compression
+  - <span class="titlemark">170</span> <span id="SEQUENCESch170.html#x198-206000170"></span>Categorizing Has Consequences
+  - <span class="titlemark">171</span> <span id="SEQUENCESch171.html#x199-207000171"></span>Sneaking in Connotations
+  - <span class="titlemark">172</span> <span id="SEQUENCESch172.html#x200-208000172"></span>Arguing “By Definition”
+  - <span class="titlemark">173</span> <span id="SEQUENCESch173.html#x201-209000173"></span>Where to Draw the Boundary?
+  - <span class="titlemark">174</span> <span id="SEQUENCESch174.html#x202-210000174"></span>Entropy, and Short Codes
+  - <span class="titlemark">179</span> <span id="SEQUENCESch179.html#x207-215000179"></span>Variable Question Fallacies
+  - <span class="titlemark">180</span> <span id="SEQUENCESch180.html#x208-216000180"></span>37 Ways That Words Can Be Wrong
+- <span id="SEQUENCESli15.html#x210-2180005"></span><span class="titlemark">Book IV</span> Mere Reality
+  - <span id="SEQUENCESli17.html#x212-2200005"></span>The World: An Introduction <span class="small">by Rob Bensinger</span>
+    - <span id="SEQUENCESli17.html#x212-2210001"></span>Minds in the World
+    - <span id="SEQUENCESli17.html#x212-2220004"></span>Worlds in the World
+- <span class="titlemark">Part O</span> <span id="SEQUENCESpa15.html#x213-223000O"></span>Lawful Truth
+  - <span class="titlemark">181</span> <span id="SEQUENCESch181.html#x214-224000181"></span>Universal Fire
+  - <span class="titlemark">182</span> <span id="SEQUENCESch182.html#x215-225000182"></span>Universal Law
+  - <span class="titlemark">183</span> <span id="SEQUENCESch183.html#x216-226000183"></span>Is Reality Ugly?
+  - <span class="titlemark">184</span> <span id="SEQUENCESch184.html#x217-227000184"></span>Beautiful Probability
+  - <span class="titlemark">185</span> <span id="SEQUENCESch185.html#x218-228000185"></span>Outside the Laboratory
+  - <span class="titlemark">187</span> <span id="SEQUENCESch187.html#x220-230000187"></span>Perpetual Motion Beliefs
+  - <span class="titlemark">188</span> <span id="SEQUENCESch188.html#x221-231000188"></span>Searching for Bayes-Structure
+- <span class="titlemark">Part P</span> <span id="SEQUENCESpa16.html#x222-232000P"></span>Reductionism 101
+  - <span class="titlemark">189</span> <span id="SEQUENCESch189.html#x223-233000189"></span>Dissolving the Question
+  - <span class="titlemark">190</span> <span id="SEQUENCESch190.html#x224-234000190"></span>Wrong Questions
+  - <span class="titlemark">191</span> <span id="SEQUENCESch191.html#x225-235000191"></span>Righting a Wrong Question
+  - <span class="titlemark">192</span> <span id="SEQUENCESch192.html#x226-236000192"></span>Mind Projection Fallacy
+  - <span class="titlemark">193</span> <span id="SEQUENCESch193.html#x227-237000193"></span>Probability is in the Mind
+  - <span class="titlemark">195</span> <span id="SEQUENCESch195.html#x229-239000195"></span>Qualitatively Confused
+  - <span class="titlemark">196</span> <span id="SEQUENCESch196.html#x230-240000196"></span>Think Like Reality
+  - <span class="titlemark">197</span> <span id="SEQUENCESch197.html#x231-241000197"></span>Chaotic Inversion
+  - <span class="titlemark">198</span> <span id="SEQUENCESch198.html#x232-242000198"></span>Reductionism
+  - <span class="titlemark">199</span> <span id="SEQUENCESch199.html#x233-243000199"></span>Explaining vs. Explaining Away
+  - <span class="titlemark">200</span> <span id="SEQUENCESch200.html#x234-244000200"></span>Fake Reductionism
+  - <span class="titlemark">201</span> <span id="SEQUENCESch201.html#x235-245000201"></span>Savannah Poets
+  - <span class="titlemark">202</span> <span id="SEQUENCESch202.html#x237-247000202"></span>Joy in the Merely Real
+- <span class="titlemark">Part Q</span> <span id="SEQUENCESpa17.html#x236-246000Q"></span>Joy in the Merely Real
+  - <span class="titlemark">203</span> <span id="SEQUENCESch203.html#x238-248000203"></span>Joy in Discovery
+  - <span class="titlemark">204</span> <span id="SEQUENCESch204.html#x239-249000204"></span>Bind Yourself to Reality
+  - <span class="titlemark">206</span> <span id="SEQUENCESch206.html#x241-251000206"></span>Mundane Magic
+  - <span class="titlemark">207</span> <span id="SEQUENCESch207.html#x242-252000207"></span>The Beauty of Settled Science
+  - <span class="titlemark">210</span> <span id="SEQUENCESch210.html#x245-255000210"></span>Scarcity
+  - <span class="titlemark">211</span> <span id="SEQUENCESch211.html#x246-256000211"></span>The Sacred Mundane
+  - <span class="titlemark">213</span> <span id="SEQUENCESch213.html#x248-258000213"></span>Initiation Ceremony
+- <span class="titlemark">Part R</span> <span id="SEQUENCESpa18.html#x249-259000R"></span>Physicalism 201
+  - <span class="titlemark">214</span> <span id="SEQUENCESch214.html#x250-260000214"></span>Hand vs. Fingers
+  - <span class="titlemark">215</span> <span id="SEQUENCESch215.html#x251-261000215"></span>Angry Atoms
+  - <span class="titlemark">216</span> <span id="SEQUENCESch216.html#x252-262000216"></span>Heat vs. Motion
+  - <span class="titlemark">219</span> <span id="SEQUENCESch219.html#x255-265000219"></span>A Priori
+  - <span class="titlemark">220</span> <span id="SEQUENCESch220.html#x256-266000220"></span>Reductive Reference
+  - <span class="titlemark">221</span> <span id="SEQUENCESch221.html#x257-267000221"></span>Zombies! Zombies?
+  - <span class="titlemark">222</span> <span id="SEQUENCESch222.html#x258-268000222"></span>Zombie Responses
+  - <span class="titlemark">224</span> <span id="SEQUENCESch224.html#x260-270000224"></span>GAZP vs. GLUT
+  - <span class="titlemark">225</span> <span id="SEQUENCESch225.html#x261-271000225"></span>Belief in the Implied Invisible
+  - <span class="titlemark">226</span> <span id="SEQUENCESch226.html#x262-272000226"></span>Zombies: The Movie
+  - <span class="titlemark">227</span> <span id="SEQUENCESch227.html#x263-273000227"></span>Excluding the Supernatural
+  - <span class="titlemark">228</span> <span id="SEQUENCESch228.html#x264-274000228"></span>Psychic Powers
+- <span class="titlemark">Part S</span> <span id="SEQUENCESpa19.html#x265-275000S"></span>Quantum Physics and Many Worlds
+  - <span class="titlemark">229</span> <span id="SEQUENCESch229.html#x266-276000229"></span>Quantum Explanations
+  - <span class="titlemark">230</span> <span id="SEQUENCESch230.html#x267-277000230"></span>Configurations and Amplitude
+  - <span class="titlemark">231</span> <span id="SEQUENCESch231.html#x268-278000231"></span>Joint Configurations
+  - <span class="titlemark">232</span> <span id="SEQUENCESch232.html#x269-279000232"></span>Distinct Configurations
+  - <span class="titlemark">233</span> <span id="SEQUENCESch233.html#x270-280000233"></span>Collapse Postulates
+  - <span class="titlemark">234</span> <span id="SEQUENCESch234.html#x271-281000234"></span>Decoherence is Simple
+  - <span class="titlemark">236</span> <span id="SEQUENCESch236.html#x273-283000236"></span>Privileging the Hypothesis
+  - <span class="titlemark">237</span> <span id="SEQUENCESch237.html#x274-284000237"></span>Living in Many Worlds
+  - <span class="titlemark">238</span> <span id="SEQUENCESch238.html#x275-285000238"></span>Quantum Non-Realism
+  - <span class="titlemark">239</span> <span id="SEQUENCESch239.html#x276-286000239"></span>If Many-Worlds Had Come First
+  - <span class="titlemark">240</span> <span id="SEQUENCESch240.html#x277-287000240"></span>Where Philosophy Meets Science
+  - <span class="titlemark">241</span> <span id="SEQUENCESch241.html#x278-288000241"></span>Thou Art Physics
+  - <span class="titlemark">242</span> <span id="SEQUENCESch242.html#x279-289000242"></span>Many Worlds, One Best Guess
+- <span class="titlemark">Part T</span> <span id="SEQUENCESpa20.html#x280-290000T"></span>Science and Rationality
+  - <span class="titlemark">243</span> <span id="SEQUENCESch243.html#x281-291000243"></span>The Failures of Eld Science
+  - <span class="titlemark">244</span> <span id="SEQUENCESch244.html#x282-292000244"></span>The Dilemma: Science or Bayes?
+  - <span class="titlemark">246</span> <span id="SEQUENCESch246.html#x284-294000246"></span>When Science Can’t Help
+  - <span class="titlemark">247</span> <span id="SEQUENCESch247.html#x285-295000247"></span>Science Isn’t Strict *Enough*
+  - <span class="titlemark">251</span> <span id="SEQUENCESch251.html#x289-299000251"></span>Faster Than Science
+  - <span class="titlemark">252</span> <span id="SEQUENCESch252.html#x290-300000252"></span>Einstein’s Speed
+  - <span class="titlemark">253</span> <span id="SEQUENCESch253.html#x291-301000253"></span>That Alien Message
+  - <span class="titlemark">254</span> <span id="SEQUENCESch254.html#x292-302000254"></span>My Childhood Role Model
+  - <span class="titlemark">255</span> <span id="SEQUENCESch255.html#x293-303000255"></span>Einstein’s Superpowers
+  - <span class="titlemark">256</span> <span id="SEQUENCESch256.html#x294-304000256"></span>Class Project
+  - <span class="titlemark">Interlude</span> A Technical Explanation of Technical Explanation
+- <span class="titlemark">Book V</span> Mere Goodness
+  - <span id="SEQUENCESli21.html#x298-30800020"></span>Ends: An Introduction <span class="small">by Rob Bensinger</span>
+    - <span id="SEQUENCESli21.html#x298-30900020"></span>Theory and Practice
+    - <span id="SEQUENCESli21.html#x298-31000020"></span>Journey and Destination
+- <span class="titlemark">Part U</span> <span id="SEQUENCESpa21.html#x299-311000U"></span>Fake Preferences
+  - <span class="titlemark">258</span> <span id="SEQUENCESch258.html#x301-313000258"></span>Fake Selfishness
+  - <span class="titlemark">259</span> <span id="SEQUENCESch259.html#x302-314000259"></span>Fake Morality
+  - <span class="titlemark">260</span> <span id="SEQUENCESch260.html#x303-315000260"></span>Fake Utility Functions
+  - <span class="titlemark">261</span> <span id="SEQUENCESch261.html#x304-316000261"></span>Detached Lever Fallacy
+  - <span class="titlemark">262</span> <span id="SEQUENCESch262.html#x305-317000262"></span>Dreams of AI Design
+- <span class="titlemark">Part V</span> <span id="SEQUENCESpa22.html#x307-319000V"></span>Value Theory
+  - <span class="titlemark">265</span> <span id="SEQUENCESch265.html#x309-321000265"></span>My Kind of Reflection
+  - <span class="titlemark">267</span> <span id="SEQUENCESch267.html#x311-323000267"></span>Created Already in Motion
+  - <span class="titlemark">269</span> <span id="SEQUENCESch269.html#x313-325000269"></span>2-Place and 1-Place Words
+  - <span class="titlemark">271</span> <span id="SEQUENCESch271.html#x315-327000271"></span>Changing Your Metaethics
+  - <span class="titlemark">272</span> <span id="SEQUENCESch272.html#x316-328000272"></span>Could Anything Be Right?
+  - <span class="titlemark">273</span> <span id="SEQUENCESch273.html#x317-329000273"></span>Morality as Fixed Computation
+  - <span class="titlemark">274</span> <span id="SEQUENCESch274.html#x318-330000274"></span>Magical Categories
+  - <span class="titlemark">275</span> <span id="SEQUENCESch275.html#x319-331000275"></span>The True Prisoner’s Dilemma
+  - <span class="titlemark">276</span> <span id="SEQUENCESch276.html#x320-332000276"></span>Sympathetic Minds
+  - <span class="titlemark">277</span> <span id="SEQUENCESch277.html#x321-333000277"></span>High Challenge
+  - <span class="titlemark">278</span> <span id="SEQUENCESch278.html#x322-334000278"></span>Serious Stories
+  - <span class="titlemark">279</span> <span id="SEQUENCESch279.html#x323-335000279"></span>Value is Fragile
+  - <span class="titlemark">280</span> <span id="SEQUENCESch280.html#x324-336000280"></span>The Gift We Give to Tomorrow
+- <span class="titlemark">Part W</span> <span id="SEQUENCESpa23.html#x325-337000W"></span>Quantified Humanism
+  - <span class="titlemark">281</span> <span id="SEQUENCESch281.html#x326-338000281"></span>Scope Insensitivity
+  - <span class="titlemark">282</span> <span id="SEQUENCESch282.html#x327-339000282"></span>One Life Against the World
+  - <span class="titlemark">283</span> <span id="SEQUENCESch283.html#x328-340000283"></span>The Allais Paradox
+  - <span class="titlemark">284</span> <span id="SEQUENCESch284.html#x329-341000284"></span>Zut Allais!
+  - <span class="titlemark">285</span> <span id="SEQUENCESch285.html#x330-342000285"></span>Feeling Moral
+  - <span class="titlemark">288</span> <span id="SEQUENCESch288.html#x333-345000288"></span>Ethical Injunctions
+  - <span class="titlemark">289</span> <span id="SEQUENCESch289.html#x334-346000289"></span>Something to Protect
+  - <span class="titlemark">290</span> <span id="SEQUENCESch290.html#x335-347000290"></span>When (Not) to Use Probabilities
+  - <span class="titlemark">Interlude</span> The Twelve Virtues of Rationality
+- <span class="titlemark">Book VI</span> Becoming Stronger
+    - <span id="SEQUENCESli25.html#x340-35300013"></span>An Art in its Infancy
+- <span class="titlemark">Part X</span> <span id="SEQUENCESpa24.html#x341-354000X"></span>Yudkowsky’s Coming of Age
+  - <span class="titlemark">292</span> <span id="SEQUENCESch292.html#x342-355000292"></span>My Childhood Death Spiral
+  - <span class="titlemark">293</span> <span id="SEQUENCESch293.html#x343-356000293"></span>My Best and Worst Mistake
+  - <span class="titlemark">294</span> <span id="SEQUENCESch294.html#x344-357000294"></span>Raised in Technophilia
+  - <span class="titlemark">295</span> <span id="SEQUENCESch295.html#x345-358000295"></span>A Prodigy of Refutation
+  - <span class="titlemark">296</span> <span id="SEQUENCESch296.html#x346-359000296"></span>The Sheer Folly of Callow Youth
+  - <span class="titlemark">297</span> <span id="SEQUENCESch297.html#x347-360000297"></span>That Tiny Note of Discord
+  - <span class="titlemark">299</span> <span id="SEQUENCESch299.html#x349-362000299"></span>My Naturalistic Awakening
+  - <span class="titlemark">300</span> <span id="SEQUENCESch300.html#x350-363000300"></span>The Level Above Mine
+  - <span class="titlemark">301</span> <span id="SEQUENCESch301.html#x351-364000301"></span>The Magnitude of His Own Folly
+  - <span class="titlemark">302</span> <span id="SEQUENCESch302.html#x352-365000302"></span>Beyond the Reach of God
+  - <span class="titlemark">303</span> <span id="SEQUENCESch303.html#x353-366000303"></span>My Bayesian Enlightenment
+- <span class="titlemark">Part Y</span> <span id="SEQUENCESpa25.html#x354-367000Y"></span>Challenging the Difficult
+  - <span class="titlemark">306</span> <span id="SEQUENCESch306.html#x357-370000306"></span>Trying to Try
+  - <span class="titlemark">307</span> <span id="SEQUENCESch307.html#x358-371000307"></span>Use the Try Harder, Luke
+  - <span class="titlemark">308</span> <span id="SEQUENCESch308.html#x359-372000308"></span>On Doing the Impossible
+  - <span class="titlemark">309</span> <span id="SEQUENCESch309.html#x360-373000309"></span>Make an Extraordinary Effort
+  - <span class="titlemark">310</span> <span id="SEQUENCESch310.html#x361-374000310"></span>Shut Up and Do the Impossible!
+  - <span class="titlemark">311</span> <span id="SEQUENCESch311.html#x362-375000311"></span>Final Words
+- <span class="titlemark">Part Z</span> <span id="SEQUENCESpa26.html#x363-376000Z"></span>The Craft and the Community
+  - <span class="titlemark">312</span> <span id="SEQUENCESch312.html#x364-377000312"></span>Raising the Sanity Waterline
+  - <span class="titlemark">313</span> <span id="SEQUENCESch313.html#x365-378000313"></span>A Sense That More Is Possible
+  - <span class="titlemark">314</span> <span id="SEQUENCESch314.html#x366-379000314"></span>Epistemic Viciousness
+  - <span class="titlemark">317</span> <span id="SEQUENCESch317.html#x369-382000317"></span>Why Our Kind Can’t Cooperate
+  - <span class="titlemark">318</span> <span id="SEQUENCESch318.html#x370-383000318"></span>Tolerate Tolerance
+  - <span class="titlemark">319</span> <span id="SEQUENCESch319.html#x371-384000319"></span>Your Price for Joining
+  - <span class="titlemark">321</span> <span id="SEQUENCESch321.html#x373-386000321"></span>Church vs. Taskforce
+  - <span class="titlemark">323</span> <span id="SEQUENCESch323.html#x375-388000323"></span>Helpless Individuals
+  - <span class="titlemark">324</span> <span id="SEQUENCESch324.html#x376-389000324"></span>Money: The Unit of Caring
+  - <span class="titlemark">326</span> <span id="SEQUENCESch326.html#x378-391000326"></span>Bystander Apathy
+  - <span class="titlemark">329</span> <span id="SEQUENCESch329.html#x381-394000329"></span>Bayesians vs. Barbarians
+  - <span class="titlemark">330</span> <span id="SEQUENCESch330.html#x382-395000330"></span>Beware of Other-Optimizing
+  - <span class="titlemark">332</span> <span id="SEQUENCESch332.html#x384-397000332"></span>The Sin of Underconfidence
+  - <span class="titlemark">333</span> <span id="SEQUENCESch333.html#x385-398000333"></span>Go Forth and Create the Art!
+  - <span id="SEQUENCESli26.html#x386-3990001"></span>Bibliography

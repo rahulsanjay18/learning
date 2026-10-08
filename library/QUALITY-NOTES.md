@@ -1,1 +1,2 @@
 f9dc4d1d4c | front matter + toc | front matter is OCR garbage (stray symbols, broken words); /toc returns 5 junk headings (lines starting with '#' inside text), so chapter structure can't be read from toc/
+6f1ece440f | whole book | MANIFEST title says "Companion to Literary Theory (Richter)" but the text is Stephen Eric Bronner, Critical Theory: A Very Short Introduction (1st ed., 8 chapters). Bronner 2nd ed. is 4eb171370b

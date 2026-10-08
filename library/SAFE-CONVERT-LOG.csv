@@ -7177,3 +7177,510 @@
 2026-10-06 01:33:08,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Everyone/Japanese for Everyone A Functional Approach to Daily Communication.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
 2026-10-06 01:33:09,Games/Chess/kupdf.net_attack-with-mikhail-tal.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
 2026-10-06 01:33:09,to_sort/The BOOK of Data Structures and Algorithms in JavaScript.epub,killed,CPU 102C > 85
+2026-10-07 23:06:06,"Engineering/Computer Science/ML, AI, Data Science/Large Language Models_ A Deep Dive _ Bridging Theory and -- Uday Kamath, Kevin Keenan, Garrett Somers, Sarah Sorenson -- 2, 2025 -- Springer Nature -- 9783031656460 -- d2480a0d588f020a515e282b1707c5e6 -- Anna’s Archi.pdf",skipped,unreadable: Cannot open empty file: filename='/media/rahul/Drive 2/Libra
+2026-10-07 23:06:07,"Music/History/J. Peter Burkholder y Claude V. Palisca (eds.) - Norton Anthology of Western Music. Vol. 2_ Classic to Romantic (7th Ed.) 2 (2014, Norton) - libgen.li.pdf",skipped,unreadable: Cannot open empty file: filename='/media/rahul/Drive 2/Libra
+2026-10-07 23:06:07,"Music/History/J. Peter Burkholder, Donald Jay Grout, Claude V. Palisca - A History of Western Music (2014, W. W. Norton & Co) - libgen.li.pdf",skipped,unreadable: Cannot open empty file: filename='/media/rahul/Drive 2/Libra
+2026-10-07 23:06:08,Social Sciences/US History/Oxford American History/The Framers’ Coup The Making of the United States Constitution by Michael J. Klarman (z-lib.org).pdf,skipped,unreadable: Cannot open empty file: filename='/media/rahul/Drive 2/Libra
+2026-10-07 23:06:08,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/code_v2024-12-24/kms/ExampleSecretFile.txt,ok,
+2026-10-07 23:06:09,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/01 - Introduction - AWS Certified Solutions Architect Associate/external-links.txt,ok,
+2026-10-07 23:06:10,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/code_v2024-12-24/s3/extra-page.html,ok,
+2026-10-07 23:06:10,book lists/Astronomy Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:11,book lists/Astronomy Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:11,book lists/Biology Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:12,book lists/Biology Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:12,book lists/Chemical Engineering _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:13,book lists/Chemical Engineering _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:13,book lists/Chemistry Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:14,book lists/Chemistry Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:14,book lists/Computer Science and Engineering _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:15,book lists/Computer Science and Engineering _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:15,book lists/Economics Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:16,book lists/Economics Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:16,book lists/Electrical and Electronics Engineering _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:17,book lists/Electrical and Electronics Engineering _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:17,book lists/Geoscience Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:18,book lists/Geoscience Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:18,book lists/Mathematics _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:19,book lists/Mathematics _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:20,book lists/Mechanical and Aerospace Engineering _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:20,book lists/Mechanical and Aerospace Engineering _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:21,book lists/Nuclear Science and Engineering _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:21,book lists/Nuclear Science and Engineering _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:22,book lists/Physics Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:22,book lists/Physics Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:23,book lists/Programming Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:23,book lists/Programming Textbook Recommendations _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:24,book lists/Universal Material _ _sci_ Wiki _ Fandom_files/a.html,ok,
+2026-10-07 23:06:24,book lists/Universal Material _ _sci_ Wiki _ Fandom_files/a_002.html,ok,
+2026-10-07 23:06:25,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/02 - Code & Slides Download/external-links.txt,ok,
+2026-10-07 23:06:25,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/code_v2024-12-24/ebs/commands.txt,ok,
+2026-10-07 23:06:26,"Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/17 - Decoupling applications SQS, SNS, Kinesis, Active MQ/016 Kinesis Data Analytics.html",ok,
+2026-10-07 23:06:26,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/08 - High Availability and Scalability ELB & ASG/003 Note About the Classic Load Balancer (CLB).html,ok,
+2026-10-07 23:06:27,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/code_v2024-12-24/s3/index-with-fetch.html,ok,
+2026-10-07 23:06:27,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/04 - IAM & AWS CLI/012 AWS CloudShell Region Availability.html,ok,
+2026-10-07 23:06:28,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/code_v2024-12-24/s3/index.html,ok,
+2026-10-07 23:06:29,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/14 - Amazon S3 Security/002 About DSSE-KMS.html,ok,
+2026-10-07 23:06:29,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/19 - Serverless Overviews from a Solution Architect Perspective/001 About the Serverless Section.html,ok,
+2026-10-07 23:06:30,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/02 - Code & Slides Download/001 Slides and Code Download.html,ok,
+2026-10-07 23:06:31,"Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/18 - Containers on AWS ECS, Fargate, ECR & EKS/003 IMPORTANT ECS UI CHANGES.html",ok,
+2026-10-07 23:06:31,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/06 - EC2 - Solutions Architect Associate Level/007 ENI - Extra Reading.html,ok,
+2026-10-07 23:06:32,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/09 - AWS Fundamentals RDS + Aurora + ElastiCache/014 List of Ports to be familiar with.html,ok,
+2026-10-07 23:06:32,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/32 - Preparing for the Exam + Practice Exam - AWS Certified Solutions Architect Assoc/004 Links to Whitepapers.html,ok,
+2026-10-07 23:06:33,book lists/Physics Reading List.txt,ok,
+2026-10-07 23:06:33,book lists/Astronomy Textbook Recommendations _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:34,book lists/Biology Textbook Recommendations _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:34,book lists/Chemical Engineering _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:35,book lists/Chemistry Textbook Recommendations _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:35,book lists/Computer Science and Engineering _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:36,book lists/Economics Textbook Recommendations _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:36,book lists/Electrical and Electronics Engineering _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:37,book lists/Geoscience Textbook Recommendations _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:38,book lists/Mathematics _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:38,book lists/Mechanical and Aerospace Engineering _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:39,book lists/Nuclear Science and Engineering _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:39,book lists/Physics Textbook Recommendations _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:40,book lists/Programming Textbook Recommendations _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:40,book lists/Universal Material _ _sci_ Wiki _ Fandom_files/silver-surfer.html,ok,
+2026-10-07 23:06:41,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/05 - EC2 Fundamentals/011 SSH Troubleshooting.html,ok,
+2026-10-07 23:06:41,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/01 - Introduction - AWS Certified Solutions Architect Associate/002 PLEASE READ Lectures you can skip if you took a course from me before.html,ok,
+2026-10-07 23:06:42,book lists/critical_theory.txt,ok,
+2026-10-07 23:06:42,book lists/Eastern Canon.txt,ok,
+2026-10-07 23:06:43,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/01 - Introduction - AWS Certified Solutions Architect Associate/004 AWS Account Activation Troubleshooting.html,ok,
+2026-10-07 23:06:44,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/33 - Congratulations - AWS Certified Solutions Architect Associate/004 Bonus Lecture.html,ok,
+2026-10-07 23:06:44,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/32 - Preparing for the Exam + Practice Exam - AWS Certified Solutions Architect Assoc/009 Practice Exam - AWS Certified Solutions Architect Associate.html,ok,
+2026-10-07 23:06:45,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/31 - WhitePapers and Architectures - AWS Certified Solutions Architect Associate/005 WhitePapers & Architectures Quiz.html,ok,
+2026-10-07 23:06:45,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/29 - More Solution Architectures/006 More Solution Architectures Quiz.html,ok,
+2026-10-07 23:06:46,book lists/Adler's Canon.txt,ok,
+2026-10-07 23:06:47,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/25 - Identity and Access Management (IAM) - Advanced/010 IAM Advanced Quiz.html,ok,
+2026-10-07 23:06:47,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/06 - EC2 - Solutions Architect Associate Level/010 EC2 SAA Level Quiz.html,ok,
+2026-10-07 23:06:48,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/12 - Amazon S3 Introduction/014 Amazon S3 Quiz.html,ok,
+2026-10-07 23:06:48,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/10 - Route 53/020 Route 53 Quiz.html,ok,
+2026-10-07 23:06:49,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/04 - IAM & AWS CLI/020 IAM & AWS CLI Quiz.html,ok,
+2026-10-07 23:06:49,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/11 - Classic Solutions Architecture Discussions/008 Classic Solutions Architecture Discussions Quiz.html,ok,
+2026-10-07 23:06:50,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/13 - Advanced Amazon S3/009 Amazon S3 Advanced Quiz.html,ok,
+2026-10-07 23:06:50,"Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/18 - Containers on AWS ECS, Fargate, ECR & EKS/014 Containers on AWS Quiz.html",ok,
+2026-10-07 23:06:51,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/15 - CloudFront & AWS Global Accelerator/009 CloudFront & AWS Global Accelerator Quiz.html,ok,
+2026-10-07 23:06:51,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/07 - EC2 Instance Storage/015 EC2 Data Management Quiz.html,ok,
+2026-10-07 23:06:52,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/28 - Disaster Recovery & Migrations/011 Disaster Recovery & Migration Quiz.html,ok,
+2026-10-07 23:06:52,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/21 - Databases in AWS/012 Databases in AWS Quiz.html,ok,
+2026-10-07 23:06:53,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/05 - EC2 Fundamentals/017 EC2 Fundamentals Quiz.html,ok,
+2026-10-07 23:06:53,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/20 - Serverless Solution Architecture Discussions/005 Serverless Solutions Architecture Discussions Quiz.html,ok,
+2026-10-07 23:06:54,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/22 - Data & Analytics/013 Data & Analytics Quiz.html,ok,
+2026-10-07 23:06:55,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/14 - Amazon S3 Security/016 Amazon S3 Security Quiz.html,ok,
+2026-10-07 23:06:55,"Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/17 - Decoupling applications SQS, SNS, Kinesis, Active MQ/020 Messaging & Integration Quiz.html",ok,
+2026-10-07 23:06:56,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/16 - AWS Storage Extras/011 AWS Storage Extras Quiz.html,ok,
+2026-10-07 23:06:56,"Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/24 - AWS Monitoring & Audit CloudWatch, CloudTrail & Config/017 Monitoring & Auditing Quiz.html",ok,
+2026-10-07 23:06:57,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/23 - Machine Learning/014 Machine Learning Quiz.html,ok,
+2026-10-07 23:06:57,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/19 - Serverless Overviews from a Solution Architect Perspective/017 Serverless Overview Quiz.html,ok,
+2026-10-07 23:06:58,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/27 - Networking - VPC/038 VPC Quiz.html,ok,
+2026-10-07 23:06:58,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/08 - High Availability and Scalability ELB & ASG/019 High Availability & Scalability Quiz.html,ok,
+2026-10-07 23:06:59,"Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/09 - AWS Fundamentals RDS + Aurora + ElastiCache/015 RDS, Aurora, & ElastiCache Quiz.html",ok,
+2026-10-07 23:06:59,"Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/26 - AWS Security & Encryption KMS, SSM Parameter Store, Shield, WAF/022 AWS Security & Encryption Quiz.html",ok,
+2026-10-07 23:07:00,book lists/Western Canon.txt,ok,
+2026-10-07 23:07:00,to_sort/As We May Think.epub,ok,
+2026-10-07 23:07:01,book lists/Physics — Susan Rigetti.html,ok,
+2026-10-07 23:07:01,to_sort/Thundercats Battle of the Planets os.epub,failed,No entry on path: META-INF/container.xml
+2026-10-07 23:07:02,"Social Sciences/An Introduction to the Principles of Morals and Legislation (The Collected Works of Jeremy Bentham) by Bentham, Jeremy (z-lib.org).epub",failed,No entry on path: ops/fb.opf
+2026-10-07 23:07:02,to_sort/Engines of Creation  The Coming Era of Nanotechnology.epub,failed,No entry on path: OEBPS/../titlepage.xhtml
+2026-10-07 23:07:03,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mastering Japanese by Ear Audio/Mastering Japanese by Ear Audio Cover.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:04,book lists/Geoscience Textbook Recommendations _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:05,book lists/Economics Textbook Recommendations _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:06,book lists/Astronomy Textbook Recommendations _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:07,book lists/Nuclear Science and Engineering _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:08,book lists/Universal Material _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:09,book lists/Programming Textbook Recommendations _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:10,book lists/Chemistry Textbook Recommendations _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:11,book lists/Mechanical and Aerospace Engineering _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:12,book lists/Biology Textbook Recommendations _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:14,book lists/Electrical and Electronics Engineering _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:15,book lists/Chemical Engineering _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:16,book lists/Physics Textbook Recommendations _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:17,book lists/Computer Science and Engineering _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:18,book lists/Mathematics _ _sci_ Wiki _ Fandom.html,ok,
+2026-10-07 23:07:18,to_sort/The Power And The Glory Life In The English Country House Before The Great War.epub,failed,Couldn't extract ePub file: not enough bytes
+2026-10-07 23:07:19,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/09.NezuminoYomeiri.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:20,to_sort/[9781732102200] John Ousterhout - A Philosophy of Software Design (0) - libgen.li.epub,ok,
+2026-10-07 23:07:20,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/01.Issunboushi.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:24,to_sort/Euclids Elements of Geometry.epub,ok,
+2026-10-07 23:07:25,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/03.OmusubiKororin.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:25,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/10.HansakaJiisan.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:26,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/05.Kasazizou.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:26,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/06.SarukaniGassen.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:27,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/02.Urashimatarou.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:27,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/11.Momotaro.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:28,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/08.TsurunoOngaeshi.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:28,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/04.Kaguyahime.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:28,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 1/VocabuLearn Level 1.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:29,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Children's Favorite Stories/07.ShitarakiriSuzume.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:29,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Kanzen Master Japanese Grammar Bunpou 1, 2, 3/Kanzen Master Bunpou 3kyuu seikai.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:29,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 2/VocabuLearn Level 2.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:29,"Philosophy/Richard Lewontin - The Triple Helix_ Gene, Organism, and Environment-Harvard University Press (2002).djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:29,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/VocabuLearn Japanese Complete/Level 3/VocabuLearn Level 3.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:30,Foreign Languages/Japanese/08.Miscellaneous/Cheatsheets/NihonShock's Ultimate Japanese Cheat Sheet/japanese-cheatsheet-romaji-a4.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:30,Foreign Languages/Japanese/08.Miscellaneous/Cheatsheets/NihonShock's Ultimate Japanese Cheat Sheet/japanese-cheatsheet-romaji-8511.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:31,Foreign Languages/Japanese/08.Miscellaneous/Cheatsheets/NihonShock's Ultimate Japanese Cheat Sheet/japanese-cheatsheet-hiragana-a4.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:32,Foreign Languages/Japanese/08.Miscellaneous/Cheatsheets/NihonShock's Ultimate Japanese Cheat Sheet/japanese-cheatsheet-hiragana-8511.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:32,Math _ Logic/Applied Math/Linear Algebra/Sheldon Axler - Linear Algebra Done Right Solutions Manual (1997).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:32,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Dirty Japanese Everyday Slang.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:33,"Math _ Logic/Problem Books/The Stanford Mathematics Problem Book With Hints and Solutions by George Polya, Jeremy Kilpatrick (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:33,Foreign Languages/Japanese/01.Japanese Writing System/Kana-Kanji de Manga/Kana de manga.djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:38,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/28 - Disaster Recovery & Migrations/001 disaster-recovery-workloads-on-aws.pdf,ok,
+2026-10-07 23:07:38,Foreign Languages/Japanese/01.Japanese Writing System/Kana-Kanji de Manga/Kanji de manga vol 2.djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:39,Engineering/Computer Science/Game Dev/game-programmer.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:39,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Kanzen Master Japanese Grammar Bunpou 1, 2, 3/Kanzen Master Bunpou 1kyuu.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:40,"to_sort/Hyrum Wright_Tom Manshreck_Titus Winters - Software Engineering at Google_ Lessons Learned from Programming Over Time (4 Apr 2020, O'Reilly Media, Inc.) - libgen.li.epub",ok,
+2026-10-07 23:07:40,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Berlitz Japanese Course/Language 30 - Japanese.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:40,Foreign Languages/Japanese/01.Japanese Writing System/Teach Yourself Beginner's Japanese Script/Teach Yourself Beginner's Japanese Script.djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:41,"to_sort/Will Larson - An Elegant Puzzle_ Systems of Engineering Management (2019, Stripe Press) - libgen.li.epub",ok,
+2026-10-07 23:07:42,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/New JLPT N3 Taisaku-mondai & Yoten-seiri for Reading comprehension, Grammar & Vocabulary/JLPT Dokkai N3 (Answer Key).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:42,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Particles/A Dictionary of Japanese Particles.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:43,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Tanoshiku Yomou Read Japanese/Tanoshiku Yomou I/Tanoshiku Yomou I - Kaitou.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:43,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Rapid Reading Japanese Improving Reading Skills of Intermediate and Advanced Students.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:43,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 04 - Understanding Communication in Japanese_4789001601.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:43,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Kanzen Master Japanese Grammar Bunpou 1, 2, 3/Kanzen Master Bunpou 2kyuu.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:43,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/The handbook of Japanese adjectives and adverbs.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:45,"to_sort/The Economic History of India, - Tirthankar Roy.epub",ok,
+2026-10-07 23:07:45,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 09 - Situational Japanese 4_4789004481.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:48,to_sort/Carlisle Indian Industrial School Indigenous Histories Memories and Reclamations.epub,ok,
+2026-10-07 23:07:57,"to_sort/Yudkowsky, Eliezer - Rationality_ From AI to Zombies (2015, Machine Intelligence Research Institute) - libgen.li.epub",ok,
+2026-10-07 23:07:58,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Japanese core words and phrases Things you can't find in a dictionary.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:58,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 03 - Understanding Japanese Usage_478900127X.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:59,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 01 - Speaking and Living in Japan_4789000680.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:07:59,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 07 - Situational Japanese 2_478900306X.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:00,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Tanoshiku Yomou Read Japanese/Tanoshiku Yomou II/Tanoshiku Yomou II - Kaitou.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:00,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 06 - Situational Japanese 1_4789002535.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:00,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Read Real Japanese All You Need to Enjoy Eight Contemporary Writers.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:01,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Making Sense of Japanese What the Textbooks Don't Tell You.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:01,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 10 - Situational Japanese 5_4789005232.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:02,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Japanese language insights.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:02,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 08 - Situational Japanese 3_4789003701.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:02,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese in Mangaland/Japanese in Mangaland vol 1.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:03,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 02 - Expressing Oneself in Japanese_4789000982.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:04,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Nihongo Notes Vol 01-10/Nihongo Notes 05 - Studying Japanese in Context_4789002101.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:05,"to_sort/Will Larson - Staff Engineer_ Leadership beyond the management track (2021, Will Larson) - libgen.li.epub",ok,
+2026-10-07 23:08:05,Foreign Languages/Japanese/08.Miscellaneous/Introduction to Japanese Pronunciation Theory and Practice/Book.djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:05,"Games/Chess/Winning Chess/Play Winning Chess An Introduction to the Moves, Strategies and Philosophy of Chess from the U.S.A.s 1-Ranked Chess Player by Yasser Seirawan, Jeremy Silman (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:06,Math _ Logic/Theoretical Math/Problem Solving/Problem Solving Through Problems (Problem Books in Mathematics) by Loren C. Larson (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:24,"Engineering/Computer Science/ML, AI, Data Science/Explainable and Interpretable Reinforcement Learning for -- Aaron M_ Roth, Dinesh Manocha, Ram D_ Sriram, Elham Tabassi -- 1st ed_ 2024, PT, 2024 -- isbn13 9783031475177 -- 5bbe7d1a9a51bd688fce448af82143bb -- Anna’s Arch.pdf",ok,
+2026-10-07 23:08:25,"Games/Go/Elementary Go Series/Elementary Go Series - The Endgame Vol. 6 by Tomoko Ogawa, James Davies (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:25,Science/Physics/Elementary Physics/N Thompson_ University of Bristol. Dept. of Physics-Thinking like a physicist _ physics problems for undergraduates-Hilger  (1987).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:25,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Japanese Beyond Words How to Walk and Talk Like a Native Speaker.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:26,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Verbs/Japanese Verbs at a Glance.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:26,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Japanese Respect Language When, Why, and How to use it Successfully.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:27,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Lonely Planet Japanese Phrasebook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:27,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Preparing for the Japanese Language Proficiency Tests/2 kyuu gokaku dekiru Level 2/2kyuu gokaku dekiru.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:27,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Bunka Nihongo Chuukyuu/Bunka Nihongo Chuukyuu 1 Intermediate Japanese Course/Bunka Nihongo Chuukyuu 1.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:27,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Nihongo no Kiso/Shin Nihongo no Kiso I/Shin Nihongo no Kiso(kanji workbook).djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:28,Games/Chess/de_firmian_nick-modern_chess_openings.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:29,Pedagogy/George Leonard - Mastery. The Keys To Success And Long Term Fulfillment-Plume (1992).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:29,Foreign Languages/Japanese/01.Japanese Writing System/A Guide to Reading and Writing Japanese/A Guide to Reading and Writing Japanese.djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:29,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Reading Japanese with a Smile Nine Stories from a Japanese Weekly Magazine for Intermediate Learners.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:30,Foreign Languages/Japanese/01.Japanese Writing System/A Guide to learning Hiragana and Katakana/A Guide to learning Hiragana and Katakana.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:30,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Chuukyuu kara manabu JP/chuukyuu kara manabu workbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:31,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Zakennayo! The real Japanese you were never taught in school.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:31,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Preparing for the Japanese Language Proficiency Tests/2kyuu mondai shuu.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:32,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nihongo Nouryoku Shiken 1kyuu-2 kyuu Shiken ni Deru Dokkai Grammar and Exercises/Nihongo Nouryoku Shiken Mondaishuu 2 kyuu An exercise book.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:32,Foreign Languages/Japanese/01.Japanese Writing System/Let's learn Kanji/Let's learn more Kanji.djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:32,Foreign Languages/Japanese/01.Japanese Writing System/Remembering The/Remembering The Kana/Remembering The Kana Part 2 Katakana.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:33,"Fiction/Girish Karnad, - The fire and the rain - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:33,Foreign Languages/Japanese/01.Japanese Writing System/Let's learn Kanji/Let's learn Kanji.djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:33,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Nihongo no Kiso/Shin Nihongo no Kiso II/English Explanations.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:34,Law/The Concept of Law by H.L.A. Hart (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:34,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Grammar/Japanese A Comprehensive Grammar.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:34,"Science/Physics/Mechanics/(Course of Theoretical Physics) L D Landau, E.M. Lifshitz - Mechanics. Volume 1-Butterworth-Heinemann (1976).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:36,to_sort/The Quiet Americans Four CIA Spies at the Dawn of the Cold War a Tragedy in Three Acts.epub,ok,
+2026-10-07 23:08:36,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nihongo shuuchuu toreeningu shokyuu kara chuukyuu e An Intensive Training Course in Japanese/Nihongo shuuchuu toreeningu shokyuu kara chuukyuu e An Intensive Training Course in Japanese.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:39,"to_sort/Tanya Reilly - The Staff Engineer’s Path (2022, O'Reilly Media, Inc.) - libgen.li.epub",ok,
+2026-10-07 23:08:39,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Nihongo no Kiso/Shin Nihongo no Kiso I/Shin Nihongo no Kiso.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:39,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Berlitz Japanese Course/Berlitz Basic Japanese Workbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:39,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Moons, Months and Seasons A Pre-Intermediate Japanese Reader.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:40,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Nihongo no Kiso/Shin Nihongo no Kiso II/Kanji workbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:40,"Games/Go/Graded Go Problems for Beginners, Elementary Problems, 25-kyu to 20-kyu (Kano Yoshinori) (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:40,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Comprehending technical Japanese/Comprehending technical Japanese.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:41,Foreign Languages/Japanese/01.Japanese Writing System/Remembering The/Remembering The Kana/Remembering The Kana Part 1 Hiragana.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:41,Engineering/Electrical and Computer Engineering/Microelectronic-Circuits-7e-solution manual.pdf,skipped,2008 pages > --max-pages
+2026-10-07 23:08:42,Foreign Languages/Japanese/08.Miscellaneous/The Languages of Japan.pdf,skipped,damaged PDF (most sampled pages won't load)
+2026-10-07 23:08:42,Music/Harmony/Vincent Persichetti - Twentieth-Century Harmony_ Creative Aspects and Practice-W. W. Norton _ Company (1961).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:43,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Let's Learn Japanese Basic/Let's Learn Japanese Basic I/Lets Learn Japanese Basic 1 - Volume 1.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:43,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mimi Kara Oboeru N3/Mimi Kara Oboeru N3 Vocabulary  Index + Answers.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:44,Games/Chess/Winning Chess/Winning Chess Openings by Yasser Seirawan (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:44,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Particles/How to Tell the Difference between Japanese Particles.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:45,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Read Real Japanese Fiction Short Stories by Contemporary Writers.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:45,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/A Handbook of Common Japanese Phrases.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:46,Science/Physics/Mechanics/Taylor_s Classical Mechanics.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:47,Fitness/Squat manual -- Chad Wesley Smith -- f04c36a186311e278a820fee7a76770e -- Anna’s Archive.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:47,Math _ Logic/Problem Books/Hungarian problem book I Based on the Eotvos competitions 1894-1905 by E. Rapaport (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:48,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Bunka Nihongo Chuukyuu/Bunka Nihongo Chuukyuu 2/Bunka Chuukyuu Nihongo II Kyoukashoyouteepu Genkoutsuki.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:08:48,"Games/Go/Learn To Play Go Series/Janice Kim, Jeong Soo-Hyun, a lee - Learn to Play Go_ A Master's Guide to the Ultimate Game, Vol. 1 (1997, Good Move Press) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:24,"Math _ Logic/[Wiley Series in Telecommunications and Signal Processing] Thomas M. Cover, Joy A. Thomas - Elements of Information Theory (2006, Wiley-Interscience) - libgen.li.pdf",ok,
+2026-10-07 23:10:25,"Music/Piano/Piano Adventures_ Level 4 -- Faber Randall, Faber Nancy_ -- Piano Adventures, 4 -- The FJH Music Company -- dba1b7eb7afbff1a9b62ebe49899810e -- Anna’s Archive-1.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:25,"Survival/Kurt Saxon. - Fireworks & explosives like Granddad used to make (1975, Atlan Formularies) - libgen.li.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:25,"Science/Physics/Paul Wilmott, Sam Howison, Jeff Dewynne - The mathematics of financial derivatives_ a student introduction-Cambridge University Press (1995).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:26,"Music/Piano/Piano Adventures_ Level 2a -- Faber Randall, Faber Nancy_ -- Faber Piano Adventures, 2a -- The FJH Music Company -- 28e2439441d9a680aa85f35be4db7cce -- Anna’s Archive.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:27,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Chuukyuu kara manabu JP/chuukyuu kara manabu.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:27,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Busy People/Japanese for Busy People I/Japanese for busy people Kana Workbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:28,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Let's Learn Japanese Basic/Let's Learn Japanese Basic I/Lets Learn Japanese Basic 1 - Volume 2.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:28,Science/Physics/Thermo/J S R Chisholm - Introduction To Statistical Mechanics-PERGAMON PRESS INC (1958).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:29,Engineering/Electrical and Computer Engineering/Signal Processing _ Linear Systems Soln.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:29,Engineering/Electrical and Computer Engineering/Signal Processing and Linear Systems - B P Lathi - Solutions Manual.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:30,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Let's Learn Japanese Basic/Let's Learn Japanese Basic I/Lets Learn Japanese Basic 1 - Volume 3.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:30,Math _ Logic/Problem Books/Hungarian problem book II Based on the Eotvos competitions 1906-1928 by E Rappaport (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:31,"A Very Short Introduction/Elements,_The_-_OxfordUP.VSI_-_Ball,_Philip.Aug.2004.epub",failed,No entry on path: titlepage.xhtml
+2026-10-07 23:10:31,Math _ Logic/Theoretical Math/Logic and Analysis/Leary C.C. - A friendly introduction to mathematical logic-PH (1999).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:32,Science/Physics/Thermo/David Chandler - Introduction to modern statistical mechanics-Oxford University Press (1987).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:32,"Math _ Logic/Applied Math/Game Theory/Winning Ways for Your Mathematical Plays, Volume 4 by Elwyn R. Berlekamp, John H. Conway, Richard K. Guy (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:33,"Math _ Logic/Applied Math/Calculus/Higher Level Calc/Div, Grad, Curl And All That - An Informal Text on Vector Calculus 3rd ed - H. Schey (Norton, 1973) WW.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:33,"Foreign Languages/Japanese/01.Japanese Writing System/Kanji Power/Kanji Pict-O-Graphix/Kanji Pict-O-Graphix Over 1,000 Japanese Kanji and Kana Mnemonics.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:34,Math _ Logic/Theoretical Math/Logic and Analysis/principles_of_mathematical_analysis_walter_rudin.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:34,"Social Sciences/History, Labour, and Freedom Themes from Marx by G. A. Cohen (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:35,Games/Chess/Grandmaster Preperation/Excelling at Positional Chess by Jacob Aagaard (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:36,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Shiken ni deru 1-2kyuu bunpou, 40 days kanzen.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:36,"Foreign Languages/Mandarin Chinese/Harry Potter-All Seven Volumes (Chinese Edition) (J.K Rowling) (z-library.sk, 1lib.sk, z-lib.sk).epub",failed,Couldn't extract ePub file: Did not find end of central directory signature
+2026-10-07 23:10:37,"Foreign Languages/Japanese/01.Japanese Writing System/Basic kanji book/Basic kanji book 1,2.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:37,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Bunka Nihongo Chuukyuu/Bunka Nihongo Chuukyuu 2/Bunka Chuukyuu Nihongo II Kakukasakuin.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:38,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Busy People/Japanese for Busy People I/Japanese for Busy People I (Revised 3rd Edition) Kana Workbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:38,Science/Physics/Modern Physics/Griffiths - Introduction to quantum mechanics.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:39,Science/Physics/Elementary Physics/W. G. Rees-Physics by Example_ 200 Problems and Solutions-Cambridge University Press (1994).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:39,Engineering/Electrical and Computer Engineering/Crochiere - Multirate Digital Signal Processing-Prentice Hall (1983).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:40,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Chuukyuu kara manabu nihongo/Chuukyuu kara manabu nihongo.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:40,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Grammar/Barron's Japanese Grammar.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:41,Foreign Languages/Japanese/08.Miscellaneous/A History of Japanese Literature.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:41,Games/Chess/Vladimir Vukovic - Art Of Attack In Chess-Everyman Chess (1999).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:42,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nihongo Nouryoku Shiken 1kyuu-2 kyuu Shiken ni Deru Dokkai Grammar and Exercises/shiken ni deru dokkai 1,2 kyuu (Answer Key).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:42,Games/Chess/kupdf.net_the-amateur39s-mind-jeremy-silman.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:42,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/An Introduction to Modern Japanese/An Introduction to Modern Japanese Volume 1 Grammar Lessons.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:43,Science/Physics/Grad Entrance Exam Prep/Problems and solutions on mechanics.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:43,Science/(Hemisphere Series on Computational Methods in Mechanics and Thermal Science) Suhas Patankar - Numerical Heat Transfer and Fluid Flow-Taylor _ Francis (1980).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:44,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Japanese Verbs and Essentials of Grammar (2nd Ed).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:47,to_sort/The Bauhaus group six masters of modernism.epub,ok,
+2026-10-07 23:10:48,Science/Physics/Mechanics/Solutions 2Irodov-Problems.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:50,Permaculture/Low-tech Magazine - Volume II -- Kris De Decker -- 2024 -- Low-tech Magazine -- isbn13 9781794796294 -- fd93d4de1b535b4ef0e31f2de804270f -- Anna’s Archive.epub,ok,
+2026-10-07 23:10:50,Science/Physics/Modern Physics/David J Griffiths - Introduction to elementary particles-Wiley  (1987).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:51,"Games/Go/Graded Go Problems for Beginners, 30 Kyu to 25 Kyu (Beginner Elementary Go Bks.) (Kano Yoshinori, Richard Bozulich) (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:51,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Making Out In Japanese.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:52,"Social Sciences/USSR/Simon Sebag Montefiore - Stalin_ the court of the Red Tsar (2004, Phoenix (an Imprint of The Orion Publishing Group Ltd )) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:52,Foreign Languages/Japanese/01.Japanese Writing System/Kana-Kanji de Manga/Kanji de manga vol 1.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:53,Math _ Logic/Applied Math/J. J. Stoker - Differential Geometry (Wiley Classics Library)-Wiley-Interscience (1989).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:54,Science/Physics/Thermo/David L. Goodstein - States of matter-Dover Pubns (2002).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:54,"Music/Piano/Willard A Palmer_ Morton Manus_ Amanda Vick Lethco - Alfred's Basic Adult Piano Course. Level 1, Adult All-In-One Course _ Lesson, Theory, Technic. 1-Alfred Publishing Co. (1996).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:54,Math _ Logic/Math Bibles/Richard Rusczyk - Introduction to algebra (the art of problem solving)-AoPS Incorporated (2007).djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:55,"Games/Chess/Bobby Fischer Teaches Chess by Bobby Fischer, Stuart Margulies, Don Mosenfelder (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:55,Engineering/Computer Science/General Computing/Introduction-To-The-Theory-Of-Computation-Michael-Sipser.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:56,Music/Piano/Piano Exam Books/Piano Exam Pieces ABRSM Grade 8 Selected from the 2025 & -- ABRSM -- b108ccf08cc386aa4195451050ac254a -- Anna’s Archive.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:56,Social Sciences/Anarchy State and Utopia by Robert Nozick (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:57,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/More Making Out In Japanese.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:57,Foreign Languages/Japanese/08.Miscellaneous/Womansword What Japanese Words Say about Women.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:58,"Art/Literature _ Screenwriting/Story Substance, Structure, Style and The Principles of Screenwriting by Robert Mckee (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:58,Foreign Languages/Japanese/01.Japanese Writing System/Kanji Mnemonics/Kanji Mnemonics Instruction Manual For Learning Japanese Characters.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:59,"Music/Rudiments/Barbara Wharram, Kathleen Wood - Elementary Rudiments of Music (2005, The Frederick Harris Music Co.) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:10:59,Math _ Logic/Theoretical Math/Logic and Analysis/Mathematical Analysis A Straightforward Approach by Ken Binmore (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:00,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nakama Communication, Culture, Contex/Nakama 1-2 Communication, Culture, Contex (old version)/Nakama 2/Nakama 2 Workbook Laboratory Manual Japanese Textbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:00,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Grammar/A Handbook of Japanese Grammar.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:01,Science/Physics/Mechanics/Solutions 1Irodov-Problems.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:03,"Engineering/Computer Science/ML, AI, Data Science/Andrew P. McMahon - Machine Learning Engineering with Python (2023, Packt) - libgen.li.epub",ok,
+2026-10-07 23:11:03,Fiction/2015.16166.Brighton-Rock.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:04,Buisness/Finance/Algorithmic Trading and DMA An introduction to direct access trading strategies by Barry Johnson (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:04,"Engineering/Electrical and Computer Engineering/John G. Proakis, Dimitris K Manolakis - Digital Signal Processing_ Principles, Algorithms and Applications -Prentice Hall (1995).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:05,"Games/Go/Learn To Play Go Series/Janice Kim, Jeong Soo-Hyun - The Way of the Moving Horse (Learn to Play Go, Volume II) (Learn to Play Go Series) (1995, Good Move Press) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:28,"to_sort/Dan Heisman - Is Your Move Safe_ (2016, Mongoose Press) - libgen.li.pdf",ok,
+2026-10-07 23:11:28,Math _ Logic/Math Bibles/(The Art of Problem Solving) David Patrick - Introduction to Counting _ Probability-Aops Inc (2007).djvu,skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:28,Games/Chess/Grandmaster Preperation/Grandmaster Preparation Calculation by Jacob Aagaard (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:28,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Everyone/Japanese for Everyone A Functional Approach to Daily Communication.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:29,Games/Chess/kupdf.net_attack-with-mikhail-tal.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:31,to_sort/The BOOK of Data Structures and Algorithms in JavaScript.epub,ok,
+2026-10-07 23:11:32,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Linguaphone Japanese Course/linguaphone Japanese coursebook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:32,Math _ Logic/Applied Math/(Oxford Applied Mathematics and Computing Science  1) R. A. Hill - A First Course in Coding Theory-Oxford University Press (1990).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:33,Fitness/Strength Training Anatomy - 2nd Edition (Frederic Delavier) (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:34,to_sort/Asian Economic Integration Report 20192020 Demographic Change Productivity and the Role of Technology.epub,ok,
+2026-10-07 23:11:35,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Bunka Shoukyuu Nihongo/II/Shin Bunka Shoukyuu Nihongo II Renshuu Mondaishuu.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:35,Foreign Languages/Japanese/01.Japanese Writing System/Remembering The/Remembering The Kanji/Remembering the Kanji 2.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:36,Science/Physics/Thermo/James Rice - Introduction To Statistical Mechanics -Naismith Press (2007).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:36,Art/Drawing/Successful Drawing by Andrew Loomis (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:11:37,"Games/Go/Learn To Play Go Series/Janice Kim, Jeong Soo-Lyn - The Dragon Style (Learn to Play Go, Volume III) (Learn to Play Go Series) (1996, Good Move Press) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:13:35,"to_sort/National Academy of Sports Medicine (NASM) - NASM Essentials of Personal Fitness Training (2017, Jones and Bartlett Learning) - libgen.li.pdf",ok,
+2026-10-07 23:15:11,"to_sort/Lewis Carroll Epstein - Thinking Physics_ Practical Lessons in Critical Thinking (2002, Insight Press) - libgen.li.pdf",ok,
+2026-10-07 23:15:12,Music/Guitar/(Guitar Method) William Leavitt - Berklee Basic Guitar - Phase 1_ Guitar Technique (Guitar Method)-Berklee Press Publications (1986).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:15,to_sort/Manual of Hospital Planning and Designing For Medical Administrators Architects and Planners.epub,ok,
+2026-10-07 23:15:15,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/How to Sound Intelligent in Japanese A Vocabulary Builder.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:16,Games/Chess/Winning Chess/Winning Chess Brilliancies (cleaned-up) by Yasser Seirawan (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:16,Art/Drawing/Figure Drawing for All Its Worth by Andrew Loomis (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:17,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Grammar Dictionary/A Dictionary/A Dictionary of Basic Japanese Grammar.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:17,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Bunka Shoukyuu Nihongo/I/Shin Bunka Shoukyuu Nihongo I Renshuu Mondaishuu.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:18,"Social Sciences/[Penguin Modern Classics] A J Ayer - Language, Truth and Logic (2001, Penguin Books) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:18,"Math _ Logic/Applied Math/(Dover Books on Mathematics) Erwin Kreyszig, Mathematics - Differential Geometry-Dover Publications (1991).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:19,Music/Songbooks/The Real Book Of Blues.pdf,skipped,no pages
+2026-10-07 23:15:20,Music/Songbooks/The Real Vocal Book_ Volumes I & II -- 7f73f54a79728a576229f55b155c2062 -- Anna’s Archive.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:20,"Science/Physics/Mechanics/Herbert Goldstein, Charles P. Poole, John L. Safko - Classical Mechanics (3rd Edition)-Addison Wesley (2001).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:21,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Kanzen Master Japanese Grammar Bunpou 1, 2, 3/Kanzen Master Bunpou 3kyuu.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:21,Engineering/Electrical and Computer Engineering/Signal Processing _ Linear Systems.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:22,to_sort/Easy Steps to Drawing Flowers Failsafe Lessons for Drawing Floral and Botanical Elements for Journaling for Stationery for Keeps.epub,ok,
+2026-10-07 23:15:23,Science/Physics/Mechanics/Vibrations_and_Waves_by_A.P_French.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:23,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Tanoshiku Yomou Read Japanese/Tanoshiku Yomou I/Tanoshiku Yomou I.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:23,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Reading Japanese.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:24,to_sort/Card Night Classic Games Classic Decks and The History Behind Them.epub,ok,
+2026-10-07 23:15:25,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/101 Japanese Idioms/101 Japanese Idioms.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:25,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mangajin's Basic Japanese through Comics/Mangajin's Basic Japanese through Comics.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:26,Music/Songbooks/The Real Book - Volume III_ C Instruments -- Hal Leonard -- Hal Leonard -- ec2661678adfe2d233e3614bdda087f8 -- Anna’s Archive.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:26,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Grammar Dictionary/A Dictionary/A Dictionary of Intermediate Japanese Grammar.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:27,Science/Physics/Modern Physics/Sean Carroll - Spacetime and Geometry_ An Introduction to General Relativity-Pearson (2003).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:27,"Games/Go/Elementary Go Series/Attack and Defense (Elementary Go Series Vol. 5) by Ishida Akira, James Davies (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:28,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Let's Learn Japanese Picture Dictionary.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:29,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Tanoshiku Yomou Read Japanese/Tanoshiku Yomou II/Tanoshiku Yomou II.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:29,Math _ Logic/Theoretical Math/Logic and Analysis/N. L. Carothers - Real analysis-Cambridge University Press (2000).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:30,Engineering/Electrical and Computer Engineering/Signal Proessing _ Linear Systems - BP Lathi.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:15:30,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Teach Yourself Japanese Complete Course/Book.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:04,Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03/AWS Certified Solutions Architect Slides v43.pdf,ok,
+2026-10-07 23:17:06,to_sort/Jazz Composition and Arranging in the Digital Age.epub,ok,
+2026-10-07 23:17:06,Engineering/Electrical and Computer Engineering/FE review manual rapid preparation for the general fundamentals of engineering exam by Michael R. Lindeburg (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:07,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Particles/Japanese Particle Workbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:08,"Religious/Sarvepalli Radhakrishnan - The Principal Upanishads Upanisad (1968, George Allen and Unwin Ltd.) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:08,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Breaking into Japanese Literature Seven Modern Classics in Parallel Text.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:08,Foreign Languages/Japanese/01.Japanese Writing System/Intermediate Kanji Book/Intermediate Kanji Book 1.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:09,"Art/Drawing/How To Draw Comics The Marvel Way by Stan Lee, John Buscema (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:09,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mastering Japanese by Ear Audio/Mastering Japanese by Ear.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:10,Engineering/Computer Science/Software Development/The_Art_of_Computer_Programming - Vol 1.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:10,"Foreign Languages/Japanese/07.Society,Culture,History,Tourism/Culture/Culture Shock! Japan A Survival Guide to Customs and Etiquette.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:13,to_sort/Applied Computational Fluid Dynamics Techniques An Introduction Based on Finite Element Methods 2nd Edition.epub,ok,
+2026-10-07 23:17:14,"Fitness/Supertraining (Yuri V. Verkhoshansky, Mel C. Siff) (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:14,Foreign Languages/Japanese/01.Japanese Writing System/A guide to remembering Japanese characters/A guide to remembering Japanese characters.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:15,Art/Drawing/Drawing the Head and Hands by Andrew Loomis (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:15,Fitness/The Training of the Weightlifter -- R_ A_ Roman -- 3ad4c875013848bb195d5222f755b696 -- Anna’s Archive.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:16,Science/Physics/Modern Physics/Weinberg S. Gravitation and cosmology. principles and applications of the general theory of relativity.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:16,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Preparing for the Japanese Language Proficiency Tests/3 kyuu Korede Daijoubu Level 3/Book.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:17,"Math _ Logic/Mathematics Its Content, Methods and Meaning by A. D. Aleksandrov, A. N. Kolmogorov, M. A. Lavrent’ev (z-lib.org).pdf",skipped,1119 pages > --max-pages
+2026-10-07 23:17:18,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Busy People/Japanese for Busy People I/Japanese for Busy People I (Revised 3rd Edition) Kana Textbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:18,Science/Physics/Modern Physics/James B. Hartle - Gravity_ an introduction to Einstein_s General Relativity-Benjamin Cummings (2003).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:18,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/The Kodansha Kanji Learners Dictionary.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:19,Art/Drawing/Framed Ink Drawing and Composition for Visual Storytellers (Marcos Mateu-Mestre) (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:19,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Oxford Japanese Grammar & Verbs.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:20,Math _ Logic/FRACTI~1.PDF,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:20,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese in Mangaland/Japanese in Mangaland vol 2.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:21,Math _ Logic/Probability and Statistics/David Patrick and Naoki Sato - Intermediate Counting and Probability (Solution Manual)-The Art of Problem Solving (2012).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:21,Practical Engineering/20 Woodworking Books Collection Pack-9/Building Classic Arts & Crafts Furniture - Shop Drawings for 33 Traditional Charles Limbert Projects.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:22,Engineering/Computer Science/Software Development/Agile Software Development Principles Patterns And.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:22,"Games/Go/Richard Bozulich - The Second Book of Go (1998, Kiseido Publishing Co.) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:23,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japonés en viñetas Curso básico de japonés a través del manga/Japonés en viñetas Curso básico de japonés a través del manga.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:23,Math _ Logic/Applied Math/Linear Algebra/- Visual Complex Analysis Tristan Needham-OUP (1997).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:24,to_sort/The Simple PlantBased Cookbook An Appetite for Change with Lentils Grains and Chestnuts.epub,ok,
+2026-10-07 23:17:25,Art/Drawing/Creative Illustration by Andrew Loomis (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:26,Math _ Logic/Theoretical Math/Abstract Alg/Abstract algebra - Dummit and Foote.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:26,to_sort/Why Dont You Write My Eulogy Now So I Can Correct It A Mothers Suggestions.epub,ok,
+2026-10-07 23:17:27,Games/Chess/Grandmaster Preperation/Grandmaster Preparation Positional Play by Jacob Aagaard (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:27,Practical Engineering/20 Woodworking Books Collection Pack-9/The complete handbook of woodworking tools and hardware.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:28,"Pedagogy/Mortimer J. Adley, Charles Van Doren - How to Read a Book_ The classic guide to intelligent reading-Simon _ Schuster (1972).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:28,Math _ Logic/Applied Math/Calculus/Higher Level Calc/Differential Equations/Ordinary Differential Equations Dover Books.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:29,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese in Mangaland/Japanese in Mangaland vol 3.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:29,Music/Songbooks/The Real Book Volume II - Bass Clef -- Hal Leonard -- Hal Leonard Corporation -- 42c5ef2af4b3eb2b59f63ab7160a2c31 -- Anna’s Archive.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:30,"Games/Chess/Aron Nimzowitsch, Lou Hays - My System. 21 century edition-Hays Publishing (1991).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:30,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/13 Secrets for Speaking Fluent Japanese.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:17:31,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese in Mangaland/Japanese in Mangaland Workbook 1.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:07,"to_sort/Michael Azzi - Pixel Logic_ A Guide to Pixel Art (2019, Independent) - libgen.li.pdf",ok,
+2026-10-07 23:18:07,Music/Harmony/Schachter_Aldwell-Harmony_Voice_Leading.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:08,Foreign Languages/Japanese/01.Japanese Writing System/Doraemon Kokugo Omoshiro Kouryaku Utatte Kakeru Shougaku Kanji 1006/Doraemon Kokugo Omoshiro Kouryaku Utatte Kakeru Shougaku Kanji 1006.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:09,to_sort/In Love with New York Recipes and Stories from the City That Never Sleeps.epub,ok,
+2026-10-07 23:18:40,Music/Harmony/Walter Piston Mark Devoto Arthur Jannery - Harmony_ Fifth Edition (1987).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:40,"Music/Songbooks/The real book_ [Volume 1 -- Various Artists -- 6th, 2004-09-01 -- Hal Leonard Corporation -- 9780634060212 -- 9e45daf97a633ec5a03861a2037385a8 -- Anna’s Archive.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:41,Engineering/Computer Science/LaTeX/The Latex Companion-2Ed_2004.pdf,skipped,1119 pages > --max-pages
+2026-10-07 23:18:41,Practical Engineering/20 Woodworking Books Collection Pack-9/Danny Proulx's 50 Shop-Made Jigs & Fixtures.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:42,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Kiite Oboeru Hanashikata Nihongo Nama Chuukei Speaking Skills Learned through Listening Japanese Live/Nihongo Nama Chuukei.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:42,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Linguaphone Japanese Course/linguaphone Japanese handbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:43,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mimi Kara Oboeru N3/Mimi Kara Oboeru N3 Vocabulary.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:43,"Music/Songbooks/The Michael Jackson Collection -- various -- Piano_Vocal_Guitar Songbook, 1995 -- Warner Bros Publications -- afa9d83a433c6d57555d27ae94a47382 -- Anna’s Archive.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:44,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for You The Art of Communication/Japanese for you.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:45,to_sort/Why They Marched.epub,ok,
+2026-10-07 23:18:46,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Ryuugakusei no tameno Bunyabetsu Goi Reibunshuu Vocabulary Building.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:47,to_sort/Learning how to learn how to succeed in school without spending all your time studying a guide for kids and teens.epub,ok,
+2026-10-07 23:18:47,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Bunka Nihongo Chuukyuu/Bunka Nihongo Chuukyuu 2/Shin Bunka Shoukyuu Nihongo II Kyoushiyou.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:48,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Bunka Shoukyuu Nihongo/II/Shin Bunka Shoukyuu Nihongo II Kyoushiyou.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:49,"Foreign Languages/Hindi/The Oxford Hindi-English dictionary (Ronald Stuart McGregor) (z-library.sk, 1lib.sk, z-lib.sk).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:49,"Math _ Logic/Applied Math/Numerical Methods/Richard L. Burden, J. Douglas Faires, Annette M. Burden - Numerical Analysis-Cengage learning (2016).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:50,Engineering/Computer Science/C-C++/test-your-c-skill.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:50,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese the manga way/Japanese the manga way.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:51,"Survival/Kurt Saxton - Poor Man's James Bond vol 4 (1997, Atlan Formularies) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:51,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nihongo Chuukyuu J301/Book.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:52,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mastering Japanese by Ear Audio/Mastering Japanese by Ear Teacher's Book.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:18:53,to_sort/And Their Children After Them The Legacy of Let Us Now Praise Famous Men James Agee Walker Evans and the Rise and Fall of Cotton in the South.epub,ok,
+2026-10-07 23:19:24,"Music/Songbooks/The real book_ Volume IV, C instruments_ -- Hal Leonard Publishing Corporation -- C instruments_, 2010 -- Hal Leonard Corporation -- 9780634060212 -- f997c33c3d4d565656102c866372d54d -- Anna’s Archive.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:24,Foreign Languages/Japanese/01.Japanese Writing System/A guide to writing Kanji and Kana Book/A guide to writing Kanji and Kana Book 1.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:25,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Bunka Nihongo Chuukyuu/Bunka Nihongo Chuukyuu 1 Intermediate Japanese Course/Bunka Nihongo Chuukyuu 1.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:25,Foreign Languages/Japanese/01.Japanese Writing System/Kanji in context/Kanji in context.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:26,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Grammar Dictionary/A Dictionary/A Dictionary of Advanced Japanese Grammar.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:26,Science/Physics/Electricity _ Magnetism/John David Jackson - Classical electrodynamics-Wiley (1999).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:27,Games/Shogi/Tony Hosking - The Art of Shogi - libgen.li.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:28,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/Elementary School Student's Kanji Dictionary.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:28,Foreign Languages/Japanese/01.Japanese Writing System/Kanji Power/Kanji Power A Workbook for Mastering Japanese Characters.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:29,Foreign Languages/Japanese/01.Japanese Writing System/Intermediate Kanji Book/Intermediate Kanji Book 2.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:29,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Today/Japanese for Today.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:30,"Science/Physics/Mechanics/Classical mechanics a modern perspective by Olsson, Martin G. Barger, Vernon (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:30,Foreign Languages/Japanese/01.Japanese Writing System/Ryuugakusei no Tame no Kanji no Kyoukasho Chuukyuu 700/Ryuugakusei no Tame no Kanji no Kyoukasho Chuukyuu 700.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:31,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/Remember everyday life japanese words Pea de oberu iroirona kotoba.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:47,to_sort/A Visual Introduction to Differential Forms and Calculus on Manifolds.epub,ok,
+2026-10-07 23:19:47,"Engineering/Mechanical Engineering/Thermodynamics Concepts and Applications by Stephen R. Turns, Laura L. Pauley (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:47,"Foreign Languages/Japanese/05.Children's Books, Readers/Japanese Readers/Exploring Japanese Literature Read Mishima, Tanizaki, and Kawabata in the Original.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:48,"Foreign Languages/Japanese/04.Vocabulary, Expressions, Idioms/A Practical Guide to Mimetic Expressions through Pictures.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:48,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nihongo Nouryoku Shiken 1kyuu-2 kyuu Shiken ni Deru Dokkai Grammar and Exercises/shiken ni deru dokkai 1,2 kyuu.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:52,to_sort/A New History of Modern Computing History of Computing.epub,ok,
+2026-10-07 23:19:52,"Engineering/Computer Science/Other/Cracking the Coding Interview, 6th Edition.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:53,"Survival/Kurt Saxon - Granddad's Wonderful Book of Electricity (1980, Atlan Formularies) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:53,"Survival/Kurt Saxon - The Poor Man's James Bond Volume 3 3 (1992, Desert Publications) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:54,"Survival/Saxon, Kurt - The Poor Man's James Bond volume I (2012) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:54,Permaculture/Bill Mollison - Permaculture_ A Designers' Manual-Tagari Publications (1997).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:55,Science/S. O. Kasap - Principles of Electronic Materials and Devices. S.O. Kasap  -McGraw-Hill Education (2005).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:55,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Japanese for Busy People/Japanese for Busy People I/Japanese for Busy People I (Revised 3rd Edition) Romanized Textbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:56,Practical Engineering/20 Woodworking Books Collection Pack-9/Easy to Build Birdhouses - A Natural Approach Must Know Info to Attract and Keep the Birds You Want.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:56,"Survival/Kurt Saxon - The Poor Man's James Bond vol 2 (1987, Atlan Formularies) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:57,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Preparing for the Japanese Language Proficiency Tests/1kyuu gokaku dekiru Level 1/1kyuu gokaku dekiru.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:57,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Communicating with Japanese by the Total Method/Communicating with Japanese by the Total Method Basic Part 1.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:58,Engineering/Electrical and Computer Engineering/An Introduction to Semiconductor Devices 1st ed. by Donald Neamen/pages600-699.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:58,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Shin Bunka Shoukyuu Nihongo/II/Shin Bunka Shoukyuu Nihongo II.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:59,Practical Engineering/20 Woodworking Books Collection Pack-9/Simply Built Cabinets (Popular Woodworking).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:19:59,"Survival/Kurt Saxon - Granddad's Wonderful Book Of Chemistry (1987, Atlan Formularies) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:00,Practical Engineering/20 Woodworking Books Collection Pack-9/The Illustrated Handbook of Woodworking Joints.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:01,Practical Engineering/20 Woodworking Books Collection Pack-9/Danny Proulx's Toolboxes & Workbenches - 13 Fast & Easy Projects.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:01,Practical Engineering/20 Woodworking Books Collection Pack-9/Furniture in the Southern Style - 27 Shop Drawings of Furniture from the Museum of Early Southern Decorative Arts.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:02,Practical Engineering/Woodworker's Journal Editors. - Weekend Projects for Woodworkers_52 Great Projects You Can Build in a Day or Two - libgen.li.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:02,"Foreign Languages/Japanese/07.Society,Culture,History,Tourism/Tourism/Insight Guides Japan.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:03,Art/Drawing/Imaginative Realism How to Paint What Doesn’t Exist (James Gurney) (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:03,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nakama Communication, Culture, Contex/Nakama 1-2 Communication, Culture, Contex (old version)/Nakama 1/Nakama 1 Textbook Japanese.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:04,"Music/Contemporary/1001 Albums You Must Hear Before You Die -- general editor, Robert Dimery; preface by Michael Lydon -- Large Print Edition edition, February 7, 2006 -- 9780375434631 -- 2b7a0045d85b9be13f929d7f39f62868 -- Anna’s Archive.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:04,Engineering/Electrical and Computer Engineering/An Introduction to Semiconductor Devices 1st ed. by Donald Neamen/pages400-499.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:07,to_sort/Proceedings of International Conference on Advances in Computer Engineering and Communication Systems ICACECS 2020.epub,ok,
+2026-10-07 23:20:08,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Intermediate Japanese An Integrated Course/Intermediate Japanese An Integrated Course First Semester.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:08,Engineering/Electrical and Computer Engineering/An Introduction to Semiconductor Devices 1st ed. by Donald Neamen/pages300-399.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:09,Foreign Languages/Japanese/08.Miscellaneous/Introduction to Academic Presentations.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:10,Music/Jazz/Mark Levine - The jazz theory book-Sher Music (1995).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:10,Foreign Languages/Japanese/01.Japanese Writing System/Kanji isn't that hard/Kanji isn't that hard (Kanji wa muzukashiku nai).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:11,Science/Physics/Electricity _ Magnetism/Modern Problems in Classical Electrodynamics (Physics) by Charles A. Brau (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:11,Engineering/Electrical and Computer Engineering/An Introduction to Semiconductor Devices 1st ed. by Donald Neamen/pages200-299.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:12,Engineering/Electrical and Computer Engineering/An Introduction to Semiconductor Devices 1st ed. by Donald Neamen/pages500-599.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:12,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Bunka Nihongo Chuukyuu/Bunka Nihongo Chuukyuu 2/Bunka Chuukyuu Nihongo II Textbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:13,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Genki/Genki Answer Key I and II.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:13,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Essential Japanese Expressions/200 Essential Japanese Expressions A Guide To Correct Usage Of Key Sentence Patterns.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:14,Engineering/Electrical and Computer Engineering/An Introduction to Semiconductor Devices 1st ed. by Donald Neamen/pages100-199.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:14,"Foreign Languages/Hindi/[Teach Yourself] Rupert Snell with Simon Weightman - Complete Hindi (2016, John Murray Learning) - libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:15,Science/Physics/Optics 4h Edition Eugene Hecht.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:15,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Communicating with Japanese by the Total Method/Communicating with Japanese by the Total Method Basic Part 2.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:16,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Genki/Genki II/Genki II Workbook.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:16,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Mirai Stage 1 Coursebook/Book.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:17,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Introduction To Intermediate Japanese/Introduction to Intermediate Japanese.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:17,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Nakama Communication, Culture, Contex/Nakama 1-2 Communication, Culture, Contex (old version)/Nakama 2/Nakama 2 Textbook Japanese.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:18,Engineering/Electrical and Computer Engineering/An Introduction to Semiconductor Devices 1st ed. by Donald Neamen/pages0-99.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:19,"Engineering/Electrical and Computer Engineering/James Kurose, Keith Ross - Computer Networking_ A Top-Down Approach (7th Edition)-Pearson (2016).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:19,"Music/Ear Traning & Sight Singing/[Diction for Singers 1 - Diction for Singers 1] Diction for Singers_ A Concise Reference for English, Italian, Latin, German, French and Spanish ...{Joan Wall}(2012, Caldwell Publishing Co.){112506066} libgen.li.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:20,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/Ultimate Japanese Advanced/Book.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:33,to_sort/The Basic Practice of Statistics.epub,ok,
+2026-10-07 23:20:34,Foreign Languages/Japanese/01.Japanese Writing System/A guide to writing Kanji and Kana Book/A guide to writing Kanji and Kana Book 2.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:34,Foreign Languages/Japanese/Genki II Textbook.pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:35,"Games/Poker/The Mathematics of Poker by Bill Chen, Jerrod Ankenman (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:35,"Engineering/Computer Science/High Performance Computing/Tanenbaum, Andrew S._ Van Steen, Maarten - Distributed systems Principles and paradigms-Pearson (2017).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:36,"Foreign Languages/Japanese/03.Grammar, Workbooks, Usage/Grammar Dictionary/Nihongo bunkei ziten A Dictionary of Japanese Grammar with Sentence Patterns.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:20:38,to_sort/Totally Random Facts 3128 Wild Wacky and Wondrous Things about the World.epub,ok,
+2026-10-07 23:22:19,"Art/Drawing for the Absolute and Utter Beginner, Revised 15th Anniversary Edition (Claire Watson Garcia) (z-lib.org).epub",killed,converter RAM 6.0 GB > 6
+2026-10-07 23:23:19,Engineering/Electrical and Computer Engineering/Tom Hayes_ Paul Horowitz - Learning the Art of Electronics_ A Hands-On Lab Course-Cambridge University Press (2016).pdf,skipped,1158 pages > --max-pages
+2026-10-07 23:23:20,Survival/THDD4B~1.PDF,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:23:30,to_sort/Heating Cooling Lighting.epub,ok,
+2026-10-07 23:23:31,"Foreign Languages/Japanese/02.Audio Courses, Textbooks/JBridge/JBridge for Beginners/Book.pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:23:31,Art/Drawing/Color and Light A Guide for the Realist Painter (James Gurney) (z-lib.org).pdf,skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:23:50,to_sort/Worlds Together Worlds Apart A History of the World from the Beginnings of Humankind to the Present 6th Edition.epub,ok,
+2026-10-07 23:23:51,"Practical Engineering/The Complete Manual of Woodworking by Albert Jackson, David Day (z-lib.org).pdf",skipped,scanned (~0 chars/page) (needs OCR; rerun with --allow-ocr)
+2026-10-07 23:23:51,"Foreign Languages/Japanese/06.Dictionaries, Phrasebooks/NTC's New Japanese-English Character Dictionary.djvu",skipped,djvu is image-only (needs OCR; rerun with --allow-ocr)

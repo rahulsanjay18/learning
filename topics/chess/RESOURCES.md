@@ -11,9 +11,9 @@
   thinking-process habit (checks, captures, threats).
 - [Index: Dan Heisman's articles by subject](https://www.danheisman.com/articles-by-subject.html)
   Heisman's public Chess.com columns, sorted by topic. Use for: thought process, time use, safety, how adults improve.
-- Book: _Is Your Move Safe?_ by Dan Heisman (Mongoose Press, 2016; CJA Best Instruction book 2016) (check: [Open Library](https://openlibrary.org/works/OL20250577W))
+- Book: _Is Your Move Safe?_ by Dan Heisman (Mongoose Press, 2016; CJA Best Instruction book 2016) (in collection, grade A, id 6de58327fa)
   150+ positions on whether a move is safe; counting attackers and defenders, and when counting doesn't apply. Use for: the safety-check skill.
-- Book: _A Guide to Chess Improvement: The Best of Novice Nook_ by Dan Heisman (check: [Open Library](https://openlibrary.org/works/OL16962920W))
+- Book: _A Guide to Chess Improvement: The Best of Novice Nook_ by Dan Heisman (in collection but grade C, id de9de7888a: needs reconversion before teaching from it; check: [Open Library](https://openlibrary.org/works/OL16962920W))
   The best of his award-winning column for improving adults. Use for: study plans and thinking process.
 - Book: _Winning Chess Combinations_ by Seirawan (in collection, grade A, id `9d40d07e91`). Use for: after basic tactics.
 - Book: _1000 Checkmate Combinations_ by Victor Henkin (in collection, grade B: figures unreliable)
@@ -48,4 +48,4 @@
 ## Gaps
 - No resource yet connecting human chess thinking to engine search and evaluation at the right level (mission #4). Search later
   (candidates to check: the Chess Programming Wiki; papers on AlphaZero and NNUE).
-- Heisman's books are not in the collection; both were added to `library/WANTED.md`.
+- Heisman: _Is Your Move Safe?_ arrived 2026-10-08 (grade A). _Novice Nook_ arrived garbled (grade C); it's in `library/RECONVERT.csv`.
