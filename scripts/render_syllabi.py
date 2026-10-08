@@ -75,7 +75,9 @@ def project(cur, major, metas):
     for c in courses:
         if c.get("group") != "core" or c.get("level", "I") != "I" or c.get("status") == "done" or c.get("lane") == "embedded":
             continue
-        lanes.setdefault(c.get("lane", "_"), []).append(c)
+        # Games runs a game course and the strategy course (lessons in topics/military-strategy) side by side.
+        lane = c.get("lane") or ("strategy" if c.get("topic") == "military-strategy" else "_")
+        lanes.setdefault(lane, []).append(c)
     for lane, cs in lanes.items():
         cs = sorted(cs, key=lambda c: (c.get("status") != "active", courses.index(c)))
         placed, cursor = [], start
