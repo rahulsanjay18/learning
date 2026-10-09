@@ -19,6 +19,8 @@
       .then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; });
   }
 
+  // Reading-guide boxes (ids "read-…") are the learner's notes on a reading, not questions: never re-ask them.
+  var NOTE = /#read-/;
   // Interleave topics: round-robin over topics, each topic's items oldest-due first.
   function interleave(items) {
     var by = {};
@@ -111,7 +113,7 @@
       var all = {};
       Object.keys(sched).forEach(function (k) { all[k] = { item: k, due: sched[k].due }; });
       rows.forEach(function (r) { if (!all[r.item] || r.due < all[r.item].due) all[r.item] = { item: r.item, due: r.due }; });
-      var items = Object.keys(all).map(function (k) { return all[k]; }).filter(function (it) { return it.item.indexOf("/") > 0 && it.item.indexOf("#") > 0; });
+      var items = Object.keys(all).map(function (k) { return all[k]; }).filter(function (it) { return it.item.indexOf("/") > 0 && it.item.indexOf("#") > 0 && !NOTE.test(it.item); });
       var due = items.filter(function (it) { return it.due <= now; });
       var week = items.filter(function (it) { return it.due > now && new Date(it.due) - new Date() < 7 * DAY; }).length;
       if (due.length) return build(due, "{n} due now" + (due.length > MAX ? " (showing the " + MAX + " most overdue)" : "") + " · " + week + " more this week.");

@@ -109,6 +109,10 @@ Rules 11, 13 and 18 are format and logistics.
     don't apply; judgment. All of it is optional and never assumed by a later lesson (rule 13). Heading text must start
     "Extra practice" (the lint warns otherwise). (Entry 31)
 
+33. **Reading-guide notes never come back in review.** The `free` boxes under a reading (ids starting `read-`) are the learner's notes
+    on that reading; out of context they are not questions. Keep every reading-guide id prefixed `read-` (the review deck, the progress
+    server and the chat quiz skip that prefix). (Entry 32)
+
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
    know what the first problem even means." Both were pretest misses (learning records). Fix: vocabulary section with the
@@ -198,3 +202,7 @@ Rules 11, 13 and 18 are format and logistics.
     reading, maybe problems from one of the books assigned, just extra practice if need be"**, plus "an extra article to read per
     lesson" (judgment for reading-heavy majors). Lessons had at most one optional exercise and no standing place for more. Fix: a
     fixed closing section on every lesson, a matching "Extra practice" line in each course syllabus, a lint warning; rule 32.
+32. **2026-10-09 · "What the hell am I supposed to write for this. Where's the QA on the questions, man."** The review deck asked an
+    Indian History reading-guide box ("one thing that surprised or confused you") on its own. Graded free responses were scheduled for
+    review like questions, so once a reading note was graded it came back with no reading attached. Fix: `read-*` ids are never
+    scheduled (progress server), hidden if already scheduled (review deck, `/quiz-me`), with a server test; rule 33.

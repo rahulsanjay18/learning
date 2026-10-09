@@ -140,6 +140,7 @@ if __name__ == "__main__":
     cmd = a[0] if a else "due"
     if cmd == "due":
         rows = curl("/due?limit=200" + (f"&topic={topic}" if topic else ""))
+        rows = [r for r in rows if "#read-" not in r["item"]]   # reading-guide notes are never re-asked
         k = show([r["item"] for r in rows], n)
         skipped = len(rows) - k
         print(f"{k} shown; {len(rows)} due in total" + (f" ({skipped} are visual or not shown: use the review deck)" if skipped > 0 else "") +

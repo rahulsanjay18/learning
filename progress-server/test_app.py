@@ -58,10 +58,10 @@ def test_schedule_and_due():
 
 def test_free_response_grading():
     c.post("/events", json={"events": [ev("f1", "essay", None, kind="deferred", page="econ/0001-scarcity")]}, headers=T)
-    ung = c.get("/ungraded", headers=T).json()
+    ung = c.get("/ungraded", params={"limit": 500}, headers=T).json()
     assert [u["eid"] for u in ung] == ["f1"]
     assert c.post("/grades", json={"grades": [{"event": "f1", "score": 0.8, "feedback": "Good; name the opportunity cost."}]}, headers=T).json() == {"graded": 1}
-    assert c.get("/ungraded", headers=T).json() == []
+    assert c.get("/ungraded", params={"limit": 500}, headers=T).json() == []
     fb = c.get("/feedback", params={"page": "econ/0001-scarcity"}, headers=T).json()
     assert fb[0]["score"] == 0.8 and "opportunity cost" in fb[0]["feedback"]
     assert "graded: essay=0.8" in c.get("/summary", params={"topic": "econ"}, headers=T).text
@@ -91,6 +91,18 @@ def test_guessed_counts_as_not_known():
     assert r["q1"]["lapses"] == 0                                # "knew" changes nothing
     s = c.get("/summary", params={"topic": "stats"}, headers=T).text
     assert "stats/0009-guess: 1/2 right first try" in s and "guessed: q2" in s, s
+
+
+def test_reading_notes_never_scheduled():
+    page = "stats/0011-notes"
+    c.post("/events", json={"events": [ev("note1", "read-surprise", None, kind="deferred", page=page), ev("note2", "q3", False, page=page)]}, headers=T)
+    eid = c.get("/ungraded", params={"limit": 500}, headers=T).json()
+    eid = [x["eid"] for x in eid if x["item"] == page + "#read-surprise"]
+    assert eid, "the note should be waiting for grading"
+    c.post("/grades", json={"grades": [{"event": eid[0], "score": 1}]}, headers=T)
+    with server.db() as db:
+        items = [x["item"] for x in db.execute("SELECT item FROM review WHERE page=?", (page,))]
+    assert items == [page + "#q3"], items
 
 
 def test_pretest_answers_never_scheduled():

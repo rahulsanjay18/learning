@@ -92,6 +92,8 @@ def teacher(who: str = Depends(caller)):
 
 # ---------- spaced review (Leitner boxes) ----------
 def schedule(c, item, page, correct, when):
+    if "#read-" in (item or ""):
+        return      # reading-guide boxes are the learner's notes on a reading, not questions: never re-asked
     r = c.execute("SELECT * FROM review WHERE item=?", (item,)).fetchone()
     box, reps, lapses = (r["box"], r["reps"], r["lapses"]) if r else (-1, 0, 0)
     if correct:
@@ -160,7 +162,7 @@ def review_drop(payload: dict = Body(...), who: str = Depends(teacher)):
 
 @router.get("/due")
 def due(limit: int = Query(20, ge=1, le=200), topic: str = "", who: str = Depends(caller)):
-    q, args = "SELECT * FROM review WHERE due<=?", [iso(now())]
+    q, args = "SELECT * FROM review WHERE due<=? AND item NOT LIKE '%#read-%'", [iso(now())]   # notes scheduled before the fix
     if topic:
         q += " AND page LIKE ?"
         args.append(topic + "/%")
