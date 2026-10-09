@@ -71,6 +71,29 @@ the bar is wrong or the model is too small. Re-run the test sets whenever a mode
 2. First-pass grading with escalation, after the agreement test.
 3. Question drafting, then learning-record drafts.
 
+## Update 2026-10-09: grading moves first; the test set is the bottleneck
+The learner is building the grader first (grading felt like the biggest token cost), ahead of book search. Fine: the order
+above was a guess, and the learner sees the bills.
+
+**Problem: the agreement test has almost no data yet.** The progress server holds about 10 Claude-graded free responses
+(IH 0002–0003, stats, eng 0001; from `/summary`). With that few, a 95% exact (Clopper-Pearson) lower bound on agreement is:
+
+| graded items n | agreements | 95% lower bound |
+|---|---|---|
+| 10 | 9 | 0.56 |
+| 10 | 10 | 0.69 |
+| 30 | 28 | 0.78 |
+| 50 | 47 | 0.84 |
+| 100 | 94 | 0.87 |
+
+(Computed by binary search on the binomial tail, 2026-10-09.) So "≥ 90% agreement" can't be shown until ~100 items. Until then:
+1. **Shadow mode:** the grader writes its grade beside Claude's (e.g. `grader: "slm"`, not counted for review); each Claude
+   grade becomes one more test item. Adopt per subject once the lower bound clears the bar you choose.
+2. **Cut the queue, not just the cost:** reflection prompts with no rubric (e.g. IH 0002 `read-surprise`) need no grading at
+   all; auto-credit them and keep them out of spaced review (the learner flagged this 2026-10-09).
+3. Interface to match: read `GET /progress/ungraded`, build the packet like `scripts/grade.py`, write
+   `POST /progress/grades` (`[{event, score 0..1, feedback}]`; 0.7+ counts as known). Add a `grader` field to the server.
+
 ## Sources
 1. Ollama, "Structured outputs" (Dec 2024): https://registry.ollama.ai/blog/structured-outputs
 2. UCSF, "Using Ollama through the OpenAI API": https://researchai.ucsf.edu/class/lma/openai_ollama_python
