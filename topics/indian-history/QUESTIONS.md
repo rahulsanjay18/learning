@@ -128,3 +128,16 @@ argument that killed the invasion story. That's the specific evidence record 000
    Reviews Genetics* 15, 2014, pp. 749–763. [doi:10.1038/nrg3803](https://www.doi.org/10.1038/NRG3803)
 
 **Map question:** you were right, the four labelled buttons gave the answer away. It's now click-on-the-map only (TEACHING-LOG 23).
+
+## 2026-10-10 · Lesson 0004
+**"I got the Mitanni treaty wrong because I put 1380 and not 1380 BCE. I meant BCE."** Right, and the page was at fault: on a
+timeline that only covers BCE years, a bare "1380" can only mean 1380 BCE. The widget now reads it that way (and the attempt wasn't
+scored as a miss).
+
+**caste-claim (graded 0.6, regraded 0.75):** strong verdict and good evidence (the higher vs. lower nobility). I first said varna and
+jati were reversed; the learner: "i know the difference between varna and jati". Correct: "categories for … jatis" is the book's own
+point. What's off is only the timing (the ranked varnas are Late Vedic; the full jati system "only at a much later period"), and part
+(3), why the Purusha hymn may be an ideal, was missing. No re-teach.
+
+**read-source (0.6):** reliability right (faithful oral transmission); the family books are II–VII; missing that the hymns give the
+priests' view only.

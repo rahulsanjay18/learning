@@ -122,3 +122,4 @@ Magadha was the eastern Ganges kingdom.
 --- explain
 Pataliputra (Patna) stands on the Ganga in Bihar, east of Varanasi and about 380 km east of Kausambi.
 :::
+

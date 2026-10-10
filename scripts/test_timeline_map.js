@@ -21,6 +21,7 @@ check("parseYear rejects year 0 and junk", T.parseYear("0") === null && T.parseY
 check("parseYearInput forms", T.parseYearInput("1757") === 1757 && T.parseYearInput("AD 1757") === 1757 && T.parseYearInput("1757 CE") === 1757 &&
   T.parseYearInput("320 BCE") === -320 && T.parseYearInput("320 bc") === -320 && T.parseYearInput("c. 268 B.C.E.") === -268 && T.parseYearInput("-320") === -320);
 check("parseYearInput rejects 0 and nonsense", T.parseYearInput("0") === null && T.parseYearInput("year") === null && T.parseYearInput("-5 BCE") === null);
+check("parseYearInput: bare year on an all-BCE timeline is BCE", T.parseYearInput("1380", true) === -1380 && T.parseYearInput("1380 CE", true) === 1380 && T.parseYearInput("-1380", true) === -1380 && T.parseYearInput("1380") === 1380);
 check("no year 0: 1 BCE to 1 CE is one year", T.yearsBetween(-1, 1) === 1 && T.yearsBetween(1, -1) === 1);
 check("yearsBetween same era", T.yearsBetween(1757, 1747) === 10 && T.yearsBetween(-322, -185) === 137);
 check("yearsBetween 44 BCE to 14 CE = 57", T.yearsBetween(-44, 14) === 57);

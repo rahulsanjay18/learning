@@ -10,14 +10,27 @@ from Afghanistan to Bengal, with a capital that may have been the largest city i
 things this lesson connects: **new cities on the Ganges, a new religion (the Buddha's), and India's first empire (the Mauryas).**
 The question to carry through: **why did all three happen in the same place, the eastern Ganges plain, at about the same time?**
 
-## Warm-up (3 minutes)
-Answer these two from memory first; the recap after them has the answers.
-
+## Warm-up (4 minutes)
+Answer these from memory; the recap after them has the answers.
 
 ::: timeline-place wu-indus-end range=-3000:-500 answer=-1700 tolerance=150
-Place the end of the great Indus cities (within 150 years).
+Place the end of the great Indus cities (within 150 years). Bare years on this timeline are read as BCE.
 --- explain
 K&R date the mature cities 2600–1700 BC. That leaves roughly a thousand years with no cities before the Ganges towns of this lesson.
+:::
+
+::: choice wu-voice
+The Rigveda's words were passed down orally with great accuracy. Which statement best describes it as a source on Vedic society?
+- [x] Reliable about what the hymns said, but it gives only the priests' view
+- [ ] Reliable about what the hymns said, and it gives every group's own view
+- [ ] Unreliable about what the hymns said, but it gives only the priests' view
+- [ ] Unreliable about what the hymns said, and it gives every group's own view
+--- hint
+Two separate questions: were the words preserved, and who composed and kept them?
+--- explain
+Both halves matter. Faithful oral transmission makes the text "a fairly reliable source", but these texts "express the priestly
+world-view of the Brahmins". So the Purusha hymn, which puts Brahmins at the top, may describe the order the priests wanted, not
+how everyone lived.
 :::
 
 ::: cloze wu-varna-jati
@@ -29,11 +42,11 @@ Varna first meant "colour" and became four estates (Brahmin, Kshatriya, Vaishya,
 
 <details><summary>Recap: the two earlier ages this lesson builds on</summary>
 
-- **The Indus cities** (c. 2600–1700 BC): planned brick cities with standard weights, gone well before the Vedic hymns. After them, India had no
-  cities for about a thousand years.
+- **The Indus cities** (c. 2600–1700 BC): planned brick cities with standard weights, gone well before the Vedic hymns. After them,
+  India had no cities for about a thousand years.
 - **The Vedic age** (Rigveda c. 1300–1000 BC): our evidence is the priests' own hymns. By the Late Vedic age, the priests (Brahmins)
   and warrior-rulers (Kshatriyas) sat at the top of a ranked order of four **varnas** (estates); the many birth-castes, **jatis**,
-  came later.
+  came much later.
 </details>
 
 ## Block 1: read first

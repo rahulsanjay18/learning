@@ -34,12 +34,14 @@
     return y === 0 ? null : { year: y, approx: !!m[1] };
   }
   // What a learner types: "1757", "1757 CE", "AD 1757", "320 BCE", "320 BC", "-320", "c. 320 BCE". Returns an integer year or null.
-  function parseYearInput(s) {
+  // bceDefault: the timeline lies wholly in BCE, so a bare "1380" can only mean 1380 BCE (2026-10-10).
+  function parseYearInput(s, bceDefault) {
     var t = String(s || "").trim().replace(/^c(irca)?\.?\s*/i, "").replace(/\./g, "").replace(/,/g, "");
     var m = /^(ad|ce)?\s*([-+]?\d+)\s*(bce|bc|ce|ad)?$/i.exec(t);
     if (!m) return null;
     var y = parseInt(m[2], 10);
     if (m[3] && /^bc/i.test(m[3])) { if (y < 0) return null; y = -y; }
+    else if (bceDefault && !m[1] && !m[3] && y > 0) y = -y;
     return y === 0 ? null : y;
   }
   // Number of years from a to b, skipping the nonexistent year 0.
@@ -290,7 +292,7 @@
     var frame = U.el("div", "tl-scroll interactive");
     var row = U.el("div", "tl-controls"), lab = U.el("label", "tl-input"), input = U.el("input"), check = U.el("button", null, "Check");
     input.type = "text"; input.inputMode = "text"; input.autocomplete = "off";
-    input.placeholder = both ? "e.g. 320 BCE" : "year";
+    input.placeholder = both ? "e.g. 320 BCE" : cfg.range[1] < 0 ? "year BCE" : "year";
     input.setAttribute("aria-label", "Year (type it, or tap the timeline)");
     lab.appendChild(document.createTextNode("Year ")); lab.appendChild(input);
     row.appendChild(lab); row.appendChild(check);
@@ -327,14 +329,15 @@
       var r = view.svg.getBoundingClientRect();
       pick(yearAt(view.sc, (e.clientX - r.left) * view.W / r.width));
     });
+    var bce = cfg.range[1] < 0;
     input.addEventListener("input", function () {
-      var y = parseYearInput(input.value);
+      var y = parseYearInput(input.value, bce);
       if (y != null && y >= cfg.range[0] && y <= cfg.range[1]) { guess = y; render(); }
     });
     input.addEventListener("keydown", function (e) { if (e.key === "Enter") check.click(); });
     function finish() { done = true; reveal = true; input.disabled = true; check.disabled = true; render(); }
     check.addEventListener("click", function () {
-      var typed = parseYearInput(input.value);
+      var typed = parseYearInput(input.value, bce);
       if (typed == null) { ctx.feedback(false, "Tap the timeline or type a year, like 1757 or 320 BCE."); input.classList.add("no"); return; }
       if (typed < cfg.range[0] || typed > cfg.range[1]) { ctx.feedback(false, "Pick a year between " + formatYear(cfg.range[0], both) + " and " + formatYear(cfg.range[1], both) + "."); return; }
       guess = typed;

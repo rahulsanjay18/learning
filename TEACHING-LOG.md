@@ -76,7 +76,8 @@ Rules 11, 13 and 18 are format and logistics.
     paper behind a news article), it isn't a fault when they miss it; mention it as extra. Check what the assigned source
     actually says before calling an answer wrong. (Entry 24)
 25. **The prompt names what the rubric grades.** If full credit needs a specific move ("separate invasion from migration"),
-    the question asks for it in words. Implicit understanding of an unasked point counts as Got it. (Entry 25)
+    the question asks for it in words. Implicit understanding of an unasked point counts as Got it. Before a Not yet, quote the exact false clause, check it against the
+    assigned text, and check it is about the objective, not a side detail. (Entries 25, 34)
 26. **Explain from unconditional truths, and build options by mutation** (adopted 2026-10-07, no incident): start from facts
     accepted as stated, motivate each step ("how could I have discovered this?"), bracket the edge when probing (a right *and* a
     wrong answer per strand), and write the right option first, then mutate it into distractors with no reasons in any option.
@@ -216,3 +217,8 @@ Rules 11, 13 and 18 are format and logistics.
     overdue regardless of type, and the eng staff placement was never marked as a pretest, so 10 self-ratings were in review. Fix:
     placement marked and dropped; box 0 now means "not yet" only, known items return after 14 days; the deck takes Not yet first,
     then stale, one per family, a 10-minute budget with at most one free response; `mastery.json` per topic; rule 34.
+34. **2026-10-10 · "...i know the difference between varna and jati".** I graded IH 0004's caste-claim Not yet on varna vs. jati and
+    wrote a re-teach into 0005. The sentence I flagged ("categories for more specific roles, namely jatis") paraphrased the book; the
+    only error was the order of two developments, which the prompt didn't ask for. Fix: regraded Got it, re-teach removed. Rule 25
+    widened: before calling an objective Not yet, quote the exact false clause, check it against the assigned text, and check that it
+    is about the objective itself, not a side detail.
