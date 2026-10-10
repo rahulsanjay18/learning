@@ -432,6 +432,11 @@ else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map
 // Daily review deck: mastery decides. Known items wait until stale; mastery.json Not yet comes back; Got it waits; one per family
 {
   const rv = await newPage();
+  const fixture = { "indian-history": { not_yet: ["indian-history/0003-the-indus-cities#stages"] }, statistics: { got: ["statistics/0002-what-a-p-value-is#fdr"] } };
+  await rv.route("**/mastery.json", r => {
+    const t = r.request().url().split("/topics/")[1].split("/")[0];
+    return fixture[t] ? r.fulfill({ status: 200, contentType: "application/json", body: JSON.stringify(fixture[t]) }) : r.fulfill({ status: 404, body: "" });
+  });
   await rv.goto(`${BASE}/assets/review.html`);
   const d4 = new Date(Date.now() - 4 * 864e5).toISOString();
   const evs = [
