@@ -405,6 +405,7 @@ else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map
 // Daily review deck: a time budget, not a count; at most one free response per session, the rest behind "A few more"
 {
   const rv = await newPage();
+  await rv.route("**/mastery.json", r => r.fulfill({ status: 404, body: "" }));   // independent of the real mastery grades
   await rv.goto(`${BASE}/assets/review.html`);
   const old = new Date(Date.now() - 2 * 864e5).toISOString();
   const ids = ["indian-history/0003-the-indus-cities#claim-headline", "indian-history/0004-indo-aryans-and-the-vedic-age#caste-claim",
