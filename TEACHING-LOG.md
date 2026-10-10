@@ -113,6 +113,10 @@ Rules 11, 13 and 18 are format and logistics.
     on that reading; out of context they are not questions. Keep every reading-guide id prefixed `read-` (the review deck, the progress
     server and the chat quiz skip that prefix). (Entry 32)
 
+34. **Review is driven by mastery and time.** The daily deck brings back what isn't known yet (missed, skipped, guessed, or graded Not
+    yet in `topics/<t>/mastery.json`) first, and known items only once stale (two weeks or more). One question per family per day,
+    about 10 minutes, at most one free response. Every learning record that grades objectives updates `mastery.json`. (Entry 33)
+
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
    know what the first problem even means." Both were pretest misses (learning records). Fix: vocabulary section with the
@@ -206,3 +210,9 @@ Rules 11, 13 and 18 are format and logistics.
     Indian History reading-guide box ("one thing that surprised or confused you") on its own. Graded free responses were scheduled for
     review like questions, so once a reading note was graded it came back with no reading attached. Fix: `read-*` ids are never
     scheduled (progress server), hidden if already scheduled (review deck, `/quiz-me`), with a server test; rule 33.
+33. **2026-10-10 · "20 questions, taking a total of 10 minutes is not realistic, especially when a lot of these are free response",
+    "63 items due is insane", "you need to pull review questions from skills i havent got or may be stale … we have mastery rubrics
+    for this reason."** Every answered lesson question was scheduled (right answers back after 3 days), the deck showed the 20 most
+    overdue regardless of type, and the eng staff placement was never marked as a pretest, so 10 self-ratings were in review. Fix:
+    placement marked and dropped; box 0 now means "not yet" only, known items return after 14 days; the deck takes Not yet first,
+    then stale, one per family, a 10-minute budget with at most one free response; `mastery.json` per topic; rule 34.

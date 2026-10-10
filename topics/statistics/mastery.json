@@ -1,0 +1,6 @@
+{
+  "_about": "Mastery grades from the learning records (Got it / Not yet). The review deck brings Not yet items back first and Got it items only when stale. Keys: page#id or page#family.",
+  "not_yet": ["statistics/0003-effect-size-and-confidence-intervals#wu-size"],
+  "got": ["statistics/0002-what-a-p-value-is#fdr", "statistics/0003-effect-size-and-confidence-intervals#rel-lift",
+          "statistics/0003-effect-size-and-confidence-intervals#ci-lower", "statistics/0003-effect-size-and-confidence-intervals#sig-vs-worth"]
+}

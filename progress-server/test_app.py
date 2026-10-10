@@ -48,12 +48,12 @@ def test_schedule_and_due():
     with server.db() as db:
         db.execute("UPDATE review SET due='2000-01-01T00:00:00Z' WHERE item LIKE '%fork-2'")
         row = db.execute("SELECT box FROM review WHERE item LIKE '%fork-1'").fetchone()
-    assert row["box"] == 0                                               # first correct answer -> box 0 (1 day)
+    assert row["box"] == 1                                               # a right answer is never box 0 (that means "not yet")
     due = c.get("/due", params={"topic": "chess"}, headers=T).json()
     assert [d["item"] for d in due] == ["chess/0003-forks#fork-2"]
     c.post("/events", json={"events": [ev("a3", "fork-1", True)]}, headers=T)
     with server.db() as db:
-        assert db.execute("SELECT box FROM review WHERE item LIKE '%fork-1'").fetchone()["box"] == 1   # 3 days
+        assert db.execute("SELECT box FROM review WHERE item LIKE '%fork-1'").fetchone()["box"] == 2   # 30 days
 
 
 def test_free_response_grading():
@@ -123,6 +123,23 @@ def test_pages_lists_answered_lessons():
     assert "chess/0003-forks" in got and all(p.startswith("chess/") for p in got)
     assert c.get("/pages", params={"topic": "nope"}, headers=T).json() == {"pages": []}
     assert c.get("/pages").status_code == 401
+
+
+
+def test_rebuild_replays_under_current_rules():
+    page = "chess/0042-rebuild"
+    c.post("/events", json={"events": [ev("rb1", "a", True, page=page), ev("rb2", "b", False, page=page),
+                                       ev("rb3", "c", True, page="chess/0043-placement")]}, headers=T)
+    with server.db() as db:
+        db.execute("UPDATE review SET box=0 WHERE page=?", (page,))            # pretend an old rule put a right answer in box 0
+    r = c.post("/review/rebuild", json={"skip_pages": ["chess/0043-placement"]}, headers=T).json()
+    assert r["items"] >= 2
+    with server.db() as db:
+        got = {x["item"].split("#")[1]: x["box"] for x in db.execute("SELECT * FROM review WHERE page=?", (page,))}
+        assert db.execute("SELECT COUNT(*) FROM review WHERE page='chess/0043-placement'").fetchone()[0] == 0
+    assert got == {"a": 1, "b": 0}
+    assert c.post("/review/rebuild", json={}, headers={"Authorization": "Bearer nope"}).status_code in (401, 403)
+
 
 if __name__ == "__main__":
     for name, fn in list(globals().items()):

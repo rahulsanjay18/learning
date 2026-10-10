@@ -64,7 +64,7 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
    (prefer `next`, then the order in the file); offer optional extras only when they'd clearly help or the learner asks, set it `active`, choose its `books` (primary first), and fill its `plan` by slicing the primary book (rerun `scripts/major_dag.py`). If it has `pretest: true`,
    its first lesson is the pretest (see the major's PROGRAM.md for the format); after the pretest, rewrite `plan` to teach
    only what's missing and note the decision in NOTES.md.
-4. **Grade by mastery (TEACHING-LOG rule 20):** each objective Got it / Not yet. Not yet → a 5-minute re-teach section in the
+4. **Grade by mastery (TEACHING-LOG rule 20):** each objective Got it / Not yet, and record it in `topics/<topic>/mastery.json` (`not_yet` / `got`, keys `page#id` or `page#family`): the review deck uses it (rule 34). Not yet → a 5-minute re-teach section in the
    next lesson of that course; a new lesson only for a prerequisite or a repeat Not yet, logged in SYLLABUS.md "Changes".
 5. **Keep the map true after every lesson:** append the new stem to `lessons`, drop the `plan` entry it fulfilled, add stems to
    `completed` when the learner reports results without the progress server. Then run

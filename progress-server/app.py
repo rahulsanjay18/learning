@@ -16,6 +16,7 @@ Teacher:  GET /status                      plain text, ~15 lines: per topic acti
           GET /ungraded                    JSON: free-response answers waiting for a grade
           POST /grades                     {"grades":[{"event":"<eid>","score":0..1,"feedback":"..."}]}
           POST /review/drop {"pages":[...]}  unschedule whole pages (pretests: they measure, they don't teach)
+          POST /review/rebuild {"skip_pages":[...]}  replay the event log into a fresh schedule (after a rule change)
           POST /devices {"name":"phone"}   -> {"id","token"} (token shown once);  GET /devices;  DELETE /devices/{id}
 Device:   POST /events                     {"events":[...]} exactly as lp.js sends them (deduplicated by eid)
           GET /due?limit=20&topic=chess    JSON: review items due now
@@ -31,7 +32,10 @@ from fastapi.responses import PlainTextResponse
 TEACHER = os.environ.get("PROGRESS_TEACHER_TOKEN", "")
 DB = os.environ.get("PROGRESS_DB", "progress.db")
 ORIGINS = [o.strip() for o in os.environ.get("PROGRESS_ORIGINS", "https://rahulsanjay18.github.io").split(",") if o.strip()]
-INTERVALS = [1, 3, 7, 16, 35, 80, 180]   # days; box n -> next review after INTERVALS[n]
+# days; box n -> next review after INTERVALS[n]. Box 0 = not yet (missed, skipped, guessed): back tomorrow. A right answer always
+# lands in box 1 or higher (2026-10-10: review is for what isn't known yet or has gone stale), and known items first return after two
+# weeks. Keep in sync with assets/lp.js.
+INTERVALS = [1, 14, 30, 60, 120, 240]
 MAX_EVENTS, MAX_TEXT = 500, 4000
 
 SCHEMA = """
@@ -97,7 +101,7 @@ def schedule(c, item, page, correct, when):
     r = c.execute("SELECT * FROM review WHERE item=?", (item,)).fetchone()
     box, reps, lapses = (r["box"], r["reps"], r["lapses"]) if r else (-1, 0, 0)
     if correct:
-        box = min(box + 1, len(INTERVALS) - 1)
+        box = min(max(box + 1, 1), len(INTERVALS) - 1)
     else:
         box, lapses = 0, lapses + (1 if r else 0)
     due = when + timedelta(days=INTERVALS[max(box, 0)])
@@ -147,6 +151,31 @@ def post_events(payload: dict = Body(...), who: str = Depends(caller)):
             elif e.get("type") == "confidence" and e.get("value") == "guessed" and e.get("item"):
                 schedule(c, e["item"], e.get("page"), False, t)     # right by luck = not known yet
     return {"stored": stored, "duplicates": dup}
+
+
+@router.post("/review/rebuild")
+def review_rebuild(payload: dict = Body(default={}), who: str = Depends(teacher)):
+    """Rebuild the whole review schedule from the event log under the current rules. {"skip_pages": [...]} leaves pages out
+    (pretests, placements). Reading-guide notes are skipped by schedule() itself."""
+    skip = set(payload.get("skip_pages") or [])
+    with db() as c:
+        c.execute("DELETE FROM review")
+        rows = c.execute("SELECT * FROM events WHERE item IS NOT NULL AND (type='attempt' OR (type='confidence' AND value='guessed'))"
+                         " ORDER BY COALESCE(ts, received), received").fetchall()
+        n = 0
+        for e in rows:
+            if (e["page"] or e["item"].split("#")[0]) in skip:
+                continue
+            try:
+                when = datetime.fromisoformat((e["ts"] or e["received"]).replace("Z", "+00:00"))
+            except ValueError:
+                when = datetime.fromisoformat(e["received"].replace("Z", "+00:00"))
+            if e["type"] == "attempt" and e["correct"] is not None:
+                schedule(c, e["item"], e["page"], bool(e["correct"]), when); n += 1
+            elif e["type"] == "confidence":
+                schedule(c, e["item"], e["page"], False, when); n += 1
+        items = c.execute("SELECT COUNT(*) FROM review").fetchone()[0]
+    return {"replayed": n, "items": items}
 
 
 @router.post("/review/drop")

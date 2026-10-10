@@ -402,6 +402,53 @@ else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map
   await pre.close();
 }
 
+// Daily review deck: a time budget, not a count; at most one free response per session, the rest behind "A few more"
+{
+  const rv = await newPage();
+  await rv.goto(`${BASE}/assets/review.html`);
+  const old = new Date(Date.now() - 2 * 864e5).toISOString();
+  const ids = ["indian-history/0003-the-indus-cities#claim-headline", "indian-history/0004-indo-aryans-and-the-vedic-age#caste-claim",
+    "indian-history/0002-the-land-and-the-long-view#periods-argue"].concat(
+    ["wu-type2", "rel-lift"].map(x => "statistics/0003-effect-size-and-confidence-intervals#" + x),
+    ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"].map(x => "chess/0001-is-it-safe#" + x));
+  const evs = ids.map(item => ({ type: "attempt", item, kind: "auto", correct: false, ts: old }));
+  await rv.evaluate((evs) => { localStorage.clear(); localStorage.setItem("lp.queue", JSON.stringify(evs)); }, evs);
+  await rv.reload();
+  await rv.waitForSelector(".review-card", { timeout: 8000 }).catch(() => {});
+  const free = await rv.locator('.review-card .quiz[data-type="free"]').count();
+  const n = await rv.locator(".review-card").count();
+  const status = await rv.textContent("#deck-status");
+  if (free !== 1) fail(`review budget: expected 1 free response, got ${free}`);
+  if (n >= ids.length || n < 5) fail(`review budget: expected a partial deck, got ${n} of ${ids.length} (${status})`);
+  if (!/wait for another day/.test(status)) fail(`review budget: status "${status}"`);
+  await rv.click('button:text-is("A few more (about 5 minutes)")').catch(() => fail("review budget: no 'A few more' button"));
+  const n2 = await rv.locator(".review-card").count();
+  if (n2 <= n) fail(`review budget: 'A few more' added nothing (${n} -> ${n2})`);
+  if (!failures) console.log(`ok   review budget: ${n} cards (1 free) in 10 min, +${n2 - n} on 'A few more'`);
+  await rv.close();
+}
+
+// Daily review deck: mastery decides. Known items wait until stale; mastery.json Not yet comes back; Got it waits; one per family
+{
+  const rv = await newPage();
+  await rv.goto(`${BASE}/assets/review.html`);
+  const d4 = new Date(Date.now() - 4 * 864e5).toISOString();
+  const evs = [
+    { type: "attempt", item: "indian-history/0003-the-indus-cities#stages", kind: "auto", correct: true, ts: d4 },      // right, but graded Not yet
+    { type: "attempt", item: "indian-history/0003-the-indus-cities#causes", kind: "auto", correct: true, ts: d4 },      // right 4 days ago: not stale
+    { type: "attempt", item: "statistics/0002-what-a-p-value-is#fdr", kind: "auto", correct: false, ts: d4 },           // missed, graded Got it (a slip)
+    { type: "attempt", item: "chess/0001-is-it-safe#q1", kind: "auto", correct: false, ts: d4 },                       // plain miss
+  ];
+  await rv.evaluate((evs) => { localStorage.clear(); localStorage.setItem("lp.queue", JSON.stringify(evs)); }, evs);
+  await rv.reload();
+  await rv.waitForSelector(".review-card", { timeout: 8000 }).catch(() => {});
+  const shown = await rv.evaluate(() => Array.from(document.querySelectorAll(".review-card .quiz")).map(q => q.dataset.id));
+  const want = ["indian-history/0003-the-indus-cities#stages", "chess/0001-is-it-safe#q1"];
+  if (JSON.stringify(shown.slice().sort()) !== JSON.stringify(want.slice().sort())) fail(`review mastery: expected ${want}, got ${shown}`);
+  else console.log(`ok   review mastery: Not yet + misses shown; known-but-fresh and Got-it slips held back`);
+  await rv.close();
+}
+
 // Daily review deck: old misses (seeded event log, no schedule yet) come back, pulled from their lessons
 {
   const rv = await newPage();
@@ -423,7 +470,7 @@ else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map
   const status = await rv.textContent("#deck-status");
   const cards = await rv.locator(".review-card").count();
   if (cards !== 4) fail(`review: expected 4 cards, got ${cards} (${status})`);
-  if (!/4 due now/.test(status) || !/1 couldn't be loaded/.test(status)) fail(`review: status "${status}"`);
+  if (!/Today: 4 questions/.test(status) || !/1 couldn't be loaded/.test(status)) fail(`review: status "${status}"`);
   await rv.waitForSelector(".review-card .katex", { state: "attached", timeout: 5000 }).catch(() => fail("review: math not typeset"));
   if (!(await rv.locator('.review-card .lp-plot svg, .review-card .quiz[data-type="plot-set"] svg').count())) fail("review: plot not rendered");
   const rq = (id) => `.quiz[data-id="${id}"]`;
@@ -433,9 +480,9 @@ else console.log("ok   gallery: event log + summary\n" + summary.split("\n").map
   await rv.click(`${rq("statistics/0003-effect-size-and-confidence-intervals#wu-type2")} button:text-is("A false negative (miss)")`);
   const entry = await rv.evaluate(() => JSON.parse(localStorage.getItem("lp.review"))["statistics/0003-effect-size-and-confidence-intervals#wu-type2"]);
   const days = (new Date(entry.due) - Date.now()) / 864e5;
-  if (entry.box !== 1 || days < 2.9 || days > 3.1) fail(`review: schedule not advanced: ${JSON.stringify(entry)}`);
+  if (entry.box !== 1 || days < 13.9 || days > 14.1) fail(`review: schedule not advanced: ${JSON.stringify(entry)}`);
   if (errs.length) fail("review: page errors: " + errs.join("; "));
-  if (!failures) console.log(`ok   review: ${cards} due cards from 4 lessons (pretest item dropped), math+plot rendered, answer moved next review to +3 days\n     ${status}`);
+  if (!failures) console.log(`ok   review: ${cards} due cards from 4 lessons (pretest item dropped), math+plot rendered, answer moved next review to +14 days\n     ${status}`);
   await rv.close();
 }
 

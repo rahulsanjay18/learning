@@ -2,6 +2,7 @@
 title: Staff placement: where you stand against a real rubric
 subtitle: Placement (about 45 minutes; fine to split at the timed exercise). One win: you know which staff courses you can shrink, and you have a first sketch of a real design.
 crumb: Engineering career · Lesson 1 · SE000 placement
+main: data-pretest=true
 index: Staff placement (reading: Larson's archetypes; Dropbox IC4 vs IC5)
 ---
 ## Why this lesson

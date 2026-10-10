@@ -44,7 +44,9 @@
   // ---------- local spaced-review schedule (same Leitner boxes as progress-server) ----------
   // lp.review = { "<item id>": {box, due, last, reps, lapses, page} }. Built from the event log on first use, then kept
   // up to date on every answer, so it survives the log being emptied by sync. Read by assets/review.html.
-  var INTERVALS = [1, 3, 7, 16, 35, 80, 180];
+  // Box 0 = not yet (missed, skipped, guessed): back tomorrow. A right answer is always box 1+, and known items first return after
+  // two weeks (2026-10-10: review what isn't known yet or has gone stale). Keep in sync with progress-server/app.py.
+  var INTERVALS = [1, 14, 30, 60, 120, 240];
   function schedApply(sched, ev) {
     if (ev.type === "confidence" && ev.value === "guessed" && ev.item && sched[ev.item]) {   // right by luck = not known yet
       var g = sched[ev.item];
@@ -55,7 +57,7 @@
     if (ev.pretest) return;
     if (ev.type !== "attempt" || !ev.item || ev.correct == null || ev.kind === "deferred") return;
     var r = sched[ev.item] || { box: -1, reps: 0, lapses: 0 };
-    if (ev.correct) r.box = Math.min(r.box + 1, INTERVALS.length - 1);
+    if (ev.correct) r.box = Math.min(Math.max(r.box + 1, 1), INTERVALS.length - 1);
     else { if (r.reps) r.lapses++; r.box = 0; }
     r.reps++;
     r.last = ev.ts;
@@ -66,6 +68,8 @@
   LP.schedule = function () {
     var sched = null;
     try { sched = JSON.parse(store("lp.review") || "null"); } catch (e) { sched = null; }
+    if (sched && store("lp.review.v") !== "2" && queue().length) sched = null;   // rules changed: rebuild from the log if we still have it
+    store("lp.review.v", "2");
     if (!sched) {
       sched = {};
       queue().slice().sort(function (a, b) { return a.ts < b.ts ? -1 : 1; }).forEach(function (e) { schedApply(sched, e); });

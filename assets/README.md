@@ -154,7 +154,8 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 - New plugin: `LP.register({type, init(el, ctx), scored, selector})`. In `init`, call `ctx.result(ok, answer, kind)` once per attempt (first call is scored) and `ctx.feedback(ok, msg)`. Helpers: `LP.util`.
 
 ## Daily review deck (`assets/review.html`)
-- Every scored answer updates a spaced schedule in the learner's browser (`localStorage["lp.review"]`, same 1/3/7/16/35/80/180-day boxes as the progress server). Misses and skips come back the next day.
+- Every scored answer updates a spaced schedule in the learner's browser (`localStorage["lp.review"]`, same boxes as the progress server: 1/14/30/60/120/240 days). **Box 0 = not yet** (missed, skipped, guessed): back the next day. A right answer is always box 1+, so known items first return after two weeks.
+- **The deck is driven by mastery and time** (2026-10-10): Not-yet items first (box 0, plus anything `topics/<t>/mastery.json` lists under `not_yet`), then known items only once stale (14+ days since last seen; `got` in mastery.json counts as known even after a miss). One question per family (`-vN` dropped) per session, **a 10-minute budget** by question type (free response ≈ 3 min, at most one per session), and an "A few more" button. Update `mastery.json` whenever a learning record grades an objective.
 - The review page re-asks due questions **pulled live from their original lesson pages**, interleaved across topics, max 20 per session. With sync on it also merges the server's `/due` list (other devices).
 - So: **keep `data-id`s stable** (changing one orphans its schedule), and keep a question self-contained. If it depends on a diagram, put the diagram directly before the quiz or list its element ids in `data-context="id1 id2"`.
 - Every lesson footer links to it. **New plugin? Add its `<link>` and `<script>` to `review.html` too**, or its quizzes can't come back in review.
