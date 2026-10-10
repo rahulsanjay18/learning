@@ -288,7 +288,7 @@ Verdict: any reasoned verdict. Got it = all three parts, no false statement. (Au
   A specialist's view of the life, with the later death date (around 410 BC) that matches K&R's argument.
 - **Extra article:** "Key thinker: Kautilya", from Oxford's *Rethinking Political Thinkers* resources (about 1,000 words). It starts from
   Weber's comparison and argues Kautilya was as concerned with good and bad politics as with power. A short, opposite view to test
-  your verdict against. <https://learninglink.oup.com/access/content/ramgotra-choat1e-resources/ramgotra-choat1e-key-thinker-kautilya>
+  your verdict against. [Read it on Oxford Learning Link](https://learninglink.oup.com/access/content/ramgotra-choat1e-resources/ramgotra-choat1e-key-thinker-kautilya).
 
 Questions about anything here: ask me in chat.
 

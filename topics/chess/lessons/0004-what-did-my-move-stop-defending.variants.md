@@ -1,11 +1,13 @@
 ## guard-list
 
-::: exact guard-list-v4 answer="f3"
-You have a knight on e5 and pawns on f3, f4 and e3. You're about to move the knight to c4. Step 1: which of those three pawns was the
-knight guarding? Type the square.
+::: board fen="r7/pppk4/1b1p1p1p/4n3/3PP3/P1P1Kp1P/5P1R/RN6 b - - 0 26" flip=true hl="e5" caption="Your 6 October game, move 26. Black (you) to move."
+:::
+
+::: exact guard-list-v4 answer="f3|the f3 pawn|pawn f3|f3 pawn"
+In this position you played 26…Nc4+. Step 1 first: which of your **pawns** does the knight on e5 guard right now? Type the square.
 --- explain
-**f3**. A knight on e5 jumps to c4, c6, d3, d7, f3, f7, g4 and g6, so of the three it guards only f3. (From your 6 October game:
-after 26…Nc4+ nothing guarded the f3 pawn, and White's king later took it.)
+**f3**. After 26…Nc4+ nothing guarded that pawn, and White's king took it three moves later. The check was still a reasonable move
+(Stockfish rates it close to the best), but the pawn was its price.
 :::
 
 ## hang-after

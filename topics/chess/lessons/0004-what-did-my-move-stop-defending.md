@@ -5,7 +5,7 @@ crumb: Chess · Lesson 4
 index: What did my move stop defending? (positions from your games)
 ---
 ## Why this lesson
-In your 2 October game you had a good position after twelve moves: Stockfish rated it about **+1.4** for you. Then you played
+In your 2 October game you had a good position after twelve moves: Stockfish rated it about **+1.2** for you. Then you played
 **13. e4**, a natural central move, and the position was suddenly about even. Nothing of yours was hanging when you played it. The
 problem was what the e-pawn had been doing *before* it moved.
 
@@ -17,6 +17,7 @@ Last lesson asked "what did **their** move do?" This one turns it around: **what
 
 A move creates a new threat in only two ways: (1) the **moved piece** attacks something from its new square, or (2) the **square it
 left** opens a line for a piece behind it (a discovered attack). Then count attackers and defenders on anything attacked.
+A piece is **pinned** when it can't move (or shouldn't) because something more valuable stands behind it on the line.
 </details>
 
 ::: board fen="rn1q4/4pk2/1pp3p1/p4bBp/3bp3/8/PPPQ1PPP/4RRK1 w - - 0 18" hl="d4" caption="Your 2 October game, after 17…Bxd4. White (you) to move."
@@ -28,7 +29,7 @@ Black's bishop just came from g7 and took on d4. Run step 1: how many of your pi
 Follow both diagonals from d4 toward your side of the board, until each one hits something.
 --- explain
 Two: the pawns on **b2** and **f2**. Step 2 finds nothing new: nothing of Black's stood behind g7 on a line toward your pieces. (You
-then found 18. c3!, which attacked the bishop and won it. Counted with python-chess.)
+then found 18. c3!, which attacked the bishop and won it in the game. Counted with python-chess.)
 :::
 
 ## The idea
@@ -70,7 +71,7 @@ lost one defender and gained another. Fine.
 lines are waiting on: the bishop on g7 needs the knight on f6 to move, and the queen on d8 needs the pawn on d5 to move.
 --- step
 **What happened in the game.** 13…Nxe4 moved the knight (the g7 bishop's line opens) and 14…dxe4 moved the d5 pawn (the queen's line
-opens). In two moves, d4 went from **0 attackers** to **2**, with your **1** defender. It was hanging, and it stayed hanging for three moves.
+opens). In two moves, both lines opened onto d4. Count it yourself in the next question.
 --- step
 **The lesson.** 13. e4 didn't hang anything at the moment it was played. It removed a defender from a square that two closed black
 lines were pointed at. Stockfish's choice was **13. f3**, preparing e4 so that a pawn would guard it and the knight couldn't take there.
@@ -91,8 +92,7 @@ Find the move that gives d4 the second defender it needs, without giving anythin
 --- hint
 The cheapest defender is a pawn. Which pawn can reach a square that guards d4?
 --- explain
-**15. c3**: a pawn guards d4 and the count is two against two. Stockfish rates it best by over half a pawn. In the game you played
-15. Bxf7+, which left d4 hanging for another two moves.
+**15. c3**: a pawn guards d4 and the count is two against two. Stockfish rates it best by over half a pawn. In the game you played 15. Bxf7+, which left d4 hanging for another two moves.
 :::
 
 ## Moving a defender isn't always wrong
@@ -121,10 +121,10 @@ routine is the reason this is fine, not luck: you counted.
 ::: exact guard-list-v3 answer="f2|the f2 pawn|pawn f2|f2 pawn"
 Step 1 for your rook on g2: which of your pawns does it guard? Type the square.
 --- explain
-**f2**, along the 2nd rank. White's rook on a2 attacks it too, so right now it's one attacker against one defender.
+**f2**, along the 2nd rank.
 :::
 
-::: choice hang-after-v4
+::: choice hang-after-v4 shuffle=true
 In the game you played **36…Rg1**, so the rook stopped guarding f2. What happens?
 - [x] White can take on f2, and then Black takes White's h1 rook
 - [ ] White can take on f2, and then White's rook attacks Black's knight
@@ -133,7 +133,7 @@ In the game you played **36…Rg1**, so the rook stopped guarding f2. What happe
 --- hint
 Step 1 tells you what the rook stops guarding. Now look at what it attacks from g1.
 --- explain
-37. Rxf2 wins the pawn, but 37…Rxh1 wins a whole rook: a pawn given for a rook. Stockfish's top move, and you played it. You
+White's rook on a2 attacks f2 along the 2nd rank, so 37. Rxf2 wins the pawn, but 37…Rxh1 wins a whole rook: a pawn given for a rook. Stockfish's top move, and you played it. You
 stopped defending f2 on purpose, because you'd counted what you got for it.
 :::
 
@@ -152,7 +152,7 @@ This is optional, and the next lesson works without it. Questions about anything
    opponent forces it to. (A full lesson on deflection comes later.)
 3. **Extra article:** Dan Heisman, "Checking for safety requires more than using tactical vision" (Chess.com, about 800 words). A coach
    on why a quick glance misses tactics and why the safety check has to be a routine; his example move looked safe because the piece
-   was guarded, and it wasn't. <https://www.chess.com/blog/danheisman/checking-for-safety-requires-more-than-using-tactical-vision>
+   was guarded, and it wasn't. [Read it on Chess.com](https://www.chess.com/blog/danheisman/checking-for-safety-requires-more-than-using-tactical-vision).
 
 ## Sources
 - Your games vs. Sven-BOT, 2 October and 6 October 2026; positions and counts checked with python-chess, evaluations with Stockfish
