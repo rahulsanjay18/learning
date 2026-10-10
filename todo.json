@@ -77,13 +77,6 @@
    "added": "2026-10-07",
    "text": "After installing Super Productivity: turn on WebDAV sync to a folder on your server, sync once, and send Claude a copy (or the file names + first lines) of what lands there. Also decide: work-task privacy (default: counts and time only) and encryption on/off.",
    "why": "So Claude can build the read-only /sp digest endpoint against your real file format (notes/super-productivity-reader.md)."
-  },
-  {
-   "id": "progress-redeploy-mastery",
-   "major": "platform",
-   "added": "2026-10-10",
-   "text": "Redeploy the progress server (new review rules + POST /review/rebuild), then tell Claude. Claude then runs the rebuild so your old answers are re-sorted into 'not yet' and 'known'.",
-   "why": "Until then the server still counts every answered question as due after 3 days, so status shows a big backlog; the review deck already caps a session at about 10 minutes."
   }
  ]
 }

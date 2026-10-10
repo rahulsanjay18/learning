@@ -3,6 +3,8 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-10: review is mastery- and time-driven** (TEACHING-LOG rule 34): server redeployed and `/review/rebuild` run (86 answers
+  replayed, 54 items; due went 63 → 16, all "not yet"). Keep `topics/<t>/mastery.json` current with every learning record.
 - **2026-10-10 (Sat): lessons built ahead** while IH 0004, chess 0003 and G150 0001–0002 still wait: IH 0005 (cities, Buddha, Mauryas;
   two sittings; reviewer fixes applied) and chess 0004 (what did my move stop defending). Neither opens with a re-teach, because the
   previous lesson had no results yet: **when 0004/0003 results arrive, put any Not-yet re-teach into IH 0006 / chess 0005.**
