@@ -3,6 +3,13 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-10 (Sat): lessons built ahead** while IH 0004, chess 0003 and G150 0001–0002 still wait: IH 0005 (cities, Buddha, Mauryas;
+  two sittings; reviewer fixes applied) and chess 0004 (what did my move stop defending). Neither opens with a re-teach, because the
+  previous lesson had no results yet: **when 0004/0003 results arrive, put any Not-yet re-teach into IH 0006 / chess 0005.**
+  Games already has 3 unread lessons; don't build G150 0003 ahead.
+- **2026-10-10: quant interview prep, decided "not a track now"** (`notes/quant-interview-prep-2026-10-10.md`, logged in ideas.md):
+  remote-only + new job 2026-10-26 keep CR310/CR320 on "watch"; use quant probability puzzles as optional Statistics extra practice
+  (S201 0007 conditional probability is the first fit). Books to ask for if wanted: Mosteller *Fifty Challenging Problems*, Zhou.
 - **2026-10-08: four STEM majors designed and parked** (Mathematics, Physics, Mechanical Engineering, Unified Engineering;
   "not trying to do this now"). One builder for all four: `scripts/build_majors.py` (shared courses = same id; edit there,
   re-run, then `major_dag.py`). Entry points from the Penn State degrees are drawn in each `DAG.md`; tests in

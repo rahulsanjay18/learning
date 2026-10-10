@@ -16,10 +16,10 @@
       "lessons": [
         "0001-is-it-safe",
         "0002-checks-first",
-        "0003-what-did-their-move-do"
+        "0003-what-did-their-move-do",
+        "0004-what-did-my-move-stop-defending"
       ],
       "plan": [
-        "0004-what-did-my-move-stop-defending: 13. e4 from the 2 Oct game",
         "0005 the double attack (Tactics Ch. 2)",
         "0006 pins and skewers (Tactics Ch. 3-4)",
         "0007 king tactics and the back rank (Ch. 5)",
