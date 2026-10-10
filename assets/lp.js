@@ -68,7 +68,10 @@
   LP.schedule = function () {
     var sched = null;
     try { sched = JSON.parse(store("lp.review") || "null"); } catch (e) { sched = null; }
-    if (sched && store("lp.review.v") !== "2" && queue().length) sched = null;   // rules changed: rebuild from the log if we still have it
+    if (sched && store("lp.review.v") !== "2") {   // rules changed (2026-10-10): rebuild from the log if we still have it;
+      if (queue().length) sched = null;            // with sync on and the log already sent, the server (rebuilt too) is the authority
+      else if (store("lp.endpoint")) sched = {};
+    }
     store("lp.review.v", "2");
     if (!sched) {
       sched = {};
