@@ -77,6 +77,13 @@
    "added": "2026-10-07",
    "text": "After installing Super Productivity: turn on WebDAV sync to a folder on your server, sync once, and send Claude a copy (or the file names + first lines) of what lands there. Also decide: work-task privacy (default: counts and time only) and encryption on/off.",
    "why": "So Claude can build the read-only /sp digest endpoint against your real file format (notes/super-productivity-reader.md)."
+  },
+  {
+   "id": "progress-redeploy-pages",
+   "major": "platform",
+   "added": "2026-10-10",
+   "text": "Redeploy the progress server once more (copy the new progress-server/app.py, then docker compose up -d --build progress-server).",
+   "why": "The Today page now counts a lesson as finished only when most of it is answered or rated. It needs the server to report how many questions per lesson are answered; until then, lessons finished on another device show as 'in progress' unless you rated them."
   }
  ]
 }

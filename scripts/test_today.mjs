@@ -56,5 +56,21 @@ const after = T.planFor(cfg, cur3, new Date("2026-10-06T16:00:00Z"), ["indian-hi
 ok(before && before.lesson && before.lesson.href.endsWith("0003-the-indus-cities.html"), "IH 0003 is today's lesson");
 ok(after && !after.lesson, "answered IH 0003 -> no unfinished IH lesson left");
 ok(T.pretty("0004-power") === "0004 power", "pretty");
+// One answer is "in progress", not done (2026-10-10); most of the page answered or a rating finishes it.
+{
+  const sat = new Date("2026-10-10T16:00:00Z");
+  const ih = (prog) => T.planFor(cfg, cur, sat, prog).blocks.find(b => b.slug === "indian-history").items[0];
+  const ihc = cur["indian-history"].courses.find(c => c.status === "active");
+  const first = (ihc.lessons || []).find(s => !(ihc.completed || []).includes(s));
+  if (first) {
+    const pg = "indian-history/" + first;
+    const one = ih({ [pg]: { answered: 1, total: 12, rated: false } });
+    ok(one.lesson && one.lesson.page === pg && one.lesson.started && one.lesson.started.answered === 1, "one answer keeps the lesson as today's, in progress");
+    const most = ih({ [pg]: { answered: 10, total: 12, rated: false } });
+    ok(!most.lesson || most.lesson.page !== pg, "10 of 12 answered -> finished");
+    const rated = ih({ [pg]: { answered: 2, total: 12, rated: true } });
+    ok(!rated.lesson || rated.lesson.page !== pg, "rated -> finished");
+  }
+}
 console.log(fails ? `today: ${fails} failed` : "today: all checks passed");
 process.exit(fails ? 1 : 0);

@@ -202,13 +202,19 @@ def due(limit: int = Query(20, ge=1, le=200), topic: str = "", who: str = Depend
 
 @router.get("/pages")
 def pages(topic: str = "", who: str = Depends(caller)):
-    """Lesson pages with at least one answered question (any device), for the Today page's "done" check."""
-    q, args = "SELECT DISTINCT page FROM events WHERE type='attempt' AND page IS NOT NULL", []
+    """Lesson pages with at least one answered question (any device), for the Today page's "done" check. Also how many distinct
+    questions each page has answered (reading notes excluded) and which pages got an end-of-lesson rating: a lesson counts as
+    finished when most of it is answered or it was rated, not when one question was."""
+    where, args = " AND page IS NOT NULL", []
     if topic:
-        q += " AND page LIKE ?"
+        where += " AND page LIKE ?"
         args.append(topic + "/%")
     with db() as c:
-        return {"pages": sorted(x[0] for x in c.execute(q, args))}
+        pages = sorted(x[0] for x in c.execute("SELECT DISTINCT page FROM events WHERE type='attempt'" + where, args))
+        answered = {x[0]: x[1] for x in c.execute(
+            "SELECT page, COUNT(DISTINCT item) FROM events WHERE type='attempt' AND item NOT LIKE '%#read-%'" + where + " GROUP BY page", args)}
+        rated = sorted(x[0] for x in c.execute("SELECT DISTINCT page FROM events WHERE type='rating'" + where, args))
+    return {"pages": pages, "answered": answered, "rated": rated}
 
 
 @router.get("/feedback")

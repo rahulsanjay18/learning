@@ -17,21 +17,30 @@
     }
   }
 
-  // One block's suggestion for a major: the newest lesson the learner hasn't finished, else "next lesson not written yet".
-  // answered: lesson pages ("topic/stem") with at least one answered question, from this browser and the progress server.
+  // One block's suggestion for a major: the first lesson the learner hasn't finished, else "next lesson not written yet".
+  // progress: {"topic/stem": {answered, total, rated}}. A lesson is finished when it was rated (the end-of-lesson footer) or
+  // FINISHED of its questions are answered; one answer only makes it "in progress" (2026-10-10). An array of pages (old form)
+  // counts every listed page as finished.
+  var FINISHED = 0.8;
+  function finished(p) { return !!p && (p === true || p.rated || (p.total > 0 && p.answered >= FINISHED * p.total)); }
+  function asProgress(answered) {
+    if (!Array.isArray(answered)) return answered || {};
+    var out = {}; answered.forEach(function (pg) { out[pg] = true; }); return out;
+  }
   // day: "mon".."sun". A curriculum with "lanes" ({mon: "staff", ...}) shows only the active courses of that day's lane.
-  function blockFor(major, cur, answered, day) {
+  function blockFor(major, cur, progress, day) {
     if (!cur) return { major: major.name, setup: major.setup || "Not set up yet." };
     var lane = cur.lanes && day ? cur.lanes[day] : null;
     var active = cur.courses.filter(function (c) { return c.status === "active"; });
     var inLane = lane ? active.filter(function (c) { return c.lane === lane; }) : [];
     var items = (inLane.length ? inLane : active).map(function (c) {
       var topic = c.topic || major.slug, lessons = c.lessons || [], done = c.completed || [];
-      var todo = lessons.filter(function (s) { return done.indexOf(s) < 0 && (answered || []).indexOf(topic + "/" + s) < 0; });
-      var stem = todo.length ? todo[0] : null;
+      var todo = lessons.filter(function (s) { return done.indexOf(s) < 0 && !finished(progress[topic + "/" + s]); });
+      var stem = todo.length ? todo[0] : null, pr = stem ? progress[topic + "/" + stem] : null;
       return {
         course: c.id + " " + c.title,
-        lesson: stem ? { title: pretty(stem), href: "../topics/" + topic + "/lessons/" + stem + ".html" } : null,
+        lesson: stem ? { title: pretty(stem), href: "../topics/" + topic + "/lessons/" + stem + ".html", page: topic + "/" + stem,
+                         started: pr && pr !== true && pr.answered ? { answered: pr.answered, total: pr.total || 0 } : null } : null,
         next: (c.plan || [])[0] || null
       };
     });
@@ -57,14 +66,14 @@
     });
     var blocks = slugs.map(function (s) {
       var parts = s.split("|"), m = bySlug[parts[0]];
-      var b = blockFor(m, curricula[parts[0]], answered, d.day);
+      var b = blockFor(m, curricula[parts[0]], asProgress(answered), d.day);
       if (parts[1]) b.covering = bySlug[parts[1]].name;
       return b;
     });
     return { date: d.iso, day: d.day, review: cfg.review, blocks: blocks };
   }
 
-  root.LPToday = { planFor: planFor, pretty: pretty, localDay: localDay, openTodos: openTodos };
+  root.LPToday = { planFor: planFor, pretty: pretty, localDay: localDay, openTodos: openTodos, finished: finished };
   if (typeof module !== "undefined") module.exports = root.LPToday;
 
   if (typeof document === "undefined") return;
@@ -123,7 +132,11 @@
       if (b.setup) body.push(el("p", { "class": "muted", text: b.setup }));
       (b.items || []).forEach(function (it, j) {
         var p = el("p", {}, [(b.items.length > 1 ? (j ? "or " : "") : "") + it.course + ": "]);
-        if (it.lesson) p.appendChild(el("a", { href: it.lesson.href, text: it.lesson.title }));
+        if (it.lesson) {
+          p.appendChild(el("a", { href: it.lesson.href, text: it.lesson.title }));
+          var st = it.lesson.started;
+          if (st) p.appendChild(el("span", { "class": "muted", text: " (in progress" + (st.total ? ": " + st.answered + " of " + st.total + " questions answered" : "") + ")" }));
+        }
         else p.appendChild(el("span", { text: "next lesson not written yet (run /program in a Claude session)." }));
         body.push(p);
       });
@@ -147,16 +160,41 @@
     }
   }
 
-  // Pages answered in this browser (local review schedule) plus, when sync is set up, on any device (server /pages).
-  function answeredPages() {
-    var pages = {};
-    try { Object.keys(LP.schedule()).forEach(function (item) { pages[item.split("#")[0]] = 1; }); } catch (e) {}
+  // How much of each lesson is answered: this browser (local event log + review schedule) and, with sync, any device (server
+  // /pages). Then the question count of each candidate lesson, read from the lesson page itself (reading notes excluded).
+  function progressFor(cfg, curricula) {
+    var items = {}, rated = {}, prog = {};
+    function add(item) { if (item && item.indexOf("#read-") < 0) { var pg = item.split("#")[0]; (items[pg] = items[pg] || {})[item] = 1; } }
+    try { Object.keys(LP.schedule()).forEach(add); } catch (e) {}
+    try { JSON.parse(localStorage.getItem("lp.queue") || "[]").forEach(function (e) {
+      if (e.type === "attempt") add(e.item); if (e.type === "rating" && e.page) rated[e.page] = 1; }); } catch (e) {}
     var ep = store("lp.endpoint"), tok = store("lp.token");
     var server = (ep && tok) ? fetch(ep + "/pages", { headers: { Authorization: "Bearer " + tok } })
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (j) { (j && j.pages || []).forEach(function (p) { pages[p] = 1; }); })
-      .catch(function () {}) : Promise.resolve();
-    return server.then(function () { return Object.keys(pages); });
+      .then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }) : Promise.resolve(null);
+    return server.then(function (j) {
+      var srvN = (j && j.answered) || {};
+      (j && j.rated || []).forEach(function (pg) { rated[pg] = 1; });
+      var oldServer = j && !j.answered ? j.pages || [] : [];          // a server from before 2026-10-10: pages only
+      var cands = [];
+      cfg.majors.forEach(function (m) {
+        var cur = curricula[m.slug]; if (!cur) return;
+        cur.courses.filter(function (c) { return c.status === "active"; }).forEach(function (c) {
+          var topic = c.topic || m.slug;
+          (c.lessons || []).filter(function (s) { return (c.completed || []).indexOf(s) < 0; }).forEach(function (s) { cands.push(topic + "/" + s); });
+        });
+      });
+      return Promise.all(cands.map(function (pg) {
+        var parts = pg.split("/");
+        return fetch("../topics/" + parts[0] + "/lessons/" + parts[1] + ".html").then(function (r) { return r.ok ? r.text() : ""; })
+          .then(function (html) {
+            var doc = new DOMParser().parseFromString(html, "text/html");
+            var total = Array.prototype.filter.call(doc.querySelectorAll(".quiz[data-type]"), function (q) { return !/^read-/.test(q.dataset.id || ""); }).length;
+            var n = Math.max(Object.keys(items[pg] || {}).length, srvN[pg] || 0);
+            if (oldServer.indexOf(pg) >= 0 && !n) n = 1;
+            prog[pg] = { answered: n, total: total, rated: !!rated[pg] };
+          }).catch(function () {});
+      })).then(function () { return prog; });
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -165,7 +203,7 @@
       var curricula = {};
       return Promise.all(cfg.majors.filter(function (m) { return m.curriculum; }).map(function (m) {
         return getJSON("../" + m.curriculum).then(function (c) { curricula[m.slug] = c; }).catch(function () {});
-      })).then(answeredPages).then(function (answered) { render(planFor(cfg, curricula, new Date(), answered)); });
+      })).then(function () { return progressFor(cfg, curricula); }).then(function (prog) { render(planFor(cfg, curricula, new Date(), prog)); });
     }).catch(function (e) {
       document.getElementById("today-status").textContent = "Couldn't load the plan (" + e.message + ").";
     });

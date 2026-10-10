@@ -121,7 +121,9 @@ def test_pretest_answers_never_scheduled():
 def test_pages_lists_answered_lessons():
     got = c.get("/pages", params={"topic": "chess"}, headers=T).json()["pages"]
     assert "chess/0003-forks" in got and all(p.startswith("chess/") for p in got)
-    assert c.get("/pages", params={"topic": "nope"}, headers=T).json() == {"pages": []}
+    assert c.get("/pages", params={"topic": "nope"}, headers=T).json() == {"pages": [], "answered": {}, "rated": []}
+    j = c.get("/pages", params={"topic": "chess"}, headers=T).json()
+    assert j["answered"]["chess/0003-forks"] >= 2 and "chess/0003-forks" in j["rated"]   # fork-1, fork-2; rated "too-hard"
     assert c.get("/pages").status_code == 401
 
 
