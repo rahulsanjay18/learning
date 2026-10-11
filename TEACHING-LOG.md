@@ -117,6 +117,9 @@ Rules 11, 13 and 18 are format and logistics.
 34. **Review is driven by mastery and time.** The daily deck brings back what isn't known yet (missed, skipped, guessed, or graded Not
     yet in `topics/<t>/mastery.json`) first, and known items only once stale (two weeks or more). One question per family per day,
     about 10 minutes, at most one free response. Every learning record that grades objectives updates `mastery.json`. (Entry 33)
+35. **Positions: your game for the story, many others for practice.** A lesson's worked example may come from the learner's own game,
+    but its practice uses fresh positions from varied sources (puzzle databases by theme, the course book's diagrams, master games),
+    each engine-checked; no more than one or two positions per lesson from the same game. (Entry 35)
 
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
@@ -222,3 +225,7 @@ Rules 11, 13 and 18 are format and logistics.
     only error was the order of two developments, which the prompt didn't ask for. Fix: regraded Got it, re-teach removed. Rule 25
     widened: before calling an objective Not yet, quote the exact false clause, check it against the assigned text, and check that it
     is about the objective itself, not a side detail.
+35. **2026-10-11 · "you keep using the same positions for a lot of chess exercises, maybe pull more for more variety?"** Chess 0003 and
+    0004 drew almost every position from the same two bot games (the 2 Oct game alone gave 6), so practice repeated boards the learner
+    had already seen. Fix: rule 35. Next chess lesson (0005, the double attack) draws practice from the Lichess puzzle database (tagged by
+    theme and rating) and *Winning Chess Tactics* diagrams, engine-checked.

@@ -24,3 +24,7 @@
 - Lessons 0001–0002 have no quiz data-ids, so lp.js uses positional ids (q1, q2, ...). NEVER reorder or insert quizzes in them,
   or their review schedules break. Give every quiz in 0003+ a data-id.
 - Results: L1 9/10, L2 8/9 (missed q6 = count 6 checks after Kf1). Game 2 (6 Oct, Black): WON by mate; see LR 0005. Plan: L3 = "what did their move do?", L4 = "what did my move stop defending?".
+
+- 2026-10-11: learner asked for more position variety (TEACHING-LOG rule 35). From 0005 on: own game for the motivating example only;
+  practice from the Lichess puzzle database (filter by theme, e.g. fork / hangingPiece / discoveredAttack, and rating ~1000–1400) and
+  Seirawan's diagrams, each checked with Stockfish. Reviewing 0003/0004's practice items for variety is optional; not done.
