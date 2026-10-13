@@ -94,6 +94,15 @@ await page.click(`${q("choice")} button:text-is("Spacing")`);
 await expectOk("choice");
 
 await page.fill(`${q("number")} input`, "64"); await page.click(`${q("number")} button`); await expectOk("number");
+{ // number boxes evaluate arithmetic when math.js is loaded (TEACHING-LOG 36): a rendered lesson with a number quiz
+  const np = await newPage();
+  await np.goto(`${BASE}/topics/statistics/lessons/0007-conditional-probability-and-independence.html`);
+  const nq = `.quiz[data-id="indep2-v1"]`;
+  await np.fill(`${nq} input`, "1-(35/36)^24"); await np.click(`${nq} button`);
+  if ((await np.locator(`${nq} input`).getAttribute("class")) !== "ok") fail("number: expression 1-(35/36)^24 not accepted");
+  else console.log("ok   number: expression answer accepted");
+  await np.close();
+}
 await page.fill(`${q("exact")} input`, "  paris "); await page.click(`${q("exact")} button`); await expectOk("exact");
 
 const blanks = page.locator(`${q("cloze")} input.blank`);

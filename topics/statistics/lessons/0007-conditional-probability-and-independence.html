@@ -53,8 +53,8 @@
 <p>(C&amp;B Definition 1.3.2.) \(B\) becomes the new sample space: \(P(B \mid B) = 1\). Why \(P(B) &gt; 0\)? It's a denominator.</p></div><div class="step"><p><strong>A check that it's a real probability.</strong> For fixed \(B\), the function \(A \mapsto P(A \mid B)\) satisfies all three axioms (C&amp;B Exercise 1.35), so every theorem from lesson 6 (complements, unions, Bonferroni) also holds <em>given</em> \(B\).</p></div></div>
 <p><strong>Say it this way:</strong> "\(P(A \mid B)\) is the probability of \(A\) once we know \(B\) happened." <strong>Not this:</strong> "the probability that \(A\) causes \(B\)", or "\(P(A\) and \(B)\)". Conditioning is about information, not causes, and \(P(A \mid B)\) is never smaller than \(P(A \cap B)\), since you divide by \(P(B) \le 1\).</p>
 <p>The formula boxes below take fractions and expressions: type <code>3/7</code> or <code>(2/36)/(9/36)</code>; use <code>*</code> for ×, <code>/</code>, <code>^</code> for powers.</p>
-<div class="quiz" data-type="number" data-id="condp-v1" data-answer="0.4545" data-tolerance="0.0005">
-<p class="prompt">Two fair dice are rolled. Given that at least one die shows a 6, what is the probability that the sum is 10 or more? (A fraction or a decimal.)</p>
+<div class="quiz" data-type="number" data-id="condp-v1" data-answer="0.4545" data-tolerance="0.005">
+<p class="prompt">Two fair dice are rolled. Given that at least one die shows a 6, what is the probability that the sum is 10 or more? (A fraction, or a decimal to two places or better.)</p>
 <div class="explain" hidden><p>Outcomes with at least one 6: 6 + 6 − 1 = 11 (the pair (6,6) is counted once). Of those, the sum is at least 10 for (4,6), (6,4), (5,6), (6,5), (6,6): 5 of them. So the answer is \(5/11\). Same as the formula: \(\frac{5/36}{11/36}\).</p></div>
 </div>
 <h3>2 · Bayes' rule, and exactly what it assumes (from the reading)</h3>
@@ -76,7 +76,7 @@
 <p>Now a calculation, the kind Bayes' rule is for. Here's one fully worked first, then yours.</p>
 <div class="lp-worked"><div class="step"><p><strong>Example (adapted from C&amp;B Exercise 1.34).</strong> Litter 1 has 2 brown and 1 gray pup; litter 2 has 3 brown and 2 gray. Pick a litter at random (each \(1/2\)), then a pup at random from it. The pup is brown. Which litter did it come from?</p></div><div class="step"><p><strong>Partition:</strong> \(L_1, L_2\), each probability \(1/2\). <strong>Likelihoods:</strong> \(P(\text{brown} \mid L_1) = 2/3\), \(P(\text{brown} \mid L_2) = 3/5\).</p></div><div class="step"><p><strong>Total probability:</strong> \(P(\text{brown}) = \frac{2}{3}\cdot\frac12 + \frac35\cdot\frac12 = \frac13 + \frac{3}{10} = \frac{19}{30}\).</p></div><div class="step"><p><strong>Bayes:</strong> \(P(L_1 \mid \text{brown}) = \dfrac{1/3}{19/30} = \dfrac{10}{19} \approx 0.53\). A brown pup is slight evidence for litter 1, because brown is a slightly larger share there.</p></div></div>
 
-<div class="quiz" data-type="number" data-id="bayescalc-v1" data-answer="0.6774" data-tolerance="0.0005">
+<div class="quiz" data-type="number" data-id="bayescalc-v1" data-answer="0.6774" data-tolerance="0.005">
 <p class="prompt"><em>Adapted from Casella &amp; Berger, Exercise 1.34, numbers changed.</em> Litter 1 has 3 brown and 2 gray pups; litter 2 has 2 brown and 5 gray. A litter is chosen at random (each with probability 1/2), then a pup at random from that litter. The pup is brown. What is the probability it came from litter 1? (A fraction, decimal or expression.)</p>
 <div class="explain" hidden><p>\(P(\text{brown}) = \frac12\cdot\frac35 + \frac12\cdot\frac27 = \frac{31}{70}\), so \(P(L_1 \mid \text{brown}) = \dfrac{3/10}{31/70} = \dfrac{21}{31}\approx 0.677\).</p></div>
 </div>
@@ -94,8 +94,8 @@
 <div class="explain" hidden><p>Disjoint means \(P(A \cap B) = 0\), but \(P(A)P(B) = 0.12\). Learning \(A\) happened tells you \(B\) certainly didn't: that's maximal dependence. Disjoint events with positive probabilities are never independent (C&amp;B Exercise 1.39).</p></div>
 </div>
 
-<div class="quiz" data-type="number" data-id="indep2-v1" data-answer="0.4914" data-tolerance="0.0005">
-<p class="prompt"><em>Beyond the reading: a second dice bet, the companion to C&amp;B Example 1.3.8.</em> A pair of fair dice is thrown 24 times, independently. What is the probability of at least one double six? Answer as a decimal (0.10 means 10%); expressions like <code>1-(5/6)^4</code> are fine.</p>
+<div class="quiz" data-type="number" data-id="indep2-v1" data-answer="0.4914" data-tolerance="0.005">
+<p class="prompt"><em>Beyond the reading: a second dice bet, the companion to C&amp;B Example 1.3.8.</em> A pair of fair dice is thrown 24 times, independently. What is the probability of at least one double six? Answer as a decimal (0.10 means 10%; two decimal places is enough); expressions like <code>1-(5/6)^4</code> are fine.</p>
 <div class="explain" hidden><p>"At least one" is the complement of "none". Each throw misses double six with probability \(35/36\), and independence turns "all 24 miss" into a product: \(1 - (35/36)^{24} \approx 0.491\). Just under a half, so it loses at even money, even though 4 rolls of one die (C&amp;B Example 1.3.8) wins.</p></div>
 </div>
 <h3>4 · Three or more events: pairwise is not mutual (from the reading, plus one example beyond it)</h3>

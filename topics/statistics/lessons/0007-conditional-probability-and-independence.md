@@ -104,8 +104,8 @@ never smaller than \(P(A \cap B)\), since you divide by \(P(B) \le 1\).
 
 The formula boxes below take fractions and expressions: type `3/7` or `(2/36)/(9/36)`; use `*` for ×, `/`, `^` for powers.
 
-::: number condp-v1 answer=0.4545 tolerance=0.0005
-Two fair dice are rolled. Given that at least one die shows a 6, what is the probability that the sum is 10 or more? (A fraction or a decimal.)
+::: number condp-v1 answer=0.4545 tolerance=0.005
+Two fair dice are rolled. Given that at least one die shows a 6, what is the probability that the sum is 10 or more? (A fraction, or a decimal to two places or better.)
 --- explain
 Outcomes with at least one 6: 6 + 6 − 1 = 11 (the pair (6,6) is counted once). Of those, the sum is at least 10 for (4,6), (6,4),
 (5,6), (6,5), (6,6): 5 of them. So the answer is \(5/11\). Same as the formula: \(\frac{5/36}{11/36}\).
@@ -174,7 +174,7 @@ litter at random (each \(1/2\)), then a pup at random from it. The pup is brown.
 because brown is a slightly larger share there.
 :::
 
-::: number bayescalc-v1 answer=0.6774 tolerance=0.0005
+::: number bayescalc-v1 answer=0.6774 tolerance=0.005
 *Adapted from Casella & Berger, Exercise 1.34, numbers changed.* Litter 1 has 3 brown and 2 gray pups; litter 2 has 2 brown and
 5 gray. A litter is chosen at random (each with probability 1/2), then a pup at random from that litter. The pup is brown.
 What is the probability it came from litter 1? (A fraction, decimal or expression.)
@@ -229,9 +229,9 @@ Disjoint means \(P(A \cap B) = 0\), but \(P(A)P(B) = 0.12\). Learning \(A\) happ
 dependence. Disjoint events with positive probabilities are never independent (C&B Exercise 1.39).
 :::
 
-::: number indep2-v1 answer=0.4914 tolerance=0.0005
+::: number indep2-v1 answer=0.4914 tolerance=0.005
 *Beyond the reading: a second dice bet, the companion to C&B Example 1.3.8.* A pair of fair dice is thrown 24 times, independently.
-What is the probability of at least one double six? Answer as a decimal (0.10 means 10%); expressions like `1-(5/6)^4` are fine.
+What is the probability of at least one double six? Answer as a decimal (0.10 means 10%; two decimal places is enough); expressions like `1-(5/6)^4` are fine.
 --- explain
 "At least one" is the complement of "none". Each throw misses double six with probability \(35/36\), and independence turns
 "all 24 miss" into a product: \(1 - (35/36)^{24} \approx 0.491\). Just under a half, so it loses at even money,

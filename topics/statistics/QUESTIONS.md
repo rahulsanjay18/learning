@@ -195,3 +195,29 @@ naming A, and he never names the pardoned one.
   B's and C's 1/3 each sit on one row (the warden is forced). So A holds 2 of 4 outcomes but only 1/3 of the probability.
   Then "says B" leaves 2 outcomes, (A, B) at 1/6 and (C, B) at 1/3: half the outcomes, a third of the probability.
   **Counting outcomes gives probabilities only when the outcomes are equally likely** (C&B §1.2.4, "Enumerating Outcomes").
+
+## 2026-10-13 · Lesson 0007: reading-guide and proof replies
+- **"The pup problem didn't accept my expression; .49 for the dice wasn't accepted; I got both right."** The dice one: you were
+  right, and the page was wrong. The number boxes didn't evaluate expressions (only plain numbers and fractions) even though the
+  page said they did, and the tolerance was too tight for a two-decimal answer the prompt never ruled out. Both fixed; counted as
+  right. The pup one: the answer recorded first was `3/10+1/7`. That is P(brown) = 31/70, the denominator. The question asked
+  P(litter 1 | brown) = (3/10) / (3/10 + 1/7). If you had typed the full ratio, the box now accepts it.
+- **read-condp (1.0).** Right on both points, and the 0/0 observation is sharp: if P(B) = 0 then P(A ∩ B) = 0 too, so the ratio
+  is 0/0, not just "divide by zero". (Positivity is a separate requirement from Axiom 1's nonnegativity: Axiom 1 allows 0.)
+- **read-prisoner (0.9).** The calculation is exactly right (1/6 over 1/2 gives 1/3). One fix to the first sentence: "the warden
+  says B dies" is *not* the same as "B is not pardoned"; treating them as equal is A's mistake. We worked through this in chat.
+- **read-twofail (1.0).** Exactly right.
+- **bayes-v3, the partition proof (0.8, Got it).** Positivity stated, no independence used: that was the pretest gap, and it's
+  closed. Your route is unusual and valid: rewrite each term as P(Aj | B)P(B), pull out P(B), and use Σ P(Aj | B) = P(S | B) = 1.
+  Four fixes:
+  1. Additivity over the disjoint Aj ∩ B is **Axiom 3**, not Definition 1.3.12. That definition is mutual independence, which
+     has nothing to do with this step.
+  2. You wrote ∩ (n) where you meant ∪: P(∪ Aj) = Σ P(Aj).
+  3. "P(S ∩ B) = P(S) = 1" is false. S ∩ B = B, so P(S ∩ B) = P(B), and P(S | B) = P(B)/P(B) = 1. That is where P(B) > 0 is used.
+  4. Σ P(Aj | B) = P(S | B) uses the fact that P(· | B) is itself a probability function (C&B Exercise 1.35), so cite that.
+  The book's route is shorter: P(B) = Σ P(B ∩ Aj) by Axiom 3, then each term is P(B | Aj)P(Aj).
+- **condp-v1 (you answered 1/2).** 1/2 is right for "the *first* die is 6" (then the other die needs 4, 5 or 6). "At least one
+  die is 6" is a different piece of news: 11 outcomes, with (6,6) counted once, and 5 of them have sum ≥ 10, so 5/11. It's the
+  three-prisoners lesson again: condition on exactly what you were told.
+- **indep2-v2 (you answered "yes, independent").** Disjoint events with positive probabilities are never independent:
+  P(A ∩ B) = 0 but P(A)P(B) = 0.12. Learning A happened tells you B didn't, which is the opposite of "tells you nothing".

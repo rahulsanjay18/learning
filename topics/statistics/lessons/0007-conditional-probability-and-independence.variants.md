@@ -3,13 +3,13 @@
 ::: number condp-v2 answer=0.0449 tolerance=0.0005
 *Adapted from Casella & Berger, Example 1.3.3 (four aces), changed to hearts.* Four cards are dealt from the top of a
 well-shuffled 52-card deck. Given that the first two cards are both hearts, what is the probability that all four are hearts?
-(A fraction, a decimal, or an expression such as `choose(11,2)/choose(50,2)`.)
+(A fraction, a decimal to three significant figures, or an expression such as `choose(5,2)/choose(9,2)`.)
 --- explain
 Once two hearts are gone, 50 cards remain, 11 of them hearts, and the last two cards are a random pair from those 50:
 \(\binom{11}{2}/\binom{50}{2} = 55/1225 \approx 0.045\). Equivalently \(\frac{11}{50}\cdot\frac{10}{49}\).
 :::
 
-::: number condp-v3 answer=0.7903 tolerance=0.0005
+::: number condp-v3 answer=0.7903 tolerance=0.005
 *Adapted from Casella & Berger, Exercise 1.36, numbers changed.* Each shot hits a target with probability 0.3, and 8 shots are
 fired independently. Given that the target is hit at least once, what is the probability it is hit at least twice? (A decimal,
 or an expression: `*` for ×, `/`, `^` for powers.)
@@ -40,7 +40,7 @@ independence. It comes from writing \(P(A \cap B)\) two ways with the definition
 
 ## bayescalc
 
-::: number bayescalc-v2 answer=0.931 tolerance=0.0005
+::: number bayescalc-v2 answer=0.931 tolerance=0.005
 *Adapted from Casella & Berger, Example 1.3.6 and Exercise 1.41, numbers changed.* Morse code symbols are dots and dashes in the
 proportion 2:3. Interference turns a dot into a dash with probability 1/10, and a dash into a dot with probability 1/10. A dash
 is received. What is the probability a dash was sent? (A fraction, decimal or expression.)
@@ -49,7 +49,7 @@ is received. What is the probability a dash was sent? (A fraction, decimal or ex
 So \(P(\text{dash sent} \mid \text{dash recv}) = \dfrac{27/50}{29/50} = \dfrac{27}{29} \approx 0.931\).
 :::
 
-::: number bayescalc-v3 answer=0.2687 tolerance=0.0005
+::: number bayescalc-v3 answer=0.2687 tolerance=0.005
 A condition affects 2% of people. A test detects it 90% of the time when it's present (so its false negative rate is 10%), and
 gives a false positive 5% of the time when it's absent. A randomly chosen person tests positive. What is the probability they
 have the condition? (A decimal or an expression.)
@@ -60,7 +60,7 @@ positives because the condition is rare: the prior matters.
 
 ## indep2
 
-::: number indep2-v3 answer=0.55 tolerance=0.0005
+::: number indep2-v3 answer=0.55 tolerance=0.005
 \(A\) and \(B\) are independent events with \(P(A) = 0.4\) and \(P(B) = 0.25\). What is \(P(A \cup B)\)? (A decimal.)
 --- explain
 By C&B Theorem 1.3.9, \(A^c\) and \(B^c\) are independent too, so \(P(A \cup B) = 1 - P(A^c \cap B^c) = 1 - 0.6 \cdot 0.75 = 0.55\).
@@ -84,7 +84,7 @@ but nothing forces it). Mutual independence needs every subcollection, pairs inc
 
 ::: number mutual-v5 answer=0.0556 tolerance=0.0005
 *From Casella & Berger, Example 1.3.10.* Two fair dice are tossed. \(A\) = doubles appear; \(B\) = the sum is between 7 and 10
-(inclusive). What is \(P(A \cap B)\)? (A fraction or a decimal.) Then compare it with \(P(A)P(B) = \frac16 \cdot \frac12\).
+(inclusive). What is \(P(A \cap B)\)? (A fraction, or a decimal to three significant figures.) Then compare it with \(P(A)P(B) = \frac16 \cdot \frac12\).
 --- explain
 Doubles with sum 7 to 10: (4,4) and (5,5), so \(P(A \cap B) = 2/36 = 1/18\), while \(P(A)P(B) = 1/12\). Not independent, even
 though \(P(A \cap B \cap C) = P(A)P(B)P(C)\) for \(C\) = sum 2, 7 or 8.

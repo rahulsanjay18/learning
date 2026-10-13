@@ -101,7 +101,7 @@ QUIZ_TYPES = {"choice", "number", "exact", "cloze", "order", "categorize", "reca
 DIV_CLASSES = {"board": "board-wrap", "go": "go-board", "plot": "lp-plot", "timeline": "lp-timeline", "map": "lp-map",
                "game": "lp-game", "xiangqi": "xq-board", "shogi": "shogi-board", "python": "lp-py", "video": "lp-video",
                "worked": "lp-worked", "deck": "lp-deck", "reading": "reading", "callout": "callout", "sim": "lp-sim", "diagram": "lp-diagram"}
-PLUGIN_OF = {"chess-move": ["chess"], "board-wrap": ["chess"], "go-move": ["go"], "go-board": ["go"], "math": ["math"],
+PLUGIN_OF = {"number": ["math"], "chess-move": ["chess"], "board-wrap": ["chess"], "go-move": ["go"], "go-board": ["go"], "math": ["math"],
              "plot-set": ["math", "plot"], "lp-plot": ["math", "plot"], "timeline-place": ["timeline"], "lp-timeline": ["timeline"],
              "map-locate": ["map"], "lp-map": ["map"], "py": ["python"], "lp-py": ["python"], "game-move": ["games"],
              "lp-game": ["games"], "xiangqi-move": ["xiangqi"], "xq-board": ["xiangqi"], "shogi-move": ["shogi"],

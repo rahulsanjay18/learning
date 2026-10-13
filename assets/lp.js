@@ -251,12 +251,20 @@
     if (f && parseFloat(f[2]) !== 0) return parseFloat(f[1]) / parseFloat(f[2]);
     return NaN;
   }
-  // True if `given` matches any accepted answer (text, or number within tolerance; fractions count as numbers).
+  // Arithmetic like "1-(35/36)^24", via the math plugin's parser when the page loads it; NaN otherwise.
+  function numOrExpr(t) {
+    var v = num(t);
+    if (!isNaN(v) || !window.LPMath) return v;
+    try { var n = window.LPMath.parse(t); return window.LPMath.vars(n).length ? NaN : window.LPMath.evaluate(n); }
+    catch (e) { return NaN; }
+  }
+  // True if `given` matches any accepted answer (text, or number within tolerance; fractions count as numbers;
+  // with opts.expr, so do arithmetic expressions).
   function matches(given, accepted, opts) {
     opts = opts || {};
     var g = norm(given, opts.caseSensitive);
     return accepted.some(function (a) {
-      var gn = num(g), an = num(String(a).trim());
+      var gn = opts.expr ? numOrExpr(g) : num(g), an = num(String(a).trim());
       var numeric = !isNaN(gn) && !isNaN(an);
       if (numeric && !isNaN(gn) && !isNaN(an)) return Math.abs(gn - an) <= (opts.tolerance || 0) + 1e-9;
       return g === norm(a, opts.caseSensitive);
@@ -297,7 +305,7 @@
     var b = el("button", null, "Check");
     function check() {
       if (!input.value.trim()) return;
-      var ok = matches(input.value, accepted, { tolerance: parseFloat(q.dataset.tolerance) || 0, caseSensitive: q.dataset.case === "true" });
+      var ok = matches(input.value, accepted, { tolerance: parseFloat(q.dataset.tolerance) || 0, caseSensitive: q.dataset.case === "true", expr: q.dataset.type === "number" });
       ctx.result(ok, input.value);
       input.className = ok ? "ok" : "no";
       if (ok) { input.disabled = true; b.disabled = true; }

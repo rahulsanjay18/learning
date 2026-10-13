@@ -43,7 +43,7 @@ Rules 11, 13 and 18 are format and logistics.
 14. **Check paraphrases against the source sentence**, not memory of it: reread the passage before compressing it. (Entry 14)
 15. **Reading guides flag notation traps:** where the source writes a familiar formula in an unfamiliar form (√(σ²/n) for σ/√n)
     or sets up an example earlier than the slice starts, say so in the reading box. (Entry 15)
-11. **Remind the learner that formula boxes take expressions** (`8/28`, `160*0.05/(...)`), so arithmetic slips don't cost a question,
+11. **Remind the learner that formula boxes take expressions** (`number` boxes do since 2026-10-13 via math.js, which the renderer loads; **state the precision you need and set the tolerance to match it**) (`8/28`, `160*0.05/(...)`), so arithmetic slips don't cost a question,
     **and say how to type them**: `*` for ×, `/`, `^`, `sqrt( )`, on every page with a formula box. (Entries 9, 18)
 16. **Every problem is self-contained.** Restate every number and condition it needs (the setup, the threshold, the sample size);
     never "lesson 2's test" or "our test". The learner does one lesson a day and the review deck shows questions out of context.
@@ -229,3 +229,8 @@ Rules 11, 13 and 18 are format and logistics.
     0004 drew almost every position from the same two bot games (the 2 Oct game alone gave 6), so practice repeated boards the learner
     had already seen. Fix: rule 35. Next chess lesson (0005, the double attack) draws practice from the Lichess puzzle database (tagged by
     theme and rating) and *Winning Chess Tactics* diagrams, engine-checked.
+36. **2026-10-13 · "I put an expression for the pup problem and it didn't accept it. Also I put .49 for the pair of dice problem and
+    it didn't accept it."** Statistics 0007 said its `number` boxes took expressions; they took only plain numbers and fractions,
+    so `1-(35/36)^24` (right) was scored wrong. And a "decimal" answer of 0.49 failed a 0.0005 tolerance the prompt never stated.
+    Fix: `number` boxes evaluate arithmetic through math.js, the renderer loads math.js for every `number`, prompts state the
+    precision, tolerance 0.005 for answers above 0.2; rule 11 amended. (The pup answer itself, 3/10 + 1/7, was the denominator: not this bug.)

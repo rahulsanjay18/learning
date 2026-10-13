@@ -42,3 +42,4 @@ After the pretest there is **always one summary lesson** (learner's request, 202
   S201 pretest. S201 lessons renumbered 0005–0010. Lessons follow TEACHING-LOG rule 21 (reason first, name second).
 - 2026-10-06: Ch. 1 pretest → §1.1 skipped; 0006–0009 teach the gaps (definitions and proofs; calculations were solid); 0010 summary; 0011 check. Details: NOTES.md.
 - 2026-10-06: merged §1.4–1.6 into one lesson (0008; ~10 pages, sections build on each other), learner's suggestion; summary 0009, check 0010.
+- 2026-10-13: lesson 0007 results: both objectives Got it; Not yet on "at least one 6" vs "the first die is 6" and on disjoint vs independent. Lesson 0008 opens with a 5-minute re-teach of each, plus warm-ups (the {1,2,3,4} counterexample, one Bayes calculation). Syllabus otherwise unchanged.

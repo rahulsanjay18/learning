@@ -73,7 +73,7 @@ Common children: `<p class="prompt">` (the question) and `<div class="explain" h
 | type | attributes / children | graded |
 |---|---|---|
 | `choice` | `data-options="a\|b\|c"` `data-answer="b"` `[data-shuffle="true"]`. **All options the same word count** (lint warns). | auto |
-| `number` | `data-answer="5"` `[data-tolerance="0.1"]`. Numeric keyboard on phones. | auto |
+| `number` | `data-answer="5"` `[data-tolerance="0.1"]`. Numeric keyboard on phones. Accepts numbers, fractions and, when `plugins/math.js` is loaded (the Markdown renderer always loads it for `number`), arithmetic like `1-(35/36)^24` or `choose(5,2)/36`. Hand-written pages without math.js: plain numbers and fractions only. | auto |
 | `exact` | `data-answer="Paris\|Paris, France"` (accepted forms) `[data-case="true"]` | auto |
 | `cloze` | blanks inline in `.prompt`: `boils at [[100]] °C … [[0\|zero]]` | auto |
 | `order` | `data-items="first\|second\|third"` in the **correct** order; shown shuffled | auto |
