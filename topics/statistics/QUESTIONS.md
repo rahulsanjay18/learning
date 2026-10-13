@@ -221,3 +221,13 @@ naming A, and he never names the pardoned one.
   three-prisoners lesson again: condition on exactly what you were told.
 - **indep2-v2 (you answered "yes, independent").** Disjoint events with positive probabilities are never independent:
   P(A ∩ B) = 0 but P(A)P(B) = 0.12. Learning A happened tells you B didn't, which is the opposite of "tells you nothing".
+
+## 2026-10-13 · "Is getting it right on the second try worth anything?"
+**For learning, yes. As evidence of what you already knew, less so, and how much less depends on the question type.**
+- **Learning:** a wrong attempt followed by quick feedback teaches more than just reading the answer (Kornell, Hays & Bjork 2009,
+  JEP:LMC 35(4), 989–998; the benefit needs *immediate* feedback: Hays, Kornell & Bjork 2012). Errors you were confident in get
+  corrected best ("hypercorrection"; Metcalfe 2017, *Annu. Rev. Psychol.* 68, 465–489). So the second try is where the learning happens.
+- **Evidence:** on a typed number, getting it right after a bare "wrong" is real evidence (you can't guess 5/11). On a 3-option
+  choice, the second try is a coin flip between two options, so it says little.
+- **What the pages did (checked in lp.js):** only the first try was logged; retries updated the screen and nothing else. So I
+  couldn't see a second-try success, and grading treated every first-try miss the same. Proposed fix: log tries-until-right.
