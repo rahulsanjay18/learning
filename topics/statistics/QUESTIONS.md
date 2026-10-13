@@ -189,3 +189,9 @@ naming A, and he never names the pardoned one.
   The restriction is also what makes A's reasoning fail. If the warden could name *any* prisoner who isn't pardoned, A included,
   each equally likely, then "B dies" really would give P(A | W) = 1/2 (checked by exact computation), because the warden could
   have said "A dies" and didn't. A's 1/2 is the right answer to that other problem.
+- **Follow-up: "the table has 4 outcomes, 2 of them A, so isn't it 1/2?"** Two separate steps, and a counting trap.
+  (1) The 6 pairs (pardoned, named) drop to 4 because of A's *question* (the warden may not name A), before the warden says
+  anything. (2) The 4 outcomes are **not equally likely**: A's 1/3 is split over two rows (1/6 each, by the warden's coin), while
+  B's and C's 1/3 each sit on one row (the warden is forced). So A holds 2 of 4 outcomes but only 1/3 of the probability.
+  Then "says B" leaves 2 outcomes, (A, B) at 1/6 and (C, B) at 1/3: half the outcomes, a third of the probability.
+  **Counting outcomes gives probabilities only when the outcomes are equally likely** (C&B §1.2.3, equally likely outcomes).
