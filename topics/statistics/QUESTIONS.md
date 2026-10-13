@@ -166,3 +166,20 @@ rate = 1 − power). The one miss, `pow-80` (80% power needs the effect ≈ 2.8 
 Yes. The page already sent the wrong answer to the progress server when sync was on; only the copied results line dropped it.
 The line now adds `miss <id>: <your first wrong answer>` for each missed quiz (same as the `free` lines), so a near miss
 (two steps swapped) can be told apart from a misconception without sync. Grading still uses the first try.
+
+## 2026-10-13 · Three prisoners (C&B Example 1.3.4): "If we know B dies, it's A or C, so 1/2. How is the warden right?"
+**Your 1/2 is right for a different piece of news.** If you learn only "B is not pardoned" (the event Bᶜ), then A and C are
+equally likely and P(A | Bᶜ) = 1/2. What A actually learns is "the warden *said* B dies" (W). Those are different events,
+because the warden is constrained: he never names A, and he never names the pardoned one.
+- **The sample space has to record what the warden says**, not just who is pardoned. It has four outcomes, and they aren't
+  equally likely: (A pardoned, says B) 1/6, (A, says C) 1/6, (B, says C) 1/3, (C, says B) 1/3. If C is pardoned, the warden
+  *must* say B. If A is pardoned, he says B only half the time.
+- **Condition on W:** P(A | W) = (1/6) / (1/6 + 1/3) = 1/3, and P(C | W) = 2/3. Simulation, a million trials: 0.334 and 0.666.
+- **Why it feels like 1/2:** "B dies" is twice as likely to be said when C is pardoned (forced) as when A is (a coin flip). So
+  hearing it is evidence for C, not for A. A's own chance can't move because whatever A is told, "B dies" or "C dies", the answer is 1/3.
+- **The answer depends on how the warden picks** (C&B Exercise 1.37a). If he names B whenever he can, P(A | W) = 1/2 (your
+  answer); if he names C whenever he can, then hearing "B dies" means C must be the one pardoned, so P(A | W) = 0. In general it is
+  γ/(1 + γ), where γ = P(says B | A pardoned).
+  The book's 1/3 assumes a fair coin.
+- **Same structure as Monty Hall** (the book mentions it right after the exercise): the host's forced choice carries information.
+- **The sentence to reuse:** "Condition on what you were told *and how the teller chose it*, not on the fact it implies."
