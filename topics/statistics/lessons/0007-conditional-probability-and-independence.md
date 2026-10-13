@@ -24,7 +24,8 @@ things weren't: the Bayes' rule proof leaned on independence and never said whic
   coding example 1.3.6 (we redo one like it below).
 - **Notation traps.** Equation (1.3.5) is Bayes' rule for two events; Theorem 1.3.5 is the same rule for a whole *partition*
   \(A_1, A_2, \dots\), and its denominator \(\sum_j P(B \mid A_j)P(A_j)\) is just \(P(B)\) written out piece by piece.
-  In Definition 1.3.12, "any subcollection" means every pair, every triple, and so on up to all \(n\) events at once.
+  The theorem says "let \(B\) be any set" and leaves the positivity conditions unstated: it needs \(P(B) > 0\) and each \(P(A_j) > 0\),
+  or the conditional probabilities in it don't exist. In Definition 1.3.12, "any subcollection" means every pair, every triple, and so on up to all \(n\) events at once.
 - Example 1.3.11 (letters): the sample space has 9 outcomes, each with probability \(1/9\). The book's "it is easy to count"
   hides the counting; do it on paper.
 :::
@@ -46,7 +47,7 @@ could have named C instead, so P(W | A) = 1/2, and P(A | W) = 1/3, not 1/2.
 ::: free read-twofail
 Examples 1.3.10 and 1.3.11 each knock out a candidate definition of "A, B, C are independent". Which candidate does each one knock out?
 --- rubric
-1.3.10 (two dice): the triple product P(A∩B∩C) = P(A)P(B)P(C) holds, but pairs fail, so the triple product alone is too weak.
+1.3.10 (two dice): the triple product P(A∩B∩C) = P(A)P(B)P(C) holds, but two of the three pairs fail, so the triple product alone is too weak.
 1.3.11 (letters): every pair is independent, but the triple product fails, so "all pairs" is too weak too.
 :::
 
@@ -67,12 +68,11 @@ probability and in the independence of complements.
 
 ::: order wu-mono
 Put the steps of this proof in order. Claim (C&B Theorem 1.2.9c): if \(A \subset B\), then \(P(A) \le P(B)\).
-- Write \(B = A \cup (B \cap A^c)\); the two pieces are disjoint because \(A \subset B\).
+- Since \(A \subset B\), write \(B = A \cup (B \cap A^c)\); the two pieces are disjoint.
 - By Axiom 3, \(P(B) = P(A) + P(B \cap A^c)\).
-- By Axiom 1, \(P(B \cap A^c) \ge 0\).
-- So \(P(B) \ge P(A)\).
+- Since \(P(B \cap A^c) \ge 0\) by Axiom 1, \(P(B) \ge P(A)\).
 --- explain
-The same partition trick as the complement rule: split the bigger set into disjoint pieces, add (Axiom 3), then drop a
+The same partition trick as the complement rule: split the bigger set into disjoint pieces (\(A \subset B\) is what makes \(A\) one of them), add (Axiom 3), then drop a
 nonnegative piece (Axiom 1).
 :::
 
@@ -100,24 +100,15 @@ $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}.$$
 
 **Say it this way:** "\(P(A \mid B)\) is the probability of \(A\) once we know \(B\) happened." **Not this:** "the probability
 that \(A\) causes \(B\)", or "\(P(A\) and \(B)\)". Conditioning is about information, not causes, and \(P(A \mid B)\) is
-usually much bigger than \(P(A \cap B)\).
+never smaller than \(P(A \cap B)\), since you divide by \(P(B) \le 1\).
 
-The formula boxes below take fractions and expressions: type `5/11` or `(1/36)/(5/36)`; use `*` for ×, `/`, `^` for powers.
+The formula boxes below take fractions and expressions: type `3/7` or `(2/36)/(9/36)`; use `*` for ×, `/`, `^` for powers.
 
 ::: number condp-v1 answer=0.4545 tolerance=0.0005
 Two fair dice are rolled. Given that at least one die shows a 6, what is the probability that the sum is 10 or more? (A fraction or a decimal.)
 --- explain
 Outcomes with at least one 6: 6 + 6 − 1 = 11 (the pair (6,6) is counted once). Of those, the sum is at least 10 for (4,6), (6,4),
 (5,6), (6,5), (6,6): 5 of them. So the answer is \(5/11\). Same as the formula: \(\frac{5/36}{11/36}\).
-:::
-
-::: number condp-v2 answer=0.0449 tolerance=0.0005
-*Adapted from Casella & Berger, Example 1.3.3 (four aces), changed to hearts.* Four cards are dealt from the top of a
-well-shuffled 52-card deck. Given that the first two cards are both hearts, what is the probability that all four are hearts?
-(A fraction, a decimal, or an expression such as `choose(11,2)/choose(50,2)`.)
---- explain
-Once two hearts are gone, 50 cards remain, 11 of them hearts, and the last two cards are a random pair from those 50:
-\(\binom{11}{2}/\binom{50}{2} = 55/1225 \approx 0.045\). Equivalently \(\frac{11}{50}\cdot\frac{10}{49}\).
 :::
 
 ### 2 · Bayes' rule, and exactly what it assumes (from the reading)
@@ -140,7 +131,7 @@ be \(P(A)\) and the rule would have nothing to tell you.
 (disjoint, union \(S\)): \(B = \bigcup_j (B \cap A_j)\), and the pieces are disjoint, so Axiom 3 gives
 \(P(B) = \sum_j P(B \cap A_j) = \sum_j P(B \mid A_j)\,P(A_j)\) (each \(P(A_j) > 0\)). This is the **law of total probability**.
 --- step
-**Name it.** Putting the two together is C&B Theorem 1.3.5, **Bayes' rule**: for a partition \(A_1, A_2, \dots\) and any \(B\),
+**Name it.** Putting the two together is C&B Theorem 1.3.5, **Bayes' rule**: for a partition \(A_1, A_2, \dots\) with each \(P(A_j) > 0\), and any \(B\) with \(P(B) > 0\),
 $$P(A_i \mid B) = \frac{P(B \mid A_i)\,P(A_i)}{\sum_j P(B \mid A_j)\,P(A_j)}.$$
 :::
 
@@ -191,15 +182,6 @@ What is the probability it came from litter 1? (A fraction, decimal or expressio
 \(P(\text{brown}) = \frac12\cdot\frac35 + \frac12\cdot\frac27 = \frac{31}{70}\), so \(P(L_1 \mid \text{brown}) = \dfrac{3/10}{31/70} = \dfrac{21}{31}\approx 0.677\).
 :::
 
-::: number bayescalc-v2 answer=0.931 tolerance=0.0005
-*Adapted from Casella & Berger, Example 1.3.6 and Exercise 1.41, numbers changed.* Morse code symbols are dots and dashes in the
-proportion 2:3. Interference turns a dot into a dash with probability 1/10, and a dash into a dot with probability 1/10. A dash
-is received. What is the probability a dash was sent? (A fraction, decimal or expression.)
---- explain
-\(P(\text{dash sent}) = 3/5\), \(P(\text{dot sent}) = 2/5\). \(P(\text{dash recv}) = \frac{9}{10}\cdot\frac35 + \frac1{10}\cdot\frac25 = \frac{29}{50}\).
-So \(P(\text{dash sent} \mid \text{dash recv}) = \dfrac{27/50}{29/50} = \dfrac{27}{29} \approx 0.931\).
-:::
-
 **Your proof** (the one proof task for this lesson):
 
 ::: free bayes-v3
@@ -233,9 +215,9 @@ Proof of the first: \(P(A \cap B^c) = P(A) - P(A \cap B) = P(A) - P(A)P(B) = P(A
 :::
 
 **Say it this way:** "Independent means knowing one tells you nothing about the other." **Not this:** "independent means they
-can't happen together"; that's *disjoint*, and it's nearly the opposite (next question).
+can't happen together"; that's *disjoint*, and for events with positive probability it's the opposite of independence.
 
-::: choice indep2-v2
+::: choice indep2-v2 shuffle=true
 Events \(A\) and \(B\) are disjoint, with \(P(A) = 0.3\) and \(P(B) = 0.4\). Are \(A\) and \(B\) independent?
 - [x] No, they are dependent
 - [ ] Yes, they are independent
@@ -248,15 +230,15 @@ dependence. Disjoint events with positive probabilities are never independent (C
 :::
 
 ::: number indep2-v1 answer=0.4914 tolerance=0.0005
-*The Chevalier de Méré's second bet (C&B Example 1.3.8 is his first).* A pair of fair dice is thrown 24 times, independently.
-What is the probability of at least one double six? Answer as a decimal (0.10 means 10%); expressions like `1-(35/36)^24` are fine.
+*Beyond the reading: a second dice bet, the companion to C&B Example 1.3.8.* A pair of fair dice is thrown 24 times, independently.
+What is the probability of at least one double six? Answer as a decimal (0.10 means 10%); expressions like `1-(5/6)^4` are fine.
 --- explain
 "At least one" is the complement of "none". Each throw misses double six with probability \(35/36\), and independence turns
-"all 24 miss" into a product: \(1 - (35/36)^{24} \approx 0.491\). Just under a half, so this was a losing bet at even money,
-which is the puzzle de Méré brought to Pascal.
+"all 24 miss" into a product: \(1 - (35/36)^{24} \approx 0.491\). Just under a half, so it loses at even money,
+even though 4 rolls of one die (C&B Example 1.3.8) wins.
 :::
 
-### 4 · Three or more events: pairwise is not mutual (from the reading)
+### 4 · Three or more events: pairwise is not mutual (from the reading, plus one example beyond it)
 
 This is the main event. You want a definition of "\(A, B, C\) are independent" that lets you multiply any of them together. Let's
 try the two obvious candidates and break both, the way the book does.
@@ -264,9 +246,9 @@ try the two obvious candidates and break both, the way the book does.
 ::: worked
 **Candidate 1: the triple product,** \(P(A \cap B \cap C) = P(A)P(B)P(C)\). C&B Example 1.3.10 (two dice; \(A\) = doubles,
 \(B\) = sum between 7 and 10, \(C\) = sum is 2, 7 or 8) satisfies it: \(1/36 = \frac16\cdot\frac12\cdot\frac13\). But
-\(P(B \cap C) = P(\text{sum 7 or 8}) = 11/36 \ne \frac12\cdot\frac13\). The triple product can hold while pairs fail. **Too weak.**
+\(P(B \cap C) = P(\text{sum 7 or 8}) = 11/36 \ne \frac12\cdot\frac13\), and \(A, B\) fails too (only \(A, C\) happens to hold). The triple product can hold while pairs fail. **Too weak.**
 --- step
-**Candidate 2: all pairs independent.** Try the smallest example there is. Toss a fair coin twice. \(A\) = first toss heads,
+**Candidate 2: all pairs independent.** (Beyond the reading: a smaller example than the book's.) Try the smallest example there is. Toss a fair coin twice. \(A\) = first toss heads,
 \(B\) = second toss heads, \(C\) = the two tosses match. Each has probability \(1/2\). Before revealing: is each pair
 independent? Is the triple?
 --- step
@@ -283,19 +265,19 @@ only the pair equations hold.
 :::
 
 **Say it this way:** "Pairwise independent is weaker than mutually independent: every pair can be independent while the events
-together are not." **Not this:** "If every pair is independent, they're independent." When a statistics book says
-"\(X_1, \dots, X_n\) are independent", it always means *mutually*.
+together are not." **Not this:** "If every pair is independent, they're independent." When a statistics book calls a
+collection of events "independent" without a qualifier, it means *mutually*.
 
 ::: categorize mutual-v1
-A fair coin is tossed twice. \(A\) = first toss heads, \(B\) = second toss heads, \(C\) = the two tosses show the same face.
-Sort each equation.
-- \(P(A \cap B) = P(A)P(B)\) > Holds
-- \(P(A \cap C) = P(A)P(C)\) > Holds
-- \(P(B \cap C) = P(B)P(C)\) > Holds
-- \(P(A \cap B \cap C) = P(A)P(B)P(C)\) > Fails
+*From Casella & Berger, Example 1.3.11.* The sample space is the nine strings aaa, bbb, ccc, abc, bca, cba, acb, bac, cab, each
+with probability \(1/9\). \(A_i\) = the \(i\)th letter is a. Sort each equation.
+- \(P(A_1 \cap A_2) = P(A_1)P(A_2)\) > Holds
+- \(P(A_1 \cap A_3) = P(A_1)P(A_3)\) > Holds
+- \(P(A_2 \cap A_3) = P(A_2)P(A_3)\) > Holds
+- \(P(A_1 \cap A_2 \cap A_3) = P(A_1)P(A_2)P(A_3)\) > Fails
 --- explain
-Every pairwise intersection is \(\{HH\}\) with probability \(1/4 = \frac12\cdot\frac12\). The triple intersection is also
-\(\{HH\}\), probability \(1/4\), not \(1/8\). Pairwise independent, not mutually independent.
+Each \(A_i\) has three strings (aaa and two permutations), so \(P(A_i) = 1/3\). Any two of them meet only in aaa: \(1/9 = \frac13\cdot\frac13\).
+All three also meet only in aaa: \(1/9 \ne 1/27\). Pairwise independent, not mutually independent.
 :::
 
 ::: number mutual-v2 answer=11
