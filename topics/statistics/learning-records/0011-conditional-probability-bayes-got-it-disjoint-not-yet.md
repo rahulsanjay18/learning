@@ -26,3 +26,8 @@ right: "the warden says B dies" is narrower than "B is not pardoned"), `read-two
 
 **Evidence:** lp-results 2026-10-13 (pasted, sync off; 4/15 first try, 1 unanswered), free responses in the same paste.
 **Implications:** lesson 8 opens with the two re-teaches and warm-ups `mutual-v3` and a `bayescalc` variant, then §1.4–1.6 as planned.
+
+**Update (same evening):** the learner says they sometimes misread a question. `condp-v1` ("at least one 6" answered as if "the
+first die is 6") could be a misread as easily as a misconception, so it moves from Not yet to Can't tell: one warm-up in lesson 8
+(a miss there makes it Not yet). `indep2-v2` stays Not yet (the chosen option states the misconception). Standing convention: a
+"misread <id>" in the results note counts that miss as a slip.
