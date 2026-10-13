@@ -170,7 +170,8 @@ The line now adds `miss <id>: <your first wrong answer>` for each missed quiz (s
 ## 2026-10-13 · Three prisoners (C&B Example 1.3.4): "If we know B dies, it's A or C, so 1/2. How is the warden right?"
 **Your 1/2 is right for a different piece of news.** If you learn only "B is not pardoned" (the event Bᶜ), then A and C are
 equally likely and P(A | Bᶜ) = 1/2. What A actually learns is "the warden *said* B dies" (W). Those are different events,
-because the warden is constrained: he never names A, and he never names the pardoned one.
+because the warden is constrained: A's question ("which of B or C will be executed?", C&B p. 21) rules out
+naming A, and he never names the pardoned one.
 - **The sample space has to record what the warden says**, not just who is pardoned. It has four outcomes, and they aren't
   equally likely: (A pardoned, says B) 1/6, (A, says C) 1/6, (B, says C) 1/3, (C, says B) 1/3. If C is pardoned, the warden
   *must* say B. If A is pardoned, he says B only half the time.
@@ -183,3 +184,8 @@ because the warden is constrained: he never names A, and he never names the pard
   The book's 1/3 assumes a fair coin.
 - **Same structure as Monty Hall** (the book mentions it right after the exercise): the host's forced choice carries information.
 - **The sentence to reuse:** "Condition on what you were told *and how the teller chose it*, not on the fact it implies."
+- **Follow-up: "he never names A" is an assumption.** Yes, but the problem states it: A asks "which of B or C will be executed?"
+  The assumptions the book leaves *unstated* are that the warden tells the truth and flips a fair coin when A is the pardoned one.
+  The restriction is also what makes A's reasoning fail. If the warden could name *any* prisoner who isn't pardoned, A included,
+  each equally likely, then "B dies" really would give P(A | W) = 1/2 (checked by exact computation), because the warden could
+  have said "A dies" and didn't. A's 1/2 is the right answer to that other problem.
