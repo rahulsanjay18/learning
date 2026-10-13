@@ -58,6 +58,8 @@ Rules 11, 13 and 18 are format and logistics.
     - **Not yet:** a false statement or misconception; the same objective missed twice (first try or in review); a skip, "I don't
       know" or self-reported guess; or the learner says they're confused.
     - **Can't tell** (a thin answer): one warm-up question on it next lesson; a miss there means Not yet.
+      A first-try miss the learner reports as a misread ("misread <id>" in the results note, 2026-10-13) is Can't tell, not Not yet,
+      unless the chosen answer itself states the misconception.
     - **Not yet → a 5-minute re-teach section at the start of the next lesson in that course**, syllabus otherwise unchanged. Add a
       whole lesson only when the objective is a prerequisite for the next syllabus lessons, or it's still Not yet after one re-teach;
       log that in the syllabus's "Changes". **Facts (dates, names) go to spaced review and warm-ups, not extra lessons** (entry 10).
