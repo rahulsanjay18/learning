@@ -31,3 +31,5 @@ right: "the warden says B dies" is narrower than "B is not pardoned"), `read-two
 first die is 6") could be a misread as easily as a misconception, so it moves from Not yet to Can't tell: one warm-up in lesson 8
 (a miss there makes it Not yet). `indep2-v2` stays Not yet (the chosen option states the misconception). Standing convention: a
 "misread <id>" in the results note counts that miss as a slip.
+**Update 2:** learner reports `condp-v1` was right on the second try (typed, after a bare "wrong"): a slip, so Can't tell stands
+(one warm-up, no re-teach). `indep2-v2` was not right on the second try: Not yet stands.
