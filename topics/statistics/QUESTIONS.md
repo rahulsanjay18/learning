@@ -194,4 +194,4 @@ naming A, and he never names the pardoned one.
   anything. (2) The 4 outcomes are **not equally likely**: A's 1/3 is split over two rows (1/6 each, by the warden's coin), while
   B's and C's 1/3 each sit on one row (the warden is forced). So A holds 2 of 4 outcomes but only 1/3 of the probability.
   Then "says B" leaves 2 outcomes, (A, B) at 1/6 and (C, B) at 1/3: half the outcomes, a third of the probability.
-  **Counting outcomes gives probabilities only when the outcomes are equally likely** (C&B §1.2.3, equally likely outcomes).
+  **Counting outcomes gives probabilities only when the outcomes are equally likely** (C&B §1.2.4, "Enumerating Outcomes").
