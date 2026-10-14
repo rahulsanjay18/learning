@@ -72,14 +72,14 @@
       "group": "core",
       "level": "I",
       "plan": [
-        "0008 random variables, cdfs and densities (§1.4-1.6, pp. 27-37; merged)",
         "0009 Chapter 1 summary (always)",
         "0010 Ch. 1 check"
       ],
       "lessons": [
         "0005-ch1-pretest",
         "0006-the-three-axioms",
-        "0007-conditional-probability-and-independence"
+        "0007-conditional-probability-and-independence",
+        "0008-random-variables-cdfs-and-densities"
       ],
       "books": {
         "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference, Ch. 1 (sections, examples and exercises)",
