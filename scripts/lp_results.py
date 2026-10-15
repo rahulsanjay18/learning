@@ -67,7 +67,9 @@ def events(topic, stem, rest, details):
         v = field(rest, name)
         if v:
             evs.append(dict(v=1, eid=eid(name, v), type=typ, page=page, ts=ts, **({"text": v} if typ == "note" else {"value": v})))
-    if re.search(r"pretest|placement", stem):
+    html = ROOT / "topics" / topic / "lessons" / f"{stem}.html"
+    is_pretest = html.exists() and 'data-pretest="true"' in html.read_text(errors="ignore")
+    if is_pretest or re.search(r"pretest|placement", stem):
         for e in evs: e["pretest"] = True
     return evs
 
