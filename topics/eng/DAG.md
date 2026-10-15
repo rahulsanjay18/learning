@@ -172,8 +172,8 @@ flowchart TB
 - primary: —
 
 **SE101 What staff is, and how people get there**
-- primary: Reilly, The Staff Engineer's Path (O'Reilly, 2022), Part I: wanted
-- secondary: Larson, Staff Engineer: Leadership beyond the management track (2021); its guides and stories are free at staffeng.com
+- primary: 1ef7da7a31 Reilly, The Staff Engineer's Path (O'Reilly, 2022), Part I
+- secondary: 449bf1f39c Larson, Staff Engineer: Leadership beyond the management track (2021); its guides and stories are free at staffeng.com
 - tertiary: Julia Evans, 'Get your work recognized: write a brag document' (free, jvns.ca)
 
 **AW000 AWS placement and exam date**

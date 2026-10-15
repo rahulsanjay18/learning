@@ -38,7 +38,7 @@ Every "missing" line was also checked on the server by title on 2026-10-06 (one 
 - _C++ Templates: The Complete Guide_, 2nd ed. (2017) and Iglberger, _C++ Software Design_ (2022) — for: Level II CP401/CP402 — status: missing (collection has only the 2002 1st ed. of Templates, 1062457b20)
 
 ## Engineering career: staff (topics/eng/, SE courses)
-- _The Staff Engineer's Path_ — Tanya Reilly (O'Reilly, 2022) — for: SE101/SE140/SE150/SE160, the backbone — status: owned by the learner (2026-10-07), not on the book server yet
+- _The Staff Engineer's Path_ — Tanya Reilly (O'Reilly, 2022) — for: SE101/SE140/SE150/SE160, the backbone — status: got (1ef7da7a31, grade A; found on the server 2026-10-15). Larson's _Staff Engineer_ also got (449bf1f39c, grade A)
 - _A Philosophy of Software Design_, 2nd ed. — John Ousterhout (2021) — for: SE130 — status: 1st ed. got (4e1b680f8b, grade A; SE130 uses it); 2nd ed. still wanted for its added chapter
 - _An Elegant Puzzle_ — Will Larson (2019) — for: SE150 strategy — status: got (df35dc4f27, grade B)
 - _System Design Interview_ vol. 1–2 — Alex Xu; _Machine Learning System Design Interview_ — Aminian & Xu — for: SE120/SE160 — status: missing

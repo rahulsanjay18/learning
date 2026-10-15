@@ -137,9 +137,9 @@
       "level": "I",
       "source": "Reilly Part I (The Big Picture) + Larson's archetypes and 'work on what matters'",
       "books": {
-        "primary": "Reilly, The Staff Engineer's Path (O'Reilly, 2022), Part I: wanted",
+        "primary": "1ef7da7a31 Reilly, The Staff Engineer's Path (O'Reilly, 2022), Part I",
         "secondary": [
-          "Larson, Staff Engineer: Leadership beyond the management track (2021); its guides and stories are free at staffeng.com"
+          "449bf1f39c Larson, Staff Engineer: Leadership beyond the management track (2021); its guides and stories are free at staffeng.com"
         ],
         "tertiary": [
           "Julia Evans, 'Get your work recognized: write a brag document' (free, jvns.ca)"
@@ -164,7 +164,7 @@
       "books": {
         "primary": "Winters, Manshreck & Wright, Software Engineering at Google (2020; free at abseil.io/resources/swe-book): documentation, design and code-review chapters",
         "secondary": [
-          "Reilly, The Staff Engineer's Path: writing sections (wanted)"
+          "1ef7da7a31 Reilly, The Staff Engineer's Path: writing sections"
         ],
         "tertiary": [
           "f4c42b4190 King, On Writing (grade A): plain-prose habits"
@@ -236,7 +236,7 @@
       "level": "I",
       "source": "Reilly Part II (Execution); you already lead cross-team projects, so lessons sharpen what you do (kickoffs, alignment, unsticking, ending projects) rather than start from zero",
       "books": {
-        "primary": "Reilly, The Staff Engineer's Path, Part II: wanted",
+        "primary": "1ef7da7a31 Reilly, The Staff Engineer's Path, Part II",
         "secondary": [
           "Larson, Staff Engineer: 'Stay aligned with authority', 'Manage technical quality' (staffeng.com)"
         ],
