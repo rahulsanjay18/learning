@@ -32,17 +32,25 @@
   function saveQueue(q) { store("lp.queue", JSON.stringify(q.slice(-1000))); }
 
   // ---------- resume (2026-10-15): a lesson keeps its answers and unsent drafts across reloads and days ----------
-  // lp.page.<page> = {done: {<item id>: {ok, kind, answer, guessed}}, drafts: {<item id>|<field n>: text}}. Lesson pages only:
-  // the review deck re-asks items fresh. Restored items count in the score bar and results line but are not logged again.
+  // lp.page.<page> = {done: {<item id>: {ok, kind, answer, guessed}}, drafts: {<item id>|<field n>: text}, dts: {key: ts}}.
+  // Lesson pages only: the review deck re-asks items fresh. Restored items count in the score bar and results line but are not
+  // logged again. With sync on, the progress server's GET /page-state fills in answers and drafts from other devices, drafts are
+  // sent to POST /drafts, and "Start this page over" sends a 'reset' event so every device starts over.
   var RESUME = LP.isLesson, PKEY = "lp.page." + LP.page;
   function pageState() {
     var st = null;
     try { st = JSON.parse(store(PKEY) || "null"); } catch (e) { st = null; }
-    st = st || {}; st.done = st.done || {}; st.drafts = st.drafts || {};
+    st = st || {}; st.done = st.done || {}; st.drafts = st.drafts || {}; st.dts = st.dts || {};
     return st;
   }
   function savePageState(st) { if (RESUME) { st.ts = new Date().toISOString(); store(PKEY, JSON.stringify(st)); } }
   LP.clearPage = function () { store(PKEY, null); };
+  function api(path, opts) {
+    var endpoint = store("lp.endpoint"), token = store("lp.token");
+    if (!endpoint || !token || !window.fetch) return null;
+    opts = opts || {}; opts.headers = { "Content-Type": "application/json", "Authorization": "Bearer " + token };
+    return fetch(endpoint.replace(/\/$/, "") + path, opts).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
 
   LP.emit = function (ev) {
     ev.v = 1; ev.page = LP.page; ev.ts = new Date().toISOString();
@@ -214,12 +222,51 @@
     clearTimeout(draftTimer);
     draftTimer = setTimeout(flushDrafts, 400);
   });
-  function flushDrafts() {
+  function flushDrafts(keepalive) {
     var keys = Object.keys(pendingDrafts); if (!keys.length) return;
-    var st = pageState(); keys.forEach(function (k) { st.drafts[k] = pendingDrafts[k]; }); pendingDrafts = {}; savePageState(st);
+    var st = pageState(), t = new Date().toISOString(), out = {};
+    keys.forEach(function (k) { st.drafts[k] = pendingDrafts[k]; st.dts[k] = t; out[k] = { text: pendingDrafts[k], ts: t }; });
+    pendingDrafts = {}; savePageState(st);
+    var p = api("/drafts", { method: "POST", keepalive: !!keepalive, body: JSON.stringify({ page: LP.page, drafts: out }) });
+    if (p) p.catch(function () {});
   }
-  window.addEventListener("pagehide", flushDrafts);
-  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") flushDrafts(); });
+  window.addEventListener("pagehide", function () { flushDrafts(true); });
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") flushDrafts(true); });
+
+  // Answers and drafts from other devices (sync on). The local copy wins for anything this device already has.
+  function mergeRemote(res) {
+    var st = pageState();
+    if (res.reset && (!st.ts || st.ts < res.reset) && Object.keys(st.done).length + Object.keys(st.drafts).length) {
+      var flag = "lp.resetSeen." + LP.page;          // started over on another device: drop this device's copy once
+      try { if (sessionStorage.getItem(flag) !== res.reset) { sessionStorage.setItem(flag, res.reset); LP.clearPage(); location.reload(); return; } } catch (e) {}
+    }
+    document.querySelectorAll(".quiz[data-type]").forEach(function (q) {
+      var ctx = q._lpCtx; if (!ctx) return;
+      var rec = res.done && res.done[ctx.id];
+      if (rec) {
+        if (!st.done[ctx.id]) { st.done[ctx.id] = rec; ctx.restore(rec); }
+        if (rec.feedback && !q.querySelector(".lp-gradefb")) showGrade(q, rec);
+      }
+      q.querySelectorAll(FIELDS).forEach(function (f) {
+        var k = fieldKey(q, f), d = res.drafts && res.drafts[k];
+        if (!d || (st.dts[k] && st.dts[k] >= d.ts) || f === document.activeElement || f.readOnly) return;
+        st.drafts[k] = d.text; st.dts[k] = d.ts;
+        f.value = d.text == null ? "" : d.text; f.dispatchEvent(new Event("input", { bubbles: true }));
+      });
+    });
+    savePageState(st); updateBar();
+  }
+  function showGrade(q, rec) {
+    var g = el("div", "feedback lp-gradefb");
+    g.appendChild(el("span", "verdict" + (rec.score >= 0.7 ? " ok" : ""), "Teacher's feedback" + (rec.score != null ? " (" + Math.round(rec.score * 100) + "%)" : "") + ": "));
+    g.appendChild(document.createTextNode(rec.feedback));
+    q.appendChild(g);
+  }
+  function loadRemote() {
+    if (!RESUME) return;
+    var p = api("/page-state?page=" + encodeURIComponent(LP.page));
+    if (p) p.then(mergeRemote).catch(function () {});
+  }
 
   function showRestored(q, rec) {
     var label = rec.kind === "deferred" ? "Answered on an earlier visit and sent for grading."
@@ -256,6 +303,7 @@
         el.dataset.lpReady = "1";
         if (reg.scored) total++;
         var ctx = makeCtx(el, reg);
+        el._lpCtx = ctx;
         try { reg.init(el, ctx); if (reg.scored) addSkip(el, ctx); }
         catch (e) { el.dataset.lpError = String(e); console.error("lp widget " + reg.type + " failed:", e); }
         if (RESUME && reg.scored) {
@@ -790,19 +838,21 @@
     var over = el("button", null, "Start this page over");
     over.addEventListener("click", function () {
       if (!window.confirm("Clear your saved answers and drafts on this page? Results already sent to your teacher stay sent.")) return;
-      LP.clearPage(); location.reload();
+      LP.emit({ type: "reset" }); LP.flush(true); LP.clearPage();
+      setTimeout(function () { location.reload(); }, 300);
     });
     row2.appendChild(send); row2.appendChild(copy); row2.appendChild(cfg); row2.appendChild(rev);
     if (RESUME) row2.appendChild(over);
     f.appendChild(row2);
     statusEl = el("div", "status", (LP.syncConfigured() ? "Results sync to your progress server." : "Results are saved on this device. Use “Copy my results” to share them.")
-      + (RESUME ? " Your answers on this page are kept on this device, so you can stop and come back later." : ""));
+      + (RESUME ? (LP.syncConfigured() ? " Your answers on this page are kept, so you can stop and finish later on any synced device."
+                    : " Your answers on this page are kept on this device, so you can stop and come back later.") : ""));
     f.appendChild(statusEl);
     var sb = main.querySelector(":scope > .scorebar");
     main.insertBefore(f, sb || null);
   }
 
   LP.scan = function () { scan(); };   // for pages that add widgets after load (assets/review.html)
-  function start() { started = true; scan(); footer(); LP.flush(); }
+  function start() { started = true; scan(); footer(); LP.flush(); loadRemote(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else setTimeout(start, 0);
 })();

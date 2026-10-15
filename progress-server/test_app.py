@@ -143,6 +143,34 @@ def test_rebuild_replays_under_current_rules():
     assert c.post("/review/rebuild", json={}, headers={"Authorization": "Bearer nope"}).status_code in (401, 403)
 
 
+def test_page_state_across_devices():
+    page = "statistics/0099-resume"
+    a = c.post("/devices", json={"name": "laptop"}, headers=T).json()["token"]
+    b = c.post("/devices", json={"name": "phone"}, headers=T).json()["token"]
+    A, B = {"Authorization": "Bearer " + a}, {"Authorization": "Bearer " + b}
+    e1 = dict(v=1, eid="ps1", type="attempt", page=page, item=page + "#q1", kind="auto", correct=False, answer="7", ts="2026-10-15T10:00:00Z")
+    e2 = dict(v=1, eid="ps2", type="attempt", page=page, item=page + "#q1", kind="auto", correct=True, answer="8", ts="2026-10-15T10:01:00Z")
+    e3 = dict(v=1, eid="ps3", type="attempt", page=page, item=page + "#read-x", kind="deferred", correct=None, answer="note", ts="2026-10-15T10:02:00Z")
+    e4 = dict(v=1, eid="ps4", type="confidence", page=page, item=page + "#q2", value="guessed", ts="2026-10-15T10:03:30Z")
+    e5 = dict(v=1, eid="ps5", type="attempt", page=page, item=page + "#q2", kind="auto", correct=True, answer="b", ts="2026-10-15T10:03:00Z")
+    c.post("/events", json={"events": [e1, e2, e3, e4, e5]}, headers=A)
+    c.post("/grades", json={"grades": [{"event": "ps3", "score": 0.7, "feedback": "good"}]}, headers=T)
+    assert c.post("/drafts", json={"page": page, "drafts": {page + "#q3|0": {"text": "half", "ts": "2026-10-15T10:04:00Z"}}}, headers=A).json() == {"saved": 1}
+    # an older draft from another device doesn't overwrite a newer one
+    c.post("/drafts", json={"page": page, "drafts": {page + "#q3|0": {"text": "old", "ts": "2026-10-15T09:00:00Z"}}}, headers=B)
+    st = c.get("/page-state", params={"page": page}, headers=B).json()       # read from the other device
+    assert st["done"][page + "#q1"]["ok"] is False and st["done"][page + "#q1"]["answer"] == "7"   # first try counts
+    assert st["done"][page + "#read-x"]["score"] == 0.7 and st["done"][page + "#read-x"]["feedback"] == "good"
+    assert st["done"][page + "#q2"]["guessed"] is True
+    assert st["drafts"][page + "#q3|0"]["text"] == "half"
+    # start over hides everything before the reset
+    c.post("/events", json={"events": [dict(v=1, eid="ps6", type="reset", page=page, ts="2026-10-15T11:00:00Z")]}, headers=B)
+    st = c.get("/progress/page-state", params={"page": page}, headers=A).json()
+    assert st["done"] == {} and st["drafts"] == {}
+    assert c.post("/drafts", json={"page": page, "drafts": "x"}, headers=A).status_code == 400
+    assert c.get("/page-state", params={"page": page}).status_code == 401
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

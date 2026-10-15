@@ -7,7 +7,7 @@ Env:
   PROGRESS_DB             SQLite file (default progress.db)
   PROGRESS_ORIGINS        comma-separated CORS origins (default https://rahulsanjay18.github.io)
 
-Auth: 'Authorization: Bearer <token>'. Device tokens (made by the teacher) may only POST /events and GET /due, /feedback.
+Auth: 'Authorization: Bearer <token>'. Device tokens (made by the teacher) may only POST /events, /drafts and GET /due, /feedback, /pages, /page-state.
 Every route is served both at / and under /progress, so it works whether or not the reverse proxy strips the prefix.
 
 Teacher:  GET /status                      plain text, ~15 lines: per topic activity, due reviews, ungraded work, recent notes
@@ -21,6 +21,8 @@ Teacher:  GET /status                      plain text, ~15 lines: per topic acti
 Device:   POST /events                     {"events":[...]} exactly as lp.js sends them (deduplicated by eid)
           GET /due?limit=20&topic=chess    JSON: review items due now
           GET /feedback?page=chess/0003-x  JSON: grades + feedback on your free-response answers
+          GET /page-state?page=chess/0003-x  JSON: first answer per question (any device) + unsent drafts, since the last reset
+          POST /drafts {"page","drafts":{key: {"text","ts"}}}  unsent text typed on a lesson page (latest ts wins)
 Open:     GET /health
 """
 import hashlib, hmac, json, os, secrets, sqlite3, time
@@ -48,6 +50,7 @@ CREATE TABLE IF NOT EXISTS grades (eid TEXT PRIMARY KEY, score REAL NOT NULL, fe
 CREATE TABLE IF NOT EXISTS review (
   item TEXT PRIMARY KEY, page TEXT, box INTEGER NOT NULL, due TEXT NOT NULL, last TEXT, reps INTEGER NOT NULL, lapses INTEGER NOT NULL);
 CREATE TABLE IF NOT EXISTS devices (id INTEGER PRIMARY KEY, name TEXT, token_hash TEXT UNIQUE, created TEXT, revoked INTEGER DEFAULT 0);
+CREATE TABLE IF NOT EXISTS drafts (page TEXT NOT NULL, key TEXT NOT NULL, text TEXT, ts TEXT NOT NULL, PRIMARY KEY (page, key));
 """
 
 
@@ -223,6 +226,47 @@ def feedback(page: str = Query(min_length=1), who: str = Depends(caller)):
         rows = c.execute("SELECT e.item, e.answer, g.score, g.feedback, g.graded FROM events e JOIN grades g ON g.eid=e.eid"
                          " WHERE e.page=? ORDER BY g.graded", (page,)).fetchall()
     return [dict(x) for x in rows]
+
+
+@router.get("/page-state")
+def page_state(page: str = Query(min_length=1), who: str = Depends(caller)):
+    """What a lesson page needs to resume on any device (lp.js "Resume"): the first answer to each question, whether it was marked a
+    guess, the grade on free responses, and unsent drafts. A 'reset' event (the page's "Start this page over") hides everything before it."""
+    with db() as c:
+        r = c.execute("SELECT MAX(ts) FROM events WHERE page=? AND type='reset'", (page,)).fetchone()[0] or ""
+        rows = c.execute("SELECT e.item, e.kind, e.correct, e.answer, e.ts, g.score, g.feedback FROM events e"
+                         " LEFT JOIN grades g ON g.eid=e.eid WHERE e.page=? AND e.type='attempt' AND e.ts>? ORDER BY e.ts",
+                         (page, r)).fetchall()
+        guessed = {x[0] for x in c.execute("SELECT item FROM events WHERE page=? AND type='confidence' AND value='guessed' AND ts>?",
+                                           (page, r))}
+        drafts = {x["key"]: {"text": x["text"], "ts": x["ts"]} for x in
+                  c.execute("SELECT key, text, ts FROM drafts WHERE page=? AND ts>?", (page, r))}
+    done = {}
+    for x in rows:
+        if x["item"] in done:
+            continue        # the first try is the one that counts
+        d = {"ok": None if x["correct"] is None else bool(x["correct"]), "kind": x["kind"] or "auto", "answer": x["answer"], "ts": x["ts"]}
+        if x["item"] in guessed: d["guessed"] = True
+        if x["score"] is not None: d["score"], d["feedback"] = x["score"], x["feedback"]
+        done[x["item"]] = d
+    return {"page": page, "reset": r or None, "done": done, "drafts": drafts}
+
+
+@router.post("/drafts")
+def post_drafts(payload: dict = Body(...), who: str = Depends(caller)):
+    page, drafts = clip(payload.get("page")), payload.get("drafts")
+    if not page or not isinstance(drafts, dict) or len(drafts) > 200:
+        raise HTTPException(400, "page and a drafts object (at most 200 keys) required")
+    n = 0
+    with db() as c:
+        for k, v in drafts.items():
+            if not isinstance(v, dict) or not v.get("ts"):
+                continue
+            c.execute("INSERT INTO drafts(page,key,text,ts) VALUES(?,?,?,?) ON CONFLICT(page,key) DO UPDATE SET"
+                      " text=excluded.text, ts=excluded.ts WHERE excluded.ts > drafts.ts",
+                      (page, clip(k), clip(v.get("text")), clip(v["ts"])))
+            n += 1
+    return {"saved": n}
 
 
 @router.get("/ungraded")

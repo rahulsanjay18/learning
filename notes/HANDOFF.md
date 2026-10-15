@@ -3,6 +3,9 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-15: cross-device resume built** (lp.js + progress server `GET /page-state`, `POST /drafts`, `reset` events); needs a
+  server redeploy (todo `progress-redeploy-pages`). Until then: **Stats 0008's reading boxes may come in blank from the other device.
+  That's expected: the four reading notes are already on the server and graded (0.7, 1, 1, n/a); don't treat the blanks as skips.**
 - **2026-10-15: the learner said the full daily schedule "is probably just not gonna happen"; best effort.** Decision: give one
   ordered queue of written-but-unfinished lessons (review first) instead of a per-day plan, and **don't build lessons ahead while a
   course still has an unfinished one** (IH 0005 has only 3 warm-up answers on the server, so IH 0006 waits). IV000 0003 written today

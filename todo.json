@@ -87,8 +87,8 @@
       "id": "progress-redeploy-pages",
       "major": "platform",
       "added": "2026-10-10",
-      "text": "Redeploy the progress server once more (copy the new progress-server/app.py, then docker compose up -d --build progress-server).",
-      "why": "The Today page now counts a lesson as finished only when most of it is answered or rated. It needs the server to report how many questions per lesson are answered; until then, lessons finished on another device show as 'in progress' unless you rated them."
+      "text": "Redeploy the progress server: on the server, `cd ~/Documents/learning && git pull && bash scripts/library.sh servers`.",
+      "why": "Two features wait on it: lessons resume across devices (answers, drafts and teacher feedback follow you; added 2026-10-15), and the Today page counts a lesson finished only when most of it is answered or rated (2026-10-10)."
     }
   ]
 }
