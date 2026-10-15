@@ -44,6 +44,8 @@ BOOKS_URL=https://books.tail59e10.ts.net
   (lessons stay in `topics/chess/`). **Military Strategy is part of the Games major** (G150; lessons stay in `topics/military-strategy/`;
   framed as decision systems, not glorifying war). Mission: design a balanced 3D strategy game; the 3D chess variant is the running project. Non-technical subject: **Indian History** (chosen 2026-10-05 after the
   pretests; Economics parked, already solid at Principles level). Each major has a `PROGRAM.md` in its topic folder.
+- **One ordered queue (2026-10-15):** the daily plan is `queue.json`: review cards first, then the top 3 unfinished lessons, worded as
+  "this is what you have to do" (not "whatever you have time for"). Best effort on my side; keep it in priority order.
 - Study plan (proposed 2026-10-05, see `notes/study-plan.md`): 4 subjects, 2 full (Statistics, AWS ML cert) + 2 half
   (one non-technical, one fun), daily review first. **Finish the whole day's plan before going deeper on any one subject**;
   extra time beyond the 1-hour floor is welcome after that.

@@ -5,7 +5,8 @@
 
 Why: the HTML shell, crumbs, quiz wrappers, plugin <link>/<script> tags and sources list are the same every time, so the
 author writes only content. Plugins are detected from what the page uses. Also: appends the lesson to index.html (unless
---no-index) and, with --course, records it in the major's curriculum.json (adds the stem, drops the plan entry it fulfils).
+--no-index) and, with --course, records it in the major's curriculum.json (adds the stem, drops the plan entry it fulfils)
+and appends it to queue.json, the learner's ordered to-do list (unless --no-queue).
 Syntax reference: assets/README.md "Writing lessons in Markdown". Standard library only.
 """
 import html, json, re, sys, pathlib
@@ -332,6 +333,18 @@ def record_in_curriculum(topic, stem, course_id):
     return f"WARN: course {course_id} not found"
 
 
+def add_to_queue(topic, stem):
+    """Append a newly recorded lesson to queue.json (the learner's ordered to-do list; the Today page shows its top items).
+    Move it up by hand if it should come sooner."""
+    p = ROOT / "queue.json"
+    if not p.exists(): return "no queue.json"
+    q = json.loads(p.read_text()); page = f"{topic}/{stem}"
+    if any(i.get("page") == page for i in q.get("items", [])): return "already in queue.json"
+    q.setdefault("items", []).append({"page": page})
+    p.write_text(json.dumps(q, indent=2, ensure_ascii=False) + "\n")
+    return f"added to the end of queue.json (position {len(q['items'])})"
+
+
 if __name__ == "__main__":
     args = sys.argv[1:]
     if not args or args[0].startswith("-"): sys.exit(__doc__)
@@ -342,4 +355,6 @@ if __name__ == "__main__":
         sys.exit(f"render_lesson: {e}")
     print(f"wrote {out.relative_to(ROOT)}")
     if "--no-index" not in args: print(add_to_index(topic, stem, meta))
-    if course: print(record_in_curriculum(topic, stem, course))
+    if course:
+        print(record_in_curriculum(topic, stem, course))
+        if "--no-queue" not in args: print(add_to_queue(topic, stem))

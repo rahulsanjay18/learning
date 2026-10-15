@@ -1,0 +1,12 @@
+{
+  "about": "The learner's ordered to-do list of lessons (2026-10-15: one queue instead of the weekly block plan). The Today page shows the daily review, then the first 3 unfinished items here as today's work. Claude keeps it current: add each new lesson where it belongs, reorder when priorities change. Finished lessons (rated, mostly answered, or in a curriculum's 'completed') drop off by themselves. Optional per item: note (shown under the link).",
+  "show": 3,
+  "items": [
+    {"page": "statistics/0008-random-variables-cdfs-and-densities", "note": "Finish the lesson part; your reading notes are already in and graded."},
+    {"page": "eng/0003-interview-baseline", "note": "Day 1: the reading and the 35-minute coding round. Day 2 is the rest of the page."},
+    {"page": "chess/0004-what-did-my-move-stop-defending"},
+    {"page": "eng/0002-aws-placement"},
+    {"page": "indian-history/0005-cities-the-buddha-and-the-first-empire", "note": "The warm-up is done; start at the reading."},
+    {"page": "military-strategy/0002-annihilation-vs-exhaustion"}
+  ]
+}

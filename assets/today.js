@@ -73,7 +73,32 @@
     return { date: d.iso, day: d.day, review: cfg.review, blocks: blocks };
   }
 
-  root.LPToday = { planFor: planFor, pretty: pretty, localDay: localDay, openTodos: openTodos, finished: finished };
+  // Queue mode (2026-10-15): queue.json lists lessons in the order to do them; today = the first `show` unfinished ones.
+  // Each item: {page: "topic/stem", note?}. A lesson drops off when finished() or listed in its course's "completed".
+  function queueFor(queue, cfg, curricula, now, answered) {
+    var d = localDay(now, cfg.timezone || "UTC"), progress = asProgress(answered), where = {};
+    cfg.majors.forEach(function (m) {
+      var cur = curricula[m.slug]; if (!cur) return;
+      cur.courses.forEach(function (c) {
+        var topic = c.topic || m.slug;
+        (c.lessons || []).forEach(function (s) {
+          where[topic + "/" + s] = { major: m.name, course: c.id + " " + c.title, done: (c.completed || []).indexOf(s) >= 0 };
+        });
+      });
+    });
+    var items = ((queue && queue.items) || []).filter(function (it) {
+      var w = where[it.page];
+      return !(w && w.done) && !finished(progress[it.page]);
+    }).slice(0, (queue && queue.show) || 3).map(function (it) {
+      var parts = it.page.split("/"), w = where[it.page] || {}, pr = progress[it.page];
+      return { major: w.major || parts[0], course: w.course || "", note: it.note || "", page: it.page,
+               title: pretty(parts[1]), href: "../topics/" + parts[0] + "/lessons/" + parts[1] + ".html",
+               started: pr && pr !== true && pr.answered ? { answered: pr.answered, total: pr.total || 0 } : null };
+    });
+    return { date: d.iso, day: d.day, review: cfg.review, queue: items };
+  }
+
+  root.LPToday = { planFor: planFor, queueFor: queueFor, pretty: pretty, localDay: localDay, openTodos: openTodos, finished: finished };
   if (typeof module !== "undefined") module.exports = root.LPToday;
 
   if (typeof document === "undefined") return;
@@ -110,6 +135,7 @@
 
   function render(plan) {
     var out = document.getElementById("today"), status = document.getElementById("today-status");
+    if (plan.queue) return renderQueue(plan, out, status);
     var title = plan.day.charAt(0).toUpperCase() + plan.day.slice(1) + " " + plan.date;
     status.textContent = title + (plan.blocks.length ? ": review, then " + plan.blocks.length + " blocks of 25 minutes." : ": rest day. Review is optional.");
     var boxes = [];
@@ -160,9 +186,57 @@
     }
   }
 
+  function reviewRow(row) {
+    var due = el("span", { "class": "muted" });
+    var li = row("review", "Daily review (about 10 min)", [el("p", {}, [el("a", { href: "review.html", text: "Open the review cards" }), " ", due])]);
+    var ep = store("lp.endpoint"), tok = store("lp.token");
+    if (ep && tok) {
+      fetch(ep + "/due?limit=50", { headers: { Authorization: "Bearer " + tok } })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (j) { if (j) { var n = (j.items || j).length; due.textContent = "(" + n + (n === 50 ? "+" : "") + " due)"; } })
+        .catch(function () {});
+    }
+    return li;
+  }
+  function renderQueue(plan, out, status) {
+    var title = plan.day.charAt(0).toUpperCase() + plan.day.slice(1) + " " + plan.date;
+    status.textContent = title + ": today's work, in order.";
+    var sub = document.querySelector(".subtitle");
+    if (sub) sub.textContent = "Do these today, in order: the review cards first, then each lesson.";
+    var boxes = [];
+    function row(key, label, body) {
+      var id = "today." + plan.date + "." + key, cb = el("input", { type: "checkbox", id: id });
+      cb.checked = !!store(id);
+      cb.addEventListener("change", function () { store(id, cb.checked); finish(); });
+      boxes.push(cb);
+      var li = el("li", {}, [cb, " ", el("label", { "for": id }, [el("strong", { text: label })])]);
+      body.forEach(function (b) { li.appendChild(b); });
+      return li;
+    }
+    var ol = el("ol", { "class": "today-plan" });
+    ol.appendChild(reviewRow(row));
+    plan.queue.forEach(function (it) {
+      var p = el("p", {}, [el("a", { href: it.href, text: it.title })]);
+      if (it.started) p.appendChild(el("span", { "class": "muted", text: " (in progress" + (it.started.total ? ": " + it.started.answered + " of " + it.started.total + " questions answered" : "") + ")" }));
+      var body = [p];
+      if (it.note) body.push(el("p", { "class": "muted", text: it.note }));
+      ol.appendChild(row(it.page, it.major + (it.course ? " · " + it.course : ""), body));
+    });
+    if (!plan.queue.length) ol.appendChild(el("li", {}, [el("strong", { text: "No lessons waiting." }), el("p", { text: "Start a Claude session with /program and the next ones get written." })]));
+    out.appendChild(ol);
+    var done = el("p", { "class": "callout", hidden: "" });
+    out.appendChild(done);
+    function finish() {
+      var all = boxes.every(function (c) { return c.checked; });
+      done.hidden = !all;
+      done.textContent = all ? "Today's work is done." : "";
+    }
+    finish();
+  }
+
   // How much of each lesson is answered: this browser (local event log + review schedule) and, with sync, any device (server
   // /pages). Then the question count of each candidate lesson, read from the lesson page itself (reading notes excluded).
-  function progressFor(cfg, curricula) {
+  function progressFor(cfg, curricula, queue) {
     var items = {}, rated = {}, prog = {};
     function add(item) { if (item && item.indexOf("#read-") < 0) { var pg = item.split("#")[0]; (items[pg] = items[pg] || {})[item] = 1; } }
     try { Object.keys(LP.schedule()).forEach(add); } catch (e) {}
@@ -183,6 +257,7 @@
           (c.lessons || []).filter(function (s) { return (c.completed || []).indexOf(s) < 0; }).forEach(function (s) { cands.push(topic + "/" + s); });
         });
       });
+      ((queue && queue.items) || []).forEach(function (it) { if (cands.indexOf(it.page) < 0) cands.push(it.page); });
       return Promise.all(cands.map(function (pg) {
         var parts = pg.split("/");
         return fetch("../topics/" + parts[0] + "/lessons/" + parts[1] + ".html").then(function (r) { return r.ok ? r.text() : ""; })
@@ -203,7 +278,11 @@
       var curricula = {};
       return Promise.all(cfg.majors.filter(function (m) { return m.curriculum; }).map(function (m) {
         return getJSON("../" + m.curriculum).then(function (c) { curricula[m.slug] = c; }).catch(function () {});
-      })).then(function () { return progressFor(cfg, curricula); }).then(function (prog) { render(planFor(cfg, curricula, new Date(), prog)); });
+      })).then(function () { return getJSON("../queue.json").catch(function () { return null; }); }).then(function (queue) {
+        return progressFor(cfg, curricula, queue).then(function (prog) {
+          render(queue && queue.items ? queueFor(queue, cfg, curricula, new Date(), prog) : planFor(cfg, curricula, new Date(), prog));
+        });
+      });
     }).catch(function (e) {
       document.getElementById("today-status").textContent = "Couldn't load the plan (" + e.message + ").";
     });

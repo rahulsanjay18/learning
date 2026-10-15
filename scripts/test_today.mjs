@@ -72,5 +72,22 @@ ok(T.pretty("0004-power") === "0004 power", "pretty");
     ok(!rated.lesson || rated.lesson.page !== pg, "rated -> finished");
   }
 }
+// Queue mode (2026-10-15): queue.json in order; the first `show` unfinished lessons; finished ones drop off.
+{
+  const queue = JSON.parse(readFileSync(new URL("queue.json", root)));
+  for (const it of queue.items) {
+    const [t, s] = it.page.split("/");
+    try { readFileSync(new URL(`topics/${t}/lessons/${s}.html`, root)); } catch { ok(false, "queue item missing on disk: " + it.page); }
+  }
+  ok(new Set(queue.items.map(i => i.page)).size === queue.items.length, "queue has no duplicates");
+  const now = new Date("2026-10-15T16:00:00Z");
+  const fake = { show: 3, items: [{ page: "a/0001-x" }, { page: "b/0002-y", note: "n" }, { page: "c/0003-z" }, { page: "d/0004-w" }] };
+  const q0 = T.queueFor(fake, cfg, cur, now, {});
+  ok(q0.queue.length === 3 && q0.queue[0].page === "a/0001-x" && q0.queue[1].note === "n", "queue shows the first 3 in order");
+  const q1 = T.queueFor(fake, cfg, cur, now, { "a/0001-x": { answered: 9, total: 10 }, "b/0002-y": { answered: 1, total: 10 } });
+  ok(q1.queue[0].page === "b/0002-y" && q1.queue[0].started.answered === 1 && q1.queue[2].page === "d/0004-w", "a finished lesson drops off; in-progress stays");
+  const real = T.queueFor(queue, cfg, cur, now, {});
+  ok(real.queue.length === Math.min(queue.show || 3, queue.items.length) && real.queue.every(i => i.major && i.href.startsWith("../topics/")), "real queue renders: " + JSON.stringify(real.queue.map(i => i.page)));
+}
 console.log(fails ? `today: ${fails} failed` : "today: all checks passed");
 process.exit(fails ? 1 : 0);

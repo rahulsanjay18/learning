@@ -18,6 +18,9 @@ If the block above is empty or shows an error, run `python3 .claude/skills/progr
 Arguments: `$ARGUMENTS` (empty = run today's plan).
 
 ## Files
+- `queue.json` (repo root, 2026-10-15): **the learner's plan.** An ordered list of lessons; the Today page shows the review cards, then
+  the first 3 unfinished items, worded as today's work. `render_lesson.py --course` appends each new lesson; move it up when it should
+  come sooner. Keep it in priority order, mixing subjects so the top 3 aren't all one major.
 - `programs.json` (repo root): the week (which majors get today's two blocks), majors with weight, parked topics (a parked entry may carry a designed `curriculum`; tests and DAGs cover it).
 - `topics/<major>/curriculum.json`: courses with `id`, `title`, `status` (`done` | `active` | `next` | `later`), `requires`,
   `topic` (lesson folder if not the major's own, e.g. Games → `chess`, `military-strategy`), `est_lessons`, `lessons` (file stems
@@ -69,8 +72,9 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
 5. **Keep the map true after every lesson:** append the new stem to `lessons`, drop the `plan` entry it fulfilled, add stems to
    `completed` when the learner reports results without the progress server. Then run
    `python3 scripts/test_programs.py` and fix anything it reports.
-6. **Commit and push** as CLAUDE.md says (`teach(<slug>): …` or `program: …`), update `notes/HANDOFF.md`, and end with the
-   lesson links and the day's plan in one short list: review first, then block 1, then block 2.
+6. **Keep `queue.json` in order** (new lessons placed, finished ones drop off on their own).
+7. **Commit and push** as CLAUDE.md says (`teach(<slug>): …` or `program: …`), update `notes/HANDOFF.md`, and end with
+   today's list: the review cards, then the top 3 of `queue.json`, worded as what to do today (not "if you have time").
 
 ## Tools (use these instead of reading files or hand-editing; they save most of the tokens)
 | Job | Command |
