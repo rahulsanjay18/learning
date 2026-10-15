@@ -18,5 +18,5 @@ case "$cmd" in
              [ "$src" = retry ] && src=csv
              python3 scripts/add_books.py --dry-run --source "$src" "$@" ;;
   servers)   (cd ~/Documents && docker compose up -d --build book-server progress-server) ;;
-  *)         sed -n '2,10p' "$0" | sed 's/^# \{0,1\}//' ;;
+  *)         sed -n '2,9p' "$0" | sed 's/^# \{0,1\}//' ;;
 esac
