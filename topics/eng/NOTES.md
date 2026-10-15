@@ -12,3 +12,6 @@
   with 3D chess and the platform as venues where the learner holds staff-scope ownership. Scope at the day job is the learner's call;
   lessons don't grade it.
 
+- 2026-10-15: learner's own read after the interview baseline's reading: "not yet ready for a big-tech staff position", but plans to
+  build the work story at the new job over ~1.5 years (matches PROGRAM.md's ~18-month no-search window), with knowledge built here.
+  Implication: the brag document (IV000 rep) starts now and runs continuously; design rounds get the most practice (they drive level).
