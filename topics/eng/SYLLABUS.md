@@ -31,5 +31,6 @@ Rep: write the story in your brag doc in STAR form.
 - You can estimate how the branching factor of your 3D variant changes search depth at a fixed budget.
 
 ## Changes
+- 2026-10-15: IV000 0003 written as two days (coding round on day 1; story, deep dive and self-rating on day 2) to fit the daily hour.
 - 2026-10-07: syllabus created; interview lane added (learner's bar: big-tech staff interviews); interest lane added ("some parts
   things I find interesting").

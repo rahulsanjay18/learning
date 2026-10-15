@@ -21,9 +21,7 @@
       "pretest": true,
       "group": "core",
       "level": "I",
-      "plan": [
-        "0003 Interview baseline: one timed coding problem (written in Vim), one staff-scope behavioral story, a project deep-dive outline; self-rated against a big-tech staff rubric"
-      ],
+      "plan": [],
       "books": {
         "primary": "Big-tech staff loop formats (Google L6, Meta E6: coding, two design rounds, behavioral/leadership, project retrospective; Meta adds an AI-assisted coding round) from 2026 prep guides",
         "secondary": [
@@ -32,7 +30,10 @@
         "tertiary": [],
         "skip": []
       },
-      "note": "Learner's bar (2026-10-07): interview skills on par with a staff engineer at a big-tech company (not the goal, but the highest bar)."
+      "note": "Learner's bar (2026-10-07): interview skills on par with a staff engineer at a big-tech company (not the goal, but the highest bar).",
+      "lessons": [
+        "0003-interview-baseline"
+      ]
     },
     {
       "id": "IV100",

@@ -16,6 +16,15 @@
       "target": "def choose_move(self, obs, legal, info):\n",
       "par": 16,
       "reference": "wciwchoose_move<Esc>"
+    },
+    {
+      "id": "v03-cib",
+      "tip": "Practical Vim tip 52: precision text objects, change inside parentheses",
+      "start": "if in_bounds(x, y, z):\n",
+      "target": "if in_bounds(nx, ny, nz):\n",
+      "par": 14,
+      "reference": "ci(nx, ny, nz<Esc>",
+      "note": "ci( from before the parentheses works in the Vim used for checking (searches forward on the line); older Vims need f( first (16 keys)."
     }
   ],
   "how_to_record": "Record exactly what you type: `vim -W ~/keys.log drill.txt`, do the drill, finish with :wq. Then convert the recording to paste-able notation: `python3 scripts/vimkeys.py ~/keys.log` (or, without the repo: python3 -c \"import sys;d=open(sys.argv[1],'rb').read();m={27:'<Esc>',13:'<CR>',10:'<CR>',9:'<Tab>',8:'<BS>',127:'<BS>',60:'<lt>'};print(''.join(m.get(b,'<C-%s>'%chr(b+96) if b<32 else chr(b)) for b in d))\" ~/keys.log). The final :wq isn't counted."

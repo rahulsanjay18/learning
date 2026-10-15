@@ -433,6 +433,16 @@
       "you": "strategy doc: when a script becomes a service, the first 3 tools, the security model",
       "claude": "prototype the first tool",
       "state": "open"
+    },
+    {
+      "repo": "career",
+      "n": null,
+      "title": "Brag document: the IV000 leadership story in STAR form",
+      "course": "IV000",
+      "you": "write the story in your brag document (Situation, Task, Actions, Result with a number)",
+      "claude": "one edit toward staff scope",
+      "state": "assigned",
+      "assigned_on": "2026-10-15"
     }
   ]
 }
