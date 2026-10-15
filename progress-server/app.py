@@ -71,6 +71,10 @@ def db():
 
 with db() as _c:
     _c.executescript(SCHEMA)
+    try:
+        _c.execute("ALTER TABLE events ADD COLUMN noreview INTEGER")   # 2026-10-15: pretest/no-review pages, so grades skip them too
+    except sqlite3.OperationalError:
+        pass
 
 
 def h(token):
@@ -138,16 +142,17 @@ def post_events(payload: dict = Body(...), who: str = Depends(caller)):
             eid = clip(e.get("eid")) or hashlib.sha256(json.dumps(e, sort_keys=True).encode()).hexdigest()[:32]
             correct = e.get("correct")
             cur = c.execute(
-                "INSERT OR IGNORE INTO events(eid,received,device,ts,type,page,item,widget,kind,correct,answer,value,text)"
-                " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                "INSERT OR IGNORE INTO events(eid,received,device,ts,type,page,item,widget,kind,correct,answer,value,text,noreview)"
+                " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 (eid, iso(t), who, clip(e.get("ts")), clip(e.get("type")), clip(e.get("page")), clip(e.get("item")),
                  clip(e.get("widget")), clip(e.get("kind")), None if correct is None else int(bool(correct)),
-                 clip(e.get("answer")), clip(e.get("value")), clip(e.get("text"))))
+                 clip(e.get("answer")), clip(e.get("value")), clip(e.get("text")),
+                 1 if (e.get("pretest") or e.get("noreview")) else None))
             if cur.rowcount == 0:
                 dup += 1
                 continue
             stored += 1
-            if e.get("pretest"):
+            if e.get("pretest") or e.get("noreview"):
                 continue    # pretests measure what hasn't been taught yet; they never feed spaced review
             if e.get("type") == "attempt" and e.get("item") and correct is not None:
                 schedule(c, e["item"], e.get("page"), bool(correct), t)
@@ -284,13 +289,14 @@ def post_grades(payload: dict = Body(...), _=Depends(teacher)):
     done = 0
     with db() as c:
         for g in grades:
-            ev = c.execute("SELECT item, page FROM events WHERE eid=?", (g.get("event"),)).fetchone()
+            ev = c.execute("SELECT item, page, noreview FROM events WHERE eid=?", (g.get("event"),)).fetchone()
             if not ev:
                 continue
             score = max(0.0, min(1.0, float(g.get("score", 0))))
             c.execute("INSERT OR REPLACE INTO grades(eid,score,feedback,graded) VALUES(?,?,?,?)",
                       (g["event"], score, clip(g.get("feedback")), iso(t)))
-            schedule(c, ev["item"], ev["page"], score >= 0.7, t)
+            if not ev["noreview"]:     # pretest and no-review pages: graded, never scheduled
+                schedule(c, ev["item"], ev["page"], score >= 0.7, t)
             done += 1
     return {"graded": done}
 

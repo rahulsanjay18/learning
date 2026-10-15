@@ -74,7 +74,7 @@ def page_quizzes(page):
         f = ROOT / "topics" / topic / kind / f"{stem}.html"
         if f.exists():
             text = f.read_text(encoding="utf-8")
-            if 'data-pretest="true"' in text:
+            if 'data-pretest="true"' in text or 'data-review="off"' in text:
                 return []        # pretests measure what hasn't been taught; they never come back in review
             p = Quizzes(); p.feed(text); return p.quizzes
     return []

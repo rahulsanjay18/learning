@@ -33,7 +33,8 @@
       "note": "Learner's bar (2026-10-07): interview skills on par with a staff engineer at a big-tech company (not the goal, but the highest bar).",
       "lessons": [
         "0003-interview-baseline"
-      ]
+      ],
+      "review": false
     },
     {
       "id": "IV100",
@@ -66,7 +67,8 @@
         ],
         "skip": []
       },
-      "note": "Cadence (learner, 2026-10-07; new job starts 2026-10-26, no search for ~18 months): maintenance then ramp, but keep growing design skills. Until 2027-10-26: Thursdays alternate a design round (growth: system + ML design, mostly your-version prompts) and a short coding mock (maintenance). 2027-10-26 to 2028-02-26: weekly full mocks across all round types. 2028-02-26 to 2028-04-26: two interview blocks a week, mostly standard prompts. The weakest round type still comes up twice as often."
+      "note": "Cadence (learner, 2026-10-07; new job starts 2026-10-26, no search for ~18 months): maintenance then ramp, but keep growing design skills. Until 2027-10-26: Thursdays alternate a design round (growth: system + ML design, mostly your-version prompts) and a short coding mock (maintenance). 2027-10-26 to 2028-02-26: weekly full mocks across all round types. 2028-02-26 to 2028-04-26: two interview blocks a week, mostly standard prompts. The weakest round type still comes up twice as often.",
+      "review": false
     },
     {
       "id": "IN100",
@@ -80,7 +82,8 @@
         "AlphaZero and MuZero, read as papers (feeds RL #54 MuZero-lite)",
         "Branching factor and game length of your 3D variant, measured with the engine (feeds the Games major)"
       ],
-      "note": "WIP limit: 1 active + 2 queued (notes/ideas.md holds everything else; one in, one out). Default queue feeds 3D chess, the main project."
+      "note": "WIP limit: 1 active + 2 queued (notes/ideas.md holds everything else; one in, one out). Default queue feeds 3D chess, the main project.",
+      "review": false
     },
     {
       "id": "VI100",
@@ -123,7 +126,8 @@
       "lane": "staff",
       "completed": [
         "0001-staff-placement"
-      ]
+      ],
+      "review": false
     },
     {
       "id": "SE101",
@@ -147,7 +151,8 @@
         "skip": []
       },
       "lane": "staff",
-      "note": "Placement 2026-10-08: tech lead at team scope, target archetype Solver; no written strategy, no cross-team conflict work yet. Nothing shrinks; emphasize Solver (SE120 depth)."
+      "note": "Placement 2026-10-08: tech lead at team scope, target archetype Solver; no written strategy, no cross-team conflict work yet. Nothing shrinks; emphasize Solver (SE120 depth).",
+      "review": false
     },
     {
       "id": "SE110",
@@ -171,7 +176,8 @@
         ],
         "skip": []
       },
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "SE120",
@@ -197,7 +203,8 @@
         ],
         "skip": []
       },
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "SE130",
@@ -222,7 +229,8 @@
           "125d83bab7 Clean Code: line-level style, below staff scope"
         ]
       },
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "SE140",
@@ -245,7 +253,8 @@
         ],
         "skip": []
       },
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "SE150",
@@ -270,7 +279,8 @@
         ],
         "skip": []
       },
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "SE160",
@@ -294,7 +304,8 @@
         "skip": []
       },
       "lane": "staff",
-      "note": "Promo packet + leveling/negotiation. The interview practice itself lives in the interview lane (IV100)."
+      "note": "Promo packet + leveling/negotiation. The interview practice itself lives in the interview lane (IV100).",
+      "review": false
     },
     {
       "id": "SE170",
@@ -306,7 +317,8 @@
       "group": "elective",
       "level": "I",
       "note": "Optional: you already mentor. Reilly Part III on being a role model, sponsoring, and code/design review as teaching.",
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "SE390",
@@ -318,7 +330,8 @@
       "group": "practice",
       "level": "I",
       "note": "Ongoing: pick one cross-team project at work and run it with the course tools (kickoff doc, design doc, decision log, retro). It is the centerpiece of the promo packet or interview stories.",
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "SE399",
@@ -330,7 +343,8 @@
       "group": "capstone",
       "level": "I",
       "note": "The real-world result. If it doesn't land, the gap list from the review becomes the next plan.",
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "SE401",
@@ -342,7 +356,8 @@
       "group": "core",
       "level": "II",
       "note": "Opt-in after staff. Larson's later writing on engineering strategy; to choose then.",
-      "lane": "staff"
+      "lane": "staff",
+      "review": false
     },
     {
       "id": "AW000",

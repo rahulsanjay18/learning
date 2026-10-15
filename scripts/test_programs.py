@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STATUSES = {"done", "active", "next", "later"}
 COURSE_KEYS = {"id", "title", "status", "requires", "topic", "est_lessons", "lessons", "completed", "plan",
-               "pretest", "source", "note", "level", "group", "credit", "books", "lane"}
+               "pretest", "source", "note", "level", "group", "credit", "books", "lane", "review"}
 BOOK_ROLES = {"primary", "secondary", "tertiary", "skip"}
 MANIFEST_IDS = {l.split(",", 1)[0] for l in (ROOT / "library" / "MANIFEST.csv").read_text(encoding="utf-8").splitlines()[1:] if l}
 GROUPS = {"core", "breadth", "elective", "practice", "independent", "capstone", "colloquium"}
@@ -131,6 +131,19 @@ for m in cfg["majors"] + parked:
         for f in sorted(d.glob("[0-9][0-9][0-9][0-9]-*.html")) if d.is_dir() else []:
             if (topic, f.stem) not in seen_stems:
                 err(f"{m['slug']}: topics/{topic}/lessons/{f.name} is not in any course's lessons")
+
+# Courses kept out of spaced review ("review": false, 2026-10-15): every lesson page must carry data-review="off" (or be a pretest),
+# or its answers would still be scheduled. render_lesson.py --course adds it.
+for m in cfg["majors"]:
+    if not m.get("curriculum"): continue
+    for c in json.loads((ROOT / m["curriculum"]).read_text())["courses"]:
+        if c.get("review") is not False: continue
+        for stem in c.get("lessons", []):
+            f = ROOT / "topics" / c.get("topic", m["slug"]) / "lessons" / f"{stem}.html"
+            if f.exists():
+                t = f.read_text(encoding="utf-8")
+                if 'data-review="off"' not in t and 'data-pretest="true"' not in t:
+                    err(f"{c['id']}: {f.relative_to(ROOT)} is in a no-review course but lacks data-review=\"off\" (re-render with --course)")
 
 import subprocess
 r = subprocess.run([sys.executable, str(ROOT / "scripts" / "catalog.py"), "--check"], capture_output=True, text=True)

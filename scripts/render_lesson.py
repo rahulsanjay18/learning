@@ -258,7 +258,17 @@ def front_matter(text):
     return meta, text[m.end():]
 
 
-def render(md_path):
+def course_review_off(course_id):
+    """True when the course is kept out of spaced review ("review": false in its curriculum.json, 2026-10-15)."""
+    if not course_id: return False
+    for m in json.loads((ROOT / "programs.json").read_text())["majors"]:
+        if not m.get("curriculum"): continue
+        for c in json.loads((ROOT / m["curriculum"]).read_text())["courses"]:
+            if c["id"] == course_id: return c.get("review") is False
+    return False
+
+
+def render(md_path, review_off=False):
     md_path = pathlib.Path(md_path).resolve()
     topic, stem = md_path.parts[-3], md_path.stem
     meta, body = front_matter(md_path.read_text(encoding="utf-8"))
@@ -275,6 +285,7 @@ def render(md_path):
     if meta.get("css"): css += f'<link rel="stylesheet" href="{esc(meta["css"])}">\n'
     js = "".join(f'<script src="{ASSETS}plugins/{p}.js"></script>\n' for p in plugins)
     main_attrs = "".join(f' {k}="{esc(v)}"' for k, v in (parse_attrs("x " + meta.get("main", ""))[1].items()))
+    if review_off and 'data-review=' not in main_attrs: main_attrs += ' data-review="off"'
     page = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -350,7 +361,7 @@ if __name__ == "__main__":
     if not args or args[0].startswith("-"): sys.exit(__doc__)
     course = args[args.index("--course") + 1] if "--course" in args else None
     try:
-        out, topic, stem, meta = render(args[0])
+        out, topic, stem, meta = render(args[0], review_off=course_review_off(course))
     except ValueError as e:
         sys.exit(f"render_lesson: {e}")
     print(f"wrote {out.relative_to(ROOT)}")

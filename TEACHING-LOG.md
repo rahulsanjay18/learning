@@ -123,6 +123,14 @@ Rules 11, 13 and 18 are format and logistics.
     but its practice uses fresh positions from varied sources (puzzle databases by theme, the course book's diagrams, master games),
     each engine-checked; no more than one or two positions per lesson from the same game. (Entry 35)
 
+36. **Review cards are for short items.** Courses whose questions are long free responses (design, stories, decisions: the eng
+    staff, interview and interest lanes) stay out of spaced review (`"review": false`, `data-review="off"`); those skills are
+    reinforced by practice rounds, not cards. Fact-heavy courses (AWS, Statistics, History) stay in. (Entry 39)
+
+36. **Review cards are for short items.** Courses whose questions are long free responses (design, stories, decisions: the eng
+    staff, interview and interest lanes) stay out of spaced review (`"review": false`, `data-review="off"`); those skills come back
+    through scheduled practice rounds, not cards. Fact-heavy courses (AWS, Statistics, History) stay in. (Entry 39)
+
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
    know what the first problem even means." Both were pretest misses (learning records). Fix: vocabulary section with the
@@ -246,3 +254,12 @@ Rules 11, 13 and 18 are format and logistics.
     The lesson's own explain said knowing the sum is 12 "forces" the first die to be 6, a logical-implication word standing in for a
     probability statement. Fix: the 0009 chapter summary opens by re-teaching independence as P(B | A) = P(B), computed both ways. Rule 5 applies: for independence,
     give the sentence "learning A doesn't change the probability of B", and never use "forces" or "determines" as the sign of dependence.
+39. **2026-10-15 · "might also make sense to keep all of the staff level stuff out of the review deck? ... a lot of the questions you
+    ask are just way longer than the intended time length of the daily review."** Right: a design critique or a leadership story takes
+    10–20 minutes and would eat the whole review budget. Fix: rule 36 and the per-course review switch. AWS stays in review because its
+    exam is short multiple-choice recall, which is what cards train.
+
+39. **2026-10-15 · "a lot of the questions you ask are just way longer than the intended time length of the daily review"** (about
+    the eng staff material). Right: a design critique or a leadership story takes 10–20 minutes and would eat the whole review budget.
+    The interview lane is already its own spacing (IV100 rotates round types, weakest twice as often), with new material learned in
+    between. Fix: rule 36 and the per-course review switch; AWS stays in review (its exam is short multiple-choice recall).

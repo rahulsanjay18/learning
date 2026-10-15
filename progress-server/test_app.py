@@ -171,6 +171,19 @@ def test_page_state_across_devices():
     assert c.get("/page-state", params={"page": page}).status_code == 401
 
 
+def test_noreview_and_pretest_never_scheduled_even_when_graded():
+    page = "eng/0099-staff-x"
+    evs = [dict(v=1, eid="nr1", type="attempt", page=page, item=page + "#q", kind="auto", correct=False, answer="a", ts="2026-10-15T10:00:00Z", noreview=True),
+           dict(v=1, eid="nr2", type="attempt", page=page, item=page + "#essay", kind="deferred", correct=None, answer="long", ts="2026-10-15T10:00:01Z", noreview=True),
+           dict(v=1, eid="nr3", type="attempt", page="eng/0098-base", item="eng/0098-base#story", kind="deferred", correct=None, answer="s", ts="2026-10-15T10:00:02Z", pretest=True)]
+    c.post("/events", json={"events": evs}, headers=T)
+    c.post("/grades", json={"grades": [{"event": "nr2", "score": 1.0, "feedback": "ok"}, {"event": "nr3", "score": 0.4, "feedback": "ok"}]}, headers=T)
+    due = [x["item"] for x in c.get("/due", params={"limit": 200}, headers=T).json()]
+    with server.db() as conn:
+        sched = {r[0] for r in conn.execute("SELECT item FROM review")}
+    assert not ({page + "#q", page + "#essay", "eng/0098-base#story"} & (sched | set(due)))
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
