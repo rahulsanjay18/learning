@@ -250,7 +250,7 @@ naming A, and he never names the pardoned one.
 - condp-v5 (.25 = "first coin heads" reading) and bayescalc-v2 (.6*.9 = the joint, then right on the next try): learner reports
   misreads → Can't tell; warm-ups in the 0009 summary.
 
-## 2026-10-15 · S201 0008, second paste (posted by Claude: eids paste-1015b-*; 4 questions still unanswered)
+## 2026-10-15 · S201 0008, second paste (posted by Claude: eids paste-1015b-*). Lesson complete: the 4 "unanswered" were the reading boxes done on the other device
 - **pmfpdf-v1:** sorted "its value at x is P(X = x)" as both pmf and pdf. Not yet: a pdf's value is a density (probability per unit
   length); for a continuous X, P(X = x) = 0 at every x (which the learner's own read-zero note said). Re-teach in the 0009 summary.
 - **rv-v3** (order the proof of C&B Ex. 1.45): put "the E_i are pairwise disjoint" after "by Axiom 3". Axiom 3 needs disjointness
