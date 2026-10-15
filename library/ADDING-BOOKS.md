@@ -6,6 +6,8 @@ Your paths (2026-10-07): originals in `"/media/rahul/Drive 2/Library/Library"`, 
 `"/media/rahul/Drive 2/Library/Markdown_Library"` (quote them: the drive name has a space). Repo assumed at `~/Documents/learning`,
 compose file in `~/Documents`. Note the flag names differ: `reconvert.py` takes `--books-root`, `grade_library.py` takes `--src-root`.
 
+**Shortcuts (2026-10-15):** `bash scripts/library.sh` lists them: `new`, `retry` (the RECONVERT.csv list), `retry-ocr`, `dry`, `servers`.
+
 **One command (2026-10-07):** put the files in the originals folder, then on the server:
 
 ```bash
