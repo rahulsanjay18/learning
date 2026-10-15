@@ -101,3 +101,18 @@ above was a guess, and the learner sees the bills.
    up to 98% cost reduction at the best single model's accuracy, or +4% accuracy at equal cost. https://arxiv.org/abs/2305.05176
 4. RTX 5070 Ti specs (16 GB GDDR7, 256-bit, 896 GB/s): https://www.tomsguide.com/computing/nvidia-reveals-full-rtx-5070-ti-and-rtx-5070-specs-what-you-need-to-know
 5. Ollama FAQ (keep_alive default 5 min, OLLAMA_MAX_LOADED_MODELS default 3): https://ollama.readthedocs.io/en/faq/
+
+## Update 2026-10-15: is the local model reachable from a cloud session?
+**No.** A cloud session can reach only `https://books.tail59e10.ts.net`, and every path tried there (`/api/tags`, `/v1/models`,
+`/ollama/…`, `/llm/…`) returns the book server's 404. Ollama listens on the server's `localhost:11434`, and the Tailscale `serve.json` routes
+only `/` (book server) and `/progress`. No grader worker exists in the repo yet.
+
+Two ways to connect it; **recommended: B.**
+- **A. Expose Ollama** at `/llm` in `serve.json`, with a small auth proxy in front (Ollama has no auth of its own, and the cloud proxy's
+  injected token must be checked). Then cloud sessions call it directly. Downside: an open model endpoint, and grading still waits for a session.
+- **B. A grader worker on the server** (the plan above): it reads `GET /progress/ungraded`, builds the same packet as `scripts/grade.py`,
+  asks Ollama locally, and writes **shadow grades** (a `grader: "slm"` field, not counted for review) beside Claude's. Nothing is exposed,
+  and it grades before a session even starts. Claude re-checks and the agreement test accumulates.
+
+Agreement data so far: 38 Claude-graded free responses on the server (many are reading notes). Exact 95% lower bounds on agreement
+(Clopper–Pearson, computed 2026-10-15): 38/38 → 0.907; 36/38 → 0.823; 34/38 → 0.752. So only near-perfect agreement would clear 90% today.
