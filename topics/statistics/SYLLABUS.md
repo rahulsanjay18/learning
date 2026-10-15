@@ -28,7 +28,7 @@ After the pretest there is **always one summary lesson** (learner's request, 202
 | 0006 | The three axioms and what follows (short) | §1.2.1–1.2.2 | state Kolmogorov's axioms from memory · prove a consequence (P(Aᶜ) = 1 − P(A), P(A) ≤ 1) from them alone |
 | 0007 | Conditional probability and independence | §1.3 | tell pairwise from mutual independence (with a counterexample) · derive Bayes' rule stating exactly what it assumes |
 | 0008 | Random variables, cdfs and densities (merged) | §1.4–1.6, pp. 27–37 | say what a random variable is (a function) and what it induces · define the cdf and its three properties, and prove F nondecreasing · tell pmf from pdf and find a normalizing constant |
-| 0009 | **Chapter 1 summary (always)**, opening with a ~10-minute independence re-teach | §1.1–1.6, skim; §1.3 p. 25 ("In some cases it may happen…" through Example 1.3.8) | say independence as P(B \| A) = P(B), not "can happen together" or "doesn't force", and decide it by computing both sides (sum 7 vs. sum 12) · state the chapter's main results from memory and say what each is for · warm-ups: condp, bayescalc |
+| 0009 | **Chapter 1 summary (always)**, opening with a ~10-minute independence re-teach | §1.1–1.6, skim; §1.3 p. 25 ("In some cases it may happen…" through Example 1.3.8) | say independence as P(B \| A) = P(B), not "can happen together" or "doesn't force", and decide it by computing both sides (sum 7 vs. sum 12) · state the chapter's main results from memory and say what each is for · say what a pdf's value is (density, not P(X = x)) · warm-ups: condp, bayescalc, rv-v3 (check a theorem's hypothesis before using it) |
 | 0010 | Ch. 1 check | — | recall plus one proof, across the whole chapter including §1.1 |
 
 ## Known "Not yet" items (carried)

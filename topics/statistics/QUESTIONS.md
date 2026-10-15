@@ -249,3 +249,13 @@ naming A, and he never names the pardoned one.
   (function S → ℝ right; induced P_X(X ∈ A) = P({s : X(s) ∈ A}) missing).
 - condp-v5 (.25 = "first coin heads" reading) and bayescalc-v2 (.6*.9 = the joint, then right on the next try): learner reports
   misreads → Can't tell; warm-ups in the 0009 summary.
+
+## 2026-10-15 · S201 0008, second paste (posted by Claude: eids paste-1015b-*; 4 questions still unanswered)
+- **pmfpdf-v1:** sorted "its value at x is P(X = x)" as both pmf and pdf. Not yet: a pdf's value is a density (probability per unit
+  length); for a continuous X, P(X = x) = 0 at every x (which the learner's own read-zero note said). Re-teach in the 0009 summary.
+- **rv-v3** (order the proof of C&B Ex. 1.45): put "the E_i are pairwise disjoint" after "by Axiom 3". Axiom 3 needs disjointness
+  first. Can't tell (one ordering item); warm-up in 0009.
+- **cdf-v3** (logistic cdf, P(0 < X ≤ 2)): typed 1/(1+exp(-2)) - 1 (used F(0) = 1, not 1/2). Learner: an arithmetic slip, method known.
+  Recorded right at the learner's request.
+- **cdf-v6** 0.9 (definition + three properties). **cdf-v4** 0.9 (valid proof by disjoint split + nonnegativity; name Axioms 3 and 1,
+  and keep the event {s : X(s) ≤ x} distinct from the interval).
