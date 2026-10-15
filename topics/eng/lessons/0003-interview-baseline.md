@@ -11,7 +11,7 @@ to see where you stand on each kind of round, so the practice that follows spend
 baseline. Nothing here is graded for credit, and "I don't know" is a useful answer.
 
 This is two days of work, not one. **Day 1 (about 55 minutes):** the Vim tip, the reading, and a timed coding problem. **Day 2 (about
-20 minutes):** a leadership story, a project deep-dive outline, and a self-rating. The page keeps your answers between days.
+20 minutes):** a leadership story, a project deep-dive outline, and a self-rating. The page keeps your answers and anything you've typed between days, on the same device.
 
 ## Vim tip (1 minute, optional)
 

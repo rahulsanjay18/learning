@@ -236,3 +236,8 @@ Rules 11, 13 and 18 are format and logistics.
     so `1-(35/36)^24` (right) was scored wrong. And a "decimal" answer of 0.49 failed a 0.0005 tolerance the prompt never stated.
     Fix: `number` boxes evaluate arithmetic through math.js, the renderer loads math.js for every `number`, prompts state the
     precision, tolerance 0.005 for answers above 0.2; rule 11 amended. (The pup answer itself, 3/10 + 1/7, was the denominator: not this bug.)
+37. **2026-10-15 · "If I need to leave in the middle of the lesson will it let me pick back up later?"** Eng 0003 promised "the page
+    keeps your answers between days". A browser test showed it didn't: answers were logged and synced, but a reload showed a blank
+    page and unsent drafts were lost. Fix: lesson pages now save answers and drafts per page (`lp.page.<page>`, assets/README.md
+    "Resume") with a "Start this page over" button. Rule 10 covers platform behaviour too: test a promise about the page in the
+    browser before a lesson makes it.

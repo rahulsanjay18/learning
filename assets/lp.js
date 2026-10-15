@@ -31,6 +31,19 @@
   function queue() { try { return JSON.parse(store("lp.queue") || "[]"); } catch (e) { return []; } }
   function saveQueue(q) { store("lp.queue", JSON.stringify(q.slice(-1000))); }
 
+  // ---------- resume (2026-10-15): a lesson keeps its answers and unsent drafts across reloads and days ----------
+  // lp.page.<page> = {done: {<item id>: {ok, kind, answer, guessed}}, drafts: {<item id>|<field n>: text}}. Lesson pages only:
+  // the review deck re-asks items fresh. Restored items count in the score bar and results line but are not logged again.
+  var RESUME = LP.isLesson, PKEY = "lp.page." + LP.page;
+  function pageState() {
+    var st = null;
+    try { st = JSON.parse(store(PKEY) || "null"); } catch (e) { st = null; }
+    st = st || {}; st.done = st.done || {}; st.drafts = st.drafts || {};
+    return st;
+  }
+  function savePageState(st) { if (RESUME) { st.ts = new Date().toISOString(); store(PKEY, JSON.stringify(st)); } }
+  LP.clearPage = function () { store(PKEY, null); };
+
   LP.emit = function (ev) {
     ev.v = 1; ev.page = LP.page; ev.ts = new Date().toISOString();
     if (document.querySelector('main[data-pretest="true"]')) ev.pretest = true;   // pretests measure; they never feed review
@@ -125,10 +138,22 @@
         }
         if (kind === "deferred") freeAnswers.push({ id: id, answer: answer });
         updateBar();
+        if (RESUME) { var st = pageState(); st.done[id] = { ok: ok, kind: kind || "auto", answer: answer == null ? null : String(answer).slice(0, 4000) }; savePageState(st); }
         LP.emit({ type: "attempt", item: id, widget: reg.type, kind: kind || "auto", correct: ok, answer: answer == null ? null : String(answer).slice(0, 4000) });
         if (ok === true && (kind || "auto") === "auto" && confidenceOn(el)) setTimeout(function () { addConfidence(el, id); }, 0);
       },
-      feedback: function (ok, explainOrMsg) { feedback(el, ok, explainOrMsg); }
+      feedback: function (ok, explainOrMsg) { feedback(el, ok, explainOrMsg); },
+      restore: function (rec) {   // an answer from an earlier visit: counts, but later tries only update the UI
+        if (done) return; done = true;
+        var short = id.replace(/^.*#/, "");
+        answered++;
+        if (rec.ok === true && !rec.guessed) firstTryRight++;
+        if (rec.guessed) guessed.push(short);
+        if (rec.kind === "skip") skipped.push(short);
+        else if (rec.ok === false) { missed.push(short); if (rec.answer && String(rec.answer).trim()) missAnswers.push({ id: id, answer: String(rec.answer) }); }
+        if (rec.kind === "deferred") freeAnswers.push({ id: id, answer: rec.answer });
+        showRestored(el, rec);
+      }
     };
   }
 
@@ -163,12 +188,57 @@
         var g = b === guess;
         LP.emit({ type: "confidence", item: id, value: g ? "guessed" : "knew" });
         if (g) { firstTryRight--; guessed.push(id.replace(/^.*#/, "")); updateBar(); }
+        if (g && RESUME) { var st = pageState(); if (st.done[id]) { st.done[id].guessed = true; savePageState(st); } }
         row.textContent = g ? "Noted: a lucky guess counts as not known yet, so it comes back in tomorrow's review." : "";
         if (!g) row.remove();
       });
       row.appendChild(b);
     });
     q.appendChild(row);
+  }
+
+  // Fields inside a quiz that hold typed text (free answers, code, number and word boxes).
+  var FIELDS = 'textarea, input:not([type]), input[type="text"], input[type="number"]';
+  function fieldKey(q, f) { return itemId(q) + "|" + Array.prototype.indexOf.call(q.querySelectorAll(FIELDS), f); }
+  function restoreDrafts(q, st) {
+    q.querySelectorAll(FIELDS).forEach(function (f) {
+      var v = st.drafts[fieldKey(q, f)];
+      if (v != null && f.value !== v) { f.value = v; f.dispatchEvent(new Event("input", { bubbles: true })); }
+    });
+  }
+  var draftTimer = null, pendingDrafts = {};
+  document.addEventListener("input", function (e) {
+    var f = e.target, q = f && f.closest && f.closest(".quiz[data-type]");
+    if (!RESUME || !q || !f.matches(FIELDS) || !e.isTrusted) return;
+    pendingDrafts[fieldKey(q, f)] = f.value;
+    clearTimeout(draftTimer);
+    draftTimer = setTimeout(flushDrafts, 400);
+  });
+  function flushDrafts() {
+    var keys = Object.keys(pendingDrafts); if (!keys.length) return;
+    var st = pageState(); keys.forEach(function (k) { st.drafts[k] = pendingDrafts[k]; }); pendingDrafts = {}; savePageState(st);
+  }
+  window.addEventListener("pagehide", flushDrafts);
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") flushDrafts(); });
+
+  function showRestored(q, rec) {
+    var label = rec.kind === "deferred" ? "Answered on an earlier visit and sent for grading."
+      : rec.kind === "skip" ? "Skipped on an earlier visit."
+      : rec.kind === "self" ? "Answered on an earlier visit."
+      : rec.ok === true ? (rec.guessed ? "Answered right on an earlier visit (you marked it a guess)." : "Answered right on an earlier visit.")
+      : "Missed on an earlier visit. You can try again here; it won't change your score.";
+    var note = el("div", "feedback lp-restored");
+    note.appendChild(el("span", "verdict" + (rec.ok === true || rec.kind === "deferred" ? " ok" : ""), "Saved. "));
+    note.appendChild(document.createTextNode(label));
+    var explain = q.querySelector(":scope > .explain");
+    if (rec.kind === "deferred") {
+      var ta = q.querySelector("textarea");
+      if (ta && rec.answer != null) { ta.value = rec.answer; ta.readOnly = true; ta.dispatchEvent(new Event("input", { bubbles: true })); }
+      q.querySelectorAll(".actions button").forEach(function (b) { b.disabled = true; });
+    }
+    q.appendChild(note);
+    if (explain && rec.ok !== false) { explain.hidden = false; note.appendChild(explain); }
+    q.classList.add("lp-resumed");
   }
 
   // ---------- registry ----------
@@ -188,6 +258,11 @@
         var ctx = makeCtx(el, reg);
         try { reg.init(el, ctx); if (reg.scored) addSkip(el, ctx); }
         catch (e) { el.dataset.lpError = String(e); console.error("lp widget " + reg.type + " failed:", e); }
+        if (RESUME && reg.scored) {
+          var st = pageState();
+          restoreDrafts(el, st);
+          if (st.done[ctx.id]) ctx.restore(st.done[ctx.id]);
+        }
       });
     });
     if (total && !bar) {
@@ -712,9 +787,16 @@
       setStatus(ep ? "Sync on for this device." : "Sync off. Results stay on this device.");
     });
     var rev = el("a", null, "Daily review"); rev.href = LP.reviewUrl;
+    var over = el("button", null, "Start this page over");
+    over.addEventListener("click", function () {
+      if (!window.confirm("Clear your saved answers and drafts on this page? Results already sent to your teacher stay sent.")) return;
+      LP.clearPage(); location.reload();
+    });
     row2.appendChild(send); row2.appendChild(copy); row2.appendChild(cfg); row2.appendChild(rev);
+    if (RESUME) row2.appendChild(over);
     f.appendChild(row2);
-    statusEl = el("div", "status", LP.syncConfigured() ? "Results sync to your progress server." : "Results are saved on this device. Use “Copy my results” to share them.");
+    statusEl = el("div", "status", (LP.syncConfigured() ? "Results sync to your progress server." : "Results are saved on this device. Use “Copy my results” to share them.")
+      + (RESUME ? " Your answers on this page are kept on this device, so you can stop and come back later." : ""));
     f.appendChild(statusEl);
     var sb = main.querySelector(":scope > .scorebar");
     main.insertBefore(f, sb || null);
