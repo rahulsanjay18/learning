@@ -22,7 +22,7 @@ flowchart TB
   SE390["SE390 Practice: one staff-scope project, writ…<br/><small>book: book not chosen yet</small>"]
   SE399["SE399 Capstone: the staff title (promotion or…<br/><small>book: book not chosen yet</small>"]
   AW000["AW000 AWS placement and exam date<br/><small>book: AWS MLA-C02 exam guide</small>"]
-  AW101["AW101 AWS foundations through the RL training…<br/><small>book: Your 2024 AWS Solutions Architect Associate…</small>"]
+  AW101["AW101 AWS foundations through the RL training…<br/><small>book: Ultimate AWS Certified Solutions Architect …</small>"]
   AW201["AW201 ML on AWS (MLA-C02 domains)<br/><small>book: AWS Certified Machine Learning Engineer - A…</small>"]
   AW290["AW290 MLA-C02 exam<br/><small>book: book not chosen yet</small>"]
   CP000["CP000 Placement<br/><small>book: book not chosen yet</small>"]
@@ -178,4 +178,4 @@ flowchart TB
 
 **AW000 AWS placement and exam date**
 - primary: AWS MLA-C02 exam guide (domains and task statements)
-- secondary: Your 2024 AWS Solutions Architect Associate course (learner-supplied)
+- secondary: 4f1da5d25d Ultimate AWS Certified Solutions Architect Associate SAA-C03, slides v43 (Udemy; your course)

@@ -357,7 +357,7 @@
       "books": {
         "primary": "AWS MLA-C02 exam guide (domains and task statements)",
         "secondary": [
-          "Your 2024 AWS Solutions Architect Associate course (learner-supplied)"
+          "4f1da5d25d Ultimate AWS Certified Solutions Architect Associate SAA-C03, slides v43 (Udemy; your course)"
         ],
         "tertiary": [],
         "skip": []
@@ -379,7 +379,7 @@
       "level": "I",
       "source": "IAM, S3, VPC, EC2 spot, ECR, budgets, Terraform: one lesson per area, each paired with a 3dChessRLAgent AWS/Terraform ticket (#141-#144, #110)",
       "books": {
-        "primary": "Your 2024 AWS Solutions Architect Associate course (learner-supplied) + AWS docs",
+        "primary": "4f1da5d25d Ultimate AWS Certified Solutions Architect Associate SAA-C03, slides v43 (Udemy; your course) + AWS docs",
         "secondary": [
           "MLA-C02 exam guide (aws.amazon.com)"
         ],

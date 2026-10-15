@@ -28,7 +28,9 @@
       "added": "2026-10-06",
       "text": "Send the files from your 2024 AWS Solutions Architect Associate course (or say where they are).",
       "why": "AW101 uses its core modules (IAM, S3, VPC, EC2, Lambda, CloudWatch) as the foundations.",
-      "note": "2026-10-15: the server has 'Ultimate AWS Certified Solutions Architect Associate SAA-C03' slides v43 (Udemy, 4f1da5d25d, grade A). Ask the learner if that is the course; if yes, close this."
+      "note": "Learner confirmed 2026-10-15: the course is 'Ultimate AWS Certified Solutions Architect Associate SAA-C03' slides v43 (Udemy), on the server as 4f1da5d25d (grade A).",
+      "done": true,
+      "done_on": "2026-10-15"
     },
     {
       "id": "staff-books",
