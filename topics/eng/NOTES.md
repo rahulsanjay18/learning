@@ -15,8 +15,6 @@
 - 2026-10-15: learner's own read after the interview baseline's reading: "not yet ready for a big-tech staff position", but plans to
   build the work story at the new job over ~1.5 years (matches PROGRAM.md's ~18-month no-search window), with knowledge built here.
   Implication: the brag document (IV000 rep) starts now and runs continuously; design rounds get the most practice (they drive level).
-- 2026-10-15: staff, interview and interest lanes kept out of the review cards (learner's request: their questions are too long for a
-  10-minute review). AWS (tech lane) stays in. Interview skills are reinforced by IV100's rotating practice rounds instead.
 - 2026-10-15: staff, interview and interest lanes kept out of the review cards (learner: their questions are too long for the daily
   review; the split was left to Claude). AWS (tech lane) stays in. Interview skills recur through IV100's rotating practice rounds,
   which act as the spacing; new material is learned in between.
