@@ -231,3 +231,10 @@ naming A, and he never names the pardoned one.
   choice, the second try is a coin flip between two options, so it says little.
 - **What the pages did (checked in lp.js):** only the first try was logged; retries updated the screen and nothing else. So I
   couldn't see a second-try success, and grading treated every first-try miss the same. Proposed fix: log tries-until-right.
+
+## 2026-10-15 · S201 0008 reading notes (graded 0.7, 1, 1, n/a)
+- **read-rvfunc:** described X as "the thing we care about within the outcome". Feedback: X is a *function* S → ℝ (each of the 8
+  strings ↦ its number of heads); P_X(X = 1) = P({HTT, THT, TTH}) = 3/8, and counting works only because outcomes are equally likely.
+  Watch in the lesson page: does "random variable = function on S" land?
+- **read-rightcont:** right (≤ → right-continuous, < → left-continuous). **read-zero:** right (intervals, area under the density);
+  added: countable additivity is why "0 at every point" doesn't sum to 0.
