@@ -7,7 +7,7 @@ New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. 
   `scripts/lp_results.py "<block>"` now posts what the paste shows (misses with answers, free responses, skips, guesses, note,
   rating) to the progress server (content-hashed eids, so re-pasting is harmless), and leaves a lesson open when the line says
   "N unanswered". Today's Stats 0008 first-half paste was posted by hand (eids `paste-1015-*`; don't re-run the script on it) and
-  graded; independence is Not yet again → new S201 0009 re-teach lesson (SYLLABUS Changes).
+  graded; independence is Not yet again → ~10-minute re-teach opening the S201 0009 summary (learner chose that over a separate lesson).
 - **2026-10-15: cross-device resume built** (lp.js + progress server `GET /page-state`, `POST /drafts`, `reset` events); needs a
   server redeploy (todo `progress-redeploy-pages`). Until then: **Stats 0008's reading boxes may come in blank from the other device.
   That's expected: the four reading notes are already on the server and graded (0.7, 1, 1, n/a); don't treat the blanks as skips.**

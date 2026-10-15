@@ -28,16 +28,15 @@ After the pretest there is **always one summary lesson** (learner's request, 202
 | 0006 | The three axioms and what follows (short) | §1.2.1–1.2.2 | state Kolmogorov's axioms from memory · prove a consequence (P(Aᶜ) = 1 − P(A), P(A) ≤ 1) from them alone |
 | 0007 | Conditional probability and independence | §1.3 | tell pairwise from mutual independence (with a counterexample) · derive Bayes' rule stating exactly what it assumes |
 | 0008 | Random variables, cdfs and densities (merged) | §1.4–1.6, pp. 27–37 | say what a random variable is (a function) and what it induces · define the cdf and its three properties, and prove F nondecreasing · tell pmf from pdf and find a normalizing constant |
-| 0009 | Independence as unchanged probability (short, re-teach) | §1.3 p. 25, "In some cases it may happen…" through Example 1.3.8 | say independence as P(B \| A) = P(B), not "can happen together" or "doesn't force" · decide independence by computing both sides (sum 7 vs. sum 12) · warm-ups: condp, bayescalc |
-| 0010 | **Chapter 1 summary (always)** | §1.1–1.6, skim | state the chapter's main results from memory and say what each is for |
-| 0011 | Ch. 1 check | — | recall plus one proof, across the whole chapter including §1.1 |
+| 0009 | **Chapter 1 summary (always)**, opening with a ~10-minute independence re-teach | §1.1–1.6, skim; §1.3 p. 25 ("In some cases it may happen…" through Example 1.3.8) | say independence as P(B \| A) = P(B), not "can happen together" or "doesn't force", and decide it by computing both sides (sum 7 vs. sum 12) · state the chapter's main results from memory and say what each is for · warm-ups: condp, bayescalc |
+| 0010 | Ch. 1 check | — | recall plus one proof, across the whole chapter including §1.1 |
 
 ## Known "Not yet" items (carried)
 - **Confounding remedy** (pretest free response, 2026-10-06 grading): named the confounder but proposed an observational fix. Re-teach
   as a 5-minute section in S303 (Ch. 8) ("why randomization removes confounding"); full treatment in the causal-inference elective.
 
 ## Changes
-- 2026-10-15: added 0009 "Independence as unchanged probability" (summary → 0010, check → 0011). Independence still Not yet after the 0008 re-teach: disjoint vs. independent now right, but the learner defined independence as "both can be true" and dependence as "one forces the other" (0008 indep2-v4, indep2-v5). Rule: repeat Not yet → a lesson. condp-v5 and bayescalc-v2 misses reported as misreads → Can't tell, warm-ups in 0009.
+- 2026-10-15: independence re-teach folded into the 0009 summary as a ~10-minute opening section (learner chose this over a separate lesson; if the Ch. 1 check still shows it Not yet, add the lesson then). First proposed as a separate 0009. Independence still Not yet after the 0008 re-teach: disjoint vs. independent now right, but the learner defined independence as "both can be true" and dependence as "one forces the other" (0008 indep2-v4, indep2-v5). Rule: repeat Not yet → a lesson. condp-v5 and bayescalc-v2 misses reported as misreads → Can't tell, warm-ups in 0009.
 - 2026-10-06: syllabus written; S150 = 0002–0007 (check added as 0007).
 - 2026-10-06: **switched to Chapter 1 now** (learner: "thrust into the middle of something"; Ch. 1 "builds stuff from the ground up").
   S150 closed after 0004; its unwritten lessons (likelihood ratios, multiple testing, A/B check) move to S303. S110 merged into the

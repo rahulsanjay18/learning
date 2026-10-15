@@ -244,5 +244,5 @@ Rules 11, 13 and 18 are format and logistics.
 38. **2026-10-15 · "if A=the die shows 6, doesn't that force the other die to be 1 if A is true?"** Statistics 0008's re-teach fixed
     disjoint-vs-independent, but the learner's definition became "independent = both can happen; dependent = one forces the other".
     The lesson's own explain said knowing the sum is 12 "forces" the first die to be 6, a logical-implication word standing in for a
-    probability statement. Fix: 0009 re-teaches independence as P(B | A) = P(B), computed both ways. Rule 5 applies: for independence,
+    probability statement. Fix: the 0009 chapter summary opens by re-teaching independence as P(B | A) = P(B), computed both ways. Rule 5 applies: for independence,
     give the sentence "learning A doesn't change the probability of B", and never use "forces" or "determines" as the sign of dependence.

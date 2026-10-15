@@ -21,7 +21,7 @@ problem-heavy subject, real mastery probably lands between the two, closer to B 
 
 | Major | courses left | A: lesson hours | A: years at 7 / 18 / 36 h/wk | B: college hours | B: school years part-time (18 h/wk) / full-time (36 h/wk) |
 |---|---|---|---|---|---|
-| Statistics | 16 | 79 | 0.2 / 0.2 / 0.2 | 641 | 1.9 / 1.8 |
+| Statistics | 16 | 78 | 0.2 / 0.2 / 0.2 | 634 | 1.9 / 1.8 |
 | Engineering career (staff, AWS, C/C++/CUDA, on 3D chess) | 26 | 79 | 0.2 / 0.1 / 0.1 | 641 | 1.2 / 0.7 |
 | Indian History | 8 | 47 | 0.2 / 0.2 / 0.2 | 378 | 1.4 / 1.4 |
 | Games | 10 | 28 | 0.1 / 0.1 / 0.1 | 223 | 0.5 / 0.5 |
@@ -41,8 +41,8 @@ problem-heavy subject, real mastery probably lands between the two, closer to B 
 
 | Scope | courses left | A: lesson hours | A: years at 7 / 18 / 36 h/wk | B: college hours | B: school years part-time (18 h/wk) / full-time (36 h/wk) |
 |---|---|---|---|---|---|
-| All majors | 136 | 1448 | 4.0 / 1.6 / 0.8 | 11630 | 21.6 / 10.8 |
-| All majors (no maybe) | 131 | 1371 | 3.8 / 1.5 / 0.8 | 10955 | 20.3 / 10.2 |
+| All majors | 136 | 1447 | 4.0 / 1.6 / 0.8 | 11624 | 21.6 / 10.8 |
+| All majors (no maybe) | 131 | 1370 | 3.8 / 1.5 / 0.8 | 10948 | 20.3 / 10.2 |
 
 For scale: a US bachelor's degree is about 120 credits (40 three-credit courses, 5,400 hours of work by the credit-hour
 rule), four school years full-time.
