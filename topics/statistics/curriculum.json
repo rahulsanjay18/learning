@@ -67,13 +67,14 @@
         "S150",
         "S110"
       ],
-      "est_lessons": 6,
+      "est_lessons": 7,
       "pretest": true,
       "group": "core",
       "level": "I",
       "plan": [
-        "0009 Chapter 1 summary (always)",
-        "0010 Ch. 1 check"
+        "0009 Independence as unchanged probability (re-teach)",
+        "0010 Chapter 1 summary (always)",
+        "0011 Ch. 1 check"
       ],
       "lessons": [
         "0005-ch1-pretest",

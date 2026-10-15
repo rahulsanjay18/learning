@@ -94,7 +94,7 @@ Two fair dice are rolled. \(A\) = the first die shows 6. Sort each event by how 
 --- explain
 First die 2: no overlap, so dependent, \(P = 0 \ne \frac1{36}\). Second die 6: \(\frac1{36} = \frac16\cdot\frac16\). Sum 7: only (6,1) is in both,
 \(\frac1{36} = \frac16 \cdot \frac6{36}\), so independent, which surprises most people: whatever the first die shows, exactly one
-second-die value makes 7. Sum 12: only (6,6), \(\frac1{36} \ne \frac16 \cdot \frac1{36}\); knowing the sum is 12 forces the first die to be 6.
+second-die value makes 7. Sum 12: only (6,6), \(\frac1{36} \ne \frac16 \cdot \frac1{36}\); learning that the sum is 12 changes the chance that the first die shows 6 from 1/6 to 1. Independence asks only whether the *probability* changes: for sum 7 it doesn't (\(P(\text{sum } 7 \mid A) = \frac16 = P(\text{sum } 7)\)), for sum 12 it does.
 :::
 
 ::: free indep2-v5

@@ -238,3 +238,14 @@ naming A, and he never names the pardoned one.
   Watch in the lesson page: does "random variable = function on S" land?
 - **read-rightcont:** right (≤ → right-continuous, < → left-continuous). **read-zero:** right (intervals, area under the density);
   added: countable additivity is why "0 at every point" doesn't sum to 0.
+
+## 2026-10-15 · S201 0008, first half (pasted from an unpaired device; posted to the server by Claude)
+- **"If A = the die shows 6, doesn't that force the other die to be 1 [for sum 7]?"** Yes: given A, "sum is 7" is the same as
+  "second die is 1". But its probability is 1/6, the same as P(sum is 7) with no information (6/36). Independence is about whether
+  the *probability* changes, not whether the outcomes are linked: P(sum 7 | A) = P(sum 7) = 1/6. Sum 12 is dependent: 1/36 → 1/6.
+  The learner's definition ("independent = both can be true; dependent = one forces the other") is the misconception to dislodge in 0009.
+  Our own 0008 explanation said knowing the sum is 12 "forces" the first die to be 6, which invites that reading (TEACHING-LOG 38).
+- **indep2-v5** 0.4 (disjoint ∧ independent iff at least one has P = 0; wrote "both"). **mutual-v6** 1.0 (C = {2,3}). **rv-v5** 0.7
+  (function S → ℝ right; induced P_X(X ∈ A) = P({s : X(s) ∈ A}) missing).
+- condp-v5 (.25 = "first coin heads" reading) and bayescalc-v2 (.6*.9 = the joint, then right on the next try): learner reports
+  misreads → Can't tell; warm-ups in 0009.

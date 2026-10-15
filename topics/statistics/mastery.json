@@ -3,7 +3,9 @@
  "not_yet": [
   "statistics/0003-effect-size-and-confidence-intervals#wu-size",
   "statistics/0007-conditional-probability-and-independence#condp",
-  "statistics/0007-conditional-probability-and-independence#indep2-v2"
+  "statistics/0007-conditional-probability-and-independence#indep2-v2",
+  "statistics/0008-random-variables-cdfs-and-densities#indep2-v4",
+  "statistics/0008-random-variables-cdfs-and-densities#indep2-v5"
  ],
  "got": [
   "statistics/0002-what-a-p-value-is#fdr",
@@ -12,6 +14,8 @@
   "statistics/0003-effect-size-and-confidence-intervals#sig-vs-worth",
   "statistics/0007-conditional-probability-and-independence#bayes",
   "statistics/0007-conditional-probability-and-independence#mutual-v1",
-  "statistics/0007-conditional-probability-and-independence#indep2-v1"
+  "statistics/0007-conditional-probability-and-independence#indep2-v1",
+  "statistics/0008-random-variables-cdfs-and-densities#mutual-v6",
+  "statistics/0008-random-variables-cdfs-and-densities#rv-v5"
  ]
 }
