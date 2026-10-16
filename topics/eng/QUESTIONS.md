@@ -72,3 +72,23 @@ timeout at the stated n = 30), so it isn't full marks. That last part is judgmen
 reading for eng 0003, <https://www.hellointerview.com/guides/meta/e6>) grades the classic coding round on clean,
 production-quality code, unprompted edge cases and communication; its "verify" signal belongs to the AI-enabled round (verifying
 the AI's output). An earlier reply cited it as "verification" for the classic round; that was wrong and is corrected here.
+
+## 2026-10-16 · "Does Python allow `0 <= tuple_of_size_m < n`?"
+
+No. Results from running it (Python 3, t = (3, 1, 9), n = 8):
+
+| Expression | Result |
+|---|---|
+| `0 <= t < n` | `TypeError: '<=' not supported between instances of 'int' and 'tuple'` |
+| `(0,0,0) <= t < (n,n,n)` | `True`, **wrong** (z = 9 is off the board): tuple comparison is lexicographic, decided by the first unequal element |
+| `all(0 <= c < n for c in t)` | `False`, correct |
+| numpy: `((0 <= a) & (a < n)).all()` | `False`, correct; chained `0 <= a < n` raises "truth value of an array ... is ambiguous" |
+
+Why: `a < b < c` means `a < b and b < c` [1]; ordering an int against a tuple raises TypeError [2]; tuples compare
+lexicographically, element by element until the first difference [2]. Numpy comparisons are element-wise and return an array,
+and `and` needs one True/False, hence the error.
+
+Interview pick: `all(0 <= c < n for c in p)`. The tuple-bounds version is a trap: it runs, looks right, and is wrong.
+
+Sources: [1] Python Language Reference §6.10 "Comparisons" (chained comparisons): https://docs.python.org/3/reference/expressions.html#comparisons
+[2] same section, "Value comparisons" (sequences compare lexicographically; ordering across unrelated types raises TypeError).
