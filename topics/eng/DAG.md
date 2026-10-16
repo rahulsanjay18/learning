@@ -109,8 +109,8 @@ flowchart TB
   classDef done fill:#eee,color:#777,stroke:#bbb
   classDef active stroke-width:3px
   classDef later stroke-dasharray:5 4
-  class IV000 active
-  class IV100 later
+  class IV000 done
+  class IV100 active
   class IN100 active
   class VI100 later
   class SE000 done
@@ -164,9 +164,13 @@ flowchart TB
 
 ## Active courses: books by role
 
-**IV000 Interview baseline at the big-tech staff bar**
-- primary: Big-tech staff loop formats (Google L6, Meta E6: coding, two design rounds, behavioral/leadership, project retrospective; Meta adds an AI-assisted coding round) from 2026 prep guides
-- secondary: c0562da881 Skiena, The Algorithm Design Manual (grade B)
+**IV100 Interview practice (continuous, rotating rounds)**
+- primary: Xu, System Design Interview vol. 1-2 + Aminian & Xu, Machine Learning System Design Interview (owned? else wanted)
+- secondary: Huyen, Introduction to Machine Learning Interviews (free)
+- secondary: dd8b0182f3 Huyen, Designing ML Systems (grade A)
+- secondary: e66241afb4 Kleppmann, DDIA 2nd ed. (grade A)
+- secondary: c0562da881 Skiena (grade B): problem catalog
+- tertiary: LeetCode / NeetCode problem lists (web)
 
 **IN100 Things I find interesting (continuous)**
 - primary: —

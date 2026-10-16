@@ -15,7 +15,7 @@
     {
       "id": "IV000",
       "title": "Interview baseline at the big-tech staff bar",
-      "status": "active",
+      "status": "done",
       "lane": "interview",
       "est_lessons": 1,
       "pretest": true,
@@ -34,12 +34,15 @@
       "lessons": [
         "0003-interview-baseline"
       ],
-      "review": false
+      "review": false,
+      "completed": [
+        "0003-interview-baseline"
+      ]
     },
     {
       "id": "IV100",
       "title": "Interview practice (continuous, rotating rounds)",
-      "status": "later",
+      "status": "active",
       "lane": "interview",
       "requires": [
         "IV000"

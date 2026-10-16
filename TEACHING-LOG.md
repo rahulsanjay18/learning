@@ -127,6 +127,11 @@ Rules 11, 13 and 18 are format and logistics.
     staff, interview and interest lanes) stay out of spaced review (`"review": false`, `data-review="off"`); those skills come back
     through scheduled practice rounds, not cards. Fact-heavy courses (AWS, Statistics, History) stay in. (Entry 39)
 
+37. **One sitting, about 30 minutes, for eng lessons too.** Add up the minutes in the section headings before publishing; an eng
+    lesson stays near 30 minutes in one sitting, like the other majors' lessons. A timed exercise (a 35-minute coding round, a full
+    mock) is the whole lesson that day, with nothing else on the page but its setup and debrief. No "day 2" sections: a second day
+    is a second lesson. (Entry 40)
+
 ## Entries
 1. **2026-10-05 · Statistics lesson 2 used α and power without defining them.** Learner: "you never describe what alpha is… I don't
    know what the first problem even means." Both were pretest misses (learning records). Fix: vocabulary section with the
@@ -254,3 +259,8 @@ Rules 11, 13 and 18 are format and logistics.
     the eng staff material). Right: a design critique or a leadership story takes 10–20 minutes and would eat the whole review budget.
     The interview lane is already its own spacing (IV100 rotates round types, weakest twice as often), with new material learned in
     between. Fix: rule 36 and the per-course review switch; AWS stays in review (its exam is short multiple-choice recall).
+40. **2026-10-16 · "the staff lessons are really really long comparatively."** By minutes, not words: eng 0003 was 10 + 35 + 8 + 6
+    + 3 = 62 minutes across two days, eng 0001 about 37; a statistics or history lesson is about 30 per day. The learner stopped
+    after Part 3 (the leadership story); Parts 4 (deep-dive outline) and 5 (self-rating) were dropped. The deep-dive outline moves
+    to IV100's "behavioral / project deep dive" round. Fix: rule 37.
+

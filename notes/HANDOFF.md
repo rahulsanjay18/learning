@@ -3,6 +3,7 @@
 New threads: read `CLAUDE.md`, then `TEACHING-LOG.md`, then the topic's folder. This file is the to-do list across topics.
 
 ## Learner's next actions
+- **2026-10-16: eng 0003 stopped after Part 3** (learner: staff lessons run long; 0003 was ~62 min). IV000 done, IV100 active (its "project deep dive" round absorbs the dropped Part 4). New TEACHING-LOG rule 37: eng lessons ~30 min, one sitting. iv-code timeout was the learner marking visited on pop (answers right, 2.4M pushes on 8³); explained in topics/eng/QUESTIONS.md.
 - **2026-10-15: one of the learner's devices is unpaired and will stay that way.** Its results arrive as pasted `lp-results` blocks.
   `scripts/lp_results.py "<block>"` now posts what the paste shows (misses with answers, free responses, skips, guesses, note,
   rating) to the progress server (content-hashed eids, so re-pasting is harmless), and leaves a lesson open when the line says
