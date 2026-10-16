@@ -92,3 +92,11 @@ Interview pick: `all(0 <= c < n for c in p)`. The tuple-bounds version is a trap
 
 Sources: [1] Python Language Reference §6.10 "Comparisons" (chained comparisons): https://docs.python.org/3/reference/expressions.html#comparisons
 [2] same section, "Value comparisons" (sequences compare lexicographically; ordering across unrelated types raises TypeError).
+
+## 2026-10-16 · "Is the reduction in time just to put pressure on me, or because I got the answer in time?"
+
+Neither. Two different numbers: (1) the coding round's real pace is about 20 minutes a problem (Meta's classic round is usually two
+medium problems in 45 minutes, Hello Interview's Meta E6 guide, <https://www.hellointerview.com/guides/meta/e6>); 0003's 35-minute
+cap was a loose first-baseline allowance. (2) The new ~30-minute rule (TEACHING-LOG rule 37) caps the lesson page, not coding pace.
+The learner finished in 13 minutes, so the IV100 retest uses the real 20-minute cap and grades correctness + whether the code meets
+its stated complexity (judgment, not from a source).
