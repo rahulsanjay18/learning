@@ -63,3 +63,11 @@ order". It's short to say and obviously correct.
 ### Sources
 1. Cormen, Leiserson, Rivest, Stein, *Introduction to Algorithms*, 4th ed. (MIT Press, 2022), §20.2 "Breadth-first search" (in collection).
 2. Python documentation, `itertools.permutations` and `itertools.product`: https://docs.python.org/3/library/itertools.html
+
+## 2026-10-16 · "I think I deserve more than a .4 on the code part. The alg was right and did work."
+
+Regraded the timing/follow-up item 0.4 → 0.6. Conceded: the 0.4 double-counted the code box's own miss, and the first feedback
+guessed "no visited set" before seeing the code. Held: the stated O(n³) didn't match the code (about 4,600 pushes per cell on 8³,
+timeout at the stated n = 30), and interviewers score whether you check your own solution, so it's not full marks.
+Meta's guide lists verification among the coding-round signals (Meta, "Software Engineer Full Loop Interview Prep Guide", the
+reading for eng 0003).
