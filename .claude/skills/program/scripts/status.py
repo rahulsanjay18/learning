@@ -39,6 +39,17 @@ def today(tz, override):
         return date.today()
 
 
+FINISHED = 0.8   # same line as assets/today.js: rated, or this share of a page's questions answered (one answer = in progress)
+
+
+def quiz_total(topic, stem):
+    f = ROOT / "topics" / topic / "lessons" / f"{stem}.html"
+    if not f.exists():
+        return 0
+    ids = re.findall(r'class="quiz"[^>]*data-type="[^"]*"[^>]*data-id="([^"]*)"|class="quiz"[^>]*data-id="([^"]*)"[^>]*data-type=', f.read_text())
+    return sum(1 for a, b in ids if not (a or b).startswith("read-"))
+
+
 def lesson_files(topic):
     d = ROOT / "topics" / topic / "lessons"
     return sorted(p.stem for p in d.glob("[0-9][0-9][0-9][0-9]-*.html")) if d.is_dir() else []
@@ -98,14 +109,30 @@ def main():
                 summaries[topic] = None if offline or status is None else fetch(f"/summary?topic={topic}")
             summ = summaries[topic]
             # done = attempted on the progress server, or recorded by hand in "completed" (pasted lp-results)
-            done_l = set(re.findall(rf"^{re.escape(topic)}/(\S+?):", summ or "", re.M)) | set(c.get("completed", []))
+            if ("pages", topic) not in summaries:
+                pg = None if summ is None else fetch(f"/pages?topic={topic}")
+                summaries[("pages", topic)] = json.loads(pg) if pg else None
+            pages = summaries[("pages", topic)]
+            started = set(re.findall(rf"^{re.escape(topic)}/(\S+?):", summ or "", re.M))
+            if pages is None:          # older server: any answer counts
+                done_l = started | set(c.get("completed", []))
+            else:
+                done_l = set(c.get("completed", [])) | {x.split("/", 1)[1] for x in pages.get("rated", [])}
+                for pgid, n in pages.get("answered", {}).items():
+                    stem = pgid.split("/", 1)[1]
+                    tot = quiz_total(topic, stem)
+                    if tot and n >= FINISHED * tot:
+                        done_l.add(stem)
             lessons = c.get("lessons", [])
             n, est = len(lessons), c.get("est_lessons", "?")
             line = f"{tag} {c['id']} {c['title']}: {n}/{est} lessons written"
             if lessons:
                 last = lessons[-1]
                 if last in done_l:
-                    line += f"; latest {last} DONE"
+                    line += f"; latest {last} DONE -> WRITE THE NEXT ONE NOW (one ready lesson per subject)"
+                elif pages is not None and last in started:
+                    a = pages.get("answered", {}).get(f"{topic}/{last}", 0)
+                    line += f"; latest {last} IN PROGRESS ({a}/{quiz_total(topic, last)} answered; learner's next step)"
                 elif summ is None:
                     line += f"; latest {last} (done? unknown)"
                 else:
