@@ -68,6 +68,7 @@ order". It's short to say and obviously correct.
 
 Regraded the timing/follow-up item 0.4 → 0.6. Conceded: the 0.4 double-counted the code box's own miss, and the first feedback
 guessed "no visited set" before seeing the code. Held: the stated O(n³) didn't match the code (about 4,600 pushes per cell on 8³,
-timeout at the stated n = 30), and interviewers score whether you check your own solution, so it's not full marks.
-Meta's guide lists verification among the coding-round signals (Meta, "Software Engineer Full Loop Interview Prep Guide", the
-reading for eng 0003).
+timeout at the stated n = 30), so it isn't full marks. That last part is judgment: Hello Interview's Meta E6 guide (the
+reading for eng 0003, <https://www.hellointerview.com/guides/meta/e6>) grades the classic coding round on clean,
+production-quality code, unprompted edge cases and communication; its "verify" signal belongs to the AI-enabled round (verifying
+the AI's output). An earlier reply cited it as "verification" for the classic round; that was wrong and is corrected here.
