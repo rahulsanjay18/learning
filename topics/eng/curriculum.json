@@ -51,7 +51,7 @@
       "level": "I",
       "plan": [
         "design round (your-version prompt, growth)",
-        "coding mock (20-minute cap, the real pace; in Vim; maintenance): retest from 0003 (graded 0.6): a new graph/BFS problem; say the complexity, then check the code matches it (mark visited on enqueue)",
+        "coding mock (20-minute cap, the real pace; in Vim; maintenance): retest from 0003 (graded 0.6). New graph/search problem. Learner may finish past 20: record time at 20 and at finish, grade the finished code. Graded on correctness + code meeting the stated complexity; teach the check \"can an item enter the queue twice? trace a tiny case\" (the 0003 gap was knowledge, not time)",
         "design round (ML system design, growth)",
         "coding mock (maintenance)",
         "design round (standard twin prompt)",
