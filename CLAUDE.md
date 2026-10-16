@@ -46,6 +46,9 @@ BOOKS_URL=https://books.tail59e10.ts.net
   pretests; Economics parked, already solid at Principles level). Each major has a `PROGRAM.md` in its topic folder.
 - **One ordered queue (2026-10-15):** the daily plan is `queue.json`: review cards first, then the top 3 unfinished lessons, worded as
   "this is what you have to do" (not "whatever you have time for"). Best effort on my side; keep it in priority order.
+- **Always one lesson ready per subject (2026-10-16):** every active subject (each major; Games counts chess and military strategy
+  separately) keeps at least one written, unfinished lesson in `queue.json`. When a lesson finishes, write that subject's next one
+  right away, without asking. (Writing ahead past that one still follows TEACHING-LOG: wait for results before building on them.)
 - Study plan (proposed 2026-10-05, see `notes/study-plan.md`): 4 subjects, 2 full (Statistics, AWS ML cert) + 2 half
   (one non-technical, one fun), daily review first. **Finish the whole day's plan before going deeper on any one subject**;
   extra time beyond the 1-hour floor is welcome after that.

@@ -55,8 +55,8 @@ set `"curriculum"` in programs.json, and run the test (below). Until it's set up
    rubric, `POST /progress/grades`, and add a short entry to the topic's `QUESTIONS.md` when feedback matters.
 2. **For each of today's majors** (or just the named one), look at its active course line:
    - **Latest lesson NOT DONE YET** → don't write a new one. Give the learner its link
-     (`<PAGES_URL>/topics/<topic>/lessons/<stem>.html`) and its reading, if any. Only prepare the next lesson if they ask or have extra time.
-   - **Latest lesson DONE** → `GET /progress/summary?topic=<topic>`, write a learning record if it showed something new
+     (`<PAGES_URL>/topics/<topic>/lessons/<stem>.html`) and its reading, if any. That subject already has its one ready lesson (CLAUDE.md, "Always one lesson ready"); write further ahead only if they ask.
+   - **Latest lesson DONE** → write the next one now, without asking (every subject keeps one written, unfinished lesson queued). `GET /progress/summary?topic=<topic>`, write a learning record if it showed something new
      (the /teach format), then write the lesson named by the first `plan` entry, following /teach and CLAUDE.md
      (reading guide, shared assets, an "Extra practice" closing section per TEACHING-LOG rule 32, lint + widget tests; the procedure is `/write-lesson`).
    - **Plan empty / estimate reached** → write the course check (chapter check, unit check, or a game-review lesson), then go to step 3.
