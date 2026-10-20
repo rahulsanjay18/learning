@@ -1,0 +1,632 @@
+{
+  "major": "critical-theory",
+  "program": "topics/critical-theory/PROGRAM.md",
+  "spine": "Tyson, Critical Theory Today (4th ed., 2023) for each lens + the Norton Anthology of Theory and Criticism (2nd ed.) for the theorists + one novel per lens (all in collection)",
+  "rules": [
+    "A reading major: most days are a reading day (one ~25-minute slice + 2-3 guide questions, answered optionally); a seminar day (real lesson page) every 4 reading days; each course ends with a short lens essay.",
+    "Readings, day counts and books per course come from build_plan.py (re-run after edits); READING-PLAN.md is generated."
+  ],
+  "courses": [
+    {
+      "id": "CT000",
+      "title": "Placement: which lenses can you already use?",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 1,
+      "note": "Short pretest: name the lens behind 6 short critical passages, define 8 terms, write one paragraph on a Gatsby passage. Pass → skip CT100's Culler half, keep Gatsby."
+    },
+    {
+      "id": "CT100",
+      "title": "Orientation: what theory is (and read Gatsby)",
+      "status": "later",
+      "requires": [
+        "CT000"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "68dc21333b Culler, Literary Theory: A Very Short Introduction (whole)",
+        "secondary": [
+          "dd5a1301fb Tyson ch. 1: Everything you wanted to know about critical theory",
+          "20cdc786dd Fitzgerald, The Great Gatsby (whole; Tyson's running example)"
+        ]
+      }
+    },
+    {
+      "id": "CT110",
+      "title": "Foundations I: philosophy (Hegel, Nietzsche; Kant optional)",
+      "status": "later",
+      "requires": [
+        "CT100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 27,
+      "books": {
+        "primary": "b37abce0ee Singer, Hegel: A Very Short Introduction",
+        "secondary": [
+          "face941c2e Norton: Hegel, \"Phenomenology of Spirit [The Master-Slave Dialectic]\" (pp. 630-636)",
+          "db1ca8dea1 Tanner, Nietzsche VSI (whole)",
+          "face941c2e Norton: Nietzsche, \"On Truth and Lying in a Non-Moral Sense\" (pp. 874-884)"
+        ]
+      }
+    },
+    {
+      "id": "CT120",
+      "title": "Foundations II: social theory (Marx, Weber, Durkheim)",
+      "status": "later",
+      "requires": [
+        "CT110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 39,
+      "books": {
+        "primary": "b01fb90f16 Tucker (ed.), The Marx-Engels Reader, 2nd ed. (selections)",
+        "secondary": [
+          "48e175129a Singer, Marx VSI (whole)",
+          "4c885b6657 Weber, The Protestant Ethic: ch. 2 'The Spirit of Capitalism' and ch. 5 'Asceticism and the Spirit of Capitalism'",
+          "0b7173c20a Aron, Main Currents in Sociological Thought vol. 2: Durkheim chapter, opening sections",
+          "7fd3ab615b Mills, The Sociological Imagination, ch. 1 'The Promise'"
+        ]
+      }
+    },
+    {
+      "id": "CT130",
+      "title": "Foundations III: psychology (Freud)",
+      "status": "later",
+      "requires": [
+        "CT100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 27,
+      "books": {
+        "primary": "9c9ab8e41a Storr, Freud: A Very Short Introduction",
+        "secondary": [
+          "face941c2e Norton: Freud, \"The Interpretation of Dreams (Ch. V-VI selections)\" (pp. 919-929)",
+          "Freud, Civilization and Its Discontents (BOOK NEEDED; Columbia CC's long-time last text)"
+        ]
+      }
+    },
+    {
+      "id": "CT201",
+      "title": "New Criticism and formalism (close reading)",
+      "status": "later",
+      "requires": [
+        "CT100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 5",
+        "secondary": [
+          "face941c2e Norton: T. S. Eliot, \"Tradition and the Individual Talent\" (pp. 1092-1098)",
+          "face941c2e Norton: Ransom, \"Criticism, Inc.\" (pp. 1108-1118)",
+          "face941c2e Norton: Wimsatt & Beardsley, \"The Intentional Fallacy\" (pp. 1374-1387)",
+          "face941c2e Norton: Brooks, \"The Heresy of Paraphrase\" (pp. 1353-1366)",
+          "24529ef5be Joyce, Dubliners: 'Araby', 'Eveline', 'The Dead'"
+        ]
+      }
+    },
+    {
+      "id": "CT202",
+      "title": "Reader-response criticism",
+      "status": "later",
+      "requires": [
+        "CT201"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 29,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 6",
+        "secondary": [
+          "face941c2e Norton: Iser, \"Interaction between Text and Reader\" (pp. 1673-1682)",
+          "face941c2e Norton: Fish, \"Interpreting the Variorum\" (pp. 2071-2089)",
+          "ba765724a5 Kafka, The Trial (whole)"
+        ]
+      }
+    },
+    {
+      "id": "CT203",
+      "title": "Structuralism, semiotics and narratology",
+      "status": "later",
+      "requires": [
+        "CT201"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 33,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 7",
+        "secondary": [
+          "face941c2e Norton: Saussure, \"Course in General Linguistics (selections)\" (pp. 960-977)",
+          "face941c2e Norton: Jakobson, \"Linguistics and Poetics\" (pp. 1258-1265)",
+          "face941c2e Norton: Barthes, \"Mythologies (three essays)\" (pp. 1461-1466)",
+          "face941c2e Norton: Todorov, \"Structural Analysis of Narrative\" (pp. 2099-2106)",
+          "cee70ee239 Shelley, Frankenstein (whole; a story inside a story inside a story)"
+        ]
+      }
+    },
+    {
+      "id": "CT204",
+      "title": "Deconstruction and poststructuralism",
+      "status": "later",
+      "requires": [
+        "CT203",
+        "CT110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 27,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 8",
+        "secondary": [
+          "6fd2babb95 Belsey, Poststructuralism VSI (whole)",
+          "face941c2e Norton: Barthes, \"The Death of the Author; From Work to Text\" (pp. 1466-1476)",
+          "face941c2e Norton: Derrida, \"Of Grammatology (Exergue; The Exorbitant. Question of Method)\" (pp. 1822-1830)",
+          "face941c2e Norton: de Man, \"Semiology and Rhetoric\" (pp. 1514-1527)",
+          "cee70ee239 Frankenstein again: re-read the frame letters and the creature's own narrative (ch. 11-16) for its binaries"
+        ]
+      }
+    },
+    {
+      "id": "CT205",
+      "title": "Psychoanalytic criticism",
+      "status": "later",
+      "requires": [
+        "CT130",
+        "CT201"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 2",
+        "secondary": [
+          "face941c2e Norton: Freud, \"The \"Uncanny\"; Fetishism\" (pp. 929-956)",
+          "face941c2e Norton: Lacan, \"The Mirror Stage\" (pp. 1286-1290)",
+          "474dc72906 Shakespeare, Hamlet (whole)"
+        ]
+      }
+    },
+    {
+      "id": "CT206",
+      "title": "Marxist criticism",
+      "status": "later",
+      "requires": [
+        "CT120",
+        "CT201"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 37,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 3",
+        "secondary": [
+          "face941c2e Norton: Gramsci, \"The Formation of the Intellectuals\" (pp. 1138-1144)",
+          "face941c2e Norton: Althusser, \"Ideology and Ideological State Apparatuses (from)\" (pp. 1483-1509)",
+          "face941c2e Norton: Raymond Williams, \"Marxism and Literature: 'Literature'\" (pp. 1567-1575)",
+          "face941c2e Norton: Jameson, \"The Political Unconscious (Preface; from ch. 1)\" (pp. 1937-1960)",
+          "692fb41445 Yashpal, Dada Comrade (whole; 1941 Hindi novel of the revolutionary underground, tr. Sawhney)"
+        ]
+      }
+    },
+    {
+      "id": "CT260",
+      "title": "The Frankfurt School (Critical Theory proper)",
+      "status": "later",
+      "requires": [
+        "CT206",
+        "CT205"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 68,
+      "books": {
+        "primary": "b6f3f5f15a Held, Introduction to Critical Theory: Horkheimer to Habermas (selected chapters)",
+        "secondary": [
+          "4eb171370b Bronner, Critical Theory: A Very Short Introduction (whole)",
+          "face941c2e Norton: Horkheimer & Adorno, \"The Culture Industry: Enlightenment as Mass Deception\" (pp. 1223-1240)",
+          "face941c2e Norton: Benjamin, \"The Work of Art in the Age of Mechanical Reproduction\" (pp. 1166-1186)",
+          "c1cf685a4d Marcuse, One-Dimensional Man: Introduction and ch. 1",
+          "face941c2e Norton: Habermas, \"Structural Transformation of the Public Sphere (from); Modernity: An Incomplete Project\" (pp. 1745-1759)",
+          "The culture industry now: one film, game or feed of your choice, read with Adorno and Benjamin (no fixed text)"
+        ]
+      }
+    },
+    {
+      "id": "CT207",
+      "title": "Feminist criticism",
+      "status": "later",
+      "requires": [
+        "CT201"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 38,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 4",
+        "secondary": [
+          "d004f50be2 Beauvoir, The Second Sex: Introduction",
+          "face941c2e Norton: Woolf, \"A Room of One's Own [Shakespeare's Sister]; [Androgyny]\" (pp. 1021-1030)",
+          "face941c2e Norton: Gilbert & Gubar, \"The Madwoman in the Attic, ch. 2 (from)\" (pp. 2023-2035)",
+          "face941c2e Norton: Cixous, \"The Laugh of the Medusa\" (pp. 2039-2056)",
+          "5705dee3e9 Woolf, To the Lighthouse (whole)",
+          "744967e342 Chughtai, 'Lihaaf' (The Quilt), in Manto and Chughtai: The Essential Stories"
+        ]
+      }
+    },
+    {
+      "id": "CT208",
+      "title": "New historicism and cultural studies",
+      "status": "later",
+      "requires": [
+        "CT206",
+        "CT204"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 44,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 9",
+        "secondary": [
+          "fe70b104b9 Gutting, Foucault VSI (whole)",
+          "face941c2e Norton: Foucault, \"What Is an Author?; Discipline and Punish: The Carceral\" (pp. 1622-1648)",
+          "face941c2e Norton: Greenblatt, \"Introduction to The Power of Forms in the English Renaissance\" (pp. 2251-2255)",
+          "face941c2e Norton: Stuart Hall, \"Cultural Studies and Its Theoretical Legacies\" (pp. 1898-1910)",
+          "1f7632613f Conrad, Heart of Darkness (Norton Critical Ed.): the novella",
+          "1f7632613f Heart of Darkness NCE: Backgrounds and Contexts (Conrad's Congo Diary, letters, 'Geography and Some Explorers')"
+        ]
+      }
+    },
+    {
+      "id": "CT209",
+      "title": "Lesbian, gay and queer criticism",
+      "status": "later",
+      "requires": [
+        "CT207",
+        "CT208"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 10",
+        "secondary": [
+          "face941c2e Norton: Foucault, \"The History of Sexuality vol. 1: The Incitement to Discourse\" (pp. 1648-1659)",
+          "face941c2e Norton: Sedgwick, \"Between Men (from Introduction); Epistemology of the Closet (Axiomatic)\" (pp. 2434-2445)",
+          "face941c2e Norton: Butler, \"Gender Trouble (Preface; Subversive Bodily Acts)\" (pp. 2488-2502)",
+          "20cdc786dd Gatsby again: Nick Carraway (Tyson's queer reading, then ch. 1-2 re-read); 'Lihaaf' again",
+          "1f7632613f HoD NCE: Roberts, '[Masculinity, Modernity, and Homosexual Desire]'"
+        ]
+      }
+    },
+    {
+      "id": "CT210",
+      "title": "African American criticism and critical race theory",
+      "status": "later",
+      "requires": [
+        "CT201",
+        "CT206"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 59,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 11",
+        "secondary": [
+          "face941c2e Norton: Du Bois, \"Criteria of Negro Art\" (pp. 980-987)",
+          "face941c2e Norton: Hurston, \"Characteristics of Negro Expression; What White Publishers Won't Print\" (pp. 1146-1163)",
+          "face941c2e Norton: Hughes, \"The Negro Artist and the Racial Mountain\" (pp. 1313-1317)",
+          "face941c2e Norton: Gates, \"Talking Black: Critical Signs of the Times\" (pp. 2424-2432)",
+          "face941c2e Norton: Barbara Smith, \"Toward a Black Feminist Criticism\" (pp. 2302-2316)",
+          "7003a0782e Ellison, Invisible Man (whole)"
+        ]
+      }
+    },
+    {
+      "id": "CT211",
+      "title": "Postcolonial criticism",
+      "status": "later",
+      "requires": [
+        "CT206",
+        "CT204"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 53,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 12",
+        "secondary": [
+          "fb7f89f762 Kennedy, Decolonization: A Very Short Introduction (history background; whole)",
+          "face941c2e Norton: Fanon, \"The Wretched of the Earth (two chapters, from)\" (pp. 1578-1595)",
+          "face941c2e Norton: Said, \"Orientalism: Introduction\" (pp. 1991-2012)",
+          "face941c2e Norton: Spivak, \"[Can the Subaltern Speak?]\" (pp. 2197-2208)",
+          "face941c2e Norton: Ngugi et al., \"On the Abolition of the English Department\" (pp. 2092-2097)",
+          "face941c2e Norton: Achebe, \"An Image of Africa: Racism in Conrad's Heart of Darkness\" (pp. 1783-1794)",
+          "f6b767de9a Achebe, Things Fall Apart (whole; in The African Trilogy)",
+          "744967e342 Manto, 'Toba Tek Singh'"
+        ]
+      }
+    },
+    {
+      "id": "CT212",
+      "title": "Ecocriticism",
+      "status": "later",
+      "requires": [
+        "CT206",
+        "CT207"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 13,
+      "books": {
+        "primary": "dd5a1301fb Tyson ch. 13",
+        "secondary": [
+          "face941c2e Norton: Haraway, \"A Manifesto for Cyborgs (from)\" (pp. 2269-2283)",
+          "Woolf, To the Lighthouse, 'Time Passes' re-read; Frankenstein's Alpine chapters (ch. 9-10) re-read"
+        ]
+      }
+    },
+    {
+      "id": "CT290",
+      "title": "One text, many lenses: Heart of Darkness and its critics",
+      "status": "later",
+      "requires": [
+        "CT202",
+        "CT205",
+        "CT209",
+        "CT210",
+        "CT211",
+        "CT212",
+        "CT260"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 23,
+      "books": {
+        "primary": "1f7632613f Conrad, Heart of Darkness, Norton Critical Edition (4th ed., ed. Armstrong): the essays in criticism",
+        "secondary": [
+          "dd5a1301fb Tyson ch. 14: Gaining an overview"
+        ]
+      }
+    },
+    {
+      "id": "CT310",
+      "title": "Breadth: hermeneutics (how interpretation works)",
+      "status": "later",
+      "requires": [
+        "CT100"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "source": "54c3d38cd5 Zimmermann, Hermeneutics VSI; Norton: Schleiermacher (613-626), Hirsch 'Objective Interpretation' (1684-1709)"
+    },
+    {
+      "id": "CT320",
+      "title": "Breadth: the theory wars (against theory, for theory)",
+      "status": "later",
+      "requires": [
+        "CT204"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "source": "Norton: Knapp & Michaels 'Against Theory' (2460-2475), Barbara Christian 'The Race for Theory' (2257-2266), Graff (2059-2067), Eagleton 'The Rise of English' (2243-2250). Yale ENGL 300 lectures 25-26"
+    },
+    {
+      "id": "CT330",
+      "title": "Breadth: postmodernism",
+      "status": "later",
+      "requires": [
+        "CT204",
+        "CT260"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "source": "7fe1b80216 Butler, Postmodernism VSI; Norton: Lyotard (1612-1615), Baudrillard 'Precession of Simulacra' (1732-1741), Jameson 'Postmodernism and Consumer Society' (1960-1975)"
+    },
+    {
+      "id": "CT340",
+      "title": "Elective: Indian fiction through the lenses (links Indian History)",
+      "status": "later",
+      "requires": [
+        "CT211"
+      ],
+      "group": "elective",
+      "level": "I",
+      "source": "a2a924addb Rushdie, Midnight's Children; 744967e342 Manto & Chughtai stories (Partition); 8b30ac33e8 Sahgal, Rich Like Us (the Emergency); e7fbdf6d3b Chughtai, The Crooked Line"
+    },
+    {
+      "id": "CT350",
+      "title": "Elective: lenses on film and games (links Games)",
+      "status": "later",
+      "requires": [
+        "CT260"
+      ],
+      "group": "elective",
+      "level": "I",
+      "source": "Norton: Mulvey 'Visual Pleasure and Narrative Cinema' (2181-2193); Benjamin and Baudrillard re-read; apply to one film and one game you play"
+    },
+    {
+      "id": "CT360",
+      "title": "Breadth: before theory (Plato to Kant)",
+      "status": "later",
+      "requires": [
+        "CT100"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "source": "f3897354f4 Classical Literary Criticism (Penguin: Plato, Aristotle's Poetics, Horace, Longinus); Norton: Sidney (326-363), Kant (504-536), Wordsworth (648-668), Arnold (806-833)"
+    },
+    {
+      "id": "CT370",
+      "title": "Elective: the long novels (Jane Eyre, Middlemarch, Brothers Karamazov) through 2-3 lenses each",
+      "status": "later",
+      "requires": [
+        "CT207"
+      ],
+      "group": "elective",
+      "level": "I",
+      "source": "8751c878bc Jane Eyre; 00a65b8d86 Middlemarch; f6dbd55b62 Brothers Karamazov"
+    },
+    {
+      "id": "CT390",
+      "title": "Practice: a reading group or a public lens essay",
+      "status": "later",
+      "requires": [
+        "CT201"
+      ],
+      "group": "practice",
+      "level": "I",
+      "source": "optional; to choose with you"
+    },
+    {
+      "id": "CT398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "CT290"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "source": "List of works read + a typed conversation, rubric in notes/major-design.md"
+    },
+    {
+      "id": "CT399",
+      "title": "Capstone: a long essay on a text of your choice through 3 lenses",
+      "status": "later",
+      "requires": [
+        "CT290"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "source": "optional"
+    },
+    {
+      "id": "CT510",
+      "title": "Seminar: Horkheimer & Adorno, Dialectic of Enlightenment (whole)",
+      "status": "later",
+      "requires": [
+        "CT260"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "BOOK NEEDED"
+    },
+    {
+      "id": "CT520",
+      "title": "Seminar: Marcuse, One-Dimensional Man (whole)",
+      "status": "later",
+      "requires": [
+        "CT260"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "c1cf685a4d (in collection)"
+    },
+    {
+      "id": "CT530",
+      "title": "Seminar: Benjamin, Illuminations (whole)",
+      "status": "later",
+      "requires": [
+        "CT260"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "BOOK NEEDED"
+    },
+    {
+      "id": "CT540",
+      "title": "Seminar: Beauvoir, The Second Sex (selected parts)",
+      "status": "later",
+      "requires": [
+        "CT207"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "d004f50be2 (in collection)"
+    },
+    {
+      "id": "CT550",
+      "title": "Seminar: Foucault, Discipline and Punish (whole)",
+      "status": "later",
+      "requires": [
+        "CT208"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "BOOK NEEDED"
+    },
+    {
+      "id": "CT560",
+      "title": "Seminar: Said, Orientalism (whole)",
+      "status": "later",
+      "requires": [
+        "CT211"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "BOOK NEEDED"
+    },
+    {
+      "id": "CT570",
+      "title": "Seminar: Jameson, The Political Unconscious (whole)",
+      "status": "later",
+      "requires": [
+        "CT206"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "BOOK NEEDED"
+    },
+    {
+      "id": "CT580",
+      "title": "Seminar: Butler, Gender Trouble (whole)",
+      "status": "later",
+      "requires": [
+        "CT209"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "BOOK NEEDED"
+    },
+    {
+      "id": "CT590",
+      "title": "Seminar: Marx, Capital vol. 1, Parts I-III (with a reader's companion)",
+      "status": "later",
+      "requires": [
+        "CT120"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "9c44e4c7ec Capital vol. 1 (in collection); companion BOOK NEEDED (e.g. Harvey)"
+    },
+    {
+      "id": "CT595",
+      "title": "Seminar: Habermas, The Structural Transformation of the Public Sphere",
+      "status": "later",
+      "requires": [
+        "CT260"
+      ],
+      "group": "core",
+      "level": "II",
+      "source": "BOOK NEEDED; 3be93f35d7 Finlayson, Habermas VSI (in collection) as on-ramp"
+    },
+    {
+      "id": "CT598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "CT510"
+      ],
+      "group": "colloquium",
+      "level": "II"
+    }
+  ]
+}

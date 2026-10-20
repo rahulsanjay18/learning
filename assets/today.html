@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Today</title>
+<link rel="stylesheet" href="lp.css">
+<style>
+  .today-plan { padding-left: 1.2rem; }
+  .today-plan li { margin: 0 0 1rem; }
+  .today-plan p { margin: .25rem 0 0; }
+</style>
+</head>
+<body>
+<main data-lp-footer="off">
+<nav class="crumbs"><a href="../index.html">All topics</a> · Today</nav>
+<h1>Today</h1>
+<p class="subtitle">Do these today, in order: the review cards first, then each lesson.</p>
+<p id="today-status" class="callout">Loading…</p>
+<div id="today"></div>
+<div id="todo"></div>
+<p class="muted">The list comes from <code>queue.json</code>, which Claude keeps in order; finished lessons drop off by themselves. Ticks are kept in this browser only.</p>
+</main>
+<script src="lp.js"></script>
+<script src="today.js"></script>
+</body>
+</html>

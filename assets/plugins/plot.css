@@ -1,0 +1,37 @@
+/* Plot plugin styles (assets/plugins/plot.js). Load after assets/lp.css. Curves use --accent and --fg plus dash patterns. */
+.lp-plot { margin: 1.4rem 0; }
+.quiz .plot-frame { margin: .4rem 0 .6rem; }
+.plot-svg { width: 100%; }
+svg.plot { display: block; width: 100%; height: auto; overflow: visible; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.plot-grid line { stroke: var(--rule); stroke-width: 1; }
+.plot-axes line { stroke: var(--muted); stroke-width: 1; }
+.plot-ticks text { font-size: 11px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.plot-label { font-size: 12px; fill: var(--muted); font-style: italic; }
+
+.plot-curve { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.plot-curve.c0 { stroke: var(--accent); }
+.plot-curve.c1 { stroke: var(--fg); stroke-dasharray: 7 4; stroke-linecap: butt; }
+.plot-curve.c2 { stroke: var(--accent); stroke-dasharray: 1.5 4; }
+.plot-curve.c3 { stroke: var(--fg); stroke-dasharray: 8 3 1.5 3; stroke-linecap: butt; }
+.plot-shade { fill: var(--accent); fill-opacity: .16; stroke: none; }
+.plot-bars { fill: var(--accent); fill-opacity: .12; stroke: var(--accent); stroke-width: 1.2; }
+.plot-bars.in { fill-opacity: .55; }
+.plot-dot { stroke: none; }
+.plot-dot.c0, .plot-dot.c2 { fill: var(--accent); }
+.plot-dot.c1, .plot-dot.c3 { fill: var(--fg); }
+.plot-vline { stroke: var(--fg); stroke-width: 1; stroke-dasharray: 3 3; opacity: .7; }
+.plot-point { fill: var(--fg); stroke: var(--bg); stroke-width: 1; }
+
+.plot-legend { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; font-size: .85rem; color: var(--muted); margin: .3rem 0 0 46px; }
+.plot-key { display: inline-flex; align-items: center; gap: .4rem; }
+.plot-key svg { display: block; }
+.plot-params { margin: .6rem 0 0; }
+.plot-param { display: flex; align-items: center; gap: .7rem; padding: .15rem 0; font-size: .95rem; }
+.plot-param .name { min-width: 1.6rem; text-align: right; }
+.plot-param .name.var { font-style: italic; }
+.plot-param input[type=range], .quiz .plot-param input[type=range] { flex: 1 1 auto; width: auto; min-width: 0; padding: 0; border: 0;
+  background: transparent; accent-color: var(--accent); }
+.plot-param output { min-width: 3.2rem; text-align: right; font-variant-numeric: tabular-nums; font-size: .9rem; }
+.plot-caption { font-size: .85rem; color: var(--muted); margin-top: .4rem; }
+.plot-area { display: block; color: var(--fg); font-variant-numeric: tabular-nums; }
+.quiz .plot-caption { margin-bottom: .8rem; }

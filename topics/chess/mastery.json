@@ -1,0 +1,8 @@
+{
+ "_about": "Mastery grades from the learning records (Got it / Not yet). The review deck brings Not yet items back first and Got it items only when stale. Keys: page#id or page#family.",
+ "not_yet": [],
+ "got": [
+  "chess/0004-what-did-my-move-stop-defending#guard-list",
+  "chess/0004-what-did-my-move-stop-defending#hang-after"
+ ]
+}

@@ -1,0 +1,159 @@
+{
+  "about": "Program layer above /teach. Read by .claude/skills/program/scripts/status.py. Human plan: notes/study-plan.md. Edit freely; run python3 scripts/test_programs.py after. enrolled_levels: Level II is opt-in per major (the learner enrolls separately after or alongside Level I). Parked entries may carry a full curriculum (designed, not scheduled); the tests and DAGs cover them too.",
+  "timezone": "America/New_York",
+  "review": "assets/review.html",
+  "week": {
+    "mon": [
+      "statistics",
+      "swe"
+    ],
+    "tue": [
+      "statistics",
+      "indian-history"
+    ],
+    "wed": [
+      "swe",
+      "statistics"
+    ],
+    "thu": [
+      "swe",
+      "games"
+    ],
+    "fri": [
+      "statistics",
+      "swe"
+    ],
+    "sat": [
+      "indian-history",
+      "games"
+    ],
+    "sun": []
+  },
+  "majors": [
+    {
+      "slug": "statistics",
+      "name": "Statistics",
+      "weight": "full",
+      "goal": "career",
+      "curriculum": "topics/statistics/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ]
+    },
+    {
+      "slug": "swe",
+      "name": "SWE career (staff, AWS, C/C++/CUDA, on 3D chess)",
+      "weight": "full",
+      "goal": "career",
+      "curriculum": "topics/swe/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "The single home for everything job-related (learner, 2026-10-07): staff skills, AWS (old aws-ml major folded in), C/C++/CUDA, Spark, career extras and the safety net. Reps come from the 3D chess backlog (topics/swe/backlog.json)."
+    },
+    {
+      "slug": "indian-history",
+      "name": "Indian History",
+      "weight": "half",
+      "goal": "soul",
+      "curriculum": "topics/indian-history/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ]
+    },
+    {
+      "slug": "games",
+      "name": "Games",
+      "weight": "half",
+      "goal": "fun",
+      "curriculum": "topics/games/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ]
+    }
+  ],
+  "parked": [
+    {
+      "slug": "economics",
+      "note": "Principles solid (13/13). Resume at intermediate level."
+    },
+    {
+      "slug": "nasm-cpt",
+      "note": "Deadline-driven: ask for the exam date."
+    },
+    {
+      "slug": "pixel-art",
+      "note": "One lesson so far; on the wishlist."
+    },
+    {
+      "slug": "critical-theory",
+      "name": "Critical Theory",
+      "goal": "soul",
+      "curriculum": "topics/critical-theory/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08 at the learner's request, explicitly 'not one I would do now'. A reading major: Tyson + the Norton Anthology of Theory and Criticism + one novel per lens, with foundations from philosophy, social theory and psychology. SYLLABUS.md is the professor's syllabus (128 weeks at 5 sittings/week). One in, one out when it starts."
+    },
+    {
+      "slug": "math",
+      "name": "Mathematics",
+      "goal": "soul",
+      "curriculum": "topics/math/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py. Pure math from precalculus to graduate algebra, analysis and topology. Your entry point is the upper-division algebra/topology/complex courses."
+    },
+    {
+      "slug": "physics",
+      "name": "Physics",
+      "goal": "soul",
+      "curriculum": "topics/physics/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py. Undergraduate physics through quantum, E&M and stat mech, graduate core in Level II. Entry: modern physics + classical mechanics."
+    },
+    {
+      "slug": "mech-eng",
+      "name": "Mechanical Engineering",
+      "goal": "soul",
+      "curriculum": "topics/mech-eng/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py. Depth engineering major. Shares math, physics and engineering-science courses with Unified Engineering. Entry: statics, thermo, materials."
+    },
+    {
+      "slug": "unified-eng",
+      "name": "Unified Engineering",
+      "goal": "soul",
+      "curriculum": "topics/unified-eng/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, explicitly not for now; parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py. Breadth-first engineering across every discipline, run as MIT-Unified-style terms of four parallel courses with one shared weekly design problem. Entry: Unified I minus circuits."
+    },
+    {
+      "slug": "music",
+      "name": "Music",
+      "goal": "soul",
+      "curriculum": "topics/music/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, not scheduled; parked with a full curriculum (one in, one out). Built by scripts/build_majors.py. A conservatory-shaped music major: theory I-IV, aural skills, keyboard, counterpoint, three-semester history, Hindustani music; instrument practice optional. Entry is a placeholder until the learner states their background."
+    },
+    {
+      "slug": "english",
+      "name": "English",
+      "goal": "soul",
+      "curriculum": "topics/english/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-08, not scheduled; parked with a full curriculum (one in, one out). Built by scripts/build_majors.py. A reading major: surveys (British, American), Shakespeare, poetry, the novel, theory (= Critical Theory's first courses), history of the language, world and postcolonial literature, senior seminar. Writing electives."
+    }
+  ]
+}

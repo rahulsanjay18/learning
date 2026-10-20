@@ -1,0 +1,859 @@
+// Shared lesson widgets: core (item IDs, score bar, event log, sync, lesson footer) + generic widgets. No dependencies.
+// Markup reference for lesson authors: assets/README.md. Live examples: assets/gallery.html.
+// Plugins (assets/plugins/*.js) add widgets with LP.register({type, init, scored, selector}).
+(function () {
+  "use strict";
+  var LP = window.LP = window.LP || {};
+  var SELF = document.currentScript ? document.currentScript.src : location.href;
+  var regs = [], started = false;
+  var total = 0, answered = 0, firstTryRight = 0, bar = null;
+  var missed = [], skipped = [], guessed = [], freeAnswers = [], missAnswers = [];
+
+  // ---------- page identity + item IDs ----------
+  var m = location.pathname.match(/\/topics\/([^\/]+)\/(lessons|reference)\/([^\/]+?)(\.html)?$/);
+  var meta = document.querySelector('meta[name="lp-page"]');
+  LP.page = meta ? meta.content : m ? m[1] + "/" + m[3] : location.pathname.replace(/^.*\//, "").replace(/\.html$/, "") || "page";
+  LP.isLesson = m ? m[2] === "lessons" : !!meta;
+
+  function itemId(el) {
+    if (el.dataset.id) return el.dataset.id.indexOf("/") >= 0 ? el.dataset.id : LP.page + "#" + el.dataset.id;
+    var all = document.querySelectorAll(".quiz[data-type]");
+    return LP.page + "#q" + (Array.prototype.indexOf.call(all, el) + 1);
+  }
+
+  // ---------- storage, event log, sync ----------
+  function store(key, val) {
+    try {
+      if (val === undefined) return localStorage.getItem(key);
+      if (val === null) localStorage.removeItem(key); else localStorage.setItem(key, val);
+    } catch (e) { return null; }
+  }
+  function queue() { try { return JSON.parse(store("lp.queue") || "[]"); } catch (e) { return []; } }
+  function saveQueue(q) { store("lp.queue", JSON.stringify(q.slice(-1000))); }
+
+  // ---------- resume (2026-10-15): a lesson keeps its answers and unsent drafts across reloads and days ----------
+  // lp.page.<page> = {done: {<item id>: {ok, kind, answer, guessed}}, drafts: {<item id>|<field n>: text}, dts: {key: ts}}.
+  // Lesson pages only: the review deck re-asks items fresh. Restored items count in the score bar and results line but are not
+  // logged again. With sync on, the progress server's GET /page-state fills in answers and drafts from other devices, drafts are
+  // sent to POST /drafts, and "Start this page over" sends a 'reset' event so every device starts over.
+  var RESUME = LP.isLesson, PKEY = "lp.page." + LP.page;
+  function pageState() {
+    var st = null;
+    try { st = JSON.parse(store(PKEY) || "null"); } catch (e) { st = null; }
+    st = st || {}; st.done = st.done || {}; st.drafts = st.drafts || {}; st.dts = st.dts || {};
+    return st;
+  }
+  function savePageState(st) { if (RESUME) { st.ts = new Date().toISOString(); store(PKEY, JSON.stringify(st)); } }
+  LP.clearPage = function () { store(PKEY, null); };
+  function api(path, opts) {
+    var endpoint = store("lp.endpoint"), token = store("lp.token");
+    if (!endpoint || !token || !window.fetch) return null;
+    opts = opts || {}; opts.headers = { "Content-Type": "application/json", "Authorization": "Bearer " + token };
+    return fetch(endpoint.replace(/\/$/, "") + path, opts).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+
+  LP.emit = function (ev) {
+    ev.v = 1; ev.page = LP.page; ev.ts = new Date().toISOString();
+    if (document.querySelector('main[data-pretest="true"]')) ev.pretest = true;   // pretests measure; they never feed review
+    if (document.querySelector('main[data-review="off"]')) ev.noreview = true;   // courses kept out of review (2026-10-15)
+    ev.eid = Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12); // server ignores resent events with the same eid
+    var sched = LP.schedule(); schedApply(sched, ev); store("lp.review", JSON.stringify(sched));
+    var q = queue(); q.push(ev); saveQueue(q);
+    document.dispatchEvent(new CustomEvent("lp:event", { detail: ev }));
+    scheduleFlush();
+  };
+
+  // ---------- local spaced-review schedule (same Leitner boxes as progress-server) ----------
+  // lp.review = { "<item id>": {box, due, last, reps, lapses, page} }. Built from the event log on first use, then kept
+  // up to date on every answer, so it survives the log being emptied by sync. Read by assets/review.html.
+  // Box 0 = not yet (missed, skipped, guessed): back tomorrow. A right answer is always box 1+, and known items first return after
+  // two weeks (2026-10-10: review what isn't known yet or has gone stale). Keep in sync with progress-server/app.py.
+  var INTERVALS = [1, 14, 30, 60, 120, 240];
+  function schedApply(sched, ev) {
+    if (ev.type === "confidence" && ev.value === "guessed" && ev.item && sched[ev.item]) {   // right by luck = not known yet
+      var g = sched[ev.item];
+      g.box = 0; g.lapses = (g.lapses || 0) + 1; g.last = ev.ts;
+      g.due = new Date(new Date(ev.ts).getTime() + INTERVALS[0] * 864e5).toISOString();
+      return;
+    }
+    if (ev.pretest || ev.noreview) return;
+    if (ev.type !== "attempt" || !ev.item || ev.correct == null || ev.kind === "deferred") return;
+    var r = sched[ev.item] || { box: -1, reps: 0, lapses: 0 };
+    if (ev.correct) r.box = Math.min(Math.max(r.box + 1, 1), INTERVALS.length - 1);
+    else { if (r.reps) r.lapses++; r.box = 0; }
+    r.reps++;
+    r.last = ev.ts;
+    r.due = new Date(new Date(ev.ts).getTime() + INTERVALS[Math.max(r.box, 0)] * 864e5).toISOString();
+    r.page = ev.item.split("#")[0];
+    sched[ev.item] = r;
+  }
+  LP.schedule = function () {
+    var sched = null;
+    try { sched = JSON.parse(store("lp.review") || "null"); } catch (e) { sched = null; }
+    if (sched && store("lp.review.v") !== "2") {   // rules changed (2026-10-10): rebuild from the log if we still have it;
+      if (queue().length) sched = null;            // with sync on and the log already sent, the server (rebuilt too) is the authority
+      else if (store("lp.endpoint")) sched = {};
+    }
+    store("lp.review.v", "2");
+    if (!sched) {
+      sched = {};
+      queue().slice().sort(function (a, b) { return a.ts < b.ts ? -1 : 1; }).forEach(function (e) { schedApply(sched, e); });
+      store("lp.review", JSON.stringify(sched));
+    }
+    return sched;
+  };
+  LP.unschedule = function (item) { var sched = LP.schedule(); if (sched[item]) { delete sched[item]; store("lp.review", JSON.stringify(sched)); } };
+  LP.reviewUrl = new URL("review.html", SELF).href;
+
+  var flushTimer = null;
+  function scheduleFlush() { clearTimeout(flushTimer); flushTimer = setTimeout(LP.flush, 1500); }
+  LP.syncConfigured = function () { return !!(store("lp.endpoint") && store("lp.token")); };
+  LP.flush = function (keepalive) {
+    var endpoint = store("lp.endpoint"), token = store("lp.token"), q = queue();
+    if (!endpoint || !token || !q.length || !window.fetch) return;
+    fetch(endpoint.replace(/\/$/, "") + "/events", {
+      method: "POST", keepalive: !!keepalive,
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + token },
+      body: JSON.stringify({ events: q })
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      var now = queue(); saveQueue(now.slice(q.length)); // keep anything added while sending
+      setStatus("Synced.");
+    }).catch(function () { setStatus("Saved on this device; sync failed, will retry."); });
+  };
+  LP.configure = function (endpoint, token) { store("lp.endpoint", endpoint || null); store("lp.token", token || null); LP.flush(); };
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") LP.flush(true); });
+
+  // ---------- scoring ----------
+  function updateBar() {
+    if (!bar) return;
+    bar.textContent = answered + " / " + total + " answered · " + firstTryRight + " right first try";
+  }
+
+  function makeCtx(el, reg) {
+    var id = itemId(el), done = false;
+    return {
+      id: id,
+      // First call counts toward the score and is logged; later calls (retries) only update the UI.
+      // ok: true/false, or null for answers sent for grading. kind: "auto" | "self" | "deferred".
+      result: function (ok, answer, kind) {
+        if (done) return; done = true;
+        answered++;
+        if (ok === true) firstTryRight++;
+        if (kind === "skip") skipped.push(id.replace(/^.*#/, ""));
+        else if (ok === false) {
+          missed.push(id.replace(/^.*#/, ""));
+          if (answer != null && String(answer).trim()) missAnswers.push({ id: id, answer: String(answer) });
+        }
+        if (kind === "deferred") freeAnswers.push({ id: id, answer: answer });
+        updateBar();
+        if (RESUME) { var st = pageState(); st.done[id] = { ok: ok, kind: kind || "auto", answer: answer == null ? null : String(answer).slice(0, 4000) }; savePageState(st); }
+        LP.emit({ type: "attempt", item: id, widget: reg.type, kind: kind || "auto", correct: ok, answer: answer == null ? null : String(answer).slice(0, 4000) });
+        if (ok === true && (kind || "auto") === "auto" && confidenceOn(el)) setTimeout(function () { addConfidence(el, id); }, 0);
+      },
+      feedback: function (ok, explainOrMsg) { feedback(el, ok, explainOrMsg); },
+      restore: function (rec) {   // an answer from an earlier visit: counts, but later tries only update the UI
+        if (done) return; done = true;
+        var short = id.replace(/^.*#/, "");
+        answered++;
+        if (rec.ok === true && !rec.guessed) firstTryRight++;
+        if (rec.guessed) guessed.push(short);
+        if (rec.kind === "skip") skipped.push(short);
+        else if (rec.ok === false) { missed.push(short); if (rec.answer && String(rec.answer).trim()) missAnswers.push({ id: id, answer: String(rec.answer) }); }
+        if (rec.kind === "deferred") freeAnswers.push({ id: id, answer: rec.answer });
+        showRestored(el, rec);
+      }
+    };
+  }
+
+  // Verdict line; on success shows the .explain element, on failure the hint.
+  function feedback(q, ok, extra) {
+    var fb = q.querySelector(":scope > .feedback");
+    if (!fb) { fb = document.createElement("div"); fb.className = "feedback"; fb.setAttribute("aria-live", "polite"); q.appendChild(fb); }
+    fb.innerHTML = "";
+    var v = document.createElement("span");
+    v.className = "verdict " + (ok ? "ok" : "no");
+    v.textContent = ok ? "Right. " : "Not quite. ";
+    fb.appendChild(v);
+    var explain = q.querySelector(":scope > .explain");
+    if (ok && explain) { fb.appendChild(explain); explain.hidden = false; }
+    if (!ok) fb.appendChild(document.createTextNode(typeof extra === "string" ? extra : q.dataset.hint || "Look again and try once more."));
+  }
+
+  // "How sure were you?" after a first-try right answer. On for pretests (<main data-skip="true">) and wherever
+  // data-confidence="true" is set (on <main> or one quiz); data-confidence="false" turns it off. "I guessed" counts the
+  // item as not known: it leaves "right first try", is listed as guessed, and comes back in review tomorrow.
+  function confidenceOn(q) {
+    var host = q.closest("[data-confidence]");
+    if (host) return host.dataset.confidence === "true";
+    return !!q.closest('[data-skip="true"]');
+  }
+  function addConfidence(q, id) {
+    if (q.querySelector(":scope > .confrow")) return;
+    var row = el("div", "confrow"), knew = el("button", "conf", "I knew it"), guess = el("button", "conf", "I guessed");
+    row.appendChild(el("span", "conflabel", "How sure were you? "));
+    [knew, guess].forEach(function (b) {
+      b.addEventListener("click", function () {
+        var g = b === guess;
+        LP.emit({ type: "confidence", item: id, value: g ? "guessed" : "knew" });
+        if (g) { firstTryRight--; guessed.push(id.replace(/^.*#/, "")); updateBar(); }
+        if (g && RESUME) { var st = pageState(); if (st.done[id]) { st.done[id].guessed = true; savePageState(st); } }
+        row.textContent = g ? "Noted: a lucky guess counts as not known yet, so it comes back in tomorrow's review." : "";
+        if (!g) row.remove();
+      });
+      row.appendChild(b);
+    });
+    q.appendChild(row);
+  }
+
+  // Fields inside a quiz that hold typed text (free answers, code, number and word boxes).
+  var FIELDS = 'textarea, input:not([type]), input[type="text"], input[type="number"]';
+  function fieldKey(q, f) { return itemId(q) + "|" + Array.prototype.indexOf.call(q.querySelectorAll(FIELDS), f); }
+  function restoreDrafts(q, st) {
+    q.querySelectorAll(FIELDS).forEach(function (f) {
+      var v = st.drafts[fieldKey(q, f)];
+      if (v != null && f.value !== v) { f.value = v; f.dispatchEvent(new Event("input", { bubbles: true })); }
+    });
+  }
+  var draftTimer = null, pendingDrafts = {};
+  document.addEventListener("input", function (e) {
+    var f = e.target, q = f && f.closest && f.closest(".quiz[data-type]");
+    if (!RESUME || !q || !f.matches(FIELDS) || !e.isTrusted) return;
+    pendingDrafts[fieldKey(q, f)] = f.value;
+    clearTimeout(draftTimer);
+    draftTimer = setTimeout(flushDrafts, 400);
+  });
+  function flushDrafts(keepalive) {
+    var keys = Object.keys(pendingDrafts); if (!keys.length) return;
+    var st = pageState(), t = new Date().toISOString(), out = {};
+    keys.forEach(function (k) { st.drafts[k] = pendingDrafts[k]; st.dts[k] = t; out[k] = { text: pendingDrafts[k], ts: t }; });
+    pendingDrafts = {}; savePageState(st);
+    var p = api("/drafts", { method: "POST", keepalive: !!keepalive, body: JSON.stringify({ page: LP.page, drafts: out }) });
+    if (p) p.catch(function () {});
+  }
+  window.addEventListener("pagehide", function () { flushDrafts(true); });
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") flushDrafts(true); });
+
+  // Answers and drafts from other devices (sync on). The local copy wins for anything this device already has.
+  function mergeRemote(res) {
+    var st = pageState();
+    if (res.reset && (!st.ts || st.ts < res.reset) && Object.keys(st.done).length + Object.keys(st.drafts).length) {
+      var flag = "lp.resetSeen." + LP.page;          // started over on another device: drop this device's copy once
+      try { if (sessionStorage.getItem(flag) !== res.reset) { sessionStorage.setItem(flag, res.reset); LP.clearPage(); location.reload(); return; } } catch (e) {}
+    }
+    document.querySelectorAll(".quiz[data-type]").forEach(function (q) {
+      var ctx = q._lpCtx; if (!ctx) return;
+      var rec = res.done && res.done[ctx.id];
+      if (rec) {
+        if (!st.done[ctx.id]) { st.done[ctx.id] = rec; ctx.restore(rec); }
+        if (rec.feedback && !q.querySelector(".lp-gradefb")) showGrade(q, rec);
+      }
+      q.querySelectorAll(FIELDS).forEach(function (f) {
+        var k = fieldKey(q, f), d = res.drafts && res.drafts[k];
+        if (!d || (st.dts[k] && st.dts[k] >= d.ts) || f === document.activeElement || f.readOnly) return;
+        st.drafts[k] = d.text; st.dts[k] = d.ts;
+        f.value = d.text == null ? "" : d.text; f.dispatchEvent(new Event("input", { bubbles: true }));
+      });
+    });
+    savePageState(st); updateBar();
+  }
+  function showGrade(q, rec) {
+    var g = el("div", "feedback lp-gradefb");
+    g.appendChild(el("span", "verdict" + (rec.score >= 0.7 ? " ok" : ""), "Teacher's feedback" + (rec.score != null ? " (" + Math.round(rec.score * 100) + "%)" : "") + ": "));
+    g.appendChild(document.createTextNode(rec.feedback));
+    q.appendChild(g);
+  }
+  function loadRemote() {
+    if (!RESUME) return;
+    var p = api("/page-state?page=" + encodeURIComponent(LP.page));
+    if (p) p.then(mergeRemote).catch(function () {});
+  }
+
+  function showRestored(q, rec) {
+    var label = rec.kind === "deferred" ? "Answered on an earlier visit and sent for grading."
+      : rec.kind === "skip" ? "Skipped on an earlier visit."
+      : rec.kind === "self" ? "Answered on an earlier visit."
+      : rec.ok === true ? (rec.guessed ? "Answered right on an earlier visit (you marked it a guess)." : "Answered right on an earlier visit.")
+      : "Missed on an earlier visit. You can try again here; it won't change your score.";
+    var note = el("div", "feedback lp-restored");
+    note.appendChild(el("span", "verdict" + (rec.ok === true || rec.kind === "deferred" ? " ok" : ""), "Saved. "));
+    note.appendChild(document.createTextNode(label));
+    var explain = q.querySelector(":scope > .explain");
+    if (rec.kind === "deferred") {
+      var ta = q.querySelector("textarea");
+      if (ta && rec.answer != null) { ta.value = rec.answer; ta.readOnly = true; ta.dispatchEvent(new Event("input", { bubbles: true })); }
+      q.querySelectorAll(".actions button").forEach(function (b) { b.disabled = true; });
+    }
+    q.appendChild(note);
+    if (explain && rec.ok !== false) { explain.hidden = false; note.appendChild(explain); }
+    q.classList.add("lp-resumed");
+  }
+
+  // ---------- registry ----------
+  LP.register = function (reg) {
+    reg.selector = reg.selector || '.quiz[data-type="' + reg.type + '"]';
+    if (reg.scored === undefined) reg.scored = true;
+    regs.push(reg);
+    if (started) scan();
+  };
+
+  function scan() {
+    regs.forEach(function (reg) {
+      document.querySelectorAll(reg.selector).forEach(function (el) {
+        if (el.dataset.lpReady) return;
+        el.dataset.lpReady = "1";
+        if (reg.scored) total++;
+        var ctx = makeCtx(el, reg);
+        el._lpCtx = ctx;
+        try { reg.init(el, ctx); if (reg.scored) addSkip(el, ctx); }
+        catch (e) { el.dataset.lpError = String(e); console.error("lp widget " + reg.type + " failed:", e); }
+        if (RESUME && reg.scored) {
+          var st = pageState();
+          restoreDrafts(el, st);
+          if (st.done[ctx.id]) ctx.restore(st.done[ctx.id]);
+        }
+      });
+    });
+    if (total && !bar) {
+      bar = document.createElement("div");
+      bar.className = "scorebar";
+      (document.querySelector("main") || document.body).appendChild(bar);
+    }
+    updateBar();
+  }
+
+  // "I don't know" button, for pretests: <main data-skip="true"> (or on one .quiz). Counts as not known, reveals the answer.
+  function addSkip(q, ctx) {
+    var host = q.closest("[data-skip]");
+    if (!host || host.dataset.skip === "false" || q.dataset.type === "checklist" || q.dataset.type === "card") return;
+    var row = el("div", "skiprow"), b = el("button", "skip", "I don't know"), triedWrong = false;
+    b.addEventListener("click", function () {
+      // Before any attempt this is a skip (scored as not known). After a wrong try the miss is already
+      // recorded, so this only reveals the answer (logged as a "reveal" event, not a second attempt).
+      if (triedWrong) LP.emit({ type: "reveal", item: ctx.id });
+      else { ctx.result(false, null, "skip"); q.classList.add("skipped"); }
+      q.querySelectorAll("input, textarea, button").forEach(function (x) { x.disabled = true; });
+      var fb = q.querySelector(":scope > .feedback");
+      if (!fb) { fb = el("div", "feedback"); q.appendChild(fb); }
+      fb.innerHTML = "";
+      fb.appendChild(el("span", "verdict no", triedWrong ? "Answer. " : "Skipped. "));
+      var explain = q.querySelector(":scope > .explain");
+      if (explain) { fb.appendChild(document.createTextNode("Here's the idea: ")); fb.appendChild(explain); explain.hidden = false; }
+      row.remove();
+    });
+    row.appendChild(b); q.appendChild(row);
+    document.addEventListener("lp:event", function (e) {
+      var d = e.detail;
+      if (d.item !== ctx.id || d.type !== "attempt" || d.kind === "skip") return;
+      if (d.correct === false && d.kind === "auto") { triedWrong = true; b.textContent = "Show me the answer"; }
+      else row.remove();      // answered right, self-marked, or submitted for grading
+    });
+  }
+
+  // ---------- small DOM helpers (also used by plugins) ----------
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    if (tag === "button") e.type = "button";
+    return e;
+  }
+  function split(s) { return (s || "").split("|").map(function (x) { return x.trim(); }).filter(function (x) { return x !== ""; }); }
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function norm(s, caseSensitive) {
+    s = String(s).trim().replace(/\s+/g, " ");
+    return caseSensitive ? s : s.toLowerCase();
+  }
+  // A plain number ("0.375", "1,000", "2e3") or a simple fraction ("3/8", "-1/2"); NaN otherwise.
+  function num(t) {
+    var n = /^[-+]?[\d.,]+(e[-+]?\d+)?$/i, f = /^([-+]?[\d.]+)\s*\/\s*([\d.]+)$/.exec(t);
+    if (n.test(t)) return parseFloat(t.replace(/,/g, ""));
+    if (f && parseFloat(f[2]) !== 0) return parseFloat(f[1]) / parseFloat(f[2]);
+    return NaN;
+  }
+  // Arithmetic like "1-(35/36)^24", via the math plugin's parser when the page loads it; NaN otherwise.
+  function numOrExpr(t) {
+    var v = num(t);
+    if (!isNaN(v) || !window.LPMath) return v;
+    try { var n = window.LPMath.parse(t); return window.LPMath.vars(n).length ? NaN : window.LPMath.evaluate(n); }
+    catch (e) { return NaN; }
+  }
+  // True if `given` matches any accepted answer (text, or number within tolerance; fractions count as numbers;
+  // with opts.expr, so do arithmetic expressions).
+  function matches(given, accepted, opts) {
+    opts = opts || {};
+    var g = norm(given, opts.caseSensitive);
+    return accepted.some(function (a) {
+      var gn = opts.expr ? numOrExpr(g) : num(g), an = num(String(a).trim());
+      var numeric = !isNaN(gn) && !isNaN(an);
+      if (numeric && !isNaN(gn) && !isNaN(an)) return Math.abs(gn - an) <= (opts.tolerance || 0) + 1e-9;
+      return g === norm(a, opts.caseSensitive);
+    });
+  }
+  function beforeExplain(q, node) { q.insertBefore(node, q.querySelector(":scope > .explain")); }
+  LP.util = { el: el, split: split, shuffle: shuffle, matches: matches, feedback: feedback, beforeExplain: beforeExplain };
+
+  // ---------- generic widgets ----------
+
+  // Multiple choice. data-options="a|b|c" data-answer="b" [data-hint] [data-shuffle="true"]
+  LP.register({ type: "choice", init: function (q, ctx) {
+    var answer = q.dataset.answer, box = el("div", "choices");
+    var opts = split(q.dataset.options);
+    if (q.dataset.shuffle === "true") opts = shuffle(opts);
+    opts.forEach(function (opt) {
+      var b = el("button", null, opt);
+      b.addEventListener("click", function () {
+        var ok = opt === answer;
+        ctx.result(ok, opt);
+        b.classList.add(ok ? "right" : "wrong");
+        if (ok) box.querySelectorAll("button").forEach(function (x) { x.disabled = true; });
+        else b.disabled = true;
+        ctx.feedback(ok);
+      });
+      box.appendChild(b);
+    });
+    beforeExplain(q, box);
+  } });
+
+  // Typed answer. data-answer="5" or "Paris|paris, france" [data-tolerance="0.1"] [data-case="true"]
+  // "number" is the same widget with a numeric keyboard on phones.
+  function initExact(q, ctx) {
+    var accepted = split(q.dataset.answer), box = el("div", "choices");
+    var input = el("input");
+    input.type = "text"; input.setAttribute("aria-label", "answer");
+    if (q.dataset.type === "number") input.inputMode = "decimal"; else input.style.width = "14rem";
+    var b = el("button", null, "Check");
+    function check() {
+      if (!input.value.trim()) return;
+      var ok = matches(input.value, accepted, { tolerance: parseFloat(q.dataset.tolerance) || 0, caseSensitive: q.dataset.case === "true", expr: q.dataset.type === "number" });
+      ctx.result(ok, input.value);
+      input.className = ok ? "ok" : "no";
+      if (ok) { input.disabled = true; b.disabled = true; }
+      ctx.feedback(ok);
+    }
+    b.addEventListener("click", check);
+    input.addEventListener("keydown", function (e) { if (e.key === "Enter") check(); });
+    box.appendChild(input); box.appendChild(b);
+    beforeExplain(q, box);
+  }
+  LP.register({ type: "number", init: initExact });
+  LP.register({ type: "exact", init: initExact });
+
+  // Free recall: write from memory, reveal the model answer (.explain), mark yourself.
+  LP.register({ type: "recall", init: function (q, ctx) {
+    var explain = q.querySelector(":scope > .explain");
+    var ta = el("textarea"); ta.setAttribute("aria-label", "your answer"); ta.placeholder = "Write it from memory first…";
+    var reveal = el("div", "choices reveal"), show = el("button", null, "Show answer");
+    reveal.appendChild(show);
+    show.addEventListener("click", function () {
+      if (explain) explain.hidden = false;
+      show.remove();
+      var got = el("button", null, "I had it"), miss = el("button", null, "I missed some");
+      [got, miss].forEach(function (b) {
+        b.addEventListener("click", function () {
+          ctx.result(b === got, ta.value, "self");
+          b.classList.add(b === got ? "right" : "wrong");
+          got.disabled = miss.disabled = true;
+        });
+        reveal.appendChild(b);
+      });
+    });
+    beforeExplain(q, ta); beforeExplain(q, reveal);
+  } });
+
+  // Flashcard: front = .prompt, back = .explain. Show answer, then mark yourself. Self-marked, so no confidence step.
+  LP.register({ type: "card", init: function (q, ctx) {
+    var explain = q.querySelector(":scope > .explain");
+    var row = el("div", "choices reveal"), show = el("button", null, "Show answer");
+    row.appendChild(show);
+    show.addEventListener("click", function () {
+      if (explain) { explain.hidden = false; explain.classList.add("card-back"); }
+      show.remove();
+      var got = el("button", null, "I knew it"), miss = el("button", null, "I didn't");
+      [got, miss].forEach(function (b) {
+        b.addEventListener("click", function () {
+          ctx.result(b === got, null, "self");
+          b.classList.add(b === got ? "right" : "wrong");
+          got.disabled = miss.disabled = true;
+        });
+        row.appendChild(b);
+      });
+    });
+    q.appendChild(row);
+  } });
+
+  // Deck: <div class="lp-deck"> holding card quizzes. Shows one card at a time with a counter; a summary at the end.
+  LP.register({ type: "deck", selector: ".lp-deck", scored: false, init: function (deck) {
+    var cards = Array.prototype.slice.call(deck.querySelectorAll(':scope > .quiz[data-type="card"]'));
+    if (!cards.length) return;
+    var i = 0, known = 0, counter = el("p", "deck-count"), next = el("button", "deck-next", "Next card"), end = el("p", "deck-end");
+    next.hidden = true; end.hidden = true;
+    deck.insertBefore(counter, deck.firstChild); deck.appendChild(next); deck.appendChild(end);
+    function show() {
+      cards.forEach(function (c, k) { c.hidden = k !== i; });
+      counter.textContent = "Card " + (i + 1) + " of " + cards.length;
+      next.hidden = true;
+    }
+    document.addEventListener("lp:event", function (e) {
+      var d = e.detail, c = cards[i];
+      if (!c || d.type !== "attempt" || !d.item || d.item.replace(/^.*#/, "") !== c.dataset.id) return;
+      if (d.correct) known++;
+      if (i < cards.length - 1) next.hidden = false;
+      else { end.hidden = false; end.textContent = "Deck done: " + known + " of " + cards.length + " known. Cards you didn't know come back in the daily review."; }
+    });
+    next.addEventListener("click", function () { i++; show(); });
+    show();
+  } });
+
+  // Fill in the blanks: write [[answer|alternative]] inside .prompt (or .text). One Check button for all blanks.
+  LP.register({ type: "cloze", init: function (q, ctx) {
+    var host = q.querySelector(".text") || q.querySelector(".prompt"), blanks = [];
+    var walker = document.createTreeWalker(host, NodeFilter.SHOW_TEXT), nodes = [];
+    while (walker.nextNode()) if (/\[\[.+?\]\]/.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      var frag = document.createDocumentFragment(), parts = node.nodeValue.split(/(\[\[.+?\]\])/);
+      parts.forEach(function (p) {
+        var mm = p.match(/^\[\[(.+)\]\]$/);
+        if (!mm) { if (p) frag.appendChild(document.createTextNode(p)); return; }
+        var accepted = split(mm[1]), inp = el("input", "blank");
+        inp.type = "text"; inp.setAttribute("aria-label", "blank " + (blanks.length + 1));
+        inp.size = Math.max(4, accepted[0].length + 1);
+        inp.addEventListener("keydown", function (e) { if (e.key === "Enter") check(); });
+        blanks.push({ input: inp, accepted: accepted });
+        frag.appendChild(inp);
+      });
+      node.parentNode.replaceChild(frag, node);
+    });
+    var box = el("div", "actions"), b = el("button", null, "Check");
+    function check() {
+      if (blanks.some(function (x) { return !x.input.value.trim(); })) { ctx.feedback(false, "Fill every blank first."); return; }
+      var all = true;
+      blanks.forEach(function (x) {
+        var ok = matches(x.input.value, x.accepted, { caseSensitive: q.dataset.case === "true" });
+        x.input.classList.remove("ok", "no"); x.input.classList.add(ok ? "ok" : "no");
+        if (ok) x.input.disabled = true; else all = false;
+      });
+      ctx.result(all, blanks.map(function (x) { return x.input.value; }).join(" | "));
+      if (all) b.disabled = true;
+      ctx.feedback(all, all ? null : (q.dataset.hint || "The red blanks need another look."));
+    }
+    b.addEventListener("click", check);
+    box.appendChild(b); beforeExplain(q, box);
+  } });
+
+  // Put items in order. data-items="first|second|third" (the correct order); shown shuffled, moved with ↑ ↓.
+  LP.register({ type: "order", init: function (q, ctx) {
+    var correct = split(q.dataset.items), cur = shuffle(correct), tries = 0;
+    while (correct.length > 1 && cur.join("|") === correct.join("|") && tries++ < 20) cur = shuffle(correct);
+    var list = el("ol", "lp-rows"), locked = false;
+    function draw(marks) {
+      list.innerHTML = "";
+      cur.forEach(function (item, i) {
+        var li = el("li"); if (marks) li.className = marks[i] ? "right" : "wrong";
+        var up = el("button", null, "↑"), down = el("button", null, "↓");
+        up.setAttribute("aria-label", "move up: " + item); down.setAttribute("aria-label", "move down: " + item);
+        up.disabled = locked || i === 0; down.disabled = locked || i === cur.length - 1;
+        up.addEventListener("click", function () { swap(i, i - 1); });
+        down.addEventListener("click", function () { swap(i, i + 1); });
+        li.appendChild(el("span", "label", (i + 1) + ". " + item)); li.appendChild(up); li.appendChild(down);
+        list.appendChild(li);
+      });
+    }
+    function swap(i, j) { var t = cur[i]; cur[i] = cur[j]; cur[j] = t; draw(); }
+    var box = el("div", "actions"), b = el("button", null, "Check order");
+    b.addEventListener("click", function () {
+      var marks = cur.map(function (x, i) { return x === correct[i]; }), ok = marks.every(Boolean);
+      ctx.result(ok, cur.join(" > "));
+      if (ok) { locked = true; b.disabled = true; }
+      draw(marks);
+      ctx.feedback(ok, ok ? null : (q.dataset.hint || "Red rows are out of place."));
+    });
+    draw(); box.appendChild(b);
+    beforeExplain(q, list); beforeExplain(q, box);
+  } });
+
+  // Sort items into buckets (also works as matching). data-buckets="A|B" data-items="item one>A|item two>B" [data-shuffle="false"]
+  LP.register({ type: "categorize", init: function (q, ctx) {
+    var buckets = split(q.dataset.buckets);
+    var items = split(q.dataset.items).map(function (s) { var p = s.split(">"); return { text: p[0].trim(), answer: (p[1] || "").trim(), pick: null }; });
+    if (q.dataset.shuffle !== "false") items = shuffle(items);
+    var list = el("ul", "lp-rows");
+    items.forEach(function (it) {
+      var li = el("li"); it.li = li; it.btns = [];
+      li.appendChild(el("span", "label", it.text));
+      buckets.forEach(function (bk) {
+        var bb = el("button", null, bk);
+        bb.addEventListener("click", function () {
+          it.pick = bk; li.className = "";
+          it.btns.forEach(function (x) { x.classList.toggle("on", x === bb); });
+        });
+        it.btns.push(bb); li.appendChild(bb);
+      });
+      list.appendChild(li);
+    });
+    var box = el("div", "actions"), b = el("button", null, "Check");
+    b.addEventListener("click", function () {
+      if (items.some(function (it) { return !it.pick; })) { ctx.feedback(false, "Place every item first."); return; }
+      var ok = true;
+      items.forEach(function (it) {
+        var right = it.pick === it.answer; ok = ok && right;
+        it.li.className = right ? "right" : "wrong";
+        if (right) it.btns.forEach(function (x) { x.disabled = true; });
+      });
+      ctx.result(ok, items.map(function (it) { return it.text + ">" + it.pick; }).join(" | "));
+      if (ok) b.disabled = true;
+      ctx.feedback(ok, ok ? null : (q.dataset.hint || "Red rows are in the wrong place."));
+    });
+    box.appendChild(b);
+    beforeExplain(q, list); beforeExplain(q, box);
+  } });
+
+  // Real-world steps to tick off (self-reported). Put an <ol> or <ul> inside the .quiz.
+  LP.register({ type: "checklist", init: function (q, ctx) {
+    var list = q.querySelector("ol, ul"), lis = list ? list.querySelectorAll(":scope > li") : [];
+    if (list) list.classList.add("lp-check");
+    lis.forEach(function (li, i) {
+      var cb = el("input"); cb.type = "checkbox"; cb.setAttribute("aria-label", "step " + (i + 1) + " done");
+      var label = el("span", "label"); while (li.firstChild) label.appendChild(li.firstChild);
+      li.appendChild(cb); li.appendChild(label);
+      cb.addEventListener("change", function () {
+        li.classList.toggle("done", cb.checked);
+        var all = Array.prototype.every.call(lis, function (x) { return x.querySelector("input").checked; });
+        if (all) { ctx.result(true, lis.length + " steps", "self"); ctx.feedback(true); }
+      });
+    });
+  } });
+
+  // Free response, graded later by the teacher. Optional .explain = model answer shown after submitting;
+  // optional hidden .rubric is for the grader only.
+  LP.register({ type: "free", init: function (q, ctx) {
+    var explain = q.querySelector(":scope > .explain"), rubric = q.querySelector(":scope > .rubric");
+    if (rubric) rubric.hidden = true;
+    var ta = el("textarea"); ta.setAttribute("aria-label", "your answer"); ta.placeholder = q.dataset.placeholder || "Write your answer…";
+    var box = el("div", "actions"), b = el("button", null, "Submit for feedback");
+    b.addEventListener("click", function () {
+      if (!ta.value.trim()) return;
+      ctx.result(null, ta.value, "deferred");
+      ta.readOnly = true; b.disabled = true;
+      var fb = el("div", "feedback");
+      fb.appendChild(el("span", "verdict ok", "Saved. "));
+      fb.appendChild(document.createTextNode("Your teacher grades this at the start of the next session." + (explain ? " Compare with the model answer:" : "")));
+      q.appendChild(fb);
+      if (explain) { explain.hidden = false; fb.appendChild(explain); }
+    });
+    box.appendChild(b); beforeExplain(q, ta); beforeExplain(q, box);
+  } });
+
+  // YouTube embed (privacy-enhanced). <div class="lp-video" data-youtube="VIDEO_ID" [data-start="90"] [data-end="300"] data-caption="..."></div>
+  LP.register({ type: "video", selector: ".lp-video[data-youtube]", scored: false, init: function (v) {
+    var id = v.dataset.youtube, params = ["rel=0"];
+    if (v.dataset.start) params.push("start=" + parseInt(v.dataset.start, 10));
+    if (v.dataset.end) params.push("end=" + parseInt(v.dataset.end, 10));
+    var frame = el("div", "frame"), f = el("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(id) + "?" + params.join("&");
+    f.title = v.dataset.caption || "Video";
+    f.loading = "lazy"; f.allowFullscreen = true;
+    f.setAttribute("allow", "encrypted-media; picture-in-picture; fullscreen");
+    frame.appendChild(f); v.appendChild(frame);
+    var cap = el("div", "caption");
+    if (v.dataset.caption) cap.appendChild(document.createTextNode(v.dataset.caption + " · "));
+    var a = el("a", null, "open on YouTube");
+    a.href = "https://www.youtube.com/watch?v=" + encodeURIComponent(id) + (v.dataset.start ? "&t=" + parseInt(v.dataset.start, 10) + "s" : "");
+    a.target = "_blank"; a.rel = "noopener";
+    cap.appendChild(a); v.appendChild(cap);
+  } });
+
+  // Worked example revealed one .step at a time. <div class="lp-worked"><div class="step">…</div>…</div>
+  LP.register({ type: "worked", selector: ".lp-worked", scored: false, init: function (w) {
+    var steps = w.querySelectorAll(":scope > .step"), shown = 1;
+    if (steps.length < 2) return;
+    steps.forEach(function (s, i) { s.hidden = i > 0; });
+    var b = el("button", null, w.dataset.next || "Next step");
+    b.addEventListener("click", function () {
+      steps[shown].hidden = false; shown++;
+      if (shown >= steps.length) b.remove();
+    });
+    w.appendChild(b);
+  } });
+
+  // Calibration estimate: give a range you're N% sure contains the answer. data-answer="1526" [data-level="90"]
+  // [data-unit="years"] [data-max-width="100"]. Right = the range contains the answer (and is no wider than data-max-width,
+  // if set). Every range also feeds a running calibration score kept in this browser (lp.calibration).
+  LP.register({ type: "estimate", init: function (q, ctx) {
+    var ans = parseFloat(q.dataset.answer), level = parseFloat(q.dataset.level || "90"), maxW = parseFloat(q.dataset.maxWidth);
+    if (isNaN(ans)) throw new Error("estimate needs a numeric data-answer");
+    var row = el("div", "actions est"), lo = el("input"), hi = el("input"), b = el("button", null, "Check");
+    [lo, hi].forEach(function (x, i) { x.type = "text"; x.inputMode = "decimal"; x.size = 8; x.setAttribute("aria-label", i ? "high" : "low"); });
+    var unit = q.dataset.unit ? " " + q.dataset.unit : "";
+    row.appendChild(document.createTextNode("I'm " + level + "% sure it's between ")); row.appendChild(lo);
+    row.appendChild(document.createTextNode(" and ")); row.appendChild(hi);
+    row.appendChild(document.createTextNode(unit + " ")); row.appendChild(b);
+    var cal = el("p", "est-cal"); cal.hidden = true;
+    function num(s) { return parseFloat(String(s).replace(/[,\s]/g, "")); }
+    b.addEventListener("click", function () {
+      var a = num(lo.value), z = num(hi.value);
+      if (isNaN(a) || isNaN(z)) { ctx.feedback(false, "Type two numbers: a low and a high end."); return; }
+      if (a > z) { var t = a; a = z; z = t; }
+      var inside = a <= ans && ans <= z, narrow = isNaN(maxW) || z - a <= maxW, ok = inside && narrow;
+      var c = { n: 0, hits: 0 };
+      try { c = JSON.parse(store("lp.calibration") || "null") || c; } catch (e) {}
+      c.n++; if (inside) c.hits++; store("lp.calibration", JSON.stringify(c));
+      ctx.result(ok, a + " to " + z);
+      b.disabled = lo.disabled = hi.disabled = true;
+      var msg = "The answer is " + ans + unit + ". " + (inside ? (narrow ? "" : "Your range contained it but is wider than " + maxW + unit + ", too wide to be useful. ") : "Your range missed it. ");
+      ctx.feedback(ok, ok ? null : msg);
+      cal.hidden = false;
+      cal.textContent = (ok ? "The answer is " + ans + unit + ". " : "") + "Your calibration so far: " + c.hits + " of " + c.n + " ranges contained the truth (" +
+        Math.round(100 * c.hits / c.n) + "%). Aim: about " + level + "%." + (c.n >= 10 && c.hits / c.n < level / 100 - 0.15 ? " You're overconfident: widen your ranges." : "");
+    });
+    beforeExplain(q, row); q.appendChild(cal);
+  } });
+
+  // Find the error: click the step that's wrong. Steps as <ol class="steps"><li>…</li></ol> inside the quiz (or data-steps="a|b|c").
+  // data-answer = the wrong step's number (1-based).
+  LP.register({ type: "find-error", init: function (q, ctx) {
+    var ans = parseInt(q.dataset.answer, 10), list = q.querySelector(":scope > ol.steps");
+    if (!list) {
+      list = el("ol", "steps");
+      split(q.dataset.steps).forEach(function (s) { list.appendChild(el("li", null, s)); });
+      beforeExplain(q, list);
+    }
+    var items = Array.prototype.slice.call(list.children), done = false;
+    if (!(ans >= 1 && ans <= items.length)) throw new Error("find-error: data-answer must be a step number 1.." + items.length);
+    list.classList.add("lp-steps");
+    items.forEach(function (li, i) {
+      li.tabIndex = 0; li.setAttribute("role", "button");
+      function pick() {
+        if (done || li.classList.contains("fine")) return;
+        var ok = i + 1 === ans;
+        ctx.result(ok, "step " + (i + 1));
+        if (ok) { done = true; li.classList.add("wrongstep"); ctx.feedback(true, null); }
+        else { li.classList.add("fine"); ctx.feedback(false, "Step " + (i + 1) + " is fine. " + (q.dataset.hint || "Check each step's justification.")); }
+      }
+      li.addEventListener("click", pick);
+      li.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+    });
+  } });
+
+  // Highlight the evidence: in <div class="passage">, mark the right segments [[like this]]. The rest is split into sentences.
+  // The learner clicks segments to select them and presses Check. Right = exactly the marked segments.
+  LP.register({ type: "highlight", init: function (q, ctx) {
+    var host = q.querySelector(".passage");
+    if (!host) throw new Error("highlight needs a <div class=\"passage\"> with [[marked]] segments");
+    var segs = [], walker = document.createTreeWalker(host, NodeFilter.SHOW_TEXT), nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      var frag = document.createDocumentFragment();
+      node.nodeValue.split(/(\[\[.+?\]\])/).forEach(function (p) {
+        var mm = p.match(/^\[\[(.+)\]\]$/);
+        var pieces = mm ? [mm[1]] : p.split(/(?<=[.!?;:])\s+/);
+        pieces.forEach(function (t, k) {
+          if (!t.trim()) { if (t) frag.appendChild(document.createTextNode(t)); return; }
+          var s = el("span", "hl-seg", t); s.tabIndex = 0;
+          segs.push({ el: s, right: !!mm });
+          s.addEventListener("click", function () { if (!s.classList.contains("locked")) s.classList.toggle("on"); });
+          s.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); s.click(); } });
+          frag.appendChild(s);
+          if (!mm && k < pieces.length - 1) frag.appendChild(document.createTextNode(" "));
+        });
+      });
+      node.parentNode.replaceChild(frag, node);
+    });
+    if (!segs.some(function (s) { return s.right; })) throw new Error("highlight: mark at least one segment with [[ ]]");
+    var box = el("div", "actions"), b = el("button", null, "Check");
+    b.addEventListener("click", function () {
+      var picked = segs.filter(function (s) { return s.el.classList.contains("on"); });
+      if (!picked.length) { ctx.feedback(false, "Click the sentences that are your evidence first."); return; }
+      var missing = segs.filter(function (s) { return s.right && !s.el.classList.contains("on"); }).length;
+      var extra = picked.filter(function (s) { return !s.right; }).length, ok = !missing && !extra;
+      ctx.result(ok, picked.map(function (s) { return s.el.textContent.slice(0, 40); }).join(" / "));
+      if (ok) { segs.forEach(function (s) { s.el.classList.add("locked"); }); b.disabled = true; ctx.feedback(true, null); }
+      else ctx.feedback(false, (missing ? missing + " piece" + (missing > 1 ? "s" : "") + " of evidence still unselected. " : "") +
+        (extra ? extra + " selected piece" + (extra > 1 ? "s don't" : " doesn't") + " support the claim. " : "") + (q.dataset.hint || ""));
+    });
+    box.appendChild(b); beforeExplain(q, box);
+  } });
+
+  // ---------- lesson footer: rating, note, copy results, sync ----------
+  var statusEl = null;
+  function setStatus(t) { if (statusEl) statusEl.textContent = t; }
+
+  LP.summary = function () {
+    var parts = ["lp-results " + LP.page, firstTryRight + "/" + total + " right first try"];
+    if (answered < total) parts.push((total - answered) + " unanswered");
+    if (missed.length) parts.push("missed: " + missed.join(","));
+    if (skipped.length) parts.push("skipped: " + skipped.join(","));
+    if (guessed.length) parts.push("guessed: " + guessed.join(","));
+    if (LP.rating) parts.push("rating: " + LP.rating);
+    if (LP.note) parts.push("note: " + LP.note.replace(/\s+/g, " "));
+    var s = parts.join(" | ");
+    // The first wrong answer, so a near miss can be told from a misconception without sync.
+    missAnswers.forEach(function (m) { s += "\nmiss " + m.id.replace(/^.*#/, "") + ": " + m.answer.replace(/\s+/g, " ").slice(0, 400); });
+    freeAnswers.forEach(function (f) { s += "\nfree " + f.id.replace(/^.*#/, "") + ": " + f.answer.replace(/\s+/g, " "); });
+    return s;
+  };
+
+  function footer() {
+    var main = document.querySelector("main");
+    if (!main || main.dataset.lpFooter === "off" || (!LP.isLesson && main.dataset.lpFooter !== "on")) return;
+    var f = el("section", "lp-footer no-print");
+    f.appendChild(el("div", null, "How did this lesson feel?"));
+    var row = el("div", "row");
+    [["too-easy", "Too easy"], ["just-right", "Just right"], ["too-hard", "Too hard"]].forEach(function (r) {
+      var b = el("button", null, r[1]);
+      b.addEventListener("click", function () {
+        LP.rating = r[0];
+        row.querySelectorAll("button").forEach(function (x) { x.classList.toggle("picked", x === b); });
+        LP.emit({ type: "rating", value: r[0] });
+      });
+      row.appendChild(b);
+    });
+    f.appendChild(row);
+    var ta = el("textarea"); ta.placeholder = "Anything confusing? (optional)"; ta.setAttribute("aria-label", "note to your teacher");
+    f.appendChild(ta);
+    var row2 = el("div", "row"), send = el("button", null, "Save note"), copy = el("button", null, "Copy my results");
+    send.addEventListener("click", function () {
+      if (!ta.value.trim()) return;
+      LP.note = ta.value.trim(); LP.emit({ type: "note", text: LP.note }); setStatus("Note saved.");
+    });
+    copy.addEventListener("click", function () {
+      var s = LP.summary();
+      var done = function () { setStatus("Copied. Paste it to your teacher at the start of the next session."); };
+      if (navigator.clipboard) navigator.clipboard.writeText(s).then(done, function () { window.prompt("Copy this:", s); });
+      else window.prompt("Copy this:", s);
+    });
+    var cfg = el("button", null, "Sync settings");
+    cfg.addEventListener("click", function () {
+      var ep = window.prompt("Progress server URL (blank to turn sync off):", store("lp.endpoint") || "");
+      if (ep === null) return;
+      var tok = ep ? window.prompt("Device token:", "") : "";
+      if (tok === null) return;
+      LP.configure(ep.trim(), (tok || "").trim());
+      setStatus(ep ? "Sync on for this device." : "Sync off. Results stay on this device.");
+    });
+    var rev = el("a", null, "Daily review"); rev.href = LP.reviewUrl;
+    var over = el("button", null, "Start this page over");
+    over.addEventListener("click", function () {
+      if (!window.confirm("Clear your saved answers and drafts on this page? Results already sent to your teacher stay sent.")) return;
+      LP.emit({ type: "reset" }); LP.flush(true); LP.clearPage();
+      setTimeout(function () { location.reload(); }, 300);
+    });
+    row2.appendChild(send); row2.appendChild(copy); row2.appendChild(cfg); row2.appendChild(rev);
+    if (RESUME) row2.appendChild(over);
+    f.appendChild(row2);
+    statusEl = el("div", "status", (LP.syncConfigured() ? "Results sync to your progress server." : "Results are saved on this device. Use “Copy my results” to share them.")
+      + (RESUME ? (LP.syncConfigured() ? " Your answers on this page are kept, so you can stop and finish later on any synced device."
+                    : " Your answers on this page are kept on this device, so you can stop and come back later.") : ""));
+    f.appendChild(statusEl);
+    var sb = main.querySelector(":scope > .scorebar");
+    main.insertBefore(f, sb || null);
+  }
+
+  LP.scan = function () { scan(); };   // for pages that add widgets after load (assets/review.html)
+  function start() { started = true; scan(); footer(); LP.flush(); loadRemote(); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else setTimeout(start, 0);
+})();

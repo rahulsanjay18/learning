@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Sync this device</title>
+<link rel="stylesheet" href="lp.css">
+</head>
+<body>
+<main data-lp-footer="off">
+<nav class="crumbs"><a href="../index.html">All topics</a> · Sync</nav>
+<h1>Sync this device</h1>
+<p class="subtitle">Sends your quiz results to your progress server so your teacher sees them next session.</p>
+<div class="callout"><p id="state">Checking…</p></div>
+<div class="quiz" style="border:0">
+  <div class="choices"><button type="button" id="test">Test connection</button><button type="button" id="off">Turn sync off</button></div>
+  <div class="feedback" id="msg" aria-live="polite"></div>
+</div>
+<p class="small muted">The pairing link carries the server address and this device's token after a <code>#</code>, which browsers never send to any server. The page saves them in this browser only and then removes them from the address bar.</p>
+</main>
+<script>
+(function () {
+  "use strict";
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function set(k, v) { try { if (v) localStorage.setItem(k, v); else localStorage.removeItem(k); } catch (e) {} }
+  var hash = new URLSearchParams(location.hash.slice(1));
+  if (hash.get("endpoint") && hash.get("token")) {
+    set("lp.endpoint", hash.get("endpoint").replace(/\/$/, ""));
+    set("lp.token", hash.get("token"));
+    history.replaceState(null, "", location.pathname);
+  }
+  var state = document.getElementById("state"), msg = document.getElementById("msg");
+  function show() {
+    var ep = get("lp.endpoint");
+    state.textContent = ep && get("lp.token") ? "Sync is on for this device → " + ep : "Sync is off. Open your pairing link on this device to turn it on.";
+  }
+  document.getElementById("test").addEventListener("click", function () {
+    var ep = get("lp.endpoint"), tok = get("lp.token");
+    if (!ep || !tok) { msg.textContent = "Sync is off."; return; }
+    msg.textContent = "Testing…";
+    fetch(ep + "/due?limit=1", { headers: { Authorization: "Bearer " + tok } })
+      .then(function (r) { msg.textContent = r.ok ? "Connected. Results will sync." : "The server answered " + r.status + ". The token may be revoked."; })
+      .catch(function () { msg.textContent = "Couldn't reach the server."; });
+  });
+  document.getElementById("off").addEventListener("click", function () { set("lp.endpoint", null); set("lp.token", null); msg.textContent = "Sync turned off."; show(); });
+  show();
+})();
+</script>
+</body>
+</html>

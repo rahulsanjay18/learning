@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learning</title>
+<style>
+  :root { --bg: #fffff8; --fg: #1d1d1b; --muted: #6b6b66; --accent: #8a3b12; --rule: #d9d6c8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161614; --fg: #e8e6dc; --muted: #a19f95; --accent: #e0915c; --rule: #3a3933; } }
+  body { background: var(--bg); color: var(--fg); font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    max-width: 40rem; margin: 2.5rem auto; padding: 0 1rem; line-height: 1.55; }
+  h1 { font-weight: 400; }
+  h2 { font-weight: 400; font-style: italic; border-top: 1px solid var(--rule); padding-top: 1rem; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Learning</h1>
+<p class="muted">Topics taught with <code>/teach</code>. Each topic has lessons (do once) and reference sheets (come back to).</p>
+<p><strong><a href="assets/today.html">Today's plan</a></strong>: review first, then the day's two blocks.</p>
+
+<h2>Games</h2>
+<p class="muted">The fun major: chess (G101) → tiny games → xiangqi, shogi → Go → backgammon, poker → strategy, wargames, diplomacy → theory and game AI → design. Mission: design a balanced 3D strategy game. Mission · Program · <a href="topics/games/syllabi/index.html">Course syllabi</a> · Q&amp;A</p>
+
+<h2>Chess</h2>
+<p class="muted">Mission: understand the game deeply, then win more online. Mission · Resources</p>
+<h3>Lessons</h3>
+<ol>
+  <li><a href="topics/chess/lessons/0001-is-it-safe.html">Is it safe? Counting one square</a></li>
+  <li><a href="topics/chess/lessons/0002-checks-first.html">Checks first: list your opponent's checks before you move</a></li>
+  <li><a href="topics/chess/lessons/0003-what-did-their-move-do.html">What did their move do? (positions from your games)</a></li>
+  <li><a href="topics/chess/lessons/0004-what-did-my-move-stop-defending.html">What did my move stop defending? (positions from your games)</a></li>
+  <li><a href="topics/chess/lessons/0005-the-double-attack.html">The double attack: forks (reading: Winning Chess Tactics Ch. 2, pp. 18–21, 31)</a></li>
+</ol>
+<h3>Game reviews</h3>
+<ul>
+  <li>2 Oct 2026 vs. Sven-BOT (1100): won a piece, then lost to mate after opening my king</li>
+  <li>6 Oct 2026 vs. Sven-BOT (1100), as Black: won by checkmate (two hung pieces along the way)</li>
+</ul>
+<h3>Reference</h3>
+<ul>
+  <li><a href="topics/chess/reference/safety-check.html">Safety check (point count, tally, checks-captures-threats routine)</a></li>
+  <li>Glossary</li>
+</ul>
+<h2>Military strategy</h2>
+<p class="muted">Mission: analyze why campaigns succeed or fail; carry it into wargames and AI. Mission · Resources <em>Part of the Games major (G150).</em></p>
+<h3>Lessons</h3>
+<ol>
+  <li><a href="topics/military-strategy/lessons/0001-capacity-or-will.html">Capacity or will? The four basic strategy types</a></li>
+  <li><a href="topics/military-strategy/lessons/0002-annihilation-vs-exhaustion.html">Annihilation vs. exhaustion (reading: Echevarria Ch. 2–3)</a></li>
+</ol>
+<h3>Reference</h3>
+<ul>
+  <li><a href="topics/military-strategy/reference/strategy-types.html">Types of military strategy (2×2, ends-ways-means, levels, principles)</a></li>
+  <li>How to do an ends–ways–means breakdown (method, template, Hannibal example)</li>
+</ul>
+<h3>Analyses (your campaign write-ups, with feedback)</h3>
+<ul>
+  <li>3 Oct 2026: First Punic War (264–241 BCE)</li>
+</ul>
+<h2>NASM-CPT</h2>
+<p class="muted">Mission: pass the NASM-CPT for a side gig, my own training and credibility in fitness tech. Mission · Resources</p>
+<h3>Lessons</h3>
+<ol>
+  <li><a href="topics/nasm-cpt/lessons/0001-the-opt-ladder.html">The OPT ladder: 3 levels, 5 phases</a></li>
+</ol>
+<h3>Reference</h3>
+<ul>
+  <li><a href="topics/nasm-cpt/reference/exam-blueprint.html">Exam blueprint (format, domain weights, what each covers)</a></li>
+  <li><a href="topics/nasm-cpt/reference/opt-model.html">OPT model (phases, fingerprints, acute variables)</a></li>
+  <li>What you need to know: overview (Markdown)</li>
+</ul>
+<h2>Pixel art</h2>
+<p class="muted">Mission: make game sprites and illustrations in LibreSprite, starting from zero drawing ability. Mission · Resources</p>
+<h3>Lessons</h3>
+<ol>
+  <li><a href="topics/pixel-art/lessons/0001-clean-lines.html">Clean lines: no doubles, no jaggies</a></li>
+</ol>
+<h3>Reference</h3>
+<ul>
+  <li><a href="topics/pixel-art/reference/lines.html">Lines (three rules, LibreSprite shortcuts)</a> · Markdown</li>
+</ul>
+
+<h2>SWE career</h2>
+<p class="muted">Mission: senior → staff, plus CUDA/inference, AWS ML and more, practiced on 3D chess. Mission · Program · <a href="topics/swe/syllabi/index.html">Course syllabi</a></p>
+<h3>Lessons</h3>
+<ol>
+  <li><a href="topics/swe/lessons/0001-staff-placement.html">Staff placement (reading: Larson's archetypes; Dropbox IC4 vs IC5)</a></li>
+  <li><a href="topics/swe/lessons/0002-aws-placement.html">AWS placement pretest (MLA-C02 domains)</a></li>
+  <li><a href="topics/swe/lessons/0003-interview-baseline.html">Interview baseline (reading: Hello Interview's Google L6 and Meta E6 guides)</a></li>
+  <li><a href="topics/swe/lessons/0004-iam-least-privilege.html">IAM roles, trust and least privilege (reading: SAA course, IAM module)</a></li>
+</ol>
+<h2>Statistics</h2>
+<p class="muted">Mission: statistics I can use in AI/ML work, for experiments, evaluation and uncertainty. Mission · Program · <a href="topics/statistics/syllabi/index.html">Course syllabi</a> (all of Casella &amp; Berger, with proofs) · Resources</p>
+<h3>Lessons</h3>
+<ol>
+  <li><a href="topics/statistics/lessons/0001-placement-pretest.html">Placement pretest (21 questions, ~25 min)</a></li>
+  <li><a href="topics/statistics/lessons/0002-what-a-p-value-is.html">What a p-value is (and isn't)</a></li>
+  <li><a href="topics/statistics/lessons/0003-effect-size-and-confidence-intervals.html">Effect size and confidence intervals (reading: Casella &amp; Berger §9.1)</a></li>
+  <li><a href="topics/statistics/lessons/0004-power.html">Power: how often a real effect gets caught (reading: Casella &amp; Berger §8.3.1)</a></li>
+  <li><a href="topics/statistics/lessons/0005-ch1-pretest.html">Chapter 1 pretest (C&amp;B Ch. 1)</a></li>
+  <li><a href="topics/statistics/lessons/0006-the-three-axioms.html">The three axioms (reading: C&amp;B pp. 7–11)</a></li>
+  <li><a href="topics/statistics/lessons/0007-conditional-probability-and-independence.html">Conditional probability and independence (reading: C&amp;B §1.3, pp. 20–27)</a></li>
+  <li><a href="topics/statistics/lessons/0008-random-variables-cdfs-and-densities.html">Random variables, cdfs and densities (reading: C&amp;B §1.4–1.6, pp. 27–37)</a></li>
+  <li><a href="topics/statistics/lessons/0009-chapter-1-summary.html">Chapter 1 summary (reading: C&amp;B §1.3 pp. 25–26, §1.5 pp. 33–34)</a></li>
+  <li><a href="topics/statistics/lessons/0010-chapter-1-check.html">Chapter 1 check (no reading)</a></li>
+  <li><a href="topics/statistics/lessons/0011-ch2-pretest.html">Chapter 2 pretest (C&amp;B Ch. 2)</a></li>
+</ol>
+<h3>Reference</h3>
+<ul>
+  <li><a href="topics/statistics/reference/formulas.html">Formula sheet (distributions, SE, regression, Beta–binomial, p-value)</a></li>
+  <li>A 95% confidence interval start to finish: the loaded die (Markdown)</li>
+</ul>
+
+<h2>Critical Theory</h2>
+<p class="muted">Designed and parked (2026-10-08): a reading major. Twelve lenses for reading any text, the philosophy, sociology and psychology behind them, and the Frankfurt School, applied to a shelf of novels. Mission · Program · Syllabus · Reading plan</p>
+
+<h2>Mathematics</h2>
+<p class="muted">Designed and parked (2026-10-08): precalculus to the graduate core. Your entry: rings and fields, topology. Mission · Program · Course map</p>
+
+<h2>Physics</h2>
+<p class="muted">Designed and parked (2026-10-08): the undergraduate physics sequence, graduate core in Level II. Your entry: modern physics, classical mechanics. Mission · Program · Course map</p>
+
+<h2>Mechanical Engineering</h2>
+<p class="muted">Designed and parked (2026-10-08): engineering sciences, then mechanisms, vibrations, machine design, manufacturing. Your entry: statics, thermodynamics, materials. Mission · Program · Course map</p>
+
+<h2>Unified Engineering</h2>
+<p class="muted">Designed and parked (2026-10-08): every engineering discipline, MIT-Unified-style terms of four courses with one shared design problem. Your entry: Unified I minus circuits. Mission · Program · Course map</p>
+
+<h2>Music</h2>
+<p class="muted">Designed and parked (2026-10-08): theory I–IV, aural skills, keyboard, counterpoint, music history, Hindustani music. Mission · Program · Course map</p>
+
+<h2>English</h2>
+<p class="muted">Designed and parked (2026-10-08): a reading major. Surveys, Shakespeare, poetry, the novel, theory, world and postcolonial literature. Mission · Program · Course map</p>
+
+<h2>Economics</h2>
+<p class="muted">Parked for now (Principles level already solid).</p>
+<ol>
+  <li><a href="topics/economics/lessons/0001-placement-pretest.html">Placement pretest (13 questions, ~10 min)</a></li>
+</ol>
+
+<h2>Indian History</h2>
+<p class="muted">The non-technical major. Mission: tell the whole arc with its causes, and judge public claims about the past. Mission · Program · <a href="topics/indian-history/syllabi/index.html">Course syllabi</a> · Q&amp;A</p>
+<ol>
+  <li><a href="topics/indian-history/lessons/0001-placement-pretest.html">Placement pretest (13 questions, ~10 min)</a></li>
+  <li><a href="topics/indian-history/lessons/0002-the-land-and-the-long-view.html">IH 100.1 The land and the long view (reading: Kulke &amp; Rothermund, Introduction, first half)</a></li>
+  <li><a href="topics/indian-history/lessons/0003-the-indus-cities.html">The Indus cities (reading: K&amp;R Ch. 1, Indus sections)</a></li>
+  <li><a href="topics/indian-history/lessons/0004-indo-aryans-and-the-vedic-age.html">Indo-Aryans and the Vedic age (reading: K&amp;R Ch. 1, Indo-Aryan sections)</a></li>
+  <li><a href="topics/indian-history/lessons/0005-cities-the-buddha-and-the-first-empire.html">Cities, the Buddha and the first empire (reading: K&amp;R Ch. 2, Ganges cities to the Arthashastra)</a></li>
+  <li><a href="topics/indian-history/lessons/0006-ashoka.html">Ashoka (reading: K&amp;R Ch. 2, "Ashoka, the Beloved of the Gods")</a></li>
+</ol>
+
+<hr>
+<p><strong><a href="assets/review.html">Daily review</a></strong>: questions due today, across all topics (about 10 minutes).</p>
+<p class="muted">Behind the scenes: <a href="assets/gallery.html">widget gallery</a> (every quiz and activity type, working) · widget reference · design notes</p>
+</body>
+</html>

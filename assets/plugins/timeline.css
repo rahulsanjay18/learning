@@ -1,0 +1,28 @@
+/* Timeline plugin styles (assets/plugins/timeline.js). Load after assets/lp.css. Colours come from the lp.css tokens. */
+.lp-timeline { margin: 1.4rem 0; }
+.quiz .tl-scroll { margin: .4rem 0 .6rem; }
+.tl-scroll { overflow-x: auto; overflow-y: hidden; }            /* scrolls inside the widget only when narrower than 300px */
+.tl-svg { display: block; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; user-select: none; }
+.tl-axis line { stroke: var(--muted); stroke-width: 1; }
+.tl-axis text { font-size: 11px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.tl-axis text, .tl-span-label { paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round; }  /* halo over guides */
+.tl-bar { fill: var(--accent); fill-opacity: .6; }
+.tl-bar.approx { fill-opacity: .35; }
+.tl-guide { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 2 3; }
+.tl-span-label, .tl-event-label { font-size: 12px; fill: var(--fg); }
+.tl-years { font-size: 11px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.tl-dot { fill: var(--fg); stroke: var(--bg); stroke-width: 1.5; }
+.tl-leader { fill: none; stroke: var(--rule); stroke-width: 1; }
+.tl-caption { font-size: .85rem; color: var(--muted); margin-top: .4rem; }
+
+/* quiz */
+.tl-scroll.interactive { cursor: crosshair; }
+.tl-hit { fill: transparent; }
+.tl-marker line { stroke-width: 1.5; }
+.tl-marker text { font-size: 11px; font-weight: 600; }
+.tl-marker.guess line { stroke: var(--fg); stroke-dasharray: 4 3; }
+.tl-marker.guess path, .tl-marker.guess text { fill: var(--fg); }
+.tl-marker.truth line { stroke: var(--ok); }
+.tl-marker.truth path, .tl-marker.truth text { fill: var(--ok); }
+.tl-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .8rem; }
+.quiz .tl-input input { width: 8rem; }

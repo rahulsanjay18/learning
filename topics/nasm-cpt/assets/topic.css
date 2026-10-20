@@ -1,0 +1,5 @@
+/* NASM-CPT-only styles. Loaded after assets/lp.css. */
+/* OPT ladder */
+table.ladder { border-collapse: collapse; width: 100%; font-size: .92rem; margin: 1rem 0; }
+table.ladder th, table.ladder td { padding: .35rem .5rem; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+table.ladder td.level { font-style: italic; color: var(--muted); }

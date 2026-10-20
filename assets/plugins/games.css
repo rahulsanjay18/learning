@@ -1,0 +1,46 @@
+/* Tiny games plugin styles (assets/plugins/games.js). Load after assets/lp.css. Colours come from the lp.css tokens. */
+.lp-game { margin: 1.4rem 0; }
+.gm-board { margin: .5rem 0; }
+.gm-legend, .gm-caption { font-size: .85rem; color: var(--muted); margin: .3rem 0; }
+.gm-status { margin: .3rem 0; }
+.gm-controls { display: flex; flex-wrap: wrap; gap: .5rem; }
+.gm-controls button { font: inherit; font-size: .9rem; padding: .3rem .9rem; border: 1px solid var(--rule); background: var(--panel); color: var(--fg); cursor: pointer; }
+.gm-controls button:hover { border-color: var(--accent); }
+
+/* tic-tac-toe */
+.gm-ttt { display: grid; grid-template-columns: repeat(3, 3.2rem); grid-template-rows: repeat(3, 3.2rem); gap: 0; }
+.gm-ttt .gm-cell, .quiz .gm-ttt .gm-cell { border: 1px solid var(--rule); background: var(--bg); color: var(--fg); font: 600 1.5rem/1 system-ui, sans-serif;
+  padding: 0; margin: 0; border-radius: 0; cursor: pointer; }
+.gm-ttt .gm-cell:disabled, .quiz .gm-ttt .gm-cell:disabled { cursor: default; opacity: 1; }
+.gm-ttt .gm-cell:not(:disabled):hover { background: var(--sel); }
+.gm-ttt .gm-cell.last { background: var(--panel); }
+
+/* Nim: hovering a token highlights it and every token to its right (the ones you'd take) */
+.gm-heap { display: flex; align-items: center; gap: .6rem; margin: .35rem 0; }
+.gm-heap-label { min-width: 5.5rem; font-size: .9rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.gm-tokens { display: flex; flex-wrap: wrap; gap: .3rem; }
+.gm-token, .quiz .gm-token { width: 1.7rem; height: 1.7rem; border-radius: 50%; border: 1px solid var(--fg); background: var(--fg); color: var(--bg);
+  padding: 0; font: 600 .75rem/1 system-ui, sans-serif; cursor: pointer; }
+.gm-token:disabled, .quiz .gm-token:disabled { cursor: default; opacity: 1; }
+.gm-tokens:has(.gm-token:not(:disabled):hover) .gm-token:not(:disabled):hover,
+.gm-tokens:has(.gm-token:not(:disabled):hover) .gm-token:not(:disabled):hover ~ .gm-token { background: var(--bg); color: var(--fg); }
+
+/* Hex */
+.gm-hex { display: block; max-width: 100%; height: auto; }
+.gm-hexcell { fill: var(--bg); stroke: var(--rule); stroke-width: 1; }
+.gm-hexcell.black { fill: var(--fg); }
+.gm-hexcell.white { fill: var(--bg); stroke: var(--fg); stroke-width: 1.5; }
+.gm-hexcell.last { stroke: var(--accent); stroke-width: 2.5; }
+.gm-hexg.open { cursor: pointer; }
+.gm-hexg.open:hover .gm-hexcell, .gm-hexg.open:focus .gm-hexcell { fill: var(--sel); }
+.gm-hexg:focus { outline: none; }
+.gm-edge-b { stroke: var(--fg); stroke-width: 4; stroke-linecap: round; }
+.gm-edge-w { stroke: var(--muted); stroke-width: 3; stroke-dasharray: 3 3; }
+.gm-hexlabel { font: 600 11px system-ui, sans-serif; pointer-events: none; }
+
+/* move-value hints: W wins, D draws, L loses (for the side to move) */
+.hint.hW, .gm-hexlabel.hW { color: var(--ok); fill: var(--ok); }
+.hint.hD, .gm-hexlabel.hD { color: var(--muted); fill: var(--muted); }
+.hint.hL, .gm-hexlabel.hL { color: var(--bad); fill: var(--bad); }
+.gm-ttt .gm-cell.hint { font-size: .85rem; }
+.gm-token.hint, .quiz .gm-token.hint { background: var(--bg); }

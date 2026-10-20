@@ -1,0 +1,23 @@
+/* Map plugin styles (assets/plugins/map.js). Load after assets/lp.css. Colours come from the lp.css tokens (dark mode included). */
+.lp-map { margin: 1.4rem 0; }
+.quiz .map-box { margin: .4rem 0 .6rem; }
+.map-svg { display: block; width: 100%; height: auto; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; user-select: none; }
+.map-sea { fill: var(--bg); }
+.map-land { fill: var(--panel); stroke: var(--muted); stroke-opacity: .55; stroke-width: .6; stroke-linejoin: round; }
+.map-land.hl { fill: var(--sel); stroke: var(--accent); stroke-opacity: .8; }
+.map-frame-line { fill: none; stroke: var(--rule); stroke-width: 1; }
+.map-dot { fill: var(--fg); stroke: var(--bg); stroke-width: 1.5; }
+.map-label { font-size: 12px; fill: var(--fg); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; stroke-linejoin: round; }
+.map-msg { font-size: 13px; fill: var(--muted); }
+.map-caption { font-size: .85rem; color: var(--muted); margin-top: .4rem; }
+
+/* quiz */
+.map-box.interactive { cursor: crosshair; }
+.map-hit { fill: transparent; }
+.map-guess { fill: none; stroke: var(--fg); stroke-width: 2; stroke-linecap: round; }
+.map-truth { fill: none; stroke: var(--ok); stroke-width: 2; }
+.map-truth.dot { fill: var(--ok); stroke: none; }
+.map-gap { stroke: var(--muted); stroke-width: 1.2; stroke-dasharray: 4 3; }
+.quiz .map-note { font-size: .85rem; color: var(--muted); margin: 0 0 .4rem; }
+.quiz .map-choices button { min-width: 0; }
+.quiz .map-choices button.on { border-color: var(--accent); background: var(--sel); }

@@ -1,0 +1,16 @@
+/* Simulation plugin styles (assets/plugins/sim.js). Load after assets/lp.css. */
+.lp-sim { margin: 1.4rem 0; }
+.sim-svg { display: block; width: min(100%, 26rem); height: auto; border: 1px solid var(--rule); background: var(--bg); }
+.sim-truth { stroke: var(--fg); stroke-width: 1; stroke-dasharray: 3 3; }
+.sim-ci { stroke: var(--muted); stroke-width: 2; }
+.sim-ci.miss { stroke: var(--bad); stroke-width: 2.5; }
+.sim-bar { fill: var(--accent); opacity: .7; }
+.sim-label { font: 10px system-ui, sans-serif; fill: var(--muted); }
+.sim-info, .sim-caption { font-size: .9rem; margin: .4rem 0; }
+.sim-caption { color: var(--muted); font-size: .85rem; }
+.sim-controls { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.sim-controls button, .sim-controls select { font: inherit; font-size: .9rem; padding: .3rem .8rem; border: 1px solid var(--rule); background: var(--panel); color: var(--fg); cursor: pointer; }
+.sim-controls button:hover { border-color: var(--accent); }
+.sim-grid { display: flex; flex-wrap: wrap; gap: .25rem; margin: .4rem 0; font: .75rem/1 ui-monospace, monospace; }
+.sim-p { padding: .2rem .3rem; border: 1px solid var(--rule); }
+.sim-p.sig { border-color: var(--bad); color: var(--bad); font-weight: 700; }
