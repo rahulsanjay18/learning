@@ -633,7 +633,7 @@
       "est_lessons": 10,
       "group": "elective",
       "level": "I",
-      "source": "The Linux Programming Interface (to buy), selected chapters",
+      "source": "The Linux Programming Interface (in collection, A, id 55adfa1330), selected chapters",
       "books": {
         "primary": "Kerrisk, The Linux Programming Interface (2010): wanted (buy); files, processes, signals, sockets, mmap",
         "secondary": [
