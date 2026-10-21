@@ -100,7 +100,13 @@
       "est_lessons": 4,
       "note": "widget ready: assets/plugins/games.js (ttt, Nim, Hex vs exact solver). Then 3D variant v0 on paper",
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "9c0c10ef76 Albert, Nowakowski & Wolfe, Lessons in Play (2007, grade B: equations from page images)",
+        "secondary": [],
+        "tertiary": [],
+        "skip": []
+      }
     },
     {
       "id": "G201",
@@ -195,7 +201,13 @@
         "G102"
       ],
       "group": "core",
-      "level": "II"
+      "level": "II",
+      "books": {
+        "primary": "9c0c10ef76 Albert, Nowakowski & Wolfe, Lessons in Play (2007, grade B: equations from page images)",
+        "secondary": [],
+        "tertiary": [],
+        "skip": []
+      }
     },
     {
       "id": "G503",
