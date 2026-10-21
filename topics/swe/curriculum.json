@@ -58,7 +58,7 @@
         "behavioral / project deep dive"
       ],
       "books": {
-        "primary": "Xu, System Design Interview vol. 1-2 + Aminian & Xu, Machine Learning System Design Interview (owned? else wanted)",
+        "primary": "18266969af/023030c696 Xu, System Design Interview vol. 1 (A) - 2 (B) + 103b2ab4dc Aminian & Xu, Machine Learning System Design Interview (A)",
         "secondary": [
           "Huyen, Introduction to Machine Learning Interviews (free)",
           "dd8b0182f3 Huyen, Designing ML Systems (grade A)",
