@@ -56,7 +56,10 @@
       "est_lessons": 3,
       "pretest": true,
       "credit": "exam",
-      "note": "Merged into S201 (2026-10-06): the Ch. 1 pretest covers this probability review, and S201 teaches only the gaps. Credit comes from the S201 pretest."
+      "note": "Merged into S201 (2026-10-06): the Ch. 1 pretest covers this probability review, and S201 teaches only the gaps. Credit comes from the S201 pretest.",
+      "books": {
+        "primary": "8dc9107eee Blitzstein & Hwang, Introduction to Probability 2nd (gaps only)"
+      }
     },
     {
       "id": "S201",
@@ -147,7 +150,10 @@
       "est_lessons": 6,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 3"
+      }
     },
     {
       "id": "S204",
@@ -160,7 +166,10 @@
       "est_lessons": 7,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 4"
+      }
     },
     {
       "id": "S205",
@@ -173,7 +182,10 @@
       "est_lessons": 7,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 5"
+      }
     },
     {
       "id": "S301",
@@ -186,7 +198,10 @@
       "est_lessons": 5,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 6"
+      }
     },
     {
       "id": "S302",
@@ -199,7 +214,10 @@
       "est_lessons": 7,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 7"
+      }
     },
     {
       "id": "S303",
@@ -213,7 +231,10 @@
       "pretest": true,
       "group": "core",
       "level": "I",
-      "note": "Includes S150's unwritten lessons: likelihood ratios (§8.2.1, A/B power ~55%), multiple testing (Bruce et al. Ch. 3), an A/B test end to end, and the 5-min randomization-vs-confounding re-teach."
+      "note": "Includes S150's unwritten lessons: likelihood ratios (§8.2.1, A/B power ~55%), multiple testing (Bruce et al. Ch. 3), an A/B test end to end, and the 5-min randomization-vs-confounding re-teach.",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 8"
+      }
     },
     {
       "id": "S304",
@@ -226,7 +247,10 @@
       "est_lessons": 5,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 9"
+      }
     },
     {
       "id": "S401",
@@ -239,7 +263,10 @@
       "est_lessons": 6,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 10"
+      }
     },
     {
       "id": "S402",
@@ -252,7 +279,10 @@
       "est_lessons": 6,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 11"
+      }
     },
     {
       "id": "S403",
@@ -265,7 +295,10 @@
       "est_lessons": 4,
       "pretest": true,
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "f9dc4d1d4c Casella & Berger, Statistical Inference 2nd, ch. 12"
+      }
     },
     {
       "id": "S310",
@@ -277,7 +310,13 @@
         "S402"
       ],
       "source": "ISL ch. 3-4 (in collection, B, id bd25de44fd); Agresti, Foundations of Linear and Generalized Linear Models (in collection, B, id 52015bc925)",
-      "est_lessons": 6
+      "est_lessons": 6,
+      "books": {
+        "primary": "bd25de44fd James et al., An Introduction to Statistical Learning ch. 3-4",
+        "secondary": [
+          "52015bc925 Agresti, Foundations of Linear and Generalized Linear Models"
+        ]
+      }
     },
     {
       "id": "S320",
@@ -290,7 +329,10 @@
         "S304"
       ],
       "source": "Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments (in collection, A, id 6b6e5ceaec); Montgomery, Design and Analysis of Experiments (to buy)",
-      "est_lessons": 8
+      "est_lessons": 8,
+      "books": {
+        "primary": "6b6e5ceaec Kohavi, Tang & Xu, Trustworthy Online Controlled Experiments"
+      }
     },
     {
       "id": "S330",
@@ -302,7 +344,10 @@
         "S205"
       ],
       "source": "Efron & Hastie, Computer Age Statistical Inference (free, check: https://hastie.su.domains/CASI/); Python",
-      "est_lessons": 6
+      "est_lessons": 6,
+      "books": {
+        "primary": "Efron & Hastie, Computer Age Statistical Inference (free: https://hastie.su.domains/CASI/)"
+      }
     },
     {
       "id": "S340",
@@ -314,7 +359,10 @@
         "S302"
       ],
       "source": "Gelman et al., Bayesian Data Analysis 3rd ed., ch. 1-5 (free PDF, check: http://www.stat.columbia.edu/~gelman/book/)",
-      "est_lessons": 6
+      "est_lessons": 6,
+      "books": {
+        "primary": "Gelman et al., Bayesian Data Analysis 3rd, ch. 1-5 (free: http://www.stat.columbia.edu/~gelman/book/)"
+      }
     },
     {
       "id": "S190",
@@ -326,7 +374,13 @@
         "S150"
       ],
       "source": "Hand, Statistics VSI (in collection, A); Jaynes, Probability Theory (in collection, B); Salsburg, The Lady Tasting Tea (to buy)",
-      "est_lessons": 4
+      "est_lessons": 4,
+      "books": {
+        "primary": "2d7e6445a2 Hand, Statistics VSI",
+        "secondary": [
+          "Jaynes, Probability Theory: The Logic of Science (in collection)"
+        ]
+      }
     },
     {
       "id": "S195",
@@ -338,7 +392,10 @@
         "S150"
       ],
       "source": "Hand, Measurement VSI (in collection, A)",
-      "est_lessons": 3
+      "est_lessons": 3,
+      "books": {
+        "primary": "Hand, Measurement VSI (in collection)"
+      }
     },
     {
       "id": "S360",
@@ -350,7 +407,10 @@
         "S310"
       ],
       "source": "Hyndman & Athanasopoulos, Forecasting: Principles and Practice 3rd ed. (free, check: https://otexts.com/fpp3/)",
-      "est_lessons": 6
+      "est_lessons": 6,
+      "books": {
+        "primary": "9a7c7c4a0d Hyndman & Athanasopoulos, Forecasting: Principles and Practice (3rd ed. free online)"
+      }
     },
     {
       "id": "S370",
@@ -362,7 +422,10 @@
         "S304"
       ],
       "source": "Lohr, Sampling: Design and Analysis (to buy)",
-      "est_lessons": 5
+      "est_lessons": 5,
+      "books": {
+        "primary": "Lohr, Sampling: Design and Analysis 3rd (TO ACQUIRE)"
+      }
     },
     {
       "id": "S380",
@@ -374,7 +437,10 @@
         "S310"
       ],
       "source": "ISL (free, check: https://www.statlearning.com/)",
-      "est_lessons": 8
+      "est_lessons": 8,
+      "books": {
+        "primary": "James et al., An Introduction to Statistical Learning (free: https://www.statlearning.com/)"
+      }
     },
     {
       "id": "S390",
@@ -387,7 +453,10 @@
         "S320"
       ],
       "note": "an A/B test from raw logs, a regression on public data, a Bayesian model; each a short report",
-      "est_lessons": 3
+      "est_lessons": 3,
+      "books": {
+        "primary": "public data and the course books (three short reports)"
+      }
     },
     {
       "id": "S398",
@@ -398,7 +467,11 @@
       "requires": [
         "S390"
       ],
-      "note": "notes/major-design.md: 20-25 works, 1,500-2,500 word rationale, 60-min conversation"
+      "note": "notes/major-design.md: 20-25 works, 1,500-2,500 word rationale, 60-min conversation",
+      "books": {
+        "primary": "list of works + rationale + conversation"
+      },
+      "est_lessons": 1
     },
     {
       "id": "S399",
@@ -409,7 +482,11 @@
       "requires": [
         "S390"
       ],
-      "note": "a ~20-page analysis of a question the learner chooses"
+      "note": "a ~20-page analysis of a question the learner chooses",
+      "books": {
+        "primary": "optional; a ~20-page analysis"
+      },
+      "est_lessons": 8
     },
     {
       "id": "S500",
@@ -422,7 +499,13 @@
       ],
       "source": "Abbott, Understanding Analysis (in collection, B, id 8e63f7f242); Fremlin, Measure Theory vol. 1 (in collection, B)",
       "est_lessons": 4,
-      "pretest": true
+      "pretest": true,
+      "books": {
+        "primary": "8e63f7f242 Abbott, Understanding Analysis (refresher)",
+        "secondary": [
+          "4dc05f0beb Fremlin, Measure Theory vol. 1"
+        ]
+      }
     },
     {
       "id": "S501",
@@ -434,7 +517,10 @@
       "group": "core",
       "level": "II",
       "source": "Durrett, Probability: Theory and Examples ch. 1-3 (in collection, B, id 0b2da87cd3)",
-      "est_lessons": 10
+      "est_lessons": 10,
+      "books": {
+        "primary": "0b2da87cd3 Durrett, Probability: Theory and Examples ch. 1-3"
+      }
     },
     {
       "id": "S502",
@@ -446,7 +532,10 @@
       "group": "core",
       "level": "II",
       "source": "Durrett PTE ch. 4-8",
-      "est_lessons": 10
+      "est_lessons": 10,
+      "books": {
+        "primary": "0b2da87cd3 Durrett, Probability: Theory and Examples ch. 4-8"
+      }
     },
     {
       "id": "S511",
@@ -458,7 +547,13 @@
         "S501"
       ],
       "source": "Lehmann & Casella, Theory of Point Estimation 2nd ed. (to buy); Keener, Theoretical Statistics (to buy)",
-      "est_lessons": 10
+      "est_lessons": 10,
+      "books": {
+        "primary": "Lehmann & Casella, Theory of Point Estimation 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Keener, Theoretical Statistics (TO ACQUIRE)"
+        ]
+      }
     },
     {
       "id": "S512",
@@ -470,7 +565,10 @@
         "S511"
       ],
       "source": "Lehmann & Romano, Testing Statistical Hypotheses (to buy)",
-      "est_lessons": 10
+      "est_lessons": 10,
+      "books": {
+        "primary": "Lehmann & Romano, Testing Statistical Hypotheses 4th (TO ACQUIRE)"
+      }
     },
     {
       "id": "S513",
@@ -482,7 +580,10 @@
         "S511"
       ],
       "source": "van der Vaart, Asymptotic Statistics (to buy)",
-      "est_lessons": 10
+      "est_lessons": 10,
+      "books": {
+        "primary": "van der Vaart, Asymptotic Statistics (TO ACQUIRE)"
+      }
     },
     {
       "id": "S520",
@@ -495,7 +596,10 @@
         "S511"
       ],
       "source": "Agresti, Foundations of Linear and Generalized Linear Models (in collection, B, id 52015bc925)",
-      "est_lessons": 8
+      "est_lessons": 8,
+      "books": {
+        "primary": "52015bc925 Agresti, Foundations of Linear and Generalized Linear Models"
+      }
     },
     {
       "id": "S530",
@@ -508,7 +612,10 @@
         "S501"
       ],
       "source": "BDA3, full (free PDF, check: http://www.stat.columbia.edu/~gelman/book/)",
-      "est_lessons": 10
+      "est_lessons": 10,
+      "books": {
+        "primary": "Gelman et al., Bayesian Data Analysis 3rd, whole (free: http://www.stat.columbia.edu/~gelman/book/)"
+      }
     },
     {
       "id": "S540",
@@ -520,7 +627,13 @@
         "S520"
       ],
       "source": "Hernan & Robins, Causal Inference: What If (in collection, A, id 527488945c); Imbens & Rubin (to buy)",
-      "est_lessons": 10
+      "est_lessons": 10,
+      "books": {
+        "primary": "527488945c Hernan & Robins, Causal Inference: What If",
+        "secondary": [
+          "Imbens & Rubin, Causal Inference for Statistics, Social, and Biomedical Sciences (TO ACQUIRE)"
+        ]
+      }
     },
     {
       "id": "S550",
@@ -533,7 +646,14 @@
         "S310"
       ],
       "source": "ESL (free, check: https://hastie.su.domains/ElemStatLearn/); Vershynin, High-Dimensional Probability (in collection, B); Wainwright, High-Dimensional Statistics (to buy)",
-      "est_lessons": 10
+      "est_lessons": 10,
+      "books": {
+        "primary": "Hastie, Tibshirani & Friedman, The Elements of Statistical Learning (free: https://hastie.su.domains/ElemStatLearn/)",
+        "secondary": [
+          "Vershynin, High-Dimensional Probability (free author PDF)",
+          "Wainwright, High-Dimensional Statistics (TO ACQUIRE)"
+        ]
+      }
     },
     {
       "id": "S560",
@@ -545,7 +665,13 @@
         "S513"
       ],
       "source": "Wasserman, All of Nonparametric Statistics (to buy); Tsybakov (to buy)",
-      "est_lessons": 6
+      "est_lessons": 6,
+      "books": {
+        "primary": "Wasserman, All of Nonparametric Statistics (TO ACQUIRE)",
+        "secondary": [
+          "Tsybakov, Introduction to Nonparametric Estimation (TO ACQUIRE)"
+        ]
+      }
     },
     {
       "id": "S570",
@@ -557,7 +683,13 @@
         "S530"
       ],
       "source": "CASI (free); Robert & Casella, Monte Carlo Statistical Methods (to buy)",
-      "est_lessons": 6
+      "est_lessons": 6,
+      "books": {
+        "primary": "Efron & Hastie, Computer Age Statistical Inference (free)",
+        "secondary": [
+          "Robert & Casella, Monte Carlo Statistical Methods (TO ACQUIRE)"
+        ]
+      }
     },
     {
       "id": "S580",
@@ -569,7 +701,10 @@
         "S512"
       ],
       "source": "Lattimore & Szepesvari, Bandit Algorithms (in collection, B, id b5d887859b)",
-      "est_lessons": 6
+      "est_lessons": 6,
+      "books": {
+        "primary": "b5d887859b Lattimore & Szepesvari, Bandit Algorithms"
+      }
     },
     {
       "id": "S590",
@@ -581,7 +716,14 @@
         "S512"
       ],
       "source": "Jaynes (in collection, B); Mayo, Statistical Inference as Severe Testing (to buy); Savage, Foundations of Statistics (to buy)",
-      "est_lessons": 4
+      "est_lessons": 4,
+      "books": {
+        "primary": "Mayo, Statistical Inference as Severe Testing (TO ACQUIRE)",
+        "secondary": [
+          "Jaynes, Probability Theory (in collection)",
+          "Savage, The Foundations of Statistics (TO ACQUIRE)"
+        ]
+      }
     },
     {
       "id": "S595",
@@ -594,7 +736,11 @@
         "S512",
         "S513"
       ],
-      "note": "timed, closed book, modelled on PhD first-year quals; graded with rubrics"
+      "note": "timed, closed book, modelled on PhD first-year quals; graded with rubrics",
+      "books": {
+        "primary": "past PhD first-year qualifying exams (Casella & Berger, Durrett level)"
+      },
+      "est_lessons": 6
     },
     {
       "id": "S596",
@@ -605,7 +751,10 @@
       "requires": [
         "S595"
       ],
-      "est_lessons": 4
+      "est_lessons": 4,
+      "books": {
+        "primary": "a published paper with data"
+      }
     },
     {
       "id": "S598",
@@ -615,7 +764,11 @@
       "status": "later",
       "requires": [
         "S596"
-      ]
+      ],
+      "books": {
+        "primary": "list of works + conversation"
+      },
+      "est_lessons": 1
     },
     {
       "id": "S599",
@@ -625,7 +778,11 @@
       "status": "later",
       "requires": [
         "S596"
-      ]
+      ],
+      "books": {
+        "primary": "optional; ~40 pages"
+      },
+      "est_lessons": 12
     }
   ],
   "levels": {

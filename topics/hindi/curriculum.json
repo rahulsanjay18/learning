@@ -1,0 +1,315 @@
+{
+  "major": "hindi",
+  "program": "topics/hindi/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "HN101"
+    ],
+    "credited": [],
+    "maybe": [],
+    "start": [
+      "HN101"
+    ],
+    "basis": "You said true beginner (2026-10-21): start with the script and sounds."
+  },
+  "courses": [
+    {
+      "id": "HN101",
+      "title": "Elementary Hindi I: Devanagari, sounds, basic grammar",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Snell & Weightman, Complete Hindi (Teach Yourself) (TO ACQUIRE)",
+        "secondary": [
+          "2651c68bc9 Snell, Beginner's Hindi Script",
+          "Forvo / Shabdkosh audio dictionaries (free)"
+        ]
+      }
+    },
+    {
+      "id": "HN102",
+      "title": "Elementary Hindi II: tenses, postpositions, compound verbs",
+      "status": "later",
+      "requires": [
+        "HN101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Snell & Weightman, Complete Hindi (Teach Yourself) (TO ACQUIRE)",
+        "secondary": [
+          "McGregor, Outline of Hindi Grammar (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HN201",
+      "title": "Intermediate Hindi I: reading and conversation",
+      "status": "later",
+      "requires": [
+        "HN102"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Jain, Intermediate Hindi Reader (UC Berkeley) (TO ACQUIRE)",
+        "secondary": [
+          "McGregor, Outline of Hindi Grammar (TO ACQUIRE)",
+          "Shapiro, A Primer of Modern Standard Hindi (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HN202",
+      "title": "Intermediate Hindi II: stories, news, extensive reading",
+      "status": "later",
+      "requires": [
+        "HN201"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Jain, Advanced Hindi Grammar (TO ACQUIRE)",
+        "secondary": [
+          "476768aa4a Rowling, Harry Potter aur Paras Patthar (Hindi trans.; extensive reading)",
+          "BBC Hindi (free)"
+        ]
+      }
+    },
+    {
+      "id": "HN301",
+      "title": "Advanced Hindi I: modern prose (Premchand to the Nayi Kahani)",
+      "status": "later",
+      "requires": [
+        "HN202"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Premchand, Mansarovar (selected stories, Hindi) (TO ACQUIRE)",
+        "secondary": [
+          "Premchand, Godan (Hindi) (TO ACQUIRE)",
+          "McGregor (ed.), The Oxford Hindi-English Dictionary (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HN302",
+      "title": "Advanced Hindi II: poetry from Kabir to Nirala",
+      "status": "later",
+      "requires": [
+        "HN301"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Snell, The Hindi Classical Tradition: A Braj Bhasa Reader (TO ACQUIRE)",
+        "secondary": [
+          "bf3cad64dd Bly, Kabir: Ecstatic Poems (for meaning)"
+        ]
+      }
+    },
+    {
+      "id": "HN310",
+      "title": "Hindi registers: formal, Sanskritized and media Hindi",
+      "status": "later",
+      "requires": [
+        "HN202"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Dainik Jagran, Navbharat Times, Lok Sabha debates (free)",
+        "secondary": [
+          "McGregor (ed.), The Oxford Hindi-English Dictionary (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HN320",
+      "title": "The Hindi language: its history and linguistics",
+      "status": "later",
+      "requires": [
+        "HN202"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Masica, The Indo-Aryan Languages (TO ACQUIRE)",
+        "secondary": [
+          "King, One Language, Two Scripts (TO ACQUIRE)",
+          "fd4ffb9c9c Matthews, Linguistics VSI"
+        ]
+      },
+      "note": "Overlaps English EN310 (history of a language)."
+    },
+    {
+      "id": "HN501",
+      "title": "Contemporary Hindi literature",
+      "status": "later",
+      "requires": [
+        "HN302"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Verma, Parinde (Hindi) (TO ACQUIRE)",
+        "secondary": [
+          "Sobti, Mitro Marjani (Hindi) (TO ACQUIRE)",
+          "Shrilal Shukla, Raag Darbari (Hindi) (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HN502",
+      "title": "Medieval Hindi: Braj and Avadhi (Tulsidas, Surdas)",
+      "status": "later",
+      "requires": [
+        "HN302"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Tulsidas, Ramcharitmanas (Gita Press, with Hindi gloss) (TO ACQUIRE)",
+        "secondary": [
+          "Snell, The Hindi Classical Tradition (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HN503",
+      "title": "Hindi literary history and criticism (in Hindi)",
+      "status": "later",
+      "requires": [
+        "HN501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Shukla, Hindi Sahitya ka Itihas (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "HN330",
+      "title": "Urdu script and Hindustani",
+      "status": "later",
+      "requires": [
+        "HN202"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Matthews & Dalvi, Complete Urdu (Teach Yourself) (TO ACQUIRE)",
+        "secondary": [
+          "744967e342 Memon & Asaduddin (eds.), Manto and Chughtai: The Essential Stories"
+        ]
+      }
+    },
+    {
+      "id": "HN340",
+      "title": "Sanskrit for Hindi readers",
+      "status": "later",
+      "requires": [
+        "HN202"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Ruppel, The Cambridge Introduction to Sanskrit (TO ACQUIRE)"
+      },
+      "note": "Overlaps Indian History IH550 (a source language)."
+    },
+    {
+      "id": "HN504",
+      "title": "Translation workshop: Hindi to English",
+      "status": "later",
+      "requires": [
+        "HN501"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 12,
+      "books": {
+        "primary": "short texts chosen as the course starts",
+        "secondary": [
+          "Venuti (ed.), The Translation Studies Reader (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HN190",
+      "title": "Breadth: the languages of the world",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "561e96a88d Anderson, Languages VSI"
+      }
+    },
+    {
+      "id": "HN390",
+      "title": "Practice: weekly conversation exchange and a Hindi journal",
+      "status": "later",
+      "requires": [
+        "HN101"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "a tutor or exchange partner (italki or Tandem) + spaced-repetition vocabulary"
+      }
+    },
+    {
+      "id": "HN595",
+      "title": "Practice: proficiency self-check (ACTFL Advanced High / CEFR C1)",
+      "status": "later",
+      "requires": [
+        "HN501"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 4,
+      "books": {
+        "primary": "ACTFL Proficiency Guidelines 2024 (free)"
+      }
+    },
+    {
+      "id": "HN398",
+      "title": "End-of-level conversation (Level I), held in Hindi",
+      "status": "later",
+      "requires": [
+        "HN302"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a conversation in Hindi"
+      }
+    }
+  ]
+}

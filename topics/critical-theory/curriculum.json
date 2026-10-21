@@ -406,7 +406,14 @@
       ],
       "group": "breadth",
       "level": "I",
-      "source": "54c3d38cd5 Zimmermann, Hermeneutics VSI; Norton: Schleiermacher (613-626), Hirsch 'Objective Interpretation' (1684-1709)"
+      "source": "54c3d38cd5 Zimmermann, Hermeneutics VSI; Norton: Schleiermacher (613-626), Hirsch 'Objective Interpretation' (1684-1709)",
+      "books": {
+        "primary": "54c3d38cd5 Zimmermann, Hermeneutics VSI",
+        "secondary": [
+          "face941c2e Norton Anthology of Theory and Criticism (Schleiermacher, Hirsch)"
+        ]
+      },
+      "est_lessons": 10
     },
     {
       "id": "CT320",
@@ -417,7 +424,11 @@
       ],
       "group": "breadth",
       "level": "I",
-      "source": "Norton: Knapp & Michaels 'Against Theory' (2460-2475), Barbara Christian 'The Race for Theory' (2257-2266), Graff (2059-2067), Eagleton 'The Rise of English' (2243-2250). Yale ENGL 300 lectures 25-26"
+      "source": "Norton: Knapp & Michaels 'Against Theory' (2460-2475), Barbara Christian 'The Race for Theory' (2257-2266), Graff (2059-2067), Eagleton 'The Rise of English' (2243-2250). Yale ENGL 300 lectures 25-26",
+      "books": {
+        "primary": "face941c2e Norton Anthology of Theory and Criticism (Knapp & Michaels, Christian)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CT330",
@@ -429,7 +440,14 @@
       ],
       "group": "breadth",
       "level": "I",
-      "source": "7fe1b80216 Butler, Postmodernism VSI; Norton: Lyotard (1612-1615), Baudrillard 'Precession of Simulacra' (1732-1741), Jameson 'Postmodernism and Consumer Society' (1960-1975)"
+      "source": "7fe1b80216 Butler, Postmodernism VSI; Norton: Lyotard (1612-1615), Baudrillard 'Precession of Simulacra' (1732-1741), Jameson 'Postmodernism and Consumer Society' (1960-1975)",
+      "books": {
+        "primary": "7fe1b80216 Butler, Postmodernism VSI",
+        "secondary": [
+          "face941c2e Norton (Lyotard, Baudrillard)"
+        ]
+      },
+      "est_lessons": 8
     },
     {
       "id": "CT340",
@@ -440,7 +458,14 @@
       ],
       "group": "elective",
       "level": "I",
-      "source": "a2a924addb Rushdie, Midnight's Children; 744967e342 Manto & Chughtai stories (Partition); 8b30ac33e8 Sahgal, Rich Like Us (the Emergency); e7fbdf6d3b Chughtai, The Crooked Line"
+      "source": "a2a924addb Rushdie, Midnight's Children; 744967e342 Manto & Chughtai stories (Partition); 8b30ac33e8 Sahgal, Rich Like Us (the Emergency); e7fbdf6d3b Chughtai, The Crooked Line",
+      "books": {
+        "primary": "a2a924addb Rushdie, Midnight's Children",
+        "secondary": [
+          "744967e342 Manto and Chughtai stories"
+        ]
+      },
+      "est_lessons": 16
     },
     {
       "id": "CT350",
@@ -451,7 +476,11 @@
       ],
       "group": "elective",
       "level": "I",
-      "source": "Norton: Mulvey 'Visual Pleasure and Narrative Cinema' (2181-2193); Benjamin and Baudrillard re-read; apply to one film and one game you play"
+      "source": "Norton: Mulvey 'Visual Pleasure and Narrative Cinema' (2181-2193); Benjamin and Baudrillard re-read; apply to one film and one game you play",
+      "books": {
+        "primary": "face941c2e Norton (Mulvey, Benjamin, Baudrillard)"
+      },
+      "est_lessons": 10
     },
     {
       "id": "CT360",
@@ -462,7 +491,11 @@
       ],
       "group": "breadth",
       "level": "I",
-      "source": "f3897354f4 Classical Literary Criticism (Penguin: Plato, Aristotle's Poetics, Horace, Longinus); Norton: Sidney (326-363), Kant (504-536), Wordsworth (648-668), Arnold (806-833)"
+      "source": "f3897354f4 Classical Literary Criticism (Penguin: Plato, Aristotle's Poetics, Horace, Longinus); Norton: Sidney (326-363), Kant (504-536), Wordsworth (648-668), Arnold (806-833)",
+      "books": {
+        "primary": "f3897354f4 Classical Literary Criticism (Penguin)"
+      },
+      "est_lessons": 12
     },
     {
       "id": "CT370",
@@ -473,7 +506,15 @@
       ],
       "group": "elective",
       "level": "I",
-      "source": "8751c878bc Jane Eyre; 00a65b8d86 Middlemarch; f6dbd55b62 Brothers Karamazov"
+      "source": "8751c878bc Jane Eyre; 00a65b8d86 Middlemarch; f6dbd55b62 Brothers Karamazov",
+      "books": {
+        "primary": "8751c878bc Bronte, Jane Eyre",
+        "secondary": [
+          "00a65b8d86 Eliot, Middlemarch",
+          "f6dbd55b62 Dostoevsky, The Brothers Karamazov"
+        ]
+      },
+      "est_lessons": 40
     },
     {
       "id": "CT390",
@@ -484,7 +525,11 @@
       ],
       "group": "practice",
       "level": "I",
-      "source": "optional; to choose with you"
+      "source": "optional; to choose with you",
+      "books": {
+        "primary": "optional; to choose with you"
+      },
+      "est_lessons": 4
     },
     {
       "id": "CT398",
@@ -495,7 +540,11 @@
       ],
       "group": "colloquium",
       "level": "I",
-      "source": "List of works read + a typed conversation, rubric in notes/major-design.md"
+      "source": "List of works read + a typed conversation, rubric in notes/major-design.md",
+      "books": {
+        "primary": "list of works + conversation"
+      },
+      "est_lessons": 1
     },
     {
       "id": "CT399",
@@ -506,7 +555,11 @@
       ],
       "group": "capstone",
       "level": "I",
-      "source": "optional"
+      "source": "optional",
+      "books": {
+        "primary": "optional"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CT510",
@@ -517,7 +570,11 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "BOOK NEEDED"
+      "source": "BOOK NEEDED",
+      "books": {
+        "primary": "Horkheimer & Adorno, Dialectic of Enlightenment (Jephcott trans.) (TO ACQUIRE)"
+      },
+      "est_lessons": 24
     },
     {
       "id": "CT520",
@@ -528,7 +585,11 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "c1cf685a4d (in collection)"
+      "source": "c1cf685a4d (in collection)",
+      "books": {
+        "primary": "c1cf685a4d Marcuse, One-Dimensional Man"
+      },
+      "est_lessons": 16
     },
     {
       "id": "CT530",
@@ -539,7 +600,11 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "BOOK NEEDED"
+      "source": "BOOK NEEDED",
+      "books": {
+        "primary": "Benjamin, Illuminations (TO ACQUIRE)"
+      },
+      "est_lessons": 16
     },
     {
       "id": "CT540",
@@ -550,7 +615,11 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "d004f50be2 (in collection)"
+      "source": "d004f50be2 (in collection)",
+      "books": {
+        "primary": "d004f50be2 Beauvoir, The Second Sex"
+      },
+      "est_lessons": 24
     },
     {
       "id": "CT550",
@@ -561,7 +630,11 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "BOOK NEEDED"
+      "source": "BOOK NEEDED",
+      "books": {
+        "primary": "Foucault, Discipline and Punish (TO ACQUIRE)"
+      },
+      "est_lessons": 20
     },
     {
       "id": "CT560",
@@ -572,7 +645,11 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "BOOK NEEDED"
+      "source": "BOOK NEEDED",
+      "books": {
+        "primary": "Said, Orientalism (TO ACQUIRE)"
+      },
+      "est_lessons": 24
     },
     {
       "id": "CT570",
@@ -583,7 +660,11 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "BOOK NEEDED"
+      "source": "BOOK NEEDED",
+      "books": {
+        "primary": "Jameson, The Political Unconscious (TO ACQUIRE)"
+      },
+      "est_lessons": 20
     },
     {
       "id": "CT580",
@@ -594,7 +675,11 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "BOOK NEEDED"
+      "source": "BOOK NEEDED",
+      "books": {
+        "primary": "Butler, Gender Trouble (TO ACQUIRE)"
+      },
+      "est_lessons": 16
     },
     {
       "id": "CT590",
@@ -605,7 +690,14 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "9c44e4c7ec Capital vol. 1 (in collection); companion BOOK NEEDED (e.g. Harvey)"
+      "source": "9c44e4c7ec Capital vol. 1 (in collection); companion BOOK NEEDED (e.g. Harvey)",
+      "books": {
+        "primary": "9c44e4c7ec Marx, Capital vol. 1",
+        "secondary": [
+          "Harvey, A Companion to Marx's Capital (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 30
     },
     {
       "id": "CT595",
@@ -616,7 +708,14 @@
       ],
       "group": "core",
       "level": "II",
-      "source": "BOOK NEEDED; 3be93f35d7 Finlayson, Habermas VSI (in collection) as on-ramp"
+      "source": "BOOK NEEDED; 3be93f35d7 Finlayson, Habermas VSI (in collection) as on-ramp",
+      "books": {
+        "primary": "Habermas, The Structural Transformation of the Public Sphere (TO ACQUIRE)",
+        "secondary": [
+          "3be93f35d7 Finlayson, Habermas VSI"
+        ]
+      },
+      "est_lessons": 20
     },
     {
       "id": "CT598",
@@ -626,7 +725,11 @@
         "CT510"
       ],
       "group": "colloquium",
-      "level": "II"
+      "level": "II",
+      "books": {
+        "primary": "list of works + conversation"
+      },
+      "est_lessons": 1
     }
   ]
 }

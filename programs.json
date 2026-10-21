@@ -75,7 +75,13 @@
   "parked": [
     {
       "slug": "economics",
-      "note": "Principles solid (13/13). Resume at intermediate level."
+      "note": "Principles solid (placement 13/13, 2026-10-05). Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point. Entry: intermediate micro, macro, econometrics.",
+      "name": "Economics",
+      "goal": "soul",
+      "curriculum": "topics/economics/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ]
     },
     {
       "slug": "nasm-cpt",
@@ -154,6 +160,116 @@
         "I"
       ],
       "note": "Designed 2026-10-08, not scheduled; parked with a full curriculum (one in, one out). Built by scripts/build_majors.py. A reading major: surveys (British, American), Shakespeare, poetry, the novel, theory (= Critical Theory's first courses), history of the language, world and postcolonial literature, senior seminar. Writing electives."
+    },
+    {
+      "slug": "medicine",
+      "name": "Medicine",
+      "goal": "soul",
+      "curriculum": "topics/medicine/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "law",
+      "name": "Law",
+      "goal": "soul",
+      "curriculum": "topics/law/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "psychology",
+      "name": "Psychology",
+      "goal": "soul",
+      "curriculum": "topics/psychology/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "sociology",
+      "name": "Sociology",
+      "goal": "soul",
+      "curriculum": "topics/sociology/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "political-science",
+      "name": "Political Science",
+      "goal": "soul",
+      "curriculum": "topics/political-science/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "history",
+      "name": "History",
+      "goal": "soul",
+      "curriculum": "topics/history/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "philosophy",
+      "name": "Philosophy",
+      "goal": "soul",
+      "curriculum": "topics/philosophy/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "education",
+      "name": "Education",
+      "goal": "soul",
+      "curriculum": "topics/education/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "film",
+      "name": "Film",
+      "goal": "soul",
+      "curriculum": "topics/film/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "hindi",
+      "name": "Hindi",
+      "goal": "soul",
+      "curriculum": "topics/hindi/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
+    },
+    {
+      "slug": "spanish",
+      "name": "Spanish",
+      "goal": "soul",
+      "curriculum": "topics/spanish/curriculum.json",
+      "enrolled_levels": [
+        "I"
+      ],
+      "note": "Designed 2026-10-21 at the learner's request (one of twelve majors that day), parked with a full curriculum (one in, one out when it starts). Built by scripts/build_majors.py (course data in scripts/majors_2026_10_21.py). See PROGRAM.md for the entry point."
     }
   ]
 }

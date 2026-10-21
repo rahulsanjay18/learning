@@ -117,7 +117,11 @@
       ],
       "note": "widget ready: assets/plugins/xiangqi.js (sandbox + xiangqi-move quiz)",
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Lau, Chinese Chess: An Introduction to China's Ancient Game of Strategy (TO ACQUIRE)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "G202",
@@ -128,7 +132,11 @@
       ],
       "note": "widget ready: assets/plugins/shogi.js (sandbox with drops/promotion + shogi-move quiz)",
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Hosking, The Art of Shogi (TO ACQUIRE)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "G301",
@@ -139,7 +147,14 @@
       ],
       "note": "Go plugin exists",
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Kageyama, Lessons in the Fundamentals of Go (TO ACQUIRE)",
+        "secondary": [
+          "Kim & Jeong, Learn to Play Go vol. 1 (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 10
     },
     {
       "id": "G401",
@@ -149,7 +164,14 @@
         "G102"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Robertie, Backgammon for Winners 3rd (TO ACQUIRE)",
+        "secondary": [
+          "Neller & Presser (2004), Optimal Play of the Dice Game Pig, UMAP Journal 25(1) (free)"
+        ]
+      },
+      "est_lessons": 8
     },
     {
       "id": "G402",
@@ -159,7 +181,14 @@
         "G401"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Chen & Ankenman, The Mathematics of Poker (TO ACQUIRE)",
+        "secondary": [
+          "Sklansky, The Theory of Poker (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 10
     },
     {
       "id": "G350",
@@ -169,7 +198,11 @@
         "G150"
       ],
       "group": "elective",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "eb72110b76 Perla, The Art of Wargaming"
+      },
+      "est_lessons": 8
     },
     {
       "id": "G360",
@@ -180,7 +213,14 @@
         "G503"
       ],
       "group": "elective",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Schelling, The Strategy of Conflict (TO ACQUIRE)",
+        "secondary": [
+          "4bdcba34b3 Schelling, Arms and Influence"
+        ]
+      },
+      "est_lessons": 6
     },
     {
       "id": "G501",
@@ -191,7 +231,14 @@
         "G301"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "4c963e60a1 Elias, Garfield & Gutschera, Characteristics of Games",
+        "secondary": [
+          "Parlett, The Oxford History of Board Games (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 8
     },
     {
       "id": "G502",
@@ -204,10 +251,13 @@
       "level": "II",
       "books": {
         "primary": "9c0c10ef76 Albert, Nowakowski & Wolfe, Lessons in Play (2007, grade B: equations from page images)",
-        "secondary": [],
+        "secondary": [
+          "Berlekamp, Conway & Guy, Winning Ways vol. 1 (TO ACQUIRE)"
+        ],
         "tertiary": [],
         "skip": []
-      }
+      },
+      "est_lessons": 12
     },
     {
       "id": "G503",
@@ -217,7 +267,14 @@
         "G401"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Osborne, An Introduction to Game Theory (TO ACQUIRE)",
+        "secondary": [
+          "c108125fe5 Binmore, Game Theory VSI"
+        ]
+      },
+      "est_lessons": 12
     },
     {
       "id": "G504",
@@ -228,7 +285,15 @@
         "G401"
       ],
       "group": "core",
-      "level": "II"
+      "level": "II",
+      "books": {
+        "primary": "34353ab4c2 Sutton & Barto, Reinforcement Learning 2nd",
+        "secondary": [
+          "Russell & Norvig, Artificial Intelligence: A Modern Approach 4th, ch. 5-6 (TO ACQUIRE)",
+          "Silver et al. (2018), AlphaZero, Science 362 (free preprint)"
+        ]
+      },
+      "est_lessons": 14
     },
     {
       "id": "G601",
@@ -238,7 +303,14 @@
         "G501"
       ],
       "group": "core",
-      "level": "II"
+      "level": "II",
+      "books": {
+        "primary": "4c963e60a1 Elias, Garfield & Gutschera, Characteristics of Games",
+        "secondary": [
+          "Salen & Zimmerman, Rules of Play (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 8
     },
     {
       "id": "G602",
@@ -248,7 +320,11 @@
         "G504"
       ],
       "group": "core",
-      "level": "II"
+      "level": "II",
+      "books": {
+        "primary": "Schreiber & Romero, Game Balance (TO ACQUIRE)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "G603",
@@ -258,7 +334,14 @@
         "G601"
       ],
       "group": "core",
-      "level": "II"
+      "level": "II",
+      "books": {
+        "primary": "project-led: your 3D chess variant",
+        "secondary": [
+          "Fullerton, Game Design Workshop 4th (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 10
     },
     {
       "id": "G700",
@@ -269,7 +352,11 @@
         "G603"
       ],
       "group": "capstone",
-      "level": "II"
+      "level": "II",
+      "books": {
+        "primary": "project-led: your game"
+      },
+      "est_lessons": 12
     },
     {
       "id": "G190",
@@ -280,7 +367,14 @@
       "requires": [
         "G101"
       ],
-      "note": "ask for Parlett, The Oxford History of Board Games, or Murray, A History of Chess"
+      "note": "ask for Parlett, The Oxford History of Board Games, or Murray, A History of Chess",
+      "books": {
+        "primary": "Parlett, The Oxford History of Board Games (TO ACQUIRE)",
+        "secondary": [
+          "Murray, A History of Chess (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 6
     },
     {
       "id": "G195",
@@ -291,7 +385,11 @@
       "requires": [
         "G101"
       ],
-      "note": "each class: a few real games (bots or friends), one reviewed in writing"
+      "note": "each class: a few real games (bots or friends), one reviewed in writing",
+      "books": {
+        "primary": "your own games, reviewed"
+      },
+      "est_lessons": 4
     },
     {
       "id": "G398",
@@ -302,7 +400,11 @@
       "requires": [
         "G402",
         "G501"
-      ]
+      ],
+      "books": {
+        "primary": "list of works + conversation"
+      },
+      "est_lessons": 1
     },
     {
       "id": "G598",
@@ -312,7 +414,11 @@
       "status": "later",
       "requires": [
         "G700"
-      ]
+      ],
+      "books": {
+        "primary": "list of works + conversation"
+      },
+      "est_lessons": 1
     }
   ],
   "design": "notes/major-design.md",

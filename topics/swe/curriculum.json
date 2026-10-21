@@ -321,7 +321,11 @@
       "level": "I",
       "note": "Optional: you already mentor. Reilly Part III on being a role model, sponsoring, and code/design review as teaching.",
       "lane": "staff",
-      "review": false
+      "review": false,
+      "books": {
+        "primary": "1ef7da7a31 Reilly, The Staff Engineer's Path, Part III"
+      },
+      "est_lessons": 3
     },
     {
       "id": "SE390",
@@ -334,7 +338,11 @@
       "level": "I",
       "note": "Ongoing: pick one cross-team project at work and run it with the course tools (kickoff doc, design doc, decision log, retro). It is the centerpiece of the promo packet or interview stories.",
       "lane": "staff",
-      "review": false
+      "review": false,
+      "books": {
+        "primary": "your own project at work"
+      },
+      "est_lessons": 6
     },
     {
       "id": "SE399",
@@ -347,7 +355,11 @@
       "level": "I",
       "note": "The real-world result. If it doesn't land, the gap list from the review becomes the next plan.",
       "lane": "staff",
-      "review": false
+      "review": false,
+      "books": {
+        "primary": "the promotion packet or the offer"
+      },
+      "est_lessons": 1
     },
     {
       "id": "SE401",
@@ -360,7 +372,11 @@
       "level": "II",
       "note": "Opt-in after staff. Larson's later writing on engineering strategy; to choose then.",
       "lane": "staff",
-      "review": false
+      "review": false,
+      "books": {
+        "primary": "Larson, Crafting Engineering Strategy (TO ACQUIRE)"
+      },
+      "est_lessons": 6
     },
     {
       "id": "AW000",
@@ -453,7 +469,10 @@
       "group": "core",
       "level": "I",
       "note": "Timed practice exams, then the real one. Then AWS GenAI Developer Pro (CR250) is optional.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "AWS Skill Builder official practice question set (MLA-C02)"
+      }
     },
     {
       "id": "CP000",
@@ -708,7 +727,8 @@
           "1062457b20 1st ed. (2002): pre-C++11"
         ]
       },
-      "lane": "tech"
+      "lane": "tech",
+      "est_lessons": 10
     },
     {
       "id": "CP402",
@@ -728,7 +748,8 @@
         "tertiary": [],
         "skip": []
       },
-      "lane": "tech"
+      "lane": "tech",
+      "est_lessons": 10
     },
     {
       "id": "CP403",
@@ -749,7 +770,8 @@
         "tertiary": [],
         "skip": []
       },
-      "lane": "tech"
+      "lane": "tech",
+      "est_lessons": 10
     },
     {
       "id": "CP490",
@@ -761,7 +783,11 @@
       "group": "practice",
       "level": "II",
       "note": "Optional: write a PyTorch C++/CUDA extension; read ggml/llama.cpp's tensor and kernel code.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "ggml / llama.cpp source and the PyTorch C++ extension docs (free)"
+      },
+      "est_lessons": 6
     },
     {
       "id": "CP499",
@@ -773,7 +799,11 @@
       "group": "capstone",
       "level": "II",
       "note": "Optional: one merged pull request to a real C/C++ project you use.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "an open-source C/C++ project you use"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR100",
@@ -910,7 +940,10 @@
       "level": "I",
       "note": "Quick win (weeks): Spark/PySpark at scale (partitioning, shuffles, joins, Structured Streaming), then the Databricks Generative AI Engineer badge (CR230) or a Databricks data-engineering cert. Spark pays best combined with ML and distributed systems (SE120).",
       "est_lessons": 6,
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "e11b47883f Damji et al., Learning Spark 2nd"
+      }
     },
     {
       "id": "CR210",
@@ -922,7 +955,11 @@
       "group": "elective",
       "level": "I",
       "note": "Second cloud. Catalog: gcp-pmle.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "Google Cloud, Professional ML Engineer exam guide (free)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR220",
@@ -934,7 +971,11 @@
       "group": "elective",
       "level": "I",
       "note": "Only if Azure matters to an employer. Catalog: azure-ai-103.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "Microsoft Learn, AI-103 learning path (free)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR230",
@@ -946,7 +987,11 @@
       "group": "elective",
       "level": "I",
       "note": "Catalog: databricks-genai.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "Databricks, Generative AI Engineer Associate exam guide (free)"
+      },
+      "est_lessons": 6
     },
     {
       "id": "CR240",
@@ -958,7 +1003,11 @@
       "group": "elective",
       "level": "I",
       "note": "Quick infra badge. Catalog: hashicorp-terraform-004.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "HashiCorp, Terraform Associate (004) study guide (free)"
+      },
+      "est_lessons": 5
     },
     {
       "id": "CR250",
@@ -970,7 +1019,11 @@
       "group": "elective",
       "level": "I",
       "note": "After MLA-C02 (aws-ml major). Catalog: aws-aip-c01.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "AWS, Generative AI Developer - Professional exam guide (free)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR310",
@@ -982,7 +1035,11 @@
       "group": "elective",
       "level": "I",
       "note": "WATCH (2026-10-07: remote-only rules out most top firms, which are on-site in a few hubs). Path if that changes: C/C++ major CP101-CP204 + CP403, Harris, Trading and Exchanges (wanted), 8ca4543585 Carver, Systematic Trading (A).",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "Joshi, C++ Design Patterns and Derivatives Pricing 2nd (TO ACQUIRE)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR320",
@@ -994,7 +1051,11 @@
       "group": "elective",
       "level": "I",
       "note": "WATCH (remote-only, no more school). Highest ceiling of the math fallbacks, but top firms treat a PhD as near-baseline, so aim at mid-tier funds and systematic-trading teams. Uses the Statistics major (probability, inference, time series) + probability-puzzle interview prep (Crack, Heard on the Street; Zhou, A Practical Guide to Quantitative Finance Interviews: wanted) + 59fb31351d Boyd & Vandenberghe, Convex Optimization (B).",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "a9204f84b3 Baxter & Rennie, Financial Calculus"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR325",
@@ -1006,7 +1067,11 @@
       "group": "elective",
       "level": "I",
       "note": "Safety net outside tech (kept 2026-10-07 when adjacent tech became the main priority): exam-gated (you accept years of exams), remote-friendly (consultancies especially), outside the software job market, and the accountable sign-off work is the part least exposed to automation. Your Python/ML is in demand there. Ladder: P -> FM -> ASA (FAM, SRM, ATPA, ...). Exam P overlaps the Statistics major. BLS median $125,770.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "5e77147cae Broverman, ACTEX Study Manual for SOA Exam P"
+      },
+      "est_lessons": 10
     },
     {
       "id": "CR326",
@@ -1018,7 +1083,11 @@
       "group": "elective",
       "level": "I",
       "note": "Math that strengthens every fallback (quant, OR, ML): convex optimization (59fb31351d Boyd, B) and linear/integer programming. OR analyst as a job title pays less (BLS median $88,940), so treat this as a skill, not a destination.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "Boyd & Vandenberghe, Convex Optimization (free: https://web.stanford.edu/~boyd/cvxbook/)"
+      },
+      "est_lessons": 10
     },
     {
       "id": "CR327",
@@ -1030,7 +1099,11 @@
       "group": "elective",
       "level": "I",
       "note": "One exam, no law degree: your CE and CS degrees qualify you for the USPTO registration exam. Regulated legal work (filings carry a registered practitioner's name) on software/AI/hardware patents. Median ~$124k. Probe: read the exam's MPEP scope and do one practice exam.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "USPTO, Manual of Patent Examining Procedure (free)"
+      },
+      "est_lessons": 12
     },
     {
       "id": "CR330",
@@ -1043,7 +1116,13 @@
       "level": "I",
       "note": "Priority 2: security hiring reported +23% with AI security the main driver, and AI-security roles at a 31% premium (Q1 2026 listings). LLM threats (prompt injection, data/model supply chain), cloud IAM and network security; badge: AWS Security Specialty (check code) or similar.",
       "est_lessons": 8,
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "f61ca930af Shostack, Threat Modeling: Designing for Security",
+        "secondary": [
+          "OWASP Top 10 for LLM Applications (free)"
+        ]
+      }
     },
     {
       "id": "CR340",
@@ -1055,7 +1134,11 @@
       "group": "elective",
       "level": "I",
       "note": "Customer-facing architect roles pay well and value certs most. AWS Solutions Architect Associate (you already have a 2024 course for it) then Professional, or GCP Professional Cloud Architect.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "4f1da5d25d Ultimate AWS Certified Solutions Architect Associate (Udemy)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR350",
@@ -1067,7 +1150,11 @@
       "group": "elective",
       "level": "I",
       "note": "Systems, infra, embedded and crypto roles; reported among the top-paying languages. Primary: The Rust Programming Language (official, free at doc.rust-lang.org/book). Easier after the C/C++ major's CP101.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "33035ebaa3 Klabnik & Nichols, The Rust Programming Language"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR360",
@@ -1079,7 +1166,11 @@
       "group": "elective",
       "level": "I",
       "note": "The language of cloud infrastructure (Kubernetes, Terraform are written in it). Primary: Donovan & Kernighan, The Go Programming Language (wanted) or the official Go tour.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "7f591bfc1f Donovan & Kernighan, The Go Programming Language"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR370",
@@ -1091,7 +1182,11 @@
       "group": "elective",
       "level": "I",
       "note": "Uses your computer-engineering degree; edge AI (models on devices) is the bridge from your current work. Path: C/C++ major CP101+CP120, then 28a32b9b90 Holt, Embedded Operating Systems (A) and 35ab9520bd Ganssle, The Art of Designing Embedded Systems (B), plus a microcontroller project.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "White, Making Embedded Systems 2nd (TO ACQUIRE)"
+      },
+      "est_lessons": 8
     },
     {
       "id": "CR380",
@@ -1126,7 +1221,11 @@
       "group": "capstone",
       "level": "II",
       "note": "Optional: reproduce one recent ML paper's key result, with code and a blog post.",
-      "lane": "tech"
+      "lane": "tech",
+      "books": {
+        "primary": "one recent ML paper with code"
+      },
+      "est_lessons": 8
     }
   ],
   "lanes": {

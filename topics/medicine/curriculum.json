@@ -1,0 +1,910 @@
+{
+  "major": "medicine",
+  "program": "topics/medicine/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MA100",
+      "EN015",
+      "BI110",
+      "PS100",
+      "SO100"
+    ],
+    "credited": [
+      "MA100",
+      "MA140",
+      "MA141",
+      "ST100",
+      "EN015",
+      "PH211",
+      "PH212",
+      "CH110"
+    ],
+    "maybe": [],
+    "start": [
+      "BI110",
+      "CH111",
+      "PS100",
+      "SO100"
+    ],
+    "basis": "Math BS (calculus, statistics) and CompE BS (PHYS 211/212, CHEM 110, English 15 and 202C). No biology, no second-semester or organic chemistry, no psychology or sociology courses, so the premed sequence starts with Biology I and General Chemistry II, with intro psychology and sociology (both on the MCAT) alongside."
+  },
+  "courses": [
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Psychology, Sociology, Economics, Political Science, History, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA140",
+      "title": "Calculus I: limits, derivatives, integrals",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "94a6ff068c OpenStax, Calculus Volume 1 (whole; equations from the openstax.org web edition)",
+        "secondary": [
+          "Spivak, Calculus (TO ACQUIRE) (the proof-first alternative, for the math major)"
+        ],
+        "skip": [
+          "9c143e072e Stewart, Calculus 8th: grade C copy",
+          "71f8006738 Thomas' Calculus: grade C copy"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Economics, Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA141",
+      "title": "Calculus II: integration techniques, sequences and series, parametric and polar",
+      "status": "later",
+      "requires": [
+        "MA140"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "0db419bb48 OpenStax, Calculus Volume 2 (whole)"
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Economics: finishing it in any of them counts here."
+    },
+    {
+      "id": "ST100",
+      "title": "Introductory statistics: data, probability, inference",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Freedman, Pisani & Purves, Statistics 4th (TO ACQUIRE)",
+        "secondary": [
+          "1d472f742f OpenStax, Introductory Statistics 2e (exercise sets)"
+        ],
+        "tertiary": [
+          "2d7e6445a2 Hand, Statistics VSI"
+        ]
+      },
+      "note": "Cross-listed with Psychology, Sociology, Economics, Political Science, History, Education: finishing it in any of them counts here. The non-calculus first course. The Statistics major starts above it (S150), so it is credited wherever you have stats."
+    },
+    {
+      "id": "EN015",
+      "title": "Rhetoric and composition: the academic essay",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "ed156636dd Zinsser, On Writing Well (grade A)",
+        "secondary": [
+          "29aad591c6 Strunk & White, The Elements of Style 4th (grade A)",
+          "009f44376d Toye, Rhetoric VSI (grade A)",
+          "Graff & Birkenstein, They Say / I Say (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with English, Law, Political Science, History: finishing it in any of them counts here."
+    },
+    {
+      "id": "PH211",
+      "title": "Mechanics (calculus-based)",
+      "status": "later",
+      "requires": [
+        "MA140"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "7a77752ee7 OpenStax, University Physics Volume 1 (ch. 1-13)",
+        "secondary": [
+          "dd59c2b9cb Feynman, Leighton & Sands, The Feynman Lectures vol. 1 (grade A)",
+          "1df1fdcbf3 Epstein, Thinking Physics (grade A; concept questions)"
+        ],
+        "tertiary": [
+          "b467b6c3a7 Irodov, Problems in General Physics (hard problems)"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "PH212",
+      "title": "Electricity and magnetism (calculus-based)",
+      "status": "later",
+      "requires": [
+        "PH211",
+        "MA141"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "9fc1f17d2b OpenStax, University Physics Volume 2 (ch. 5-16)",
+        "secondary": [
+          "dd59c2b9cb Feynman Lectures vol. 2",
+          "837676dd13 Blundell, Magnetism VSI"
+        ]
+      },
+      "note": "Cross-listed with Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "CH110",
+      "title": "Chemical principles for engineers",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "705ba8c1cf OpenStax, Chemistry 2e (ch. 1-12 and 16-17; to confirm)",
+        "secondary": [
+          "007dfde23b Cottrell, Matter VSI (grade A)"
+        ]
+      },
+      "note": "Cross-listed with Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "CH111",
+      "title": "General chemistry II: kinetics, equilibrium, acids and bases, electrochemistry, nuclear",
+      "status": "later",
+      "requires": [
+        "CH110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "705ba8c1cf OpenStax, Chemistry 2e (ch. 13-15, 18-21: the chapters CH110 leaves out; to confirm)",
+        "secondary": [
+          "fa2143acbf Atkins, Physical Chemistry VSI"
+        ]
+      }
+    },
+    {
+      "id": "CH210",
+      "title": "Organic chemistry I: structure, stereochemistry, mechanisms, substitution and elimination",
+      "status": "later",
+      "requires": [
+        "CH111"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "385d81d321 OpenStax, Organic Chemistry (ch. 1-14; to confirm)",
+        "secondary": [
+          "Klein, Organic Chemistry 4th (problem sets with worked solutions) (TO ACQUIRE)"
+        ],
+        "skip": [
+          "4190b614d4 Clayden, Organic Chemistry: grade C copy (contents page only)"
+        ]
+      }
+    },
+    {
+      "id": "CH211",
+      "title": "Organic chemistry II: carbonyls, aromatics, spectroscopy, biomolecules",
+      "status": "later",
+      "requires": [
+        "CH210"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "385d81d321 OpenStax, Organic Chemistry (ch. 15-31; to confirm)",
+        "secondary": [
+          "Klein, Organic Chemistry 4th (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "BI110",
+      "title": "Biology I: chemistry of life, cells, energy, genetics",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "6b7215a1ab OpenStax, Biology 2e (units 1-3, ch. 1-17; to confirm)",
+        "secondary": [
+          "Urry et al., Campbell Biology 12th (second angle, better figures) (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "23aaee15fd Divan, Molecular Biology VSI"
+        ]
+      },
+      "note": "Cross-listed with Psychology: finishing it in any of them counts here."
+    },
+    {
+      "id": "BI111",
+      "title": "Biology II: evolution, diversity, animal physiology, ecology",
+      "status": "later",
+      "requires": [
+        "BI110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "6b7215a1ab OpenStax, Biology 2e (units 4-8, ch. 18-47; to confirm)",
+        "secondary": [
+          "Urry et al., Campbell Biology 12th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "37dd4e5af8 Charlesworth, Evolution VSI"
+        ]
+      }
+    },
+    {
+      "id": "BI220",
+      "title": "Genetics: Mendelian, molecular and population genetics",
+      "status": "later",
+      "requires": [
+        "BI110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Griffiths et al., Introduction to Genetic Analysis 12th (TO ACQUIRE)",
+        "secondary": [
+          "4e8e83dd30 Thompson & Thompson Genetics and Genomics in Medicine"
+        ]
+      }
+    },
+    {
+      "id": "BI310",
+      "title": "Biochemistry: proteins, enzymes, metabolism and its regulation",
+      "status": "later",
+      "requires": [
+        "BI110",
+        "CH210"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 28,
+      "books": {
+        "primary": "ee8d209e61 Nelson & Cox, Lehninger Principles of Biochemistry (ch. 1-23; to confirm)",
+        "secondary": [
+          "3e5eba8cc6 Lehninger 8th ed. (newer copy, same chapters)",
+          "d9d5dde15e Lorch, Biochemistry VSI"
+        ]
+      }
+    },
+    {
+      "id": "BI330",
+      "title": "Cell and molecular biology",
+      "status": "later",
+      "requires": [
+        "BI220",
+        "BI310"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Alberts et al., Molecular Biology of the Cell 7th (TO ACQUIRE)",
+        "secondary": [
+          "Lodish et al., Molecular Cell Biology 9th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "8010118240 Slack, Stem Cells VSI"
+        ]
+      }
+    },
+    {
+      "id": "PS100",
+      "title": "Introduction to psychology",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "d9ff315f8e OpenStax, Psychology 2e (whole)",
+        "secondary": [
+          "Gleitman, Gross & Reisberg, Psychology 9th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "c3e1b90f40 Llewelyn, Clinical Psychology VSI"
+        ]
+      },
+      "note": "Cross-listed with Psychology, Education, Film: finishing it in any of them counts here."
+    },
+    {
+      "id": "SO100",
+      "title": "Introduction to sociology",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "8cff8789f7 OpenStax, Introduction to Sociology 3e (whole)",
+        "secondary": [
+          "7fd3ab615b Mills, The Sociological Imagination",
+          "aad4551f6c Bruce, Sociology VSI"
+        ]
+      },
+      "note": "Cross-listed with Sociology, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "MD501",
+      "title": "Gross anatomy (with clinical correlation)",
+      "status": "later",
+      "requires": [
+        "BI111"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 40,
+      "books": {
+        "primary": "Moore, Dalley & Agur, Clinically Oriented Anatomy 9th (TO ACQUIRE)",
+        "secondary": [
+          "af2578c13f Netter, Atlas of Human Anatomy",
+          "09303bb159 Gray's Anatomy (reference)"
+        ]
+      }
+    },
+    {
+      "id": "MD502",
+      "title": "Histology and cell biology",
+      "status": "later",
+      "requires": [
+        "BI330"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Mescher, Junqueira's Basic Histology 17th (TO ACQUIRE)",
+        "secondary": [
+          "Ross & Pawlina, Histology: A Text and Atlas (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MD503",
+      "title": "Embryology",
+      "status": "later",
+      "requires": [
+        "BI220",
+        "MD501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 12,
+      "books": {
+        "primary": "63a22b134c Sadler, Langman's Medical Embryology"
+      }
+    },
+    {
+      "id": "MD504",
+      "title": "Medical physiology",
+      "status": "later",
+      "requires": [
+        "BI111",
+        "BI310",
+        "PH212"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 36,
+      "books": {
+        "primary": "Costanzo, Physiology 7th (TO ACQUIRE)",
+        "secondary": [
+          "8389f8e1b3 Costanzo, BRS Physiology (review questions)",
+          "Hall, Guyton and Hall Textbook of Medical Physiology 14th (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MD505",
+      "title": "Medical biochemistry, nutrition and metabolism",
+      "status": "later",
+      "requires": [
+        "BI310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "7a73d85f2d Abali et al., Lippincott Illustrated Reviews: Biochemistry",
+        "secondary": [
+          "c947b3fe16 Bender, Nutrition VSI"
+        ]
+      }
+    },
+    {
+      "id": "MD506",
+      "title": "Medical genetics and genomics",
+      "status": "later",
+      "requires": [
+        "BI220",
+        "BI310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "4e8e83dd30 Cohn, Scherer & Hamosh, Thompson & Thompson Genetics and Genomics in Medicine"
+      }
+    },
+    {
+      "id": "MD507",
+      "title": "Neuroscience and neuroanatomy",
+      "status": "later",
+      "requires": [
+        "MD501",
+        "MD504"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Blumenfeld, Neuroanatomy through Clinical Cases 3rd (TO ACQUIRE)",
+        "secondary": [
+          "Kandel et al., Principles of Neural Science 6th (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MD508",
+      "title": "Immunology",
+      "status": "later",
+      "requires": [
+        "BI330"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Abbas, Lichtman & Pillai, Basic Immunology 7th (TO ACQUIRE)",
+        "secondary": [
+          "Murphy & Weaver, Janeway's Immunobiology 10th (TO ACQUIRE)",
+          "3aa2201f32 Klenerman, The Immune System VSI"
+        ]
+      }
+    },
+    {
+      "id": "MD509",
+      "title": "Medical microbiology and infectious disease",
+      "status": "later",
+      "requires": [
+        "MD508"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Ryan (ed.), Sherris & Ryan's Medical Microbiology 8th (TO ACQUIRE)",
+        "secondary": [
+          "e9fb7019e1 OpenStax, Microbiology",
+          "8814107b19 Infectious Disease VSI"
+        ]
+      }
+    },
+    {
+      "id": "MD510",
+      "title": "Pathology",
+      "status": "later",
+      "requires": [
+        "MD502",
+        "MD504",
+        "MD508"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 40,
+      "books": {
+        "primary": "3dd80998bd Kumar, Abbas & Aster, Robbins Basic Pathology 9th",
+        "secondary": [
+          "Kumar et al., Robbins and Cotran Pathologic Basis of Disease 10th (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MD511",
+      "title": "Pharmacology",
+      "status": "later",
+      "requires": [
+        "MD504",
+        "MD505"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 36,
+      "books": {
+        "primary": "Katzung & Vanderah, Basic and Clinical Pharmacology 15th (TO ACQUIRE)",
+        "secondary": [
+          "903e69079e OpenStax, Pharmacology"
+        ]
+      }
+    },
+    {
+      "id": "MD512",
+      "title": "Epidemiology, biostatistics and evidence-based medicine",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Celentano & Szklo, Gordis Epidemiology 6th (TO ACQUIRE)",
+        "secondary": [
+          "6e5f044334 Saracci, Epidemiology VSI",
+          "Guyatt et al., Users' Guides to the Medical Literature 3rd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MD513",
+      "title": "Medical ethics, law, behavioral science and health systems",
+      "status": "later",
+      "requires": [
+        "PS100",
+        "SO100"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Jonsen, Siegler & Winslade, Clinical Ethics 9th (TO ACQUIRE)",
+        "secondary": [
+          "745ba00390 Hope, Medical Ethics VSI",
+          "d562511fa9 Foster, Medical Law VSI"
+        ]
+      }
+    },
+    {
+      "id": "MD514",
+      "title": "Clinical skills: history, physical examination, clinical reasoning",
+      "status": "later",
+      "requires": [
+        "MD501",
+        "MD504"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "2dde0c3976 Bickley, Bates' Guide to Physical Examination and History Taking",
+        "secondary": [
+          "0d75ead2e7 Stern, Cifu & Altkorn, Symptom to Diagnosis"
+        ]
+      },
+      "note": "Knowledge only: examining patients needs supervised practice."
+    },
+    {
+      "id": "MD520",
+      "title": "Pathophysiology by organ system (the Step 1 integration year)",
+      "status": "later",
+      "requires": [
+        "MD510",
+        "MD511",
+        "MD507",
+        "MD509"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 48,
+      "books": {
+        "primary": "Hammer & McPhee, Pathophysiology of Disease 8th (TO ACQUIRE)",
+        "secondary": [
+          "Le & Bhushan, First Aid for the USMLE Step 1 (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MD601",
+      "title": "Internal medicine",
+      "status": "later",
+      "requires": [
+        "MD520",
+        "MD514"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 48,
+      "books": {
+        "primary": "362b497c2d Davidson's Principles and Practice of Medicine 23rd",
+        "secondary": [
+          "Loscalzo et al., Harrison's Principles of Internal Medicine 21st (reference) (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MD602",
+      "title": "Surgery",
+      "status": "later",
+      "requires": [
+        "MD520",
+        "MD514"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Lawrence (ed.), Essentials of General Surgery and Surgical Specialties 6th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MD603",
+      "title": "Pediatrics",
+      "status": "later",
+      "requires": [
+        "MD520",
+        "MD514"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Marcdante & Kliegman, Nelson Essentials of Pediatrics 9th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MD604",
+      "title": "Obstetrics and gynecology",
+      "status": "later",
+      "requires": [
+        "MD520",
+        "MD514"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Casanova et al., Beckmann and Ling's Obstetrics and Gynecology 9th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MD605",
+      "title": "Psychiatry",
+      "status": "later",
+      "requires": [
+        "MD520",
+        "MD514"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Black & Andreasen, Introductory Textbook of Psychiatry 7th (TO ACQUIRE)",
+        "secondary": [
+          "American Psychiatric Association, DSM-5-TR (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "MD606",
+      "title": "Neurology",
+      "status": "later",
+      "requires": [
+        "MD520",
+        "MD514"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Simon, Aminoff & Greenberg, Clinical Neurology 11th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "MD607",
+      "title": "Family medicine and prevention",
+      "status": "later",
+      "requires": [
+        "MD601"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Sloane et al., Essentials of Family Medicine 7th (TO ACQUIRE)",
+        "secondary": [
+          "USPSTF recommendations (free: https://www.uspreventiveservicestaskforce.org)"
+        ]
+      }
+    },
+    {
+      "id": "MD608",
+      "title": "Emergency medicine and acute care",
+      "status": "later",
+      "requires": [
+        "MD601",
+        "MD602"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Toy et al., Case Files: Emergency Medicine 5th (TO ACQUIRE)",
+        "secondary": [
+          "b9d2840b31 Feier, The Chief Complaint"
+        ]
+      }
+    },
+    {
+      "id": "MD609",
+      "title": "Radiology for clinicians",
+      "status": "later",
+      "requires": [
+        "MD501",
+        "MD520"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Herring, Learning Radiology 5th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "SO370",
+      "title": "Medical sociology",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Conrad & Leiter (eds.), The Sociology of Health and Illness 11th (TO ACQUIRE)",
+        "secondary": [
+          "c91191afd6 Shilts, And the Band Played On"
+        ]
+      },
+      "note": "Cross-listed with Sociology: finishing it in any of them counts here."
+    },
+    {
+      "id": "PS250",
+      "title": "Psychopathology (abnormal psychology)",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Barlow, Durand & Hofmann, Psychopathology: An Integrative Approach to Mental Disorders 9th (TO ACQUIRE)",
+        "secondary": [
+          "American Psychiatric Association, DSM-5-TR (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "0bc68c7f8f OpenStax, Psychiatric-Mental Health Nursing (treatment side)"
+        ]
+      },
+      "note": "Cross-listed with Psychology: finishing it in any of them counts here."
+    },
+    {
+      "id": "MD190",
+      "title": "Breadth: the history of medicine",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "3f4356a2b4 Bynum, The History of Medicine VSI"
+      }
+    },
+    {
+      "id": "MD390",
+      "title": "Practice: MCAT-style self-check",
+      "status": "later",
+      "requires": [
+        "CH211",
+        "BI330",
+        "PS100",
+        "SO100"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 4,
+      "books": {
+        "primary": "AAMC, What's on the MCAT Exam? content outline (free: https://students-residents.aamc.org)"
+      }
+    },
+    {
+      "id": "MD590",
+      "title": "Practice: Step 1 self-check (NBME self-assessments)",
+      "status": "later",
+      "requires": [
+        "MD520"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "NBME self-assessments (paid, online)"
+      }
+    },
+    {
+      "id": "MD690",
+      "title": "Practice: Step 2 CK self-check",
+      "status": "later",
+      "requires": [
+        "MD601",
+        "MD602",
+        "MD603",
+        "MD604",
+        "MD605"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "NBME CCSSA forms (paid, online)"
+      }
+    },
+    {
+      "id": "MD698",
+      "title": "End-of-level conversation (Level II): a case presentation",
+      "status": "later",
+      "requires": [
+        "MD601"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "a case you work up + conversation"
+      }
+    }
+  ]
+}

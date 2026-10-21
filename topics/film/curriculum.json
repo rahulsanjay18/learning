@@ -1,0 +1,454 @@
+{
+  "major": "film",
+  "program": "topics/film/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "FM100"
+    ],
+    "credited": [],
+    "maybe": [],
+    "start": [
+      "FM100"
+    ],
+    "basis": "No film courses taken: start at the beginning."
+  },
+  "courses": [
+    {
+      "id": "FM100",
+      "title": "Film art: form, style and analysis",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Bordwell, Thompson & Smith, Film Art: An Introduction 12th (TO ACQUIRE)",
+        "secondary": [
+          "e0ecf7d0e2 Wood, Film VSI"
+        ]
+      }
+    },
+    {
+      "id": "FM110",
+      "title": "Film history I: the silent era to 1960",
+      "status": "later",
+      "requires": [
+        "FM100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Thompson & Bordwell, Film History: An Introduction 4th (part 1-3; to confirm) (TO ACQUIRE)",
+        "secondary": [
+          "4f3c80add3 Nowell-Smith, The History of Cinema VSI",
+          "b0d9e7a3a1 Kornhaber, Silent Film VSI"
+        ]
+      }
+    },
+    {
+      "id": "FM111",
+      "title": "Film history II: 1960 to the present",
+      "status": "later",
+      "requires": [
+        "FM110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Thompson & Bordwell, Film History: An Introduction 4th (parts 4-6; to confirm) (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "FM120",
+      "title": "Film theory and criticism",
+      "status": "later",
+      "requires": [
+        "FM110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Braudy & Cohen (eds.), Film Theory and Criticism 8th (TO ACQUIRE)",
+        "secondary": [
+          "Stam, Film Theory: An Introduction (TO ACQUIRE)"
+        ]
+      },
+      "note": "Overlaps Critical Theory CT350 (lenses on film and games)."
+    },
+    {
+      "id": "FM130",
+      "title": "Narrative and screenwriting",
+      "status": "later",
+      "requires": [
+        "FM100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "f18d3d0024 Field, Screenplay: The Foundations of Screenwriting",
+        "secondary": [
+          "Bordwell, Narration in the Fiction Film (TO ACQUIRE)",
+          "ae4c201b31 Snyder, Save the Cat!",
+          "a5af202347 Truby, The Anatomy of Story",
+          "McKee, Story (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "FM140",
+      "title": "Making films: cinematography, sound and editing",
+      "status": "later",
+      "requires": [
+        "FM100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Brown, Cinematography: Theory and Practice 4th (TO ACQUIRE)",
+        "secondary": [
+          "Murch, In the Blink of an Eye 2nd (TO ACQUIRE)",
+          "DaVinci Resolve (free editor; Blackmagic's free training books)"
+        ]
+      }
+    },
+    {
+      "id": "FM200",
+      "title": "Authorship seminar: one director in depth",
+      "status": "later",
+      "requires": [
+        "FM120"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Truffaut, Hitchcock (with Helen Scott) (TO ACQUIRE)",
+        "tertiary": [
+          "the default director is Hitchcock; swap for any director you like"
+        ]
+      }
+    },
+    {
+      "id": "FM501",
+      "title": "Classical film theory (graduate)",
+      "status": "later",
+      "requires": [
+        "FM120"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Andrew, The Major Film Theories (TO ACQUIRE)",
+        "secondary": [
+          "Bazin, What Is Cinema? (TO ACQUIRE)",
+          "Kracauer, Theory of Film (TO ACQUIRE)",
+          "Eisenstein, Film Form (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "FM502",
+      "title": "Contemporary film theory (graduate)",
+      "status": "later",
+      "requires": [
+        "FM501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Rosen (ed.), Narrative, Apparatus, Ideology (TO ACQUIRE)",
+        "secondary": [
+          "Deleuze, Cinema 1: The Movement-Image (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "FM503",
+      "title": "Historical poetics: the history of film style",
+      "status": "later",
+      "requires": [
+        "FM111",
+        "FM120"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Bordwell, On the History of Film Style (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "FM150",
+      "title": "Documentary",
+      "status": "later",
+      "requires": [
+        "FM100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Nichols, Introduction to Documentary 3rd (TO ACQUIRE)",
+        "secondary": [
+          "03cf13c12f Aufderheide, Documentary Film VSI"
+        ]
+      }
+    },
+    {
+      "id": "FM160",
+      "title": "Indian cinema",
+      "status": "later",
+      "requires": [
+        "FM110"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "eb7bf8291a Rajadhyaksha, Indian Cinema VSI",
+        "secondary": [
+          "Dwyer, Bollywood's India (TO ACQUIRE)"
+        ]
+      },
+      "note": "Meets the Hindi and Indian History majors."
+    },
+    {
+      "id": "FM161",
+      "title": "Japanese cinema and anime",
+      "status": "later",
+      "requires": [
+        "FM110"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "f8bd444abb Introduction to Japanese Horror Film",
+        "secondary": [
+          "61559af835 Napier, Anime from Akira to Howl's Moving Castle",
+          "Richie, A Hundred Years of Japanese Film (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "FM162",
+      "title": "Cinemas of Spain and Latin America",
+      "status": "later",
+      "requires": [
+        "FM110"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Shaw, Contemporary Latin American Cinema (TO ACQUIRE)"
+      },
+      "note": "Meets the Spanish major."
+    },
+    {
+      "id": "FM170",
+      "title": "Genre: noir, horror and the western",
+      "status": "later",
+      "requires": [
+        "FM110"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "0a6f3ab871 Naremore, Film Noir VSI",
+        "secondary": [
+          "3e938dec41 Jones, Horror VSI"
+        ]
+      }
+    },
+    {
+      "id": "FM180",
+      "title": "Film sound and music",
+      "status": "later",
+      "requires": [
+        "FM100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 10,
+      "books": {
+        "primary": "98643329eb Kalinak, Film Music VSI",
+        "secondary": [
+          "Chion, Audio-Vision (TO ACQUIRE)"
+        ]
+      },
+      "note": "Meets the Music major."
+    },
+    {
+      "id": "FM190",
+      "title": "Animation",
+      "status": "later",
+      "requires": [
+        "FM100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "8d27c96a18 Thomas & Johnston, The Illusion of Life",
+        "secondary": [
+          "0630a1ed90 Williams, The Animator's Survival Kit"
+        ]
+      }
+    },
+    {
+      "id": "FM210",
+      "title": "Adaptation: literature into film",
+      "status": "later",
+      "requires": [
+        "FM120"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 10,
+      "books": {
+        "primary": "Hutcheon, A Theory of Adaptation 2nd (TO ACQUIRE)",
+        "secondary": [
+          "b9f12c9b2c Writing in a Film Age"
+        ]
+      },
+      "note": "Meets the English major."
+    },
+    {
+      "id": "FM504",
+      "title": "Cognitive and empirical film studies",
+      "status": "later",
+      "requires": [
+        "FM501",
+        "PS100"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Bordwell & Carroll (eds.), Post-Theory (TO ACQUIRE)",
+        "secondary": [
+          "Smith, Film, Art, and the Third Culture (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "FM505",
+      "title": "Television and serial narrative",
+      "status": "later",
+      "requires": [
+        "FM120"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Mittell, Complex TV (free: http://mcpress.media-commons.org/complextelevision/)"
+      }
+    },
+    {
+      "id": "PS100",
+      "title": "Introduction to psychology",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "d9ff315f8e OpenStax, Psychology 2e (whole)",
+        "secondary": [
+          "Gleitman, Gross & Reisberg, Psychology 9th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "c3e1b90f40 Llewelyn, Clinical Psychology VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Psychology, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "FM195",
+      "title": "Breadth: photography and the image",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "607b08576a Edwards, Photography VSI"
+      }
+    },
+    {
+      "id": "FM390",
+      "title": "Practice: make a short film (script, shoot, cut)",
+      "status": "later",
+      "requires": [
+        "FM130",
+        "FM140"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "a phone, a free editor, friends"
+      }
+    },
+    {
+      "id": "FM398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "FM120",
+        "FM111"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of films and works + a typed conversation"
+      }
+    },
+    {
+      "id": "FM598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "FM502",
+        "FM503"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "FM399",
+      "title": "Capstone: a long critical essay on a body of films",
+      "status": "later",
+      "requires": [
+        "FM200"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

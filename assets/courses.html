@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course Graph</title>
+<link rel="stylesheet" href="lp.css">
+<style>
+  /* The whole course graph: every course in every major, in prerequisite tiers. Data: course-graph.json (scripts/master_dag.py). */
+  .cg-controls { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; margin: 1rem 0; }
+  .cg-controls select, .cg-controls input[type=search] { font: inherit; padding: .2rem .4rem; background: var(--bg); color: var(--fg);
+    border: 1px solid var(--rule); max-width: 100%; }
+  .cg-tier { border-top: 1px solid var(--rule); padding: .5rem 0; }
+  .cg-tier h3 { font-size: .9rem; color: var(--muted); margin: .2rem 0 .4rem; font-weight: normal; }
+  .cg-list { display: flex; flex-wrap: wrap; gap: .3rem; }
+  .cg-c { font: inherit; font-size: .85rem; text-align: left; background: var(--bg); color: var(--fg); border: 1px solid var(--rule);
+    padding: .15rem .4rem; cursor: pointer; max-width: 100%; }
+  .cg-c b { font-weight: 600; }
+  .cg-c.credited, .cg-c.done { color: var(--muted); text-decoration: line-through; }
+  .cg-c.maybe { border-style: dashed; }
+  .cg-c.start, .cg-c.active { border: 2px solid var(--fg); }
+  .cg-c.sel { background: var(--accent); color: var(--bg); text-decoration: none; }
+  .cg-c.anc { outline: 2px solid var(--accent); }
+  .cg-c.desc { outline: 2px dotted var(--accent); }
+  .cg-c.dim { opacity: .35; }
+  #cg-detail { border: 1px solid var(--rule); padding: .6rem .8rem; margin: .5rem 0 1rem; }
+  #cg-detail:empty { display: none; }
+  #cg-detail a { cursor: pointer; }
+  .cg-key span { margin-right: 1rem; display: inline-block; }
+  .cg-controls label { max-width: 100%; }
+  .cg-controls select { max-width: 14rem; }
+</style>
+</head>
+<body>
+<main data-lp-footer="off">
+<h1>Every course, every major</h1>
+<p class="muted">Courses sit in tiers by their longest prerequisite chain (tier 0 needs nothing). A course listed in several majors is
+one course. Pick one to see everything it needs (solid outline) and everything it opens up (dotted). Cross-major
+"feeds" links count as prerequisites; "same" and "overlap" links are listed under the course.</p>
+<p class="muted cg-key"><span><s>struck through</s> = credited or done</span><span>dashed = maybe</span><span>thick border = start here / in progress</span></p>
+<div class="cg-controls">
+  <label>Major <select id="cg-major"><option value="">All majors</option></select></label>
+  <label>Level <select id="cg-level"><option value="">I and II</option><option value="I">Level I</option><option value="II">Level II</option></select></label>
+  <label><input type="checkbox" id="cg-core" checked> core only</label>
+  <label><input type="checkbox" id="cg-left"> hide credited and done</label>
+  <input type="search" id="cg-q" placeholder="Search id or title">
+</div>
+<div id="cg-detail"></div>
+<div id="cg-tiers"><p class="muted">Loading…</p></div>
+</main>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var G, by = {}, kids = {}, sel = null;
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]; }); }
+  function reqs(id) {   // prerequisites, including cross-major "feeds" links
+    var r = (by[id].requires || []).filter(function (x) { return by[x]; });
+    G.links.forEach(function (l) { if (l.kind === "feeds" && l.b === id && by[l.a] && r.indexOf(l.a) < 0) r.push(l.a); });
+    return r;
+  }
+  function closure(id, step) { var seen = {}, st = [id]; while (st.length) { step(st.pop()).forEach(function (x) { if (!seen[x]) { seen[x] = 1; st.push(x); } }); } return seen; }
+  function visible(c) {
+    var m = $("cg-major").value, lv = $("cg-level").value, q = $("cg-q").value.trim().toLowerCase();
+    if (m && c.majors.indexOf(m) < 0) return false;
+    if (lv && c.level !== lv) return false;
+    if ($("cg-core").checked && !(m ? c.group[m] === "core" : Object.keys(c.group).some(function (k) { return c.group[k] === "core"; }))) return false;
+    if ($("cg-left").checked && (c.you === "credited" || c.you === "done")) return false;
+    if (q && (c.id + " " + c.title).toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  }
+  var depthMemo = {};
+  function depth(id) {
+    if (depthMemo[id] !== undefined) return depthMemo[id];
+    depthMemo[id] = 0;   // guards a cycle (the tests reject them; this keeps the page alive anyway)
+    var d = 0; reqs(id).forEach(function (r) { d = Math.max(d, depth(r) + 1); });
+    return (depthMemo[id] = d);
+  }
+  function render() {
+    var vis = G.courses.filter(visible), tiers = {};
+    vis.forEach(function (c) { (tiers[depth(c.id)] = tiers[depth(c.id)] || []).push(c); });
+    var anc = sel ? closure(sel, reqs) : {}, desc = sel ? closure(sel, function (x) { return kids[x] || []; }) : {};
+    var html = Object.keys(tiers).sort(function (a, b) { return a - b; }).map(function (t) {
+      return '<section class="cg-tier"><h3>Tier ' + t + ' (' + tiers[t].length + ')</h3><div class="cg-list">' +
+        tiers[t].sort(function (a, b) { return a.id < b.id ? -1 : 1; }).map(function (c) {
+          var cls = ["cg-c", c.you];
+          if (sel) cls.push(c.id === sel ? "sel" : anc[c.id] ? "anc" : desc[c.id] ? "desc" : "dim");
+          return '<button class="' + cls.join(" ") + '" data-id="' + c.id + '" title="' + esc(c.title) + '"><b>' + c.id + '</b> ' + esc(c.title.slice(0, 48)) + '</button>';
+        }).join("") + '</div></section>';
+    }).join("");
+    $("cg-tiers").innerHTML = html || '<p class="muted">No courses match.</p>';
+  }
+  function link(id) { return '<a data-id="' + id + '">' + id + '</a>'; }
+  function detail(id) {
+    var c = by[id], anc = Object.keys(closure(id, reqs)).sort(), k = (kids[id] || []).slice().sort();
+    var rel = G.links.filter(function (l) { return (l.a === id || l.b === id) && l.kind !== "feeds"; })
+      .map(function (l) { return l.kind + " " + link(l.a === id ? l.b : l.a) + " (" + esc(l.why) + ")"; });
+    $("cg-detail").innerHTML = '<p><b>' + c.id + ' ' + esc(c.title) + '</b><br><span class="muted">' +
+      c.majors.map(function (m) { return esc(G.majors[m]) + " (" + c.group[m] + ")"; }).join(", ") + ' · Level ' + c.level +
+      (c.lessons ? ' · ~' + c.lessons + ' lessons' : '') + (c.you ? ' · you: ' + c.you : '') + '</span></p>' +
+      (c.book ? '<p>Primary: ' + esc(c.book) + '</p>' : '') +
+      '<p>Needs (all the way down): ' + (anc.map(link).join(", ") || "nothing") + '</p>' +
+      '<p>Opens up: ' + (k.map(link).join(", ") || "nothing") + '</p>' +
+      (rel.length ? '<p>Linked: ' + rel.join("; ") + '</p>' : '');
+  }
+  function pick(id) { sel = sel === id ? null : id; if (sel) detail(sel); else $("cg-detail").innerHTML = ""; render(); }
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest("[data-id]");
+    if (t && by[t.getAttribute("data-id")]) { e.preventDefault(); pick(t.getAttribute("data-id")); }
+  });
+  ["cg-major", "cg-level", "cg-core", "cg-left", "cg-q"].forEach(function (id) { $(id).addEventListener("input", render); });
+  fetch("course-graph.json").then(function (r) { return r.json(); }).then(function (g) {
+    G = g;
+    g.courses.forEach(function (c) { by[c.id] = c; });
+    g.courses.forEach(function (c) { reqs(c.id).forEach(function (r) { (kids[r] = kids[r] || []).push(c.id); }); });
+    Object.keys(g.majors).sort(function (a, b) { return g.majors[a] < g.majors[b] ? -1 : 1; }).forEach(function (m) {
+      var o = document.createElement("option"); o.value = m; o.textContent = g.majors[m]; $("cg-major").appendChild(o);
+    });
+    render();
+  }).catch(function () { $("cg-tiers").innerHTML = '<p>Could not load course-graph.json.</p>'; });
+})();
+</script>
+</body>
+</html>

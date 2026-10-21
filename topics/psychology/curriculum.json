@@ -1,0 +1,652 @@
+{
+  "major": "psychology",
+  "program": "topics/psychology/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MA100",
+      "BI110",
+      "PS100"
+    ],
+    "credited": [
+      "MA100",
+      "ST100"
+    ],
+    "maybe": [
+      "SS310"
+    ],
+    "start": [
+      "PS100",
+      "BI110"
+    ],
+    "basis": "No psychology courses taken. The statistics in your math degree covers the intro course; regression is 'maybe' (you know the math; the course is about using it on messy social data)."
+  },
+  "courses": [
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine, Sociology, Economics, Political Science, History, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "ST100",
+      "title": "Introductory statistics: data, probability, inference",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Freedman, Pisani & Purves, Statistics 4th (TO ACQUIRE)",
+        "secondary": [
+          "1d472f742f OpenStax, Introductory Statistics 2e (exercise sets)"
+        ],
+        "tertiary": [
+          "2d7e6445a2 Hand, Statistics VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Sociology, Economics, Political Science, History, Education: finishing it in any of them counts here. The non-calculus first course. The Statistics major starts above it (S150), so it is credited wherever you have stats."
+    },
+    {
+      "id": "BI110",
+      "title": "Biology I: chemistry of life, cells, energy, genetics",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "6b7215a1ab OpenStax, Biology 2e (units 1-3, ch. 1-17; to confirm)",
+        "secondary": [
+          "Urry et al., Campbell Biology 12th (second angle, better figures) (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "23aaee15fd Divan, Molecular Biology VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine: finishing it in any of them counts here."
+    },
+    {
+      "id": "PS100",
+      "title": "Introduction to psychology",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "d9ff315f8e OpenStax, Psychology 2e (whole)",
+        "secondary": [
+          "Gleitman, Gross & Reisberg, Psychology 9th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "c3e1b90f40 Llewelyn, Clinical Psychology VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Education, Film: finishing it in any of them counts here."
+    },
+    {
+      "id": "PS200",
+      "title": "Research methods in psychology",
+      "status": "later",
+      "requires": [
+        "PS100",
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Morling, Research Methods in Psychology: Evaluating a World of Information 4th (TO ACQUIRE)",
+        "secondary": [
+          "Open Science Collaboration (2015), Estimating the reproducibility of psychological science, Science 349 (free)"
+        ]
+      }
+    },
+    {
+      "id": "SS310",
+      "title": "Regression and causal thinking for social science",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Gelman, Hill & Vehtari, Regression and Other Stories (free: https://avehtari.github.io/ROS-Examples/)",
+        "secondary": [
+          "Angrist & Pischke, Mastering 'Metrics (TO ACQUIRE)",
+          "527488945c Hernan & Robins, Causal Inference: What If (ch. 1-10)"
+        ]
+      },
+      "note": "Cross-listed with Sociology, Political Science, History, Education: finishing it in any of them counts here. Overlaps Statistics S310 (applied regression): finishing either makes the other a fast pass."
+    },
+    {
+      "id": "PS210",
+      "title": "Biological psychology and behavioral neuroscience",
+      "status": "later",
+      "requires": [
+        "PS100",
+        "BI110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "f260ea8ca5 OpenStax, Introduction to Behavioral Neuroscience",
+        "secondary": [
+          "Kalat, Biological Psychology 14th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "34ac4fc41c O'Shea, The Brain VSI",
+          "f688d22b03 Luck, Hormones VSI"
+        ]
+      }
+    },
+    {
+      "id": "PS220",
+      "title": "Cognitive psychology: perception, attention, memory, language, reasoning",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Goldstein, Cognitive Psychology 5th (TO ACQUIRE)",
+        "secondary": [
+          "4432f78b45 Foster, Memory VSI",
+          "Kahneman, Thinking, Fast and Slow (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "PS230",
+      "title": "Developmental psychology across the lifespan",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "b066c6103e OpenStax, Lifespan Development",
+        "secondary": [
+          "Berk, Development Through the Lifespan 7th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "0dd715c7bc Goswami, Child Psychology VSI",
+          "9652292812 Smith, Adolescence VSI",
+          "abb0fa0a37 Pachana, Ageing VSI"
+        ]
+      },
+      "note": "Cross-listed with Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "PS240",
+      "title": "Social psychology",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Aronson, Wilson, Sommers et al., Social Psychology 10th (TO ACQUIRE)",
+        "secondary": [
+          "4defce2e21 Attitudes and Persuasion: Classic and Contemporary Approaches",
+          "Cialdini, Influence (new and expanded) (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PS250",
+      "title": "Psychopathology (abnormal psychology)",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Barlow, Durand & Hofmann, Psychopathology: An Integrative Approach to Mental Disorders 9th (TO ACQUIRE)",
+        "secondary": [
+          "American Psychiatric Association, DSM-5-TR (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "0bc68c7f8f OpenStax, Psychiatric-Mental Health Nursing (treatment side)"
+        ]
+      },
+      "note": "Cross-listed with Medicine: finishing it in any of them counts here."
+    },
+    {
+      "id": "PS260",
+      "title": "Learning and behavior: conditioning and reinforcement",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Domjan, The Principles of Learning and Behavior 7th (TO ACQUIRE)",
+        "secondary": [
+          "6b0a1af152 Wyatt, Animal Behaviour VSI"
+        ]
+      }
+    },
+    {
+      "id": "PS270",
+      "title": "Sensation and perception",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Wolfe et al., Sensation and Perception 6th (TO ACQUIRE)",
+        "secondary": [
+          "8e3ad00192 Goldsmith, Sound VSI"
+        ]
+      }
+    },
+    {
+      "id": "PS300",
+      "title": "Psychological measurement: reliability, validity, test construction",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Furr, Psychometrics: An Introduction 4th (TO ACQUIRE)",
+        "secondary": [
+          "AERA, APA & NCME, Standards for Educational and Psychological Testing (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "PS370",
+      "title": "Cognitive neuroscience",
+      "status": "later",
+      "requires": [
+        "PS210",
+        "PS220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Gazzaniga, Ivry & Mangun, Cognitive Neuroscience: The Biology of the Mind 5th (TO ACQUIRE)",
+        "secondary": [
+          "e76f3c4e95 Passingham, Cognitive Neuroscience VSI",
+          "f81440bf9f Blackmore, Consciousness VSI"
+        ]
+      }
+    },
+    {
+      "id": "PS501",
+      "title": "Graduate statistics: experimental design and analysis",
+      "status": "later",
+      "requires": [
+        "PS200",
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Maxwell, Delaney & Kelley, Designing Experiments and Analyzing Data 3rd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PS502",
+      "title": "Latent variables: factor analysis and structural equation models",
+      "status": "later",
+      "requires": [
+        "PS300",
+        "PS501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Kline, Principles and Practice of Structural Equation Modeling 5th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PS511",
+      "title": "Neural science (graduate)",
+      "status": "later",
+      "requires": [
+        "PS370"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 36,
+      "books": {
+        "primary": "Kandel et al., Principles of Neural Science 6th (TO ACQUIRE)"
+      },
+      "note": "Also the deep reference for Medicine MD507."
+    },
+    {
+      "id": "PS512",
+      "title": "Cognition (graduate)",
+      "status": "later",
+      "requires": [
+        "PS370"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Reisberg (ed.), The Oxford Handbook of Cognitive Psychology (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PS520",
+      "title": "Social psychology (graduate)",
+      "status": "later",
+      "requires": [
+        "PS240",
+        "PS200"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Finkel & Baumeister (eds.), Advanced Social Psychology: The State of the Science 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PS530",
+      "title": "Psychopathology (graduate)",
+      "status": "later",
+      "requires": [
+        "PS250"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Blaney, Krueger & Millon (eds.), Oxford Textbook of Psychopathology 4th (TO ACQUIRE)",
+        "secondary": [
+          "American Psychiatric Association, DSM-5-TR (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PS540",
+      "title": "Clinical assessment and evidence-based treatment",
+      "status": "later",
+      "requires": [
+        "PS530",
+        "PS300"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Groth-Marnat & Wright, Handbook of Psychological Assessment 6th (TO ACQUIRE)",
+        "secondary": [
+          "Barlow (ed.), Clinical Handbook of Psychological Disorders 6th (TO ACQUIRE)"
+        ]
+      },
+      "note": "Knowledge only: practice as a psychologist needs a supervised doctorate and licensure."
+    },
+    {
+      "id": "PS550",
+      "title": "Developmental science (graduate)",
+      "status": "later",
+      "requires": [
+        "PS230",
+        "PS200"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Bornstein & Lamb (eds.), Developmental Science: An Advanced Textbook 7th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PS280",
+      "title": "Personality",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Larsen, Buss & Wismeijer, Personality Psychology 7th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PS320",
+      "title": "Health psychology",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Taylor & Stanton, Health Psychology 11th (TO ACQUIRE)",
+        "secondary": [
+          "88314ba6cc van der Kolk, The Body Keeps the Score (a popular case to test)"
+        ]
+      }
+    },
+    {
+      "id": "PS330",
+      "title": "Industrial-organizational psychology",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Levy, Industrial/Organizational Psychology 6th (TO ACQUIRE)",
+        "secondary": [
+          "2746b631b9 OpenStax, Organizational Behavior"
+        ]
+      }
+    },
+    {
+      "id": "PS340",
+      "title": "Judgment and decision making",
+      "status": "later",
+      "requires": [
+        "PS220",
+        "ST100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Hastie & Dawes, Rational Choice in an Uncertain World 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Kahneman, Thinking, Fast and Slow (TO ACQUIRE)"
+        ]
+      },
+      "note": "Meets Economics EC390 (behavioral economics) from the psychology side."
+    },
+    {
+      "id": "PS350",
+      "title": "Psychology of music",
+      "status": "later",
+      "requires": [
+        "PS220"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "f2bf05b6e9 Margulis, The Psychology of Music VSI"
+      },
+      "note": "Meets the Music major."
+    },
+    {
+      "id": "PS560",
+      "title": "Computational modeling of cognition",
+      "status": "later",
+      "requires": [
+        "PS220",
+        "SS310"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Farrell & Lewandowsky, Computational Modeling of Cognition and Behavior (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PS190",
+      "title": "Breadth: forensic and clinical psychology in the world",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "342354d6c4 Canter, Forensic Psychology VSI",
+        "secondary": [
+          "c3e1b90f40 Llewelyn, Clinical Psychology VSI"
+        ]
+      }
+    },
+    {
+      "id": "PS310",
+      "title": "History and systems of psychology",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Hergenhahn & Henley, An Introduction to the History of Psychology 7th (TO ACQUIRE)",
+        "secondary": [
+          "9c9ab8e41a Storr, Freud VSI"
+        ]
+      }
+    },
+    {
+      "id": "PS390",
+      "title": "Practice: run and report a small replication online",
+      "status": "later",
+      "requires": [
+        "PS200"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "jsPsych (free: https://www.jspsych.org) + a preregistration template (free: https://osf.io)"
+      }
+    },
+    {
+      "id": "PS595",
+      "title": "Practice: comprehensive self-check (EPPP-style knowledge domains)",
+      "status": "later",
+      "requires": [
+        "PS511",
+        "PS530",
+        "PS501"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "ASPPB, EPPP content outline (free: https://www.asppb.net)"
+      }
+    },
+    {
+      "id": "PS398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "PS370",
+        "PS250"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a typed conversation"
+      }
+    },
+    {
+      "id": "PS598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "PS511",
+        "PS530"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "PS399",
+      "title": "Capstone: a literature review on a question you pick",
+      "status": "later",
+      "requires": [
+        "PS200",
+        "PS370"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

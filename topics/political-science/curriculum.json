@@ -1,0 +1,739 @@
+{
+  "major": "political-science",
+  "program": "topics/political-science/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MA100",
+      "EN015",
+      "PO100",
+      "PO110",
+      "PO140",
+      "PL230"
+    ],
+    "credited": [
+      "MA100",
+      "MA140",
+      "ST100",
+      "EN015",
+      "PO110"
+    ],
+    "maybe": [
+      "PO100",
+      "SS310"
+    ],
+    "start": [
+      "PO120",
+      "PO130",
+      "PO140",
+      "PL230"
+    ],
+    "basis": "AP American Government (counted by Penn State) covers PO110. The intro course is 'maybe': much of it is the same ground. Statistics and calculus come from the math degree."
+  },
+  "courses": [
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine, Psychology, Sociology, Economics, History, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA140",
+      "title": "Calculus I: limits, derivatives, integrals",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "94a6ff068c OpenStax, Calculus Volume 1 (whole; equations from the openstax.org web edition)",
+        "secondary": [
+          "Spivak, Calculus (TO ACQUIRE) (the proof-first alternative, for the math major)"
+        ],
+        "skip": [
+          "9c143e072e Stewart, Calculus 8th: grade C copy",
+          "71f8006738 Thomas' Calculus: grade C copy"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine, Economics: finishing it in any of them counts here."
+    },
+    {
+      "id": "ST100",
+      "title": "Introductory statistics: data, probability, inference",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Freedman, Pisani & Purves, Statistics 4th (TO ACQUIRE)",
+        "secondary": [
+          "1d472f742f OpenStax, Introductory Statistics 2e (exercise sets)"
+        ],
+        "tertiary": [
+          "2d7e6445a2 Hand, Statistics VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Psychology, Sociology, Economics, History, Education: finishing it in any of them counts here. The non-calculus first course. The Statistics major starts above it (S150), so it is credited wherever you have stats."
+    },
+    {
+      "id": "EN015",
+      "title": "Rhetoric and composition: the academic essay",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "ed156636dd Zinsser, On Writing Well (grade A)",
+        "secondary": [
+          "29aad591c6 Strunk & White, The Elements of Style 4th (grade A)",
+          "009f44376d Toye, Rhetoric VSI (grade A)",
+          "Graff & Birkenstein, They Say / I Say (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with English, Medicine, Law, History: finishing it in any of them counts here."
+    },
+    {
+      "id": "PO100",
+      "title": "Introduction to political science",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "74f6db937b OpenStax, Introduction to Political Science",
+        "secondary": [
+          "8cf5836fee Minogue, Politics VSI"
+        ]
+      }
+    },
+    {
+      "id": "PO110",
+      "title": "American government and politics",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "77506677ce OpenStax, American Government 4e",
+        "secondary": [
+          "aa13852a87 Valelly, American Politics VSI",
+          "Hamilton, Madison & Jay, The Federalist Papers (free: Gutenberg)"
+        ]
+      },
+      "note": "Cross-listed with Law: finishing it in any of them counts here."
+    },
+    {
+      "id": "PO120",
+      "title": "Comparative politics",
+      "status": "later",
+      "requires": [
+        "PO100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Clark, Golder & Golder, Foundations of Comparative Politics (TO ACQUIRE)",
+        "secondary": [
+          "34c7b3bc48 Lijphart, Patterns of Democracy",
+          "259bce3f0a Wimmer, Nation Building"
+        ]
+      }
+    },
+    {
+      "id": "PO130",
+      "title": "International relations",
+      "status": "later",
+      "requires": [
+        "PO100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Frieden, Lake & Schultz, World Politics: Interests, Interactions, Institutions 5th (TO ACQUIRE)",
+        "secondary": [
+          "84cf56942d Introduction to International Relations",
+          "659d481642 Wilkinson, International Relations VSI"
+        ]
+      }
+    },
+    {
+      "id": "PO140",
+      "title": "The history of political thought: Plato to Marx",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Cahn (ed.), Political Philosophy: The Essential Texts 3rd (TO ACQUIRE)",
+        "secondary": [
+          "dc027d23a5 Plato, The Republic",
+          "bc92471265 Aristotle, Politics (Lord trans.)",
+          "ef8cb1c912 Machiavelli, The Prince",
+          "64f45ee369 Hobbes, Leviathan",
+          "dbf4857a15 Mill, On Liberty",
+          "79deb1c50a Tucker (ed.), The Marx-Engels Reader"
+        ]
+      },
+      "note": "Cross-listed with History: finishing it in any of them counts here."
+    },
+    {
+      "id": "PL230",
+      "title": "Political philosophy: justice, liberty, equality",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Kymlicka, Contemporary Political Philosophy 2nd (TO ACQUIRE)",
+        "secondary": [
+          "d37b54ea03 Rawls, A Theory of Justice",
+          "Nozick, Anarchy, State, and Utopia (TO ACQUIRE)",
+          "a501dc161e Okin, Justice, Gender, and the Family",
+          "a43c33db07 Sandel, Justice"
+        ],
+        "tertiary": [
+          "1f551fbc7b Miller, Political Philosophy VSI"
+        ]
+      },
+      "note": "Cross-listed with Philosophy: finishing it in any of them counts here."
+    },
+    {
+      "id": "SS210",
+      "title": "Social research methods: design, measurement, sampling, surveys",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Babbie, The Practice of Social Research 15th (TO ACQUIRE)",
+        "secondary": [
+          "a5e726b5ac Yin, Case Study Research: Design and Methods",
+          "Salganik, Bit by Bit (free: https://www.bitbybitbook.com)"
+        ]
+      },
+      "note": "Cross-listed with Sociology, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "SS310",
+      "title": "Regression and causal thinking for social science",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Gelman, Hill & Vehtari, Regression and Other Stories (free: https://avehtari.github.io/ROS-Examples/)",
+        "secondary": [
+          "Angrist & Pischke, Mastering 'Metrics (TO ACQUIRE)",
+          "527488945c Hernan & Robins, Causal Inference: What If (ch. 1-10)"
+        ]
+      },
+      "note": "Cross-listed with Psychology, Sociology, History, Education: finishing it in any of them counts here. Overlaps Statistics S310 (applied regression): finishing either makes the other a fast pass."
+    },
+    {
+      "id": "PO200",
+      "title": "Rational choice and formal political theory",
+      "status": "later",
+      "requires": [
+        "PO100",
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Shepsle, Analyzing Politics 2nd (TO ACQUIRE)",
+        "secondary": [
+          "1e15fe35c9 Downs, An Economic Theory of Democracy",
+          "4cdc8679e8 Bueno de Mesquita et al., The Logic of Political Survival",
+          "1474d0c152 Tsebelis, Nested Games"
+        ]
+      },
+      "note": "Overlaps Economics EC310 and Games G503 (game theory)."
+    },
+    {
+      "id": "PO210",
+      "title": "Constitutional law and the courts",
+      "status": "later",
+      "requires": [
+        "PO110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Epstein & Walker, Constitutional Law for a Changing America: Institutional Powers and Constraints (TO ACQUIRE)",
+        "secondary": [
+          "b38d7bef28 Bodenhamer, The U.S. Constitution VSI",
+          "b97037e548 Epp, The Rights Revolution"
+        ]
+      },
+      "note": "Cross-listed with Law: finishing it in any of them counts here. Overlaps Law LW506-507 (the law-school version)."
+    },
+    {
+      "id": "PO220",
+      "title": "Parties, elections and public opinion",
+      "status": "later",
+      "requires": [
+        "PO110",
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Achen & Bartels, Democracy for Realists (TO ACQUIRE)",
+        "secondary": [
+          "fca6bd6838 American Political Parties and Elections VSI",
+          "01af5dd2f9 Rodden, Why Cities Lose"
+        ]
+      }
+    },
+    {
+      "id": "PO240",
+      "title": "Political economy of democracy and dictatorship",
+      "status": "later",
+      "requires": [
+        "PO120",
+        "PO200"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Acemoglu & Robinson, Economic Origins of Dictatorship and Democracy (TO ACQUIRE)",
+        "secondary": [
+          "fcb8ad2ed5 Bueno de Mesquita & Smith, The Dictator's Handbook"
+        ]
+      }
+    },
+    {
+      "id": "PO501",
+      "title": "Formal political theory (graduate)",
+      "status": "later",
+      "requires": [
+        "PO200",
+        "MA140"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "McCarty & Meirowitz, Political Game Theory (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "SS501",
+      "title": "Research design: descriptive and causal inference, qualitative and quantitative",
+      "status": "later",
+      "requires": [
+        "SS210",
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "King, Keohane & Verba, Designing Social Inquiry (TO ACQUIRE)",
+        "secondary": [
+          "Brady & Collier (eds.), Rethinking Social Inquiry 2nd (TO ACQUIRE)",
+          "Shadish, Cook & Campbell, Experimental and Quasi-Experimental Designs (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Sociology, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "SS502",
+      "title": "Causal inference (graduate)",
+      "status": "later",
+      "requires": [
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "527488945c Hernan & Robins, Causal Inference: What If (whole)",
+        "secondary": [
+          "Morgan & Winship, Counterfactuals and Causal Inference 2nd (TO ACQUIRE)",
+          "Angrist & Pischke, Mostly Harmless Econometrics (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Sociology: finishing it in any of them counts here. Same material as Statistics S540: finishing either counts as both."
+    },
+    {
+      "id": "PO510",
+      "title": "American politics field seminar",
+      "status": "later",
+      "requires": [
+        "PO220",
+        "PO210"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Mayhew, Congress: The Electoral Connection 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Zaller, The Nature and Origins of Mass Opinion (TO ACQUIRE)",
+          "Krehbiel, Pivotal Politics (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PO520",
+      "title": "Comparative politics field seminar",
+      "status": "later",
+      "requires": [
+        "PO120",
+        "PO240"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Boix & Stokes (eds.), The Oxford Handbook of Comparative Politics (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PO530",
+      "title": "International relations field seminar",
+      "status": "later",
+      "requires": [
+        "PO130",
+        "PO200"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Waltz, Theory of International Politics (TO ACQUIRE)",
+        "secondary": [
+          "Keohane, After Hegemony (TO ACQUIRE)",
+          "Fearon (1995), Rationalist Explanations for War, International Organization 49(3) (free)",
+          "Carlsnaes, Risse & Simmons (eds.), Handbook of International Relations 2nd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PO540",
+      "title": "Political theory field seminar",
+      "status": "later",
+      "requires": [
+        "PO140",
+        "PL230"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Skinner, The Foundations of Modern Political Thought (2 vols.) (TO ACQUIRE)",
+        "secondary": [
+          "Pocock, The Machiavellian Moment (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PO230",
+      "title": "Public policy analysis",
+      "status": "later",
+      "requires": [
+        "PO110",
+        "EC100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Weimer & Vining, Policy Analysis: Concepts and Practice 7th (TO ACQUIRE)",
+        "secondary": [
+          "5799ccb29f Public Administration VSI"
+        ]
+      }
+    },
+    {
+      "id": "PO250",
+      "title": "Security studies and strategy",
+      "status": "later",
+      "requires": [
+        "PO130"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "4bdcba34b3 Schelling, Arms and Influence",
+        "secondary": [
+          "6979109f6e Paret (ed.), Makers of Modern Strategy",
+          "f7383e65ee Browning, International Security VSI",
+          "c589beef4b Howard, Clausewitz VSI"
+        ]
+      },
+      "note": "Meets Games G150 (strategy foundations)."
+    },
+    {
+      "id": "PO260",
+      "title": "Politics of India",
+      "status": "later",
+      "requires": [
+        "PO120"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Jayal & Mehta (eds.), The Oxford Companion to Politics in India (TO ACQUIRE)",
+        "secondary": [
+          "ff73f1bda2 Patel, Price of the Modi Years",
+          "5e1e61fc14 Sharma, Hindutva",
+          "c05d291b17 Dasgupta, Awakening Bharat Mata"
+        ]
+      },
+      "note": "Meets Indian History IH206 (the Republic)."
+    },
+    {
+      "id": "PO270",
+      "title": "Politics of Latin America",
+      "status": "later",
+      "requires": [
+        "PO120"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Smith, Democracy in Latin America 2nd (TO ACQUIRE)",
+        "secondary": [
+          "06648d0115 Knight, The Mexican Revolution VSI"
+        ]
+      },
+      "note": "Meets the Spanish major."
+    },
+    {
+      "id": "PO280",
+      "title": "International law and organizations",
+      "status": "later",
+      "requires": [
+        "PO130"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Hurd, International Organizations: Politics, Law, Practice 4th (TO ACQUIRE)",
+        "secondary": [
+          "9d6163e0e2 Lowe, International Law VSI",
+          "1fe8c403ac Hanhimaki, The United Nations VSI",
+          "585cda2032 Clapham, Human Rights VSI"
+        ]
+      }
+    },
+    {
+      "id": "EC100",
+      "title": "Principles of microeconomics",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "829414e64e Mankiw, Principles of Microeconomics",
+        "secondary": [
+          "8c584e7b10 OpenStax, Microeconomics 3e"
+        ],
+        "tertiary": [
+          "ec493be61b Dixit, Microeconomics VSI"
+        ]
+      },
+      "note": "Cross-listed with Law, Economics, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "HI230",
+      "title": "Modern Europe, 1789 to the present",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Merriman, A History of Modern Europe 3rd (TO ACQUIRE)",
+        "secondary": [
+          "a1a8467130 Doyle, The French Revolution VSI",
+          "ffada627b3 Howard, The First World War VSI",
+          "3e72aad5aa Weinberg, World War II VSI",
+          "eea8677c0b Applebaum, Iron Curtain"
+        ]
+      },
+      "note": "Cross-listed with History: finishing it in any of them counts here."
+    },
+    {
+      "id": "HI101",
+      "title": "World history II: 1500 to the present",
+      "status": "later",
+      "requires": [
+        "HI100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "b5dcea2314 Tignor et al., Worlds Together, Worlds Apart (second half; to confirm)",
+        "secondary": [
+          "ea5e076c5f OpenStax, World History vol. 2",
+          "Bayly, The Birth of the Modern World, 1780-1914 (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with History: finishing it in any of them counts here."
+    },
+    {
+      "id": "HI100",
+      "title": "World history I: from the first humans to 1500",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "b5dcea2314 Tignor et al., Worlds Together, Worlds Apart (first half; to confirm)",
+        "secondary": [
+          "6461c7963b OpenStax, World History vol. 1",
+          "8d0c21e240 Wood, Human Evolution VSI",
+          "4be3290662 Millward, The Silk Road VSI"
+        ]
+      },
+      "note": "Cross-listed with History: finishing it in any of them counts here."
+    },
+    {
+      "id": "PO190",
+      "title": "Breadth: political ideologies",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "f9b40b015e Freeden, Liberalism VSI",
+        "secondary": [
+          "8625a9f33d Newman, Socialism VSI",
+          "faff7779d2 Paxton, The Anatomy of Fascism",
+          "24a2903f30 Grosby, Nationalism VSI",
+          "ffff0f8f97 Ward, Anarchism VSI"
+        ]
+      }
+    },
+    {
+      "id": "PO390",
+      "title": "Practice: follow one election or bill with data, start to finish",
+      "status": "later",
+      "requires": [
+        "PO220"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "public data: MIT Election Data and Science Lab, congress.gov (free)"
+      }
+    },
+    {
+      "id": "PO595",
+      "title": "Practice: comprehensive-exam self-check (two fields)",
+      "status": "later",
+      "requires": [
+        "PO510",
+        "PO520",
+        "PO530"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "field reading lists from PO510-540"
+      }
+    },
+    {
+      "id": "PO398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "PO200",
+        "PL230",
+        "SS310"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a typed conversation"
+      }
+    },
+    {
+      "id": "PO598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "SS501",
+        "PO501"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "PO399",
+      "title": "Capstone: a research design for a question you pick",
+      "status": "later",
+      "requires": [
+        "SS310",
+        "PO200"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

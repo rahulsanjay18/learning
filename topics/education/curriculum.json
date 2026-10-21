@@ -1,0 +1,639 @@
+{
+  "major": "education",
+  "program": "topics/education/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MA100",
+      "PS100",
+      "SO100",
+      "ED100",
+      "EC100"
+    ],
+    "credited": [
+      "MA100",
+      "ST100"
+    ],
+    "maybe": [
+      "SS310"
+    ],
+    "start": [
+      "ED100",
+      "PS100",
+      "SO100"
+    ],
+    "basis": "No education, psychology or sociology courses taken. This platform's own teaching rules (TEACHING-LOG, the evidence notes) already draw on several of these books, so parts of ED200 will be familiar."
+  },
+  "courses": [
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine, Psychology, Sociology, Economics, Political Science, History: finishing it in any of them counts here."
+    },
+    {
+      "id": "ST100",
+      "title": "Introductory statistics: data, probability, inference",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Freedman, Pisani & Purves, Statistics 4th (TO ACQUIRE)",
+        "secondary": [
+          "1d472f742f OpenStax, Introductory Statistics 2e (exercise sets)"
+        ],
+        "tertiary": [
+          "2d7e6445a2 Hand, Statistics VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Psychology, Sociology, Economics, Political Science, History: finishing it in any of them counts here. The non-calculus first course. The Statistics major starts above it (S150), so it is credited wherever you have stats."
+    },
+    {
+      "id": "PS100",
+      "title": "Introduction to psychology",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "d9ff315f8e OpenStax, Psychology 2e (whole)",
+        "secondary": [
+          "Gleitman, Gross & Reisberg, Psychology 9th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "c3e1b90f40 Llewelyn, Clinical Psychology VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Psychology, Film: finishing it in any of them counts here."
+    },
+    {
+      "id": "SO100",
+      "title": "Introduction to sociology",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "8cff8789f7 OpenStax, Introduction to Sociology 3e (whole)",
+        "secondary": [
+          "7fd3ab615b Mills, The Sociological Imagination",
+          "aad4551f6c Bruce, Sociology VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Sociology: finishing it in any of them counts here."
+    },
+    {
+      "id": "ED100",
+      "title": "Foundations of education: history, philosophy and purposes of schooling",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Sadker & Zittleman, Teachers, Schools, and Society 12th (TO ACQUIRE)",
+        "secondary": [
+          "Dewey, Democracy and Education (free: Gutenberg)",
+          "8c2adcc09e Freire, Pedagogy of the Oppressed",
+          "d7bf4b86c0 Thomas, Education VSI"
+        ]
+      }
+    },
+    {
+      "id": "ED110",
+      "title": "Educational psychology",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "4d2bc8a205 Eggen & Kauchak, Using Educational Psychology in Teaching 11th",
+        "secondary": [
+          "Woolfolk, Educational Psychology 14th (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PS230",
+      "title": "Developmental psychology across the lifespan",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "b066c6103e OpenStax, Lifespan Development",
+        "secondary": [
+          "Berk, Development Through the Lifespan 7th (TO ACQUIRE)"
+        ],
+        "tertiary": [
+          "0dd715c7bc Goswami, Child Psychology VSI",
+          "9652292812 Smith, Adolescence VSI",
+          "abb0fa0a37 Pachana, Ageing VSI"
+        ]
+      },
+      "note": "Cross-listed with Psychology: finishing it in any of them counts here."
+    },
+    {
+      "id": "ED200",
+      "title": "The science of learning: memory, practice, transfer",
+      "status": "later",
+      "requires": [
+        "ED110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Ambrose et al., How Learning Works 2nd (TO ACQUIRE)",
+        "secondary": [
+          "cb24c0244c Brown, Roediger & McDaniel, Make It Stick",
+          "Willingham, Why Don't Students Like School? 2nd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PS300",
+      "title": "Psychological measurement: reliability, validity, test construction",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Furr, Psychometrics: An Introduction 4th (TO ACQUIRE)",
+        "secondary": [
+          "AERA, APA & NCME, Standards for Educational and Psychological Testing (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Psychology: finishing it in any of them counts here."
+    },
+    {
+      "id": "ED210",
+      "title": "Curriculum and course design",
+      "status": "later",
+      "requires": [
+        "ED200"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Wiggins & McTighe, Understanding by Design 2nd (TO ACQUIRE)",
+        "secondary": [
+          "40d76146c5 Felder & Brent, Teaching and Learning STEM"
+        ]
+      }
+    },
+    {
+      "id": "ED220",
+      "title": "Classroom assessment and feedback",
+      "status": "later",
+      "requires": [
+        "ED200",
+        "PS300"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Wiliam, Embedded Formative Assessment 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Brookhart & Nitko, Educational Assessment of Students 8th (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "ED230",
+      "title": "Instruction: explicit teaching, cognitive load, worked examples",
+      "status": "later",
+      "requires": [
+        "ED200"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Sweller, Ayres & Kalyuga, Cognitive Load Theory (TO ACQUIRE)",
+        "secondary": [
+          "Rosenshine (2012), Principles of Instruction, American Educator 36(1) (free)",
+          "Hattie, Visible Learning (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "ED240",
+      "title": "Teaching mathematics and science",
+      "status": "later",
+      "requires": [
+        "ED230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "40d76146c5 Felder & Brent, Teaching and Learning STEM",
+        "secondary": [
+          "7e7a1d8805 Polya, How to Solve It",
+          "Lockhart, A Mathematician's Lament (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "ED250",
+      "title": "Reading and literacy",
+      "status": "later",
+      "requires": [
+        "ED200"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Seidenberg, Language at the Speed of Sight (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "ED260",
+      "title": "Special education and learning differences",
+      "status": "later",
+      "requires": [
+        "ED110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Hallahan, Kauffman & Pullen, Exceptional Learners 15th (TO ACQUIRE)"
+      },
+      "note": "ADHD and executive function are a unit here."
+    },
+    {
+      "id": "ED270",
+      "title": "Education policy and the economics of schooling",
+      "status": "later",
+      "requires": [
+        "ED100",
+        "EC100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Hanushek & Woessmann, The Knowledge Capital of Nations (TO ACQUIRE)",
+        "secondary": [
+          "Goldin & Katz, The Race between Education and Technology (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SO360",
+      "title": "Sociology of education",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Ballantine, Stuber & Everitt, The Sociology of Education: A Systematic Analysis 9th (TO ACQUIRE)",
+        "secondary": [
+          "Coleman et al., Equality of Educational Opportunity (the Coleman Report, 1966; free: ERIC ED012275)"
+        ]
+      },
+      "note": "Cross-listed with Sociology: finishing it in any of them counts here."
+    },
+    {
+      "id": "SS210",
+      "title": "Social research methods: design, measurement, sampling, surveys",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Babbie, The Practice of Social Research 15th (TO ACQUIRE)",
+        "secondary": [
+          "a5e726b5ac Yin, Case Study Research: Design and Methods",
+          "Salganik, Bit by Bit (free: https://www.bitbybitbook.com)"
+        ]
+      },
+      "note": "Cross-listed with Sociology, Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "SS310",
+      "title": "Regression and causal thinking for social science",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Gelman, Hill & Vehtari, Regression and Other Stories (free: https://avehtari.github.io/ROS-Examples/)",
+        "secondary": [
+          "Angrist & Pischke, Mastering 'Metrics (TO ACQUIRE)",
+          "527488945c Hernan & Robins, Causal Inference: What If (ch. 1-10)"
+        ]
+      },
+      "note": "Cross-listed with Psychology, Sociology, Political Science, History: finishing it in any of them counts here. Overlaps Statistics S310 (applied regression): finishing either makes the other a fast pass."
+    },
+    {
+      "id": "PS220",
+      "title": "Cognitive psychology: perception, attention, memory, language, reasoning",
+      "status": "later",
+      "requires": [
+        "PS100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Goldstein, Cognitive Psychology 5th (TO ACQUIRE)",
+        "secondary": [
+          "4432f78b45 Foster, Memory VSI",
+          "Kahneman, Thinking, Fast and Slow (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Psychology: finishing it in any of them counts here."
+    },
+    {
+      "id": "EC100",
+      "title": "Principles of microeconomics",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "829414e64e Mankiw, Principles of Microeconomics",
+        "secondary": [
+          "8c584e7b10 OpenStax, Microeconomics 3e"
+        ],
+        "tertiary": [
+          "ec493be61b Dixit, Microeconomics VSI"
+        ]
+      },
+      "note": "Cross-listed with Law, Economics, Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "ED501",
+      "title": "The learning sciences (graduate)",
+      "status": "later",
+      "requires": [
+        "ED230",
+        "PS220"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Sawyer (ed.), The Cambridge Handbook of the Learning Sciences 3rd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "ED502",
+      "title": "Measurement theory: item response theory and test design",
+      "status": "later",
+      "requires": [
+        "PS300",
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "de Ayala, The Theory and Practice of Item Response Theory 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Brennan (ed.), Educational Measurement 4th (TO ACQUIRE)"
+        ]
+      },
+      "note": "The theory behind adaptive practice and review on this platform."
+    },
+    {
+      "id": "ED503",
+      "title": "Instructional design theory",
+      "status": "later",
+      "requires": [
+        "ED210",
+        "ED230"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Reigeluth, Beatty & Myers (eds.), Instructional-Design Theories and Models vol. IV (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "SS501",
+      "title": "Research design: descriptive and causal inference, qualitative and quantitative",
+      "status": "later",
+      "requires": [
+        "SS210",
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "King, Keohane & Verba, Designing Social Inquiry (TO ACQUIRE)",
+        "secondary": [
+          "Brady & Collier (eds.), Rethinking Social Inquiry 2nd (TO ACQUIRE)",
+          "Shadish, Cook & Campbell, Experimental and Quasi-Experimental Designs (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Sociology, Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "ED505",
+      "title": "Education policy research (graduate)",
+      "status": "later",
+      "requires": [
+        "ED270",
+        "SS501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Ladd & Goertz (eds.), Handbook of Research in Education Finance and Policy 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "ED280",
+      "title": "Online learning and educational technology",
+      "status": "later",
+      "requires": [
+        "ED230"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Clark & Mayer, e-Learning and the Science of Instruction 4th (TO ACQUIRE)"
+      },
+      "note": "Directly about this learning platform."
+    },
+    {
+      "id": "ED290",
+      "title": "Adult learning",
+      "status": "later",
+      "requires": [
+        "ED200"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 10,
+      "books": {
+        "primary": "Knowles, Holton & Swanson, The Adult Learner 9th (TO ACQUIRE)",
+        "secondary": [
+          "cca8fe28fd Young, Ultralearning",
+          "e3195a8752 Ericsson & Pool, Peak"
+        ]
+      }
+    },
+    {
+      "id": "ED504",
+      "title": "Learning analytics and intelligent tutoring",
+      "status": "later",
+      "requires": [
+        "ED502"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Lang, Siemens, Wise & Gasevic (eds.), Handbook of Learning Analytics 2nd (free: https://www.solaresearch.org)"
+      }
+    },
+    {
+      "id": "ED190",
+      "title": "Breadth: comparative education (how other countries school)",
+      "status": "later",
+      "requires": [
+        "ED100"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "Ripley, The Smartest Kids in the World (TO ACQUIRE)",
+        "secondary": [
+          "OECD PISA results (free: https://www.oecd.org/pisa)"
+        ]
+      }
+    },
+    {
+      "id": "ED390",
+      "title": "Practice: design, teach and assess a four-lesson mini-course",
+      "status": "later",
+      "requires": [
+        "ED210",
+        "ED220"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "your own course design, taught to a willing learner (or a recorded lesson)"
+      }
+    },
+    {
+      "id": "ED595",
+      "title": "Practice: comprehensive-exam self-check",
+      "status": "later",
+      "requires": [
+        "ED501",
+        "ED502"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "a reading list built from ED501-505"
+      }
+    },
+    {
+      "id": "ED398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "ED220",
+        "ED230"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a typed conversation"
+      }
+    },
+    {
+      "id": "ED598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "ED501",
+        "SS501"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "ED399",
+      "title": "Capstone: evaluate one teaching practice against the evidence",
+      "status": "later",
+      "requires": [
+        "ED230",
+        "SS310"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "major": "history",
+  "program": "topics/history/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "EN015",
+      "HI100",
+      "HI110",
+      "IH100"
+    ],
+    "credited": [
+      "EN015",
+      "HI110",
+      "HI111"
+    ],
+    "maybe": [],
+    "start": [
+      "HI100",
+      "IH100"
+    ],
+    "basis": "Two AP U.S. history courses (counted by Penn State) cover both U.S. surveys. South Asia is covered by the Indian History major: its survey (IH100, in progress) and methods course (IH150) count here, so they are not repeated. Everything else, world history first, is new."
+  },
+  "courses": [
+    {
+      "id": "EN015",
+      "title": "Rhetoric and composition: the academic essay",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "ed156636dd Zinsser, On Writing Well (grade A)",
+        "secondary": [
+          "29aad591c6 Strunk & White, The Elements of Style 4th (grade A)",
+          "009f44376d Toye, Rhetoric VSI (grade A)",
+          "Graff & Birkenstein, They Say / I Say (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with English, Medicine, Law, Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "HI100",
+      "title": "World history I: from the first humans to 1500",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "b5dcea2314 Tignor et al., Worlds Together, Worlds Apart (first half; to confirm)",
+        "secondary": [
+          "6461c7963b OpenStax, World History vol. 1",
+          "8d0c21e240 Wood, Human Evolution VSI",
+          "4be3290662 Millward, The Silk Road VSI"
+        ]
+      },
+      "note": "Cross-listed with Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "HI101",
+      "title": "World history II: 1500 to the present",
+      "status": "later",
+      "requires": [
+        "HI100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "b5dcea2314 Tignor et al., Worlds Together, Worlds Apart (second half; to confirm)",
+        "secondary": [
+          "ea5e076c5f OpenStax, World History vol. 2",
+          "Bayly, The Birth of the Modern World, 1780-1914 (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "HI110",
+      "title": "United States history I: to 1877",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "9adf1de1ff Locke & Wright (eds.), The American Yawp vol. 1",
+        "secondary": [
+          "9575a049e1 OpenStax, U.S. History",
+          "6517902fbc Middlekauff, The Glorious Cause",
+          "337804cb20 McPherson, Battle Cry of Freedom"
+        ]
+      }
+    },
+    {
+      "id": "HI111",
+      "title": "United States history II: since 1877",
+      "status": "later",
+      "requires": [
+        "HI110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "a693be0727 Locke & Wright (eds.), The American Yawp vol. 2",
+        "secondary": [
+          "4ceb6e6a1b White, The Republic for Which It Stands",
+          "a4da58f86a Kennedy, Freedom from Fear",
+          "6f33bf0f7a Patterson, Grand Expectations"
+        ]
+      }
+    },
+    {
+      "id": "IH100",
+      "title": "The whole arc (environment to Republic)",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "621b57ff65 Kulke & Rothermund, A History of India (one key section per lesson)",
+        "secondary": [
+          "ead79a09d4 Singh, A History of Ancient and Early Medieval India"
+        ]
+      },
+      "note": "The Indian History major's survey (lessons and progress live there)."
+    },
+    {
+      "id": "IH150",
+      "title": "How historians work: sources, evidence, historiography",
+      "status": "later",
+      "requires": [
+        "IH100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 4,
+      "books": {
+        "primary": "c88155649b Arnold, History VSI",
+        "secondary": [
+          "Carr, What Is History? (TO ACQUIRE)",
+          "Bloch, The Historian's Craft (TO ACQUIRE)",
+          "Digital Inquiry Group, Reading Like a Historian (free online)"
+        ]
+      },
+      "note": "The Indian History major's methods course (lessons and progress live there)."
+    },
+    {
+      "id": "HI200",
+      "title": "The ancient Mediterranean: Greece and Rome",
+      "status": "later",
+      "requires": [
+        "HI100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Beard, SPQR: A History of Ancient Rome (TO ACQUIRE)",
+        "secondary": [
+          "Pomeroy et al., Ancient Greece: A Political, Social, and Cultural History 4th (TO ACQUIRE)",
+          "9741418804 Plutarch, Fall of the Roman Republic",
+          "e38c4f6ee7 Osborne, Greece in the Making 1200-479 BC"
+        ],
+        "tertiary": [
+          "a5815958fc Gibbon, Decline and Fall (selections)"
+        ]
+      }
+    },
+    {
+      "id": "HI210",
+      "title": "Medieval Europe and the Mediterranean, 400-1500",
+      "status": "later",
+      "requires": [
+        "HI100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Wickham, Medieval Europe (TO ACQUIRE)",
+        "secondary": [
+          "Rosenwein, A Short History of the Middle Ages 5th (TO ACQUIRE)",
+          "408853721e Medieval Britain VSI"
+        ]
+      }
+    },
+    {
+      "id": "HI220",
+      "title": "Early modern Europe, 1450-1789",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Wiesner-Hanks, Early Modern Europe, 1450-1789 3rd (TO ACQUIRE)",
+        "secondary": [
+          "296cde7bf5 Brotton, The Renaissance VSI",
+          "c7d836a2a3 Robertson, The Enlightenment VSI"
+        ]
+      }
+    },
+    {
+      "id": "HI230",
+      "title": "Modern Europe, 1789 to the present",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Merriman, A History of Modern Europe 3rd (TO ACQUIRE)",
+        "secondary": [
+          "a1a8467130 Doyle, The French Revolution VSI",
+          "ffada627b3 Howard, The First World War VSI",
+          "3e72aad5aa Weinberg, World War II VSI",
+          "eea8677c0b Applebaum, Iron Curtain"
+        ]
+      },
+      "note": "Cross-listed with Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "HI240",
+      "title": "East Asia: China, Japan and Korea",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Ebrey & Walthall, East Asia: A Cultural, Social, and Political History 3rd (TO ACQUIRE)",
+        "secondary": [
+          "7f828e0dde Mote, Imperial China 900-1800",
+          "09fe82b416 Jansen, The Making of Modern Japan",
+          "7c5d7f6635 Mitter, Modern China VSI"
+        ]
+      }
+    },
+    {
+      "id": "HI250",
+      "title": "The Islamic world and the Middle East",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Lapidus, A History of Islamic Societies 3rd (TO ACQUIRE)",
+        "secondary": [
+          "459731a8e5 Silverstein, Islamic History VSI",
+          "Hourani, A History of the Arab Peoples (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HI260",
+      "title": "Africa",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Reid, A History of Modern Africa 3rd (TO ACQUIRE)",
+        "secondary": [
+          "78448758fc Parker & Rathbone, African History VSI"
+        ]
+      }
+    },
+    {
+      "id": "HI270",
+      "title": "Latin America from conquest to the present",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Chasteen, Born in Blood and Fire 5th (TO ACQUIRE)",
+        "secondary": [
+          "06648d0115 Knight, The Mexican Revolution VSI",
+          "ad7a588b2e Cuba's Forgotten Decade"
+        ]
+      },
+      "note": "Meets the Spanish major."
+    },
+    {
+      "id": "HI300",
+      "title": "Historiography: how history has been written",
+      "status": "later",
+      "requires": [
+        "IH150",
+        "HI101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Iggers, Wang & Mukherjee, A Global History of Modern Historiography 2nd (TO ACQUIRE)",
+        "secondary": [
+          "27cd0acf5a Ibn Khaldun, The Muqaddimah (selections)",
+          "Thucydides, The Landmark Thucydides (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HI501",
+      "title": "Theory and method in history (graduate)",
+      "status": "later",
+      "requires": [
+        "HI300"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Burke, History and Social Theory 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Sewell, Logics of History (TO ACQUIRE)",
+          "Skinner, Visions of Politics vol. 1: Regarding Method (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HI502",
+      "title": "Global history (graduate)",
+      "status": "later",
+      "requires": [
+        "HI300",
+        "HI230"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Osterhammel, The Transformation of the World (TO ACQUIRE)",
+        "secondary": [
+          "Pomeranz, The Great Divergence (TO ACQUIRE)",
+          "Bayly, The Birth of the Modern World (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "HI504",
+      "title": "Sources and archives: criticism, paleography, editing",
+      "status": "later",
+      "requires": [
+        "HI300"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Howell & Prevenier, From Reliable Sources (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "HI505",
+      "title": "Field reading list: modern Europe (or a field you pick)",
+      "status": "later",
+      "requires": [
+        "HI501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "a 60-book field list, built when the course starts"
+      }
+    },
+    {
+      "id": "HI310",
+      "title": "History of science",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Shapin, The Scientific Revolution (TO ACQUIRE)",
+        "secondary": [
+          "b37f09559c Shapin & Schaffer, Leviathan and the Air-Pump",
+          "3f4356a2b4 Bynum, The History of Medicine VSI"
+        ]
+      }
+    },
+    {
+      "id": "HI320",
+      "title": "Russia and the Soviet Union",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "fb4ba2b3d2 Suny, The Structure of Soviet History",
+        "secondary": [
+          "f51a8c9455 Hosking, Russian History VSI",
+          "60701944bd Remnick, Lenin's Tomb"
+        ]
+      }
+    },
+    {
+      "id": "HI330",
+      "title": "Empires and colonialism: the British Empire",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "19f682b3ac Marshall (ed.), Oxford History of the British Empire vol. 2 + 68cc846b1d vol. 3 + 300cc86900 vol. 4 (selected chapters)",
+        "secondary": [
+          "f29f75f10f Jackson, The British Empire VSI"
+        ]
+      },
+      "note": "Meets Indian History IH204 (colonial India)."
+    },
+    {
+      "id": "HI340",
+      "title": "War and society",
+      "status": "later",
+      "requires": [
+        "HI101"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "6979109f6e Paret (ed.), Makers of Modern Strategy",
+        "secondary": [
+          "ec1542b00e English, Modern War VSI",
+          "6b77c9f147 Roland, War and Technology VSI"
+        ]
+      },
+      "note": "Meets Games G150."
+    },
+    {
+      "id": "HI350",
+      "title": "Historical dynamics: modelling the rise and fall of states",
+      "status": "later",
+      "requires": [
+        "HI101",
+        "ST100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "3f4196ed21 Turchin & Nefedov, Secular Cycles",
+        "secondary": [
+          "3b1d41da1a Turchin, Historical Dynamics",
+          "a461ead167 Turchin, End Times"
+        ]
+      }
+    },
+    {
+      "id": "EC395",
+      "title": "Economic history: how the world got rich (and India's part in it)",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Allen, Global Economic History: A Very Short Introduction (TO ACQUIRE)",
+        "secondary": [
+          "8b573d9c6b Roy, The Economic History of India",
+          "Pomeranz, The Great Divergence (TO ACQUIRE)",
+          "584ba381b1 Industrial Revolution VSI"
+        ]
+      },
+      "note": "Cross-listed with Sociology, Economics: finishing it in any of them counts here. Overlaps Indian History IH330 (economic history)."
+    },
+    {
+      "id": "PO140",
+      "title": "The history of political thought: Plato to Marx",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Cahn (ed.), Political Philosophy: The Essential Texts 3rd (TO ACQUIRE)",
+        "secondary": [
+          "dc027d23a5 Plato, The Republic",
+          "bc92471265 Aristotle, Politics (Lord trans.)",
+          "ef8cb1c912 Machiavelli, The Prince",
+          "64f45ee369 Hobbes, Leviathan",
+          "dbf4857a15 Mill, On Liberty",
+          "79deb1c50a Tucker (ed.), The Marx-Engels Reader"
+        ]
+      },
+      "note": "Cross-listed with Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine, Psychology, Sociology, Economics, Political Science, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "ST100",
+      "title": "Introductory statistics: data, probability, inference",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Freedman, Pisani & Purves, Statistics 4th (TO ACQUIRE)",
+        "secondary": [
+          "1d472f742f OpenStax, Introductory Statistics 2e (exercise sets)"
+        ],
+        "tertiary": [
+          "2d7e6445a2 Hand, Statistics VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Psychology, Sociology, Economics, Political Science, Education: finishing it in any of them counts here. The non-calculus first course. The Statistics major starts above it (S150), so it is credited wherever you have stats."
+    },
+    {
+      "id": "SS310",
+      "title": "Regression and causal thinking for social science",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Gelman, Hill & Vehtari, Regression and Other Stories (free: https://avehtari.github.io/ROS-Examples/)",
+        "secondary": [
+          "Angrist & Pischke, Mastering 'Metrics (TO ACQUIRE)",
+          "527488945c Hernan & Robins, Causal Inference: What If (ch. 1-10)"
+        ]
+      },
+      "note": "Cross-listed with Psychology, Sociology, Political Science, Education: finishing it in any of them counts here. Overlaps Statistics S310 (applied regression): finishing either makes the other a fast pass."
+    },
+    {
+      "id": "HI503",
+      "title": "Quantitative history and cliodynamics",
+      "status": "later",
+      "requires": [
+        "HI350",
+        "SS310"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Feinstein & Thomas, Making History Count (TO ACQUIRE)",
+        "secondary": [
+          "3b1d41da1a Turchin, Historical Dynamics"
+        ]
+      }
+    },
+    {
+      "id": "HI190",
+      "title": "Breadth: the classics of history writing",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 10,
+      "books": {
+        "primary": "Herodotus, The Landmark Herodotus (TO ACQUIRE)",
+        "secondary": [
+          "27cd0acf5a Ibn Khaldun, The Muqaddimah",
+          "a5815958fc Gibbon, Decline and Fall"
+        ]
+      }
+    },
+    {
+      "id": "HI390",
+      "title": "Practice: a primary-source edition (transcribe, date and annotate a document set)",
+      "status": "later",
+      "requires": [
+        "IH150"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "Library of Congress digital collections and the National Archives catalog (free)"
+      }
+    },
+    {
+      "id": "HI595",
+      "title": "Practice: comprehensive-exam self-check (two fields)",
+      "status": "later",
+      "requires": [
+        "HI505",
+        "HI502"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "field lists from HI502 and HI505"
+      }
+    },
+    {
+      "id": "HI398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "HI300"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a typed conversation"
+      }
+    },
+    {
+      "id": "HI598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "HI501",
+        "HI502"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "HI399",
+      "title": "Capstone: a historiographical essay on a debate you pick",
+      "status": "later",
+      "requires": [
+        "HI300"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "generated_by": "scripts/build_majors.py (edit there, not here)",
   "rules": [
     "Designed 2026-10-08 and parked: written as if starting from high school, with your real entry point in entry_points.",
-    "No pretests (your call, 2026-10-08): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
     "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
   ],
   "entry_points": {
@@ -56,7 +56,7 @@
           "7e7a1d8805 Polya, How to Solve It"
         ]
       },
-      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering, Medicine, Psychology, Sociology, Economics, Political Science, History, Education: finishing it in any of them counts here."
     },
     {
       "id": "MA140",
@@ -78,7 +78,7 @@
           "71f8006738 Thomas' Calculus: grade C copy"
         ]
       },
-      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering, Medicine, Economics, Political Science: finishing it in any of them counts here."
     },
     {
       "id": "MA141",
@@ -93,7 +93,7 @@
       "books": {
         "primary": "0db419bb48 OpenStax, Calculus Volume 2 (whole)"
       },
-      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering, Medicine, Economics: finishing it in any of them counts here."
     },
     {
       "id": "MA220",
@@ -114,7 +114,7 @@
           "0ea7f89d5e Savov, No Bullshit Guide to Linear Algebra"
         ]
       },
-      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering, Economics: finishing it in any of them counts here."
     },
     {
       "id": "MA230",
@@ -133,7 +133,7 @@
           "Schey, Div, Grad, Curl, and All That (TO ACQUIRE) (vector calculus the way physics uses it)"
         ]
       },
-      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering, Economics: finishing it in any of them counts here."
     },
     {
       "id": "MA250",
@@ -174,7 +174,7 @@
           "b467b6c3a7 Irodov, Problems in General Physics (hard problems)"
         ]
       },
-      "note": "Cross-listed with Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+      "note": "Cross-listed with Mechanical Engineering, Unified Engineering, Medicine: finishing it in any of them counts here."
     },
     {
       "id": "PH212",
@@ -194,7 +194,7 @@
           "837676dd13 Blundell, Magnetism VSI"
         ]
       },
-      "note": "Cross-listed with Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+      "note": "Cross-listed with Mechanical Engineering, Unified Engineering, Medicine: finishing it in any of them counts here."
     },
     {
       "id": "PH213",

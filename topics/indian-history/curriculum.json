@@ -79,7 +79,16 @@
         "IH100"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "ead79a09d4 Singh, A History of Ancient and Early Medieval India (Stone Age to c. 600 CE chapters; to confirm)",
+        "secondary": [
+          "621b57ff65 Kulke & Rothermund ch. 1-2",
+          "7da4534022 Thapar, Asoka and the Decline of the Mauryas",
+          "b59a82bde4 Raychaudhuri, Political History of Ancient India"
+        ]
+      },
+      "est_lessons": 20
     },
     {
       "id": "IH202",
@@ -90,7 +99,16 @@
         "IH201"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "ead79a09d4 Singh, A History of Ancient and Early Medieval India (c. 600-1200 chapters; to confirm)",
+        "secondary": [
+          "621b57ff65 Kulke & Rothermund ch. 3-4",
+          "Chandra, Medieval India: From Sultanat to the Mughals vol. 1 (TO ACQUIRE)",
+          "582095b08d Stein, Vijayanagara"
+        ]
+      },
+      "est_lessons": 16
     },
     {
       "id": "IH203",
@@ -101,7 +119,15 @@
         "IH202"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Richards, The Mughal Empire (New Cambridge History of India I.5) (TO ACQUIRE)",
+        "secondary": [
+          "621b57ff65 Kulke & Rothermund ch. 5",
+          "31725c9fee Beach, Mughal and Rajput Painting"
+        ]
+      },
+      "est_lessons": 14
     },
     {
       "id": "IH204",
@@ -112,7 +138,16 @@
         "IH203"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Bose & Jalal, Modern South Asia 4th (colonial chapters) (TO ACQUIRE)",
+        "secondary": [
+          "621b57ff65 Kulke & Rothermund ch. 6",
+          "41ef04db8b Marshall, Bengal: The British Bridgehead",
+          "ab20841e91 Bayly, Caste, Society and Politics in India"
+        ]
+      },
+      "est_lessons": 18
     },
     {
       "id": "IH205",
@@ -123,7 +158,16 @@
         "IH204"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Bose & Jalal, Modern South Asia 4th (nationalism and Partition chapters) (TO ACQUIRE)",
+        "secondary": [
+          "621b57ff65 Kulke & Rothermund ch. 7",
+          "Sarkar, Modern India 1885-1947 (TO ACQUIRE)",
+          "744967e342 Manto and Chughtai: The Essential Stories"
+        ]
+      },
+      "est_lessons": 14
     },
     {
       "id": "IH206",
@@ -134,7 +178,15 @@
         "IH205"
       ],
       "group": "core",
-      "level": "I"
+      "level": "I",
+      "books": {
+        "primary": "Guha, India After Gandhi (TO ACQUIRE)",
+        "secondary": [
+          "621b57ff65 Kulke & Rothermund ch. 8",
+          "ff73f1bda2 Patel, Price of the Modi Years"
+        ]
+      },
+      "est_lessons": 16
     },
     {
       "id": "IH150",
@@ -146,7 +198,15 @@
         "IH100"
       ],
       "est_lessons": 4,
-      "source": "Digital Inquiry Group, Reading Like a Historian (free online); K&R Introduction"
+      "source": "Digital Inquiry Group, Reading Like a Historian (free online); K&R Introduction",
+      "books": {
+        "primary": "c88155649b Arnold, History VSI",
+        "secondary": [
+          "Carr, What Is History? (TO ACQUIRE)",
+          "Bloch, The Historian's Craft (TO ACQUIRE)",
+          "Digital Inquiry Group, Reading Like a Historian (free online)"
+        ]
+      }
     },
     {
       "id": "IH310",
@@ -157,7 +217,14 @@
       "requires": [
         "IH100"
       ],
-      "source": "Buddhism, Hinduism, Indian Philosophy VSIs (in collection); Dasgupta, A History of Indian Philosophy (in collection)"
+      "source": "Buddhism, Hinduism, Indian Philosophy VSIs (in collection); Dasgupta, A History of Indian Philosophy (in collection)",
+      "books": {
+        "primary": "5ff03abdae Hamilton, Indian Philosophy VSI",
+        "secondary": [
+          "bb74af4834 Dasgupta, A History of Indian Philosophy"
+        ]
+      },
+      "est_lessons": 8
     },
     {
       "id": "IH320",
@@ -167,7 +234,14 @@
       "status": "later",
       "requires": [
         "IH100"
-      ]
+      ],
+      "books": {
+        "primary": "Roy, War, Culture and Society in Early Modern South Asia, 1740-1849 (TO ACQUIRE)",
+        "secondary": [
+          "6979109f6e Paret (ed.), Makers of Modern Strategy"
+        ]
+      },
+      "est_lessons": 8
     },
     {
       "id": "IH330",
@@ -178,7 +252,11 @@
       "requires": [
         "IH100"
       ],
-      "note": "source to choose; ask for a book"
+      "note": "source to choose; ask for a book",
+      "books": {
+        "primary": "8b573d9c6b Roy, The Economic History of India"
+      },
+      "est_lessons": 8
     },
     {
       "id": "IH340",
@@ -189,7 +267,15 @@
       "requires": [
         "IH100"
       ],
-      "source": "New Cambridge History: Mughal and Rajput Painting (in collection); Mahabharata (Debroy) (in collection)"
+      "source": "New Cambridge History: Mughal and Rajput Painting (in collection); Mahabharata (Debroy) (in collection)",
+      "books": {
+        "primary": "Mitter, Indian Art (Oxford History of Art) (TO ACQUIRE)",
+        "secondary": [
+          "31725c9fee Beach, Mughal and Rajput Painting",
+          "d8d2c21eac Debroy (trans.), The Mahabharata"
+        ]
+      },
+      "est_lessons": 10
     },
     {
       "id": "IH390",
@@ -200,7 +286,11 @@
       "requires": [
         "IH150"
       ],
-      "note": "heritage aim in MISSION.md: interview a relative about Partition-era or family history; visit a museum collection"
+      "note": "heritage aim in MISSION.md: interview a relative about Partition-era or family history; visit a museum collection",
+      "books": {
+        "primary": "an interview guide and the sites themselves"
+      },
+      "est_lessons": 4
     },
     {
       "id": "IH398",
@@ -211,7 +301,11 @@
       "requires": [
         "IH206",
         "IH150"
-      ]
+      ],
+      "books": {
+        "primary": "list of works + conversation"
+      },
+      "est_lessons": 1
     },
     {
       "id": "IH400",
@@ -222,7 +316,11 @@
       "requires": [
         "IH206"
       ],
-      "note": "~20 pages on a question the learner chooses, several sources"
+      "note": "~20 pages on a question the learner chooses, several sources",
+      "books": {
+        "primary": "optional; ~20 pages"
+      },
+      "est_lessons": 8
     },
     {
       "id": "IH510",
@@ -233,7 +331,16 @@
       "requires": [
         "IH206"
       ],
-      "note": "books to choose and request"
+      "note": "books to choose and request",
+      "books": {
+        "primary": "Guha (ed.), A Subaltern Studies Reader, 1986-1995 (TO ACQUIRE)",
+        "secondary": [
+          "Inden, Imagining India (TO ACQUIRE)",
+          "Said, Orientalism (TO ACQUIRE)",
+          "Chakrabarty, Provincializing Europe (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 20
     },
     {
       "id": "IH520",
@@ -243,7 +350,15 @@
       "status": "later",
       "requires": [
         "IH206"
-      ]
+      ],
+      "books": {
+        "primary": "Olivelle (trans.), King, Governance, and Law in Ancient India: Kautilya's Arthasastra (TO ACQUIRE)",
+        "secondary": [
+          "7da4534022 Thapar, Asoka (the edicts in translation)",
+          "Thackston (trans.), The Baburnama (TO ACQUIRE)"
+        ]
+      },
+      "est_lessons": 20
     },
     {
       "id": "IH530",
@@ -254,7 +369,16 @@
       "requires": [
         "IH206"
       ],
-      "source": "New Cambridge History volumes (several in collection)"
+      "source": "New Cambridge History volumes (several in collection)",
+      "books": {
+        "primary": "Eaton, A Social History of the Deccan, 1300-1761 (New Cambridge History of India I.8) (TO ACQUIRE)",
+        "secondary": [
+          "582095b08d Stein, Vijayanagara",
+          "6669ad6f23 Grewal, The Sikhs of the Punjab",
+          "41ef04db8b Marshall, Bengal"
+        ]
+      },
+      "est_lessons": 24
     },
     {
       "id": "IH540",
@@ -265,7 +389,15 @@
       "requires": [
         "IH510"
       ],
-      "source": "Manto (in collection); oral-history archives"
+      "source": "Manto (in collection); oral-history archives",
+      "books": {
+        "primary": "Butalia, The Other Side of Silence (TO ACQUIRE)",
+        "secondary": [
+          "744967e342 Manto and Chughtai: The Essential Stories",
+          "1947 Partition Archive (free oral histories)"
+        ]
+      },
+      "est_lessons": 10
     },
     {
       "id": "IH550",
@@ -276,7 +408,11 @@
       "requires": [
         "IH520"
       ],
-      "note": "optional; only if the learner wants it"
+      "note": "optional; only if the learner wants it",
+      "books": {
+        "primary": "Ruppel, The Cambridge Introduction to Sanskrit (TO ACQUIRE)"
+      },
+      "est_lessons": 24
     },
     {
       "id": "IH596",
@@ -287,7 +423,11 @@
       "requires": [
         "IH510",
         "IH520"
-      ]
+      ],
+      "books": {
+        "primary": "primary sources for a question you pick"
+      },
+      "est_lessons": 6
     },
     {
       "id": "IH598",
@@ -297,7 +437,11 @@
       "status": "later",
       "requires": [
         "IH596"
-      ]
+      ],
+      "books": {
+        "primary": "list of works + conversation"
+      },
+      "est_lessons": 1
     },
     {
       "id": "IH599",
@@ -307,7 +451,11 @@
       "status": "later",
       "requires": [
         "IH596"
-      ]
+      ],
+      "books": {
+        "primary": "optional; ~40 pages"
+      },
+      "est_lessons": 12
     }
   ],
   "design": "notes/major-design.md",

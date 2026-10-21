@@ -1,0 +1,777 @@
+{
+  "major": "economics",
+  "program": "topics/economics/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MA100",
+      "EC100"
+    ],
+    "credited": [
+      "MA100",
+      "MA140",
+      "MA141",
+      "MA220",
+      "MA230",
+      "MA311",
+      "MA312",
+      "MA414",
+      "ST100",
+      "EC100",
+      "EC101"
+    ],
+    "maybe": [
+      "EC300"
+    ],
+    "start": [
+      "EC201",
+      "EC202"
+    ],
+    "basis": "The math degree covers the whole math sequence a PhD program asks for (calculus, linear algebra, real analysis, probability). Principles of micro and macro are credited by exam: the 2026-10-05 placement pretest, 13/13. Mathematical economics (EC300) is 'maybe': it is mostly math you know, applied to constrained optimization."
+  },
+  "courses": [
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine, Psychology, Sociology, Political Science, History, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA140",
+      "title": "Calculus I: limits, derivatives, integrals",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "94a6ff068c OpenStax, Calculus Volume 1 (whole; equations from the openstax.org web edition)",
+        "secondary": [
+          "Spivak, Calculus (TO ACQUIRE) (the proof-first alternative, for the math major)"
+        ],
+        "skip": [
+          "9c143e072e Stewart, Calculus 8th: grade C copy",
+          "71f8006738 Thomas' Calculus: grade C copy"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine, Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA141",
+      "title": "Calculus II: integration techniques, sequences and series, parametric and polar",
+      "status": "later",
+      "requires": [
+        "MA140"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "0db419bb48 OpenStax, Calculus Volume 2 (whole)"
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA220",
+      "title": "Matrices: computational linear algebra",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "d694d5cc9d Strang, Introduction to Linear Algebra (ch. 1-7)",
+        "secondary": [
+          "44e0e775eb Lay, Linear Algebra and Its Applications (more worked examples)"
+        ],
+        "tertiary": [
+          "0ea7f89d5e Savov, No Bullshit Guide to Linear Algebra"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA230",
+      "title": "Calculus of several variables and vector analysis",
+      "status": "later",
+      "requires": [
+        "MA141",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "8f45554212 OpenStax, Calculus Volume 3 (whole)",
+        "secondary": [
+          "Schey, Div, Grad, Curl, and All That (TO ACQUIRE) (vector calculus the way physics uses it)"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA311",
+      "title": "Proofs: logic, sets, induction, relations, functions",
+      "status": "later",
+      "requires": [
+        "MA141"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "7657f3ebf3 Velleman, How to Prove It (ch. 1-7)",
+        "secondary": [
+          "1bc1423cf5 Halmos, Naive Set Theory (grade A)",
+          "d9694b9899 Chartrand et al., Mathematical Proofs (more exercises)"
+        ],
+        "tertiary": [
+          "4aaff76254 Cummings, Proofs: A Long-Form Mathematics Textbook"
+        ]
+      },
+      "note": "Cross-listed with Mathematics: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA312",
+      "title": "Real analysis I: the real line, sequences, series, continuity, derivative",
+      "status": "later",
+      "requires": [
+        "MA311"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "1f0fdaeaa7 Abbott, Understanding Analysis (ch. 1-5)",
+        "secondary": [
+          "7bd6779091 Ross, Elementary Analysis (more routine exercises)",
+          "e2b4dd743f Tao, Analysis I (construction of the reals)"
+        ]
+      },
+      "note": "Cross-listed with Mathematics: finishing it in any of them counts here."
+    },
+    {
+      "id": "MA414",
+      "title": "Probability",
+      "status": "later",
+      "requires": [
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "4aac0e45ba Bertsekas & Tsitsiklis, Introduction to Probability 2nd (ch. 1-9)",
+        "secondary": [
+          "a53c1f767c Haigh, Probability VSI (grade A)"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Mechanical Engineering, Unified Engineering: finishing it in any of them counts here. Also covered by the Statistics major (Casella & Berger ch. 1-5): either one counts."
+    },
+    {
+      "id": "ST100",
+      "title": "Introductory statistics: data, probability, inference",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Freedman, Pisani & Purves, Statistics 4th (TO ACQUIRE)",
+        "secondary": [
+          "1d472f742f OpenStax, Introductory Statistics 2e (exercise sets)"
+        ],
+        "tertiary": [
+          "2d7e6445a2 Hand, Statistics VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Psychology, Sociology, Political Science, History, Education: finishing it in any of them counts here. The non-calculus first course. The Statistics major starts above it (S150), so it is credited wherever you have stats."
+    },
+    {
+      "id": "EC100",
+      "title": "Principles of microeconomics",
+      "status": "done",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "829414e64e Mankiw, Principles of Microeconomics",
+        "secondary": [
+          "8c584e7b10 OpenStax, Microeconomics 3e"
+        ],
+        "tertiary": [
+          "ec493be61b Dixit, Microeconomics VSI"
+        ]
+      },
+      "note": "Cross-listed with Law, Political Science, Education: finishing it in any of them counts here.",
+      "credit": "exam",
+      "lessons": [
+        "0001-placement-pretest"
+      ]
+    },
+    {
+      "id": "EC101",
+      "title": "Principles of macroeconomics",
+      "status": "done",
+      "requires": [
+        "EC100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "56e2b8fcaf Mankiw, Principles of Macroeconomics",
+        "secondary": [
+          "5a1afad477 OpenStax, Macroeconomics 3e",
+          "e16a9a3668 CORE team, The Economy"
+        ]
+      },
+      "credit": "exam"
+    },
+    {
+      "id": "EC201",
+      "title": "Intermediate microeconomics (with calculus)",
+      "status": "later",
+      "requires": [
+        "EC100",
+        "MA140"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "0758938f7c Perloff, Microeconomics: Theory and Applications with Calculus",
+        "secondary": [
+          "Varian, Intermediate Microeconomics with Calculus (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC202",
+      "title": "Intermediate macroeconomics: growth, cycles, policy",
+      "status": "later",
+      "requires": [
+        "EC101",
+        "MA140"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Jones, Macroeconomics 5th (TO ACQUIRE)",
+        "secondary": [
+          "7eaab63a46 Mishkin, Macroeconomics: Policy and Practice (policy chapters)"
+        ]
+      }
+    },
+    {
+      "id": "EC300",
+      "title": "Mathematical methods for economists: optimization, comparative statics, dynamics",
+      "status": "later",
+      "requires": [
+        "MA220",
+        "MA230"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Simon & Blume, Mathematics for Economists (TO ACQUIRE)",
+        "secondary": [
+          "Sydsaeter et al., Further Mathematics for Economic Analysis 2nd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC310",
+      "title": "Game theory",
+      "status": "later",
+      "requires": [
+        "EC201"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Osborne, An Introduction to Game Theory (TO ACQUIRE)",
+        "secondary": [
+          "c108125fe5 Binmore, Game Theory VSI",
+          "7fa6cee562 Game Theory (Springer 2015)"
+        ]
+      },
+      "note": "Same material as Games G503: finishing either counts as both."
+    },
+    {
+      "id": "EC320",
+      "title": "Econometrics",
+      "status": "later",
+      "requires": [
+        "ST100",
+        "EC201",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "aa04b3c61e Stock & Watson, Introduction to Econometrics 3rd (update)",
+        "secondary": [
+          "Wooldridge, Introductory Econometrics: A Modern Approach 7th (TO ACQUIRE)",
+          "Angrist & Pischke, Mastering 'Metrics (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC501",
+      "title": "Microeconomic theory (graduate)",
+      "status": "later",
+      "requires": [
+        "EC300",
+        "MA312",
+        "EC310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 40,
+      "books": {
+        "primary": "Mas-Colell, Whinston & Green, Microeconomic Theory (TO ACQUIRE)",
+        "secondary": [
+          "Kreps, Microeconomic Foundations I (TO ACQUIRE)",
+          "Varian, Microeconomic Analysis 3rd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC502",
+      "title": "Macroeconomic theory (graduate)",
+      "status": "later",
+      "requires": [
+        "EC202",
+        "EC300"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 32,
+      "books": {
+        "primary": "Romer, Advanced Macroeconomics 5th (TO ACQUIRE)",
+        "secondary": [
+          "Acemoglu, Introduction to Modern Economic Growth (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC503",
+      "title": "Econometric theory (graduate)",
+      "status": "later",
+      "requires": [
+        "EC320",
+        "MA414",
+        "MA220"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 32,
+      "books": {
+        "primary": "Hayashi, Econometrics (TO ACQUIRE)",
+        "secondary": [
+          "Greene, Econometric Analysis 8th (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC504",
+      "title": "Dynamic macroeconomics and recursive methods",
+      "status": "later",
+      "requires": [
+        "EC502"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Ljungqvist & Sargent, Recursive Macroeconomic Theory 4th (TO ACQUIRE)",
+        "secondary": [
+          "Stokey & Lucas, Recursive Methods in Economic Dynamics (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC505",
+      "title": "Microeconometrics: cross-section and panel data",
+      "status": "later",
+      "requires": [
+        "EC503"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Wooldridge, Econometric Analysis of Cross Section and Panel Data 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Angrist & Pischke, Mostly Harmless Econometrics (TO ACQUIRE)",
+          "Cunningham, Causal Inference: The Mixtape (free: https://mixtape.scunning.com)"
+        ]
+      }
+    },
+    {
+      "id": "EC506",
+      "title": "Game theory (graduate)",
+      "status": "later",
+      "requires": [
+        "EC501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Osborne & Rubinstein, A Course in Game Theory (free: https://arielrubinstein.tau.ac.il/books.html)",
+        "secondary": [
+          "Fudenberg & Tirole, Game Theory (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC330",
+      "title": "Money, banking and financial markets",
+      "status": "later",
+      "requires": [
+        "EC202"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Mishkin, The Economics of Money, Banking, and Financial Markets 13th (TO ACQUIRE)",
+        "secondary": [
+          "a4cbdcbc4f Goddard & Wilson, Banking VSI"
+        ]
+      }
+    },
+    {
+      "id": "EC340",
+      "title": "International economics: trade and finance",
+      "status": "later",
+      "requires": [
+        "EC201",
+        "EC202"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Krugman, Obstfeld & Melitz, International Economics: Theory and Policy 12th (TO ACQUIRE)",
+        "secondary": [
+          "078197928b Steger, Globalization VSI"
+        ]
+      }
+    },
+    {
+      "id": "EC350",
+      "title": "Public economics",
+      "status": "later",
+      "requires": [
+        "EC201"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Gruber, Public Finance and Public Policy 7th (TO ACQUIRE)",
+        "secondary": [
+          "41dbeb376d Smith, Taxation VSI"
+        ]
+      }
+    },
+    {
+      "id": "EC360",
+      "title": "Labor economics",
+      "status": "later",
+      "requires": [
+        "EC201",
+        "EC320"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Borjas, Labor Economics 9th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "EC370",
+      "title": "Development economics",
+      "status": "later",
+      "requires": [
+        "EC201",
+        "EC320"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Ray, Development Economics (TO ACQUIRE)",
+        "secondary": [
+          "Banerjee & Duflo, Poor Economics (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC380",
+      "title": "Industrial organization",
+      "status": "later",
+      "requires": [
+        "EC310"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Cabral, Introduction to Industrial Organization 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "EC390",
+      "title": "Behavioral economics",
+      "status": "later",
+      "requires": [
+        "EC201"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Wilkinson & Klaes, An Introduction to Behavioral Economics 3rd (TO ACQUIRE)",
+        "secondary": [
+          "0a7be3e87a Baddeley, Behavioural Economics VSI"
+        ]
+      }
+    },
+    {
+      "id": "EC391",
+      "title": "Health economics",
+      "status": "later",
+      "requires": [
+        "EC201"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "9d5d7a0991 Glied & Smith (eds.), The Oxford Handbook of Health Economics"
+      },
+      "note": "Meets the Medicine major."
+    },
+    {
+      "id": "EC392",
+      "title": "Environmental economics",
+      "status": "later",
+      "requires": [
+        "EC201"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Kolstad, Environmental Economics 2nd (TO ACQUIRE)",
+        "secondary": [
+          "9c6575bfe0 Environmental Economics VSI"
+        ]
+      }
+    },
+    {
+      "id": "EC507",
+      "title": "Time series econometrics",
+      "status": "later",
+      "requires": [
+        "EC503"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Hamilton, Time Series Analysis (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "EC510",
+      "title": "Industrial organization (graduate)",
+      "status": "later",
+      "requires": [
+        "EC506"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Tirole, The Theory of Industrial Organization (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "EC511",
+      "title": "Contract theory and mechanism design",
+      "status": "later",
+      "requires": [
+        "EC506"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Bolton & Dewatripont, Contract Theory (TO ACQUIRE)",
+        "secondary": [
+          "Krishna, Auction Theory 2nd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC512",
+      "title": "Development microeconomics (graduate)",
+      "status": "later",
+      "requires": [
+        "EC505"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Bardhan & Udry, Development Microeconomics (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "EC395",
+      "title": "Economic history: how the world got rich (and India's part in it)",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Allen, Global Economic History: A Very Short Introduction (TO ACQUIRE)",
+        "secondary": [
+          "8b573d9c6b Roy, The Economic History of India",
+          "Pomeranz, The Great Divergence (TO ACQUIRE)",
+          "584ba381b1 Industrial Revolution VSI"
+        ]
+      },
+      "note": "Cross-listed with Sociology, History: finishing it in any of them counts here. Overlaps Indian History IH330 (economic history)."
+    },
+    {
+      "id": "EC396",
+      "title": "History of economic thought",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Heilbroner, The Worldly Philosophers (TO ACQUIRE)",
+        "secondary": [
+          "fabb65e838 Smith, The Wealth of Nations",
+          "9c44e4c7ec Marx, Capital vol. 1",
+          "Keynes, The General Theory (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "EC397",
+      "title": "Practice: replicate a published empirical result",
+      "status": "later",
+      "requires": [
+        "EC320"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "a paper with public replication files (AEA Data and Code Repository, free: https://www.openicpsr.org/openicpsr/aea)"
+      }
+    },
+    {
+      "id": "EC595",
+      "title": "Practice: first-year qualifying-exam self-check (micro, macro, metrics)",
+      "status": "later",
+      "requires": [
+        "EC501",
+        "EC504",
+        "EC503"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "past core exams that departments publish (to collect when the time comes)"
+      }
+    },
+    {
+      "id": "EC398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "EC320",
+        "EC310"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a typed conversation"
+      }
+    },
+    {
+      "id": "EC598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "EC501",
+        "EC502"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "EC399",
+      "title": "Capstone: an empirical or theory paper",
+      "status": "later",
+      "requires": [
+        "EC320",
+        "EC310"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

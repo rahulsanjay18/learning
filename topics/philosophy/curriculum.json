@@ -1,0 +1,635 @@
+{
+  "major": "philosophy",
+  "program": "topics/philosophy/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "PL100",
+      "PL120"
+    ],
+    "credited": [],
+    "maybe": [
+      "PL120"
+    ],
+    "start": [
+      "PL100"
+    ],
+    "basis": "No philosophy courses taken. Symbolic logic is 'maybe': proofs courses in the math degree covered first-order logic, so a quick pass through forall x may be enough."
+  },
+  "courses": [
+    {
+      "id": "PL100",
+      "title": "Introduction to philosophy",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "05bb914255 OpenStax, Introduction to Philosophy",
+        "secondary": [
+          "e56f710976 Blackburn, Think",
+          "34fa04dd44 Russell, The Problems of Philosophy",
+          "23f58d05b9 Warburton, A Little History of Philosophy"
+        ]
+      }
+    },
+    {
+      "id": "PL110",
+      "title": "Ethics: the major theories and applied problems",
+      "status": "later",
+      "requires": [
+        "PL100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Rachels & Rachels, The Elements of Moral Philosophy 10th (TO ACQUIRE)",
+        "secondary": [
+          "27961cabb2 Singer, Practical Ethics",
+          "db3c998b72 Blackburn, Ethics VSI",
+          "3d1d5754f1 Utilitarianism VSI"
+        ]
+      }
+    },
+    {
+      "id": "PL120",
+      "title": "Symbolic logic I: sentential and first-order logic",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Magnus & Button, forall x: Calgary (free: https://forallx.openlogicproject.org)",
+        "secondary": [
+          "d565a7e7e9 Agler, Symbolic Logic: Syntax, Semantics, and Proof",
+          "b4cb422d7f Priest, Logic VSI"
+        ]
+      },
+      "note": "Cross-listed with Law: finishing it in any of them counts here."
+    },
+    {
+      "id": "PL200",
+      "title": "Ancient philosophy: the Presocratics, Plato, Aristotle",
+      "status": "later",
+      "requires": [
+        "PL100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "493514b3bf Plato, Complete Works (Cooper ed.)",
+        "secondary": [
+          "11822f31ff Aristotle, The Complete Aristotle",
+          "8ae690f4cd Adamson, Classical Philosophy (History of Philosophy without any Gaps 1)",
+          "be441ac249 Osborne, Presocratic Philosophy VSI"
+        ]
+      }
+    },
+    {
+      "id": "PL220",
+      "title": "Early modern philosophy: Descartes to Kant",
+      "status": "later",
+      "requires": [
+        "PL100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Ariew & Watkins (eds.), Modern Philosophy: An Anthology of Primary Sources 3rd (TO ACQUIRE)",
+        "secondary": [
+          "3abe10cb45 Kant, Complete Works",
+          "6cb868f83f Sorell, Descartes VSI",
+          "bb1f42c5b3 Ayer, Hume VSI",
+          "a52e50cc67 Scruton, Kant VSI"
+        ]
+      }
+    },
+    {
+      "id": "PL240",
+      "title": "Epistemology",
+      "status": "later",
+      "requires": [
+        "PL100",
+        "PL120"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "251ad82d76 Pritchard, What Is This Thing Called Knowledge?",
+        "secondary": [
+          "Feldman, Epistemology (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PL250",
+      "title": "Metaphysics",
+      "status": "later",
+      "requires": [
+        "PL100",
+        "PL120"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Loux & Crisp, Metaphysics: A Contemporary Introduction 4th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PL260",
+      "title": "Philosophy of mind",
+      "status": "later",
+      "requires": [
+        "PL250"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Kim, Philosophy of Mind 3rd (TO ACQUIRE)",
+        "secondary": [
+          "f81440bf9f Blackmore, Consciousness VSI"
+        ]
+      },
+      "note": "Meets Psychology PS220/PS370 (cognition, cognitive neuroscience)."
+    },
+    {
+      "id": "PL270",
+      "title": "Philosophy of language",
+      "status": "later",
+      "requires": [
+        "PL120",
+        "PL250"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Lycan, Philosophy of Language: A Contemporary Introduction 3rd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PL280",
+      "title": "Philosophy of science",
+      "status": "later",
+      "requires": [
+        "PL100",
+        "PL120"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Godfrey-Smith, Theory and Reality 2nd (TO ACQUIRE)",
+        "secondary": [
+          "d22758f771 Cover & Curd, Philosophy of Science: The Central Issues",
+          "6c160304ca Okasha, Philosophy of Science VSI",
+          "25095b271c Cartwright & Montuschi, Philosophy of Social Science"
+        ]
+      }
+    },
+    {
+      "id": "PL290",
+      "title": "Normative ethics and metaethics",
+      "status": "later",
+      "requires": [
+        "PL110"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Shafer-Landau (ed.), Ethical Theory: An Anthology 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PL300",
+      "title": "Symbolic logic II: metatheory, modal logic",
+      "status": "later",
+      "requires": [
+        "PL120"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Sider, Logic for Philosophy (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PL310",
+      "title": "Kant and German idealism",
+      "status": "later",
+      "requires": [
+        "PL220"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "3abe10cb45 Kant, Complete Works (Critique of Pure Reason, Groundwork)",
+        "secondary": [
+          "Gardner, Kant and the Critique of Pure Reason (TO ACQUIRE)",
+          "b37abce0ee Singer, Hegel VSI"
+        ]
+      },
+      "note": "Overlaps Critical Theory CT110 (Hegel, Nietzsche, Kant)."
+    },
+    {
+      "id": "PL500",
+      "title": "Metalogic: computability, completeness, incompleteness",
+      "status": "later",
+      "requires": [
+        "PL300"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Boolos, Burgess & Jeffrey, Computability and Logic 5th (TO ACQUIRE)"
+      },
+      "note": "Overlaps Mathematics MA457 (mathematical logic)."
+    },
+    {
+      "id": "PL501",
+      "title": "Metaphysics and epistemology (graduate)",
+      "status": "later",
+      "requires": [
+        "PL240",
+        "PL250",
+        "PL300"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Kim, Korman & Sosa (eds.), Metaphysics: An Anthology 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Sosa et al. (eds.), Epistemology: An Anthology 2nd (TO ACQUIRE)",
+          "Kripke, Naming and Necessity (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PL502",
+      "title": "Ethics (graduate)",
+      "status": "later",
+      "requires": [
+        "PL290"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Parfit, Reasons and Persons (TO ACQUIRE)",
+        "secondary": [
+          "Scanlon, What We Owe to Each Other (TO ACQUIRE)",
+          "Korsgaard, The Sources of Normativity (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PL503",
+      "title": "Philosophy of language (graduate)",
+      "status": "later",
+      "requires": [
+        "PL270",
+        "PL300"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Martinich & Sosa (eds.), The Philosophy of Language 7th (TO ACQUIRE)",
+        "secondary": [
+          "Frege, The Frege Reader (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PL504",
+      "title": "Kant's Critique of Pure Reason (whole)",
+      "status": "later",
+      "requires": [
+        "PL310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "3abe10cb45 Kant, Complete Works (Critique of Pure Reason)",
+        "secondary": [
+          "Allison, Kant's Transcendental Idealism 2nd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PL210",
+      "title": "Medieval philosophy",
+      "status": "later",
+      "requires": [
+        "PL200"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "10ca49de20 Adamson, Medieval Philosophy (History of Philosophy without any Gaps 4)",
+        "secondary": [
+          "336566c1a2 Augustine, Confessions (Chadwick trans.)",
+          "83069ca0df Aquinas, Selected Writings",
+          "f2fe7febbd McGinnis & Reisman, Classical Arabic Philosophy"
+        ]
+      }
+    },
+    {
+      "id": "PL230",
+      "title": "Political philosophy: justice, liberty, equality",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Kymlicka, Contemporary Political Philosophy 2nd (TO ACQUIRE)",
+        "secondary": [
+          "d37b54ea03 Rawls, A Theory of Justice",
+          "Nozick, Anarchy, State, and Utopia (TO ACQUIRE)",
+          "a501dc161e Okin, Justice, Gender, and the Family",
+          "a43c33db07 Sandel, Justice"
+        ],
+        "tertiary": [
+          "1f551fbc7b Miller, Political Philosophy VSI"
+        ]
+      },
+      "note": "Cross-listed with Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "PL320",
+      "title": "Existentialism and phenomenology",
+      "status": "later",
+      "requires": [
+        "PL220"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Cooper, Existentialism: A Reconstruction 2nd (TO ACQUIRE)",
+        "secondary": [
+          "94c12b847a Sartre, Existentialism Is a Humanism",
+          "e560301300 Camus, The Myth of Sisyphus",
+          "04741894db Nietzsche, Beyond Good and Evil",
+          "feaddc28dd Flynn, Existentialism VSI"
+        ]
+      }
+    },
+    {
+      "id": "PL330",
+      "title": "Indian philosophy",
+      "status": "later",
+      "requires": [
+        "PL100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "45015ff119 Adamson & Ganeri, Classical Indian Philosophy (History of Philosophy without any Gaps 5)",
+        "secondary": [
+          "bb74af4834 Dasgupta, A History of Indian Philosophy",
+          "5ff03abdae Hamilton, Indian Philosophy VSI",
+          "fb0f3ef9bc Sarma, Classical Indian Philosophy"
+        ]
+      },
+      "note": "Meets Indian History IH310."
+    },
+    {
+      "id": "PL340",
+      "title": "Chinese philosophy",
+      "status": "later",
+      "requires": [
+        "PL100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "4931cf8c91 Van Norden, Introduction to Classical Chinese Philosophy"
+      }
+    },
+    {
+      "id": "PL350",
+      "title": "Philosophy of mathematics",
+      "status": "later",
+      "requires": [
+        "PL120"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Shapiro, Thinking about Mathematics (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PL360",
+      "title": "Bioethics",
+      "status": "later",
+      "requires": [
+        "PL110"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Beauchamp & Childress, Principles of Biomedical Ethics 8th (TO ACQUIRE)",
+        "secondary": [
+          "745ba00390 Hope, Medical Ethics VSI"
+        ]
+      },
+      "note": "Meets Medicine MD513."
+    },
+    {
+      "id": "PL370",
+      "title": "Decision theory",
+      "status": "later",
+      "requires": [
+        "PL120"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Peterson, An Introduction to Decision Theory 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PL380",
+      "title": "Philosophy of religion",
+      "status": "later",
+      "requires": [
+        "PL100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "1cacca0496 Bayne, Philosophy of Religion VSI",
+        "secondary": [
+          "2672565172 Hume, Dialogues Concerning Natural Religion"
+        ]
+      }
+    },
+    {
+      "id": "LW521",
+      "title": "Jurisprudence: what law is",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Hart, The Concept of Law 3rd (TO ACQUIRE)",
+        "secondary": [
+          "3c70ec7296 Wacks, Philosophy of Law VSI",
+          "Dworkin, Law's Empire (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Law: finishing it in any of them counts here."
+    },
+    {
+      "id": "PL505",
+      "title": "Wittgenstein",
+      "status": "later",
+      "requires": [
+        "PL270"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Wittgenstein, Philosophical Investigations 4th (TO ACQUIRE)",
+        "secondary": [
+          "Wittgenstein, Tractatus Logico-Philosophicus (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "PL506",
+      "title": "Plato and Aristotle (graduate)",
+      "status": "later",
+      "requires": [
+        "PL200"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "493514b3bf Plato, Complete Works",
+        "secondary": [
+          "11822f31ff The Complete Aristotle (Metaphysics, Nicomachean Ethics)"
+        ]
+      }
+    },
+    {
+      "id": "PL190",
+      "title": "Breadth: the history of philosophy in one pass",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "57de9873a1 Grayling, The History of Philosophy"
+      }
+    },
+    {
+      "id": "PL390",
+      "title": "Practice: argument reconstruction and short critical papers",
+      "status": "later",
+      "requires": [
+        "PL120"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "Weston, A Rulebook for Arguments 5th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "PL595",
+      "title": "Practice: qualifying-paper self-check",
+      "status": "later",
+      "requires": [
+        "PL501",
+        "PL502"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "past prelim lists, built when the time comes"
+      }
+    },
+    {
+      "id": "PL398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "PL290",
+        "PL220",
+        "PL270"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a typed conversation"
+      }
+    },
+    {
+      "id": "PL598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "PL501",
+        "PL502"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "PL399",
+      "title": "Capstone: a critical paper on a debate you pick",
+      "status": "later",
+      "requires": [
+        "PL290",
+        "PL250"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

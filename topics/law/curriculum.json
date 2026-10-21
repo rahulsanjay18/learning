@@ -1,0 +1,612 @@
+{
+  "major": "law",
+  "program": "topics/law/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "EN015",
+      "PL120",
+      "PO110",
+      "LW100"
+    ],
+    "credited": [
+      "EN015",
+      "PO110"
+    ],
+    "maybe": [
+      "PL120"
+    ],
+    "start": [
+      "LW100"
+    ],
+    "basis": "Law school has no required undergraduate major. What matters is careful reading, logic, writing and how the government works. Composition is credited from both degrees and American government from AP (Penn State counted it). Symbolic logic is 'maybe': your math degree covered propositional and predicate logic in proofs courses, but the LSAT drills a different, informal kind."
+  },
+  "courses": [
+    {
+      "id": "EN015",
+      "title": "Rhetoric and composition: the academic essay",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "ed156636dd Zinsser, On Writing Well (grade A)",
+        "secondary": [
+          "29aad591c6 Strunk & White, The Elements of Style 4th (grade A)",
+          "009f44376d Toye, Rhetoric VSI (grade A)",
+          "Graff & Birkenstein, They Say / I Say (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with English, Medicine, Political Science, History: finishing it in any of them counts here."
+    },
+    {
+      "id": "PL120",
+      "title": "Symbolic logic I: sentential and first-order logic",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Magnus & Button, forall x: Calgary (free: https://forallx.openlogicproject.org)",
+        "secondary": [
+          "d565a7e7e9 Agler, Symbolic Logic: Syntax, Semantics, and Proof",
+          "b4cb422d7f Priest, Logic VSI"
+        ]
+      },
+      "note": "Cross-listed with Philosophy: finishing it in any of them counts here."
+    },
+    {
+      "id": "PO110",
+      "title": "American government and politics",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "77506677ce OpenStax, American Government 4e",
+        "secondary": [
+          "aa13852a87 Valelly, American Politics VSI",
+          "Hamilton, Madison & Jay, The Federalist Papers (free: Gutenberg)"
+        ]
+      },
+      "note": "Cross-listed with Political Science: finishing it in any of them counts here."
+    },
+    {
+      "id": "LW100",
+      "title": "The American legal system and how to read a case",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "ed778102b4 Farnsworth, An Introduction to the Legal System of the United States 4th",
+        "secondary": [
+          "994cd503bb Feinman, Law 101",
+          "faece66764 Wacks, Law VSI"
+        ]
+      }
+    },
+    {
+      "id": "LW110",
+      "title": "Legal reasoning and the LSAT",
+      "status": "later",
+      "requires": [
+        "LW100",
+        "PL120"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Levi, An Introduction to Legal Reasoning (TO ACQUIRE)",
+        "secondary": [
+          "LSAC LawHub official PrepTests (free tier: https://app.lawhub.org)"
+        ]
+      }
+    },
+    {
+      "id": "LW501",
+      "title": "Contracts",
+      "status": "later",
+      "requires": [
+        "LW110"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 30,
+      "books": {
+        "primary": "Blum, Contracts: Examples and Explanations 8th (TO ACQUIRE)",
+        "secondary": [
+          "Restatement (Second) of Contracts (excerpts) and UCC Article 2 (free: https://www.law.cornell.edu/ucc/2)",
+          "Knapp, Crystal & Prince, Problems in Contract Law (cases) (TO ACQUIRE)",
+          "cases: Caselaw Access Project (free: https://case.law)"
+        ]
+      }
+    },
+    {
+      "id": "LW502",
+      "title": "Torts",
+      "status": "later",
+      "requires": [
+        "LW110"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Glannon, The Law of Torts: Examples and Explanations 6th (TO ACQUIRE)",
+        "secondary": [
+          "Dobbs, Hayden & Bublick, Hornbook on Torts 2nd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "LW503",
+      "title": "Civil procedure",
+      "status": "later",
+      "requires": [
+        "LW110"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 30,
+      "books": {
+        "primary": "Glannon, Civil Procedure: Examples and Explanations 9th (TO ACQUIRE)",
+        "secondary": [
+          "Federal Rules of Civil Procedure (free: https://www.law.cornell.edu/rules/frcp)"
+        ]
+      }
+    },
+    {
+      "id": "LW504",
+      "title": "Property",
+      "status": "later",
+      "requires": [
+        "LW110"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 28,
+      "books": {
+        "primary": "Sprankling, Understanding Property Law 5th (TO ACQUIRE)",
+        "secondary": [
+          "Dukeminier et al., Property (casebook) 10th (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "LW505",
+      "title": "Criminal law",
+      "status": "later",
+      "requires": [
+        "LW110"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Dressler & Garvey, Understanding Criminal Law 9th (TO ACQUIRE)",
+        "secondary": [
+          "Model Penal Code (excerpts)"
+        ]
+      }
+    },
+    {
+      "id": "LW506",
+      "title": "Constitutional law I: structure and powers",
+      "status": "later",
+      "requires": [
+        "LW110",
+        "PO110"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Chemerinsky, Constitutional Law: Principles and Policies 7th (powers chapters) (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "LW507",
+      "title": "Constitutional law II: individual rights",
+      "status": "later",
+      "requires": [
+        "LW506"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Chemerinsky, Constitutional Law: Principles and Policies 7th (rights chapters) (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "LW508",
+      "title": "Legal research and writing; law-school exams",
+      "status": "later",
+      "requires": [
+        "LW110"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Neumann, Margolis & Stanchi, Legal Reasoning and Legal Writing 9th (TO ACQUIRE)",
+        "secondary": [
+          "d14f7f0abc Fischl & Paul, Getting to Maybe",
+          "The Bluebook: A Uniform System of Citation 22nd (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "LW510",
+      "title": "Evidence",
+      "status": "later",
+      "requires": [
+        "LW503"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Merritt & Simmons, Learning Evidence 5th (TO ACQUIRE)",
+        "secondary": [
+          "Federal Rules of Evidence (free: https://www.law.cornell.edu/rules/fre)"
+        ]
+      }
+    },
+    {
+      "id": "LW511",
+      "title": "Criminal procedure",
+      "status": "later",
+      "requires": [
+        "LW505",
+        "LW507"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Dressler, Michaels & Simmons, Understanding Criminal Procedure vol. 1 8th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "LW512",
+      "title": "Business associations",
+      "status": "later",
+      "requires": [
+        "LW501"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Klein, Coffee & Partnoy, Business Organization and Finance 11th (TO ACQUIRE)",
+        "secondary": [
+          "5c955c7e7d OpenStax, Business Law I Essentials"
+        ]
+      }
+    },
+    {
+      "id": "LW513",
+      "title": "Wills, trusts and estates",
+      "status": "later",
+      "requires": [
+        "LW504"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Sitkoff & Dukeminier, Wills, Trusts, and Estates 11th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "LW514",
+      "title": "Family law",
+      "status": "later",
+      "requires": [
+        "LW501",
+        "LW504"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Krause & Meyer, Family Law in a Nutshell 6th (TO ACQUIRE)",
+        "secondary": [
+          "5f31f95468 Herring, Family Law VSI"
+        ]
+      }
+    },
+    {
+      "id": "LW517",
+      "title": "Administrative law",
+      "status": "later",
+      "requires": [
+        "LW506"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Funk & Seamon, Administrative Law: Examples and Explanations 6th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "LW518",
+      "title": "Professional responsibility",
+      "status": "later",
+      "requires": [
+        "LW501",
+        "LW502"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Gillers, Regulation of Lawyers: Problems of Law and Ethics 13th (TO ACQUIRE)",
+        "secondary": [
+          "ABA Model Rules of Professional Conduct (free)"
+        ]
+      }
+    },
+    {
+      "id": "LW515",
+      "title": "Secured transactions (UCC Article 9)",
+      "status": "later",
+      "requires": [
+        "LW501",
+        "LW504"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "LoPucki, Warren & Lawless, Secured Transactions: A Systems Approach (TO ACQUIRE)"
+      },
+      "note": "Elective since the July 2026 bar exam changes dropped it from the essay exam (prep-provider sources; check NCBE)."
+    },
+    {
+      "id": "LW516",
+      "title": "Conflict of laws",
+      "status": "later",
+      "requires": [
+        "LW503"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Hay, Borchers, Symeonides & Whytock, Conflict of Laws hornbook 6th (TO ACQUIRE)"
+      },
+      "note": "Elective since the July 2026 bar exam changes dropped it from the essay exam (prep-provider sources; check NCBE)."
+    },
+    {
+      "id": "LW519",
+      "title": "Federal income taxation",
+      "status": "later",
+      "requires": [
+        "LW501"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Burke & Friel, Understanding Federal Income Taxation 6th (TO ACQUIRE)",
+        "secondary": [
+          "41dbeb376d Smith, Taxation VSI"
+        ]
+      }
+    },
+    {
+      "id": "LW520",
+      "title": "Federal courts",
+      "status": "later",
+      "requires": [
+        "LW507",
+        "LW503"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Chemerinsky, Federal Jurisdiction 8th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "LW521",
+      "title": "Jurisprudence: what law is",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Hart, The Concept of Law 3rd (TO ACQUIRE)",
+        "secondary": [
+          "3c70ec7296 Wacks, Philosophy of Law VSI",
+          "Dworkin, Law's Empire (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Philosophy: finishing it in any of them counts here."
+    },
+    {
+      "id": "LW522",
+      "title": "International law",
+      "status": "later",
+      "requires": [
+        "LW506"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Crawford, Brownlie's Principles of Public International Law 9th (TO ACQUIRE)",
+        "secondary": [
+          "9d6163e0e2 Lowe, International Law VSI"
+        ]
+      }
+    },
+    {
+      "id": "LW523",
+      "title": "Law and economics",
+      "status": "later",
+      "requires": [
+        "LW501",
+        "LW502",
+        "EC100"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Cooter & Ulen, Law and Economics 6th (free: https://scholarship.law.berkeley.edu/books/2/)"
+      }
+    },
+    {
+      "id": "LW524",
+      "title": "Intellectual property",
+      "status": "later",
+      "requires": [
+        "LW504"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Merges, Menell & Lemley, Intellectual Property in the New Technological Age (Clause 8 ed., free: https://www.clause8.com)",
+        "secondary": [
+          "1763b6c78c OpenStax, Introduction to Intellectual Property"
+        ]
+      },
+      "note": "Meets SWE CR327 (patent agent exam)."
+    },
+    {
+      "id": "LW525",
+      "title": "Antitrust",
+      "status": "later",
+      "requires": [
+        "LW512",
+        "EC100"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Hovenkamp, Federal Antitrust Policy 6th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "LW526",
+      "title": "Remedies",
+      "status": "later",
+      "requires": [
+        "LW501",
+        "LW502"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Laycock & Hasen, Modern American Remedies 5th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "EC100",
+      "title": "Principles of microeconomics",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "829414e64e Mankiw, Principles of Microeconomics",
+        "secondary": [
+          "8c584e7b10 OpenStax, Microeconomics 3e"
+        ],
+        "tertiary": [
+          "ec493be61b Dixit, Microeconomics VSI"
+        ]
+      },
+      "note": "Cross-listed with Economics, Political Science, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "PO210",
+      "title": "Constitutional law and the courts",
+      "status": "later",
+      "requires": [
+        "PO110"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Epstein & Walker, Constitutional Law for a Changing America: Institutional Powers and Constraints (TO ACQUIRE)",
+        "secondary": [
+          "b38d7bef28 Bodenhamer, The U.S. Constitution VSI",
+          "b97037e548 Epp, The Rights Revolution"
+        ]
+      },
+      "note": "Cross-listed with Political Science: finishing it in any of them counts here. Overlaps Law LW506-507 (the law-school version)."
+    },
+    {
+      "id": "LW590",
+      "title": "Practice: bar-exam self-check (MBE, MEE, MPT; NextGen where adopted) and the MPRE",
+      "status": "later",
+      "requires": [
+        "LW510",
+        "LW511",
+        "LW512",
+        "LW513",
+        "LW514",
+        "LW518"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 10,
+      "books": {
+        "primary": "NCBE study aids and released questions (paid and free: https://www.ncbex.org)"
+      }
+    },
+    {
+      "id": "LW591",
+      "title": "Practice: drafting (a contract, a motion, a client letter)",
+      "status": "later",
+      "requires": [
+        "LW508",
+        "LW501"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "Stark, Drafting Contracts 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "LW598",
+      "title": "End-of-level conversation (Level II): argue a hypothetical",
+      "status": "later",
+      "requires": [
+        "LW507",
+        "LW510"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "a hypothetical + conversation"
+      }
+    }
+  ]
+}

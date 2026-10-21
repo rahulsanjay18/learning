@@ -1,0 +1,645 @@
+{
+  "major": "sociology",
+  "program": "topics/sociology/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "MA100",
+      "SO100"
+    ],
+    "credited": [
+      "MA100",
+      "ST100"
+    ],
+    "maybe": [
+      "SS310"
+    ],
+    "start": [
+      "SO100"
+    ],
+    "basis": "No sociology or anthropology courses taken; statistics is credited from the math degree."
+  },
+  "courses": [
+    {
+      "id": "MA100",
+      "title": "Precalculus: algebra, functions, trigonometry",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "00ac5c759e OpenStax, Precalculus 2e (whole)",
+        "secondary": [
+          "64ac8fea6f OpenStax, Algebra and Trigonometry 2e (extra practice)"
+        ],
+        "tertiary": [
+          "7bebe8cff5 Rusczyk & Lehoczky, The Art of Problem Solving vol. 1",
+          "7e7a1d8805 Polya, How to Solve It"
+        ]
+      },
+      "note": "Cross-listed with Mathematics, Physics, Mechanical Engineering, Unified Engineering, Medicine, Psychology, Economics, Political Science, History, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "ST100",
+      "title": "Introductory statistics: data, probability, inference",
+      "status": "later",
+      "requires": [
+        "MA100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Freedman, Pisani & Purves, Statistics 4th (TO ACQUIRE)",
+        "secondary": [
+          "1d472f742f OpenStax, Introductory Statistics 2e (exercise sets)"
+        ],
+        "tertiary": [
+          "2d7e6445a2 Hand, Statistics VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Psychology, Economics, Political Science, History, Education: finishing it in any of them counts here. The non-calculus first course. The Statistics major starts above it (S150), so it is credited wherever you have stats."
+    },
+    {
+      "id": "SO100",
+      "title": "Introduction to sociology",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "8cff8789f7 OpenStax, Introduction to Sociology 3e (whole)",
+        "secondary": [
+          "7fd3ab615b Mills, The Sociological Imagination",
+          "aad4551f6c Bruce, Sociology VSI"
+        ]
+      },
+      "note": "Cross-listed with Medicine, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "SS210",
+      "title": "Social research methods: design, measurement, sampling, surveys",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Babbie, The Practice of Social Research 15th (TO ACQUIRE)",
+        "secondary": [
+          "a5e726b5ac Yin, Case Study Research: Design and Methods",
+          "Salganik, Bit by Bit (free: https://www.bitbybitbook.com)"
+        ]
+      },
+      "note": "Cross-listed with Political Science, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "SS310",
+      "title": "Regression and causal thinking for social science",
+      "status": "later",
+      "requires": [
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Gelman, Hill & Vehtari, Regression and Other Stories (free: https://avehtari.github.io/ROS-Examples/)",
+        "secondary": [
+          "Angrist & Pischke, Mastering 'Metrics (TO ACQUIRE)",
+          "527488945c Hernan & Robins, Causal Inference: What If (ch. 1-10)"
+        ]
+      },
+      "note": "Cross-listed with Psychology, Political Science, History, Education: finishing it in any of them counts here. Overlaps Statistics S310 (applied regression): finishing either makes the other a fast pass."
+    },
+    {
+      "id": "SO200",
+      "title": "Classical sociological theory: Marx, Durkheim, Weber, Simmel, Du Bois",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 26,
+      "books": {
+        "primary": "25b9d53f49 Aron, Main Currents in Sociological Thought vol. 1 (Montesquieu, Comte, Marx, Tocqueville) + 0b7173c20a vol. 2 (Durkheim, Pareto, Weber)",
+        "secondary": [
+          "b01fb90f16 Tucker (ed.), The Marx-Engels Reader 2nd",
+          "4c885b6657 Weber, The Protestant Ethic and the Spirit of Capitalism",
+          "Durkheim, The Division of Labor in Society (TO ACQUIRE)",
+          "Durkheim, Suicide (TO ACQUIRE)",
+          "Du Bois, The Souls of Black Folk (TO ACQUIRE)"
+        ]
+      },
+      "note": "Same readings as Critical Theory CT120 (Marx, Weber, Durkheim): finishing either counts as both."
+    },
+    {
+      "id": "SO210",
+      "title": "Contemporary sociological theory",
+      "status": "later",
+      "requires": [
+        "SO200"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Ritzer & Stepnisky, Contemporary Sociological Theory and Its Classical Roots 6th (TO ACQUIRE)",
+        "secondary": [
+          "Goffman, The Presentation of Self in Everyday Life (TO ACQUIRE)",
+          "Bourdieu, Distinction (TO ACQUIRE)",
+          "Berger & Luckmann, The Social Construction of Reality (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SO220",
+      "title": "Social stratification and inequality",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Grusky (ed.), Social Stratification: Class, Race, and Gender in Sociological Perspective 4th (TO ACQUIRE)",
+        "secondary": [
+          "7807664169 Piketty, Capital in the Twenty-First Century",
+          "e55f217cd6 MacLeod, Ain't No Makin' It"
+        ]
+      }
+    },
+    {
+      "id": "SO230",
+      "title": "Race and ethnicity",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Omi & Winant, Racial Formation in the United States 3rd (TO ACQUIRE)",
+        "secondary": [
+          "d0238ff63e Bonilla-Silva, Racism Without Racists",
+          "Massey & Denton, American Apartheid (TO ACQUIRE)"
+        ]
+      },
+      "note": "Overlaps Critical Theory CT210 (critical race theory)."
+    },
+    {
+      "id": "SO240",
+      "title": "Gender and sexuality",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Wade & Ferree, Gender: Ideas, Interactions, Institutions 3rd (TO ACQUIRE)",
+        "secondary": [
+          "d004f50be2 Beauvoir, The Second Sex",
+          "bb443bc994 Mottier, Sexuality VSI"
+        ]
+      }
+    },
+    {
+      "id": "SO250",
+      "title": "Qualitative methods: ethnography, interviews, comparison",
+      "status": "later",
+      "requires": [
+        "SO100",
+        "SS210"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Small & Calarco, Qualitative Literacy (TO ACQUIRE)",
+        "secondary": [
+          "Emerson, Fretz & Shaw, Writing Ethnographic Fieldnotes 3rd (TO ACQUIRE)",
+          "Weiss, Learning from Strangers (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SO390",
+      "title": "Social networks",
+      "status": "later",
+      "requires": [
+        "SO100",
+        "ST100"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Easley & Kleinberg, Networks, Crowds, and Markets (free: https://www.cs.cornell.edu/home/kleinber/networks-book/)"
+      }
+    },
+    {
+      "id": "SO501",
+      "title": "Sociological theory (graduate)",
+      "status": "later",
+      "requires": [
+        "SO210"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "Calhoun et al. (eds.), Classical Sociological Theory 3rd + Contemporary Sociological Theory 3rd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "SO502",
+      "title": "Categorical, count and limited dependent variables",
+      "status": "later",
+      "requires": [
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Long, Regression Models for Categorical and Limited Dependent Variables (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "SS501",
+      "title": "Research design: descriptive and causal inference, qualitative and quantitative",
+      "status": "later",
+      "requires": [
+        "SS210",
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "King, Keohane & Verba, Designing Social Inquiry (TO ACQUIRE)",
+        "secondary": [
+          "Brady & Collier (eds.), Rethinking Social Inquiry 2nd (TO ACQUIRE)",
+          "Shadish, Cook & Campbell, Experimental and Quasi-Experimental Designs (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Political Science, Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "SS502",
+      "title": "Causal inference (graduate)",
+      "status": "later",
+      "requires": [
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 24,
+      "books": {
+        "primary": "527488945c Hernan & Robins, Causal Inference: What If (whole)",
+        "secondary": [
+          "Morgan & Winship, Counterfactuals and Causal Inference 2nd (TO ACQUIRE)",
+          "Angrist & Pischke, Mostly Harmless Econometrics (TO ACQUIRE)"
+        ]
+      },
+      "note": "Cross-listed with Political Science: finishing it in any of them counts here. Same material as Statistics S540: finishing either counts as both."
+    },
+    {
+      "id": "SO503",
+      "title": "Social network analysis (graduate)",
+      "status": "later",
+      "requires": [
+        "SO390",
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Wasserman & Faust, Social Network Analysis: Methods and Applications (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "SO504",
+      "title": "Computational social science",
+      "status": "later",
+      "requires": [
+        "SS310"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Salganik, Bit by Bit (free: https://www.bitbybitbook.com)",
+        "secondary": [
+          "Grimmer, Roberts & Stewart, Text as Data (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SO505",
+      "title": "Comparative-historical analysis",
+      "status": "later",
+      "requires": [
+        "SO210"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Mahoney & Thelen (eds.), Advances in Comparative-Historical Analysis (TO ACQUIRE)",
+        "secondary": [
+          "Moore, Social Origins of Dictatorship and Democracy (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SO300",
+      "title": "Urban sociology and the city",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Wilson, The Truly Disadvantaged (TO ACQUIRE)",
+        "secondary": [
+          "449c32e843 Harvey, Social Justice and the City",
+          "Desmond, Evicted (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SO310",
+      "title": "Criminology and punishment",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Garland, The Culture of Control (TO ACQUIRE)",
+        "secondary": [
+          "13103ca781 Pfaff, Locked In",
+          "3a4449545f Roberts, Criminal Justice VSI"
+        ]
+      }
+    },
+    {
+      "id": "SO320",
+      "title": "Sociology of religion",
+      "status": "later",
+      "requires": [
+        "SO200"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Durkheim, The Elementary Forms of Religious Life (TO ACQUIRE)",
+        "secondary": [
+          "778c1bf82d Tweed, Religion VSI",
+          "Berger, The Sacred Canopy (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SO330",
+      "title": "Political sociology and revolutions",
+      "status": "later",
+      "requires": [
+        "SO200"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Skocpol, States and Social Revolutions (TO ACQUIRE)",
+        "secondary": [
+          "ac6fb09dcf Goldstone, Revolutions VSI",
+          "9ff20849a3 Turchin, War and Peace and War"
+        ]
+      }
+    },
+    {
+      "id": "SO340",
+      "title": "Economic sociology",
+      "status": "later",
+      "requires": [
+        "SO200"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Smelser & Swedberg (eds.), The Handbook of Economic Sociology 2nd (TO ACQUIRE)",
+        "secondary": [
+          "Polanyi, The Great Transformation (TO ACQUIRE)",
+          "e768c1d15e Graeber, Debt: The First 5,000 Years"
+        ]
+      }
+    },
+    {
+      "id": "SO350",
+      "title": "Population and demography",
+      "status": "later",
+      "requires": [
+        "SO100",
+        "ST100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Weeks, Population: An Introduction to Concepts and Issues 13th (TO ACQUIRE)",
+        "secondary": [
+          "54eb8721c4 Koser, International Migration VSI"
+        ]
+      }
+    },
+    {
+      "id": "SO360",
+      "title": "Sociology of education",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Ballantine, Stuber & Everitt, The Sociology of Education: A Systematic Analysis 9th (TO ACQUIRE)",
+        "secondary": [
+          "Coleman et al., Equality of Educational Opportunity (the Coleman Report, 1966; free: ERIC ED012275)"
+        ]
+      },
+      "note": "Cross-listed with Education: finishing it in any of them counts here."
+    },
+    {
+      "id": "SO370",
+      "title": "Medical sociology",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Conrad & Leiter (eds.), The Sociology of Health and Illness 11th (TO ACQUIRE)",
+        "secondary": [
+          "c91191afd6 Shilts, And the Band Played On"
+        ]
+      },
+      "note": "Cross-listed with Medicine: finishing it in any of them counts here."
+    },
+    {
+      "id": "SO380",
+      "title": "Caste and society in South Asia",
+      "status": "later",
+      "requires": [
+        "SO200"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 14,
+      "books": {
+        "primary": "ab20841e91 Bayly, Caste, Society and Politics in India (New Cambridge History of India)",
+        "secondary": [
+          "Dumont, Homo Hierarchicus (TO ACQUIRE)",
+          "Ambedkar, Annihilation of Caste (TO ACQUIRE)"
+        ]
+      },
+      "note": "Meets the Indian History major."
+    },
+    {
+      "id": "EC395",
+      "title": "Economic history: how the world got rich (and India's part in it)",
+      "status": "later",
+      "requires": [],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Allen, Global Economic History: A Very Short Introduction (TO ACQUIRE)",
+        "secondary": [
+          "8b573d9c6b Roy, The Economic History of India",
+          "Pomeranz, The Great Divergence (TO ACQUIRE)",
+          "584ba381b1 Industrial Revolution VSI"
+        ]
+      },
+      "note": "Cross-listed with Economics, History: finishing it in any of them counts here. Overlaps Indian History IH330 (economic history)."
+    },
+    {
+      "id": "SO190",
+      "title": "Breadth: anthropology",
+      "status": "later",
+      "requires": [
+        "SO100"
+      ],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "9fcb3693b7 OpenStax, Introduction to Anthropology",
+        "secondary": [
+          "19ad725877 Boas, Race, Language and Culture"
+        ]
+      }
+    },
+    {
+      "id": "SO395",
+      "title": "Practice: an original small study with public data (GSS, Census, ACS)",
+      "status": "later",
+      "requires": [
+        "SS310",
+        "SO250"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "General Social Survey data explorer (free: https://gssdataexplorer.norc.org)"
+      }
+    },
+    {
+      "id": "SO595",
+      "title": "Practice: comprehensive-exam self-check (theory + methods)",
+      "status": "later",
+      "requires": [
+        "SO501",
+        "SS502"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 6,
+      "books": {
+        "primary": "a reading list built from SO501 and SS501-502"
+      }
+    },
+    {
+      "id": "SO398",
+      "title": "End-of-level conversation (Level I)",
+      "status": "later",
+      "requires": [
+        "SO210",
+        "SS310"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a typed conversation"
+      }
+    },
+    {
+      "id": "SO598",
+      "title": "End-of-level conversation (Level II)",
+      "status": "later",
+      "requires": [
+        "SO501",
+        "SS502"
+      ],
+      "group": "colloquium",
+      "level": "II",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works + conversation"
+      }
+    },
+    {
+      "id": "SO399",
+      "title": "Capstone: an empirical paper on a question you pick",
+      "status": "later",
+      "requires": [
+        "SO210",
+        "SS310",
+        "SO250"
+      ],
+      "group": "capstone",
+      "level": "I",
+      "est_lessons": 8,
+      "books": {
+        "primary": "optional"
+      }
+    }
+  ]
+}

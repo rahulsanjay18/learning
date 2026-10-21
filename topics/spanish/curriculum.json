@@ -1,0 +1,333 @@
+{
+  "major": "spanish",
+  "program": "topics/spanish/PROGRAM.md",
+  "generated_by": "scripts/build_majors.py (edit there, not here)",
+  "rules": [
+    "Designed 2026-10-21 and parked: written as if starting from high school, with your real entry point in entry_points.",
+    "No pretests (your call, 2026-10-08, kept for later majors): credited courses count from your degrees; 'maybe' courses are yours to skim or skip; you look things up when a gap shows.",
+    "A course shared with another major (same id) is one course: finishing it anywhere counts everywhere."
+  ],
+  "entry_points": {
+    "high_school": [
+      "SP101"
+    ],
+    "credited": [],
+    "maybe": [
+      "SP101"
+    ],
+    "start": [
+      "SP102"
+    ],
+    "basis": "High-school Spanish (2026-10-21): the first semester is 'maybe'. A short pretest at the start of SP102 decides whether to go back."
+  },
+  "courses": [
+    {
+      "id": "SP101",
+      "title": "Elementary Spanish I",
+      "status": "later",
+      "requires": [],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "aa547ce210 Kattan-Ibarra, Complete Spanish (Teach Yourself; first half)",
+        "secondary": [
+          "Dreaming Spanish (free comprehensible-input video)"
+        ]
+      }
+    },
+    {
+      "id": "SP102",
+      "title": "Elementary Spanish II",
+      "status": "later",
+      "requires": [
+        "SP101"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "aa547ce210 Kattan-Ibarra, Complete Spanish (second half)",
+        "secondary": [
+          "89357d88d5 HarperCollins Spanish-English College Dictionary"
+        ]
+      }
+    },
+    {
+      "id": "SP201",
+      "title": "Intermediate Spanish I: the subjunctive and past tenses in use",
+      "status": "later",
+      "requires": [
+        "SP102"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Kattan-Ibarra & Howkins, Spanish Grammar in Context 3rd (TO ACQUIRE)",
+        "secondary": [
+          "Radio Ambulante (free podcast with transcripts)"
+        ]
+      }
+    },
+    {
+      "id": "SP202",
+      "title": "Intermediate Spanish II: reading and composition",
+      "status": "later",
+      "requires": [
+        "SP201"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Whitley & Gonzalez, Gramatica para la composicion 3rd (TO ACQUIRE)",
+        "secondary": [
+          "7c6607d041 Borges, Ficciones (Spanish edition; first stories)"
+        ]
+      }
+    },
+    {
+      "id": "SP301",
+      "title": "Advanced grammar and stylistics",
+      "status": "later",
+      "requires": [
+        "SP202"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Butt & Benjamin, A New Reference Grammar of Modern Spanish 6th (TO ACQUIRE)",
+        "secondary": [
+          "b52c20ef62 RAE, Diccionario de la lengua espanola"
+        ]
+      }
+    },
+    {
+      "id": "SP310",
+      "title": "Introduction to literature in Spanish",
+      "status": "later",
+      "requires": [
+        "SP202"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Virgillo, Friedman & Valdivieso, Aproximaciones al estudio de la literatura hispanica 7th (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "SP320",
+      "title": "Survey of Spanish literature: the Cid to Lorca",
+      "status": "later",
+      "requires": [
+        "SP310"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "del Rio, Antologia general de la literatura espanola (2 vols.) (TO ACQUIRE)",
+        "secondary": [
+          "Garcia Lorca, Bodas de sangre (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SP330",
+      "title": "Cervantes: Don Quijote",
+      "status": "later",
+      "requires": [
+        "SP310"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Cervantes, Don Quijote de la Mancha (Rico ed., RAE) (TO ACQUIRE)",
+        "secondary": [
+          "9c33a3ab3b Cervantes, Don Quixote (Grossman trans.; for difficult passages)"
+        ]
+      },
+      "note": "Meets English EN230 (the novel, which also starts with Cervantes)."
+    },
+    {
+      "id": "SP340",
+      "title": "Survey of Latin American literature",
+      "status": "later",
+      "requires": [
+        "SP310"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 22,
+      "books": {
+        "primary": "Chang-Rodriguez & Filer, Voces de Hispanoamerica 5th (TO ACQUIRE)",
+        "secondary": [
+          "7c6607d041 Borges, Ficciones",
+          "Garcia Marquez, Cien anos de soledad (TO ACQUIRE)",
+          "Rulfo, Pedro Paramo (TO ACQUIRE)",
+          "bba54b191d Modern Latin American Literature VSI",
+          "aec2632d57 Colonial Latin American Literature VSI"
+        ]
+      }
+    },
+    {
+      "id": "SP350",
+      "title": "Hispanic linguistics: sounds, words, sentences, variation",
+      "status": "later",
+      "requires": [
+        "SP202"
+      ],
+      "group": "core",
+      "level": "I",
+      "est_lessons": 18,
+      "books": {
+        "primary": "Hualde, Olarrea, Escobar & Travis, Introduccion a la linguistica hispanica 3rd (TO ACQUIRE)"
+      },
+      "note": "Overlaps English EN310."
+    },
+    {
+      "id": "SP501",
+      "title": "The Golden Age: drama and the picaresque",
+      "status": "later",
+      "requires": [
+        "SP330"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Lazarillo de Tormes (Catedra ed.) (TO ACQUIRE)",
+        "secondary": [
+          "Calderon de la Barca, La vida es sueno (TO ACQUIRE)",
+          "Lope de Vega, Fuenteovejuna (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SP502",
+      "title": "The Boom and after",
+      "status": "later",
+      "requires": [
+        "SP340"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 20,
+      "books": {
+        "primary": "Cortazar, Rayuela (TO ACQUIRE)",
+        "secondary": [
+          "Vargas Llosa, La ciudad y los perros (TO ACQUIRE)",
+          "Bolano, Los detectives salvajes (TO ACQUIRE)"
+        ]
+      }
+    },
+    {
+      "id": "SP503",
+      "title": "History of the Spanish language",
+      "status": "later",
+      "requires": [
+        "SP350"
+      ],
+      "group": "core",
+      "level": "II",
+      "est_lessons": 16,
+      "books": {
+        "primary": "Penny, A History of the Spanish Language 2nd (TO ACQUIRE)"
+      }
+    },
+    {
+      "id": "SP360",
+      "title": "Spanish for medicine and law",
+      "status": "later",
+      "requires": [
+        "SP202"
+      ],
+      "group": "elective",
+      "level": "I",
+      "est_lessons": 12,
+      "books": {
+        "primary": "Tabuenca, Spanish for Healthcare Professionals (TO ACQUIRE)",
+        "secondary": [
+          "Harvey, Spanish for Legal Professionals (TO ACQUIRE)"
+        ]
+      },
+      "note": "Meets the Medicine and Law majors."
+    },
+    {
+      "id": "SP504",
+      "title": "Spanish dialects and sociolinguistics",
+      "status": "later",
+      "requires": [
+        "SP350"
+      ],
+      "group": "elective",
+      "level": "II",
+      "est_lessons": 14,
+      "books": {
+        "primary": "Lipski, Latin American Spanish (TO ACQUIRE)",
+        "secondary": [
+          "447856339f Edwards, Sociolinguistics VSI"
+        ]
+      }
+    },
+    {
+      "id": "SP190",
+      "title": "Breadth: Spain's twentieth century",
+      "status": "later",
+      "requires": [],
+      "group": "breadth",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "9d1c428951 Graham, The Spanish Civil War VSI"
+      }
+    },
+    {
+      "id": "SP390",
+      "title": "Practice: weekly conversation exchange",
+      "status": "later",
+      "requires": [
+        "SP101"
+      ],
+      "group": "practice",
+      "level": "I",
+      "est_lessons": 6,
+      "books": {
+        "primary": "a tutor or exchange partner (italki or Tandem)"
+      }
+    },
+    {
+      "id": "SP595",
+      "title": "Practice: DELE C1 self-check",
+      "status": "later",
+      "requires": [
+        "SP301"
+      ],
+      "group": "practice",
+      "level": "II",
+      "est_lessons": 4,
+      "books": {
+        "primary": "Instituto Cervantes, DELE C1 model exams (free)"
+      }
+    },
+    {
+      "id": "SP398",
+      "title": "End-of-level conversation (Level I), held in Spanish",
+      "status": "later",
+      "requires": [
+        "SP320",
+        "SP340"
+      ],
+      "group": "colloquium",
+      "level": "I",
+      "est_lessons": 1,
+      "books": {
+        "primary": "list of works read + a conversation in Spanish"
+      }
+    }
+  ]
+}
