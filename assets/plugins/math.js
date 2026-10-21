@@ -292,6 +292,26 @@
   }
 
   LP.register({ type: "math", init: initMath });
-  function start() { loadKatex().then(function () { typeset(document.querySelector("main") || document.body); }); }
+  // Widgets redraw rows from their raw text (the order quiz on every ↑/↓, feedback, decks), after the page-load typeset.
+  // So also typeset content added later: only nodes whose text has a math delimiter, batched per frame. KaTeX's own
+  // output has no delimiters (and sits inside .katex), so typesetting never re-triggers itself.
+  var DELIM = /\\\(|\\\[|\$\$/, pending = [], queued = false;
+  function flush() {
+    queued = false;
+    var roots = pending.splice(0).filter(function (r, i, a) { return r.isConnected && a.indexOf(r) === i; });
+    roots = roots.filter(function (r) { return !roots.some(function (o) { return o !== r && o.contains(r); }); });
+    roots.forEach(typeset);
+  }
+  function watch(root) {
+    new MutationObserver(function (muts) {
+      muts.forEach(function (m) {
+        var host = m.target.nodeType === 1 ? m.target : m.target.parentElement;  // the container: one pass per redraw
+        if (!host || host.closest(".katex, .no-math, .math-preview")) return;
+        for (var i = 0; i < m.addedNodes.length; i++) if (DELIM.test(m.addedNodes[i].textContent || "")) { pending.push(host); return; }
+      });
+      if (pending.length && !queued) { queued = true; (window.requestAnimationFrame || setTimeout)(flush); }
+    }).observe(root, { childList: true, subtree: true });
+  }
+  function start() { loadKatex().then(function () { var root = document.querySelector("main") || document.body; typeset(root); watch(root); }); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", function () { setTimeout(start, 0); }); else setTimeout(start, 0);
 })();
