@@ -60,6 +60,10 @@ ol.steps > li { margin: .45rem 0; }
 .callout { background: var(--panel); border-left: 3px solid var(--accent); padding: .8rem 1rem; margin: 1.2rem 0; }
 .callout p:first-child { margin-top: 0; }
 .callout p:last-child { margin-bottom: 0; }
+/* "Go deeper": optional detail, closed by default; a missed question's hint points here. */
+details.deeper { border-left: 3px solid var(--rule); padding: .1rem 0 .1rem 1rem; margin: 1.2rem 0; }
+details.deeper > summary { cursor: pointer; color: var(--muted); font-style: italic; padding: .3rem 0; }
+details.deeper[open] > summary { margin-bottom: .4rem; }
 .muted { color: var(--muted); }
 .small { font-size: .85rem; }
 cite.ref { font-style: normal; font-size: .8em; vertical-align: super; }
