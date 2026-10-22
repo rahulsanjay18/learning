@@ -252,7 +252,7 @@
       "books": {
         "primary": "9c0c10ef76 Albert, Nowakowski & Wolfe, Lessons in Play (2007, grade B: equations from page images)",
         "secondary": [
-          "Berlekamp, Conway & Guy, Winning Ways vol. 1 (TO ACQUIRE)"
+          "Berlekamp, Conway & Guy, Winning Ways vol. 1 (TO ACQUIRE; 4f14e202ae vol. 2 is in the library)"
         ],
         "tertiary": [],
         "skip": []
@@ -289,7 +289,7 @@
       "books": {
         "primary": "34353ab4c2 Sutton & Barto, Reinforcement Learning 2nd",
         "secondary": [
-          "Russell & Norvig, Artificial Intelligence: A Modern Approach 4th, ch. 5-6 (TO ACQUIRE)",
+          "af0d2503a1 Russell & Norvig, Artificial Intelligence: A Modern Approach 3rd (adversarial search chapters)",
           "Silver et al. (2018), AlphaZero, Science 362 (free preprint)"
         ]
       },

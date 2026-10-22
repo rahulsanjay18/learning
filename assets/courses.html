@@ -97,7 +97,8 @@ one course. Pick one to see everything it needs (solid outline) and everything i
     $("cg-detail").innerHTML = '<p><b>' + c.id + ' ' + esc(c.title) + '</b><br><span class="muted">' +
       c.majors.map(function (m) { return esc(G.majors[m]) + " (" + c.group[m] + ")"; }).join(", ") + ' · Level ' + c.level +
       (c.lessons ? ' · ~' + c.lessons + ' lessons' : '') + (c.you ? ' · you: ' + c.you : '') + '</span></p>' +
-      (c.book ? '<p>Primary: ' + esc(c.book) + '</p>' : '') +
+      (c.books && c.books.length ? '<p>Books:</p><ul>' + c.books.map(function (x) {
+        return '<li>' + x[0] + ': ' + esc(x[1]) + ' <span class="muted">(' + esc(x[2]) + ')</span></li>'; }).join("") + '</ul>' : '') +
       '<p>Needs (all the way down): ' + (anc.map(link).join(", ") || "nothing") + '</p>' +
       '<p>Opens up: ' + (k.map(link).join(", ") || "nothing") + '</p>' +
       (rel.length ? '<p>Linked: ' + rel.join("; ") + '</p>' : '');
