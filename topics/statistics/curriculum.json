@@ -113,7 +113,7 @@
       "requires": [
         "S201"
       ],
-      "est_lessons": 7,
+      "est_lessons": 8,
       "pretest": true,
       "group": "core",
       "level": "I",
@@ -128,7 +128,6 @@
         "skip": []
       },
       "plan": [
-        "Distributions of functions of a random variable (2.1)",
         "Expected values (2.2)",
         "Moments and moment generating functions (2.3)",
         "Differentiating under an integral sign (2.4)",
@@ -137,7 +136,8 @@
       ],
       "lessons": [
         "0011-ch2-pretest",
-        "0012-functions-of-a-random-variable"
+        "0012-functions-of-a-random-variable",
+        "0013-functions-of-a-random-variable-worked"
       ]
     },
     {
