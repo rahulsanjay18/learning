@@ -1,36 +1,42 @@
 {
-  "about": "The learner's ordered to-do list of lessons (2026-10-15: one queue instead of the weekly block plan). The Today page shows the daily review, then the first 3 unfinished items here as today's work. Claude keeps it current: add each new lesson where it belongs, reorder when priorities change. Finished lessons (rated, mostly answered, or in a curriculum's 'completed') drop off by themselves. Optional per item: note (shown under the link).",
-  "show": 3,
-  "items": [
-    {
-      "page": "statistics/0012-functions-of-a-random-variable"
-    },
-    {
-      "page": "statistics/0013-functions-of-a-random-variable-worked"
-    },
-    {
-      "page": "indian-history/0006-ashoka"
-    },
-    {
-      "page": "chess/0004-what-did-my-move-stop-defending"
-    },
-    {
-      "page": "swe/0004-iam-least-privilege"
-    },
-    {
-      "page": "military-strategy/0002-annihilation-vs-exhaustion"
-    },
-    {
-      "page": "chess/0005-the-double-attack"
-    },
-    {
-      "page": "swe/0001-staff-placement"
-    },
-    {
-      "page": "swe/0002-aws-placement"
-    },
-    {
-      "page": "swe/0003-interview-baseline"
-    }
-  ]
+ "about": "The learner's ordered to-do list of lessons (2026-10-15: one queue instead of the weekly block plan). The Today page shows the daily review, then the first 3 unfinished items here as today's work. Claude keeps it current: add each new lesson where it belongs, reorder when priorities change. Finished lessons (rated, mostly answered, or in a curriculum's 'completed') drop off by themselves. Optional per item: note (shown under the link).",
+ "show": 3,
+ "items": [
+  {
+   "page": "statistics/0012-functions-of-a-random-variable"
+  },
+  {
+   "page": "statistics/0013-functions-of-a-random-variable-worked"
+  },
+  {
+   "page": "indian-history/0006-ashoka"
+  },
+  {
+   "page": "statistics/0014-expected-values"
+  },
+  {
+   "page": "indian-history/0007-the-guptas-and-the-golden-age"
+  },
+  {
+   "page": "chess/0004-what-did-my-move-stop-defending"
+  },
+  {
+   "page": "swe/0004-iam-least-privilege"
+  },
+  {
+   "page": "military-strategy/0002-annihilation-vs-exhaustion"
+  },
+  {
+   "page": "chess/0005-the-double-attack"
+  },
+  {
+   "page": "swe/0001-staff-placement"
+  },
+  {
+   "page": "swe/0002-aws-placement"
+  },
+  {
+   "page": "swe/0003-interview-baseline"
+  }
+ ]
 }
